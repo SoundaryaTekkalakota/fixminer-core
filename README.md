@@ -13,14 +13,25 @@ App.properties:
 It is necessary to run the FixMiner, following the order.
 
   1.ENHANCED AST DIFF calcuation
+
     By setting the jobType = ENHANCEDASTDIFF
+
   2.CACHE the enhanced AST Diff into memory cache
+
     By setting the jobType = CACHE
+
   3.LEVEL1 mining
+
     By setting the jobType = LEVEL1
+
   4.LEVEL2 mining
+
     By setting the jobType = LEVEL2
+
   5.LEVEL3 mining
+
     By setting the jobType = LEVEL3
+
+    
     
 
