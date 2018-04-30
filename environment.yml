@@ -1,0 +1,10 @@
+name: redisEnv
+channels:
+  - anaconda
+  - defaults
+dependencies:
+  - networkx=2.1
+  - python=3.6.5
+  - redis=4.0.8
+  - pandas=0.22.0
+  - redis-py=2.10.6
