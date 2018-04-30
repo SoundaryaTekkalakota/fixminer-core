@@ -1,9 +1,16 @@
-FixMiner uses anaconda to create virtual environments.
+Fixminer is an automated approach for semantic fix pattern mining based on an iterative, three-fold, clustering strategy.
+To run the tool please follow the steps below.
+
+FixMiner uses anaconda to create virtual environments. 
 
 Once anaconda is installed, please use the environment.yml to create the virtual environment, with following command:
 
     conda env create -f environment.yml
 
+
+After creating the environment, activate it. It is containing necessary dependencies for redis, and python.
+
+    source activate redisEnv
 
 Download dataset from , to the root of the repository
 
