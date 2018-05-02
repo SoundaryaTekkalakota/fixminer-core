@@ -10,6 +10,7 @@ import re
 
 
 def loadPairs(cluster, subCluster):
+    print("cluster " + cluster + " subCluster " + subCluster)
     redis_db = redis.StrictRedis(host="localhost", port=port, db=1)
     keys = redis_db.scan(0,match='match-'+cluster+'_'+ subCluster + "_*",count='100000')
 
@@ -98,6 +99,7 @@ if __name__ == '__main__':
 
             cluster = []
             for subgraph in networkx.connected_component_subgraphs(g):
+                print(subgraph.nodes())
                 cluster.append(subgraph.nodes())
 
 
