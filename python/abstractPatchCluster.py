@@ -12,16 +12,13 @@ from multiprocessing.pool import ThreadPool, Pool
 
 
 
-counter = 0
+
 def localPairCore(aTuple):
     idx, key,redis_db,cluster = aTuple
 
     columns = ['pairs_key', 'pairs', 'path1', 'pj1', 'path2', 'pj2', 'chawatheSim', 'diceSim', 'jaccardSim',
                'editDistance']
     matches = pd.DataFrame(columns=columns)
-    global counter
-    print(counter)
-    counter = counter + 1
 
     val = redis_db.get(key)
     res = val.decode().split(',')
