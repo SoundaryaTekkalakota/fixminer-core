@@ -44,8 +44,7 @@ def loadPairMulti(clusterPath,cluster):
         tuples.append(t)
 
     coreNumber = 100
-    print('Core number %s' % coreNumber)
-
+    
     pool = ThreadPool(2 * coreNumber)
 
     data = pool.map(localPairCore, [link for link in tuples])
@@ -122,7 +121,7 @@ if __name__ == '__main__':
 
         cluster = []
         for subgraph in networkx.connected_component_subgraphs(g):
-
+            print(subgraph.nodes())
             cluster.append(subgraph.nodes())
 
 

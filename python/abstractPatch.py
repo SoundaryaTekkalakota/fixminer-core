@@ -41,8 +41,7 @@ def loadPairMulti(clusterPath):
             tuples.append(t)
 
         coreNumber = 160
-        print('Core number %s' % coreNumber)
-
+        
         pool = ThreadPool(2 * coreNumber)
 
         data = pool.map(localPairCore, [link for link in tuples])
