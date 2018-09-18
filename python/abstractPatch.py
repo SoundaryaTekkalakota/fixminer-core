@@ -41,7 +41,8 @@ def loadPairMulti(clusterPath):
             tuples.append(t)
 
         coreNumber = 160
-        
+        print('Core number %s' % coreNumber)
+
         pool = ThreadPool(2 * coreNumber)
 
         data = pool.map(localPairCore, [link for link in tuples])
@@ -50,7 +51,7 @@ def loadPairMulti(clusterPath):
         pool.join()
 
         dataL = pd.concat(data)
-        # p.dump(dataL, open(clusterPath +"/matches.pickle", "wb"))
+        p.dump(dataL, open(clusterPath +"/matches.pickle", "wb"))
         return dataL
 
 
@@ -81,6 +82,7 @@ def getargs():
     parser.add_argument('-p', dest='port', help='filename')
     parser.add_argument('-m', dest='matchesName', help='filename')
     parser.add_argument('-t', dest='threshold', help='threshold')
+    parser.add_argument('-id', dest='indexFile', help='indexFile')
 
     args = parser.parse_args()
 
@@ -91,7 +93,21 @@ if __name__ == '__main__':
     setLogg()
     args = getargs()
     if args.inputPath is None:
-        print('error')
+#bash /Users/anilkoyuncu/bugStudy/release/code/launchPy.sh /Users/anilkoyuncu/bugStudy/release/code/python/abstractPatch.py /Users/anilkoyuncu/bugStudy/release/code/Defects4J/ /Users/anilkoyuncu/bugStudy/release/code/clusterDefects4JALL 6399 matchesDefects4JALL 1
+#bash /Users/anilkoyuncu/bugStudy/release/code/launchPy.sh /Users/anilkoyuncu/bugStudy/release/code/python/abstractPatch.py /Users/anilkoyuncu/bugStudy/release/code/Defects4J/ /Users/anilkoyuncu/bugStudy/release/code/clusterDefects4JINS 6399 matchesDefects4JINS 1 /Users/anilkoyuncu/bugStudy/release/code/pairsImportDefects4JINS/Defects4JINS.index
+# #python -u $1 -i $2 -c $3 -p $4 -m $5 -t $6
+        inputPath = '/Users/anilkoyuncu/bugStudy/release/code/Defects4J'
+        # dumpFolder = '/Users/anilkoyuncu/bugStudy/dataset/GumTreeOutput13April'
+
+        # inputPath = "/Users/anilkoyuncu/bugStudy/dataset/Defects4J/"
+
+        # clusterPath = 'clusterDefect4J'
+        clusterPath = '/Users/anilkoyuncu/bugStudy/release/code/clusterDefects4JINS'
+        port = 6399
+        # matchesName = 'matchesD4J'
+        matchesName = 'matchesDefects4JALL'
+        threshold = 1
+        indexFile = '/Users/anilkoyuncu/bugStudy/release/code/pairsImportDefects4JINS/Defects4JINS.index'
     else:
 
         inputPath = args.inputPath
@@ -99,56 +115,72 @@ if __name__ == '__main__':
         port = args.port
         matchesName = args.matchesName
         threshold = args.threshold
+        indexFile = args.indexFile
 
-    os.makedirs(clusterPath, exist_ok=True)
-    matches = loadPairMulti(clusterPath)
+    try:
+        # logging.info('Parameters: \ninputPath %s \nclusterPath %s \nport %s \nmatchesName %s \nthreshold %s \n%indexFile',inputPath,clusterPath,str(port),matchesName,str(threshold),indexFile)
+        os.makedirs(clusterPath, exist_ok=True)
+        matches = loadPairMulti(clusterPath)
 
-    matches['tuples']=matches.pairs.apply(lambda x:tuple(x))
+        project = inputPath.split('/')[-1]
+        # indexName = clusterPath.split('/')[-1].replace('cluster','')
 
-    col_combi = matches.tuples.values.tolist()
-    import networkx
+        matches['tuples']=matches.pairs.apply(lambda x:tuple(x))
 
-    g = networkx.Graph(col_combi)
+        col_combi = matches.tuples.values.tolist()
+        import networkx
 
-    cluster = []
-    for subgraph in networkx.connected_component_subgraphs(g):
-        print(subgraph.nodes())
-        cluster.append(subgraph.nodes())
+        g = networkx.Graph(col_combi)
 
-    cluster
+        cluster = []
+        for subgraph in networkx.connected_component_subgraphs(g):
+            logging.info(subgraph.nodes())
+            cluster.append(subgraph.nodes())
 
-    selectedCluster = [i for i in cluster if len(i)>int(threshold)]
+        cluster
 
-    pathMapping = dict()
+        selectedCluster = [i for i in cluster if len(i)>=int(threshold)]
 
-    matches.apply(lambda x:getMapping(x),axis=1)
-    print(len(selectedCluster))
-    pathMapping
+        pathMapping = dict()
 
-    for idx,s in enumerate(selectedCluster):
-        for f in s:
-            dumpFile = pathMapping[f]
-            project, type ,diffFile = dumpFile.split('/')
+        df = pd.read_csv(indexFile, header=None,usecols=[0,1],index_col=[0])
+        pathMapping = df.to_dict()
+
+        # pathMapping[1][909]
+        # matches.apply(lambda x:getMapping(x),axis=1)
+        logging.info(len(selectedCluster))
+        pathMapping = pathMapping[1]
 
 
-            try:
+        for idx,s in enumerate(selectedCluster):
+            logging.info('exporting cluster %s',s)
+            for f in s:
 
-                project = project.replace('/','')
-                fileName,position = diffFile.split('.txt_')
-                fileName = fileName +".txt"
+                dumpFile = pathMapping[int(f)]
+                logging.info('exporting file %s', dumpFile)
+                project, type ,diffFile = dumpFile.split('/')
 
-                # no external disk
-                filePath = join(inputPath,project,"DiffEntries",fileName)
 
-                with open(filePath, 'r', encoding='utf-8') as fi:
-                    lines = fi.read()
+                try:
 
-                os.makedirs(join(clusterPath,str(idx)), exist_ok=True)
-                with open(join(clusterPath,str(idx),fileName+'_'+position+'_'+project), 'w', encoding='utf-8') as writeFile:
-                    writeFile.write(lines)
+                    project = project.replace('/','')
+                    fileName,position = diffFile.split('.txt_')
+                    fileName = fileName +".txt"
 
-            except FileNotFoundError:
-                print(dumpFile)
+                    # no external disk
+                    filePath = join(inputPath,project,"DiffEntries",fileName)
+
+                    with open(filePath, 'r', encoding='utf-8') as fi:
+                        lines = fi.read()
+
+                    os.makedirs(join(clusterPath,str(idx)), exist_ok=True)
+                    with open(join(clusterPath,str(idx),fileName+'_'+position+'_'+project), 'w', encoding='utf-8') as writeFile:
+                        writeFile.write(lines)
+
+                except FileNotFoundError:
+                    logging.error(filePath)
+    except Exception as ex:
+        logging.error(ex)
 
 
 
