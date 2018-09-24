@@ -1,7 +1,7 @@
 Fixminer is an automated approach for semantic fix pattern mining based on an iterative, three-fold, clustering strategy.
 To run the tool please follow the steps below.
 
-FixMiner uses anaconda to create virtual environments. 
+FixMiner uses anaconda to create virtual environments. And it requires jdk 1.8
 
 Once anaconda is installed, please use the environment.yml to create the virtual environment, with following command:
 
