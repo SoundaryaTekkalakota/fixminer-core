@@ -65,11 +65,15 @@ It is necessary to run the FixMiner, following the order.
   
   actionType
     
-    The admitted values are UPD,INS,DEL,MOV,MIX, which represents the ENHANCEDASTDIFF actions, where UPD/INS/DEL/MOV considers tree where a single action operation is done in the action set, where are MIX considers any action.
+    The admitted values are UPD,INS,DEL,MOV,MIX, which represents the ENHANCEDASTDIFF actions.
+    UPD/INS/DEL/MOV considers tree where a single action operation is done in the action set
+    MIX considers any action.
   
   parallelism
     
-    The engine to use for parallelism. It is either FORKJOIN or AKKA. FORKJOIN is recommended is the FixMiner is running on a single machine. AKKA is suggested for distributed machines.
+    The engine to use for parallelism. It is either FORKJOIN or AKKA. 
+    FORKJOIN is recommended is the FixMiner is running on a single machine. 
+    AKKA is suggested for distributed machines.
     
   numOfWorkers
   
@@ -81,7 +85,8 @@ It is necessary to run the FixMiner, following the order.
     
    eDiffTimeout
    
-    The timeout value in seconds for the Enhanced Diff computation (ENHANCEDASTDIFF). In case ENHANCEDASTDIFF step logs timeouts, this value can be increase. 
+    The timeout value in seconds for the Enhanced Diff computation (ENHANCEDASTDIFF). 
+    In case ENHANCEDASTDIFF step logs timeouts, this value can be increase. 
     
     
    The following parameters should be used when dealing with extremely large dataset. Otherwise, default values are suggested.
