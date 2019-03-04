@@ -12,7 +12,7 @@ if __name__ == '__main__':
         setEnv(args)
 
         job = args.job
-        #job = 'importShapesPairs'
+        # job = 'clusterActions'
         ROOT_DIR = os.environ["ROOT_DIR"]
         REPO_PATH = os.environ["REPO_PATH"]
         CODE_PATH = os.environ["CODE_PATH"]
@@ -181,26 +181,29 @@ if __name__ == '__main__':
                 for sf in sizes:
                     if sf.startswith('.'):
                         continue
-                    files = listdir(join(DATA_PATH, 'shapes', shape,sf))
+                    clusters = listdir(join(DATA_PATH, 'shapes', shape,sf))
+                    for cluster in clusters:
+                        if cluster.startswith('.'):
+                            continue
+                        files = listdir(join(DATA_PATH, 'shapes', shape, sf,cluster))
+                        indexCompared = []
+                        if not os.path.exists(join(DATA_PATH, 'pairsAction', shape,sf)):
+                            os.makedirs(join(DATA_PATH, 'pairsAction', shape,sf))
 
-                    indexCompared = []
-                    if not os.path.exists(join(DATA_PATH, 'pairsAction', shape)):
-                        os.makedirs(join(DATA_PATH, 'pairsAction', shape))
+                        with open(join(DATA_PATH, 'pairsAction', shape,sf,cluster + '.index'), 'w') as out:
+                            # csv_out = csv.writer(out)
 
-                    with open(join(DATA_PATH, 'pairsAction', shape,sf + '.index'), 'w') as out:
-                        # csv_out = csv.writer(out)
+                            for idx, val in enumerate(files):
+                                out.write(str(idx) + ',' + val + '\n')
+                                indexCompared.append(str(idx))
 
-                        for idx, val in enumerate(files):
-                            out.write(str(idx) + ',' + val + '\n')
-                            indexCompared.append(str(idx))
+                        pairs = list(itertools.combinations(indexCompared, 2))
 
-                    pairs = list(itertools.combinations(indexCompared, 2))
-
-                    with open(join(DATA_PATH, 'pairsAction', shape, sf + '.txt'), 'w') as out:
-                        # csv_out = csv.writer(out)
-                        for row in pairs:
-                            a, b = row
-                            out.write(a + ',' + b + '\n')
+                        with open(join(DATA_PATH, 'pairsAction', shape,sf, cluster + '.txt'), 'w') as out:
+                            # csv_out = csv.writer(out)
+                            for row in pairs:
+                                a, b = row
+                                out.write(a + ',' + b + '\n')
 
         elif job =='importActionPairs':
 
@@ -226,9 +229,10 @@ if __name__ == '__main__':
             pairs = get_filepaths(pairsAction,'.txt')
             for pair in pairs:
                  split = pair.split("/")
-                 shapeName = split[-2]
+                 shapeName = split[-3]
+                 shapeSize = split[-2]
                  cluster = split[-1].replace('.txt','')
-                 cmd ="bash " + join(DATA_PATH,'redisSingleImport.sh') + " " +  pair + " 6380 " +  shapeName + "-"+cluster ;#+, portInner,f.getName()+"-"+pair.getName().split("\\.")[0]);
+                 cmd ="bash " + join(DATA_PATH,'redisSingleImport.sh') + " " +  pair + " 6380 " +  shapeName +"-"+shapeSize +"-"+cluster ;#+, portInner,f.getName()+"-"+pair.getName().split("\\.")[0]);
             
                  o,e = shellGitCheckout(cmd)
                  print(o)
@@ -237,7 +241,7 @@ if __name__ == '__main__':
                      idx =iFile.readlines()
                  for i in idx:
                      k,v = i.split(',')
-                     key = shapeName + "-" + cluster+"-" + k
+                     key = shapeName +"-"+shapeSize +"-"+cluster+"-" + k
                      redis_db.set(key,v.strip())
 
             # redis_db = redis.StrictRedis(host="localhost", port=portInner, db=0)

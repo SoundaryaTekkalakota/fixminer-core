@@ -11,7 +11,7 @@ def prepareFiles(t):
         repo = join(REPO_PATH,repoName)
         gumInputRepo = join(DATA_PATH, 'gumInput', repoName)
         if not os.path.exists(join(gumInputRepo)):
-            os.mkdir(gumInputRepo)
+            os.makedirs(gumInputRepo)
 
         cmd = 'git -C ' + repo + ' diff --name-only ' + shaOld + '..'+sha
         # lines = subprocess.check_output(cmd, shell=True)
@@ -102,7 +102,7 @@ def checkoutFiles(sha,shaOld,repoName, filePath):
                 print()
             not_matched, matched = output[:match.start()], match.group()
             numberOfHunks = re.findall('@@\s\-\d+,*\d*\s\+\d+,*\d*\s@@', matched)
-            if len(numberOfHunks) > 1:
+            if len(numberOfHunks) == 0:
                 return
             diffFile = shaOld + '\n' + matched.replace(' @@ ', ' @@\n')
             with open(folderDiff + '/' + sha + '_' + shaOld + '_' + savePath.replace('.java', '.txt'),

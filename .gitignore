@@ -1,1 +1,15 @@
 .DS_Store
+python/data/bugReports
+python/data/commits
+python/data/commitsDF
+python/data/EnhancedASTDiffgumInput
+python/data/EnhancedASTDiffgumInput2
+python/data/gitrepo
+python/data/gumInput
+python/data/gumInput2
+python/data/pairs
+python/data/pairsAction
+python/data/redis/*.rdb
+python/data/shapes
+.idea/
+__pycache__/
