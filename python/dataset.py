@@ -61,9 +61,9 @@ def prepareFiles(t):
         # original
 
     except Exception as e:
-        #print(e)
+        print(e)
         #print('Skip ' + sha)
-        raise Exception(e)
+        # raise Exception(e)
 
 
 def checkoutFiles(sha,shaOld,repoName, filePath):
@@ -148,5 +148,5 @@ def checkoutFiles(sha,shaOld,repoName, filePath):
 
         raise Exception('Error')
     except Exception as e:
-        #print(e)
-        raise Exception(e)
+        print(e)
+        # raise Exception(e)
