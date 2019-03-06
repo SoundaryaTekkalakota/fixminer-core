@@ -12,7 +12,7 @@ if __name__ == '__main__':
         setEnv(args)
 
         job = args.job
-        # job = 'clusterActions'
+        # job = 'importShapesPairs'
         ROOT_DIR = os.environ["ROOT_DIR"]
         REPO_PATH = os.environ["REPO_PATH"]
         CODE_PATH = os.environ["CODE_PATH"]
@@ -91,7 +91,10 @@ if __name__ == '__main__':
 
                 workList = commits[['commit','repo']].values.tolist()
                 from dataset import prepareFiles
-                parallelRun(prepareFiles,workList)
+                # workList = ['9a45e0a9ded094d18bdcbbcaf4cf3944e7faf6d9', 'hbase']
+                for wl in workList:
+                    prepareFiles(wl)
+                # parallelRun(prepareFiles,workList)
 
         elif job =='calculatePairs':
             roots = listdir(join(DATA_PATH,'EnhancedASTDiffgumInput'))
@@ -108,7 +111,7 @@ if __name__ == '__main__':
                         files
                         indexCompared = []
                         if not os.path.exists(join(DATA_PATH, 'pairs', root)):
-                            os.mkdir(join(DATA_PATH, 'pairs', root))
+                            os.makedirs(join(DATA_PATH, 'pairs', root))
 
                         with open(join(DATA_PATH, 'pairs', root, sf + '.index'), 'w') as out:
                             # csv_out = csv.writer(out)
@@ -152,10 +155,9 @@ if __name__ == '__main__':
             pairs = get_filepaths(pairsShapes,'.txt')
             for pair in pairs:
                 split = pair.split("/")
-                shapeName = ''#split[-3]
-                sizeCluster = split[-2]
-                actionCluster = split[-1].replace('.txt','')
-                cmd ="bash " + join(DATA_PATH,'redisSingleImport.sh') + " " +  pair + " 6380 " +sizeCluster+"-"+actionCluster ;
+                shapeName = split[-2]
+                sizeCluster = split[-1].replace('.txt','')
+                cmd ="bash " + join(DATA_PATH,'redisSingleImport.sh') + " " +  pair + " 6380 " +shapeName+"-"+sizeCluster ;
 
                 o,e = shellGitCheckout(cmd)
                 print(o)
@@ -164,7 +166,7 @@ if __name__ == '__main__':
                     idx =iFile.readlines()
                 for i in idx:
                     k,v = i.split(',')
-                    key = shapeName + "-" + sizeCluster+"-" +actionCluster+"-" + k
+                    key = shapeName+"-"+sizeCluster+"-" + k
                     redis_db.set(key,v.strip())
 
         elif job == 'cluster':
@@ -262,8 +264,7 @@ if __name__ == '__main__':
         elif job == 'clusterActions':
             from abstractPatch import cluster
 
-            cluster(join(DATA_PATH, 'gumInput'), join(DATA_PATH, 'actions'), join(DATA_PATH, 'EnhancedASTDiffgumInput'),
-                    join(DATA_PATH, 'pairsAction'),'actions')
+            cluster( join(DATA_PATH, 'actions'),join(DATA_PATH, 'pairsAction'),'actions')
 
         elif job == 'tokenPairs':
             shapes = listdir(join(DATA_PATH, 'actions'))
@@ -275,27 +276,32 @@ if __name__ == '__main__':
                 for sf in sizes:
                     if sf.startswith('.'):
                         continue
-                    actions = listdir(join(DATA_PATH, 'actions', shape, sf))
-                    for action in actions:
-                        files = listdir(join(DATA_PATH, 'actions', shape, sf,action))
-                        indexCompared = []
-                        if not os.path.exists(join(DATA_PATH, 'pairsToken', shape,sf)):
-                            os.makedirs(join(DATA_PATH, 'pairsToken', shape,sf))
+                    clusters = listdir(join(DATA_PATH, 'actions', shape, sf))
+                    for cluster in clusters:
+                        if cluster.startswith('.'):
+                            continue
+                        actions = listdir(join(DATA_PATH, 'actions', shape, sf,cluster))
+                        for action in actions:
 
-                        with open(join(DATA_PATH, 'pairsToken', shape, sf, action+ '.index'), 'w') as out:
-                            # csv_out = csv.writer(out)
+                            files = listdir(join(DATA_PATH, 'actions', shape, sf, cluster,action))
+                            indexCompared = []
+                            if not os.path.exists(join(DATA_PATH, 'pairsToken', shape,sf,cluster)):
+                                os.makedirs(join(DATA_PATH, 'pairsToken', shape,sf,cluster))
 
-                            for idx, val in enumerate(files):
-                                out.write(str(idx) + ',' + val + '\n')
-                                indexCompared.append(str(idx))
+                            with open(join(DATA_PATH, 'pairsToken', shape, sf,cluster, action+ '.index'), 'w') as out:
+                                # csv_out = csv.writer(out)
 
-                        pairs = list(itertools.combinations(indexCompared, 2))
+                                for idx, val in enumerate(files):
+                                    out.write(str(idx) + ',' + val + '\n')
+                                    indexCompared.append(str(idx))
 
-                        with open(join(DATA_PATH, 'pairsToken', shape, sf,action + '.txt'), 'w') as out:
-                            # csv_out = csv.writer(out)
-                            for row in pairs:
-                                a, b = row
-                                out.write(a + ',' + b + '\n')
+                            pairs = list(itertools.combinations(indexCompared, 2))
+
+                            with open(join(DATA_PATH, 'pairsToken', shape, sf,cluster,action + '.txt'), 'w') as out:
+                                # csv_out = csv.writer(out)
+                                for row in pairs:
+                                    a, b = row
+                                    out.write(a + ',' + b + '\n')
 
         elif job == 'importTokenPairs':
 
@@ -320,10 +326,15 @@ if __name__ == '__main__':
             pairs = get_filepaths(pairsToken,'.txt')
             for pair in pairs:
                 split = pair.split("/")
-                shapeName = split[-3]
-                sizeCluster = split[-2]
-                actionCluster = split[-1].replace('.txt','')
-                cmd ="bash " + join(DATA_PATH,'redisSingleImport.sh') + " " +  pair + " 6380 " +  shapeName + "-"+sizeCluster+"-"+actionCluster ;#+, portInner,f.getName()+"-"+pair.getName().split("\\.")[0]);
+
+                shapeName = split[-4]
+                shapeSize = split[-3]
+                cluster = split[-2]
+                action = split[-1].replace('.txt', '')
+
+                # cmd ="bash " + join(DATA_PATH,'redisSingleImport.sh') + " " +  pair + " 6380 " +  shapeName + "-"+sizeCluster+"-"+actionCluster ;#+, portInner,f.getName()+"-"+pair.getName().split("\\.")[0]);
+                cmd = "bash " + join(DATA_PATH,
+                                     'redisSingleImport.sh') + " " + pair + " 6380 " + shapeName + "-" + shapeSize + "-" + cluster + "-" + action;  # +, portInner,f.getName()+"-"+pair.getName().split("\\.")[0]);
 
                 o,e = shellGitCheckout(cmd)
                 o
@@ -332,9 +343,78 @@ if __name__ == '__main__':
                     idx =iFile.readlines()
                 for i in idx:
                     k,v = i.split(',')
-                    key = shapeName + "-" + sizeCluster+"-" +actionCluster+"-" + k
+                    key = shapeName + "-" + shapeSize + "-" + cluster + "-" + action+"-" + k
                     redis_db.set(key,v.strip())
 
+        elif job == 'compareTokens':
+            roots = listdir(join(DATA_PATH,'pairsToken'))
+            import redis
+            port = '6380'
+            redis_db = redis.StrictRedis(host="localhost", port=port, db=0)
+
+            keys = redis_db.scan(0, match='*', count='1000000')
+            keys = [i.decode() for i in keys[1]]
+
+
+            # for key in keys:
+            def simiCore(key):
+                split = key.split('_')
+                prefix = split[0]
+                i = split[1]
+                j = split[2]
+                keys[0]
+
+                    # inner = innerPool.getResource();
+
+
+                def getTokens(prefix,i):
+                    redis_db1 = redis.StrictRedis(host="localhost", port=port, db=1)
+
+                    dist2load = redis_db1.get(prefix + "-" + i);
+
+                    with open(join(DATA_PATH,'actions',prefix.replace('-','/'), dist2load.decode()), 'r') as rFile:
+                        lines = rFile.read()
+
+                    lines
+
+                    from common.preprocessing import preprocessingCodeElementsList
+
+                    lines = re.sub('@AT@\s*[0-9]+\s*', ' ', lines)
+                    lines = re.sub('@LENGTH@\s*[0-9]+\s*', ' ', lines)
+                    lines = re.sub('@TO@', ' ', lines)
+                    lines = re.sub('@@', ' ', lines)
+
+
+                    preCorpusBug = preprocessingCodeElementsList(lines)
+                    return preCorpusBug
+
+                tokensi = getTokens(prefix,i)
+                tokensj = getTokens(prefix,j)
+
+                from common.preprocessing import calculateTfIdfNLList
+
+                v = calculateTfIdfNLList([tokensi])
+                sourceDTM = v.transform([tokensi])
+                bugDTM = v.transform([tokensj])
+                from sklearn.metrics.pairwise import cosine_similarity
+
+                res = cosine_similarity(bugDTM, sourceDTM)
+                simiScore =res[0][0]
+                if simiScore >= 1:
+                    print(key,simiScore)
+
+                    redis_db2 = redis.StrictRedis(host="localhost", port=port, db=2)
+                    redis_db2.set(key,simiScore)
+
+            for key in keys:
+                simiCore(key)
+
+            # parallelRun(simiCore,keys)
+
+
+
+
+            print()
         elif job == 'clusterTokens':
             from abstractPatch import cluster
 

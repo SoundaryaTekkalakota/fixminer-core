@@ -66,12 +66,12 @@ def getMapping(pathMapping,x):
 
 
 
-def cluster(inputPath,clusterPath,treePath,pairsPath, level):
+def cluster(clusterPath,pairsPath, level):
 
         try:
             # logging.info('Parameters: \ninputPath %s \nclusterPath %s \nport %s \nmatchesName %s \nthreshold %s \n%indexFile',inputPath,clusterPath,str(port),matchesName,str(threshold),indexFile)
             os.makedirs(clusterPath, exist_ok=True)
-            roots = listdir(treePath)
+            roots = listdir(pairsPath)
             roots = [i for i in roots if not i.startswith('.')]
 
             # parallelRun(loadPairMulti,roots,clusterPath)
@@ -85,9 +85,9 @@ def cluster(inputPath,clusterPath,treePath,pairsPath, level):
                         actions = match['actions'].unique().tolist()
                         for action in actions:
                             match = match[match['actions'] == action]
-                            clusterCore(clusterPath, inputPath, level, match, pairsPath, root, s,action)
+                            clusterCore(clusterPath,  level, match, pairsPath, root, s,action)
                     else:
-                        clusterCore(clusterPath, inputPath, level, match, pairsPath, root, s,'')
+                        clusterCore(clusterPath,  level, match, pairsPath, root, s,'')
 
 
 
@@ -97,13 +97,13 @@ def cluster(inputPath,clusterPath,treePath,pairsPath, level):
             logging.error(ex)
 
 
-def clusterCore(clusterPath, inputPath, level, match, pairsPath, root, s,action):
+def clusterCore(clusterPath, level, match, pairsPath, root, s,action):
     col_combi = match.tuples.values.tolist()
     import networkx
     g = networkx.Graph(col_combi)
     cluster = []
     for subgraph in networkx.connected_component_subgraphs(g):
-        logging.info(subgraph.nodes())
+        logging.info('Cluster size %d',len(subgraph.nodes()))
         cluster.append(subgraph.nodes())
     cluster
     pathMapping = dict()
@@ -116,13 +116,13 @@ def clusterCore(clusterPath, inputPath, level, match, pairsPath, root, s,action)
     df = pd.read_csv(indexFile, header=None, usecols=[0, 1], index_col=[0])
     pathMapping = df.to_dict()
     for idx, clus in enumerate(cluster):
-        logging.info('exporting cluster %s', clus)
+        logging.info('exporting cluster %s %s %s %d', root,s,action,idx)
         for f in clus:
             dumpFile = pathMapping[1][int(f)]
             split = dumpFile.split('_')
             project = split[0]
             filename = "_".join(split[1:-1])
-            filePath = join(inputPath, project, 'DiffEntries', filename)
+            # filePath = join(inputPath, project, 'DiffEntries', filename)
 
             key = root + '/*/'+dumpFile
             cmd = 'java -jar ' + join(DATA_PATH,'Cluster2Pattern.jar') + " " + key
