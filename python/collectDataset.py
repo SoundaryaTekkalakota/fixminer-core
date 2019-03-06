@@ -169,6 +169,9 @@ if __name__ == '__main__':
                     key = shapeName+"-"+sizeCluster+"-" + k
                     redis_db.set(key,v.strip())
 
+            stopServer = "bash " + dbDir + "/" + "stopServer.sh " + portInner
+            o,e = shellGitCheckout(stopServer)
+
         elif job == 'cluster':
             from abstractPatch import cluster
             cluster(join(DATA_PATH,'gumInput'),join(DATA_PATH,'shapes'),join(DATA_PATH,'EnhancedASTDiffgumInput'),join(DATA_PATH, 'pairs'),'shapes')
