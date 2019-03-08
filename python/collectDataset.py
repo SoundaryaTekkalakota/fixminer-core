@@ -11,8 +11,8 @@ if __name__ == '__main__':
 
         setEnv(args)
 
-        # job = args.job
-        job = 'cluster'
+        job = args.job
+        # job = 'cluster'
         ROOT_DIR = os.environ["ROOT_DIR"]
         REPO_PATH = os.environ["REPO_PATH"]
         CODE_PATH = os.environ["CODE_PATH"]
