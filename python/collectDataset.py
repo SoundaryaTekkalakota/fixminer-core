@@ -92,20 +92,48 @@ if __name__ == '__main__':
                 workList = commits[['commit','repo']].values.tolist()
                 from dataset import prepareFiles
                 # workList = ['9a45e0a9ded094d18bdcbbcaf4cf3944e7faf6d9', 'hbase']
-                for wl in workList:
-                    prepareFiles(wl)
-                # parallelRun(prepareFiles,workList)
+                # for wl in workList:
+                #     prepareFiles(wl)
+                parallelRun(prepareFiles,workList)
 
         elif job =='calculatePairs':
-            roots = listdir(join(DATA_PATH,'EnhancedASTDiffgumInput'))
+
+            dbDir = join(DATA_PATH, 'redis')
+
+            portInner = '6399'
+            cmd = "bash " + dbDir + "/" + "startServer.sh " + dbDir + " ALLdumps-gumInput.rdb " + " " + portInner;
+
+            o, e = shellGitCheckout(cmd)
+            ping = "redis-cli -p 6399 ping"
+            o, e = shellGitCheckout(ping)
+            m = re.search('PONG', o)
+
+            while not m:
+                time.sleep(10)
+                logging.info('Waiting for checkout')
+                m = re.search('PONG', o)
+            import redis
+            redis_db = redis.StrictRedis(host="localhost", port=portInner, db=0)
+            keys = redis_db.scan(0, match='*', count='1000000')
+
+            matches = pd.DataFrame(keys[1], columns=['pairs_key'])
+            matches['pairs_key'] = matches['pairs_key'].apply(lambda x: x.decode())
+            matches['root'] = matches['pairs_key'].apply(lambda x: x.split('/')[0])
+            matches['size'] = matches['pairs_key'].apply(lambda x: x.split('/')[1])
+            matches['file'] = matches['pairs_key'].apply(lambda x: x.split('/')[2])
+
+            roots =matches.root.unique().tolist()
+            # roots = listdir(join(DATA_PATH,'EnhancedASTDiffgumInput'))
             for root in roots:
-                if root.startswith('.'):
-                    continue
-                sizes = listdir(join(DATA_PATH,'EnhancedASTDiffgumInput',root))
+                # if root.startswith('.'):
+                #     continue
+                rootMatch = matches[matches['root'] == root]
+                sizes = rootMatch['size'].unique().tolist()
                 for sf in sizes:
-                    if sf.startswith('.'):
-                        continue
-                    files = listdir(join(DATA_PATH,'EnhancedASTDiffgumInput',root,sf))
+                    # if sf.startswith('.'):
+                    #     continue
+                    match = rootMatch[rootMatch['size'] == sf]
+                    files = match.file.unique().tolist()
 
                     if len(files)>1:
                         files
@@ -174,7 +202,7 @@ if __name__ == '__main__':
 
         elif job == 'cluster':
             from abstractPatch import cluster
-            cluster(join(DATA_PATH,'gumInput'),join(DATA_PATH,'shapes'),join(DATA_PATH,'EnhancedASTDiffgumInput'),join(DATA_PATH, 'pairs'),'shapes')
+            cluster(join(DATA_PATH,'shapes'),join(DATA_PATH, 'pairs'),'shapes')
 
         elif job =='actionPairs':
             shapes = listdir(join(DATA_PATH,'shapes'))
@@ -321,6 +349,7 @@ if __name__ == '__main__':
             while not m:
                 time.sleep(10)
                 logging.info('Waiting for checkout')
+                o, e = shellGitCheckout(ping)
                 m = re.search('PONG', o)
 
             import redis
@@ -359,6 +388,7 @@ if __name__ == '__main__':
             keys = [i.decode() for i in keys[1]]
 
 
+            ast = [ "AnonymousClassDeclaration", "ArrayAccess", "ArrayCreation", "ArrayInitializer", "ArrayType", "AssertStatement", "Assignment", "Block", "BooleanLiteral", "BreakStatement", "CastExpression", "CatchClause", "CharacterLiteral", "ClassInstanceCreation", "CompilationUnit", "ConditionalExpression", "ConstructorInvocation", "ContinueStatement", "DoStatement", "EmptyStatement", "ExpressionStatement", "FieldAccess", "FieldDeclaration", "ForStatement", "IfStatement", "ImportDeclaration", "InfixExpression", "Initializer", "Javadoc", "LabeledStatement", "MethodDeclaration", "MethodInvocation", "NullLiteral", "NumberLiteral", "PackageDeclaration", "ParenthesizedExpression", "PostfixExpression", "PrefixExpression", "PrimitiveType", "QualifiedName", "ReturnStatement", "SimpleName", "SimpleType", "SingleVariableDeclaration", "StringLiteral", "SuperConstructorInvocation", "SuperFieldAccess", "SuperMethodInvocation", "SwitchCase", "SwitchStatement", "SynchronizedStatement", "ThisExpression", "ThrowStatement", "TryStatement", "TypeDeclaration", "TypeDeclarationStatement", "TypeLiteral", "VariableDeclarationExpression", "VariableDeclarationFragment", "VariableDeclarationStatement", "WhileStatement", "InstanceofExpression", "LineComment", "BlockComment", "TagElement", "TextElement", "MemberRef", "MethodRef", "MethodRefParameter", "EnhancedForStatement", "EnumDeclaration", "EnumConstantDeclaration", "TypeParameter", "ParameterizedType", "QualifiedType", "WildcardType", "NormalAnnotation", "MarkerAnnotation", "SingleMemberAnnotation", "MemberValuePair", "AnnotationTypeDeclaration", "AnnotationTypeMemberDeclaration", "Modifier", "UnionType", "Dimension", "LambdaExpression", "IntersectionType", "NameQualifiedType", "CreationReference", "ExpressionMethodReference", "SuperMethodReference", "TypeMethodReference"]
             # for key in keys:
             def simiCore(key):
                 split = key.split('_')
@@ -373,6 +403,7 @@ if __name__ == '__main__':
                 def getTokens(prefix,i):
                     redis_db1 = redis.StrictRedis(host="localhost", port=port, db=1)
 
+
                     dist2load = redis_db1.get(prefix + "-" + i);
 
                     with open(join(DATA_PATH,'actions',prefix.replace('-','/'), dist2load.decode()), 'r') as rFile:
@@ -386,6 +417,7 @@ if __name__ == '__main__':
                     lines = re.sub('@LENGTH@\s*[0-9]+\s*', ' ', lines)
                     lines = re.sub('@TO@', ' ', lines)
                     lines = re.sub('@@', ' ', lines)
+                    lines = re.sub('|'.join(ast),' ',lines)
 
 
                     preCorpusBug = preprocessingCodeElementsList(lines)
@@ -403,7 +435,7 @@ if __name__ == '__main__':
 
                 res = cosine_similarity(bugDTM, sourceDTM)
                 simiScore =res[0][0]
-                if simiScore >= 1:
+                if simiScore >= 0.8:
                     print(key,simiScore)
 
                     redis_db2 = redis.StrictRedis(host="localhost", port=port, db=2)
@@ -421,8 +453,7 @@ if __name__ == '__main__':
         elif job == 'clusterTokens':
             from abstractPatch import cluster
 
-            cluster(join(DATA_PATH, 'gumInput'), join(DATA_PATH, 'tokens'), join(DATA_PATH, 'EnhancedASTDiffgumInput'),
-                    join(DATA_PATH, 'pairsToken'),'tokens')
+            cluster(join(DATA_PATH, 'tokens'), join(DATA_PATH, 'pairsToken'),'tokens')
 
 
 

@@ -48,6 +48,9 @@ def loadPairMulti(root,clusterPath,level):
         matches['sizes']=matches['pairs_key'].apply(lambda x:x.split('_')[0].split('-')[1])
         if level == 'actions':
             matches['actions']=matches['pairs_key'].apply(lambda x:x.split('_')[0].split('-')[2])
+        if level == 'tokens':
+            matches['actions'] = matches['pairs_key'].apply(lambda x: x.split('_')[0].split('-')[2])
+            matches['tokens']=matches['pairs_key'].apply(lambda x:x.split('_')[0].split('-')[3])
 
 
         save_zipped_pickle(matches,clusterPath +"/"+root+".pickle")
@@ -86,6 +89,14 @@ def cluster(clusterPath,pairsPath, level):
                         for action in actions:
                             match = match[match['actions'] == action]
                             clusterCore(clusterPath,  level, match, pairsPath, root, s,action)
+                    elif level == 'tokens':
+                        actions = match['actions'].unique().tolist()
+                        for action in actions:
+                            match = match[match['actions'] == action]
+                            tokens = match['tokens'].unique().tolist()
+                            for token in tokens:
+                                match = match[match['tokens']==token]
+                                clusterCore(clusterPath, level, match, pairsPath, root, s, action,token)
                     else:
                         clusterCore(clusterPath,  level, match, pairsPath, root, s,'')
 
@@ -97,7 +108,7 @@ def cluster(clusterPath,pairsPath, level):
             logging.error(ex)
 
 
-def clusterCore(clusterPath, level, match, pairsPath, root, s,action):
+def clusterCore(clusterPath, level, match, pairsPath, root, s,action ,token=''):
     col_combi = match.tuples.values.tolist()
     import networkx
     g = networkx.Graph(col_combi)
@@ -112,7 +123,7 @@ def clusterCore(clusterPath, level, match, pairsPath, root, s,action):
     elif level == 'shapes':
         indexFile = join(pairsPath, root, s + '.index')
     else:
-        indexFile =''
+        indexFile =join(pairsPath, root, s,action,token+'.index')
     df = pd.read_csv(indexFile, header=None, usecols=[0, 1], index_col=[0])
     pathMapping = df.to_dict()
     for idx, clus in enumerate(cluster):
@@ -122,24 +133,31 @@ def clusterCore(clusterPath, level, match, pairsPath, root, s,action):
             split = dumpFile.split('_')
             project = split[0]
             filename = "_".join(split[1:-1])
-            # filePath = join(inputPath, project, 'DiffEntries', filename)
+            filePath = join(DATA_PATH,'gumInput', project, 'DiffEntries', filename)
 
             key = root + '/*/'+dumpFile
             cmd = 'java -jar ' + join(DATA_PATH,'Cluster2Pattern.jar') + " " + key
 
-            o,e = shellGitCheckout(cmd)
-            lines = o
 
-            # with open(filePath, 'r', encoding='utf-8') as fi:
-            #     lines = fi.read()
+
+
 
             clusterSavePath = ''
             if level == 'shapes':
                 clusterSavePath = join(clusterPath, root,s, str(idx))
+
+                o, e = shellGitCheckout(cmd)
+                lines = o
             elif level == 'actions':
                 clusterSavePath = join(clusterPath, root, s,action, str(idx))
+
+                o, e = shellGitCheckout(cmd)
+                lines = o
             else:
-                clusterSavePath = join(clusterPath, root, s,action, str(idx))
+                clusterSavePath = join(clusterPath, root, s,action,token, str(idx))
+
+                with open(filePath, 'r', encoding='utf-8') as fi:
+                    lines = fi.read()
 
             os.makedirs(clusterSavePath, exist_ok=True)
             with open(join(clusterSavePath, dumpFile), 'w', encoding='utf-8') as writeFile:
