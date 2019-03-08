@@ -333,6 +333,22 @@ def get_class_weights(y):
     majority = max(counter.values())
     return  {cls: round(float(majority)/float(count), 2) for cls, count in counter.items()}
 
+def startDB(dbDir,portInner,dbName):
+    # portInner = '6380'
+    cmd = "bash " + dbDir + "/" + "startServer.sh " + dbDir + " "+dbName+ " " + portInner;
+
+    o, e = shellGitCheckout(cmd)
+    ping = "redis-cli -p "+portInner+" ping"
+    o, e = shellGitCheckout(ping)
+    m = re.search('PONG', o)
+
+    while not m:
+        time.sleep(10)
+        logging.info('Waiting for checkout')
+        o, e = shellGitCheckout(ping)
+        m = re.search('PONG', o)
+    print(o)
+
 import threading
 class BackgroundTask(object):
     """ Threading example class

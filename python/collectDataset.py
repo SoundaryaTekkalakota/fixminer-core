@@ -11,8 +11,8 @@ if __name__ == '__main__':
 
         setEnv(args)
 
-        job = args.job
-        # job = 'importShapesPairs'
+        # job = args.job
+        job = 'cluster'
         ROOT_DIR = os.environ["ROOT_DIR"]
         REPO_PATH = os.environ["REPO_PATH"]
         CODE_PATH = os.environ["CODE_PATH"]
@@ -101,17 +101,18 @@ if __name__ == '__main__':
             dbDir = join(DATA_PATH, 'redis')
 
             portInner = '6399'
-            cmd = "bash " + dbDir + "/" + "startServer.sh " + dbDir + " ALLdumps-gumInput.rdb " + " " + portInner;
-
-            o, e = shellGitCheckout(cmd)
-            ping = "redis-cli -p 6399 ping"
-            o, e = shellGitCheckout(ping)
-            m = re.search('PONG', o)
-
-            while not m:
-                time.sleep(10)
-                logging.info('Waiting for checkout')
-                m = re.search('PONG', o)
+            startDB(dbDir, portInner, "ALLdumps-gumInput.rdb")
+            # cmd = "bash " + dbDir + "/" + "startServer.sh " + dbDir + " ALLdumps-gumInput.rdb " + " " + portInner;
+            #
+            # o, e = shellGitCheckout(cmd)
+            # ping = "redis-cli -p 6399 ping"
+            # o, e = shellGitCheckout(ping)
+            # m = re.search('PONG', o)
+            #
+            # while not m:
+            #     time.sleep(10)
+            #     logging.info('Waiting for checkout')
+            #     m = re.search('PONG', o)
             import redis
             redis_db = redis.StrictRedis(host="localhost", port=portInner, db=0)
             keys = redis_db.scan(0, match='*', count='1000000')
@@ -165,17 +166,18 @@ if __name__ == '__main__':
             dbDir = join(DATA_PATH, 'redis')
 
             portInner = '6380'
-            cmd = "bash " + dbDir + "/" + "startServer.sh " + dbDir + " clusterl0-gumInputALL.rdb " + " " + portInner;
-
-            o, e = shellGitCheckout(cmd)
-            ping = "redis-cli -p 6380 ping"
-            o, e = shellGitCheckout(ping)
-            m = re.search('PONG', o)
-
-            while not m:
-                time.sleep(10)
-                logging.info('Waiting for checkout')
-                m = re.search('PONG', o)
+            startDB(dbDir, portInner, "clusterl0-gumInputALL.rdb")
+            # cmd = "bash " + dbDir + "/" + "startServer.sh " + dbDir + " clusterl0-gumInputALL.rdb " + " " + portInner;
+            #
+            # o, e = shellGitCheckout(cmd)
+            # ping = "redis-cli -p 6380 ping"
+            # o, e = shellGitCheckout(ping)
+            # m = re.search('PONG', o)
+            #
+            # while not m:
+            #     time.sleep(10)
+            #     logging.info('Waiting for checkout')
+            #     m = re.search('PONG', o)
 
             import redis
             pairsShapes = join(DATA_PATH, 'pairs')
@@ -202,6 +204,11 @@ if __name__ == '__main__':
 
         elif job == 'cluster':
             from abstractPatch import cluster
+
+            dbDir = join(DATA_PATH, 'redis')
+            startDB(dbDir, "6399", "ALLdumps-gumInput.rdb")
+            startDB(dbDir, "6380", "clusterl0-gumInputALL.rdb")
+
             cluster(join(DATA_PATH,'shapes'),join(DATA_PATH, 'pairs'),'shapes')
 
         elif job =='actionPairs':
@@ -243,17 +250,18 @@ if __name__ == '__main__':
             dbDir = join(DATA_PATH,'redis')
 
             portInner = '6380'
-            cmd = "bash "+dbDir + "/" + "startServer.sh " +dbDir+ " clusterl1-gumInputALL.rdb "+  " " + portInner ;
-
-            o,e = shellGitCheckout(cmd)
-            ping = "redis-cli -p 6380 ping"
-            o, e = shellGitCheckout(ping)
-            m = re.search('PONG', o)
-
-            while not m:
-                time.sleep(10)
-                logging.info('Waiting for checkout')
-                m = re.search('PONG', o)
+            # cmd = "bash "+dbDir + "/" + "startServer.sh " +dbDir+ " clusterl1-gumInputALL.rdb "+  " " + portInner ;
+            #
+            # o,e = shellGitCheckout(cmd)
+            # ping = "redis-cli -p 6380 ping"
+            # o, e = shellGitCheckout(ping)
+            # m = re.search('PONG', o)
+            #
+            # while not m:
+            #     time.sleep(10)
+            #     logging.info('Waiting for checkout')
+            #     m = re.search('PONG', o)
+            startDB(dbDir,portInner,"clusterl1-gumInputALL.rdb")
 
             import redis
             #import pairs
@@ -294,6 +302,10 @@ if __name__ == '__main__':
 
         elif job == 'clusterActions':
             from abstractPatch import cluster
+
+            dbDir = join(DATA_PATH, 'redis')
+            startDB(dbDir, "6399", "ALLdumps-gumInput.rdb")
+            startDB(dbDir, "6380", "clusterl1-gumInputALL.rdb")
 
             cluster( join(DATA_PATH, 'actions'),join(DATA_PATH, 'pairsAction'),'actions')
 
@@ -339,18 +351,22 @@ if __name__ == '__main__':
             dbDir = join(DATA_PATH, 'redis')
 
             portInner = '6380'
-            cmd = "bash " + dbDir + "/" + "startServer.sh " + dbDir + " clusterl2-gumInputALL.rdb " + " " + portInner;
+            dbDir = join(DATA_PATH, 'redis')
 
-            o, e = shellGitCheckout(cmd)
-            ping = "redis-cli -p 6380 ping"
-            o, e = shellGitCheckout(ping)
-            m = re.search('PONG', o)
+            startDB(dbDir, portInner, "clusterl2-gumInputALL.rdb")
 
-            while not m:
-                time.sleep(10)
-                logging.info('Waiting for checkout')
-                o, e = shellGitCheckout(ping)
-                m = re.search('PONG', o)
+            # cmd = "bash " + dbDir + "/" + "startServer.sh " + dbDir + " clusterl2-gumInputALL.rdb " + " " + portInner;
+            #
+            # o, e = shellGitCheckout(cmd)
+            # ping = "redis-cli -p 6380 ping"
+            # o, e = shellGitCheckout(ping)
+            # m = re.search('PONG', o)
+            #
+            # while not m:
+            #     time.sleep(10)
+            #     logging.info('Waiting for checkout')
+            #     o, e = shellGitCheckout(ping)
+            #     m = re.search('PONG', o)
 
             import redis
             pairsToken = join(DATA_PATH, 'pairsToken')
@@ -382,6 +398,9 @@ if __name__ == '__main__':
             roots = listdir(join(DATA_PATH,'pairsToken'))
             import redis
             port = '6380'
+            dbDir = join(DATA_PATH, 'redis')
+            startDB(dbDir, port, "clusterl2-gumInputALL.rdb")
+
             redis_db = redis.StrictRedis(host="localhost", port=port, db=0)
 
             keys = redis_db.scan(0, match='*', count='1000000')
@@ -453,6 +472,9 @@ if __name__ == '__main__':
         elif job == 'clusterTokens':
             from abstractPatch import cluster
 
+            dbDir = join(DATA_PATH, 'redis')
+            startDB(dbDir, "6399", "ALLdumps-gumInput.rdb")
+            startDB(dbDir, "6380", "clusterl2-gumInputALL.rdb")
             cluster(join(DATA_PATH, 'tokens'), join(DATA_PATH, 'pairsToken'),'tokens')
 
 
