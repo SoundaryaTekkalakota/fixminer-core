@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:DEFAULT_TYPES.put(POM.packaging,MAVEN_PLUGIN) @TO@ MethodInvocation:DEFAULT_TYPES.put(POM.packaging,POM) @AT@ 1814 @LENGTH@ 47
+---UPD MethodInvocation@@DEFAULT_TYPES.put(POM.packaging,MAVEN_PLUGIN) @TO@ DEFAULT_TYPES.put(POM.packaging,POM) @AT@ 1814 @LENGTH@ 46
+------UPD SimpleName@@MethodName:put:[POM.packaging, MAVEN_PLUGIN] @TO@ MethodName:put:[POM.packaging, POM] @AT@ 1828 @LENGTH@ 32
+---------UPD SimpleName@@MAVEN_PLUGIN @TO@ POM @AT@ 1847 @LENGTH@ 12
+

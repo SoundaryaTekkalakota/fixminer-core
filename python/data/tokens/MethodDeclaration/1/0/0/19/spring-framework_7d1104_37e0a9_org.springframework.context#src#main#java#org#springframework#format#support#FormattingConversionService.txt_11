@@ -1,0 +1,2 @@
+MOV MethodDeclaration@@public, Set<ConvertiblePair>, MethodName:getConvertibleTypes,  @TO@ TypeDeclaration@@[private, final]AnnotationParserConverter, [ConditionalGenericConverter] @AT@ 5594 @LENGTH@ 138
+

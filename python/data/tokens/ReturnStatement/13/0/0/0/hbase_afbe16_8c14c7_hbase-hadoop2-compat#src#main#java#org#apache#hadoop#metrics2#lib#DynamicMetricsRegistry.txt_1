@@ -1,0 +1,14 @@
+UPD ReturnStatement@@MethodInvocation:newCounter(Interns.info(name,desc),iVal) @TO@ MethodInvocation:newCounter(new MetricsInfoImpl(name,desc),iVal) @AT@ 4125 @LENGTH@ 50
+---UPD MethodInvocation@@newCounter(Interns.info(name,desc),iVal) @TO@ newCounter(new MetricsInfoImpl(name,desc),iVal) @AT@ 4132 @LENGTH@ 42
+------UPD SimpleName@@MethodName:newCounter:[Interns.info(name,desc), iVal] @TO@ MethodName:newCounter:[new MetricsInfoImpl(name,desc), iVal] @AT@ 4132 @LENGTH@ 42
+---------DEL MethodInvocation@@Interns.info(name,desc) @AT@ 4143 @LENGTH@ 24
+------------DEL SimpleName@@Name:Interns @AT@ 4143 @LENGTH@ 7
+------------DEL SimpleName@@MethodName:info:[name, desc] @AT@ 4151 @LENGTH@ 16
+---------------DEL SimpleName@@name @AT@ 4156 @LENGTH@ 4
+---------------DEL SimpleName@@desc @AT@ 4162 @LENGTH@ 4
+---------INS ClassInstanceCreation@@MetricsInfoImpl[name, desc] @TO@ SimpleName@@MethodName:newCounter:[Interns.info(name,desc), iVal] @AT@ 4150 @LENGTH@ 31
+------------INS New@@new @TO@ ClassInstanceCreation@@MetricsInfoImpl[name, desc] @AT@ 4150 @LENGTH@ 3
+------------INS SimpleType@@MetricsInfoImpl @TO@ ClassInstanceCreation@@MetricsInfoImpl[name, desc] @AT@ 4154 @LENGTH@ 15
+------------INS SimpleName@@name @TO@ ClassInstanceCreation@@MetricsInfoImpl[name, desc] @AT@ 4170 @LENGTH@ 4
+------------INS SimpleName@@desc @TO@ ClassInstanceCreation@@MetricsInfoImpl[name, desc] @AT@ 4176 @LENGTH@ 4
+

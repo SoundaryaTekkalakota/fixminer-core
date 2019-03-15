@@ -1,0 +1,12 @@
+INS FieldDeclaration@@private, static, final, Logger, [LOGGER=LoggerFactory.getLogger(MongoPersistentEntityIndexResolver.class)] @TO@ TypeDeclaration@@[public]MongoPersistentEntityIndexResolver, [IndexResolver] @AT@ 2194 @LENGTH@ 103
+---INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, Logger, [LOGGER=LoggerFactory.getLogger(MongoPersistentEntityIndexResolver.class)] @AT@ 2194 @LENGTH@ 7
+---INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, Logger, [LOGGER=LoggerFactory.getLogger(MongoPersistentEntityIndexResolver.class)] @AT@ 2202 @LENGTH@ 6
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, Logger, [LOGGER=LoggerFactory.getLogger(MongoPersistentEntityIndexResolver.class)] @AT@ 2209 @LENGTH@ 5
+---INS SimpleType@@Logger @TO@ FieldDeclaration@@private, static, final, Logger, [LOGGER=LoggerFactory.getLogger(MongoPersistentEntityIndexResolver.class)] @AT@ 2215 @LENGTH@ 6
+---INS VariableDeclarationFragment@@LOGGER=LoggerFactory.getLogger(MongoPersistentEntityIndexResolver.class) @TO@ FieldDeclaration@@private, static, final, Logger, [LOGGER=LoggerFactory.getLogger(MongoPersistentEntityIndexResolver.class)] @AT@ 2222 @LENGTH@ 74
+------INS SimpleName@@LOGGER @TO@ VariableDeclarationFragment@@LOGGER=LoggerFactory.getLogger(MongoPersistentEntityIndexResolver.class) @AT@ 2222 @LENGTH@ 6
+------INS MethodInvocation@@LoggerFactory.getLogger(MongoPersistentEntityIndexResolver.class) @TO@ VariableDeclarationFragment@@LOGGER=LoggerFactory.getLogger(MongoPersistentEntityIndexResolver.class) @AT@ 2231 @LENGTH@ 65
+---------INS SimpleName@@Name:LoggerFactory @TO@ MethodInvocation@@LoggerFactory.getLogger(MongoPersistentEntityIndexResolver.class) @AT@ 2231 @LENGTH@ 13
+---------INS SimpleName@@MethodName:getLogger:[MongoPersistentEntityIndexResolver.class] @TO@ MethodInvocation@@LoggerFactory.getLogger(MongoPersistentEntityIndexResolver.class) @AT@ 2245 @LENGTH@ 51
+------------INS TypeLiteral@@MongoPersistentEntityIndexResolver.class @TO@ SimpleName@@MethodName:getLogger:[MongoPersistentEntityIndexResolver.class] @AT@ 2255 @LENGTH@ 40
+

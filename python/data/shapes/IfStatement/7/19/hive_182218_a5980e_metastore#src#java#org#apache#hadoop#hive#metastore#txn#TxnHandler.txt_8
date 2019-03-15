@@ -1,0 +1,7 @@
+IfStatement
+---SimpleName
+---ExpressionStatement
+------Assignment
+---------SimpleName
+---------Operator
+---------BooleanLiteral

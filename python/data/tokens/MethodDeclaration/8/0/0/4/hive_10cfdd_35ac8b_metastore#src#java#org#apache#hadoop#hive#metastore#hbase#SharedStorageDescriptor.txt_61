@@ -1,0 +1,9 @@
+DEL MethodDeclaration@@public, boolean, MethodName:isStoredAsSubDirectories,  @AT@ 7415 @LENGTH@ 93
+---DEL Modifier@@public @AT@ 7415 @LENGTH@ 6
+---DEL PrimitiveType@@boolean @AT@ 7422 @LENGTH@ 7
+---DEL SimpleName@@MethodName:isStoredAsSubDirectories @AT@ 7430 @LENGTH@ 24
+---DEL ReturnStatement@@MethodInvocation:shared.isStoredAsSubDirectories() @AT@ 7463 @LENGTH@ 41
+------DEL MethodInvocation@@shared.isStoredAsSubDirectories() @AT@ 7470 @LENGTH@ 33
+---------DEL SimpleName@@Name:shared @AT@ 7470 @LENGTH@ 6
+---------DEL SimpleName@@MethodName:isStoredAsSubDirectories:[] @AT@ 7477 @LENGTH@ 26
+

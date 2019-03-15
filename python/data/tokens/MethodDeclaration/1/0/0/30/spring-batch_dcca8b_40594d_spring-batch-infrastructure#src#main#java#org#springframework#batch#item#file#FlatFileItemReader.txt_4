@@ -1,0 +1,2 @@
+MOV MethodDeclaration@@public, void, MethodName:open, ExecutionContext executionContext, ItemStreamException,  @TO@ TypeDeclaration@@[public]FlatFileItemReader, ExecutionContextUserSupport[ResourceAwareItemReaderItemStream, InitializingBean] @AT@ 4094 @LENGTH@ 1365
+

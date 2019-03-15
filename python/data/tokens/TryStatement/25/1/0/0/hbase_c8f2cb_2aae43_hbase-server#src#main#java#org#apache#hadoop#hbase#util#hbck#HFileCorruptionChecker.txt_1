@@ -1,0 +1,26 @@
+INS TryStatement@@try:[] @TO@ MethodDeclaration@@protected, void, MethodName:checkColFamDir, Path cfDir, IOException,  @AT@ 5783 @LENGTH@ 401
+---INS ExpressionStatement@@Assignment:hfs=fs.listStatus(cfDir,new HFileFilter(fs)) @TO@ TryStatement@@try:[] @AT@ 5795 @LENGTH@ 48
+------INS Assignment@@hfs=fs.listStatus(cfDir,new HFileFilter(fs)) @TO@ ExpressionStatement@@Assignment:hfs=fs.listStatus(cfDir,new HFileFilter(fs)) @AT@ 5795 @LENGTH@ 47
+---------MOV MethodInvocation@@fs.listStatus(cfDir,new HFileFilter(fs)) @TO@ Assignment@@hfs=fs.listStatus(cfDir,new HFileFilter(fs)) @AT@ 5773 @LENGTH@ 41
+---------INS SimpleName@@hfs @TO@ Assignment@@hfs=fs.listStatus(cfDir,new HFileFilter(fs)) @AT@ 5795 @LENGTH@ 3
+---------INS Operator@@= @TO@ Assignment@@hfs=fs.listStatus(cfDir,new HFileFilter(fs)) @AT@ 5798 @LENGTH@ 1
+---INS CatchClause@@FileNotFoundException fnfe @TO@ TryStatement@@try:[] @AT@ 5881 @LENGTH@ 303
+------INS SingleVariableDeclaration@@FileNotFoundException fnfe @TO@ CatchClause@@FileNotFoundException fnfe @AT@ 5888 @LENGTH@ 26
+---------INS SimpleType@@FileNotFoundException @TO@ SingleVariableDeclaration@@FileNotFoundException fnfe @AT@ 5888 @LENGTH@ 21
+---------INS SimpleName@@fnfe @TO@ SingleVariableDeclaration@@FileNotFoundException fnfe @AT@ 5910 @LENGTH@ 4
+------INS ExpressionStatement@@MethodInvocation:LOG.warn("Colfam Directory " + cfDir + " does not exist.  Likely due to concurrent split/compaction. Skipping.") @TO@ CatchClause@@FileNotFoundException fnfe @AT@ 6015 @LENGTH@ 123
+---------INS MethodInvocation@@LOG.warn("Colfam Directory " + cfDir + " does not exist.  Likely due to concurrent split/compaction. Skipping.") @TO@ ExpressionStatement@@MethodInvocation:LOG.warn("Colfam Directory " + cfDir + " does not exist.  Likely due to concurrent split/compaction. Skipping.") @AT@ 6015 @LENGTH@ 122
+------------INS SimpleName@@Name:LOG @TO@ MethodInvocation@@LOG.warn("Colfam Directory " + cfDir + " does not exist.  Likely due to concurrent split/compaction. Skipping.") @AT@ 6015 @LENGTH@ 3
+------------INS SimpleName@@MethodName:warn:["Colfam Directory " + cfDir + " does not exist.  Likely due to concurrent split/compaction. Skipping."] @TO@ MethodInvocation@@LOG.warn("Colfam Directory " + cfDir + " does not exist.  Likely due to concurrent split/compaction. Skipping.") @AT@ 6019 @LENGTH@ 118
+---------------INS InfixExpression@@"Colfam Directory " + cfDir + " does not exist.  Likely due to concurrent split/compaction. Skipping." @TO@ SimpleName@@MethodName:warn:["Colfam Directory " + cfDir + " does not exist.  Likely due to concurrent split/compaction. Skipping."] @AT@ 6024 @LENGTH@ 112
+------------------INS StringLiteral@@"Colfam Directory " @TO@ InfixExpression@@"Colfam Directory " + cfDir + " does not exist.  Likely due to concurrent split/compaction. Skipping." @AT@ 6024 @LENGTH@ 19
+------------------INS Operator@@+ @TO@ InfixExpression@@"Colfam Directory " + cfDir + " does not exist.  Likely due to concurrent split/compaction. Skipping." @AT@ 6043 @LENGTH@ 1
+------------------INS SimpleName@@cfDir @TO@ InfixExpression@@"Colfam Directory " + cfDir + " does not exist.  Likely due to concurrent split/compaction. Skipping." @AT@ 6046 @LENGTH@ 5
+------------------INS StringLiteral@@" does not exist.  Likely due to concurrent split/compaction. Skipping." @TO@ InfixExpression@@"Colfam Directory " + cfDir + " does not exist.  Likely due to concurrent split/compaction. Skipping." @AT@ 6064 @LENGTH@ 72
+------INS ExpressionStatement@@MethodInvocation:missing.add(cfDir) @TO@ CatchClause@@FileNotFoundException fnfe @AT@ 6145 @LENGTH@ 19
+---------INS MethodInvocation@@missing.add(cfDir) @TO@ ExpressionStatement@@MethodInvocation:missing.add(cfDir) @AT@ 6145 @LENGTH@ 18
+------------INS SimpleName@@Name:missing @TO@ MethodInvocation@@missing.add(cfDir) @AT@ 6145 @LENGTH@ 7
+------------INS SimpleName@@MethodName:add:[cfDir] @TO@ MethodInvocation@@missing.add(cfDir) @AT@ 6153 @LENGTH@ 10
+---------------INS SimpleName@@cfDir @TO@ SimpleName@@MethodName:add:[cfDir] @AT@ 6157 @LENGTH@ 5
+------INS ReturnStatement@@ @TO@ CatchClause@@FileNotFoundException fnfe @AT@ 6171 @LENGTH@ 7
+

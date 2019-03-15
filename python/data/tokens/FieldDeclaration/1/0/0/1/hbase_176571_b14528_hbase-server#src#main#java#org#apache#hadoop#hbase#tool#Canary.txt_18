@@ -1,0 +1,2 @@
+MOV FieldDeclaration@@private, Map<String,String>, [readFailures=new ConcurrentHashMap<>()] @TO@ TypeDeclaration@@[public, static]StdOutSink, [Sink] @AT@ 6724 @LENGTH@ 69
+

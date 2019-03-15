@@ -1,0 +1,2 @@
+DEL VariableDeclarationStatement@@List<TablePermission> userPerms=getUserPermissions(user.getShortName(),table); @AT@ 12449 @LENGTH@ 90
+

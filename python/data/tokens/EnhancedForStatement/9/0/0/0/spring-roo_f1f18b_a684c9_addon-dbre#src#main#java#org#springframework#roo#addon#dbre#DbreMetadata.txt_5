@@ -1,0 +1,10 @@
+INS EnhancedForStatement@@final FieldMetadataBuilder fieldBuilder, MethodInvocation:uniqueInverseSideFields.values() @TO@ MethodDeclaration@@private, void, MethodName:addManyToManyFields, final Table table,  @AT@ 13730 @LENGTH@ 149
+---MOV ExpressionStatement@@MethodInvocation:addToBuilder(fieldBuilder) @TO@ EnhancedForStatement@@final FieldMetadataBuilder fieldBuilder, MethodInvocation:uniqueInverseSideFields.values() @AT@ 13073 @LENGTH@ 27
+---INS SingleVariableDeclaration@@final FieldMetadataBuilder fieldBuilder @TO@ EnhancedForStatement@@final FieldMetadataBuilder fieldBuilder, MethodInvocation:uniqueInverseSideFields.values() @AT@ 13735 @LENGTH@ 39
+------INS Modifier@@final @TO@ SingleVariableDeclaration@@final FieldMetadataBuilder fieldBuilder @AT@ 13735 @LENGTH@ 5
+------INS SimpleType@@FieldMetadataBuilder @TO@ SingleVariableDeclaration@@final FieldMetadataBuilder fieldBuilder @AT@ 13741 @LENGTH@ 20
+------INS SimpleName@@fieldBuilder @TO@ SingleVariableDeclaration@@final FieldMetadataBuilder fieldBuilder @AT@ 13762 @LENGTH@ 12
+---INS MethodInvocation@@uniqueInverseSideFields.values() @TO@ EnhancedForStatement@@final FieldMetadataBuilder fieldBuilder, MethodInvocation:uniqueInverseSideFields.values() @AT@ 13777 @LENGTH@ 49
+------INS SimpleName@@Name:uniqueInverseSideFields @TO@ MethodInvocation@@uniqueInverseSideFields.values() @AT@ 13777 @LENGTH@ 23
+------INS SimpleName@@MethodName:values:[] @TO@ MethodInvocation@@uniqueInverseSideFields.values() @AT@ 13818 @LENGTH@ 8
+

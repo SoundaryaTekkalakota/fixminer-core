@@ -1,0 +1,14 @@
+ UPD ReturnStatement
+--- DEL ClassInstanceCreation
+------ DEL New
+------ DEL ParameterizedType
+--------- DEL SimpleType
+--------- DEL SimpleType
+------ DEL SimpleName
+------ DEL QualifiedName
+--- INS MethodInvocation
+------ INS SimpleName
+--------- INS QualifiedName
+------------ MOV SimpleName
+------------ MOV SimpleName
+--------- INS SimpleName

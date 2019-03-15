@@ -1,0 +1,5 @@
+INS SwitchCase@@QualifiedName:HiveParser.TOK_INTERVAL_MONTH_LITERAL @TO@ SwitchStatement@@MethodInvocation:condn.getToken().getType() @AT@ 114773 @LENGTH@ 43
+---INS QualifiedName@@HiveParser.TOK_INTERVAL_MONTH_LITERAL @TO@ SwitchCase@@QualifiedName:HiveParser.TOK_INTERVAL_MONTH_LITERAL @AT@ 114778 @LENGTH@ 37
+------INS SimpleName@@HiveParser @TO@ QualifiedName@@HiveParser.TOK_INTERVAL_MONTH_LITERAL @AT@ 114778 @LENGTH@ 10
+------INS SimpleName@@TOK_INTERVAL_MONTH_LITERAL @TO@ QualifiedName@@HiveParser.TOK_INTERVAL_MONTH_LITERAL @AT@ 114789 @LENGTH@ 26
+

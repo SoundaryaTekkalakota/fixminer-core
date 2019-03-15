@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, String, [simplePrefix] @TO@ TypeDeclaration@@[public]PropertyPlaceholderHelper,  @AT@ 1766 @LENGTH@ 34
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, String, [simplePrefix] @AT@ 1766 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, String, [simplePrefix] @AT@ 1774 @LENGTH@ 5
+---INS SimpleType@@String @TO@ FieldDeclaration@@private, final, String, [simplePrefix] @AT@ 1780 @LENGTH@ 6
+---INS VariableDeclarationFragment@@simplePrefix @TO@ FieldDeclaration@@private, final, String, [simplePrefix] @AT@ 1787 @LENGTH@ 12
+------INS SimpleName@@simplePrefix @TO@ VariableDeclarationFragment@@simplePrefix @AT@ 1787 @LENGTH@ 12
+

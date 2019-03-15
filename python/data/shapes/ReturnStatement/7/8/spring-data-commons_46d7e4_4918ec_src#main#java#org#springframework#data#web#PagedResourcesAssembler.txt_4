@@ -1,0 +1,7 @@
+ReturnStatement
+---MethodInvocation
+------SimpleName
+---------NullLiteral
+---------MethodInvocation
+------------SimpleName
+------------SimpleName

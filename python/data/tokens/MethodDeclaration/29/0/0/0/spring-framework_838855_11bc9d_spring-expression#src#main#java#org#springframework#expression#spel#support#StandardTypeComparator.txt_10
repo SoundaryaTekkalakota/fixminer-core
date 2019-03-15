@@ -1,0 +1,30 @@
+INS MethodDeclaration@@private, static, int, MethodName:compare, long x, long y,  @TO@ TypeDeclaration@@[public]StandardTypeComparator, [TypeComparator] @AT@ 3471 @LENGTH@ 88
+---INS Modifier@@private @TO@ MethodDeclaration@@private, static, int, MethodName:compare, long x, long y,  @AT@ 3471 @LENGTH@ 7
+---INS Modifier@@static @TO@ MethodDeclaration@@private, static, int, MethodName:compare, long x, long y,  @AT@ 3479 @LENGTH@ 6
+---INS PrimitiveType@@int @TO@ MethodDeclaration@@private, static, int, MethodName:compare, long x, long y,  @AT@ 3486 @LENGTH@ 3
+---INS SimpleName@@MethodName:compare @TO@ MethodDeclaration@@private, static, int, MethodName:compare, long x, long y,  @AT@ 3490 @LENGTH@ 7
+---INS SingleVariableDeclaration@@long x @TO@ MethodDeclaration@@private, static, int, MethodName:compare, long x, long y,  @AT@ 3498 @LENGTH@ 6
+------INS PrimitiveType@@long @TO@ SingleVariableDeclaration@@long x @AT@ 3498 @LENGTH@ 4
+------INS SimpleName@@x @TO@ SingleVariableDeclaration@@long x @AT@ 3503 @LENGTH@ 1
+---INS SingleVariableDeclaration@@long y @TO@ MethodDeclaration@@private, static, int, MethodName:compare, long x, long y,  @AT@ 3506 @LENGTH@ 6
+------INS PrimitiveType@@long @TO@ SingleVariableDeclaration@@long y @AT@ 3506 @LENGTH@ 4
+------INS SimpleName@@y @TO@ SingleVariableDeclaration@@long y @AT@ 3511 @LENGTH@ 1
+---INS ReturnStatement@@ParenthesizedExpression:(x < y ? -1 : (x > y ? 1 : 0)) @TO@ MethodDeclaration@@private, static, int, MethodName:compare, long x, long y,  @AT@ 3518 @LENGTH@ 38
+------INS ParenthesizedExpression@@(x < y ? -1 : (x > y ? 1 : 0)) @TO@ ReturnStatement@@ParenthesizedExpression:(x < y ? -1 : (x > y ? 1 : 0)) @AT@ 3525 @LENGTH@ 30
+---------INS ConditionalExpression@@x < y ? -1 : (x > y ? 1 : 0) @TO@ ParenthesizedExpression@@(x < y ? -1 : (x > y ? 1 : 0)) @AT@ 3526 @LENGTH@ 28
+------------INS InfixExpression@@x < y @TO@ ConditionalExpression@@x < y ? -1 : (x > y ? 1 : 0) @AT@ 3526 @LENGTH@ 5
+---------------INS SimpleName@@x @TO@ InfixExpression@@x < y @AT@ 3526 @LENGTH@ 1
+---------------INS Operator@@< @TO@ InfixExpression@@x < y @AT@ 3527 @LENGTH@ 1
+---------------INS SimpleName@@y @TO@ InfixExpression@@x < y @AT@ 3530 @LENGTH@ 1
+------------INS PrefixExpression@@-1 @TO@ ConditionalExpression@@x < y ? -1 : (x > y ? 1 : 0) @AT@ 3534 @LENGTH@ 2
+---------------INS Operator@@- @TO@ PrefixExpression@@-1 @AT@ 3534 @LENGTH@ 1
+---------------INS NumberLiteral@@1 @TO@ PrefixExpression@@-1 @AT@ 3535 @LENGTH@ 1
+------------INS ParenthesizedExpression@@(x > y ? 1 : 0) @TO@ ConditionalExpression@@x < y ? -1 : (x > y ? 1 : 0) @AT@ 3539 @LENGTH@ 15
+---------------INS ConditionalExpression@@x > y ? 1 : 0 @TO@ ParenthesizedExpression@@(x > y ? 1 : 0) @AT@ 3540 @LENGTH@ 13
+------------------INS InfixExpression@@x > y @TO@ ConditionalExpression@@x > y ? 1 : 0 @AT@ 3540 @LENGTH@ 5
+---------------------INS SimpleName@@x @TO@ InfixExpression@@x > y @AT@ 3540 @LENGTH@ 1
+---------------------INS Operator@@> @TO@ InfixExpression@@x > y @AT@ 3541 @LENGTH@ 1
+---------------------INS SimpleName@@y @TO@ InfixExpression@@x > y @AT@ 3544 @LENGTH@ 1
+------------------INS NumberLiteral@@1 @TO@ ConditionalExpression@@x > y ? 1 : 0 @AT@ 3548 @LENGTH@ 1
+------------------INS NumberLiteral@@0 @TO@ ConditionalExpression@@x > y ? 1 : 0 @AT@ 3552 @LENGTH@ 1
+

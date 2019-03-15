@@ -1,0 +1,24 @@
+INS IfStatement@@PrefixExpression:!perfLogger.startTimeHasMethod(PerfLogger.TEZ_RUN_VERTEX + s) @TO@ IfStatement@@InfixExpression:complete < total && (complete > 0 || running > 0 || failed > 0) @AT@ 28850 @LENGTH@ 160
+---INS PrefixExpression@@!perfLogger.startTimeHasMethod(PerfLogger.TEZ_RUN_VERTEX + s) @TO@ IfStatement@@PrefixExpression:!perfLogger.startTimeHasMethod(PerfLogger.TEZ_RUN_VERTEX + s) @AT@ 28854 @LENGTH@ 61
+------INS Operator@@! @TO@ PrefixExpression@@!perfLogger.startTimeHasMethod(PerfLogger.TEZ_RUN_VERTEX + s) @AT@ 28854 @LENGTH@ 1
+------INS MethodInvocation@@perfLogger.startTimeHasMethod(PerfLogger.TEZ_RUN_VERTEX + s) @TO@ PrefixExpression@@!perfLogger.startTimeHasMethod(PerfLogger.TEZ_RUN_VERTEX + s) @AT@ 28855 @LENGTH@ 60
+---------INS SimpleName@@Name:perfLogger @TO@ MethodInvocation@@perfLogger.startTimeHasMethod(PerfLogger.TEZ_RUN_VERTEX + s) @AT@ 28855 @LENGTH@ 10
+---------INS SimpleName@@MethodName:startTimeHasMethod:[PerfLogger.TEZ_RUN_VERTEX + s] @TO@ MethodInvocation@@perfLogger.startTimeHasMethod(PerfLogger.TEZ_RUN_VERTEX + s) @AT@ 28866 @LENGTH@ 49
+------------INS InfixExpression@@PerfLogger.TEZ_RUN_VERTEX + s @TO@ SimpleName@@MethodName:startTimeHasMethod:[PerfLogger.TEZ_RUN_VERTEX + s] @AT@ 28885 @LENGTH@ 29
+---------------INS QualifiedName@@PerfLogger.TEZ_RUN_VERTEX @TO@ InfixExpression@@PerfLogger.TEZ_RUN_VERTEX + s @AT@ 28885 @LENGTH@ 25
+------------------INS SimpleName@@PerfLogger @TO@ QualifiedName@@PerfLogger.TEZ_RUN_VERTEX @AT@ 28885 @LENGTH@ 10
+------------------INS SimpleName@@TEZ_RUN_VERTEX @TO@ QualifiedName@@PerfLogger.TEZ_RUN_VERTEX @AT@ 28896 @LENGTH@ 14
+---------------INS Operator@@+ @TO@ InfixExpression@@PerfLogger.TEZ_RUN_VERTEX + s @AT@ 28910 @LENGTH@ 1
+---------------INS SimpleName@@s @TO@ InfixExpression@@PerfLogger.TEZ_RUN_VERTEX + s @AT@ 28913 @LENGTH@ 1
+---INS ExpressionStatement@@MethodInvocation:perfLogger.PerfLogBegin(CLASS_NAME,PerfLogger.TEZ_RUN_VERTEX + s) @TO@ IfStatement@@PrefixExpression:!perfLogger.startTimeHasMethod(PerfLogger.TEZ_RUN_VERTEX + s) @AT@ 28931 @LENGTH@ 67
+------INS MethodInvocation@@perfLogger.PerfLogBegin(CLASS_NAME,PerfLogger.TEZ_RUN_VERTEX + s) @TO@ ExpressionStatement@@MethodInvocation:perfLogger.PerfLogBegin(CLASS_NAME,PerfLogger.TEZ_RUN_VERTEX + s) @AT@ 28931 @LENGTH@ 66
+---------INS SimpleName@@Name:perfLogger @TO@ MethodInvocation@@perfLogger.PerfLogBegin(CLASS_NAME,PerfLogger.TEZ_RUN_VERTEX + s) @AT@ 28931 @LENGTH@ 10
+---------INS SimpleName@@MethodName:PerfLogBegin:[CLASS_NAME, PerfLogger.TEZ_RUN_VERTEX + s] @TO@ MethodInvocation@@perfLogger.PerfLogBegin(CLASS_NAME,PerfLogger.TEZ_RUN_VERTEX + s) @AT@ 28942 @LENGTH@ 55
+------------INS SimpleName@@CLASS_NAME @TO@ SimpleName@@MethodName:PerfLogBegin:[CLASS_NAME, PerfLogger.TEZ_RUN_VERTEX + s] @AT@ 28955 @LENGTH@ 10
+------------INS InfixExpression@@PerfLogger.TEZ_RUN_VERTEX + s @TO@ SimpleName@@MethodName:PerfLogBegin:[CLASS_NAME, PerfLogger.TEZ_RUN_VERTEX + s] @AT@ 28967 @LENGTH@ 29
+---------------INS QualifiedName@@PerfLogger.TEZ_RUN_VERTEX @TO@ InfixExpression@@PerfLogger.TEZ_RUN_VERTEX + s @AT@ 28967 @LENGTH@ 25
+------------------INS SimpleName@@PerfLogger @TO@ QualifiedName@@PerfLogger.TEZ_RUN_VERTEX @AT@ 28967 @LENGTH@ 10
+------------------INS SimpleName@@TEZ_RUN_VERTEX @TO@ QualifiedName@@PerfLogger.TEZ_RUN_VERTEX @AT@ 28978 @LENGTH@ 14
+---------------INS Operator@@+ @TO@ InfixExpression@@PerfLogger.TEZ_RUN_VERTEX + s @AT@ 28992 @LENGTH@ 1
+---------------INS SimpleName@@s @TO@ InfixExpression@@PerfLogger.TEZ_RUN_VERTEX + s @AT@ 28995 @LENGTH@ 1
+

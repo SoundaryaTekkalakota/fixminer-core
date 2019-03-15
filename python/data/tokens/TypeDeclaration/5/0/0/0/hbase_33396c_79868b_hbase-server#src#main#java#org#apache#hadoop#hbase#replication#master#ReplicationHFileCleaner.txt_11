@@ -1,0 +1,6 @@
+INS TypeDeclaration@@[private, static]WarnOnlyAbortable, [Abortable] @TO@ TypeDeclaration@@[@InterfaceAudience.LimitedPrivate(HBaseInterfaceAudience.CONFIG), public]ReplicationHFileCleaner, BaseHFileCleanerDelegate[Abortable] @AT@ 7477 @LENGTH@ 357
+---INS Modifier@@private @TO@ TypeDeclaration@@[private, static]WarnOnlyAbortable, [Abortable] @AT@ 7477 @LENGTH@ 7
+---INS Modifier@@static @TO@ TypeDeclaration@@[private, static]WarnOnlyAbortable, [Abortable] @AT@ 7485 @LENGTH@ 6
+---INS SimpleName@@ClassName:WarnOnlyAbortable @TO@ TypeDeclaration@@[private, static]WarnOnlyAbortable, [Abortable] @AT@ 7498 @LENGTH@ 17
+---INS SimpleType@@Abortable @TO@ TypeDeclaration@@[private, static]WarnOnlyAbortable, [Abortable] @AT@ 7527 @LENGTH@ 9
+

@@ -1,0 +1,5 @@
+UPD ReturnStatement@@MethodInvocation:getOutputFactory().createXMLStreamWriter(IOHelper.buffered(writer)) @TO@ MethodInvocation:factory.createXMLStreamWriter(IOHelper.buffered(writer)) @AT@ 2529 @LENGTH@ 75
+---UPD MethodInvocation@@getOutputFactory().createXMLStreamWriter(IOHelper.buffered(writer)) @TO@ factory.createXMLStreamWriter(IOHelper.buffered(writer)) @AT@ 2536 @LENGTH@ 67
+------DEL MethodInvocation@@MethodName:getOutputFactory:[] @AT@ 2536 @LENGTH@ 18
+------INS SimpleName@@Name:factory @TO@ MethodInvocation@@getOutputFactory().createXMLStreamWriter(IOHelper.buffered(writer)) @AT@ 4772 @LENGTH@ 7
+

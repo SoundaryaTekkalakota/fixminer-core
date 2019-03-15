@@ -1,0 +1,18 @@
+UPD IfStatement@@InfixExpression:response == null || HttpStatus.valueOf(response.getStatus()).is2xxSuccessful() @TO@ MethodInvocation:isCompatibleWithConditionalRequests(response) @AT@ 6125 @LENGTH@ 438
+---DEL InfixExpression@@response == null || HttpStatus.valueOf(response.getStatus()).is2xxSuccessful() @AT@ 6129 @LENGTH@ 78
+------DEL InfixExpression@@response == null @AT@ 6129 @LENGTH@ 16
+---------DEL SimpleName@@response @AT@ 6129 @LENGTH@ 8
+---------DEL Operator@@== @AT@ 6137 @LENGTH@ 2
+---------DEL NullLiteral@@null @AT@ 6141 @LENGTH@ 4
+------DEL Operator@@|| @AT@ 6145 @LENGTH@ 2
+------DEL MethodInvocation@@HttpStatus.valueOf(response.getStatus()).is2xxSuccessful() @AT@ 6149 @LENGTH@ 58
+---------DEL SimpleName@@Name:HttpStatus @AT@ 6149 @LENGTH@ 10
+---------DEL MethodInvocation@@MethodName:valueOf:[response.getStatus()] @AT@ 6149 @LENGTH@ 40
+------------DEL MethodInvocation@@response.getStatus() @AT@ 6168 @LENGTH@ 20
+---------------DEL SimpleName@@Name:response @AT@ 6168 @LENGTH@ 8
+---------------DEL SimpleName@@MethodName:getStatus:[] @AT@ 6177 @LENGTH@ 11
+---------DEL SimpleName@@MethodName:is2xxSuccessful:[] @AT@ 6190 @LENGTH@ 17
+---INS MethodInvocation@@isCompatibleWithConditionalRequests(response) @TO@ IfStatement@@InfixExpression:response == null || HttpStatus.valueOf(response.getStatus()).is2xxSuccessful() @AT@ 6548 @LENGTH@ 45
+------INS SimpleName@@MethodName:isCompatibleWithConditionalRequests:[response] @TO@ MethodInvocation@@isCompatibleWithConditionalRequests(response) @AT@ 6548 @LENGTH@ 45
+---------INS SimpleName@@response @TO@ SimpleName@@MethodName:isCompatibleWithConditionalRequests:[response] @AT@ 6584 @LENGTH@ 8
+

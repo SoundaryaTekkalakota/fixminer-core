@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:processComponentBinding(facesContext,view.getViewRoot()) @TO@ MethodInvocation:processTree(facesContext,view.getViewRoot()) @AT@ 4107 @LENGTH@ 58
+---UPD MethodInvocation@@processComponentBinding(facesContext,view.getViewRoot()) @TO@ processTree(facesContext,view.getViewRoot()) @AT@ 4107 @LENGTH@ 57
+------UPD SimpleName@@MethodName:processComponentBinding:[facesContext, view.getViewRoot()] @TO@ MethodName:processTree:[facesContext, view.getViewRoot()] @AT@ 4107 @LENGTH@ 57
+

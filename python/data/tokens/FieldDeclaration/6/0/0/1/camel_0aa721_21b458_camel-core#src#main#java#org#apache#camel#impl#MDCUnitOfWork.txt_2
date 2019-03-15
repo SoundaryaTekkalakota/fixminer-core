@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, String, [originalCorrelationId] @TO@ TypeDeclaration@@[public]MDCUnitOfWork, DefaultUnitOfWork @AT@ 1646 @LENGTH@ 43
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, String, [originalCorrelationId] @AT@ 1646 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, String, [originalCorrelationId] @AT@ 1654 @LENGTH@ 5
+---INS SimpleType@@String @TO@ FieldDeclaration@@private, final, String, [originalCorrelationId] @AT@ 1660 @LENGTH@ 6
+---INS VariableDeclarationFragment@@originalCorrelationId @TO@ FieldDeclaration@@private, final, String, [originalCorrelationId] @AT@ 1667 @LENGTH@ 21
+------INS SimpleName@@originalCorrelationId @TO@ VariableDeclarationFragment@@originalCorrelationId @AT@ 1667 @LENGTH@ 21
+

@@ -1,0 +1,11 @@
+INS FieldDeclaration@@private, final, static, Object, [lock=new Object()] @TO@ TypeDeclaration@@[public, abstract]AbstractDataStreamWriter, OutputStoreObjectSupport @AT@ 2618 @LENGTH@ 48
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, static, Object, [lock=new Object()] @AT@ 2618 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, static, Object, [lock=new Object()] @AT@ 2626 @LENGTH@ 5
+---INS Modifier@@static @TO@ FieldDeclaration@@private, final, static, Object, [lock=new Object()] @AT@ 2632 @LENGTH@ 6
+---INS SimpleType@@Object @TO@ FieldDeclaration@@private, final, static, Object, [lock=new Object()] @AT@ 2639 @LENGTH@ 6
+---INS VariableDeclarationFragment@@lock=new Object() @TO@ FieldDeclaration@@private, final, static, Object, [lock=new Object()] @AT@ 2646 @LENGTH@ 19
+------INS SimpleName@@lock @TO@ VariableDeclarationFragment@@lock=new Object() @AT@ 2646 @LENGTH@ 4
+------INS ClassInstanceCreation@@Object[] @TO@ VariableDeclarationFragment@@lock=new Object() @AT@ 2653 @LENGTH@ 12
+---------INS New@@new @TO@ ClassInstanceCreation@@Object[] @AT@ 2653 @LENGTH@ 3
+---------INS SimpleType@@Object @TO@ ClassInstanceCreation@@Object[] @AT@ 2657 @LENGTH@ 6
+

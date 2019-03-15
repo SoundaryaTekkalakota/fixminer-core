@@ -1,0 +1,15 @@
+ INS TryStatement
+--- INS VariableDeclarationExpression
+------ INS SimpleType
+------ INS VariableDeclarationFragment
+--------- INS SimpleName
+--------- INS ClassInstanceCreation
+------------ MOV New
+------------ MOV SimpleType
+------------ MOV SimpleName
+--- INS ExpressionStatement
+------ INS MethodInvocation
+--------- INS SimpleName
+--------- INS SimpleName
+------------ MOV MethodInvocation
+------------ INS SimpleName

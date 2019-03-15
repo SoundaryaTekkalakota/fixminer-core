@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, MongoPersistentProperty, [property] @TO@ TypeDeclaration@@[private, static]Path,  @AT@ 14182 @LENGTH@ 47
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, MongoPersistentProperty, [property] @AT@ 14182 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, MongoPersistentProperty, [property] @AT@ 14190 @LENGTH@ 5
+---INS SimpleType@@MongoPersistentProperty @TO@ FieldDeclaration@@private, final, MongoPersistentProperty, [property] @AT@ 14196 @LENGTH@ 23
+---INS VariableDeclarationFragment@@property @TO@ FieldDeclaration@@private, final, MongoPersistentProperty, [property] @AT@ 14220 @LENGTH@ 8
+------INS SimpleName@@property @TO@ VariableDeclarationFragment@@property @AT@ 14220 @LENGTH@ 8
+

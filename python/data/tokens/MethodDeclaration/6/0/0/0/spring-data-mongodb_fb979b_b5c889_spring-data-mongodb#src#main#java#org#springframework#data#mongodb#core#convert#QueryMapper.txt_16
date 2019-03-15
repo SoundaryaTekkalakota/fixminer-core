@@ -1,0 +1,7 @@
+INS MethodDeclaration@@public, String, MethodName:getKey,  @TO@ TypeDeclaration@@[private, static]Keyword,  @AT@ 10810 @LENGTH@ 43
+---INS Modifier@@public @TO@ MethodDeclaration@@public, String, MethodName:getKey,  @AT@ 10810 @LENGTH@ 6
+---INS SimpleType@@String @TO@ MethodDeclaration@@public, String, MethodName:getKey,  @AT@ 10817 @LENGTH@ 6
+---INS SimpleName@@MethodName:getKey @TO@ MethodDeclaration@@public, String, MethodName:getKey,  @AT@ 10824 @LENGTH@ 6
+---INS ReturnStatement@@SimpleName:key @TO@ MethodDeclaration@@public, String, MethodName:getKey,  @AT@ 10838 @LENGTH@ 11
+------INS SimpleName@@key @TO@ ReturnStatement@@SimpleName:key @AT@ 10845 @LENGTH@ 3
+

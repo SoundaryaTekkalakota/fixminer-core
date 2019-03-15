@@ -1,0 +1,14 @@
+MethodDeclaration
+---SingleVariableDeclaration
+------PrimitiveType
+------SimpleName
+---IfStatement
+------InfixExpression
+---------SimpleName
+---------Operator
+---------NumberLiteral
+------ExpressionStatement
+---------MethodInvocation
+------------SimpleName
+------------SimpleName
+---------------SimpleName

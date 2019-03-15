@@ -1,0 +1,12 @@
+UPD ExpressionStatement@@MethodInvocation:client.mutateRow(t,row,mutations) @TO@ MethodInvocation:client.mutateRow(ByteBuffer.wrap(t),ByteBuffer.wrap(row),mutations) @AT@ 9027 @LENGTH@ 36
+---UPD MethodInvocation@@client.mutateRow(t,row,mutations) @TO@ client.mutateRow(ByteBuffer.wrap(t),ByteBuffer.wrap(row),mutations) @AT@ 9027 @LENGTH@ 35
+------UPD SimpleName@@MethodName:mutateRow:[t, row, mutations] @TO@ MethodName:mutateRow:[ByteBuffer.wrap(t), ByteBuffer.wrap(row), mutations] @AT@ 9034 @LENGTH@ 28
+---------INS MethodInvocation@@ByteBuffer.wrap(t) @TO@ SimpleName@@MethodName:mutateRow:[t, row, mutations] @AT@ 10609 @LENGTH@ 18
+------------INS SimpleName@@Name:ByteBuffer @TO@ MethodInvocation@@ByteBuffer.wrap(t) @AT@ 10609 @LENGTH@ 10
+------------INS SimpleName@@MethodName:wrap:[t] @TO@ MethodInvocation@@ByteBuffer.wrap(t) @AT@ 10620 @LENGTH@ 7
+---------------MOV SimpleName@@t @TO@ SimpleName@@MethodName:wrap:[t] @AT@ 9044 @LENGTH@ 1
+---------INS MethodInvocation@@ByteBuffer.wrap(row) @TO@ SimpleName@@MethodName:mutateRow:[t, row, mutations] @AT@ 10629 @LENGTH@ 20
+------------INS SimpleName@@Name:ByteBuffer @TO@ MethodInvocation@@ByteBuffer.wrap(row) @AT@ 10629 @LENGTH@ 10
+------------INS SimpleName@@MethodName:wrap:[row] @TO@ MethodInvocation@@ByteBuffer.wrap(row) @AT@ 10640 @LENGTH@ 9
+---------------MOV SimpleName@@row @TO@ SimpleName@@MethodName:wrap:[row] @AT@ 9047 @LENGTH@ 3
+

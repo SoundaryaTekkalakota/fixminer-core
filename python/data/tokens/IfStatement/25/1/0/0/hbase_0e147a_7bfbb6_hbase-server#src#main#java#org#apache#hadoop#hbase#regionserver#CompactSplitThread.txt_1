@@ -1,0 +1,26 @@
+INS IfStatement@@InfixExpression:this.shortCompactions.getCorePoolSize() < smallThreads @TO@ IfStatement@@InfixExpression:this.shortCompactions.getCorePoolSize() != smallThreads @AT@ 24735 @LENGTH@ 333
+---MOV ExpressionStatement@@MethodInvocation:this.shortCompactions.setMaximumPoolSize(smallThreads) @TO@ IfStatement@@InfixExpression:this.shortCompactions.getCorePoolSize() < smallThreads @AT@ 24519 @LENGTH@ 55
+---MOV ExpressionStatement@@MethodInvocation:this.shortCompactions.setCorePoolSize(smallThreads) @TO@ IfStatement@@InfixExpression:this.shortCompactions.getCorePoolSize() < smallThreads @AT@ 24581 @LENGTH@ 52
+---INS InfixExpression@@this.shortCompactions.getCorePoolSize() < smallThreads @TO@ IfStatement@@InfixExpression:this.shortCompactions.getCorePoolSize() < smallThreads @AT@ 24738 @LENGTH@ 54
+------INS MethodInvocation@@this.shortCompactions.getCorePoolSize() @TO@ InfixExpression@@this.shortCompactions.getCorePoolSize() < smallThreads @AT@ 24738 @LENGTH@ 39
+---------INS FieldAccess@@this.shortCompactions @TO@ MethodInvocation@@this.shortCompactions.getCorePoolSize() @AT@ 24738 @LENGTH@ 21
+------------INS ThisExpression@@this @TO@ FieldAccess@@this.shortCompactions @AT@ 24738 @LENGTH@ 4
+------------INS SimpleName@@shortCompactions @TO@ FieldAccess@@this.shortCompactions @AT@ 24743 @LENGTH@ 16
+---------INS SimpleName@@MethodName:getCorePoolSize:[] @TO@ MethodInvocation@@this.shortCompactions.getCorePoolSize() @AT@ 24760 @LENGTH@ 17
+------INS Operator@@< @TO@ InfixExpression@@this.shortCompactions.getCorePoolSize() < smallThreads @AT@ 24777 @LENGTH@ 1
+------INS SimpleName@@smallThreads @TO@ InfixExpression@@this.shortCompactions.getCorePoolSize() < smallThreads @AT@ 24780 @LENGTH@ 12
+---INS ExpressionStatement@@MethodInvocation:this.shortCompactions.setCorePoolSize(smallThreads) @TO@ IfStatement@@InfixExpression:this.shortCompactions.getCorePoolSize() < smallThreads @AT@ 24868 @LENGTH@ 52
+------INS MethodInvocation@@this.shortCompactions.setCorePoolSize(smallThreads) @TO@ ExpressionStatement@@MethodInvocation:this.shortCompactions.setCorePoolSize(smallThreads) @AT@ 24868 @LENGTH@ 51
+---------INS FieldAccess@@this.shortCompactions @TO@ MethodInvocation@@this.shortCompactions.setCorePoolSize(smallThreads) @AT@ 24868 @LENGTH@ 21
+------------INS ThisExpression@@this @TO@ FieldAccess@@this.shortCompactions @AT@ 24868 @LENGTH@ 4
+------------INS SimpleName@@shortCompactions @TO@ FieldAccess@@this.shortCompactions @AT@ 24873 @LENGTH@ 16
+---------INS SimpleName@@MethodName:setCorePoolSize:[smallThreads] @TO@ MethodInvocation@@this.shortCompactions.setCorePoolSize(smallThreads) @AT@ 24890 @LENGTH@ 29
+------------INS SimpleName@@smallThreads @TO@ SimpleName@@MethodName:setCorePoolSize:[smallThreads] @AT@ 24906 @LENGTH@ 12
+---INS ExpressionStatement@@MethodInvocation:this.shortCompactions.setMaximumPoolSize(smallThreads) @TO@ IfStatement@@InfixExpression:this.shortCompactions.getCorePoolSize() < smallThreads @AT@ 25005 @LENGTH@ 55
+------INS MethodInvocation@@this.shortCompactions.setMaximumPoolSize(smallThreads) @TO@ ExpressionStatement@@MethodInvocation:this.shortCompactions.setMaximumPoolSize(smallThreads) @AT@ 25005 @LENGTH@ 54
+---------INS FieldAccess@@this.shortCompactions @TO@ MethodInvocation@@this.shortCompactions.setMaximumPoolSize(smallThreads) @AT@ 25005 @LENGTH@ 21
+------------INS ThisExpression@@this @TO@ FieldAccess@@this.shortCompactions @AT@ 25005 @LENGTH@ 4
+------------INS SimpleName@@shortCompactions @TO@ FieldAccess@@this.shortCompactions @AT@ 25010 @LENGTH@ 16
+---------INS SimpleName@@MethodName:setMaximumPoolSize:[smallThreads] @TO@ MethodInvocation@@this.shortCompactions.setMaximumPoolSize(smallThreads) @AT@ 25027 @LENGTH@ 32
+------------INS SimpleName@@smallThreads @TO@ SimpleName@@MethodName:setMaximumPoolSize:[smallThreads] @AT@ 25046 @LENGTH@ 12
+

@@ -1,0 +1,11 @@
+INS MethodDeclaration@@public, Set<Operator<? extends OperatorDesc>>, MethodName:getNonVectorizedOps,  @TO@ TypeDeclaration@@MapWorkValidationNodeProcessor, [NodeProcessor] @AT@ 38844 @LENGTH@ 105
+---INS Modifier@@public @TO@ MethodDeclaration@@public, Set<Operator<? extends OperatorDesc>>, MethodName:getNonVectorizedOps,  @AT@ 38844 @LENGTH@ 6
+---INS ParameterizedType@@Set<Operator<? extends OperatorDesc>> @TO@ MethodDeclaration@@public, Set<Operator<? extends OperatorDesc>>, MethodName:getNonVectorizedOps,  @AT@ 38851 @LENGTH@ 37
+------INS SimpleType@@Set @TO@ ParameterizedType@@Set<Operator<? extends OperatorDesc>> @AT@ 38851 @LENGTH@ 3
+------INS ParameterizedType@@Operator<? extends OperatorDesc> @TO@ ParameterizedType@@Set<Operator<? extends OperatorDesc>> @AT@ 38855 @LENGTH@ 32
+---------INS SimpleType@@Operator @TO@ ParameterizedType@@Operator<? extends OperatorDesc> @AT@ 38855 @LENGTH@ 8
+---------INS WildcardType@@? @TO@ ParameterizedType@@Operator<? extends OperatorDesc> @AT@ 38864 @LENGTH@ 22
+---INS SimpleName@@MethodName:getNonVectorizedOps @TO@ MethodDeclaration@@public, Set<Operator<? extends OperatorDesc>>, MethodName:getNonVectorizedOps,  @AT@ 38889 @LENGTH@ 19
+---INS ReturnStatement@@SimpleName:nonVectorizedOps @TO@ MethodDeclaration@@public, Set<Operator<? extends OperatorDesc>>, MethodName:getNonVectorizedOps,  @AT@ 38919 @LENGTH@ 24
+------INS SimpleName@@nonVectorizedOps @TO@ ReturnStatement@@SimpleName:nonVectorizedOps @AT@ 38926 @LENGTH@ 16
+

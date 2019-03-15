@@ -1,0 +1,7 @@
+INS MethodDeclaration@@public, String, MethodName:getQualifierPrefix,  @TO@ TypeDeclaration@@[static]ColumnMapping,  @AT@ 13156 @LENGTH@ 72
+---INS Modifier@@public @TO@ MethodDeclaration@@public, String, MethodName:getQualifierPrefix,  @AT@ 13156 @LENGTH@ 6
+---INS SimpleType@@String @TO@ MethodDeclaration@@public, String, MethodName:getQualifierPrefix,  @AT@ 13163 @LENGTH@ 6
+---INS SimpleName@@MethodName:getQualifierPrefix @TO@ MethodDeclaration@@public, String, MethodName:getQualifierPrefix,  @AT@ 13170 @LENGTH@ 18
+---INS ReturnStatement@@SimpleName:qualifierPrefix @TO@ MethodDeclaration@@public, String, MethodName:getQualifierPrefix,  @AT@ 13199 @LENGTH@ 23
+------INS SimpleName@@qualifierPrefix @TO@ ReturnStatement@@SimpleName:qualifierPrefix @AT@ 13206 @LENGTH@ 15
+

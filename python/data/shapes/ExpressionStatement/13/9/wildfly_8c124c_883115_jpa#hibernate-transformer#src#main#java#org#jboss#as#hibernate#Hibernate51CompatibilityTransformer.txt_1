@@ -1,0 +1,13 @@
+ExpressionStatement
+---MethodInvocation
+------SimpleName
+---------ClassInstanceCreation
+------------QualifiedName
+------------ConditionalExpression
+---------------SimpleName
+---------------QualifiedName
+------------------SimpleName
+------------------SimpleName
+---------------QualifiedName
+------------------SimpleName
+------------------SimpleName

@@ -1,0 +1,18 @@
+DEL MethodDeclaration@@public, boolean, MethodName:addAll, Collection<? extends String> c,  @AT@ 16689 @LENGTH@ 129
+---DEL Modifier@@public @AT@ 16689 @LENGTH@ 6
+---DEL PrimitiveType@@boolean @AT@ 16696 @LENGTH@ 7
+---DEL SimpleName@@MethodName:addAll @AT@ 16704 @LENGTH@ 6
+---DEL SingleVariableDeclaration@@Collection<? extends String> c @AT@ 16711 @LENGTH@ 30
+------DEL ParameterizedType@@Collection<? extends String> @AT@ 16711 @LENGTH@ 28
+---------DEL SimpleType@@Collection @AT@ 16711 @LENGTH@ 10
+---------DEL WildcardType@@? @AT@ 16722 @LENGTH@ 16
+------DEL SimpleName@@c @AT@ 16740 @LENGTH@ 1
+---DEL ExpressionStatement@@MethodInvocation:copyOnWrite() @AT@ 16751 @LENGTH@ 14
+------DEL MethodInvocation@@MethodName:copyOnWrite:[] @AT@ 16751 @LENGTH@ 13
+---DEL ReturnStatement@@MethodInvocation:shared.getBucketCols().addAll(c) @AT@ 16772 @LENGTH@ 40
+------DEL MethodInvocation@@shared.getBucketCols().addAll(c) @AT@ 16779 @LENGTH@ 32
+---------DEL SimpleName@@Name:shared @AT@ 16779 @LENGTH@ 6
+---------DEL MethodInvocation@@MethodName:getBucketCols:[] @AT@ 16779 @LENGTH@ 22
+---------DEL SimpleName@@MethodName:addAll:[c] @AT@ 16802 @LENGTH@ 9
+------------DEL SimpleName@@c @AT@ 16809 @LENGTH@ 1
+

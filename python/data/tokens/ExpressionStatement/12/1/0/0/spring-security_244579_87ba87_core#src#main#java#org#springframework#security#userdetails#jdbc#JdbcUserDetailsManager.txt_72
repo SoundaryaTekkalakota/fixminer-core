@@ -1,0 +1,13 @@
+UPD ExpressionStatement@@MethodInvocation:declareParameter(new SqlParameter(Types.BOOLEAN)) @TO@ MethodInvocation:ps.setInt(1,id) @AT@ 19397 @LENGTH@ 50
+---UPD MethodInvocation@@declareParameter(new SqlParameter(Types.BOOLEAN)) @TO@ ps.setInt(1,id) @AT@ 19397 @LENGTH@ 49
+------INS SimpleName@@Name:ps @TO@ MethodInvocation@@declareParameter(new SqlParameter(Types.BOOLEAN)) @AT@ 13643 @LENGTH@ 2
+------UPD SimpleName@@MethodName:declareParameter:[new SqlParameter(Types.BOOLEAN)] @TO@ MethodName:setInt:[1, id] @AT@ 19397 @LENGTH@ 49
+---------INS NumberLiteral@@1 @TO@ SimpleName@@MethodName:declareParameter:[new SqlParameter(Types.BOOLEAN)] @AT@ 13653 @LENGTH@ 1
+---------INS SimpleName@@id @TO@ SimpleName@@MethodName:declareParameter:[new SqlParameter(Types.BOOLEAN)] @AT@ 13656 @LENGTH@ 2
+---------DEL ClassInstanceCreation@@SqlParameter[Types.BOOLEAN] @AT@ 19414 @LENGTH@ 31
+------------DEL New@@new @AT@ 19414 @LENGTH@ 3
+------------DEL SimpleType@@SqlParameter @AT@ 19418 @LENGTH@ 12
+------------DEL QualifiedName@@Types.BOOLEAN @AT@ 19431 @LENGTH@ 13
+---------------DEL SimpleName@@Types @AT@ 19431 @LENGTH@ 5
+---------------DEL SimpleName@@BOOLEAN @AT@ 19437 @LENGTH@ 7
+

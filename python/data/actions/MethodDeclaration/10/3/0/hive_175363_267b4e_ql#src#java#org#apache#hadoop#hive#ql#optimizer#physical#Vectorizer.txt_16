@@ -1,0 +1,10 @@
+ INS MethodDeclaration
+--- INS Modifier
+--- INS ParameterizedType
+------ INS SimpleType
+------ INS ParameterizedType
+--------- INS SimpleType
+--------- INS WildcardType
+--- INS SimpleName
+--- INS ReturnStatement
+------ INS SimpleName

@@ -1,0 +1,16 @@
+ INS VariableDeclarationStatement
+--- INS Modifier
+--- INS ParameterizedType
+------ INS SimpleType
+------ INS SimpleType
+--- INS VariableDeclarationFragment
+------ INS SimpleName
+------ INS ConditionalExpression
+--------- INS InfixExpression
+------------ INS SimpleName
+------------ INS Operator
+------------ INS NullLiteral
+--------- INS QualifiedName
+------------ INS SimpleName
+------------ INS SimpleName
+--------- INS SimpleName

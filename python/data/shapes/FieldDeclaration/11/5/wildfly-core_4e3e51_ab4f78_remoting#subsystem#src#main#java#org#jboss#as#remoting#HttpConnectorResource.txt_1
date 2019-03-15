@@ -1,0 +1,11 @@
+FieldDeclaration
+---VariableDeclarationFragment
+------MethodInvocation
+---------MethodInvocation
+------------QualifiedName
+---------------SimpleName
+---------------SimpleName
+---------MethodInvocation
+------------QualifiedName
+---------------SimpleName
+---------------SimpleName

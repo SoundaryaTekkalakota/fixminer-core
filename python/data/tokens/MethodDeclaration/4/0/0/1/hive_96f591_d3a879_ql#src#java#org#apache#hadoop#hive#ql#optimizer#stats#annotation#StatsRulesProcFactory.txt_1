@@ -1,0 +1,5 @@
+UPD MethodDeclaration@@private, long, MethodName:evaluateExpression, Statistics stats, ExprNodeDesc pred, AnnotateStatsProcCtx aspCtx, List<String> neededCols, FilterOperator fop, CloneNotSupportedException,  @TO@ private, long, MethodName:evaluateExpression, Statistics stats, ExprNodeDesc pred, AnnotateStatsProcCtx aspCtx, List<String> neededCols, FilterOperator fop, long evaluatedRowCount, CloneNotSupportedException,  @AT@ 13069 @LENGTH@ 2743
+---INS SingleVariableDeclaration@@long evaluatedRowCount @TO@ MethodDeclaration@@private, long, MethodName:evaluateExpression, Statistics stats, ExprNodeDesc pred, AnnotateStatsProcCtx aspCtx, List<String> neededCols, FilterOperator fop, CloneNotSupportedException,  @AT@ 13209 @LENGTH@ 22
+------INS PrimitiveType@@long @TO@ SingleVariableDeclaration@@long evaluatedRowCount @AT@ 13209 @LENGTH@ 4
+------INS SimpleName@@evaluatedRowCount @TO@ SingleVariableDeclaration@@long evaluatedRowCount @AT@ 13214 @LENGTH@ 17
+

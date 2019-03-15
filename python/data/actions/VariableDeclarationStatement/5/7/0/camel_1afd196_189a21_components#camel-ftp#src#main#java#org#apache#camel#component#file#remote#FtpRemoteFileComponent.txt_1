@@ -1,0 +1,5 @@
+ INS VariableDeclarationStatement
+--- INS SimpleType
+--- INS VariableDeclarationFragment
+------ INS SimpleName
+------ INS SimpleName

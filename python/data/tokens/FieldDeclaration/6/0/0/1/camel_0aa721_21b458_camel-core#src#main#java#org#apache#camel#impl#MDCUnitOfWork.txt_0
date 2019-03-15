@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, String, [originalBreadcrumbId] @TO@ TypeDeclaration@@[public]MDCUnitOfWork, DefaultUnitOfWork @AT@ 1554 @LENGTH@ 42
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, String, [originalBreadcrumbId] @AT@ 1554 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, String, [originalBreadcrumbId] @AT@ 1562 @LENGTH@ 5
+---INS SimpleType@@String @TO@ FieldDeclaration@@private, final, String, [originalBreadcrumbId] @AT@ 1568 @LENGTH@ 6
+---INS VariableDeclarationFragment@@originalBreadcrumbId @TO@ FieldDeclaration@@private, final, String, [originalBreadcrumbId] @AT@ 1575 @LENGTH@ 20
+------INS SimpleName@@originalBreadcrumbId @TO@ VariableDeclarationFragment@@originalBreadcrumbId @AT@ 1575 @LENGTH@ 20
+

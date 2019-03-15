@@ -1,0 +1,2 @@
+MOV FieldDeclaration@@private, static, final, String, [PATH_IS_EXPLORED="If this exception is thrown, just remove it from the code"] @TO@ TypeDeclaration@@[private, static]PathIsExploredException, RuntimeException @AT@ 113429 @LENGTH@ 115
+

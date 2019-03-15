@@ -1,0 +1,2 @@
+DEL ThrowStatement@@ClassInstanceCreation:new SQLException("Method not supported") @AT@ 18224 @LENGTH@ 47
+

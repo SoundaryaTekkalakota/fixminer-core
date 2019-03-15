@@ -1,0 +1,2 @@
+INS ReturnStatement@@ @TO@ IfStatement@@InstanceofExpression:delegate instanceof ContinuousQueryListener @AT@ 8694 @LENGTH@ 7
+

@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, Configuration, [conf] @TO@ TypeDeclaration@@[public, static]RegionMoverBuilder,  @AT@ 5241 @LENGTH@ 33
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, Configuration, [conf] @AT@ 5241 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, Configuration, [conf] @AT@ 5249 @LENGTH@ 5
+---INS SimpleType@@Configuration @TO@ FieldDeclaration@@private, final, Configuration, [conf] @AT@ 5255 @LENGTH@ 13
+---INS VariableDeclarationFragment@@conf @TO@ FieldDeclaration@@private, final, Configuration, [conf] @AT@ 5269 @LENGTH@ 4
+------INS SimpleName@@conf @TO@ VariableDeclarationFragment@@conf @AT@ 5269 @LENGTH@ 4
+

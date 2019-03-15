@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, AtomicBoolean, [jobPaused=new AtomicBoolean(false)] @TO@ private, final, AtomicBoolean, [jobPaused=new AtomicBoolean(false)] @AT@ 2973 @LENGTH@ 59
+---INS Modifier@@final @TO@ FieldDeclaration@@private, AtomicBoolean, [jobPaused=new AtomicBoolean(false)] @AT@ 2987 @LENGTH@ 5
+

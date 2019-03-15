@@ -1,0 +1,13 @@
+UPD ExpressionStatement@@MethodInvocation:declareParameter(new SqlParameter(Types.VARCHAR)) @TO@ MethodInvocation:ps.setString(2,username) @AT@ 19460 @LENGTH@ 50
+---UPD MethodInvocation@@declareParameter(new SqlParameter(Types.VARCHAR)) @TO@ ps.setString(2,username) @AT@ 19460 @LENGTH@ 49
+------INS SimpleName@@Name:ps @TO@ MethodInvocation@@declareParameter(new SqlParameter(Types.VARCHAR)) @AT@ 13665 @LENGTH@ 2
+------UPD SimpleName@@MethodName:declareParameter:[new SqlParameter(Types.VARCHAR)] @TO@ MethodName:setString:[2, username] @AT@ 19460 @LENGTH@ 49
+---------INS NumberLiteral@@2 @TO@ SimpleName@@MethodName:declareParameter:[new SqlParameter(Types.VARCHAR)] @AT@ 13678 @LENGTH@ 1
+---------INS SimpleName@@username @TO@ SimpleName@@MethodName:declareParameter:[new SqlParameter(Types.VARCHAR)] @AT@ 13681 @LENGTH@ 8
+---------DEL ClassInstanceCreation@@SqlParameter[Types.VARCHAR] @AT@ 19477 @LENGTH@ 31
+------------DEL New@@new @AT@ 19477 @LENGTH@ 3
+------------DEL SimpleType@@SqlParameter @AT@ 19481 @LENGTH@ 12
+------------DEL QualifiedName@@Types.VARCHAR @AT@ 19494 @LENGTH@ 13
+---------------DEL SimpleName@@Types @AT@ 19494 @LENGTH@ 5
+---------------DEL SimpleName@@VARCHAR @AT@ 19500 @LENGTH@ 7
+

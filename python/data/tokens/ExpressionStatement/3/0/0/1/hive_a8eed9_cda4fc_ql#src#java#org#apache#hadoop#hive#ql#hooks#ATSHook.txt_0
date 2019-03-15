@@ -1,0 +1,238 @@
+UPD ExpressionStatement@@MethodInvocation:executor.submit(new Runnable(){
+  @Override public void run(){
+    try {
+      QueryPlan plan=hookContext.getQueryPlan();
+      if (plan == null) {
+        return;
+      }
+      String queryId=plan.getQueryId();
+      long queryStartTime=plan.getQueryStartTime();
+      String user=hookContext.getUgi().getUserName();
+      int numMrJobs=Utilities.getMRTasks(plan.getRootTasks()).size();
+      int numTezJobs=Utilities.getTezTasks(plan.getRootTasks()).size();
+      if (numMrJobs + numTezJobs <= 0) {
+        return;
+      }
+switch (hookContext.getHookType()) {
+case PRE_EXEC_HOOK:
+        ExplainTask explain=new ExplainTask();
+      explain.initialize(hookContext.getConf(),plan,null);
+    String query=plan.getQueryStr();
+  List<Task<?>> rootTasks=plan.getRootTasks();
+JSONObject explainPlan=explain.getJSONPlan(null,null,rootTasks,plan.getFetchTask(),true,false,false);
+fireAndForget(hookContext.getConf(),createPreHookEvent(queryId,query,explainPlan,queryStartTime,user,numMrJobs,numTezJobs));
+break;
+case POST_EXEC_HOOK:
+fireAndForget(hookContext.getConf(),createPostHookEvent(queryId,currentTime,user,true));
+break;
+case ON_FAILURE_HOOK:
+fireAndForget(hookContext.getConf(),createPostHookEvent(queryId,currentTime,user,false));
+break;
+default :
+break;
+}
+}
+ catch (Exception e) {
+LOG.info("Failed to submit plan to ATS: " + StringUtils.stringifyException(e));
+}
+}
+}
+) @TO@ MethodInvocation:executor.submit(new Runnable(){
+  @Override public void run(){
+    try {
+      QueryPlan plan=hookContext.getQueryPlan();
+      if (plan == null) {
+        return;
+      }
+      String queryId=plan.getQueryId();
+      long queryStartTime=plan.getQueryStartTime();
+      String user=hookContext.getUgi().getUserName();
+      int numMrJobs=Utilities.getMRTasks(plan.getRootTasks()).size();
+      int numTezJobs=Utilities.getTezTasks(plan.getRootTasks()).size();
+      if (numMrJobs + numTezJobs <= 0) {
+        return;
+      }
+switch (hookContext.getHookType()) {
+case PRE_EXEC_HOOK:
+        ExplainTask explain=new ExplainTask();
+      explain.initialize(conf,plan,null);
+    String query=plan.getQueryStr();
+  List<Task<?>> rootTasks=plan.getRootTasks();
+JSONObject explainPlan=explain.getJSONPlan(null,null,rootTasks,plan.getFetchTask(),true,false,false);
+fireAndForget(conf,createPreHookEvent(queryId,query,explainPlan,queryStartTime,user,numMrJobs,numTezJobs));
+break;
+case POST_EXEC_HOOK:
+fireAndForget(conf,createPostHookEvent(queryId,currentTime,user,true));
+break;
+case ON_FAILURE_HOOK:
+fireAndForget(conf,createPostHookEvent(queryId,currentTime,user,false));
+break;
+default :
+break;
+}
+}
+ catch (Exception e) {
+LOG.info("Failed to submit plan to ATS: " + StringUtils.stringifyException(e));
+}
+}
+}
+) @AT@ 3503 @LENGTH@ 1866
+---UPD MethodInvocation@@executor.submit(new Runnable(){
+  @Override public void run(){
+    try {
+      QueryPlan plan=hookContext.getQueryPlan();
+      if (plan == null) {
+        return;
+      }
+      String queryId=plan.getQueryId();
+      long queryStartTime=plan.getQueryStartTime();
+      String user=hookContext.getUgi().getUserName();
+      int numMrJobs=Utilities.getMRTasks(plan.getRootTasks()).size();
+      int numTezJobs=Utilities.getTezTasks(plan.getRootTasks()).size();
+      if (numMrJobs + numTezJobs <= 0) {
+        return;
+      }
+switch (hookContext.getHookType()) {
+case PRE_EXEC_HOOK:
+        ExplainTask explain=new ExplainTask();
+      explain.initialize(hookContext.getConf(),plan,null);
+    String query=plan.getQueryStr();
+  List<Task<?>> rootTasks=plan.getRootTasks();
+JSONObject explainPlan=explain.getJSONPlan(null,null,rootTasks,plan.getFetchTask(),true,false,false);
+fireAndForget(hookContext.getConf(),createPreHookEvent(queryId,query,explainPlan,queryStartTime,user,numMrJobs,numTezJobs));
+break;
+case POST_EXEC_HOOK:
+fireAndForget(hookContext.getConf(),createPostHookEvent(queryId,currentTime,user,true));
+break;
+case ON_FAILURE_HOOK:
+fireAndForget(hookContext.getConf(),createPostHookEvent(queryId,currentTime,user,false));
+break;
+default :
+break;
+}
+}
+ catch (Exception e) {
+LOG.info("Failed to submit plan to ATS: " + StringUtils.stringifyException(e));
+}
+}
+}
+) @TO@ executor.submit(new Runnable(){
+  @Override public void run(){
+    try {
+      QueryPlan plan=hookContext.getQueryPlan();
+      if (plan == null) {
+        return;
+      }
+      String queryId=plan.getQueryId();
+      long queryStartTime=plan.getQueryStartTime();
+      String user=hookContext.getUgi().getUserName();
+      int numMrJobs=Utilities.getMRTasks(plan.getRootTasks()).size();
+      int numTezJobs=Utilities.getTezTasks(plan.getRootTasks()).size();
+      if (numMrJobs + numTezJobs <= 0) {
+        return;
+      }
+switch (hookContext.getHookType()) {
+case PRE_EXEC_HOOK:
+        ExplainTask explain=new ExplainTask();
+      explain.initialize(conf,plan,null);
+    String query=plan.getQueryStr();
+  List<Task<?>> rootTasks=plan.getRootTasks();
+JSONObject explainPlan=explain.getJSONPlan(null,null,rootTasks,plan.getFetchTask(),true,false,false);
+fireAndForget(conf,createPreHookEvent(queryId,query,explainPlan,queryStartTime,user,numMrJobs,numTezJobs));
+break;
+case POST_EXEC_HOOK:
+fireAndForget(conf,createPostHookEvent(queryId,currentTime,user,true));
+break;
+case ON_FAILURE_HOOK:
+fireAndForget(conf,createPostHookEvent(queryId,currentTime,user,false));
+break;
+default :
+break;
+}
+}
+ catch (Exception e) {
+LOG.info("Failed to submit plan to ATS: " + StringUtils.stringifyException(e));
+}
+}
+}
+) @AT@ 3503 @LENGTH@ 1865
+------UPD SimpleName@@MethodName:submit:[new Runnable(){
+  @Override public void run(){
+    try {
+      QueryPlan plan=hookContext.getQueryPlan();
+      if (plan == null) {
+        return;
+      }
+      String queryId=plan.getQueryId();
+      long queryStartTime=plan.getQueryStartTime();
+      String user=hookContext.getUgi().getUserName();
+      int numMrJobs=Utilities.getMRTasks(plan.getRootTasks()).size();
+      int numTezJobs=Utilities.getTezTasks(plan.getRootTasks()).size();
+      if (numMrJobs + numTezJobs <= 0) {
+        return;
+      }
+switch (hookContext.getHookType()) {
+case PRE_EXEC_HOOK:
+        ExplainTask explain=new ExplainTask();
+      explain.initialize(hookContext.getConf(),plan,null);
+    String query=plan.getQueryStr();
+  List<Task<?>> rootTasks=plan.getRootTasks();
+JSONObject explainPlan=explain.getJSONPlan(null,null,rootTasks,plan.getFetchTask(),true,false,false);
+fireAndForget(hookContext.getConf(),createPreHookEvent(queryId,query,explainPlan,queryStartTime,user,numMrJobs,numTezJobs));
+break;
+case POST_EXEC_HOOK:
+fireAndForget(hookContext.getConf(),createPostHookEvent(queryId,currentTime,user,true));
+break;
+case ON_FAILURE_HOOK:
+fireAndForget(hookContext.getConf(),createPostHookEvent(queryId,currentTime,user,false));
+break;
+default :
+break;
+}
+}
+ catch (Exception e) {
+LOG.info("Failed to submit plan to ATS: " + StringUtils.stringifyException(e));
+}
+}
+}
+] @TO@ MethodName:submit:[new Runnable(){
+  @Override public void run(){
+    try {
+      QueryPlan plan=hookContext.getQueryPlan();
+      if (plan == null) {
+        return;
+      }
+      String queryId=plan.getQueryId();
+      long queryStartTime=plan.getQueryStartTime();
+      String user=hookContext.getUgi().getUserName();
+      int numMrJobs=Utilities.getMRTasks(plan.getRootTasks()).size();
+      int numTezJobs=Utilities.getTezTasks(plan.getRootTasks()).size();
+      if (numMrJobs + numTezJobs <= 0) {
+        return;
+      }
+switch (hookContext.getHookType()) {
+case PRE_EXEC_HOOK:
+        ExplainTask explain=new ExplainTask();
+      explain.initialize(conf,plan,null);
+    String query=plan.getQueryStr();
+  List<Task<?>> rootTasks=plan.getRootTasks();
+JSONObject explainPlan=explain.getJSONPlan(null,null,rootTasks,plan.getFetchTask(),true,false,false);
+fireAndForget(conf,createPreHookEvent(queryId,query,explainPlan,queryStartTime,user,numMrJobs,numTezJobs));
+break;
+case POST_EXEC_HOOK:
+fireAndForget(conf,createPostHookEvent(queryId,currentTime,user,true));
+break;
+case ON_FAILURE_HOOK:
+fireAndForget(conf,createPostHookEvent(queryId,currentTime,user,false));
+break;
+default :
+break;
+}
+}
+ catch (Exception e) {
+LOG.info("Failed to submit plan to ATS: " + StringUtils.stringifyException(e));
+}
+}
+}
+] @AT@ 3512 @LENGTH@ 1856
+

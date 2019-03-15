@@ -1,0 +1,2 @@
+MOV FieldDeclaration@@private, final, Configuration, [conf] @TO@ TypeDeclaration@@[@VisibleForTesting, final, static]OriginalReaderPairToCompact, OriginalReaderPair @AT@ 12333 @LENGTH@ 33
+

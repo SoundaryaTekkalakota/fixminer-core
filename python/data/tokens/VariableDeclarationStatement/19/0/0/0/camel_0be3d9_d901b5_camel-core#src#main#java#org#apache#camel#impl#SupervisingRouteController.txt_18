@@ -1,0 +1,20 @@
+UPD VariableDeclarationStatement@@final Route route=context.getRoute(routeId); @TO@ final Optional<RouteHolder> route=routes.stream().filter(r -> r.getId().equals(routeId)).findFirst(); @AT@ 7127 @LENGTH@ 46
+---DEL SimpleType@@Route @AT@ 7133 @LENGTH@ 5
+---UPD VariableDeclarationFragment@@route=context.getRoute(routeId) @TO@ route=routes.stream().filter(r -> r.getId().equals(routeId)).findFirst() @AT@ 7139 @LENGTH@ 33
+------DEL MethodInvocation@@context.getRoute(routeId) @AT@ 7147 @LENGTH@ 25
+------INS MethodInvocation@@routes.stream().filter(r -> r.getId().equals(routeId)).findFirst() @TO@ VariableDeclarationFragment@@route=context.getRoute(routeId) @AT@ 7543 @LENGTH@ 66
+---------INS SimpleName@@Name:routes @TO@ MethodInvocation@@routes.stream().filter(r -> r.getId().equals(routeId)).findFirst() @AT@ 7543 @LENGTH@ 6
+---------INS MethodInvocation@@MethodName:stream:[] @TO@ MethodInvocation@@routes.stream().filter(r -> r.getId().equals(routeId)).findFirst() @AT@ 7543 @LENGTH@ 15
+---------INS MethodInvocation@@MethodName:filter:[r -> r.getId().equals(routeId)] @TO@ MethodInvocation@@routes.stream().filter(r -> r.getId().equals(routeId)).findFirst() @AT@ 7543 @LENGTH@ 54
+------------INS LambdaExpression@@r -> r.getId().equals(routeId) @TO@ MethodInvocation@@MethodName:filter:[r -> r.getId().equals(routeId)] @AT@ 7566 @LENGTH@ 30
+---------------INS VariableDeclarationFragment@@r @TO@ LambdaExpression@@r -> r.getId().equals(routeId) @AT@ 7566 @LENGTH@ 1
+------------------INS SimpleName@@r @TO@ VariableDeclarationFragment@@r @AT@ 7566 @LENGTH@ 1
+---------------INS MethodInvocation@@r.getId().equals(routeId) @TO@ LambdaExpression@@r -> r.getId().equals(routeId) @AT@ 7571 @LENGTH@ 25
+------------------MOV SimpleName@@Name:context @TO@ MethodInvocation@@r.getId().equals(routeId) @AT@ 7147 @LENGTH@ 7
+------------------MOV SimpleName@@MethodName:getRoute:[routeId] @TO@ MethodInvocation@@r.getId().equals(routeId) @AT@ 7155 @LENGTH@ 17
+------------------INS MethodInvocation@@MethodName:getId:[] @TO@ MethodInvocation@@r.getId().equals(routeId) @AT@ 7571 @LENGTH@ 9
+---------INS SimpleName@@MethodName:findFirst:[] @TO@ MethodInvocation@@routes.stream().filter(r -> r.getId().equals(routeId)).findFirst() @AT@ 7598 @LENGTH@ 11
+---INS ParameterizedType@@Optional<RouteHolder> @TO@ VariableDeclarationStatement@@final Route route=context.getRoute(routeId); @AT@ 7513 @LENGTH@ 21
+------INS SimpleType@@Optional @TO@ ParameterizedType@@Optional<RouteHolder> @AT@ 7513 @LENGTH@ 8
+------INS SimpleType@@RouteHolder @TO@ ParameterizedType@@Optional<RouteHolder> @AT@ 7522 @LENGTH@ 11
+

@@ -1,0 +1,9 @@
+INS IfStatement@@InfixExpression:this.masterAdmin != null @TO@ MethodDeclaration@@public, void, MethodName:close, IOException,  @AT@ 121810 @LENGTH@ 55
+---MOV ExpressionStatement@@MethodInvocation:this.masterAdmin.close() @TO@ IfStatement@@InfixExpression:this.masterAdmin != null @AT@ 121714 @LENGTH@ 25
+---INS InfixExpression@@this.masterAdmin != null @TO@ IfStatement@@InfixExpression:this.masterAdmin != null @AT@ 121814 @LENGTH@ 24
+------INS FieldAccess@@this.masterAdmin @TO@ InfixExpression@@this.masterAdmin != null @AT@ 121814 @LENGTH@ 16
+---------INS ThisExpression@@this @TO@ FieldAccess@@this.masterAdmin @AT@ 121814 @LENGTH@ 4
+---------INS SimpleName@@masterAdmin @TO@ FieldAccess@@this.masterAdmin @AT@ 121819 @LENGTH@ 11
+------INS Operator@@!= @TO@ InfixExpression@@this.masterAdmin != null @AT@ 121830 @LENGTH@ 2
+------INS NullLiteral@@null @TO@ InfixExpression@@this.masterAdmin != null @AT@ 121834 @LENGTH@ 4
+

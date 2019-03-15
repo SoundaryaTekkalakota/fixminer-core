@@ -1,0 +1,10 @@
+UPD CatchClause@@IOException e @TO@ IOException ignored @AT@ 22421 @LENGTH@ 89
+---UPD SingleVariableDeclaration@@IOException e @TO@ IOException ignored @AT@ 22428 @LENGTH@ 13
+------UPD SimpleName@@e @TO@ ignored @AT@ 22440 @LENGTH@ 1
+---DEL ExpressionStatement@@MethodInvocation:LOG.warn("Not able to close an input stream",e) @AT@ 22453 @LENGTH@ 49
+------DEL MethodInvocation@@LOG.warn("Not able to close an input stream",e) @AT@ 22453 @LENGTH@ 48
+---------DEL SimpleName@@Name:LOG @AT@ 22453 @LENGTH@ 3
+---------DEL SimpleName@@MethodName:warn:["Not able to close an input stream", e] @AT@ 22457 @LENGTH@ 44
+------------DEL StringLiteral@@"Not able to close an input stream" @AT@ 22462 @LENGTH@ 35
+------------DEL SimpleName@@e @AT@ 22499 @LENGTH@ 1
+

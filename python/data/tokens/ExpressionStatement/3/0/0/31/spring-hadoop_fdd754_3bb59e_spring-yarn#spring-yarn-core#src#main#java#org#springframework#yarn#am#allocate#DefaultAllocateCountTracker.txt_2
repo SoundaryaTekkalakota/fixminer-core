@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:atomicInteger.addAndGet(entry.getValue()) @TO@ MethodInvocation:pendingHostsCount.addAndGet(entry.getValue()) @AT@ 4089 @LENGTH@ 42
+---UPD MethodInvocation@@atomicInteger.addAndGet(entry.getValue()) @TO@ pendingHostsCount.addAndGet(entry.getValue()) @AT@ 4089 @LENGTH@ 41
+------UPD SimpleName@@Name:atomicInteger @TO@ Name:pendingHostsCount @AT@ 4089 @LENGTH@ 13
+

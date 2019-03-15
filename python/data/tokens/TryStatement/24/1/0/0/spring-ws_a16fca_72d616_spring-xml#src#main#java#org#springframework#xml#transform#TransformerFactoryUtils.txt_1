@@ -1,0 +1,25 @@
+INS TryStatement@@try:[] @TO@ MethodDeclaration@@private, static, TransformerFactory, MethodName:defaultSettings, TransformerFactory factory,  @AT@ 1934 @LENGTH@ 268
+---MOV ExpressionStatement@@MethodInvocation:factory.setAttribute(XMLConstants.ACCESS_EXTERNAL_DTD,"") @TO@ TryStatement@@try:[] @AT@ 1765 @LENGTH@ 59
+---INS CatchClause@@IllegalArgumentException e @TO@ TryStatement@@try:[] @AT@ 2007 @LENGTH@ 195
+------INS SingleVariableDeclaration@@IllegalArgumentException e @TO@ CatchClause@@IllegalArgumentException e @AT@ 2014 @LENGTH@ 26
+---------INS SimpleType@@IllegalArgumentException @TO@ SingleVariableDeclaration@@IllegalArgumentException e @AT@ 2014 @LENGTH@ 24
+---------INS SimpleName@@e @TO@ SingleVariableDeclaration@@IllegalArgumentException e @AT@ 2039 @LENGTH@ 1
+------INS IfStatement@@MethodInvocation:log.isWarnEnabled() @TO@ CatchClause@@IllegalArgumentException e @AT@ 2047 @LENGTH@ 151
+---------INS MethodInvocation@@log.isWarnEnabled() @TO@ IfStatement@@MethodInvocation:log.isWarnEnabled() @AT@ 2051 @LENGTH@ 19
+------------INS SimpleName@@Name:log @TO@ MethodInvocation@@log.isWarnEnabled() @AT@ 2051 @LENGTH@ 3
+------------INS SimpleName@@MethodName:isWarnEnabled:[] @TO@ MethodInvocation@@log.isWarnEnabled() @AT@ 2055 @LENGTH@ 15
+---------INS ExpressionStatement@@MethodInvocation:log.warn(XMLConstants.ACCESS_EXTERNAL_DTD + " property not supported by " + factory.getClass().getCanonicalName()) @TO@ IfStatement@@MethodInvocation:log.isWarnEnabled() @AT@ 2078 @LENGTH@ 115
+------------INS MethodInvocation@@log.warn(XMLConstants.ACCESS_EXTERNAL_DTD + " property not supported by " + factory.getClass().getCanonicalName()) @TO@ ExpressionStatement@@MethodInvocation:log.warn(XMLConstants.ACCESS_EXTERNAL_DTD + " property not supported by " + factory.getClass().getCanonicalName()) @AT@ 2078 @LENGTH@ 114
+---------------INS SimpleName@@Name:log @TO@ MethodInvocation@@log.warn(XMLConstants.ACCESS_EXTERNAL_DTD + " property not supported by " + factory.getClass().getCanonicalName()) @AT@ 2078 @LENGTH@ 3
+---------------INS SimpleName@@MethodName:warn:[XMLConstants.ACCESS_EXTERNAL_DTD + " property not supported by " + factory.getClass().getCanonicalName()] @TO@ MethodInvocation@@log.warn(XMLConstants.ACCESS_EXTERNAL_DTD + " property not supported by " + factory.getClass().getCanonicalName()) @AT@ 2082 @LENGTH@ 110
+------------------INS InfixExpression@@XMLConstants.ACCESS_EXTERNAL_DTD + " property not supported by " + factory.getClass().getCanonicalName() @TO@ SimpleName@@MethodName:warn:[XMLConstants.ACCESS_EXTERNAL_DTD + " property not supported by " + factory.getClass().getCanonicalName()] @AT@ 2087 @LENGTH@ 104
+---------------------INS QualifiedName@@XMLConstants.ACCESS_EXTERNAL_DTD @TO@ InfixExpression@@XMLConstants.ACCESS_EXTERNAL_DTD + " property not supported by " + factory.getClass().getCanonicalName() @AT@ 2087 @LENGTH@ 32
+------------------------INS SimpleName@@XMLConstants @TO@ QualifiedName@@XMLConstants.ACCESS_EXTERNAL_DTD @AT@ 2087 @LENGTH@ 12
+------------------------INS SimpleName@@ACCESS_EXTERNAL_DTD @TO@ QualifiedName@@XMLConstants.ACCESS_EXTERNAL_DTD @AT@ 2100 @LENGTH@ 19
+---------------------INS Operator@@+ @TO@ InfixExpression@@XMLConstants.ACCESS_EXTERNAL_DTD + " property not supported by " + factory.getClass().getCanonicalName() @AT@ 2119 @LENGTH@ 1
+---------------------INS StringLiteral@@" property not supported by " @TO@ InfixExpression@@XMLConstants.ACCESS_EXTERNAL_DTD + " property not supported by " + factory.getClass().getCanonicalName() @AT@ 2122 @LENGTH@ 29
+---------------------INS MethodInvocation@@factory.getClass().getCanonicalName() @TO@ InfixExpression@@XMLConstants.ACCESS_EXTERNAL_DTD + " property not supported by " + factory.getClass().getCanonicalName() @AT@ 2154 @LENGTH@ 37
+------------------------INS SimpleName@@Name:factory @TO@ MethodInvocation@@factory.getClass().getCanonicalName() @AT@ 2154 @LENGTH@ 7
+------------------------INS MethodInvocation@@MethodName:getClass:[] @TO@ MethodInvocation@@factory.getClass().getCanonicalName() @AT@ 2154 @LENGTH@ 18
+------------------------INS SimpleName@@MethodName:getCanonicalName:[] @TO@ MethodInvocation@@factory.getClass().getCanonicalName() @AT@ 2173 @LENGTH@ 18
+

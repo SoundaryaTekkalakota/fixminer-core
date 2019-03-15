@@ -1,0 +1,8 @@
+IfStatement
+---InfixExpression
+------ArrayAccess
+---------SimpleName
+---------SimpleName
+------Operator
+------NullLiteral
+---ContinueStatement

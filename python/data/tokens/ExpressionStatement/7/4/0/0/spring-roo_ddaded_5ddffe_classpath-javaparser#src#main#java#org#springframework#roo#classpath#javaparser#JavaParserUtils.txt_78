@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(NoSuchFieldError.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("NoSuchFieldError") @AT@ 6426 @LENGTH@ 68
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(NoSuchFieldError.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("NoSuchFieldError") @AT@ 6426 @LENGTH@ 67
+------UPD SimpleName@@MethodName:add:[NoSuchFieldError.class.getSimpleName()] @TO@ MethodName:add:["NoSuchFieldError"] @AT@ 6450 @LENGTH@ 43
+---------INS StringLiteral@@"NoSuchFieldError" @TO@ SimpleName@@MethodName:add:[NoSuchFieldError.class.getSimpleName()] @AT@ 5522 @LENGTH@ 18
+---------DEL MethodInvocation@@NoSuchFieldError.class.getSimpleName() @AT@ 6454 @LENGTH@ 38
+------------DEL TypeLiteral@@NoSuchFieldError.class @AT@ 6454 @LENGTH@ 22
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 6477 @LENGTH@ 15
+

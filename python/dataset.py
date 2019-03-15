@@ -30,6 +30,8 @@ def prepareFiles(t):
 
         nonTest = [f for f in files if not re.search('test', f, re.I) and f.endswith('java')]
 
+        if len(nonTest) > 1:
+            return
 
         cmd = 'git -C ' + repo + ' rev-parse --short=6 ' + shaOld
         # lines = subprocess.check_output(cmd, shell=True)
@@ -88,10 +90,14 @@ def checkoutFiles(sha,shaOld,repoName, filePath):
 
             cmd = 'git -C ' + repo + ' diff -U ' + shaOld + ':' + filePath + '..' + sha + ':' + filePath  # + '> ' + folderDiff + '/' + sha + '_' + shaOld + '_' + savePath.replace('.java','.txt')
             # lines = subprocess.check_output(cmd, shell=True)
-            with Popen(cmd, stdout=PIPE, stderr=PIPE, shell=True, encoding='utf-8') as p:
-                # stdin={'file': PIPE, 'encoding': 'iso-8859-1', 'newline': False},
-                # stdout={'file': PIPE, 'encoding': 'utf-8', 'buffering': 0, 'line_buffering': False}) as p:
-                output, errors = p.communicate()
+            # with Popen(cmd, stdout=PIPE, stderr=PIPE, shell=True, encoding='utf-8') as p:
+            #     # stdin={'file': PIPE, 'encoding': 'iso-8859-1', 'newline': False},
+            #     # stdout={'file': PIPE, 'encoding': 'utf-8', 'buffering': 0, 'line_buffering': False}) as p:
+            #     output, errors = p.communicate()
+            # if errors:
+            #     # print(errors)
+            #     raise FileNotFoundError
+            output,errors = shellGitCheckout(cmd,'latin1')
             if errors:
                 # print(errors)
                 raise FileNotFoundError
@@ -99,7 +105,8 @@ def checkoutFiles(sha,shaOld,repoName, filePath):
             regex = r"@@\s\-\d+,*\d*\s\+\d+,*\d*\s@@ ?(.*\n)*"
             match = re.search(regex, output)
             if not match:
-                print()
+                return
+                # print()
             not_matched, matched = output[:match.start()], match.group()
             numberOfHunks = re.findall('@@\s\-\d+,*\d*\s\+\d+,*\d*\s@@', matched)
             if len(numberOfHunks) == 0:
@@ -113,31 +120,39 @@ def checkoutFiles(sha,shaOld,repoName, filePath):
 
             cmd = 'git -C ' + repo + ' show ' + sha + ':' + filePath + '> ' + folderRev + '/' + sha + '_' + shaOld + '_' +savePath
             # lines = subprocess.check_output(cmd, shell=True)
-            with Popen(cmd, stdout=PIPE, stderr=PIPE, shell=True) as p:
-                # stdin={'file': PIPE, 'encoding': 'iso-8859-1', 'newline': False},
-                # stdout={'file': PIPE, 'encoding': 'utf-8', 'buffering': 0, 'line_buffering': False}) as p:
-                output, errors = p.communicate()
-            # lines = output.decode('latin-1')
-            # print lines
-            # original
+            # with Popen(cmd, stdout=PIPE, stderr=PIPE, shell=True) as p:
+            #     # stdin={'file': PIPE, 'encoding': 'iso-8859-1', 'newline': False},
+            #     # stdout={'file': PIPE, 'encoding': 'utf-8', 'buffering': 0, 'line_buffering': False}) as p:
+            #     output, errors = p.communicate()
+            # # lines = output.decode('latin-1')
+            # # print lines
+            # # original
             if errors:
-                #print(errors)
+                # print(errors)
                 raise FileNotFoundError
-
+            o,errors= shellGitCheckout(cmd,'latin1')
             cmd = 'git -C ' + repo + ' show ' + shaOld + ':' + filePath + '> ' + folderPrev + '/' + 'prev_'+sha + '_' + shaOld + '_' +savePath
-            with Popen(cmd, stdout=PIPE, stderr=PIPE, shell=True) as p:
-                # stdin={'file': PIPE, 'encoding': 'iso-8859-1', 'newline': False},
-                # stdout={'file': PIPE, 'encoding': 'utf-8', 'buffering': 0, 'line_buffering': False}) as p:
-                output, errors = p.communicate()
-
             if errors:
-                #print(errors)
+                # print(errors)
                 raise FileNotFoundError
+
+            o,errors = shellGitCheckout(cmd,'latin1')
+            if errors:
+                # print(errors)
+                raise FileNotFoundError
+            # with Popen(cmd, stdout=PIPE, stderr=PIPE, shell=True) as p:
+            #     # stdin={'file': PIPE, 'encoding': 'iso-8859-1', 'newline': False},
+            #     # stdout={'file': PIPE, 'encoding': 'utf-8', 'buffering': 0, 'line_buffering': False}) as p:
+            #     output, errors = p.communicate()
+            #
+            # if errors:
+            #     print(errors)
+            #     raise FileNotFoundError
 
 
             #return output
-        else:
-            print('Already done')
+        # else:
+            # print('Already done')
     except FileNotFoundError as fnfe:
         if isfile(folderRev + '/' + sha + '_' + shaOld + '_' +savePath):
             os.remove(folderRev + '/' + sha + '_' + shaOld + '_' +savePath)
@@ -145,8 +160,8 @@ def checkoutFiles(sha,shaOld,repoName, filePath):
             os.remove(folderPrev + '/' + 'prev_'+sha + '_' + shaOld + '_' +savePath)
         if isfile(folderDiff + '/' + sha + '_' + shaOld + '_' + savePath.replace('.java','.txt')):
             os.remove(folderDiff + '/' + sha + '_' + shaOld + '_' + savePath.replace('.java','.txt'))
-
-        raise Exception('Error')
+        # print(fnfe)
+        # raise Exception(fnfe)
     except Exception as e:
-        print(e)
-        # raise Exception(e)
+        # print(e)
+        raise Exception(e)

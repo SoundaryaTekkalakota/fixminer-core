@@ -1,0 +1,93 @@
+UPD VariableDeclarationStatement@@Boolean result=doTask(key,new Task<Boolean>(TaskOption.RESTRUCTURE_AFTER,TaskOption.SKIP_IF_EMPTY){
+  @Override protected Boolean execute(  @Nullable Reference<K,V> reference,  @Nullable Entry<K,V> entry){
+    if (entry != null && ObjectUtils.nullSafeEquals(entry.getValue(),value)) {
+      if (reference != null) {
+        reference.release();
+      }
+      return true;
+    }
+    return false;
+  }
+}
+); @TO@ Boolean result=doTask(key,new Task<Boolean>(TaskOption.RESTRUCTURE_AFTER,TaskOption.SKIP_IF_EMPTY){
+  @Override protected Boolean execute(  @Nullable Reference<K,V> ref,  @Nullable Entry<K,V> entry){
+    if (entry != null && ObjectUtils.nullSafeEquals(entry.getValue(),value)) {
+      if (ref != null) {
+        ref.release();
+      }
+      return true;
+    }
+    return false;
+  }
+}
+); @AT@ 10708 @LENGTH@ 411
+---UPD VariableDeclarationFragment@@result=doTask(key,new Task<Boolean>(TaskOption.RESTRUCTURE_AFTER,TaskOption.SKIP_IF_EMPTY){
+  @Override protected Boolean execute(  @Nullable Reference<K,V> reference,  @Nullable Entry<K,V> entry){
+    if (entry != null && ObjectUtils.nullSafeEquals(entry.getValue(),value)) {
+      if (reference != null) {
+        reference.release();
+      }
+      return true;
+    }
+    return false;
+  }
+}
+) @TO@ result=doTask(key,new Task<Boolean>(TaskOption.RESTRUCTURE_AFTER,TaskOption.SKIP_IF_EMPTY){
+  @Override protected Boolean execute(  @Nullable Reference<K,V> ref,  @Nullable Entry<K,V> entry){
+    if (entry != null && ObjectUtils.nullSafeEquals(entry.getValue(),value)) {
+      if (ref != null) {
+        ref.release();
+      }
+      return true;
+    }
+    return false;
+  }
+}
+) @AT@ 10716 @LENGTH@ 402
+------UPD MethodInvocation@@doTask(key,new Task<Boolean>(TaskOption.RESTRUCTURE_AFTER,TaskOption.SKIP_IF_EMPTY){
+  @Override protected Boolean execute(  @Nullable Reference<K,V> reference,  @Nullable Entry<K,V> entry){
+    if (entry != null && ObjectUtils.nullSafeEquals(entry.getValue(),value)) {
+      if (reference != null) {
+        reference.release();
+      }
+      return true;
+    }
+    return false;
+  }
+}
+) @TO@ doTask(key,new Task<Boolean>(TaskOption.RESTRUCTURE_AFTER,TaskOption.SKIP_IF_EMPTY){
+  @Override protected Boolean execute(  @Nullable Reference<K,V> ref,  @Nullable Entry<K,V> entry){
+    if (entry != null && ObjectUtils.nullSafeEquals(entry.getValue(),value)) {
+      if (ref != null) {
+        ref.release();
+      }
+      return true;
+    }
+    return false;
+  }
+}
+) @AT@ 10725 @LENGTH@ 393
+---------UPD SimpleName@@MethodName:doTask:[key, new Task<Boolean>(TaskOption.RESTRUCTURE_AFTER,TaskOption.SKIP_IF_EMPTY){
+  @Override protected Boolean execute(  @Nullable Reference<K,V> reference,  @Nullable Entry<K,V> entry){
+    if (entry != null && ObjectUtils.nullSafeEquals(entry.getValue(),value)) {
+      if (reference != null) {
+        reference.release();
+      }
+      return true;
+    }
+    return false;
+  }
+}
+] @TO@ MethodName:doTask:[key, new Task<Boolean>(TaskOption.RESTRUCTURE_AFTER,TaskOption.SKIP_IF_EMPTY){
+  @Override protected Boolean execute(  @Nullable Reference<K,V> ref,  @Nullable Entry<K,V> entry){
+    if (entry != null && ObjectUtils.nullSafeEquals(entry.getValue(),value)) {
+      if (ref != null) {
+        ref.release();
+      }
+      return true;
+    }
+    return false;
+  }
+}
+] @AT@ 10725 @LENGTH@ 393
+

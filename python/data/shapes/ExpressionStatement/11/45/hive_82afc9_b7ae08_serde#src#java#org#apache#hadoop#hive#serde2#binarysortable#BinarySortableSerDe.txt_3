@@ -1,0 +1,11 @@
+ExpressionStatement
+---Assignment
+------PrefixExpression
+---------Operator
+---------SimpleName
+------InfixExpression
+---------SimpleName
+---------Operator
+---------QualifiedName
+------------SimpleName
+------------SimpleName

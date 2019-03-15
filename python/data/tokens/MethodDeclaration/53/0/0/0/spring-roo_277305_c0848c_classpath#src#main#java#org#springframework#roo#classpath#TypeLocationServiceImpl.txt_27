@@ -1,0 +1,54 @@
+INS MethodDeclaration@@public, FileMonitorService, MethodName:getFileMonitorService,  @TO@ TypeDeclaration@@[@Component, @Service, public]TypeLocationServiceImpl, [TypeLocationService] @AT@ 32108 @LENGTH@ 662
+---INS Modifier@@public @TO@ MethodDeclaration@@public, FileMonitorService, MethodName:getFileMonitorService,  @AT@ 32108 @LENGTH@ 6
+---INS SimpleType@@FileMonitorService @TO@ MethodDeclaration@@public, FileMonitorService, MethodName:getFileMonitorService,  @AT@ 32115 @LENGTH@ 18
+---INS SimpleName@@MethodName:getFileMonitorService @TO@ MethodDeclaration@@public, FileMonitorService, MethodName:getFileMonitorService,  @AT@ 32134 @LENGTH@ 21
+---INS IfStatement@@InfixExpression:fileMonitorService == null @TO@ MethodDeclaration@@public, FileMonitorService, MethodName:getFileMonitorService,  @AT@ 32164 @LENGTH@ 600
+------INS InfixExpression@@fileMonitorService == null @TO@ IfStatement@@InfixExpression:fileMonitorService == null @AT@ 32167 @LENGTH@ 26
+---------INS SimpleName@@fileMonitorService @TO@ InfixExpression@@fileMonitorService == null @AT@ 32167 @LENGTH@ 18
+---------INS Operator@@== @TO@ InfixExpression@@fileMonitorService == null @AT@ 32185 @LENGTH@ 2
+---------INS NullLiteral@@null @TO@ InfixExpression@@fileMonitorService == null @AT@ 32189 @LENGTH@ 4
+------INS TryStatement@@try:[] @TO@ IfStatement@@InfixExpression:fileMonitorService == null @AT@ 32270 @LENGTH@ 442
+---------INS VariableDeclarationStatement@@ServiceReference<?>[] references=context.getAllServiceReferences(FileMonitorService.class.getName(),null); @TO@ TryStatement@@try:[] @AT@ 32283 @LENGTH@ 109
+------------INS ArrayType@@ServiceReference<?>[] @TO@ VariableDeclarationStatement@@ServiceReference<?>[] references=context.getAllServiceReferences(FileMonitorService.class.getName(),null); @AT@ 32283 @LENGTH@ 21
+---------------INS ParameterizedType@@ServiceReference<?> @TO@ ArrayType@@ServiceReference<?>[] @AT@ 32283 @LENGTH@ 19
+------------------INS SimpleType@@ServiceReference @TO@ ParameterizedType@@ServiceReference<?> @AT@ 32283 @LENGTH@ 16
+------------------INS WildcardType@@? @TO@ ParameterizedType@@ServiceReference<?> @AT@ 32300 @LENGTH@ 1
+------------INS VariableDeclarationFragment@@references=context.getAllServiceReferences(FileMonitorService.class.getName(),null) @TO@ VariableDeclarationStatement@@ServiceReference<?>[] references=context.getAllServiceReferences(FileMonitorService.class.getName(),null); @AT@ 32305 @LENGTH@ 86
+---------------INS SimpleName@@references @TO@ VariableDeclarationFragment@@references=context.getAllServiceReferences(FileMonitorService.class.getName(),null) @AT@ 32305 @LENGTH@ 10
+---------------INS MethodInvocation@@context.getAllServiceReferences(FileMonitorService.class.getName(),null) @TO@ VariableDeclarationFragment@@references=context.getAllServiceReferences(FileMonitorService.class.getName(),null) @AT@ 32318 @LENGTH@ 73
+------------------INS SimpleName@@Name:context @TO@ MethodInvocation@@context.getAllServiceReferences(FileMonitorService.class.getName(),null) @AT@ 32318 @LENGTH@ 7
+------------------INS SimpleName@@MethodName:getAllServiceReferences:[FileMonitorService.class.getName(), null] @TO@ MethodInvocation@@context.getAllServiceReferences(FileMonitorService.class.getName(),null) @AT@ 32326 @LENGTH@ 65
+---------------------INS MethodInvocation@@FileMonitorService.class.getName() @TO@ SimpleName@@MethodName:getAllServiceReferences:[FileMonitorService.class.getName(), null] @AT@ 32350 @LENGTH@ 34
+------------------------INS TypeLiteral@@FileMonitorService.class @TO@ MethodInvocation@@FileMonitorService.class.getName() @AT@ 32350 @LENGTH@ 24
+------------------------INS SimpleName@@MethodName:getName:[] @TO@ MethodInvocation@@FileMonitorService.class.getName() @AT@ 32375 @LENGTH@ 9
+---------------------INS NullLiteral@@null @TO@ SimpleName@@MethodName:getAllServiceReferences:[FileMonitorService.class.getName(), null] @AT@ 32386 @LENGTH@ 4
+---------INS EnhancedForStatement@@ServiceReference<?> ref, SimpleName:references @TO@ TryStatement@@try:[] @AT@ 32408 @LENGTH@ 112
+------------INS SingleVariableDeclaration@@ServiceReference<?> ref @TO@ EnhancedForStatement@@ServiceReference<?> ref, SimpleName:references @AT@ 32412 @LENGTH@ 23
+---------------INS ParameterizedType@@ServiceReference<?> @TO@ SingleVariableDeclaration@@ServiceReference<?> ref @AT@ 32412 @LENGTH@ 19
+------------------INS SimpleType@@ServiceReference @TO@ ParameterizedType@@ServiceReference<?> @AT@ 32412 @LENGTH@ 16
+------------------INS WildcardType@@? @TO@ ParameterizedType@@ServiceReference<?> @AT@ 32429 @LENGTH@ 1
+---------------INS SimpleName@@ref @TO@ SingleVariableDeclaration@@ServiceReference<?> ref @AT@ 32432 @LENGTH@ 3
+------------INS SimpleName@@references @TO@ EnhancedForStatement@@ServiceReference<?> ref, SimpleName:references @AT@ 32438 @LENGTH@ 10
+------------INS ReturnStatement@@CastExpression:(FileMonitorService)context.getService(ref) @TO@ EnhancedForStatement@@ServiceReference<?> ref, SimpleName:references @AT@ 32459 @LENGTH@ 52
+---------------INS CastExpression@@(FileMonitorService)context.getService(ref) @TO@ ReturnStatement@@CastExpression:(FileMonitorService)context.getService(ref) @AT@ 32466 @LENGTH@ 44
+------------------INS SimpleType@@FileMonitorService @TO@ CastExpression@@(FileMonitorService)context.getService(ref) @AT@ 32467 @LENGTH@ 18
+------------------INS MethodInvocation@@context.getService(ref) @TO@ CastExpression@@(FileMonitorService)context.getService(ref) @AT@ 32487 @LENGTH@ 23
+---------------------INS SimpleName@@Name:context @TO@ MethodInvocation@@context.getService(ref) @AT@ 32487 @LENGTH@ 7
+---------------------INS SimpleName@@MethodName:getService:[ref] @TO@ MethodInvocation@@context.getService(ref) @AT@ 32495 @LENGTH@ 15
+------------------------INS SimpleName@@ref @TO@ SimpleName@@MethodName:getService:[ref] @AT@ 32506 @LENGTH@ 3
+---------INS ReturnStatement@@NullLiteral:null @TO@ TryStatement@@try:[] @AT@ 32536 @LENGTH@ 12
+------------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 32543 @LENGTH@ 4
+---------INS CatchClause@@InvalidSyntaxException e @TO@ TryStatement@@try:[] @AT@ 32565 @LENGTH@ 147
+------------INS SingleVariableDeclaration@@InvalidSyntaxException e @TO@ CatchClause@@InvalidSyntaxException e @AT@ 32572 @LENGTH@ 24
+---------------INS SimpleType@@InvalidSyntaxException @TO@ SingleVariableDeclaration@@InvalidSyntaxException e @AT@ 32572 @LENGTH@ 22
+---------------INS SimpleName@@e @TO@ SingleVariableDeclaration@@InvalidSyntaxException e @AT@ 32595 @LENGTH@ 1
+------------INS ExpressionStatement@@MethodInvocation:LOGGER.warning("Cannot load FileMonitorService on TypeLocationServiceImpl.") @TO@ CatchClause@@InvalidSyntaxException e @AT@ 32607 @LENGTH@ 77
+---------------INS MethodInvocation@@LOGGER.warning("Cannot load FileMonitorService on TypeLocationServiceImpl.") @TO@ ExpressionStatement@@MethodInvocation:LOGGER.warning("Cannot load FileMonitorService on TypeLocationServiceImpl.") @AT@ 32607 @LENGTH@ 76
+------------------INS SimpleName@@Name:LOGGER @TO@ MethodInvocation@@LOGGER.warning("Cannot load FileMonitorService on TypeLocationServiceImpl.") @AT@ 32607 @LENGTH@ 6
+------------------INS SimpleName@@MethodName:warning:["Cannot load FileMonitorService on TypeLocationServiceImpl."] @TO@ MethodInvocation@@LOGGER.warning("Cannot load FileMonitorService on TypeLocationServiceImpl.") @AT@ 32614 @LENGTH@ 69
+---------------------INS StringLiteral@@"Cannot load FileMonitorService on TypeLocationServiceImpl." @TO@ SimpleName@@MethodName:warning:["Cannot load FileMonitorService on TypeLocationServiceImpl."] @AT@ 32622 @LENGTH@ 60
+------------INS ReturnStatement@@NullLiteral:null @TO@ CatchClause@@InvalidSyntaxException e @AT@ 32692 @LENGTH@ 12
+---------------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 32699 @LENGTH@ 4
+------INS ReturnStatement@@SimpleName:fileMonitorService @TO@ IfStatement@@InfixExpression:fileMonitorService == null @AT@ 32731 @LENGTH@ 26
+---------INS SimpleName@@fileMonitorService @TO@ ReturnStatement@@SimpleName:fileMonitorService @AT@ 32738 @LENGTH@ 18
+

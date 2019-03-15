@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:setResult(yMax,0) @TO@ MethodInvocation:setResult(max,0) @AT@ 4869 @LENGTH@ 19
+---UPD MethodInvocation@@setResult(yMax,0) @TO@ setResult(max,0) @AT@ 4869 @LENGTH@ 18
+------UPD SimpleName@@MethodName:setResult:[yMax, 0] @TO@ MethodName:setResult:[max, 0] @AT@ 4869 @LENGTH@ 18
+---------UPD SimpleName@@yMax @TO@ max @AT@ 4879 @LENGTH@ 4
+

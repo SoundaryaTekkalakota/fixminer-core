@@ -1,0 +1,23 @@
+INS IfStatement@@SimpleName:quartz2 @TO@ EnhancedForStatement@@TriggerListener listener, FieldAccess:this.globalTriggerListeners @AT@ 18215 @LENGTH@ 259
+---MOV ExpressionStatement@@MethodInvocation:ReflectionUtils.invokeMethod(addTriggerListener,target,listener) @TO@ IfStatement@@SimpleName:quartz2 @AT@ 17358 @LENGTH@ 67
+---INS SimpleName@@quartz2 @TO@ IfStatement@@SimpleName:quartz2 @AT@ 18219 @LENGTH@ 7
+---INS VariableDeclarationStatement@@List<?> emptyMatchers=new LinkedList<Object>(); @TO@ IfStatement@@SimpleName:quartz2 @AT@ 18236 @LENGTH@ 49
+------INS ParameterizedType@@List<?> @TO@ VariableDeclarationStatement@@List<?> emptyMatchers=new LinkedList<Object>(); @AT@ 18236 @LENGTH@ 7
+---------INS SimpleType@@List @TO@ ParameterizedType@@List<?> @AT@ 18236 @LENGTH@ 4
+---------INS WildcardType@@? @TO@ ParameterizedType@@List<?> @AT@ 18241 @LENGTH@ 1
+------INS VariableDeclarationFragment@@emptyMatchers=new LinkedList<Object>() @TO@ VariableDeclarationStatement@@List<?> emptyMatchers=new LinkedList<Object>(); @AT@ 18244 @LENGTH@ 40
+---------INS SimpleName@@emptyMatchers @TO@ VariableDeclarationFragment@@emptyMatchers=new LinkedList<Object>() @AT@ 18244 @LENGTH@ 13
+---------INS ClassInstanceCreation@@LinkedList<Object>[] @TO@ VariableDeclarationFragment@@emptyMatchers=new LinkedList<Object>() @AT@ 18260 @LENGTH@ 24
+------------INS New@@new @TO@ ClassInstanceCreation@@LinkedList<Object>[] @AT@ 18260 @LENGTH@ 3
+------------INS ParameterizedType@@LinkedList<Object> @TO@ ClassInstanceCreation@@LinkedList<Object>[] @AT@ 18264 @LENGTH@ 18
+---------------INS SimpleType@@LinkedList @TO@ ParameterizedType@@LinkedList<Object> @AT@ 18264 @LENGTH@ 10
+---------------INS SimpleType@@Object @TO@ ParameterizedType@@LinkedList<Object> @AT@ 18275 @LENGTH@ 6
+---INS ExpressionStatement@@MethodInvocation:ReflectionUtils.invokeMethod(addTriggerListener,target,listener,emptyMatchers) @TO@ IfStatement@@SimpleName:quartz2 @AT@ 18292 @LENGTH@ 82
+------INS MethodInvocation@@ReflectionUtils.invokeMethod(addTriggerListener,target,listener,emptyMatchers) @TO@ ExpressionStatement@@MethodInvocation:ReflectionUtils.invokeMethod(addTriggerListener,target,listener,emptyMatchers) @AT@ 18292 @LENGTH@ 81
+---------INS SimpleName@@Name:ReflectionUtils @TO@ MethodInvocation@@ReflectionUtils.invokeMethod(addTriggerListener,target,listener,emptyMatchers) @AT@ 18292 @LENGTH@ 15
+---------INS SimpleName@@MethodName:invokeMethod:[addTriggerListener, target, listener, emptyMatchers] @TO@ MethodInvocation@@ReflectionUtils.invokeMethod(addTriggerListener,target,listener,emptyMatchers) @AT@ 18308 @LENGTH@ 65
+------------INS SimpleName@@addTriggerListener @TO@ SimpleName@@MethodName:invokeMethod:[addTriggerListener, target, listener, emptyMatchers] @AT@ 18321 @LENGTH@ 18
+------------INS SimpleName@@target @TO@ SimpleName@@MethodName:invokeMethod:[addTriggerListener, target, listener, emptyMatchers] @AT@ 18341 @LENGTH@ 6
+------------INS SimpleName@@listener @TO@ SimpleName@@MethodName:invokeMethod:[addTriggerListener, target, listener, emptyMatchers] @AT@ 18349 @LENGTH@ 8
+------------INS SimpleName@@emptyMatchers @TO@ SimpleName@@MethodName:invokeMethod:[addTriggerListener, target, listener, emptyMatchers] @AT@ 18359 @LENGTH@ 13
+

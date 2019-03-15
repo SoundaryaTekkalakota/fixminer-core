@@ -1,0 +1,12 @@
+IfStatement
+---InfixExpression
+------SimpleName
+---ExpressionStatement
+------MethodInvocation
+---------SimpleName
+---------SimpleName
+------------ClassInstanceCreation
+---------------New
+---------------SimpleType
+---------------SimpleName
+------------SimpleName

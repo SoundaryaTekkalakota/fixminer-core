@@ -1,0 +1,6 @@
+ INS MethodDeclaration
+--- INS Modifier
+--- INS SimpleType
+--- INS SimpleName
+--- INS ReturnStatement
+------ INS SimpleName

@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.info(sessionHandle + ": openSession()") @TO@ MethodInvocation:LOG.debug(sessionHandle + ": openSession()") @AT@ 5147 @LENGTH@ 44
+---UPD MethodInvocation@@LOG.info(sessionHandle + ": openSession()") @TO@ LOG.debug(sessionHandle + ": openSession()") @AT@ 5147 @LENGTH@ 43
+------UPD SimpleName@@MethodName:info:[sessionHandle + ": openSession()"] @TO@ MethodName:debug:[sessionHandle + ": openSession()"] @AT@ 5151 @LENGTH@ 39
+

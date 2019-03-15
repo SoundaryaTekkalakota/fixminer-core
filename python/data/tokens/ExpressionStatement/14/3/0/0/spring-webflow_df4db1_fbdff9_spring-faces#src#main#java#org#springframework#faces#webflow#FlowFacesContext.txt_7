@@ -1,0 +1,15 @@
+UPD ExpressionStatement@@MethodInvocation:builder.source(source).defaultText(msgText.toString()).info() @TO@ Assignment:summaryResolver=new MessageBuilder().source(summarySource).defaultText(summaryText.toString()).info().build() @AT@ 3748 @LENGTH@ 62
+---DEL MethodInvocation@@builder.source(source).defaultText(msgText.toString()).info() @AT@ 3748 @LENGTH@ 61
+------DEL SimpleName@@Name:builder @AT@ 3748 @LENGTH@ 7
+---INS Assignment@@summaryResolver=new MessageBuilder().source(summarySource).defaultText(summaryText.toString()).info().build() @TO@ ExpressionStatement@@MethodInvocation:builder.source(source).defaultText(msgText.toString()).info() @AT@ 4179 @LENGTH@ 117
+------INS SimpleName@@summaryResolver @TO@ Assignment@@summaryResolver=new MessageBuilder().source(summarySource).defaultText(summaryText.toString()).info().build() @AT@ 4179 @LENGTH@ 15
+------INS Operator@@= @TO@ Assignment@@summaryResolver=new MessageBuilder().source(summarySource).defaultText(summaryText.toString()).info().build() @AT@ 4194 @LENGTH@ 1
+------INS MethodInvocation@@new MessageBuilder().source(summarySource).defaultText(summaryText.toString()).info().build() @TO@ Assignment@@summaryResolver=new MessageBuilder().source(summarySource).defaultText(summaryText.toString()).info().build() @AT@ 4197 @LENGTH@ 99
+---------MOV MethodInvocation@@MethodName:source:[source] @TO@ MethodInvocation@@new MessageBuilder().source(summarySource).defaultText(summaryText.toString()).info().build() @AT@ 3748 @LENGTH@ 22
+---------MOV MethodInvocation@@MethodName:defaultText:[msgText.toString()] @TO@ MethodInvocation@@new MessageBuilder().source(summarySource).defaultText(summaryText.toString()).info().build() @AT@ 3748 @LENGTH@ 54
+---------MOV SimpleName@@MethodName:info:[] @TO@ MethodInvocation@@new MessageBuilder().source(summarySource).defaultText(summaryText.toString()).info().build() @AT@ 3803 @LENGTH@ 6
+---------INS ClassInstanceCreation@@MessageBuilder[] @TO@ MethodInvocation@@new MessageBuilder().source(summarySource).defaultText(summaryText.toString()).info().build() @AT@ 4197 @LENGTH@ 20
+------------INS New@@new @TO@ ClassInstanceCreation@@MessageBuilder[] @AT@ 4197 @LENGTH@ 3
+------------INS SimpleType@@MessageBuilder @TO@ ClassInstanceCreation@@MessageBuilder[] @AT@ 4201 @LENGTH@ 14
+---------INS MethodInvocation@@MethodName:info:[] @TO@ MethodInvocation@@new MessageBuilder().source(summarySource).defaultText(summaryText.toString()).info().build() @AT@ 4197 @LENGTH@ 85
+

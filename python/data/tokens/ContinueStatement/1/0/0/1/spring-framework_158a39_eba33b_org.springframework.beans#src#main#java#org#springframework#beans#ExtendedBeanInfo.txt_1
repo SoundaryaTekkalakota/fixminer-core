@@ -1,0 +1,2 @@
+INS ContinueStatement@@ALL_METHODS @TO@ IfStatement@@InfixExpression:method.getName().startsWith("set") && method.getParameterTypes().length == 1 @AT@ 4686 @LENGTH@ 21
+

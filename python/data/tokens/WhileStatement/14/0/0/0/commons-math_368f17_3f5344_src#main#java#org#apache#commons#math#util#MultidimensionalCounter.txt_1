@@ -1,0 +1,15 @@
+DEL WhileStatement@@InfixExpression:count < index @AT@ 6939 @LENGTH@ 78
+---DEL InfixExpression@@count < index @AT@ 6946 @LENGTH@ 13
+------DEL SimpleName@@count @AT@ 6946 @LENGTH@ 5
+------DEL Operator@@< @AT@ 6951 @LENGTH@ 1
+------DEL SimpleName@@index @AT@ 6954 @LENGTH@ 5
+---DEL ExpressionStatement@@Assignment:count+=idx @AT@ 6975 @LENGTH@ 13
+------DEL Assignment@@count+=idx @AT@ 6975 @LENGTH@ 12
+---------DEL SimpleName@@count @AT@ 6975 @LENGTH@ 5
+---------DEL Operator@@+= @AT@ 6980 @LENGTH@ 2
+---------DEL SimpleName@@idx @AT@ 6984 @LENGTH@ 3
+---DEL ExpressionStatement@@PrefixExpression:++idx @AT@ 7001 @LENGTH@ 6
+------DEL PrefixExpression@@++idx @AT@ 7001 @LENGTH@ 5
+---------DEL Operator@@++ @AT@ 7001 @LENGTH@ 2
+---------DEL SimpleName@@idx @AT@ 7003 @LENGTH@ 3
+

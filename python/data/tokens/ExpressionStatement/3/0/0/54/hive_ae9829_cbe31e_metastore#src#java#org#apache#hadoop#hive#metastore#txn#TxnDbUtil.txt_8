@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:s.execute("CREATE TABLE TXN_COMPONENTS (" + "  TC_TXNID bigint REFERENCES TXNS (TXN_ID)," + "  TC_DATABASE varchar(128) NOT NULL,"+ "  TC_TABLE varchar(128),"+ "  TC_PARTITION varchar(767))") @TO@ MethodInvocation:stmt.execute("CREATE TABLE TXN_COMPONENTS (" + "  TC_TXNID bigint REFERENCES TXNS (TXN_ID)," + "  TC_DATABASE varchar(128) NOT NULL,"+ "  TC_TABLE varchar(128),"+ "  TC_PARTITION varchar(767))") @AT@ 2601 @LENGTH@ 218
+---UPD MethodInvocation@@s.execute("CREATE TABLE TXN_COMPONENTS (" + "  TC_TXNID bigint REFERENCES TXNS (TXN_ID)," + "  TC_DATABASE varchar(128) NOT NULL,"+ "  TC_TABLE varchar(128),"+ "  TC_PARTITION varchar(767))") @TO@ stmt.execute("CREATE TABLE TXN_COMPONENTS (" + "  TC_TXNID bigint REFERENCES TXNS (TXN_ID)," + "  TC_DATABASE varchar(128) NOT NULL,"+ "  TC_TABLE varchar(128),"+ "  TC_PARTITION varchar(767))") @AT@ 2601 @LENGTH@ 217
+------UPD SimpleName@@Name:s @TO@ Name:stmt @AT@ 2601 @LENGTH@ 1
+

@@ -1,0 +1,157 @@
+UPD ExpressionStatement@@MethodInvocation:timeoutHandler.suspendAndExecute(new Runnable(){
+  @Override public void run(){
+    boolean success=false;
+    boolean callContinuous=false;
+    try {
+      if (username == null || password == null) {
+        if (console == null) {
+          initBasicConsole(null,false);
+        }
+        console.controlled();
+        if (!console.running()) {
+          console.start();
+        }
+ else {
+          callContinuous=true;
+        }
+      }
+      dohandle(callbacks);
+      success=true;
+    }
+ catch (    IOException|UnsupportedCallbackException|CliInitializationException e) {
+      throw new RuntimeException(e);
+    }
+ finally {
+      if (console != null && (!success || callContinuous)) {
+        console.continuous();
+      }
+    }
+  }
+}
+) @TO@ MethodInvocation:timeoutHandler.suspendAndExecute(new Runnable(){
+  @Override public void run(){
+    try {
+      if (username == null || password == null) {
+        if (!INTERACT) {
+          if (console == null) {
+            initBasicConsole(null,false);
+          }
+          console.controlled();
+          if (!console.running()) {
+            console.start();
+          }
+        }
+      }
+      dohandle(callbacks);
+    }
+ catch (    IOException|UnsupportedCallbackException|CliInitializationException e) {
+      throw new RuntimeException(e);
+    }
+  }
+}
+) @AT@ 71169 @LENGTH@ 1490
+---UPD MethodInvocation@@timeoutHandler.suspendAndExecute(new Runnable(){
+  @Override public void run(){
+    boolean success=false;
+    boolean callContinuous=false;
+    try {
+      if (username == null || password == null) {
+        if (console == null) {
+          initBasicConsole(null,false);
+        }
+        console.controlled();
+        if (!console.running()) {
+          console.start();
+        }
+ else {
+          callContinuous=true;
+        }
+      }
+      dohandle(callbacks);
+      success=true;
+    }
+ catch (    IOException|UnsupportedCallbackException|CliInitializationException e) {
+      throw new RuntimeException(e);
+    }
+ finally {
+      if (console != null && (!success || callContinuous)) {
+        console.continuous();
+      }
+    }
+  }
+}
+) @TO@ timeoutHandler.suspendAndExecute(new Runnable(){
+  @Override public void run(){
+    try {
+      if (username == null || password == null) {
+        if (!INTERACT) {
+          if (console == null) {
+            initBasicConsole(null,false);
+          }
+          console.controlled();
+          if (!console.running()) {
+            console.start();
+          }
+        }
+      }
+      dohandle(callbacks);
+    }
+ catch (    IOException|UnsupportedCallbackException|CliInitializationException e) {
+      throw new RuntimeException(e);
+    }
+  }
+}
+) @AT@ 71169 @LENGTH@ 1489
+------UPD SimpleName@@MethodName:suspendAndExecute:[new Runnable(){
+  @Override public void run(){
+    boolean success=false;
+    boolean callContinuous=false;
+    try {
+      if (username == null || password == null) {
+        if (console == null) {
+          initBasicConsole(null,false);
+        }
+        console.controlled();
+        if (!console.running()) {
+          console.start();
+        }
+ else {
+          callContinuous=true;
+        }
+      }
+      dohandle(callbacks);
+      success=true;
+    }
+ catch (    IOException|UnsupportedCallbackException|CliInitializationException e) {
+      throw new RuntimeException(e);
+    }
+ finally {
+      if (console != null && (!success || callContinuous)) {
+        console.continuous();
+      }
+    }
+  }
+}
+] @TO@ MethodName:suspendAndExecute:[new Runnable(){
+  @Override public void run(){
+    try {
+      if (username == null || password == null) {
+        if (!INTERACT) {
+          if (console == null) {
+            initBasicConsole(null,false);
+          }
+          console.controlled();
+          if (!console.running()) {
+            console.start();
+          }
+        }
+      }
+      dohandle(callbacks);
+    }
+ catch (    IOException|UnsupportedCallbackException|CliInitializationException e) {
+      throw new RuntimeException(e);
+    }
+  }
+}
+] @AT@ 71184 @LENGTH@ 1474
+

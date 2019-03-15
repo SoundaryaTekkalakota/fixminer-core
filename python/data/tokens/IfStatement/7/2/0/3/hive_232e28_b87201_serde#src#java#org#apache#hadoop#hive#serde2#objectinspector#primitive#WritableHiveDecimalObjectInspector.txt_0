@@ -1,0 +1,8 @@
+INS IfStatement@@InfixExpression:o == null @TO@ MethodDeclaration@@public, HiveDecimalWritable, MethodName:getPrimitiveWritableObject, Object o,  @AT@ 1502 @LENGTH@ 41
+---INS InfixExpression@@o == null @TO@ IfStatement@@InfixExpression:o == null @AT@ 1506 @LENGTH@ 9
+------INS SimpleName@@o @TO@ InfixExpression@@o == null @AT@ 1506 @LENGTH@ 1
+------INS Operator@@== @TO@ InfixExpression@@o == null @AT@ 1507 @LENGTH@ 2
+------INS NullLiteral@@null @TO@ InfixExpression@@o == null @AT@ 1511 @LENGTH@ 4
+---INS ReturnStatement@@NullLiteral:null @TO@ IfStatement@@InfixExpression:o == null @AT@ 1525 @LENGTH@ 12
+------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 1532 @LENGTH@ 4
+

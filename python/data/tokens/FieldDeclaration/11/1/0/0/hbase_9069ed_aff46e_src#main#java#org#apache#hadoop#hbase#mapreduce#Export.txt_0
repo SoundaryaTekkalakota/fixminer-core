@@ -1,0 +1,12 @@
+INS FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(Export.class)] @TO@ TypeDeclaration@@[public]Export,  @AT@ 1679 @LENGTH@ 63
+---INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(Export.class)] @AT@ 1679 @LENGTH@ 7
+---INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(Export.class)] @AT@ 1687 @LENGTH@ 6
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(Export.class)] @AT@ 1694 @LENGTH@ 5
+---INS SimpleType@@Log @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(Export.class)] @AT@ 1700 @LENGTH@ 3
+---INS VariableDeclarationFragment@@LOG=LogFactory.getLog(Export.class) @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(Export.class)] @AT@ 1704 @LENGTH@ 37
+------INS SimpleName@@LOG @TO@ VariableDeclarationFragment@@LOG=LogFactory.getLog(Export.class) @AT@ 1704 @LENGTH@ 3
+------INS MethodInvocation@@LogFactory.getLog(Export.class) @TO@ VariableDeclarationFragment@@LOG=LogFactory.getLog(Export.class) @AT@ 1710 @LENGTH@ 31
+---------INS SimpleName@@Name:LogFactory @TO@ MethodInvocation@@LogFactory.getLog(Export.class) @AT@ 1710 @LENGTH@ 10
+---------INS SimpleName@@MethodName:getLog:[Export.class] @TO@ MethodInvocation@@LogFactory.getLog(Export.class) @AT@ 1721 @LENGTH@ 20
+------------INS TypeLiteral@@Export.class @TO@ SimpleName@@MethodName:getLog:[Export.class] @AT@ 1728 @LENGTH@ 12
+

@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:recusivelyCollectMetaAnnotations(visited,metaMetaAnnotation) @TO@ MethodInvocation:recursivelyCollectMetaAnnotations(visited,metaMetaAnnotation) @AT@ 9728 @LENGTH@ 62
+---UPD MethodInvocation@@recusivelyCollectMetaAnnotations(visited,metaMetaAnnotation) @TO@ recursivelyCollectMetaAnnotations(visited,metaMetaAnnotation) @AT@ 9728 @LENGTH@ 61
+------UPD SimpleName@@MethodName:recusivelyCollectMetaAnnotations:[visited, metaMetaAnnotation] @TO@ MethodName:recursivelyCollectMetaAnnotations:[visited, metaMetaAnnotation] @AT@ 9728 @LENGTH@ 61
+

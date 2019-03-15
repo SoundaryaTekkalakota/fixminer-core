@@ -1,0 +1,64 @@
+UPD ExpressionStatement@@MethodInvocation:resourceRegistration.registerReadOnlyAttribute(NEXT_TIMEOUT,new AbstractReadAttributeHandler(){
+  @Override protected void readAttribute(  TimerImpl timer,  ModelNode toSet){
+    final Date d=timer.getNextTimeout();
+    if (d != null) {
+      toSet.set(d.getTime());
+    }
+  }
+}
+) @TO@ MethodInvocation:resourceRegistration.registerReadOnlyAttribute(NEXT_TIMEOUT,new AbstractReadAttributeHandler(){
+  @Override protected void readAttribute(  TimerImpl timer,  ModelNode toSet){
+    try {
+      final Date d=timer.getNextTimeout();
+      if (d != null) {
+        toSet.set(d.getTime());
+      }
+    }
+ catch (    NoMoreTimeoutsException ignored) {
+    }
+  }
+}
+) @AT@ 11099 @LENGTH@ 374
+---UPD MethodInvocation@@resourceRegistration.registerReadOnlyAttribute(NEXT_TIMEOUT,new AbstractReadAttributeHandler(){
+  @Override protected void readAttribute(  TimerImpl timer,  ModelNode toSet){
+    final Date d=timer.getNextTimeout();
+    if (d != null) {
+      toSet.set(d.getTime());
+    }
+  }
+}
+) @TO@ resourceRegistration.registerReadOnlyAttribute(NEXT_TIMEOUT,new AbstractReadAttributeHandler(){
+  @Override protected void readAttribute(  TimerImpl timer,  ModelNode toSet){
+    try {
+      final Date d=timer.getNextTimeout();
+      if (d != null) {
+        toSet.set(d.getTime());
+      }
+    }
+ catch (    NoMoreTimeoutsException ignored) {
+    }
+  }
+}
+) @AT@ 11099 @LENGTH@ 373
+------UPD SimpleName@@MethodName:registerReadOnlyAttribute:[NEXT_TIMEOUT, new AbstractReadAttributeHandler(){
+  @Override protected void readAttribute(  TimerImpl timer,  ModelNode toSet){
+    final Date d=timer.getNextTimeout();
+    if (d != null) {
+      toSet.set(d.getTime());
+    }
+  }
+}
+] @TO@ MethodName:registerReadOnlyAttribute:[NEXT_TIMEOUT, new AbstractReadAttributeHandler(){
+  @Override protected void readAttribute(  TimerImpl timer,  ModelNode toSet){
+    try {
+      final Date d=timer.getNextTimeout();
+      if (d != null) {
+        toSet.set(d.getTime());
+      }
+    }
+ catch (    NoMoreTimeoutsException ignored) {
+    }
+  }
+}
+] @AT@ 11120 @LENGTH@ 352
+

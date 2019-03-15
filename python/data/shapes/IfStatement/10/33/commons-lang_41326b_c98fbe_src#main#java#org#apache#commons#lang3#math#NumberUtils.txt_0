@@ -1,0 +1,10 @@
+IfStatement
+---InfixExpression
+------MethodInvocation
+---------SimpleName
+---------SimpleName
+------------StringLiteral
+------MethodInvocation
+---------SimpleName
+---------SimpleName
+------------StringLiteral

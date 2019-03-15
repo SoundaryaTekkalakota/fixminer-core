@@ -1,0 +1,12 @@
+VariableDeclarationStatement
+---SimpleType
+---VariableDeclarationFragment
+------SimpleName
+------InfixExpression
+---------StringLiteral
+---------Operator
+---------SimpleName
+---------StringLiteral
+---------SimpleName
+---------StringLiteral
+---------SimpleName

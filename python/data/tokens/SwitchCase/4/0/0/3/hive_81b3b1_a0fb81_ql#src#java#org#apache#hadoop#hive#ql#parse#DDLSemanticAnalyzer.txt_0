@@ -1,0 +1,5 @@
+INS SwitchCase@@QualifiedName:HiveParser.TOK_TBLPARQUETFILE @TO@ SwitchStatement@@MethodInvocation:child.getToken().getType() @AT@ 55212 @LENGTH@ 35
+---INS QualifiedName@@HiveParser.TOK_TBLPARQUETFILE @TO@ SwitchCase@@QualifiedName:HiveParser.TOK_TBLPARQUETFILE @AT@ 55217 @LENGTH@ 29
+------INS SimpleName@@HiveParser @TO@ QualifiedName@@HiveParser.TOK_TBLPARQUETFILE @AT@ 55217 @LENGTH@ 10
+------INS SimpleName@@TOK_TBLPARQUETFILE @TO@ QualifiedName@@HiveParser.TOK_TBLPARQUETFILE @AT@ 55228 @LENGTH@ 18
+

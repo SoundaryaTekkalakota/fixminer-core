@@ -1,0 +1,12 @@
+ DEL EnhancedForStatement
+--- DEL SingleVariableDeclaration
+------ DEL Modifier
+------ DEL SimpleType
+------ DEL SimpleName
+--- DEL SimpleName
+--- DEL ExpressionStatement
+------ DEL MethodInvocation
+--------- DEL SimpleName
+--------- DEL SimpleName
+------------ DEL SimpleName
+------------ DEL SimpleName

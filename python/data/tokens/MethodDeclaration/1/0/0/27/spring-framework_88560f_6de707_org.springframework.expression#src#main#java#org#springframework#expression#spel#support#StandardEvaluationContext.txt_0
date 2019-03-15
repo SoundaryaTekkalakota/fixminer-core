@@ -1,0 +1,2 @@
+MOV MethodDeclaration@@private, void, MethodName:ensureConstructorResolversInitialized,  @TO@ TypeDeclaration@@[public]StandardEvaluationContext, [EvaluationContext] @AT@ 3664 @LENGTH@ 244
+

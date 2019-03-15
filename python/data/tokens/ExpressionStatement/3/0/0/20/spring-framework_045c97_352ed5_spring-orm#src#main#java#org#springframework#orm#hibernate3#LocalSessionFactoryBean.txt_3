@@ -1,0 +1,61 @@
+UPD ExpressionStatement@@MethodInvocation:hibernateTemplate.execute(new HibernateCallback<Object>(){
+  public Object doInHibernate(  Session session) throws HibernateException, SQLException {
+    Connection con=session.connection();
+    Dialect dialect=Dialect.getDialect(getConfiguration().getProperties());
+    DatabaseMetadata metadata=new DatabaseMetadata(con,dialect);
+    String[] sql=getConfiguration().generateSchemaUpdateScript(dialect,metadata);
+    executeSchemaScript(con,sql);
+    return null;
+  }
+}
+) @TO@ MethodInvocation:hibernateTemplate.execute(new HibernateCallback<Object>(){
+  public Object doInHibernate(  Session session) throws HibernateException, SQLException {
+    Connection con=session.connection();
+    DatabaseMetadata metadata=new DatabaseMetadata(con,dialect);
+    String[] sql=getConfiguration().generateSchemaUpdateScript(dialect,metadata);
+    executeSchemaScript(con,sql);
+    return null;
+  }
+}
+) @AT@ 38471 @LENGTH@ 513
+---UPD MethodInvocation@@hibernateTemplate.execute(new HibernateCallback<Object>(){
+  public Object doInHibernate(  Session session) throws HibernateException, SQLException {
+    Connection con=session.connection();
+    Dialect dialect=Dialect.getDialect(getConfiguration().getProperties());
+    DatabaseMetadata metadata=new DatabaseMetadata(con,dialect);
+    String[] sql=getConfiguration().generateSchemaUpdateScript(dialect,metadata);
+    executeSchemaScript(con,sql);
+    return null;
+  }
+}
+) @TO@ hibernateTemplate.execute(new HibernateCallback<Object>(){
+  public Object doInHibernate(  Session session) throws HibernateException, SQLException {
+    Connection con=session.connection();
+    DatabaseMetadata metadata=new DatabaseMetadata(con,dialect);
+    String[] sql=getConfiguration().generateSchemaUpdateScript(dialect,metadata);
+    executeSchemaScript(con,sql);
+    return null;
+  }
+}
+) @AT@ 38471 @LENGTH@ 512
+------UPD SimpleName@@MethodName:execute:[new HibernateCallback<Object>(){
+  public Object doInHibernate(  Session session) throws HibernateException, SQLException {
+    Connection con=session.connection();
+    Dialect dialect=Dialect.getDialect(getConfiguration().getProperties());
+    DatabaseMetadata metadata=new DatabaseMetadata(con,dialect);
+    String[] sql=getConfiguration().generateSchemaUpdateScript(dialect,metadata);
+    executeSchemaScript(con,sql);
+    return null;
+  }
+}
+] @TO@ MethodName:execute:[new HibernateCallback<Object>(){
+  public Object doInHibernate(  Session session) throws HibernateException, SQLException {
+    Connection con=session.connection();
+    DatabaseMetadata metadata=new DatabaseMetadata(con,dialect);
+    String[] sql=getConfiguration().generateSchemaUpdateScript(dialect,metadata);
+    executeSchemaScript(con,sql);
+    return null;
+  }
+}
+] @AT@ 38489 @LENGTH@ 494
+

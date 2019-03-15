@@ -1,0 +1,7 @@
+VariableDeclarationStatement
+---VariableDeclarationFragment
+------ClassInstanceCreation
+---------InstanceofExpression
+------------SimpleName
+------------Instanceof
+------------SimpleType

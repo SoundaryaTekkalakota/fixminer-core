@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, String, [cookieName] @TO@ TypeDeclaration@@SingleSignOnService, [Service<SingleSignOnService>] @AT@ 1723 @LENGTH@ 32
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, String, [cookieName] @AT@ 1723 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, String, [cookieName] @AT@ 1731 @LENGTH@ 5
+---INS SimpleType@@String @TO@ FieldDeclaration@@private, final, String, [cookieName] @AT@ 1737 @LENGTH@ 6
+---INS VariableDeclarationFragment@@cookieName @TO@ FieldDeclaration@@private, final, String, [cookieName] @AT@ 1744 @LENGTH@ 10
+------INS SimpleName@@cookieName @TO@ VariableDeclarationFragment@@cookieName @AT@ 1744 @LENGTH@ 10
+

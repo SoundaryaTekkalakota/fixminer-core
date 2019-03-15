@@ -1,0 +1,3 @@
+INS ThrowStatement@@SimpleName:e @TO@ IfStatement@@MethodInvocation:e.getMessage().matches("(?s).*(IO|TTransport)Exception.*") @AT@ 7427 @LENGTH@ 8
+---INS SimpleName@@e @TO@ ThrowStatement@@SimpleName:e @AT@ 7433 @LENGTH@ 1
+

@@ -1,0 +1,8 @@
+INS EnhancedForStatement@@String module, SimpleName:EXPORTED_MODULES @TO@ MethodDeclaration@@private, void, MethodName:addDependencies, DeploymentUnit deploymentUnit,  @AT@ 2947 @LENGTH@ 173
+---INS SingleVariableDeclaration@@String module @TO@ EnhancedForStatement@@String module, SimpleName:EXPORTED_MODULES @AT@ 2952 @LENGTH@ 13
+------INS SimpleType@@String @TO@ SingleVariableDeclaration@@String module @AT@ 2952 @LENGTH@ 6
+------INS SimpleName@@module @TO@ SingleVariableDeclaration@@String module @AT@ 2959 @LENGTH@ 6
+---INS SimpleName@@EXPORTED_MODULES @TO@ EnhancedForStatement@@String module, SimpleName:EXPORTED_MODULES @AT@ 2968 @LENGTH@ 16
+---INS ExpressionStatement@@MethodInvocation:moduleSpecification.addSystemDependency(new ModuleDependency(moduleLoader,module,false,true,true,false)) @TO@ EnhancedForStatement@@String module, SimpleName:EXPORTED_MODULES @AT@ 3000 @LENGTH@ 110
+------MOV MethodInvocation@@moduleSpecification.addSystemDependency(new ModuleDependency(moduleLoader,WF_OT_MODULE,false,true,true,false)) @TO@ ExpressionStatement@@MethodInvocation:moduleSpecification.addSystemDependency(new ModuleDependency(moduleLoader,module,false,true,true,false)) @AT@ 2677 @LENGTH@ 115
+

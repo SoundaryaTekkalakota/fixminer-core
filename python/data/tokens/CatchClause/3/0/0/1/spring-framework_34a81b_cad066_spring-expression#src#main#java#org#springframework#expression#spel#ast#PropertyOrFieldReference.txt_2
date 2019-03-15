@@ -1,0 +1,4 @@
+UPD CatchClause@@AccessException ex @TO@ Exception ex @AT@ 8855 @LENGTH@ 199
+---UPD SingleVariableDeclaration@@AccessException ex @TO@ Exception ex @AT@ 8862 @LENGTH@ 18
+------UPD SimpleType@@AccessException @TO@ Exception @AT@ 8862 @LENGTH@ 15
+

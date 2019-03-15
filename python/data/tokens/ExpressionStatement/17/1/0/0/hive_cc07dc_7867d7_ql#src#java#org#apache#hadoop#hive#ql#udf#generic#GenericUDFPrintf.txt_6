@@ -1,0 +1,18 @@
+DEL ExpressionStatement@@MethodInvocation:argumentList.add(((BooleanObjectInspector)argumentOIs[i]).get(arguments[i].get())) @AT@ 4640 @LENGTH@ 83
+---DEL MethodInvocation@@argumentList.add(((BooleanObjectInspector)argumentOIs[i]).get(arguments[i].get())) @AT@ 4640 @LENGTH@ 82
+------DEL SimpleName@@Name:argumentList @AT@ 4640 @LENGTH@ 12
+------DEL SimpleName@@MethodName:add:[((BooleanObjectInspector)argumentOIs[i]).get(arguments[i].get())] @AT@ 4653 @LENGTH@ 69
+---------DEL MethodInvocation@@((BooleanObjectInspector)argumentOIs[i]).get(arguments[i].get()) @AT@ 4657 @LENGTH@ 64
+------------DEL ParenthesizedExpression@@((BooleanObjectInspector)argumentOIs[i]) @AT@ 4657 @LENGTH@ 40
+---------------DEL CastExpression@@(BooleanObjectInspector)argumentOIs[i] @AT@ 4658 @LENGTH@ 38
+------------------DEL SimpleType@@BooleanObjectInspector @AT@ 4659 @LENGTH@ 22
+------------------DEL ArrayAccess@@argumentOIs[i] @AT@ 4682 @LENGTH@ 14
+---------------------DEL SimpleName@@argumentOIs @AT@ 4682 @LENGTH@ 11
+---------------------DEL SimpleName@@i @AT@ 4694 @LENGTH@ 1
+------------DEL SimpleName@@MethodName:get:[arguments[i].get()] @AT@ 4698 @LENGTH@ 23
+---------------DEL MethodInvocation@@arguments[i].get() @AT@ 4702 @LENGTH@ 18
+------------------DEL ArrayAccess@@arguments[i] @AT@ 4702 @LENGTH@ 12
+---------------------DEL SimpleName@@arguments @AT@ 4702 @LENGTH@ 9
+---------------------DEL SimpleName@@i @AT@ 4712 @LENGTH@ 1
+------------------DEL SimpleName@@MethodName:get:[] @AT@ 4715 @LENGTH@ 5
+

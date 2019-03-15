@@ -1,0 +1,4 @@
+UPD FieldDeclaration@@private, static, com.google.protobuf.GeneratedMessage.FieldAccessorTable, [internal_static_org_apache_hadoop_hive_ql_io_orc_RowIndexEntry_fieldAccessorTable] @TO@ private, static, com.google.protobuf.GeneratedMessage.FieldAccessorTable, [internal_static_orc_proto_RowIndexEntry_fieldAccessorTable] @AT@ 696319 @LENGTH@ 163
+---UPD VariableDeclarationFragment@@internal_static_org_apache_hadoop_hive_ql_io_orc_RowIndexEntry_fieldAccessorTable @TO@ internal_static_orc_proto_RowIndexEntry_fieldAccessorTable @AT@ 696400 @LENGTH@ 81
+------UPD SimpleName@@internal_static_org_apache_hadoop_hive_ql_io_orc_RowIndexEntry_fieldAccessorTable @TO@ internal_static_orc_proto_RowIndexEntry_fieldAccessorTable @AT@ 696400 @LENGTH@ 81
+

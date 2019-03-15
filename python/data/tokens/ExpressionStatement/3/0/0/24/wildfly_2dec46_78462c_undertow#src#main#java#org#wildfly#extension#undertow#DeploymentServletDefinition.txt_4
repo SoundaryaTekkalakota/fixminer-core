@@ -1,0 +1,34 @@
+UPD ExpressionStatement@@MethodInvocation:registration.registerMetric(MAX_REQUEST_TIME,new AbstractMetricsHandler(){
+  @Override void handle(  final ModelNode response,  final String name,  final MetricsHandler.MetricResult metricResult,  final ServletInfo servlet){
+    response.set((long)metricResult.getMaxRequestTime());
+  }
+}
+) @TO@ MethodInvocation:registration.registerMetric(MAX_REQUEST_TIME,new AbstractMetricsHandler(){
+  @Override void handle(  final ModelNode response,  final MetricsHandler.MetricResult metricResult){
+    response.set((long)metricResult.getMaxRequestTime());
+  }
+}
+) @AT@ 4111 @LENGTH@ 341
+---UPD MethodInvocation@@registration.registerMetric(MAX_REQUEST_TIME,new AbstractMetricsHandler(){
+  @Override void handle(  final ModelNode response,  final String name,  final MetricsHandler.MetricResult metricResult,  final ServletInfo servlet){
+    response.set((long)metricResult.getMaxRequestTime());
+  }
+}
+) @TO@ registration.registerMetric(MAX_REQUEST_TIME,new AbstractMetricsHandler(){
+  @Override void handle(  final ModelNode response,  final MetricsHandler.MetricResult metricResult){
+    response.set((long)metricResult.getMaxRequestTime());
+  }
+}
+) @AT@ 4111 @LENGTH@ 340
+------UPD SimpleName@@MethodName:registerMetric:[MAX_REQUEST_TIME, new AbstractMetricsHandler(){
+  @Override void handle(  final ModelNode response,  final String name,  final MetricsHandler.MetricResult metricResult,  final ServletInfo servlet){
+    response.set((long)metricResult.getMaxRequestTime());
+  }
+}
+] @TO@ MethodName:registerMetric:[MAX_REQUEST_TIME, new AbstractMetricsHandler(){
+  @Override void handle(  final ModelNode response,  final MetricsHandler.MetricResult metricResult){
+    response.set((long)metricResult.getMaxRequestTime());
+  }
+}
+] @AT@ 4124 @LENGTH@ 327
+

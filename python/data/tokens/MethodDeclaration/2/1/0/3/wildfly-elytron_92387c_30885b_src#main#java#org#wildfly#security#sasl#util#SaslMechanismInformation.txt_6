@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, static, Set<Class<? extends Credential>>, MethodName:getSupportedServerCredentialTypes, String mechName,  @TO@ public, static, Set<Class<? extends Credential>>, MethodName:getSupportedClientCredentialTypes, String mechName,  @AT@ 14475 @LENGTH@ 1407
+---UPD SimpleName@@MethodName:getSupportedServerCredentialTypes @TO@ MethodName:getSupportedClientCredentialTypes @AT@ 14522 @LENGTH@ 33
+

@@ -1,0 +1,14 @@
+UPD CatchClause@@Throwable t @TO@ Exception e @AT@ 1873 @LENGTH@ 27
+---UPD SingleVariableDeclaration@@Throwable t @TO@ Exception e @AT@ 1880 @LENGTH@ 11
+------UPD SimpleType@@Throwable @TO@ Exception @AT@ 1880 @LENGTH@ 9
+------UPD SimpleName@@t @TO@ e @AT@ 1890 @LENGTH@ 1
+---INS ExpressionStatement@@MethodInvocation:LOG.debug("fail to get SQL key words from database metadata due to the exception: " + e,e) @TO@ CatchClause@@Throwable t @AT@ 2069 @LENGTH@ 92
+------INS MethodInvocation@@LOG.debug("fail to get SQL key words from database metadata due to the exception: " + e,e) @TO@ ExpressionStatement@@MethodInvocation:LOG.debug("fail to get SQL key words from database metadata due to the exception: " + e,e) @AT@ 2069 @LENGTH@ 91
+---------INS SimpleName@@Name:LOG @TO@ MethodInvocation@@LOG.debug("fail to get SQL key words from database metadata due to the exception: " + e,e) @AT@ 2069 @LENGTH@ 3
+---------INS SimpleName@@MethodName:debug:["fail to get SQL key words from database metadata due to the exception: " + e, e] @TO@ MethodInvocation@@LOG.debug("fail to get SQL key words from database metadata due to the exception: " + e,e) @AT@ 2073 @LENGTH@ 87
+------------INS InfixExpression@@"fail to get SQL key words from database metadata due to the exception: " + e @TO@ SimpleName@@MethodName:debug:["fail to get SQL key words from database metadata due to the exception: " + e, e] @AT@ 2079 @LENGTH@ 77
+---------------INS StringLiteral@@"fail to get SQL key words from database metadata due to the exception: " @TO@ InfixExpression@@"fail to get SQL key words from database metadata due to the exception: " + e @AT@ 2079 @LENGTH@ 73
+---------------INS Operator@@+ @TO@ InfixExpression@@"fail to get SQL key words from database metadata due to the exception: " + e @AT@ 2152 @LENGTH@ 1
+---------------INS SimpleName@@e @TO@ InfixExpression@@"fail to get SQL key words from database metadata due to the exception: " + e @AT@ 2155 @LENGTH@ 1
+------------INS SimpleName@@e @TO@ SimpleName@@MethodName:debug:["fail to get SQL key words from database metadata due to the exception: " + e, e] @AT@ 2158 @LENGTH@ 1
+

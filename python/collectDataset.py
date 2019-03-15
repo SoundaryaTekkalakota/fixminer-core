@@ -11,8 +11,8 @@ if __name__ == '__main__':
 
         setEnv(args)
 
-        job = args.job
-        # job = 'cluster'
+        # job = args.job
+        job = 'stats'
         ROOT_DIR = os.environ["ROOT_DIR"]
         REPO_PATH = os.environ["REPO_PATH"]
         CODE_PATH = os.environ["CODE_PATH"]
@@ -118,6 +118,8 @@ if __name__ == '__main__':
             keys = redis_db.scan(0, match='*', count='1000000')
 
             matches = pd.DataFrame(keys[1], columns=['pairs_key'])
+
+            # matches = load_zipped_pickle(join(DATA_PATH,'singleHunks'))
             matches['pairs_key'] = matches['pairs_key'].apply(lambda x: x.decode())
             matches['root'] = matches['pairs_key'].apply(lambda x: x.split('/')[0])
             matches['size'] = matches['pairs_key'].apply(lambda x: x.split('/')[1])
@@ -166,6 +168,7 @@ if __name__ == '__main__':
             dbDir = join(DATA_PATH, 'redis')
 
             portInner = '6380'
+            # startDB(dbDir, portInner, "test.rdb")
             startDB(dbDir, portInner, "clusterl0-gumInputALL.rdb")
             # cmd = "bash " + dbDir + "/" + "startServer.sh " + dbDir + " clusterl0-gumInputALL.rdb " + " " + portInner;
             #
@@ -199,8 +202,8 @@ if __name__ == '__main__':
                     key = shapeName+"-"+sizeCluster+"-" + k
                     redis_db.set(key,v.strip())
 
-            stopServer = "bash " + dbDir + "/" + "stopServer.sh " + portInner
-            o,e = shellGitCheckout(stopServer)
+            # stopServer = "bash " + dbDir + "/" + "stopServer.sh " + portInner
+            # o,e = shellGitCheckout(stopServer)
 
         elif job == 'cluster':
             from abstractPatch import cluster
@@ -403,67 +406,25 @@ if __name__ == '__main__':
 
             redis_db = redis.StrictRedis(host="localhost", port=port, db=0)
 
+            # redis_pool = redis.ConnectionPool(host="localhost", port=port)
+
+            # redis_db = redis.Redis(connection_pool=redis_pool,db=0)
+
             keys = redis_db.scan(0, match='*', count='1000000')
             keys = [i.decode() for i in keys[1]]
 
 
-            ast = [ "AnonymousClassDeclaration", "ArrayAccess", "ArrayCreation", "ArrayInitializer", "ArrayType", "AssertStatement", "Assignment", "Block", "BooleanLiteral", "BreakStatement", "CastExpression", "CatchClause", "CharacterLiteral", "ClassInstanceCreation", "CompilationUnit", "ConditionalExpression", "ConstructorInvocation", "ContinueStatement", "DoStatement", "EmptyStatement", "ExpressionStatement", "FieldAccess", "FieldDeclaration", "ForStatement", "IfStatement", "ImportDeclaration", "InfixExpression", "Initializer", "Javadoc", "LabeledStatement", "MethodDeclaration", "MethodInvocation", "NullLiteral", "NumberLiteral", "PackageDeclaration", "ParenthesizedExpression", "PostfixExpression", "PrefixExpression", "PrimitiveType", "QualifiedName", "ReturnStatement", "SimpleName", "SimpleType", "SingleVariableDeclaration", "StringLiteral", "SuperConstructorInvocation", "SuperFieldAccess", "SuperMethodInvocation", "SwitchCase", "SwitchStatement", "SynchronizedStatement", "ThisExpression", "ThrowStatement", "TryStatement", "TypeDeclaration", "TypeDeclarationStatement", "TypeLiteral", "VariableDeclarationExpression", "VariableDeclarationFragment", "VariableDeclarationStatement", "WhileStatement", "InstanceofExpression", "LineComment", "BlockComment", "TagElement", "TextElement", "MemberRef", "MethodRef", "MethodRefParameter", "EnhancedForStatement", "EnumDeclaration", "EnumConstantDeclaration", "TypeParameter", "ParameterizedType", "QualifiedType", "WildcardType", "NormalAnnotation", "MarkerAnnotation", "SingleMemberAnnotation", "MemberValuePair", "AnnotationTypeDeclaration", "AnnotationTypeMemberDeclaration", "Modifier", "UnionType", "Dimension", "LambdaExpression", "IntersectionType", "NameQualifiedType", "CreationReference", "ExpressionMethodReference", "SuperMethodReference", "TypeMethodReference"]
+
+
+
+
+
+
             # for key in keys:
-            def simiCore(key):
-                split = key.split('_')
-                prefix = split[0]
-                i = split[1]
-                j = split[2]
-                keys[0]
+            #     simiCore(key)
+            from tokens import simiCore
+            parallelRun(simiCore,keys)
 
-                    # inner = innerPool.getResource();
-
-
-                def getTokens(prefix,i):
-                    redis_db1 = redis.StrictRedis(host="localhost", port=port, db=1)
-
-
-                    dist2load = redis_db1.get(prefix + "-" + i);
-
-                    with open(join(DATA_PATH,'actions',prefix.replace('-','/'), dist2load.decode()), 'r') as rFile:
-                        lines = rFile.read()
-
-                    lines
-
-                    from common.preprocessing import preprocessingCodeElementsList
-
-                    lines = re.sub('@AT@\s*[0-9]+\s*', ' ', lines)
-                    lines = re.sub('@LENGTH@\s*[0-9]+\s*', ' ', lines)
-                    lines = re.sub('@TO@', ' ', lines)
-                    lines = re.sub('@@', ' ', lines)
-                    lines = re.sub('|'.join(ast),' ',lines)
-
-
-                    preCorpusBug = preprocessingCodeElementsList(lines)
-                    return preCorpusBug
-
-                tokensi = getTokens(prefix,i)
-                tokensj = getTokens(prefix,j)
-
-                from common.preprocessing import calculateTfIdfNLList
-
-                v = calculateTfIdfNLList([tokensi])
-                sourceDTM = v.transform([tokensi])
-                bugDTM = v.transform([tokensj])
-                from sklearn.metrics.pairwise import cosine_similarity
-
-                res = cosine_similarity(bugDTM, sourceDTM)
-                simiScore =res[0][0]
-                if simiScore >= 0.8:
-                    print(key,simiScore)
-
-                    redis_db2 = redis.StrictRedis(host="localhost", port=port, db=2)
-                    redis_db2.set(key,simiScore)
-
-            for key in keys:
-                simiCore(key)
-
-            # parallelRun(simiCore,keys)
 
 
 
@@ -476,6 +437,113 @@ if __name__ == '__main__':
             startDB(dbDir, "6399", "ALLdumps-gumInput.rdb")
             startDB(dbDir, "6380", "clusterl2-gumInputALL.rdb")
             cluster(join(DATA_PATH, 'tokens'), join(DATA_PATH, 'pairsToken'),'tokens')
+
+
+        elif job =='stats':
+            # tokens = join(DATA_PATH, 'tokens')
+            # actions = join(DATA_PATH, 'actions')
+            for type in ['tokens','actions','shapes']:
+                shapesPath = join(DATA_PATH, type)
+                shapes = listdir(shapesPath)
+                shapes = [f for f in shapes if isdir(join(shapesPath, f))]
+
+                shape= size =cluster =action =token = None
+
+                def statsCore(cs):
+
+                    cs = [i for i in cs if not (i.startswith('commons-math') or i.startswith('commons-lang'))]
+                    # print('Cluster %s : member size %s' % (shape+"-"+size +"-"+cluster, len(cs)))
+                    if token is None:
+                        if action is None:
+                            t = shape + "-" + size + "-" + cluster, len(cs)
+                        else:
+                            t = shape + "-" + size + "-" + cluster + "-"+ action, len(cs)
+                    else:
+                        clusterSize = len(cs)
+                        if clusterSize>0:
+                            clusterSize = len(set([re.split('.txt_[0-9]+', i)[0] for i in cs]))
+                        t = shape + "-" + size + "-" + cluster+ "-"+ action+ "-"+ token,clusterSize
+                    # t = shape + "-" + size + "-" + cluster, len(cs)
+                    # if len(cs)>0:
+                    #     with open(join(shapesPath,t[0].replace('-','/'),cs[0]),'r') as pattern:
+                    #         line = pattern.read()
+                    #         if line.startswith('MOV') or line.startswith('DEL'):
+                    #             t = t[0],0
+                    statsS.append(t)
+                statsS = []
+                for shape in shapes:
+                    if shape.startswith('.'):
+                        continue
+                    sizes = listdir(join(shapesPath,shape))
+
+                    for size in sizes:
+                        if size.startswith('.'):
+                            continue
+                        clusters = listdir(join(shapesPath,shape,size))
+                        for cluster in clusters:
+                            if cluster.startswith('.'):
+                                continue
+                            cs = listdir(join(shapesPath,shape,size,cluster))
+
+                            if shapesPath.endswith('shapes'):
+                                cs = listdir(join(shapesPath, shape, size, cluster))
+                                statsCore(cs)
+                            else:
+                                #level3
+                                for action in cs:
+                                    if action.startswith('.'):
+                                        continue
+                                    tokens = listdir(join(shapesPath,shape,size,cluster,action))
+                                    if shapesPath.endswith('actions'):
+                                        statsCore(tokens)
+                                    else:
+                                        for token in tokens:
+                                            if token.startswith('.'):
+                                                continue
+                                            cs = listdir(join(shapesPath, shape, size, cluster,action,token))
+                                            statsCore(cs)
+
+
+
+                matches = pd.DataFrame(statsS, columns=['cluster','memberCount'])
+                matches.sort_values(by='memberCount', ascending=False,inplace=True)
+                matches
+                matches.to_csv(join(DATA_PATH,"stats"+type+".csv"),index=False)
+            # for i in range(2, 21):
+            #     print('%d %d %d' % (matches[matches.memberCount >= i].memberCount.sum(), len(matches[matches.memberCount >= i]),i))
+
+            # save_zipped_pickle(join(DATA_PATH,'statsShapes'))
+        elif job == 'test':
+            import redis
+            redis_db = redis.StrictRedis(host="localhost", port=6399, db=0)
+
+            # redis_pool = redis.ConnectionPool(host="localhost", port=port)
+
+            # redis_db = redis.Redis(connection_pool=redis_pool,db=0)
+
+            keys = redis_db.scan(0, match='*', count='1000000')
+            keys = [i.decode() for i in keys[1]]
+
+            matches = pd.DataFrame(keys, columns=['hunks'])
+
+            matches
+            matches['root'] = matches['hunks'].apply(lambda x: x.split('/')[0])
+            matches['size'] = matches['hunks'].apply(lambda x: x.split('/')[1])
+            matches['hunk'] = matches['hunks'].apply(lambda x: x.split('/')[2].split('_')[-1])
+            matches['file'] = matches['hunks'].apply(lambda x: '_'.join(x.split('/')[2].split('_')[:-1]))
+
+            counts = pd.DataFrame(matches.file.value_counts())
+            counts.reset_index(inplace=True)
+            counts.columns = ['file','count']
+            counts
+            counts[counts['count'] == 1]
+            files = counts[counts['count'] == 1].file.values.tolist()
+
+            keysToExport = matches[matches.file.isin(files)][['hunks']]
+            keysToExport.rename(columns={'hunks': 'pairs_key'}, inplace=True)
+            save_zipped_pickle(keysToExport,join(DATA_PATH,'singleHunks'))
+
+
 
 
 

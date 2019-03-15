@@ -1,0 +1,10 @@
+IfStatement
+---ExpressionStatement
+---PrefixExpression
+------Operator
+------MethodInvocation
+---------SimpleName
+---------SimpleName
+------------MethodInvocation
+---------------SimpleName
+---------------SimpleName

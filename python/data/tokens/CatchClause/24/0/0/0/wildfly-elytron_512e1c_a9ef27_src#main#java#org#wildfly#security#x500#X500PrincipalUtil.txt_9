@@ -1,0 +1,25 @@
+INS CatchClause@@NoSuchMethodException e @TO@ TryStatement@@try:[] @AT@ 2317 @LENGTH@ 197
+---INS SingleVariableDeclaration@@NoSuchMethodException e @TO@ CatchClause@@NoSuchMethodException e @AT@ 2324 @LENGTH@ 23
+------INS SimpleType@@NoSuchMethodException @TO@ SingleVariableDeclaration@@NoSuchMethodException e @AT@ 2324 @LENGTH@ 21
+------INS SimpleName@@e @TO@ SingleVariableDeclaration@@NoSuchMethodException e @AT@ 2346 @LENGTH@ 1
+---INS VariableDeclarationStatement@@final NoSuchMethodError err=new NoSuchMethodError(e.getMessage()); @TO@ CatchClause@@NoSuchMethodException e @AT@ 2363 @LENGTH@ 68
+------INS Modifier@@final @TO@ VariableDeclarationStatement@@final NoSuchMethodError err=new NoSuchMethodError(e.getMessage()); @AT@ 2363 @LENGTH@ 5
+------INS SimpleType@@NoSuchMethodError @TO@ VariableDeclarationStatement@@final NoSuchMethodError err=new NoSuchMethodError(e.getMessage()); @AT@ 2369 @LENGTH@ 17
+------INS VariableDeclarationFragment@@err=new NoSuchMethodError(e.getMessage()) @TO@ VariableDeclarationStatement@@final NoSuchMethodError err=new NoSuchMethodError(e.getMessage()); @AT@ 2387 @LENGTH@ 43
+---------INS SimpleName@@err @TO@ VariableDeclarationFragment@@err=new NoSuchMethodError(e.getMessage()) @AT@ 2387 @LENGTH@ 3
+---------INS ClassInstanceCreation@@NoSuchMethodError[e.getMessage()] @TO@ VariableDeclarationFragment@@err=new NoSuchMethodError(e.getMessage()) @AT@ 2393 @LENGTH@ 37
+------------INS New@@new @TO@ ClassInstanceCreation@@NoSuchMethodError[e.getMessage()] @AT@ 2393 @LENGTH@ 3
+------------INS SimpleType@@NoSuchMethodError @TO@ ClassInstanceCreation@@NoSuchMethodError[e.getMessage()] @AT@ 2397 @LENGTH@ 17
+------------INS MethodInvocation@@e.getMessage() @TO@ ClassInstanceCreation@@NoSuchMethodError[e.getMessage()] @AT@ 2415 @LENGTH@ 14
+---------------INS SimpleName@@Name:e @TO@ MethodInvocation@@e.getMessage() @AT@ 2415 @LENGTH@ 1
+---------------INS SimpleName@@MethodName:getMessage:[] @TO@ MethodInvocation@@e.getMessage() @AT@ 2417 @LENGTH@ 12
+---INS ExpressionStatement@@MethodInvocation:err.setStackTrace(e.getStackTrace()) @TO@ CatchClause@@NoSuchMethodException e @AT@ 2444 @LENGTH@ 37
+------INS MethodInvocation@@err.setStackTrace(e.getStackTrace()) @TO@ ExpressionStatement@@MethodInvocation:err.setStackTrace(e.getStackTrace()) @AT@ 2444 @LENGTH@ 36
+---------INS SimpleName@@Name:err @TO@ MethodInvocation@@err.setStackTrace(e.getStackTrace()) @AT@ 2444 @LENGTH@ 3
+---------INS SimpleName@@MethodName:setStackTrace:[e.getStackTrace()] @TO@ MethodInvocation@@err.setStackTrace(e.getStackTrace()) @AT@ 2448 @LENGTH@ 32
+------------INS MethodInvocation@@e.getStackTrace() @TO@ SimpleName@@MethodName:setStackTrace:[e.getStackTrace()] @AT@ 2462 @LENGTH@ 17
+---------------INS SimpleName@@Name:e @TO@ MethodInvocation@@e.getStackTrace() @AT@ 2462 @LENGTH@ 1
+---------------INS SimpleName@@MethodName:getStackTrace:[] @TO@ MethodInvocation@@e.getStackTrace() @AT@ 2464 @LENGTH@ 15
+---INS ThrowStatement@@SimpleName:err @TO@ CatchClause@@NoSuchMethodException e @AT@ 2494 @LENGTH@ 10
+------INS SimpleName@@err @TO@ ThrowStatement@@SimpleName:err @AT@ 2500 @LENGTH@ 3
+

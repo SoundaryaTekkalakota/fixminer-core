@@ -1,0 +1,14 @@
+INS VariableDeclarationStatement@@Map<String,ExprNodeDesc> colExprMap=new HashMap<String,ExprNodeDesc>(); @TO@ MethodDeclaration@@private, boolean, MethodName:generateSemiJoinOperatorPlan, DynamicListContext ctx, ParseContext parseContext, TableScanOperator ts, String keyBaseAlias, SemanticException,  @AT@ 19269 @LENGTH@ 75
+---INS ParameterizedType@@Map<String,ExprNodeDesc> @TO@ VariableDeclarationStatement@@Map<String,ExprNodeDesc> colExprMap=new HashMap<String,ExprNodeDesc>(); @AT@ 19269 @LENGTH@ 25
+------INS SimpleType@@Map @TO@ ParameterizedType@@Map<String,ExprNodeDesc> @AT@ 19269 @LENGTH@ 3
+------INS SimpleType@@String @TO@ ParameterizedType@@Map<String,ExprNodeDesc> @AT@ 19273 @LENGTH@ 6
+------INS SimpleType@@ExprNodeDesc @TO@ ParameterizedType@@Map<String,ExprNodeDesc> @AT@ 19281 @LENGTH@ 12
+---INS VariableDeclarationFragment@@colExprMap=new HashMap<String,ExprNodeDesc>() @TO@ VariableDeclarationStatement@@Map<String,ExprNodeDesc> colExprMap=new HashMap<String,ExprNodeDesc>(); @AT@ 19295 @LENGTH@ 48
+------INS SimpleName@@colExprMap @TO@ VariableDeclarationFragment@@colExprMap=new HashMap<String,ExprNodeDesc>() @AT@ 19295 @LENGTH@ 10
+------INS ClassInstanceCreation@@HashMap<String,ExprNodeDesc>[] @TO@ VariableDeclarationFragment@@colExprMap=new HashMap<String,ExprNodeDesc>() @AT@ 19308 @LENGTH@ 35
+---------INS New@@new @TO@ ClassInstanceCreation@@HashMap<String,ExprNodeDesc>[] @AT@ 19308 @LENGTH@ 3
+---------INS ParameterizedType@@HashMap<String,ExprNodeDesc> @TO@ ClassInstanceCreation@@HashMap<String,ExprNodeDesc>[] @AT@ 19312 @LENGTH@ 29
+------------INS SimpleType@@HashMap @TO@ ParameterizedType@@HashMap<String,ExprNodeDesc> @AT@ 19312 @LENGTH@ 7
+------------INS SimpleType@@String @TO@ ParameterizedType@@HashMap<String,ExprNodeDesc> @AT@ 19320 @LENGTH@ 6
+------------INS SimpleType@@ExprNodeDesc @TO@ ParameterizedType@@HashMap<String,ExprNodeDesc> @AT@ 19328 @LENGTH@ 12
+

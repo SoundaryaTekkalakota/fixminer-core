@@ -1,0 +1,15 @@
+ INS VariableDeclarationStatement
+--- INS ParameterizedType
+------ INS SimpleType
+------ INS SimpleType
+--- INS VariableDeclarationFragment
+------ INS SimpleName
+------ INS ClassInstanceCreation
+--------- INS New
+--------- INS ParameterizedType
+------------ INS SimpleType
+------------ INS SimpleType
+--------- INS MethodInvocation
+------------ INS SimpleName
+------------ INS MethodInvocation
+------------ INS SimpleName

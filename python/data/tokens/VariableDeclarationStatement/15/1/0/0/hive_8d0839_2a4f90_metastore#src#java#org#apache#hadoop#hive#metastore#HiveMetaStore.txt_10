@@ -1,0 +1,16 @@
+INS VariableDeclarationStatement@@List<String> lowerCaseColNames=new ArrayList<String>(request.getColNames().size()); @TO@ MethodDeclaration@@public, PartitionsStatsResult, MethodName:get_partitions_statistics_req, PartitionsStatsRequest request, MetaException, NoSuchObjectException, TException,  @AT@ 159490 @LENGTH@ 85
+---INS ParameterizedType@@List<String> @TO@ VariableDeclarationStatement@@List<String> lowerCaseColNames=new ArrayList<String>(request.getColNames().size()); @AT@ 159490 @LENGTH@ 12
+------INS SimpleType@@List @TO@ ParameterizedType@@List<String> @AT@ 159490 @LENGTH@ 4
+------INS SimpleType@@String @TO@ ParameterizedType@@List<String> @AT@ 159495 @LENGTH@ 6
+---INS VariableDeclarationFragment@@lowerCaseColNames=new ArrayList<String>(request.getColNames().size()) @TO@ VariableDeclarationStatement@@List<String> lowerCaseColNames=new ArrayList<String>(request.getColNames().size()); @AT@ 159503 @LENGTH@ 71
+------INS SimpleName@@lowerCaseColNames @TO@ VariableDeclarationFragment@@lowerCaseColNames=new ArrayList<String>(request.getColNames().size()) @AT@ 159503 @LENGTH@ 17
+------INS ClassInstanceCreation@@ArrayList<String>[request.getColNames().size()] @TO@ VariableDeclarationFragment@@lowerCaseColNames=new ArrayList<String>(request.getColNames().size()) @AT@ 159523 @LENGTH@ 51
+---------INS New@@new @TO@ ClassInstanceCreation@@ArrayList<String>[request.getColNames().size()] @AT@ 159523 @LENGTH@ 3
+---------INS ParameterizedType@@ArrayList<String> @TO@ ClassInstanceCreation@@ArrayList<String>[request.getColNames().size()] @AT@ 159527 @LENGTH@ 17
+------------INS SimpleType@@ArrayList @TO@ ParameterizedType@@ArrayList<String> @AT@ 159527 @LENGTH@ 9
+------------INS SimpleType@@String @TO@ ParameterizedType@@ArrayList<String> @AT@ 159537 @LENGTH@ 6
+---------INS MethodInvocation@@request.getColNames().size() @TO@ ClassInstanceCreation@@ArrayList<String>[request.getColNames().size()] @AT@ 159545 @LENGTH@ 28
+------------INS SimpleName@@Name:request @TO@ MethodInvocation@@request.getColNames().size() @AT@ 159545 @LENGTH@ 7
+------------INS MethodInvocation@@MethodName:getColNames:[] @TO@ MethodInvocation@@request.getColNames().size() @AT@ 159545 @LENGTH@ 21
+------------INS SimpleName@@MethodName:size:[] @TO@ MethodInvocation@@request.getColNames().size() @AT@ 159567 @LENGTH@ 6
+

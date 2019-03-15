@@ -1,0 +1,6 @@
+DEL TryStatement@@try:[] @AT@ 28735 @LENGTH@ 122
+---DEL CatchClause@@ClassNotFoundException ex @AT@ 28801 @LENGTH@ 56
+------DEL SingleVariableDeclaration@@ClassNotFoundException ex @AT@ 28808 @LENGTH@ 25
+---------DEL SimpleType@@ClassNotFoundException @AT@ 28808 @LENGTH@ 22
+---------DEL SimpleName@@ex @AT@ 28831 @LENGTH@ 2
+

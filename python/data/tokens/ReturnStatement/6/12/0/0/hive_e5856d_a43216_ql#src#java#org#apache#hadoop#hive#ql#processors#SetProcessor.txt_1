@@ -1,0 +1,7 @@
+UPD ReturnStatement@@ClassInstanceCreation:new CommandProcessorResponse(0) @TO@ MethodInvocation:createProcessorSuccessResponse() @AT@ 7783 @LENGTH@ 39
+---DEL ClassInstanceCreation@@CommandProcessorResponse[0] @AT@ 7790 @LENGTH@ 31
+------DEL New@@new @AT@ 7790 @LENGTH@ 3
+------DEL SimpleType@@CommandProcessorResponse @AT@ 7794 @LENGTH@ 24
+------DEL NumberLiteral@@0 @AT@ 7819 @LENGTH@ 1
+---INS MethodInvocation@@MethodName:createProcessorSuccessResponse:[] @TO@ ReturnStatement@@ClassInstanceCreation:new CommandProcessorResponse(0) @AT@ 7804 @LENGTH@ 32
+

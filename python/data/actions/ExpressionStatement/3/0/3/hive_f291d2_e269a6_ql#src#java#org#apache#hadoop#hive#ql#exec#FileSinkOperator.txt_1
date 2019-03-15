@@ -1,0 +1,3 @@
+ INS ExpressionStatement
+--- INS MethodInvocation
+------ MOV SimpleName

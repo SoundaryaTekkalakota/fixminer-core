@@ -1,0 +1,12 @@
+INS FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(RpcControllerFactory.class)] @TO@ TypeDeclaration@@[@InterfaceAudience.Private, public]RpcControllerFactory,  @AT@ 1341 @LENGTH@ 77
+---INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(RpcControllerFactory.class)] @AT@ 1341 @LENGTH@ 7
+---INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(RpcControllerFactory.class)] @AT@ 1349 @LENGTH@ 6
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(RpcControllerFactory.class)] @AT@ 1356 @LENGTH@ 5
+---INS SimpleType@@Log @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(RpcControllerFactory.class)] @AT@ 1362 @LENGTH@ 3
+---INS VariableDeclarationFragment@@LOG=LogFactory.getLog(RpcControllerFactory.class) @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(RpcControllerFactory.class)] @AT@ 1366 @LENGTH@ 51
+------INS SimpleName@@LOG @TO@ VariableDeclarationFragment@@LOG=LogFactory.getLog(RpcControllerFactory.class) @AT@ 1366 @LENGTH@ 3
+------INS MethodInvocation@@LogFactory.getLog(RpcControllerFactory.class) @TO@ VariableDeclarationFragment@@LOG=LogFactory.getLog(RpcControllerFactory.class) @AT@ 1372 @LENGTH@ 45
+---------INS SimpleName@@Name:LogFactory @TO@ MethodInvocation@@LogFactory.getLog(RpcControllerFactory.class) @AT@ 1372 @LENGTH@ 10
+---------INS SimpleName@@MethodName:getLog:[RpcControllerFactory.class] @TO@ MethodInvocation@@LogFactory.getLog(RpcControllerFactory.class) @AT@ 1383 @LENGTH@ 34
+------------INS TypeLiteral@@RpcControllerFactory.class @TO@ SimpleName@@MethodName:getLog:[RpcControllerFactory.class] @AT@ 1390 @LENGTH@ 26
+

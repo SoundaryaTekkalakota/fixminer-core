@@ -1,0 +1,4 @@
+UPD TypeDeclaration@@[private, static]PartTrie, HashMap<String,LockComponent> @TO@ [private, static]PartTrie, LinkedHashMap<String,LockComponent> @AT@ 5246 @LENGTH@ 76
+---UPD ParameterizedType@@HashMap<String,LockComponent> @TO@ LinkedHashMap<String,LockComponent> @AT@ 5284 @LENGTH@ 30
+------UPD SimpleType@@HashMap @TO@ LinkedHashMap @AT@ 5284 @LENGTH@ 7
+

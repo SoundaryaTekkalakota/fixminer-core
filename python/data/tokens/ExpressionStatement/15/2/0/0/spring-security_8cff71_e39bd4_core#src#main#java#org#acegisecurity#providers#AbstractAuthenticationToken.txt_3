@@ -1,0 +1,16 @@
+UPD ExpressionStatement@@Assignment:code=code * (this.getCredentials().hashCode() % 7) @TO@ Assignment:code^=this.getCredentials().hashCode() @AT@ 5322 @LENGTH@ 53
+---UPD Assignment@@code=code * (this.getCredentials().hashCode() % 7) @TO@ code^=this.getCredentials().hashCode() @AT@ 5322 @LENGTH@ 52
+------INS MethodInvocation@@this.getCredentials().hashCode() @TO@ Assignment@@code=code * (this.getCredentials().hashCode() % 7) @AT@ 5322 @LENGTH@ 32
+---------MOV ThisExpression@@this @TO@ MethodInvocation@@this.getCredentials().hashCode() @AT@ 5337 @LENGTH@ 4
+---------MOV MethodInvocation@@MethodName:getCredentials:[] @TO@ MethodInvocation@@this.getCredentials().hashCode() @AT@ 5337 @LENGTH@ 21
+---------MOV SimpleName@@MethodName:hashCode:[] @TO@ MethodInvocation@@this.getCredentials().hashCode() @AT@ 5359 @LENGTH@ 10
+------UPD Operator@@= @TO@ ^= @AT@ 5326 @LENGTH@ 1
+------DEL InfixExpression@@code * (this.getCredentials().hashCode() % 7) @AT@ 5329 @LENGTH@ 45
+---------DEL SimpleName@@code @AT@ 5329 @LENGTH@ 4
+---------DEL Operator@@* @AT@ 5333 @LENGTH@ 1
+---------DEL ParenthesizedExpression@@(this.getCredentials().hashCode() % 7) @AT@ 5336 @LENGTH@ 38
+------------DEL InfixExpression@@this.getCredentials().hashCode() % 7 @AT@ 5337 @LENGTH@ 36
+---------------DEL MethodInvocation@@this.getCredentials().hashCode() @AT@ 5337 @LENGTH@ 32
+---------------DEL Operator@@% @AT@ 5369 @LENGTH@ 1
+---------------DEL NumberLiteral@@7 @AT@ 5372 @LENGTH@ 1
+

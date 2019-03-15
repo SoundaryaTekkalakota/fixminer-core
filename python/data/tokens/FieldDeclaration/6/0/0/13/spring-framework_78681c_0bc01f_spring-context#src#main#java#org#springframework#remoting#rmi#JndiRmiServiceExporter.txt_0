@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, static, Method, [exportObject] @TO@ TypeDeclaration@@[public]JndiRmiServiceExporter, RmiBasedExporter[InitializingBean, DisposableBean] @AT@ 2819 @LENGTH@ 35
+---INS Modifier@@private @TO@ FieldDeclaration@@private, static, Method, [exportObject] @AT@ 2819 @LENGTH@ 7
+---INS Modifier@@static @TO@ FieldDeclaration@@private, static, Method, [exportObject] @AT@ 2827 @LENGTH@ 6
+---INS SimpleType@@Method @TO@ FieldDeclaration@@private, static, Method, [exportObject] @AT@ 2834 @LENGTH@ 6
+---INS VariableDeclarationFragment@@exportObject @TO@ FieldDeclaration@@private, static, Method, [exportObject] @AT@ 2841 @LENGTH@ 12
+------INS SimpleName@@exportObject @TO@ VariableDeclarationFragment@@exportObject @AT@ 2841 @LENGTH@ 12
+

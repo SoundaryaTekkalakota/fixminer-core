@@ -1,0 +1,8 @@
+INS IfStatement@@InfixExpression:a == null @TO@ MethodDeclaration@@public, LongWritable, MethodName:evaluate, LongWritable a,  @AT@ 2190 @LENGTH@ 43
+---INS InfixExpression@@a == null @TO@ IfStatement@@InfixExpression:a == null @AT@ 2195 @LENGTH@ 9
+------INS SimpleName@@a @TO@ InfixExpression@@a == null @AT@ 2195 @LENGTH@ 1
+------INS Operator@@== @TO@ InfixExpression@@a == null @AT@ 2196 @LENGTH@ 2
+------INS NullLiteral@@null @TO@ InfixExpression@@a == null @AT@ 2200 @LENGTH@ 4
+---INS ReturnStatement@@NullLiteral:null @TO@ IfStatement@@InfixExpression:a == null @AT@ 2215 @LENGTH@ 12
+------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 2222 @LENGTH@ 4
+

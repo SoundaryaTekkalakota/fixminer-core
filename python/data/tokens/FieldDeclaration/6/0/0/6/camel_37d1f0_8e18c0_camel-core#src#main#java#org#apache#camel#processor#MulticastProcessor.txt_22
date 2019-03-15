@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, AtomicInteger, [aggregated] @TO@ TypeDeclaration@@[private, final]ParallelAggregateTimeoutTask, [Runnable] @AT@ 24205 @LENGTH@ 39
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, AtomicInteger, [aggregated] @AT@ 24205 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, AtomicInteger, [aggregated] @AT@ 24213 @LENGTH@ 5
+---INS SimpleType@@AtomicInteger @TO@ FieldDeclaration@@private, final, AtomicInteger, [aggregated] @AT@ 24219 @LENGTH@ 13
+---INS VariableDeclarationFragment@@aggregated @TO@ FieldDeclaration@@private, final, AtomicInteger, [aggregated] @AT@ 24233 @LENGTH@ 10
+------INS SimpleName@@aggregated @TO@ VariableDeclarationFragment@@aggregated @AT@ 24233 @LENGTH@ 10
+

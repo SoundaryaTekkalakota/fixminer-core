@@ -1,0 +1,6 @@
+DEL FieldDeclaration@@private, SqlUpdate, [insertGroupMember] @AT@ 6655 @LENGTH@ 36
+---DEL Modifier@@private @AT@ 6655 @LENGTH@ 7
+---DEL SimpleType@@SqlUpdate @AT@ 6663 @LENGTH@ 9
+---DEL VariableDeclarationFragment@@insertGroupMember @AT@ 6673 @LENGTH@ 17
+------DEL SimpleName@@insertGroupMember @AT@ 6673 @LENGTH@ 17
+

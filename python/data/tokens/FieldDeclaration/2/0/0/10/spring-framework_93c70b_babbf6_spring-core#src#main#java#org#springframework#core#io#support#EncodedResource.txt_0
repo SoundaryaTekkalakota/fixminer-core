@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, String, [encoding] @TO@ private, final, String, [encoding] @AT@ 1374 @LENGTH@ 24
+---INS Modifier@@final @TO@ FieldDeclaration@@private, String, [encoding] @AT@ 1440 @LENGTH@ 5
+

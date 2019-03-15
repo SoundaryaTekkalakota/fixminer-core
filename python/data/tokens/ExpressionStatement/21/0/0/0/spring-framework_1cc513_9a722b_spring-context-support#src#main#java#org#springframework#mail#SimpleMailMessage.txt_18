@@ -1,0 +1,22 @@
+UPD ExpressionStatement@@Assignment:hashCode=29 * hashCode + (this.subject == null ? 0 : this.subject.hashCode()) @TO@ Assignment:hashCode=29 * hashCode + ObjectUtils.nullSafeHashCode(this.subject) @AT@ 6967 @LENGTH@ 80
+---UPD Assignment@@hashCode=29 * hashCode + (this.subject == null ? 0 : this.subject.hashCode()) @TO@ hashCode=29 * hashCode + ObjectUtils.nullSafeHashCode(this.subject) @AT@ 6967 @LENGTH@ 79
+------UPD InfixExpression@@29 * hashCode + (this.subject == null ? 0 : this.subject.hashCode()) @TO@ 29 * hashCode + ObjectUtils.nullSafeHashCode(this.subject) @AT@ 6978 @LENGTH@ 68
+---------INS MethodInvocation@@ObjectUtils.nullSafeHashCode(this.subject) @TO@ InfixExpression@@29 * hashCode + (this.subject == null ? 0 : this.subject.hashCode()) @AT@ 5980 @LENGTH@ 42
+------------INS SimpleName@@Name:ObjectUtils @TO@ MethodInvocation@@ObjectUtils.nullSafeHashCode(this.subject) @AT@ 5980 @LENGTH@ 11
+------------INS SimpleName@@MethodName:nullSafeHashCode:[this.subject] @TO@ MethodInvocation@@ObjectUtils.nullSafeHashCode(this.subject) @AT@ 5992 @LENGTH@ 30
+---------------INS FieldAccess@@this.subject @TO@ SimpleName@@MethodName:nullSafeHashCode:[this.subject] @AT@ 6009 @LENGTH@ 12
+------------------MOV ThisExpression@@this @TO@ FieldAccess@@this.subject @AT@ 7022 @LENGTH@ 4
+------------------MOV SimpleName@@subject @TO@ FieldAccess@@this.subject @AT@ 7027 @LENGTH@ 7
+---------DEL ParenthesizedExpression@@(this.subject == null ? 0 : this.subject.hashCode()) @AT@ 6994 @LENGTH@ 52
+------------DEL ConditionalExpression@@this.subject == null ? 0 : this.subject.hashCode() @AT@ 6995 @LENGTH@ 50
+---------------DEL InfixExpression@@this.subject == null @AT@ 6995 @LENGTH@ 20
+------------------DEL FieldAccess@@this.subject @AT@ 6995 @LENGTH@ 12
+---------------------DEL ThisExpression@@this @AT@ 6995 @LENGTH@ 4
+---------------------DEL SimpleName@@subject @AT@ 7000 @LENGTH@ 7
+------------------DEL Operator@@== @AT@ 7007 @LENGTH@ 2
+------------------DEL NullLiteral@@null @AT@ 7011 @LENGTH@ 4
+---------------DEL NumberLiteral@@0 @AT@ 7018 @LENGTH@ 1
+---------------DEL MethodInvocation@@this.subject.hashCode() @AT@ 7022 @LENGTH@ 23
+------------------DEL FieldAccess@@this.subject @AT@ 7022 @LENGTH@ 12
+------------------DEL SimpleName@@MethodName:hashCode:[] @AT@ 7035 @LENGTH@ 10
+

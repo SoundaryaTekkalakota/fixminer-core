@@ -1,0 +1,79 @@
+UPD ExpressionStatement@@MethodInvocation:resourceRegistration.registerReadOnlyAttribute(TIME_REMAINING,new AbstractReadAttributeHandler(){
+  @Override protected void readAttribute(  TimerImpl timer,  ModelNode toSet){
+    try {
+      final long time=timer.getTimeRemaining();
+      toSet.set(time);
+    }
+ catch (    NoMoreTimeoutsException nmte) {
+      if (EjbLogger.ROOT_LOGGER.isDebugEnabled())       EjbLogger.ROOT_LOGGER.debug("No more timeouts for timer " + timer);
+    }
+  }
+}
+) @TO@ MethodInvocation:resourceRegistration.registerReadOnlyAttribute(TIME_REMAINING,new AbstractReadAttributeHandler(){
+  @Override protected void readAttribute(  TimerImpl timer,  ModelNode toSet){
+    if (timer.isCanceled()) {
+      return;
+    }
+    try {
+      final long time=timer.getTimeRemaining();
+      toSet.set(time);
+    }
+ catch (    NoMoreTimeoutsException nmte) {
+      if (EjbLogger.ROOT_LOGGER.isDebugEnabled())       EjbLogger.ROOT_LOGGER.debug("No more timeouts for timer " + timer);
+    }
+  }
+}
+) @AT@ 10709 @LENGTH@ 715
+---UPD MethodInvocation@@resourceRegistration.registerReadOnlyAttribute(TIME_REMAINING,new AbstractReadAttributeHandler(){
+  @Override protected void readAttribute(  TimerImpl timer,  ModelNode toSet){
+    try {
+      final long time=timer.getTimeRemaining();
+      toSet.set(time);
+    }
+ catch (    NoMoreTimeoutsException nmte) {
+      if (EjbLogger.ROOT_LOGGER.isDebugEnabled())       EjbLogger.ROOT_LOGGER.debug("No more timeouts for timer " + timer);
+    }
+  }
+}
+) @TO@ resourceRegistration.registerReadOnlyAttribute(TIME_REMAINING,new AbstractReadAttributeHandler(){
+  @Override protected void readAttribute(  TimerImpl timer,  ModelNode toSet){
+    if (timer.isCanceled()) {
+      return;
+    }
+    try {
+      final long time=timer.getTimeRemaining();
+      toSet.set(time);
+    }
+ catch (    NoMoreTimeoutsException nmte) {
+      if (EjbLogger.ROOT_LOGGER.isDebugEnabled())       EjbLogger.ROOT_LOGGER.debug("No more timeouts for timer " + timer);
+    }
+  }
+}
+) @AT@ 10709 @LENGTH@ 714
+------UPD SimpleName@@MethodName:registerReadOnlyAttribute:[TIME_REMAINING, new AbstractReadAttributeHandler(){
+  @Override protected void readAttribute(  TimerImpl timer,  ModelNode toSet){
+    try {
+      final long time=timer.getTimeRemaining();
+      toSet.set(time);
+    }
+ catch (    NoMoreTimeoutsException nmte) {
+      if (EjbLogger.ROOT_LOGGER.isDebugEnabled())       EjbLogger.ROOT_LOGGER.debug("No more timeouts for timer " + timer);
+    }
+  }
+}
+] @TO@ MethodName:registerReadOnlyAttribute:[TIME_REMAINING, new AbstractReadAttributeHandler(){
+  @Override protected void readAttribute(  TimerImpl timer,  ModelNode toSet){
+    if (timer.isCanceled()) {
+      return;
+    }
+    try {
+      final long time=timer.getTimeRemaining();
+      toSet.set(time);
+    }
+ catch (    NoMoreTimeoutsException nmte) {
+      if (EjbLogger.ROOT_LOGGER.isDebugEnabled())       EjbLogger.ROOT_LOGGER.debug("No more timeouts for timer " + timer);
+    }
+  }
+}
+] @AT@ 10730 @LENGTH@ 693
+

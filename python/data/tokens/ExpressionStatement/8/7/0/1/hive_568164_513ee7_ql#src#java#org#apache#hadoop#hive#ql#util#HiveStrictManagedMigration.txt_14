@@ -1,0 +1,9 @@
+INS ExpressionStatement@@Assignment:curWhRootPath=curWhRootFs.makeQualified(curWhRootPath) @TO@ IfStatement@@MethodInvocation:arePathsEqual(conf,runOptions.oldWarehouseRoot,curWarehouseRoot) @AT@ 12486 @LENGTH@ 57
+---INS Assignment@@curWhRootPath=curWhRootFs.makeQualified(curWhRootPath) @TO@ ExpressionStatement@@Assignment:curWhRootPath=curWhRootFs.makeQualified(curWhRootPath) @AT@ 12486 @LENGTH@ 56
+------INS SimpleName@@curWhRootPath @TO@ Assignment@@curWhRootPath=curWhRootFs.makeQualified(curWhRootPath) @AT@ 12486 @LENGTH@ 13
+------INS Operator@@= @TO@ Assignment@@curWhRootPath=curWhRootFs.makeQualified(curWhRootPath) @AT@ 12499 @LENGTH@ 1
+------INS MethodInvocation@@curWhRootFs.makeQualified(curWhRootPath) @TO@ Assignment@@curWhRootPath=curWhRootFs.makeQualified(curWhRootPath) @AT@ 12502 @LENGTH@ 40
+---------INS SimpleName@@Name:curWhRootFs @TO@ MethodInvocation@@curWhRootFs.makeQualified(curWhRootPath) @AT@ 12502 @LENGTH@ 11
+---------INS SimpleName@@MethodName:makeQualified:[curWhRootPath] @TO@ MethodInvocation@@curWhRootFs.makeQualified(curWhRootPath) @AT@ 12514 @LENGTH@ 28
+------------INS SimpleName@@curWhRootPath @TO@ SimpleName@@MethodName:makeQualified:[curWhRootPath] @AT@ 12528 @LENGTH@ 13
+

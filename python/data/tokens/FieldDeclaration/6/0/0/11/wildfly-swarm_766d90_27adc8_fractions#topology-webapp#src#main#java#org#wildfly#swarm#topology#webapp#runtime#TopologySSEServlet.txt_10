@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, TopologyListener, [topologyListener] @TO@ TypeDeclaration@@[private]KeepAliveRunnable, [Runnable] @AT@ 6103 @LENGTH@ 48
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, TopologyListener, [topologyListener] @AT@ 6103 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, TopologyListener, [topologyListener] @AT@ 6111 @LENGTH@ 5
+---INS SimpleType@@TopologyListener @TO@ FieldDeclaration@@private, final, TopologyListener, [topologyListener] @AT@ 6117 @LENGTH@ 16
+---INS VariableDeclarationFragment@@topologyListener @TO@ FieldDeclaration@@private, final, TopologyListener, [topologyListener] @AT@ 6134 @LENGTH@ 16
+------INS SimpleName@@topologyListener @TO@ VariableDeclarationFragment@@topologyListener @AT@ 6134 @LENGTH@ 16
+

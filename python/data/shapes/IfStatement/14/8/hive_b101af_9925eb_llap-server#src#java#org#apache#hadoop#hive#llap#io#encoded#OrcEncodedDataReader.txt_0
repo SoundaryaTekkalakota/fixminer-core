@@ -1,0 +1,14 @@
+IfStatement
+---InfixExpression
+------SimpleName
+------Operator
+------NullLiteral
+---TryStatement
+------ExpressionStatement
+---------MethodInvocation
+------------SimpleName
+------------SimpleName
+------CatchClause
+---------SingleVariableDeclaration
+------------SimpleType
+------------SimpleName

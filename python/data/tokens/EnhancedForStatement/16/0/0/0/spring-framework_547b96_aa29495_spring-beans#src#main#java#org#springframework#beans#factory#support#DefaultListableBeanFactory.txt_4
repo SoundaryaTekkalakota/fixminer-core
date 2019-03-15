@@ -1,0 +1,17 @@
+UPD EnhancedForStatement@@String candidateName, SimpleName:candidateNames @TO@ String candidate, SimpleName:candidateNames @AT@ 47831 @LENGTH@ 240
+---UPD SingleVariableDeclaration@@String candidateName @TO@ String candidate @AT@ 47836 @LENGTH@ 20
+------UPD SimpleName@@candidateName @TO@ candidate @AT@ 47843 @LENGTH@ 13
+---UPD IfStatement@@InfixExpression:!isSelfReference(beanName,candidateName) && isAutowireCandidate(candidateName,fallbackDescriptor) @TO@ InfixExpression:!isSelfReference(beanName,candidate) && isAutowireCandidate(candidate,fallbackDescriptor) @AT@ 47881 @LENGTH@ 185
+------UPD InfixExpression@@!isSelfReference(beanName,candidateName) && isAutowireCandidate(candidateName,fallbackDescriptor) @TO@ !isSelfReference(beanName,candidate) && isAutowireCandidate(candidate,fallbackDescriptor) @AT@ 47885 @LENGTH@ 99
+---------UPD PrefixExpression@@!isSelfReference(beanName,candidateName) @TO@ !isSelfReference(beanName,candidate) @AT@ 47885 @LENGTH@ 41
+------------UPD MethodInvocation@@isSelfReference(beanName,candidateName) @TO@ isSelfReference(beanName,candidate) @AT@ 47886 @LENGTH@ 40
+---------------UPD SimpleName@@MethodName:isSelfReference:[beanName, candidateName] @TO@ MethodName:isSelfReference:[beanName, candidate] @AT@ 47886 @LENGTH@ 40
+------------------UPD SimpleName@@candidateName @TO@ candidate @AT@ 47912 @LENGTH@ 13
+---------UPD MethodInvocation@@isAutowireCandidate(candidateName,fallbackDescriptor) @TO@ isAutowireCandidate(candidate,fallbackDescriptor) @AT@ 47930 @LENGTH@ 54
+------------UPD SimpleName@@MethodName:isAutowireCandidate:[candidateName, fallbackDescriptor] @TO@ MethodName:isAutowireCandidate:[candidate, fallbackDescriptor] @AT@ 47930 @LENGTH@ 54
+---------------UPD SimpleName@@candidateName @TO@ candidate @AT@ 47950 @LENGTH@ 13
+------UPD ExpressionStatement@@MethodInvocation:addCandidateEntry(result,candidateName,descriptor,requiredType) @TO@ MethodInvocation:addCandidateEntry(result,candidate,descriptor,requiredType) @AT@ 47993 @LENGTH@ 67
+---------UPD MethodInvocation@@addCandidateEntry(result,candidateName,descriptor,requiredType) @TO@ addCandidateEntry(result,candidate,descriptor,requiredType) @AT@ 47993 @LENGTH@ 66
+------------UPD SimpleName@@MethodName:addCandidateEntry:[result, candidateName, descriptor, requiredType] @TO@ MethodName:addCandidateEntry:[result, candidate, descriptor, requiredType] @AT@ 47993 @LENGTH@ 66
+---------------UPD SimpleName@@candidateName @TO@ candidate @AT@ 48019 @LENGTH@ 13
+

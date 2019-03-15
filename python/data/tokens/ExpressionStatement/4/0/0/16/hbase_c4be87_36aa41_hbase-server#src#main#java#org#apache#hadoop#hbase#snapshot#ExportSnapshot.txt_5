@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:setPermission(outputFs,snapshotTmpDir,(short)filesMode,true) @TO@ MethodInvocation:setPermission(outputFs,needSetOwnerDir,(short)filesMode,true) @AT@ 39503 @LENGTH@ 64
+---UPD MethodInvocation@@setPermission(outputFs,snapshotTmpDir,(short)filesMode,true) @TO@ setPermission(outputFs,needSetOwnerDir,(short)filesMode,true) @AT@ 39503 @LENGTH@ 63
+------UPD SimpleName@@MethodName:setPermission:[outputFs, snapshotTmpDir, (short)filesMode, true] @TO@ MethodName:setPermission:[outputFs, needSetOwnerDir, (short)filesMode, true] @AT@ 39503 @LENGTH@ 63
+---------UPD SimpleName@@snapshotTmpDir @TO@ needSetOwnerDir @AT@ 39527 @LENGTH@ 14
+

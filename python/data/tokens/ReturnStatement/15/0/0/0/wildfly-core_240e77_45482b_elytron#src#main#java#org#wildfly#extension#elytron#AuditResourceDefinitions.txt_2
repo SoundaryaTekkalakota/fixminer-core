@@ -1,0 +1,84 @@
+UPD ReturnStatement@@LambdaExpression:() -> {
+  PathResolver pathResolver=pathResolver();
+  pathResolver.path(path);
+  if (relativeTo != null) {
+    pathResolver.relativeTo(relativeTo,pathManager.getValue());
+  }
+  File resolvedPath=pathResolver.resolve();
+  final SecurityEventVisitor<?,String> formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().build() : SimpleSecurityEventFormatter.builder().build();
+  AuditEndpoint endpoint;
+  try {
+    endpoint=FileAuditEndpoint.builder().setLocation(resolvedPath.toPath()).setSyncOnAccept(synv).build();
+  }
+ catch (  IOException e) {
+    throw ROOT_LOGGER.unableToStartService(e);
+  }
+  return SecurityEventListener.from(AuditLogger.builder().setPriorityMapper(m -> EventPriority.WARNING).setMessageFormatter(m -> m.accept(formatter,null)).setAuditEndpoint(endpoint).build());
+}
+ @TO@ LambdaExpression:() -> {
+  PathResolver pathResolver=pathResolver();
+  pathResolver.path(path);
+  if (relativeTo != null) {
+    pathResolver.relativeTo(relativeTo,pathManager.getValue());
+  }
+  File resolvedPath=pathResolver.resolve();
+  final SecurityEventVisitor<?,String> formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().setDateFormatSupplier(bind(SimpleDateFormat::new,DATE_FORMAT)).build() : SimpleSecurityEventFormatter.builder().setDateFormatSupplier(bind(SimpleDateFormat::new,DATE_FORMAT)).build();
+  AuditEndpoint endpoint;
+  try {
+    endpoint=FileAuditEndpoint.builder().setLocation(resolvedPath.toPath()).setSyncOnAccept(synv).setDateFormatSupplier(bind(SimpleDateFormat::new,DATE_FORMAT)).build();
+  }
+ catch (  IOException e) {
+    throw ROOT_LOGGER.unableToStartService(e);
+  }
+  return SecurityEventListener.from(AuditLogger.builder().setPriorityMapper(m -> EventPriority.WARNING).setMessageFormatter(m -> m.accept(formatter,null)).setAuditEndpoint(endpoint).build());
+}
+ @AT@ 7482 @LENGTH@ 1211
+---UPD LambdaExpression@@() -> {
+  PathResolver pathResolver=pathResolver();
+  pathResolver.path(path);
+  if (relativeTo != null) {
+    pathResolver.relativeTo(relativeTo,pathManager.getValue());
+  }
+  File resolvedPath=pathResolver.resolve();
+  final SecurityEventVisitor<?,String> formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().build() : SimpleSecurityEventFormatter.builder().build();
+  AuditEndpoint endpoint;
+  try {
+    endpoint=FileAuditEndpoint.builder().setLocation(resolvedPath.toPath()).setSyncOnAccept(synv).build();
+  }
+ catch (  IOException e) {
+    throw ROOT_LOGGER.unableToStartService(e);
+  }
+  return SecurityEventListener.from(AuditLogger.builder().setPriorityMapper(m -> EventPriority.WARNING).setMessageFormatter(m -> m.accept(formatter,null)).setAuditEndpoint(endpoint).build());
+}
+ @TO@ () -> {
+  PathResolver pathResolver=pathResolver();
+  pathResolver.path(path);
+  if (relativeTo != null) {
+    pathResolver.relativeTo(relativeTo,pathManager.getValue());
+  }
+  File resolvedPath=pathResolver.resolve();
+  final SecurityEventVisitor<?,String> formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().setDateFormatSupplier(bind(SimpleDateFormat::new,DATE_FORMAT)).build() : SimpleSecurityEventFormatter.builder().setDateFormatSupplier(bind(SimpleDateFormat::new,DATE_FORMAT)).build();
+  AuditEndpoint endpoint;
+  try {
+    endpoint=FileAuditEndpoint.builder().setLocation(resolvedPath.toPath()).setSyncOnAccept(synv).setDateFormatSupplier(bind(SimpleDateFormat::new,DATE_FORMAT)).build();
+  }
+ catch (  IOException e) {
+    throw ROOT_LOGGER.unableToStartService(e);
+  }
+  return SecurityEventListener.from(AuditLogger.builder().setPriorityMapper(m -> EventPriority.WARNING).setMessageFormatter(m -> m.accept(formatter,null)).setAuditEndpoint(endpoint).build());
+}
+ @AT@ 7489 @LENGTH@ 1203
+------UPD VariableDeclarationStatement@@final SecurityEventVisitor<?,String> formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().build() : SimpleSecurityEventFormatter.builder().build(); @TO@ final SecurityEventVisitor<?,String> formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().setDateFormatSupplier(bind(SimpleDateFormat::new,DATE_FORMAT)).build() : SimpleSecurityEventFormatter.builder().setDateFormatSupplier(bind(SimpleDateFormat::new,DATE_FORMAT)).build(); @AT@ 7844 @LENGTH@ 168
+---------UPD VariableDeclarationFragment@@formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().build() : SimpleSecurityEventFormatter.builder().build() @TO@ formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().setDateFormatSupplier(bind(SimpleDateFormat::new,DATE_FORMAT)).build() : SimpleSecurityEventFormatter.builder().setDateFormatSupplier(bind(SimpleDateFormat::new,DATE_FORMAT)).build() @AT@ 7882 @LENGTH@ 129
+------------UPD ConditionalExpression@@Format.JSON == format ? JsonSecurityEventFormatter.builder().build() : SimpleSecurityEventFormatter.builder().build() @TO@ Format.JSON == format ? JsonSecurityEventFormatter.builder().setDateFormatSupplier(bind(SimpleDateFormat::new,DATE_FORMAT)).build() : SimpleSecurityEventFormatter.builder().setDateFormatSupplier(bind(SimpleDateFormat::new,DATE_FORMAT)).build() @AT@ 7894 @LENGTH@ 117
+---------------UPD MethodInvocation@@JsonSecurityEventFormatter.builder().build() @TO@ JsonSecurityEventFormatter.builder().setDateFormatSupplier(bind(SimpleDateFormat::new,DATE_FORMAT)).build() @AT@ 7918 @LENGTH@ 44
+------------------INS MethodInvocation@@MethodName:setDateFormatSupplier:[bind(SimpleDateFormat::new,DATE_FORMAT)] @TO@ MethodInvocation@@JsonSecurityEventFormatter.builder().build() @AT@ 8087 @LENGTH@ 100
+---------------------INS MethodInvocation@@bind(SimpleDateFormat::new,DATE_FORMAT) @TO@ MethodInvocation@@MethodName:setDateFormatSupplier:[bind(SimpleDateFormat::new,DATE_FORMAT)] @AT@ 8146 @LENGTH@ 40
+------------------------INS SimpleName@@MethodName:bind:[SimpleDateFormat::new, DATE_FORMAT] @TO@ MethodInvocation@@bind(SimpleDateFormat::new,DATE_FORMAT) @AT@ 8146 @LENGTH@ 40
+---------------------------INS SimpleName@@DATE_FORMAT @TO@ SimpleName@@MethodName:bind:[SimpleDateFormat::new, DATE_FORMAT] @AT@ 8174 @LENGTH@ 11
+---------------UPD MethodInvocation@@SimpleSecurityEventFormatter.builder().build() @TO@ SimpleSecurityEventFormatter.builder().setDateFormatSupplier(bind(SimpleDateFormat::new,DATE_FORMAT)).build() @AT@ 7965 @LENGTH@ 46
+------------------INS MethodInvocation@@MethodName:setDateFormatSupplier:[bind(SimpleDateFormat::new,DATE_FORMAT)] @TO@ MethodInvocation@@SimpleSecurityEventFormatter.builder().build() @AT@ 8198 @LENGTH@ 102
+---------------------INS MethodInvocation@@bind(SimpleDateFormat::new,DATE_FORMAT) @TO@ MethodInvocation@@MethodName:setDateFormatSupplier:[bind(SimpleDateFormat::new,DATE_FORMAT)] @AT@ 8259 @LENGTH@ 40
+------------------------INS SimpleName@@MethodName:bind:[SimpleDateFormat::new, DATE_FORMAT] @TO@ MethodInvocation@@bind(SimpleDateFormat::new,DATE_FORMAT) @AT@ 8259 @LENGTH@ 40
+---------------------------INS SimpleName@@DATE_FORMAT @TO@ SimpleName@@MethodName:bind:[SimpleDateFormat::new, DATE_FORMAT] @AT@ 8287 @LENGTH@ 11
+

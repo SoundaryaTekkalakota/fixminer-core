@@ -1,0 +1,250 @@
+UPD ExpressionStatement@@MethodInvocation:context.addStep(new OperationStepHandler(){
+  @Override public void execute(  final OperationContext context,  final ModelNode operation) throws OperationFailedException {
+    final ReloadContext<T> reloadContext=initializeReloadContext(context,operation);
+    final ServiceController<?> service=context.getServiceRegistry(true).getRequiredService(rootService);
+    final ExecutorService executor=(ExecutorService)context.getServiceRegistry(false).getRequiredService(EXECUTOR_CAPABILITY.getCapabilityServiceName()).getValue();
+    context.completeStep(new OperationContext.ResultHandler(){
+      @Override public void handleResult(      OperationContext.ResultAction resultAction,      OperationContext context,      ModelNode operation){
+        if (resultAction == OperationContext.ResultAction.KEEP) {
+          service.addListener(new AbstractServiceListener<Object>(){
+            @Override public void listenerAdded(            final ServiceController<?> controller){
+              Future<?> stopping=executor.submit(() -> {
+                reloadContext.reloadInitiated(runningModeControl);
+                processState.setStopping();
+                controller.setMode(ServiceController.Mode.NEVER);
+              }
+);
+              try {
+                stopping.get();
+              }
+ catch (              InterruptedException ex) {
+                Thread.currentThread().interrupt();
+              }
+catch (              ExecutionException ex) {
+                ControllerLogger.ROOT_LOGGER.errorStoppingServer(ex);
+              }
+            }
+            @Override public void transition(            final ServiceController<? extends Object> controller,            final ServiceController.Transition transition){
+              if (transition == ServiceController.Transition.STOPPING_to_DOWN) {
+                controller.removeListener(this);
+                reloadContext.doReload(runningModeControl);
+                controller.setMode(ServiceController.Mode.ACTIVE);
+              }
+            }
+          }
+);
+        }
+      }
+    }
+);
+  }
+}
+,OperationContext.Stage.RUNTIME) @TO@ MethodInvocation:context.addStep(new OperationStepHandler(){
+  @Override public void execute(  final OperationContext context,  final ModelNode operation) throws OperationFailedException {
+    final ReloadContext<T> reloadContext=initializeReloadContext(context,operation);
+    final ServiceController<?> service=context.getServiceRegistry(true).getRequiredService(rootService);
+    final ExecutorService executor=(ExecutorService)context.getServiceRegistry(false).getRequiredService(EXECUTOR_CAPABILITY.getCapabilityServiceName()).getValue();
+    context.completeStep(new OperationContext.ResultHandler(){
+      @Override public void handleResult(      OperationContext.ResultAction resultAction,      OperationContext context,      ModelNode operation){
+        if (resultAction == OperationContext.ResultAction.KEEP) {
+          processState.setStopping();
+          service.addListener(new AbstractServiceListener<Object>(){
+            @Override public void listenerAdded(            final ServiceController<?> controller){
+              Future<?> stopping=executor.submit(() -> {
+                reloadContext.reloadInitiated(runningModeControl);
+                controller.setMode(ServiceController.Mode.NEVER);
+              }
+);
+              try {
+                stopping.get();
+              }
+ catch (              InterruptedException ex) {
+                Thread.currentThread().interrupt();
+              }
+catch (              ExecutionException ex) {
+                ControllerLogger.ROOT_LOGGER.errorStoppingServer(ex);
+              }
+            }
+            @Override public void transition(            final ServiceController<? extends Object> controller,            final ServiceController.Transition transition){
+              if (transition == ServiceController.Transition.STOPPING_to_DOWN) {
+                controller.removeListener(this);
+                reloadContext.doReload(runningModeControl);
+                controller.setMode(ServiceController.Mode.ACTIVE);
+              }
+            }
+          }
+);
+        }
+      }
+    }
+);
+  }
+}
+,OperationContext.Stage.RUNTIME) @AT@ 3287 @LENGTH@ 2778
+---UPD MethodInvocation@@context.addStep(new OperationStepHandler(){
+  @Override public void execute(  final OperationContext context,  final ModelNode operation) throws OperationFailedException {
+    final ReloadContext<T> reloadContext=initializeReloadContext(context,operation);
+    final ServiceController<?> service=context.getServiceRegistry(true).getRequiredService(rootService);
+    final ExecutorService executor=(ExecutorService)context.getServiceRegistry(false).getRequiredService(EXECUTOR_CAPABILITY.getCapabilityServiceName()).getValue();
+    context.completeStep(new OperationContext.ResultHandler(){
+      @Override public void handleResult(      OperationContext.ResultAction resultAction,      OperationContext context,      ModelNode operation){
+        if (resultAction == OperationContext.ResultAction.KEEP) {
+          service.addListener(new AbstractServiceListener<Object>(){
+            @Override public void listenerAdded(            final ServiceController<?> controller){
+              Future<?> stopping=executor.submit(() -> {
+                reloadContext.reloadInitiated(runningModeControl);
+                processState.setStopping();
+                controller.setMode(ServiceController.Mode.NEVER);
+              }
+);
+              try {
+                stopping.get();
+              }
+ catch (              InterruptedException ex) {
+                Thread.currentThread().interrupt();
+              }
+catch (              ExecutionException ex) {
+                ControllerLogger.ROOT_LOGGER.errorStoppingServer(ex);
+              }
+            }
+            @Override public void transition(            final ServiceController<? extends Object> controller,            final ServiceController.Transition transition){
+              if (transition == ServiceController.Transition.STOPPING_to_DOWN) {
+                controller.removeListener(this);
+                reloadContext.doReload(runningModeControl);
+                controller.setMode(ServiceController.Mode.ACTIVE);
+              }
+            }
+          }
+);
+        }
+      }
+    }
+);
+  }
+}
+,OperationContext.Stage.RUNTIME) @TO@ context.addStep(new OperationStepHandler(){
+  @Override public void execute(  final OperationContext context,  final ModelNode operation) throws OperationFailedException {
+    final ReloadContext<T> reloadContext=initializeReloadContext(context,operation);
+    final ServiceController<?> service=context.getServiceRegistry(true).getRequiredService(rootService);
+    final ExecutorService executor=(ExecutorService)context.getServiceRegistry(false).getRequiredService(EXECUTOR_CAPABILITY.getCapabilityServiceName()).getValue();
+    context.completeStep(new OperationContext.ResultHandler(){
+      @Override public void handleResult(      OperationContext.ResultAction resultAction,      OperationContext context,      ModelNode operation){
+        if (resultAction == OperationContext.ResultAction.KEEP) {
+          processState.setStopping();
+          service.addListener(new AbstractServiceListener<Object>(){
+            @Override public void listenerAdded(            final ServiceController<?> controller){
+              Future<?> stopping=executor.submit(() -> {
+                reloadContext.reloadInitiated(runningModeControl);
+                controller.setMode(ServiceController.Mode.NEVER);
+              }
+);
+              try {
+                stopping.get();
+              }
+ catch (              InterruptedException ex) {
+                Thread.currentThread().interrupt();
+              }
+catch (              ExecutionException ex) {
+                ControllerLogger.ROOT_LOGGER.errorStoppingServer(ex);
+              }
+            }
+            @Override public void transition(            final ServiceController<? extends Object> controller,            final ServiceController.Transition transition){
+              if (transition == ServiceController.Transition.STOPPING_to_DOWN) {
+                controller.removeListener(this);
+                reloadContext.doReload(runningModeControl);
+                controller.setMode(ServiceController.Mode.ACTIVE);
+              }
+            }
+          }
+);
+        }
+      }
+    }
+);
+  }
+}
+,OperationContext.Stage.RUNTIME) @AT@ 3287 @LENGTH@ 2777
+------UPD SimpleName@@MethodName:addStep:[new OperationStepHandler(){
+  @Override public void execute(  final OperationContext context,  final ModelNode operation) throws OperationFailedException {
+    final ReloadContext<T> reloadContext=initializeReloadContext(context,operation);
+    final ServiceController<?> service=context.getServiceRegistry(true).getRequiredService(rootService);
+    final ExecutorService executor=(ExecutorService)context.getServiceRegistry(false).getRequiredService(EXECUTOR_CAPABILITY.getCapabilityServiceName()).getValue();
+    context.completeStep(new OperationContext.ResultHandler(){
+      @Override public void handleResult(      OperationContext.ResultAction resultAction,      OperationContext context,      ModelNode operation){
+        if (resultAction == OperationContext.ResultAction.KEEP) {
+          service.addListener(new AbstractServiceListener<Object>(){
+            @Override public void listenerAdded(            final ServiceController<?> controller){
+              Future<?> stopping=executor.submit(() -> {
+                reloadContext.reloadInitiated(runningModeControl);
+                processState.setStopping();
+                controller.setMode(ServiceController.Mode.NEVER);
+              }
+);
+              try {
+                stopping.get();
+              }
+ catch (              InterruptedException ex) {
+                Thread.currentThread().interrupt();
+              }
+catch (              ExecutionException ex) {
+                ControllerLogger.ROOT_LOGGER.errorStoppingServer(ex);
+              }
+            }
+            @Override public void transition(            final ServiceController<? extends Object> controller,            final ServiceController.Transition transition){
+              if (transition == ServiceController.Transition.STOPPING_to_DOWN) {
+                controller.removeListener(this);
+                reloadContext.doReload(runningModeControl);
+                controller.setMode(ServiceController.Mode.ACTIVE);
+              }
+            }
+          }
+);
+        }
+      }
+    }
+);
+  }
+}
+, OperationContext.Stage.RUNTIME] @TO@ MethodName:addStep:[new OperationStepHandler(){
+  @Override public void execute(  final OperationContext context,  final ModelNode operation) throws OperationFailedException {
+    final ReloadContext<T> reloadContext=initializeReloadContext(context,operation);
+    final ServiceController<?> service=context.getServiceRegistry(true).getRequiredService(rootService);
+    final ExecutorService executor=(ExecutorService)context.getServiceRegistry(false).getRequiredService(EXECUTOR_CAPABILITY.getCapabilityServiceName()).getValue();
+    context.completeStep(new OperationContext.ResultHandler(){
+      @Override public void handleResult(      OperationContext.ResultAction resultAction,      OperationContext context,      ModelNode operation){
+        if (resultAction == OperationContext.ResultAction.KEEP) {
+          processState.setStopping();
+          service.addListener(new AbstractServiceListener<Object>(){
+            @Override public void listenerAdded(            final ServiceController<?> controller){
+              Future<?> stopping=executor.submit(() -> {
+                reloadContext.reloadInitiated(runningModeControl);
+                controller.setMode(ServiceController.Mode.NEVER);
+              }
+);
+              try {
+                stopping.get();
+              }
+ catch (              InterruptedException ex) {
+                Thread.currentThread().interrupt();
+              }
+catch (              ExecutionException ex) {
+                ControllerLogger.ROOT_LOGGER.errorStoppingServer(ex);
+              }
+            }
+            @Override public void transition(            final ServiceController<? extends Object> controller,            final ServiceController.Transition transition){
+              if (transition == ServiceController.Transition.STOPPING_to_DOWN) {
+                controller.removeListener(this);
+                reloadContext.doReload(runningModeControl);
+                controller.setMode(ServiceController.Mode.ACTIVE);
+              }
+            }
+          }
+);
+        }
+      }
+    }
+);
+  }
+}
+, OperationContext.Stage.RUNTIME] @AT@ 3295 @LENGTH@ 2769
+

@@ -1,0 +1,10 @@
+INS ExpressionStatement@@MethodInvocation:LOG.info("Error requested is " + percentageError + "%") @TO@ IfStatement@@InfixExpression:percentageError <= 4.8 @AT@ 12009 @LENGTH@ 56
+---INS MethodInvocation@@LOG.info("Error requested is " + percentageError + "%") @TO@ ExpressionStatement@@MethodInvocation:LOG.info("Error requested is " + percentageError + "%") @AT@ 12009 @LENGTH@ 55
+------INS SimpleName@@Name:LOG @TO@ MethodInvocation@@LOG.info("Error requested is " + percentageError + "%") @AT@ 12009 @LENGTH@ 3
+------INS SimpleName@@MethodName:info:["Error requested is " + percentageError + "%"] @TO@ MethodInvocation@@LOG.info("Error requested is " + percentageError + "%") @AT@ 12013 @LENGTH@ 51
+---------INS InfixExpression@@"Error requested is " + percentageError + "%" @TO@ SimpleName@@MethodName:info:["Error requested is " + percentageError + "%"] @AT@ 12018 @LENGTH@ 45
+------------INS StringLiteral@@"Error requested is " @TO@ InfixExpression@@"Error requested is " + percentageError + "%" @AT@ 12018 @LENGTH@ 21
+------------INS Operator@@+ @TO@ InfixExpression@@"Error requested is " + percentageError + "%" @AT@ 12039 @LENGTH@ 1
+------------INS SimpleName@@percentageError @TO@ InfixExpression@@"Error requested is " + percentageError + "%" @AT@ 12042 @LENGTH@ 15
+------------INS StringLiteral@@"%" @TO@ InfixExpression@@"Error requested is " + percentageError + "%" @AT@ 12060 @LENGTH@ 3
+

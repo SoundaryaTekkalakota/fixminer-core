@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@DataFormat outJaxb=context.resolveDataFormat(name); @TO@ DataFormat outJaxb=null; @AT@ 6402 @LENGTH@ 53
+---UPD VariableDeclarationFragment@@outJaxb=context.resolveDataFormat(name) @TO@ outJaxb=null @AT@ 6413 @LENGTH@ 41
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@outJaxb=context.resolveDataFormat(name) @AT@ 5916 @LENGTH@ 4
+

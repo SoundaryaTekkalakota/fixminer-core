@@ -1,0 +1,6 @@
+ INS IfStatement
+--- INS InfixExpression
+------ INS SimpleName
+------ INS Operator
+------ INS NullLiteral
+--- MOV ExpressionStatement

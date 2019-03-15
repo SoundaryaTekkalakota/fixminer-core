@@ -1,0 +1,2 @@
+DEL VariableDeclarationStatement@@double value=Double.parseDouble(partition.getSpec().get(partColName)); @AT@ 19069 @LENGTH@ 72
+

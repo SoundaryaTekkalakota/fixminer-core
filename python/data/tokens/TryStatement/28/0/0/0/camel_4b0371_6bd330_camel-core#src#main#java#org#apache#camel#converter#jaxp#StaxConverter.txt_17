@@ -1,0 +1,29 @@
+INS TryStatement@@try:[] @TO@ MethodDeclaration@@public, XMLEventWriter, MethodName:createXMLEventWriter, Result result, XMLStreamException,  @AT@ 3662 @LENGTH@ 496
+---INS IfStatement@@InfixExpression:result instanceof DOMResult && !isWoodstox(factory) @TO@ TryStatement@@try:[] @AT@ 3680 @LENGTH@ 346
+------INS InfixExpression@@result instanceof DOMResult && !isWoodstox(factory) @TO@ IfStatement@@InfixExpression:result instanceof DOMResult && !isWoodstox(factory) @AT@ 3684 @LENGTH@ 51
+---------INS InstanceofExpression@@result instanceof DOMResult @TO@ InfixExpression@@result instanceof DOMResult && !isWoodstox(factory) @AT@ 3684 @LENGTH@ 27
+------------INS SimpleName@@result @TO@ InstanceofExpression@@result instanceof DOMResult @AT@ 3684 @LENGTH@ 6
+------------INS Instanceof@@instanceof @TO@ InstanceofExpression@@result instanceof DOMResult @AT@ 3691 @LENGTH@ 10
+------------INS SimpleType@@DOMResult @TO@ InstanceofExpression@@result instanceof DOMResult @AT@ 3702 @LENGTH@ 9
+---------INS Operator@@&& @TO@ InfixExpression@@result instanceof DOMResult && !isWoodstox(factory) @AT@ 3711 @LENGTH@ 2
+---------INS PrefixExpression@@!isWoodstox(factory) @TO@ InfixExpression@@result instanceof DOMResult && !isWoodstox(factory) @AT@ 3715 @LENGTH@ 20
+------------INS Operator@@! @TO@ PrefixExpression@@!isWoodstox(factory) @AT@ 3715 @LENGTH@ 1
+------------INS MethodInvocation@@isWoodstox(factory) @TO@ PrefixExpression@@!isWoodstox(factory) @AT@ 3716 @LENGTH@ 19
+---------------INS SimpleName@@MethodName:isWoodstox:[factory] @TO@ MethodInvocation@@isWoodstox(factory) @AT@ 3716 @LENGTH@ 19
+------------------INS SimpleName@@factory @TO@ SimpleName@@MethodName:isWoodstox:[factory] @AT@ 3727 @LENGTH@ 7
+------INS ExpressionStatement@@MethodInvocation:LOG.info("DOMResult is known to have issues with {0}. We suggest using Woodstox",factory.getClass()) @TO@ IfStatement@@InfixExpression:result instanceof DOMResult && !isWoodstox(factory) @AT@ 3885 @LENGTH@ 127
+---------INS MethodInvocation@@LOG.info("DOMResult is known to have issues with {0}. We suggest using Woodstox",factory.getClass()) @TO@ ExpressionStatement@@MethodInvocation:LOG.info("DOMResult is known to have issues with {0}. We suggest using Woodstox",factory.getClass()) @AT@ 3885 @LENGTH@ 126
+------------INS SimpleName@@Name:LOG @TO@ MethodInvocation@@LOG.info("DOMResult is known to have issues with {0}. We suggest using Woodstox",factory.getClass()) @AT@ 3885 @LENGTH@ 3
+------------INS SimpleName@@MethodName:info:["DOMResult is known to have issues with {0}. We suggest using Woodstox", factory.getClass()] @TO@ MethodInvocation@@LOG.info("DOMResult is known to have issues with {0}. We suggest using Woodstox",factory.getClass()) @AT@ 3889 @LENGTH@ 122
+---------------INS StringLiteral@@"DOMResult is known to have issues with {0}. We suggest using Woodstox" @TO@ SimpleName@@MethodName:info:["DOMResult is known to have issues with {0}. We suggest using Woodstox", factory.getClass()] @AT@ 3894 @LENGTH@ 71
+---------------INS MethodInvocation@@factory.getClass() @TO@ SimpleName@@MethodName:info:["DOMResult is known to have issues with {0}. We suggest using Woodstox", factory.getClass()] @AT@ 3992 @LENGTH@ 18
+------------------INS SimpleName@@Name:factory @TO@ MethodInvocation@@factory.getClass() @AT@ 3992 @LENGTH@ 7
+------------------INS SimpleName@@MethodName:getClass:[] @TO@ MethodInvocation@@factory.getClass() @AT@ 4000 @LENGTH@ 10
+---INS ReturnStatement@@MethodInvocation:factory.createXMLEventWriter(result) @TO@ TryStatement@@try:[] @AT@ 4039 @LENGTH@ 44
+------MOV MethodInvocation@@getOutputFactory().createXMLEventWriter(result) @TO@ ReturnStatement@@MethodInvocation:factory.createXMLEventWriter(result) @AT@ 2084 @LENGTH@ 47
+---INS Block@@FinallyBody @TO@ TryStatement@@try:[] @AT@ 4102 @LENGTH@ 56
+------INS ExpressionStatement@@MethodInvocation:returnXMLOutputFactory(factory) @TO@ Block@@FinallyBody @AT@ 4116 @LENGTH@ 32
+---------INS MethodInvocation@@returnXMLOutputFactory(factory) @TO@ ExpressionStatement@@MethodInvocation:returnXMLOutputFactory(factory) @AT@ 4116 @LENGTH@ 31
+------------INS SimpleName@@MethodName:returnXMLOutputFactory:[factory] @TO@ MethodInvocation@@returnXMLOutputFactory(factory) @AT@ 4116 @LENGTH@ 31
+---------------INS SimpleName@@factory @TO@ SimpleName@@MethodName:returnXMLOutputFactory:[factory] @AT@ 4139 @LENGTH@ 7
+

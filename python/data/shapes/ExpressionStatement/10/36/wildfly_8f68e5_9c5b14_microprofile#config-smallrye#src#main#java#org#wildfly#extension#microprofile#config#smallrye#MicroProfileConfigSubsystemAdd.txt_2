@@ -1,0 +1,10 @@
+ExpressionStatement
+---MethodInvocation
+------SimpleName
+---------InfixExpression
+------------QualifiedName
+------------Operator
+------------NumberLiteral
+---------QualifiedName
+------------SimpleName
+------------SimpleName

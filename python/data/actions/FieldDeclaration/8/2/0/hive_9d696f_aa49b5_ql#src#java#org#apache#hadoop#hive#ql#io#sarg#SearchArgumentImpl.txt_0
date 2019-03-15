@@ -1,0 +1,8 @@
+ INS FieldDeclaration
+--- INS Modifier
+--- INS Modifier
+--- INS Modifier
+--- INS PrimitiveType
+--- INS VariableDeclarationFragment
+------ INS SimpleName
+------ INS NumberLiteral

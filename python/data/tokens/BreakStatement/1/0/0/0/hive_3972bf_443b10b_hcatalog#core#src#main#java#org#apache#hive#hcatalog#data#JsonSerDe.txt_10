@@ -1,0 +1,2 @@
+INS BreakStatement@@ @TO@ SwitchStatement@@MethodInvocation:poi.getPrimitiveCategory() @AT@ 21288 @LENGTH@ 6
+

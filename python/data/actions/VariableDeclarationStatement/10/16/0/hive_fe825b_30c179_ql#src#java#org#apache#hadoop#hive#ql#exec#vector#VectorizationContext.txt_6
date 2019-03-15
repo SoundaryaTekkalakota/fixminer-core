@@ -1,0 +1,10 @@
+ UPD VariableDeclarationStatement
+--- UPD VariableDeclarationFragment
+------ UPD MethodInvocation
+--------- UPD SimpleName
+------------ DEL SimpleName
+------------ INS QualifiedName
+--------------- INS QualifiedName
+------------------ INS SimpleName
+------------------ INS SimpleName
+--------------- INS SimpleName

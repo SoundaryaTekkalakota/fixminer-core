@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(Void.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("Void") @AT@ 3720 @LENGTH@ 56
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(Void.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("Void") @AT@ 3720 @LENGTH@ 55
+------UPD SimpleName@@MethodName:add:[Void.class.getSimpleName()] @TO@ MethodName:add:["Void"] @AT@ 3744 @LENGTH@ 31
+---------INS StringLiteral@@"Void" @TO@ SimpleName@@MethodName:add:[Void.class.getSimpleName()] @AT@ 3355 @LENGTH@ 6
+---------DEL MethodInvocation@@Void.class.getSimpleName() @AT@ 3748 @LENGTH@ 26
+------------DEL TypeLiteral@@Void.class @AT@ 3748 @LENGTH@ 10
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 3759 @LENGTH@ 15
+

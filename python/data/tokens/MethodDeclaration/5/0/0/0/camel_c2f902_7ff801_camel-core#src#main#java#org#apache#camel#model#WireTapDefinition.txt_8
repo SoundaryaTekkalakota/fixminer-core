@@ -1,0 +1,6 @@
+UPD MethodDeclaration@@public, WireTapDefinition, MethodName:newExchangeHeader, String headerName, Expression expression,  @TO@ public, WireTapDefinition<Type>, MethodName:newExchangeHeader, String headerName, Expression expression,  @AT@ 9268 @LENGTH@ 183
+---INS ParameterizedType@@WireTapDefinition<Type> @TO@ MethodDeclaration@@public, WireTapDefinition, MethodName:newExchangeHeader, String headerName, Expression expression,  @AT@ 9262 @LENGTH@ 23
+------INS SimpleType@@WireTapDefinition @TO@ ParameterizedType@@WireTapDefinition<Type> @AT@ 9262 @LENGTH@ 17
+------INS SimpleType@@Type @TO@ ParameterizedType@@WireTapDefinition<Type> @AT@ 9280 @LENGTH@ 4
+---DEL SimpleType@@WireTapDefinition @AT@ 9275 @LENGTH@ 17
+

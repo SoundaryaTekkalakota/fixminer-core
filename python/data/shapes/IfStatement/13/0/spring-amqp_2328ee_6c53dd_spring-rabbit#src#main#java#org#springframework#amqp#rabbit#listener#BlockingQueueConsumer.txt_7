@@ -1,0 +1,13 @@
+IfStatement
+---MethodInvocation
+------FieldAccess
+---------ThisExpression
+---------SimpleName
+------SimpleName
+---ExpressionStatement
+------MethodInvocation
+---------FieldAccess
+------------ThisExpression
+------------SimpleName
+---------SimpleName
+------------BooleanLiteral

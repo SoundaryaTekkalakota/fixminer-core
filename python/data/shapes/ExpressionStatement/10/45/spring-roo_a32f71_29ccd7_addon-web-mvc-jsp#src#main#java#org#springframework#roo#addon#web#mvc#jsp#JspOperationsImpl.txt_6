@@ -1,0 +1,10 @@
+ExpressionStatement
+---MethodInvocation
+------SimpleName
+---------MethodInvocation
+------------MethodInvocation
+---------------MethodInvocation
+------------------SimpleName
+---------------------InfixExpression
+------------------------StringLiteral
+------------------------SimpleName

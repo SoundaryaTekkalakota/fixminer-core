@@ -1,0 +1,18 @@
+DEL ExpressionStatement@@MethodInvocation:argumentList.add(((ByteObjectInspector)argumentOIs[i]).get(arguments[i].get())) @AT@ 4770 @LENGTH@ 80
+---DEL MethodInvocation@@argumentList.add(((ByteObjectInspector)argumentOIs[i]).get(arguments[i].get())) @AT@ 4770 @LENGTH@ 79
+------DEL SimpleName@@Name:argumentList @AT@ 4770 @LENGTH@ 12
+------DEL SimpleName@@MethodName:add:[((ByteObjectInspector)argumentOIs[i]).get(arguments[i].get())] @AT@ 4783 @LENGTH@ 66
+---------DEL MethodInvocation@@((ByteObjectInspector)argumentOIs[i]).get(arguments[i].get()) @AT@ 4787 @LENGTH@ 61
+------------DEL ParenthesizedExpression@@((ByteObjectInspector)argumentOIs[i]) @AT@ 4787 @LENGTH@ 37
+---------------DEL CastExpression@@(ByteObjectInspector)argumentOIs[i] @AT@ 4788 @LENGTH@ 35
+------------------DEL SimpleType@@ByteObjectInspector @AT@ 4789 @LENGTH@ 19
+------------------DEL ArrayAccess@@argumentOIs[i] @AT@ 4809 @LENGTH@ 14
+---------------------DEL SimpleName@@argumentOIs @AT@ 4809 @LENGTH@ 11
+---------------------DEL SimpleName@@i @AT@ 4821 @LENGTH@ 1
+------------DEL SimpleName@@MethodName:get:[arguments[i].get()] @AT@ 4825 @LENGTH@ 23
+---------------DEL MethodInvocation@@arguments[i].get() @AT@ 4829 @LENGTH@ 18
+------------------DEL ArrayAccess@@arguments[i] @AT@ 4829 @LENGTH@ 12
+---------------------DEL SimpleName@@arguments @AT@ 4829 @LENGTH@ 9
+---------------------DEL SimpleName@@i @AT@ 4839 @LENGTH@ 1
+------------------DEL SimpleName@@MethodName:get:[] @AT@ 4842 @LENGTH@ 5
+

@@ -1,0 +1,14 @@
+MethodDeclaration
+---Modifier
+---PrimitiveType
+---SimpleName
+---ReturnStatement
+------ConditionalExpression
+---------InfixExpression
+------------SimpleName
+------------Operator
+------------NullLiteral
+---------NumberLiteral
+---------MethodInvocation
+------------SimpleName
+------------SimpleName

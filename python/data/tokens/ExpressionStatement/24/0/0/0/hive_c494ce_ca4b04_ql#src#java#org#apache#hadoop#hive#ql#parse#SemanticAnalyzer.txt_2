@@ -1,0 +1,25 @@
+DEL ExpressionStatement@@Assignment:alias=(left.getToken().getType() == HiveParser.TOK_PTBLFUNCTION) ? unescapeIdentifier(left.getChild(1).getText().toLowerCase()) : alias @AT@ 301751 @LENGTH@ 160
+---DEL Assignment@@alias=(left.getToken().getType() == HiveParser.TOK_PTBLFUNCTION) ? unescapeIdentifier(left.getChild(1).getText().toLowerCase()) : alias @AT@ 301751 @LENGTH@ 159
+------DEL SimpleName@@alias @AT@ 301751 @LENGTH@ 5
+------DEL Operator@@= @AT@ 301756 @LENGTH@ 1
+------DEL ConditionalExpression@@(left.getToken().getType() == HiveParser.TOK_PTBLFUNCTION) ? unescapeIdentifier(left.getChild(1).getText().toLowerCase()) : alias @AT@ 301759 @LENGTH@ 151
+---------DEL ParenthesizedExpression@@(left.getToken().getType() == HiveParser.TOK_PTBLFUNCTION) @AT@ 301759 @LENGTH@ 58
+------------DEL InfixExpression@@left.getToken().getType() == HiveParser.TOK_PTBLFUNCTION @AT@ 301760 @LENGTH@ 56
+---------------DEL MethodInvocation@@left.getToken().getType() @AT@ 301760 @LENGTH@ 25
+------------------DEL SimpleName@@Name:left @AT@ 301760 @LENGTH@ 4
+------------------DEL MethodInvocation@@MethodName:getToken:[] @AT@ 301760 @LENGTH@ 15
+------------------DEL SimpleName@@MethodName:getType:[] @AT@ 301776 @LENGTH@ 9
+---------------DEL Operator@@== @AT@ 301785 @LENGTH@ 2
+---------------DEL QualifiedName@@HiveParser.TOK_PTBLFUNCTION @AT@ 301789 @LENGTH@ 27
+------------------DEL SimpleName@@HiveParser @AT@ 301789 @LENGTH@ 10
+------------------DEL SimpleName@@TOK_PTBLFUNCTION @AT@ 301800 @LENGTH@ 16
+---------DEL MethodInvocation@@unescapeIdentifier(left.getChild(1).getText().toLowerCase()) @AT@ 301830 @LENGTH@ 60
+------------DEL SimpleName@@MethodName:unescapeIdentifier:[left.getChild(1).getText().toLowerCase()] @AT@ 301830 @LENGTH@ 60
+---------------DEL MethodInvocation@@left.getChild(1).getText().toLowerCase() @AT@ 301849 @LENGTH@ 40
+------------------DEL SimpleName@@Name:left @AT@ 301849 @LENGTH@ 4
+------------------DEL MethodInvocation@@MethodName:getChild:[1] @AT@ 301849 @LENGTH@ 16
+---------------------DEL NumberLiteral@@1 @AT@ 301863 @LENGTH@ 1
+------------------DEL MethodInvocation@@MethodName:getText:[] @AT@ 301849 @LENGTH@ 26
+------------------DEL SimpleName@@MethodName:toLowerCase:[] @AT@ 301876 @LENGTH@ 13
+---------DEL SimpleName@@alias @AT@ 301905 @LENGTH@ 5
+

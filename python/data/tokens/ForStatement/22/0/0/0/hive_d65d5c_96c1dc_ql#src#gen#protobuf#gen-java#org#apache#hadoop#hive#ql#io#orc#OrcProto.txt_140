@@ -1,0 +1,23 @@
+DEL ForStatement@@[int i=0];i < getTypesCount(); [i++] @AT@ 610456 @LENGTH@ 150
+---DEL VariableDeclarationExpression@@int i=0 @AT@ 610461 @LENGTH@ 9
+------DEL PrimitiveType@@int @AT@ 610461 @LENGTH@ 3
+------DEL VariableDeclarationFragment@@i=0 @AT@ 610465 @LENGTH@ 5
+---------DEL SimpleName@@i @AT@ 610465 @LENGTH@ 1
+---------DEL NumberLiteral@@0 @AT@ 610469 @LENGTH@ 1
+---DEL InfixExpression@@i < getTypesCount() @AT@ 610472 @LENGTH@ 19
+------DEL SimpleName@@i @AT@ 610472 @LENGTH@ 1
+------DEL Operator@@< @AT@ 610473 @LENGTH@ 1
+------DEL MethodInvocation@@MethodName:getTypesCount:[] @AT@ 610476 @LENGTH@ 15
+---DEL PostfixExpression@@i++ @AT@ 610493 @LENGTH@ 3
+------DEL SimpleName@@i @AT@ 610493 @LENGTH@ 1
+------DEL Operator@@++ @AT@ 610495 @LENGTH@ 2
+---DEL IfStatement@@PrefixExpression:!getTypes(i).isInitialized() @AT@ 610510 @LENGTH@ 86
+------DEL PrefixExpression@@!getTypes(i).isInitialized() @AT@ 610514 @LENGTH@ 28
+---------DEL Operator@@! @AT@ 610514 @LENGTH@ 1
+---------DEL MethodInvocation@@getTypes(i).isInitialized() @AT@ 610515 @LENGTH@ 27
+------------DEL MethodInvocation@@MethodName:getTypes:[i] @AT@ 610515 @LENGTH@ 11
+---------------DEL SimpleName@@i @AT@ 610524 @LENGTH@ 1
+------------DEL SimpleName@@MethodName:isInitialized:[] @AT@ 610527 @LENGTH@ 15
+------DEL ReturnStatement@@BooleanLiteral:false @AT@ 610571 @LENGTH@ 13
+---------DEL BooleanLiteral@@false @AT@ 610578 @LENGTH@ 5
+

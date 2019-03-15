@@ -1,0 +1,6 @@
+UPD SwitchCase@@StringLiteral:"SPNEGO" @TO@ QualifiedName:HttpConstants.SPNEGO_NAME @AT@ 14495 @LENGTH@ 14
+---DEL StringLiteral@@"SPNEGO" @AT@ 14500 @LENGTH@ 8
+---INS QualifiedName@@HttpConstants.SPNEGO_NAME @TO@ SwitchCase@@StringLiteral:"SPNEGO" @AT@ 14582 @LENGTH@ 25
+------INS SimpleName@@HttpConstants @TO@ QualifiedName@@HttpConstants.SPNEGO_NAME @AT@ 14582 @LENGTH@ 13
+------INS SimpleName@@SPNEGO_NAME @TO@ QualifiedName@@HttpConstants.SPNEGO_NAME @AT@ 14596 @LENGTH@ 11
+

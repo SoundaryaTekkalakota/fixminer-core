@@ -1,0 +1,157 @@
+UPD ExpressionStatement@@MethodInvocation:service.addListener(new AbstractServiceListener<Object>(){
+  @Override public void listenerAdded(  final ServiceController<?> controller){
+    Future<?> stopping=executor.submit(() -> {
+      reloadContext.reloadInitiated(runningModeControl);
+      processState.setStopping();
+      controller.setMode(ServiceController.Mode.NEVER);
+    }
+);
+    try {
+      stopping.get();
+    }
+ catch (    InterruptedException ex) {
+      Thread.currentThread().interrupt();
+    }
+catch (    ExecutionException ex) {
+      ControllerLogger.ROOT_LOGGER.errorStoppingServer(ex);
+    }
+  }
+  @Override public void transition(  final ServiceController<? extends Object> controller,  final ServiceController.Transition transition){
+    if (transition == ServiceController.Transition.STOPPING_to_DOWN) {
+      controller.removeListener(this);
+      reloadContext.doReload(runningModeControl);
+      controller.setMode(ServiceController.Mode.ACTIVE);
+    }
+  }
+}
+) @TO@ MethodInvocation:service.addListener(new AbstractServiceListener<Object>(){
+  @Override public void listenerAdded(  final ServiceController<?> controller){
+    Future<?> stopping=executor.submit(() -> {
+      reloadContext.reloadInitiated(runningModeControl);
+      controller.setMode(ServiceController.Mode.NEVER);
+    }
+);
+    try {
+      stopping.get();
+    }
+ catch (    InterruptedException ex) {
+      Thread.currentThread().interrupt();
+    }
+catch (    ExecutionException ex) {
+      ControllerLogger.ROOT_LOGGER.errorStoppingServer(ex);
+    }
+  }
+  @Override public void transition(  final ServiceController<? extends Object> controller,  final ServiceController.Transition transition){
+    if (transition == ServiceController.Transition.STOPPING_to_DOWN) {
+      controller.removeListener(this);
+      reloadContext.doReload(runningModeControl);
+      controller.setMode(ServiceController.Mode.ACTIVE);
+    }
+  }
+}
+) @AT@ 4231 @LENGTH@ 1708
+---UPD MethodInvocation@@service.addListener(new AbstractServiceListener<Object>(){
+  @Override public void listenerAdded(  final ServiceController<?> controller){
+    Future<?> stopping=executor.submit(() -> {
+      reloadContext.reloadInitiated(runningModeControl);
+      processState.setStopping();
+      controller.setMode(ServiceController.Mode.NEVER);
+    }
+);
+    try {
+      stopping.get();
+    }
+ catch (    InterruptedException ex) {
+      Thread.currentThread().interrupt();
+    }
+catch (    ExecutionException ex) {
+      ControllerLogger.ROOT_LOGGER.errorStoppingServer(ex);
+    }
+  }
+  @Override public void transition(  final ServiceController<? extends Object> controller,  final ServiceController.Transition transition){
+    if (transition == ServiceController.Transition.STOPPING_to_DOWN) {
+      controller.removeListener(this);
+      reloadContext.doReload(runningModeControl);
+      controller.setMode(ServiceController.Mode.ACTIVE);
+    }
+  }
+}
+) @TO@ service.addListener(new AbstractServiceListener<Object>(){
+  @Override public void listenerAdded(  final ServiceController<?> controller){
+    Future<?> stopping=executor.submit(() -> {
+      reloadContext.reloadInitiated(runningModeControl);
+      controller.setMode(ServiceController.Mode.NEVER);
+    }
+);
+    try {
+      stopping.get();
+    }
+ catch (    InterruptedException ex) {
+      Thread.currentThread().interrupt();
+    }
+catch (    ExecutionException ex) {
+      ControllerLogger.ROOT_LOGGER.errorStoppingServer(ex);
+    }
+  }
+  @Override public void transition(  final ServiceController<? extends Object> controller,  final ServiceController.Transition transition){
+    if (transition == ServiceController.Transition.STOPPING_to_DOWN) {
+      controller.removeListener(this);
+      reloadContext.doReload(runningModeControl);
+      controller.setMode(ServiceController.Mode.ACTIVE);
+    }
+  }
+}
+) @AT@ 4231 @LENGTH@ 1707
+------UPD SimpleName@@MethodName:addListener:[new AbstractServiceListener<Object>(){
+  @Override public void listenerAdded(  final ServiceController<?> controller){
+    Future<?> stopping=executor.submit(() -> {
+      reloadContext.reloadInitiated(runningModeControl);
+      processState.setStopping();
+      controller.setMode(ServiceController.Mode.NEVER);
+    }
+);
+    try {
+      stopping.get();
+    }
+ catch (    InterruptedException ex) {
+      Thread.currentThread().interrupt();
+    }
+catch (    ExecutionException ex) {
+      ControllerLogger.ROOT_LOGGER.errorStoppingServer(ex);
+    }
+  }
+  @Override public void transition(  final ServiceController<? extends Object> controller,  final ServiceController.Transition transition){
+    if (transition == ServiceController.Transition.STOPPING_to_DOWN) {
+      controller.removeListener(this);
+      reloadContext.doReload(runningModeControl);
+      controller.setMode(ServiceController.Mode.ACTIVE);
+    }
+  }
+}
+] @TO@ MethodName:addListener:[new AbstractServiceListener<Object>(){
+  @Override public void listenerAdded(  final ServiceController<?> controller){
+    Future<?> stopping=executor.submit(() -> {
+      reloadContext.reloadInitiated(runningModeControl);
+      controller.setMode(ServiceController.Mode.NEVER);
+    }
+);
+    try {
+      stopping.get();
+    }
+ catch (    InterruptedException ex) {
+      Thread.currentThread().interrupt();
+    }
+catch (    ExecutionException ex) {
+      ControllerLogger.ROOT_LOGGER.errorStoppingServer(ex);
+    }
+  }
+  @Override public void transition(  final ServiceController<? extends Object> controller,  final ServiceController.Transition transition){
+    if (transition == ServiceController.Transition.STOPPING_to_DOWN) {
+      controller.removeListener(this);
+      reloadContext.doReload(runningModeControl);
+      controller.setMode(ServiceController.Mode.ACTIVE);
+    }
+  }
+}
+] @AT@ 4239 @LENGTH@ 1699
+

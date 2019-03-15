@@ -1,0 +1,2 @@
+MOV MethodDeclaration@@public, boolean, MethodName:isAborted,  @TO@ TypeDeclaration@@[private, static]WarnOnlyAbortable, [Abortable] @AT@ 6432 @LENGTH@ 57
+

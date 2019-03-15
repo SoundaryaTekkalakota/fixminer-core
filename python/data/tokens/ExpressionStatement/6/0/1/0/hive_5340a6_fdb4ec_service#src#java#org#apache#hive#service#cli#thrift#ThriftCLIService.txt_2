@@ -1,0 +1,7 @@
+UPD ExpressionStatement@@MethodInvocation:e.printStackTrace() @TO@ MethodInvocation:LOG.warn("Error getting info: ",e) @AT@ 6314 @LENGTH@ 20
+---UPD MethodInvocation@@e.printStackTrace() @TO@ LOG.warn("Error getting info: ",e) @AT@ 6314 @LENGTH@ 19
+------UPD SimpleName@@Name:e @TO@ Name:LOG @AT@ 6314 @LENGTH@ 1
+------UPD SimpleName@@MethodName:printStackTrace:[] @TO@ MethodName:warn:["Error getting info: ", e] @AT@ 6316 @LENGTH@ 17
+---------INS StringLiteral@@"Error getting info: " @TO@ SimpleName@@MethodName:printStackTrace:[] @AT@ 6361 @LENGTH@ 22
+---------INS SimpleName@@e @TO@ SimpleName@@MethodName:printStackTrace:[] @AT@ 6385 @LENGTH@ 1
+

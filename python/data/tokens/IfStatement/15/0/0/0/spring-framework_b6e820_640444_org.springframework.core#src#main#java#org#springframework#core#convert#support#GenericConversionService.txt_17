@@ -1,0 +1,16 @@
+DEL IfStatement@@MethodInvocation:logger.isTraceEnabled() @AT@ 15355 @LENGTH@ 140
+---DEL MethodInvocation@@logger.isTraceEnabled() @AT@ 15359 @LENGTH@ 23
+------DEL SimpleName@@Name:logger @AT@ 15359 @LENGTH@ 6
+------DEL SimpleName@@MethodName:isTraceEnabled:[] @AT@ 15366 @LENGTH@ 16
+---DEL ExpressionStatement@@MethodInvocation:logger.trace("Searching for converters indexed by source class [" + currentClass.getName() + "]") @AT@ 15391 @LENGTH@ 98
+------DEL MethodInvocation@@logger.trace("Searching for converters indexed by source class [" + currentClass.getName() + "]") @AT@ 15391 @LENGTH@ 97
+---------DEL SimpleName@@Name:logger @AT@ 15391 @LENGTH@ 6
+---------DEL SimpleName@@MethodName:trace:["Searching for converters indexed by source class [" + currentClass.getName() + "]"] @AT@ 15398 @LENGTH@ 90
+------------DEL InfixExpression@@"Searching for converters indexed by source class [" + currentClass.getName() + "]" @AT@ 15404 @LENGTH@ 83
+---------------DEL StringLiteral@@"Searching for converters indexed by source class [" @AT@ 15404 @LENGTH@ 52
+---------------DEL Operator@@+ @AT@ 15456 @LENGTH@ 1
+---------------DEL MethodInvocation@@currentClass.getName() @AT@ 15459 @LENGTH@ 22
+------------------DEL SimpleName@@Name:currentClass @AT@ 15459 @LENGTH@ 12
+------------------DEL SimpleName@@MethodName:getName:[] @AT@ 15472 @LENGTH@ 9
+---------------DEL StringLiteral@@"]" @AT@ 15484 @LENGTH@ 3
+

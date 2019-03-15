@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, ShadowMatch, [primary] @TO@ TypeDeclaration@@[private, static]DefensiveShadowMatch, [ShadowMatch] @AT@ 21899 @LENGTH@ 34
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, ShadowMatch, [primary] @AT@ 21899 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, ShadowMatch, [primary] @AT@ 21907 @LENGTH@ 5
+---INS SimpleType@@ShadowMatch @TO@ FieldDeclaration@@private, final, ShadowMatch, [primary] @AT@ 21913 @LENGTH@ 11
+---INS VariableDeclarationFragment@@primary @TO@ FieldDeclaration@@private, final, ShadowMatch, [primary] @AT@ 21925 @LENGTH@ 7
+------INS SimpleName@@primary @TO@ VariableDeclarationFragment@@primary @AT@ 21925 @LENGTH@ 7
+

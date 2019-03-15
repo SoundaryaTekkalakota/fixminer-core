@@ -1,0 +1,47 @@
+UPD VariableDeclarationStatement@@OperationStepHandler legacyRemoveProtocolHandler=new OperationStepHandler(){
+  @Override public void execute(  OperationContext context,  ModelNode operation){
+    operationDeprecated(context,operation);
+    PathAddress address=context.getCurrentAddress();
+    String protocol=operation.require(AbstractProtocolResourceDefinition.DeprecatedAttribute.TYPE.getName()).asString();
+    PathElement protocolPath=ProtocolResourceDefinition.pathElement(protocol);
+    PathAddress protocolAddress=address.append(protocolPath);
+    ModelNode removeOperation=Util.createRemoveOperation(protocolAddress);
+    context.addStep(removeOperation,context.getResourceRegistration().getOperationHandler(PathAddress.pathAddress(ProtocolResourceDefinition.WILDCARD_PATH),ModelDescriptionConstants.REMOVE),context.getCurrentStage());
+  }
+}
+; @TO@ OperationStepHandler legacyRemoveProtocolHandler=new OperationStepHandler(){
+  @Override public void execute(  OperationContext context,  ModelNode operation){
+    operationDeprecated(context,operation);
+    PathAddress address=context.getCurrentAddress();
+    String protocol=operation.require(AbstractProtocolResourceDefinition.DeprecatedAttribute.TYPE.getName()).asString();
+    PathElement protocolPath=ProtocolResourceDefinition.pathElement(protocol);
+    PathAddress protocolAddress=address.append(protocolPath);
+    ModelNode removeOperation=Util.createRemoveOperation(protocolAddress);
+    context.addStep(removeOperation,context.getResourceRegistration().getOperationHandler(PathAddress.pathAddress(protocolPath),ModelDescriptionConstants.REMOVE),context.getCurrentStage());
+  }
+}
+; @AT@ 16038 @LENGTH@ 957
+---UPD VariableDeclarationFragment@@legacyRemoveProtocolHandler=new OperationStepHandler(){
+  @Override public void execute(  OperationContext context,  ModelNode operation){
+    operationDeprecated(context,operation);
+    PathAddress address=context.getCurrentAddress();
+    String protocol=operation.require(AbstractProtocolResourceDefinition.DeprecatedAttribute.TYPE.getName()).asString();
+    PathElement protocolPath=ProtocolResourceDefinition.pathElement(protocol);
+    PathAddress protocolAddress=address.append(protocolPath);
+    ModelNode removeOperation=Util.createRemoveOperation(protocolAddress);
+    context.addStep(removeOperation,context.getResourceRegistration().getOperationHandler(PathAddress.pathAddress(ProtocolResourceDefinition.WILDCARD_PATH),ModelDescriptionConstants.REMOVE),context.getCurrentStage());
+  }
+}
+ @TO@ legacyRemoveProtocolHandler=new OperationStepHandler(){
+  @Override public void execute(  OperationContext context,  ModelNode operation){
+    operationDeprecated(context,operation);
+    PathAddress address=context.getCurrentAddress();
+    String protocol=operation.require(AbstractProtocolResourceDefinition.DeprecatedAttribute.TYPE.getName()).asString();
+    PathElement protocolPath=ProtocolResourceDefinition.pathElement(protocol);
+    PathAddress protocolAddress=address.append(protocolPath);
+    ModelNode removeOperation=Util.createRemoveOperation(protocolAddress);
+    context.addStep(removeOperation,context.getResourceRegistration().getOperationHandler(PathAddress.pathAddress(protocolPath),ModelDescriptionConstants.REMOVE),context.getCurrentStage());
+  }
+}
+ @AT@ 16059 @LENGTH@ 935
+

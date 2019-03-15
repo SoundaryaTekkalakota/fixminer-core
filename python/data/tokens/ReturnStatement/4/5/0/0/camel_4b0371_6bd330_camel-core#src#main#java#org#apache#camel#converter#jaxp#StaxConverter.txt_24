@@ -1,0 +1,5 @@
+UPD ReturnStatement@@MethodInvocation:getInputFactory().createXMLEventReader(IOHelper.buffered(in),IOHelper.getCharsetName(exchange)) @TO@ MethodInvocation:factory.createXMLEventReader(IOHelper.buffered(in),IOHelper.getCharsetName(exchange)) @AT@ 4631 @LENGTH@ 104
+---UPD MethodInvocation@@getInputFactory().createXMLEventReader(IOHelper.buffered(in),IOHelper.getCharsetName(exchange)) @TO@ factory.createXMLEventReader(IOHelper.buffered(in),IOHelper.getCharsetName(exchange)) @AT@ 4638 @LENGTH@ 96
+------DEL MethodInvocation@@MethodName:getInputFactory:[] @AT@ 4638 @LENGTH@ 17
+------INS SimpleName@@Name:factory @TO@ MethodInvocation@@getInputFactory().createXMLEventReader(IOHelper.buffered(in),IOHelper.getCharsetName(exchange)) @AT@ 8805 @LENGTH@ 7
+

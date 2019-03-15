@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.info(sessionHandle + ": getFunctions()") @TO@ MethodInvocation:LOG.debug(sessionHandle + ": getFunctions()") @AT@ 11027 @LENGTH@ 45
+---UPD MethodInvocation@@LOG.info(sessionHandle + ": getFunctions()") @TO@ LOG.debug(sessionHandle + ": getFunctions()") @AT@ 11027 @LENGTH@ 44
+------UPD SimpleName@@MethodName:info:[sessionHandle + ": getFunctions()"] @TO@ MethodName:debug:[sessionHandle + ": getFunctions()"] @AT@ 11031 @LENGTH@ 40
+

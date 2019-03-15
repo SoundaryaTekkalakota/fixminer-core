@@ -1,0 +1,17 @@
+ INS WhileStatement
+--- MOV InfixExpression
+--- INS ExpressionStatement
+------ INS MethodInvocation
+--------- INS SimpleName
+--------- INS SimpleName
+------------ INS PrefixExpression
+--------------- INS Operator
+--------------- INS NumberLiteral
+------------ MOV QualifiedName
+--- INS ExpressionStatement
+------ MOV Assignment
+--- MOV ExpressionStatement
+--- INS ExpressionStatement
+------ INS MethodInvocation
+--------- INS SimpleName
+--------- MOV SimpleName

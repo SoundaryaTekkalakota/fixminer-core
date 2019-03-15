@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, String, [namePattern] @TO@ TypeDeclaration@@[static]FieldMatch,  @AT@ 14046 @LENGTH@ 33
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, String, [namePattern] @AT@ 14046 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, String, [namePattern] @AT@ 14054 @LENGTH@ 5
+---INS SimpleType@@String @TO@ FieldDeclaration@@private, final, String, [namePattern] @AT@ 14060 @LENGTH@ 6
+---INS VariableDeclarationFragment@@namePattern @TO@ FieldDeclaration@@private, final, String, [namePattern] @AT@ 14067 @LENGTH@ 11
+------INS SimpleName@@namePattern @TO@ VariableDeclarationFragment@@namePattern @AT@ 14067 @LENGTH@ 11
+

@@ -1,0 +1,165 @@
+UPD VariableDeclarationStatement@@Runnable runnable=Trace.wrap("AsyncProcess.sendMultiAction",new Runnable(){
+  @Override public void run(){
+    MultiResponse res;
+    try {
+      MultiServerCallable<Row> callable=createCallable(loc,multi);
+      try {
+        res=createCaller(callable).callWithoutRetries(callable);
+      }
+ catch (      IOException e) {
+        LOG.warn("The call to the region server failed, we don't know where we stand, " + loc.getServerName(),e);
+        resubmitAll(initialActions,multi,loc,numAttempt + 1,e,errorsByServer);
+        return;
+      }
+      receiveMultiAction(initialActions,multi,loc,res,numAttempt,errorsByServer);
+    }
+  finally {
+      decTaskCounters(multi.getRegions());
+    }
+  }
+}
+); @TO@ Runnable runnable=Trace.wrap("AsyncProcess.sendMultiAction",new Runnable(){
+  @Override public void run(){
+    MultiResponse res;
+    try {
+      MultiServerCallable<Row> callable=createCallable(loc,multi);
+      try {
+        res=createCaller(callable).callWithoutRetries(callable);
+      }
+ catch (      IOException e) {
+        LOG.warn("The call to the region server failed, we don't know where we stand, " + loc.getServerName(),e);
+        resubmitAll(initialActions,multi,loc,numAttempt + 1,e,errorsByServer);
+        return;
+      }
+      receiveMultiAction(initialActions,multi,loc,res,numAttempt,errorsByServer);
+    }
+  finally {
+      decTaskCounters(multi.getRegions(),loc.getServerName());
+    }
+  }
+}
+); @AT@ 16930 @LENGTH@ 837
+---UPD VariableDeclarationFragment@@runnable=Trace.wrap("AsyncProcess.sendMultiAction",new Runnable(){
+  @Override public void run(){
+    MultiResponse res;
+    try {
+      MultiServerCallable<Row> callable=createCallable(loc,multi);
+      try {
+        res=createCaller(callable).callWithoutRetries(callable);
+      }
+ catch (      IOException e) {
+        LOG.warn("The call to the region server failed, we don't know where we stand, " + loc.getServerName(),e);
+        resubmitAll(initialActions,multi,loc,numAttempt + 1,e,errorsByServer);
+        return;
+      }
+      receiveMultiAction(initialActions,multi,loc,res,numAttempt,errorsByServer);
+    }
+  finally {
+      decTaskCounters(multi.getRegions());
+    }
+  }
+}
+) @TO@ runnable=Trace.wrap("AsyncProcess.sendMultiAction",new Runnable(){
+  @Override public void run(){
+    MultiResponse res;
+    try {
+      MultiServerCallable<Row> callable=createCallable(loc,multi);
+      try {
+        res=createCaller(callable).callWithoutRetries(callable);
+      }
+ catch (      IOException e) {
+        LOG.warn("The call to the region server failed, we don't know where we stand, " + loc.getServerName(),e);
+        resubmitAll(initialActions,multi,loc,numAttempt + 1,e,errorsByServer);
+        return;
+      }
+      receiveMultiAction(initialActions,multi,loc,res,numAttempt,errorsByServer);
+    }
+  finally {
+      decTaskCounters(multi.getRegions(),loc.getServerName());
+    }
+  }
+}
+) @AT@ 16939 @LENGTH@ 827
+------UPD MethodInvocation@@Trace.wrap("AsyncProcess.sendMultiAction",new Runnable(){
+  @Override public void run(){
+    MultiResponse res;
+    try {
+      MultiServerCallable<Row> callable=createCallable(loc,multi);
+      try {
+        res=createCaller(callable).callWithoutRetries(callable);
+      }
+ catch (      IOException e) {
+        LOG.warn("The call to the region server failed, we don't know where we stand, " + loc.getServerName(),e);
+        resubmitAll(initialActions,multi,loc,numAttempt + 1,e,errorsByServer);
+        return;
+      }
+      receiveMultiAction(initialActions,multi,loc,res,numAttempt,errorsByServer);
+    }
+  finally {
+      decTaskCounters(multi.getRegions());
+    }
+  }
+}
+) @TO@ Trace.wrap("AsyncProcess.sendMultiAction",new Runnable(){
+  @Override public void run(){
+    MultiResponse res;
+    try {
+      MultiServerCallable<Row> callable=createCallable(loc,multi);
+      try {
+        res=createCaller(callable).callWithoutRetries(callable);
+      }
+ catch (      IOException e) {
+        LOG.warn("The call to the region server failed, we don't know where we stand, " + loc.getServerName(),e);
+        resubmitAll(initialActions,multi,loc,numAttempt + 1,e,errorsByServer);
+        return;
+      }
+      receiveMultiAction(initialActions,multi,loc,res,numAttempt,errorsByServer);
+    }
+  finally {
+      decTaskCounters(multi.getRegions(),loc.getServerName());
+    }
+  }
+}
+) @AT@ 16950 @LENGTH@ 816
+---------UPD SimpleName@@MethodName:wrap:["AsyncProcess.sendMultiAction", new Runnable(){
+  @Override public void run(){
+    MultiResponse res;
+    try {
+      MultiServerCallable<Row> callable=createCallable(loc,multi);
+      try {
+        res=createCaller(callable).callWithoutRetries(callable);
+      }
+ catch (      IOException e) {
+        LOG.warn("The call to the region server failed, we don't know where we stand, " + loc.getServerName(),e);
+        resubmitAll(initialActions,multi,loc,numAttempt + 1,e,errorsByServer);
+        return;
+      }
+      receiveMultiAction(initialActions,multi,loc,res,numAttempt,errorsByServer);
+    }
+  finally {
+      decTaskCounters(multi.getRegions());
+    }
+  }
+}
+] @TO@ MethodName:wrap:["AsyncProcess.sendMultiAction", new Runnable(){
+  @Override public void run(){
+    MultiResponse res;
+    try {
+      MultiServerCallable<Row> callable=createCallable(loc,multi);
+      try {
+        res=createCaller(callable).callWithoutRetries(callable);
+      }
+ catch (      IOException e) {
+        LOG.warn("The call to the region server failed, we don't know where we stand, " + loc.getServerName(),e);
+        resubmitAll(initialActions,multi,loc,numAttempt + 1,e,errorsByServer);
+        return;
+      }
+      receiveMultiAction(initialActions,multi,loc,res,numAttempt,errorsByServer);
+    }
+  finally {
+      decTaskCounters(multi.getRegions(),loc.getServerName());
+    }
+  }
+}
+] @AT@ 16956 @LENGTH@ 810
+

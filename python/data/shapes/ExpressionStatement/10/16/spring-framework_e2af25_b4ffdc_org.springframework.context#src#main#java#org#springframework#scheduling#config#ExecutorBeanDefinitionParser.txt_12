@@ -1,0 +1,10 @@
+ExpressionStatement
+---Assignment
+------InfixExpression
+---------SimpleName
+---------Operator
+---------StringLiteral
+------SimpleName
+------ClassInstanceCreation
+---------New
+---------SimpleType

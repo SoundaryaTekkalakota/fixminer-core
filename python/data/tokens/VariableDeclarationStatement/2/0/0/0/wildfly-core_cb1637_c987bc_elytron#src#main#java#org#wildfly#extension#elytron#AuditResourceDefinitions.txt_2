@@ -1,0 +1,133 @@
+UPD VariableDeclarationStatement@@AbstractAddStepHandler add=new TrivialAddHandler<SecurityEventListener>(SecurityEventListener.class,attributes,SECURITY_EVENT_LISTENER_RUNTIME_CAPABILITY){
+  @Override protected ValueSupplier<SecurityEventListener> getValueSupplier(  ServiceBuilder<SecurityEventListener> serviceBuilder,  OperationContext context,  ModelNode model) throws OperationFailedException {
+    final boolean synv=SYNCHRONIZED.resolveModelAttribute(context,model).asBoolean();
+    final Format format=Format.valueOf(FORMAT.resolveModelAttribute(context,model).asString());
+    final InjectedValue<PathManager> pathManager=new InjectedValue<PathManager>();
+    final String path=PATH.resolveModelAttribute(context,model).asString();
+    final String relativeTo=asStringIfDefined(context,RELATIVE_TO,model);
+    if (relativeTo != null) {
+      serviceBuilder.addDependency(PathManagerService.SERVICE_NAME,PathManager.class,pathManager);
+      serviceBuilder.addDependency(pathName(relativeTo));
+    }
+    return () -> {
+      PathResolver pathResolver=pathResolver();
+      pathResolver.path(path);
+      if (relativeTo != null) {
+        pathResolver.relativeTo(relativeTo,pathManager.getValue());
+      }
+      File resolvedPath=pathResolver.resolve();
+      final Supplier<DateTimeFormatter> dateTimeFormatterSupplier=() -> DateTimeFormatter.ofPattern(DATE_FORMAT).withZone(ZoneId.systemDefault());
+      final SecurityEventVisitor<?,String> formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build() : SimpleSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build();
+      AuditEndpoint endpoint;
+      try {
+        endpoint=FileAuditEndpoint.builder().setLocation(resolvedPath.toPath()).setSyncOnAccept(synv).setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build();
+      }
+ catch (      IOException e) {
+        throw ROOT_LOGGER.unableToStartService(e);
+      }
+      return SecurityEventListener.from(AuditLogger.builder().setPriorityMapper(m -> EventPriority.WARNING).setMessageFormatter(m -> m.accept(formatter,null)).setAuditEndpoint(endpoint).build());
+    }
+;
+  }
+}
+; @TO@ AbstractAddStepHandler add=new TrivialAddHandler<SecurityEventListener>(SecurityEventListener.class,attributes,SECURITY_EVENT_LISTENER_RUNTIME_CAPABILITY){
+  @Override protected ValueSupplier<SecurityEventListener> getValueSupplier(  ServiceBuilder<SecurityEventListener> serviceBuilder,  OperationContext context,  ModelNode model) throws OperationFailedException {
+    final boolean synv=SYNCHRONIZED.resolveModelAttribute(context,model).asBoolean();
+    final Format format=Format.valueOf(FORMAT.resolveModelAttribute(context,model).asString());
+    final InjectedValue<PathManager> pathManager=new InjectedValue<PathManager>();
+    final String path=PATH.resolveModelAttribute(context,model).asString();
+    final String relativeTo=asStringIfDefined(context,RELATIVE_TO,model);
+    if (relativeTo != null) {
+      serviceBuilder.addDependency(PathManagerService.SERVICE_NAME,PathManager.class,pathManager);
+      serviceBuilder.addDependency(pathName(relativeTo));
+    }
+    return new EndpointClosingEventListenerSupplier(){
+      @Override public SecurityEventListener get() throws StartException {
+        PathResolver pathResolver=pathResolver();
+        pathResolver.path(path);
+        if (relativeTo != null) {
+          pathResolver.relativeTo(relativeTo,pathManager.getValue());
+        }
+        File resolvedPath=pathResolver.resolve();
+        final Supplier<DateTimeFormatter> dateTimeFormatterSupplier=() -> DateTimeFormatter.ofPattern(DATE_FORMAT).withZone(ZoneId.systemDefault());
+        final SecurityEventVisitor<?,String> formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build() : SimpleSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build();
+        try {
+          endpoint=FileAuditEndpoint.builder().setLocation(resolvedPath.toPath()).setSyncOnAccept(synv).setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build();
+        }
+ catch (        IOException e) {
+          throw ROOT_LOGGER.unableToStartService(e);
+        }
+        return SecurityEventListener.from(AuditLogger.builder().setPriorityMapper(m -> EventPriority.WARNING).setMessageFormatter(m -> m.accept(formatter,null)).setAuditEndpoint(endpoint).build());
+      }
+    }
+;
+  }
+}
+; @AT@ 9181 @LENGTH@ 2823
+---UPD VariableDeclarationFragment@@add=new TrivialAddHandler<SecurityEventListener>(SecurityEventListener.class,attributes,SECURITY_EVENT_LISTENER_RUNTIME_CAPABILITY){
+  @Override protected ValueSupplier<SecurityEventListener> getValueSupplier(  ServiceBuilder<SecurityEventListener> serviceBuilder,  OperationContext context,  ModelNode model) throws OperationFailedException {
+    final boolean synv=SYNCHRONIZED.resolveModelAttribute(context,model).asBoolean();
+    final Format format=Format.valueOf(FORMAT.resolveModelAttribute(context,model).asString());
+    final InjectedValue<PathManager> pathManager=new InjectedValue<PathManager>();
+    final String path=PATH.resolveModelAttribute(context,model).asString();
+    final String relativeTo=asStringIfDefined(context,RELATIVE_TO,model);
+    if (relativeTo != null) {
+      serviceBuilder.addDependency(PathManagerService.SERVICE_NAME,PathManager.class,pathManager);
+      serviceBuilder.addDependency(pathName(relativeTo));
+    }
+    return () -> {
+      PathResolver pathResolver=pathResolver();
+      pathResolver.path(path);
+      if (relativeTo != null) {
+        pathResolver.relativeTo(relativeTo,pathManager.getValue());
+      }
+      File resolvedPath=pathResolver.resolve();
+      final Supplier<DateTimeFormatter> dateTimeFormatterSupplier=() -> DateTimeFormatter.ofPattern(DATE_FORMAT).withZone(ZoneId.systemDefault());
+      final SecurityEventVisitor<?,String> formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build() : SimpleSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build();
+      AuditEndpoint endpoint;
+      try {
+        endpoint=FileAuditEndpoint.builder().setLocation(resolvedPath.toPath()).setSyncOnAccept(synv).setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build();
+      }
+ catch (      IOException e) {
+        throw ROOT_LOGGER.unableToStartService(e);
+      }
+      return SecurityEventListener.from(AuditLogger.builder().setPriorityMapper(m -> EventPriority.WARNING).setMessageFormatter(m -> m.accept(formatter,null)).setAuditEndpoint(endpoint).build());
+    }
+;
+  }
+}
+ @TO@ add=new TrivialAddHandler<SecurityEventListener>(SecurityEventListener.class,attributes,SECURITY_EVENT_LISTENER_RUNTIME_CAPABILITY){
+  @Override protected ValueSupplier<SecurityEventListener> getValueSupplier(  ServiceBuilder<SecurityEventListener> serviceBuilder,  OperationContext context,  ModelNode model) throws OperationFailedException {
+    final boolean synv=SYNCHRONIZED.resolveModelAttribute(context,model).asBoolean();
+    final Format format=Format.valueOf(FORMAT.resolveModelAttribute(context,model).asString());
+    final InjectedValue<PathManager> pathManager=new InjectedValue<PathManager>();
+    final String path=PATH.resolveModelAttribute(context,model).asString();
+    final String relativeTo=asStringIfDefined(context,RELATIVE_TO,model);
+    if (relativeTo != null) {
+      serviceBuilder.addDependency(PathManagerService.SERVICE_NAME,PathManager.class,pathManager);
+      serviceBuilder.addDependency(pathName(relativeTo));
+    }
+    return new EndpointClosingEventListenerSupplier(){
+      @Override public SecurityEventListener get() throws StartException {
+        PathResolver pathResolver=pathResolver();
+        pathResolver.path(path);
+        if (relativeTo != null) {
+          pathResolver.relativeTo(relativeTo,pathManager.getValue());
+        }
+        File resolvedPath=pathResolver.resolve();
+        final Supplier<DateTimeFormatter> dateTimeFormatterSupplier=() -> DateTimeFormatter.ofPattern(DATE_FORMAT).withZone(ZoneId.systemDefault());
+        final SecurityEventVisitor<?,String> formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build() : SimpleSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build();
+        try {
+          endpoint=FileAuditEndpoint.builder().setLocation(resolvedPath.toPath()).setSyncOnAccept(synv).setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build();
+        }
+ catch (        IOException e) {
+          throw ROOT_LOGGER.unableToStartService(e);
+        }
+        return SecurityEventListener.from(AuditLogger.builder().setPriorityMapper(m -> EventPriority.WARNING).setMessageFormatter(m -> m.accept(formatter,null)).setAuditEndpoint(endpoint).build());
+      }
+    }
+;
+  }
+}
+ @AT@ 9204 @LENGTH@ 2799
+

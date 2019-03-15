@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:configuration.setFormatterName(formatterName) @TO@ MethodInvocation:configuration.setFormatterName(handlerName) @AT@ 39413 @LENGTH@ 46
+---UPD MethodInvocation@@configuration.setFormatterName(formatterName) @TO@ configuration.setFormatterName(handlerName) @AT@ 39413 @LENGTH@ 45
+------UPD SimpleName@@MethodName:setFormatterName:[formatterName] @TO@ MethodName:setFormatterName:[handlerName] @AT@ 39427 @LENGTH@ 31
+---------UPD SimpleName@@formatterName @TO@ handlerName @AT@ 39444 @LENGTH@ 13
+

@@ -1,0 +1,4 @@
+UPD FieldDeclaration@@private, static, com.google.protobuf.GeneratedMessage.FieldAccessorTable, [internal_static_org_apache_hadoop_hive_ql_io_orc_DoubleStatistics_fieldAccessorTable] @TO@ private, static, com.google.protobuf.GeneratedMessage.FieldAccessorTable, [internal_static_orc_proto_DoubleStatistics_fieldAccessorTable] @AT@ 693830 @LENGTH@ 166
+---UPD VariableDeclarationFragment@@internal_static_org_apache_hadoop_hive_ql_io_orc_DoubleStatistics_fieldAccessorTable @TO@ internal_static_orc_proto_DoubleStatistics_fieldAccessorTable @AT@ 693911 @LENGTH@ 84
+------UPD SimpleName@@internal_static_org_apache_hadoop_hive_ql_io_orc_DoubleStatistics_fieldAccessorTable @TO@ internal_static_orc_proto_DoubleStatistics_fieldAccessorTable @AT@ 693911 @LENGTH@ 84
+

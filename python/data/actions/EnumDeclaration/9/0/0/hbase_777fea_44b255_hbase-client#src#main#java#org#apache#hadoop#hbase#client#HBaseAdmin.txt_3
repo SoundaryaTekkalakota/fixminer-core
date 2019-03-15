@@ -1,0 +1,9 @@
+ INS EnumDeclaration
+--- INS Modifier
+--- INS SimpleName
+--- INS EnumConstantDeclaration
+------ INS SimpleName
+--- INS EnumConstantDeclaration
+------ INS SimpleName
+--- INS EnumConstantDeclaration
+------ INS SimpleName

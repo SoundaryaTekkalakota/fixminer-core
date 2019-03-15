@@ -1,0 +1,7 @@
+UPD ExpressionStatement@@MethodInvocation:e.printStackTrace() @TO@ MethodInvocation:LOG.warn("Error getting table types: ",e) @AT@ 10384 @LENGTH@ 20
+---UPD MethodInvocation@@e.printStackTrace() @TO@ LOG.warn("Error getting table types: ",e) @AT@ 10384 @LENGTH@ 19
+------UPD SimpleName@@Name:e @TO@ Name:LOG @AT@ 10384 @LENGTH@ 1
+------UPD SimpleName@@MethodName:printStackTrace:[] @TO@ MethodName:warn:["Error getting table types: ", e] @AT@ 10386 @LENGTH@ 17
+---------INS StringLiteral@@"Error getting table types: " @TO@ SimpleName@@MethodName:printStackTrace:[] @AT@ 10570 @LENGTH@ 29
+---------INS SimpleName@@e @TO@ SimpleName@@MethodName:printStackTrace:[] @AT@ 10601 @LENGTH@ 1
+

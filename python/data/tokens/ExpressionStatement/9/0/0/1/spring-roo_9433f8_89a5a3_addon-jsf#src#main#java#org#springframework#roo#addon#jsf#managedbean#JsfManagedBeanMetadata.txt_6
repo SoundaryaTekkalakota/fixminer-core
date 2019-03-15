@@ -1,0 +1,10 @@
+INS ExpressionStatement@@MethodInvocation:bodyBuilder.appendFormalLine("return " + fieldName + ";") @TO@ SwitchStatement@@SimpleName:action @AT@ 43397 @LENGTH@ 58
+---INS MethodInvocation@@bodyBuilder.appendFormalLine("return " + fieldName + ";") @TO@ ExpressionStatement@@MethodInvocation:bodyBuilder.appendFormalLine("return " + fieldName + ";") @AT@ 43397 @LENGTH@ 57
+------INS SimpleName@@Name:bodyBuilder @TO@ MethodInvocation@@bodyBuilder.appendFormalLine("return " + fieldName + ";") @AT@ 43397 @LENGTH@ 11
+------INS SimpleName@@MethodName:appendFormalLine:["return " + fieldName + ";"] @TO@ MethodInvocation@@bodyBuilder.appendFormalLine("return " + fieldName + ";") @AT@ 43409 @LENGTH@ 45
+---------INS InfixExpression@@"return " + fieldName + ";" @TO@ SimpleName@@MethodName:appendFormalLine:["return " + fieldName + ";"] @AT@ 43426 @LENGTH@ 27
+------------INS StringLiteral@@"return " @TO@ InfixExpression@@"return " + fieldName + ";" @AT@ 43426 @LENGTH@ 9
+------------INS Operator@@+ @TO@ InfixExpression@@"return " + fieldName + ";" @AT@ 43435 @LENGTH@ 1
+------------INS SimpleName@@fieldName @TO@ InfixExpression@@"return " + fieldName + ";" @AT@ 43438 @LENGTH@ 9
+------------INS StringLiteral@@";" @TO@ InfixExpression@@"return " + fieldName + ";" @AT@ 43450 @LENGTH@ 3
+

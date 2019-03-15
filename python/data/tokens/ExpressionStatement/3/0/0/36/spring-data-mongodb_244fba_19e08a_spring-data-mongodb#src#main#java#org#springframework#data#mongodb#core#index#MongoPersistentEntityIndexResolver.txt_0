@@ -1,0 +1,85 @@
+UPD ExpressionStatement@@MethodInvocation:root.doWithProperties(new PropertyHandler<MongoPersistentProperty>(){
+  @Override public void doWithPersistentProperty(  MongoPersistentProperty persistentProperty){
+    if (persistentProperty.isEntity()) {
+      indexInformation.addAll(resolveIndexForClass(persistentProperty.getActualType(),persistentProperty.getFieldName(),root.getCollection(),guard));
+    }
+    IndexDefinitionHolder indexDefinitionHolder=createIndexDefinitionHolderForProperty(persistentProperty.getFieldName(),root.getCollection(),persistentProperty);
+    if (indexDefinitionHolder != null) {
+      indexInformation.add(indexDefinitionHolder);
+    }
+  }
+}
+) @TO@ MethodInvocation:root.doWithProperties(new PropertyHandler<MongoPersistentProperty>(){
+  @Override public void doWithPersistentProperty(  MongoPersistentProperty persistentProperty){
+    try {
+      if (persistentProperty.isEntity()) {
+        indexInformation.addAll(resolveIndexForClass(persistentProperty.getActualType(),persistentProperty.getFieldName(),root.getCollection(),guard));
+      }
+      IndexDefinitionHolder indexDefinitionHolder=createIndexDefinitionHolderForProperty(persistentProperty.getFieldName(),root.getCollection(),persistentProperty);
+      if (indexDefinitionHolder != null) {
+        indexInformation.add(indexDefinitionHolder);
+      }
+    }
+ catch (    CyclicPropertyReferenceException e) {
+      LOGGER.warn(e.getMessage());
+    }
+  }
+}
+) @AT@ 4144 @LENGTH@ 660
+---UPD MethodInvocation@@root.doWithProperties(new PropertyHandler<MongoPersistentProperty>(){
+  @Override public void doWithPersistentProperty(  MongoPersistentProperty persistentProperty){
+    if (persistentProperty.isEntity()) {
+      indexInformation.addAll(resolveIndexForClass(persistentProperty.getActualType(),persistentProperty.getFieldName(),root.getCollection(),guard));
+    }
+    IndexDefinitionHolder indexDefinitionHolder=createIndexDefinitionHolderForProperty(persistentProperty.getFieldName(),root.getCollection(),persistentProperty);
+    if (indexDefinitionHolder != null) {
+      indexInformation.add(indexDefinitionHolder);
+    }
+  }
+}
+) @TO@ root.doWithProperties(new PropertyHandler<MongoPersistentProperty>(){
+  @Override public void doWithPersistentProperty(  MongoPersistentProperty persistentProperty){
+    try {
+      if (persistentProperty.isEntity()) {
+        indexInformation.addAll(resolveIndexForClass(persistentProperty.getActualType(),persistentProperty.getFieldName(),root.getCollection(),guard));
+      }
+      IndexDefinitionHolder indexDefinitionHolder=createIndexDefinitionHolderForProperty(persistentProperty.getFieldName(),root.getCollection(),persistentProperty);
+      if (indexDefinitionHolder != null) {
+        indexInformation.add(indexDefinitionHolder);
+      }
+    }
+ catch (    CyclicPropertyReferenceException e) {
+      LOGGER.warn(e.getMessage());
+    }
+  }
+}
+) @AT@ 4144 @LENGTH@ 659
+------UPD SimpleName@@MethodName:doWithProperties:[new PropertyHandler<MongoPersistentProperty>(){
+  @Override public void doWithPersistentProperty(  MongoPersistentProperty persistentProperty){
+    if (persistentProperty.isEntity()) {
+      indexInformation.addAll(resolveIndexForClass(persistentProperty.getActualType(),persistentProperty.getFieldName(),root.getCollection(),guard));
+    }
+    IndexDefinitionHolder indexDefinitionHolder=createIndexDefinitionHolderForProperty(persistentProperty.getFieldName(),root.getCollection(),persistentProperty);
+    if (indexDefinitionHolder != null) {
+      indexInformation.add(indexDefinitionHolder);
+    }
+  }
+}
+] @TO@ MethodName:doWithProperties:[new PropertyHandler<MongoPersistentProperty>(){
+  @Override public void doWithPersistentProperty(  MongoPersistentProperty persistentProperty){
+    try {
+      if (persistentProperty.isEntity()) {
+        indexInformation.addAll(resolveIndexForClass(persistentProperty.getActualType(),persistentProperty.getFieldName(),root.getCollection(),guard));
+      }
+      IndexDefinitionHolder indexDefinitionHolder=createIndexDefinitionHolderForProperty(persistentProperty.getFieldName(),root.getCollection(),persistentProperty);
+      if (indexDefinitionHolder != null) {
+        indexInformation.add(indexDefinitionHolder);
+      }
+    }
+ catch (    CyclicPropertyReferenceException e) {
+      LOGGER.warn(e.getMessage());
+    }
+  }
+}
+] @AT@ 4149 @LENGTH@ 654
+

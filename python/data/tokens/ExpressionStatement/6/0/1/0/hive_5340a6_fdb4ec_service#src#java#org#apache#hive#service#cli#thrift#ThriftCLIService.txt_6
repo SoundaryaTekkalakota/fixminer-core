@@ -1,0 +1,7 @@
+UPD ExpressionStatement@@MethodInvocation:e.printStackTrace() @TO@ MethodInvocation:LOG.warn("Error getting catalogs: ",e) @AT@ 8694 @LENGTH@ 20
+---UPD MethodInvocation@@e.printStackTrace() @TO@ LOG.warn("Error getting catalogs: ",e) @AT@ 8694 @LENGTH@ 19
+------UPD SimpleName@@Name:e @TO@ Name:LOG @AT@ 8694 @LENGTH@ 1
+------UPD SimpleName@@MethodName:printStackTrace:[] @TO@ MethodName:warn:["Error getting catalogs: ", e] @AT@ 8696 @LENGTH@ 17
+---------INS StringLiteral@@"Error getting catalogs: " @TO@ SimpleName@@MethodName:printStackTrace:[] @AT@ 8823 @LENGTH@ 26
+---------INS SimpleName@@e @TO@ SimpleName@@MethodName:printStackTrace:[] @AT@ 8851 @LENGTH@ 1
+

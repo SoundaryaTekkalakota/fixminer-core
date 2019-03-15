@@ -1,0 +1,119 @@
+UPD VariableDeclarationStatement@@MetaScannerVisitor visitor=new MetaScannerVisitorBase(){
+  @Override public boolean processRow(  Result row) throws IOException {
+    HRegionInfo info=MetaScanner.getHRegionInfo(row);
+    if (info != null) {
+      if (tableName.equals(info.getTableName())) {
+        ServerName server=HRegionInfo.getServerName(row);
+        if (server == null) {
+          available.set(false);
+          return false;
+        }
+        if (!Bytes.equals(info.getStartKey(),HConstants.EMPTY_BYTE_ARRAY)) {
+          for (          byte[] splitKey : splitKeys) {
+            if (Bytes.equals(info.getStartKey(),splitKey)) {
+              regionCount.incrementAndGet();
+              break;
+            }
+          }
+        }
+ else {
+          regionCount.incrementAndGet();
+        }
+      }
+ else       if (tableName.compareTo(info.getTableName()) < 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+}
+; @TO@ MetaScannerVisitor visitor=new MetaScannerVisitorBase(){
+  @Override public boolean processRow(  Result row) throws IOException {
+    HRegionInfo info=MetaScanner.getHRegionInfo(row);
+    if (info != null && !info.isSplitParent()) {
+      if (tableName.equals(info.getTableName())) {
+        ServerName server=HRegionInfo.getServerName(row);
+        if (server == null) {
+          available.set(false);
+          return false;
+        }
+        if (!Bytes.equals(info.getStartKey(),HConstants.EMPTY_BYTE_ARRAY)) {
+          for (          byte[] splitKey : splitKeys) {
+            if (Bytes.equals(info.getStartKey(),splitKey)) {
+              regionCount.incrementAndGet();
+              break;
+            }
+          }
+        }
+ else {
+          regionCount.incrementAndGet();
+        }
+      }
+ else       if (tableName.compareTo(info.getTableName()) < 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+}
+; @AT@ 39555 @LENGTH@ 1235
+---UPD VariableDeclarationFragment@@visitor=new MetaScannerVisitorBase(){
+  @Override public boolean processRow(  Result row) throws IOException {
+    HRegionInfo info=MetaScanner.getHRegionInfo(row);
+    if (info != null) {
+      if (tableName.equals(info.getTableName())) {
+        ServerName server=HRegionInfo.getServerName(row);
+        if (server == null) {
+          available.set(false);
+          return false;
+        }
+        if (!Bytes.equals(info.getStartKey(),HConstants.EMPTY_BYTE_ARRAY)) {
+          for (          byte[] splitKey : splitKeys) {
+            if (Bytes.equals(info.getStartKey(),splitKey)) {
+              regionCount.incrementAndGet();
+              break;
+            }
+          }
+        }
+ else {
+          regionCount.incrementAndGet();
+        }
+      }
+ else       if (tableName.compareTo(info.getTableName()) < 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+}
+ @TO@ visitor=new MetaScannerVisitorBase(){
+  @Override public boolean processRow(  Result row) throws IOException {
+    HRegionInfo info=MetaScanner.getHRegionInfo(row);
+    if (info != null && !info.isSplitParent()) {
+      if (tableName.equals(info.getTableName())) {
+        ServerName server=HRegionInfo.getServerName(row);
+        if (server == null) {
+          available.set(false);
+          return false;
+        }
+        if (!Bytes.equals(info.getStartKey(),HConstants.EMPTY_BYTE_ARRAY)) {
+          for (          byte[] splitKey : splitKeys) {
+            if (Bytes.equals(info.getStartKey(),splitKey)) {
+              regionCount.incrementAndGet();
+              break;
+            }
+          }
+        }
+ else {
+          regionCount.incrementAndGet();
+        }
+      }
+ else       if (tableName.compareTo(info.getTableName()) < 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+}
+ @AT@ 39574 @LENGTH@ 1215
+

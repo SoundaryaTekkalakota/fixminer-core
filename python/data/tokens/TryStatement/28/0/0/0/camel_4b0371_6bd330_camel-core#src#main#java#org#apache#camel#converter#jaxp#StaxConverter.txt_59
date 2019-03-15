@@ -1,0 +1,29 @@
+INS TryStatement@@try:[] @TO@ MethodDeclaration@@public, XMLEventReader, MethodName:createXMLEventReader, Source in, XMLStreamException,  @AT@ 10205 @LENGTH@ 431
+---INS IfStatement@@InfixExpression:in instanceof DOMSource && !isWoodstox(factory) @TO@ TryStatement@@try:[] @AT@ 10223 @LENGTH@ 286
+------INS InfixExpression@@in instanceof DOMSource && !isWoodstox(factory) @TO@ IfStatement@@InfixExpression:in instanceof DOMSource && !isWoodstox(factory) @AT@ 10227 @LENGTH@ 47
+---------INS InstanceofExpression@@in instanceof DOMSource @TO@ InfixExpression@@in instanceof DOMSource && !isWoodstox(factory) @AT@ 10227 @LENGTH@ 23
+------------INS SimpleName@@in @TO@ InstanceofExpression@@in instanceof DOMSource @AT@ 10227 @LENGTH@ 2
+------------INS Instanceof@@instanceof @TO@ InstanceofExpression@@in instanceof DOMSource @AT@ 10230 @LENGTH@ 10
+------------INS SimpleType@@DOMSource @TO@ InstanceofExpression@@in instanceof DOMSource @AT@ 10241 @LENGTH@ 9
+---------INS Operator@@&& @TO@ InfixExpression@@in instanceof DOMSource && !isWoodstox(factory) @AT@ 10250 @LENGTH@ 2
+---------INS PrefixExpression@@!isWoodstox(factory) @TO@ InfixExpression@@in instanceof DOMSource && !isWoodstox(factory) @AT@ 10254 @LENGTH@ 20
+------------INS Operator@@! @TO@ PrefixExpression@@!isWoodstox(factory) @AT@ 10254 @LENGTH@ 1
+------------INS MethodInvocation@@isWoodstox(factory) @TO@ PrefixExpression@@!isWoodstox(factory) @AT@ 10255 @LENGTH@ 19
+---------------INS SimpleName@@MethodName:isWoodstox:[factory] @TO@ MethodInvocation@@isWoodstox(factory) @AT@ 10255 @LENGTH@ 19
+------------------INS SimpleName@@factory @TO@ SimpleName@@MethodName:isWoodstox:[factory] @AT@ 10266 @LENGTH@ 7
+------INS ExpressionStatement@@MethodInvocation:LOG.info("DOMSource is known to have issues with {0}. We suggest using Woodstox",factory.getClass()) @TO@ IfStatement@@InfixExpression:in instanceof DOMSource && !isWoodstox(factory) @AT@ 10368 @LENGTH@ 127
+---------INS MethodInvocation@@LOG.info("DOMSource is known to have issues with {0}. We suggest using Woodstox",factory.getClass()) @TO@ ExpressionStatement@@MethodInvocation:LOG.info("DOMSource is known to have issues with {0}. We suggest using Woodstox",factory.getClass()) @AT@ 10368 @LENGTH@ 126
+------------INS SimpleName@@Name:LOG @TO@ MethodInvocation@@LOG.info("DOMSource is known to have issues with {0}. We suggest using Woodstox",factory.getClass()) @AT@ 10368 @LENGTH@ 3
+------------INS SimpleName@@MethodName:info:["DOMSource is known to have issues with {0}. We suggest using Woodstox", factory.getClass()] @TO@ MethodInvocation@@LOG.info("DOMSource is known to have issues with {0}. We suggest using Woodstox",factory.getClass()) @AT@ 10372 @LENGTH@ 122
+---------------INS StringLiteral@@"DOMSource is known to have issues with {0}. We suggest using Woodstox" @TO@ SimpleName@@MethodName:info:["DOMSource is known to have issues with {0}. We suggest using Woodstox", factory.getClass()] @AT@ 10377 @LENGTH@ 71
+---------------INS MethodInvocation@@factory.getClass() @TO@ SimpleName@@MethodName:info:["DOMSource is known to have issues with {0}. We suggest using Woodstox", factory.getClass()] @AT@ 10475 @LENGTH@ 18
+------------------INS SimpleName@@Name:factory @TO@ MethodInvocation@@factory.getClass() @AT@ 10475 @LENGTH@ 7
+------------------INS SimpleName@@MethodName:getClass:[] @TO@ MethodInvocation@@factory.getClass() @AT@ 10483 @LENGTH@ 10
+---INS ReturnStatement@@MethodInvocation:factory.createXMLEventReader(in) @TO@ TryStatement@@try:[] @AT@ 10522 @LENGTH@ 40
+------MOV MethodInvocation@@getInputFactory().createXMLEventReader(in) @TO@ ReturnStatement@@MethodInvocation:factory.createXMLEventReader(in) @AT@ 5523 @LENGTH@ 42
+---INS Block@@FinallyBody @TO@ TryStatement@@try:[] @AT@ 10581 @LENGTH@ 55
+------INS ExpressionStatement@@MethodInvocation:returnXMLInputFactory(factory) @TO@ Block@@FinallyBody @AT@ 10595 @LENGTH@ 31
+---------INS MethodInvocation@@returnXMLInputFactory(factory) @TO@ ExpressionStatement@@MethodInvocation:returnXMLInputFactory(factory) @AT@ 10595 @LENGTH@ 30
+------------INS SimpleName@@MethodName:returnXMLInputFactory:[factory] @TO@ MethodInvocation@@returnXMLInputFactory(factory) @AT@ 10595 @LENGTH@ 30
+---------------INS SimpleName@@factory @TO@ SimpleName@@MethodName:returnXMLInputFactory:[factory] @AT@ 10617 @LENGTH@ 7
+

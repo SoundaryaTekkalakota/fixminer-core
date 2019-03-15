@@ -1,0 +1,3 @@
+UPD IfStatement@@MethodInvocation:CollectionFactory.isApproximableCollectionType(requiredType) @TO@ SimpleName:approximable @AT@ 19440 @LENGTH@ 242
+---INS SimpleName@@approximable @TO@ IfStatement@@MethodInvocation:CollectionFactory.isApproximableCollectionType(requiredType) @AT@ 19832 @LENGTH@ 12
+

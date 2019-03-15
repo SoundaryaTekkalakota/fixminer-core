@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(StrictMath.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("StrictMath") @AT@ 3209 @LENGTH@ 62
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(StrictMath.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("StrictMath") @AT@ 3209 @LENGTH@ 61
+------UPD SimpleName@@MethodName:add:[StrictMath.class.getSimpleName()] @TO@ MethodName:add:["StrictMath"] @AT@ 3233 @LENGTH@ 37
+---------INS StringLiteral@@"StrictMath" @TO@ SimpleName@@MethodName:add:[StrictMath.class.getSimpleName()] @AT@ 2956 @LENGTH@ 12
+---------DEL MethodInvocation@@StrictMath.class.getSimpleName() @AT@ 3237 @LENGTH@ 32
+------------DEL TypeLiteral@@StrictMath.class @AT@ 3237 @LENGTH@ 16
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 3254 @LENGTH@ 15
+

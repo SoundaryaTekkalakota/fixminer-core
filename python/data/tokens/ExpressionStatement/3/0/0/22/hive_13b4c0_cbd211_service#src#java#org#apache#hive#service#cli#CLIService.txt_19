@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.info(opHandle + ": fetchResults()") @TO@ MethodInvocation:LOG.debug(opHandle + ": fetchResults()") @AT@ 13317 @LENGTH@ 40
+---UPD MethodInvocation@@LOG.info(opHandle + ": fetchResults()") @TO@ LOG.debug(opHandle + ": fetchResults()") @AT@ 13317 @LENGTH@ 39
+------UPD SimpleName@@MethodName:info:[opHandle + ": fetchResults()"] @TO@ MethodName:debug:[opHandle + ": fetchResults()"] @AT@ 13321 @LENGTH@ 35
+

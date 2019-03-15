@@ -1,0 +1,185 @@
+UPD VariableDeclarationStatement@@boolean sync=processor.process(exchange,new AsyncCallback(){
+  public void done(  boolean doneSync){
+    if (doneSync) {
+      return;
+    }
+    Exchange target=exchange;
+    index.getAndIncrement();
+    while (index.get() < count.get()) {
+      target=prepareExchange(exchange,index.get(),original);
+      boolean sync=process(target,callback,index,count,original);
+      if (!sync) {
+        LOG.trace("Processing exchangeId: {} is continued being processed asynchronously",target.getExchangeId());
+        return;
+      }
+      index.getAndIncrement();
+    }
+    ExchangeHelper.copyResults(exchange,target);
+    LOG.trace("Processing complete for exchangeId: {} >>> {}",exchange.getExchangeId(),exchange);
+    callback.done(false);
+  }
+}
+); @TO@ boolean sync=processor.process(exchange,new AsyncCallback(){
+  public void done(  boolean doneSync){
+    if (doneSync) {
+      return;
+    }
+    Exchange target=exchange;
+    index.getAndIncrement();
+    while (index.get() < count.get()) {
+      target=prepareExchange(exchange,index.get(),original);
+      boolean sync=process(target,callback,index,count,original);
+      if (!sync) {
+        LOG.trace("Processing exchangeId: {} is continued being processed asynchronously",target.getExchangeId());
+        return;
+      }
+      if (!continueProcessing(target,"so breaking out of loop",LOG)) {
+        break;
+      }
+      index.getAndIncrement();
+    }
+    ExchangeHelper.copyResults(exchange,target);
+    LOG.trace("Processing complete for exchangeId: {} >>> {}",exchange.getExchangeId(),exchange);
+    callback.done(false);
+  }
+}
+); @AT@ 4545 @LENGTH@ 1637
+---UPD VariableDeclarationFragment@@sync=processor.process(exchange,new AsyncCallback(){
+  public void done(  boolean doneSync){
+    if (doneSync) {
+      return;
+    }
+    Exchange target=exchange;
+    index.getAndIncrement();
+    while (index.get() < count.get()) {
+      target=prepareExchange(exchange,index.get(),original);
+      boolean sync=process(target,callback,index,count,original);
+      if (!sync) {
+        LOG.trace("Processing exchangeId: {} is continued being processed asynchronously",target.getExchangeId());
+        return;
+      }
+      index.getAndIncrement();
+    }
+    ExchangeHelper.copyResults(exchange,target);
+    LOG.trace("Processing complete for exchangeId: {} >>> {}",exchange.getExchangeId(),exchange);
+    callback.done(false);
+  }
+}
+) @TO@ sync=processor.process(exchange,new AsyncCallback(){
+  public void done(  boolean doneSync){
+    if (doneSync) {
+      return;
+    }
+    Exchange target=exchange;
+    index.getAndIncrement();
+    while (index.get() < count.get()) {
+      target=prepareExchange(exchange,index.get(),original);
+      boolean sync=process(target,callback,index,count,original);
+      if (!sync) {
+        LOG.trace("Processing exchangeId: {} is continued being processed asynchronously",target.getExchangeId());
+        return;
+      }
+      if (!continueProcessing(target,"so breaking out of loop",LOG)) {
+        break;
+      }
+      index.getAndIncrement();
+    }
+    ExchangeHelper.copyResults(exchange,target);
+    LOG.trace("Processing complete for exchangeId: {} >>> {}",exchange.getExchangeId(),exchange);
+    callback.done(false);
+  }
+}
+) @AT@ 4553 @LENGTH@ 1628
+------UPD MethodInvocation@@processor.process(exchange,new AsyncCallback(){
+  public void done(  boolean doneSync){
+    if (doneSync) {
+      return;
+    }
+    Exchange target=exchange;
+    index.getAndIncrement();
+    while (index.get() < count.get()) {
+      target=prepareExchange(exchange,index.get(),original);
+      boolean sync=process(target,callback,index,count,original);
+      if (!sync) {
+        LOG.trace("Processing exchangeId: {} is continued being processed asynchronously",target.getExchangeId());
+        return;
+      }
+      index.getAndIncrement();
+    }
+    ExchangeHelper.copyResults(exchange,target);
+    LOG.trace("Processing complete for exchangeId: {} >>> {}",exchange.getExchangeId(),exchange);
+    callback.done(false);
+  }
+}
+) @TO@ processor.process(exchange,new AsyncCallback(){
+  public void done(  boolean doneSync){
+    if (doneSync) {
+      return;
+    }
+    Exchange target=exchange;
+    index.getAndIncrement();
+    while (index.get() < count.get()) {
+      target=prepareExchange(exchange,index.get(),original);
+      boolean sync=process(target,callback,index,count,original);
+      if (!sync) {
+        LOG.trace("Processing exchangeId: {} is continued being processed asynchronously",target.getExchangeId());
+        return;
+      }
+      if (!continueProcessing(target,"so breaking out of loop",LOG)) {
+        break;
+      }
+      index.getAndIncrement();
+    }
+    ExchangeHelper.copyResults(exchange,target);
+    LOG.trace("Processing complete for exchangeId: {} >>> {}",exchange.getExchangeId(),exchange);
+    callback.done(false);
+  }
+}
+) @AT@ 4560 @LENGTH@ 1621
+---------UPD SimpleName@@MethodName:process:[exchange, new AsyncCallback(){
+  public void done(  boolean doneSync){
+    if (doneSync) {
+      return;
+    }
+    Exchange target=exchange;
+    index.getAndIncrement();
+    while (index.get() < count.get()) {
+      target=prepareExchange(exchange,index.get(),original);
+      boolean sync=process(target,callback,index,count,original);
+      if (!sync) {
+        LOG.trace("Processing exchangeId: {} is continued being processed asynchronously",target.getExchangeId());
+        return;
+      }
+      index.getAndIncrement();
+    }
+    ExchangeHelper.copyResults(exchange,target);
+    LOG.trace("Processing complete for exchangeId: {} >>> {}",exchange.getExchangeId(),exchange);
+    callback.done(false);
+  }
+}
+] @TO@ MethodName:process:[exchange, new AsyncCallback(){
+  public void done(  boolean doneSync){
+    if (doneSync) {
+      return;
+    }
+    Exchange target=exchange;
+    index.getAndIncrement();
+    while (index.get() < count.get()) {
+      target=prepareExchange(exchange,index.get(),original);
+      boolean sync=process(target,callback,index,count,original);
+      if (!sync) {
+        LOG.trace("Processing exchangeId: {} is continued being processed asynchronously",target.getExchangeId());
+        return;
+      }
+      if (!continueProcessing(target,"so breaking out of loop",LOG)) {
+        break;
+      }
+      index.getAndIncrement();
+    }
+    ExchangeHelper.copyResults(exchange,target);
+    LOG.trace("Processing complete for exchangeId: {} >>> {}",exchange.getExchangeId(),exchange);
+    callback.done(false);
+  }
+}
+] @AT@ 4570 @LENGTH@ 1611
+

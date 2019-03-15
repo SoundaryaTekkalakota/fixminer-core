@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(NoClassDefFoundError.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("NoClassDefFoundError") @AT@ 6351 @LENGTH@ 72
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(NoClassDefFoundError.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("NoClassDefFoundError") @AT@ 6351 @LENGTH@ 71
+------UPD SimpleName@@MethodName:add:[NoClassDefFoundError.class.getSimpleName()] @TO@ MethodName:add:["NoClassDefFoundError"] @AT@ 6375 @LENGTH@ 47
+---------INS StringLiteral@@"NoClassDefFoundError" @TO@ SimpleName@@MethodName:add:[NoClassDefFoundError.class.getSimpleName()] @AT@ 5467 @LENGTH@ 22
+---------DEL MethodInvocation@@NoClassDefFoundError.class.getSimpleName() @AT@ 6379 @LENGTH@ 42
+------------DEL TypeLiteral@@NoClassDefFoundError.class @AT@ 6379 @LENGTH@ 26
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 6406 @LENGTH@ 15
+

@@ -1,0 +1,29 @@
+UPD IfStatement@@FieldAccess:this.readyToWrite @TO@ InfixExpression:this.state == State.READY_TO_WRITE @AT@ 4666 @LENGTH@ 440
+---DEL FieldAccess@@this.readyToWrite @AT@ 4670 @LENGTH@ 17
+---UPD IfStatement@@FieldAccess:this.beforeFirstEmission @TO@ InfixExpression:this.state == State.NEW @AT@ 4751 @LENGTH@ 355
+------DEL FieldAccess@@this.beforeFirstEmission @AT@ 4755 @LENGTH@ 24
+------UPD ExpressionStatement@@Assignment:this.beforeFirstEmission=false @TO@ Assignment:this.state=State.FIRST_SIGNAL_RECEIVED @AT@ 4811 @LENGTH@ 33
+---------UPD Assignment@@this.beforeFirstEmission=false @TO@ this.state=State.FIRST_SIGNAL_RECEIVED @AT@ 4811 @LENGTH@ 32
+------------UPD FieldAccess@@this.beforeFirstEmission @TO@ this.state @AT@ 4811 @LENGTH@ 24
+---------------UPD SimpleName@@beforeFirstEmission @TO@ state @AT@ 4816 @LENGTH@ 19
+------------DEL BooleanLiteral@@false @AT@ 4838 @LENGTH@ 5
+------------INS QualifiedName@@State.FIRST_SIGNAL_RECEIVED @TO@ Assignment@@this.beforeFirstEmission=false @AT@ 5260 @LENGTH@ 27
+---------------INS SimpleName@@State @TO@ QualifiedName@@State.FIRST_SIGNAL_RECEIVED @AT@ 5260 @LENGTH@ 5
+---------------INS SimpleName@@FIRST_SIGNAL_RECEIVED @TO@ QualifiedName@@State.FIRST_SIGNAL_RECEIVED @AT@ 5266 @LENGTH@ 21
+------INS InfixExpression@@this.state == State.NEW @TO@ IfStatement@@FieldAccess:this.beforeFirstEmission @AT@ 5192 @LENGTH@ 23
+---------INS FieldAccess@@this.state @TO@ InfixExpression@@this.state == State.NEW @AT@ 5192 @LENGTH@ 10
+------------MOV ThisExpression@@this @TO@ FieldAccess@@this.state @AT@ 4755 @LENGTH@ 4
+------------MOV SimpleName@@beforeFirstEmission @TO@ FieldAccess@@this.state @AT@ 4760 @LENGTH@ 19
+---------INS Operator@@== @TO@ InfixExpression@@this.state == State.NEW @AT@ 5202 @LENGTH@ 2
+---------INS QualifiedName@@State.NEW @TO@ InfixExpression@@this.state == State.NEW @AT@ 5206 @LENGTH@ 9
+------------INS SimpleName@@State @TO@ QualifiedName@@State.NEW @AT@ 5206 @LENGTH@ 5
+------------INS SimpleName@@NEW @TO@ QualifiedName@@State.NEW @AT@ 5212 @LENGTH@ 3
+---INS InfixExpression@@this.state == State.READY_TO_WRITE @TO@ IfStatement@@FieldAccess:this.readyToWrite @AT@ 5090 @LENGTH@ 34
+------INS FieldAccess@@this.state @TO@ InfixExpression@@this.state == State.READY_TO_WRITE @AT@ 5090 @LENGTH@ 10
+---------MOV ThisExpression@@this @TO@ FieldAccess@@this.state @AT@ 4670 @LENGTH@ 4
+---------MOV SimpleName@@readyToWrite @TO@ FieldAccess@@this.state @AT@ 4675 @LENGTH@ 12
+------INS Operator@@== @TO@ InfixExpression@@this.state == State.READY_TO_WRITE @AT@ 5100 @LENGTH@ 2
+------INS QualifiedName@@State.READY_TO_WRITE @TO@ InfixExpression@@this.state == State.READY_TO_WRITE @AT@ 5104 @LENGTH@ 20
+---------INS SimpleName@@State @TO@ QualifiedName@@State.READY_TO_WRITE @AT@ 5104 @LENGTH@ 5
+---------INS SimpleName@@READY_TO_WRITE @TO@ QualifiedName@@State.READY_TO_WRITE @AT@ 5110 @LENGTH@ 14
+

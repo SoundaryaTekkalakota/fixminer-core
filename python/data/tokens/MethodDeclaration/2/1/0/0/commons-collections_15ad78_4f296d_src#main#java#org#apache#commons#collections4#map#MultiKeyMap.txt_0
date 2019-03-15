@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, V, MethodName:remove, final Object key1, final Object key2,  @TO@ public, V, MethodName:removeMultiKey, final Object key1, final Object key2,  @AT@ 8007 @LENGTH@ 737
+---UPD SimpleName@@MethodName:remove @TO@ MethodName:removeMultiKey @AT@ 8016 @LENGTH@ 6
+

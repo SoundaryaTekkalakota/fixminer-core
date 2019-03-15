@@ -1,0 +1,75 @@
+UPD VariableDeclarationStatement@@OperationStepHandler legacyAddProtocolHandler=new OperationStepHandler(){
+  @Override public void execute(  OperationContext context,  ModelNode operation){
+    operationDeprecated(context,operation);
+    PathAddress address=context.getCurrentAddress();
+    String protocol=operation.require(AbstractProtocolResourceDefinition.DeprecatedAttribute.TYPE.getName()).asString();
+    PathElement protocolPath=ProtocolResourceDefinition.pathElement(protocol);
+    PathAddress protocolAddress=address.append(protocolPath);
+    ModelNode protocolOperation=Util.createAddOperation(protocolAddress);
+    OperationEntry addOperationEntry=context.getResourceRegistration().getOperationEntry(PathAddress.pathAddress(ProtocolResourceDefinition.WILDCARD_PATH),ModelDescriptionConstants.ADD);
+    for (    AttributeDefinition attribute : addOperationEntry.getOperationDefinition().getParameters()) {
+      String name=attribute.getName();
+      if (operation.hasDefined(name)) {
+        protocolOperation.get(name).set(operation.get(name));
+      }
+    }
+    context.addStep(protocolOperation,addOperationEntry.getOperationHandler(),OperationContext.Stage.MODEL);
+  }
+}
+; @TO@ OperationStepHandler legacyAddProtocolHandler=new OperationStepHandler(){
+  @Override public void execute(  OperationContext context,  ModelNode operation){
+    operationDeprecated(context,operation);
+    PathAddress address=context.getCurrentAddress();
+    String protocol=operation.require(AbstractProtocolResourceDefinition.DeprecatedAttribute.TYPE.getName()).asString();
+    PathElement protocolPath=ProtocolResourceDefinition.pathElement(protocol);
+    PathAddress protocolAddress=address.append(protocolPath);
+    ModelNode protocolOperation=Util.createAddOperation(protocolAddress);
+    OperationEntry addOperationEntry=context.getResourceRegistration().getOperationEntry(PathAddress.pathAddress(protocolPath),ModelDescriptionConstants.ADD);
+    for (    AttributeDefinition attribute : addOperationEntry.getOperationDefinition().getParameters()) {
+      String name=attribute.getName();
+      if (operation.hasDefined(name)) {
+        protocolOperation.get(name).set(operation.get(name));
+      }
+    }
+    context.addStep(protocolOperation,addOperationEntry.getOperationHandler(),OperationContext.Stage.MODEL);
+  }
+}
+; @AT@ 14046 @LENGTH@ 1387
+---UPD VariableDeclarationFragment@@legacyAddProtocolHandler=new OperationStepHandler(){
+  @Override public void execute(  OperationContext context,  ModelNode operation){
+    operationDeprecated(context,operation);
+    PathAddress address=context.getCurrentAddress();
+    String protocol=operation.require(AbstractProtocolResourceDefinition.DeprecatedAttribute.TYPE.getName()).asString();
+    PathElement protocolPath=ProtocolResourceDefinition.pathElement(protocol);
+    PathAddress protocolAddress=address.append(protocolPath);
+    ModelNode protocolOperation=Util.createAddOperation(protocolAddress);
+    OperationEntry addOperationEntry=context.getResourceRegistration().getOperationEntry(PathAddress.pathAddress(ProtocolResourceDefinition.WILDCARD_PATH),ModelDescriptionConstants.ADD);
+    for (    AttributeDefinition attribute : addOperationEntry.getOperationDefinition().getParameters()) {
+      String name=attribute.getName();
+      if (operation.hasDefined(name)) {
+        protocolOperation.get(name).set(operation.get(name));
+      }
+    }
+    context.addStep(protocolOperation,addOperationEntry.getOperationHandler(),OperationContext.Stage.MODEL);
+  }
+}
+ @TO@ legacyAddProtocolHandler=new OperationStepHandler(){
+  @Override public void execute(  OperationContext context,  ModelNode operation){
+    operationDeprecated(context,operation);
+    PathAddress address=context.getCurrentAddress();
+    String protocol=operation.require(AbstractProtocolResourceDefinition.DeprecatedAttribute.TYPE.getName()).asString();
+    PathElement protocolPath=ProtocolResourceDefinition.pathElement(protocol);
+    PathAddress protocolAddress=address.append(protocolPath);
+    ModelNode protocolOperation=Util.createAddOperation(protocolAddress);
+    OperationEntry addOperationEntry=context.getResourceRegistration().getOperationEntry(PathAddress.pathAddress(protocolPath),ModelDescriptionConstants.ADD);
+    for (    AttributeDefinition attribute : addOperationEntry.getOperationDefinition().getParameters()) {
+      String name=attribute.getName();
+      if (operation.hasDefined(name)) {
+        protocolOperation.get(name).set(operation.get(name));
+      }
+    }
+    context.addStep(protocolOperation,addOperationEntry.getOperationHandler(),OperationContext.Stage.MODEL);
+  }
+}
+ @AT@ 14067 @LENGTH@ 1365
+

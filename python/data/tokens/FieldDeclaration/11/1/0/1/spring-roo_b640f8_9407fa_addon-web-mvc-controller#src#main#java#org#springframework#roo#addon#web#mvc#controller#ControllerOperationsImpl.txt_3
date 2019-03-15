@@ -1,0 +1,12 @@
+INS FieldDeclaration@@private, static, final, Logger, [log=HandlerUtils.getLogger(ControllerOperationsImpl.class)] @TO@ TypeDeclaration@@[@Component, @Service, public]ControllerOperationsImpl, [ControllerOperations] @AT@ 3047 @LENGTH@ 89
+---INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, Logger, [log=HandlerUtils.getLogger(ControllerOperationsImpl.class)] @AT@ 3047 @LENGTH@ 7
+---INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, Logger, [log=HandlerUtils.getLogger(ControllerOperationsImpl.class)] @AT@ 3055 @LENGTH@ 6
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, Logger, [log=HandlerUtils.getLogger(ControllerOperationsImpl.class)] @AT@ 3062 @LENGTH@ 5
+---INS SimpleType@@Logger @TO@ FieldDeclaration@@private, static, final, Logger, [log=HandlerUtils.getLogger(ControllerOperationsImpl.class)] @AT@ 3068 @LENGTH@ 6
+---INS VariableDeclarationFragment@@log=HandlerUtils.getLogger(ControllerOperationsImpl.class) @TO@ FieldDeclaration@@private, static, final, Logger, [log=HandlerUtils.getLogger(ControllerOperationsImpl.class)] @AT@ 3075 @LENGTH@ 60
+------INS SimpleName@@log @TO@ VariableDeclarationFragment@@log=HandlerUtils.getLogger(ControllerOperationsImpl.class) @AT@ 3075 @LENGTH@ 3
+------INS MethodInvocation@@HandlerUtils.getLogger(ControllerOperationsImpl.class) @TO@ VariableDeclarationFragment@@log=HandlerUtils.getLogger(ControllerOperationsImpl.class) @AT@ 3081 @LENGTH@ 54
+---------INS SimpleName@@Name:HandlerUtils @TO@ MethodInvocation@@HandlerUtils.getLogger(ControllerOperationsImpl.class) @AT@ 3081 @LENGTH@ 12
+---------INS SimpleName@@MethodName:getLogger:[ControllerOperationsImpl.class] @TO@ MethodInvocation@@HandlerUtils.getLogger(ControllerOperationsImpl.class) @AT@ 3094 @LENGTH@ 41
+------------INS TypeLiteral@@ControllerOperationsImpl.class @TO@ SimpleName@@MethodName:getLogger:[ControllerOperationsImpl.class] @AT@ 3104 @LENGTH@ 30
+

@@ -1,0 +1,12 @@
+ExpressionStatement
+---Assignment
+------SimpleName
+------Operator
+------InfixExpression
+---------CastExpression
+------------PrimitiveType
+------------SimpleName
+---------Operator
+---------CastExpression
+------------PrimitiveType
+------------SimpleName

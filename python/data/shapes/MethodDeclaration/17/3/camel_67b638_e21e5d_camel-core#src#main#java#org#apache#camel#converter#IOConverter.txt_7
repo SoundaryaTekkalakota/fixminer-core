@@ -1,0 +1,17 @@
+MethodDeclaration
+---SingleVariableDeclaration
+------SimpleType
+------SimpleName
+---SuperConstructorInvocation
+------ClassInstanceCreation
+---------New
+---------SimpleType
+---------SimpleName
+------SimpleName
+---ExpressionStatement
+------Assignment
+---------FieldAccess
+------------ThisExpression
+------------SimpleName
+---------Operator
+---------SimpleName

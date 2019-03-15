@@ -1,0 +1,7 @@
+ExpressionStatement
+---MethodInvocation
+------SimpleName
+---------FieldAccess
+------------ThisExpression
+------------SimpleName
+---------SimpleName

@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:s.execute("INSERT INTO NEXT_TXN_ID VALUES(1)") @TO@ MethodInvocation:stmt.execute("INSERT INTO NEXT_TXN_ID VALUES(1)") @AT@ 3146 @LENGTH@ 47
+---UPD MethodInvocation@@s.execute("INSERT INTO NEXT_TXN_ID VALUES(1)") @TO@ stmt.execute("INSERT INTO NEXT_TXN_ID VALUES(1)") @AT@ 3146 @LENGTH@ 46
+------UPD SimpleName@@Name:s @TO@ Name:stmt @AT@ 3146 @LENGTH@ 1
+

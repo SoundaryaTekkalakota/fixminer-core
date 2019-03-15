@@ -1,0 +1,12 @@
+INS FieldDeclaration@@private, static, final, Logger, [LOG=LoggerFactory.getLogger(HBaseMetaHook.class)] @TO@ TypeDeclaration@@[public]HBaseMetaHook, [HiveMetaHook, Closeable] @AT@ 1911 @LENGTH@ 79
+---INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, Logger, [LOG=LoggerFactory.getLogger(HBaseMetaHook.class)] @AT@ 1911 @LENGTH@ 7
+---INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, Logger, [LOG=LoggerFactory.getLogger(HBaseMetaHook.class)] @AT@ 1919 @LENGTH@ 6
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, Logger, [LOG=LoggerFactory.getLogger(HBaseMetaHook.class)] @AT@ 1926 @LENGTH@ 5
+---INS SimpleType@@Logger @TO@ FieldDeclaration@@private, static, final, Logger, [LOG=LoggerFactory.getLogger(HBaseMetaHook.class)] @AT@ 1932 @LENGTH@ 6
+---INS VariableDeclarationFragment@@LOG=LoggerFactory.getLogger(HBaseMetaHook.class) @TO@ FieldDeclaration@@private, static, final, Logger, [LOG=LoggerFactory.getLogger(HBaseMetaHook.class)] @AT@ 1939 @LENGTH@ 50
+------INS SimpleName@@LOG @TO@ VariableDeclarationFragment@@LOG=LoggerFactory.getLogger(HBaseMetaHook.class) @AT@ 1939 @LENGTH@ 3
+------INS MethodInvocation@@LoggerFactory.getLogger(HBaseMetaHook.class) @TO@ VariableDeclarationFragment@@LOG=LoggerFactory.getLogger(HBaseMetaHook.class) @AT@ 1945 @LENGTH@ 44
+---------INS SimpleName@@Name:LoggerFactory @TO@ MethodInvocation@@LoggerFactory.getLogger(HBaseMetaHook.class) @AT@ 1945 @LENGTH@ 13
+---------INS SimpleName@@MethodName:getLogger:[HBaseMetaHook.class] @TO@ MethodInvocation@@LoggerFactory.getLogger(HBaseMetaHook.class) @AT@ 1959 @LENGTH@ 30
+------------INS TypeLiteral@@HBaseMetaHook.class @TO@ SimpleName@@MethodName:getLogger:[HBaseMetaHook.class] @AT@ 1969 @LENGTH@ 19
+

@@ -1,0 +1,7 @@
+IfStatement
+---InstanceofExpression
+------SimpleName
+------Instanceof
+------SimpleType
+---ReturnStatement
+------BooleanLiteral

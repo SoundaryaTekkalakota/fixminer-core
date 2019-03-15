@@ -1,0 +1,2 @@
+MOV MethodDeclaration@@private, List<FacesMessage>, MethodName:getFacesMessages, String clientId,  @TO@ TypeDeclaration@@[private]FacesMessageIterator, [Iterator<FacesMessage>] @AT@ 4042 @LENGTH@ 839
+

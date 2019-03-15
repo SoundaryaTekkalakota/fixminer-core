@@ -1,0 +1,3 @@
+DEL TryStatement@@try:[] @AT@ 7319 @LENGTH@ 279
+---DEL VariableDeclarationStatement@@GetCatalogsOperation operation=getOperationManager().newGetCatalogsOperation(getSession()); @AT@ 7331 @LENGTH@ 93
+

@@ -1,0 +1,13 @@
+UPD ReturnStatement@@ClassInstanceCreation:new String(bytes,Charsets.UTF_16) @TO@ MethodInvocation:newString(bytes,Charsets.UTF_16) @AT@ 16898 @LENGTH@ 42
+---INS MethodInvocation@@newString(bytes,Charsets.UTF_16) @TO@ ReturnStatement@@ClassInstanceCreation:new String(bytes,Charsets.UTF_16) @AT@ 16903 @LENGTH@ 33
+------INS SimpleName@@MethodName:newString:[bytes, Charsets.UTF_16] @TO@ MethodInvocation@@newString(bytes,Charsets.UTF_16) @AT@ 16903 @LENGTH@ 33
+---------INS SimpleName@@bytes @TO@ SimpleName@@MethodName:newString:[bytes, Charsets.UTF_16] @AT@ 16913 @LENGTH@ 5
+---------INS QualifiedName@@Charsets.UTF_16 @TO@ SimpleName@@MethodName:newString:[bytes, Charsets.UTF_16] @AT@ 16920 @LENGTH@ 15
+------------MOV SimpleName@@Charsets @TO@ QualifiedName@@Charsets.UTF_16 @AT@ 16923 @LENGTH@ 8
+------------MOV SimpleName@@UTF_16 @TO@ QualifiedName@@Charsets.UTF_16 @AT@ 16932 @LENGTH@ 6
+---DEL ClassInstanceCreation@@String[bytes, Charsets.UTF_16] @AT@ 16905 @LENGTH@ 34
+------DEL New@@new @AT@ 16905 @LENGTH@ 3
+------DEL SimpleType@@String @AT@ 16909 @LENGTH@ 6
+------DEL SimpleName@@bytes @AT@ 16916 @LENGTH@ 5
+------DEL QualifiedName@@Charsets.UTF_16 @AT@ 16923 @LENGTH@ 15
+

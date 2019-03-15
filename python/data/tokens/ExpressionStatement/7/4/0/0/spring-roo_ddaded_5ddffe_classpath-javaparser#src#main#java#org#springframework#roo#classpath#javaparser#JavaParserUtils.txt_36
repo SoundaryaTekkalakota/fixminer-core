@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(ThreadGroup.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("ThreadGroup") @AT@ 3524 @LENGTH@ 63
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(ThreadGroup.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("ThreadGroup") @AT@ 3524 @LENGTH@ 62
+------UPD SimpleName@@MethodName:add:[ThreadGroup.class.getSimpleName()] @TO@ MethodName:add:["ThreadGroup"] @AT@ 3548 @LENGTH@ 38
+---------INS StringLiteral@@"ThreadGroup" @TO@ SimpleName@@MethodName:add:[ThreadGroup.class.getSimpleName()] @AT@ 3219 @LENGTH@ 13
+---------DEL MethodInvocation@@ThreadGroup.class.getSimpleName() @AT@ 3552 @LENGTH@ 33
+------------DEL TypeLiteral@@ThreadGroup.class @AT@ 3552 @LENGTH@ 17
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 3570 @LENGTH@ 15
+

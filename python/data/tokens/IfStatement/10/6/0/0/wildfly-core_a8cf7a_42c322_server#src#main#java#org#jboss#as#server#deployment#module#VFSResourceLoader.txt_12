@@ -1,0 +1,11 @@
+UPD IfStatement@@PrefixExpression:!file.exists() @TO@ InfixExpression:file == null @AT@ 8423 @LENGTH@ 80
+---DEL PrefixExpression@@!file.exists() @AT@ 8427 @LENGTH@ 14
+------DEL Operator@@! @AT@ 8427 @LENGTH@ 1
+------DEL MethodInvocation@@file.exists() @AT@ 8428 @LENGTH@ 13
+---------DEL SimpleName@@Name:file @AT@ 8428 @LENGTH@ 4
+---------DEL SimpleName@@MethodName:exists:[] @AT@ 8433 @LENGTH@ 8
+---INS InfixExpression@@file == null @TO@ IfStatement@@PrefixExpression:!file.exists() @AT@ 10001 @LENGTH@ 12
+------INS SimpleName@@file @TO@ InfixExpression@@file == null @AT@ 10001 @LENGTH@ 4
+------INS Operator@@== @TO@ InfixExpression@@file == null @AT@ 10005 @LENGTH@ 2
+------INS NullLiteral@@null @TO@ InfixExpression@@file == null @AT@ 10009 @LENGTH@ 4
+

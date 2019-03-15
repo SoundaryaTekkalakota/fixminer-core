@@ -1,0 +1,4 @@
+UPD TypeDeclaration@@[private, static]TableTrie, HashMap<String,PartTrie> @TO@ [private, static]TableTrie, LinkedHashMap<String,PartTrie> @AT@ 5168 @LENGTH@ 72
+---UPD ParameterizedType@@HashMap<String,PartTrie> @TO@ LinkedHashMap<String,PartTrie> @AT@ 5207 @LENGTH@ 25
+------UPD SimpleType@@HashMap @TO@ LinkedHashMap @AT@ 5207 @LENGTH@ 7
+

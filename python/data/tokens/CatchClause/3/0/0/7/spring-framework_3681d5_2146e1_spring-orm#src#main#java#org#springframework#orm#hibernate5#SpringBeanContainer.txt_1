@@ -1,0 +1,4 @@
+UPD CatchClause@@BeanCreationException ex @TO@ BeansException ex @AT@ 6698 @LENGTH@ 296
+---UPD SingleVariableDeclaration@@BeanCreationException ex @TO@ BeansException ex @AT@ 6705 @LENGTH@ 24
+------UPD SimpleType@@BeanCreationException @TO@ BeansException @AT@ 6705 @LENGTH@ 21
+

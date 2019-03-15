@@ -1,0 +1,55 @@
+DEL MethodDeclaration@@protected, double, MethodName:getDecisionVariableValue, final int decisionVariable,  @AT@ 13404 @LENGTH@ 581
+---DEL Modifier@@protected @AT@ 13404 @LENGTH@ 9
+---DEL PrimitiveType@@double @AT@ 13414 @LENGTH@ 6
+---DEL SimpleName@@MethodName:getDecisionVariableValue @AT@ 13421 @LENGTH@ 24
+---DEL SingleVariableDeclaration@@final int decisionVariable @AT@ 13446 @LENGTH@ 26
+------DEL Modifier@@final @AT@ 13446 @LENGTH@ 5
+------DEL PrimitiveType@@int @AT@ 13452 @LENGTH@ 3
+------DEL SimpleName@@decisionVariable @AT@ 13456 @LENGTH@ 16
+---DEL VariableDeclarationStatement@@int col=getNumObjectiveFunctions() + decisionVariable; @AT@ 13482 @LENGTH@ 56
+------DEL PrimitiveType@@int @AT@ 13482 @LENGTH@ 3
+------DEL VariableDeclarationFragment@@col=getNumObjectiveFunctions() + decisionVariable @AT@ 13486 @LENGTH@ 51
+---------DEL SimpleName@@col @AT@ 13486 @LENGTH@ 3
+---------DEL InfixExpression@@getNumObjectiveFunctions() + decisionVariable @AT@ 13492 @LENGTH@ 45
+------------DEL MethodInvocation@@MethodName:getNumObjectiveFunctions:[] @AT@ 13492 @LENGTH@ 26
+------------DEL Operator@@+ @AT@ 13518 @LENGTH@ 1
+------------DEL SimpleName@@decisionVariable @AT@ 13521 @LENGTH@ 16
+---DEL VariableDeclarationStatement@@Integer basicRow=getBasicRow(col); @AT@ 13547 @LENGTH@ 36
+------DEL SimpleType@@Integer @AT@ 13547 @LENGTH@ 7
+------DEL VariableDeclarationFragment@@basicRow=getBasicRow(col) @AT@ 13555 @LENGTH@ 27
+---------DEL SimpleName@@basicRow @AT@ 13555 @LENGTH@ 8
+---------DEL MethodInvocation@@getBasicRow(col) @AT@ 13566 @LENGTH@ 16
+------------DEL SimpleName@@MethodName:getBasicRow:[col] @AT@ 13566 @LENGTH@ 16
+---------------DEL SimpleName@@col @AT@ 13578 @LENGTH@ 3
+---DEL IfStatement@@InfixExpression:basicRow == null @AT@ 13590 @LENGTH@ 51
+------DEL InfixExpression@@basicRow == null @AT@ 13594 @LENGTH@ 16
+---------DEL SimpleName@@basicRow @AT@ 13594 @LENGTH@ 8
+---------DEL Operator@@== @AT@ 13602 @LENGTH@ 2
+---------DEL NullLiteral@@null @AT@ 13606 @LENGTH@ 4
+------DEL ReturnStatement@@NumberLiteral:0 @AT@ 13624 @LENGTH@ 9
+---------DEL NumberLiteral@@0 @AT@ 13631 @LENGTH@ 1
+---DEL ForStatement@@[int i=getNumObjectiveFunctions()];i < col; [i++] @AT@ 13779 @LENGTH@ 152
+------DEL VariableDeclarationExpression@@int i=getNumObjectiveFunctions() @AT@ 13784 @LENGTH@ 34
+---------DEL PrimitiveType@@int @AT@ 13784 @LENGTH@ 3
+---------DEL VariableDeclarationFragment@@i=getNumObjectiveFunctions() @AT@ 13788 @LENGTH@ 30
+------------DEL SimpleName@@i @AT@ 13788 @LENGTH@ 1
+------------DEL MethodInvocation@@MethodName:getNumObjectiveFunctions:[] @AT@ 13792 @LENGTH@ 26
+------DEL InfixExpression@@i < col @AT@ 13820 @LENGTH@ 7
+---------DEL SimpleName@@i @AT@ 13820 @LENGTH@ 1
+---------DEL Operator@@< @AT@ 13821 @LENGTH@ 1
+---------DEL SimpleName@@col @AT@ 13824 @LENGTH@ 3
+------DEL PostfixExpression@@i++ @AT@ 13829 @LENGTH@ 3
+---------DEL SimpleName@@i @AT@ 13829 @LENGTH@ 1
+---------DEL Operator@@++ @AT@ 13831 @LENGTH@ 2
+------DEL IfStatement@@InfixExpression:tableau.getEntry(basicRow,i) == 1 @AT@ 13846 @LENGTH@ 77
+---------DEL InfixExpression@@tableau.getEntry(basicRow,i) == 1 @AT@ 13850 @LENGTH@ 34
+------------DEL MethodInvocation@@tableau.getEntry(basicRow,i) @AT@ 13850 @LENGTH@ 29
+---------------DEL SimpleName@@Name:tableau @AT@ 13850 @LENGTH@ 7
+---------------DEL SimpleName@@MethodName:getEntry:[basicRow, i] @AT@ 13858 @LENGTH@ 21
+------------------DEL SimpleName@@basicRow @AT@ 13867 @LENGTH@ 8
+------------------DEL SimpleName@@i @AT@ 13877 @LENGTH@ 1
+------------DEL NumberLiteral@@1 @AT@ 13883 @LENGTH@ 1
+---------DEL ReturnStatement@@NumberLiteral:0 @AT@ 13902 @LENGTH@ 9
+------------DEL NumberLiteral@@0 @AT@ 13909 @LENGTH@ 1
+---DEL ReturnStatement@@MethodInvocation:getEntry(basicRow,getRhsOffset()) @AT@ 13938 @LENGTH@ 42
+

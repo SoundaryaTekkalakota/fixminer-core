@@ -1,0 +1,6 @@
+INS VariableDeclarationStatement@@Step step=registryActiveStep; @TO@ MethodDeclaration@@public, boolean, MethodName:compareAndSetMode, Mode expected, org.jboss.msc.service.ServiceController.Mode newMode,  @AT@ 115303 @LENGTH@ 31
+---INS SimpleType@@Step @TO@ VariableDeclarationStatement@@Step step=registryActiveStep; @AT@ 115303 @LENGTH@ 4
+---INS VariableDeclarationFragment@@step=registryActiveStep @TO@ VariableDeclarationStatement@@Step step=registryActiveStep; @AT@ 115308 @LENGTH@ 25
+------INS SimpleName@@step @TO@ VariableDeclarationFragment@@step=registryActiveStep @AT@ 115308 @LENGTH@ 4
+------INS SimpleName@@registryActiveStep @TO@ VariableDeclarationFragment@@step=registryActiveStep @AT@ 115315 @LENGTH@ 18
+

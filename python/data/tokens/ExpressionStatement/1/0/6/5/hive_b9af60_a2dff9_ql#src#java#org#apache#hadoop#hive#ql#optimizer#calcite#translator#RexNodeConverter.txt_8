@@ -1,0 +1,2 @@
+MOV ExpressionStatement@@Assignment:calciteLiteral=rexBuilder.makeCharLiteral(asUnicodeString((String)value)) @TO@ SwitchStatement@@SimpleName:hiveTypeCategory @AT@ 30576 @LENGTH@ 77
+

@@ -1,0 +1,6 @@
+INS TypeDeclaration@@[private, static]DefaultObjenesisInstanceCreatorStrategy, [InstanceCreatorStrategy] @TO@ TypeDeclaration@@[private, static]ObjenesisProxyEnhancer,  @AT@ 12849 @LENGTH@ 466
+---INS Modifier@@private @TO@ TypeDeclaration@@[private, static]DefaultObjenesisInstanceCreatorStrategy, [InstanceCreatorStrategy] @AT@ 12849 @LENGTH@ 7
+---INS Modifier@@static @TO@ TypeDeclaration@@[private, static]DefaultObjenesisInstanceCreatorStrategy, [InstanceCreatorStrategy] @AT@ 12857 @LENGTH@ 6
+---INS SimpleName@@ClassName:DefaultObjenesisInstanceCreatorStrategy @TO@ TypeDeclaration@@[private, static]DefaultObjenesisInstanceCreatorStrategy, [InstanceCreatorStrategy] @AT@ 12870 @LENGTH@ 39
+---INS SimpleType@@InstanceCreatorStrategy @TO@ TypeDeclaration@@[private, static]DefaultObjenesisInstanceCreatorStrategy, [InstanceCreatorStrategy] @AT@ 12921 @LENGTH@ 23
+

@@ -1,0 +1,106 @@
+UPD ExpressionStatement@@MethodInvocation:entity.doWithProperties(new PropertyHandler<GemfirePersistentProperty>(){
+  @Override @SuppressWarnings("unchecked") public void doWithPersistentProperty(  GemfirePersistentProperty persistentProperty){
+    try {
+      Object propertyValue=accessor.getProperty(persistentProperty);
+      PdxSerializer customSerializer=getCustomSerializer(persistentProperty.getType());
+      if (customSerializer != null) {
+        customSerializer.toData(propertyValue,writer);
+      }
+ else {
+        writer.writeField(persistentProperty.getName(),propertyValue,(Class)persistentProperty.getType());
+      }
+    }
+ catch (    Exception e) {
+      throw new MappingException(String.format("Could not write value for property %1$s",persistentProperty),e);
+    }
+  }
+}
+) @TO@ MethodInvocation:entity.doWithProperties(new PropertyHandler<GemfirePersistentProperty>(){
+  @Override @SuppressWarnings("unchecked") public void doWithPersistentProperty(  GemfirePersistentProperty persistentProperty){
+    try {
+      Object propertyValue=accessor.getProperty(persistentProperty);
+      PdxSerializer customSerializer=getCustomSerializer(persistentProperty.getType());
+      if (customSerializer != null) {
+        customSerializer.toData(propertyValue,writer);
+      }
+ else {
+        writer.writeField(persistentProperty.getName(),propertyValue,(Class)persistentProperty.getType());
+      }
+    }
+ catch (    Exception e) {
+      throw new MappingException(String.format("Could not write value for property [%1$s]",persistentProperty.getName()),e);
+    }
+  }
+}
+) @AT@ 6702 @LENGTH@ 780
+---UPD MethodInvocation@@entity.doWithProperties(new PropertyHandler<GemfirePersistentProperty>(){
+  @Override @SuppressWarnings("unchecked") public void doWithPersistentProperty(  GemfirePersistentProperty persistentProperty){
+    try {
+      Object propertyValue=accessor.getProperty(persistentProperty);
+      PdxSerializer customSerializer=getCustomSerializer(persistentProperty.getType());
+      if (customSerializer != null) {
+        customSerializer.toData(propertyValue,writer);
+      }
+ else {
+        writer.writeField(persistentProperty.getName(),propertyValue,(Class)persistentProperty.getType());
+      }
+    }
+ catch (    Exception e) {
+      throw new MappingException(String.format("Could not write value for property %1$s",persistentProperty),e);
+    }
+  }
+}
+) @TO@ entity.doWithProperties(new PropertyHandler<GemfirePersistentProperty>(){
+  @Override @SuppressWarnings("unchecked") public void doWithPersistentProperty(  GemfirePersistentProperty persistentProperty){
+    try {
+      Object propertyValue=accessor.getProperty(persistentProperty);
+      PdxSerializer customSerializer=getCustomSerializer(persistentProperty.getType());
+      if (customSerializer != null) {
+        customSerializer.toData(propertyValue,writer);
+      }
+ else {
+        writer.writeField(persistentProperty.getName(),propertyValue,(Class)persistentProperty.getType());
+      }
+    }
+ catch (    Exception e) {
+      throw new MappingException(String.format("Could not write value for property [%1$s]",persistentProperty.getName()),e);
+    }
+  }
+}
+) @AT@ 6702 @LENGTH@ 779
+------UPD SimpleName@@MethodName:doWithProperties:[new PropertyHandler<GemfirePersistentProperty>(){
+  @Override @SuppressWarnings("unchecked") public void doWithPersistentProperty(  GemfirePersistentProperty persistentProperty){
+    try {
+      Object propertyValue=accessor.getProperty(persistentProperty);
+      PdxSerializer customSerializer=getCustomSerializer(persistentProperty.getType());
+      if (customSerializer != null) {
+        customSerializer.toData(propertyValue,writer);
+      }
+ else {
+        writer.writeField(persistentProperty.getName(),propertyValue,(Class)persistentProperty.getType());
+      }
+    }
+ catch (    Exception e) {
+      throw new MappingException(String.format("Could not write value for property %1$s",persistentProperty),e);
+    }
+  }
+}
+] @TO@ MethodName:doWithProperties:[new PropertyHandler<GemfirePersistentProperty>(){
+  @Override @SuppressWarnings("unchecked") public void doWithPersistentProperty(  GemfirePersistentProperty persistentProperty){
+    try {
+      Object propertyValue=accessor.getProperty(persistentProperty);
+      PdxSerializer customSerializer=getCustomSerializer(persistentProperty.getType());
+      if (customSerializer != null) {
+        customSerializer.toData(propertyValue,writer);
+      }
+ else {
+        writer.writeField(persistentProperty.getName(),propertyValue,(Class)persistentProperty.getType());
+      }
+    }
+ catch (    Exception e) {
+      throw new MappingException(String.format("Could not write value for property [%1$s]",persistentProperty.getName()),e);
+    }
+  }
+}
+] @AT@ 6709 @LENGTH@ 772
+

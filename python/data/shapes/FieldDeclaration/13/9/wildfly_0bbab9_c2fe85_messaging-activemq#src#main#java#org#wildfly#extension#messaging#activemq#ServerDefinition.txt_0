@@ -1,0 +1,13 @@
+FieldDeclaration
+---VariableDeclarationFragment
+------MethodInvocation
+---------MethodInvocation
+------------ClassInstanceCreation
+---------------New
+---------------SimpleType
+---------------NumberLiteral
+---------------QualifiedName
+------------------SimpleName
+------------------SimpleName
+---------------BooleanLiteral
+---------------BooleanLiteral

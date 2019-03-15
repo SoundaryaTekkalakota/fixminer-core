@@ -1,0 +1,136 @@
+UPD ExpressionStatement@@MethodInvocation:jdbcTemplate.execute(query,new PreparedStatementCallback(){
+  public Object doInPreparedStatement(  PreparedStatement ps) throws SQLException, DataAccessException {
+    int argNumber=1;
+    for (Iterator<?> i=exchange.getIn().getBody(Iterator.class); i.hasNext(); ) {
+      ps.setObject(argNumber++,i.next());
+    }
+    boolean isResultSet=ps.execute();
+    if (isResultSet) {
+      RowMapperResultSetExtractor mapper=new RowMapperResultSetExtractor(new ColumnMapRowMapper());
+      List<?> result=(List<?>)mapper.extractData(ps.getResultSet());
+      exchange.getOut().setBody(result);
+    }
+ else {
+      exchange.getIn().setHeader(UPDATE_COUNT,ps.getUpdateCount());
+    }
+    return null;
+  }
+}
+) @TO@ MethodInvocation:jdbcTemplate.execute(query,new PreparedStatementCallback(){
+  public Object doInPreparedStatement(  PreparedStatement ps) throws SQLException, DataAccessException {
+    int argNumber=1;
+    try {
+      Iterator<?> iterator=exchange.getIn().getBody(Iterator.class);
+      while (iterator != null && iterator.hasNext()) {
+        ps.setObject(argNumber++,iterator.next());
+      }
+    }
+ catch (    NoTypeConversionAvailableException e) {
+    }
+    if (argNumber - 1 != ps.getParameterMetaData().getParameterCount()) {
+      throw new SQLException("To less parameters set");
+    }
+    boolean isResultSet=ps.execute();
+    if (isResultSet) {
+      RowMapperResultSetExtractor mapper=new RowMapperResultSetExtractor(new ColumnMapRowMapper());
+      List<?> result=(List<?>)mapper.extractData(ps.getResultSet());
+      exchange.getOut().setBody(result);
+    }
+ else {
+      exchange.getIn().setHeader(UPDATE_COUNT,ps.getUpdateCount());
+    }
+    return null;
+  }
+}
+) @AT@ 1798 @LENGTH@ 920
+---UPD MethodInvocation@@jdbcTemplate.execute(query,new PreparedStatementCallback(){
+  public Object doInPreparedStatement(  PreparedStatement ps) throws SQLException, DataAccessException {
+    int argNumber=1;
+    for (Iterator<?> i=exchange.getIn().getBody(Iterator.class); i.hasNext(); ) {
+      ps.setObject(argNumber++,i.next());
+    }
+    boolean isResultSet=ps.execute();
+    if (isResultSet) {
+      RowMapperResultSetExtractor mapper=new RowMapperResultSetExtractor(new ColumnMapRowMapper());
+      List<?> result=(List<?>)mapper.extractData(ps.getResultSet());
+      exchange.getOut().setBody(result);
+    }
+ else {
+      exchange.getIn().setHeader(UPDATE_COUNT,ps.getUpdateCount());
+    }
+    return null;
+  }
+}
+) @TO@ jdbcTemplate.execute(query,new PreparedStatementCallback(){
+  public Object doInPreparedStatement(  PreparedStatement ps) throws SQLException, DataAccessException {
+    int argNumber=1;
+    try {
+      Iterator<?> iterator=exchange.getIn().getBody(Iterator.class);
+      while (iterator != null && iterator.hasNext()) {
+        ps.setObject(argNumber++,iterator.next());
+      }
+    }
+ catch (    NoTypeConversionAvailableException e) {
+    }
+    if (argNumber - 1 != ps.getParameterMetaData().getParameterCount()) {
+      throw new SQLException("To less parameters set");
+    }
+    boolean isResultSet=ps.execute();
+    if (isResultSet) {
+      RowMapperResultSetExtractor mapper=new RowMapperResultSetExtractor(new ColumnMapRowMapper());
+      List<?> result=(List<?>)mapper.extractData(ps.getResultSet());
+      exchange.getOut().setBody(result);
+    }
+ else {
+      exchange.getIn().setHeader(UPDATE_COUNT,ps.getUpdateCount());
+    }
+    return null;
+  }
+}
+) @AT@ 1798 @LENGTH@ 919
+------UPD SimpleName@@MethodName:execute:[query, new PreparedStatementCallback(){
+  public Object doInPreparedStatement(  PreparedStatement ps) throws SQLException, DataAccessException {
+    int argNumber=1;
+    for (Iterator<?> i=exchange.getIn().getBody(Iterator.class); i.hasNext(); ) {
+      ps.setObject(argNumber++,i.next());
+    }
+    boolean isResultSet=ps.execute();
+    if (isResultSet) {
+      RowMapperResultSetExtractor mapper=new RowMapperResultSetExtractor(new ColumnMapRowMapper());
+      List<?> result=(List<?>)mapper.extractData(ps.getResultSet());
+      exchange.getOut().setBody(result);
+    }
+ else {
+      exchange.getIn().setHeader(UPDATE_COUNT,ps.getUpdateCount());
+    }
+    return null;
+  }
+}
+] @TO@ MethodName:execute:[query, new PreparedStatementCallback(){
+  public Object doInPreparedStatement(  PreparedStatement ps) throws SQLException, DataAccessException {
+    int argNumber=1;
+    try {
+      Iterator<?> iterator=exchange.getIn().getBody(Iterator.class);
+      while (iterator != null && iterator.hasNext()) {
+        ps.setObject(argNumber++,iterator.next());
+      }
+    }
+ catch (    NoTypeConversionAvailableException e) {
+    }
+    if (argNumber - 1 != ps.getParameterMetaData().getParameterCount()) {
+      throw new SQLException("To less parameters set");
+    }
+    boolean isResultSet=ps.execute();
+    if (isResultSet) {
+      RowMapperResultSetExtractor mapper=new RowMapperResultSetExtractor(new ColumnMapRowMapper());
+      List<?> result=(List<?>)mapper.extractData(ps.getResultSet());
+      exchange.getOut().setBody(result);
+    }
+ else {
+      exchange.getIn().setHeader(UPDATE_COUNT,ps.getUpdateCount());
+    }
+    return null;
+  }
+}
+] @AT@ 1811 @LENGTH@ 906
+

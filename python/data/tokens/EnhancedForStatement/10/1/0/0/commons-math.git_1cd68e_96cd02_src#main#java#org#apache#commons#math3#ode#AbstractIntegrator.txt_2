@@ -1,0 +1,11 @@
+INS EnhancedForStatement@@final EventState state, SimpleName:eventsStates @TO@ WhileStatement@@PrefixExpression:!occuringEvents.isEmpty() @AT@ 13658 @LENGTH@ 180
+---INS SingleVariableDeclaration@@final EventState state @TO@ EnhancedForStatement@@final EventState state, SimpleName:eventsStates @AT@ 13663 @LENGTH@ 22
+------INS Modifier@@final @TO@ SingleVariableDeclaration@@final EventState state @AT@ 13663 @LENGTH@ 5
+------INS SimpleType@@EventState @TO@ SingleVariableDeclaration@@final EventState state @AT@ 13669 @LENGTH@ 10
+------INS SimpleName@@state @TO@ SingleVariableDeclaration@@final EventState state @AT@ 13680 @LENGTH@ 5
+---INS SimpleName@@eventsStates @TO@ EnhancedForStatement@@final EventState state, SimpleName:eventsStates @AT@ 13688 @LENGTH@ 12
+---INS ExpressionStatement@@MethodInvocation:state.stepAccepted(eventT,eventY) @TO@ EnhancedForStatement@@final EventState state, SimpleName:eventsStates @AT@ 13724 @LENGTH@ 35
+------MOV MethodInvocation@@currentEvent.stepAccepted(eventT,eventY) @TO@ ExpressionStatement@@MethodInvocation:state.stepAccepted(eventT,eventY) @AT@ 13591 @LENGTH@ 41
+---INS ExpressionStatement@@Assignment:isLastStep=isLastStep || state.stop() @TO@ EnhancedForStatement@@final EventState state, SimpleName:eventsStates @AT@ 13780 @LENGTH@ 40
+------MOV Assignment@@isLastStep=currentEvent.stop() @TO@ ExpressionStatement@@Assignment:isLastStep=isLastStep || state.stop() @AT@ 13650 @LENGTH@ 32
+

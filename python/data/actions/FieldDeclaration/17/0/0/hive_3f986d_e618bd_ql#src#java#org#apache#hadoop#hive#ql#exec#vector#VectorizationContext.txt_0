@@ -1,0 +1,17 @@
+ INS FieldDeclaration
+--- INS Modifier
+--- INS Modifier
+--- INS ParameterizedType
+------ INS SimpleType
+------ INS ParameterizedType
+--------- INS SimpleType
+--------- INS WildcardType
+--- INS VariableDeclarationFragment
+------ INS SimpleName
+------ INS ClassInstanceCreation
+--------- INS New
+--------- INS ParameterizedType
+------------ INS SimpleType
+------------ INS ParameterizedType
+--------------- INS SimpleType
+--------------- INS WildcardType

@@ -1,0 +1,9 @@
+CatchClause
+---SingleVariableDeclaration
+------SimpleType
+------SimpleName
+---ExpressionStatement
+------Assignment
+---------SimpleName
+---------Operator
+---------SimpleName

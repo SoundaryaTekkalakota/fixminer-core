@@ -1,0 +1,9 @@
+INS FieldDeclaration@@private, static, final, long, [serialVersionUID=20130104L] @TO@ TypeDeclaration@@[public, abstract]BitsStreamGenerator, [RandomGenerator] @AT@ 1257 @LENGTH@ 55
+---INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, long, [serialVersionUID=20130104L] @AT@ 1257 @LENGTH@ 7
+---INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, long, [serialVersionUID=20130104L] @AT@ 1265 @LENGTH@ 6
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, long, [serialVersionUID=20130104L] @AT@ 1272 @LENGTH@ 5
+---INS PrimitiveType@@long @TO@ FieldDeclaration@@private, static, final, long, [serialVersionUID=20130104L] @AT@ 1278 @LENGTH@ 4
+---INS VariableDeclarationFragment@@serialVersionUID=20130104L @TO@ FieldDeclaration@@private, static, final, long, [serialVersionUID=20130104L] @AT@ 1283 @LENGTH@ 28
+------INS SimpleName@@serialVersionUID @TO@ VariableDeclarationFragment@@serialVersionUID=20130104L @AT@ 1283 @LENGTH@ 16
+------INS NumberLiteral@@20130104L @TO@ VariableDeclarationFragment@@serialVersionUID=20130104L @AT@ 1302 @LENGTH@ 9
+

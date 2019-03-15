@@ -1,0 +1,8 @@
+ INS ThrowStatement
+--- INS ClassInstanceCreation
+------ INS New
+------ INS SimpleType
+------ INS InfixExpression
+--------- INS StringLiteral
+--------- INS Operator
+--------- INS SimpleName

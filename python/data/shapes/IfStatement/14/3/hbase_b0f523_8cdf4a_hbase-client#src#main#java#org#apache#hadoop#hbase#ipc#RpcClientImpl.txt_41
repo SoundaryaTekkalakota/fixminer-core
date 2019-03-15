@@ -1,0 +1,14 @@
+IfStatement
+---InfixExpression
+------SimpleName
+------Operator
+------NullLiteral
+---ExpressionStatement
+------Assignment
+---------SimpleName
+---------Operator
+---------ClassInstanceCreation
+------------New
+------------ParameterizedType
+---------------SimpleType
+---------------SimpleType

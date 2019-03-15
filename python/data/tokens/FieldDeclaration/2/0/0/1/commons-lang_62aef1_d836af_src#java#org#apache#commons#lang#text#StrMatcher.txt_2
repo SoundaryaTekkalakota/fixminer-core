@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, char[], [chars] @TO@ private, final, char[], [chars] @AT@ 11698 @LENGTH@ 21
+---INS Modifier@@final @TO@ FieldDeclaration@@private, char[], [chars] @AT@ 11718 @LENGTH@ 5
+

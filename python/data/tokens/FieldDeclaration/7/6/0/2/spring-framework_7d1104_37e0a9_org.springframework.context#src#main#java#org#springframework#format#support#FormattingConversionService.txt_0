@@ -1,0 +1,8 @@
+UPD FieldDeclaration@@private, final, Map<FieldFormatterKey,GenericConverter>, [cachedPrinters=new ConcurrentHashMap<FieldFormatterKey,GenericConverter>()] @TO@ private, final, Map<AnnotationConverterKey,GenericConverter>, [cachedPrinters=new ConcurrentHashMap<AnnotationConverterKey,GenericConverter>()] @AT@ 2080 @LENGTH@ 136
+---UPD ParameterizedType@@Map<FieldFormatterKey,GenericConverter> @TO@ Map<AnnotationConverterKey,GenericConverter> @AT@ 2094 @LENGTH@ 40
+------UPD SimpleType@@FieldFormatterKey @TO@ AnnotationConverterKey @AT@ 2098 @LENGTH@ 17
+---UPD VariableDeclarationFragment@@cachedPrinters=new ConcurrentHashMap<FieldFormatterKey,GenericConverter>() @TO@ cachedPrinters=new ConcurrentHashMap<AnnotationConverterKey,GenericConverter>() @AT@ 2135 @LENGTH@ 80
+------UPD ClassInstanceCreation@@ConcurrentHashMap<FieldFormatterKey,GenericConverter>[] @TO@ ConcurrentHashMap<AnnotationConverterKey,GenericConverter>[] @AT@ 2155 @LENGTH@ 60
+---------UPD ParameterizedType@@ConcurrentHashMap<FieldFormatterKey,GenericConverter> @TO@ ConcurrentHashMap<AnnotationConverterKey,GenericConverter> @AT@ 2159 @LENGTH@ 54
+------------UPD SimpleType@@FieldFormatterKey @TO@ AnnotationConverterKey @AT@ 2177 @LENGTH@ 17
+

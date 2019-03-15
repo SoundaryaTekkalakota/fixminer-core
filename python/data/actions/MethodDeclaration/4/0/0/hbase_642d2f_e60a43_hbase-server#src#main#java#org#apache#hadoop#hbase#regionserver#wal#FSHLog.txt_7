@@ -1,0 +1,4 @@
+ UPD MethodDeclaration
+--- INS SingleVariableDeclaration
+------ INS PrimitiveType
+------ INS SimpleName

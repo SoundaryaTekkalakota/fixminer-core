@@ -1,0 +1,16 @@
+UPD ExpressionStatement@@Assignment:code=code * (this.getPrincipal().hashCode() % 7) @TO@ Assignment:code^=this.getPrincipal().hashCode() @AT@ 5202 @LENGTH@ 51
+---UPD Assignment@@code=code * (this.getPrincipal().hashCode() % 7) @TO@ code^=this.getPrincipal().hashCode() @AT@ 5202 @LENGTH@ 50
+------INS MethodInvocation@@this.getPrincipal().hashCode() @TO@ Assignment@@code=code * (this.getPrincipal().hashCode() % 7) @AT@ 5205 @LENGTH@ 30
+---------MOV ThisExpression@@this @TO@ MethodInvocation@@this.getPrincipal().hashCode() @AT@ 5217 @LENGTH@ 4
+---------MOV MethodInvocation@@MethodName:getPrincipal:[] @TO@ MethodInvocation@@this.getPrincipal().hashCode() @AT@ 5217 @LENGTH@ 19
+---------MOV SimpleName@@MethodName:hashCode:[] @TO@ MethodInvocation@@this.getPrincipal().hashCode() @AT@ 5237 @LENGTH@ 10
+------UPD Operator@@= @TO@ ^= @AT@ 5206 @LENGTH@ 1
+------DEL InfixExpression@@code * (this.getPrincipal().hashCode() % 7) @AT@ 5209 @LENGTH@ 43
+---------DEL SimpleName@@code @AT@ 5209 @LENGTH@ 4
+---------DEL Operator@@* @AT@ 5213 @LENGTH@ 1
+---------DEL ParenthesizedExpression@@(this.getPrincipal().hashCode() % 7) @AT@ 5216 @LENGTH@ 36
+------------DEL InfixExpression@@this.getPrincipal().hashCode() % 7 @AT@ 5217 @LENGTH@ 34
+---------------DEL MethodInvocation@@this.getPrincipal().hashCode() @AT@ 5217 @LENGTH@ 30
+---------------DEL Operator@@% @AT@ 5247 @LENGTH@ 1
+---------------DEL NumberLiteral@@7 @AT@ 5250 @LENGTH@ 1
+

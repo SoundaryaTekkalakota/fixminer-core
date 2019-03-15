@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.info(sessionHandle + ": getCatalogs()") @TO@ MethodInvocation:LOG.debug(sessionHandle + ": getCatalogs()") @AT@ 8422 @LENGTH@ 44
+---UPD MethodInvocation@@LOG.info(sessionHandle + ": getCatalogs()") @TO@ LOG.debug(sessionHandle + ": getCatalogs()") @AT@ 8422 @LENGTH@ 43
+------UPD SimpleName@@MethodName:info:[sessionHandle + ": getCatalogs()"] @TO@ MethodName:debug:[sessionHandle + ": getCatalogs()"] @AT@ 8426 @LENGTH@ 39
+

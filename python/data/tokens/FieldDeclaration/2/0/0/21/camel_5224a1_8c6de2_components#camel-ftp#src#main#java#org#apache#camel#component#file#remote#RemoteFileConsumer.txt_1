@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@protected, boolean, [loggedInWarning] @TO@ protected, transient, boolean, [loggedInWarning] @AT@ 1325 @LENGTH@ 34
+---INS Modifier@@transient @TO@ FieldDeclaration@@protected, boolean, [loggedInWarning] @AT@ 1434 @LENGTH@ 9
+

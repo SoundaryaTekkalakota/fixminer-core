@@ -1,0 +1,2 @@
+MOV MethodDeclaration@@public, boolean, MethodName:hasNext,  @TO@ TypeDeclaration@@CSVRecordIterator, [Iterator<CSVRecord>] @AT@ 19271 @LENGTH@ 306
+

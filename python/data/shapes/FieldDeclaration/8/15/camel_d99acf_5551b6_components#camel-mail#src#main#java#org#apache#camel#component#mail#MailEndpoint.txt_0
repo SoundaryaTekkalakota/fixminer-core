@@ -1,0 +1,8 @@
+FieldDeclaration
+---Modifier
+---PrimitiveType
+---VariableDeclarationFragment
+------SimpleName
+------QualifiedName
+---------SimpleName
+---------SimpleName

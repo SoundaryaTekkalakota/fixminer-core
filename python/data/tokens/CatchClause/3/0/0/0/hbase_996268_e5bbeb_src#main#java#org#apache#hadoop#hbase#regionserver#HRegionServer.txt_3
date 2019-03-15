@@ -1,0 +1,4 @@
+UPD CatchClause@@Exception e @TO@ Throwable e @AT@ 22579 @LENGTH@ 84
+---UPD SingleVariableDeclaration@@Exception e @TO@ Throwable e @AT@ 22586 @LENGTH@ 11
+------UPD SimpleType@@Exception @TO@ Throwable @AT@ 22586 @LENGTH@ 9
+

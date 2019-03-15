@@ -1,0 +1,6 @@
+INS TypeDeclaration@@[private, final]AnnotationPrinterConverter, [ConditionalGenericConverter] @TO@ TypeDeclaration@@[public]FormattingConversionService, GenericConversionService[FormatterRegistry, EmbeddedValueResolverAware] @AT@ 7299 @LENGTH@ 1678
+---INS Modifier@@private @TO@ TypeDeclaration@@[private, final]AnnotationPrinterConverter, [ConditionalGenericConverter] @AT@ 7299 @LENGTH@ 7
+---INS Modifier@@final @TO@ TypeDeclaration@@[private, final]AnnotationPrinterConverter, [ConditionalGenericConverter] @AT@ 7307 @LENGTH@ 5
+---INS SimpleName@@ClassName:AnnotationPrinterConverter @TO@ TypeDeclaration@@[private, final]AnnotationPrinterConverter, [ConditionalGenericConverter] @AT@ 7319 @LENGTH@ 26
+---INS SimpleType@@ConditionalGenericConverter @TO@ TypeDeclaration@@[private, final]AnnotationPrinterConverter, [ConditionalGenericConverter] @AT@ 7357 @LENGTH@ 27
+

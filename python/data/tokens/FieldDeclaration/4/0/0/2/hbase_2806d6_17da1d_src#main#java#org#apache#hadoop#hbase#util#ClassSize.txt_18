@@ -1,0 +1,5 @@
+UPD FieldDeclaration@@public, static, int, [COPYONWRITE_ARRAYSET=0] @TO@ public, static, final, int, [COPYONWRITE_ARRAYSET] @AT@ 2925 @LENGTH@ 43
+---UPD VariableDeclarationFragment@@COPYONWRITE_ARRAYSET=0 @TO@ COPYONWRITE_ARRAYSET @AT@ 2943 @LENGTH@ 24
+------DEL NumberLiteral@@0 @AT@ 2966 @LENGTH@ 1
+---INS Modifier@@final @TO@ FieldDeclaration@@public, static, int, [COPYONWRITE_ARRAYSET=0] @AT@ 2975 @LENGTH@ 5
+

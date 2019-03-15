@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(InternalError.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("InternalError") @AT@ 6216 @LENGTH@ 65
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(InternalError.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("InternalError") @AT@ 6216 @LENGTH@ 64
+------UPD SimpleName@@MethodName:add:[InternalError.class.getSimpleName()] @TO@ MethodName:add:["InternalError"] @AT@ 6240 @LENGTH@ 40
+---------INS StringLiteral@@"InternalError" @TO@ SimpleName@@MethodName:add:[InternalError.class.getSimpleName()] @AT@ 5372 @LENGTH@ 15
+---------DEL MethodInvocation@@InternalError.class.getSimpleName() @AT@ 6244 @LENGTH@ 35
+------------DEL TypeLiteral@@InternalError.class @AT@ 6244 @LENGTH@ 19
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 6264 @LENGTH@ 15
+

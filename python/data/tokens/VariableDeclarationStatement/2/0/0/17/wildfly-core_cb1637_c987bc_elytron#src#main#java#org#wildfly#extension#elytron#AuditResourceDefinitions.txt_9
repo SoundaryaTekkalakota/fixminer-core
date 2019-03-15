@@ -1,0 +1,153 @@
+UPD VariableDeclarationStatement@@AbstractAddStepHandler add=new TrivialAddHandler<SecurityEventListener>(SecurityEventListener.class,attributes,SECURITY_EVENT_LISTENER_RUNTIME_CAPABILITY){
+  @Override protected ValueSupplier<SecurityEventListener> getValueSupplier(  ServiceBuilder<SecurityEventListener> serviceBuilder,  OperationContext context,  ModelNode model) throws OperationFailedException {
+    String address=SERVER_ADDRESS.resolveModelAttribute(context,model).asString();
+    final InetAddress serverAddress;
+    try {
+      serverAddress=InetAddress.getByName(address);
+    }
+ catch (    UnknownHostException e) {
+      throw ROOT_LOGGER.serverNotKnown(address,e);
+    }
+    final int port=PORT.resolveModelAttribute(context,model).asInt();
+    final Transport transport=Transport.valueOf(TRANSPORT.resolveModelAttribute(context,model).asString());
+    final String hostName=HOST_NAME.resolveModelAttribute(context,model).asString();
+    final Format format=Format.valueOf(FORMAT.resolveModelAttribute(context,model).asString());
+    final InjectedValue<SSLContext> sslContextInjector=new InjectedValue<>();
+    String sslContextName=asStringIfDefined(context,SSL_CONTEXT,model);
+    if (sslContextName != null) {
+      String sslCapability=RuntimeCapability.buildDynamicCapabilityName(SSL_CONTEXT_CAPABILITY,sslContextName);
+      ServiceName sslServiceName=context.getCapabilityServiceName(sslCapability,SSLContext.class);
+      serviceBuilder.addDependency(sslServiceName,SSLContext.class,sslContextInjector);
+    }
+    return () -> {
+      final Supplier<DateTimeFormatter> dateTimeFormatterSupplier=() -> DateTimeFormatter.ofPattern(DATE_FORMAT).withZone(ZoneId.systemDefault());
+      final SecurityEventVisitor<?,String> formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build() : SimpleSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build();
+      final AuditEndpoint endpoint;
+      final SSLContext sslContext=sslContextInjector.getOptionalValue();
+      try {
+        endpoint=SyslogAuditEndpoint.builder().setServerAddress(serverAddress).setPort(port).setSsl(transport == Transport.SSL_TCP).setTcp(transport == Transport.TCP || transport == Transport.SSL_TCP).setHostName(hostName).setSocketFactory(transport == Transport.SSL_TCP && sslContext != null ? sslContext.getSocketFactory() : null).build();
+      }
+ catch (      IOException e) {
+        throw ROOT_LOGGER.unableToStartService(e);
+      }
+      return SecurityEventListener.from(AuditLogger.builder().setPriorityMapper(m -> EventPriority.WARNING).setMessageFormatter(m -> m.accept(formatter,null)).setAuditEndpoint(endpoint).build());
+    }
+;
+  }
+}
+; @TO@ AbstractAddStepHandler add=new TrivialAddHandler<SecurityEventListener>(SecurityEventListener.class,attributes,SECURITY_EVENT_LISTENER_RUNTIME_CAPABILITY){
+  @Override protected ValueSupplier<SecurityEventListener> getValueSupplier(  ServiceBuilder<SecurityEventListener> serviceBuilder,  OperationContext context,  ModelNode model) throws OperationFailedException {
+    String address=SERVER_ADDRESS.resolveModelAttribute(context,model).asString();
+    final InetAddress serverAddress;
+    try {
+      serverAddress=InetAddress.getByName(address);
+    }
+ catch (    UnknownHostException e) {
+      throw ROOT_LOGGER.serverNotKnown(address,e);
+    }
+    final int port=PORT.resolveModelAttribute(context,model).asInt();
+    final Transport transport=Transport.valueOf(TRANSPORT.resolveModelAttribute(context,model).asString());
+    final String hostName=HOST_NAME.resolveModelAttribute(context,model).asString();
+    final Format format=Format.valueOf(FORMAT.resolveModelAttribute(context,model).asString());
+    final InjectedValue<SSLContext> sslContextInjector=new InjectedValue<>();
+    String sslContextName=asStringIfDefined(context,SSL_CONTEXT,model);
+    if (sslContextName != null) {
+      String sslCapability=RuntimeCapability.buildDynamicCapabilityName(SSL_CONTEXT_CAPABILITY,sslContextName);
+      ServiceName sslServiceName=context.getCapabilityServiceName(sslCapability,SSLContext.class);
+      serviceBuilder.addDependency(sslServiceName,SSLContext.class,sslContextInjector);
+    }
+    return new EndpointClosingEventListenerSupplier(){
+      @Override public SecurityEventListener get() throws StartException {
+        final Supplier<DateTimeFormatter> dateTimeFormatterSupplier=() -> DateTimeFormatter.ofPattern(DATE_FORMAT).withZone(ZoneId.systemDefault());
+        final SecurityEventVisitor<?,String> formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build() : SimpleSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build();
+        final SSLContext sslContext=sslContextInjector.getOptionalValue();
+        try {
+          endpoint=SyslogAuditEndpoint.builder().setServerAddress(serverAddress).setPort(port).setSsl(transport == Transport.SSL_TCP).setTcp(transport == Transport.TCP || transport == Transport.SSL_TCP).setHostName(hostName).setSocketFactory(transport == Transport.SSL_TCP && sslContext != null ? sslContext.getSocketFactory() : null).build();
+        }
+ catch (        IOException e) {
+          throw ROOT_LOGGER.unableToStartService(e);
+        }
+        return SecurityEventListener.from(AuditLogger.builder().setPriorityMapper(m -> EventPriority.WARNING).setMessageFormatter(m -> m.accept(formatter,null)).setAuditEndpoint(endpoint).build());
+      }
+    }
+;
+  }
+}
+; @AT@ 19917 @LENGTH@ 3575
+---UPD VariableDeclarationFragment@@add=new TrivialAddHandler<SecurityEventListener>(SecurityEventListener.class,attributes,SECURITY_EVENT_LISTENER_RUNTIME_CAPABILITY){
+  @Override protected ValueSupplier<SecurityEventListener> getValueSupplier(  ServiceBuilder<SecurityEventListener> serviceBuilder,  OperationContext context,  ModelNode model) throws OperationFailedException {
+    String address=SERVER_ADDRESS.resolveModelAttribute(context,model).asString();
+    final InetAddress serverAddress;
+    try {
+      serverAddress=InetAddress.getByName(address);
+    }
+ catch (    UnknownHostException e) {
+      throw ROOT_LOGGER.serverNotKnown(address,e);
+    }
+    final int port=PORT.resolveModelAttribute(context,model).asInt();
+    final Transport transport=Transport.valueOf(TRANSPORT.resolveModelAttribute(context,model).asString());
+    final String hostName=HOST_NAME.resolveModelAttribute(context,model).asString();
+    final Format format=Format.valueOf(FORMAT.resolveModelAttribute(context,model).asString());
+    final InjectedValue<SSLContext> sslContextInjector=new InjectedValue<>();
+    String sslContextName=asStringIfDefined(context,SSL_CONTEXT,model);
+    if (sslContextName != null) {
+      String sslCapability=RuntimeCapability.buildDynamicCapabilityName(SSL_CONTEXT_CAPABILITY,sslContextName);
+      ServiceName sslServiceName=context.getCapabilityServiceName(sslCapability,SSLContext.class);
+      serviceBuilder.addDependency(sslServiceName,SSLContext.class,sslContextInjector);
+    }
+    return () -> {
+      final Supplier<DateTimeFormatter> dateTimeFormatterSupplier=() -> DateTimeFormatter.ofPattern(DATE_FORMAT).withZone(ZoneId.systemDefault());
+      final SecurityEventVisitor<?,String> formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build() : SimpleSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build();
+      final AuditEndpoint endpoint;
+      final SSLContext sslContext=sslContextInjector.getOptionalValue();
+      try {
+        endpoint=SyslogAuditEndpoint.builder().setServerAddress(serverAddress).setPort(port).setSsl(transport == Transport.SSL_TCP).setTcp(transport == Transport.TCP || transport == Transport.SSL_TCP).setHostName(hostName).setSocketFactory(transport == Transport.SSL_TCP && sslContext != null ? sslContext.getSocketFactory() : null).build();
+      }
+ catch (      IOException e) {
+        throw ROOT_LOGGER.unableToStartService(e);
+      }
+      return SecurityEventListener.from(AuditLogger.builder().setPriorityMapper(m -> EventPriority.WARNING).setMessageFormatter(m -> m.accept(formatter,null)).setAuditEndpoint(endpoint).build());
+    }
+;
+  }
+}
+ @TO@ add=new TrivialAddHandler<SecurityEventListener>(SecurityEventListener.class,attributes,SECURITY_EVENT_LISTENER_RUNTIME_CAPABILITY){
+  @Override protected ValueSupplier<SecurityEventListener> getValueSupplier(  ServiceBuilder<SecurityEventListener> serviceBuilder,  OperationContext context,  ModelNode model) throws OperationFailedException {
+    String address=SERVER_ADDRESS.resolveModelAttribute(context,model).asString();
+    final InetAddress serverAddress;
+    try {
+      serverAddress=InetAddress.getByName(address);
+    }
+ catch (    UnknownHostException e) {
+      throw ROOT_LOGGER.serverNotKnown(address,e);
+    }
+    final int port=PORT.resolveModelAttribute(context,model).asInt();
+    final Transport transport=Transport.valueOf(TRANSPORT.resolveModelAttribute(context,model).asString());
+    final String hostName=HOST_NAME.resolveModelAttribute(context,model).asString();
+    final Format format=Format.valueOf(FORMAT.resolveModelAttribute(context,model).asString());
+    final InjectedValue<SSLContext> sslContextInjector=new InjectedValue<>();
+    String sslContextName=asStringIfDefined(context,SSL_CONTEXT,model);
+    if (sslContextName != null) {
+      String sslCapability=RuntimeCapability.buildDynamicCapabilityName(SSL_CONTEXT_CAPABILITY,sslContextName);
+      ServiceName sslServiceName=context.getCapabilityServiceName(sslCapability,SSLContext.class);
+      serviceBuilder.addDependency(sslServiceName,SSLContext.class,sslContextInjector);
+    }
+    return new EndpointClosingEventListenerSupplier(){
+      @Override public SecurityEventListener get() throws StartException {
+        final Supplier<DateTimeFormatter> dateTimeFormatterSupplier=() -> DateTimeFormatter.ofPattern(DATE_FORMAT).withZone(ZoneId.systemDefault());
+        final SecurityEventVisitor<?,String> formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build() : SimpleSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build();
+        final SSLContext sslContext=sslContextInjector.getOptionalValue();
+        try {
+          endpoint=SyslogAuditEndpoint.builder().setServerAddress(serverAddress).setPort(port).setSsl(transport == Transport.SSL_TCP).setTcp(transport == Transport.TCP || transport == Transport.SSL_TCP).setHostName(hostName).setSocketFactory(transport == Transport.SSL_TCP && sslContext != null ? sslContext.getSocketFactory() : null).build();
+        }
+ catch (        IOException e) {
+          throw ROOT_LOGGER.unableToStartService(e);
+        }
+        return SecurityEventListener.from(AuditLogger.builder().setPriorityMapper(m -> EventPriority.WARNING).setMessageFormatter(m -> m.accept(formatter,null)).setAuditEndpoint(endpoint).build());
+      }
+    }
+;
+  }
+}
+ @AT@ 19940 @LENGTH@ 3551
+

@@ -1,0 +1,11 @@
+ThrowStatement
+---ClassInstanceCreation
+------MethodInvocation
+---------SimpleName
+------------InfixExpression
+---------------MethodInvocation
+---------------MethodInvocation
+------------------SimpleName
+---------------------MethodInvocation
+------------------------SimpleName
+------------------------SimpleName

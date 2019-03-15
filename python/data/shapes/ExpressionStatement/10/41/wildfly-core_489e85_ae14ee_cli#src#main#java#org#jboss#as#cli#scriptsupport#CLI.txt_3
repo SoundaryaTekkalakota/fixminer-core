@@ -1,0 +1,10 @@
+ExpressionStatement
+---MethodInvocation
+------SimpleName
+---------LambdaExpression
+------------ReturnStatement
+---------------MethodInvocation
+------------------SimpleName
+---------------------MethodInvocation
+------------------------MethodInvocation
+---------------------------BooleanLiteral

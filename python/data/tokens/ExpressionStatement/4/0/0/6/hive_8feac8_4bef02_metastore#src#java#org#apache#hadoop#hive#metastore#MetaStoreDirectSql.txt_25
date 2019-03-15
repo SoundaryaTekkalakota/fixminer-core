@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:timingTrace(doTrace,qText,start,end) @TO@ MethodInvocation:timingTrace(doTrace,queryText,start,end) @AT@ 47067 @LENGTH@ 40
+---UPD MethodInvocation@@timingTrace(doTrace,qText,start,end) @TO@ timingTrace(doTrace,queryText,start,end) @AT@ 47067 @LENGTH@ 39
+------UPD SimpleName@@MethodName:timingTrace:[doTrace, qText, start, end] @TO@ MethodName:timingTrace:[doTrace, queryText, start, end] @AT@ 47067 @LENGTH@ 39
+---------UPD SimpleName@@qText @TO@ queryText @AT@ 47088 @LENGTH@ 5
+

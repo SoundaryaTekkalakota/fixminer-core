@@ -1,0 +1,40 @@
+UPD ExpressionStatement@@MethodInvocation:context.addStep(new AbstractDeploymentChainStep(){
+  public void execute(  DeploymentProcessorTarget processorTarget){
+    processorTarget.addDeploymentProcessor(MicroProfileConfigExtension.SUBSYSTEM_NAME,Phase.DEPENDENCIES,Phase.DEPENDENCIES_MODULE,new DependencyProcessor());
+    processorTarget.addDeploymentProcessor(MicroProfileConfigExtension.SUBSYSTEM_NAME,Phase.POST_MODULE,Phase.POST_MODULE_WELD_PORTABLE_EXTENSIONS + 10,new SubsystemDeploymentProcessor());
+  }
+}
+,OperationContext.Stage.RUNTIME) @TO@ MethodInvocation:context.addStep(new AbstractDeploymentChainStep(){
+  public void execute(  DeploymentProcessorTarget processorTarget){
+    processorTarget.addDeploymentProcessor(MicroProfileConfigExtension.SUBSYSTEM_NAME,Phase.DEPENDENCIES,Phase.DEPENDENCIES_MICROPROFILE_CONFIG,new DependencyProcessor());
+    processorTarget.addDeploymentProcessor(MicroProfileConfigExtension.SUBSYSTEM_NAME,Phase.POST_MODULE,Phase.POST_MODULE_MICROPROFILE_CONFIG,new SubsystemDeploymentProcessor());
+  }
+}
+,OperationContext.Stage.RUNTIME) @AT@ 2206 @LENGTH@ 565
+---UPD MethodInvocation@@context.addStep(new AbstractDeploymentChainStep(){
+  public void execute(  DeploymentProcessorTarget processorTarget){
+    processorTarget.addDeploymentProcessor(MicroProfileConfigExtension.SUBSYSTEM_NAME,Phase.DEPENDENCIES,Phase.DEPENDENCIES_MODULE,new DependencyProcessor());
+    processorTarget.addDeploymentProcessor(MicroProfileConfigExtension.SUBSYSTEM_NAME,Phase.POST_MODULE,Phase.POST_MODULE_WELD_PORTABLE_EXTENSIONS + 10,new SubsystemDeploymentProcessor());
+  }
+}
+,OperationContext.Stage.RUNTIME) @TO@ context.addStep(new AbstractDeploymentChainStep(){
+  public void execute(  DeploymentProcessorTarget processorTarget){
+    processorTarget.addDeploymentProcessor(MicroProfileConfigExtension.SUBSYSTEM_NAME,Phase.DEPENDENCIES,Phase.DEPENDENCIES_MICROPROFILE_CONFIG,new DependencyProcessor());
+    processorTarget.addDeploymentProcessor(MicroProfileConfigExtension.SUBSYSTEM_NAME,Phase.POST_MODULE,Phase.POST_MODULE_MICROPROFILE_CONFIG,new SubsystemDeploymentProcessor());
+  }
+}
+,OperationContext.Stage.RUNTIME) @AT@ 2206 @LENGTH@ 564
+------UPD SimpleName@@MethodName:addStep:[new AbstractDeploymentChainStep(){
+  public void execute(  DeploymentProcessorTarget processorTarget){
+    processorTarget.addDeploymentProcessor(MicroProfileConfigExtension.SUBSYSTEM_NAME,Phase.DEPENDENCIES,Phase.DEPENDENCIES_MODULE,new DependencyProcessor());
+    processorTarget.addDeploymentProcessor(MicroProfileConfigExtension.SUBSYSTEM_NAME,Phase.POST_MODULE,Phase.POST_MODULE_WELD_PORTABLE_EXTENSIONS + 10,new SubsystemDeploymentProcessor());
+  }
+}
+, OperationContext.Stage.RUNTIME] @TO@ MethodName:addStep:[new AbstractDeploymentChainStep(){
+  public void execute(  DeploymentProcessorTarget processorTarget){
+    processorTarget.addDeploymentProcessor(MicroProfileConfigExtension.SUBSYSTEM_NAME,Phase.DEPENDENCIES,Phase.DEPENDENCIES_MICROPROFILE_CONFIG,new DependencyProcessor());
+    processorTarget.addDeploymentProcessor(MicroProfileConfigExtension.SUBSYSTEM_NAME,Phase.POST_MODULE,Phase.POST_MODULE_MICROPROFILE_CONFIG,new SubsystemDeploymentProcessor());
+  }
+}
+, OperationContext.Stage.RUNTIME] @AT@ 2214 @LENGTH@ 556
+

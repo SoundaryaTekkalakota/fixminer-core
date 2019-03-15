@@ -1,0 +1,166 @@
+UPD ExpressionStatement@@MethodInvocation:context.completeStep(new OperationContext.RollbackHandler(){
+  @Override public void handleRollback(  OperationContext context,  ModelNode operation){
+    if (!context.hasFailureDescription()) {
+      String op=operation.require(OP).asString();
+      Map<PathAddress,ModelNode> failures=new HashMap<PathAddress,ModelNode>();
+      for (      ModelNode resultItem : result.asList()) {
+        if (resultItem.hasDefined(FAILURE_DESCRIPTION)) {
+          final PathAddress failedAddress=PathAddress.pathAddress(operation.get(OP_ADDR));
+          ModelNode failedDesc=resultItem.get(FAILURE_DESCRIPTION);
+          failures.put(failedAddress,failedDesc);
+        }
+      }
+      if (failures.size() == 1) {
+        Map.Entry<PathAddress,ModelNode> entry=failures.entrySet().iterator().next();
+        if (entry.getValue().getType() == ModelType.STRING) {
+          context.getFailureDescription().set(ControllerLogger.ROOT_LOGGER.wildcardOperationFailedAtSingleAddress(op,entry.getKey(),entry.getValue().asString()));
+        }
+ else {
+          context.getFailureDescription().set(ControllerLogger.ROOT_LOGGER.wildcardOperationFailedAtSingleAddressWithComplexFailure(op,entry.getKey()));
+        }
+      }
+ else       if (failures.size() > 1) {
+        context.getFailureDescription().set(ControllerLogger.ROOT_LOGGER.wildcardOperationFailedAtMultipleAddresses(op,failures.keySet()));
+      }
+    }
+  }
+}
+) @TO@ MethodInvocation:context.completeStep(new OperationContext.RollbackHandler(){
+  @Override public void handleRollback(  OperationContext context,  ModelNode operation){
+    if (!context.hasFailureDescription() && result.isDefined()) {
+      String op=operation.require(OP).asString();
+      Map<PathAddress,ModelNode> failures=new HashMap<PathAddress,ModelNode>();
+      for (      ModelNode resultItem : result.asList()) {
+        if (resultItem.hasDefined(FAILURE_DESCRIPTION)) {
+          final PathAddress failedAddress=PathAddress.pathAddress(resultItem.get(ADDRESS));
+          ModelNode failedDesc=resultItem.get(FAILURE_DESCRIPTION);
+          failures.put(failedAddress,failedDesc);
+        }
+      }
+      if (failures.size() == 1) {
+        Map.Entry<PathAddress,ModelNode> entry=failures.entrySet().iterator().next();
+        if (entry.getValue().getType() == ModelType.STRING) {
+          context.getFailureDescription().set(ControllerLogger.ROOT_LOGGER.wildcardOperationFailedAtSingleAddress(op,entry.getKey(),entry.getValue().asString()));
+        }
+ else {
+          context.getFailureDescription().set(ControllerLogger.ROOT_LOGGER.wildcardOperationFailedAtSingleAddressWithComplexFailure(op,entry.getKey()));
+        }
+      }
+ else       if (failures.size() > 1) {
+        context.getFailureDescription().set(ControllerLogger.ROOT_LOGGER.wildcardOperationFailedAtMultipleAddresses(op,failures.keySet()));
+      }
+    }
+  }
+}
+) @AT@ 23637 @LENGTH@ 1869
+---UPD MethodInvocation@@context.completeStep(new OperationContext.RollbackHandler(){
+  @Override public void handleRollback(  OperationContext context,  ModelNode operation){
+    if (!context.hasFailureDescription()) {
+      String op=operation.require(OP).asString();
+      Map<PathAddress,ModelNode> failures=new HashMap<PathAddress,ModelNode>();
+      for (      ModelNode resultItem : result.asList()) {
+        if (resultItem.hasDefined(FAILURE_DESCRIPTION)) {
+          final PathAddress failedAddress=PathAddress.pathAddress(operation.get(OP_ADDR));
+          ModelNode failedDesc=resultItem.get(FAILURE_DESCRIPTION);
+          failures.put(failedAddress,failedDesc);
+        }
+      }
+      if (failures.size() == 1) {
+        Map.Entry<PathAddress,ModelNode> entry=failures.entrySet().iterator().next();
+        if (entry.getValue().getType() == ModelType.STRING) {
+          context.getFailureDescription().set(ControllerLogger.ROOT_LOGGER.wildcardOperationFailedAtSingleAddress(op,entry.getKey(),entry.getValue().asString()));
+        }
+ else {
+          context.getFailureDescription().set(ControllerLogger.ROOT_LOGGER.wildcardOperationFailedAtSingleAddressWithComplexFailure(op,entry.getKey()));
+        }
+      }
+ else       if (failures.size() > 1) {
+        context.getFailureDescription().set(ControllerLogger.ROOT_LOGGER.wildcardOperationFailedAtMultipleAddresses(op,failures.keySet()));
+      }
+    }
+  }
+}
+) @TO@ context.completeStep(new OperationContext.RollbackHandler(){
+  @Override public void handleRollback(  OperationContext context,  ModelNode operation){
+    if (!context.hasFailureDescription() && result.isDefined()) {
+      String op=operation.require(OP).asString();
+      Map<PathAddress,ModelNode> failures=new HashMap<PathAddress,ModelNode>();
+      for (      ModelNode resultItem : result.asList()) {
+        if (resultItem.hasDefined(FAILURE_DESCRIPTION)) {
+          final PathAddress failedAddress=PathAddress.pathAddress(resultItem.get(ADDRESS));
+          ModelNode failedDesc=resultItem.get(FAILURE_DESCRIPTION);
+          failures.put(failedAddress,failedDesc);
+        }
+      }
+      if (failures.size() == 1) {
+        Map.Entry<PathAddress,ModelNode> entry=failures.entrySet().iterator().next();
+        if (entry.getValue().getType() == ModelType.STRING) {
+          context.getFailureDescription().set(ControllerLogger.ROOT_LOGGER.wildcardOperationFailedAtSingleAddress(op,entry.getKey(),entry.getValue().asString()));
+        }
+ else {
+          context.getFailureDescription().set(ControllerLogger.ROOT_LOGGER.wildcardOperationFailedAtSingleAddressWithComplexFailure(op,entry.getKey()));
+        }
+      }
+ else       if (failures.size() > 1) {
+        context.getFailureDescription().set(ControllerLogger.ROOT_LOGGER.wildcardOperationFailedAtMultipleAddresses(op,failures.keySet()));
+      }
+    }
+  }
+}
+) @AT@ 23637 @LENGTH@ 1868
+------UPD SimpleName@@MethodName:completeStep:[new OperationContext.RollbackHandler(){
+  @Override public void handleRollback(  OperationContext context,  ModelNode operation){
+    if (!context.hasFailureDescription()) {
+      String op=operation.require(OP).asString();
+      Map<PathAddress,ModelNode> failures=new HashMap<PathAddress,ModelNode>();
+      for (      ModelNode resultItem : result.asList()) {
+        if (resultItem.hasDefined(FAILURE_DESCRIPTION)) {
+          final PathAddress failedAddress=PathAddress.pathAddress(operation.get(OP_ADDR));
+          ModelNode failedDesc=resultItem.get(FAILURE_DESCRIPTION);
+          failures.put(failedAddress,failedDesc);
+        }
+      }
+      if (failures.size() == 1) {
+        Map.Entry<PathAddress,ModelNode> entry=failures.entrySet().iterator().next();
+        if (entry.getValue().getType() == ModelType.STRING) {
+          context.getFailureDescription().set(ControllerLogger.ROOT_LOGGER.wildcardOperationFailedAtSingleAddress(op,entry.getKey(),entry.getValue().asString()));
+        }
+ else {
+          context.getFailureDescription().set(ControllerLogger.ROOT_LOGGER.wildcardOperationFailedAtSingleAddressWithComplexFailure(op,entry.getKey()));
+        }
+      }
+ else       if (failures.size() > 1) {
+        context.getFailureDescription().set(ControllerLogger.ROOT_LOGGER.wildcardOperationFailedAtMultipleAddresses(op,failures.keySet()));
+      }
+    }
+  }
+}
+] @TO@ MethodName:completeStep:[new OperationContext.RollbackHandler(){
+  @Override public void handleRollback(  OperationContext context,  ModelNode operation){
+    if (!context.hasFailureDescription() && result.isDefined()) {
+      String op=operation.require(OP).asString();
+      Map<PathAddress,ModelNode> failures=new HashMap<PathAddress,ModelNode>();
+      for (      ModelNode resultItem : result.asList()) {
+        if (resultItem.hasDefined(FAILURE_DESCRIPTION)) {
+          final PathAddress failedAddress=PathAddress.pathAddress(resultItem.get(ADDRESS));
+          ModelNode failedDesc=resultItem.get(FAILURE_DESCRIPTION);
+          failures.put(failedAddress,failedDesc);
+        }
+      }
+      if (failures.size() == 1) {
+        Map.Entry<PathAddress,ModelNode> entry=failures.entrySet().iterator().next();
+        if (entry.getValue().getType() == ModelType.STRING) {
+          context.getFailureDescription().set(ControllerLogger.ROOT_LOGGER.wildcardOperationFailedAtSingleAddress(op,entry.getKey(),entry.getValue().asString()));
+        }
+ else {
+          context.getFailureDescription().set(ControllerLogger.ROOT_LOGGER.wildcardOperationFailedAtSingleAddressWithComplexFailure(op,entry.getKey()));
+        }
+      }
+ else       if (failures.size() > 1) {
+        context.getFailureDescription().set(ControllerLogger.ROOT_LOGGER.wildcardOperationFailedAtMultipleAddresses(op,failures.keySet()));
+      }
+    }
+  }
+}
+] @AT@ 23645 @LENGTH@ 1860
+

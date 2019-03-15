@@ -1,0 +1,10 @@
+MethodDeclaration
+---Modifier
+---PrimitiveType
+---SimpleName
+---ReturnStatement
+------MethodInvocation
+---------FieldAccess
+------------ThisExpression
+------------SimpleName
+---------SimpleName

@@ -1,0 +1,6 @@
+DEL ExpressionStatement@@MethodInvocation:startedRoutes.remove(route) @AT@ 10140 @LENGTH@ 28
+---DEL MethodInvocation@@startedRoutes.remove(route) @AT@ 10140 @LENGTH@ 27
+------DEL SimpleName@@Name:startedRoutes @AT@ 10140 @LENGTH@ 13
+------DEL SimpleName@@MethodName:remove:[route] @AT@ 10154 @LENGTH@ 13
+---------DEL SimpleName@@route @AT@ 10161 @LENGTH@ 5
+

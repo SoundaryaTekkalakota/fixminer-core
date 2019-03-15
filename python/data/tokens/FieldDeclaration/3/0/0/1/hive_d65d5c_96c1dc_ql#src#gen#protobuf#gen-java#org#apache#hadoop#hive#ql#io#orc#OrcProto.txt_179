@@ -1,0 +1,4 @@
+UPD FieldDeclaration@@private, static, com.google.protobuf.Descriptors.Descriptor, [internal_static_org_apache_hadoop_hive_ql_io_orc_StripeFooter_descriptor] @TO@ private, static, com.google.protobuf.Descriptors.Descriptor, [internal_static_orc_proto_StripeFooter_descriptor] @AT@ 697990 @LENGTH@ 135
+---UPD VariableDeclarationFragment@@internal_static_org_apache_hadoop_hive_ql_io_orc_StripeFooter_descriptor @TO@ internal_static_orc_proto_StripeFooter_descriptor @AT@ 698052 @LENGTH@ 72
+------UPD SimpleName@@internal_static_org_apache_hadoop_hive_ql_io_orc_StripeFooter_descriptor @TO@ internal_static_orc_proto_StripeFooter_descriptor @AT@ 698052 @LENGTH@ 72
+

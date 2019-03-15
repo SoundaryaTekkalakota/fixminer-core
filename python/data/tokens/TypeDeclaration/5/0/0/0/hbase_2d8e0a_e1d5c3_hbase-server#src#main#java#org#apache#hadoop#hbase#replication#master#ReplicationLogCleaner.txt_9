@@ -1,0 +1,6 @@
+INS TypeDeclaration@@[private, static]WarnOnlyAbortable, [Abortable] @TO@ TypeDeclaration@@[@InterfaceAudience.LimitedPrivate(HBaseInterfaceAudience.CONFIG), public]ReplicationLogCleaner, BaseLogCleanerDelegate[Abortable] @AT@ 6419 @LENGTH@ 356
+---INS Modifier@@private @TO@ TypeDeclaration@@[private, static]WarnOnlyAbortable, [Abortable] @AT@ 6419 @LENGTH@ 7
+---INS Modifier@@static @TO@ TypeDeclaration@@[private, static]WarnOnlyAbortable, [Abortable] @AT@ 6427 @LENGTH@ 6
+---INS SimpleName@@ClassName:WarnOnlyAbortable @TO@ TypeDeclaration@@[private, static]WarnOnlyAbortable, [Abortable] @AT@ 6440 @LENGTH@ 17
+---INS SimpleType@@Abortable @TO@ TypeDeclaration@@[private, static]WarnOnlyAbortable, [Abortable] @AT@ 6469 @LENGTH@ 9
+

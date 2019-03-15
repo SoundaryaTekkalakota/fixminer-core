@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:facesContext.getAttributes().put(attributeName,true) @TO@ MethodInvocation:facesContext.getAttributes().put(name,true) @AT@ 7305 @LENGTH@ 54
+---UPD MethodInvocation@@facesContext.getAttributes().put(attributeName,true) @TO@ facesContext.getAttributes().put(name,true) @AT@ 7305 @LENGTH@ 53
+------UPD SimpleName@@MethodName:put:[attributeName, true] @TO@ MethodName:put:[name, true] @AT@ 7334 @LENGTH@ 24
+---------UPD SimpleName@@attributeName @TO@ name @AT@ 7338 @LENGTH@ 13
+

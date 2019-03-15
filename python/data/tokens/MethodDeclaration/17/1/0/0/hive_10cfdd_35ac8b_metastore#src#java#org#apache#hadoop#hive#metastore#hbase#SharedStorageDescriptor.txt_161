@@ -1,0 +1,18 @@
+DEL MethodDeclaration@@public, boolean, MethodName:retainAll, Collection<?> c,  @AT@ 17138 @LENGTH@ 120
+---DEL Modifier@@public @AT@ 17138 @LENGTH@ 6
+---DEL PrimitiveType@@boolean @AT@ 17145 @LENGTH@ 7
+---DEL SimpleName@@MethodName:retainAll @AT@ 17153 @LENGTH@ 9
+---DEL SingleVariableDeclaration@@Collection<?> c @AT@ 17163 @LENGTH@ 15
+------DEL ParameterizedType@@Collection<?> @AT@ 17163 @LENGTH@ 13
+---------DEL SimpleType@@Collection @AT@ 17163 @LENGTH@ 10
+---------DEL WildcardType@@? @AT@ 17174 @LENGTH@ 1
+------DEL SimpleName@@c @AT@ 17177 @LENGTH@ 1
+---DEL ExpressionStatement@@MethodInvocation:copyOnWrite() @AT@ 17188 @LENGTH@ 14
+------DEL MethodInvocation@@MethodName:copyOnWrite:[] @AT@ 17188 @LENGTH@ 13
+---DEL ReturnStatement@@MethodInvocation:shared.getBucketCols().retainAll(c) @AT@ 17209 @LENGTH@ 43
+------DEL MethodInvocation@@shared.getBucketCols().retainAll(c) @AT@ 17216 @LENGTH@ 35
+---------DEL SimpleName@@Name:shared @AT@ 17216 @LENGTH@ 6
+---------DEL MethodInvocation@@MethodName:getBucketCols:[] @AT@ 17216 @LENGTH@ 22
+---------DEL SimpleName@@MethodName:retainAll:[c] @AT@ 17239 @LENGTH@ 12
+------------DEL SimpleName@@c @AT@ 17249 @LENGTH@ 1
+

@@ -1,0 +1,5 @@
+UPD IfStatement@@MethodInvocation:DEFAULT_VALUE.equals(autowire) @TO@ MethodInvocation:isDefaultValue(autowire) @AT@ 12204 @LENGTH@ 221
+---UPD MethodInvocation@@DEFAULT_VALUE.equals(autowire) @TO@ isDefaultValue(autowire) @AT@ 12208 @LENGTH@ 30
+------DEL SimpleName@@Name:DEFAULT_VALUE @AT@ 12208 @LENGTH@ 13
+------UPD SimpleName@@MethodName:equals:[autowire] @TO@ MethodName:isDefaultValue:[autowire] @AT@ 12222 @LENGTH@ 16
+

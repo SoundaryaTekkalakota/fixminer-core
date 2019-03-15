@@ -1,0 +1,16 @@
+IfStatement
+---InfixExpression
+------FieldAccess
+---------ThisExpression
+---------SimpleName
+------Operator
+------NullLiteral
+---ExpressionStatement
+------Assignment
+---------FieldAccess
+------------ThisExpression
+------------SimpleName
+---------Operator
+---------MethodInvocation
+------------SimpleName
+---------------SimpleName

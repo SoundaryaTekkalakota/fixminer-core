@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.debug("No hfiles found for family: " + familyDir + ", skipping.") @TO@ MethodInvocation:LOG.trace("No hfiles found for family: " + familyDir + ", skipping.") @AT@ 4556 @LENGTH@ 70
+---UPD MethodInvocation@@LOG.debug("No hfiles found for family: " + familyDir + ", skipping.") @TO@ LOG.trace("No hfiles found for family: " + familyDir + ", skipping.") @AT@ 4556 @LENGTH@ 69
+------UPD SimpleName@@MethodName:debug:["No hfiles found for family: " + familyDir + ", skipping."] @TO@ MethodName:trace:["No hfiles found for family: " + familyDir + ", skipping."] @AT@ 4560 @LENGTH@ 65
+

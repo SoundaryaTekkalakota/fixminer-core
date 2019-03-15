@@ -1,0 +1,7 @@
+ExpressionStatement
+---Assignment
+------StringLiteral
+------InfixExpression
+---------StringLiteral
+---------Operator
+---------SimpleName

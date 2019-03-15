@@ -1,0 +1,107 @@
+UPD VariableDeclarationStatement@@AbstractAddStepHandler add=new PrincipalDecoderAddHandler(attributes){
+  @Override protected ValueSupplier<PrincipalDecoder> getValueSupplier(  OperationContext context,  ModelNode model) throws OperationFailedException {
+    ModelNode oidNode=OID.resolveModelAttribute(context,model);
+    ModelNode attributeNode=ATTRIBUTE_NAME.resolveModelAttribute(context,model);
+    final String oid;
+    if (oidNode.isDefined()) {
+      oid=oidNode.asString();
+    }
+ else     if (attributeNode.isDefined()) {
+      oid=OidsUtil.attributeNameToOid(OidsUtil.Category.RDN,attributeNode.asString());
+      if (oid == null) {
+        throw ElytronSubsystemMessages.ROOT_LOGGER.unableToObtainOidForX500Attribute(attributeNode.asString());
+      }
+    }
+ else {
+      throw ElytronSubsystemMessages.ROOT_LOGGER.x500AttributeMustBeDefined();
+    }
+    final String joiner=JOINER.resolveModelAttribute(context,model).asString();
+    final int startSegment=START_SEGMENT.resolveModelAttribute(context,model).asInt();
+    final int maximumSegments=MAXIMUM_SEGMENTS.resolveModelAttribute(context,model).asInt();
+    final boolean reverse=REVERSE.resolveModelAttribute(context,model).asBoolean();
+    final List<String> requiredOids=REQUIRED_OIDS.unwrap(context,model);
+    requiredOids.addAll(REQUIRED_ATTRIBUTES.unwrap(context,model).stream().map(name -> OidsUtil.attributeNameToOid(OidsUtil.Category.RDN,name)).collect(Collectors.toList()));
+    return () -> new X500AttributePrincipalDecoder(oid,joiner,startSegment,maximumSegments,reverse,false,requiredOids.toArray(new String[requiredOids.size()]));
+  }
+}
+; @TO@ AbstractAddStepHandler add=new PrincipalDecoderAddHandler(attributes){
+  @Override protected ValueSupplier<PrincipalDecoder> getValueSupplier(  ServiceBuilder<?> serviceBuilder,  OperationContext context,  ModelNode model) throws OperationFailedException {
+    ModelNode oidNode=OID.resolveModelAttribute(context,model);
+    ModelNode attributeNode=ATTRIBUTE_NAME.resolveModelAttribute(context,model);
+    final String oid;
+    if (oidNode.isDefined()) {
+      oid=oidNode.asString();
+    }
+ else     if (attributeNode.isDefined()) {
+      oid=OidsUtil.attributeNameToOid(OidsUtil.Category.RDN,attributeNode.asString());
+      if (oid == null) {
+        throw ElytronSubsystemMessages.ROOT_LOGGER.unableToObtainOidForX500Attribute(attributeNode.asString());
+      }
+    }
+ else {
+      throw ElytronSubsystemMessages.ROOT_LOGGER.x500AttributeMustBeDefined();
+    }
+    final String joiner=JOINER.resolveModelAttribute(context,model).asString();
+    final int startSegment=START_SEGMENT.resolveModelAttribute(context,model).asInt();
+    final int maximumSegments=MAXIMUM_SEGMENTS.resolveModelAttribute(context,model).asInt();
+    final boolean reverse=REVERSE.resolveModelAttribute(context,model).asBoolean();
+    final List<String> requiredOids=REQUIRED_OIDS.unwrap(context,model);
+    requiredOids.addAll(REQUIRED_ATTRIBUTES.unwrap(context,model).stream().map(name -> OidsUtil.attributeNameToOid(OidsUtil.Category.RDN,name)).collect(Collectors.toList()));
+    return () -> new X500AttributePrincipalDecoder(oid,joiner,startSegment,maximumSegments,reverse,false,requiredOids.toArray(new String[requiredOids.size()]));
+  }
+}
+; @AT@ 7163 @LENGTH@ 1917
+---UPD VariableDeclarationFragment@@add=new PrincipalDecoderAddHandler(attributes){
+  @Override protected ValueSupplier<PrincipalDecoder> getValueSupplier(  OperationContext context,  ModelNode model) throws OperationFailedException {
+    ModelNode oidNode=OID.resolveModelAttribute(context,model);
+    ModelNode attributeNode=ATTRIBUTE_NAME.resolveModelAttribute(context,model);
+    final String oid;
+    if (oidNode.isDefined()) {
+      oid=oidNode.asString();
+    }
+ else     if (attributeNode.isDefined()) {
+      oid=OidsUtil.attributeNameToOid(OidsUtil.Category.RDN,attributeNode.asString());
+      if (oid == null) {
+        throw ElytronSubsystemMessages.ROOT_LOGGER.unableToObtainOidForX500Attribute(attributeNode.asString());
+      }
+    }
+ else {
+      throw ElytronSubsystemMessages.ROOT_LOGGER.x500AttributeMustBeDefined();
+    }
+    final String joiner=JOINER.resolveModelAttribute(context,model).asString();
+    final int startSegment=START_SEGMENT.resolveModelAttribute(context,model).asInt();
+    final int maximumSegments=MAXIMUM_SEGMENTS.resolveModelAttribute(context,model).asInt();
+    final boolean reverse=REVERSE.resolveModelAttribute(context,model).asBoolean();
+    final List<String> requiredOids=REQUIRED_OIDS.unwrap(context,model);
+    requiredOids.addAll(REQUIRED_ATTRIBUTES.unwrap(context,model).stream().map(name -> OidsUtil.attributeNameToOid(OidsUtil.Category.RDN,name)).collect(Collectors.toList()));
+    return () -> new X500AttributePrincipalDecoder(oid,joiner,startSegment,maximumSegments,reverse,false,requiredOids.toArray(new String[requiredOids.size()]));
+  }
+}
+ @TO@ add=new PrincipalDecoderAddHandler(attributes){
+  @Override protected ValueSupplier<PrincipalDecoder> getValueSupplier(  ServiceBuilder<?> serviceBuilder,  OperationContext context,  ModelNode model) throws OperationFailedException {
+    ModelNode oidNode=OID.resolveModelAttribute(context,model);
+    ModelNode attributeNode=ATTRIBUTE_NAME.resolveModelAttribute(context,model);
+    final String oid;
+    if (oidNode.isDefined()) {
+      oid=oidNode.asString();
+    }
+ else     if (attributeNode.isDefined()) {
+      oid=OidsUtil.attributeNameToOid(OidsUtil.Category.RDN,attributeNode.asString());
+      if (oid == null) {
+        throw ElytronSubsystemMessages.ROOT_LOGGER.unableToObtainOidForX500Attribute(attributeNode.asString());
+      }
+    }
+ else {
+      throw ElytronSubsystemMessages.ROOT_LOGGER.x500AttributeMustBeDefined();
+    }
+    final String joiner=JOINER.resolveModelAttribute(context,model).asString();
+    final int startSegment=START_SEGMENT.resolveModelAttribute(context,model).asInt();
+    final int maximumSegments=MAXIMUM_SEGMENTS.resolveModelAttribute(context,model).asInt();
+    final boolean reverse=REVERSE.resolveModelAttribute(context,model).asBoolean();
+    final List<String> requiredOids=REQUIRED_OIDS.unwrap(context,model);
+    requiredOids.addAll(REQUIRED_ATTRIBUTES.unwrap(context,model).stream().map(name -> OidsUtil.attributeNameToOid(OidsUtil.Category.RDN,name)).collect(Collectors.toList()));
+    return () -> new X500AttributePrincipalDecoder(oid,joiner,startSegment,maximumSegments,reverse,false,requiredOids.toArray(new String[requiredOids.size()]));
+  }
+}
+ @AT@ 7186 @LENGTH@ 1893
+

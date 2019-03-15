@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@protected, boolean, [killAfterStoreUpdate=false] @TO@ protected, volatile, boolean, [killAfterStoreUpdate=false] @AT@ 5073 @LENGTH@ 47
+---INS Modifier@@volatile @TO@ FieldDeclaration@@protected, boolean, [killAfterStoreUpdate=false] @AT@ 5128 @LENGTH@ 8
+

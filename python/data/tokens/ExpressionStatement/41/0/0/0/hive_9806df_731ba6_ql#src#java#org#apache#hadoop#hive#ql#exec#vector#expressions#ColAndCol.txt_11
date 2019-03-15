@@ -1,0 +1,42 @@
+UPD ExpressionStatement@@Assignment:outV.isNull[i]=inputColVector1.isNull[i] && inputColVector2.isNull[i] @TO@ Assignment:outV.isNull[i]=((vector1[i] == 1) && inputColVector2.isNull[i]) || (inputColVector1.isNull[i] && (vector2[i] == 1)) || (inputColVector1.isNull[i] && inputColVector2.isNull[i]) @AT@ 3782 @LENGTH@ 72
+---UPD Assignment@@outV.isNull[i]=inputColVector1.isNull[i] && inputColVector2.isNull[i] @TO@ outV.isNull[i]=((vector1[i] == 1) && inputColVector2.isNull[i]) || (inputColVector1.isNull[i] && (vector2[i] == 1)) || (inputColVector1.isNull[i] && inputColVector2.isNull[i]) @AT@ 3782 @LENGTH@ 71
+------INS ArrayAccess@@outV.isNull[i] @TO@ Assignment@@outV.isNull[i]=inputColVector1.isNull[i] && inputColVector2.isNull[i] @AT@ 11013 @LENGTH@ 14
+---------INS QualifiedName@@outV.isNull @TO@ ArrayAccess@@outV.isNull[i] @AT@ 11013 @LENGTH@ 11
+------------INS SimpleName@@outV @TO@ QualifiedName@@outV.isNull @AT@ 11013 @LENGTH@ 4
+------------INS SimpleName@@isNull @TO@ QualifiedName@@outV.isNull @AT@ 11018 @LENGTH@ 6
+---------INS SimpleName@@i @TO@ ArrayAccess@@outV.isNull[i] @AT@ 11025 @LENGTH@ 1
+------INS InfixExpression@@((vector1[i] == 1) && inputColVector2.isNull[i]) || (inputColVector1.isNull[i] && (vector2[i] == 1)) || (inputColVector1.isNull[i] && inputColVector2.isNull[i]) @TO@ Assignment@@outV.isNull[i]=inputColVector1.isNull[i] && inputColVector2.isNull[i] @AT@ 11030 @LENGTH@ 192
+---------INS ParenthesizedExpression@@((vector1[i] == 1) && inputColVector2.isNull[i]) @TO@ InfixExpression@@((vector1[i] == 1) && inputColVector2.isNull[i]) || (inputColVector1.isNull[i] && (vector2[i] == 1)) || (inputColVector1.isNull[i] && inputColVector2.isNull[i]) @AT@ 11030 @LENGTH@ 48
+------------INS InfixExpression@@(vector1[i] == 1) && inputColVector2.isNull[i] @TO@ ParenthesizedExpression@@((vector1[i] == 1) && inputColVector2.isNull[i]) @AT@ 11031 @LENGTH@ 46
+---------------INS ParenthesizedExpression@@(vector1[i] == 1) @TO@ InfixExpression@@(vector1[i] == 1) && inputColVector2.isNull[i] @AT@ 11031 @LENGTH@ 17
+------------------INS InfixExpression@@vector1[i] == 1 @TO@ ParenthesizedExpression@@(vector1[i] == 1) @AT@ 11032 @LENGTH@ 15
+---------------------INS ArrayAccess@@vector1[i] @TO@ InfixExpression@@vector1[i] == 1 @AT@ 11032 @LENGTH@ 10
+------------------------INS SimpleName@@vector1 @TO@ ArrayAccess@@vector1[i] @AT@ 11032 @LENGTH@ 7
+------------------------INS SimpleName@@i @TO@ ArrayAccess@@vector1[i] @AT@ 11040 @LENGTH@ 1
+---------------------INS Operator@@== @TO@ InfixExpression@@vector1[i] == 1 @AT@ 11042 @LENGTH@ 2
+---------------------INS NumberLiteral@@1 @TO@ InfixExpression@@vector1[i] == 1 @AT@ 11046 @LENGTH@ 1
+---------------INS Operator@@&& @TO@ InfixExpression@@(vector1[i] == 1) && inputColVector2.isNull[i] @AT@ 11048 @LENGTH@ 2
+---------------INS ArrayAccess@@inputColVector2.isNull[i] @TO@ InfixExpression@@(vector1[i] == 1) && inputColVector2.isNull[i] @AT@ 11052 @LENGTH@ 25
+------------------INS QualifiedName@@inputColVector2.isNull @TO@ ArrayAccess@@inputColVector2.isNull[i] @AT@ 11052 @LENGTH@ 22
+---------------------INS SimpleName@@inputColVector2 @TO@ QualifiedName@@inputColVector2.isNull @AT@ 11052 @LENGTH@ 15
+---------------------INS SimpleName@@isNull @TO@ QualifiedName@@inputColVector2.isNull @AT@ 11068 @LENGTH@ 6
+------------------INS SimpleName@@i @TO@ ArrayAccess@@inputColVector2.isNull[i] @AT@ 11075 @LENGTH@ 1
+---------INS Operator@@|| @TO@ InfixExpression@@((vector1[i] == 1) && inputColVector2.isNull[i]) || (inputColVector1.isNull[i] && (vector2[i] == 1)) || (inputColVector1.isNull[i] && inputColVector2.isNull[i]) @AT@ 11078 @LENGTH@ 2
+---------INS ParenthesizedExpression@@(inputColVector1.isNull[i] && (vector2[i] == 1)) @TO@ InfixExpression@@((vector1[i] == 1) && inputColVector2.isNull[i]) || (inputColVector1.isNull[i] && (vector2[i] == 1)) || (inputColVector1.isNull[i] && inputColVector2.isNull[i]) @AT@ 11098 @LENGTH@ 48
+------------INS InfixExpression@@inputColVector1.isNull[i] && (vector2[i] == 1) @TO@ ParenthesizedExpression@@(inputColVector1.isNull[i] && (vector2[i] == 1)) @AT@ 11099 @LENGTH@ 46
+---------------INS ArrayAccess@@inputColVector1.isNull[i] @TO@ InfixExpression@@inputColVector1.isNull[i] && (vector2[i] == 1) @AT@ 11099 @LENGTH@ 25
+------------------INS QualifiedName@@inputColVector1.isNull @TO@ ArrayAccess@@inputColVector1.isNull[i] @AT@ 11099 @LENGTH@ 22
+---------------------INS SimpleName@@inputColVector1 @TO@ QualifiedName@@inputColVector1.isNull @AT@ 11099 @LENGTH@ 15
+---------------------INS SimpleName@@isNull @TO@ QualifiedName@@inputColVector1.isNull @AT@ 11115 @LENGTH@ 6
+------------------INS SimpleName@@i @TO@ ArrayAccess@@inputColVector1.isNull[i] @AT@ 11122 @LENGTH@ 1
+---------------INS Operator@@&& @TO@ InfixExpression@@inputColVector1.isNull[i] && (vector2[i] == 1) @AT@ 11124 @LENGTH@ 2
+---------------INS ParenthesizedExpression@@(vector2[i] == 1) @TO@ InfixExpression@@inputColVector1.isNull[i] && (vector2[i] == 1) @AT@ 11128 @LENGTH@ 17
+------------------INS InfixExpression@@vector2[i] == 1 @TO@ ParenthesizedExpression@@(vector2[i] == 1) @AT@ 11129 @LENGTH@ 15
+---------------------INS ArrayAccess@@vector2[i] @TO@ InfixExpression@@vector2[i] == 1 @AT@ 11129 @LENGTH@ 10
+------------------------INS SimpleName@@vector2 @TO@ ArrayAccess@@vector2[i] @AT@ 11129 @LENGTH@ 7
+------------------------INS SimpleName@@i @TO@ ArrayAccess@@vector2[i] @AT@ 11137 @LENGTH@ 1
+---------------------INS Operator@@== @TO@ InfixExpression@@vector2[i] == 1 @AT@ 11139 @LENGTH@ 2
+---------------------INS NumberLiteral@@1 @TO@ InfixExpression@@vector2[i] == 1 @AT@ 11143 @LENGTH@ 1
+---------INS ParenthesizedExpression@@(inputColVector1.isNull[i] && inputColVector2.isNull[i]) @TO@ InfixExpression@@((vector1[i] == 1) && inputColVector2.isNull[i]) || (inputColVector1.isNull[i] && (vector2[i] == 1)) || (inputColVector1.isNull[i] && inputColVector2.isNull[i]) @AT@ 11166 @LENGTH@ 56
+------------MOV InfixExpression@@inputColVector1.isNull[i] && inputColVector2.isNull[i] @TO@ ParenthesizedExpression@@(inputColVector1.isNull[i] && inputColVector2.isNull[i]) @AT@ 3644 @LENGTH@ 54
+

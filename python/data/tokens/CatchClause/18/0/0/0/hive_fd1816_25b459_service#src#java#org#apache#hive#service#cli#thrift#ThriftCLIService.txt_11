@@ -1,0 +1,19 @@
+INS CatchClause@@Exception e @TO@ TryStatement@@try:[] @AT@ 9386 @LENGTH@ 125
+---INS SingleVariableDeclaration@@Exception e @TO@ CatchClause@@Exception e @AT@ 9393 @LENGTH@ 11
+------INS SimpleType@@Exception @TO@ SingleVariableDeclaration@@Exception e @AT@ 9393 @LENGTH@ 9
+------INS SimpleName@@e @TO@ SingleVariableDeclaration@@Exception e @AT@ 9403 @LENGTH@ 1
+---INS ExpressionStatement@@MethodInvocation:LOG.warn("Error getting tables: ",e) @TO@ CatchClause@@Exception e @AT@ 9414 @LENGTH@ 38
+------INS MethodInvocation@@LOG.warn("Error getting tables: ",e) @TO@ ExpressionStatement@@MethodInvocation:LOG.warn("Error getting tables: ",e) @AT@ 9414 @LENGTH@ 37
+---------INS SimpleName@@Name:LOG @TO@ MethodInvocation@@LOG.warn("Error getting tables: ",e) @AT@ 9414 @LENGTH@ 3
+---------INS SimpleName@@MethodName:warn:["Error getting tables: ", e] @TO@ MethodInvocation@@LOG.warn("Error getting tables: ",e) @AT@ 9418 @LENGTH@ 33
+------------INS StringLiteral@@"Error getting tables: " @TO@ SimpleName@@MethodName:warn:["Error getting tables: ", e] @AT@ 9423 @LENGTH@ 24
+------------INS SimpleName@@e @TO@ SimpleName@@MethodName:warn:["Error getting tables: ", e] @AT@ 9449 @LENGTH@ 1
+---INS ExpressionStatement@@MethodInvocation:resp.setStatus(HiveSQLException.toTStatus(e)) @TO@ CatchClause@@Exception e @AT@ 9459 @LENGTH@ 46
+------INS MethodInvocation@@resp.setStatus(HiveSQLException.toTStatus(e)) @TO@ ExpressionStatement@@MethodInvocation:resp.setStatus(HiveSQLException.toTStatus(e)) @AT@ 9459 @LENGTH@ 45
+---------INS SimpleName@@Name:resp @TO@ MethodInvocation@@resp.setStatus(HiveSQLException.toTStatus(e)) @AT@ 9459 @LENGTH@ 4
+---------INS SimpleName@@MethodName:setStatus:[HiveSQLException.toTStatus(e)] @TO@ MethodInvocation@@resp.setStatus(HiveSQLException.toTStatus(e)) @AT@ 9464 @LENGTH@ 40
+------------INS MethodInvocation@@HiveSQLException.toTStatus(e) @TO@ SimpleName@@MethodName:setStatus:[HiveSQLException.toTStatus(e)] @AT@ 9474 @LENGTH@ 29
+---------------INS SimpleName@@Name:HiveSQLException @TO@ MethodInvocation@@HiveSQLException.toTStatus(e) @AT@ 9474 @LENGTH@ 16
+---------------INS SimpleName@@MethodName:toTStatus:[e] @TO@ MethodInvocation@@HiveSQLException.toTStatus(e) @AT@ 9491 @LENGTH@ 12
+------------------INS SimpleName@@e @TO@ SimpleName@@MethodName:toTStatus:[e] @AT@ 9501 @LENGTH@ 1
+

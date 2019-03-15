@@ -1,0 +1,8 @@
+VariableDeclarationStatement
+---VariableDeclarationFragment
+------ClassInstanceCreation
+---------New
+---------ParameterizedType
+------------SimpleType
+------SimpleName
+---ParameterizedType

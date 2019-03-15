@@ -1,0 +1,8 @@
+INS VariableDeclarationStatement@@String encodedName=hri.getEncodedName(); @TO@ MethodDeclaration@@public, void, MethodName:regionOnline, final HRegionInfo hri, final ServerName serverName, long openSeqNum,  @AT@ 13827 @LENGTH@ 42
+---INS SimpleType@@String @TO@ VariableDeclarationStatement@@String encodedName=hri.getEncodedName(); @AT@ 13827 @LENGTH@ 6
+---INS VariableDeclarationFragment@@encodedName=hri.getEncodedName() @TO@ VariableDeclarationStatement@@String encodedName=hri.getEncodedName(); @AT@ 13834 @LENGTH@ 34
+------INS SimpleName@@encodedName @TO@ VariableDeclarationFragment@@encodedName=hri.getEncodedName() @AT@ 13834 @LENGTH@ 11
+------INS MethodInvocation@@hri.getEncodedName() @TO@ VariableDeclarationFragment@@encodedName=hri.getEncodedName() @AT@ 13848 @LENGTH@ 20
+---------INS SimpleName@@Name:hri @TO@ MethodInvocation@@hri.getEncodedName() @AT@ 13848 @LENGTH@ 3
+---------INS SimpleName@@MethodName:getEncodedName:[] @TO@ MethodInvocation@@hri.getEncodedName() @AT@ 13852 @LENGTH@ 16
+

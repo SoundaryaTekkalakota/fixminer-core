@@ -1,0 +1,6 @@
+CatchClause
+---SingleVariableDeclaration
+------SimpleType
+---ThrowStatement
+------ClassInstanceCreation
+---------SimpleName

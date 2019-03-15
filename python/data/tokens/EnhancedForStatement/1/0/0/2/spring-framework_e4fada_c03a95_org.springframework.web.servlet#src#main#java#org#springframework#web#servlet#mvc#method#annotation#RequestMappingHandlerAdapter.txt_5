@@ -1,0 +1,2 @@
+MOV EnhancedForStatement@@Method method, MethodInvocation:HandlerMethodSelector.selectMethods(handlerType,MODEL_ATTRIBUTE_METHODS) @TO@ MethodDeclaration@@private, ModelFactory, MethodName:getModelFactory, HandlerMethod handlerMethod, WebDataBinderFactory binderFactory,  @AT@ 28972 @LENGTH@ 435
+

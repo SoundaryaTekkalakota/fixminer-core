@@ -1,0 +1,16 @@
+INS VariableDeclarationStatement@@List<String> lowerCasePartNames=new ArrayList<String>(request.getPartNames().size()); @TO@ MethodDeclaration@@public, PartitionsStatsResult, MethodName:get_partitions_statistics_req, PartitionsStatsRequest request, MetaException, NoSuchObjectException, TException,  @AT@ 159697 @LENGTH@ 87
+---INS ParameterizedType@@List<String> @TO@ VariableDeclarationStatement@@List<String> lowerCasePartNames=new ArrayList<String>(request.getPartNames().size()); @AT@ 159697 @LENGTH@ 12
+------INS SimpleType@@List @TO@ ParameterizedType@@List<String> @AT@ 159697 @LENGTH@ 4
+------INS SimpleType@@String @TO@ ParameterizedType@@List<String> @AT@ 159702 @LENGTH@ 6
+---INS VariableDeclarationFragment@@lowerCasePartNames=new ArrayList<String>(request.getPartNames().size()) @TO@ VariableDeclarationStatement@@List<String> lowerCasePartNames=new ArrayList<String>(request.getPartNames().size()); @AT@ 159710 @LENGTH@ 73
+------INS SimpleName@@lowerCasePartNames @TO@ VariableDeclarationFragment@@lowerCasePartNames=new ArrayList<String>(request.getPartNames().size()) @AT@ 159710 @LENGTH@ 18
+------INS ClassInstanceCreation@@ArrayList<String>[request.getPartNames().size()] @TO@ VariableDeclarationFragment@@lowerCasePartNames=new ArrayList<String>(request.getPartNames().size()) @AT@ 159731 @LENGTH@ 52
+---------INS New@@new @TO@ ClassInstanceCreation@@ArrayList<String>[request.getPartNames().size()] @AT@ 159731 @LENGTH@ 3
+---------INS ParameterizedType@@ArrayList<String> @TO@ ClassInstanceCreation@@ArrayList<String>[request.getPartNames().size()] @AT@ 159735 @LENGTH@ 17
+------------INS SimpleType@@ArrayList @TO@ ParameterizedType@@ArrayList<String> @AT@ 159735 @LENGTH@ 9
+------------INS SimpleType@@String @TO@ ParameterizedType@@ArrayList<String> @AT@ 159745 @LENGTH@ 6
+---------INS MethodInvocation@@request.getPartNames().size() @TO@ ClassInstanceCreation@@ArrayList<String>[request.getPartNames().size()] @AT@ 159753 @LENGTH@ 29
+------------INS SimpleName@@Name:request @TO@ MethodInvocation@@request.getPartNames().size() @AT@ 159753 @LENGTH@ 7
+------------INS MethodInvocation@@MethodName:getPartNames:[] @TO@ MethodInvocation@@request.getPartNames().size() @AT@ 159753 @LENGTH@ 22
+------------INS SimpleName@@MethodName:size:[] @TO@ MethodInvocation@@request.getPartNames().size() @AT@ 159776 @LENGTH@ 6
+

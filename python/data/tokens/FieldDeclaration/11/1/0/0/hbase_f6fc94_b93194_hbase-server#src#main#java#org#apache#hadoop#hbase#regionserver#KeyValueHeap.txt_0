@@ -1,0 +1,12 @@
+INS FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(KeyValueHeap.class)] @TO@ TypeDeclaration@@[@InterfaceAudience.Private, public]KeyValueHeap, NonReversedNonLazyKeyValueScanner[KeyValueScanner, InternalScanner] @AT@ 1972 @LENGTH@ 69
+---INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(KeyValueHeap.class)] @AT@ 1972 @LENGTH@ 7
+---INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(KeyValueHeap.class)] @AT@ 1980 @LENGTH@ 6
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(KeyValueHeap.class)] @AT@ 1987 @LENGTH@ 5
+---INS SimpleType@@Log @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(KeyValueHeap.class)] @AT@ 1993 @LENGTH@ 3
+---INS VariableDeclarationFragment@@LOG=LogFactory.getLog(KeyValueHeap.class) @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(KeyValueHeap.class)] @AT@ 1997 @LENGTH@ 43
+------INS SimpleName@@LOG @TO@ VariableDeclarationFragment@@LOG=LogFactory.getLog(KeyValueHeap.class) @AT@ 1997 @LENGTH@ 3
+------INS MethodInvocation@@LogFactory.getLog(KeyValueHeap.class) @TO@ VariableDeclarationFragment@@LOG=LogFactory.getLog(KeyValueHeap.class) @AT@ 2003 @LENGTH@ 37
+---------INS SimpleName@@Name:LogFactory @TO@ MethodInvocation@@LogFactory.getLog(KeyValueHeap.class) @AT@ 2003 @LENGTH@ 10
+---------INS SimpleName@@MethodName:getLog:[KeyValueHeap.class] @TO@ MethodInvocation@@LogFactory.getLog(KeyValueHeap.class) @AT@ 2014 @LENGTH@ 26
+------------INS TypeLiteral@@KeyValueHeap.class @TO@ SimpleName@@MethodName:getLog:[KeyValueHeap.class] @AT@ 2021 @LENGTH@ 18
+

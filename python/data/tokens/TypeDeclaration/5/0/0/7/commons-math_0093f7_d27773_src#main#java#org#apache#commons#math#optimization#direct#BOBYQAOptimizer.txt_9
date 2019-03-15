@@ -1,0 +1,6 @@
+INS TypeDeclaration@@[private, static]PathIsExploredException, RuntimeException @TO@ TypeDeclaration@@[public]BOBYQAOptimizer, BaseAbstractMultivariateSimpleBoundsOptimizer<MultivariateFunction>[MultivariateOptimizer] @AT@ 113439 @LENGTH@ 398
+---INS Modifier@@private @TO@ TypeDeclaration@@[private, static]PathIsExploredException, RuntimeException @AT@ 113439 @LENGTH@ 7
+---INS Modifier@@static @TO@ TypeDeclaration@@[private, static]PathIsExploredException, RuntimeException @AT@ 113447 @LENGTH@ 6
+---INS SimpleName@@ClassName:PathIsExploredException @TO@ TypeDeclaration@@[private, static]PathIsExploredException, RuntimeException @AT@ 113460 @LENGTH@ 23
+---INS SimpleType@@RuntimeException @TO@ TypeDeclaration@@[private, static]PathIsExploredException, RuntimeException @AT@ 113492 @LENGTH@ 16
+

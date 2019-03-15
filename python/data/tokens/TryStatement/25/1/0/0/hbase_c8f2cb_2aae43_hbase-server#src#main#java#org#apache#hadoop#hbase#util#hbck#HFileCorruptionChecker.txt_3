@@ -1,0 +1,26 @@
+INS TryStatement@@try:[] @TO@ MethodDeclaration@@protected, void, MethodName:checkRegionDir, Path regionDir, IOException,  @AT@ 6839 @LENGTH@ 386
+---INS ExpressionStatement@@Assignment:cfs=fs.listStatus(regionDir,new FamilyDirFilter(fs)) @TO@ TryStatement@@try:[] @AT@ 6851 @LENGTH@ 56
+------INS Assignment@@cfs=fs.listStatus(regionDir,new FamilyDirFilter(fs)) @TO@ ExpressionStatement@@Assignment:cfs=fs.listStatus(regionDir,new FamilyDirFilter(fs)) @AT@ 6851 @LENGTH@ 55
+---------MOV MethodInvocation@@fs.listStatus(regionDir,new FamilyDirFilter(fs)) @TO@ Assignment@@cfs=fs.listStatus(regionDir,new FamilyDirFilter(fs)) @AT@ 6496 @LENGTH@ 49
+---------INS SimpleName@@cfs @TO@ Assignment@@cfs=fs.listStatus(regionDir,new FamilyDirFilter(fs)) @AT@ 6851 @LENGTH@ 3
+---------INS Operator@@= @TO@ Assignment@@cfs=fs.listStatus(regionDir,new FamilyDirFilter(fs)) @AT@ 6854 @LENGTH@ 1
+---INS CatchClause@@FileNotFoundException fnfe @TO@ TryStatement@@try:[] @AT@ 6914 @LENGTH@ 311
+------INS SingleVariableDeclaration@@FileNotFoundException fnfe @TO@ CatchClause@@FileNotFoundException fnfe @AT@ 6921 @LENGTH@ 26
+---------INS SimpleType@@FileNotFoundException @TO@ SingleVariableDeclaration@@FileNotFoundException fnfe @AT@ 6921 @LENGTH@ 21
+---------INS SimpleName@@fnfe @TO@ SingleVariableDeclaration@@FileNotFoundException fnfe @AT@ 6943 @LENGTH@ 4
+------INS ExpressionStatement@@MethodInvocation:LOG.warn("Region Directory " + regionDir + " does not exist.  Likely due to concurrent split/compaction. Skipping.") @TO@ CatchClause@@FileNotFoundException fnfe @AT@ 7048 @LENGTH@ 127
+---------INS MethodInvocation@@LOG.warn("Region Directory " + regionDir + " does not exist.  Likely due to concurrent split/compaction. Skipping.") @TO@ ExpressionStatement@@MethodInvocation:LOG.warn("Region Directory " + regionDir + " does not exist.  Likely due to concurrent split/compaction. Skipping.") @AT@ 7048 @LENGTH@ 126
+------------INS SimpleName@@Name:LOG @TO@ MethodInvocation@@LOG.warn("Region Directory " + regionDir + " does not exist.  Likely due to concurrent split/compaction. Skipping.") @AT@ 7048 @LENGTH@ 3
+------------INS SimpleName@@MethodName:warn:["Region Directory " + regionDir + " does not exist.  Likely due to concurrent split/compaction. Skipping."] @TO@ MethodInvocation@@LOG.warn("Region Directory " + regionDir + " does not exist.  Likely due to concurrent split/compaction. Skipping.") @AT@ 7052 @LENGTH@ 122
+---------------INS InfixExpression@@"Region Directory " + regionDir + " does not exist.  Likely due to concurrent split/compaction. Skipping." @TO@ SimpleName@@MethodName:warn:["Region Directory " + regionDir + " does not exist.  Likely due to concurrent split/compaction. Skipping."] @AT@ 7057 @LENGTH@ 116
+------------------INS StringLiteral@@"Region Directory " @TO@ InfixExpression@@"Region Directory " + regionDir + " does not exist.  Likely due to concurrent split/compaction. Skipping." @AT@ 7057 @LENGTH@ 19
+------------------INS Operator@@+ @TO@ InfixExpression@@"Region Directory " + regionDir + " does not exist.  Likely due to concurrent split/compaction. Skipping." @AT@ 7076 @LENGTH@ 1
+------------------INS SimpleName@@regionDir @TO@ InfixExpression@@"Region Directory " + regionDir + " does not exist.  Likely due to concurrent split/compaction. Skipping." @AT@ 7079 @LENGTH@ 9
+------------------INS StringLiteral@@" does not exist.  Likely due to concurrent split/compaction. Skipping." @TO@ InfixExpression@@"Region Directory " + regionDir + " does not exist.  Likely due to concurrent split/compaction. Skipping." @AT@ 7101 @LENGTH@ 72
+------INS ExpressionStatement@@MethodInvocation:missing.add(regionDir) @TO@ CatchClause@@FileNotFoundException fnfe @AT@ 7182 @LENGTH@ 23
+---------INS MethodInvocation@@missing.add(regionDir) @TO@ ExpressionStatement@@MethodInvocation:missing.add(regionDir) @AT@ 7182 @LENGTH@ 22
+------------INS SimpleName@@Name:missing @TO@ MethodInvocation@@missing.add(regionDir) @AT@ 7182 @LENGTH@ 7
+------------INS SimpleName@@MethodName:add:[regionDir] @TO@ MethodInvocation@@missing.add(regionDir) @AT@ 7190 @LENGTH@ 14
+---------------INS SimpleName@@regionDir @TO@ SimpleName@@MethodName:add:[regionDir] @AT@ 7194 @LENGTH@ 9
+------INS ReturnStatement@@ @TO@ CatchClause@@FileNotFoundException fnfe @AT@ 7212 @LENGTH@ 7
+

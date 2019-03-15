@@ -1,0 +1,12 @@
+IfStatement
+---PrefixExpression
+------Operator
+------MethodInvocation
+---------SimpleName
+---------MethodInvocation
+---------SimpleName
+---ThrowStatement
+------ClassInstanceCreation
+---------New
+---------SimpleType
+---------StringLiteral

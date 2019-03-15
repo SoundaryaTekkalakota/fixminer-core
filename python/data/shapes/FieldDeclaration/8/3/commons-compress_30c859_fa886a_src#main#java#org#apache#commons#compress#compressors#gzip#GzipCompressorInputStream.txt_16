@@ -1,0 +1,8 @@
+FieldDeclaration
+---Modifier
+---SimpleType
+---VariableDeclarationFragment
+------SimpleName
+------ClassInstanceCreation
+---------New
+---------SimpleType

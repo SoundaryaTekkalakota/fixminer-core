@@ -1,0 +1,24 @@
+UPD ExpressionStatement@@MethodInvocation:connection.addPacketListener(new XmppLogger("INBOUND"),new PacketFilter(){
+  public boolean accept(  Packet packet){
+    return true;
+  }
+}
+) @TO@ MethodInvocation:newConnection.addPacketListener(new XmppLogger("INBOUND"),new PacketFilter(){
+  public boolean accept(  Packet packet){
+    return true;
+  }
+}
+) @AT@ 5735 @LENGTH@ 182
+---UPD MethodInvocation@@connection.addPacketListener(new XmppLogger("INBOUND"),new PacketFilter(){
+  public boolean accept(  Packet packet){
+    return true;
+  }
+}
+) @TO@ newConnection.addPacketListener(new XmppLogger("INBOUND"),new PacketFilter(){
+  public boolean accept(  Packet packet){
+    return true;
+  }
+}
+) @AT@ 5735 @LENGTH@ 181
+------UPD SimpleName@@Name:connection @TO@ Name:newConnection @AT@ 5735 @LENGTH@ 10
+

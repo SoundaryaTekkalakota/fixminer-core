@@ -1,0 +1,8 @@
+INS TryStatement@@try:[] @TO@ MethodDeclaration@@public, XMLStreamReader, MethodName:createXMLStreamReader, File file, Exchange exchange, XMLStreamException, FileNotFoundException,  @AT@ 6618 @LENGTH@ 210
+---MOV ReturnStatement@@MethodInvocation:getInputFactory().createXMLStreamReader(IOHelper.buffered(new FileInputStream(file)),IOHelper.getCharsetName(exchange)) @TO@ TryStatement@@try:[] @AT@ 3499 @LENGTH@ 128
+---INS Block@@FinallyBody @TO@ TryStatement@@try:[] @AT@ 6773 @LENGTH@ 55
+------INS ExpressionStatement@@MethodInvocation:returnXMLInputFactory(factory) @TO@ Block@@FinallyBody @AT@ 6787 @LENGTH@ 31
+---------INS MethodInvocation@@returnXMLInputFactory(factory) @TO@ ExpressionStatement@@MethodInvocation:returnXMLInputFactory(factory) @AT@ 6787 @LENGTH@ 30
+------------INS SimpleName@@MethodName:returnXMLInputFactory:[factory] @TO@ MethodInvocation@@returnXMLInputFactory(factory) @AT@ 6787 @LENGTH@ 30
+---------------INS SimpleName@@factory @TO@ SimpleName@@MethodName:returnXMLInputFactory:[factory] @AT@ 6809 @LENGTH@ 7
+

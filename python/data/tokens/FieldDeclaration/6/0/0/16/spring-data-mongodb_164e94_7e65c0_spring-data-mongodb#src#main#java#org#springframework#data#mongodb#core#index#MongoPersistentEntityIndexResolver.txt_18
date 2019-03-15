@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, String, [path] @TO@ TypeDeclaration@@[private, static]Path,  @AT@ 14233 @LENGTH@ 26
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, String, [path] @AT@ 14233 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, String, [path] @AT@ 14241 @LENGTH@ 5
+---INS SimpleType@@String @TO@ FieldDeclaration@@private, final, String, [path] @AT@ 14247 @LENGTH@ 6
+---INS VariableDeclarationFragment@@path @TO@ FieldDeclaration@@private, final, String, [path] @AT@ 14254 @LENGTH@ 4
+------INS SimpleName@@path @TO@ VariableDeclarationFragment@@path @AT@ 14254 @LENGTH@ 4
+

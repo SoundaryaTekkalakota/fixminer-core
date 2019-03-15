@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, String, [forwardedPrefix] @TO@ TypeDeclaration@@[private, static]ForwardedPrefixExtractor,  @AT@ 9111 @LENGTH@ 37
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, String, [forwardedPrefix] @AT@ 9111 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, String, [forwardedPrefix] @AT@ 9119 @LENGTH@ 5
+---INS SimpleType@@String @TO@ FieldDeclaration@@private, final, String, [forwardedPrefix] @AT@ 9125 @LENGTH@ 6
+---INS VariableDeclarationFragment@@forwardedPrefix @TO@ FieldDeclaration@@private, final, String, [forwardedPrefix] @AT@ 9132 @LENGTH@ 15
+------INS SimpleName@@forwardedPrefix @TO@ VariableDeclarationFragment@@forwardedPrefix @AT@ 9132 @LENGTH@ 15
+

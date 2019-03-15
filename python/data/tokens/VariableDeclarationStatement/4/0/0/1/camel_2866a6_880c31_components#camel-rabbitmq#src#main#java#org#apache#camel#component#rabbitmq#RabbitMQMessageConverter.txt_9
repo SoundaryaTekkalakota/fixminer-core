@@ -1,0 +1,5 @@
+UPD VariableDeclarationStatement@@final Object contentEncoding=msg.getHeader(RabbitMQConstants.CONTENT_ENCODING); @TO@ final Object contentEncoding=msg.removeHeader(RabbitMQConstants.CONTENT_ENCODING); @AT@ 5376 @LENGTH@ 81
+---UPD VariableDeclarationFragment@@contentEncoding=msg.getHeader(RabbitMQConstants.CONTENT_ENCODING) @TO@ contentEncoding=msg.removeHeader(RabbitMQConstants.CONTENT_ENCODING) @AT@ 5389 @LENGTH@ 67
+------UPD MethodInvocation@@msg.getHeader(RabbitMQConstants.CONTENT_ENCODING) @TO@ msg.removeHeader(RabbitMQConstants.CONTENT_ENCODING) @AT@ 5407 @LENGTH@ 49
+---------UPD SimpleName@@MethodName:getHeader:[RabbitMQConstants.CONTENT_ENCODING] @TO@ MethodName:removeHeader:[RabbitMQConstants.CONTENT_ENCODING] @AT@ 5411 @LENGTH@ 45
+

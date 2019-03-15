@@ -1,0 +1,8 @@
+INS IfStatement@@InfixExpression:o == null @TO@ MethodDeclaration@@public, HiveDecimal, MethodName:getPrimitiveJavaObject, Object o,  @AT@ 1682 @LENGTH@ 41
+---INS InfixExpression@@o == null @TO@ IfStatement@@InfixExpression:o == null @AT@ 1686 @LENGTH@ 9
+------INS SimpleName@@o @TO@ InfixExpression@@o == null @AT@ 1686 @LENGTH@ 1
+------INS Operator@@== @TO@ InfixExpression@@o == null @AT@ 1687 @LENGTH@ 2
+------INS NullLiteral@@null @TO@ InfixExpression@@o == null @AT@ 1691 @LENGTH@ 4
+---INS ReturnStatement@@NullLiteral:null @TO@ IfStatement@@InfixExpression:o == null @AT@ 1705 @LENGTH@ 12
+------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 1712 @LENGTH@ 4
+

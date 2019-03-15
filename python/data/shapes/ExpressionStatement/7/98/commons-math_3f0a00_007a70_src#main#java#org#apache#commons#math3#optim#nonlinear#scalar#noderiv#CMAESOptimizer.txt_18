@@ -1,0 +1,7 @@
+ExpressionStatement
+---Assignment
+------InfixExpression
+---------SimpleName
+---------Operator
+---------SimpleName
+------SimpleName

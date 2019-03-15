@@ -1,0 +1,6 @@
+ INS SynchronizedStatement
+--- MOV IfStatement
+--- INS FieldAccess
+------ INS ThisExpression
+------ INS SimpleName
+--- MOV ReturnStatement

@@ -1,0 +1,14 @@
+ UPD ExpressionStatement
+--- DEL MethodInvocation
+------ DEL SimpleName
+--- INS Assignment
+------ INS SimpleName
+------ INS Operator
+------ INS MethodInvocation
+--------- MOV MethodInvocation
+--------- MOV MethodInvocation
+--------- MOV SimpleName
+--------- INS ClassInstanceCreation
+------------ INS New
+------------ INS SimpleType
+--------- INS MethodInvocation

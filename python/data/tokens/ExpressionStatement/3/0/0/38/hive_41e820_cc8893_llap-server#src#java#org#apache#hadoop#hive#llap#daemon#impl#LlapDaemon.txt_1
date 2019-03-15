@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.info("LLAP daemon logging initialized from {} in {} ms",llap_l4j2,(end - start)) @TO@ MethodInvocation:LOG.warn("LLAP daemon logging initialized from {} in {} ms",llap_l4j2,(end - start)) @AT@ 11254 @LENGTH@ 87
+---UPD MethodInvocation@@LOG.info("LLAP daemon logging initialized from {} in {} ms",llap_l4j2,(end - start)) @TO@ LOG.warn("LLAP daemon logging initialized from {} in {} ms",llap_l4j2,(end - start)) @AT@ 11254 @LENGTH@ 86
+------UPD SimpleName@@MethodName:info:["LLAP daemon logging initialized from {} in {} ms", llap_l4j2, (end - start)] @TO@ MethodName:warn:["LLAP daemon logging initialized from {} in {} ms", llap_l4j2, (end - start)] @AT@ 11258 @LENGTH@ 82
+

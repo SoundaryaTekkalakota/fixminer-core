@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:client.move(key,dbIndex) @TO@ MethodInvocation:pipeline.move(key,dbIndex) @AT@ 15982 @LENGTH@ 26
+---UPD MethodInvocation@@client.move(key,dbIndex) @TO@ pipeline.move(key,dbIndex) @AT@ 15982 @LENGTH@ 25
+------UPD SimpleName@@Name:client @TO@ Name:pipeline @AT@ 15982 @LENGTH@ 6
+

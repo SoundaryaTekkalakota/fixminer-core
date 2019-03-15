@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, String, MethodName:getRepositoryFactoryClassName,  @TO@ public, String, MethodName:getRepositoryFactoryBeanClassName,  @AT@ 3456 @LENGTH@ 105
+---UPD SimpleName@@MethodName:getRepositoryFactoryClassName @TO@ MethodName:getRepositoryFactoryBeanClassName @AT@ 3470 @LENGTH@ 29
+

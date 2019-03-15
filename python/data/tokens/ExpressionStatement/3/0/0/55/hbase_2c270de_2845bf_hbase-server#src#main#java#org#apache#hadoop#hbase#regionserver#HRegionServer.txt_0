@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:closeAllRegions(abortRequested) @TO@ MethodInvocation:closeUserRegions(abortRequested) @AT@ 38185 @LENGTH@ 32
+---UPD MethodInvocation@@closeAllRegions(abortRequested) @TO@ closeUserRegions(abortRequested) @AT@ 38185 @LENGTH@ 31
+------UPD SimpleName@@MethodName:closeAllRegions:[abortRequested] @TO@ MethodName:closeUserRegions:[abortRequested] @AT@ 38185 @LENGTH@ 31
+

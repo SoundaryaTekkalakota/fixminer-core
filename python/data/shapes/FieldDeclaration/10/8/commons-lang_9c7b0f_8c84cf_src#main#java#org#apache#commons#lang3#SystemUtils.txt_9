@@ -1,0 +1,10 @@
+FieldDeclaration
+---VariableDeclarationFragment
+------MethodInvocation
+---------SimpleName
+------------SimpleName
+------------StringLiteral
+------------InfixExpression
+---------------SimpleName
+---------------Operator
+---------------StringLiteral

@@ -1,0 +1,24 @@
+INS ExpressionStatement@@MethodInvocation:allowable.add(org.apache.activemq.artemis.core.remoting.impl.invm.TransportConstants.BUFFER_POOLING) @TO@ Initializer@@Initializer @AT@ 13059 @LENGTH@ 101
+---INS MethodInvocation@@allowable.add(org.apache.activemq.artemis.core.remoting.impl.invm.TransportConstants.BUFFER_POOLING) @TO@ ExpressionStatement@@MethodInvocation:allowable.add(org.apache.activemq.artemis.core.remoting.impl.invm.TransportConstants.BUFFER_POOLING) @AT@ 13059 @LENGTH@ 100
+------INS SimpleName@@Name:allowable @TO@ MethodInvocation@@allowable.add(org.apache.activemq.artemis.core.remoting.impl.invm.TransportConstants.BUFFER_POOLING) @AT@ 13059 @LENGTH@ 9
+------INS SimpleName@@MethodName:add:[org.apache.activemq.artemis.core.remoting.impl.invm.TransportConstants.BUFFER_POOLING] @TO@ MethodInvocation@@allowable.add(org.apache.activemq.artemis.core.remoting.impl.invm.TransportConstants.BUFFER_POOLING) @AT@ 13069 @LENGTH@ 90
+---------INS QualifiedName@@org.apache.activemq.artemis.core.remoting.impl.invm.TransportConstants.BUFFER_POOLING @TO@ SimpleName@@MethodName:add:[org.apache.activemq.artemis.core.remoting.impl.invm.TransportConstants.BUFFER_POOLING] @AT@ 13073 @LENGTH@ 85
+------------INS QualifiedName@@org.apache.activemq.artemis.core.remoting.impl.invm.TransportConstants @TO@ QualifiedName@@org.apache.activemq.artemis.core.remoting.impl.invm.TransportConstants.BUFFER_POOLING @AT@ 13073 @LENGTH@ 70
+---------------INS QualifiedName@@org.apache.activemq.artemis.core.remoting.impl.invm @TO@ QualifiedName@@org.apache.activemq.artemis.core.remoting.impl.invm.TransportConstants @AT@ 13073 @LENGTH@ 51
+------------------INS QualifiedName@@org.apache.activemq.artemis.core.remoting.impl @TO@ QualifiedName@@org.apache.activemq.artemis.core.remoting.impl.invm @AT@ 13073 @LENGTH@ 46
+---------------------INS QualifiedName@@org.apache.activemq.artemis.core.remoting @TO@ QualifiedName@@org.apache.activemq.artemis.core.remoting.impl @AT@ 13073 @LENGTH@ 41
+------------------------INS QualifiedName@@org.apache.activemq.artemis.core @TO@ QualifiedName@@org.apache.activemq.artemis.core.remoting @AT@ 13073 @LENGTH@ 32
+---------------------------INS QualifiedName@@org.apache.activemq.artemis @TO@ QualifiedName@@org.apache.activemq.artemis.core @AT@ 13073 @LENGTH@ 27
+------------------------------INS QualifiedName@@org.apache.activemq @TO@ QualifiedName@@org.apache.activemq.artemis @AT@ 13073 @LENGTH@ 19
+---------------------------------INS QualifiedName@@org.apache @TO@ QualifiedName@@org.apache.activemq @AT@ 13073 @LENGTH@ 10
+------------------------------------INS SimpleName@@org @TO@ QualifiedName@@org.apache @AT@ 13073 @LENGTH@ 3
+------------------------------------INS SimpleName@@apache @TO@ QualifiedName@@org.apache @AT@ 13077 @LENGTH@ 6
+---------------------------------INS SimpleName@@activemq @TO@ QualifiedName@@org.apache.activemq @AT@ 13084 @LENGTH@ 8
+------------------------------INS SimpleName@@artemis @TO@ QualifiedName@@org.apache.activemq.artemis @AT@ 13093 @LENGTH@ 7
+---------------------------INS SimpleName@@core @TO@ QualifiedName@@org.apache.activemq.artemis.core @AT@ 13101 @LENGTH@ 4
+------------------------INS SimpleName@@remoting @TO@ QualifiedName@@org.apache.activemq.artemis.core.remoting @AT@ 13106 @LENGTH@ 8
+---------------------INS SimpleName@@impl @TO@ QualifiedName@@org.apache.activemq.artemis.core.remoting.impl @AT@ 13115 @LENGTH@ 4
+------------------INS SimpleName@@invm @TO@ QualifiedName@@org.apache.activemq.artemis.core.remoting.impl.invm @AT@ 13120 @LENGTH@ 4
+---------------INS SimpleName@@TransportConstants @TO@ QualifiedName@@org.apache.activemq.artemis.core.remoting.impl.invm.TransportConstants @AT@ 13125 @LENGTH@ 18
+------------INS SimpleName@@BUFFER_POOLING @TO@ QualifiedName@@org.apache.activemq.artemis.core.remoting.impl.invm.TransportConstants.BUFFER_POOLING @AT@ 13144 @LENGTH@ 14
+

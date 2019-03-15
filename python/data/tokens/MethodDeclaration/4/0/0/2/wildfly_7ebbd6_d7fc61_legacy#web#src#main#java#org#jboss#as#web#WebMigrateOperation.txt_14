@@ -1,0 +1,5 @@
+UPD MethodDeclaration@@private, void, MethodName:transformResources, final OperationContext context, final ModelNode legacyModelDescription, final Map<PathAddress,ModelNode> newAddOperations, List<String> warnings, OperationFailedException,  @TO@ private, void, MethodName:transformResources, final OperationContext context, final ModelNode legacyModelDescription, final Map<PathAddress,ModelNode> newAddOperations, List<String> warnings, boolean domainMode, OperationFailedException,  @AT@ 30492 @LENGTH@ 2567
+---INS SingleVariableDeclaration@@boolean domainMode @TO@ MethodDeclaration@@private, void, MethodName:transformResources, final OperationContext context, final ModelNode legacyModelDescription, final Map<PathAddress,ModelNode> newAddOperations, List<String> warnings, OperationFailedException,  @AT@ 33588 @LENGTH@ 18
+------INS PrimitiveType@@boolean @TO@ SingleVariableDeclaration@@boolean domainMode @AT@ 33588 @LENGTH@ 7
+------INS SimpleName@@domainMode @TO@ SingleVariableDeclaration@@boolean domainMode @AT@ 33596 @LENGTH@ 10
+

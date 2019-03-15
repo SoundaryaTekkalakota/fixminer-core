@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:createTab_stmt.setAttribute(TBL_PROPERTIES,tbl_properties) @TO@ MethodInvocation:createTab_stmt.add(TBL_PROPERTIES,tbl_properties) @AT@ 82143 @LENGTH@ 60
+---UPD MethodInvocation@@createTab_stmt.setAttribute(TBL_PROPERTIES,tbl_properties) @TO@ createTab_stmt.add(TBL_PROPERTIES,tbl_properties) @AT@ 82143 @LENGTH@ 59
+------UPD SimpleName@@MethodName:setAttribute:[TBL_PROPERTIES, tbl_properties] @TO@ MethodName:add:[TBL_PROPERTIES, tbl_properties] @AT@ 82158 @LENGTH@ 44
+

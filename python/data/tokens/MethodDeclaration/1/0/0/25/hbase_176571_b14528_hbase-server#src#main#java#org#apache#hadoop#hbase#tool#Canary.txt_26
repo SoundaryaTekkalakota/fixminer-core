@@ -1,0 +1,2 @@
+MOV MethodDeclaration@@public, Map<String,String>, MethodName:getReadFailures,  @TO@ TypeDeclaration@@[public, static]StdOutSink, [Sink] @AT@ 8253 @LENGTH@ 79
+

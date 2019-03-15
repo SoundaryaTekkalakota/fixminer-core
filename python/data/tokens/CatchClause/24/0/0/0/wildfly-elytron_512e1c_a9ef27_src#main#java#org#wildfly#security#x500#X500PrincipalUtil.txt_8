@@ -1,0 +1,25 @@
+INS CatchClause@@IllegalAccessException e @TO@ TryStatement@@try:[] @AT@ 2116 @LENGTH@ 200
+---INS SingleVariableDeclaration@@IllegalAccessException e @TO@ CatchClause@@IllegalAccessException e @AT@ 2123 @LENGTH@ 24
+------INS SimpleType@@IllegalAccessException @TO@ SingleVariableDeclaration@@IllegalAccessException e @AT@ 2123 @LENGTH@ 22
+------INS SimpleName@@e @TO@ SingleVariableDeclaration@@IllegalAccessException e @AT@ 2146 @LENGTH@ 1
+---INS VariableDeclarationStatement@@final IllegalAccessError err=new IllegalAccessError(e.getMessage()); @TO@ CatchClause@@IllegalAccessException e @AT@ 2163 @LENGTH@ 70
+------INS Modifier@@final @TO@ VariableDeclarationStatement@@final IllegalAccessError err=new IllegalAccessError(e.getMessage()); @AT@ 2163 @LENGTH@ 5
+------INS SimpleType@@IllegalAccessError @TO@ VariableDeclarationStatement@@final IllegalAccessError err=new IllegalAccessError(e.getMessage()); @AT@ 2169 @LENGTH@ 18
+------INS VariableDeclarationFragment@@err=new IllegalAccessError(e.getMessage()) @TO@ VariableDeclarationStatement@@final IllegalAccessError err=new IllegalAccessError(e.getMessage()); @AT@ 2188 @LENGTH@ 44
+---------INS SimpleName@@err @TO@ VariableDeclarationFragment@@err=new IllegalAccessError(e.getMessage()) @AT@ 2188 @LENGTH@ 3
+---------INS ClassInstanceCreation@@IllegalAccessError[e.getMessage()] @TO@ VariableDeclarationFragment@@err=new IllegalAccessError(e.getMessage()) @AT@ 2194 @LENGTH@ 38
+------------INS New@@new @TO@ ClassInstanceCreation@@IllegalAccessError[e.getMessage()] @AT@ 2194 @LENGTH@ 3
+------------INS SimpleType@@IllegalAccessError @TO@ ClassInstanceCreation@@IllegalAccessError[e.getMessage()] @AT@ 2198 @LENGTH@ 18
+------------INS MethodInvocation@@e.getMessage() @TO@ ClassInstanceCreation@@IllegalAccessError[e.getMessage()] @AT@ 2217 @LENGTH@ 14
+---------------INS SimpleName@@Name:e @TO@ MethodInvocation@@e.getMessage() @AT@ 2217 @LENGTH@ 1
+---------------INS SimpleName@@MethodName:getMessage:[] @TO@ MethodInvocation@@e.getMessage() @AT@ 2219 @LENGTH@ 12
+---INS ExpressionStatement@@MethodInvocation:err.setStackTrace(e.getStackTrace()) @TO@ CatchClause@@IllegalAccessException e @AT@ 2246 @LENGTH@ 37
+------INS MethodInvocation@@err.setStackTrace(e.getStackTrace()) @TO@ ExpressionStatement@@MethodInvocation:err.setStackTrace(e.getStackTrace()) @AT@ 2246 @LENGTH@ 36
+---------INS SimpleName@@Name:err @TO@ MethodInvocation@@err.setStackTrace(e.getStackTrace()) @AT@ 2246 @LENGTH@ 3
+---------INS SimpleName@@MethodName:setStackTrace:[e.getStackTrace()] @TO@ MethodInvocation@@err.setStackTrace(e.getStackTrace()) @AT@ 2250 @LENGTH@ 32
+------------INS MethodInvocation@@e.getStackTrace() @TO@ SimpleName@@MethodName:setStackTrace:[e.getStackTrace()] @AT@ 2264 @LENGTH@ 17
+---------------INS SimpleName@@Name:e @TO@ MethodInvocation@@e.getStackTrace() @AT@ 2264 @LENGTH@ 1
+---------------INS SimpleName@@MethodName:getStackTrace:[] @TO@ MethodInvocation@@e.getStackTrace() @AT@ 2266 @LENGTH@ 15
+---INS ThrowStatement@@SimpleName:err @TO@ CatchClause@@IllegalAccessException e @AT@ 2296 @LENGTH@ 10
+------INS SimpleName@@err @TO@ ThrowStatement@@SimpleName:err @AT@ 2302 @LENGTH@ 3
+

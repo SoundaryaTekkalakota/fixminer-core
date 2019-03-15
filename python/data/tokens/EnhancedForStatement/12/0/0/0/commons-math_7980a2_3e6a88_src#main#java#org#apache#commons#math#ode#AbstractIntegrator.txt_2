@@ -1,0 +1,13 @@
+INS EnhancedForStatement@@final EventState remaining, SimpleName:occuringEvents @TO@ IfStatement@@MethodInvocation:currentEvent.reset(eventT,eventY) @AT@ 13509 @LENGTH@ 137
+---INS SingleVariableDeclaration@@final EventState remaining @TO@ EnhancedForStatement@@final EventState remaining, SimpleName:occuringEvents @AT@ 13514 @LENGTH@ 26
+------INS Modifier@@final @TO@ SingleVariableDeclaration@@final EventState remaining @AT@ 13514 @LENGTH@ 5
+------INS SimpleType@@EventState @TO@ SingleVariableDeclaration@@final EventState remaining @AT@ 13520 @LENGTH@ 10
+------INS SimpleName@@remaining @TO@ SingleVariableDeclaration@@final EventState remaining @AT@ 13531 @LENGTH@ 9
+---INS SimpleName@@occuringEvents @TO@ EnhancedForStatement@@final EventState remaining, SimpleName:occuringEvents @AT@ 13543 @LENGTH@ 14
+---INS ExpressionStatement@@MethodInvocation:remaining.stepAccepted(eventT,eventY) @TO@ EnhancedForStatement@@final EventState remaining, SimpleName:occuringEvents @AT@ 13585 @LENGTH@ 39
+------INS MethodInvocation@@remaining.stepAccepted(eventT,eventY) @TO@ ExpressionStatement@@MethodInvocation:remaining.stepAccepted(eventT,eventY) @AT@ 13585 @LENGTH@ 38
+---------INS SimpleName@@Name:remaining @TO@ MethodInvocation@@remaining.stepAccepted(eventT,eventY) @AT@ 13585 @LENGTH@ 9
+---------INS SimpleName@@MethodName:stepAccepted:[eventT, eventY] @TO@ MethodInvocation@@remaining.stepAccepted(eventT,eventY) @AT@ 13595 @LENGTH@ 28
+------------INS SimpleName@@eventT @TO@ SimpleName@@MethodName:stepAccepted:[eventT, eventY] @AT@ 13608 @LENGTH@ 6
+------------INS SimpleName@@eventY @TO@ SimpleName@@MethodName:stepAccepted:[eventT, eventY] @AT@ 13616 @LENGTH@ 6
+

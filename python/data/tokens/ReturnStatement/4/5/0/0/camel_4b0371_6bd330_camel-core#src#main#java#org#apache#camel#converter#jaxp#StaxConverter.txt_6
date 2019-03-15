@@ -1,0 +1,5 @@
+UPD ReturnStatement@@MethodInvocation:getOutputFactory().createXMLStreamWriter(IOHelper.buffered(outputStream),IOHelper.getCharsetName(exchange)) @TO@ MethodInvocation:factory.createXMLStreamWriter(IOHelper.buffered(outputStream),IOHelper.getCharsetName(exchange)) @AT@ 2290 @LENGTH@ 116
+---UPD MethodInvocation@@getOutputFactory().createXMLStreamWriter(IOHelper.buffered(outputStream),IOHelper.getCharsetName(exchange)) @TO@ factory.createXMLStreamWriter(IOHelper.buffered(outputStream),IOHelper.getCharsetName(exchange)) @AT@ 2297 @LENGTH@ 108
+------DEL MethodInvocation@@MethodName:getOutputFactory:[] @AT@ 2297 @LENGTH@ 18
+------INS SimpleName@@Name:factory @TO@ MethodInvocation@@getOutputFactory().createXMLStreamWriter(IOHelper.buffered(outputStream),IOHelper.getCharsetName(exchange)) @AT@ 4396 @LENGTH@ 7
+

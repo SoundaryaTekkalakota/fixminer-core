@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@public, static, VirtualColumn, [ROWOFFSET=new VirtualColumn("ROW__OFFSET__INSIDE__BLOCK",(PrimitiveTypeInfo)TypeInfoFactory.longTypeInfo)] @TO@ public, static, final, VirtualColumn, [ROWOFFSET=new VirtualColumn("ROW__OFFSET__INSIDE__BLOCK",(PrimitiveTypeInfo)TypeInfoFactory.longTypeInfo)] @AT@ 1994 @LENGTH@ 137
+---INS Modifier@@final @TO@ FieldDeclaration@@public, static, VirtualColumn, [ROWOFFSET=new VirtualColumn("ROW__OFFSET__INSIDE__BLOCK",(PrimitiveTypeInfo)TypeInfoFactory.longTypeInfo)] @AT@ 2118 @LENGTH@ 5
+

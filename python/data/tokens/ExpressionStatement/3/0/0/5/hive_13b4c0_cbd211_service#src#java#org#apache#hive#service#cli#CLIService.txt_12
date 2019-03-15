@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.info(sessionHandle + ": getTableTypes()") @TO@ MethodInvocation:LOG.debug(sessionHandle + ": getTableTypes()") @AT@ 9965 @LENGTH@ 46
+---UPD MethodInvocation@@LOG.info(sessionHandle + ": getTableTypes()") @TO@ LOG.debug(sessionHandle + ": getTableTypes()") @AT@ 9965 @LENGTH@ 45
+------UPD SimpleName@@MethodName:info:[sessionHandle + ": getTableTypes()"] @TO@ MethodName:debug:[sessionHandle + ": getTableTypes()"] @AT@ 9969 @LENGTH@ 41
+

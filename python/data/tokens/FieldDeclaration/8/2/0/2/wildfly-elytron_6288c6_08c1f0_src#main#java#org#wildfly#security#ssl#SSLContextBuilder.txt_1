@@ -1,0 +1,9 @@
+INS FieldDeclaration@@private, static, final, int, [DEFAULT_SESSION_TIMEOUT=0] @TO@ TypeDeclaration@@[public, final]SSLContextBuilder,  @AT@ 2455 @LENGTH@ 53
+---INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, int, [DEFAULT_SESSION_TIMEOUT=0] @AT@ 2455 @LENGTH@ 7
+---INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, int, [DEFAULT_SESSION_TIMEOUT=0] @AT@ 2463 @LENGTH@ 6
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, int, [DEFAULT_SESSION_TIMEOUT=0] @AT@ 2470 @LENGTH@ 5
+---INS PrimitiveType@@int @TO@ FieldDeclaration@@private, static, final, int, [DEFAULT_SESSION_TIMEOUT=0] @AT@ 2476 @LENGTH@ 3
+---INS VariableDeclarationFragment@@DEFAULT_SESSION_TIMEOUT=0 @TO@ FieldDeclaration@@private, static, final, int, [DEFAULT_SESSION_TIMEOUT=0] @AT@ 2480 @LENGTH@ 27
+------INS SimpleName@@DEFAULT_SESSION_TIMEOUT @TO@ VariableDeclarationFragment@@DEFAULT_SESSION_TIMEOUT=0 @AT@ 2480 @LENGTH@ 23
+------INS NumberLiteral@@0 @TO@ VariableDeclarationFragment@@DEFAULT_SESSION_TIMEOUT=0 @AT@ 2506 @LENGTH@ 1
+

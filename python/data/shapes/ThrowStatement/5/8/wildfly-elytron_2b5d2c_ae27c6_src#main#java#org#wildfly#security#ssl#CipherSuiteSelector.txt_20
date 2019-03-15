@@ -1,0 +1,5 @@
+ThrowStatement
+---MethodInvocation
+------SimpleName
+---------MethodInvocation
+------------SimpleName

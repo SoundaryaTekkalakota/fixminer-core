@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(IllegalThreadStateException.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("IllegalThreadStateException") @AT@ 4545 @LENGTH@ 79
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(IllegalThreadStateException.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("IllegalThreadStateException") @AT@ 4545 @LENGTH@ 78
+------UPD SimpleName@@MethodName:add:[IllegalThreadStateException.class.getSimpleName()] @TO@ MethodName:add:["IllegalThreadStateException"] @AT@ 4569 @LENGTH@ 54
+---------INS StringLiteral@@"IllegalThreadStateException" @TO@ SimpleName@@MethodName:add:[IllegalThreadStateException.class.getSimpleName()] @AT@ 4083 @LENGTH@ 29
+---------DEL MethodInvocation@@IllegalThreadStateException.class.getSimpleName() @AT@ 4573 @LENGTH@ 49
+------------DEL TypeLiteral@@IllegalThreadStateException.class @AT@ 4573 @LENGTH@ 33
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 4607 @LENGTH@ 15
+

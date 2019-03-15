@@ -1,0 +1,16 @@
+ForStatement
+---VariableDeclarationExpression
+------PrimitiveType
+------VariableDeclarationFragment
+---------SimpleName
+---------NumberLiteral
+---InfixExpression
+------SimpleName
+------Operator
+------QualifiedName
+---------SimpleName
+---------SimpleName
+---PostfixExpression
+------SimpleName
+------Operator
+---IfStatement

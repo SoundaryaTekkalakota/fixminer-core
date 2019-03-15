@@ -1,0 +1,173 @@
+UPD VariableDeclarationStatement@@MetaScannerVisitor visitor=new MetaScannerVisitorBase(){
+  int countRecord=1;
+  final Comparator<KeyValue> comp=new Comparator<KeyValue>(){
+    public int compare(    KeyValue k1,    KeyValue k2){
+      return (int)(k1.getTimestamp() - k2.getTimestamp());
+    }
+  }
+;
+  public boolean processRow(  Result result) throws IOException {
+    try {
+      long ts=Collections.max(result.list(),comp).getTimestamp();
+      Pair<HRegionInfo,ServerName> pair=HRegionInfo.getHRegionInfoAndServerName(result);
+      if (pair == null || pair.getFirst() == null) {
+        emptyRegionInfoQualifiers.add(result);
+        return true;
+      }
+      ServerName sn=null;
+      if (pair.getSecond() != null) {
+        sn=pair.getSecond();
+      }
+      HRegionInfo hri=pair.getFirst();
+      if (!(isTableIncluded(hri.getTableNameAsString()) || hri.isMetaRegion() || hri.isRootRegion())) {
+        return true;
+      }
+      MetaEntry m=new MetaEntry(hri,sn,ts);
+      HbckInfo hbInfo=new HbckInfo(m);
+      HbckInfo previous=regionInfoMap.put(hri.getEncodedName(),hbInfo);
+      if (previous != null) {
+        throw new IOException("Two entries in META are same " + previous);
+      }
+      if (countRecord % 100 == 0) {
+        errors.progress();
+      }
+      countRecord++;
+      return true;
+    }
+ catch (    RuntimeException e) {
+      LOG.error("Result=" + result);
+      throw e;
+    }
+  }
+}
+; @TO@ MetaScannerVisitor visitor=new MetaScannerVisitorBase(){
+  int countRecord=1;
+  final Comparator<KeyValue> comp=new Comparator<KeyValue>(){
+    public int compare(    KeyValue k1,    KeyValue k2){
+      return (int)(k1.getTimestamp() - k2.getTimestamp());
+    }
+  }
+;
+  public boolean processRow(  Result result) throws IOException {
+    try {
+      long ts=Collections.max(result.list(),comp).getTimestamp();
+      Pair<HRegionInfo,ServerName> pair=HRegionInfo.getHRegionInfoAndServerName(result);
+      if (pair == null || pair.getFirst() == null) {
+        emptyRegionInfoQualifiers.add(result);
+        return true;
+      }
+      ServerName sn=null;
+      if (pair.getSecond() != null) {
+        sn=pair.getSecond();
+      }
+      HRegionInfo hri=pair.getFirst();
+      if (!(isTableIncluded(hri.getTableNameAsString()) || hri.isMetaRegion() || hri.isRootRegion())) {
+        return true;
+      }
+      PairOfSameType<HRegionInfo> daughters=HRegionInfo.getDaughterRegions(result);
+      MetaEntry m=new MetaEntry(hri,sn,ts,daughters.getFirst(),daughters.getSecond());
+      HbckInfo hbInfo=new HbckInfo(m);
+      HbckInfo previous=regionInfoMap.put(hri.getEncodedName(),hbInfo);
+      if (previous != null) {
+        throw new IOException("Two entries in META are same " + previous);
+      }
+      if (countRecord % 100 == 0) {
+        errors.progress();
+      }
+      countRecord++;
+      return true;
+    }
+ catch (    RuntimeException e) {
+      LOG.error("Result=" + result);
+      throw e;
+    }
+  }
+}
+; @AT@ 96603 @LENGTH@ 1773
+---UPD VariableDeclarationFragment@@visitor=new MetaScannerVisitorBase(){
+  int countRecord=1;
+  final Comparator<KeyValue> comp=new Comparator<KeyValue>(){
+    public int compare(    KeyValue k1,    KeyValue k2){
+      return (int)(k1.getTimestamp() - k2.getTimestamp());
+    }
+  }
+;
+  public boolean processRow(  Result result) throws IOException {
+    try {
+      long ts=Collections.max(result.list(),comp).getTimestamp();
+      Pair<HRegionInfo,ServerName> pair=HRegionInfo.getHRegionInfoAndServerName(result);
+      if (pair == null || pair.getFirst() == null) {
+        emptyRegionInfoQualifiers.add(result);
+        return true;
+      }
+      ServerName sn=null;
+      if (pair.getSecond() != null) {
+        sn=pair.getSecond();
+      }
+      HRegionInfo hri=pair.getFirst();
+      if (!(isTableIncluded(hri.getTableNameAsString()) || hri.isMetaRegion() || hri.isRootRegion())) {
+        return true;
+      }
+      MetaEntry m=new MetaEntry(hri,sn,ts);
+      HbckInfo hbInfo=new HbckInfo(m);
+      HbckInfo previous=regionInfoMap.put(hri.getEncodedName(),hbInfo);
+      if (previous != null) {
+        throw new IOException("Two entries in META are same " + previous);
+      }
+      if (countRecord % 100 == 0) {
+        errors.progress();
+      }
+      countRecord++;
+      return true;
+    }
+ catch (    RuntimeException e) {
+      LOG.error("Result=" + result);
+      throw e;
+    }
+  }
+}
+ @TO@ visitor=new MetaScannerVisitorBase(){
+  int countRecord=1;
+  final Comparator<KeyValue> comp=new Comparator<KeyValue>(){
+    public int compare(    KeyValue k1,    KeyValue k2){
+      return (int)(k1.getTimestamp() - k2.getTimestamp());
+    }
+  }
+;
+  public boolean processRow(  Result result) throws IOException {
+    try {
+      long ts=Collections.max(result.list(),comp).getTimestamp();
+      Pair<HRegionInfo,ServerName> pair=HRegionInfo.getHRegionInfoAndServerName(result);
+      if (pair == null || pair.getFirst() == null) {
+        emptyRegionInfoQualifiers.add(result);
+        return true;
+      }
+      ServerName sn=null;
+      if (pair.getSecond() != null) {
+        sn=pair.getSecond();
+      }
+      HRegionInfo hri=pair.getFirst();
+      if (!(isTableIncluded(hri.getTableNameAsString()) || hri.isMetaRegion() || hri.isRootRegion())) {
+        return true;
+      }
+      PairOfSameType<HRegionInfo> daughters=HRegionInfo.getDaughterRegions(result);
+      MetaEntry m=new MetaEntry(hri,sn,ts,daughters.getFirst(),daughters.getSecond());
+      HbckInfo hbInfo=new HbckInfo(m);
+      HbckInfo previous=regionInfoMap.put(hri.getEncodedName(),hbInfo);
+      if (previous != null) {
+        throw new IOException("Two entries in META are same " + previous);
+      }
+      if (countRecord % 100 == 0) {
+        errors.progress();
+      }
+      countRecord++;
+      return true;
+    }
+ catch (    RuntimeException e) {
+      LOG.error("Result=" + result);
+      throw e;
+    }
+  }
+}
+ @AT@ 96622 @LENGTH@ 1753
+

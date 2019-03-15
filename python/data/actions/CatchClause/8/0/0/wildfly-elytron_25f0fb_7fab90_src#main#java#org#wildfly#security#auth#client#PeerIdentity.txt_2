@@ -1,0 +1,8 @@
+ INS CatchClause
+--- INS SingleVariableDeclaration
+------ INS UnionType
+--------- INS SimpleType
+--------- INS SimpleType
+------ INS SimpleName
+--- INS ThrowStatement
+------ INS SimpleName

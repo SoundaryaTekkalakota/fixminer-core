@@ -1,0 +1,16 @@
+ExpressionStatement
+---MethodInvocation
+------SimpleName
+------SimpleName
+---------ArrayAccess
+------------SimpleName
+------------NumberLiteral
+---------ArrayAccess
+------------SimpleName
+------------NumberLiteral
+---------MethodInvocation
+------------SimpleName
+------------SimpleName
+---------MethodInvocation
+------------SimpleName
+------------SimpleName

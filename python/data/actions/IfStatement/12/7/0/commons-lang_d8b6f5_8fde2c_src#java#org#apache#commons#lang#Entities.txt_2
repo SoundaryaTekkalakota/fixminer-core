@@ -1,0 +1,12 @@
+ INS IfStatement
+--- INS InfixExpression
+------ INS SimpleName
+------ INS Operator
+------ INS NumberLiteral
+--- INS ExpressionStatement
+------ INS Assignment
+--------- INS SimpleName
+--------- INS Operator
+--------- INS PrefixExpression
+------------ INS Operator
+------------ INS NumberLiteral

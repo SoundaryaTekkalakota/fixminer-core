@@ -1,0 +1,17 @@
+ExpressionStatement
+---Assignment
+------ArrayAccess
+---------QualifiedName
+------------SimpleName
+------------SimpleName
+---------SimpleName
+------InfixExpression
+---------ArrayAccess
+---------Operator
+---------ParenthesizedExpression
+------------InfixExpression
+---------------ArrayAccess
+------------------SimpleName
+------------------NumberLiteral
+---------------Operator
+---------------NumberLiteral

@@ -1,0 +1,14 @@
+WhileStatement
+---InfixExpression
+------SimpleName
+------Operator
+------SimpleName
+---ExpressionStatement
+------Assignment
+---------SimpleName
+---------Operator
+---------SimpleName
+---ExpressionStatement
+------PrefixExpression
+---------Operator
+---------SimpleName

@@ -1,0 +1,7 @@
+ UPD ThrowStatement
+--- UPD ClassInstanceCreation
+------ DEL StringLiteral
+------ INS InfixExpression
+--------- INS StringLiteral
+--------- INS Operator
+--------- INS SimpleName

@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:message.setFlag(Flags.Flag.SEEN,true) @TO@ MethodInvocation:mail.setFlag(Flags.Flag.SEEN,true) @AT@ 9504 @LENGTH@ 39
+---UPD MethodInvocation@@message.setFlag(Flags.Flag.SEEN,true) @TO@ mail.setFlag(Flags.Flag.SEEN,true) @AT@ 9504 @LENGTH@ 38
+------UPD SimpleName@@Name:message @TO@ Name:mail @AT@ 9504 @LENGTH@ 7
+

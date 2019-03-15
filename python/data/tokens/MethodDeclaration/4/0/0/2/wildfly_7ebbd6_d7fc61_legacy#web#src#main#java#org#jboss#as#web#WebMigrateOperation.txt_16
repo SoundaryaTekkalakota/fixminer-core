@@ -1,0 +1,5 @@
+UPD MethodDeclaration@@private, void, MethodName:migrateConnector, OperationContext context, Map<PathAddress,ModelNode> newAddOperations, ModelNode newAddOp, PathAddress address, ModelNode legacyModelAddOps, List<String> warnings, OperationFailedException,  @TO@ private, void, MethodName:migrateConnector, OperationContext context, Map<PathAddress,ModelNode> newAddOperations, ModelNode newAddOp, PathAddress address, ModelNode legacyModelAddOps, List<String> warnings, boolean domainMode, OperationFailedException,  @AT@ 37705 @LENGTH@ 5680
+---INS SingleVariableDeclaration@@boolean domainMode @TO@ MethodDeclaration@@private, void, MethodName:migrateConnector, OperationContext context, Map<PathAddress,ModelNode> newAddOperations, ModelNode newAddOp, PathAddress address, ModelNode legacyModelAddOps, List<String> warnings, OperationFailedException,  @AT@ 40849 @LENGTH@ 18
+------INS PrimitiveType@@boolean @TO@ SingleVariableDeclaration@@boolean domainMode @AT@ 40849 @LENGTH@ 7
+------INS SimpleName@@domainMode @TO@ SingleVariableDeclaration@@boolean domainMode @AT@ 40857 @LENGTH@ 10
+

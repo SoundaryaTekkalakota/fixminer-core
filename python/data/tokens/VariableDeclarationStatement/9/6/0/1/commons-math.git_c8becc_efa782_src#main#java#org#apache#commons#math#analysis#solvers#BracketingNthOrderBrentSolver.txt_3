@@ -1,0 +1,10 @@
+INS VariableDeclarationStatement@@final double weightB=p + 1; @TO@ IfStatement@@InfixExpression:agingA >= MAXIMAL_AGING @AT@ 8640 @LENGTH@ 29
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@final double weightB=p + 1; @AT@ 8640 @LENGTH@ 5
+---INS PrimitiveType@@double @TO@ VariableDeclarationStatement@@final double weightB=p + 1; @AT@ 8646 @LENGTH@ 6
+---INS VariableDeclarationFragment@@weightB=p + 1 @TO@ VariableDeclarationStatement@@final double weightB=p + 1; @AT@ 8653 @LENGTH@ 15
+------INS SimpleName@@weightB @TO@ VariableDeclarationFragment@@weightB=p + 1 @AT@ 8653 @LENGTH@ 7
+------INS InfixExpression@@p + 1 @TO@ VariableDeclarationFragment@@weightB=p + 1 @AT@ 8663 @LENGTH@ 5
+---------INS SimpleName@@p @TO@ InfixExpression@@p + 1 @AT@ 8663 @LENGTH@ 1
+---------INS Operator@@+ @TO@ InfixExpression@@p + 1 @AT@ 8664 @LENGTH@ 1
+---------INS NumberLiteral@@1 @TO@ InfixExpression@@p + 1 @AT@ 8667 @LENGTH@ 1
+

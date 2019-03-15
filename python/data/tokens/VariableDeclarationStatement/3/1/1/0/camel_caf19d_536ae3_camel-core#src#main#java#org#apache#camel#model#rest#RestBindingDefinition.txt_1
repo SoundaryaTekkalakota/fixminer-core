@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@DataFormat json=context.resolveDataFormat(name); @TO@ DataFormat json=null; @AT@ 4149 @LENGTH@ 50
+---UPD VariableDeclarationFragment@@json=context.resolveDataFormat(name) @TO@ json=null @AT@ 4160 @LENGTH@ 38
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@json=context.resolveDataFormat(name) @AT@ 3607 @LENGTH@ 4
+

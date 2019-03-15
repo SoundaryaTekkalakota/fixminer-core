@@ -1,0 +1,13 @@
+UPD ConstructorInvocation@@this(resourceDescription,beanName,propertyName,(ex != null ? ex.getMessage() : "")); @TO@ this(resourceDescription,beanName,propertyName,""); @AT@ 2281 @LENGTH@ 87
+---DEL ParenthesizedExpression@@(ex != null ? ex.getMessage() : "") @AT@ 2331 @LENGTH@ 35
+------DEL ConditionalExpression@@ex != null ? ex.getMessage() : "" @AT@ 2332 @LENGTH@ 33
+---------DEL InfixExpression@@ex != null @AT@ 2332 @LENGTH@ 10
+------------DEL SimpleName@@ex @AT@ 2332 @LENGTH@ 2
+------------DEL Operator@@!= @AT@ 2334 @LENGTH@ 2
+------------DEL NullLiteral@@null @AT@ 2338 @LENGTH@ 4
+---------DEL MethodInvocation@@ex.getMessage() @AT@ 2345 @LENGTH@ 15
+------------DEL SimpleName@@Name:ex @AT@ 2345 @LENGTH@ 2
+------------DEL SimpleName@@MethodName:getMessage:[] @AT@ 2348 @LENGTH@ 12
+---------DEL StringLiteral@@"" @AT@ 2363 @LENGTH@ 2
+---INS StringLiteral@@"" @TO@ ConstructorInvocation@@this(resourceDescription,beanName,propertyName,(ex != null ? ex.getMessage() : "")); @AT@ 2347 @LENGTH@ 2
+

@@ -1,0 +1,9 @@
+DEL MethodDeclaration@@public, boolean, MethodName:isSetCols,  @AT@ 2296 @LENGTH@ 63
+---DEL Modifier@@public @AT@ 2296 @LENGTH@ 6
+---DEL PrimitiveType@@boolean @AT@ 2303 @LENGTH@ 7
+---DEL SimpleName@@MethodName:isSetCols @AT@ 2311 @LENGTH@ 9
+---DEL ReturnStatement@@MethodInvocation:shared.isSetCols() @AT@ 2329 @LENGTH@ 26
+------DEL MethodInvocation@@shared.isSetCols() @AT@ 2336 @LENGTH@ 18
+---------DEL SimpleName@@Name:shared @AT@ 2336 @LENGTH@ 6
+---------DEL SimpleName@@MethodName:isSetCols:[] @AT@ 2343 @LENGTH@ 11
+

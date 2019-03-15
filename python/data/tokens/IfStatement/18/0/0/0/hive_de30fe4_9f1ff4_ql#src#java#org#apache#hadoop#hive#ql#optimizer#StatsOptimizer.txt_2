@@ -1,0 +1,19 @@
+UPD IfStatement@@InfixExpression:cgbyOp.getConf().getOutputColumnNames().size() != cgbyOp.getConf().getAggregators().size() @TO@ PrefixExpression:!hasNullOrConstantGbyKey(cgbyOp) @AT@ 10016 @LENGTH@ 142
+---DEL InfixExpression@@cgbyOp.getConf().getOutputColumnNames().size() != cgbyOp.getConf().getAggregators().size() @AT@ 10020 @LENGTH@ 102
+------DEL MethodInvocation@@cgbyOp.getConf().getOutputColumnNames().size() @AT@ 10020 @LENGTH@ 46
+---------DEL SimpleName@@Name:cgbyOp @AT@ 10020 @LENGTH@ 6
+---------DEL MethodInvocation@@MethodName:getConf:[] @AT@ 10020 @LENGTH@ 16
+---------DEL MethodInvocation@@MethodName:getOutputColumnNames:[] @AT@ 10020 @LENGTH@ 39
+---------DEL SimpleName@@MethodName:size:[] @AT@ 10060 @LENGTH@ 6
+------DEL Operator@@!= @AT@ 10066 @LENGTH@ 2
+------DEL MethodInvocation@@cgbyOp.getConf().getAggregators().size() @AT@ 10082 @LENGTH@ 40
+---------DEL SimpleName@@Name:cgbyOp @AT@ 10082 @LENGTH@ 6
+---------DEL MethodInvocation@@MethodName:getConf:[] @AT@ 10082 @LENGTH@ 16
+---------DEL MethodInvocation@@MethodName:getAggregators:[] @AT@ 10082 @LENGTH@ 33
+---------DEL SimpleName@@MethodName:size:[] @AT@ 10116 @LENGTH@ 6
+---INS PrefixExpression@@!hasNullOrConstantGbyKey(cgbyOp) @TO@ IfStatement@@InfixExpression:cgbyOp.getConf().getOutputColumnNames().size() != cgbyOp.getConf().getAggregators().size() @AT@ 10455 @LENGTH@ 32
+------INS Operator@@! @TO@ PrefixExpression@@!hasNullOrConstantGbyKey(cgbyOp) @AT@ 10455 @LENGTH@ 1
+------INS MethodInvocation@@hasNullOrConstantGbyKey(cgbyOp) @TO@ PrefixExpression@@!hasNullOrConstantGbyKey(cgbyOp) @AT@ 10456 @LENGTH@ 31
+---------INS SimpleName@@MethodName:hasNullOrConstantGbyKey:[cgbyOp] @TO@ MethodInvocation@@hasNullOrConstantGbyKey(cgbyOp) @AT@ 10456 @LENGTH@ 31
+------------INS SimpleName@@cgbyOp @TO@ SimpleName@@MethodName:hasNullOrConstantGbyKey:[cgbyOp] @AT@ 10480 @LENGTH@ 6
+

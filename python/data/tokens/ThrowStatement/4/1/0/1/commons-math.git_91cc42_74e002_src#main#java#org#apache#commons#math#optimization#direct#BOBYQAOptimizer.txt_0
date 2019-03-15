@@ -1,0 +1,5 @@
+DEL ThrowStatement@@ClassInstanceCreation:new PathIsExploredException() @AT@ 77570 @LENGTH@ 36
+---DEL ClassInstanceCreation@@PathIsExploredException[] @AT@ 77576 @LENGTH@ 29
+------DEL New@@new @AT@ 77576 @LENGTH@ 3
+------DEL SimpleType@@PathIsExploredException @AT@ 77580 @LENGTH@ 23
+

@@ -1,0 +1,11 @@
+IfStatement
+---InfixExpression
+------SimpleName
+------Operator
+------NullLiteral
+---ThrowStatement
+------MethodInvocation
+---------SimpleName
+---------SimpleName
+------------SimpleName
+------------SimpleName

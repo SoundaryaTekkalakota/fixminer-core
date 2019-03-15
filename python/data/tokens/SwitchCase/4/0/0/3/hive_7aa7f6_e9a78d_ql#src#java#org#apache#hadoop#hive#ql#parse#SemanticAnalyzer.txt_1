@@ -1,0 +1,5 @@
+INS SwitchCase@@QualifiedName:HiveParser.TOK_NULL @TO@ SwitchStatement@@MethodInvocation:expr.getToken().getType() @AT@ 35566 @LENGTH@ 25
+---INS QualifiedName@@HiveParser.TOK_NULL @TO@ SwitchCase@@QualifiedName:HiveParser.TOK_NULL @AT@ 35571 @LENGTH@ 19
+------INS SimpleName@@HiveParser @TO@ QualifiedName@@HiveParser.TOK_NULL @AT@ 35571 @LENGTH@ 10
+------INS SimpleName@@TOK_NULL @TO@ QualifiedName@@HiveParser.TOK_NULL @AT@ 35582 @LENGTH@ 8
+

@@ -1,0 +1,8 @@
+UPD FieldDeclaration@@private, List<String>, [bootstrapModules=new ArrayList<>()] @TO@ private, Set<String>, [bootstrapModules=new LinkedHashSet<>()] @AT@ 6187 @LENGTH@ 58
+---UPD ParameterizedType@@List<String> @TO@ Set<String> @AT@ 6195 @LENGTH@ 12
+------UPD SimpleType@@List @TO@ Set @AT@ 6195 @LENGTH@ 4
+---UPD VariableDeclarationFragment@@bootstrapModules=new ArrayList<>() @TO@ bootstrapModules=new LinkedHashSet<>() @AT@ 6208 @LENGTH@ 36
+------UPD ClassInstanceCreation@@ArrayList<>[] @TO@ LinkedHashSet<>[] @AT@ 6227 @LENGTH@ 17
+---------UPD ParameterizedType@@ArrayList<> @TO@ LinkedHashSet<> @AT@ 6231 @LENGTH@ 11
+------------UPD SimpleType@@ArrayList @TO@ LinkedHashSet @AT@ 6231 @LENGTH@ 9
+

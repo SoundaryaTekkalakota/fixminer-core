@@ -1,0 +1,2 @@
+MOV MethodDeclaration@@public, Object, MethodName:doInHibernate, Session session, HibernateException, SQLException,  @TO@ TypeDeclaration@@[public]LocalSessionFactoryBean, AbstractSessionFactoryBean[BeanClassLoaderAware] @AT@ 39829 @LENGTH@ 437
+

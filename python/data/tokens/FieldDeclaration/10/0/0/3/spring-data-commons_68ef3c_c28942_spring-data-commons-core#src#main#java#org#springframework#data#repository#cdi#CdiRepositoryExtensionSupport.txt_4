@@ -1,0 +1,11 @@
+INS FieldDeclaration@@private, static, final, DefaultAnnotationLiteral, [INSTANCE=new DefaultAnnotationLiteral()] @TO@ TypeDeclaration@@[private, static]DefaultAnnotationLiteral, AnnotationLiteral<Default>[Default] @AT@ 4467 @LENGTH@ 88
+---INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, DefaultAnnotationLiteral, [INSTANCE=new DefaultAnnotationLiteral()] @AT@ 4467 @LENGTH@ 7
+---INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, DefaultAnnotationLiteral, [INSTANCE=new DefaultAnnotationLiteral()] @AT@ 4475 @LENGTH@ 6
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, DefaultAnnotationLiteral, [INSTANCE=new DefaultAnnotationLiteral()] @AT@ 4482 @LENGTH@ 5
+---INS SimpleType@@DefaultAnnotationLiteral @TO@ FieldDeclaration@@private, static, final, DefaultAnnotationLiteral, [INSTANCE=new DefaultAnnotationLiteral()] @AT@ 4488 @LENGTH@ 24
+---INS VariableDeclarationFragment@@INSTANCE=new DefaultAnnotationLiteral() @TO@ FieldDeclaration@@private, static, final, DefaultAnnotationLiteral, [INSTANCE=new DefaultAnnotationLiteral()] @AT@ 4513 @LENGTH@ 41
+------INS SimpleName@@INSTANCE @TO@ VariableDeclarationFragment@@INSTANCE=new DefaultAnnotationLiteral() @AT@ 4513 @LENGTH@ 8
+------INS ClassInstanceCreation@@DefaultAnnotationLiteral[] @TO@ VariableDeclarationFragment@@INSTANCE=new DefaultAnnotationLiteral() @AT@ 4524 @LENGTH@ 30
+---------INS New@@new @TO@ ClassInstanceCreation@@DefaultAnnotationLiteral[] @AT@ 4524 @LENGTH@ 3
+---------INS SimpleType@@DefaultAnnotationLiteral @TO@ ClassInstanceCreation@@DefaultAnnotationLiteral[] @AT@ 4528 @LENGTH@ 24
+

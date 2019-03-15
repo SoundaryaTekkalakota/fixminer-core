@@ -1,0 +1,34 @@
+UPD ExpressionStatement@@MethodInvocation:registration.registerMetric(REQUEST_COUNT,new AbstractMetricsHandler(){
+  @Override void handle(  final ModelNode response,  final String name,  final MetricsHandler.MetricResult metricResult,  final ServletInfo servlet){
+    response.set(metricResult.getTotalRequests());
+  }
+}
+) @TO@ MethodInvocation:registration.registerMetric(REQUEST_COUNT,new AbstractMetricsHandler(){
+  @Override void handle(  final ModelNode response,  final MetricsHandler.MetricResult metricResult){
+    response.set(metricResult.getTotalRequests());
+  }
+}
+) @AT@ 5158 @LENGTH@ 330
+---UPD MethodInvocation@@registration.registerMetric(REQUEST_COUNT,new AbstractMetricsHandler(){
+  @Override void handle(  final ModelNode response,  final String name,  final MetricsHandler.MetricResult metricResult,  final ServletInfo servlet){
+    response.set(metricResult.getTotalRequests());
+  }
+}
+) @TO@ registration.registerMetric(REQUEST_COUNT,new AbstractMetricsHandler(){
+  @Override void handle(  final ModelNode response,  final MetricsHandler.MetricResult metricResult){
+    response.set(metricResult.getTotalRequests());
+  }
+}
+) @AT@ 5158 @LENGTH@ 329
+------UPD SimpleName@@MethodName:registerMetric:[REQUEST_COUNT, new AbstractMetricsHandler(){
+  @Override void handle(  final ModelNode response,  final String name,  final MetricsHandler.MetricResult metricResult,  final ServletInfo servlet){
+    response.set(metricResult.getTotalRequests());
+  }
+}
+] @TO@ MethodName:registerMetric:[REQUEST_COUNT, new AbstractMetricsHandler(){
+  @Override void handle(  final ModelNode response,  final MetricsHandler.MetricResult metricResult){
+    response.set(metricResult.getTotalRequests());
+  }
+}
+] @AT@ 5171 @LENGTH@ 316
+

@@ -1,0 +1,7 @@
+ExpressionStatement
+---MethodInvocation
+------SimpleName
+------SimpleName
+---------PrefixExpression
+------------Operator
+------------NumberLiteral

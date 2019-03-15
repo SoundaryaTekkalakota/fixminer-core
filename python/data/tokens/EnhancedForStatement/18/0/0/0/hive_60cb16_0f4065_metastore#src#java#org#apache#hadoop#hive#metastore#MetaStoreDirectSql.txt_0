@@ -1,0 +1,19 @@
+INS EnhancedForStatement@@Partition t, MethodInvocation:partitions.values() @TO@ MethodDeclaration@@private, List<Partition>, MethodName:getPartitionsFromPartitionIds, String dbName, String tblName, Boolean isView, List<Object> partIdList, MetaException,  @AT@ 27712 @LENGTH@ 149
+---INS SingleVariableDeclaration@@Partition t @TO@ EnhancedForStatement@@Partition t, MethodInvocation:partitions.values() @AT@ 27717 @LENGTH@ 11
+------INS SimpleType@@Partition @TO@ SingleVariableDeclaration@@Partition t @AT@ 27717 @LENGTH@ 9
+------INS SimpleName@@t @TO@ SingleVariableDeclaration@@Partition t @AT@ 27727 @LENGTH@ 1
+---INS MethodInvocation@@partitions.values() @TO@ EnhancedForStatement@@Partition t, MethodInvocation:partitions.values() @AT@ 27731 @LENGTH@ 19
+------INS SimpleName@@Name:partitions @TO@ MethodInvocation@@partitions.values() @AT@ 27731 @LENGTH@ 10
+------INS SimpleName@@MethodName:values:[] @TO@ MethodInvocation@@partitions.values() @AT@ 27742 @LENGTH@ 8
+---INS ExpressionStatement@@MethodInvocation:t.setParameters(MetaStoreUtils.trimMapNulls(t.getParameters(),convertMapNullsToEmptyStrings)) @TO@ EnhancedForStatement@@Partition t, MethodInvocation:partitions.values() @AT@ 27760 @LENGTH@ 95
+------INS MethodInvocation@@t.setParameters(MetaStoreUtils.trimMapNulls(t.getParameters(),convertMapNullsToEmptyStrings)) @TO@ ExpressionStatement@@MethodInvocation:t.setParameters(MetaStoreUtils.trimMapNulls(t.getParameters(),convertMapNullsToEmptyStrings)) @AT@ 27760 @LENGTH@ 94
+---------INS SimpleName@@Name:t @TO@ MethodInvocation@@t.setParameters(MetaStoreUtils.trimMapNulls(t.getParameters(),convertMapNullsToEmptyStrings)) @AT@ 27760 @LENGTH@ 1
+---------INS SimpleName@@MethodName:setParameters:[MetaStoreUtils.trimMapNulls(t.getParameters(),convertMapNullsToEmptyStrings)] @TO@ MethodInvocation@@t.setParameters(MetaStoreUtils.trimMapNulls(t.getParameters(),convertMapNullsToEmptyStrings)) @AT@ 27762 @LENGTH@ 92
+------------INS MethodInvocation@@MetaStoreUtils.trimMapNulls(t.getParameters(),convertMapNullsToEmptyStrings) @TO@ SimpleName@@MethodName:setParameters:[MetaStoreUtils.trimMapNulls(t.getParameters(),convertMapNullsToEmptyStrings)] @AT@ 27776 @LENGTH@ 77
+---------------INS SimpleName@@Name:MetaStoreUtils @TO@ MethodInvocation@@MetaStoreUtils.trimMapNulls(t.getParameters(),convertMapNullsToEmptyStrings) @AT@ 27776 @LENGTH@ 14
+---------------INS SimpleName@@MethodName:trimMapNulls:[t.getParameters(), convertMapNullsToEmptyStrings] @TO@ MethodInvocation@@MetaStoreUtils.trimMapNulls(t.getParameters(),convertMapNullsToEmptyStrings) @AT@ 27791 @LENGTH@ 62
+------------------INS MethodInvocation@@t.getParameters() @TO@ SimpleName@@MethodName:trimMapNulls:[t.getParameters(), convertMapNullsToEmptyStrings] @AT@ 27804 @LENGTH@ 17
+---------------------INS SimpleName@@Name:t @TO@ MethodInvocation@@t.getParameters() @AT@ 27804 @LENGTH@ 1
+---------------------INS SimpleName@@MethodName:getParameters:[] @TO@ MethodInvocation@@t.getParameters() @AT@ 27806 @LENGTH@ 15
+------------------INS SimpleName@@convertMapNullsToEmptyStrings @TO@ SimpleName@@MethodName:trimMapNulls:[t.getParameters(), convertMapNullsToEmptyStrings] @AT@ 27823 @LENGTH@ 29
+

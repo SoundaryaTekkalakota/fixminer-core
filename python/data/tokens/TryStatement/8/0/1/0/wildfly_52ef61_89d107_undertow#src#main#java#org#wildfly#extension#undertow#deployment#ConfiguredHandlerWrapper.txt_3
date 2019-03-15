@@ -1,0 +1,9 @@
+INS TryStatement@@try:[] @TO@ IfStatement@@MethodInvocation:HttpHandler.class.isAssignableFrom(handlerClass) @AT@ 2463 @LENGTH@ 200
+---MOV ExpressionStatement@@Assignment:instance=ctor.newInstance(handler) @TO@ TryStatement@@try:[] @AT@ 2240 @LENGTH@ 37
+---INS Block@@FinallyBody @TO@ TryStatement@@try:[] @AT@ 2553 @LENGTH@ 110
+------INS ExpressionStatement@@MethodInvocation:WildFlySecurityManager.setCurrentContextClassLoaderPrivileged(prevCL) @TO@ Block@@FinallyBody @AT@ 2575 @LENGTH@ 70
+---------INS MethodInvocation@@WildFlySecurityManager.setCurrentContextClassLoaderPrivileged(prevCL) @TO@ ExpressionStatement@@MethodInvocation:WildFlySecurityManager.setCurrentContextClassLoaderPrivileged(prevCL) @AT@ 2575 @LENGTH@ 69
+------------INS SimpleName@@Name:WildFlySecurityManager @TO@ MethodInvocation@@WildFlySecurityManager.setCurrentContextClassLoaderPrivileged(prevCL) @AT@ 2575 @LENGTH@ 22
+------------INS SimpleName@@MethodName:setCurrentContextClassLoaderPrivileged:[prevCL] @TO@ MethodInvocation@@WildFlySecurityManager.setCurrentContextClassLoaderPrivileged(prevCL) @AT@ 2598 @LENGTH@ 46
+---------------INS SimpleName@@prevCL @TO@ SimpleName@@MethodName:setCurrentContextClassLoaderPrivileged:[prevCL] @AT@ 2637 @LENGTH@ 6
+

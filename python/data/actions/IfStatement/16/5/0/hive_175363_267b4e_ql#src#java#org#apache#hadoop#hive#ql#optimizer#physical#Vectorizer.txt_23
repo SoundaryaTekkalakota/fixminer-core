@@ -1,0 +1,16 @@
+ UPD IfStatement
+--- DEL MethodInvocation
+------ DEL SimpleName
+--------- DEL SimpleName
+--- DEL IfStatement
+------ DEL PrefixExpression
+--------- DEL Operator
+--------- DEL MethodInvocation
+------ DEL ExpressionStatement
+--------- DEL MethodInvocation
+------------ DEL SimpleName
+------------ DEL SimpleName
+--------------- DEL SimpleName
+--- INS MethodInvocation
+------ MOV SimpleName
+------ MOV SimpleName

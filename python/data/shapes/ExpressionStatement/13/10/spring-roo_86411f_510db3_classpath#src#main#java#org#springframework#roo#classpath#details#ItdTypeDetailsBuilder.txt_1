@@ -1,0 +1,13 @@
+ExpressionStatement
+---MethodInvocation
+------SimpleName
+---------PrefixExpression
+------------MethodInvocation
+---------------SimpleName
+---------------MethodInvocation
+---------------MethodInvocation
+---------------SimpleName
+------------------MethodInvocation
+---------------------SimpleName
+---------------------SimpleName
+------------SimpleName

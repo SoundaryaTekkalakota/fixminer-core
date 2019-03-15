@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:conn.openPipeline() @TO@ MethodInvocation:connToUse.openPipeline() @AT@ 6437 @LENGTH@ 20
+---UPD MethodInvocation@@conn.openPipeline() @TO@ connToUse.openPipeline() @AT@ 6437 @LENGTH@ 19
+------UPD SimpleName@@Name:conn @TO@ Name:connToUse @AT@ 6437 @LENGTH@ 4
+

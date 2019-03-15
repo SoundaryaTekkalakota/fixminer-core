@@ -1,0 +1,13 @@
+ExpressionStatement
+---Assignment
+------MethodInvocation
+---------FieldAccess
+------------ThisExpression
+------------SimpleName
+---------SimpleName
+------------StringLiteral
+------------InfixExpression
+---------------SimpleName
+---------------Operator
+---------------SimpleName
+------InfixExpression

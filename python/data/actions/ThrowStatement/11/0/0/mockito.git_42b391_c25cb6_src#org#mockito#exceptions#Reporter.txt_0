@@ -1,0 +1,11 @@
+ UPD ThrowStatement
+--- UPD ClassInstanceCreation
+------ UPD MethodInvocation
+--------- UPD SimpleName
+------------ UPD InfixExpression
+--------------- DEL MethodInvocation
+--------------- INS MethodInvocation
+------------------ INS SimpleName
+--------------------- INS MethodInvocation
+------------------------ MOV SimpleName
+------------------------ MOV SimpleName

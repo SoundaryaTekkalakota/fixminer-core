@@ -1,0 +1,5 @@
+UPD VariableDeclarationStatement@@String s=simple.getFromSentDate(); @TO@ String s=simple.getToReceivedDate(); @AT@ 6496 @LENGTH@ 36
+---UPD VariableDeclarationFragment@@s=simple.getFromSentDate() @TO@ s=simple.getToReceivedDate() @AT@ 6503 @LENGTH@ 28
+------UPD MethodInvocation@@simple.getFromSentDate() @TO@ simple.getToReceivedDate() @AT@ 6507 @LENGTH@ 24
+---------UPD SimpleName@@MethodName:getFromSentDate:[] @TO@ MethodName:getToReceivedDate:[] @AT@ 6514 @LENGTH@ 17
+

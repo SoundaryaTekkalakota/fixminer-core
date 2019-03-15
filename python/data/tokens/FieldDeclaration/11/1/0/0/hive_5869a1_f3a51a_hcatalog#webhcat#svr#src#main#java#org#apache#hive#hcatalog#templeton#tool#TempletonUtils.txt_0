@@ -1,0 +1,12 @@
+INS FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(TempletonUtils.class)] @TO@ TypeDeclaration@@[public]TempletonUtils,  @AT@ 2117 @LENGTH@ 71
+---INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(TempletonUtils.class)] @AT@ 2117 @LENGTH@ 7
+---INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(TempletonUtils.class)] @AT@ 2125 @LENGTH@ 6
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(TempletonUtils.class)] @AT@ 2132 @LENGTH@ 5
+---INS SimpleType@@Log @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(TempletonUtils.class)] @AT@ 2138 @LENGTH@ 3
+---INS VariableDeclarationFragment@@LOG=LogFactory.getLog(TempletonUtils.class) @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(TempletonUtils.class)] @AT@ 2142 @LENGTH@ 45
+------INS SimpleName@@LOG @TO@ VariableDeclarationFragment@@LOG=LogFactory.getLog(TempletonUtils.class) @AT@ 2142 @LENGTH@ 3
+------INS MethodInvocation@@LogFactory.getLog(TempletonUtils.class) @TO@ VariableDeclarationFragment@@LOG=LogFactory.getLog(TempletonUtils.class) @AT@ 2148 @LENGTH@ 39
+---------INS SimpleName@@Name:LogFactory @TO@ MethodInvocation@@LogFactory.getLog(TempletonUtils.class) @AT@ 2148 @LENGTH@ 10
+---------INS SimpleName@@MethodName:getLog:[TempletonUtils.class] @TO@ MethodInvocation@@LogFactory.getLog(TempletonUtils.class) @AT@ 2159 @LENGTH@ 28
+------------INS TypeLiteral@@TempletonUtils.class @TO@ SimpleName@@MethodName:getLog:[TempletonUtils.class] @AT@ 2166 @LENGTH@ 20
+

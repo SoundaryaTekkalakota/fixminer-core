@@ -1,0 +1,151 @@
+UPD ExpressionStatement@@MethodInvocation:context.addStep(new OperationStepHandler(){
+  @Override public void execute(  OperationContext context,  ModelNode operation) throws OperationFailedException {
+    final PathAddress address=PathAddress.pathAddress(operation.get(OP_ADDR));
+    String moduleName=resolveAttribute(JMSBridgeDefinition.MODULE,context,model);
+    final JMSBridge bridge=createJMSBridge(context,model);
+    final String bridgeName=address.getLastElement().getValue();
+    final JMSBridgeService bridgeService=new JMSBridgeService(moduleName,bridgeName,bridge);
+    final ServiceName bridgeServiceName=MessagingServices.getJMSBridgeServiceName(bridgeName);
+    final ServiceBuilder<JMSBridge> jmsBridgeServiceBuilder=context.getServiceTarget().addService(bridgeServiceName,bridgeService).addDependency(TxnServices.JBOSS_TXN_TRANSACTION_MANAGER).setInitialMode(Mode.ACTIVE);
+    addServerExecutorDependency(jmsBridgeServiceBuilder,bridgeService.getExecutorInjector());
+    if (dependsOnLocalResources(model,JMSBridgeDefinition.SOURCE_CONTEXT)) {
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.SOURCE_CONNECTION_FACTORY);
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.SOURCE_DESTINATION);
+    }
+    if (dependsOnLocalResources(model,JMSBridgeDefinition.TARGET_CONTEXT)) {
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.TARGET_CONNECTION_FACTORY);
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.TARGET_DESTINATION);
+    }
+    addCredentialStoreReference(bridgeService.getSourceCredentialSourceSupplierInjector(),JMSBridgeDefinition.SOURCE_CREDENTIAL_REFERENCE,context,model,jmsBridgeServiceBuilder);
+    addCredentialStoreReference(bridgeService.getTargetCredentialSourceSupplierInjector(),JMSBridgeDefinition.TARGET_CREDENTIAL_REFERENCE,context,model,jmsBridgeServiceBuilder);
+    jmsBridgeServiceBuilder.install();
+    context.completeStep(OperationContext.RollbackHandler.NOOP_ROLLBACK_HANDLER);
+  }
+}
+,OperationContext.Stage.RUNTIME) @TO@ MethodInvocation:context.addStep(new OperationStepHandler(){
+  @Override public void execute(  OperationContext context,  ModelNode operation) throws OperationFailedException {
+    final PathAddress address=PathAddress.pathAddress(operation.get(OP_ADDR));
+    String moduleName=resolveAttribute(JMSBridgeDefinition.MODULE,context,model);
+    final JMSBridge bridge=createJMSBridge(context,model);
+    final String bridgeName=address.getLastElement().getValue();
+    final JMSBridgeService bridgeService=new JMSBridgeService(moduleName,bridgeName,bridge);
+    final ServiceName bridgeServiceName=MessagingServices.getJMSBridgeServiceName(bridgeName);
+    final ServiceBuilder<JMSBridge> jmsBridgeServiceBuilder=context.getServiceTarget().addService(bridgeServiceName,bridgeService).addDependency(TxnServices.JBOSS_TXN_TRANSACTION_MANAGER).setInitialMode(Mode.ACTIVE);
+    addServerExecutorDependency(jmsBridgeServiceBuilder,bridgeService.getExecutorInjector());
+    if (dependsOnLocalResources(model,JMSBridgeDefinition.SOURCE_CONTEXT)) {
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.SOURCE_CONNECTION_FACTORY);
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.SOURCE_DESTINATION);
+    }
+    if (dependsOnLocalResources(model,JMSBridgeDefinition.TARGET_CONTEXT)) {
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.TARGET_CONNECTION_FACTORY);
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.TARGET_DESTINATION);
+    }
+    jmsBridgeServiceBuilder.addDependency(MessagingServices.ACTIVEMQ_CLIENT_THREAD_POOL);
+    addCredentialStoreReference(bridgeService.getSourceCredentialSourceSupplierInjector(),JMSBridgeDefinition.SOURCE_CREDENTIAL_REFERENCE,context,model,jmsBridgeServiceBuilder);
+    addCredentialStoreReference(bridgeService.getTargetCredentialSourceSupplierInjector(),JMSBridgeDefinition.TARGET_CREDENTIAL_REFERENCE,context,model,jmsBridgeServiceBuilder);
+    jmsBridgeServiceBuilder.install();
+    context.completeStep(OperationContext.RollbackHandler.NOOP_ROLLBACK_HANDLER);
+  }
+}
+,OperationContext.Stage.RUNTIME) @AT@ 3585 @LENGTH@ 2617
+---UPD MethodInvocation@@context.addStep(new OperationStepHandler(){
+  @Override public void execute(  OperationContext context,  ModelNode operation) throws OperationFailedException {
+    final PathAddress address=PathAddress.pathAddress(operation.get(OP_ADDR));
+    String moduleName=resolveAttribute(JMSBridgeDefinition.MODULE,context,model);
+    final JMSBridge bridge=createJMSBridge(context,model);
+    final String bridgeName=address.getLastElement().getValue();
+    final JMSBridgeService bridgeService=new JMSBridgeService(moduleName,bridgeName,bridge);
+    final ServiceName bridgeServiceName=MessagingServices.getJMSBridgeServiceName(bridgeName);
+    final ServiceBuilder<JMSBridge> jmsBridgeServiceBuilder=context.getServiceTarget().addService(bridgeServiceName,bridgeService).addDependency(TxnServices.JBOSS_TXN_TRANSACTION_MANAGER).setInitialMode(Mode.ACTIVE);
+    addServerExecutorDependency(jmsBridgeServiceBuilder,bridgeService.getExecutorInjector());
+    if (dependsOnLocalResources(model,JMSBridgeDefinition.SOURCE_CONTEXT)) {
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.SOURCE_CONNECTION_FACTORY);
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.SOURCE_DESTINATION);
+    }
+    if (dependsOnLocalResources(model,JMSBridgeDefinition.TARGET_CONTEXT)) {
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.TARGET_CONNECTION_FACTORY);
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.TARGET_DESTINATION);
+    }
+    addCredentialStoreReference(bridgeService.getSourceCredentialSourceSupplierInjector(),JMSBridgeDefinition.SOURCE_CREDENTIAL_REFERENCE,context,model,jmsBridgeServiceBuilder);
+    addCredentialStoreReference(bridgeService.getTargetCredentialSourceSupplierInjector(),JMSBridgeDefinition.TARGET_CREDENTIAL_REFERENCE,context,model,jmsBridgeServiceBuilder);
+    jmsBridgeServiceBuilder.install();
+    context.completeStep(OperationContext.RollbackHandler.NOOP_ROLLBACK_HANDLER);
+  }
+}
+,OperationContext.Stage.RUNTIME) @TO@ context.addStep(new OperationStepHandler(){
+  @Override public void execute(  OperationContext context,  ModelNode operation) throws OperationFailedException {
+    final PathAddress address=PathAddress.pathAddress(operation.get(OP_ADDR));
+    String moduleName=resolveAttribute(JMSBridgeDefinition.MODULE,context,model);
+    final JMSBridge bridge=createJMSBridge(context,model);
+    final String bridgeName=address.getLastElement().getValue();
+    final JMSBridgeService bridgeService=new JMSBridgeService(moduleName,bridgeName,bridge);
+    final ServiceName bridgeServiceName=MessagingServices.getJMSBridgeServiceName(bridgeName);
+    final ServiceBuilder<JMSBridge> jmsBridgeServiceBuilder=context.getServiceTarget().addService(bridgeServiceName,bridgeService).addDependency(TxnServices.JBOSS_TXN_TRANSACTION_MANAGER).setInitialMode(Mode.ACTIVE);
+    addServerExecutorDependency(jmsBridgeServiceBuilder,bridgeService.getExecutorInjector());
+    if (dependsOnLocalResources(model,JMSBridgeDefinition.SOURCE_CONTEXT)) {
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.SOURCE_CONNECTION_FACTORY);
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.SOURCE_DESTINATION);
+    }
+    if (dependsOnLocalResources(model,JMSBridgeDefinition.TARGET_CONTEXT)) {
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.TARGET_CONNECTION_FACTORY);
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.TARGET_DESTINATION);
+    }
+    jmsBridgeServiceBuilder.addDependency(MessagingServices.ACTIVEMQ_CLIENT_THREAD_POOL);
+    addCredentialStoreReference(bridgeService.getSourceCredentialSourceSupplierInjector(),JMSBridgeDefinition.SOURCE_CREDENTIAL_REFERENCE,context,model,jmsBridgeServiceBuilder);
+    addCredentialStoreReference(bridgeService.getTargetCredentialSourceSupplierInjector(),JMSBridgeDefinition.TARGET_CREDENTIAL_REFERENCE,context,model,jmsBridgeServiceBuilder);
+    jmsBridgeServiceBuilder.install();
+    context.completeStep(OperationContext.RollbackHandler.NOOP_ROLLBACK_HANDLER);
+  }
+}
+,OperationContext.Stage.RUNTIME) @AT@ 3585 @LENGTH@ 2616
+------UPD SimpleName@@MethodName:addStep:[new OperationStepHandler(){
+  @Override public void execute(  OperationContext context,  ModelNode operation) throws OperationFailedException {
+    final PathAddress address=PathAddress.pathAddress(operation.get(OP_ADDR));
+    String moduleName=resolveAttribute(JMSBridgeDefinition.MODULE,context,model);
+    final JMSBridge bridge=createJMSBridge(context,model);
+    final String bridgeName=address.getLastElement().getValue();
+    final JMSBridgeService bridgeService=new JMSBridgeService(moduleName,bridgeName,bridge);
+    final ServiceName bridgeServiceName=MessagingServices.getJMSBridgeServiceName(bridgeName);
+    final ServiceBuilder<JMSBridge> jmsBridgeServiceBuilder=context.getServiceTarget().addService(bridgeServiceName,bridgeService).addDependency(TxnServices.JBOSS_TXN_TRANSACTION_MANAGER).setInitialMode(Mode.ACTIVE);
+    addServerExecutorDependency(jmsBridgeServiceBuilder,bridgeService.getExecutorInjector());
+    if (dependsOnLocalResources(model,JMSBridgeDefinition.SOURCE_CONTEXT)) {
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.SOURCE_CONNECTION_FACTORY);
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.SOURCE_DESTINATION);
+    }
+    if (dependsOnLocalResources(model,JMSBridgeDefinition.TARGET_CONTEXT)) {
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.TARGET_CONNECTION_FACTORY);
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.TARGET_DESTINATION);
+    }
+    addCredentialStoreReference(bridgeService.getSourceCredentialSourceSupplierInjector(),JMSBridgeDefinition.SOURCE_CREDENTIAL_REFERENCE,context,model,jmsBridgeServiceBuilder);
+    addCredentialStoreReference(bridgeService.getTargetCredentialSourceSupplierInjector(),JMSBridgeDefinition.TARGET_CREDENTIAL_REFERENCE,context,model,jmsBridgeServiceBuilder);
+    jmsBridgeServiceBuilder.install();
+    context.completeStep(OperationContext.RollbackHandler.NOOP_ROLLBACK_HANDLER);
+  }
+}
+, OperationContext.Stage.RUNTIME] @TO@ MethodName:addStep:[new OperationStepHandler(){
+  @Override public void execute(  OperationContext context,  ModelNode operation) throws OperationFailedException {
+    final PathAddress address=PathAddress.pathAddress(operation.get(OP_ADDR));
+    String moduleName=resolveAttribute(JMSBridgeDefinition.MODULE,context,model);
+    final JMSBridge bridge=createJMSBridge(context,model);
+    final String bridgeName=address.getLastElement().getValue();
+    final JMSBridgeService bridgeService=new JMSBridgeService(moduleName,bridgeName,bridge);
+    final ServiceName bridgeServiceName=MessagingServices.getJMSBridgeServiceName(bridgeName);
+    final ServiceBuilder<JMSBridge> jmsBridgeServiceBuilder=context.getServiceTarget().addService(bridgeServiceName,bridgeService).addDependency(TxnServices.JBOSS_TXN_TRANSACTION_MANAGER).setInitialMode(Mode.ACTIVE);
+    addServerExecutorDependency(jmsBridgeServiceBuilder,bridgeService.getExecutorInjector());
+    if (dependsOnLocalResources(model,JMSBridgeDefinition.SOURCE_CONTEXT)) {
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.SOURCE_CONNECTION_FACTORY);
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.SOURCE_DESTINATION);
+    }
+    if (dependsOnLocalResources(model,JMSBridgeDefinition.TARGET_CONTEXT)) {
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.TARGET_CONNECTION_FACTORY);
+      addDependencyForJNDIResource(jmsBridgeServiceBuilder,model,context,JMSBridgeDefinition.TARGET_DESTINATION);
+    }
+    jmsBridgeServiceBuilder.addDependency(MessagingServices.ACTIVEMQ_CLIENT_THREAD_POOL);
+    addCredentialStoreReference(bridgeService.getSourceCredentialSourceSupplierInjector(),JMSBridgeDefinition.SOURCE_CREDENTIAL_REFERENCE,context,model,jmsBridgeServiceBuilder);
+    addCredentialStoreReference(bridgeService.getTargetCredentialSourceSupplierInjector(),JMSBridgeDefinition.TARGET_CREDENTIAL_REFERENCE,context,model,jmsBridgeServiceBuilder);
+    jmsBridgeServiceBuilder.install();
+    context.completeStep(OperationContext.RollbackHandler.NOOP_ROLLBACK_HANDLER);
+  }
+}
+, OperationContext.Stage.RUNTIME] @AT@ 3593 @LENGTH@ 2608
+

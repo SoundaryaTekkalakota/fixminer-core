@@ -1,0 +1,9 @@
+VariableDeclarationStatement
+---VariableDeclarationFragment
+------MethodInvocation
+---------SimpleName
+---------SimpleName
+------------SimpleName
+------MethodInvocation
+---------SimpleName
+------------SimpleName

@@ -1,0 +1,9 @@
+ INS VariableDeclarationStatement
+--- INS Modifier
+--- INS PrimitiveType
+--- INS VariableDeclarationFragment
+------ INS SimpleName
+------ INS InfixExpression
+--------- INS SimpleName
+--------- INS Operator
+--------- INS NumberLiteral

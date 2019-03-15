@@ -1,0 +1,10 @@
+IfStatement
+---FieldAccess
+---InfixExpression
+------FieldAccess
+---------ThisExpression
+---------SimpleName
+------Operator
+------QualifiedName
+---------SimpleName
+---------SimpleName

@@ -1,0 +1,6 @@
+INS TypeDeclaration@@[private, static]FullPathComponentBuilder, [PathComponentBuilder] @TO@ TypeDeclaration@@[public]UriComponentsBuilder,  @AT@ 19849 @LENGTH@ 583
+---INS Modifier@@private @TO@ TypeDeclaration@@[private, static]FullPathComponentBuilder, [PathComponentBuilder] @AT@ 19849 @LENGTH@ 7
+---INS Modifier@@static @TO@ TypeDeclaration@@[private, static]FullPathComponentBuilder, [PathComponentBuilder] @AT@ 19857 @LENGTH@ 6
+---INS SimpleName@@ClassName:FullPathComponentBuilder @TO@ TypeDeclaration@@[private, static]FullPathComponentBuilder, [PathComponentBuilder] @AT@ 19870 @LENGTH@ 24
+---INS SimpleType@@PathComponentBuilder @TO@ TypeDeclaration@@[private, static]FullPathComponentBuilder, [PathComponentBuilder] @AT@ 19906 @LENGTH@ 20
+

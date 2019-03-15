@@ -1,0 +1,26 @@
+INS IfStatement@@InfixExpression:this.mergePool.getCorePoolSize() < mergeThreads @TO@ IfStatement@@InfixExpression:this.mergePool.getCorePoolSize() != mergeThreads @AT@ 25991 @LENGTH@ 298
+---MOV ExpressionStatement@@MethodInvocation:this.mergePool.setMaximumPoolSize(smallThreads) @TO@ IfStatement@@InfixExpression:this.mergePool.getCorePoolSize() < mergeThreads @AT@ 25367 @LENGTH@ 48
+---MOV ExpressionStatement@@MethodInvocation:this.mergePool.setCorePoolSize(smallThreads) @TO@ IfStatement@@InfixExpression:this.mergePool.getCorePoolSize() < mergeThreads @AT@ 25422 @LENGTH@ 45
+---INS InfixExpression@@this.mergePool.getCorePoolSize() < mergeThreads @TO@ IfStatement@@InfixExpression:this.mergePool.getCorePoolSize() < mergeThreads @AT@ 25994 @LENGTH@ 47
+------INS MethodInvocation@@this.mergePool.getCorePoolSize() @TO@ InfixExpression@@this.mergePool.getCorePoolSize() < mergeThreads @AT@ 25994 @LENGTH@ 32
+---------INS FieldAccess@@this.mergePool @TO@ MethodInvocation@@this.mergePool.getCorePoolSize() @AT@ 25994 @LENGTH@ 14
+------------INS ThisExpression@@this @TO@ FieldAccess@@this.mergePool @AT@ 25994 @LENGTH@ 4
+------------INS SimpleName@@mergePool @TO@ FieldAccess@@this.mergePool @AT@ 25999 @LENGTH@ 9
+---------INS SimpleName@@MethodName:getCorePoolSize:[] @TO@ MethodInvocation@@this.mergePool.getCorePoolSize() @AT@ 26009 @LENGTH@ 17
+------INS Operator@@< @TO@ InfixExpression@@this.mergePool.getCorePoolSize() < mergeThreads @AT@ 26026 @LENGTH@ 1
+------INS SimpleName@@mergeThreads @TO@ InfixExpression@@this.mergePool.getCorePoolSize() < mergeThreads @AT@ 26029 @LENGTH@ 12
+---INS ExpressionStatement@@MethodInvocation:this.mergePool.setCorePoolSize(mergeThreads) @TO@ IfStatement@@InfixExpression:this.mergePool.getCorePoolSize() < mergeThreads @AT@ 26179 @LENGTH@ 45
+------INS MethodInvocation@@this.mergePool.setCorePoolSize(mergeThreads) @TO@ ExpressionStatement@@MethodInvocation:this.mergePool.setCorePoolSize(mergeThreads) @AT@ 26179 @LENGTH@ 44
+---------INS FieldAccess@@this.mergePool @TO@ MethodInvocation@@this.mergePool.setCorePoolSize(mergeThreads) @AT@ 26179 @LENGTH@ 14
+------------INS ThisExpression@@this @TO@ FieldAccess@@this.mergePool @AT@ 26179 @LENGTH@ 4
+------------INS SimpleName@@mergePool @TO@ FieldAccess@@this.mergePool @AT@ 26184 @LENGTH@ 9
+---------INS SimpleName@@MethodName:setCorePoolSize:[mergeThreads] @TO@ MethodInvocation@@this.mergePool.setCorePoolSize(mergeThreads) @AT@ 26194 @LENGTH@ 29
+------------INS SimpleName@@mergeThreads @TO@ SimpleName@@MethodName:setCorePoolSize:[mergeThreads] @AT@ 26210 @LENGTH@ 12
+---INS ExpressionStatement@@MethodInvocation:this.mergePool.setMaximumPoolSize(mergeThreads) @TO@ IfStatement@@InfixExpression:this.mergePool.getCorePoolSize() < mergeThreads @AT@ 26233 @LENGTH@ 48
+------INS MethodInvocation@@this.mergePool.setMaximumPoolSize(mergeThreads) @TO@ ExpressionStatement@@MethodInvocation:this.mergePool.setMaximumPoolSize(mergeThreads) @AT@ 26233 @LENGTH@ 47
+---------INS FieldAccess@@this.mergePool @TO@ MethodInvocation@@this.mergePool.setMaximumPoolSize(mergeThreads) @AT@ 26233 @LENGTH@ 14
+------------INS ThisExpression@@this @TO@ FieldAccess@@this.mergePool @AT@ 26233 @LENGTH@ 4
+------------INS SimpleName@@mergePool @TO@ FieldAccess@@this.mergePool @AT@ 26238 @LENGTH@ 9
+---------INS SimpleName@@MethodName:setMaximumPoolSize:[mergeThreads] @TO@ MethodInvocation@@this.mergePool.setMaximumPoolSize(mergeThreads) @AT@ 26248 @LENGTH@ 32
+------------INS SimpleName@@mergeThreads @TO@ SimpleName@@MethodName:setMaximumPoolSize:[mergeThreads] @AT@ 26267 @LENGTH@ 12
+

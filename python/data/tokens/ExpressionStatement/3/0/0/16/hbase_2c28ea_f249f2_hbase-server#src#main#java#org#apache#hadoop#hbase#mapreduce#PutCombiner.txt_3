@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.info(String.format("Combined %d Put(s) into %d.",cnt,1)) @TO@ MethodInvocation:LOG.debug(String.format("Combined %d Put(s) into %d.",cnt,1)) @AT@ 3383 @LENGTH@ 63
+---UPD MethodInvocation@@LOG.info(String.format("Combined %d Put(s) into %d.",cnt,1)) @TO@ LOG.debug(String.format("Combined %d Put(s) into %d.",cnt,1)) @AT@ 3383 @LENGTH@ 62
+------UPD SimpleName@@MethodName:info:[String.format("Combined %d Put(s) into %d.",cnt,1)] @TO@ MethodName:debug:[String.format("Combined %d Put(s) into %d.",cnt,1)] @AT@ 3387 @LENGTH@ 58
+

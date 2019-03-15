@@ -1,0 +1,3 @@
+UPD TypeDeclaration@@[public, static]RegionServerStdOutSink, StdOutSink[ExtendedSink] @TO@ [public, static]RegionServerStdOutSink, StdOutSink @AT@ 9729 @LENGTH@ 509
+---DEL SimpleType@@ExtendedSink @AT@ 9802 @LENGTH@ 12
+

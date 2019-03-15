@@ -1,0 +1,6 @@
+UPD IfStatement@@InfixExpression:(e.getCause() instanceof MetaException) && e.getCause().getMessage().matches("(?s).*JDO[a-zA-Z]*Exception.*") @TO@ InfixExpression:(e.getCause() instanceof MetaException) && e.getCause().getMessage().matches("(?s).*(JDO[a-zA-Z]*|TApplication|TProtocol|TTransport)Exception.*") @AT@ 4686 @LENGTH@ 243
+---UPD InfixExpression@@(e.getCause() instanceof MetaException) && e.getCause().getMessage().matches("(?s).*JDO[a-zA-Z]*Exception.*") @TO@ (e.getCause() instanceof MetaException) && e.getCause().getMessage().matches("(?s).*(JDO[a-zA-Z]*|TApplication|TProtocol|TTransport)Exception.*") @AT@ 4690 @LENGTH@ 121
+------UPD MethodInvocation@@e.getCause().getMessage().matches("(?s).*JDO[a-zA-Z]*Exception.*") @TO@ e.getCause().getMessage().matches("(?s).*(JDO[a-zA-Z]*|TApplication|TProtocol|TTransport)Exception.*") @AT@ 4745 @LENGTH@ 66
+---------UPD SimpleName@@MethodName:matches:["(?s).*JDO[a-zA-Z]*Exception.*"] @TO@ MethodName:matches:["(?s).*(JDO[a-zA-Z]*|TApplication|TProtocol|TTransport)Exception.*"] @AT@ 4771 @LENGTH@ 40
+------------UPD StringLiteral@@"(?s).*JDO[a-zA-Z]*Exception.*" @TO@ "(?s).*(JDO[a-zA-Z]*|TApplication|TProtocol|TTransport)Exception.*" @AT@ 4779 @LENGTH@ 31
+

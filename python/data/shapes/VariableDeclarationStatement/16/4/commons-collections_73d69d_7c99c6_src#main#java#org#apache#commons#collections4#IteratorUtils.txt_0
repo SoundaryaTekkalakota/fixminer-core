@@ -1,0 +1,16 @@
+VariableDeclarationStatement
+---Modifier
+---ParameterizedType
+------SimpleType
+------SimpleType
+---VariableDeclarationFragment
+------SimpleName
+------ConditionalExpression
+---------InfixExpression
+------------SimpleName
+------------Operator
+------------NullLiteral
+---------QualifiedName
+------------SimpleName
+------------SimpleName
+---------SimpleName

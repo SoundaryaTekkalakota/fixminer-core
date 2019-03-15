@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, Topology, [topology] @TO@ TypeDeclaration@@[public, static]TopologyAsyncListener, [AsyncListener] @AT@ 6842 @LENGTH@ 32
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, Topology, [topology] @AT@ 6842 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, Topology, [topology] @AT@ 6850 @LENGTH@ 5
+---INS SimpleType@@Topology @TO@ FieldDeclaration@@private, final, Topology, [topology] @AT@ 6856 @LENGTH@ 8
+---INS VariableDeclarationFragment@@topology @TO@ FieldDeclaration@@private, final, Topology, [topology] @AT@ 6865 @LENGTH@ 8
+------INS SimpleName@@topology @TO@ VariableDeclarationFragment@@topology @AT@ 6865 @LENGTH@ 8
+

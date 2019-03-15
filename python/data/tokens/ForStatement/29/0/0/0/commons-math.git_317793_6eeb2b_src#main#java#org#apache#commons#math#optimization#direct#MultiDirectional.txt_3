@@ -1,0 +1,30 @@
+INS ForStatement@@[int i=0];i < simplex.length; [++i] @TO@ WhileStatement@@BooleanLiteral:true @AT@ 3598 @LENGTH@ 135
+---INS VariableDeclarationExpression@@int i=0 @TO@ ForStatement@@[int i=0];i < simplex.length; [++i] @AT@ 3603 @LENGTH@ 9
+------INS PrimitiveType@@int @TO@ VariableDeclarationExpression@@int i=0 @AT@ 3603 @LENGTH@ 3
+------INS VariableDeclarationFragment@@i=0 @TO@ VariableDeclarationExpression@@int i=0 @AT@ 3607 @LENGTH@ 5
+---------INS SimpleName@@i @TO@ VariableDeclarationFragment@@i=0 @AT@ 3607 @LENGTH@ 1
+---------INS NumberLiteral@@0 @TO@ VariableDeclarationFragment@@i=0 @AT@ 3611 @LENGTH@ 1
+---INS InfixExpression@@i < simplex.length @TO@ ForStatement@@[int i=0];i < simplex.length; [++i] @AT@ 3614 @LENGTH@ 18
+------INS SimpleName@@i @TO@ InfixExpression@@i < simplex.length @AT@ 3614 @LENGTH@ 1
+------INS Operator@@< @TO@ InfixExpression@@i < simplex.length @AT@ 3615 @LENGTH@ 1
+------INS QualifiedName@@simplex.length @TO@ InfixExpression@@i < simplex.length @AT@ 3618 @LENGTH@ 14
+---------INS SimpleName@@simplex @TO@ QualifiedName@@simplex.length @AT@ 3618 @LENGTH@ 7
+---------INS SimpleName@@length @TO@ QualifiedName@@simplex.length @AT@ 3626 @LENGTH@ 6
+---INS PrefixExpression@@++i @TO@ ForStatement@@[int i=0];i < simplex.length; [++i] @AT@ 3634 @LENGTH@ 3
+------INS Operator@@++ @TO@ PrefixExpression@@++i @AT@ 3634 @LENGTH@ 2
+------INS SimpleName@@i @TO@ PrefixExpression@@++i @AT@ 3636 @LENGTH@ 1
+---INS ExpressionStatement@@Assignment:converged&=checker.converged(iter,original[i],simplex[i]) @TO@ ForStatement@@[int i=0];i < simplex.length; [++i] @AT@ 3657 @LENGTH@ 62
+------INS Assignment@@converged&=checker.converged(iter,original[i],simplex[i]) @TO@ ExpressionStatement@@Assignment:converged&=checker.converged(iter,original[i],simplex[i]) @AT@ 3657 @LENGTH@ 61
+---------INS SimpleName@@converged @TO@ Assignment@@converged&=checker.converged(iter,original[i],simplex[i]) @AT@ 3657 @LENGTH@ 9
+---------INS Operator@@&= @TO@ Assignment@@converged&=checker.converged(iter,original[i],simplex[i]) @AT@ 3666 @LENGTH@ 2
+---------INS MethodInvocation@@checker.converged(iter,original[i],simplex[i]) @TO@ Assignment@@converged&=checker.converged(iter,original[i],simplex[i]) @AT@ 3670 @LENGTH@ 48
+------------INS SimpleName@@Name:checker @TO@ MethodInvocation@@checker.converged(iter,original[i],simplex[i]) @AT@ 3670 @LENGTH@ 7
+------------INS SimpleName@@MethodName:converged:[iter, original[i], simplex[i]] @TO@ MethodInvocation@@checker.converged(iter,original[i],simplex[i]) @AT@ 3678 @LENGTH@ 40
+---------------INS SimpleName@@iter @TO@ SimpleName@@MethodName:converged:[iter, original[i], simplex[i]] @AT@ 3688 @LENGTH@ 4
+---------------INS ArrayAccess@@original[i] @TO@ SimpleName@@MethodName:converged:[iter, original[i], simplex[i]] @AT@ 3694 @LENGTH@ 11
+------------------INS SimpleName@@original @TO@ ArrayAccess@@original[i] @AT@ 3694 @LENGTH@ 8
+------------------INS SimpleName@@i @TO@ ArrayAccess@@original[i] @AT@ 3703 @LENGTH@ 1
+---------------INS ArrayAccess@@simplex[i] @TO@ SimpleName@@MethodName:converged:[iter, original[i], simplex[i]] @AT@ 3707 @LENGTH@ 10
+------------------INS SimpleName@@simplex @TO@ ArrayAccess@@simplex[i] @AT@ 3707 @LENGTH@ 7
+------------------INS SimpleName@@i @TO@ ArrayAccess@@simplex[i] @AT@ 3715 @LENGTH@ 1
+

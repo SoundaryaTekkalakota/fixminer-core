@@ -1,0 +1,4 @@
+UPD IfStatement@@InfixExpression:preRealmPrincipal == null @TO@ InfixExpression:postRealmPrincipal == null @AT@ 60634 @LENGTH@ 268
+---UPD InfixExpression@@preRealmPrincipal == null @TO@ postRealmPrincipal == null @AT@ 60638 @LENGTH@ 25
+------UPD SimpleName@@preRealmPrincipal @TO@ postRealmPrincipal @AT@ 60638 @LENGTH@ 17
+

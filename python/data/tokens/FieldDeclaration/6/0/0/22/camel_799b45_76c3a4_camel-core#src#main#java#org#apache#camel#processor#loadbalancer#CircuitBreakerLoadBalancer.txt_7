@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, Exchange, [exchange] @TO@ TypeDeclaration@@CircuitBreakerCallback, [AsyncCallback] @AT@ 5707 @LENGTH@ 32
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, Exchange, [exchange] @AT@ 5707 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, Exchange, [exchange] @AT@ 5715 @LENGTH@ 5
+---INS SimpleType@@Exchange @TO@ FieldDeclaration@@private, final, Exchange, [exchange] @AT@ 5721 @LENGTH@ 8
+---INS VariableDeclarationFragment@@exchange @TO@ FieldDeclaration@@private, final, Exchange, [exchange] @AT@ 5730 @LENGTH@ 8
+------INS SimpleName@@exchange @TO@ VariableDeclarationFragment@@exchange @AT@ 5730 @LENGTH@ 8
+

@@ -1,0 +1,11 @@
+IfStatement
+---InstanceofExpression
+------ThisExpression
+------SimpleName
+---ExpressionStatement
+------Assignment
+---------MethodInvocation
+------------ParenthesizedExpression
+---------------CastExpression
+------------------ThisExpression
+------------------SimpleName

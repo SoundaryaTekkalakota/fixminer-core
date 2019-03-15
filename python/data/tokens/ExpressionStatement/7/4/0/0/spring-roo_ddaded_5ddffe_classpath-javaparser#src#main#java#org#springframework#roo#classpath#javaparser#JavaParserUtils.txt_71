@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(ExceptionInInitializerError.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("ExceptionInInitializerError") @AT@ 5905 @LENGTH@ 79
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(ExceptionInInitializerError.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("ExceptionInInitializerError") @AT@ 5905 @LENGTH@ 78
+------UPD SimpleName@@MethodName:add:[ExceptionInInitializerError.class.getSimpleName()] @TO@ MethodName:add:["ExceptionInInitializerError"] @AT@ 5929 @LENGTH@ 54
+---------INS StringLiteral@@"ExceptionInInitializerError" @TO@ SimpleName@@MethodName:add:[ExceptionInInitializerError.class.getSimpleName()] @AT@ 5141 @LENGTH@ 29
+---------DEL MethodInvocation@@ExceptionInInitializerError.class.getSimpleName() @AT@ 5933 @LENGTH@ 49
+------------DEL TypeLiteral@@ExceptionInInitializerError.class @AT@ 5933 @LENGTH@ 33
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 5967 @LENGTH@ 15
+

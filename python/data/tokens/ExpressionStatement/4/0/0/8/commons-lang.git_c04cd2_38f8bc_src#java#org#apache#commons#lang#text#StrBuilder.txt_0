@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:str.getChars(0,strLen,buffer,size) @TO@ MethodInvocation:str.getChars(0,width,buffer,size) @AT@ 29429 @LENGTH@ 38
+---UPD MethodInvocation@@str.getChars(0,strLen,buffer,size) @TO@ str.getChars(0,width,buffer,size) @AT@ 29429 @LENGTH@ 37
+------UPD SimpleName@@MethodName:getChars:[0, strLen, buffer, size] @TO@ MethodName:getChars:[0, width, buffer, size] @AT@ 29433 @LENGTH@ 33
+---------UPD SimpleName@@strLen @TO@ width @AT@ 29445 @LENGTH@ 6
+

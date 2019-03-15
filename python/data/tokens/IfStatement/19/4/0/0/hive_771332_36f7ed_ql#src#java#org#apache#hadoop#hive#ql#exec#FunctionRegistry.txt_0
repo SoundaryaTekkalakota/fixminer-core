@@ -1,0 +1,20 @@
+INS IfStatement@@InfixExpression:pgA == PrimitiveGrouping.DATE_GROUP && pgB == PrimitiveGrouping.STRING_GROUP @TO@ MethodDeclaration@@public, static, PrimitiveCategory, MethodName:getPrimitiveCommonCategory, TypeInfo a, TypeInfo b,  @AT@ 37955 @LENGTH@ 128
+---INS InfixExpression@@pgA == PrimitiveGrouping.DATE_GROUP && pgB == PrimitiveGrouping.STRING_GROUP @TO@ IfStatement@@InfixExpression:pgA == PrimitiveGrouping.DATE_GROUP && pgB == PrimitiveGrouping.STRING_GROUP @AT@ 37959 @LENGTH@ 76
+------INS InfixExpression@@pgA == PrimitiveGrouping.DATE_GROUP @TO@ InfixExpression@@pgA == PrimitiveGrouping.DATE_GROUP && pgB == PrimitiveGrouping.STRING_GROUP @AT@ 37959 @LENGTH@ 35
+---------INS SimpleName@@pgA @TO@ InfixExpression@@pgA == PrimitiveGrouping.DATE_GROUP @AT@ 37959 @LENGTH@ 3
+---------INS Operator@@== @TO@ InfixExpression@@pgA == PrimitiveGrouping.DATE_GROUP @AT@ 37962 @LENGTH@ 2
+---------INS QualifiedName@@PrimitiveGrouping.DATE_GROUP @TO@ InfixExpression@@pgA == PrimitiveGrouping.DATE_GROUP @AT@ 37966 @LENGTH@ 28
+------------INS SimpleName@@PrimitiveGrouping @TO@ QualifiedName@@PrimitiveGrouping.DATE_GROUP @AT@ 37966 @LENGTH@ 17
+------------INS SimpleName@@DATE_GROUP @TO@ QualifiedName@@PrimitiveGrouping.DATE_GROUP @AT@ 37984 @LENGTH@ 10
+------INS Operator@@&& @TO@ InfixExpression@@pgA == PrimitiveGrouping.DATE_GROUP && pgB == PrimitiveGrouping.STRING_GROUP @AT@ 37994 @LENGTH@ 2
+------INS InfixExpression@@pgB == PrimitiveGrouping.STRING_GROUP @TO@ InfixExpression@@pgA == PrimitiveGrouping.DATE_GROUP && pgB == PrimitiveGrouping.STRING_GROUP @AT@ 37998 @LENGTH@ 37
+---------INS SimpleName@@pgB @TO@ InfixExpression@@pgB == PrimitiveGrouping.STRING_GROUP @AT@ 37998 @LENGTH@ 3
+---------INS Operator@@== @TO@ InfixExpression@@pgB == PrimitiveGrouping.STRING_GROUP @AT@ 38001 @LENGTH@ 2
+---------INS QualifiedName@@PrimitiveGrouping.STRING_GROUP @TO@ InfixExpression@@pgB == PrimitiveGrouping.STRING_GROUP @AT@ 38005 @LENGTH@ 30
+------------INS SimpleName@@PrimitiveGrouping @TO@ QualifiedName@@PrimitiveGrouping.STRING_GROUP @AT@ 38005 @LENGTH@ 17
+------------INS SimpleName@@STRING_GROUP @TO@ QualifiedName@@PrimitiveGrouping.STRING_GROUP @AT@ 38023 @LENGTH@ 12
+---INS ReturnStatement@@QualifiedName:PrimitiveCategory.STRING @TO@ IfStatement@@InfixExpression:pgA == PrimitiveGrouping.DATE_GROUP && pgB == PrimitiveGrouping.STRING_GROUP @AT@ 38045 @LENGTH@ 32
+------INS QualifiedName@@PrimitiveCategory.STRING @TO@ ReturnStatement@@QualifiedName:PrimitiveCategory.STRING @AT@ 38052 @LENGTH@ 24
+---------INS SimpleName@@PrimitiveCategory @TO@ QualifiedName@@PrimitiveCategory.STRING @AT@ 38052 @LENGTH@ 17
+---------INS SimpleName@@STRING @TO@ QualifiedName@@PrimitiveCategory.STRING @AT@ 38070 @LENGTH@ 6
+

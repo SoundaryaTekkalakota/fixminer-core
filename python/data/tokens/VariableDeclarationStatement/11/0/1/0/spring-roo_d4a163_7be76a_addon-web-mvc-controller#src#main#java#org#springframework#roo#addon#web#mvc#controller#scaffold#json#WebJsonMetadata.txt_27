@@ -1,0 +1,12 @@
+DEL VariableDeclarationStatement@@List<JavaType> typeParams=new ArrayList<JavaType>(); @AT@ 25732 @LENGTH@ 54
+---DEL ParameterizedType@@List<JavaType> @AT@ 25732 @LENGTH@ 14
+------DEL SimpleType@@List @AT@ 25732 @LENGTH@ 4
+------DEL SimpleType@@JavaType @AT@ 25737 @LENGTH@ 8
+---DEL VariableDeclarationFragment@@typeParams=new ArrayList<JavaType>() @AT@ 25747 @LENGTH@ 38
+------DEL SimpleName@@typeParams @AT@ 25747 @LENGTH@ 10
+------DEL ClassInstanceCreation@@ArrayList<JavaType>[] @AT@ 25760 @LENGTH@ 25
+---------DEL New@@new @AT@ 25760 @LENGTH@ 3
+---------DEL ParameterizedType@@ArrayList<JavaType> @AT@ 25764 @LENGTH@ 19
+------------DEL SimpleType@@ArrayList @AT@ 25764 @LENGTH@ 9
+------------DEL SimpleType@@JavaType @AT@ 25774 @LENGTH@ 8
+

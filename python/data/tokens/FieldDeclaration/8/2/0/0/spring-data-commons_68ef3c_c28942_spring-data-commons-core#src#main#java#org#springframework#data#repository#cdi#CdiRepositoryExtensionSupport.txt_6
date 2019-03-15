@@ -1,0 +1,9 @@
+INS FieldDeclaration@@private, static, final, long, [serialVersionUID=7261821376671361463L] @TO@ TypeDeclaration@@[private, static]AnyAnnotationLiteral, AnnotationLiteral<Any>[Any] @AT@ 4654 @LENGTH@ 66
+---INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, long, [serialVersionUID=7261821376671361463L] @AT@ 4654 @LENGTH@ 7
+---INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, long, [serialVersionUID=7261821376671361463L] @AT@ 4662 @LENGTH@ 6
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, long, [serialVersionUID=7261821376671361463L] @AT@ 4669 @LENGTH@ 5
+---INS PrimitiveType@@long @TO@ FieldDeclaration@@private, static, final, long, [serialVersionUID=7261821376671361463L] @AT@ 4675 @LENGTH@ 4
+---INS VariableDeclarationFragment@@serialVersionUID=7261821376671361463L @TO@ FieldDeclaration@@private, static, final, long, [serialVersionUID=7261821376671361463L] @AT@ 4680 @LENGTH@ 39
+------INS SimpleName@@serialVersionUID @TO@ VariableDeclarationFragment@@serialVersionUID=7261821376671361463L @AT@ 4680 @LENGTH@ 16
+------INS NumberLiteral@@7261821376671361463L @TO@ VariableDeclarationFragment@@serialVersionUID=7261821376671361463L @AT@ 4699 @LENGTH@ 20
+

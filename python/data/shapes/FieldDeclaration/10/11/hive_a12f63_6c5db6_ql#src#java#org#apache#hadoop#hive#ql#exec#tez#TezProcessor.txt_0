@@ -1,0 +1,10 @@
+FieldDeclaration
+---Modifier
+---Modifier
+---Modifier
+---SimpleType
+---VariableDeclarationFragment
+------SimpleName
+------MethodInvocation
+---------SimpleName
+---------SimpleName

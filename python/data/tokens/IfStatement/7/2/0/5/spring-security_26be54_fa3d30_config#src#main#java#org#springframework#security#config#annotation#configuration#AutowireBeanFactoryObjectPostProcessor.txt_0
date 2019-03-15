@@ -1,0 +1,8 @@
+INS IfStatement@@InfixExpression:object == null @TO@ MethodDeclaration@@public, T, T, MethodName:postProcess, T object,  @AT@ 2260 @LENGTH@ 55
+---INS InfixExpression@@object == null @TO@ IfStatement@@InfixExpression:object == null @AT@ 2263 @LENGTH@ 14
+------INS SimpleName@@object @TO@ InfixExpression@@object == null @AT@ 2263 @LENGTH@ 6
+------INS Operator@@== @TO@ InfixExpression@@object == null @AT@ 2269 @LENGTH@ 2
+------INS NullLiteral@@null @TO@ InfixExpression@@object == null @AT@ 2273 @LENGTH@ 4
+---INS ReturnStatement@@NullLiteral:null @TO@ IfStatement@@InfixExpression:object == null @AT@ 2293 @LENGTH@ 12
+------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 2300 @LENGTH@ 4
+

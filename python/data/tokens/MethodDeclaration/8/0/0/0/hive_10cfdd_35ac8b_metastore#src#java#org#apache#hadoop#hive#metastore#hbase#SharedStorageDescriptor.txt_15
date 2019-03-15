@@ -1,0 +1,9 @@
+DEL MethodDeclaration@@public, boolean, MethodName:isSetInputFormat,  @AT@ 3029 @LENGTH@ 77
+---DEL Modifier@@public @AT@ 3029 @LENGTH@ 6
+---DEL PrimitiveType@@boolean @AT@ 3036 @LENGTH@ 7
+---DEL SimpleName@@MethodName:isSetInputFormat @AT@ 3044 @LENGTH@ 16
+---DEL ReturnStatement@@MethodInvocation:shared.isSetInputFormat() @AT@ 3069 @LENGTH@ 33
+------DEL MethodInvocation@@shared.isSetInputFormat() @AT@ 3076 @LENGTH@ 25
+---------DEL SimpleName@@Name:shared @AT@ 3076 @LENGTH@ 6
+---------DEL SimpleName@@MethodName:isSetInputFormat:[] @AT@ 3083 @LENGTH@ 18
+

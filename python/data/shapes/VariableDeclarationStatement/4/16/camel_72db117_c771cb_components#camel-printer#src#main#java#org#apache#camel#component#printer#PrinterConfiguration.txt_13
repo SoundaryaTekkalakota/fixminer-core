@@ -1,0 +1,4 @@
+VariableDeclarationStatement
+---VariableDeclarationFragment
+------SimpleName
+------NullLiteral

@@ -1,0 +1,11 @@
+INS FieldDeclaration@@private, static, final, Object, [stopLock=new Object()] @TO@ TypeDeclaration@@[@InterfaceAudience.Private, public, final]SparkClientFactory,  @AT@ 1839 @LENGTH@ 52
+---INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, Object, [stopLock=new Object()] @AT@ 1839 @LENGTH@ 7
+---INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, Object, [stopLock=new Object()] @AT@ 1847 @LENGTH@ 6
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, Object, [stopLock=new Object()] @AT@ 1854 @LENGTH@ 5
+---INS SimpleType@@Object @TO@ FieldDeclaration@@private, static, final, Object, [stopLock=new Object()] @AT@ 1860 @LENGTH@ 6
+---INS VariableDeclarationFragment@@stopLock=new Object() @TO@ FieldDeclaration@@private, static, final, Object, [stopLock=new Object()] @AT@ 1867 @LENGTH@ 23
+------INS SimpleName@@stopLock @TO@ VariableDeclarationFragment@@stopLock=new Object() @AT@ 1867 @LENGTH@ 8
+------INS ClassInstanceCreation@@Object[] @TO@ VariableDeclarationFragment@@stopLock=new Object() @AT@ 1878 @LENGTH@ 12
+---------INS New@@new @TO@ ClassInstanceCreation@@Object[] @AT@ 1878 @LENGTH@ 3
+---------INS SimpleType@@Object @TO@ ClassInstanceCreation@@Object[] @AT@ 1882 @LENGTH@ 6
+

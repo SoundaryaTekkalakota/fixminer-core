@@ -1,0 +1,4 @@
+UPD CatchClause@@TransformerException e @TO@ XMLStreamException e @AT@ 5334 @LENGTH@ 113
+---UPD SingleVariableDeclaration@@TransformerException e @TO@ XMLStreamException e @AT@ 5341 @LENGTH@ 22
+------UPD SimpleType@@TransformerException @TO@ XMLStreamException @AT@ 5341 @LENGTH@ 20
+

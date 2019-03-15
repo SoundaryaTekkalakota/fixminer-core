@@ -1,0 +1,6 @@
+UPD MethodDeclaration@@public, WireTapDefinition, MethodName:newExchange, Expression expression,  @TO@ public, WireTapDefinition<Type>, MethodName:newExchange, Expression expression,  @AT@ 7350 @LENGTH@ 111
+---INS ParameterizedType@@WireTapDefinition<Type> @TO@ MethodDeclaration@@public, WireTapDefinition, MethodName:newExchange, Expression expression,  @AT@ 7320 @LENGTH@ 23
+------INS SimpleType@@WireTapDefinition @TO@ ParameterizedType@@WireTapDefinition<Type> @AT@ 7320 @LENGTH@ 17
+------INS SimpleType@@Type @TO@ ParameterizedType@@WireTapDefinition<Type> @AT@ 7338 @LENGTH@ 4
+---DEL SimpleType@@WireTapDefinition @AT@ 7357 @LENGTH@ 17
+

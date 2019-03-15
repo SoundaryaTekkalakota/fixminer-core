@@ -1,0 +1,5 @@
+ UPD ReturnStatement
+--- INS ConditionalExpression
+------ MOV MethodInvocation
+------ INS SimpleName
+------ INS NullLiteral

@@ -1,0 +1,22 @@
+DEL MethodDeclaration@@public, List<FieldSchema>, MethodName:getCols,  @AT@ 2375 @LENGTH@ 152
+---DEL Modifier@@public @AT@ 2375 @LENGTH@ 6
+---DEL ParameterizedType@@List<FieldSchema> @AT@ 2382 @LENGTH@ 17
+------DEL SimpleType@@List @AT@ 2382 @LENGTH@ 4
+------DEL SimpleType@@FieldSchema @AT@ 2387 @LENGTH@ 11
+---DEL SimpleName@@MethodName:getCols @AT@ 2400 @LENGTH@ 7
+---DEL ReturnStatement@@ConditionalExpression:copied ? shared.getCols() : (shared.getCols() == null ? null : copyCols(shared.getCols())) @AT@ 2416 @LENGTH@ 107
+------DEL ConditionalExpression@@copied ? shared.getCols() : (shared.getCols() == null ? null : copyCols(shared.getCols())) @AT@ 2423 @LENGTH@ 99
+---------DEL SimpleName@@copied @AT@ 2423 @LENGTH@ 6
+---------DEL MethodInvocation@@shared.getCols() @AT@ 2432 @LENGTH@ 16
+------------DEL SimpleName@@Name:shared @AT@ 2432 @LENGTH@ 6
+------------DEL SimpleName@@MethodName:getCols:[] @AT@ 2439 @LENGTH@ 9
+---------DEL ParenthesizedExpression@@(shared.getCols() == null ? null : copyCols(shared.getCols())) @AT@ 2451 @LENGTH@ 71
+------------DEL ConditionalExpression@@shared.getCols() == null ? null : copyCols(shared.getCols()) @AT@ 2461 @LENGTH@ 60
+---------------DEL InfixExpression@@shared.getCols() == null @AT@ 2461 @LENGTH@ 24
+---------------DEL NullLiteral@@null @AT@ 2488 @LENGTH@ 4
+---------------DEL MethodInvocation@@copyCols(shared.getCols()) @AT@ 2495 @LENGTH@ 26
+------------------DEL SimpleName@@MethodName:copyCols:[shared.getCols()] @AT@ 2495 @LENGTH@ 26
+---------------------DEL MethodInvocation@@shared.getCols() @AT@ 2504 @LENGTH@ 16
+------------------------DEL SimpleName@@Name:shared @AT@ 2504 @LENGTH@ 6
+------------------------DEL SimpleName@@MethodName:getCols:[] @AT@ 2511 @LENGTH@ 9
+

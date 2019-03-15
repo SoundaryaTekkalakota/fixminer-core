@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, String, [originalName] @TO@ TypeDeclaration@@[static]MappedPrincipal, [Principal] @AT@ 18300 @LENGTH@ 34
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, String, [originalName] @AT@ 18300 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, String, [originalName] @AT@ 18308 @LENGTH@ 5
+---INS SimpleType@@String @TO@ FieldDeclaration@@private, final, String, [originalName] @AT@ 18314 @LENGTH@ 6
+---INS VariableDeclarationFragment@@originalName @TO@ FieldDeclaration@@private, final, String, [originalName] @AT@ 18321 @LENGTH@ 12
+------INS SimpleName@@originalName @TO@ VariableDeclarationFragment@@originalName @AT@ 18321 @LENGTH@ 12
+

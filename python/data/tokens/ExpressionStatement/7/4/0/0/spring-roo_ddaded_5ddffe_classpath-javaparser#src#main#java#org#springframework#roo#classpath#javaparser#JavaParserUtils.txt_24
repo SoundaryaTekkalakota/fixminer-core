@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(Process.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("Process") @AT@ 2811 @LENGTH@ 59
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(Process.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("Process") @AT@ 2811 @LENGTH@ 58
+------UPD SimpleName@@MethodName:add:[Process.class.getSimpleName()] @TO@ MethodName:add:["Process"] @AT@ 2835 @LENGTH@ 34
+---------INS StringLiteral@@"Process" @TO@ SimpleName@@MethodName:add:[Process.class.getSimpleName()] @AT@ 2629 @LENGTH@ 9
+---------DEL MethodInvocation@@Process.class.getSimpleName() @AT@ 2839 @LENGTH@ 29
+------------DEL TypeLiteral@@Process.class @AT@ 2839 @LENGTH@ 13
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 2853 @LENGTH@ 15
+

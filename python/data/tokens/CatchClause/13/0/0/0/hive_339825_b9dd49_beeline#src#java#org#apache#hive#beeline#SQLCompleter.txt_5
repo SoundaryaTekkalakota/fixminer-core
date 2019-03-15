@@ -1,0 +1,14 @@
+UPD CatchClause@@Throwable t @TO@ Exception e @AT@ 2452 @LENGTH@ 27
+---UPD SingleVariableDeclaration@@Throwable t @TO@ Exception e @AT@ 2459 @LENGTH@ 11
+------UPD SimpleType@@Throwable @TO@ Exception @AT@ 2459 @LENGTH@ 9
+------UPD SimpleName@@t @TO@ e @AT@ 2469 @LENGTH@ 1
+---INS ExpressionStatement@@MethodInvocation:LOG.debug("fail to get time date function names from database metadata due to the exception: " + e,e) @TO@ CatchClause@@Throwable t @AT@ 3096 @LENGTH@ 120
+------INS MethodInvocation@@LOG.debug("fail to get time date function names from database metadata due to the exception: " + e,e) @TO@ ExpressionStatement@@MethodInvocation:LOG.debug("fail to get time date function names from database metadata due to the exception: " + e,e) @AT@ 3096 @LENGTH@ 119
+---------INS SimpleName@@Name:LOG @TO@ MethodInvocation@@LOG.debug("fail to get time date function names from database metadata due to the exception: " + e,e) @AT@ 3096 @LENGTH@ 3
+---------INS SimpleName@@MethodName:debug:["fail to get time date function names from database metadata due to the exception: " + e, e] @TO@ MethodInvocation@@LOG.debug("fail to get time date function names from database metadata due to the exception: " + e,e) @AT@ 3100 @LENGTH@ 115
+------------INS InfixExpression@@"fail to get time date function names from database metadata due to the exception: " + e @TO@ SimpleName@@MethodName:debug:["fail to get time date function names from database metadata due to the exception: " + e, e] @AT@ 3115 @LENGTH@ 88
+---------------INS StringLiteral@@"fail to get time date function names from database metadata due to the exception: " @TO@ InfixExpression@@"fail to get time date function names from database metadata due to the exception: " + e @AT@ 3115 @LENGTH@ 84
+---------------INS Operator@@+ @TO@ InfixExpression@@"fail to get time date function names from database metadata due to the exception: " + e @AT@ 3199 @LENGTH@ 1
+---------------INS SimpleName@@e @TO@ InfixExpression@@"fail to get time date function names from database metadata due to the exception: " + e @AT@ 3202 @LENGTH@ 1
+------------INS SimpleName@@e @TO@ SimpleName@@MethodName:debug:["fail to get time date function names from database metadata due to the exception: " + e, e] @AT@ 3213 @LENGTH@ 1
+

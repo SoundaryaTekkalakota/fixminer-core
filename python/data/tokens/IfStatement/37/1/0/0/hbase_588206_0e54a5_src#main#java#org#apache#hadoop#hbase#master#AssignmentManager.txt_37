@@ -1,0 +1,38 @@
+INS IfStatement@@InfixExpression:hri != null @TO@ SwitchStatement@@MethodInvocation:data.getEventType() @AT@ 32827 @LENGTH@ 299
+---INS InfixExpression@@hri != null @TO@ IfStatement@@InfixExpression:hri != null @AT@ 32831 @LENGTH@ 11
+------INS SimpleName@@hri @TO@ InfixExpression@@hri != null @AT@ 32831 @LENGTH@ 3
+------INS Operator@@!= @TO@ InfixExpression@@hri != null @AT@ 32834 @LENGTH@ 2
+------INS NullLiteral@@null @TO@ InfixExpression@@hri != null @AT@ 32838 @LENGTH@ 4
+---INS ExpressionStatement@@Assignment:regionState=new RegionState(hri,RegionState.State.OPENING,data.getStamp(),data.getOrigin()) @TO@ IfStatement@@InfixExpression:hri != null @AT@ 32858 @LENGTH@ 114
+------INS Assignment@@regionState=new RegionState(hri,RegionState.State.OPENING,data.getStamp(),data.getOrigin()) @TO@ ExpressionStatement@@Assignment:regionState=new RegionState(hri,RegionState.State.OPENING,data.getStamp(),data.getOrigin()) @AT@ 32858 @LENGTH@ 113
+---------INS SimpleName@@regionState @TO@ Assignment@@regionState=new RegionState(hri,RegionState.State.OPENING,data.getStamp(),data.getOrigin()) @AT@ 32858 @LENGTH@ 11
+---------INS Operator@@= @TO@ Assignment@@regionState=new RegionState(hri,RegionState.State.OPENING,data.getStamp(),data.getOrigin()) @AT@ 32869 @LENGTH@ 1
+---------INS ClassInstanceCreation@@RegionState[hri, RegionState.State.OPENING, data.getStamp(), data.getOrigin()] @TO@ Assignment@@regionState=new RegionState(hri,RegionState.State.OPENING,data.getStamp(),data.getOrigin()) @AT@ 32872 @LENGTH@ 99
+------------INS New@@new @TO@ ClassInstanceCreation@@RegionState[hri, RegionState.State.OPENING, data.getStamp(), data.getOrigin()] @AT@ 32872 @LENGTH@ 3
+------------INS SimpleType@@RegionState @TO@ ClassInstanceCreation@@RegionState[hri, RegionState.State.OPENING, data.getStamp(), data.getOrigin()] @AT@ 32876 @LENGTH@ 11
+------------INS SimpleName@@hri @TO@ ClassInstanceCreation@@RegionState[hri, RegionState.State.OPENING, data.getStamp(), data.getOrigin()] @AT@ 32888 @LENGTH@ 3
+------------INS QualifiedName@@RegionState.State.OPENING @TO@ ClassInstanceCreation@@RegionState[hri, RegionState.State.OPENING, data.getStamp(), data.getOrigin()] @AT@ 32893 @LENGTH@ 25
+---------------INS QualifiedName@@RegionState.State @TO@ QualifiedName@@RegionState.State.OPENING @AT@ 32893 @LENGTH@ 17
+------------------INS SimpleName@@RegionState @TO@ QualifiedName@@RegionState.State @AT@ 32893 @LENGTH@ 11
+------------------INS SimpleName@@State @TO@ QualifiedName@@RegionState.State @AT@ 32905 @LENGTH@ 5
+---------------INS SimpleName@@OPENING @TO@ QualifiedName@@RegionState.State.OPENING @AT@ 32911 @LENGTH@ 7
+------------INS MethodInvocation@@data.getStamp() @TO@ ClassInstanceCreation@@RegionState[hri, RegionState.State.OPENING, data.getStamp(), data.getOrigin()] @AT@ 32920 @LENGTH@ 32
+---------------INS SimpleName@@Name:data @TO@ MethodInvocation@@data.getStamp() @AT@ 32920 @LENGTH@ 4
+---------------INS SimpleName@@MethodName:getStamp:[] @TO@ MethodInvocation@@data.getStamp() @AT@ 32942 @LENGTH@ 10
+------------INS MethodInvocation@@data.getOrigin() @TO@ ClassInstanceCreation@@RegionState[hri, RegionState.State.OPENING, data.getStamp(), data.getOrigin()] @AT@ 32954 @LENGTH@ 16
+---------------INS SimpleName@@Name:data @TO@ MethodInvocation@@data.getOrigin() @AT@ 32954 @LENGTH@ 4
+---------------INS SimpleName@@MethodName:getOrigin:[] @TO@ MethodInvocation@@data.getOrigin() @AT@ 32959 @LENGTH@ 11
+---INS ExpressionStatement@@MethodInvocation:regionsInTransition.put(encodedName,regionState) @TO@ IfStatement@@InfixExpression:hri != null @AT@ 32985 @LENGTH@ 50
+------INS MethodInvocation@@regionsInTransition.put(encodedName,regionState) @TO@ ExpressionStatement@@MethodInvocation:regionsInTransition.put(encodedName,regionState) @AT@ 32985 @LENGTH@ 49
+---------INS SimpleName@@Name:regionsInTransition @TO@ MethodInvocation@@regionsInTransition.put(encodedName,regionState) @AT@ 32985 @LENGTH@ 19
+---------INS SimpleName@@MethodName:put:[encodedName, regionState] @TO@ MethodInvocation@@regionsInTransition.put(encodedName,regionState) @AT@ 33005 @LENGTH@ 29
+------------INS SimpleName@@encodedName @TO@ SimpleName@@MethodName:put:[encodedName, regionState] @AT@ 33009 @LENGTH@ 11
+------------INS SimpleName@@regionState @TO@ SimpleName@@MethodName:put:[encodedName, regionState] @AT@ 33022 @LENGTH@ 11
+---INS ExpressionStatement@@MethodInvocation:failoverProcessedRegions.put(encodedName,hri) @TO@ IfStatement@@InfixExpression:hri != null @AT@ 33048 @LENGTH@ 47
+------INS MethodInvocation@@failoverProcessedRegions.put(encodedName,hri) @TO@ ExpressionStatement@@MethodInvocation:failoverProcessedRegions.put(encodedName,hri) @AT@ 33048 @LENGTH@ 46
+---------INS SimpleName@@Name:failoverProcessedRegions @TO@ MethodInvocation@@failoverProcessedRegions.put(encodedName,hri) @AT@ 33048 @LENGTH@ 24
+---------INS SimpleName@@MethodName:put:[encodedName, hri] @TO@ MethodInvocation@@failoverProcessedRegions.put(encodedName,hri) @AT@ 33073 @LENGTH@ 21
+------------INS SimpleName@@encodedName @TO@ SimpleName@@MethodName:put:[encodedName, hri] @AT@ 33077 @LENGTH@ 11
+------------INS SimpleName@@hri @TO@ SimpleName@@MethodName:put:[encodedName, hri] @AT@ 33090 @LENGTH@ 3
+---INS BreakStatement@@ @TO@ IfStatement@@InfixExpression:hri != null @AT@ 33108 @LENGTH@ 6
+

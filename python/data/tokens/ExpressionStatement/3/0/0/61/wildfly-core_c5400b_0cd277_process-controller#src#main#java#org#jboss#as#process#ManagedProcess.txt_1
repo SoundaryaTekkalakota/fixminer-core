@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:process.destroy() @TO@ MethodInvocation:process.destroyForcibly() @AT@ 11911 @LENGTH@ 18
+---UPD MethodInvocation@@process.destroy() @TO@ process.destroyForcibly() @AT@ 11911 @LENGTH@ 17
+------UPD SimpleName@@MethodName:destroy:[] @TO@ MethodName:destroyForcibly:[] @AT@ 11919 @LENGTH@ 9
+

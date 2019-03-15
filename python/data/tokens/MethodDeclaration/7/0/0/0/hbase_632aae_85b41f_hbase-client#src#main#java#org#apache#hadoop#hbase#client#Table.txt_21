@@ -1,0 +1,8 @@
+UPD MethodDeclaration@@void, MethodName:mutateRow, final RowMutations rm, IOException,  @TO@ default, void, MethodName:mutateRow, final RowMutations rm, IOException,  @AT@ 19590 @LENGTH@ 52
+---INS Modifier@@default @TO@ MethodDeclaration@@void, MethodName:mutateRow, final RowMutations rm, IOException,  @AT@ 21245 @LENGTH@ 7
+---INS ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @TO@ MethodDeclaration@@void, MethodName:mutateRow, final RowMutations rm, IOException,  @AT@ 21316 @LENGTH@ 60
+------INS ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @TO@ ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @AT@ 21322 @LENGTH@ 53
+---------INS New@@new @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 21322 @LENGTH@ 3
+---------INS SimpleType@@NotImplementedException @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 21326 @LENGTH@ 23
+---------INS StringLiteral@@"Add an implementation!" @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 21350 @LENGTH@ 24
+

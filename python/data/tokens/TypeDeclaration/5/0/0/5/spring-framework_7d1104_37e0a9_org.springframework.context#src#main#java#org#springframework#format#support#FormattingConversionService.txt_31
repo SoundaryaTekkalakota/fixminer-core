@@ -1,0 +1,6 @@
+INS TypeDeclaration@@[private, final]AnnotationParserConverter, [ConditionalGenericConverter] @TO@ TypeDeclaration@@[public]FormattingConversionService, GenericConversionService[FormatterRegistry, EmbeddedValueResolverAware] @AT@ 8981 @LENGTH@ 1668
+---INS Modifier@@private @TO@ TypeDeclaration@@[private, final]AnnotationParserConverter, [ConditionalGenericConverter] @AT@ 8981 @LENGTH@ 7
+---INS Modifier@@final @TO@ TypeDeclaration@@[private, final]AnnotationParserConverter, [ConditionalGenericConverter] @AT@ 8989 @LENGTH@ 5
+---INS SimpleName@@ClassName:AnnotationParserConverter @TO@ TypeDeclaration@@[private, final]AnnotationParserConverter, [ConditionalGenericConverter] @AT@ 9001 @LENGTH@ 25
+---INS SimpleType@@ConditionalGenericConverter @TO@ TypeDeclaration@@[private, final]AnnotationParserConverter, [ConditionalGenericConverter] @AT@ 9038 @LENGTH@ 27
+

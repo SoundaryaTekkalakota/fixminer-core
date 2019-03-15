@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:s.execute("CREATE TABLE NEXT_COMPACTION_QUEUE_ID (NCQ_NEXT bigint NOT NULL)") @TO@ MethodInvocation:stmt.execute("CREATE TABLE NEXT_COMPACTION_QUEUE_ID (NCQ_NEXT bigint NOT NULL)") @AT@ 4476 @LENGTH@ 78
+---UPD MethodInvocation@@s.execute("CREATE TABLE NEXT_COMPACTION_QUEUE_ID (NCQ_NEXT bigint NOT NULL)") @TO@ stmt.execute("CREATE TABLE NEXT_COMPACTION_QUEUE_ID (NCQ_NEXT bigint NOT NULL)") @AT@ 4476 @LENGTH@ 77
+------UPD SimpleName@@Name:s @TO@ Name:stmt @AT@ 4476 @LENGTH@ 1
+

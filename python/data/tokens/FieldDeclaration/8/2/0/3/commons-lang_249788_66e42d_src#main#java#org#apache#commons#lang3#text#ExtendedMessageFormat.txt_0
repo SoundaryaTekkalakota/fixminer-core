@@ -1,0 +1,9 @@
+INS FieldDeclaration@@private, static, final, int, [HASH_SEED=31] @TO@ TypeDeclaration@@[public]ExtendedMessageFormat, MessageFormat @AT@ 3464 @LENGTH@ 40
+---INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, int, [HASH_SEED=31] @AT@ 3464 @LENGTH@ 7
+---INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, int, [HASH_SEED=31] @AT@ 3472 @LENGTH@ 6
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, int, [HASH_SEED=31] @AT@ 3479 @LENGTH@ 5
+---INS PrimitiveType@@int @TO@ FieldDeclaration@@private, static, final, int, [HASH_SEED=31] @AT@ 3485 @LENGTH@ 3
+---INS VariableDeclarationFragment@@HASH_SEED=31 @TO@ FieldDeclaration@@private, static, final, int, [HASH_SEED=31] @AT@ 3489 @LENGTH@ 14
+------INS SimpleName@@HASH_SEED @TO@ VariableDeclarationFragment@@HASH_SEED=31 @AT@ 3489 @LENGTH@ 9
+------INS NumberLiteral@@31 @TO@ VariableDeclarationFragment@@HASH_SEED=31 @AT@ 3501 @LENGTH@ 2
+

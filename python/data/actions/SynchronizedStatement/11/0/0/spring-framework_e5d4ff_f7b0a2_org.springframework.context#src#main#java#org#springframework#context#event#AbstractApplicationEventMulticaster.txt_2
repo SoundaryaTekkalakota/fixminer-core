@@ -1,0 +1,11 @@
+ INS SynchronizedStatement
+--- MOV ExpressionStatement
+--- INS FieldAccess
+------ INS ThisExpression
+------ INS SimpleName
+--- INS ExpressionStatement
+------ INS MethodInvocation
+--------- INS FieldAccess
+------------ INS ThisExpression
+------------ INS SimpleName
+--------- INS SimpleName

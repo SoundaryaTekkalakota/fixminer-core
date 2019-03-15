@@ -1,0 +1,5 @@
+ UPD SwitchCase
+--- DEL StringLiteral
+--- INS QualifiedName
+------ INS SimpleName
+------ INS SimpleName

@@ -1,0 +1,8 @@
+ReturnStatement
+---ClassInstanceCreation
+------New
+------SimpleType
+------SimpleName
+---MethodInvocation
+------SimpleName
+---------SimpleName

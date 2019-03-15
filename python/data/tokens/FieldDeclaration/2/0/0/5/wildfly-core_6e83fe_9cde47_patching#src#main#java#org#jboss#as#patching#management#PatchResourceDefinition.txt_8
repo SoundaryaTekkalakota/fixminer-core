@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@static, final, AttributeDefinition, [PRESERVE=PrimitiveListAttributeDefinition.Builder.of(Constants.PRESERVE,ModelType.STRING).setRequired(false).build()] @TO@ private, static, final, AttributeDefinition, [PRESERVE=PrimitiveListAttributeDefinition.Builder.of(Constants.PRESERVE,ModelType.STRING).setRequired(false).build()] @AT@ 5245 @LENGTH@ 179
+---INS Modifier@@private @TO@ FieldDeclaration@@static, final, AttributeDefinition, [PRESERVE=PrimitiveListAttributeDefinition.Builder.of(Constants.PRESERVE,ModelType.STRING).setRequired(false).build()] @AT@ 5309 @LENGTH@ 7
+

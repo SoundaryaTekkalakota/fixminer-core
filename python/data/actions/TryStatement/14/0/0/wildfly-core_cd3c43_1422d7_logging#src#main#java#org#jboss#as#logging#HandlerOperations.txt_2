@@ -1,0 +1,14 @@
+ INS TryStatement
+--- MOV ExpressionStatement
+--- INS CatchClause
+------ INS SingleVariableDeclaration
+--------- INS UnionType
+------------ INS SimpleType
+------------ INS SimpleType
+--------- INS SimpleName
+------ INS ExpressionStatement
+--------- INS MethodInvocation
+------------ INS SimpleName
+------------ INS SimpleName
+------ INS ThrowStatement
+--------- INS SimpleName

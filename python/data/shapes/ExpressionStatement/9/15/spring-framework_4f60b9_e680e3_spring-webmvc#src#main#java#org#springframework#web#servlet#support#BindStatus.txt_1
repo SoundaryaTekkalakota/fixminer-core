@@ -1,0 +1,9 @@
+ExpressionStatement
+---Assignment
+------FieldAccess
+---------ThisExpression
+---------SimpleName
+------Operator
+------FieldAccess
+---------ThisExpression
+---------SimpleName

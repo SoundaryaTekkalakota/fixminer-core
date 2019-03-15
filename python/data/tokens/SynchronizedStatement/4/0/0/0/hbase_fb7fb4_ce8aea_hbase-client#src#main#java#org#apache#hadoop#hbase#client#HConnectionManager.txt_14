@@ -1,0 +1,5 @@
+DEL SynchronizedStatement@@FieldAccess:this.cachedRegionLocations @AT@ 58633 @LENGTH@ 105
+---DEL FieldAccess@@this.cachedRegionLocations @AT@ 58647 @LENGTH@ 26
+------DEL ThisExpression@@this @AT@ 58647 @LENGTH@ 4
+------DEL SimpleName@@cachedRegionLocations @AT@ 58652 @LENGTH@ 21
+

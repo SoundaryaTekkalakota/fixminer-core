@@ -1,0 +1,47 @@
+DEL IfStatement@@InfixExpression:remaining == 0 @AT@ 17223 @LENGTH@ 343
+---DEL InfixExpression@@remaining == 0 @AT@ 17227 @LENGTH@ 14
+------DEL SimpleName@@remaining @AT@ 17227 @LENGTH@ 9
+------DEL Operator@@== @AT@ 17236 @LENGTH@ 2
+------DEL NumberLiteral@@0 @AT@ 17240 @LENGTH@ 1
+---DEL IfStatement@@InfixExpression:items.length - 1 == this.curItemIndex @AT@ 17251 @LENGTH@ 192
+------DEL InfixExpression@@items.length - 1 == this.curItemIndex @AT@ 17255 @LENGTH@ 37
+---------DEL InfixExpression@@items.length - 1 @AT@ 17255 @LENGTH@ 16
+------------DEL QualifiedName@@items.length @AT@ 17255 @LENGTH@ 12
+---------------DEL SimpleName@@items @AT@ 17255 @LENGTH@ 5
+---------------DEL SimpleName@@length @AT@ 17261 @LENGTH@ 6
+------------DEL Operator@@- @AT@ 17267 @LENGTH@ 1
+------------DEL NumberLiteral@@1 @AT@ 17270 @LENGTH@ 1
+---------DEL Operator@@== @AT@ 17271 @LENGTH@ 2
+---------DEL FieldAccess@@this.curItemIndex @AT@ 17275 @LENGTH@ 17
+------------DEL ThisExpression@@this @AT@ 17275 @LENGTH@ 4
+------------DEL SimpleName@@curItemIndex @AT@ 17280 @LENGTH@ 12
+------DEL ThrowStatement@@ClassInstanceCreation:new BufferUnderflowException() @AT@ 17398 @LENGTH@ 37
+---------DEL ClassInstanceCreation@@BufferUnderflowException[] @AT@ 17404 @LENGTH@ 30
+------------DEL New@@new @AT@ 17404 @LENGTH@ 3
+------------DEL SimpleType@@BufferUnderflowException @AT@ 17408 @LENGTH@ 24
+---DEL ExpressionStatement@@PostfixExpression:this.curItemIndex++ @AT@ 17450 @LENGTH@ 20
+------DEL PostfixExpression@@this.curItemIndex++ @AT@ 17450 @LENGTH@ 19
+---------DEL FieldAccess@@this.curItemIndex @AT@ 17450 @LENGTH@ 17
+------------DEL ThisExpression@@this @AT@ 17450 @LENGTH@ 4
+------------DEL SimpleName@@curItemIndex @AT@ 17455 @LENGTH@ 12
+---------DEL Operator@@++ @AT@ 17468 @LENGTH@ 2
+---DEL ExpressionStatement@@Assignment:this.curItem=this.items[this.curItemIndex] @AT@ 17477 @LENGTH@ 45
+------DEL Assignment@@this.curItem=this.items[this.curItemIndex] @AT@ 17477 @LENGTH@ 44
+---------DEL FieldAccess@@this.curItem @AT@ 17477 @LENGTH@ 12
+------------DEL ThisExpression@@this @AT@ 17477 @LENGTH@ 4
+------------DEL SimpleName@@curItem @AT@ 17482 @LENGTH@ 7
+---------DEL Operator@@= @AT@ 17489 @LENGTH@ 1
+---------DEL ArrayAccess@@this.items[this.curItemIndex] @AT@ 17492 @LENGTH@ 29
+------------DEL FieldAccess@@this.items @AT@ 17492 @LENGTH@ 10
+---------------DEL ThisExpression@@this @AT@ 17492 @LENGTH@ 4
+---------------DEL SimpleName@@items @AT@ 17497 @LENGTH@ 5
+------------DEL FieldAccess@@this.curItemIndex @AT@ 17503 @LENGTH@ 17
+---------------DEL ThisExpression@@this @AT@ 17503 @LENGTH@ 4
+---------------DEL SimpleName@@curItemIndex @AT@ 17508 @LENGTH@ 12
+---DEL ReturnStatement@@MethodInvocation:this.curItem.getShort() @AT@ 17529 @LENGTH@ 31
+------DEL MethodInvocation@@this.curItem.getShort() @AT@ 17536 @LENGTH@ 23
+---------DEL FieldAccess@@this.curItem @AT@ 17536 @LENGTH@ 12
+------------DEL ThisExpression@@this @AT@ 17536 @LENGTH@ 4
+------------DEL SimpleName@@curItem @AT@ 17541 @LENGTH@ 7
+---------DEL SimpleName@@MethodName:getShort:[] @AT@ 17549 @LENGTH@ 10
+

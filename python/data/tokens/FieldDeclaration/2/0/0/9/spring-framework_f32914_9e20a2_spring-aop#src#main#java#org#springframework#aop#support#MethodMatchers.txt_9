@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, MethodMatcher, [mm2] @TO@ private, final, MethodMatcher, [mm2] @AT@ 7232 @LENGTH@ 26
+---INS Modifier@@final @TO@ FieldDeclaration@@private, MethodMatcher, [mm2] @AT@ 7407 @LENGTH@ 5
+

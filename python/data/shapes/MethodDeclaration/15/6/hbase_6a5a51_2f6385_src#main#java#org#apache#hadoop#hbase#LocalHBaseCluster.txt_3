@@ -1,0 +1,15 @@
+MethodDeclaration
+---SingleVariableDeclaration
+------SimpleType
+------SimpleName
+---VariableDeclarationStatement
+------VariableDeclarationFragment
+---------MethodInvocation
+------------SimpleName
+---------------ClassInstanceCreation
+------------------New
+------------------SimpleType
+------------------FieldAccess
+---------------------ThisExpression
+---------------------SimpleName
+---------------SimpleName

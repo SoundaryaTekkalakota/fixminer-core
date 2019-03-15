@@ -1,0 +1,9 @@
+INS ExpressionStatement@@Assignment:tableName=HiveStringUtils.normalizeIdentifier(tableName) @TO@ MethodDeclaration@@public, List<HiveObjectPrivilege>, MethodName:listTableGrantsAll, String dbName, String tableName,  @AT@ 234721 @LENGTH@ 59
+---INS Assignment@@tableName=HiveStringUtils.normalizeIdentifier(tableName) @TO@ ExpressionStatement@@Assignment:tableName=HiveStringUtils.normalizeIdentifier(tableName) @AT@ 234721 @LENGTH@ 58
+------INS SimpleName@@tableName @TO@ Assignment@@tableName=HiveStringUtils.normalizeIdentifier(tableName) @AT@ 234721 @LENGTH@ 9
+------INS Operator@@= @TO@ Assignment@@tableName=HiveStringUtils.normalizeIdentifier(tableName) @AT@ 234730 @LENGTH@ 1
+------INS MethodInvocation@@HiveStringUtils.normalizeIdentifier(tableName) @TO@ Assignment@@tableName=HiveStringUtils.normalizeIdentifier(tableName) @AT@ 234733 @LENGTH@ 46
+---------INS SimpleName@@Name:HiveStringUtils @TO@ MethodInvocation@@HiveStringUtils.normalizeIdentifier(tableName) @AT@ 234733 @LENGTH@ 15
+---------INS SimpleName@@MethodName:normalizeIdentifier:[tableName] @TO@ MethodInvocation@@HiveStringUtils.normalizeIdentifier(tableName) @AT@ 234749 @LENGTH@ 30
+------------INS SimpleName@@tableName @TO@ SimpleName@@MethodName:normalizeIdentifier:[tableName] @AT@ 234769 @LENGTH@ 9
+

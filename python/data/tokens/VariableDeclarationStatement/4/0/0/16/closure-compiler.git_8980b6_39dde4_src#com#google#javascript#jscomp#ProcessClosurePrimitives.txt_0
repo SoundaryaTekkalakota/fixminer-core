@@ -1,0 +1,5 @@
+UPD VariableDeclarationStatement@@int indexOfDot=namespace.indexOf('.'); @TO@ int indexOfDot=namespace.lastIndexOf('.'); @AT@ 28296 @LENGTH@ 40
+---UPD VariableDeclarationFragment@@indexOfDot=namespace.indexOf('.') @TO@ indexOfDot=namespace.lastIndexOf('.') @AT@ 28300 @LENGTH@ 35
+------UPD MethodInvocation@@namespace.indexOf('.') @TO@ namespace.lastIndexOf('.') @AT@ 28313 @LENGTH@ 22
+---------UPD SimpleName@@MethodName:indexOf:['.'] @TO@ MethodName:lastIndexOf:['.'] @AT@ 28323 @LENGTH@ 12
+

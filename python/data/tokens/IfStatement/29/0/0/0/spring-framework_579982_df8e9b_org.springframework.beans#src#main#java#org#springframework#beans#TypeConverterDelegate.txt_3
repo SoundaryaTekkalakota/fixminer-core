@@ -1,0 +1,30 @@
+INS IfStatement@@InfixExpression:!approximable && !canCreateCopy(requiredType) @TO@ MethodDeclaration@@protected, Collection, MethodName:convertToTypedCollection, Collection original, String propertyName, Class requiredType, TypeDescriptor typeDescriptor,  @AT@ 18638 @LENGTH@ 278
+---INS InfixExpression@@!approximable && !canCreateCopy(requiredType) @TO@ IfStatement@@InfixExpression:!approximable && !canCreateCopy(requiredType) @AT@ 18642 @LENGTH@ 45
+------INS PrefixExpression@@!approximable @TO@ InfixExpression@@!approximable && !canCreateCopy(requiredType) @AT@ 18642 @LENGTH@ 13
+---------INS Operator@@! @TO@ PrefixExpression@@!approximable @AT@ 18642 @LENGTH@ 1
+---------INS SimpleName@@approximable @TO@ PrefixExpression@@!approximable @AT@ 18643 @LENGTH@ 12
+------INS Operator@@&& @TO@ InfixExpression@@!approximable && !canCreateCopy(requiredType) @AT@ 18655 @LENGTH@ 2
+------INS PrefixExpression@@!canCreateCopy(requiredType) @TO@ InfixExpression@@!approximable && !canCreateCopy(requiredType) @AT@ 18659 @LENGTH@ 28
+---------INS Operator@@! @TO@ PrefixExpression@@!canCreateCopy(requiredType) @AT@ 18659 @LENGTH@ 1
+---------INS MethodInvocation@@canCreateCopy(requiredType) @TO@ PrefixExpression@@!canCreateCopy(requiredType) @AT@ 18660 @LENGTH@ 27
+------------INS SimpleName@@MethodName:canCreateCopy:[requiredType] @TO@ MethodInvocation@@canCreateCopy(requiredType) @AT@ 18660 @LENGTH@ 27
+---------------INS SimpleName@@requiredType @TO@ SimpleName@@MethodName:canCreateCopy:[requiredType] @AT@ 18674 @LENGTH@ 12
+---INS IfStatement@@MethodInvocation:logger.isDebugEnabled() @TO@ IfStatement@@InfixExpression:!approximable && !canCreateCopy(requiredType) @AT@ 18694 @LENGTH@ 198
+------INS MethodInvocation@@logger.isDebugEnabled() @TO@ IfStatement@@MethodInvocation:logger.isDebugEnabled() @AT@ 18698 @LENGTH@ 23
+---------INS SimpleName@@Name:logger @TO@ MethodInvocation@@logger.isDebugEnabled() @AT@ 18698 @LENGTH@ 6
+---------INS SimpleName@@MethodName:isDebugEnabled:[] @TO@ MethodInvocation@@logger.isDebugEnabled() @AT@ 18705 @LENGTH@ 16
+------INS ExpressionStatement@@MethodInvocation:logger.debug("Custom Collection type [" + original.getClass().getName() + "] does not allow for creating a copy - injecting original Collection as-is") @TO@ IfStatement@@MethodInvocation:logger.isDebugEnabled() @AT@ 18729 @LENGTH@ 158
+---------INS MethodInvocation@@logger.debug("Custom Collection type [" + original.getClass().getName() + "] does not allow for creating a copy - injecting original Collection as-is") @TO@ ExpressionStatement@@MethodInvocation:logger.debug("Custom Collection type [" + original.getClass().getName() + "] does not allow for creating a copy - injecting original Collection as-is") @AT@ 18729 @LENGTH@ 157
+------------INS SimpleName@@Name:logger @TO@ MethodInvocation@@logger.debug("Custom Collection type [" + original.getClass().getName() + "] does not allow for creating a copy - injecting original Collection as-is") @AT@ 18729 @LENGTH@ 6
+------------INS SimpleName@@MethodName:debug:["Custom Collection type [" + original.getClass().getName() + "] does not allow for creating a copy - injecting original Collection as-is"] @TO@ MethodInvocation@@logger.debug("Custom Collection type [" + original.getClass().getName() + "] does not allow for creating a copy - injecting original Collection as-is") @AT@ 18736 @LENGTH@ 150
+---------------INS InfixExpression@@"Custom Collection type [" + original.getClass().getName() + "] does not allow for creating a copy - injecting original Collection as-is" @TO@ SimpleName@@MethodName:debug:["Custom Collection type [" + original.getClass().getName() + "] does not allow for creating a copy - injecting original Collection as-is"] @AT@ 18742 @LENGTH@ 143
+------------------INS StringLiteral@@"Custom Collection type [" @TO@ InfixExpression@@"Custom Collection type [" + original.getClass().getName() + "] does not allow for creating a copy - injecting original Collection as-is" @AT@ 18742 @LENGTH@ 26
+------------------INS Operator@@+ @TO@ InfixExpression@@"Custom Collection type [" + original.getClass().getName() + "] does not allow for creating a copy - injecting original Collection as-is" @AT@ 18768 @LENGTH@ 1
+------------------INS MethodInvocation@@original.getClass().getName() @TO@ InfixExpression@@"Custom Collection type [" + original.getClass().getName() + "] does not allow for creating a copy - injecting original Collection as-is" @AT@ 18771 @LENGTH@ 29
+---------------------INS SimpleName@@Name:original @TO@ MethodInvocation@@original.getClass().getName() @AT@ 18771 @LENGTH@ 8
+---------------------INS MethodInvocation@@MethodName:getClass:[] @TO@ MethodInvocation@@original.getClass().getName() @AT@ 18771 @LENGTH@ 19
+---------------------INS SimpleName@@MethodName:getName:[] @TO@ MethodInvocation@@original.getClass().getName() @AT@ 18791 @LENGTH@ 9
+------------------INS StringLiteral@@"] does not allow for creating a copy - injecting original Collection as-is" @TO@ InfixExpression@@"Custom Collection type [" + original.getClass().getName() + "] does not allow for creating a copy - injecting original Collection as-is" @AT@ 18809 @LENGTH@ 76
+---INS ReturnStatement@@SimpleName:original @TO@ IfStatement@@InfixExpression:!approximable && !canCreateCopy(requiredType) @AT@ 18896 @LENGTH@ 16
+------INS SimpleName@@original @TO@ ReturnStatement@@SimpleName:original @AT@ 18903 @LENGTH@ 8
+

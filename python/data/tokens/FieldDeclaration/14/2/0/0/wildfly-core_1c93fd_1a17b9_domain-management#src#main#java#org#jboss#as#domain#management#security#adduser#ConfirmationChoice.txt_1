@@ -1,0 +1,15 @@
+INS FieldDeclaration@@private, static, final, String, [LONG_NO=DomainManagementLogger.ROOT_LOGGER.no().toLowerCase(Locale.getDefault())] @TO@ TypeDeclaration@@[public]ConfirmationChoice, [State] @AT@ 1867 @LENGTH@ 111
+---INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, String, [LONG_NO=DomainManagementLogger.ROOT_LOGGER.no().toLowerCase(Locale.getDefault())] @AT@ 1867 @LENGTH@ 7
+---INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, String, [LONG_NO=DomainManagementLogger.ROOT_LOGGER.no().toLowerCase(Locale.getDefault())] @AT@ 1875 @LENGTH@ 6
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, String, [LONG_NO=DomainManagementLogger.ROOT_LOGGER.no().toLowerCase(Locale.getDefault())] @AT@ 1882 @LENGTH@ 5
+---INS SimpleType@@String @TO@ FieldDeclaration@@private, static, final, String, [LONG_NO=DomainManagementLogger.ROOT_LOGGER.no().toLowerCase(Locale.getDefault())] @AT@ 1888 @LENGTH@ 6
+---INS VariableDeclarationFragment@@LONG_NO=DomainManagementLogger.ROOT_LOGGER.no().toLowerCase(Locale.getDefault()) @TO@ FieldDeclaration@@private, static, final, String, [LONG_NO=DomainManagementLogger.ROOT_LOGGER.no().toLowerCase(Locale.getDefault())] @AT@ 1895 @LENGTH@ 82
+------INS SimpleName@@LONG_NO @TO@ VariableDeclarationFragment@@LONG_NO=DomainManagementLogger.ROOT_LOGGER.no().toLowerCase(Locale.getDefault()) @AT@ 1895 @LENGTH@ 7
+------INS MethodInvocation@@DomainManagementLogger.ROOT_LOGGER.no().toLowerCase(Locale.getDefault()) @TO@ VariableDeclarationFragment@@LONG_NO=DomainManagementLogger.ROOT_LOGGER.no().toLowerCase(Locale.getDefault()) @AT@ 1905 @LENGTH@ 72
+---------INS QualifiedName@@Name:DomainManagementLogger.ROOT_LOGGER @TO@ MethodInvocation@@DomainManagementLogger.ROOT_LOGGER.no().toLowerCase(Locale.getDefault()) @AT@ 1905 @LENGTH@ 34
+---------INS MethodInvocation@@MethodName:no:[] @TO@ MethodInvocation@@DomainManagementLogger.ROOT_LOGGER.no().toLowerCase(Locale.getDefault()) @AT@ 1905 @LENGTH@ 39
+---------INS SimpleName@@MethodName:toLowerCase:[Locale.getDefault()] @TO@ MethodInvocation@@DomainManagementLogger.ROOT_LOGGER.no().toLowerCase(Locale.getDefault()) @AT@ 1945 @LENGTH@ 32
+------------INS MethodInvocation@@Locale.getDefault() @TO@ SimpleName@@MethodName:toLowerCase:[Locale.getDefault()] @AT@ 1957 @LENGTH@ 19
+---------------INS SimpleName@@Name:Locale @TO@ MethodInvocation@@Locale.getDefault() @AT@ 1957 @LENGTH@ 6
+---------------INS SimpleName@@MethodName:getDefault:[] @TO@ MethodInvocation@@Locale.getDefault() @AT@ 1964 @LENGTH@ 12
+

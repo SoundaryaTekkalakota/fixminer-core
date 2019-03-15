@@ -1,0 +1,5 @@
+UPD VariableDeclarationStatement@@Iterator<String> it=raAoClasses.iterator(); @TO@ Iterator<String> it=ijAoClasses.iterator(); @AT@ 10851 @LENGTH@ 45
+---UPD VariableDeclarationFragment@@it=raAoClasses.iterator() @TO@ it=ijAoClasses.iterator() @AT@ 10868 @LENGTH@ 27
+------UPD MethodInvocation@@raAoClasses.iterator() @TO@ ijAoClasses.iterator() @AT@ 10873 @LENGTH@ 22
+---------UPD SimpleName@@Name:raAoClasses @TO@ Name:ijAoClasses @AT@ 10873 @LENGTH@ 11
+

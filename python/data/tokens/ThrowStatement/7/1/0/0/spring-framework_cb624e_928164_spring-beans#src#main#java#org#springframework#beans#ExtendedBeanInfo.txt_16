@@ -1,0 +1,8 @@
+UPD ThrowStatement@@ClassInstanceCreation:new IntrospectionException("bad indexed write method arg count") @TO@ ClassInstanceCreation:new IntrospectionException("Bad indexed write method arg count: " + indexedWriteMethod) @AT@ 17848 @LENGTH@ 78
+---UPD ClassInstanceCreation@@IntrospectionException["bad indexed write method arg count"] @TO@ IntrospectionException["Bad indexed write method arg count: " + indexedWriteMethod] @AT@ 17854 @LENGTH@ 71
+------DEL StringLiteral@@"bad indexed write method arg count" @AT@ 17888 @LENGTH@ 36
+------INS InfixExpression@@"Bad indexed write method arg count: " + indexedWriteMethod @TO@ ClassInstanceCreation@@IntrospectionException["bad indexed write method arg count"] @AT@ 18233 @LENGTH@ 59
+---------INS StringLiteral@@"Bad indexed write method arg count: " @TO@ InfixExpression@@"Bad indexed write method arg count: " + indexedWriteMethod @AT@ 18233 @LENGTH@ 38
+---------INS Operator@@+ @TO@ InfixExpression@@"Bad indexed write method arg count: " + indexedWriteMethod @AT@ 18271 @LENGTH@ 1
+---------INS SimpleName@@indexedWriteMethod @TO@ InfixExpression@@"Bad indexed write method arg count: " + indexedWriteMethod @AT@ 18274 @LENGTH@ 18
+

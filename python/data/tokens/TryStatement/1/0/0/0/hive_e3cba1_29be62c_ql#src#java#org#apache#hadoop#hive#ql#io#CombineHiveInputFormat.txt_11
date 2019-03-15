@@ -1,0 +1,2 @@
+MOV TryStatement@@try:[] @TO@ MethodDeclaration@@protected, static, PartitionDesc, MethodName:getPartitionDescFromPath, Map<String,PartitionDesc> pathToPartitionInfo, Path dir, IOException,  @AT@ 9432 @LENGTH@ 380
+

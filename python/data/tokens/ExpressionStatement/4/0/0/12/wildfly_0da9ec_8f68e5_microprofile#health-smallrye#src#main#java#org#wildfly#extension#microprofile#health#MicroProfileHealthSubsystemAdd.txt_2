@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:processorTarget.addDeploymentProcessor(MicroProfileHealthExtension.SUBSYSTEM_NAME,DEPENDENCIES,PRIORITY,new DependencyProcessor()) @TO@ MethodInvocation:processorTarget.addDeploymentProcessor(MicroProfileHealthExtension.SUBSYSTEM_NAME,DEPENDENCIES,DEPENDENCIES_MICROPROFILE_HEALTH,new DependencyProcessor()) @AT@ 2618 @LENGTH@ 134
+---UPD MethodInvocation@@processorTarget.addDeploymentProcessor(MicroProfileHealthExtension.SUBSYSTEM_NAME,DEPENDENCIES,PRIORITY,new DependencyProcessor()) @TO@ processorTarget.addDeploymentProcessor(MicroProfileHealthExtension.SUBSYSTEM_NAME,DEPENDENCIES,DEPENDENCIES_MICROPROFILE_HEALTH,new DependencyProcessor()) @AT@ 2618 @LENGTH@ 133
+------UPD SimpleName@@MethodName:addDeploymentProcessor:[MicroProfileHealthExtension.SUBSYSTEM_NAME, DEPENDENCIES, PRIORITY, new DependencyProcessor()] @TO@ MethodName:addDeploymentProcessor:[MicroProfileHealthExtension.SUBSYSTEM_NAME, DEPENDENCIES, DEPENDENCIES_MICROPROFILE_HEALTH, new DependencyProcessor()] @AT@ 2634 @LENGTH@ 117
+---------UPD SimpleName@@PRIORITY @TO@ DEPENDENCIES_MICROPROFILE_HEALTH @AT@ 2715 @LENGTH@ 8
+

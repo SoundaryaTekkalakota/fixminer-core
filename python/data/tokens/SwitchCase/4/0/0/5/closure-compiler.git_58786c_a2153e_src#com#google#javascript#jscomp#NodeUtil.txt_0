@@ -1,0 +1,5 @@
+INS SwitchCase@@QualifiedName:Token.DELPROP @TO@ SwitchStatement@@MethodInvocation:n.getType() @AT@ 37267 @LENGTH@ 19
+---INS QualifiedName@@Token.DELPROP @TO@ SwitchCase@@QualifiedName:Token.DELPROP @AT@ 37272 @LENGTH@ 13
+------INS SimpleName@@Token @TO@ QualifiedName@@Token.DELPROP @AT@ 37272 @LENGTH@ 5
+------INS SimpleName@@DELPROP @TO@ QualifiedName@@Token.DELPROP @AT@ 37278 @LENGTH@ 7
+

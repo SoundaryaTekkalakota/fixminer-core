@@ -1,0 +1,10 @@
+INS FieldDeclaration@@private, transient, Object, [lock=new Object()] @TO@ AnonymousClassDeclaration@@AnonymousClass @AT@ 6978 @LENGTH@ 45
+---INS Modifier@@private @TO@ FieldDeclaration@@private, transient, Object, [lock=new Object()] @AT@ 6978 @LENGTH@ 7
+---INS Modifier@@transient @TO@ FieldDeclaration@@private, transient, Object, [lock=new Object()] @AT@ 6986 @LENGTH@ 9
+---INS SimpleType@@Object @TO@ FieldDeclaration@@private, transient, Object, [lock=new Object()] @AT@ 6996 @LENGTH@ 6
+---INS VariableDeclarationFragment@@lock=new Object() @TO@ FieldDeclaration@@private, transient, Object, [lock=new Object()] @AT@ 7003 @LENGTH@ 19
+------INS SimpleName@@lock @TO@ VariableDeclarationFragment@@lock=new Object() @AT@ 7003 @LENGTH@ 4
+------INS ClassInstanceCreation@@Object[] @TO@ VariableDeclarationFragment@@lock=new Object() @AT@ 7010 @LENGTH@ 12
+---------INS New@@new @TO@ ClassInstanceCreation@@Object[] @AT@ 7010 @LENGTH@ 3
+---------INS SimpleType@@Object @TO@ ClassInstanceCreation@@Object[] @AT@ 7014 @LENGTH@ 6
+

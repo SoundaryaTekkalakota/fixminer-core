@@ -1,0 +1,7 @@
+UPD ThrowStatement@@ClassInstanceCreation:new StepListenerFailedException("Error in beforeProcess.",e) @TO@ ClassInstanceCreation:new StepListenerFailedException("Error in beforeProcess.",getTargetException(e)) @AT@ 5611 @LENGTH@ 68
+---UPD ClassInstanceCreation@@StepListenerFailedException["Error in beforeProcess.", e] @TO@ StepListenerFailedException["Error in beforeProcess.", getTargetException(e)] @AT@ 5617 @LENGTH@ 61
+------DEL SimpleName@@e @AT@ 5676 @LENGTH@ 1
+------INS MethodInvocation@@getTargetException(e) @TO@ ClassInstanceCreation@@StepListenerFailedException["Error in beforeProcess.", e] @AT@ 5779 @LENGTH@ 21
+---------INS SimpleName@@MethodName:getTargetException:[e] @TO@ MethodInvocation@@getTargetException(e) @AT@ 5779 @LENGTH@ 21
+------------INS SimpleName@@e @TO@ SimpleName@@MethodName:getTargetException:[e] @AT@ 5798 @LENGTH@ 1
+

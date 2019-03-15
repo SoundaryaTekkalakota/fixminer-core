@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@static, final, OperationDefinition, [SHOW_HISTORY=new SimpleOperationDefinitionBuilder(Constants.SHOW_HISTORY,getResourceDescriptionResolver(PatchResourceDefinition.NAME)).addParameter(EXCLUDE_AGEDOUT).build()] @TO@ private, static, final, OperationDefinition, [SHOW_HISTORY=new SimpleOperationDefinitionBuilder(Constants.SHOW_HISTORY,getResourceDescriptionResolver(PatchResourceDefinition.NAME)).addParameter(EXCLUDE_AGEDOUT).build()] @AT@ 7675 @LENGTH@ 235
+---INS Modifier@@private @TO@ FieldDeclaration@@static, final, OperationDefinition, [SHOW_HISTORY=new SimpleOperationDefinitionBuilder(Constants.SHOW_HISTORY,getResourceDescriptionResolver(PatchResourceDefinition.NAME)).addParameter(EXCLUDE_AGEDOUT).build()] @AT@ 7771 @LENGTH@ 7
+

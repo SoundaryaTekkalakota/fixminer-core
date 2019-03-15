@@ -1,0 +1,11 @@
+ExpressionStatement
+---MethodInvocation
+------SimpleName
+---------ConditionalExpression
+------------MethodInvocation
+---------------QualifiedName
+---------------SimpleName
+------------------QualifiedName
+---------------------SimpleName
+---------------------SimpleName
+---------------SimpleName

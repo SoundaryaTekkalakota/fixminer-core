@@ -1,0 +1,12 @@
+ReturnStatement
+---MethodInvocation
+------SimpleName
+---------LambdaExpression
+------------VariableDeclarationFragment
+---------------SimpleName
+------------MethodInvocation
+---------------SimpleName
+---------------SimpleName
+------------------MethodInvocation
+---------------------SimpleName
+---------------------SimpleName

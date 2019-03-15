@@ -1,0 +1,14 @@
+VariableDeclarationStatement
+---Modifier
+---VariableDeclarationFragment
+------InfixExpression
+---------ParenthesizedExpression
+------------ConditionalExpression
+---------------SimpleName
+---------------NumberLiteral
+---------------PrefixExpression
+------------------Operator
+------------------NumberLiteral
+---------Operator
+---------SimpleName
+------SimpleName

@@ -1,0 +1,16 @@
+ INS MethodDeclaration
+--- INS Modifier
+--- INS PrimitiveType
+--- INS SimpleName
+--- INS SingleVariableDeclaration
+------ INS ParameterizedType
+--------- INS SimpleType
+--------- INS SimpleType
+------ INS SimpleName
+--- INS ExpressionStatement
+------ INS Assignment
+--------- INS FieldAccess
+------------ INS ThisExpression
+------------ INS SimpleName
+--------- INS Operator
+--------- INS SimpleName

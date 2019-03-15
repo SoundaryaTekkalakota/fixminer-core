@@ -1,0 +1,43 @@
+UPD ExpressionStatement@@MethodInvocation:completionService.submit(new Callable<Void>(){
+  @Override public Void call() throws IOException {
+    f.closeReader(true);
+    return null;
+  }
+}
+) @TO@ MethodInvocation:completionService.submit(new Callable<Void>(){
+  @Override public Void call() throws IOException {
+    boolean evictOnClose=cacheConf != null ? cacheConf.shouldEvictOnClose() : true;
+    f.closeReader(evictOnClose);
+    return null;
+  }
+}
+) @AT@ 32710 @LENGTH@ 211
+---UPD MethodInvocation@@completionService.submit(new Callable<Void>(){
+  @Override public Void call() throws IOException {
+    f.closeReader(true);
+    return null;
+  }
+}
+) @TO@ completionService.submit(new Callable<Void>(){
+  @Override public Void call() throws IOException {
+    boolean evictOnClose=cacheConf != null ? cacheConf.shouldEvictOnClose() : true;
+    f.closeReader(evictOnClose);
+    return null;
+  }
+}
+) @AT@ 32710 @LENGTH@ 210
+------UPD SimpleName@@MethodName:submit:[new Callable<Void>(){
+  @Override public Void call() throws IOException {
+    f.closeReader(true);
+    return null;
+  }
+}
+] @TO@ MethodName:submit:[new Callable<Void>(){
+  @Override public Void call() throws IOException {
+    boolean evictOnClose=cacheConf != null ? cacheConf.shouldEvictOnClose() : true;
+    f.closeReader(evictOnClose);
+    return null;
+  }
+}
+] @AT@ 32728 @LENGTH@ 192
+

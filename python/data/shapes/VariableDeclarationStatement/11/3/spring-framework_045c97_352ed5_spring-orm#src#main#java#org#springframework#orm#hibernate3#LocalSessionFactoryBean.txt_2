@@ -1,0 +1,11 @@
+VariableDeclarationStatement
+---Modifier
+---SimpleType
+---VariableDeclarationFragment
+------SimpleName
+------MethodInvocation
+---------ParenthesizedExpression
+------------CastExpression
+---------------SimpleType
+---------------SimpleName
+---------SimpleName

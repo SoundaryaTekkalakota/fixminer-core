@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.warn("\n\n" + asciiArt) @TO@ MethodInvocation:LOG.info("\n\n" + asciiArt) @AT@ 19216 @LENGTH@ 28
+---UPD MethodInvocation@@LOG.warn("\n\n" + asciiArt) @TO@ LOG.info("\n\n" + asciiArt) @AT@ 19216 @LENGTH@ 27
+------UPD SimpleName@@MethodName:warn:["\n\n" + asciiArt] @TO@ MethodName:info:["\n\n" + asciiArt] @AT@ 19220 @LENGTH@ 23
+

@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, Path, [path] @TO@ TypeDeclaration@@RecordReaderImpl, [RecordReader] @AT@ 3905 @LENGTH@ 24
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, Path, [path] @AT@ 3905 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, Path, [path] @AT@ 3913 @LENGTH@ 5
+---INS SimpleType@@Path @TO@ FieldDeclaration@@private, final, Path, [path] @AT@ 3919 @LENGTH@ 4
+---INS VariableDeclarationFragment@@path @TO@ FieldDeclaration@@private, final, Path, [path] @AT@ 3924 @LENGTH@ 4
+------INS SimpleName@@path @TO@ VariableDeclarationFragment@@path @AT@ 3924 @LENGTH@ 4
+

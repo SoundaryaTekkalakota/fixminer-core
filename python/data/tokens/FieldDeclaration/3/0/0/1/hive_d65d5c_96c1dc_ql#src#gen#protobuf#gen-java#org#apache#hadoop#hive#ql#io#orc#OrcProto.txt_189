@@ -1,0 +1,4 @@
+UPD FieldDeclaration@@private, static, com.google.protobuf.Descriptors.Descriptor, [internal_static_org_apache_hadoop_hive_ql_io_orc_Metadata_descriptor] @TO@ private, static, com.google.protobuf.Descriptors.Descriptor, [internal_static_orc_proto_Metadata_descriptor] @AT@ 699515 @LENGTH@ 131
+---UPD VariableDeclarationFragment@@internal_static_org_apache_hadoop_hive_ql_io_orc_Metadata_descriptor @TO@ internal_static_orc_proto_Metadata_descriptor @AT@ 699577 @LENGTH@ 68
+------UPD SimpleName@@internal_static_org_apache_hadoop_hive_ql_io_orc_Metadata_descriptor @TO@ internal_static_orc_proto_Metadata_descriptor @AT@ 699577 @LENGTH@ 68
+

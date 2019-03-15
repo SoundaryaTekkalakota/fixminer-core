@@ -1,0 +1,9 @@
+INS IfStatement@@InfixExpression:this.masterMonitor != null @TO@ MethodDeclaration@@public, void, MethodName:close, IOException,  @AT@ 122543 @LENGTH@ 59
+---MOV ExpressionStatement@@MethodInvocation:this.masterMonitor.close() @TO@ IfStatement@@InfixExpression:this.masterMonitor != null @AT@ 122319 @LENGTH@ 27
+---INS InfixExpression@@this.masterMonitor != null @TO@ IfStatement@@InfixExpression:this.masterMonitor != null @AT@ 122547 @LENGTH@ 26
+------INS FieldAccess@@this.masterMonitor @TO@ InfixExpression@@this.masterMonitor != null @AT@ 122547 @LENGTH@ 18
+---------INS ThisExpression@@this @TO@ FieldAccess@@this.masterMonitor @AT@ 122547 @LENGTH@ 4
+---------INS SimpleName@@masterMonitor @TO@ FieldAccess@@this.masterMonitor @AT@ 122552 @LENGTH@ 13
+------INS Operator@@!= @TO@ InfixExpression@@this.masterMonitor != null @AT@ 122565 @LENGTH@ 2
+------INS NullLiteral@@null @TO@ InfixExpression@@this.masterMonitor != null @AT@ 122569 @LENGTH@ 4
+

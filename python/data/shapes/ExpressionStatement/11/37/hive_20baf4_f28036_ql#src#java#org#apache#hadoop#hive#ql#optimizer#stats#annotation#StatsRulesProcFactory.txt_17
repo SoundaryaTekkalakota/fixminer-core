@@ -1,0 +1,11 @@
+ExpressionStatement
+---Assignment
+------MethodInvocation
+---------SimpleName
+------------InfixExpression
+---------------ParenthesizedExpression
+------------------InfixExpression
+---------------------SimpleName
+---------------------Operator
+---------------------SimpleName
+------------------SimpleName

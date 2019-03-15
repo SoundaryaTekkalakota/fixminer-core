@@ -1,0 +1,9 @@
+INS IfStatement@@InfixExpression:this.rpcServices != null @TO@ MethodDeclaration@@public, void, MethodName:run,  @AT@ 35408 @LENGTH@ 68
+---MOV ExpressionStatement@@MethodInvocation:this.rpcServices.stop() @TO@ IfStatement@@InfixExpression:this.rpcServices != null @AT@ 35244 @LENGTH@ 24
+---INS InfixExpression@@this.rpcServices != null @TO@ IfStatement@@InfixExpression:this.rpcServices != null @AT@ 35412 @LENGTH@ 24
+------INS FieldAccess@@this.rpcServices @TO@ InfixExpression@@this.rpcServices != null @AT@ 35412 @LENGTH@ 16
+---------INS ThisExpression@@this @TO@ FieldAccess@@this.rpcServices @AT@ 35412 @LENGTH@ 4
+---------INS SimpleName@@rpcServices @TO@ FieldAccess@@this.rpcServices @AT@ 35417 @LENGTH@ 11
+------INS Operator@@!= @TO@ InfixExpression@@this.rpcServices != null @AT@ 35428 @LENGTH@ 2
+------INS NullLiteral@@null @TO@ InfixExpression@@this.rpcServices != null @AT@ 35432 @LENGTH@ 4
+

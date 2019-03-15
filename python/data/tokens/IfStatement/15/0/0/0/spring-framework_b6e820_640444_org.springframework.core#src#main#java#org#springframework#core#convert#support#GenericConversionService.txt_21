@@ -1,0 +1,16 @@
+DEL IfStatement@@MethodInvocation:logger.isTraceEnabled() @AT@ 17430 @LENGTH@ 119
+---DEL MethodInvocation@@logger.isTraceEnabled() @AT@ 17434 @LENGTH@ 23
+------DEL SimpleName@@Name:logger @AT@ 17434 @LENGTH@ 6
+------DEL SimpleName@@MethodName:isTraceEnabled:[] @AT@ 17441 @LENGTH@ 16
+---DEL ExpressionStatement@@MethodInvocation:logger.trace("and indexed by target class [" + currentClass.getName() + "]") @AT@ 17466 @LENGTH@ 77
+------DEL MethodInvocation@@logger.trace("and indexed by target class [" + currentClass.getName() + "]") @AT@ 17466 @LENGTH@ 76
+---------DEL SimpleName@@Name:logger @AT@ 17466 @LENGTH@ 6
+---------DEL SimpleName@@MethodName:trace:["and indexed by target class [" + currentClass.getName() + "]"] @AT@ 17473 @LENGTH@ 69
+------------DEL InfixExpression@@"and indexed by target class [" + currentClass.getName() + "]" @AT@ 17479 @LENGTH@ 62
+---------------DEL StringLiteral@@"and indexed by target class [" @AT@ 17479 @LENGTH@ 31
+---------------DEL Operator@@+ @AT@ 17510 @LENGTH@ 1
+---------------DEL MethodInvocation@@currentClass.getName() @AT@ 17513 @LENGTH@ 22
+------------------DEL SimpleName@@Name:currentClass @AT@ 17513 @LENGTH@ 12
+------------------DEL SimpleName@@MethodName:getName:[] @AT@ 17526 @LENGTH@ 9
+---------------DEL StringLiteral@@"]" @AT@ 17538 @LENGTH@ 3
+

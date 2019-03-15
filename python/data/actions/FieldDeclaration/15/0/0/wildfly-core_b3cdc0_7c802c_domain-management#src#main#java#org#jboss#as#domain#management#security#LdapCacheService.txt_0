@@ -1,0 +1,15 @@
+ INS FieldDeclaration
+--- INS Modifier
+--- INS Modifier
+--- INS ParameterizedType
+------ INS SimpleType
+------ INS SimpleType
+------ INS SimpleType
+--- INS VariableDeclarationFragment
+------ INS SimpleName
+------ INS ClassInstanceCreation
+--------- INS New
+--------- INS ParameterizedType
+------------ INS SimpleType
+------------ INS SimpleType
+------------ INS SimpleType

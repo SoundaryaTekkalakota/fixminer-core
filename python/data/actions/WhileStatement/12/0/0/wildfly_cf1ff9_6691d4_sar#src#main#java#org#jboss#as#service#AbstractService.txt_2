@@ -1,0 +1,12 @@
+ INS WhileStatement
+--- MOV ExpressionStatement
+--- INS MethodInvocation
+------ INS SimpleName
+------ INS SimpleName
+--- INS VariableDeclarationStatement
+------ INS SimpleType
+------ INS VariableDeclarationFragment
+--------- INS SimpleName
+--------- INS MethodInvocation
+------------ INS SimpleName
+------------ INS SimpleName

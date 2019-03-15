@@ -1,0 +1,11 @@
+ INS CatchClause
+--- INS SingleVariableDeclaration
+------ INS SimpleType
+------ INS SimpleName
+--- INS ThrowStatement
+------ INS ClassInstanceCreation
+--------- INS New
+--------- INS SimpleType
+--------- INS MethodInvocation
+------------ INS SimpleName
+------------ INS SimpleName

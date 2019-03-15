@@ -1,0 +1,8 @@
+INS IfStatement@@InfixExpression:map == null @TO@ MethodDeclaration@@public, Object, MethodName:getMapValueElement, Object map, Object key,  @AT@ 10222 @LENGTH@ 47
+---INS InfixExpression@@map == null @TO@ IfStatement@@InfixExpression:map == null @AT@ 10226 @LENGTH@ 11
+------INS SimpleName@@map @TO@ InfixExpression@@map == null @AT@ 10226 @LENGTH@ 3
+------INS Operator@@== @TO@ InfixExpression@@map == null @AT@ 10229 @LENGTH@ 2
+------INS NullLiteral@@null @TO@ InfixExpression@@map == null @AT@ 10233 @LENGTH@ 4
+---INS ReturnStatement@@NullLiteral:null @TO@ IfStatement@@InfixExpression:map == null @AT@ 10249 @LENGTH@ 12
+------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 10256 @LENGTH@ 4
+

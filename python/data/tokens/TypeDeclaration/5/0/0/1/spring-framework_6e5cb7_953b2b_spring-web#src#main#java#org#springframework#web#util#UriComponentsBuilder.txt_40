@@ -1,0 +1,6 @@
+INS TypeDeclaration@@[private, static]PathSegmentComponentBuilder, [PathComponentBuilder] @TO@ TypeDeclaration@@[public]UriComponentsBuilder,  @AT@ 20435 @LENGTH@ 504
+---INS Modifier@@private @TO@ TypeDeclaration@@[private, static]PathSegmentComponentBuilder, [PathComponentBuilder] @AT@ 20435 @LENGTH@ 7
+---INS Modifier@@static @TO@ TypeDeclaration@@[private, static]PathSegmentComponentBuilder, [PathComponentBuilder] @AT@ 20443 @LENGTH@ 6
+---INS SimpleName@@ClassName:PathSegmentComponentBuilder @TO@ TypeDeclaration@@[private, static]PathSegmentComponentBuilder, [PathComponentBuilder] @AT@ 20456 @LENGTH@ 27
+---INS SimpleType@@PathComponentBuilder @TO@ TypeDeclaration@@[private, static]PathSegmentComponentBuilder, [PathComponentBuilder] @AT@ 20495 @LENGTH@ 20
+

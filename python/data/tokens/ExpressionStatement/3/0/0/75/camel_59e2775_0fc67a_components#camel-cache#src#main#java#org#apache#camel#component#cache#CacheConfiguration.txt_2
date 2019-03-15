@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:setTimeToLiveSeconds(Long.valueOf((String)cacheSettings.get("diskExpiryThreadIntervalSeconds")).longValue()) @TO@ MethodInvocation:setDiskExpiryThreadIntervalSeconds(Long.valueOf((String)cacheSettings.get("diskExpiryThreadIntervalSeconds")).longValue()) @AT@ 3458 @LENGTH@ 110
+---UPD MethodInvocation@@setTimeToLiveSeconds(Long.valueOf((String)cacheSettings.get("diskExpiryThreadIntervalSeconds")).longValue()) @TO@ setDiskExpiryThreadIntervalSeconds(Long.valueOf((String)cacheSettings.get("diskExpiryThreadIntervalSeconds")).longValue()) @AT@ 3458 @LENGTH@ 109
+------UPD SimpleName@@MethodName:setTimeToLiveSeconds:[Long.valueOf((String)cacheSettings.get("diskExpiryThreadIntervalSeconds")).longValue()] @TO@ MethodName:setDiskExpiryThreadIntervalSeconds:[Long.valueOf((String)cacheSettings.get("diskExpiryThreadIntervalSeconds")).longValue()] @AT@ 3458 @LENGTH@ 109
+

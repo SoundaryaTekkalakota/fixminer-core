@@ -1,0 +1,4 @@
+UPD SwitchCase@@StringLiteral:"urn:elytron:1.0" @TO@ SimpleName:NS_ELYTRON_1_0 @AT@ 14177 @LENGTH@ 23
+---INS SimpleName@@NS_ELYTRON_1_0 @TO@ SwitchCase@@StringLiteral:"urn:elytron:1.0" @AT@ 14176 @LENGTH@ 14
+---DEL StringLiteral@@"urn:elytron:1.0" @AT@ 14182 @LENGTH@ 17
+

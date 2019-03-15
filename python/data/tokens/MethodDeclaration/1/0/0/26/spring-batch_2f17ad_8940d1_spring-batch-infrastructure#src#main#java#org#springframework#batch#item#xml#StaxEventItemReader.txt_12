@@ -1,0 +1,2 @@
+MOV MethodDeclaration@@public, void, MethodName:reset,  @TO@ TypeDeclaration@@[public]StaxEventItemReader, ExecutionContextUserSupport[ItemReader, ItemStream, InitializingBean] @AT@ 8025 @LENGTH@ 126
+

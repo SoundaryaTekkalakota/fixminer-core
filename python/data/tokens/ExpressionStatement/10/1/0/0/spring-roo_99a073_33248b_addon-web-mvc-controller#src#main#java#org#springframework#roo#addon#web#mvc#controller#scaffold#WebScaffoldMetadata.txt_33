@@ -1,0 +1,11 @@
+INS ExpressionStatement@@MethodInvocation:bodyBuilder.appendFormalLine(httpHeadersShortName + " headers= new " + httpHeadersShortName+ "();") @TO@ MethodDeclaration@@private, MethodMetadata, MethodName:getJsonDeleteMethod,  @AT@ 60368 @LENGTH@ 101
+---INS MethodInvocation@@bodyBuilder.appendFormalLine(httpHeadersShortName + " headers= new " + httpHeadersShortName+ "();") @TO@ ExpressionStatement@@MethodInvocation:bodyBuilder.appendFormalLine(httpHeadersShortName + " headers= new " + httpHeadersShortName+ "();") @AT@ 60368 @LENGTH@ 100
+------INS SimpleName@@Name:bodyBuilder @TO@ MethodInvocation@@bodyBuilder.appendFormalLine(httpHeadersShortName + " headers= new " + httpHeadersShortName+ "();") @AT@ 60368 @LENGTH@ 11
+------INS SimpleName@@MethodName:appendFormalLine:[httpHeadersShortName + " headers= new " + httpHeadersShortName+ "();"] @TO@ MethodInvocation@@bodyBuilder.appendFormalLine(httpHeadersShortName + " headers= new " + httpHeadersShortName+ "();") @AT@ 60380 @LENGTH@ 88
+---------INS InfixExpression@@httpHeadersShortName + " headers= new " + httpHeadersShortName+ "();" @TO@ SimpleName@@MethodName:appendFormalLine:[httpHeadersShortName + " headers= new " + httpHeadersShortName+ "();"] @AT@ 60397 @LENGTH@ 70
+------------INS SimpleName@@httpHeadersShortName @TO@ InfixExpression@@httpHeadersShortName + " headers= new " + httpHeadersShortName+ "();" @AT@ 60397 @LENGTH@ 20
+------------INS Operator@@+ @TO@ InfixExpression@@httpHeadersShortName + " headers= new " + httpHeadersShortName+ "();" @AT@ 60417 @LENGTH@ 1
+------------INS StringLiteral@@" headers= new " @TO@ InfixExpression@@httpHeadersShortName + " headers= new " + httpHeadersShortName+ "();" @AT@ 60420 @LENGTH@ 16
+------------INS SimpleName@@httpHeadersShortName @TO@ InfixExpression@@httpHeadersShortName + " headers= new " + httpHeadersShortName+ "();" @AT@ 60439 @LENGTH@ 20
+------------INS StringLiteral@@"();" @TO@ InfixExpression@@httpHeadersShortName + " headers= new " + httpHeadersShortName+ "();" @AT@ 60462 @LENGTH@ 5
+

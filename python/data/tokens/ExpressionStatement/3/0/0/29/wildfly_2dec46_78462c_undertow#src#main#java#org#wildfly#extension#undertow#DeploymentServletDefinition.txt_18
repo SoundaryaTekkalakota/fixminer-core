@@ -1,0 +1,121 @@
+UPD ExpressionStatement@@MethodInvocation:context.addStep(new OperationStepHandler(){
+  @Override public void execute(  final OperationContext context,  final ModelNode operation) throws OperationFailedException {
+    final ServiceController<?> deploymentServiceController=context.getServiceRegistry(false).getService(UndertowService.deploymentServiceName(server,host,path));
+    if (deploymentServiceController == null) {
+      return;
+    }
+    final UndertowDeploymentService deploymentService=(UndertowDeploymentService)deploymentServiceController.getService();
+    final DeploymentInfo deploymentInfo=deploymentService.getDeploymentInfoInjectedValue().getValue();
+    final UndertowMetricsCollector collector=(UndertowMetricsCollector)deploymentInfo.getMetricsCollector();
+    final String name=address.getLastElement().getValue();
+    final ServletInfo servlet=deploymentInfo.getServlets().get(name);
+    final ModelNode response=new ModelNode();
+    MetricsHandler.MetricResult result=collector != null ? collector.getMetrics(name) : null;
+    if (result == null) {
+      putDefault(response);
+    }
+ else {
+      handle(response,name,result,servlet);
+    }
+    context.getResult().set(response);
+  }
+}
+,OperationContext.Stage.RUNTIME) @TO@ MethodInvocation:context.addStep(new OperationStepHandler(){
+  @Override public void execute(  final OperationContext context,  final ModelNode operation){
+    final ServiceController<?> deploymentServiceController=context.getServiceRegistry(false).getService(UndertowService.deploymentServiceName(server,host,path));
+    if (deploymentServiceController == null) {
+      return;
+    }
+    final UndertowDeploymentService deploymentService=(UndertowDeploymentService)deploymentServiceController.getService();
+    final DeploymentInfo deploymentInfo=deploymentService.getDeploymentInfoInjectedValue().getValue();
+    final UndertowMetricsCollector collector=(UndertowMetricsCollector)deploymentInfo.getMetricsCollector();
+    MetricsHandler.MetricResult result=collector != null ? collector.getMetrics(context.getCurrentAddressValue()) : null;
+    if (result != null) {
+      final ModelNode response=new ModelNode();
+      handle(response,result);
+      context.getResult().set(response);
+    }
+  }
+}
+,OperationContext.Stage.RUNTIME) @AT@ 7113 @LENGTH@ 1555
+---UPD MethodInvocation@@context.addStep(new OperationStepHandler(){
+  @Override public void execute(  final OperationContext context,  final ModelNode operation) throws OperationFailedException {
+    final ServiceController<?> deploymentServiceController=context.getServiceRegistry(false).getService(UndertowService.deploymentServiceName(server,host,path));
+    if (deploymentServiceController == null) {
+      return;
+    }
+    final UndertowDeploymentService deploymentService=(UndertowDeploymentService)deploymentServiceController.getService();
+    final DeploymentInfo deploymentInfo=deploymentService.getDeploymentInfoInjectedValue().getValue();
+    final UndertowMetricsCollector collector=(UndertowMetricsCollector)deploymentInfo.getMetricsCollector();
+    final String name=address.getLastElement().getValue();
+    final ServletInfo servlet=deploymentInfo.getServlets().get(name);
+    final ModelNode response=new ModelNode();
+    MetricsHandler.MetricResult result=collector != null ? collector.getMetrics(name) : null;
+    if (result == null) {
+      putDefault(response);
+    }
+ else {
+      handle(response,name,result,servlet);
+    }
+    context.getResult().set(response);
+  }
+}
+,OperationContext.Stage.RUNTIME) @TO@ context.addStep(new OperationStepHandler(){
+  @Override public void execute(  final OperationContext context,  final ModelNode operation){
+    final ServiceController<?> deploymentServiceController=context.getServiceRegistry(false).getService(UndertowService.deploymentServiceName(server,host,path));
+    if (deploymentServiceController == null) {
+      return;
+    }
+    final UndertowDeploymentService deploymentService=(UndertowDeploymentService)deploymentServiceController.getService();
+    final DeploymentInfo deploymentInfo=deploymentService.getDeploymentInfoInjectedValue().getValue();
+    final UndertowMetricsCollector collector=(UndertowMetricsCollector)deploymentInfo.getMetricsCollector();
+    MetricsHandler.MetricResult result=collector != null ? collector.getMetrics(context.getCurrentAddressValue()) : null;
+    if (result != null) {
+      final ModelNode response=new ModelNode();
+      handle(response,result);
+      context.getResult().set(response);
+    }
+  }
+}
+,OperationContext.Stage.RUNTIME) @AT@ 7113 @LENGTH@ 1554
+------UPD SimpleName@@MethodName:addStep:[new OperationStepHandler(){
+  @Override public void execute(  final OperationContext context,  final ModelNode operation) throws OperationFailedException {
+    final ServiceController<?> deploymentServiceController=context.getServiceRegistry(false).getService(UndertowService.deploymentServiceName(server,host,path));
+    if (deploymentServiceController == null) {
+      return;
+    }
+    final UndertowDeploymentService deploymentService=(UndertowDeploymentService)deploymentServiceController.getService();
+    final DeploymentInfo deploymentInfo=deploymentService.getDeploymentInfoInjectedValue().getValue();
+    final UndertowMetricsCollector collector=(UndertowMetricsCollector)deploymentInfo.getMetricsCollector();
+    final String name=address.getLastElement().getValue();
+    final ServletInfo servlet=deploymentInfo.getServlets().get(name);
+    final ModelNode response=new ModelNode();
+    MetricsHandler.MetricResult result=collector != null ? collector.getMetrics(name) : null;
+    if (result == null) {
+      putDefault(response);
+    }
+ else {
+      handle(response,name,result,servlet);
+    }
+    context.getResult().set(response);
+  }
+}
+, OperationContext.Stage.RUNTIME] @TO@ MethodName:addStep:[new OperationStepHandler(){
+  @Override public void execute(  final OperationContext context,  final ModelNode operation){
+    final ServiceController<?> deploymentServiceController=context.getServiceRegistry(false).getService(UndertowService.deploymentServiceName(server,host,path));
+    if (deploymentServiceController == null) {
+      return;
+    }
+    final UndertowDeploymentService deploymentService=(UndertowDeploymentService)deploymentServiceController.getService();
+    final DeploymentInfo deploymentInfo=deploymentService.getDeploymentInfoInjectedValue().getValue();
+    final UndertowMetricsCollector collector=(UndertowMetricsCollector)deploymentInfo.getMetricsCollector();
+    MetricsHandler.MetricResult result=collector != null ? collector.getMetrics(context.getCurrentAddressValue()) : null;
+    if (result != null) {
+      final ModelNode response=new ModelNode();
+      handle(response,result);
+      context.getResult().set(response);
+    }
+  }
+}
+, OperationContext.Stage.RUNTIME] @AT@ 7121 @LENGTH@ 1546
+

@@ -1,0 +1,14 @@
+UPD ExpressionStatement@@MethodInvocation:buffer.append(padWithZeros ? StringUtils.leftPad(Integer.toString(hours),count,'0') : Integer.toString(hours)) @TO@ MethodInvocation:buffer.append(paddedValue(hours,padWithZeros,count)) @AT@ 18275 @LENGTH@ 142
+---UPD MethodInvocation@@buffer.append(padWithZeros ? StringUtils.leftPad(Integer.toString(hours),count,'0') : Integer.toString(hours)) @TO@ buffer.append(paddedValue(hours,padWithZeros,count)) @AT@ 18275 @LENGTH@ 141
+------UPD SimpleName@@MethodName:append:[padWithZeros ? StringUtils.leftPad(Integer.toString(hours),count,'0') : Integer.toString(hours)] @TO@ MethodName:append:[paddedValue(hours,padWithZeros,count)] @AT@ 18282 @LENGTH@ 134
+---------INS MethodInvocation@@paddedValue(hours,padWithZeros,count) @TO@ SimpleName@@MethodName:append:[padWithZeros ? StringUtils.leftPad(Integer.toString(hours),count,'0') : Integer.toString(hours)] @AT@ 18002 @LENGTH@ 39
+------------MOV SimpleName@@MethodName:leftPad:[Integer.toString(hours), count, '0'] @TO@ MethodInvocation@@paddedValue(hours,padWithZeros,count) @AT@ 18316 @LENGTH@ 44
+---------DEL ConditionalExpression@@padWithZeros ? StringUtils.leftPad(Integer.toString(hours),count,'0') : Integer.toString(hours) @AT@ 18289 @LENGTH@ 126
+------------DEL SimpleName@@padWithZeros @AT@ 18289 @LENGTH@ 12
+------------DEL MethodInvocation@@StringUtils.leftPad(Integer.toString(hours),count,'0') @AT@ 18304 @LENGTH@ 56
+---------------DEL SimpleName@@Name:StringUtils @AT@ 18304 @LENGTH@ 11
+------------DEL MethodInvocation@@Integer.toString(hours) @AT@ 18363 @LENGTH@ 52
+---------------DEL SimpleName@@Name:Integer @AT@ 18363 @LENGTH@ 7
+---------------DEL SimpleName@@MethodName:toString:[hours] @AT@ 18400 @LENGTH@ 15
+------------------DEL SimpleName@@hours @AT@ 18409 @LENGTH@ 5
+

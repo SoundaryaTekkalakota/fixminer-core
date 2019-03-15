@@ -1,0 +1,145 @@
+UPD VariableDeclarationStatement@@RetryCallback<O> retryCallback=new RetryCallback<O>(){
+  public O doWithRetry(  RetryContext context) throws Exception {
+    O output=null;
+    try {
+      count.incrementAndGet();
+      O cached=(cacheIterator != null && cacheIterator.hasNext()) ? cacheIterator.next() : null;
+      if (cached != null && count.get() > scanLimit) {
+        output=cached;
+      }
+ else {
+        output=doProcess(item);
+        if (!processorTransactional) {
+          cache.add(output);
+        }
+      }
+    }
+ catch (    Exception e) {
+      if (rollbackClassifier.classify(e)) {
+        throw e;
+      }
+ else       if (itemProcessSkipPolicy.shouldSkip(e,contribution.getStepSkipCount())) {
+        contribution.incrementProcessSkipCount();
+        logger.debug("Skipping after failed process with no rollback",e);
+        callProcessSkipListener(item,e);
+      }
+ else {
+        throw new NonSkippableProcessException("Non-skippable exception in processor.  Make sure any exceptions that do not cause a rollback are skippable.",e);
+      }
+    }
+    if (output == null) {
+      iterator.remove();
+    }
+    return output;
+  }
+}
+; @TO@ RetryCallback<O> retryCallback=new RetryCallback<O>(){
+  public O doWithRetry(  RetryContext context) throws Exception {
+    O output=null;
+    try {
+      count.incrementAndGet();
+      O cached=(cacheIterator != null && cacheIterator.hasNext()) ? cacheIterator.next() : null;
+      if (cached != null && count.get() > scanLimit) {
+        output=cached;
+      }
+ else {
+        output=doProcess(item);
+        if (!processorTransactional) {
+          cache.add(output);
+        }
+      }
+    }
+ catch (    Exception e) {
+      if (rollbackClassifier.classify(e)) {
+        throw e;
+      }
+ else       if (itemProcessSkipPolicy.shouldSkip(e,contribution.getStepSkipCount())) {
+        contribution.incrementProcessSkipCount();
+        logger.debug("Skipping after failed process with no rollback",e);
+        callProcessSkipListener(item,e);
+      }
+ else {
+        throw new NonSkippableProcessException("Non-skippable exception in processor.  Make sure any exceptions that do not cause a rollback are skippable.",e);
+      }
+    }
+    if (output == null) {
+      iterator.remove();
+      data.incrementFilterCount();
+    }
+    return output;
+  }
+}
+; @AT@ 6893 @LENGTH@ 1898
+---UPD VariableDeclarationFragment@@retryCallback=new RetryCallback<O>(){
+  public O doWithRetry(  RetryContext context) throws Exception {
+    O output=null;
+    try {
+      count.incrementAndGet();
+      O cached=(cacheIterator != null && cacheIterator.hasNext()) ? cacheIterator.next() : null;
+      if (cached != null && count.get() > scanLimit) {
+        output=cached;
+      }
+ else {
+        output=doProcess(item);
+        if (!processorTransactional) {
+          cache.add(output);
+        }
+      }
+    }
+ catch (    Exception e) {
+      if (rollbackClassifier.classify(e)) {
+        throw e;
+      }
+ else       if (itemProcessSkipPolicy.shouldSkip(e,contribution.getStepSkipCount())) {
+        contribution.incrementProcessSkipCount();
+        logger.debug("Skipping after failed process with no rollback",e);
+        callProcessSkipListener(item,e);
+      }
+ else {
+        throw new NonSkippableProcessException("Non-skippable exception in processor.  Make sure any exceptions that do not cause a rollback are skippable.",e);
+      }
+    }
+    if (output == null) {
+      iterator.remove();
+    }
+    return output;
+  }
+}
+ @TO@ retryCallback=new RetryCallback<O>(){
+  public O doWithRetry(  RetryContext context) throws Exception {
+    O output=null;
+    try {
+      count.incrementAndGet();
+      O cached=(cacheIterator != null && cacheIterator.hasNext()) ? cacheIterator.next() : null;
+      if (cached != null && count.get() > scanLimit) {
+        output=cached;
+      }
+ else {
+        output=doProcess(item);
+        if (!processorTransactional) {
+          cache.add(output);
+        }
+      }
+    }
+ catch (    Exception e) {
+      if (rollbackClassifier.classify(e)) {
+        throw e;
+      }
+ else       if (itemProcessSkipPolicy.shouldSkip(e,contribution.getStepSkipCount())) {
+        contribution.incrementProcessSkipCount();
+        logger.debug("Skipping after failed process with no rollback",e);
+        callProcessSkipListener(item,e);
+      }
+ else {
+        throw new NonSkippableProcessException("Non-skippable exception in processor.  Make sure any exceptions that do not cause a rollback are skippable.",e);
+      }
+    }
+    if (output == null) {
+      iterator.remove();
+      data.incrementFilterCount();
+    }
+    return output;
+  }
+}
+ @AT@ 6910 @LENGTH@ 1880
+

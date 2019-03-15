@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(ArithmeticException.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("ArithmeticException") @AT@ 3779 @LENGTH@ 71
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(ArithmeticException.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("ArithmeticException") @AT@ 3779 @LENGTH@ 70
+------UPD SimpleName@@MethodName:add:[ArithmeticException.class.getSimpleName()] @TO@ MethodName:add:["ArithmeticException"] @AT@ 3803 @LENGTH@ 46
+---------INS StringLiteral@@"ArithmeticException" @TO@ SimpleName@@MethodName:add:[ArithmeticException.class.getSimpleName()] @AT@ 3394 @LENGTH@ 21
+---------DEL MethodInvocation@@ArithmeticException.class.getSimpleName() @AT@ 3807 @LENGTH@ 41
+------------DEL TypeLiteral@@ArithmeticException.class @AT@ 3807 @LENGTH@ 25
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 3833 @LENGTH@ 15
+

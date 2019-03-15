@@ -1,0 +1,2 @@
+INS BreakStatement@@ @TO@ SwitchStatement@@MethodInvocation:types[i].getPrimitiveCategory() @AT@ 20077 @LENGTH@ 6
+

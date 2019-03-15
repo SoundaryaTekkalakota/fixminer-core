@@ -1,0 +1,15 @@
+ UPD ExpressionStatement
+--- UPD Assignment
+------ INS MethodInvocation
+--------- MOV ThisExpression
+--------- MOV MethodInvocation
+--------- MOV SimpleName
+------ UPD Operator
+------ DEL InfixExpression
+--------- DEL SimpleName
+--------- DEL Operator
+--------- DEL ParenthesizedExpression
+------------ DEL InfixExpression
+--------------- DEL MethodInvocation
+--------------- DEL Operator
+--------------- DEL NumberLiteral

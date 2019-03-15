@@ -1,0 +1,11 @@
+ DEL AssertStatement
+--- DEL InfixExpression
+------ DEL InfixExpression
+--------- DEL SimpleName
+--------- DEL Operator
+--------- DEL NumberLiteral
+------ DEL Operator
+------ DEL InfixExpression
+--------- DEL SimpleName
+--------- DEL Operator
+--------- DEL SimpleName

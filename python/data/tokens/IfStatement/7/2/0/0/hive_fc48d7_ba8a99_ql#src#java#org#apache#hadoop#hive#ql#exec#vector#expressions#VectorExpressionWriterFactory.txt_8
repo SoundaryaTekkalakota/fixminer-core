@@ -1,0 +1,8 @@
+INS IfStatement@@InfixExpression:value == null @TO@ MethodDeclaration@@public, Object, MethodName:writeValue, ColumnVector column, int row, HiveException,  @AT@ 58361 @LENGTH@ 53
+---INS InfixExpression@@value == null @TO@ IfStatement@@InfixExpression:value == null @AT@ 58365 @LENGTH@ 13
+------INS SimpleName@@value @TO@ InfixExpression@@value == null @AT@ 58365 @LENGTH@ 5
+------INS Operator@@== @TO@ InfixExpression@@value == null @AT@ 58370 @LENGTH@ 2
+------INS NullLiteral@@null @TO@ InfixExpression@@value == null @AT@ 58374 @LENGTH@ 4
+---INS ReturnStatement@@NullLiteral:null @TO@ IfStatement@@InfixExpression:value == null @AT@ 58392 @LENGTH@ 12
+------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 58399 @LENGTH@ 4
+

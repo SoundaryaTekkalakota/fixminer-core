@@ -1,0 +1,7 @@
+UPD ThrowStatement@@ClassInstanceCreation:new StepListenerFailedException("Error in afterWrite.",e) @TO@ ClassInstanceCreation:new StepListenerFailedException("Error in afterWrite.",getTargetException(e)) @AT@ 8602 @LENGTH@ 65
+---UPD ClassInstanceCreation@@StepListenerFailedException["Error in afterWrite.", e] @TO@ StepListenerFailedException["Error in afterWrite.", getTargetException(e)] @AT@ 8608 @LENGTH@ 58
+------DEL SimpleName@@e @AT@ 8664 @LENGTH@ 1
+------INS MethodInvocation@@getTargetException(e) @TO@ ClassInstanceCreation@@StepListenerFailedException["Error in afterWrite.", e] @AT@ 8867 @LENGTH@ 21
+---------INS SimpleName@@MethodName:getTargetException:[e] @TO@ MethodInvocation@@getTargetException(e) @AT@ 8867 @LENGTH@ 21
+------------INS SimpleName@@e @TO@ SimpleName@@MethodName:getTargetException:[e] @AT@ 8886 @LENGTH@ 1
+

@@ -1,0 +1,29 @@
+DEL ExpressionStatement@@MethodInvocation:message.setHeader(MLLP_RECEIVING_APPLICATION,new String(hl7MessageBytes,fieldSeparatorIndexes.get(3) + 1,fieldSeparatorIndexes.get(4) - fieldSeparatorIndexes.get(3) - 1,charset)) @AT@ 28825 @LENGTH@ 231
+---DEL MethodInvocation@@message.setHeader(MLLP_RECEIVING_APPLICATION,new String(hl7MessageBytes,fieldSeparatorIndexes.get(3) + 1,fieldSeparatorIndexes.get(4) - fieldSeparatorIndexes.get(3) - 1,charset)) @AT@ 28825 @LENGTH@ 230
+------DEL SimpleName@@Name:message @AT@ 28825 @LENGTH@ 7
+------DEL SimpleName@@MethodName:setHeader:[MLLP_RECEIVING_APPLICATION, new String(hl7MessageBytes,fieldSeparatorIndexes.get(3) + 1,fieldSeparatorIndexes.get(4) - fieldSeparatorIndexes.get(3) - 1,charset)] @AT@ 28833 @LENGTH@ 222
+---------DEL SimpleName@@MLLP_RECEIVING_APPLICATION @AT@ 28843 @LENGTH@ 26
+---------DEL ClassInstanceCreation@@String[hl7MessageBytes, fieldSeparatorIndexes.get(3) + 1, fieldSeparatorIndexes.get(4) - fieldSeparatorIndexes.get(3) - 1, charset] @AT@ 28871 @LENGTH@ 183
+------------DEL New@@new @AT@ 28871 @LENGTH@ 3
+------------DEL SimpleType@@String @AT@ 28875 @LENGTH@ 6
+------------DEL SimpleName@@hl7MessageBytes @AT@ 28882 @LENGTH@ 15
+------------DEL InfixExpression@@fieldSeparatorIndexes.get(3) + 1 @AT@ 28899 @LENGTH@ 32
+---------------DEL MethodInvocation@@fieldSeparatorIndexes.get(3) @AT@ 28899 @LENGTH@ 28
+------------------DEL SimpleName@@Name:fieldSeparatorIndexes @AT@ 28899 @LENGTH@ 21
+------------------DEL SimpleName@@MethodName:get:[3] @AT@ 28921 @LENGTH@ 6
+---------------------DEL NumberLiteral@@3 @AT@ 28925 @LENGTH@ 1
+---------------DEL Operator@@+ @AT@ 28927 @LENGTH@ 1
+---------------DEL NumberLiteral@@1 @AT@ 28930 @LENGTH@ 1
+------------DEL InfixExpression@@fieldSeparatorIndexes.get(4) - fieldSeparatorIndexes.get(3) - 1 @AT@ 28957 @LENGTH@ 63
+---------------DEL MethodInvocation@@fieldSeparatorIndexes.get(4) @AT@ 28957 @LENGTH@ 28
+------------------DEL SimpleName@@Name:fieldSeparatorIndexes @AT@ 28957 @LENGTH@ 21
+------------------DEL SimpleName@@MethodName:get:[4] @AT@ 28979 @LENGTH@ 6
+---------------------DEL NumberLiteral@@4 @AT@ 28983 @LENGTH@ 1
+---------------DEL Operator@@- @AT@ 28985 @LENGTH@ 1
+---------------DEL MethodInvocation@@fieldSeparatorIndexes.get(3) @AT@ 28988 @LENGTH@ 28
+------------------DEL SimpleName@@Name:fieldSeparatorIndexes @AT@ 28988 @LENGTH@ 21
+------------------DEL SimpleName@@MethodName:get:[3] @AT@ 29010 @LENGTH@ 6
+---------------------DEL NumberLiteral@@3 @AT@ 29014 @LENGTH@ 1
+---------------DEL NumberLiteral@@1 @AT@ 29019 @LENGTH@ 1
+------------DEL SimpleName@@charset @AT@ 29046 @LENGTH@ 7
+

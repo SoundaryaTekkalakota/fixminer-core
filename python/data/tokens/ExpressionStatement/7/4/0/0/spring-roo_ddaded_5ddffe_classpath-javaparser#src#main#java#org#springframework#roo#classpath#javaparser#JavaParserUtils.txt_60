@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(NullPointerException.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("NullPointerException") @AT@ 5091 @LENGTH@ 72
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(NullPointerException.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("NullPointerException") @AT@ 5091 @LENGTH@ 71
+------UPD SimpleName@@MethodName:add:[NullPointerException.class.getSimpleName()] @TO@ MethodName:add:["NullPointerException"] @AT@ 5115 @LENGTH@ 47
+---------INS StringLiteral@@"NullPointerException" @TO@ SimpleName@@MethodName:add:[NullPointerException.class.getSimpleName()] @AT@ 4489 @LENGTH@ 22
+---------DEL MethodInvocation@@NullPointerException.class.getSimpleName() @AT@ 5119 @LENGTH@ 42
+------------DEL TypeLiteral@@NullPointerException.class @AT@ 5119 @LENGTH@ 26
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 5146 @LENGTH@ 15
+

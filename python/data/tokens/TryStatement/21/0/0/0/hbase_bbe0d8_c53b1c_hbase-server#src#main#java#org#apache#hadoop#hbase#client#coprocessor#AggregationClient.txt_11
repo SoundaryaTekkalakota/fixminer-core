@@ -1,0 +1,27 @@
+INS TryStatement@@try:[] @TO@ MethodDeclaration@@public, S, R, S, MethodName:sum, final byte[] tableName, final ColumnInterpreter<R,S> ci, final Scan scan, Throwable,  @AT@ 9008 @LENGTH@ 457
+---MOV ExpressionStatement@@MethodInvocation:table.coprocessorExec(AggregateProtocol.class,scan.getStartRow(),scan.getStopRow(),new Batch.Call<AggregateProtocol,S>(){
+  @Override public S call(  AggregateProtocol instance) throws IOException {
+    return instance.getSum(ci,scan);
+  }
+}
+,sumCallBack) @TO@ TryStatement@@try:[] @AT@ 8603 @LENGTH@ 291
+---INS ExpressionStatement@@Assignment:table=new HTable(conf,tableName) @TO@ TryStatement@@try:[] @AT@ 9020 @LENGTH@ 36
+------INS Assignment@@table=new HTable(conf,tableName) @TO@ ExpressionStatement@@Assignment:table=new HTable(conf,tableName) @AT@ 9020 @LENGTH@ 35
+---------INS SimpleName@@table @TO@ Assignment@@table=new HTable(conf,tableName) @AT@ 9020 @LENGTH@ 5
+---------INS Operator@@= @TO@ Assignment@@table=new HTable(conf,tableName) @AT@ 9025 @LENGTH@ 1
+---------INS ClassInstanceCreation@@HTable[conf, tableName] @TO@ Assignment@@table=new HTable(conf,tableName) @AT@ 9028 @LENGTH@ 27
+------------MOV New@@new @TO@ ClassInstanceCreation@@HTable[conf, tableName] @AT@ 8570 @LENGTH@ 3
+------------MOV SimpleType@@HTable @TO@ ClassInstanceCreation@@HTable[conf, tableName] @AT@ 8574 @LENGTH@ 6
+------------MOV SimpleName@@conf @TO@ ClassInstanceCreation@@HTable[conf, tableName] @AT@ 8581 @LENGTH@ 4
+------------MOV SimpleName@@tableName @TO@ ClassInstanceCreation@@HTable[conf, tableName] @AT@ 8587 @LENGTH@ 9
+---INS Block@@FinallyBody @TO@ TryStatement@@try:[] @AT@ 9400 @LENGTH@ 65
+------INS IfStatement@@InfixExpression:table != null @TO@ Block@@FinallyBody @AT@ 9408 @LENGTH@ 51
+---------INS InfixExpression@@table != null @TO@ IfStatement@@InfixExpression:table != null @AT@ 9412 @LENGTH@ 13
+------------INS SimpleName@@table @TO@ InfixExpression@@table != null @AT@ 9412 @LENGTH@ 5
+------------INS Operator@@!= @TO@ InfixExpression@@table != null @AT@ 9417 @LENGTH@ 2
+------------INS NullLiteral@@null @TO@ InfixExpression@@table != null @AT@ 9421 @LENGTH@ 4
+---------INS ExpressionStatement@@MethodInvocation:table.close() @TO@ IfStatement@@InfixExpression:table != null @AT@ 9437 @LENGTH@ 14
+------------INS MethodInvocation@@table.close() @TO@ ExpressionStatement@@MethodInvocation:table.close() @AT@ 9437 @LENGTH@ 13
+---------------INS SimpleName@@Name:table @TO@ MethodInvocation@@table.close() @AT@ 9437 @LENGTH@ 5
+---------------INS SimpleName@@MethodName:close:[] @TO@ MethodInvocation@@table.close() @AT@ 9443 @LENGTH@ 7
+

@@ -1,0 +1,5 @@
+UPD VariableDeclarationStatement@@Collection<CacheEvict> evicts=AnnotatedElementUtils.findAllMergedAnnotations(ae,CacheEvict.class); @TO@ Collection<CacheEvict> evicts=AnnotatedElementUtils.getAllMergedAnnotations(ae,CacheEvict.class); @AT@ 2661 @LENGTH@ 101
+---UPD VariableDeclarationFragment@@evicts=AnnotatedElementUtils.findAllMergedAnnotations(ae,CacheEvict.class) @TO@ evicts=AnnotatedElementUtils.getAllMergedAnnotations(ae,CacheEvict.class) @AT@ 2684 @LENGTH@ 77
+------UPD MethodInvocation@@AnnotatedElementUtils.findAllMergedAnnotations(ae,CacheEvict.class) @TO@ AnnotatedElementUtils.getAllMergedAnnotations(ae,CacheEvict.class) @AT@ 2693 @LENGTH@ 68
+---------UPD SimpleName@@MethodName:findAllMergedAnnotations:[ae, CacheEvict.class] @TO@ MethodName:getAllMergedAnnotations:[ae, CacheEvict.class] @AT@ 2715 @LENGTH@ 46
+

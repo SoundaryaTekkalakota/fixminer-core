@@ -1,0 +1,6 @@
+ExpressionStatement
+---Assignment
+------ClassInstanceCreation
+---------New
+---------SimpleType
+------NullLiteral

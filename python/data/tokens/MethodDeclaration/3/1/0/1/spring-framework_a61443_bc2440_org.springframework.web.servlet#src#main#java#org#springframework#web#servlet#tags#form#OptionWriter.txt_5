@@ -1,0 +1,4 @@
+UPD MethodDeclaration@@private, void, MethodName:renderFromEnum, final TagWriter tagWriter, JspException,  @TO@ private, void, MethodName:renderFromEnum, TagWriter tagWriter, JspException,  @AT@ 7335 @LENGTH@ 193
+---UPD SingleVariableDeclaration@@final TagWriter tagWriter @TO@ TagWriter tagWriter @AT@ 7363 @LENGTH@ 25
+------DEL Modifier@@final @AT@ 7363 @LENGTH@ 5
+

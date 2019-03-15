@@ -1,0 +1,14 @@
+DEL IfStatement@@PrefixExpression:!this.writestate.writesEnabled @AT@ 56354 @LENGTH@ 95
+---DEL PrefixExpression@@!this.writestate.writesEnabled @AT@ 56358 @LENGTH@ 30
+------DEL Operator@@! @AT@ 56358 @LENGTH@ 1
+------DEL FieldAccess@@this.writestate.writesEnabled @AT@ 56359 @LENGTH@ 29
+---------DEL FieldAccess@@this.writestate @AT@ 56359 @LENGTH@ 15
+------------DEL ThisExpression@@this @AT@ 56359 @LENGTH@ 4
+------------DEL SimpleName@@writestate @AT@ 56364 @LENGTH@ 10
+---------DEL SimpleName@@writesEnabled @AT@ 56375 @LENGTH@ 13
+---DEL ThrowStatement@@ClassInstanceCreation:new IOException("region is read only") @AT@ 56398 @LENGTH@ 45
+------DEL ClassInstanceCreation@@IOException["region is read only"] @AT@ 56404 @LENGTH@ 38
+---------DEL New@@new @AT@ 56404 @LENGTH@ 3
+---------DEL SimpleType@@IOException @AT@ 56408 @LENGTH@ 11
+---------DEL StringLiteral@@"region is read only" @AT@ 56420 @LENGTH@ 21
+

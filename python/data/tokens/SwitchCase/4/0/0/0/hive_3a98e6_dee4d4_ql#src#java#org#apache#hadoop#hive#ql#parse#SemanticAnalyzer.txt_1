@@ -1,0 +1,5 @@
+INS SwitchCase@@QualifiedName:HiveParser.SmallintLiteral @TO@ SwitchStatement@@MethodInvocation:condn.getToken().getType() @AT@ 60928 @LENGTH@ 32
+---INS QualifiedName@@HiveParser.SmallintLiteral @TO@ SwitchCase@@QualifiedName:HiveParser.SmallintLiteral @AT@ 60933 @LENGTH@ 26
+------INS SimpleName@@HiveParser @TO@ QualifiedName@@HiveParser.SmallintLiteral @AT@ 60933 @LENGTH@ 10
+------INS SimpleName@@SmallintLiteral @TO@ QualifiedName@@HiveParser.SmallintLiteral @AT@ 60944 @LENGTH@ 15
+

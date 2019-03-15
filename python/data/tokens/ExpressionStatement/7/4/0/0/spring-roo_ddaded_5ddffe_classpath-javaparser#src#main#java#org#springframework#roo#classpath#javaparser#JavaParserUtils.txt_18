@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(Long.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("Long") @AT@ 2509 @LENGTH@ 56
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(Long.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("Long") @AT@ 2509 @LENGTH@ 55
+------UPD SimpleName@@MethodName:add:[Long.class.getSimpleName()] @TO@ MethodName:add:["Long"] @AT@ 2533 @LENGTH@ 31
+---------INS StringLiteral@@"Long" @TO@ SimpleName@@MethodName:add:[Long.class.getSimpleName()] @AT@ 2427 @LENGTH@ 6
+---------DEL MethodInvocation@@Long.class.getSimpleName() @AT@ 2537 @LENGTH@ 26
+------------DEL TypeLiteral@@Long.class @AT@ 2537 @LENGTH@ 10
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 2548 @LENGTH@ 15
+

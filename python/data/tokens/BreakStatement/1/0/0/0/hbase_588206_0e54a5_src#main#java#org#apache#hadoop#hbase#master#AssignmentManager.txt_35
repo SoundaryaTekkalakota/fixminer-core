@@ -1,0 +1,2 @@
+INS BreakStatement@@ @TO@ SwitchStatement@@MethodInvocation:data.getEventType() @AT@ 32700 @LENGTH@ 6
+

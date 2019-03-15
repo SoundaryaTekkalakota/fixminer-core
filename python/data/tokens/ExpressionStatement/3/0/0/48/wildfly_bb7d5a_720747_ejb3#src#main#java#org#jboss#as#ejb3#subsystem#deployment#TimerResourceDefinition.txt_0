@@ -1,0 +1,55 @@
+UPD ExpressionStatement@@MethodInvocation:resourceRegistration.registerReadOnlyAttribute(TIME_REMAINING,new AbstractReadAttributeHandler(){
+  @Override protected void readAttribute(  TimerImpl timer,  ModelNode toSet){
+    final long time=timer.getTimeRemaining();
+    toSet.set(time);
+  }
+}
+) @TO@ MethodInvocation:resourceRegistration.registerReadOnlyAttribute(TIME_REMAINING,new AbstractReadAttributeHandler(){
+  @Override protected void readAttribute(  TimerImpl timer,  ModelNode toSet){
+    try {
+      final long time=timer.getTimeRemaining();
+      toSet.set(time);
+    }
+ catch (    NoMoreTimeoutsException nmte) {
+      if (EjbLogger.ROOT_LOGGER.isDebugEnabled())       EjbLogger.ROOT_LOGGER.debug("No more timeouts for timer " + timer);
+    }
+  }
+}
+) @AT@ 10771 @LENGTH@ 319
+---UPD MethodInvocation@@resourceRegistration.registerReadOnlyAttribute(TIME_REMAINING,new AbstractReadAttributeHandler(){
+  @Override protected void readAttribute(  TimerImpl timer,  ModelNode toSet){
+    final long time=timer.getTimeRemaining();
+    toSet.set(time);
+  }
+}
+) @TO@ resourceRegistration.registerReadOnlyAttribute(TIME_REMAINING,new AbstractReadAttributeHandler(){
+  @Override protected void readAttribute(  TimerImpl timer,  ModelNode toSet){
+    try {
+      final long time=timer.getTimeRemaining();
+      toSet.set(time);
+    }
+ catch (    NoMoreTimeoutsException nmte) {
+      if (EjbLogger.ROOT_LOGGER.isDebugEnabled())       EjbLogger.ROOT_LOGGER.debug("No more timeouts for timer " + timer);
+    }
+  }
+}
+) @AT@ 10771 @LENGTH@ 318
+------UPD SimpleName@@MethodName:registerReadOnlyAttribute:[TIME_REMAINING, new AbstractReadAttributeHandler(){
+  @Override protected void readAttribute(  TimerImpl timer,  ModelNode toSet){
+    final long time=timer.getTimeRemaining();
+    toSet.set(time);
+  }
+}
+] @TO@ MethodName:registerReadOnlyAttribute:[TIME_REMAINING, new AbstractReadAttributeHandler(){
+  @Override protected void readAttribute(  TimerImpl timer,  ModelNode toSet){
+    try {
+      final long time=timer.getTimeRemaining();
+      toSet.set(time);
+    }
+ catch (    NoMoreTimeoutsException nmte) {
+      if (EjbLogger.ROOT_LOGGER.isDebugEnabled())       EjbLogger.ROOT_LOGGER.debug("No more timeouts for timer " + timer);
+    }
+  }
+}
+] @AT@ 10792 @LENGTH@ 297
+

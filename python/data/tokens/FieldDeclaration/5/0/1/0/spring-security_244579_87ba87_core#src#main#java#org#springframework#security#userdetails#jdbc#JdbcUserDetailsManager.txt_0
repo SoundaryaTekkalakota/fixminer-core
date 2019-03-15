@@ -1,0 +1,6 @@
+DEL FieldDeclaration@@private, SqlUpdate, [insertUser] @AT@ 6027 @LENGTH@ 29
+---DEL Modifier@@private @AT@ 6027 @LENGTH@ 7
+---DEL SimpleType@@SqlUpdate @AT@ 6035 @LENGTH@ 9
+---DEL VariableDeclarationFragment@@insertUser @AT@ 6045 @LENGTH@ 10
+------DEL SimpleName@@insertUser @AT@ 6045 @LENGTH@ 10
+

@@ -1,0 +1,5 @@
+ UPD FieldDeclaration
+--- DEL Modifier
+--- UPD SimpleType
+--- UPD VariableDeclarationFragment
+------ UPD SimpleName

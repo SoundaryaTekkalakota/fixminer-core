@@ -1,0 +1,28 @@
+DEL ForStatement@@[int i=0];i < getColumnsCount(); [i++] @AT@ 404215 @LENGTH@ 170
+---DEL VariableDeclarationExpression@@int i=0 @AT@ 404220 @LENGTH@ 9
+------DEL PrimitiveType@@int @AT@ 404220 @LENGTH@ 3
+------DEL VariableDeclarationFragment@@i=0 @AT@ 404224 @LENGTH@ 5
+---------DEL SimpleName@@i @AT@ 404224 @LENGTH@ 1
+---------DEL NumberLiteral@@0 @AT@ 404228 @LENGTH@ 1
+---DEL InfixExpression@@i < getColumnsCount() @AT@ 404231 @LENGTH@ 21
+------DEL SimpleName@@i @AT@ 404231 @LENGTH@ 1
+------DEL Operator@@< @AT@ 404232 @LENGTH@ 1
+------DEL MethodInvocation@@MethodName:getColumnsCount:[] @AT@ 404235 @LENGTH@ 17
+---DEL PostfixExpression@@i++ @AT@ 404254 @LENGTH@ 3
+------DEL SimpleName@@i @AT@ 404254 @LENGTH@ 1
+------DEL Operator@@++ @AT@ 404256 @LENGTH@ 2
+---DEL IfStatement@@PrefixExpression:!getColumns(i).isInitialized() @AT@ 404269 @LENGTH@ 108
+------DEL PrefixExpression@@!getColumns(i).isInitialized() @AT@ 404273 @LENGTH@ 30
+---------DEL Operator@@! @AT@ 404273 @LENGTH@ 1
+---------DEL MethodInvocation@@getColumns(i).isInitialized() @AT@ 404274 @LENGTH@ 29
+------------DEL MethodInvocation@@MethodName:getColumns:[i] @AT@ 404274 @LENGTH@ 13
+---------------DEL SimpleName@@i @AT@ 404285 @LENGTH@ 1
+------------DEL SimpleName@@MethodName:isInitialized:[] @AT@ 404288 @LENGTH@ 15
+------DEL ExpressionStatement@@Assignment:memoizedIsInitialized=0 @AT@ 404317 @LENGTH@ 26
+---------DEL Assignment@@memoizedIsInitialized=0 @AT@ 404317 @LENGTH@ 25
+------------DEL SimpleName@@memoizedIsInitialized @AT@ 404317 @LENGTH@ 21
+------------DEL Operator@@= @AT@ 404338 @LENGTH@ 1
+------------DEL NumberLiteral@@0 @AT@ 404341 @LENGTH@ 1
+------DEL ReturnStatement@@BooleanLiteral:false @AT@ 404354 @LENGTH@ 13
+---------DEL BooleanLiteral@@false @AT@ 404361 @LENGTH@ 5
+

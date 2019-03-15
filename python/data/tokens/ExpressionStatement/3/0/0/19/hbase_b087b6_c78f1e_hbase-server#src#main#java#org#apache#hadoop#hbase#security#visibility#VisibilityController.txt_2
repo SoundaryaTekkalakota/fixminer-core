@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.debug("Current active user name is " + user.getShortName()) @TO@ MethodInvocation:LOG.trace("Current active user name is " + user.getShortName()) @AT@ 39486 @LENGTH@ 62
+---UPD MethodInvocation@@LOG.debug("Current active user name is " + user.getShortName()) @TO@ LOG.trace("Current active user name is " + user.getShortName()) @AT@ 39486 @LENGTH@ 61
+------UPD SimpleName@@MethodName:debug:["Current active user name is " + user.getShortName()] @TO@ MethodName:trace:["Current active user name is " + user.getShortName()] @AT@ 39490 @LENGTH@ 57
+

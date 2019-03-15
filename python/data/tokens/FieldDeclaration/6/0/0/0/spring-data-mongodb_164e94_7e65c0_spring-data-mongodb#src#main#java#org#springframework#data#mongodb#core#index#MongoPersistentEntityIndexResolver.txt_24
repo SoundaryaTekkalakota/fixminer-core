@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, String, [propertyName] @TO@ TypeDeclaration@@[public, static]CyclicPropertyReferenceException, RuntimeException @AT@ 15037 @LENGTH@ 34
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, String, [propertyName] @AT@ 15037 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, String, [propertyName] @AT@ 15045 @LENGTH@ 5
+---INS SimpleType@@String @TO@ FieldDeclaration@@private, final, String, [propertyName] @AT@ 15051 @LENGTH@ 6
+---INS VariableDeclarationFragment@@propertyName @TO@ FieldDeclaration@@private, final, String, [propertyName] @AT@ 15058 @LENGTH@ 12
+------INS SimpleName@@propertyName @TO@ VariableDeclarationFragment@@propertyName @AT@ 15058 @LENGTH@ 12
+

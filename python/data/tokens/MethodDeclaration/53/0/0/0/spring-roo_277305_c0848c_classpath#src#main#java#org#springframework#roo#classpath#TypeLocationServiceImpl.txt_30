@@ -1,0 +1,54 @@
+INS MethodDeclaration@@public, TypeCache, MethodName:getTypeCache,  @TO@ TypeDeclaration@@[@Component, @Service, public]TypeLocationServiceImpl, [TypeLocationService] @AT@ 34092 @LENGTH@ 590
+---INS Modifier@@public @TO@ MethodDeclaration@@public, TypeCache, MethodName:getTypeCache,  @AT@ 34092 @LENGTH@ 6
+---INS SimpleType@@TypeCache @TO@ MethodDeclaration@@public, TypeCache, MethodName:getTypeCache,  @AT@ 34099 @LENGTH@ 9
+---INS SimpleName@@MethodName:getTypeCache @TO@ MethodDeclaration@@public, TypeCache, MethodName:getTypeCache,  @AT@ 34109 @LENGTH@ 12
+---INS IfStatement@@InfixExpression:typeCache == null @TO@ MethodDeclaration@@public, TypeCache, MethodName:getTypeCache,  @AT@ 34130 @LENGTH@ 546
+------INS InfixExpression@@typeCache == null @TO@ IfStatement@@InfixExpression:typeCache == null @AT@ 34133 @LENGTH@ 17
+---------INS SimpleName@@typeCache @TO@ InfixExpression@@typeCache == null @AT@ 34133 @LENGTH@ 9
+---------INS Operator@@== @TO@ InfixExpression@@typeCache == null @AT@ 34142 @LENGTH@ 2
+---------INS NullLiteral@@null @TO@ InfixExpression@@typeCache == null @AT@ 34146 @LENGTH@ 4
+------INS TryStatement@@try:[] @TO@ IfStatement@@InfixExpression:typeCache == null @AT@ 34218 @LENGTH@ 415
+---------INS VariableDeclarationStatement@@ServiceReference<?>[] references=context.getAllServiceReferences(TypeCache.class.getName(),null); @TO@ TryStatement@@try:[] @AT@ 34231 @LENGTH@ 100
+------------INS ArrayType@@ServiceReference<?>[] @TO@ VariableDeclarationStatement@@ServiceReference<?>[] references=context.getAllServiceReferences(TypeCache.class.getName(),null); @AT@ 34231 @LENGTH@ 21
+---------------INS ParameterizedType@@ServiceReference<?> @TO@ ArrayType@@ServiceReference<?>[] @AT@ 34231 @LENGTH@ 19
+------------------INS SimpleType@@ServiceReference @TO@ ParameterizedType@@ServiceReference<?> @AT@ 34231 @LENGTH@ 16
+------------------INS WildcardType@@? @TO@ ParameterizedType@@ServiceReference<?> @AT@ 34248 @LENGTH@ 1
+------------INS VariableDeclarationFragment@@references=context.getAllServiceReferences(TypeCache.class.getName(),null) @TO@ VariableDeclarationStatement@@ServiceReference<?>[] references=context.getAllServiceReferences(TypeCache.class.getName(),null); @AT@ 34253 @LENGTH@ 77
+---------------INS SimpleName@@references @TO@ VariableDeclarationFragment@@references=context.getAllServiceReferences(TypeCache.class.getName(),null) @AT@ 34253 @LENGTH@ 10
+---------------INS MethodInvocation@@context.getAllServiceReferences(TypeCache.class.getName(),null) @TO@ VariableDeclarationFragment@@references=context.getAllServiceReferences(TypeCache.class.getName(),null) @AT@ 34266 @LENGTH@ 64
+------------------INS SimpleName@@Name:context @TO@ MethodInvocation@@context.getAllServiceReferences(TypeCache.class.getName(),null) @AT@ 34266 @LENGTH@ 7
+------------------INS SimpleName@@MethodName:getAllServiceReferences:[TypeCache.class.getName(), null] @TO@ MethodInvocation@@context.getAllServiceReferences(TypeCache.class.getName(),null) @AT@ 34274 @LENGTH@ 56
+---------------------INS MethodInvocation@@TypeCache.class.getName() @TO@ SimpleName@@MethodName:getAllServiceReferences:[TypeCache.class.getName(), null] @AT@ 34298 @LENGTH@ 25
+------------------------INS TypeLiteral@@TypeCache.class @TO@ MethodInvocation@@TypeCache.class.getName() @AT@ 34298 @LENGTH@ 15
+------------------------INS SimpleName@@MethodName:getName:[] @TO@ MethodInvocation@@TypeCache.class.getName() @AT@ 34314 @LENGTH@ 9
+---------------------INS NullLiteral@@null @TO@ SimpleName@@MethodName:getAllServiceReferences:[TypeCache.class.getName(), null] @AT@ 34325 @LENGTH@ 4
+---------INS EnhancedForStatement@@ServiceReference<?> ref, SimpleName:references @TO@ TryStatement@@try:[] @AT@ 34347 @LENGTH@ 103
+------------INS SingleVariableDeclaration@@ServiceReference<?> ref @TO@ EnhancedForStatement@@ServiceReference<?> ref, SimpleName:references @AT@ 34351 @LENGTH@ 23
+---------------INS ParameterizedType@@ServiceReference<?> @TO@ SingleVariableDeclaration@@ServiceReference<?> ref @AT@ 34351 @LENGTH@ 19
+------------------INS SimpleType@@ServiceReference @TO@ ParameterizedType@@ServiceReference<?> @AT@ 34351 @LENGTH@ 16
+------------------INS WildcardType@@? @TO@ ParameterizedType@@ServiceReference<?> @AT@ 34368 @LENGTH@ 1
+---------------INS SimpleName@@ref @TO@ SingleVariableDeclaration@@ServiceReference<?> ref @AT@ 34371 @LENGTH@ 3
+------------INS SimpleName@@references @TO@ EnhancedForStatement@@ServiceReference<?> ref, SimpleName:references @AT@ 34377 @LENGTH@ 10
+------------INS ReturnStatement@@CastExpression:(TypeCache)context.getService(ref) @TO@ EnhancedForStatement@@ServiceReference<?> ref, SimpleName:references @AT@ 34398 @LENGTH@ 43
+---------------INS CastExpression@@(TypeCache)context.getService(ref) @TO@ ReturnStatement@@CastExpression:(TypeCache)context.getService(ref) @AT@ 34405 @LENGTH@ 35
+------------------INS SimpleType@@TypeCache @TO@ CastExpression@@(TypeCache)context.getService(ref) @AT@ 34406 @LENGTH@ 9
+------------------INS MethodInvocation@@context.getService(ref) @TO@ CastExpression@@(TypeCache)context.getService(ref) @AT@ 34417 @LENGTH@ 23
+---------------------INS SimpleName@@Name:context @TO@ MethodInvocation@@context.getService(ref) @AT@ 34417 @LENGTH@ 7
+---------------------INS SimpleName@@MethodName:getService:[ref] @TO@ MethodInvocation@@context.getService(ref) @AT@ 34425 @LENGTH@ 15
+------------------------INS SimpleName@@ref @TO@ SimpleName@@MethodName:getService:[ref] @AT@ 34436 @LENGTH@ 3
+---------INS ReturnStatement@@NullLiteral:null @TO@ TryStatement@@try:[] @AT@ 34466 @LENGTH@ 12
+------------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 34473 @LENGTH@ 4
+---------INS CatchClause@@InvalidSyntaxException e @TO@ TryStatement@@try:[] @AT@ 34495 @LENGTH@ 138
+------------INS SingleVariableDeclaration@@InvalidSyntaxException e @TO@ CatchClause@@InvalidSyntaxException e @AT@ 34502 @LENGTH@ 24
+---------------INS SimpleType@@InvalidSyntaxException @TO@ SingleVariableDeclaration@@InvalidSyntaxException e @AT@ 34502 @LENGTH@ 22
+---------------INS SimpleName@@e @TO@ SingleVariableDeclaration@@InvalidSyntaxException e @AT@ 34525 @LENGTH@ 1
+------------INS ExpressionStatement@@MethodInvocation:LOGGER.warning("Cannot load TypeCache on TypeLocationServiceImpl.") @TO@ CatchClause@@InvalidSyntaxException e @AT@ 34537 @LENGTH@ 68
+---------------INS MethodInvocation@@LOGGER.warning("Cannot load TypeCache on TypeLocationServiceImpl.") @TO@ ExpressionStatement@@MethodInvocation:LOGGER.warning("Cannot load TypeCache on TypeLocationServiceImpl.") @AT@ 34537 @LENGTH@ 67
+------------------INS SimpleName@@Name:LOGGER @TO@ MethodInvocation@@LOGGER.warning("Cannot load TypeCache on TypeLocationServiceImpl.") @AT@ 34537 @LENGTH@ 6
+------------------INS SimpleName@@MethodName:warning:["Cannot load TypeCache on TypeLocationServiceImpl."] @TO@ MethodInvocation@@LOGGER.warning("Cannot load TypeCache on TypeLocationServiceImpl.") @AT@ 34544 @LENGTH@ 60
+---------------------INS StringLiteral@@"Cannot load TypeCache on TypeLocationServiceImpl." @TO@ SimpleName@@MethodName:warning:["Cannot load TypeCache on TypeLocationServiceImpl."] @AT@ 34552 @LENGTH@ 51
+------------INS ReturnStatement@@NullLiteral:null @TO@ CatchClause@@InvalidSyntaxException e @AT@ 34613 @LENGTH@ 12
+---------------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 34620 @LENGTH@ 4
+------INS ReturnStatement@@SimpleName:typeCache @TO@ IfStatement@@InfixExpression:typeCache == null @AT@ 34652 @LENGTH@ 17
+---------INS SimpleName@@typeCache @TO@ ReturnStatement@@SimpleName:typeCache @AT@ 34659 @LENGTH@ 9
+

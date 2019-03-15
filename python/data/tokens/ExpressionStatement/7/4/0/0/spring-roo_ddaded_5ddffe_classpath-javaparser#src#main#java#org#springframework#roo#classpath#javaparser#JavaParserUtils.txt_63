@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(SecurityException.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("SecurityException") @AT@ 5313 @LENGTH@ 69
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(SecurityException.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("SecurityException") @AT@ 5313 @LENGTH@ 68
+------UPD SimpleName@@MethodName:add:[SecurityException.class.getSimpleName()] @TO@ MethodName:add:["SecurityException"] @AT@ 5337 @LENGTH@ 44
+---------INS StringLiteral@@"SecurityException" @TO@ SimpleName@@MethodName:add:[SecurityException.class.getSimpleName()] @AT@ 4651 @LENGTH@ 19
+---------DEL MethodInvocation@@SecurityException.class.getSimpleName() @AT@ 5341 @LENGTH@ 39
+------------DEL TypeLiteral@@SecurityException.class @AT@ 5341 @LENGTH@ 23
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 5365 @LENGTH@ 15
+

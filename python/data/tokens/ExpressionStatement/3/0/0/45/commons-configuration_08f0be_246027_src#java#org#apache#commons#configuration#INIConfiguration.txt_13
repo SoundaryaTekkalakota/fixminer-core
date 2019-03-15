@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:pw.println() @TO@ MethodInvocation:out.println() @AT@ 8084 @LENGTH@ 13
+---UPD MethodInvocation@@pw.println() @TO@ out.println() @AT@ 8084 @LENGTH@ 12
+------UPD SimpleName@@Name:pw @TO@ Name:out @AT@ 8084 @LENGTH@ 2
+

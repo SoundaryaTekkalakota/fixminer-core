@@ -1,0 +1,8 @@
+UPD ReturnStatement@@MethodInvocation:StringUtils.defaultIfEmpty(clearMethod,CLEAR_METHOD_DEFAULT) @TO@ SimpleName:clearMethod @AT@ 2834 @LENGTH@ 69
+---INS SimpleName@@clearMethod @TO@ ReturnStatement@@MethodInvocation:StringUtils.defaultIfEmpty(clearMethod,CLEAR_METHOD_DEFAULT) @AT@ 2796 @LENGTH@ 11
+---DEL MethodInvocation@@StringUtils.defaultIfEmpty(clearMethod,CLEAR_METHOD_DEFAULT) @AT@ 2841 @LENGTH@ 61
+------DEL SimpleName@@Name:StringUtils @AT@ 2841 @LENGTH@ 11
+------DEL SimpleName@@MethodName:defaultIfEmpty:[clearMethod, CLEAR_METHOD_DEFAULT] @AT@ 2853 @LENGTH@ 49
+---------DEL SimpleName@@clearMethod @AT@ 2868 @LENGTH@ 11
+---------DEL SimpleName@@CLEAR_METHOD_DEFAULT @AT@ 2881 @LENGTH@ 20
+

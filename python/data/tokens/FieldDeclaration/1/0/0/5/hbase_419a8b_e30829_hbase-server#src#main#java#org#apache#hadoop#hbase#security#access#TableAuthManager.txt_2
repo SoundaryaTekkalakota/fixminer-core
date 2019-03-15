@@ -1,0 +1,2 @@
+MOV FieldDeclaration@@private, ListMultimap<String,Permission>, [USER_CACHE=ArrayListMultimap.create()] @TO@ TypeDeclaration@@[private, static]PermissionCache,  @AT@ 1832 @LENGTH@ 80
+

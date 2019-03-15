@@ -1,0 +1,18 @@
+DEL MethodDeclaration@@public, boolean, MethodName:retainAll, Collection<?> c,  @AT@ 11927 @LENGTH@ 118
+---DEL Modifier@@public @AT@ 11927 @LENGTH@ 6
+---DEL PrimitiveType@@boolean @AT@ 11934 @LENGTH@ 7
+---DEL SimpleName@@MethodName:retainAll @AT@ 11942 @LENGTH@ 9
+---DEL SingleVariableDeclaration@@Collection<?> c @AT@ 11952 @LENGTH@ 15
+------DEL ParameterizedType@@Collection<?> @AT@ 11952 @LENGTH@ 13
+---------DEL SimpleType@@Collection @AT@ 11952 @LENGTH@ 10
+---------DEL WildcardType@@? @AT@ 11963 @LENGTH@ 1
+------DEL SimpleName@@c @AT@ 11966 @LENGTH@ 1
+---DEL ExpressionStatement@@MethodInvocation:copyOnWrite() @AT@ 11977 @LENGTH@ 14
+------DEL MethodInvocation@@MethodName:copyOnWrite:[] @AT@ 11977 @LENGTH@ 13
+---DEL ReturnStatement@@MethodInvocation:shared.getSortCols().retainAll(c) @AT@ 11998 @LENGTH@ 41
+------DEL MethodInvocation@@shared.getSortCols().retainAll(c) @AT@ 12005 @LENGTH@ 33
+---------DEL SimpleName@@Name:shared @AT@ 12005 @LENGTH@ 6
+---------DEL MethodInvocation@@MethodName:getSortCols:[] @AT@ 12005 @LENGTH@ 20
+---------DEL SimpleName@@MethodName:retainAll:[c] @AT@ 12026 @LENGTH@ 12
+------------DEL SimpleName@@c @AT@ 12036 @LENGTH@ 1
+

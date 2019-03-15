@@ -1,0 +1,7 @@
+UPD ExpressionStatement@@MethodInvocation:e.printStackTrace() @TO@ MethodInvocation:LOG.warn("Error getting operation status: ",e) @AT@ 12340 @LENGTH@ 20
+---UPD MethodInvocation@@e.printStackTrace() @TO@ LOG.warn("Error getting operation status: ",e) @AT@ 12340 @LENGTH@ 19
+------UPD SimpleName@@Name:e @TO@ Name:LOG @AT@ 12340 @LENGTH@ 1
+------UPD SimpleName@@MethodName:printStackTrace:[] @TO@ MethodName:warn:["Error getting operation status: ", e] @AT@ 12342 @LENGTH@ 17
+---------INS StringLiteral@@"Error getting operation status: " @TO@ SimpleName@@MethodName:printStackTrace:[] @AT@ 12172 @LENGTH@ 34
+---------INS SimpleName@@e @TO@ SimpleName@@MethodName:printStackTrace:[] @AT@ 12208 @LENGTH@ 1
+

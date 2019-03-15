@@ -1,0 +1,11 @@
+INS FieldDeclaration@@private, final, static, Object, [compactionCountLock=new Object()] @TO@ TypeDeclaration@@[public]CompactSelection,  @AT@ 1824 @LENGTH@ 63
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, static, Object, [compactionCountLock=new Object()] @AT@ 1824 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, static, Object, [compactionCountLock=new Object()] @AT@ 1832 @LENGTH@ 5
+---INS Modifier@@static @TO@ FieldDeclaration@@private, final, static, Object, [compactionCountLock=new Object()] @AT@ 1838 @LENGTH@ 6
+---INS SimpleType@@Object @TO@ FieldDeclaration@@private, final, static, Object, [compactionCountLock=new Object()] @AT@ 1845 @LENGTH@ 6
+---INS VariableDeclarationFragment@@compactionCountLock=new Object() @TO@ FieldDeclaration@@private, final, static, Object, [compactionCountLock=new Object()] @AT@ 1852 @LENGTH@ 34
+------INS SimpleName@@compactionCountLock @TO@ VariableDeclarationFragment@@compactionCountLock=new Object() @AT@ 1852 @LENGTH@ 19
+------INS ClassInstanceCreation@@Object[] @TO@ VariableDeclarationFragment@@compactionCountLock=new Object() @AT@ 1874 @LENGTH@ 12
+---------INS New@@new @TO@ ClassInstanceCreation@@Object[] @AT@ 1874 @LENGTH@ 3
+---------INS SimpleType@@Object @TO@ ClassInstanceCreation@@Object[] @AT@ 1878 @LENGTH@ 6
+

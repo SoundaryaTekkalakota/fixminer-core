@@ -1,0 +1,115 @@
+UPD VariableDeclarationStatement@@AbstractAddStepHandler add=new TrivialAddHandler<SecurityEventListener>(SecurityEventListener.class,attributes,SECURITY_EVENT_LISTENER_RUNTIME_CAPABILITY){
+  @Override protected ValueSupplier<SecurityEventListener> getValueSupplier(  ServiceBuilder<SecurityEventListener> serviceBuilder,  OperationContext context,  ModelNode model) throws OperationFailedException {
+    String address=SERVER_ADDRESS.resolveModelAttribute(context,model).asString();
+    final InetAddress serverAddress;
+    try {
+      serverAddress=InetAddress.getByName(address);
+    }
+ catch (    UnknownHostException e) {
+      throw ROOT_LOGGER.serverNotKnown(address,e);
+    }
+    final int port=PORT.resolveModelAttribute(context,model).asInt();
+    final Transport transport=Transport.valueOf(TRANSPORT.resolveModelAttribute(context,model).asString());
+    final String hostName=HOST_NAME.resolveModelAttribute(context,model).asString();
+    final Format format=Format.valueOf(FORMAT.resolveModelAttribute(context,model).asString());
+    return () -> {
+      final SecurityEventVisitor<?,String> formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().build() : SimpleSecurityEventFormatter.builder().build();
+      final AuditEndpoint endpoint;
+      try {
+        endpoint=SyslogAuditEndpoint.builder().setServerAddress(serverAddress).setPort(port).setTcp(Transport.TCP == transport).setHostName(hostName).build();
+      }
+ catch (      IOException e) {
+        throw ROOT_LOGGER.unableToStartService(e);
+      }
+      return SecurityEventListener.from(AuditLogger.builder().setPriorityMapper(m -> EventPriority.WARNING).setMessageFormatter(m -> m.accept(formatter,null)).setAuditEndpoint(endpoint).build());
+    }
+;
+  }
+}
+; @TO@ AbstractAddStepHandler add=new TrivialAddHandler<SecurityEventListener>(SecurityEventListener.class,attributes,SECURITY_EVENT_LISTENER_RUNTIME_CAPABILITY){
+  @Override protected ValueSupplier<SecurityEventListener> getValueSupplier(  ServiceBuilder<SecurityEventListener> serviceBuilder,  OperationContext context,  ModelNode model) throws OperationFailedException {
+    String address=SERVER_ADDRESS.resolveModelAttribute(context,model).asString();
+    final InetAddress serverAddress;
+    try {
+      serverAddress=InetAddress.getByName(address);
+    }
+ catch (    UnknownHostException e) {
+      throw ROOT_LOGGER.serverNotKnown(address,e);
+    }
+    final int port=PORT.resolveModelAttribute(context,model).asInt();
+    final Transport transport=Transport.valueOf(TRANSPORT.resolveModelAttribute(context,model).asString());
+    final String hostName=HOST_NAME.resolveModelAttribute(context,model).asString();
+    final Format format=Format.valueOf(FORMAT.resolveModelAttribute(context,model).asString());
+    return () -> {
+      final SecurityEventVisitor<?,String> formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().setDateFormatSupplier(bind(SimpleDateFormat::new,DATE_FORMAT)).build() : SimpleSecurityEventFormatter.builder().setDateFormatSupplier(bind(SimpleDateFormat::new,DATE_FORMAT)).build();
+      final AuditEndpoint endpoint;
+      try {
+        endpoint=SyslogAuditEndpoint.builder().setServerAddress(serverAddress).setPort(port).setTcp(Transport.TCP == transport).setHostName(hostName).build();
+      }
+ catch (      IOException e) {
+        throw ROOT_LOGGER.unableToStartService(e);
+      }
+      return SecurityEventListener.from(AuditLogger.builder().setPriorityMapper(m -> EventPriority.WARNING).setMessageFormatter(m -> m.accept(formatter,null)).setAuditEndpoint(endpoint).build());
+    }
+;
+  }
+}
+; @AT@ 9053 @LENGTH@ 2236
+---UPD VariableDeclarationFragment@@add=new TrivialAddHandler<SecurityEventListener>(SecurityEventListener.class,attributes,SECURITY_EVENT_LISTENER_RUNTIME_CAPABILITY){
+  @Override protected ValueSupplier<SecurityEventListener> getValueSupplier(  ServiceBuilder<SecurityEventListener> serviceBuilder,  OperationContext context,  ModelNode model) throws OperationFailedException {
+    String address=SERVER_ADDRESS.resolveModelAttribute(context,model).asString();
+    final InetAddress serverAddress;
+    try {
+      serverAddress=InetAddress.getByName(address);
+    }
+ catch (    UnknownHostException e) {
+      throw ROOT_LOGGER.serverNotKnown(address,e);
+    }
+    final int port=PORT.resolveModelAttribute(context,model).asInt();
+    final Transport transport=Transport.valueOf(TRANSPORT.resolveModelAttribute(context,model).asString());
+    final String hostName=HOST_NAME.resolveModelAttribute(context,model).asString();
+    final Format format=Format.valueOf(FORMAT.resolveModelAttribute(context,model).asString());
+    return () -> {
+      final SecurityEventVisitor<?,String> formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().build() : SimpleSecurityEventFormatter.builder().build();
+      final AuditEndpoint endpoint;
+      try {
+        endpoint=SyslogAuditEndpoint.builder().setServerAddress(serverAddress).setPort(port).setTcp(Transport.TCP == transport).setHostName(hostName).build();
+      }
+ catch (      IOException e) {
+        throw ROOT_LOGGER.unableToStartService(e);
+      }
+      return SecurityEventListener.from(AuditLogger.builder().setPriorityMapper(m -> EventPriority.WARNING).setMessageFormatter(m -> m.accept(formatter,null)).setAuditEndpoint(endpoint).build());
+    }
+;
+  }
+}
+ @TO@ add=new TrivialAddHandler<SecurityEventListener>(SecurityEventListener.class,attributes,SECURITY_EVENT_LISTENER_RUNTIME_CAPABILITY){
+  @Override protected ValueSupplier<SecurityEventListener> getValueSupplier(  ServiceBuilder<SecurityEventListener> serviceBuilder,  OperationContext context,  ModelNode model) throws OperationFailedException {
+    String address=SERVER_ADDRESS.resolveModelAttribute(context,model).asString();
+    final InetAddress serverAddress;
+    try {
+      serverAddress=InetAddress.getByName(address);
+    }
+ catch (    UnknownHostException e) {
+      throw ROOT_LOGGER.serverNotKnown(address,e);
+    }
+    final int port=PORT.resolveModelAttribute(context,model).asInt();
+    final Transport transport=Transport.valueOf(TRANSPORT.resolveModelAttribute(context,model).asString());
+    final String hostName=HOST_NAME.resolveModelAttribute(context,model).asString();
+    final Format format=Format.valueOf(FORMAT.resolveModelAttribute(context,model).asString());
+    return () -> {
+      final SecurityEventVisitor<?,String> formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().setDateFormatSupplier(bind(SimpleDateFormat::new,DATE_FORMAT)).build() : SimpleSecurityEventFormatter.builder().setDateFormatSupplier(bind(SimpleDateFormat::new,DATE_FORMAT)).build();
+      final AuditEndpoint endpoint;
+      try {
+        endpoint=SyslogAuditEndpoint.builder().setServerAddress(serverAddress).setPort(port).setTcp(Transport.TCP == transport).setHostName(hostName).build();
+      }
+ catch (      IOException e) {
+        throw ROOT_LOGGER.unableToStartService(e);
+      }
+      return SecurityEventListener.from(AuditLogger.builder().setPriorityMapper(m -> EventPriority.WARNING).setMessageFormatter(m -> m.accept(formatter,null)).setAuditEndpoint(endpoint).build());
+    }
+;
+  }
+}
+ @AT@ 9076 @LENGTH@ 2212
+

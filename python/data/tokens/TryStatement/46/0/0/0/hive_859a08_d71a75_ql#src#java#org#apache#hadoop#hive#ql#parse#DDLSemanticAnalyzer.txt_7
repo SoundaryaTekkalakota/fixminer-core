@@ -1,0 +1,47 @@
+INS TryStatement@@try:[] @TO@ MethodDeclaration@@private, void, MethodName:analyzeAlterTableClusterSort, ASTNode ast, SemanticException,  @AT@ 25267 @LENGTH@ 324
+---INS VariableDeclarationStatement@@Table tab=db.getTable(MetaStoreUtils.DEFAULT_DATABASE_NAME,tableName,false); @TO@ TryStatement@@try:[] @AT@ 25279 @LENGTH@ 80
+------INS SimpleType@@Table @TO@ VariableDeclarationStatement@@Table tab=db.getTable(MetaStoreUtils.DEFAULT_DATABASE_NAME,tableName,false); @AT@ 25279 @LENGTH@ 5
+------INS VariableDeclarationFragment@@tab=db.getTable(MetaStoreUtils.DEFAULT_DATABASE_NAME,tableName,false) @TO@ VariableDeclarationStatement@@Table tab=db.getTable(MetaStoreUtils.DEFAULT_DATABASE_NAME,tableName,false); @AT@ 25285 @LENGTH@ 73
+---------INS SimpleName@@tab @TO@ VariableDeclarationFragment@@tab=db.getTable(MetaStoreUtils.DEFAULT_DATABASE_NAME,tableName,false) @AT@ 25285 @LENGTH@ 3
+---------INS MethodInvocation@@db.getTable(MetaStoreUtils.DEFAULT_DATABASE_NAME,tableName,false) @TO@ VariableDeclarationFragment@@tab=db.getTable(MetaStoreUtils.DEFAULT_DATABASE_NAME,tableName,false) @AT@ 25291 @LENGTH@ 67
+------------INS SimpleName@@Name:db @TO@ MethodInvocation@@db.getTable(MetaStoreUtils.DEFAULT_DATABASE_NAME,tableName,false) @AT@ 25291 @LENGTH@ 2
+------------INS SimpleName@@MethodName:getTable:[MetaStoreUtils.DEFAULT_DATABASE_NAME, tableName, false] @TO@ MethodInvocation@@db.getTable(MetaStoreUtils.DEFAULT_DATABASE_NAME,tableName,false) @AT@ 25294 @LENGTH@ 64
+---------------INS QualifiedName@@MetaStoreUtils.DEFAULT_DATABASE_NAME @TO@ SimpleName@@MethodName:getTable:[MetaStoreUtils.DEFAULT_DATABASE_NAME, tableName, false] @AT@ 25303 @LENGTH@ 36
+------------------INS SimpleName@@MetaStoreUtils @TO@ QualifiedName@@MetaStoreUtils.DEFAULT_DATABASE_NAME @AT@ 25303 @LENGTH@ 14
+------------------INS SimpleName@@DEFAULT_DATABASE_NAME @TO@ QualifiedName@@MetaStoreUtils.DEFAULT_DATABASE_NAME @AT@ 25318 @LENGTH@ 21
+---------------INS SimpleName@@tableName @TO@ SimpleName@@MethodName:getTable:[MetaStoreUtils.DEFAULT_DATABASE_NAME, tableName, false] @AT@ 25341 @LENGTH@ 9
+---------------INS BooleanLiteral@@false @TO@ SimpleName@@MethodName:getTable:[MetaStoreUtils.DEFAULT_DATABASE_NAME, tableName, false] @AT@ 25352 @LENGTH@ 5
+---INS IfStatement@@InfixExpression:tab != null @TO@ TryStatement@@try:[] @AT@ 25366 @LENGTH@ 110
+------INS InfixExpression@@tab != null @TO@ IfStatement@@InfixExpression:tab != null @AT@ 25370 @LENGTH@ 11
+---------INS SimpleName@@tab @TO@ InfixExpression@@tab != null @AT@ 25370 @LENGTH@ 3
+---------INS Operator@@!= @TO@ InfixExpression@@tab != null @AT@ 25373 @LENGTH@ 2
+---------INS NullLiteral@@null @TO@ InfixExpression@@tab != null @AT@ 25377 @LENGTH@ 4
+------INS ExpressionStatement@@MethodInvocation:inputs.add(new ReadEntity(tab)) @TO@ IfStatement@@InfixExpression:tab != null @AT@ 25393 @LENGTH@ 32
+---------INS MethodInvocation@@inputs.add(new ReadEntity(tab)) @TO@ ExpressionStatement@@MethodInvocation:inputs.add(new ReadEntity(tab)) @AT@ 25393 @LENGTH@ 31
+------------INS SimpleName@@Name:inputs @TO@ MethodInvocation@@inputs.add(new ReadEntity(tab)) @AT@ 25393 @LENGTH@ 6
+------------INS SimpleName@@MethodName:add:[new ReadEntity(tab)] @TO@ MethodInvocation@@inputs.add(new ReadEntity(tab)) @AT@ 25400 @LENGTH@ 24
+---------------INS ClassInstanceCreation@@ReadEntity[tab] @TO@ SimpleName@@MethodName:add:[new ReadEntity(tab)] @AT@ 25404 @LENGTH@ 19
+------------------INS New@@new @TO@ ClassInstanceCreation@@ReadEntity[tab] @AT@ 25404 @LENGTH@ 3
+------------------INS SimpleType@@ReadEntity @TO@ ClassInstanceCreation@@ReadEntity[tab] @AT@ 25408 @LENGTH@ 10
+------------------INS SimpleName@@tab @TO@ ClassInstanceCreation@@ReadEntity[tab] @AT@ 25419 @LENGTH@ 3
+------INS ExpressionStatement@@MethodInvocation:outputs.add(new WriteEntity(tab)) @TO@ IfStatement@@InfixExpression:tab != null @AT@ 25434 @LENGTH@ 34
+---------INS MethodInvocation@@outputs.add(new WriteEntity(tab)) @TO@ ExpressionStatement@@MethodInvocation:outputs.add(new WriteEntity(tab)) @AT@ 25434 @LENGTH@ 33
+------------INS SimpleName@@Name:outputs @TO@ MethodInvocation@@outputs.add(new WriteEntity(tab)) @AT@ 25434 @LENGTH@ 7
+------------INS SimpleName@@MethodName:add:[new WriteEntity(tab)] @TO@ MethodInvocation@@outputs.add(new WriteEntity(tab)) @AT@ 25442 @LENGTH@ 25
+---------------INS ClassInstanceCreation@@WriteEntity[tab] @TO@ SimpleName@@MethodName:add:[new WriteEntity(tab)] @AT@ 25446 @LENGTH@ 20
+------------------INS New@@new @TO@ ClassInstanceCreation@@WriteEntity[tab] @AT@ 25446 @LENGTH@ 3
+------------------INS SimpleType@@WriteEntity @TO@ ClassInstanceCreation@@WriteEntity[tab] @AT@ 25450 @LENGTH@ 11
+------------------INS SimpleName@@tab @TO@ ClassInstanceCreation@@WriteEntity[tab] @AT@ 25462 @LENGTH@ 3
+---INS CatchClause@@HiveException e @TO@ TryStatement@@try:[] @AT@ 25483 @LENGTH@ 108
+------INS SingleVariableDeclaration@@HiveException e @TO@ CatchClause@@HiveException e @AT@ 25490 @LENGTH@ 15
+---------INS SimpleType@@HiveException @TO@ SingleVariableDeclaration@@HiveException e @AT@ 25490 @LENGTH@ 13
+---------INS SimpleName@@e @TO@ SingleVariableDeclaration@@HiveException e @AT@ 25504 @LENGTH@ 1
+------INS ThrowStatement@@ClassInstanceCreation:new SemanticException(ErrorMsg.INVALID_TABLE.getMsg(tableName)) @TO@ CatchClause@@HiveException e @AT@ 25515 @LENGTH@ 70
+---------INS ClassInstanceCreation@@SemanticException[ErrorMsg.INVALID_TABLE.getMsg(tableName)] @TO@ ThrowStatement@@ClassInstanceCreation:new SemanticException(ErrorMsg.INVALID_TABLE.getMsg(tableName)) @AT@ 25521 @LENGTH@ 63
+------------INS New@@new @TO@ ClassInstanceCreation@@SemanticException[ErrorMsg.INVALID_TABLE.getMsg(tableName)] @AT@ 25521 @LENGTH@ 3
+------------INS SimpleType@@SemanticException @TO@ ClassInstanceCreation@@SemanticException[ErrorMsg.INVALID_TABLE.getMsg(tableName)] @AT@ 25525 @LENGTH@ 17
+------------INS MethodInvocation@@ErrorMsg.INVALID_TABLE.getMsg(tableName) @TO@ ClassInstanceCreation@@SemanticException[ErrorMsg.INVALID_TABLE.getMsg(tableName)] @AT@ 25543 @LENGTH@ 40
+---------------INS QualifiedName@@Name:ErrorMsg.INVALID_TABLE @TO@ MethodInvocation@@ErrorMsg.INVALID_TABLE.getMsg(tableName) @AT@ 25543 @LENGTH@ 22
+---------------INS SimpleName@@MethodName:getMsg:[tableName] @TO@ MethodInvocation@@ErrorMsg.INVALID_TABLE.getMsg(tableName) @AT@ 25566 @LENGTH@ 17
+------------------INS SimpleName@@tableName @TO@ SimpleName@@MethodName:getMsg:[tableName] @AT@ 25573 @LENGTH@ 9
+

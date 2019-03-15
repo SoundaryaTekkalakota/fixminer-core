@@ -1,0 +1,8 @@
+VariableDeclarationStatement
+---VariableDeclarationFragment
+------ArrayInitializer
+---------SimpleName
+------ArrayCreation
+---------ArrayType
+------------SimpleType
+---------NumberLiteral

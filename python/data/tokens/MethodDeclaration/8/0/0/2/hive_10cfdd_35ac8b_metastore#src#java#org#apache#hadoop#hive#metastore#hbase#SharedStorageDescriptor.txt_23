@@ -1,0 +1,9 @@
+DEL MethodDeclaration@@public, boolean, MethodName:isSetCompressed,  @AT@ 3859 @LENGTH@ 75
+---DEL Modifier@@public @AT@ 3859 @LENGTH@ 6
+---DEL PrimitiveType@@boolean @AT@ 3866 @LENGTH@ 7
+---DEL SimpleName@@MethodName:isSetCompressed @AT@ 3874 @LENGTH@ 15
+---DEL ReturnStatement@@MethodInvocation:shared.isSetCompressed() @AT@ 3898 @LENGTH@ 32
+------DEL MethodInvocation@@shared.isSetCompressed() @AT@ 3905 @LENGTH@ 24
+---------DEL SimpleName@@Name:shared @AT@ 3905 @LENGTH@ 6
+---------DEL SimpleName@@MethodName:isSetCompressed:[] @AT@ 3912 @LENGTH@ 17
+

@@ -1,0 +1,6 @@
+UPD MethodDeclaration@@public, WireTapDefinition, MethodName:copy,  @TO@ public, WireTapDefinition<Type>, MethodName:copy,  @AT@ 6767 @LENGTH@ 83
+---INS ParameterizedType@@WireTapDefinition<Type> @TO@ MethodDeclaration@@public, WireTapDefinition, MethodName:copy,  @AT@ 6725 @LENGTH@ 23
+------INS SimpleType@@WireTapDefinition @TO@ ParameterizedType@@WireTapDefinition<Type> @AT@ 6725 @LENGTH@ 17
+------INS SimpleType@@Type @TO@ ParameterizedType@@WireTapDefinition<Type> @AT@ 6743 @LENGTH@ 4
+---DEL SimpleType@@WireTapDefinition @AT@ 6774 @LENGTH@ 17
+

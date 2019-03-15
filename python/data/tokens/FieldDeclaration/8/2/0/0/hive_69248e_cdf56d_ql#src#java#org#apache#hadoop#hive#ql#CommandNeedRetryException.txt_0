@@ -1,0 +1,9 @@
+INS FieldDeclaration@@private, static, final, long, [serialVersionUID=1L] @TO@ TypeDeclaration@@[public]CommandNeedRetryException, Exception @AT@ 906 @LENGTH@ 48
+---INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, long, [serialVersionUID=1L] @AT@ 906 @LENGTH@ 7
+---INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, long, [serialVersionUID=1L] @AT@ 914 @LENGTH@ 6
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, long, [serialVersionUID=1L] @AT@ 921 @LENGTH@ 5
+---INS PrimitiveType@@long @TO@ FieldDeclaration@@private, static, final, long, [serialVersionUID=1L] @AT@ 927 @LENGTH@ 4
+---INS VariableDeclarationFragment@@serialVersionUID=1L @TO@ FieldDeclaration@@private, static, final, long, [serialVersionUID=1L] @AT@ 932 @LENGTH@ 21
+------INS SimpleName@@serialVersionUID @TO@ VariableDeclarationFragment@@serialVersionUID=1L @AT@ 932 @LENGTH@ 16
+------INS NumberLiteral@@1L @TO@ VariableDeclarationFragment@@serialVersionUID=1L @AT@ 951 @LENGTH@ 2
+

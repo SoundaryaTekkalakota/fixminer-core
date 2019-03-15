@@ -1,0 +1,4 @@
+ UPD MethodDeclaration
+--- DEL SingleVariableDeclaration
+------ DEL PrimitiveType
+------ DEL SimpleName

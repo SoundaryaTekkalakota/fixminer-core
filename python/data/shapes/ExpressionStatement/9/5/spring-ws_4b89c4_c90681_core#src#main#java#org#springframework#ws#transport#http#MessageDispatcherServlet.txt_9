@@ -1,0 +1,9 @@
+ExpressionStatement
+---Assignment
+------CastExpression
+---------SimpleType
+---------MethodInvocation
+------------MethodInvocation
+------MethodInvocation
+---------SimpleName
+---------SimpleName

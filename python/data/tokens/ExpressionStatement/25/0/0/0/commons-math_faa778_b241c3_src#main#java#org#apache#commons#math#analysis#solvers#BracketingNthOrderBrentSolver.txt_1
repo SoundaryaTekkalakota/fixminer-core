@@ -1,0 +1,26 @@
+UPD ExpressionStatement@@Assignment:targetY=-REDUCTION_FACTOR * yB @TO@ Assignment:targetY=(weightA * yA - weightB * REDUCTION_FACTOR * yB) / (weightA + weightB) @AT@ 8533 @LENGTH@ 33
+---UPD Assignment@@targetY=-REDUCTION_FACTOR * yB @TO@ targetY=(weightA * yA - weightB * REDUCTION_FACTOR * yB) / (weightA + weightB) @AT@ 8533 @LENGTH@ 32
+------DEL InfixExpression@@-REDUCTION_FACTOR * yB @AT@ 8543 @LENGTH@ 22
+---------DEL PrefixExpression@@-REDUCTION_FACTOR @AT@ 8543 @LENGTH@ 17
+------------DEL Operator@@- @AT@ 8543 @LENGTH@ 1
+------------DEL SimpleName@@REDUCTION_FACTOR @AT@ 8544 @LENGTH@ 16
+------INS InfixExpression@@(weightA * yA - weightB * REDUCTION_FACTOR * yB) / (weightA + weightB) @TO@ Assignment@@targetY=-REDUCTION_FACTOR * yB @AT@ 8696 @LENGTH@ 70
+---------INS ParenthesizedExpression@@(weightA * yA - weightB * REDUCTION_FACTOR * yB) @TO@ InfixExpression@@(weightA * yA - weightB * REDUCTION_FACTOR * yB) / (weightA + weightB) @AT@ 8696 @LENGTH@ 48
+------------INS InfixExpression@@weightA * yA - weightB * REDUCTION_FACTOR * yB @TO@ ParenthesizedExpression@@(weightA * yA - weightB * REDUCTION_FACTOR * yB) @AT@ 8697 @LENGTH@ 46
+---------------INS InfixExpression@@weightA * yA @TO@ InfixExpression@@weightA * yA - weightB * REDUCTION_FACTOR * yB @AT@ 8697 @LENGTH@ 12
+------------------INS SimpleName@@weightA @TO@ InfixExpression@@weightA * yA @AT@ 8697 @LENGTH@ 7
+------------------INS Operator@@* @TO@ InfixExpression@@weightA * yA @AT@ 8704 @LENGTH@ 1
+------------------INS SimpleName@@yA @TO@ InfixExpression@@weightA * yA @AT@ 8707 @LENGTH@ 2
+---------------INS Operator@@- @TO@ InfixExpression@@weightA * yA - weightB * REDUCTION_FACTOR * yB @AT@ 8709 @LENGTH@ 1
+---------------INS InfixExpression@@weightB * REDUCTION_FACTOR * yB @TO@ InfixExpression@@weightA * yA - weightB * REDUCTION_FACTOR * yB @AT@ 8712 @LENGTH@ 31
+------------------MOV Operator@@* @TO@ InfixExpression@@weightB * REDUCTION_FACTOR * yB @AT@ 8560 @LENGTH@ 1
+------------------MOV SimpleName@@yB @TO@ InfixExpression@@weightB * REDUCTION_FACTOR * yB @AT@ 8563 @LENGTH@ 2
+------------------INS SimpleName@@weightB @TO@ InfixExpression@@weightB * REDUCTION_FACTOR * yB @AT@ 8712 @LENGTH@ 7
+------------------INS SimpleName@@REDUCTION_FACTOR @TO@ InfixExpression@@weightB * REDUCTION_FACTOR * yB @AT@ 8722 @LENGTH@ 16
+---------INS Operator@@/ @TO@ InfixExpression@@(weightA * yA - weightB * REDUCTION_FACTOR * yB) / (weightA + weightB) @AT@ 8744 @LENGTH@ 1
+---------INS ParenthesizedExpression@@(weightA + weightB) @TO@ InfixExpression@@(weightA * yA - weightB * REDUCTION_FACTOR * yB) / (weightA + weightB) @AT@ 8747 @LENGTH@ 19
+------------INS InfixExpression@@weightA + weightB @TO@ ParenthesizedExpression@@(weightA + weightB) @AT@ 8748 @LENGTH@ 17
+---------------INS SimpleName@@weightA @TO@ InfixExpression@@weightA + weightB @AT@ 8748 @LENGTH@ 7
+---------------INS Operator@@+ @TO@ InfixExpression@@weightA + weightB @AT@ 8755 @LENGTH@ 1
+---------------INS SimpleName@@weightB @TO@ InfixExpression@@weightA + weightB @AT@ 8758 @LENGTH@ 7
+

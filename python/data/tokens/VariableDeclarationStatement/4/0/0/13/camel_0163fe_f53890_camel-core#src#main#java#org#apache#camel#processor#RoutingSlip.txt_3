@@ -1,0 +1,413 @@
+UPD VariableDeclarationStatement@@boolean sync=producerCache.doInAsyncProducer(endpoint,exchange,null,callback,new AsyncProducerCallback(){
+  public boolean doInAsyncProducer(  Producer producer,  AsyncProcessor asyncProducer,  final Exchange exchange,  ExchangePattern exchangePattern,  final AsyncCallback callback){
+    exchange.setProperty(Exchange.TO_ENDPOINT,endpoint.getEndpointUri());
+    exchange.setProperty(Exchange.SLIP_ENDPOINT,endpoint.getEndpointUri());
+    return asyncProducer.process(exchange,new AsyncCallback(){
+      public void done(      boolean doneSync){
+        if (doneSync) {
+          callback.done(doneSync);
+          return;
+        }
+        Exchange current=prepareExchangeForRoutingSlip(exchange,endpoint);
+        while (iter.hasNext(current)) {
+          if (isIgnoreInvalidEndpoints()) {
+            FailedToCreateProducerException e=current.getException(FailedToCreateProducerException.class);
+            if (e != null) {
+              if (log.isDebugEnabled()) {
+                log.debug("Endpoint uri is invalid: " + endpoint + ". This exception will be ignored.",e);
+              }
+              current.setException(null);
+            }
+          }
+          if (!continueProcessing(current,"so breaking out of the routing slip",log)) {
+            break;
+          }
+          Endpoint endpoint;
+          try {
+            endpoint=resolveEndpoint(iter,exchange);
+            if (endpoint == null) {
+              continue;
+            }
+          }
+ catch (          Exception e) {
+            exchange.setException(e);
+            break;
+          }
+          boolean sync=processExchange(endpoint,current,original,callback,iter);
+          current=prepareExchangeForRoutingSlip(current,endpoint);
+          if (!sync) {
+            log.trace("Processing exchangeId: {} is continued being processed asynchronously",original.getExchangeId());
+            return;
+          }
+        }
+        log.trace("Processing complete for exchangeId: {} >>> {}",original.getExchangeId(),current);
+        ExchangeHelper.copyResults(original,current);
+        callback.done(false);
+      }
+    }
+);
+  }
+}
+); @TO@ boolean sync=producerCache.doInAsyncProducer(endpoint,exchange,null,callback,new AsyncProducerCallback(){
+  public boolean doInAsyncProducer(  Producer producer,  AsyncProcessor asyncProducer,  final Exchange exchange,  ExchangePattern exchangePattern,  final AsyncCallback callback){
+    RouteContext routeContext=exchange.getUnitOfWork() != null ? exchange.getUnitOfWork().getRouteContext() : null;
+    asyncProducer=createErrorHandler(routeContext,exchange,asyncProducer);
+    exchange.setProperty(Exchange.TO_ENDPOINT,endpoint.getEndpointUri());
+    exchange.setProperty(Exchange.SLIP_ENDPOINT,endpoint.getEndpointUri());
+    return asyncProducer.process(exchange,new AsyncCallback(){
+      public void done(      boolean doneSync){
+        if (doneSync) {
+          callback.done(doneSync);
+          return;
+        }
+        Exchange current=prepareExchangeForRoutingSlip(exchange,endpoint);
+        while (iter.hasNext(current)) {
+          if (isIgnoreInvalidEndpoints()) {
+            FailedToCreateProducerException e=current.getException(FailedToCreateProducerException.class);
+            if (e != null) {
+              if (log.isDebugEnabled()) {
+                log.debug("Endpoint uri is invalid: " + endpoint + ". This exception will be ignored.",e);
+              }
+              current.setException(null);
+            }
+          }
+          if (!continueProcessing(current,"so breaking out of the routing slip",log)) {
+            break;
+          }
+          Endpoint endpoint;
+          try {
+            endpoint=resolveEndpoint(iter,exchange);
+            if (endpoint == null) {
+              continue;
+            }
+          }
+ catch (          Exception e) {
+            exchange.setException(e);
+            break;
+          }
+          boolean sync=processExchange(endpoint,current,original,callback,iter);
+          current=prepareExchangeForRoutingSlip(current,endpoint);
+          if (!sync) {
+            log.trace("Processing exchangeId: {} is continued being processed asynchronously",original.getExchangeId());
+            return;
+          }
+        }
+        log.trace("Processing complete for exchangeId: {} >>> {}",original.getExchangeId(),current);
+        ExchangeHelper.copyResults(original,current);
+        callback.done(false);
+      }
+    }
+);
+  }
+}
+); @AT@ 11814 @LENGTH@ 4165
+---UPD VariableDeclarationFragment@@sync=producerCache.doInAsyncProducer(endpoint,exchange,null,callback,new AsyncProducerCallback(){
+  public boolean doInAsyncProducer(  Producer producer,  AsyncProcessor asyncProducer,  final Exchange exchange,  ExchangePattern exchangePattern,  final AsyncCallback callback){
+    exchange.setProperty(Exchange.TO_ENDPOINT,endpoint.getEndpointUri());
+    exchange.setProperty(Exchange.SLIP_ENDPOINT,endpoint.getEndpointUri());
+    return asyncProducer.process(exchange,new AsyncCallback(){
+      public void done(      boolean doneSync){
+        if (doneSync) {
+          callback.done(doneSync);
+          return;
+        }
+        Exchange current=prepareExchangeForRoutingSlip(exchange,endpoint);
+        while (iter.hasNext(current)) {
+          if (isIgnoreInvalidEndpoints()) {
+            FailedToCreateProducerException e=current.getException(FailedToCreateProducerException.class);
+            if (e != null) {
+              if (log.isDebugEnabled()) {
+                log.debug("Endpoint uri is invalid: " + endpoint + ". This exception will be ignored.",e);
+              }
+              current.setException(null);
+            }
+          }
+          if (!continueProcessing(current,"so breaking out of the routing slip",log)) {
+            break;
+          }
+          Endpoint endpoint;
+          try {
+            endpoint=resolveEndpoint(iter,exchange);
+            if (endpoint == null) {
+              continue;
+            }
+          }
+ catch (          Exception e) {
+            exchange.setException(e);
+            break;
+          }
+          boolean sync=processExchange(endpoint,current,original,callback,iter);
+          current=prepareExchangeForRoutingSlip(current,endpoint);
+          if (!sync) {
+            log.trace("Processing exchangeId: {} is continued being processed asynchronously",original.getExchangeId());
+            return;
+          }
+        }
+        log.trace("Processing complete for exchangeId: {} >>> {}",original.getExchangeId(),current);
+        ExchangeHelper.copyResults(original,current);
+        callback.done(false);
+      }
+    }
+);
+  }
+}
+) @TO@ sync=producerCache.doInAsyncProducer(endpoint,exchange,null,callback,new AsyncProducerCallback(){
+  public boolean doInAsyncProducer(  Producer producer,  AsyncProcessor asyncProducer,  final Exchange exchange,  ExchangePattern exchangePattern,  final AsyncCallback callback){
+    RouteContext routeContext=exchange.getUnitOfWork() != null ? exchange.getUnitOfWork().getRouteContext() : null;
+    asyncProducer=createErrorHandler(routeContext,exchange,asyncProducer);
+    exchange.setProperty(Exchange.TO_ENDPOINT,endpoint.getEndpointUri());
+    exchange.setProperty(Exchange.SLIP_ENDPOINT,endpoint.getEndpointUri());
+    return asyncProducer.process(exchange,new AsyncCallback(){
+      public void done(      boolean doneSync){
+        if (doneSync) {
+          callback.done(doneSync);
+          return;
+        }
+        Exchange current=prepareExchangeForRoutingSlip(exchange,endpoint);
+        while (iter.hasNext(current)) {
+          if (isIgnoreInvalidEndpoints()) {
+            FailedToCreateProducerException e=current.getException(FailedToCreateProducerException.class);
+            if (e != null) {
+              if (log.isDebugEnabled()) {
+                log.debug("Endpoint uri is invalid: " + endpoint + ". This exception will be ignored.",e);
+              }
+              current.setException(null);
+            }
+          }
+          if (!continueProcessing(current,"so breaking out of the routing slip",log)) {
+            break;
+          }
+          Endpoint endpoint;
+          try {
+            endpoint=resolveEndpoint(iter,exchange);
+            if (endpoint == null) {
+              continue;
+            }
+          }
+ catch (          Exception e) {
+            exchange.setException(e);
+            break;
+          }
+          boolean sync=processExchange(endpoint,current,original,callback,iter);
+          current=prepareExchangeForRoutingSlip(current,endpoint);
+          if (!sync) {
+            log.trace("Processing exchangeId: {} is continued being processed asynchronously",original.getExchangeId());
+            return;
+          }
+        }
+        log.trace("Processing complete for exchangeId: {} >>> {}",original.getExchangeId(),current);
+        ExchangeHelper.copyResults(original,current);
+        callback.done(false);
+      }
+    }
+);
+  }
+}
+) @AT@ 11822 @LENGTH@ 4156
+------UPD MethodInvocation@@producerCache.doInAsyncProducer(endpoint,exchange,null,callback,new AsyncProducerCallback(){
+  public boolean doInAsyncProducer(  Producer producer,  AsyncProcessor asyncProducer,  final Exchange exchange,  ExchangePattern exchangePattern,  final AsyncCallback callback){
+    exchange.setProperty(Exchange.TO_ENDPOINT,endpoint.getEndpointUri());
+    exchange.setProperty(Exchange.SLIP_ENDPOINT,endpoint.getEndpointUri());
+    return asyncProducer.process(exchange,new AsyncCallback(){
+      public void done(      boolean doneSync){
+        if (doneSync) {
+          callback.done(doneSync);
+          return;
+        }
+        Exchange current=prepareExchangeForRoutingSlip(exchange,endpoint);
+        while (iter.hasNext(current)) {
+          if (isIgnoreInvalidEndpoints()) {
+            FailedToCreateProducerException e=current.getException(FailedToCreateProducerException.class);
+            if (e != null) {
+              if (log.isDebugEnabled()) {
+                log.debug("Endpoint uri is invalid: " + endpoint + ". This exception will be ignored.",e);
+              }
+              current.setException(null);
+            }
+          }
+          if (!continueProcessing(current,"so breaking out of the routing slip",log)) {
+            break;
+          }
+          Endpoint endpoint;
+          try {
+            endpoint=resolveEndpoint(iter,exchange);
+            if (endpoint == null) {
+              continue;
+            }
+          }
+ catch (          Exception e) {
+            exchange.setException(e);
+            break;
+          }
+          boolean sync=processExchange(endpoint,current,original,callback,iter);
+          current=prepareExchangeForRoutingSlip(current,endpoint);
+          if (!sync) {
+            log.trace("Processing exchangeId: {} is continued being processed asynchronously",original.getExchangeId());
+            return;
+          }
+        }
+        log.trace("Processing complete for exchangeId: {} >>> {}",original.getExchangeId(),current);
+        ExchangeHelper.copyResults(original,current);
+        callback.done(false);
+      }
+    }
+);
+  }
+}
+) @TO@ producerCache.doInAsyncProducer(endpoint,exchange,null,callback,new AsyncProducerCallback(){
+  public boolean doInAsyncProducer(  Producer producer,  AsyncProcessor asyncProducer,  final Exchange exchange,  ExchangePattern exchangePattern,  final AsyncCallback callback){
+    RouteContext routeContext=exchange.getUnitOfWork() != null ? exchange.getUnitOfWork().getRouteContext() : null;
+    asyncProducer=createErrorHandler(routeContext,exchange,asyncProducer);
+    exchange.setProperty(Exchange.TO_ENDPOINT,endpoint.getEndpointUri());
+    exchange.setProperty(Exchange.SLIP_ENDPOINT,endpoint.getEndpointUri());
+    return asyncProducer.process(exchange,new AsyncCallback(){
+      public void done(      boolean doneSync){
+        if (doneSync) {
+          callback.done(doneSync);
+          return;
+        }
+        Exchange current=prepareExchangeForRoutingSlip(exchange,endpoint);
+        while (iter.hasNext(current)) {
+          if (isIgnoreInvalidEndpoints()) {
+            FailedToCreateProducerException e=current.getException(FailedToCreateProducerException.class);
+            if (e != null) {
+              if (log.isDebugEnabled()) {
+                log.debug("Endpoint uri is invalid: " + endpoint + ". This exception will be ignored.",e);
+              }
+              current.setException(null);
+            }
+          }
+          if (!continueProcessing(current,"so breaking out of the routing slip",log)) {
+            break;
+          }
+          Endpoint endpoint;
+          try {
+            endpoint=resolveEndpoint(iter,exchange);
+            if (endpoint == null) {
+              continue;
+            }
+          }
+ catch (          Exception e) {
+            exchange.setException(e);
+            break;
+          }
+          boolean sync=processExchange(endpoint,current,original,callback,iter);
+          current=prepareExchangeForRoutingSlip(current,endpoint);
+          if (!sync) {
+            log.trace("Processing exchangeId: {} is continued being processed asynchronously",original.getExchangeId());
+            return;
+          }
+        }
+        log.trace("Processing complete for exchangeId: {} >>> {}",original.getExchangeId(),current);
+        ExchangeHelper.copyResults(original,current);
+        callback.done(false);
+      }
+    }
+);
+  }
+}
+) @AT@ 11829 @LENGTH@ 4149
+---------UPD SimpleName@@MethodName:doInAsyncProducer:[endpoint, exchange, null, callback, new AsyncProducerCallback(){
+  public boolean doInAsyncProducer(  Producer producer,  AsyncProcessor asyncProducer,  final Exchange exchange,  ExchangePattern exchangePattern,  final AsyncCallback callback){
+    exchange.setProperty(Exchange.TO_ENDPOINT,endpoint.getEndpointUri());
+    exchange.setProperty(Exchange.SLIP_ENDPOINT,endpoint.getEndpointUri());
+    return asyncProducer.process(exchange,new AsyncCallback(){
+      public void done(      boolean doneSync){
+        if (doneSync) {
+          callback.done(doneSync);
+          return;
+        }
+        Exchange current=prepareExchangeForRoutingSlip(exchange,endpoint);
+        while (iter.hasNext(current)) {
+          if (isIgnoreInvalidEndpoints()) {
+            FailedToCreateProducerException e=current.getException(FailedToCreateProducerException.class);
+            if (e != null) {
+              if (log.isDebugEnabled()) {
+                log.debug("Endpoint uri is invalid: " + endpoint + ". This exception will be ignored.",e);
+              }
+              current.setException(null);
+            }
+          }
+          if (!continueProcessing(current,"so breaking out of the routing slip",log)) {
+            break;
+          }
+          Endpoint endpoint;
+          try {
+            endpoint=resolveEndpoint(iter,exchange);
+            if (endpoint == null) {
+              continue;
+            }
+          }
+ catch (          Exception e) {
+            exchange.setException(e);
+            break;
+          }
+          boolean sync=processExchange(endpoint,current,original,callback,iter);
+          current=prepareExchangeForRoutingSlip(current,endpoint);
+          if (!sync) {
+            log.trace("Processing exchangeId: {} is continued being processed asynchronously",original.getExchangeId());
+            return;
+          }
+        }
+        log.trace("Processing complete for exchangeId: {} >>> {}",original.getExchangeId(),current);
+        ExchangeHelper.copyResults(original,current);
+        callback.done(false);
+      }
+    }
+);
+  }
+}
+] @TO@ MethodName:doInAsyncProducer:[endpoint, exchange, null, callback, new AsyncProducerCallback(){
+  public boolean doInAsyncProducer(  Producer producer,  AsyncProcessor asyncProducer,  final Exchange exchange,  ExchangePattern exchangePattern,  final AsyncCallback callback){
+    RouteContext routeContext=exchange.getUnitOfWork() != null ? exchange.getUnitOfWork().getRouteContext() : null;
+    asyncProducer=createErrorHandler(routeContext,exchange,asyncProducer);
+    exchange.setProperty(Exchange.TO_ENDPOINT,endpoint.getEndpointUri());
+    exchange.setProperty(Exchange.SLIP_ENDPOINT,endpoint.getEndpointUri());
+    return asyncProducer.process(exchange,new AsyncCallback(){
+      public void done(      boolean doneSync){
+        if (doneSync) {
+          callback.done(doneSync);
+          return;
+        }
+        Exchange current=prepareExchangeForRoutingSlip(exchange,endpoint);
+        while (iter.hasNext(current)) {
+          if (isIgnoreInvalidEndpoints()) {
+            FailedToCreateProducerException e=current.getException(FailedToCreateProducerException.class);
+            if (e != null) {
+              if (log.isDebugEnabled()) {
+                log.debug("Endpoint uri is invalid: " + endpoint + ". This exception will be ignored.",e);
+              }
+              current.setException(null);
+            }
+          }
+          if (!continueProcessing(current,"so breaking out of the routing slip",log)) {
+            break;
+          }
+          Endpoint endpoint;
+          try {
+            endpoint=resolveEndpoint(iter,exchange);
+            if (endpoint == null) {
+              continue;
+            }
+          }
+ catch (          Exception e) {
+            exchange.setException(e);
+            break;
+          }
+          boolean sync=processExchange(endpoint,current,original,callback,iter);
+          current=prepareExchangeForRoutingSlip(current,endpoint);
+          if (!sync) {
+            log.trace("Processing exchangeId: {} is continued being processed asynchronously",original.getExchangeId());
+            return;
+          }
+        }
+        log.trace("Processing complete for exchangeId: {} >>> {}",original.getExchangeId(),current);
+        ExchangeHelper.copyResults(original,current);
+        callback.done(false);
+      }
+    }
+);
+  }
+}
+] @AT@ 11843 @LENGTH@ 4135
+

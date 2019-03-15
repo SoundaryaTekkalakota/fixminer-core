@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, boolean, [hasDestructionAwareBeanPostProcessors] @TO@ private, volatile, boolean, [hasDestructionAwareBeanPostProcessors] @AT@ 7366 @LENGTH@ 54
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, boolean, [hasDestructionAwareBeanPostProcessors] @AT@ 7425 @LENGTH@ 8
+

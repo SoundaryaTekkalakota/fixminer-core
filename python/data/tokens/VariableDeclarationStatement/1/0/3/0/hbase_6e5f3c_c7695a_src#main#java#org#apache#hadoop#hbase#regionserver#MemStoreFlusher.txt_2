@@ -1,0 +1,2 @@
+DEL VariableDeclarationStatement@@HRegion bestAnyRegion=getBiggestMemstoreRegion(regionsBySize,false); @AT@ 6077 @LENGTH@ 71
+

@@ -1,0 +1,8 @@
+INS VariableDeclarationStatement@@ImportRegistrationResolver imports=builder.getImportRegistrationResolver(); @TO@ MethodDeclaration@@private, String, MethodName:getFieldInitializer, FieldMetadata field, DataOnDemandMetadata collaboratingMetadata,  @AT@ 43983 @LENGTH@ 77
+---INS SimpleType@@ImportRegistrationResolver @TO@ VariableDeclarationStatement@@ImportRegistrationResolver imports=builder.getImportRegistrationResolver(); @AT@ 43983 @LENGTH@ 26
+---INS VariableDeclarationFragment@@imports=builder.getImportRegistrationResolver() @TO@ VariableDeclarationStatement@@ImportRegistrationResolver imports=builder.getImportRegistrationResolver(); @AT@ 44010 @LENGTH@ 49
+------INS SimpleName@@imports @TO@ VariableDeclarationFragment@@imports=builder.getImportRegistrationResolver() @AT@ 44010 @LENGTH@ 7
+------INS MethodInvocation@@builder.getImportRegistrationResolver() @TO@ VariableDeclarationFragment@@imports=builder.getImportRegistrationResolver() @AT@ 44020 @LENGTH@ 39
+---------INS SimpleName@@Name:builder @TO@ MethodInvocation@@builder.getImportRegistrationResolver() @AT@ 44020 @LENGTH@ 7
+---------INS SimpleName@@MethodName:getImportRegistrationResolver:[] @TO@ MethodInvocation@@builder.getImportRegistrationResolver() @AT@ 44028 @LENGTH@ 31
+

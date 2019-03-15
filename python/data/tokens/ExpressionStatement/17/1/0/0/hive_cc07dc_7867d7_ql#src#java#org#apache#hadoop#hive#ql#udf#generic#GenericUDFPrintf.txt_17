@@ -1,0 +1,18 @@
+DEL ExpressionStatement@@MethodInvocation:argumentList.add(((FloatObjectInspector)argumentOIs[i]).get(arguments[i].get())) @AT@ 5279 @LENGTH@ 81
+---DEL MethodInvocation@@argumentList.add(((FloatObjectInspector)argumentOIs[i]).get(arguments[i].get())) @AT@ 5279 @LENGTH@ 80
+------DEL SimpleName@@Name:argumentList @AT@ 5279 @LENGTH@ 12
+------DEL SimpleName@@MethodName:add:[((FloatObjectInspector)argumentOIs[i]).get(arguments[i].get())] @AT@ 5292 @LENGTH@ 67
+---------DEL MethodInvocation@@((FloatObjectInspector)argumentOIs[i]).get(arguments[i].get()) @AT@ 5296 @LENGTH@ 62
+------------DEL ParenthesizedExpression@@((FloatObjectInspector)argumentOIs[i]) @AT@ 5296 @LENGTH@ 38
+---------------DEL CastExpression@@(FloatObjectInspector)argumentOIs[i] @AT@ 5297 @LENGTH@ 36
+------------------DEL SimpleType@@FloatObjectInspector @AT@ 5298 @LENGTH@ 20
+------------------DEL ArrayAccess@@argumentOIs[i] @AT@ 5319 @LENGTH@ 14
+---------------------DEL SimpleName@@argumentOIs @AT@ 5319 @LENGTH@ 11
+---------------------DEL SimpleName@@i @AT@ 5331 @LENGTH@ 1
+------------DEL SimpleName@@MethodName:get:[arguments[i].get()] @AT@ 5335 @LENGTH@ 23
+---------------DEL MethodInvocation@@arguments[i].get() @AT@ 5339 @LENGTH@ 18
+------------------DEL ArrayAccess@@arguments[i] @AT@ 5339 @LENGTH@ 12
+---------------------DEL SimpleName@@arguments @AT@ 5339 @LENGTH@ 9
+---------------------DEL SimpleName@@i @AT@ 5349 @LENGTH@ 1
+------------------DEL SimpleName@@MethodName:get:[] @AT@ 5352 @LENGTH@ 5
+

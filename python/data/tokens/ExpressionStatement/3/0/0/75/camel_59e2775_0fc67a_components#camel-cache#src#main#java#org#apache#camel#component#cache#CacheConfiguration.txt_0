@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:setTimeToLiveSeconds(Long.valueOf((String)cacheSettings.get("timeToIdleSeconds")).longValue()) @TO@ MethodInvocation:setTimeToIdleSeconds(Long.valueOf((String)cacheSettings.get("timeToIdleSeconds")).longValue()) @AT@ 3107 @LENGTH@ 96
+---UPD MethodInvocation@@setTimeToLiveSeconds(Long.valueOf((String)cacheSettings.get("timeToIdleSeconds")).longValue()) @TO@ setTimeToIdleSeconds(Long.valueOf((String)cacheSettings.get("timeToIdleSeconds")).longValue()) @AT@ 3107 @LENGTH@ 95
+------UPD SimpleName@@MethodName:setTimeToLiveSeconds:[Long.valueOf((String)cacheSettings.get("timeToIdleSeconds")).longValue()] @TO@ MethodName:setTimeToIdleSeconds:[Long.valueOf((String)cacheSettings.get("timeToIdleSeconds")).longValue()] @AT@ 3107 @LENGTH@ 95
+

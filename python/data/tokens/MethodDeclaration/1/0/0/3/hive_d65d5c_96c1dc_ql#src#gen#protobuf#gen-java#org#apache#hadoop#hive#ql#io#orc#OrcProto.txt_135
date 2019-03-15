@@ -1,0 +1,2 @@
+MOV MethodDeclaration@@public, static, final, com.google.protobuf.Descriptors.Descriptor, MethodName:getDescriptor,  @TO@ TypeDeclaration@@[public, static, final]Builder, com.google.protobuf.GeneratedMessage.Builder<Builder>[org.apache.hadoop.hive.ql.io.orc.OrcProto.FooterOrBuilder] @AT@ 599761 @LENGTH@ 223
+

@@ -1,0 +1,7 @@
+UPD ExpressionStatement@@MethodInvocation:e.printStackTrace() @TO@ MethodInvocation:LOG.warn("Error getting columns: ",e) @AT@ 10961 @LENGTH@ 20
+---UPD MethodInvocation@@e.printStackTrace() @TO@ LOG.warn("Error getting columns: ",e) @AT@ 10961 @LENGTH@ 19
+------UPD SimpleName@@Name:e @TO@ Name:LOG @AT@ 10961 @LENGTH@ 1
+------UPD SimpleName@@MethodName:printStackTrace:[] @TO@ MethodName:warn:["Error getting columns: ", e] @AT@ 10963 @LENGTH@ 17
+---------INS StringLiteral@@"Error getting columns: " @TO@ SimpleName@@MethodName:printStackTrace:[] @AT@ 11170 @LENGTH@ 25
+---------INS SimpleName@@e @TO@ SimpleName@@MethodName:printStackTrace:[] @AT@ 11197 @LENGTH@ 1
+

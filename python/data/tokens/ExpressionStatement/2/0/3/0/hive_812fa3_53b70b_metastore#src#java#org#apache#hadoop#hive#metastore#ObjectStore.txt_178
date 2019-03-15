@@ -1,0 +1,3 @@
+INS ExpressionStatement@@MethodInvocation:rollbackAndCleanup(committed,query) @TO@ Block@@FinallyBody @AT@ 297263 @LENGTH@ 37
+---MOV MethodInvocation@@query.closeAll() @TO@ ExpressionStatement@@MethodInvocation:rollbackAndCleanup(committed,query) @AT@ 302132 @LENGTH@ 16
+

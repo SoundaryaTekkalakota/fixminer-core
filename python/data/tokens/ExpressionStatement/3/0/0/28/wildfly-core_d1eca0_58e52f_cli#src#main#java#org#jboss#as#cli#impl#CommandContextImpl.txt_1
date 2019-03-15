@@ -1,0 +1,190 @@
+UPD ExpressionStatement@@MethodInvocation:timeoutHandler.suspendAndExecute(new Runnable(){
+  @Override public void run(){
+    boolean success=false;
+    try {
+      if (username == null || password == null) {
+        if (console == null) {
+          initBasicConsole(null,false);
+        }
+        console.controlled();
+        if (!console.running()) {
+          console.start();
+        }
+      }
+      dohandle(callbacks);
+      success=true;
+    }
+ catch (    IOException e) {
+      throw new RuntimeException(e);
+    }
+catch (    UnsupportedCallbackException e) {
+      throw new RuntimeException(e);
+    }
+catch (    CliInitializationException e) {
+      throw new RuntimeException(e);
+    }
+ finally {
+      if (!success && console != null && console.isControlled()) {
+        console.continuous();
+      }
+    }
+  }
+}
+) @TO@ MethodInvocation:timeoutHandler.suspendAndExecute(new Runnable(){
+  @Override public void run(){
+    boolean success=false;
+    boolean callContinuous=false;
+    try {
+      if (username == null || password == null) {
+        if (console == null) {
+          initBasicConsole(null,false);
+        }
+        console.controlled();
+        if (!console.running()) {
+          console.start();
+        }
+ else {
+          callContinuous=true;
+        }
+      }
+      dohandle(callbacks);
+      success=true;
+    }
+ catch (    IOException|UnsupportedCallbackException|CliInitializationException e) {
+      throw new RuntimeException(e);
+    }
+ finally {
+      if (!success || callContinuous) {
+        console.continuous();
+      }
+    }
+  }
+}
+) @AT@ 64128 @LENGTH@ 1530
+---UPD MethodInvocation@@timeoutHandler.suspendAndExecute(new Runnable(){
+  @Override public void run(){
+    boolean success=false;
+    try {
+      if (username == null || password == null) {
+        if (console == null) {
+          initBasicConsole(null,false);
+        }
+        console.controlled();
+        if (!console.running()) {
+          console.start();
+        }
+      }
+      dohandle(callbacks);
+      success=true;
+    }
+ catch (    IOException e) {
+      throw new RuntimeException(e);
+    }
+catch (    UnsupportedCallbackException e) {
+      throw new RuntimeException(e);
+    }
+catch (    CliInitializationException e) {
+      throw new RuntimeException(e);
+    }
+ finally {
+      if (!success && console != null && console.isControlled()) {
+        console.continuous();
+      }
+    }
+  }
+}
+) @TO@ timeoutHandler.suspendAndExecute(new Runnable(){
+  @Override public void run(){
+    boolean success=false;
+    boolean callContinuous=false;
+    try {
+      if (username == null || password == null) {
+        if (console == null) {
+          initBasicConsole(null,false);
+        }
+        console.controlled();
+        if (!console.running()) {
+          console.start();
+        }
+ else {
+          callContinuous=true;
+        }
+      }
+      dohandle(callbacks);
+      success=true;
+    }
+ catch (    IOException|UnsupportedCallbackException|CliInitializationException e) {
+      throw new RuntimeException(e);
+    }
+ finally {
+      if (!success || callContinuous) {
+        console.continuous();
+      }
+    }
+  }
+}
+) @AT@ 64128 @LENGTH@ 1529
+------UPD SimpleName@@MethodName:suspendAndExecute:[new Runnable(){
+  @Override public void run(){
+    boolean success=false;
+    try {
+      if (username == null || password == null) {
+        if (console == null) {
+          initBasicConsole(null,false);
+        }
+        console.controlled();
+        if (!console.running()) {
+          console.start();
+        }
+      }
+      dohandle(callbacks);
+      success=true;
+    }
+ catch (    IOException e) {
+      throw new RuntimeException(e);
+    }
+catch (    UnsupportedCallbackException e) {
+      throw new RuntimeException(e);
+    }
+catch (    CliInitializationException e) {
+      throw new RuntimeException(e);
+    }
+ finally {
+      if (!success && console != null && console.isControlled()) {
+        console.continuous();
+      }
+    }
+  }
+}
+] @TO@ MethodName:suspendAndExecute:[new Runnable(){
+  @Override public void run(){
+    boolean success=false;
+    boolean callContinuous=false;
+    try {
+      if (username == null || password == null) {
+        if (console == null) {
+          initBasicConsole(null,false);
+        }
+        console.controlled();
+        if (!console.running()) {
+          console.start();
+        }
+ else {
+          callContinuous=true;
+        }
+      }
+      dohandle(callbacks);
+      success=true;
+    }
+ catch (    IOException|UnsupportedCallbackException|CliInitializationException e) {
+      throw new RuntimeException(e);
+    }
+ finally {
+      if (!success || callContinuous) {
+        console.continuous();
+      }
+    }
+  }
+}
+] @AT@ 64143 @LENGTH@ 1514
+

@@ -1,0 +1,8 @@
+ExpressionStatement
+---MethodInvocation
+------SimpleName
+---------ClassInstanceCreation
+------------InfixExpression
+---------------SimpleName
+---------------Operator
+---------------NullLiteral

@@ -1,0 +1,10 @@
+INS ExpressionStatement@@MethodInvocation:bodyBuilder.appendFormalLine("if (" + fieldName + " == null) {") @TO@ SwitchStatement@@SimpleName:action @AT@ 43095 @LENGTH@ 65
+---INS MethodInvocation@@bodyBuilder.appendFormalLine("if (" + fieldName + " == null) {") @TO@ ExpressionStatement@@MethodInvocation:bodyBuilder.appendFormalLine("if (" + fieldName + " == null) {") @AT@ 43095 @LENGTH@ 64
+------INS SimpleName@@Name:bodyBuilder @TO@ MethodInvocation@@bodyBuilder.appendFormalLine("if (" + fieldName + " == null) {") @AT@ 43095 @LENGTH@ 11
+------INS SimpleName@@MethodName:appendFormalLine:["if (" + fieldName + " == null) {"] @TO@ MethodInvocation@@bodyBuilder.appendFormalLine("if (" + fieldName + " == null) {") @AT@ 43107 @LENGTH@ 52
+---------INS InfixExpression@@"if (" + fieldName + " == null) {" @TO@ SimpleName@@MethodName:appendFormalLine:["if (" + fieldName + " == null) {"] @AT@ 43124 @LENGTH@ 34
+------------INS StringLiteral@@"if (" @TO@ InfixExpression@@"if (" + fieldName + " == null) {" @AT@ 43124 @LENGTH@ 6
+------------INS Operator@@+ @TO@ InfixExpression@@"if (" + fieldName + " == null) {" @AT@ 43130 @LENGTH@ 1
+------------INS SimpleName@@fieldName @TO@ InfixExpression@@"if (" + fieldName + " == null) {" @AT@ 43133 @LENGTH@ 9
+------------INS StringLiteral@@" == null) {" @TO@ InfixExpression@@"if (" + fieldName + " == null) {" @AT@ 43145 @LENGTH@ 13
+

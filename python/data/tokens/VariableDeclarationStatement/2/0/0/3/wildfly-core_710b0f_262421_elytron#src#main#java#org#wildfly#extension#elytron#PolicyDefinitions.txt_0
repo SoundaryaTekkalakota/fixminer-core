@@ -1,0 +1,291 @@
+UPD VariableDeclarationStatement@@AbstractAddStepHandler add=new BaseAddHandler(POLICY_RUNTIME_CAPABILITY,attributes){
+  @Override protected void populateModel(  OperationContext context,  ModelNode operation,  Resource resource) throws OperationFailedException {
+    super.populateModel(context,operation,resource);
+    resource.getModel().get(DEFAULT_POLICY.getName()).clear();
+  }
+  @Override protected void performRuntime(  OperationContext context,  ModelNode operation,  ModelNode model) throws OperationFailedException {
+    ServiceName serviceName=POLICY_RUNTIME_CAPABILITY.getCapabilityServiceName(Policy.class);
+    InjectedValue<Supplier<Policy>> policyProviderInjector=new InjectedValue<>();
+    ServiceTarget serviceTarget=context.getServiceTarget();
+    ServiceBuilder<Policy> serviceBuilder=serviceTarget.addService(serviceName,createPolicyService(policyProviderInjector));
+    Supplier<Policy> policySupplier=getPolicyProvider(context,model,serviceBuilder);
+    policyProviderInjector.setValue(() -> policySupplier);
+    serviceBuilder.setInitialMode(Mode.ACTIVE).install();
+    if (!context.isBooting()) {
+      context.reloadRequired();
+    }
+  }
+  private Service<Policy> createPolicyService(  InjectedValue<Supplier<Policy>> injector){
+    return new Service<Policy>(){
+      volatile Policy delegated;
+      volatile Policy policy;
+      @Override public void start(      StartContext context) throws StartException {
+        delegated=getPolicy();
+        policy=injector.getValue().get();
+        try {
+          setPolicy(policy);
+          policy.refresh();
+        }
+ catch (        Exception cause) {
+          setPolicy(delegated);
+          throw ElytronSubsystemMessages.ROOT_LOGGER.failedToSetPolicy(policy,cause);
+        }
+      }
+      @Override public void stop(      StopContext context){
+        setPolicy(delegated);
+      }
+      @Override public Policy getValue() throws IllegalStateException, IllegalArgumentException {
+        return policy;
+      }
+      private void setPolicy(      Policy policy){
+        if (WildFlySecurityManager.isChecking()) {
+          AccessController.doPrivileged(setPolicyAction(policy));
+        }
+ else {
+          setPolicyAction(policy).run();
+        }
+      }
+      private PrivilegedAction<Void> setPolicyAction(      Policy policy){
+        return () -> {
+          Policy.setPolicy(policy);
+          return null;
+        }
+;
+      }
+      private Policy getPolicy(){
+        if (WildFlySecurityManager.isChecking()) {
+          return AccessController.doPrivileged(getPolicyAction());
+        }
+ else {
+          return getPolicyAction().run();
+        }
+      }
+      private PrivilegedAction<Policy> getPolicyAction(){
+        return Policy::getPolicy;
+      }
+    }
+;
+  }
+}
+; @TO@ AbstractAddStepHandler add=new BaseAddHandler(POLICY_RUNTIME_CAPABILITY,attributes){
+  @Override protected void populateModel(  OperationContext context,  ModelNode operation,  Resource resource) throws OperationFailedException {
+    super.populateModel(context,operation,resource);
+    resource.getModel().get(DEFAULT_POLICY.getName()).clear();
+  }
+  @Override protected void recordCapabilitiesAndRequirements(  OperationContext context,  ModelNode operation,  Resource resource) throws OperationFailedException {
+    super.recordCapabilitiesAndRequirements(context,operation,resource);
+    if (resource.getModel().hasDefined(JACC_POLICY)) {
+      context.registerCapability(JACC_POLICY_RUNTIME_CAPABILITY);
+    }
+  }
+  @Override protected void performRuntime(  OperationContext context,  ModelNode operation,  ModelNode model) throws OperationFailedException {
+    ServiceName serviceName=POLICY_RUNTIME_CAPABILITY.getCapabilityServiceName(Policy.class);
+    InjectedValue<Supplier<Policy>> policyProviderInjector=new InjectedValue<>();
+    ServiceTarget serviceTarget=context.getServiceTarget();
+    ServiceBuilder<Policy> serviceBuilder=serviceTarget.addService(serviceName,createPolicyService(policyProviderInjector));
+    Supplier<Policy> policySupplier=getPolicyProvider(context,model,serviceBuilder);
+    policyProviderInjector.setValue(() -> policySupplier);
+    serviceBuilder.setInitialMode(Mode.ACTIVE).install();
+    if (!context.isBooting()) {
+      context.reloadRequired();
+    }
+  }
+  private Service<Policy> createPolicyService(  InjectedValue<Supplier<Policy>> injector){
+    return new Service<Policy>(){
+      volatile Policy delegated;
+      volatile Policy policy;
+      @Override public void start(      StartContext context) throws StartException {
+        delegated=getPolicy();
+        policy=injector.getValue().get();
+        try {
+          setPolicy(policy);
+          policy.refresh();
+        }
+ catch (        Exception cause) {
+          setPolicy(delegated);
+          throw ElytronSubsystemMessages.ROOT_LOGGER.failedToSetPolicy(policy,cause);
+        }
+      }
+      @Override public void stop(      StopContext context){
+        setPolicy(delegated);
+      }
+      @Override public Policy getValue() throws IllegalStateException, IllegalArgumentException {
+        return policy;
+      }
+      private void setPolicy(      Policy policy){
+        if (WildFlySecurityManager.isChecking()) {
+          AccessController.doPrivileged(setPolicyAction(policy));
+        }
+ else {
+          setPolicyAction(policy).run();
+        }
+      }
+      private PrivilegedAction<Void> setPolicyAction(      Policy policy){
+        return () -> {
+          Policy.setPolicy(policy);
+          return null;
+        }
+;
+      }
+      private Policy getPolicy(){
+        if (WildFlySecurityManager.isChecking()) {
+          return AccessController.doPrivileged(getPolicyAction());
+        }
+ else {
+          return getPolicyAction().run();
+        }
+      }
+      private PrivilegedAction<Policy> getPolicyAction(){
+        return Policy::getPolicy;
+      }
+    }
+;
+  }
+}
+; @AT@ 7516 @LENGTH@ 3704
+---UPD VariableDeclarationFragment@@add=new BaseAddHandler(POLICY_RUNTIME_CAPABILITY,attributes){
+  @Override protected void populateModel(  OperationContext context,  ModelNode operation,  Resource resource) throws OperationFailedException {
+    super.populateModel(context,operation,resource);
+    resource.getModel().get(DEFAULT_POLICY.getName()).clear();
+  }
+  @Override protected void performRuntime(  OperationContext context,  ModelNode operation,  ModelNode model) throws OperationFailedException {
+    ServiceName serviceName=POLICY_RUNTIME_CAPABILITY.getCapabilityServiceName(Policy.class);
+    InjectedValue<Supplier<Policy>> policyProviderInjector=new InjectedValue<>();
+    ServiceTarget serviceTarget=context.getServiceTarget();
+    ServiceBuilder<Policy> serviceBuilder=serviceTarget.addService(serviceName,createPolicyService(policyProviderInjector));
+    Supplier<Policy> policySupplier=getPolicyProvider(context,model,serviceBuilder);
+    policyProviderInjector.setValue(() -> policySupplier);
+    serviceBuilder.setInitialMode(Mode.ACTIVE).install();
+    if (!context.isBooting()) {
+      context.reloadRequired();
+    }
+  }
+  private Service<Policy> createPolicyService(  InjectedValue<Supplier<Policy>> injector){
+    return new Service<Policy>(){
+      volatile Policy delegated;
+      volatile Policy policy;
+      @Override public void start(      StartContext context) throws StartException {
+        delegated=getPolicy();
+        policy=injector.getValue().get();
+        try {
+          setPolicy(policy);
+          policy.refresh();
+        }
+ catch (        Exception cause) {
+          setPolicy(delegated);
+          throw ElytronSubsystemMessages.ROOT_LOGGER.failedToSetPolicy(policy,cause);
+        }
+      }
+      @Override public void stop(      StopContext context){
+        setPolicy(delegated);
+      }
+      @Override public Policy getValue() throws IllegalStateException, IllegalArgumentException {
+        return policy;
+      }
+      private void setPolicy(      Policy policy){
+        if (WildFlySecurityManager.isChecking()) {
+          AccessController.doPrivileged(setPolicyAction(policy));
+        }
+ else {
+          setPolicyAction(policy).run();
+        }
+      }
+      private PrivilegedAction<Void> setPolicyAction(      Policy policy){
+        return () -> {
+          Policy.setPolicy(policy);
+          return null;
+        }
+;
+      }
+      private Policy getPolicy(){
+        if (WildFlySecurityManager.isChecking()) {
+          return AccessController.doPrivileged(getPolicyAction());
+        }
+ else {
+          return getPolicyAction().run();
+        }
+      }
+      private PrivilegedAction<Policy> getPolicyAction(){
+        return Policy::getPolicy;
+      }
+    }
+;
+  }
+}
+ @TO@ add=new BaseAddHandler(POLICY_RUNTIME_CAPABILITY,attributes){
+  @Override protected void populateModel(  OperationContext context,  ModelNode operation,  Resource resource) throws OperationFailedException {
+    super.populateModel(context,operation,resource);
+    resource.getModel().get(DEFAULT_POLICY.getName()).clear();
+  }
+  @Override protected void recordCapabilitiesAndRequirements(  OperationContext context,  ModelNode operation,  Resource resource) throws OperationFailedException {
+    super.recordCapabilitiesAndRequirements(context,operation,resource);
+    if (resource.getModel().hasDefined(JACC_POLICY)) {
+      context.registerCapability(JACC_POLICY_RUNTIME_CAPABILITY);
+    }
+  }
+  @Override protected void performRuntime(  OperationContext context,  ModelNode operation,  ModelNode model) throws OperationFailedException {
+    ServiceName serviceName=POLICY_RUNTIME_CAPABILITY.getCapabilityServiceName(Policy.class);
+    InjectedValue<Supplier<Policy>> policyProviderInjector=new InjectedValue<>();
+    ServiceTarget serviceTarget=context.getServiceTarget();
+    ServiceBuilder<Policy> serviceBuilder=serviceTarget.addService(serviceName,createPolicyService(policyProviderInjector));
+    Supplier<Policy> policySupplier=getPolicyProvider(context,model,serviceBuilder);
+    policyProviderInjector.setValue(() -> policySupplier);
+    serviceBuilder.setInitialMode(Mode.ACTIVE).install();
+    if (!context.isBooting()) {
+      context.reloadRequired();
+    }
+  }
+  private Service<Policy> createPolicyService(  InjectedValue<Supplier<Policy>> injector){
+    return new Service<Policy>(){
+      volatile Policy delegated;
+      volatile Policy policy;
+      @Override public void start(      StartContext context) throws StartException {
+        delegated=getPolicy();
+        policy=injector.getValue().get();
+        try {
+          setPolicy(policy);
+          policy.refresh();
+        }
+ catch (        Exception cause) {
+          setPolicy(delegated);
+          throw ElytronSubsystemMessages.ROOT_LOGGER.failedToSetPolicy(policy,cause);
+        }
+      }
+      @Override public void stop(      StopContext context){
+        setPolicy(delegated);
+      }
+      @Override public Policy getValue() throws IllegalStateException, IllegalArgumentException {
+        return policy;
+      }
+      private void setPolicy(      Policy policy){
+        if (WildFlySecurityManager.isChecking()) {
+          AccessController.doPrivileged(setPolicyAction(policy));
+        }
+ else {
+          setPolicyAction(policy).run();
+        }
+      }
+      private PrivilegedAction<Void> setPolicyAction(      Policy policy){
+        return () -> {
+          Policy.setPolicy(policy);
+          return null;
+        }
+;
+      }
+      private Policy getPolicy(){
+        if (WildFlySecurityManager.isChecking()) {
+          return AccessController.doPrivileged(getPolicyAction());
+        }
+ else {
+          return getPolicyAction().run();
+        }
+      }
+      private PrivilegedAction<Policy> getPolicyAction(){
+        return Policy::getPolicy;
+      }
+    }
+;
+  }
+}
+ @AT@ 7539 @LENGTH@ 3680
+

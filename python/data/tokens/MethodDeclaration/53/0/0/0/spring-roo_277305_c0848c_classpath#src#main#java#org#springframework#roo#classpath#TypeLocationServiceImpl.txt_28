@@ -1,0 +1,54 @@
+INS MethodDeclaration@@public, MetadataService, MethodName:getMetadataService,  @TO@ TypeDeclaration@@[@Component, @Service, public]TypeLocationServiceImpl, [TypeLocationService] @AT@ 32780 @LENGTH@ 638
+---INS Modifier@@public @TO@ MethodDeclaration@@public, MetadataService, MethodName:getMetadataService,  @AT@ 32780 @LENGTH@ 6
+---INS SimpleType@@MetadataService @TO@ MethodDeclaration@@public, MetadataService, MethodName:getMetadataService,  @AT@ 32787 @LENGTH@ 15
+---INS SimpleName@@MethodName:getMetadataService @TO@ MethodDeclaration@@public, MetadataService, MethodName:getMetadataService,  @AT@ 32803 @LENGTH@ 18
+---INS IfStatement@@InfixExpression:metadataService == null @TO@ MethodDeclaration@@public, MetadataService, MethodName:getMetadataService,  @AT@ 32830 @LENGTH@ 582
+------INS InfixExpression@@metadataService == null @TO@ IfStatement@@InfixExpression:metadataService == null @AT@ 32833 @LENGTH@ 23
+---------INS SimpleName@@metadataService @TO@ InfixExpression@@metadataService == null @AT@ 32833 @LENGTH@ 15
+---------INS Operator@@== @TO@ InfixExpression@@metadataService == null @AT@ 32848 @LENGTH@ 2
+---------INS NullLiteral@@null @TO@ InfixExpression@@metadataService == null @AT@ 32852 @LENGTH@ 4
+------INS TryStatement@@try:[] @TO@ IfStatement@@InfixExpression:metadataService == null @AT@ 32930 @LENGTH@ 433
+---------INS VariableDeclarationStatement@@ServiceReference<?>[] references=context.getAllServiceReferences(MetadataService.class.getName(),null); @TO@ TryStatement@@try:[] @AT@ 32943 @LENGTH@ 106
+------------INS ArrayType@@ServiceReference<?>[] @TO@ VariableDeclarationStatement@@ServiceReference<?>[] references=context.getAllServiceReferences(MetadataService.class.getName(),null); @AT@ 32943 @LENGTH@ 21
+---------------INS ParameterizedType@@ServiceReference<?> @TO@ ArrayType@@ServiceReference<?>[] @AT@ 32943 @LENGTH@ 19
+------------------INS SimpleType@@ServiceReference @TO@ ParameterizedType@@ServiceReference<?> @AT@ 32943 @LENGTH@ 16
+------------------INS WildcardType@@? @TO@ ParameterizedType@@ServiceReference<?> @AT@ 32960 @LENGTH@ 1
+------------INS VariableDeclarationFragment@@references=context.getAllServiceReferences(MetadataService.class.getName(),null) @TO@ VariableDeclarationStatement@@ServiceReference<?>[] references=context.getAllServiceReferences(MetadataService.class.getName(),null); @AT@ 32965 @LENGTH@ 83
+---------------INS SimpleName@@references @TO@ VariableDeclarationFragment@@references=context.getAllServiceReferences(MetadataService.class.getName(),null) @AT@ 32965 @LENGTH@ 10
+---------------INS MethodInvocation@@context.getAllServiceReferences(MetadataService.class.getName(),null) @TO@ VariableDeclarationFragment@@references=context.getAllServiceReferences(MetadataService.class.getName(),null) @AT@ 32978 @LENGTH@ 70
+------------------INS SimpleName@@Name:context @TO@ MethodInvocation@@context.getAllServiceReferences(MetadataService.class.getName(),null) @AT@ 32978 @LENGTH@ 7
+------------------INS SimpleName@@MethodName:getAllServiceReferences:[MetadataService.class.getName(), null] @TO@ MethodInvocation@@context.getAllServiceReferences(MetadataService.class.getName(),null) @AT@ 32986 @LENGTH@ 62
+---------------------INS MethodInvocation@@MetadataService.class.getName() @TO@ SimpleName@@MethodName:getAllServiceReferences:[MetadataService.class.getName(), null] @AT@ 33010 @LENGTH@ 31
+------------------------INS TypeLiteral@@MetadataService.class @TO@ MethodInvocation@@MetadataService.class.getName() @AT@ 33010 @LENGTH@ 21
+------------------------INS SimpleName@@MethodName:getName:[] @TO@ MethodInvocation@@MetadataService.class.getName() @AT@ 33032 @LENGTH@ 9
+---------------------INS NullLiteral@@null @TO@ SimpleName@@MethodName:getAllServiceReferences:[MetadataService.class.getName(), null] @AT@ 33043 @LENGTH@ 4
+---------INS EnhancedForStatement@@ServiceReference<?> ref, SimpleName:references @TO@ TryStatement@@try:[] @AT@ 33065 @LENGTH@ 109
+------------INS SingleVariableDeclaration@@ServiceReference<?> ref @TO@ EnhancedForStatement@@ServiceReference<?> ref, SimpleName:references @AT@ 33069 @LENGTH@ 23
+---------------INS ParameterizedType@@ServiceReference<?> @TO@ SingleVariableDeclaration@@ServiceReference<?> ref @AT@ 33069 @LENGTH@ 19
+------------------INS SimpleType@@ServiceReference @TO@ ParameterizedType@@ServiceReference<?> @AT@ 33069 @LENGTH@ 16
+------------------INS WildcardType@@? @TO@ ParameterizedType@@ServiceReference<?> @AT@ 33086 @LENGTH@ 1
+---------------INS SimpleName@@ref @TO@ SingleVariableDeclaration@@ServiceReference<?> ref @AT@ 33089 @LENGTH@ 3
+------------INS SimpleName@@references @TO@ EnhancedForStatement@@ServiceReference<?> ref, SimpleName:references @AT@ 33095 @LENGTH@ 10
+------------INS ReturnStatement@@CastExpression:(MetadataService)context.getService(ref) @TO@ EnhancedForStatement@@ServiceReference<?> ref, SimpleName:references @AT@ 33116 @LENGTH@ 49
+---------------INS CastExpression@@(MetadataService)context.getService(ref) @TO@ ReturnStatement@@CastExpression:(MetadataService)context.getService(ref) @AT@ 33123 @LENGTH@ 41
+------------------INS SimpleType@@MetadataService @TO@ CastExpression@@(MetadataService)context.getService(ref) @AT@ 33124 @LENGTH@ 15
+------------------INS MethodInvocation@@context.getService(ref) @TO@ CastExpression@@(MetadataService)context.getService(ref) @AT@ 33141 @LENGTH@ 23
+---------------------INS SimpleName@@Name:context @TO@ MethodInvocation@@context.getService(ref) @AT@ 33141 @LENGTH@ 7
+---------------------INS SimpleName@@MethodName:getService:[ref] @TO@ MethodInvocation@@context.getService(ref) @AT@ 33149 @LENGTH@ 15
+------------------------INS SimpleName@@ref @TO@ SimpleName@@MethodName:getService:[ref] @AT@ 33160 @LENGTH@ 3
+---------INS ReturnStatement@@NullLiteral:null @TO@ TryStatement@@try:[] @AT@ 33190 @LENGTH@ 12
+------------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 33197 @LENGTH@ 4
+---------INS CatchClause@@InvalidSyntaxException e @TO@ TryStatement@@try:[] @AT@ 33219 @LENGTH@ 144
+------------INS SingleVariableDeclaration@@InvalidSyntaxException e @TO@ CatchClause@@InvalidSyntaxException e @AT@ 33226 @LENGTH@ 24
+---------------INS SimpleType@@InvalidSyntaxException @TO@ SingleVariableDeclaration@@InvalidSyntaxException e @AT@ 33226 @LENGTH@ 22
+---------------INS SimpleName@@e @TO@ SingleVariableDeclaration@@InvalidSyntaxException e @AT@ 33249 @LENGTH@ 1
+------------INS ExpressionStatement@@MethodInvocation:LOGGER.warning("Cannot load MetadataService on TypeLocationServiceImpl.") @TO@ CatchClause@@InvalidSyntaxException e @AT@ 33261 @LENGTH@ 74
+---------------INS MethodInvocation@@LOGGER.warning("Cannot load MetadataService on TypeLocationServiceImpl.") @TO@ ExpressionStatement@@MethodInvocation:LOGGER.warning("Cannot load MetadataService on TypeLocationServiceImpl.") @AT@ 33261 @LENGTH@ 73
+------------------INS SimpleName@@Name:LOGGER @TO@ MethodInvocation@@LOGGER.warning("Cannot load MetadataService on TypeLocationServiceImpl.") @AT@ 33261 @LENGTH@ 6
+------------------INS SimpleName@@MethodName:warning:["Cannot load MetadataService on TypeLocationServiceImpl."] @TO@ MethodInvocation@@LOGGER.warning("Cannot load MetadataService on TypeLocationServiceImpl.") @AT@ 33268 @LENGTH@ 66
+---------------------INS StringLiteral@@"Cannot load MetadataService on TypeLocationServiceImpl." @TO@ SimpleName@@MethodName:warning:["Cannot load MetadataService on TypeLocationServiceImpl."] @AT@ 33276 @LENGTH@ 57
+------------INS ReturnStatement@@NullLiteral:null @TO@ CatchClause@@InvalidSyntaxException e @AT@ 33343 @LENGTH@ 12
+---------------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 33350 @LENGTH@ 4
+------INS ReturnStatement@@SimpleName:metadataService @TO@ IfStatement@@InfixExpression:metadataService == null @AT@ 33382 @LENGTH@ 23
+---------INS SimpleName@@metadataService @TO@ ReturnStatement@@SimpleName:metadataService @AT@ 33389 @LENGTH@ 15
+

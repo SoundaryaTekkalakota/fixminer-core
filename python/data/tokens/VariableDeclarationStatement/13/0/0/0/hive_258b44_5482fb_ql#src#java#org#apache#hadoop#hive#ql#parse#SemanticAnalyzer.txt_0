@@ -1,0 +1,14 @@
+INS VariableDeclarationStatement@@Map<String,ExprNodeDesc> columnExprMap=new HashMap<String,ExprNodeDesc>(); @TO@ MethodDeclaration@@private, Operator<? extends OperatorDesc>, MethodName:genInputSelectForUnion, Operator<? extends OperatorDesc> origInputOp, Map<String,ColumnInfo> origInputFieldMap, String origInputAlias, RowResolver unionoutRR, String unionalias, UDFArgumentException,  @AT@ 300453 @LENGTH@ 78
+---INS ParameterizedType@@Map<String,ExprNodeDesc> @TO@ VariableDeclarationStatement@@Map<String,ExprNodeDesc> columnExprMap=new HashMap<String,ExprNodeDesc>(); @AT@ 300453 @LENGTH@ 25
+------INS SimpleType@@Map @TO@ ParameterizedType@@Map<String,ExprNodeDesc> @AT@ 300453 @LENGTH@ 3
+------INS SimpleType@@String @TO@ ParameterizedType@@Map<String,ExprNodeDesc> @AT@ 300457 @LENGTH@ 6
+------INS SimpleType@@ExprNodeDesc @TO@ ParameterizedType@@Map<String,ExprNodeDesc> @AT@ 300465 @LENGTH@ 12
+---INS VariableDeclarationFragment@@columnExprMap=new HashMap<String,ExprNodeDesc>() @TO@ VariableDeclarationStatement@@Map<String,ExprNodeDesc> columnExprMap=new HashMap<String,ExprNodeDesc>(); @AT@ 300479 @LENGTH@ 51
+------INS SimpleName@@columnExprMap @TO@ VariableDeclarationFragment@@columnExprMap=new HashMap<String,ExprNodeDesc>() @AT@ 300479 @LENGTH@ 13
+------INS ClassInstanceCreation@@HashMap<String,ExprNodeDesc>[] @TO@ VariableDeclarationFragment@@columnExprMap=new HashMap<String,ExprNodeDesc>() @AT@ 300495 @LENGTH@ 35
+---------INS New@@new @TO@ ClassInstanceCreation@@HashMap<String,ExprNodeDesc>[] @AT@ 300495 @LENGTH@ 3
+---------INS ParameterizedType@@HashMap<String,ExprNodeDesc> @TO@ ClassInstanceCreation@@HashMap<String,ExprNodeDesc>[] @AT@ 300499 @LENGTH@ 29
+------------INS SimpleType@@HashMap @TO@ ParameterizedType@@HashMap<String,ExprNodeDesc> @AT@ 300499 @LENGTH@ 7
+------------INS SimpleType@@String @TO@ ParameterizedType@@HashMap<String,ExprNodeDesc> @AT@ 300507 @LENGTH@ 6
+------------INS SimpleType@@ExprNodeDesc @TO@ ParameterizedType@@HashMap<String,ExprNodeDesc> @AT@ 300515 @LENGTH@ 12
+

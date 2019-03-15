@@ -1,0 +1,2 @@
+INS BreakStatement@@ @TO@ SwitchStatement@@MethodInvocation:ast.getToken().getType() @AT@ 43203 @LENGTH@ 6
+

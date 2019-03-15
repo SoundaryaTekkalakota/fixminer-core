@@ -1,0 +1,17 @@
+UPD EnhancedForStatement@@String candidateName, SimpleName:candidateNames @TO@ String candidate, SimpleName:candidateNames @AT@ 47379 @LENGTH@ 228
+---UPD SingleVariableDeclaration@@String candidateName @TO@ String candidate @AT@ 47384 @LENGTH@ 20
+------UPD SimpleName@@candidateName @TO@ candidate @AT@ 47391 @LENGTH@ 13
+---UPD IfStatement@@InfixExpression:!isSelfReference(beanName,candidateName) && isAutowireCandidate(candidateName,descriptor) @TO@ InfixExpression:!isSelfReference(beanName,candidate) && isAutowireCandidate(candidate,descriptor) @AT@ 47428 @LENGTH@ 175
+------UPD InfixExpression@@!isSelfReference(beanName,candidateName) && isAutowireCandidate(candidateName,descriptor) @TO@ !isSelfReference(beanName,candidate) && isAutowireCandidate(candidate,descriptor) @AT@ 47432 @LENGTH@ 91
+---------UPD PrefixExpression@@!isSelfReference(beanName,candidateName) @TO@ !isSelfReference(beanName,candidate) @AT@ 47432 @LENGTH@ 41
+------------UPD MethodInvocation@@isSelfReference(beanName,candidateName) @TO@ isSelfReference(beanName,candidate) @AT@ 47433 @LENGTH@ 40
+---------------UPD SimpleName@@MethodName:isSelfReference:[beanName, candidateName] @TO@ MethodName:isSelfReference:[beanName, candidate] @AT@ 47433 @LENGTH@ 40
+------------------UPD SimpleName@@candidateName @TO@ candidate @AT@ 47459 @LENGTH@ 13
+---------UPD MethodInvocation@@isAutowireCandidate(candidateName,descriptor) @TO@ isAutowireCandidate(candidate,descriptor) @AT@ 47477 @LENGTH@ 46
+------------UPD SimpleName@@MethodName:isAutowireCandidate:[candidateName, descriptor] @TO@ MethodName:isAutowireCandidate:[candidate, descriptor] @AT@ 47477 @LENGTH@ 46
+---------------UPD SimpleName@@candidateName @TO@ candidate @AT@ 47497 @LENGTH@ 13
+------UPD ExpressionStatement@@MethodInvocation:addCandidateEntry(result,candidateName,descriptor,requiredType) @TO@ MethodInvocation:addCandidateEntry(result,candidate,descriptor,requiredType) @AT@ 47531 @LENGTH@ 67
+---------UPD MethodInvocation@@addCandidateEntry(result,candidateName,descriptor,requiredType) @TO@ addCandidateEntry(result,candidate,descriptor,requiredType) @AT@ 47531 @LENGTH@ 66
+------------UPD SimpleName@@MethodName:addCandidateEntry:[result, candidateName, descriptor, requiredType] @TO@ MethodName:addCandidateEntry:[result, candidate, descriptor, requiredType] @AT@ 47531 @LENGTH@ 66
+---------------UPD SimpleName@@candidateName @TO@ candidate @AT@ 47557 @LENGTH@ 13
+

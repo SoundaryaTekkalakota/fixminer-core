@@ -1,0 +1,8 @@
+VariableDeclarationStatement
+---Modifier
+---PrimitiveType
+---VariableDeclarationFragment
+------SimpleName
+------ArrayAccess
+---------SimpleName
+---------SimpleName

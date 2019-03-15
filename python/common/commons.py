@@ -25,6 +25,7 @@ from collections import Counter
 
 
 
+
 sourceCodeColumns = ['packageName', 'className', 'methodNames', 'formalParameter',
                        'methodInvocation', 'memberReference', 'documentation', 'literal', 'rawSource', 'hunks',
                        'commitLogs', 'classNameExt']
@@ -268,15 +269,15 @@ def parallelRun(coreFun,elements,*args):
                     raise
                 # else:
                 #     print('%r page is %d bytes' % (url, len(data)))
-                kwargs = {
-                    'total': len(futures),
-                    'unit': 'files',
-                    'unit_scale': True,
-                    'leave': False
-                }
+            kwargs = {
+                'total': len(futures),
+                'unit': 'files',
+                'unit_scale': True,
+                'leave': False
+            }
                 # Print out the progress as tasks complete
-                for f in tqdm(concurrent.futures.as_completed(futures), **kwargs):
-                    pass
+            for f in tqdm(concurrent.futures.as_completed(futures), **kwargs):
+                pass
         except Exception as e:
             # logging.error(e)
             executor.shutdown()
@@ -348,6 +349,24 @@ def startDB(dbDir,portInner,dbName):
         o, e = shellGitCheckout(ping)
         m = re.search('PONG', o)
     print(o)
+
+
+def unique_everseen(iterable, key=None):
+    "List unique elements, preserving order. Remember all elements ever seen."
+    # unique_everseen('AAAABBBCCDAABBB') --> A B C D
+    # unique_everseen('ABBCcAD', str.lower) --> A B C D
+    seen = set()
+    seen_add = seen.add
+    if key is None:
+        for element in itertools.filterfalse(seen.__contains__, iterable):
+            seen_add(element)
+            yield element
+    else:
+        for element in iterable:
+            k = key(element)
+            if k not in seen:
+                seen_add(k)
+                yield element
 
 import threading
 class BackgroundTask(object):

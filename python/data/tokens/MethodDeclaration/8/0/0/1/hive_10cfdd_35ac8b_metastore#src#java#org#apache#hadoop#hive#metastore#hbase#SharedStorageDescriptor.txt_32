@@ -1,0 +1,9 @@
+DEL MethodDeclaration@@public, boolean, MethodName:isSetSerdeInfo,  @AT@ 4657 @LENGTH@ 73
+---DEL Modifier@@public @AT@ 4657 @LENGTH@ 6
+---DEL PrimitiveType@@boolean @AT@ 4664 @LENGTH@ 7
+---DEL SimpleName@@MethodName:isSetSerdeInfo @AT@ 4672 @LENGTH@ 14
+---DEL ReturnStatement@@MethodInvocation:shared.isSetSerdeInfo() @AT@ 4695 @LENGTH@ 31
+------DEL MethodInvocation@@shared.isSetSerdeInfo() @AT@ 4702 @LENGTH@ 23
+---------DEL SimpleName@@Name:shared @AT@ 4702 @LENGTH@ 6
+---------DEL SimpleName@@MethodName:isSetSerdeInfo:[] @AT@ 4709 @LENGTH@ 16
+

@@ -1,0 +1,67 @@
+DEL MethodDeclaration@@static, int, MethodName:reduceAndCorrect, Calendar start, Calendar end, int field, int difference,  @AT@ 18595 @LENGTH@ 419
+---DEL Modifier@@static @AT@ 18595 @LENGTH@ 6
+---DEL PrimitiveType@@int @AT@ 18602 @LENGTH@ 3
+---DEL SimpleName@@MethodName:reduceAndCorrect @AT@ 18606 @LENGTH@ 16
+---DEL SingleVariableDeclaration@@Calendar start @AT@ 18623 @LENGTH@ 14
+------DEL SimpleType@@Calendar @AT@ 18623 @LENGTH@ 8
+------DEL SimpleName@@start @AT@ 18632 @LENGTH@ 5
+---DEL SingleVariableDeclaration@@Calendar end @AT@ 18639 @LENGTH@ 12
+------DEL SimpleType@@Calendar @AT@ 18639 @LENGTH@ 8
+------DEL SimpleName@@end @AT@ 18648 @LENGTH@ 3
+---DEL SingleVariableDeclaration@@int field @AT@ 18653 @LENGTH@ 9
+------DEL PrimitiveType@@int @AT@ 18653 @LENGTH@ 3
+------DEL SimpleName@@field @AT@ 18657 @LENGTH@ 5
+---DEL SingleVariableDeclaration@@int difference @AT@ 18664 @LENGTH@ 14
+------DEL PrimitiveType@@int @AT@ 18664 @LENGTH@ 3
+------DEL SimpleName@@difference @AT@ 18668 @LENGTH@ 10
+---DEL ExpressionStatement@@MethodInvocation:end.add(field,-1 * difference) @AT@ 18690 @LENGTH@ 34
+------DEL MethodInvocation@@end.add(field,-1 * difference) @AT@ 18690 @LENGTH@ 33
+---------DEL SimpleName@@Name:end @AT@ 18690 @LENGTH@ 3
+---------DEL SimpleName@@MethodName:add:[field, -1 * difference] @AT@ 18694 @LENGTH@ 29
+------------DEL SimpleName@@field @AT@ 18699 @LENGTH@ 5
+------------DEL InfixExpression@@-1 * difference @AT@ 18706 @LENGTH@ 15
+---------------DEL PrefixExpression@@-1 @AT@ 18706 @LENGTH@ 2
+------------------DEL Operator@@- @AT@ 18706 @LENGTH@ 1
+------------------DEL NumberLiteral@@1 @AT@ 18707 @LENGTH@ 1
+---------------DEL Operator@@* @AT@ 18708 @LENGTH@ 1
+---------------DEL SimpleName@@difference @AT@ 18711 @LENGTH@ 10
+---DEL VariableDeclarationStatement@@int endValue=end.get(field); @AT@ 18733 @LENGTH@ 30
+------DEL PrimitiveType@@int @AT@ 18733 @LENGTH@ 3
+------DEL VariableDeclarationFragment@@endValue=end.get(field) @AT@ 18737 @LENGTH@ 25
+---------DEL SimpleName@@endValue @AT@ 18737 @LENGTH@ 8
+---------DEL MethodInvocation@@end.get(field) @AT@ 18748 @LENGTH@ 14
+------------DEL SimpleName@@Name:end @AT@ 18748 @LENGTH@ 3
+------------DEL SimpleName@@MethodName:get:[field] @AT@ 18752 @LENGTH@ 10
+---------------DEL SimpleName@@field @AT@ 18756 @LENGTH@ 5
+---DEL VariableDeclarationStatement@@int startValue=start.get(field); @AT@ 18772 @LENGTH@ 34
+------DEL PrimitiveType@@int @AT@ 18772 @LENGTH@ 3
+------DEL VariableDeclarationFragment@@startValue=start.get(field) @AT@ 18776 @LENGTH@ 29
+---------DEL SimpleName@@startValue @AT@ 18776 @LENGTH@ 10
+---------DEL MethodInvocation@@start.get(field) @AT@ 18789 @LENGTH@ 16
+------------DEL SimpleName@@Name:start @AT@ 18789 @LENGTH@ 5
+------------DEL SimpleName@@MethodName:get:[field] @AT@ 18795 @LENGTH@ 10
+---------------DEL SimpleName@@field @AT@ 18799 @LENGTH@ 5
+---DEL IfStatement@@InfixExpression:endValue < startValue @AT@ 18815 @LENGTH@ 193
+------DEL InfixExpression@@endValue < startValue @AT@ 18819 @LENGTH@ 21
+---------DEL SimpleName@@endValue @AT@ 18819 @LENGTH@ 8
+---------DEL Operator@@< @AT@ 18827 @LENGTH@ 1
+---------DEL SimpleName@@startValue @AT@ 18830 @LENGTH@ 10
+------DEL VariableDeclarationStatement@@int newdiff=startValue - endValue; @AT@ 18856 @LENGTH@ 36
+---------DEL PrimitiveType@@int @AT@ 18856 @LENGTH@ 3
+---------DEL VariableDeclarationFragment@@newdiff=startValue - endValue @AT@ 18860 @LENGTH@ 31
+------------DEL SimpleName@@newdiff @AT@ 18860 @LENGTH@ 7
+------------DEL InfixExpression@@startValue - endValue @AT@ 18870 @LENGTH@ 21
+---------------DEL SimpleName@@startValue @AT@ 18870 @LENGTH@ 10
+---------------DEL Operator@@- @AT@ 18880 @LENGTH@ 1
+---------------DEL SimpleName@@endValue @AT@ 18883 @LENGTH@ 8
+------DEL ExpressionStatement@@MethodInvocation:end.add(field,newdiff) @AT@ 18905 @LENGTH@ 26
+---------DEL MethodInvocation@@end.add(field,newdiff) @AT@ 18905 @LENGTH@ 25
+------------DEL SimpleName@@Name:end @AT@ 18905 @LENGTH@ 3
+------------DEL SimpleName@@MethodName:add:[field, newdiff] @AT@ 18909 @LENGTH@ 21
+---------------DEL SimpleName@@field @AT@ 18914 @LENGTH@ 5
+---------------DEL SimpleName@@newdiff @AT@ 18921 @LENGTH@ 7
+------DEL ReturnStatement@@SimpleName:newdiff @AT@ 18944 @LENGTH@ 15
+---------DEL SimpleName@@newdiff @AT@ 18951 @LENGTH@ 7
+------DEL ReturnStatement@@NumberLiteral:0 @AT@ 18989 @LENGTH@ 9
+---------DEL NumberLiteral@@0 @AT@ 18996 @LENGTH@ 1
+

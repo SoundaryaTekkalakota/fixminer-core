@@ -1,0 +1,18 @@
+DEL MethodDeclaration@@public, boolean, MethodName:addAll, Collection<? extends Order> c,  @AT@ 11486 @LENGTH@ 126
+---DEL Modifier@@public @AT@ 11486 @LENGTH@ 6
+---DEL PrimitiveType@@boolean @AT@ 11493 @LENGTH@ 7
+---DEL SimpleName@@MethodName:addAll @AT@ 11501 @LENGTH@ 6
+---DEL SingleVariableDeclaration@@Collection<? extends Order> c @AT@ 11508 @LENGTH@ 29
+------DEL ParameterizedType@@Collection<? extends Order> @AT@ 11508 @LENGTH@ 27
+---------DEL SimpleType@@Collection @AT@ 11508 @LENGTH@ 10
+---------DEL WildcardType@@? @AT@ 11519 @LENGTH@ 15
+------DEL SimpleName@@c @AT@ 11536 @LENGTH@ 1
+---DEL ExpressionStatement@@MethodInvocation:copyOnWrite() @AT@ 11547 @LENGTH@ 14
+------DEL MethodInvocation@@MethodName:copyOnWrite:[] @AT@ 11547 @LENGTH@ 13
+---DEL ReturnStatement@@MethodInvocation:shared.getSortCols().addAll(c) @AT@ 11568 @LENGTH@ 38
+------DEL MethodInvocation@@shared.getSortCols().addAll(c) @AT@ 11575 @LENGTH@ 30
+---------DEL SimpleName@@Name:shared @AT@ 11575 @LENGTH@ 6
+---------DEL MethodInvocation@@MethodName:getSortCols:[] @AT@ 11575 @LENGTH@ 20
+---------DEL SimpleName@@MethodName:addAll:[c] @AT@ 11596 @LENGTH@ 9
+------------DEL SimpleName@@c @AT@ 11603 @LENGTH@ 1
+

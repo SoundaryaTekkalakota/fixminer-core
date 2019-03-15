@@ -1,0 +1,12 @@
+INS FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(KeyValueImporter.class)] @TO@ TypeDeclaration@@[public, static]KeyValueImporter, TableMapper<ImmutableBytesWritable,KeyValue> @AT@ 3496 @LENGTH@ 73
+---INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(KeyValueImporter.class)] @AT@ 3496 @LENGTH@ 7
+---INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(KeyValueImporter.class)] @AT@ 3504 @LENGTH@ 6
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(KeyValueImporter.class)] @AT@ 3511 @LENGTH@ 5
+---INS SimpleType@@Log @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(KeyValueImporter.class)] @AT@ 3517 @LENGTH@ 3
+---INS VariableDeclarationFragment@@LOG=LogFactory.getLog(KeyValueImporter.class) @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(KeyValueImporter.class)] @AT@ 3521 @LENGTH@ 47
+------INS SimpleName@@LOG @TO@ VariableDeclarationFragment@@LOG=LogFactory.getLog(KeyValueImporter.class) @AT@ 3521 @LENGTH@ 3
+------INS MethodInvocation@@LogFactory.getLog(KeyValueImporter.class) @TO@ VariableDeclarationFragment@@LOG=LogFactory.getLog(KeyValueImporter.class) @AT@ 3527 @LENGTH@ 41
+---------INS SimpleName@@Name:LogFactory @TO@ MethodInvocation@@LogFactory.getLog(KeyValueImporter.class) @AT@ 3527 @LENGTH@ 10
+---------INS SimpleName@@MethodName:getLog:[KeyValueImporter.class] @TO@ MethodInvocation@@LogFactory.getLog(KeyValueImporter.class) @AT@ 3538 @LENGTH@ 30
+------------INS TypeLiteral@@KeyValueImporter.class @TO@ SimpleName@@MethodName:getLog:[KeyValueImporter.class] @AT@ 3545 @LENGTH@ 22
+

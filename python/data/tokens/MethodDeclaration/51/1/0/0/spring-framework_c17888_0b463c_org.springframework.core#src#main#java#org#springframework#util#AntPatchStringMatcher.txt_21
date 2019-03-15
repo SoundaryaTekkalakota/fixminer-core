@@ -1,0 +1,52 @@
+DEL MethodDeclaration@@private, boolean, MethodName:matchBeforeFirstStarOrCurly,  @AT@ 5609 @LENGTH@ 279
+---DEL Modifier@@private @AT@ 5609 @LENGTH@ 7
+---DEL PrimitiveType@@boolean @AT@ 5617 @LENGTH@ 7
+---DEL SimpleName@@MethodName:matchBeforeFirstStarOrCurly @AT@ 5625 @LENGTH@ 27
+---DEL WhileStatement@@InfixExpression:(ch=patArr[patIdxStart]) != '*' && ch != '{' && strIdxStart <= strIdxEnd @AT@ 5659 @LENGTH@ 211
+------DEL InfixExpression@@(ch=patArr[patIdxStart]) != '*' && ch != '{' && strIdxStart <= strIdxEnd @AT@ 5666 @LENGTH@ 74
+---------DEL InfixExpression@@(ch=patArr[patIdxStart]) != '*' && ch != '{' @AT@ 5666 @LENGTH@ 46
+------------DEL InfixExpression@@(ch=patArr[patIdxStart]) != '*' @AT@ 5666 @LENGTH@ 33
+---------------DEL ParenthesizedExpression@@(ch=patArr[patIdxStart]) @AT@ 5666 @LENGTH@ 26
+------------------DEL Assignment@@ch=patArr[patIdxStart] @AT@ 5667 @LENGTH@ 24
+---------------------DEL SimpleName@@ch @AT@ 5667 @LENGTH@ 2
+---------------------DEL Operator@@= @AT@ 5669 @LENGTH@ 1
+---------------------DEL ArrayAccess@@patArr[patIdxStart] @AT@ 5672 @LENGTH@ 19
+------------------------DEL SimpleName@@patArr @AT@ 5672 @LENGTH@ 6
+------------------------DEL SimpleName@@patIdxStart @AT@ 5679 @LENGTH@ 11
+---------------DEL Operator@@!= @AT@ 5692 @LENGTH@ 2
+---------------DEL CharacterLiteral@@'*' @AT@ 5696 @LENGTH@ 3
+------------DEL Operator@@&& @AT@ 5699 @LENGTH@ 2
+------------DEL InfixExpression@@ch != '{' @AT@ 5703 @LENGTH@ 9
+---------------DEL SimpleName@@ch @AT@ 5703 @LENGTH@ 2
+---------------DEL Operator@@!= @AT@ 5705 @LENGTH@ 2
+---------------DEL CharacterLiteral@@'{' @AT@ 5709 @LENGTH@ 3
+---------DEL Operator@@&& @AT@ 5712 @LENGTH@ 2
+---------DEL InfixExpression@@strIdxStart <= strIdxEnd @AT@ 5716 @LENGTH@ 24
+------------DEL SimpleName@@strIdxStart @AT@ 5716 @LENGTH@ 11
+------------DEL Operator@@<= @AT@ 5727 @LENGTH@ 2
+------------DEL SimpleName@@strIdxEnd @AT@ 5731 @LENGTH@ 9
+------DEL IfStatement@@InfixExpression:ch != '?' @AT@ 5747 @LENGTH@ 83
+---------DEL InfixExpression@@ch != '?' @AT@ 5751 @LENGTH@ 9
+------------DEL SimpleName@@ch @AT@ 5751 @LENGTH@ 2
+------------DEL Operator@@!= @AT@ 5753 @LENGTH@ 2
+------------DEL CharacterLiteral@@'?' @AT@ 5757 @LENGTH@ 3
+---------DEL IfStatement@@InfixExpression:ch != strArr[strIdxStart] @AT@ 5768 @LENGTH@ 57
+------------DEL InfixExpression@@ch != strArr[strIdxStart] @AT@ 5772 @LENGTH@ 25
+---------------DEL SimpleName@@ch @AT@ 5772 @LENGTH@ 2
+---------------DEL Operator@@!= @AT@ 5774 @LENGTH@ 2
+---------------DEL ArrayAccess@@strArr[strIdxStart] @AT@ 5778 @LENGTH@ 19
+------------------DEL SimpleName@@strArr @AT@ 5778 @LENGTH@ 6
+------------------DEL SimpleName@@strIdxStart @AT@ 5785 @LENGTH@ 11
+------------DEL ReturnStatement@@BooleanLiteral:false @AT@ 5806 @LENGTH@ 13
+---------------DEL BooleanLiteral@@false @AT@ 5813 @LENGTH@ 5
+------DEL ExpressionStatement@@PostfixExpression:patIdxStart++ @AT@ 5834 @LENGTH@ 14
+---------DEL PostfixExpression@@patIdxStart++ @AT@ 5834 @LENGTH@ 13
+------------DEL SimpleName@@patIdxStart @AT@ 5834 @LENGTH@ 11
+------------DEL Operator@@++ @AT@ 5846 @LENGTH@ 2
+------DEL ExpressionStatement@@PostfixExpression:strIdxStart++ @AT@ 5852 @LENGTH@ 14
+---------DEL PostfixExpression@@strIdxStart++ @AT@ 5852 @LENGTH@ 13
+------------DEL SimpleName@@strIdxStart @AT@ 5852 @LENGTH@ 11
+------------DEL Operator@@++ @AT@ 5864 @LENGTH@ 2
+---DEL ReturnStatement@@BooleanLiteral:true @AT@ 5873 @LENGTH@ 12
+------DEL BooleanLiteral@@true @AT@ 5880 @LENGTH@ 4
+

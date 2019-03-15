@@ -1,0 +1,9 @@
+DEL MethodDeclaration@@public, boolean, MethodName:isSetOutputFormat,  @AT@ 3439 @LENGTH@ 79
+---DEL Modifier@@public @AT@ 3439 @LENGTH@ 6
+---DEL PrimitiveType@@boolean @AT@ 3446 @LENGTH@ 7
+---DEL SimpleName@@MethodName:isSetOutputFormat @AT@ 3454 @LENGTH@ 17
+---DEL ReturnStatement@@MethodInvocation:shared.isSetOutputFormat() @AT@ 3480 @LENGTH@ 34
+------DEL MethodInvocation@@shared.isSetOutputFormat() @AT@ 3487 @LENGTH@ 26
+---------DEL SimpleName@@Name:shared @AT@ 3487 @LENGTH@ 6
+---------DEL SimpleName@@MethodName:isSetOutputFormat:[] @AT@ 3494 @LENGTH@ 19
+

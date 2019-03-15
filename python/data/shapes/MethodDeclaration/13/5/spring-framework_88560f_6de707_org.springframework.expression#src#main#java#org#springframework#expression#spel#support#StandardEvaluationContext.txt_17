@@ -1,0 +1,13 @@
+MethodDeclaration
+---Modifier
+---PrimitiveType
+---SimpleName
+---IfStatement
+------InfixExpression
+---------FieldAccess
+------------ThisExpression
+------------SimpleName
+---------Operator
+---------NullLiteral
+------ExpressionStatement
+---------MethodInvocation

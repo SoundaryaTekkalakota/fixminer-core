@@ -1,0 +1,16 @@
+ UPD ExpressionStatement
+--- DEL MethodInvocation
+------ DEL SimpleName
+------ DEL SimpleName
+--------- DEL MethodInvocation
+------------ DEL MethodInvocation
+--------------- DEL NumberLiteral
+------------ DEL SimpleName
+--------- DEL SimpleName
+--- INS Assignment
+------ INS SimpleName
+------ INS Operator
+------ INS MethodInvocation
+--------- MOV QualifiedName
+--------- INS SimpleName
+------------ INS NumberLiteral

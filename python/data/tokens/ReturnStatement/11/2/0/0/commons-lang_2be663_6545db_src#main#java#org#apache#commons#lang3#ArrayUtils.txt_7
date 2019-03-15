@@ -1,0 +1,12 @@
+UPD ReturnStatement@@MethodInvocation:removeAll(array,extractIndices(toRemove)) @TO@ CastExpression:(float[])removeAll((Object)array,extractIndices(toRemove)) @AT@ 221405 @LENGTH@ 50
+---UPD MethodInvocation@@removeAll(array,extractIndices(toRemove)) @TO@ removeAll((Object)array,extractIndices(toRemove)) @AT@ 221412 @LENGTH@ 42
+------UPD SimpleName@@MethodName:removeAll:[array, extractIndices(toRemove)] @TO@ MethodName:removeAll:[(Object)array, extractIndices(toRemove)] @AT@ 221412 @LENGTH@ 42
+---------DEL SimpleName@@array @AT@ 221422 @LENGTH@ 5
+---------INS CastExpression@@(Object)array @TO@ SimpleName@@MethodName:removeAll:[array, extractIndices(toRemove)] @AT@ 221668 @LENGTH@ 13
+------------INS SimpleType@@Object @TO@ CastExpression@@(Object)array @AT@ 221669 @LENGTH@ 6
+------------INS SimpleName@@array @TO@ CastExpression@@(Object)array @AT@ 221676 @LENGTH@ 5
+---INS CastExpression@@(float[])removeAll((Object)array,extractIndices(toRemove)) @TO@ ReturnStatement@@MethodInvocation:removeAll(array,extractIndices(toRemove)) @AT@ 221648 @LENGTH@ 60
+------MOV MethodInvocation@@removeAll(array,extractIndices(toRemove)) @TO@ CastExpression@@(float[])removeAll((Object)array,extractIndices(toRemove)) @AT@ 221412 @LENGTH@ 42
+------INS ArrayType@@float[] @TO@ CastExpression@@(float[])removeAll((Object)array,extractIndices(toRemove)) @AT@ 221649 @LENGTH@ 7
+---------INS PrimitiveType@@float @TO@ ArrayType@@float[] @AT@ 221649 @LENGTH@ 5
+

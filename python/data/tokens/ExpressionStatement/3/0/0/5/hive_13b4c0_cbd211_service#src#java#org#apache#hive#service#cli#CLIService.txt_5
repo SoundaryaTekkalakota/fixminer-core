@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.info(sessionHandle + ": getInfo()") @TO@ MethodInvocation:LOG.debug(sessionHandle + ": getInfo()") @AT@ 6486 @LENGTH@ 40
+---UPD MethodInvocation@@LOG.info(sessionHandle + ": getInfo()") @TO@ LOG.debug(sessionHandle + ": getInfo()") @AT@ 6486 @LENGTH@ 39
+------UPD SimpleName@@MethodName:info:[sessionHandle + ": getInfo()"] @TO@ MethodName:debug:[sessionHandle + ": getInfo()"] @AT@ 6490 @LENGTH@ 35
+

@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:request.setAttribute(newToken.getParameterName(),newToken) @TO@ MethodInvocation:request.setAttribute(newToken.getParameterName(),tokenForRequest) @AT@ 2685 @LENGTH@ 60
+---UPD MethodInvocation@@request.setAttribute(newToken.getParameterName(),newToken) @TO@ request.setAttribute(newToken.getParameterName(),tokenForRequest) @AT@ 2685 @LENGTH@ 59
+------UPD SimpleName@@MethodName:setAttribute:[newToken.getParameterName(), newToken] @TO@ MethodName:setAttribute:[newToken.getParameterName(), tokenForRequest] @AT@ 2693 @LENGTH@ 51
+---------UPD SimpleName@@newToken @TO@ tokenForRequest @AT@ 2735 @LENGTH@ 8
+

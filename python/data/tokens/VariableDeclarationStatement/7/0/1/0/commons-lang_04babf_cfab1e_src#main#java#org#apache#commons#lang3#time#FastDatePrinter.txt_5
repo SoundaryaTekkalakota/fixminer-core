@@ -1,0 +1,8 @@
+INS VariableDeclarationStatement@@TimeZone zone=calendar.getTimeZone(); @TO@ MethodDeclaration@@public, void, MethodName:appendTo, StringBuffer buffer, Calendar calendar,  @AT@ 34718 @LENGTH@ 39
+---INS SimpleType@@TimeZone @TO@ VariableDeclarationStatement@@TimeZone zone=calendar.getTimeZone(); @AT@ 34718 @LENGTH@ 8
+---INS VariableDeclarationFragment@@zone=calendar.getTimeZone() @TO@ VariableDeclarationStatement@@TimeZone zone=calendar.getTimeZone(); @AT@ 34727 @LENGTH@ 29
+------INS SimpleName@@zone @TO@ VariableDeclarationFragment@@zone=calendar.getTimeZone() @AT@ 34727 @LENGTH@ 4
+------INS MethodInvocation@@calendar.getTimeZone() @TO@ VariableDeclarationFragment@@zone=calendar.getTimeZone() @AT@ 34734 @LENGTH@ 22
+---------INS SimpleName@@Name:calendar @TO@ MethodInvocation@@calendar.getTimeZone() @AT@ 34734 @LENGTH@ 8
+---------INS SimpleName@@MethodName:getTimeZone:[] @TO@ MethodInvocation@@calendar.getTimeZone() @AT@ 34743 @LENGTH@ 13
+

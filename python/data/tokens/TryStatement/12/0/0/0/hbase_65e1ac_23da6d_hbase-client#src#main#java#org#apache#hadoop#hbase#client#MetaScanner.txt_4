@@ -1,0 +1,13 @@
+INS TryStatement@@try:[] @TO@ IfStatement@@InfixExpression:visitor != null @AT@ 7579 @LENGTH@ 151
+---MOV ExpressionStatement@@MethodInvocation:visitor.close() @TO@ TryStatement@@try:[] @AT@ 7358 @LENGTH@ 16
+---INS CatchClause@@Throwable t @TO@ TryStatement@@try:[] @AT@ 7622 @LENGTH@ 108
+------INS SingleVariableDeclaration@@Throwable t @TO@ CatchClause@@Throwable t @AT@ 7629 @LENGTH@ 11
+---------INS SimpleType@@Throwable @TO@ SingleVariableDeclaration@@Throwable t @AT@ 7629 @LENGTH@ 9
+---------INS SimpleName@@t @TO@ SingleVariableDeclaration@@Throwable t @AT@ 7639 @LENGTH@ 1
+------INS ExpressionStatement@@MethodInvocation:LOG.debug("Got exception in closing the meta scanner visitor",t) @TO@ CatchClause@@Throwable t @AT@ 7654 @LENGTH@ 66
+---------INS MethodInvocation@@LOG.debug("Got exception in closing the meta scanner visitor",t) @TO@ ExpressionStatement@@MethodInvocation:LOG.debug("Got exception in closing the meta scanner visitor",t) @AT@ 7654 @LENGTH@ 65
+------------INS SimpleName@@Name:LOG @TO@ MethodInvocation@@LOG.debug("Got exception in closing the meta scanner visitor",t) @AT@ 7654 @LENGTH@ 3
+------------INS SimpleName@@MethodName:debug:["Got exception in closing the meta scanner visitor", t] @TO@ MethodInvocation@@LOG.debug("Got exception in closing the meta scanner visitor",t) @AT@ 7658 @LENGTH@ 61
+---------------INS StringLiteral@@"Got exception in closing the meta scanner visitor" @TO@ SimpleName@@MethodName:debug:["Got exception in closing the meta scanner visitor", t] @AT@ 7664 @LENGTH@ 51
+---------------INS SimpleName@@t @TO@ SimpleName@@MethodName:debug:["Got exception in closing the meta scanner visitor", t] @AT@ 7717 @LENGTH@ 1
+

@@ -1,0 +1,13 @@
+MethodDeclaration
+---SimpleType
+---TryStatement
+------ExpressionStatement
+------CatchClause
+---------SingleVariableDeclaration
+------------SimpleType
+------------SimpleName
+---------ThrowStatement
+------------MethodInvocation
+---------------SimpleName
+---------------SimpleName
+------------------SimpleName

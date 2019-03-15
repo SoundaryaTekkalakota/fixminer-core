@@ -1,0 +1,12 @@
+DEL AssertStatement@@InfixExpression:maxUlps > 0 && maxUlps < NAN_GAP @AT@ 18487 @LENGTH@ 40
+---DEL InfixExpression@@maxUlps > 0 && maxUlps < NAN_GAP @AT@ 18494 @LENGTH@ 32
+------DEL InfixExpression@@maxUlps > 0 @AT@ 18494 @LENGTH@ 11
+---------DEL SimpleName@@maxUlps @AT@ 18494 @LENGTH@ 7
+---------DEL Operator@@> @AT@ 18501 @LENGTH@ 1
+---------DEL NumberLiteral@@0 @AT@ 18504 @LENGTH@ 1
+------DEL Operator@@&& @AT@ 18505 @LENGTH@ 2
+------DEL InfixExpression@@maxUlps < NAN_GAP @AT@ 18509 @LENGTH@ 17
+---------DEL SimpleName@@maxUlps @AT@ 18509 @LENGTH@ 7
+---------DEL Operator@@< @AT@ 18516 @LENGTH@ 1
+---------DEL SimpleName@@NAN_GAP @AT@ 18519 @LENGTH@ 7
+

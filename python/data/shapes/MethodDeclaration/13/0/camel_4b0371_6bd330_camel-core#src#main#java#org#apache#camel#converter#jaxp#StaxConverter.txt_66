@@ -1,0 +1,13 @@
+MethodDeclaration
+---Modifier
+---SimpleType
+---SimpleName
+---IfStatement
+------InfixExpression
+---------SimpleName
+---------Operator
+---------NullLiteral
+------ReturnStatement
+---------MethodInvocation
+---ReturnStatement
+------SimpleName

@@ -1,0 +1,16 @@
+DEL MethodDeclaration@@public, boolean, MethodName:add, FieldSchema t,  @AT@ 13763 @LENGTH@ 100
+---DEL Modifier@@public @AT@ 13763 @LENGTH@ 6
+---DEL PrimitiveType@@boolean @AT@ 13770 @LENGTH@ 7
+---DEL SimpleName@@MethodName:add @AT@ 13778 @LENGTH@ 3
+---DEL SingleVariableDeclaration@@FieldSchema t @AT@ 13782 @LENGTH@ 13
+------DEL SimpleType@@FieldSchema @AT@ 13782 @LENGTH@ 11
+------DEL SimpleName@@t @AT@ 13794 @LENGTH@ 1
+---DEL ExpressionStatement@@MethodInvocation:copyOnWrite() @AT@ 13805 @LENGTH@ 14
+------DEL MethodInvocation@@MethodName:copyOnWrite:[] @AT@ 13805 @LENGTH@ 13
+---DEL ReturnStatement@@MethodInvocation:shared.getCols().add(t) @AT@ 13826 @LENGTH@ 31
+------DEL MethodInvocation@@shared.getCols().add(t) @AT@ 13833 @LENGTH@ 23
+---------DEL SimpleName@@Name:shared @AT@ 13833 @LENGTH@ 6
+---------DEL MethodInvocation@@MethodName:getCols:[] @AT@ 13833 @LENGTH@ 16
+---------DEL SimpleName@@MethodName:add:[t] @AT@ 13850 @LENGTH@ 6
+------------DEL SimpleName@@t @AT@ 13854 @LENGTH@ 1
+

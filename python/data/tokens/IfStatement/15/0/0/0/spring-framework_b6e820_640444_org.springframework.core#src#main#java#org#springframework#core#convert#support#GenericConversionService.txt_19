@@ -1,0 +1,16 @@
+DEL IfStatement@@MethodInvocation:logger.isTraceEnabled() @AT@ 16093 @LENGTH@ 145
+---DEL MethodInvocation@@logger.isTraceEnabled() @AT@ 16097 @LENGTH@ 23
+------DEL SimpleName@@Name:logger @AT@ 16097 @LENGTH@ 6
+------DEL SimpleName@@MethodName:isTraceEnabled:[] @AT@ 16104 @LENGTH@ 16
+---DEL ExpressionStatement@@MethodInvocation:logger.trace("Searching for converters indexed by source interface [" + interfaceType.getName() + "]") @AT@ 16129 @LENGTH@ 103
+------DEL MethodInvocation@@logger.trace("Searching for converters indexed by source interface [" + interfaceType.getName() + "]") @AT@ 16129 @LENGTH@ 102
+---------DEL SimpleName@@Name:logger @AT@ 16129 @LENGTH@ 6
+---------DEL SimpleName@@MethodName:trace:["Searching for converters indexed by source interface [" + interfaceType.getName() + "]"] @AT@ 16136 @LENGTH@ 95
+------------DEL InfixExpression@@"Searching for converters indexed by source interface [" + interfaceType.getName() + "]" @AT@ 16142 @LENGTH@ 88
+---------------DEL StringLiteral@@"Searching for converters indexed by source interface [" @AT@ 16142 @LENGTH@ 56
+---------------DEL Operator@@+ @AT@ 16198 @LENGTH@ 1
+---------------DEL MethodInvocation@@interfaceType.getName() @AT@ 16201 @LENGTH@ 23
+------------------DEL SimpleName@@Name:interfaceType @AT@ 16201 @LENGTH@ 13
+------------------DEL SimpleName@@MethodName:getName:[] @AT@ 16215 @LENGTH@ 9
+---------------DEL StringLiteral@@"]" @AT@ 16227 @LENGTH@ 3
+

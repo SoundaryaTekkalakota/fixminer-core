@@ -1,0 +1,874 @@
+UPD ExpressionStatement@@MethodInvocation:context.addStep(new OperationStepHandler(){
+  @Override public void execute(  OperationContext context,  ModelNode operation) throws OperationFailedException {
+    final ServiceTarget serviceTarget=context.getServiceTarget();
+    final String serverName=context.getCurrentAddressValue();
+    final ModelNode model=Resource.Tools.readModel(resource);
+    final Configuration configuration=transformConfig(context,serverName,model);
+    String bindingsPath=PATHS.get(BINDINGS_DIRECTORY).resolveModelAttribute(context,model.get(PATH,BINDINGS_DIRECTORY)).asString();
+    String bindingsRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,BINDINGS_DIRECTORY)).asString();
+    String journalPath=PATHS.get(JOURNAL_DIRECTORY).resolveModelAttribute(context,model.get(PATH,JOURNAL_DIRECTORY)).asString();
+    String journalRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,JOURNAL_DIRECTORY)).asString();
+    String largeMessagePath=PATHS.get(LARGE_MESSAGES_DIRECTORY).resolveModelAttribute(context,model.get(PATH,LARGE_MESSAGES_DIRECTORY)).asString();
+    String largeMessageRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,LARGE_MESSAGES_DIRECTORY)).asString();
+    String pagingPath=PATHS.get(PAGING_DIRECTORY).resolveModelAttribute(context,model.get(PATH,PAGING_DIRECTORY)).asString();
+    String pagingRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,PAGING_DIRECTORY)).asString();
+    ServiceName activeMQServiceName=MessagingServices.getActiveMQServiceName(serverName);
+    final ServiceBuilder serviceBuilder=serviceTarget.addService(activeMQServiceName);
+    Supplier pathManager=serviceBuilder.requires(context.getCapabilityServiceName(PATH_MANAGER_CAPABILITY,PathManager.class));
+    Optional<Supplier<DataSource>> dataSource=Optional.empty();
+    ModelNode dataSourceModel=JOURNAL_DATASOURCE.resolveModelAttribute(context,model);
+    if (dataSourceModel.isDefined()) {
+      ServiceName dataSourceCapability=context.getCapabilityServiceName(DATA_SOURCE_CAPABILITY,dataSourceModel.asString(),DataSource.class);
+      dataSource=Optional.of(serviceBuilder.requires(dataSourceCapability));
+    }
+    Optional<Supplier<MBeanServer>> mbeanServer=Optional.empty();
+    if (context.hasOptionalCapability(JMX_CAPABILITY,ACTIVEMQ_SERVER_CAPABILITY.getDynamicName(serverName),null)) {
+      ServiceName jmxCapability=context.getCapabilityServiceName(JMX_CAPABILITY,MBeanServer.class);
+      mbeanServer=Optional.of(serviceBuilder.requires(jmxCapability));
+    }
+    Optional<Supplier<SecurityDomain>> elytronSecurityDomain=Optional.empty();
+    Optional<Supplier<SecurityDomainContext>> securityDomainContext=Optional.empty();
+    final ModelNode elytronSecurityDomainModel=ELYTRON_DOMAIN.resolveModelAttribute(context,model);
+    if (elytronSecurityDomainModel.isDefined()) {
+      ServiceName elytronDomainCapability=context.getCapabilityServiceName(ELYTRON_DOMAIN_CAPABILITY,elytronSecurityDomainModel.asString(),SecurityDomain.class);
+      elytronSecurityDomain=Optional.of(serviceBuilder.requires(elytronDomainCapability));
+    }
+ else {
+      String domain=SECURITY_DOMAIN.resolveModelAttribute(context,model).asString();
+      securityDomainContext=Optional.of(serviceBuilder.requires(SecurityDomainService.SERVICE_NAME.append(domain)));
+      serviceBuilder.requires(SecurityBootstrapService.SERVICE_NAME);
+    }
+    List<Interceptor> incomingInterceptors=processInterceptors(INCOMING_INTERCEPTORS.resolveModelAttribute(context,operation));
+    List<Interceptor> outgoingInterceptors=processInterceptors(OUTGOING_INTERCEPTORS.resolveModelAttribute(context,operation));
+    final Set<String> socketBindingNames=new HashSet<String>();
+    TransportConfigOperationHandlers.processAcceptors(context,configuration,model,socketBindingNames);
+    Map<String,Supplier<SocketBinding>> socketBindings=new HashMap<>();
+    for (    final String socketBindingName : socketBindingNames) {
+      Supplier<SocketBinding> socketBinding=serviceBuilder.requires(SocketBinding.JBOSS_BINDING_NAME.append(socketBindingName));
+      socketBindings.put(socketBindingName,socketBinding);
+    }
+    final Set<String> connectorsSocketBindings=new HashSet<String>();
+    TransportConfigOperationHandlers.processConnectors(context,configuration,model,connectorsSocketBindings);
+    Map<String,Supplier<OutboundSocketBinding>> outboundSocketBindings=new HashMap<>();
+    for (    final String connectorSocketBinding : connectorsSocketBindings) {
+      boolean outbound=isOutBoundSocketBinding(context,connectorSocketBinding);
+      if (outbound) {
+        final ServiceName outboundSocketName=OutboundSocketBinding.OUTBOUND_SOCKET_BINDING_BASE_SERVICE_NAME.append(connectorSocketBinding);
+        Supplier<OutboundSocketBinding> outboundSocketBinding=serviceBuilder.requires(outboundSocketName);
+        outboundSocketBindings.put(connectorSocketBinding,outboundSocketBinding);
+      }
+ else {
+        Supplier<SocketBinding> socketBinding=serviceBuilder.requires(SocketBinding.JBOSS_BINDING_NAME.append(connectorSocketBinding));
+        socketBindings.put(connectorSocketBinding,socketBinding);
+      }
+    }
+    Set<String> httpListeners=new HashSet<>();
+    if (model.hasDefined(HTTP_ACCEPTOR)) {
+      for (      final Property property : model.get(HTTP_ACCEPTOR).asPropertyList()) {
+        String httpListener=HTTPAcceptorDefinition.HTTP_LISTENER.resolveModelAttribute(context,property.getValue()).asString();
+        httpListeners.add(httpListener);
+      }
+    }
+    for (    String httpListener : httpListeners) {
+      serviceBuilder.requires(MessagingServices.HTTP_UPGRADE_REGISTRY.append(httpListener));
+    }
+    BroadcastGroupAdd.addBroadcastGroupConfigs(context,configuration,model);
+    final List<BroadcastGroupConfiguration> broadcastGroupConfigurations=configuration.getBroadcastGroupConfigurations();
+    final Map<String,DiscoveryGroupConfiguration> discoveryGroupConfigurations=configuration.getDiscoveryGroupConfigurations();
+    final Map<String,String> clusterNames=new HashMap<>();
+    final Map<String,Supplier<CommandDispatcherFactory>> commandDispatcherFactories=new HashMap<>();
+    final Map<ServiceName,Supplier<CommandDispatcherFactory>> commandDispatcherFactoryServices=new HashMap<>();
+    final Map<String,Supplier<SocketBinding>> groupBindings=new HashMap<>();
+    final Map<ServiceName,Supplier<SocketBinding>> groupBindingServices=new HashMap<>();
+    if (broadcastGroupConfigurations != null) {
+      for (      final BroadcastGroupConfiguration config : broadcastGroupConfigurations) {
+        final String name=config.getName();
+        final String key="broadcast" + name;
+        ModelNode broadcastGroupModel=model.get(BROADCAST_GROUP,name);
+        if (broadcastGroupModel.hasDefined(JGROUPS_CLUSTER.getName())) {
+          ModelNode channel=BroadcastGroupDefinition.JGROUPS_CHANNEL.resolveModelAttribute(context,broadcastGroupModel);
+          ServiceName commandDispatcherFactoryServiceName=channel.isDefined() ? ClusteringRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context,channel.asString()) : ClusteringDefaultRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context);
+          String clusterName=JGROUPS_CLUSTER.resolveModelAttribute(context,broadcastGroupModel).asString();
+          if (!commandDispatcherFactoryServices.containsKey(commandDispatcherFactoryServiceName)) {
+            Supplier<CommandDispatcherFactory> commandDispatcherFactory=serviceBuilder.requires(commandDispatcherFactoryServiceName);
+            commandDispatcherFactoryServices.put(commandDispatcherFactoryServiceName,commandDispatcherFactory);
+          }
+          commandDispatcherFactories.put(key,commandDispatcherFactoryServices.get(commandDispatcherFactoryServiceName));
+          clusterNames.put(key,clusterName);
+        }
+ else {
+          final ServiceName groupBindingServiceName=GroupBindingService.getBroadcastBaseServiceName(activeMQServiceName).append(name);
+          if (!groupBindingServices.containsKey(groupBindingServiceName)) {
+            Supplier<SocketBinding> groupBinding=serviceBuilder.requires(groupBindingServiceName);
+            groupBindingServices.put(groupBindingServiceName,groupBinding);
+          }
+          groupBindings.put(key,groupBindingServices.get(groupBindingServiceName));
+        }
+      }
+    }
+    if (discoveryGroupConfigurations != null) {
+      for (      final DiscoveryGroupConfiguration config : discoveryGroupConfigurations.values()) {
+        final String name=config.getName();
+        final String key="discovery" + name;
+        ModelNode discoveryGroupModel=model.get(DISCOVERY_GROUP,name);
+        if (discoveryGroupModel.hasDefined(JGROUPS_CLUSTER.getName())) {
+          ModelNode channel=DiscoveryGroupDefinition.JGROUPS_CHANNEL.resolveModelAttribute(context,discoveryGroupModel);
+          ServiceName commandDispatcherFactoryServiceName=channel.isDefined() ? ClusteringRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context,channel.asString()) : ClusteringDefaultRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context);
+          String clusterName=JGROUPS_CLUSTER.resolveModelAttribute(context,discoveryGroupModel).asString();
+          if (!commandDispatcherFactoryServices.containsKey(commandDispatcherFactoryServiceName)) {
+            Supplier<CommandDispatcherFactory> commandDispatcherFactory=serviceBuilder.requires(commandDispatcherFactoryServiceName);
+            commandDispatcherFactoryServices.put(commandDispatcherFactoryServiceName,commandDispatcherFactory);
+          }
+          commandDispatcherFactories.put(key,commandDispatcherFactoryServices.get(commandDispatcherFactoryServiceName));
+          clusterNames.put(key,clusterName);
+        }
+ else {
+          final ServiceName groupBindingServiceName=GroupBindingService.getDiscoveryBaseServiceName(activeMQServiceName).append(name);
+          if (!groupBindingServices.containsKey(groupBindingServiceName)) {
+            Supplier<SocketBinding> groupBinding=serviceBuilder.requires(groupBindingServiceName);
+            groupBindingServices.put(groupBindingServiceName,groupBinding);
+          }
+          groupBindings.put(key,groupBindingServices.get(groupBindingServiceName));
+        }
+      }
+    }
+    final ActiveMQServerService serverService=new ActiveMQServerService(configuration,new ActiveMQServerService.PathConfig(bindingsPath,bindingsRelativeToPath,journalPath,journalRelativeToPath,largeMessagePath,largeMessageRelativeToPath,pagingPath,pagingRelativeToPath),pathManager,incomingInterceptors,outgoingInterceptors,socketBindings,outboundSocketBindings,groupBindings,commandDispatcherFactories,clusterNames,elytronSecurityDomain,securityDomainContext,mbeanServer,dataSource);
+    addBridgeCredentialStoreReference(serverService,configuration,BridgeDefinition.CREDENTIAL_REFERENCE,context,model,serviceBuilder);
+    addClusterCredentialStoreReference(serverService,ServerDefinition.CREDENTIAL_REFERENCE,context,model,serviceBuilder);
+    ServiceController activeMQServerServiceController=serviceBuilder.setInstance(serverService).install();
+    ((ActiveMQServerResource)resource).setActiveMQServerServiceController(activeMQServerServiceController);
+    boolean overrideInVMSecurity=OVERRIDE_IN_VM_SECURITY.resolveModelAttribute(context,operation).asBoolean();
+    JMSService.addService(serviceTarget,activeMQServiceName,overrideInVMSecurity);
+    context.completeStep(OperationContext.RollbackHandler.NOOP_ROLLBACK_HANDLER);
+  }
+}
+,OperationContext.Stage.RUNTIME) @TO@ MethodInvocation:context.addStep(new OperationStepHandler(){
+  @Override public void execute(  OperationContext context,  ModelNode operation) throws OperationFailedException {
+    final ServiceTarget serviceTarget=context.getServiceTarget();
+    final String serverName=context.getCurrentAddressValue();
+    final ModelNode model=Resource.Tools.readModel(resource);
+    final Configuration configuration=transformConfig(context,serverName,model);
+    String bindingsPath=PATHS.get(BINDINGS_DIRECTORY).resolveModelAttribute(context,model.get(PATH,BINDINGS_DIRECTORY)).asString();
+    String bindingsRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,BINDINGS_DIRECTORY)).asString();
+    String journalPath=PATHS.get(JOURNAL_DIRECTORY).resolveModelAttribute(context,model.get(PATH,JOURNAL_DIRECTORY)).asString();
+    String journalRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,JOURNAL_DIRECTORY)).asString();
+    String largeMessagePath=PATHS.get(LARGE_MESSAGES_DIRECTORY).resolveModelAttribute(context,model.get(PATH,LARGE_MESSAGES_DIRECTORY)).asString();
+    String largeMessageRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,LARGE_MESSAGES_DIRECTORY)).asString();
+    String pagingPath=PATHS.get(PAGING_DIRECTORY).resolveModelAttribute(context,model.get(PATH,PAGING_DIRECTORY)).asString();
+    String pagingRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,PAGING_DIRECTORY)).asString();
+    ServiceName activeMQServiceName=MessagingServices.getActiveMQServiceName(serverName);
+    final ServiceBuilder serviceBuilder=serviceTarget.addService(activeMQServiceName);
+    Supplier pathManager=serviceBuilder.requires(context.getCapabilityServiceName(PATH_MANAGER_CAPABILITY,PathManager.class));
+    Optional<Supplier<DataSource>> dataSource=Optional.empty();
+    ModelNode dataSourceModel=JOURNAL_DATASOURCE.resolveModelAttribute(context,model);
+    if (dataSourceModel.isDefined()) {
+      ServiceName dataSourceCapability=context.getCapabilityServiceName(DATA_SOURCE_CAPABILITY,dataSourceModel.asString(),DataSource.class);
+      dataSource=Optional.of(serviceBuilder.requires(dataSourceCapability));
+    }
+    Optional<Supplier<MBeanServer>> mbeanServer=Optional.empty();
+    if (context.hasOptionalCapability(JMX_CAPABILITY,ACTIVEMQ_SERVER_CAPABILITY.getDynamicName(serverName),null)) {
+      ServiceName jmxCapability=context.getCapabilityServiceName(JMX_CAPABILITY,MBeanServer.class);
+      mbeanServer=Optional.of(serviceBuilder.requires(jmxCapability));
+    }
+    Optional<Supplier<SecurityDomain>> elytronSecurityDomain=Optional.empty();
+    Optional<Supplier<SecurityDomainContext>> securityDomainContext=Optional.empty();
+    final ModelNode elytronSecurityDomainModel=ELYTRON_DOMAIN.resolveModelAttribute(context,model);
+    if (elytronSecurityDomainModel.isDefined()) {
+      ServiceName elytronDomainCapability=context.getCapabilityServiceName(ELYTRON_DOMAIN_CAPABILITY,elytronSecurityDomainModel.asString(),SecurityDomain.class);
+      elytronSecurityDomain=Optional.of(serviceBuilder.requires(elytronDomainCapability));
+    }
+ else {
+      String domain=SECURITY_DOMAIN.resolveModelAttribute(context,model).asString();
+      securityDomainContext=Optional.of(serviceBuilder.requires(SecurityDomainService.SERVICE_NAME.append(domain)));
+      serviceBuilder.requires(SecurityBootstrapService.SERVICE_NAME);
+    }
+    List<Interceptor> incomingInterceptors=processInterceptors(INCOMING_INTERCEPTORS.resolveModelAttribute(context,operation));
+    List<Interceptor> outgoingInterceptors=processInterceptors(OUTGOING_INTERCEPTORS.resolveModelAttribute(context,operation));
+    final Set<String> socketBindingNames=new HashSet<String>();
+    TransportConfigOperationHandlers.processAcceptors(context,configuration,model,socketBindingNames);
+    Map<String,Supplier<SocketBinding>> socketBindings=new HashMap<>();
+    for (    final String socketBindingName : socketBindingNames) {
+      Supplier<SocketBinding> socketBinding=serviceBuilder.requires(SocketBinding.JBOSS_BINDING_NAME.append(socketBindingName));
+      socketBindings.put(socketBindingName,socketBinding);
+    }
+    final Set<String> connectorsSocketBindings=new HashSet<String>();
+    TransportConfigOperationHandlers.processConnectors(context,configuration,model,connectorsSocketBindings);
+    Map<String,Supplier<OutboundSocketBinding>> outboundSocketBindings=new HashMap<>();
+    for (    final String connectorSocketBinding : connectorsSocketBindings) {
+      boolean outbound=isOutBoundSocketBinding(context,connectorSocketBinding);
+      if (outbound) {
+        final ServiceName outboundSocketName=OutboundSocketBinding.OUTBOUND_SOCKET_BINDING_BASE_SERVICE_NAME.append(connectorSocketBinding);
+        Supplier<OutboundSocketBinding> outboundSocketBinding=serviceBuilder.requires(outboundSocketName);
+        outboundSocketBindings.put(connectorSocketBinding,outboundSocketBinding);
+      }
+ else {
+        if (!socketBindings.containsKey(connectorSocketBinding)) {
+          Supplier<SocketBinding> socketBinding=serviceBuilder.requires(SocketBinding.JBOSS_BINDING_NAME.append(connectorSocketBinding));
+          socketBindings.put(connectorSocketBinding,socketBinding);
+        }
+      }
+    }
+    Set<String> httpListeners=new HashSet<>();
+    if (model.hasDefined(HTTP_ACCEPTOR)) {
+      for (      final Property property : model.get(HTTP_ACCEPTOR).asPropertyList()) {
+        String httpListener=HTTPAcceptorDefinition.HTTP_LISTENER.resolveModelAttribute(context,property.getValue()).asString();
+        httpListeners.add(httpListener);
+      }
+    }
+    for (    String httpListener : httpListeners) {
+      serviceBuilder.requires(MessagingServices.HTTP_UPGRADE_REGISTRY.append(httpListener));
+    }
+    BroadcastGroupAdd.addBroadcastGroupConfigs(context,configuration,model);
+    final List<BroadcastGroupConfiguration> broadcastGroupConfigurations=configuration.getBroadcastGroupConfigurations();
+    final Map<String,DiscoveryGroupConfiguration> discoveryGroupConfigurations=configuration.getDiscoveryGroupConfigurations();
+    final Map<String,String> clusterNames=new HashMap<>();
+    final Map<String,Supplier<CommandDispatcherFactory>> commandDispatcherFactories=new HashMap<>();
+    final Map<ServiceName,Supplier<CommandDispatcherFactory>> commandDispatcherFactoryServices=new HashMap<>();
+    final Map<String,Supplier<SocketBinding>> groupBindings=new HashMap<>();
+    final Map<ServiceName,Supplier<SocketBinding>> groupBindingServices=new HashMap<>();
+    if (broadcastGroupConfigurations != null) {
+      for (      final BroadcastGroupConfiguration config : broadcastGroupConfigurations) {
+        final String name=config.getName();
+        final String key="broadcast" + name;
+        ModelNode broadcastGroupModel=model.get(BROADCAST_GROUP,name);
+        if (broadcastGroupModel.hasDefined(JGROUPS_CLUSTER.getName())) {
+          ModelNode channel=BroadcastGroupDefinition.JGROUPS_CHANNEL.resolveModelAttribute(context,broadcastGroupModel);
+          ServiceName commandDispatcherFactoryServiceName=channel.isDefined() ? ClusteringRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context,channel.asString()) : ClusteringDefaultRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context);
+          String clusterName=JGROUPS_CLUSTER.resolveModelAttribute(context,broadcastGroupModel).asString();
+          if (!commandDispatcherFactoryServices.containsKey(commandDispatcherFactoryServiceName)) {
+            Supplier<CommandDispatcherFactory> commandDispatcherFactory=serviceBuilder.requires(commandDispatcherFactoryServiceName);
+            commandDispatcherFactoryServices.put(commandDispatcherFactoryServiceName,commandDispatcherFactory);
+          }
+          commandDispatcherFactories.put(key,commandDispatcherFactoryServices.get(commandDispatcherFactoryServiceName));
+          clusterNames.put(key,clusterName);
+        }
+ else {
+          final ServiceName groupBindingServiceName=GroupBindingService.getBroadcastBaseServiceName(activeMQServiceName).append(name);
+          if (!groupBindingServices.containsKey(groupBindingServiceName)) {
+            Supplier<SocketBinding> groupBinding=serviceBuilder.requires(groupBindingServiceName);
+            groupBindingServices.put(groupBindingServiceName,groupBinding);
+          }
+          groupBindings.put(key,groupBindingServices.get(groupBindingServiceName));
+        }
+      }
+    }
+    if (discoveryGroupConfigurations != null) {
+      for (      final DiscoveryGroupConfiguration config : discoveryGroupConfigurations.values()) {
+        final String name=config.getName();
+        final String key="discovery" + name;
+        ModelNode discoveryGroupModel=model.get(DISCOVERY_GROUP,name);
+        if (discoveryGroupModel.hasDefined(JGROUPS_CLUSTER.getName())) {
+          ModelNode channel=DiscoveryGroupDefinition.JGROUPS_CHANNEL.resolveModelAttribute(context,discoveryGroupModel);
+          ServiceName commandDispatcherFactoryServiceName=channel.isDefined() ? ClusteringRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context,channel.asString()) : ClusteringDefaultRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context);
+          String clusterName=JGROUPS_CLUSTER.resolveModelAttribute(context,discoveryGroupModel).asString();
+          if (!commandDispatcherFactoryServices.containsKey(commandDispatcherFactoryServiceName)) {
+            Supplier<CommandDispatcherFactory> commandDispatcherFactory=serviceBuilder.requires(commandDispatcherFactoryServiceName);
+            commandDispatcherFactoryServices.put(commandDispatcherFactoryServiceName,commandDispatcherFactory);
+          }
+          commandDispatcherFactories.put(key,commandDispatcherFactoryServices.get(commandDispatcherFactoryServiceName));
+          clusterNames.put(key,clusterName);
+        }
+ else {
+          final ServiceName groupBindingServiceName=GroupBindingService.getDiscoveryBaseServiceName(activeMQServiceName).append(name);
+          if (!groupBindingServices.containsKey(groupBindingServiceName)) {
+            Supplier<SocketBinding> groupBinding=serviceBuilder.requires(groupBindingServiceName);
+            groupBindingServices.put(groupBindingServiceName,groupBinding);
+          }
+          groupBindings.put(key,groupBindingServices.get(groupBindingServiceName));
+        }
+      }
+    }
+    final ActiveMQServerService serverService=new ActiveMQServerService(configuration,new ActiveMQServerService.PathConfig(bindingsPath,bindingsRelativeToPath,journalPath,journalRelativeToPath,largeMessagePath,largeMessageRelativeToPath,pagingPath,pagingRelativeToPath),pathManager,incomingInterceptors,outgoingInterceptors,socketBindings,outboundSocketBindings,groupBindings,commandDispatcherFactories,clusterNames,elytronSecurityDomain,securityDomainContext,mbeanServer,dataSource);
+    addBridgeCredentialStoreReference(serverService,configuration,BridgeDefinition.CREDENTIAL_REFERENCE,context,model,serviceBuilder);
+    addClusterCredentialStoreReference(serverService,ServerDefinition.CREDENTIAL_REFERENCE,context,model,serviceBuilder);
+    ServiceController activeMQServerServiceController=serviceBuilder.setInstance(serverService).install();
+    ((ActiveMQServerResource)resource).setActiveMQServerServiceController(activeMQServerServiceController);
+    boolean overrideInVMSecurity=OVERRIDE_IN_VM_SECURITY.resolveModelAttribute(context,operation).asBoolean();
+    JMSService.addService(serviceTarget,activeMQServiceName,overrideInVMSecurity);
+    context.completeStep(OperationContext.RollbackHandler.NOOP_ROLLBACK_HANDLER);
+  }
+}
+,OperationContext.Stage.RUNTIME) @AT@ 15650 @LENGTH@ 15469
+---UPD MethodInvocation@@context.addStep(new OperationStepHandler(){
+  @Override public void execute(  OperationContext context,  ModelNode operation) throws OperationFailedException {
+    final ServiceTarget serviceTarget=context.getServiceTarget();
+    final String serverName=context.getCurrentAddressValue();
+    final ModelNode model=Resource.Tools.readModel(resource);
+    final Configuration configuration=transformConfig(context,serverName,model);
+    String bindingsPath=PATHS.get(BINDINGS_DIRECTORY).resolveModelAttribute(context,model.get(PATH,BINDINGS_DIRECTORY)).asString();
+    String bindingsRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,BINDINGS_DIRECTORY)).asString();
+    String journalPath=PATHS.get(JOURNAL_DIRECTORY).resolveModelAttribute(context,model.get(PATH,JOURNAL_DIRECTORY)).asString();
+    String journalRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,JOURNAL_DIRECTORY)).asString();
+    String largeMessagePath=PATHS.get(LARGE_MESSAGES_DIRECTORY).resolveModelAttribute(context,model.get(PATH,LARGE_MESSAGES_DIRECTORY)).asString();
+    String largeMessageRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,LARGE_MESSAGES_DIRECTORY)).asString();
+    String pagingPath=PATHS.get(PAGING_DIRECTORY).resolveModelAttribute(context,model.get(PATH,PAGING_DIRECTORY)).asString();
+    String pagingRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,PAGING_DIRECTORY)).asString();
+    ServiceName activeMQServiceName=MessagingServices.getActiveMQServiceName(serverName);
+    final ServiceBuilder serviceBuilder=serviceTarget.addService(activeMQServiceName);
+    Supplier pathManager=serviceBuilder.requires(context.getCapabilityServiceName(PATH_MANAGER_CAPABILITY,PathManager.class));
+    Optional<Supplier<DataSource>> dataSource=Optional.empty();
+    ModelNode dataSourceModel=JOURNAL_DATASOURCE.resolveModelAttribute(context,model);
+    if (dataSourceModel.isDefined()) {
+      ServiceName dataSourceCapability=context.getCapabilityServiceName(DATA_SOURCE_CAPABILITY,dataSourceModel.asString(),DataSource.class);
+      dataSource=Optional.of(serviceBuilder.requires(dataSourceCapability));
+    }
+    Optional<Supplier<MBeanServer>> mbeanServer=Optional.empty();
+    if (context.hasOptionalCapability(JMX_CAPABILITY,ACTIVEMQ_SERVER_CAPABILITY.getDynamicName(serverName),null)) {
+      ServiceName jmxCapability=context.getCapabilityServiceName(JMX_CAPABILITY,MBeanServer.class);
+      mbeanServer=Optional.of(serviceBuilder.requires(jmxCapability));
+    }
+    Optional<Supplier<SecurityDomain>> elytronSecurityDomain=Optional.empty();
+    Optional<Supplier<SecurityDomainContext>> securityDomainContext=Optional.empty();
+    final ModelNode elytronSecurityDomainModel=ELYTRON_DOMAIN.resolveModelAttribute(context,model);
+    if (elytronSecurityDomainModel.isDefined()) {
+      ServiceName elytronDomainCapability=context.getCapabilityServiceName(ELYTRON_DOMAIN_CAPABILITY,elytronSecurityDomainModel.asString(),SecurityDomain.class);
+      elytronSecurityDomain=Optional.of(serviceBuilder.requires(elytronDomainCapability));
+    }
+ else {
+      String domain=SECURITY_DOMAIN.resolveModelAttribute(context,model).asString();
+      securityDomainContext=Optional.of(serviceBuilder.requires(SecurityDomainService.SERVICE_NAME.append(domain)));
+      serviceBuilder.requires(SecurityBootstrapService.SERVICE_NAME);
+    }
+    List<Interceptor> incomingInterceptors=processInterceptors(INCOMING_INTERCEPTORS.resolveModelAttribute(context,operation));
+    List<Interceptor> outgoingInterceptors=processInterceptors(OUTGOING_INTERCEPTORS.resolveModelAttribute(context,operation));
+    final Set<String> socketBindingNames=new HashSet<String>();
+    TransportConfigOperationHandlers.processAcceptors(context,configuration,model,socketBindingNames);
+    Map<String,Supplier<SocketBinding>> socketBindings=new HashMap<>();
+    for (    final String socketBindingName : socketBindingNames) {
+      Supplier<SocketBinding> socketBinding=serviceBuilder.requires(SocketBinding.JBOSS_BINDING_NAME.append(socketBindingName));
+      socketBindings.put(socketBindingName,socketBinding);
+    }
+    final Set<String> connectorsSocketBindings=new HashSet<String>();
+    TransportConfigOperationHandlers.processConnectors(context,configuration,model,connectorsSocketBindings);
+    Map<String,Supplier<OutboundSocketBinding>> outboundSocketBindings=new HashMap<>();
+    for (    final String connectorSocketBinding : connectorsSocketBindings) {
+      boolean outbound=isOutBoundSocketBinding(context,connectorSocketBinding);
+      if (outbound) {
+        final ServiceName outboundSocketName=OutboundSocketBinding.OUTBOUND_SOCKET_BINDING_BASE_SERVICE_NAME.append(connectorSocketBinding);
+        Supplier<OutboundSocketBinding> outboundSocketBinding=serviceBuilder.requires(outboundSocketName);
+        outboundSocketBindings.put(connectorSocketBinding,outboundSocketBinding);
+      }
+ else {
+        Supplier<SocketBinding> socketBinding=serviceBuilder.requires(SocketBinding.JBOSS_BINDING_NAME.append(connectorSocketBinding));
+        socketBindings.put(connectorSocketBinding,socketBinding);
+      }
+    }
+    Set<String> httpListeners=new HashSet<>();
+    if (model.hasDefined(HTTP_ACCEPTOR)) {
+      for (      final Property property : model.get(HTTP_ACCEPTOR).asPropertyList()) {
+        String httpListener=HTTPAcceptorDefinition.HTTP_LISTENER.resolveModelAttribute(context,property.getValue()).asString();
+        httpListeners.add(httpListener);
+      }
+    }
+    for (    String httpListener : httpListeners) {
+      serviceBuilder.requires(MessagingServices.HTTP_UPGRADE_REGISTRY.append(httpListener));
+    }
+    BroadcastGroupAdd.addBroadcastGroupConfigs(context,configuration,model);
+    final List<BroadcastGroupConfiguration> broadcastGroupConfigurations=configuration.getBroadcastGroupConfigurations();
+    final Map<String,DiscoveryGroupConfiguration> discoveryGroupConfigurations=configuration.getDiscoveryGroupConfigurations();
+    final Map<String,String> clusterNames=new HashMap<>();
+    final Map<String,Supplier<CommandDispatcherFactory>> commandDispatcherFactories=new HashMap<>();
+    final Map<ServiceName,Supplier<CommandDispatcherFactory>> commandDispatcherFactoryServices=new HashMap<>();
+    final Map<String,Supplier<SocketBinding>> groupBindings=new HashMap<>();
+    final Map<ServiceName,Supplier<SocketBinding>> groupBindingServices=new HashMap<>();
+    if (broadcastGroupConfigurations != null) {
+      for (      final BroadcastGroupConfiguration config : broadcastGroupConfigurations) {
+        final String name=config.getName();
+        final String key="broadcast" + name;
+        ModelNode broadcastGroupModel=model.get(BROADCAST_GROUP,name);
+        if (broadcastGroupModel.hasDefined(JGROUPS_CLUSTER.getName())) {
+          ModelNode channel=BroadcastGroupDefinition.JGROUPS_CHANNEL.resolveModelAttribute(context,broadcastGroupModel);
+          ServiceName commandDispatcherFactoryServiceName=channel.isDefined() ? ClusteringRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context,channel.asString()) : ClusteringDefaultRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context);
+          String clusterName=JGROUPS_CLUSTER.resolveModelAttribute(context,broadcastGroupModel).asString();
+          if (!commandDispatcherFactoryServices.containsKey(commandDispatcherFactoryServiceName)) {
+            Supplier<CommandDispatcherFactory> commandDispatcherFactory=serviceBuilder.requires(commandDispatcherFactoryServiceName);
+            commandDispatcherFactoryServices.put(commandDispatcherFactoryServiceName,commandDispatcherFactory);
+          }
+          commandDispatcherFactories.put(key,commandDispatcherFactoryServices.get(commandDispatcherFactoryServiceName));
+          clusterNames.put(key,clusterName);
+        }
+ else {
+          final ServiceName groupBindingServiceName=GroupBindingService.getBroadcastBaseServiceName(activeMQServiceName).append(name);
+          if (!groupBindingServices.containsKey(groupBindingServiceName)) {
+            Supplier<SocketBinding> groupBinding=serviceBuilder.requires(groupBindingServiceName);
+            groupBindingServices.put(groupBindingServiceName,groupBinding);
+          }
+          groupBindings.put(key,groupBindingServices.get(groupBindingServiceName));
+        }
+      }
+    }
+    if (discoveryGroupConfigurations != null) {
+      for (      final DiscoveryGroupConfiguration config : discoveryGroupConfigurations.values()) {
+        final String name=config.getName();
+        final String key="discovery" + name;
+        ModelNode discoveryGroupModel=model.get(DISCOVERY_GROUP,name);
+        if (discoveryGroupModel.hasDefined(JGROUPS_CLUSTER.getName())) {
+          ModelNode channel=DiscoveryGroupDefinition.JGROUPS_CHANNEL.resolveModelAttribute(context,discoveryGroupModel);
+          ServiceName commandDispatcherFactoryServiceName=channel.isDefined() ? ClusteringRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context,channel.asString()) : ClusteringDefaultRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context);
+          String clusterName=JGROUPS_CLUSTER.resolveModelAttribute(context,discoveryGroupModel).asString();
+          if (!commandDispatcherFactoryServices.containsKey(commandDispatcherFactoryServiceName)) {
+            Supplier<CommandDispatcherFactory> commandDispatcherFactory=serviceBuilder.requires(commandDispatcherFactoryServiceName);
+            commandDispatcherFactoryServices.put(commandDispatcherFactoryServiceName,commandDispatcherFactory);
+          }
+          commandDispatcherFactories.put(key,commandDispatcherFactoryServices.get(commandDispatcherFactoryServiceName));
+          clusterNames.put(key,clusterName);
+        }
+ else {
+          final ServiceName groupBindingServiceName=GroupBindingService.getDiscoveryBaseServiceName(activeMQServiceName).append(name);
+          if (!groupBindingServices.containsKey(groupBindingServiceName)) {
+            Supplier<SocketBinding> groupBinding=serviceBuilder.requires(groupBindingServiceName);
+            groupBindingServices.put(groupBindingServiceName,groupBinding);
+          }
+          groupBindings.put(key,groupBindingServices.get(groupBindingServiceName));
+        }
+      }
+    }
+    final ActiveMQServerService serverService=new ActiveMQServerService(configuration,new ActiveMQServerService.PathConfig(bindingsPath,bindingsRelativeToPath,journalPath,journalRelativeToPath,largeMessagePath,largeMessageRelativeToPath,pagingPath,pagingRelativeToPath),pathManager,incomingInterceptors,outgoingInterceptors,socketBindings,outboundSocketBindings,groupBindings,commandDispatcherFactories,clusterNames,elytronSecurityDomain,securityDomainContext,mbeanServer,dataSource);
+    addBridgeCredentialStoreReference(serverService,configuration,BridgeDefinition.CREDENTIAL_REFERENCE,context,model,serviceBuilder);
+    addClusterCredentialStoreReference(serverService,ServerDefinition.CREDENTIAL_REFERENCE,context,model,serviceBuilder);
+    ServiceController activeMQServerServiceController=serviceBuilder.setInstance(serverService).install();
+    ((ActiveMQServerResource)resource).setActiveMQServerServiceController(activeMQServerServiceController);
+    boolean overrideInVMSecurity=OVERRIDE_IN_VM_SECURITY.resolveModelAttribute(context,operation).asBoolean();
+    JMSService.addService(serviceTarget,activeMQServiceName,overrideInVMSecurity);
+    context.completeStep(OperationContext.RollbackHandler.NOOP_ROLLBACK_HANDLER);
+  }
+}
+,OperationContext.Stage.RUNTIME) @TO@ context.addStep(new OperationStepHandler(){
+  @Override public void execute(  OperationContext context,  ModelNode operation) throws OperationFailedException {
+    final ServiceTarget serviceTarget=context.getServiceTarget();
+    final String serverName=context.getCurrentAddressValue();
+    final ModelNode model=Resource.Tools.readModel(resource);
+    final Configuration configuration=transformConfig(context,serverName,model);
+    String bindingsPath=PATHS.get(BINDINGS_DIRECTORY).resolveModelAttribute(context,model.get(PATH,BINDINGS_DIRECTORY)).asString();
+    String bindingsRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,BINDINGS_DIRECTORY)).asString();
+    String journalPath=PATHS.get(JOURNAL_DIRECTORY).resolveModelAttribute(context,model.get(PATH,JOURNAL_DIRECTORY)).asString();
+    String journalRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,JOURNAL_DIRECTORY)).asString();
+    String largeMessagePath=PATHS.get(LARGE_MESSAGES_DIRECTORY).resolveModelAttribute(context,model.get(PATH,LARGE_MESSAGES_DIRECTORY)).asString();
+    String largeMessageRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,LARGE_MESSAGES_DIRECTORY)).asString();
+    String pagingPath=PATHS.get(PAGING_DIRECTORY).resolveModelAttribute(context,model.get(PATH,PAGING_DIRECTORY)).asString();
+    String pagingRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,PAGING_DIRECTORY)).asString();
+    ServiceName activeMQServiceName=MessagingServices.getActiveMQServiceName(serverName);
+    final ServiceBuilder serviceBuilder=serviceTarget.addService(activeMQServiceName);
+    Supplier pathManager=serviceBuilder.requires(context.getCapabilityServiceName(PATH_MANAGER_CAPABILITY,PathManager.class));
+    Optional<Supplier<DataSource>> dataSource=Optional.empty();
+    ModelNode dataSourceModel=JOURNAL_DATASOURCE.resolveModelAttribute(context,model);
+    if (dataSourceModel.isDefined()) {
+      ServiceName dataSourceCapability=context.getCapabilityServiceName(DATA_SOURCE_CAPABILITY,dataSourceModel.asString(),DataSource.class);
+      dataSource=Optional.of(serviceBuilder.requires(dataSourceCapability));
+    }
+    Optional<Supplier<MBeanServer>> mbeanServer=Optional.empty();
+    if (context.hasOptionalCapability(JMX_CAPABILITY,ACTIVEMQ_SERVER_CAPABILITY.getDynamicName(serverName),null)) {
+      ServiceName jmxCapability=context.getCapabilityServiceName(JMX_CAPABILITY,MBeanServer.class);
+      mbeanServer=Optional.of(serviceBuilder.requires(jmxCapability));
+    }
+    Optional<Supplier<SecurityDomain>> elytronSecurityDomain=Optional.empty();
+    Optional<Supplier<SecurityDomainContext>> securityDomainContext=Optional.empty();
+    final ModelNode elytronSecurityDomainModel=ELYTRON_DOMAIN.resolveModelAttribute(context,model);
+    if (elytronSecurityDomainModel.isDefined()) {
+      ServiceName elytronDomainCapability=context.getCapabilityServiceName(ELYTRON_DOMAIN_CAPABILITY,elytronSecurityDomainModel.asString(),SecurityDomain.class);
+      elytronSecurityDomain=Optional.of(serviceBuilder.requires(elytronDomainCapability));
+    }
+ else {
+      String domain=SECURITY_DOMAIN.resolveModelAttribute(context,model).asString();
+      securityDomainContext=Optional.of(serviceBuilder.requires(SecurityDomainService.SERVICE_NAME.append(domain)));
+      serviceBuilder.requires(SecurityBootstrapService.SERVICE_NAME);
+    }
+    List<Interceptor> incomingInterceptors=processInterceptors(INCOMING_INTERCEPTORS.resolveModelAttribute(context,operation));
+    List<Interceptor> outgoingInterceptors=processInterceptors(OUTGOING_INTERCEPTORS.resolveModelAttribute(context,operation));
+    final Set<String> socketBindingNames=new HashSet<String>();
+    TransportConfigOperationHandlers.processAcceptors(context,configuration,model,socketBindingNames);
+    Map<String,Supplier<SocketBinding>> socketBindings=new HashMap<>();
+    for (    final String socketBindingName : socketBindingNames) {
+      Supplier<SocketBinding> socketBinding=serviceBuilder.requires(SocketBinding.JBOSS_BINDING_NAME.append(socketBindingName));
+      socketBindings.put(socketBindingName,socketBinding);
+    }
+    final Set<String> connectorsSocketBindings=new HashSet<String>();
+    TransportConfigOperationHandlers.processConnectors(context,configuration,model,connectorsSocketBindings);
+    Map<String,Supplier<OutboundSocketBinding>> outboundSocketBindings=new HashMap<>();
+    for (    final String connectorSocketBinding : connectorsSocketBindings) {
+      boolean outbound=isOutBoundSocketBinding(context,connectorSocketBinding);
+      if (outbound) {
+        final ServiceName outboundSocketName=OutboundSocketBinding.OUTBOUND_SOCKET_BINDING_BASE_SERVICE_NAME.append(connectorSocketBinding);
+        Supplier<OutboundSocketBinding> outboundSocketBinding=serviceBuilder.requires(outboundSocketName);
+        outboundSocketBindings.put(connectorSocketBinding,outboundSocketBinding);
+      }
+ else {
+        if (!socketBindings.containsKey(connectorSocketBinding)) {
+          Supplier<SocketBinding> socketBinding=serviceBuilder.requires(SocketBinding.JBOSS_BINDING_NAME.append(connectorSocketBinding));
+          socketBindings.put(connectorSocketBinding,socketBinding);
+        }
+      }
+    }
+    Set<String> httpListeners=new HashSet<>();
+    if (model.hasDefined(HTTP_ACCEPTOR)) {
+      for (      final Property property : model.get(HTTP_ACCEPTOR).asPropertyList()) {
+        String httpListener=HTTPAcceptorDefinition.HTTP_LISTENER.resolveModelAttribute(context,property.getValue()).asString();
+        httpListeners.add(httpListener);
+      }
+    }
+    for (    String httpListener : httpListeners) {
+      serviceBuilder.requires(MessagingServices.HTTP_UPGRADE_REGISTRY.append(httpListener));
+    }
+    BroadcastGroupAdd.addBroadcastGroupConfigs(context,configuration,model);
+    final List<BroadcastGroupConfiguration> broadcastGroupConfigurations=configuration.getBroadcastGroupConfigurations();
+    final Map<String,DiscoveryGroupConfiguration> discoveryGroupConfigurations=configuration.getDiscoveryGroupConfigurations();
+    final Map<String,String> clusterNames=new HashMap<>();
+    final Map<String,Supplier<CommandDispatcherFactory>> commandDispatcherFactories=new HashMap<>();
+    final Map<ServiceName,Supplier<CommandDispatcherFactory>> commandDispatcherFactoryServices=new HashMap<>();
+    final Map<String,Supplier<SocketBinding>> groupBindings=new HashMap<>();
+    final Map<ServiceName,Supplier<SocketBinding>> groupBindingServices=new HashMap<>();
+    if (broadcastGroupConfigurations != null) {
+      for (      final BroadcastGroupConfiguration config : broadcastGroupConfigurations) {
+        final String name=config.getName();
+        final String key="broadcast" + name;
+        ModelNode broadcastGroupModel=model.get(BROADCAST_GROUP,name);
+        if (broadcastGroupModel.hasDefined(JGROUPS_CLUSTER.getName())) {
+          ModelNode channel=BroadcastGroupDefinition.JGROUPS_CHANNEL.resolveModelAttribute(context,broadcastGroupModel);
+          ServiceName commandDispatcherFactoryServiceName=channel.isDefined() ? ClusteringRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context,channel.asString()) : ClusteringDefaultRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context);
+          String clusterName=JGROUPS_CLUSTER.resolveModelAttribute(context,broadcastGroupModel).asString();
+          if (!commandDispatcherFactoryServices.containsKey(commandDispatcherFactoryServiceName)) {
+            Supplier<CommandDispatcherFactory> commandDispatcherFactory=serviceBuilder.requires(commandDispatcherFactoryServiceName);
+            commandDispatcherFactoryServices.put(commandDispatcherFactoryServiceName,commandDispatcherFactory);
+          }
+          commandDispatcherFactories.put(key,commandDispatcherFactoryServices.get(commandDispatcherFactoryServiceName));
+          clusterNames.put(key,clusterName);
+        }
+ else {
+          final ServiceName groupBindingServiceName=GroupBindingService.getBroadcastBaseServiceName(activeMQServiceName).append(name);
+          if (!groupBindingServices.containsKey(groupBindingServiceName)) {
+            Supplier<SocketBinding> groupBinding=serviceBuilder.requires(groupBindingServiceName);
+            groupBindingServices.put(groupBindingServiceName,groupBinding);
+          }
+          groupBindings.put(key,groupBindingServices.get(groupBindingServiceName));
+        }
+      }
+    }
+    if (discoveryGroupConfigurations != null) {
+      for (      final DiscoveryGroupConfiguration config : discoveryGroupConfigurations.values()) {
+        final String name=config.getName();
+        final String key="discovery" + name;
+        ModelNode discoveryGroupModel=model.get(DISCOVERY_GROUP,name);
+        if (discoveryGroupModel.hasDefined(JGROUPS_CLUSTER.getName())) {
+          ModelNode channel=DiscoveryGroupDefinition.JGROUPS_CHANNEL.resolveModelAttribute(context,discoveryGroupModel);
+          ServiceName commandDispatcherFactoryServiceName=channel.isDefined() ? ClusteringRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context,channel.asString()) : ClusteringDefaultRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context);
+          String clusterName=JGROUPS_CLUSTER.resolveModelAttribute(context,discoveryGroupModel).asString();
+          if (!commandDispatcherFactoryServices.containsKey(commandDispatcherFactoryServiceName)) {
+            Supplier<CommandDispatcherFactory> commandDispatcherFactory=serviceBuilder.requires(commandDispatcherFactoryServiceName);
+            commandDispatcherFactoryServices.put(commandDispatcherFactoryServiceName,commandDispatcherFactory);
+          }
+          commandDispatcherFactories.put(key,commandDispatcherFactoryServices.get(commandDispatcherFactoryServiceName));
+          clusterNames.put(key,clusterName);
+        }
+ else {
+          final ServiceName groupBindingServiceName=GroupBindingService.getDiscoveryBaseServiceName(activeMQServiceName).append(name);
+          if (!groupBindingServices.containsKey(groupBindingServiceName)) {
+            Supplier<SocketBinding> groupBinding=serviceBuilder.requires(groupBindingServiceName);
+            groupBindingServices.put(groupBindingServiceName,groupBinding);
+          }
+          groupBindings.put(key,groupBindingServices.get(groupBindingServiceName));
+        }
+      }
+    }
+    final ActiveMQServerService serverService=new ActiveMQServerService(configuration,new ActiveMQServerService.PathConfig(bindingsPath,bindingsRelativeToPath,journalPath,journalRelativeToPath,largeMessagePath,largeMessageRelativeToPath,pagingPath,pagingRelativeToPath),pathManager,incomingInterceptors,outgoingInterceptors,socketBindings,outboundSocketBindings,groupBindings,commandDispatcherFactories,clusterNames,elytronSecurityDomain,securityDomainContext,mbeanServer,dataSource);
+    addBridgeCredentialStoreReference(serverService,configuration,BridgeDefinition.CREDENTIAL_REFERENCE,context,model,serviceBuilder);
+    addClusterCredentialStoreReference(serverService,ServerDefinition.CREDENTIAL_REFERENCE,context,model,serviceBuilder);
+    ServiceController activeMQServerServiceController=serviceBuilder.setInstance(serverService).install();
+    ((ActiveMQServerResource)resource).setActiveMQServerServiceController(activeMQServerServiceController);
+    boolean overrideInVMSecurity=OVERRIDE_IN_VM_SECURITY.resolveModelAttribute(context,operation).asBoolean();
+    JMSService.addService(serviceTarget,activeMQServiceName,overrideInVMSecurity);
+    context.completeStep(OperationContext.RollbackHandler.NOOP_ROLLBACK_HANDLER);
+  }
+}
+,OperationContext.Stage.RUNTIME) @AT@ 15650 @LENGTH@ 15468
+------UPD SimpleName@@MethodName:addStep:[new OperationStepHandler(){
+  @Override public void execute(  OperationContext context,  ModelNode operation) throws OperationFailedException {
+    final ServiceTarget serviceTarget=context.getServiceTarget();
+    final String serverName=context.getCurrentAddressValue();
+    final ModelNode model=Resource.Tools.readModel(resource);
+    final Configuration configuration=transformConfig(context,serverName,model);
+    String bindingsPath=PATHS.get(BINDINGS_DIRECTORY).resolveModelAttribute(context,model.get(PATH,BINDINGS_DIRECTORY)).asString();
+    String bindingsRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,BINDINGS_DIRECTORY)).asString();
+    String journalPath=PATHS.get(JOURNAL_DIRECTORY).resolveModelAttribute(context,model.get(PATH,JOURNAL_DIRECTORY)).asString();
+    String journalRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,JOURNAL_DIRECTORY)).asString();
+    String largeMessagePath=PATHS.get(LARGE_MESSAGES_DIRECTORY).resolveModelAttribute(context,model.get(PATH,LARGE_MESSAGES_DIRECTORY)).asString();
+    String largeMessageRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,LARGE_MESSAGES_DIRECTORY)).asString();
+    String pagingPath=PATHS.get(PAGING_DIRECTORY).resolveModelAttribute(context,model.get(PATH,PAGING_DIRECTORY)).asString();
+    String pagingRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,PAGING_DIRECTORY)).asString();
+    ServiceName activeMQServiceName=MessagingServices.getActiveMQServiceName(serverName);
+    final ServiceBuilder serviceBuilder=serviceTarget.addService(activeMQServiceName);
+    Supplier pathManager=serviceBuilder.requires(context.getCapabilityServiceName(PATH_MANAGER_CAPABILITY,PathManager.class));
+    Optional<Supplier<DataSource>> dataSource=Optional.empty();
+    ModelNode dataSourceModel=JOURNAL_DATASOURCE.resolveModelAttribute(context,model);
+    if (dataSourceModel.isDefined()) {
+      ServiceName dataSourceCapability=context.getCapabilityServiceName(DATA_SOURCE_CAPABILITY,dataSourceModel.asString(),DataSource.class);
+      dataSource=Optional.of(serviceBuilder.requires(dataSourceCapability));
+    }
+    Optional<Supplier<MBeanServer>> mbeanServer=Optional.empty();
+    if (context.hasOptionalCapability(JMX_CAPABILITY,ACTIVEMQ_SERVER_CAPABILITY.getDynamicName(serverName),null)) {
+      ServiceName jmxCapability=context.getCapabilityServiceName(JMX_CAPABILITY,MBeanServer.class);
+      mbeanServer=Optional.of(serviceBuilder.requires(jmxCapability));
+    }
+    Optional<Supplier<SecurityDomain>> elytronSecurityDomain=Optional.empty();
+    Optional<Supplier<SecurityDomainContext>> securityDomainContext=Optional.empty();
+    final ModelNode elytronSecurityDomainModel=ELYTRON_DOMAIN.resolveModelAttribute(context,model);
+    if (elytronSecurityDomainModel.isDefined()) {
+      ServiceName elytronDomainCapability=context.getCapabilityServiceName(ELYTRON_DOMAIN_CAPABILITY,elytronSecurityDomainModel.asString(),SecurityDomain.class);
+      elytronSecurityDomain=Optional.of(serviceBuilder.requires(elytronDomainCapability));
+    }
+ else {
+      String domain=SECURITY_DOMAIN.resolveModelAttribute(context,model).asString();
+      securityDomainContext=Optional.of(serviceBuilder.requires(SecurityDomainService.SERVICE_NAME.append(domain)));
+      serviceBuilder.requires(SecurityBootstrapService.SERVICE_NAME);
+    }
+    List<Interceptor> incomingInterceptors=processInterceptors(INCOMING_INTERCEPTORS.resolveModelAttribute(context,operation));
+    List<Interceptor> outgoingInterceptors=processInterceptors(OUTGOING_INTERCEPTORS.resolveModelAttribute(context,operation));
+    final Set<String> socketBindingNames=new HashSet<String>();
+    TransportConfigOperationHandlers.processAcceptors(context,configuration,model,socketBindingNames);
+    Map<String,Supplier<SocketBinding>> socketBindings=new HashMap<>();
+    for (    final String socketBindingName : socketBindingNames) {
+      Supplier<SocketBinding> socketBinding=serviceBuilder.requires(SocketBinding.JBOSS_BINDING_NAME.append(socketBindingName));
+      socketBindings.put(socketBindingName,socketBinding);
+    }
+    final Set<String> connectorsSocketBindings=new HashSet<String>();
+    TransportConfigOperationHandlers.processConnectors(context,configuration,model,connectorsSocketBindings);
+    Map<String,Supplier<OutboundSocketBinding>> outboundSocketBindings=new HashMap<>();
+    for (    final String connectorSocketBinding : connectorsSocketBindings) {
+      boolean outbound=isOutBoundSocketBinding(context,connectorSocketBinding);
+      if (outbound) {
+        final ServiceName outboundSocketName=OutboundSocketBinding.OUTBOUND_SOCKET_BINDING_BASE_SERVICE_NAME.append(connectorSocketBinding);
+        Supplier<OutboundSocketBinding> outboundSocketBinding=serviceBuilder.requires(outboundSocketName);
+        outboundSocketBindings.put(connectorSocketBinding,outboundSocketBinding);
+      }
+ else {
+        Supplier<SocketBinding> socketBinding=serviceBuilder.requires(SocketBinding.JBOSS_BINDING_NAME.append(connectorSocketBinding));
+        socketBindings.put(connectorSocketBinding,socketBinding);
+      }
+    }
+    Set<String> httpListeners=new HashSet<>();
+    if (model.hasDefined(HTTP_ACCEPTOR)) {
+      for (      final Property property : model.get(HTTP_ACCEPTOR).asPropertyList()) {
+        String httpListener=HTTPAcceptorDefinition.HTTP_LISTENER.resolveModelAttribute(context,property.getValue()).asString();
+        httpListeners.add(httpListener);
+      }
+    }
+    for (    String httpListener : httpListeners) {
+      serviceBuilder.requires(MessagingServices.HTTP_UPGRADE_REGISTRY.append(httpListener));
+    }
+    BroadcastGroupAdd.addBroadcastGroupConfigs(context,configuration,model);
+    final List<BroadcastGroupConfiguration> broadcastGroupConfigurations=configuration.getBroadcastGroupConfigurations();
+    final Map<String,DiscoveryGroupConfiguration> discoveryGroupConfigurations=configuration.getDiscoveryGroupConfigurations();
+    final Map<String,String> clusterNames=new HashMap<>();
+    final Map<String,Supplier<CommandDispatcherFactory>> commandDispatcherFactories=new HashMap<>();
+    final Map<ServiceName,Supplier<CommandDispatcherFactory>> commandDispatcherFactoryServices=new HashMap<>();
+    final Map<String,Supplier<SocketBinding>> groupBindings=new HashMap<>();
+    final Map<ServiceName,Supplier<SocketBinding>> groupBindingServices=new HashMap<>();
+    if (broadcastGroupConfigurations != null) {
+      for (      final BroadcastGroupConfiguration config : broadcastGroupConfigurations) {
+        final String name=config.getName();
+        final String key="broadcast" + name;
+        ModelNode broadcastGroupModel=model.get(BROADCAST_GROUP,name);
+        if (broadcastGroupModel.hasDefined(JGROUPS_CLUSTER.getName())) {
+          ModelNode channel=BroadcastGroupDefinition.JGROUPS_CHANNEL.resolveModelAttribute(context,broadcastGroupModel);
+          ServiceName commandDispatcherFactoryServiceName=channel.isDefined() ? ClusteringRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context,channel.asString()) : ClusteringDefaultRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context);
+          String clusterName=JGROUPS_CLUSTER.resolveModelAttribute(context,broadcastGroupModel).asString();
+          if (!commandDispatcherFactoryServices.containsKey(commandDispatcherFactoryServiceName)) {
+            Supplier<CommandDispatcherFactory> commandDispatcherFactory=serviceBuilder.requires(commandDispatcherFactoryServiceName);
+            commandDispatcherFactoryServices.put(commandDispatcherFactoryServiceName,commandDispatcherFactory);
+          }
+          commandDispatcherFactories.put(key,commandDispatcherFactoryServices.get(commandDispatcherFactoryServiceName));
+          clusterNames.put(key,clusterName);
+        }
+ else {
+          final ServiceName groupBindingServiceName=GroupBindingService.getBroadcastBaseServiceName(activeMQServiceName).append(name);
+          if (!groupBindingServices.containsKey(groupBindingServiceName)) {
+            Supplier<SocketBinding> groupBinding=serviceBuilder.requires(groupBindingServiceName);
+            groupBindingServices.put(groupBindingServiceName,groupBinding);
+          }
+          groupBindings.put(key,groupBindingServices.get(groupBindingServiceName));
+        }
+      }
+    }
+    if (discoveryGroupConfigurations != null) {
+      for (      final DiscoveryGroupConfiguration config : discoveryGroupConfigurations.values()) {
+        final String name=config.getName();
+        final String key="discovery" + name;
+        ModelNode discoveryGroupModel=model.get(DISCOVERY_GROUP,name);
+        if (discoveryGroupModel.hasDefined(JGROUPS_CLUSTER.getName())) {
+          ModelNode channel=DiscoveryGroupDefinition.JGROUPS_CHANNEL.resolveModelAttribute(context,discoveryGroupModel);
+          ServiceName commandDispatcherFactoryServiceName=channel.isDefined() ? ClusteringRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context,channel.asString()) : ClusteringDefaultRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context);
+          String clusterName=JGROUPS_CLUSTER.resolveModelAttribute(context,discoveryGroupModel).asString();
+          if (!commandDispatcherFactoryServices.containsKey(commandDispatcherFactoryServiceName)) {
+            Supplier<CommandDispatcherFactory> commandDispatcherFactory=serviceBuilder.requires(commandDispatcherFactoryServiceName);
+            commandDispatcherFactoryServices.put(commandDispatcherFactoryServiceName,commandDispatcherFactory);
+          }
+          commandDispatcherFactories.put(key,commandDispatcherFactoryServices.get(commandDispatcherFactoryServiceName));
+          clusterNames.put(key,clusterName);
+        }
+ else {
+          final ServiceName groupBindingServiceName=GroupBindingService.getDiscoveryBaseServiceName(activeMQServiceName).append(name);
+          if (!groupBindingServices.containsKey(groupBindingServiceName)) {
+            Supplier<SocketBinding> groupBinding=serviceBuilder.requires(groupBindingServiceName);
+            groupBindingServices.put(groupBindingServiceName,groupBinding);
+          }
+          groupBindings.put(key,groupBindingServices.get(groupBindingServiceName));
+        }
+      }
+    }
+    final ActiveMQServerService serverService=new ActiveMQServerService(configuration,new ActiveMQServerService.PathConfig(bindingsPath,bindingsRelativeToPath,journalPath,journalRelativeToPath,largeMessagePath,largeMessageRelativeToPath,pagingPath,pagingRelativeToPath),pathManager,incomingInterceptors,outgoingInterceptors,socketBindings,outboundSocketBindings,groupBindings,commandDispatcherFactories,clusterNames,elytronSecurityDomain,securityDomainContext,mbeanServer,dataSource);
+    addBridgeCredentialStoreReference(serverService,configuration,BridgeDefinition.CREDENTIAL_REFERENCE,context,model,serviceBuilder);
+    addClusterCredentialStoreReference(serverService,ServerDefinition.CREDENTIAL_REFERENCE,context,model,serviceBuilder);
+    ServiceController activeMQServerServiceController=serviceBuilder.setInstance(serverService).install();
+    ((ActiveMQServerResource)resource).setActiveMQServerServiceController(activeMQServerServiceController);
+    boolean overrideInVMSecurity=OVERRIDE_IN_VM_SECURITY.resolveModelAttribute(context,operation).asBoolean();
+    JMSService.addService(serviceTarget,activeMQServiceName,overrideInVMSecurity);
+    context.completeStep(OperationContext.RollbackHandler.NOOP_ROLLBACK_HANDLER);
+  }
+}
+, OperationContext.Stage.RUNTIME] @TO@ MethodName:addStep:[new OperationStepHandler(){
+  @Override public void execute(  OperationContext context,  ModelNode operation) throws OperationFailedException {
+    final ServiceTarget serviceTarget=context.getServiceTarget();
+    final String serverName=context.getCurrentAddressValue();
+    final ModelNode model=Resource.Tools.readModel(resource);
+    final Configuration configuration=transformConfig(context,serverName,model);
+    String bindingsPath=PATHS.get(BINDINGS_DIRECTORY).resolveModelAttribute(context,model.get(PATH,BINDINGS_DIRECTORY)).asString();
+    String bindingsRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,BINDINGS_DIRECTORY)).asString();
+    String journalPath=PATHS.get(JOURNAL_DIRECTORY).resolveModelAttribute(context,model.get(PATH,JOURNAL_DIRECTORY)).asString();
+    String journalRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,JOURNAL_DIRECTORY)).asString();
+    String largeMessagePath=PATHS.get(LARGE_MESSAGES_DIRECTORY).resolveModelAttribute(context,model.get(PATH,LARGE_MESSAGES_DIRECTORY)).asString();
+    String largeMessageRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,LARGE_MESSAGES_DIRECTORY)).asString();
+    String pagingPath=PATHS.get(PAGING_DIRECTORY).resolveModelAttribute(context,model.get(PATH,PAGING_DIRECTORY)).asString();
+    String pagingRelativeToPath=RELATIVE_TO.resolveModelAttribute(context,model.get(PATH,PAGING_DIRECTORY)).asString();
+    ServiceName activeMQServiceName=MessagingServices.getActiveMQServiceName(serverName);
+    final ServiceBuilder serviceBuilder=serviceTarget.addService(activeMQServiceName);
+    Supplier pathManager=serviceBuilder.requires(context.getCapabilityServiceName(PATH_MANAGER_CAPABILITY,PathManager.class));
+    Optional<Supplier<DataSource>> dataSource=Optional.empty();
+    ModelNode dataSourceModel=JOURNAL_DATASOURCE.resolveModelAttribute(context,model);
+    if (dataSourceModel.isDefined()) {
+      ServiceName dataSourceCapability=context.getCapabilityServiceName(DATA_SOURCE_CAPABILITY,dataSourceModel.asString(),DataSource.class);
+      dataSource=Optional.of(serviceBuilder.requires(dataSourceCapability));
+    }
+    Optional<Supplier<MBeanServer>> mbeanServer=Optional.empty();
+    if (context.hasOptionalCapability(JMX_CAPABILITY,ACTIVEMQ_SERVER_CAPABILITY.getDynamicName(serverName),null)) {
+      ServiceName jmxCapability=context.getCapabilityServiceName(JMX_CAPABILITY,MBeanServer.class);
+      mbeanServer=Optional.of(serviceBuilder.requires(jmxCapability));
+    }
+    Optional<Supplier<SecurityDomain>> elytronSecurityDomain=Optional.empty();
+    Optional<Supplier<SecurityDomainContext>> securityDomainContext=Optional.empty();
+    final ModelNode elytronSecurityDomainModel=ELYTRON_DOMAIN.resolveModelAttribute(context,model);
+    if (elytronSecurityDomainModel.isDefined()) {
+      ServiceName elytronDomainCapability=context.getCapabilityServiceName(ELYTRON_DOMAIN_CAPABILITY,elytronSecurityDomainModel.asString(),SecurityDomain.class);
+      elytronSecurityDomain=Optional.of(serviceBuilder.requires(elytronDomainCapability));
+    }
+ else {
+      String domain=SECURITY_DOMAIN.resolveModelAttribute(context,model).asString();
+      securityDomainContext=Optional.of(serviceBuilder.requires(SecurityDomainService.SERVICE_NAME.append(domain)));
+      serviceBuilder.requires(SecurityBootstrapService.SERVICE_NAME);
+    }
+    List<Interceptor> incomingInterceptors=processInterceptors(INCOMING_INTERCEPTORS.resolveModelAttribute(context,operation));
+    List<Interceptor> outgoingInterceptors=processInterceptors(OUTGOING_INTERCEPTORS.resolveModelAttribute(context,operation));
+    final Set<String> socketBindingNames=new HashSet<String>();
+    TransportConfigOperationHandlers.processAcceptors(context,configuration,model,socketBindingNames);
+    Map<String,Supplier<SocketBinding>> socketBindings=new HashMap<>();
+    for (    final String socketBindingName : socketBindingNames) {
+      Supplier<SocketBinding> socketBinding=serviceBuilder.requires(SocketBinding.JBOSS_BINDING_NAME.append(socketBindingName));
+      socketBindings.put(socketBindingName,socketBinding);
+    }
+    final Set<String> connectorsSocketBindings=new HashSet<String>();
+    TransportConfigOperationHandlers.processConnectors(context,configuration,model,connectorsSocketBindings);
+    Map<String,Supplier<OutboundSocketBinding>> outboundSocketBindings=new HashMap<>();
+    for (    final String connectorSocketBinding : connectorsSocketBindings) {
+      boolean outbound=isOutBoundSocketBinding(context,connectorSocketBinding);
+      if (outbound) {
+        final ServiceName outboundSocketName=OutboundSocketBinding.OUTBOUND_SOCKET_BINDING_BASE_SERVICE_NAME.append(connectorSocketBinding);
+        Supplier<OutboundSocketBinding> outboundSocketBinding=serviceBuilder.requires(outboundSocketName);
+        outboundSocketBindings.put(connectorSocketBinding,outboundSocketBinding);
+      }
+ else {
+        if (!socketBindings.containsKey(connectorSocketBinding)) {
+          Supplier<SocketBinding> socketBinding=serviceBuilder.requires(SocketBinding.JBOSS_BINDING_NAME.append(connectorSocketBinding));
+          socketBindings.put(connectorSocketBinding,socketBinding);
+        }
+      }
+    }
+    Set<String> httpListeners=new HashSet<>();
+    if (model.hasDefined(HTTP_ACCEPTOR)) {
+      for (      final Property property : model.get(HTTP_ACCEPTOR).asPropertyList()) {
+        String httpListener=HTTPAcceptorDefinition.HTTP_LISTENER.resolveModelAttribute(context,property.getValue()).asString();
+        httpListeners.add(httpListener);
+      }
+    }
+    for (    String httpListener : httpListeners) {
+      serviceBuilder.requires(MessagingServices.HTTP_UPGRADE_REGISTRY.append(httpListener));
+    }
+    BroadcastGroupAdd.addBroadcastGroupConfigs(context,configuration,model);
+    final List<BroadcastGroupConfiguration> broadcastGroupConfigurations=configuration.getBroadcastGroupConfigurations();
+    final Map<String,DiscoveryGroupConfiguration> discoveryGroupConfigurations=configuration.getDiscoveryGroupConfigurations();
+    final Map<String,String> clusterNames=new HashMap<>();
+    final Map<String,Supplier<CommandDispatcherFactory>> commandDispatcherFactories=new HashMap<>();
+    final Map<ServiceName,Supplier<CommandDispatcherFactory>> commandDispatcherFactoryServices=new HashMap<>();
+    final Map<String,Supplier<SocketBinding>> groupBindings=new HashMap<>();
+    final Map<ServiceName,Supplier<SocketBinding>> groupBindingServices=new HashMap<>();
+    if (broadcastGroupConfigurations != null) {
+      for (      final BroadcastGroupConfiguration config : broadcastGroupConfigurations) {
+        final String name=config.getName();
+        final String key="broadcast" + name;
+        ModelNode broadcastGroupModel=model.get(BROADCAST_GROUP,name);
+        if (broadcastGroupModel.hasDefined(JGROUPS_CLUSTER.getName())) {
+          ModelNode channel=BroadcastGroupDefinition.JGROUPS_CHANNEL.resolveModelAttribute(context,broadcastGroupModel);
+          ServiceName commandDispatcherFactoryServiceName=channel.isDefined() ? ClusteringRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context,channel.asString()) : ClusteringDefaultRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context);
+          String clusterName=JGROUPS_CLUSTER.resolveModelAttribute(context,broadcastGroupModel).asString();
+          if (!commandDispatcherFactoryServices.containsKey(commandDispatcherFactoryServiceName)) {
+            Supplier<CommandDispatcherFactory> commandDispatcherFactory=serviceBuilder.requires(commandDispatcherFactoryServiceName);
+            commandDispatcherFactoryServices.put(commandDispatcherFactoryServiceName,commandDispatcherFactory);
+          }
+          commandDispatcherFactories.put(key,commandDispatcherFactoryServices.get(commandDispatcherFactoryServiceName));
+          clusterNames.put(key,clusterName);
+        }
+ else {
+          final ServiceName groupBindingServiceName=GroupBindingService.getBroadcastBaseServiceName(activeMQServiceName).append(name);
+          if (!groupBindingServices.containsKey(groupBindingServiceName)) {
+            Supplier<SocketBinding> groupBinding=serviceBuilder.requires(groupBindingServiceName);
+            groupBindingServices.put(groupBindingServiceName,groupBinding);
+          }
+          groupBindings.put(key,groupBindingServices.get(groupBindingServiceName));
+        }
+      }
+    }
+    if (discoveryGroupConfigurations != null) {
+      for (      final DiscoveryGroupConfiguration config : discoveryGroupConfigurations.values()) {
+        final String name=config.getName();
+        final String key="discovery" + name;
+        ModelNode discoveryGroupModel=model.get(DISCOVERY_GROUP,name);
+        if (discoveryGroupModel.hasDefined(JGROUPS_CLUSTER.getName())) {
+          ModelNode channel=DiscoveryGroupDefinition.JGROUPS_CHANNEL.resolveModelAttribute(context,discoveryGroupModel);
+          ServiceName commandDispatcherFactoryServiceName=channel.isDefined() ? ClusteringRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context,channel.asString()) : ClusteringDefaultRequirement.COMMAND_DISPATCHER_FACTORY.getServiceName(context);
+          String clusterName=JGROUPS_CLUSTER.resolveModelAttribute(context,discoveryGroupModel).asString();
+          if (!commandDispatcherFactoryServices.containsKey(commandDispatcherFactoryServiceName)) {
+            Supplier<CommandDispatcherFactory> commandDispatcherFactory=serviceBuilder.requires(commandDispatcherFactoryServiceName);
+            commandDispatcherFactoryServices.put(commandDispatcherFactoryServiceName,commandDispatcherFactory);
+          }
+          commandDispatcherFactories.put(key,commandDispatcherFactoryServices.get(commandDispatcherFactoryServiceName));
+          clusterNames.put(key,clusterName);
+        }
+ else {
+          final ServiceName groupBindingServiceName=GroupBindingService.getDiscoveryBaseServiceName(activeMQServiceName).append(name);
+          if (!groupBindingServices.containsKey(groupBindingServiceName)) {
+            Supplier<SocketBinding> groupBinding=serviceBuilder.requires(groupBindingServiceName);
+            groupBindingServices.put(groupBindingServiceName,groupBinding);
+          }
+          groupBindings.put(key,groupBindingServices.get(groupBindingServiceName));
+        }
+      }
+    }
+    final ActiveMQServerService serverService=new ActiveMQServerService(configuration,new ActiveMQServerService.PathConfig(bindingsPath,bindingsRelativeToPath,journalPath,journalRelativeToPath,largeMessagePath,largeMessageRelativeToPath,pagingPath,pagingRelativeToPath),pathManager,incomingInterceptors,outgoingInterceptors,socketBindings,outboundSocketBindings,groupBindings,commandDispatcherFactories,clusterNames,elytronSecurityDomain,securityDomainContext,mbeanServer,dataSource);
+    addBridgeCredentialStoreReference(serverService,configuration,BridgeDefinition.CREDENTIAL_REFERENCE,context,model,serviceBuilder);
+    addClusterCredentialStoreReference(serverService,ServerDefinition.CREDENTIAL_REFERENCE,context,model,serviceBuilder);
+    ServiceController activeMQServerServiceController=serviceBuilder.setInstance(serverService).install();
+    ((ActiveMQServerResource)resource).setActiveMQServerServiceController(activeMQServerServiceController);
+    boolean overrideInVMSecurity=OVERRIDE_IN_VM_SECURITY.resolveModelAttribute(context,operation).asBoolean();
+    JMSService.addService(serviceTarget,activeMQServiceName,overrideInVMSecurity);
+    context.completeStep(OperationContext.RollbackHandler.NOOP_ROLLBACK_HANDLER);
+  }
+}
+, OperationContext.Stage.RUNTIME] @AT@ 15658 @LENGTH@ 15460
+

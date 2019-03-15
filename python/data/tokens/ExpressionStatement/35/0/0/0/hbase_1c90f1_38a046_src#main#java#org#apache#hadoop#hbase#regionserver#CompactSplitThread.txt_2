@@ -1,0 +1,57 @@
+UPD ExpressionStatement@@Assignment:this.smallCompactions=new ThreadPoolExecutor(smallThreads,smallThreads,60,TimeUnit.SECONDS,new PriorityBlockingQueue<Runnable>()) @TO@ Assignment:this.smallCompactions=new ThreadPoolExecutor(smallThreads,smallThreads,60,TimeUnit.SECONDS,new PriorityBlockingQueue<Runnable>(),new ThreadFactory(){
+  @Override public Thread newThread(  Runnable r){
+    Thread t=new Thread(r);
+    t.setName(n + "-smallCompactions-" + System.currentTimeMillis());
+    return t;
+  }
+}
+) @AT@ 4052 @LENGTH@ 146
+---UPD Assignment@@this.smallCompactions=new ThreadPoolExecutor(smallThreads,smallThreads,60,TimeUnit.SECONDS,new PriorityBlockingQueue<Runnable>()) @TO@ this.smallCompactions=new ThreadPoolExecutor(smallThreads,smallThreads,60,TimeUnit.SECONDS,new PriorityBlockingQueue<Runnable>(),new ThreadFactory(){
+  @Override public Thread newThread(  Runnable r){
+    Thread t=new Thread(r);
+    t.setName(n + "-smallCompactions-" + System.currentTimeMillis());
+    return t;
+  }
+}
+) @AT@ 4052 @LENGTH@ 145
+------UPD ClassInstanceCreation@@ThreadPoolExecutor[smallThreads, smallThreads, 60, TimeUnit.SECONDS, new PriorityBlockingQueue<Runnable>()] @TO@ ThreadPoolExecutor[smallThreads, smallThreads, 60, TimeUnit.SECONDS, new PriorityBlockingQueue<Runnable>(), new ThreadFactory(){
+  @Override public Thread newThread(  Runnable r){
+    Thread t=new Thread(r);
+    t.setName(n + "-smallCompactions-" + System.currentTimeMillis());
+    return t;
+  }
+}
+] @AT@ 4076 @LENGTH@ 121
+---------INS ClassInstanceCreation@@ThreadFactory[] @TO@ ClassInstanceCreation@@ThreadPoolExecutor[smallThreads, smallThreads, 60, TimeUnit.SECONDS, new PriorityBlockingQueue<Runnable>()] @AT@ 4567 @LENGTH@ 261
+------------INS New@@new @TO@ ClassInstanceCreation@@ThreadFactory[] @AT@ 4567 @LENGTH@ 3
+------------INS SimpleType@@ThreadFactory @TO@ ClassInstanceCreation@@ThreadFactory[] @AT@ 4571 @LENGTH@ 13
+------------INS AnonymousClassDeclaration@@AnonymousClass @TO@ ClassInstanceCreation@@ThreadFactory[] @AT@ 4587 @LENGTH@ 241
+---------------INS MethodDeclaration@@public, Thread, MethodName:newThread, Runnable r,  @TO@ AnonymousClassDeclaration@@AnonymousClass @AT@ 4623 @LENGTH@ 195
+------------------INS Modifier@@public @TO@ MethodDeclaration@@public, Thread, MethodName:newThread, Runnable r,  @AT@ 4623 @LENGTH@ 6
+------------------INS SimpleType@@Thread @TO@ MethodDeclaration@@public, Thread, MethodName:newThread, Runnable r,  @AT@ 4630 @LENGTH@ 6
+------------------INS SimpleName@@MethodName:newThread @TO@ MethodDeclaration@@public, Thread, MethodName:newThread, Runnable r,  @AT@ 4637 @LENGTH@ 9
+------------------INS SingleVariableDeclaration@@Runnable r @TO@ MethodDeclaration@@public, Thread, MethodName:newThread, Runnable r,  @AT@ 4647 @LENGTH@ 10
+---------------------INS SimpleType@@Runnable @TO@ SingleVariableDeclaration@@Runnable r @AT@ 4647 @LENGTH@ 8
+---------------------INS SimpleName@@r @TO@ SingleVariableDeclaration@@Runnable r @AT@ 4656 @LENGTH@ 1
+------------------INS VariableDeclarationStatement@@Thread t=new Thread(r); @TO@ MethodDeclaration@@public, Thread, MethodName:newThread, Runnable r,  @AT@ 4675 @LENGTH@ 25
+---------------------INS SimpleType@@Thread @TO@ VariableDeclarationStatement@@Thread t=new Thread(r); @AT@ 4675 @LENGTH@ 6
+---------------------INS VariableDeclarationFragment@@t=new Thread(r) @TO@ VariableDeclarationStatement@@Thread t=new Thread(r); @AT@ 4682 @LENGTH@ 17
+------------------------INS SimpleName@@t @TO@ VariableDeclarationFragment@@t=new Thread(r) @AT@ 4682 @LENGTH@ 1
+------------------------INS ClassInstanceCreation@@Thread[r] @TO@ VariableDeclarationFragment@@t=new Thread(r) @AT@ 4686 @LENGTH@ 13
+---------------------------INS New@@new @TO@ ClassInstanceCreation@@Thread[r] @AT@ 4686 @LENGTH@ 3
+---------------------------INS SimpleType@@Thread @TO@ ClassInstanceCreation@@Thread[r] @AT@ 4690 @LENGTH@ 6
+---------------------------INS SimpleName@@r @TO@ ClassInstanceCreation@@Thread[r] @AT@ 4697 @LENGTH@ 1
+------------------INS ExpressionStatement@@MethodInvocation:t.setName(n + "-smallCompactions-" + System.currentTimeMillis()) @TO@ MethodDeclaration@@public, Thread, MethodName:newThread, Runnable r,  @AT@ 4715 @LENGTH@ 65
+---------------------INS MethodInvocation@@t.setName(n + "-smallCompactions-" + System.currentTimeMillis()) @TO@ ExpressionStatement@@MethodInvocation:t.setName(n + "-smallCompactions-" + System.currentTimeMillis()) @AT@ 4715 @LENGTH@ 64
+------------------------INS SimpleName@@Name:t @TO@ MethodInvocation@@t.setName(n + "-smallCompactions-" + System.currentTimeMillis()) @AT@ 4715 @LENGTH@ 1
+------------------------INS SimpleName@@MethodName:setName:[n + "-smallCompactions-" + System.currentTimeMillis()] @TO@ MethodInvocation@@t.setName(n + "-smallCompactions-" + System.currentTimeMillis()) @AT@ 4717 @LENGTH@ 62
+---------------------------INS InfixExpression@@n + "-smallCompactions-" + System.currentTimeMillis() @TO@ SimpleName@@MethodName:setName:[n + "-smallCompactions-" + System.currentTimeMillis()] @AT@ 4725 @LENGTH@ 53
+------------------------------INS SimpleName@@n @TO@ InfixExpression@@n + "-smallCompactions-" + System.currentTimeMillis() @AT@ 4725 @LENGTH@ 1
+------------------------------INS Operator@@+ @TO@ InfixExpression@@n + "-smallCompactions-" + System.currentTimeMillis() @AT@ 4726 @LENGTH@ 1
+------------------------------INS StringLiteral@@"-smallCompactions-" @TO@ InfixExpression@@n + "-smallCompactions-" + System.currentTimeMillis() @AT@ 4729 @LENGTH@ 20
+------------------------------INS MethodInvocation@@System.currentTimeMillis() @TO@ InfixExpression@@n + "-smallCompactions-" + System.currentTimeMillis() @AT@ 4752 @LENGTH@ 26
+---------------------------------INS SimpleName@@Name:System @TO@ MethodInvocation@@System.currentTimeMillis() @AT@ 4752 @LENGTH@ 6
+---------------------------------INS SimpleName@@MethodName:currentTimeMillis:[] @TO@ MethodInvocation@@System.currentTimeMillis() @AT@ 4759 @LENGTH@ 19
+------------------INS ReturnStatement@@SimpleName:t @TO@ MethodDeclaration@@public, Thread, MethodName:newThread, Runnable r,  @AT@ 4795 @LENGTH@ 9
+---------------------INS SimpleName@@t @TO@ ReturnStatement@@SimpleName:t @AT@ 4802 @LENGTH@ 1
+

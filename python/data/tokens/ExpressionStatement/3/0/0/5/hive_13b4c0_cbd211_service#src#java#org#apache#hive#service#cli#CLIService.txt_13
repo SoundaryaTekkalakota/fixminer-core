@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.info(sessionHandle + ": getColumns()") @TO@ MethodInvocation:LOG.debug(sessionHandle + ": getColumns()") @AT@ 10507 @LENGTH@ 43
+---UPD MethodInvocation@@LOG.info(sessionHandle + ": getColumns()") @TO@ LOG.debug(sessionHandle + ": getColumns()") @AT@ 10507 @LENGTH@ 42
+------UPD SimpleName@@MethodName:info:[sessionHandle + ": getColumns()"] @TO@ MethodName:debug:[sessionHandle + ": getColumns()"] @AT@ 10511 @LENGTH@ 38
+

@@ -1,0 +1,55 @@
+UPD ExpressionStatement@@MethodInvocation:hibernateTemplate.execute(new HibernateCallback<Object>(){
+  public Object doInHibernate(  Session session) throws HibernateException, SQLException {
+    Connection con=session.connection();
+    Dialect dialect=Dialect.getDialect(getConfiguration().getProperties());
+    String[] sql=getConfiguration().generateDropSchemaScript(dialect);
+    executeSchemaScript(con,sql);
+    return null;
+  }
+}
+) @TO@ MethodInvocation:hibernateTemplate.execute(new HibernateCallback<Object>(){
+  public Object doInHibernate(  Session session) throws HibernateException, SQLException {
+    Connection con=session.connection();
+    String[] sql=getConfiguration().generateDropSchemaScript(dialect);
+    executeSchemaScript(con,sql);
+    return null;
+  }
+}
+) @AT@ 41887 @LENGTH@ 421
+---UPD MethodInvocation@@hibernateTemplate.execute(new HibernateCallback<Object>(){
+  public Object doInHibernate(  Session session) throws HibernateException, SQLException {
+    Connection con=session.connection();
+    Dialect dialect=Dialect.getDialect(getConfiguration().getProperties());
+    String[] sql=getConfiguration().generateDropSchemaScript(dialect);
+    executeSchemaScript(con,sql);
+    return null;
+  }
+}
+) @TO@ hibernateTemplate.execute(new HibernateCallback<Object>(){
+  public Object doInHibernate(  Session session) throws HibernateException, SQLException {
+    Connection con=session.connection();
+    String[] sql=getConfiguration().generateDropSchemaScript(dialect);
+    executeSchemaScript(con,sql);
+    return null;
+  }
+}
+) @AT@ 41887 @LENGTH@ 420
+------UPD SimpleName@@MethodName:execute:[new HibernateCallback<Object>(){
+  public Object doInHibernate(  Session session) throws HibernateException, SQLException {
+    Connection con=session.connection();
+    Dialect dialect=Dialect.getDialect(getConfiguration().getProperties());
+    String[] sql=getConfiguration().generateDropSchemaScript(dialect);
+    executeSchemaScript(con,sql);
+    return null;
+  }
+}
+] @TO@ MethodName:execute:[new HibernateCallback<Object>(){
+  public Object doInHibernate(  Session session) throws HibernateException, SQLException {
+    Connection con=session.connection();
+    String[] sql=getConfiguration().generateDropSchemaScript(dialect);
+    executeSchemaScript(con,sql);
+    return null;
+  }
+}
+] @AT@ 41905 @LENGTH@ 402
+

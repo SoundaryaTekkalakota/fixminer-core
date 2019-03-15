@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, Configuration, [conf] @TO@ TypeDeclaration@@[static]CombineFilter, [PathFilter] @AT@ 20315 @LENGTH@ 33
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, Configuration, [conf] @AT@ 20315 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, Configuration, [conf] @AT@ 20323 @LENGTH@ 5
+---INS SimpleType@@Configuration @TO@ FieldDeclaration@@private, final, Configuration, [conf] @AT@ 20329 @LENGTH@ 13
+---INS VariableDeclarationFragment@@conf @TO@ FieldDeclaration@@private, final, Configuration, [conf] @AT@ 20343 @LENGTH@ 4
+------INS SimpleName@@conf @TO@ VariableDeclarationFragment@@conf @AT@ 20343 @LENGTH@ 4
+

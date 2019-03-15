@@ -1,0 +1,69 @@
+UPD VariableDeclarationStatement@@MetaScannerVisitor visitor=new MetaScannerVisitor(){
+  @Override public boolean processRow(  Result row) throws IOException {
+    byte[] value=row.getValue(HConstants.CATALOG_FAMILY,HConstants.REGIONINFO_QUALIFIER);
+    HRegionInfo info=Writables.getHRegionInfoOrNull(value);
+    if (info != null) {
+      if (Bytes.equals(tableName,info.getTableDesc().getName())) {
+        value=row.getValue(HConstants.CATALOG_FAMILY,HConstants.SERVER_QUALIFIER);
+        if (value == null) {
+          available.set(false);
+          return false;
+        }
+      }
+    }
+    return true;
+  }
+}
+; @TO@ MetaScannerVisitor visitor=new MetaScannerVisitor(){
+  @Override public boolean processRow(  Result row) throws IOException {
+    byte[] value=row.getValue(HConstants.CATALOG_FAMILY,HConstants.REGIONINFO_QUALIFIER);
+    HRegionInfo info=Writables.getHRegionInfoOrNull(value);
+    if (info != null) {
+      if (Bytes.equals(tableName,info.getTableDesc().getName())) {
+        value=row.getValue(HConstants.CATALOG_FAMILY,HConstants.SERVER_QUALIFIER);
+        if (value == null) {
+          available.set(false);
+          return false;
+        }
+        regionCount.incrementAndGet();
+      }
+    }
+    return true;
+  }
+}
+; @AT@ 17648 @LENGTH@ 722
+---UPD VariableDeclarationFragment@@visitor=new MetaScannerVisitor(){
+  @Override public boolean processRow(  Result row) throws IOException {
+    byte[] value=row.getValue(HConstants.CATALOG_FAMILY,HConstants.REGIONINFO_QUALIFIER);
+    HRegionInfo info=Writables.getHRegionInfoOrNull(value);
+    if (info != null) {
+      if (Bytes.equals(tableName,info.getTableDesc().getName())) {
+        value=row.getValue(HConstants.CATALOG_FAMILY,HConstants.SERVER_QUALIFIER);
+        if (value == null) {
+          available.set(false);
+          return false;
+        }
+      }
+    }
+    return true;
+  }
+}
+ @TO@ visitor=new MetaScannerVisitor(){
+  @Override public boolean processRow(  Result row) throws IOException {
+    byte[] value=row.getValue(HConstants.CATALOG_FAMILY,HConstants.REGIONINFO_QUALIFIER);
+    HRegionInfo info=Writables.getHRegionInfoOrNull(value);
+    if (info != null) {
+      if (Bytes.equals(tableName,info.getTableDesc().getName())) {
+        value=row.getValue(HConstants.CATALOG_FAMILY,HConstants.SERVER_QUALIFIER);
+        if (value == null) {
+          available.set(false);
+          return false;
+        }
+        regionCount.incrementAndGet();
+      }
+    }
+    return true;
+  }
+}
+ @AT@ 17667 @LENGTH@ 702
+

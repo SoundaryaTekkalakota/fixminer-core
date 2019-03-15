@@ -1,0 +1,6 @@
+DEL ExpressionStatement@@MethodInvocation:outResult.addAll(results) @AT@ 15110 @LENGTH@ 26
+---DEL MethodInvocation@@outResult.addAll(results) @AT@ 15110 @LENGTH@ 25
+------DEL SimpleName@@Name:outResult @AT@ 15110 @LENGTH@ 9
+------DEL SimpleName@@MethodName:addAll:[results] @AT@ 15120 @LENGTH@ 15
+---------DEL SimpleName@@results @AT@ 15127 @LENGTH@ 7
+

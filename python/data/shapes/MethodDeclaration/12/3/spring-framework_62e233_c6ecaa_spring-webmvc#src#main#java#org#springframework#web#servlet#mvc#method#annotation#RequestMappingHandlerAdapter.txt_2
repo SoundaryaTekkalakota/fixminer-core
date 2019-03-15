@@ -1,0 +1,12 @@
+MethodDeclaration
+---SimpleType
+---ParameterizedType
+------SimpleType
+------SimpleType
+---ReturnStatement
+------FieldAccess
+------MethodInvocation
+---------FieldAccess
+------------ThisExpression
+------------SimpleName
+---------SimpleName

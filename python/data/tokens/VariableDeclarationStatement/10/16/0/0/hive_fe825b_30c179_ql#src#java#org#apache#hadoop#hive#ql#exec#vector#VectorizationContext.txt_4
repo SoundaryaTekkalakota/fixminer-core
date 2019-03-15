@@ -1,0 +1,11 @@
+UPD VariableDeclarationStatement@@final VectorExpression whenExpr=getVectorExpression(ifDesc,mode); @TO@ final VectorExpression whenExpr=getVectorExpression(ifDesc,VectorExpressionDescriptor.Mode.PROJECTION); @AT@ 138151 @LENGTH@ 68
+---UPD VariableDeclarationFragment@@whenExpr=getVectorExpression(ifDesc,mode) @TO@ whenExpr=getVectorExpression(ifDesc,VectorExpressionDescriptor.Mode.PROJECTION) @AT@ 138174 @LENGTH@ 44
+------UPD MethodInvocation@@getVectorExpression(ifDesc,mode) @TO@ getVectorExpression(ifDesc,VectorExpressionDescriptor.Mode.PROJECTION) @AT@ 138185 @LENGTH@ 33
+---------UPD SimpleName@@MethodName:getVectorExpression:[ifDesc, mode] @TO@ MethodName:getVectorExpression:[ifDesc, VectorExpressionDescriptor.Mode.PROJECTION] @AT@ 138185 @LENGTH@ 33
+------------DEL SimpleName@@mode @AT@ 138213 @LENGTH@ 4
+------------INS QualifiedName@@VectorExpressionDescriptor.Mode.PROJECTION @TO@ SimpleName@@MethodName:getVectorExpression:[ifDesc, mode] @AT@ 139419 @LENGTH@ 42
+---------------INS QualifiedName@@VectorExpressionDescriptor.Mode @TO@ QualifiedName@@VectorExpressionDescriptor.Mode.PROJECTION @AT@ 139419 @LENGTH@ 31
+------------------INS SimpleName@@VectorExpressionDescriptor @TO@ QualifiedName@@VectorExpressionDescriptor.Mode @AT@ 139419 @LENGTH@ 26
+------------------INS SimpleName@@Mode @TO@ QualifiedName@@VectorExpressionDescriptor.Mode @AT@ 139446 @LENGTH@ 4
+---------------INS SimpleName@@PROJECTION @TO@ QualifiedName@@VectorExpressionDescriptor.Mode.PROJECTION @AT@ 139451 @LENGTH@ 10
+

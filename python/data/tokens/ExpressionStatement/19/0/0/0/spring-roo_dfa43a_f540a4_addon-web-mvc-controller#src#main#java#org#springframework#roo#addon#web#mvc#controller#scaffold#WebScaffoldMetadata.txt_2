@@ -1,0 +1,20 @@
+UPD ExpressionStatement@@MethodInvocation:requestMappingAttributes.add(new EnumAttributeValue(new JavaSymbolName("method"),new EnumDetails(REQUEST_METHOD,new JavaSymbolName("GET")))) @TO@ MethodInvocation:requestMappingAttributes.add(PRODUCES_HTML) @AT@ 16799 @LENGTH@ 143
+---UPD MethodInvocation@@requestMappingAttributes.add(new EnumAttributeValue(new JavaSymbolName("method"),new EnumDetails(REQUEST_METHOD,new JavaSymbolName("GET")))) @TO@ requestMappingAttributes.add(PRODUCES_HTML) @AT@ 16799 @LENGTH@ 142
+------UPD SimpleName@@MethodName:add:[new EnumAttributeValue(new JavaSymbolName("method"),new EnumDetails(REQUEST_METHOD,new JavaSymbolName("GET")))] @TO@ MethodName:add:[PRODUCES_HTML] @AT@ 16824 @LENGTH@ 117
+---------DEL ClassInstanceCreation@@EnumAttributeValue[new JavaSymbolName("method"), new EnumDetails(REQUEST_METHOD,new JavaSymbolName("GET"))] @AT@ 16828 @LENGTH@ 112
+------------DEL New@@new @AT@ 16828 @LENGTH@ 3
+------------DEL SimpleType@@EnumAttributeValue @AT@ 16832 @LENGTH@ 18
+------------DEL ClassInstanceCreation@@JavaSymbolName["method"] @AT@ 16851 @LENGTH@ 28
+---------------DEL New@@new @AT@ 16851 @LENGTH@ 3
+---------------DEL SimpleType@@JavaSymbolName @AT@ 16855 @LENGTH@ 14
+---------------DEL StringLiteral@@"method" @AT@ 16870 @LENGTH@ 8
+------------DEL ClassInstanceCreation@@EnumDetails[REQUEST_METHOD, new JavaSymbolName("GET")] @AT@ 16881 @LENGTH@ 58
+---------------DEL New@@new @AT@ 16881 @LENGTH@ 3
+---------------DEL SimpleType@@EnumDetails @AT@ 16885 @LENGTH@ 11
+---------------DEL SimpleName@@REQUEST_METHOD @AT@ 16897 @LENGTH@ 14
+---------------DEL ClassInstanceCreation@@JavaSymbolName["GET"] @AT@ 16913 @LENGTH@ 25
+------------------DEL New@@new @AT@ 16913 @LENGTH@ 3
+------------------DEL SimpleType@@JavaSymbolName @AT@ 16917 @LENGTH@ 14
+------------------DEL StringLiteral@@"GET" @AT@ 16932 @LENGTH@ 5
+---------INS SimpleName@@PRODUCES_HTML @TO@ SimpleName@@MethodName:add:[new EnumAttributeValue(new JavaSymbolName("method"),new EnumDetails(REQUEST_METHOD,new JavaSymbolName("GET")))] @AT@ 17005 @LENGTH@ 13
+

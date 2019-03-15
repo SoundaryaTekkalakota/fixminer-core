@@ -1,0 +1,7 @@
+UPD ThrowStatement@@ClassInstanceCreation:new StepListenerFailedException("Error in afterChunk.",e) @TO@ ClassInstanceCreation:new StepListenerFailedException("Error in afterChunk.",getTargetException(e)) @AT@ 7058 @LENGTH@ 65
+---UPD ClassInstanceCreation@@StepListenerFailedException["Error in afterChunk.", e] @TO@ StepListenerFailedException["Error in afterChunk.", getTargetException(e)] @AT@ 7064 @LENGTH@ 58
+------DEL SimpleName@@e @AT@ 7120 @LENGTH@ 1
+------INS MethodInvocation@@getTargetException(e) @TO@ ClassInstanceCreation@@StepListenerFailedException["Error in afterChunk.", e] @AT@ 7243 @LENGTH@ 21
+---------INS SimpleName@@MethodName:getTargetException:[e] @TO@ MethodInvocation@@getTargetException(e) @AT@ 7243 @LENGTH@ 21
+------------INS SimpleName@@e @TO@ SimpleName@@MethodName:getTargetException:[e] @AT@ 7262 @LENGTH@ 1
+

@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(NumberFormatException.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("NumberFormatException") @AT@ 5166 @LENGTH@ 73
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(NumberFormatException.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("NumberFormatException") @AT@ 5166 @LENGTH@ 72
+------UPD SimpleName@@MethodName:add:[NumberFormatException.class.getSimpleName()] @TO@ MethodName:add:["NumberFormatException"] @AT@ 5190 @LENGTH@ 48
+---------INS StringLiteral@@"NumberFormatException" @TO@ SimpleName@@MethodName:add:[NumberFormatException.class.getSimpleName()] @AT@ 4544 @LENGTH@ 23
+---------DEL MethodInvocation@@NumberFormatException.class.getSimpleName() @AT@ 5194 @LENGTH@ 43
+------------DEL TypeLiteral@@NumberFormatException.class @AT@ 5194 @LENGTH@ 27
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 5222 @LENGTH@ 15
+

@@ -1,0 +1,17 @@
+UPD IfStatement@@MethodInvocation:nonVectorizableChildOfGroupBy(op) @TO@ MethodInvocation:nonVectorizedOps.contains(op) @AT@ 44797 @LENGTH@ 179
+---DEL MethodInvocation@@nonVectorizableChildOfGroupBy(op) @AT@ 44801 @LENGTH@ 33
+------DEL SimpleName@@MethodName:nonVectorizableChildOfGroupBy:[op] @AT@ 44801 @LENGTH@ 33
+---------DEL SimpleName@@op @AT@ 44831 @LENGTH@ 2
+---DEL IfStatement@@PrefixExpression:!opsDone.contains(op) @AT@ 44878 @LENGTH@ 69
+------DEL PrefixExpression@@!opsDone.contains(op) @AT@ 44882 @LENGTH@ 21
+---------DEL Operator@@! @AT@ 44882 @LENGTH@ 1
+---------DEL MethodInvocation@@opsDone.contains(op) @AT@ 44883 @LENGTH@ 20
+------DEL ExpressionStatement@@MethodInvocation:opsDone.add(op) @AT@ 44919 @LENGTH@ 16
+---------DEL MethodInvocation@@opsDone.add(op) @AT@ 44919 @LENGTH@ 15
+------------DEL SimpleName@@Name:opsDone @AT@ 44919 @LENGTH@ 7
+------------DEL SimpleName@@MethodName:add:[op] @AT@ 44927 @LENGTH@ 7
+---------------DEL SimpleName@@op @AT@ 44931 @LENGTH@ 2
+---INS MethodInvocation@@nonVectorizedOps.contains(op) @TO@ IfStatement@@MethodInvocation:nonVectorizableChildOfGroupBy(op) @AT@ 45783 @LENGTH@ 29
+------MOV SimpleName@@Name:opsDone @TO@ MethodInvocation@@nonVectorizedOps.contains(op) @AT@ 44883 @LENGTH@ 7
+------MOV SimpleName@@MethodName:contains:[op] @TO@ MethodInvocation@@nonVectorizedOps.contains(op) @AT@ 44891 @LENGTH@ 12
+

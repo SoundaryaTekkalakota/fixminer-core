@@ -1,0 +1,15 @@
+INS MethodDeclaration@@public, void, MethodName:setForwardEventException, boolean forwardEventException,  @TO@ TypeDeclaration@@[public]DispatcherPortlet, FrameworkPortlet @AT@ 14927 @LENGTH@ 126
+---INS Modifier@@public @TO@ MethodDeclaration@@public, void, MethodName:setForwardEventException, boolean forwardEventException,  @AT@ 14927 @LENGTH@ 6
+---INS PrimitiveType@@void @TO@ MethodDeclaration@@public, void, MethodName:setForwardEventException, boolean forwardEventException,  @AT@ 14934 @LENGTH@ 4
+---INS SimpleName@@MethodName:setForwardEventException @TO@ MethodDeclaration@@public, void, MethodName:setForwardEventException, boolean forwardEventException,  @AT@ 14939 @LENGTH@ 24
+---INS SingleVariableDeclaration@@boolean forwardEventException @TO@ MethodDeclaration@@public, void, MethodName:setForwardEventException, boolean forwardEventException,  @AT@ 14964 @LENGTH@ 29
+------INS PrimitiveType@@boolean @TO@ SingleVariableDeclaration@@boolean forwardEventException @AT@ 14964 @LENGTH@ 7
+------INS SimpleName@@forwardEventException @TO@ SingleVariableDeclaration@@boolean forwardEventException @AT@ 14972 @LENGTH@ 21
+---INS ExpressionStatement@@Assignment:this.forwardEventException=forwardEventException @TO@ MethodDeclaration@@public, void, MethodName:setForwardEventException, boolean forwardEventException,  @AT@ 14999 @LENGTH@ 51
+------INS Assignment@@this.forwardEventException=forwardEventException @TO@ ExpressionStatement@@Assignment:this.forwardEventException=forwardEventException @AT@ 14999 @LENGTH@ 50
+---------INS FieldAccess@@this.forwardEventException @TO@ Assignment@@this.forwardEventException=forwardEventException @AT@ 14999 @LENGTH@ 26
+------------INS ThisExpression@@this @TO@ FieldAccess@@this.forwardEventException @AT@ 14999 @LENGTH@ 4
+------------INS SimpleName@@forwardEventException @TO@ FieldAccess@@this.forwardEventException @AT@ 15004 @LENGTH@ 21
+---------INS Operator@@= @TO@ Assignment@@this.forwardEventException=forwardEventException @AT@ 15025 @LENGTH@ 1
+---------INS SimpleName@@forwardEventException @TO@ Assignment@@this.forwardEventException=forwardEventException @AT@ 15028 @LENGTH@ 21
+

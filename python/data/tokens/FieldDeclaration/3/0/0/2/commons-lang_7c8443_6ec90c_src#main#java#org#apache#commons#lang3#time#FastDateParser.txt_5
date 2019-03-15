@@ -1,0 +1,24 @@
+UPD FieldDeclaration@@private, static, final, Strategy, [MODULO_HOUR_STRATEGY=new NumberStrategy(Calendar.HOUR){
+  @Override int modify(  final int iValue){
+    return iValue % 12;
+  }
+}
+] @TO@ private, static, final, Strategy, [HOUR12_STRATEGY=new NumberStrategy(Calendar.HOUR){
+  @Override int modify(  final int iValue){
+    return iValue == 12 ? 0 : iValue;
+  }
+}
+] @AT@ 30885 @LENGTH@ 192
+---UPD VariableDeclarationFragment@@MODULO_HOUR_STRATEGY=new NumberStrategy(Calendar.HOUR){
+  @Override int modify(  final int iValue){
+    return iValue % 12;
+  }
+}
+ @TO@ HOUR12_STRATEGY=new NumberStrategy(Calendar.HOUR){
+  @Override int modify(  final int iValue){
+    return iValue == 12 ? 0 : iValue;
+  }
+}
+ @AT@ 30915 @LENGTH@ 161
+------UPD SimpleName@@MODULO_HOUR_STRATEGY @TO@ HOUR12_STRATEGY @AT@ 30915 @LENGTH@ 20
+

@@ -1,0 +1,5 @@
+DEL ThrowStatement@@ClassInstanceCreation:new UnsupportedOperationException() @AT@ 2128 @LENGTH@ 42
+---DEL ClassInstanceCreation@@UnsupportedOperationException[] @AT@ 2134 @LENGTH@ 35
+------DEL New@@new @AT@ 2134 @LENGTH@ 3
+------DEL SimpleType@@UnsupportedOperationException @AT@ 2138 @LENGTH@ 29
+

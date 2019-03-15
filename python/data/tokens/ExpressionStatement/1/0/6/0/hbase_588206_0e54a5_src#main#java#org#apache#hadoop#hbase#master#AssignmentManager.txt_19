@@ -1,0 +1,2 @@
+MOV ExpressionStatement@@MethodInvocation:regionState.update(RegionState.State.CLOSED,data.getStamp(),data.getOrigin()) @TO@ SwitchStatement@@MethodInvocation:data.getEventType() @AT@ 28618 @LENGTH@ 94
+

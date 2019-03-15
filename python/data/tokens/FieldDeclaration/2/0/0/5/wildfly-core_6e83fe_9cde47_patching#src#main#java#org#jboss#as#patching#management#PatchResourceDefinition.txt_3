@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@static, final, AttributeDefinition, [PATCHES=PrimitiveListAttributeDefinition.Builder.of(Constants.PATCHES,ModelType.STRING).setStorageRuntime().setRuntimeServiceNotRequired().build()] @TO@ private, static, final, AttributeDefinition, [PATCHES=PrimitiveListAttributeDefinition.Builder.of(Constants.PATCHES,ModelType.STRING).setStorageRuntime().setRuntimeServiceNotRequired().build()] @AT@ 3664 @LENGTH@ 222
+---INS Modifier@@private @TO@ FieldDeclaration@@static, final, AttributeDefinition, [PATCHES=PrimitiveListAttributeDefinition.Builder.of(Constants.PATCHES,ModelType.STRING).setStorageRuntime().setRuntimeServiceNotRequired().build()] @AT@ 3688 @LENGTH@ 7
+

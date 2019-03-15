@@ -1,0 +1,9 @@
+INS FieldDeclaration@@private, static, final, int, [INIT_ERROR_EXIT_CODE=2] @TO@ TypeDeclaration@@[public, final]Canary, [Tool] @AT@ 4512 @LENGTH@ 50
+---INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, int, [INIT_ERROR_EXIT_CODE=2] @AT@ 4512 @LENGTH@ 7
+---INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, int, [INIT_ERROR_EXIT_CODE=2] @AT@ 4520 @LENGTH@ 6
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, int, [INIT_ERROR_EXIT_CODE=2] @AT@ 4527 @LENGTH@ 5
+---INS PrimitiveType@@int @TO@ FieldDeclaration@@private, static, final, int, [INIT_ERROR_EXIT_CODE=2] @AT@ 4533 @LENGTH@ 3
+---INS VariableDeclarationFragment@@INIT_ERROR_EXIT_CODE=2 @TO@ FieldDeclaration@@private, static, final, int, [INIT_ERROR_EXIT_CODE=2] @AT@ 4537 @LENGTH@ 24
+------INS SimpleName@@INIT_ERROR_EXIT_CODE @TO@ VariableDeclarationFragment@@INIT_ERROR_EXIT_CODE=2 @AT@ 4537 @LENGTH@ 20
+------INS NumberLiteral@@2 @TO@ VariableDeclarationFragment@@INIT_ERROR_EXIT_CODE=2 @AT@ 4560 @LENGTH@ 1
+

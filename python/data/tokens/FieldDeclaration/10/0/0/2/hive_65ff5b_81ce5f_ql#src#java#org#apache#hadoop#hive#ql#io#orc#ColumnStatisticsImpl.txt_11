@@ -1,0 +1,11 @@
+INS FieldDeclaration@@private, transient, final, DateWritable, [maxDate=new DateWritable()] @TO@ TypeDeclaration@@[private, static, final]DateStatisticsImpl, ColumnStatisticsImpl[DateColumnStatistics] @AT@ 18126 @LENGTH@ 66
+---INS Modifier@@private @TO@ FieldDeclaration@@private, transient, final, DateWritable, [maxDate=new DateWritable()] @AT@ 18126 @LENGTH@ 7
+---INS Modifier@@transient @TO@ FieldDeclaration@@private, transient, final, DateWritable, [maxDate=new DateWritable()] @AT@ 18134 @LENGTH@ 9
+---INS Modifier@@final @TO@ FieldDeclaration@@private, transient, final, DateWritable, [maxDate=new DateWritable()] @AT@ 18144 @LENGTH@ 5
+---INS SimpleType@@DateWritable @TO@ FieldDeclaration@@private, transient, final, DateWritable, [maxDate=new DateWritable()] @AT@ 18150 @LENGTH@ 12
+---INS VariableDeclarationFragment@@maxDate=new DateWritable() @TO@ FieldDeclaration@@private, transient, final, DateWritable, [maxDate=new DateWritable()] @AT@ 18163 @LENGTH@ 28
+------INS SimpleName@@maxDate @TO@ VariableDeclarationFragment@@maxDate=new DateWritable() @AT@ 18163 @LENGTH@ 7
+------INS ClassInstanceCreation@@DateWritable[] @TO@ VariableDeclarationFragment@@maxDate=new DateWritable() @AT@ 18173 @LENGTH@ 18
+---------INS New@@new @TO@ ClassInstanceCreation@@DateWritable[] @AT@ 18173 @LENGTH@ 3
+---------INS SimpleType@@DateWritable @TO@ ClassInstanceCreation@@DateWritable[] @AT@ 18177 @LENGTH@ 12
+

@@ -1,0 +1,6 @@
+DEL ThrowStatement@@ClassInstanceCreation:new HiveException("Not implemented yet") @AT@ 59322 @LENGTH@ 47
+---DEL ClassInstanceCreation@@HiveException["Not implemented yet"] @AT@ 59328 @LENGTH@ 40
+------DEL New@@new @AT@ 59328 @LENGTH@ 3
+------DEL SimpleType@@HiveException @AT@ 59332 @LENGTH@ 13
+------DEL StringLiteral@@"Not implemented yet" @AT@ 59346 @LENGTH@ 21
+

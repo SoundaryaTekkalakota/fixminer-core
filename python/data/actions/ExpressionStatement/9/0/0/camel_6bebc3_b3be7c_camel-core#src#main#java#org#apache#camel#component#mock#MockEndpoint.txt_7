@@ -1,0 +1,9 @@
+ INS ExpressionStatement
+--- INS MethodInvocation
+------ INS SimpleName
+------ INS SimpleName
+--------- INS InfixExpression
+------------ INS StringLiteral
+------------ INS Operator
+------------ INS SimpleName
+------------ INS StringLiteral

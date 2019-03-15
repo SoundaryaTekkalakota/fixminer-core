@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(ThreadLocal.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("ThreadLocal") @AT@ 3590 @LENGTH@ 63
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(ThreadLocal.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("ThreadLocal") @AT@ 3590 @LENGTH@ 62
+------UPD SimpleName@@MethodName:add:[ThreadLocal.class.getSimpleName()] @TO@ MethodName:add:["ThreadLocal"] @AT@ 3614 @LENGTH@ 38
+---------INS StringLiteral@@"ThreadLocal" @TO@ SimpleName@@MethodName:add:[ThreadLocal.class.getSimpleName()] @AT@ 3265 @LENGTH@ 13
+---------DEL MethodInvocation@@ThreadLocal.class.getSimpleName() @AT@ 3618 @LENGTH@ 33
+------------DEL TypeLiteral@@ThreadLocal.class @AT@ 3618 @LENGTH@ 17
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 3636 @LENGTH@ 15
+

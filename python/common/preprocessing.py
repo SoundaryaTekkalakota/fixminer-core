@@ -37,7 +37,7 @@ def preprocessingCodeElementsList(res):
 
     stripped = []
     for t in tokens:
-        splits = re.split('\.|\(|\)|:|>|<|:|=|/|\\\\|\'|-',t)
+        splits = re.split('\.|\(|\)|:|>|<|:|=|/|\\\\|\'|-|,|\]|\[',t)
         for s in splits:
             stripped.append(s)
     punc = removeEndingPunct(stripped,printDetail)
@@ -52,14 +52,56 @@ def preprocessingCodeElementsList(res):
 
     lower = [i.lower() for i in underScore]
 
-    stopped_tokens = [i for i in lower if not i in en_stop]
+    # stopped_tokens = [i for i in lower if not i in en_stop]
 
-    stem2 = stem(stopped_tokens,printDetail)
+    stem2 = stem(lower,printDetail)
     if printDetail:
         print('=====CLEANED=========')
         print(stem2)
 
     return stem2
+
+def preprocessingForSimi(res):
+    printDetail = False
+    if isinstance(res, list):
+        merged = str()
+        for r in res:
+            if isinstance(r, list):
+                merged = merged + ' ' + ' '.join(r)
+            else:
+                merged = merged +' ' + r
+    else:
+        merged=res
+
+    res = html.unescape(merged)
+
+    tokens = getTokens(res,printDetail)
+
+    stripped = []
+    for t in tokens:
+        splits = re.split('\.|\(|\)|:|>|<|:|=|/|\\\\|\'|-|,|\]|\[',t)
+        for s in splits:
+            stripped.append(s)
+    punc = removeEndingPunct(stripped,printDetail)
+
+    non_empty = [i for i in punc if i != '']
+
+    stripped = removeEndingPunct(non_empty,printDetail)
+
+    camelCase = handleCamelCase(stripped,printDetail,False)
+
+    underScore = handleUnderScore(camelCase,printDetail,False)
+
+    # lower = [i.lower() for i in underScore]
+
+    # stopped_tokens = [i for i in lower if not i in en_stop]
+
+    # stem2 = stem(lower,printDetail)
+    # if printDetail:
+    #     print('=====CLEANED=========')
+    #     print(stem2)
+
+    return underScore
 
 # def preprocessingNL(res):
 #

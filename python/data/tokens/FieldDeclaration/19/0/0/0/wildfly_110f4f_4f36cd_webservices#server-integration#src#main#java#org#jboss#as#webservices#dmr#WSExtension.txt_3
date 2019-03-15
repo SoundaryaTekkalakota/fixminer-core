@@ -1,0 +1,20 @@
+INS FieldDeclaration@@static, final, AttributeDefinition, [ENDPOINT_TYPE=new SimpleAttributeDefinitionBuilder(Constants.ENDPOINT_TYPE,ModelType.STRING,true).setStorageRuntime().build()] @TO@ TypeDeclaration@@[public, final]WSExtension, [Extension] @AT@ 5231 @LENGTH@ 202
+---INS Modifier@@static @TO@ FieldDeclaration@@static, final, AttributeDefinition, [ENDPOINT_TYPE=new SimpleAttributeDefinitionBuilder(Constants.ENDPOINT_TYPE,ModelType.STRING,true).setStorageRuntime().build()] @AT@ 5231 @LENGTH@ 6
+---INS Modifier@@final @TO@ FieldDeclaration@@static, final, AttributeDefinition, [ENDPOINT_TYPE=new SimpleAttributeDefinitionBuilder(Constants.ENDPOINT_TYPE,ModelType.STRING,true).setStorageRuntime().build()] @AT@ 5238 @LENGTH@ 5
+---INS SimpleType@@AttributeDefinition @TO@ FieldDeclaration@@static, final, AttributeDefinition, [ENDPOINT_TYPE=new SimpleAttributeDefinitionBuilder(Constants.ENDPOINT_TYPE,ModelType.STRING,true).setStorageRuntime().build()] @AT@ 5244 @LENGTH@ 19
+---INS VariableDeclarationFragment@@ENDPOINT_TYPE=new SimpleAttributeDefinitionBuilder(Constants.ENDPOINT_TYPE,ModelType.STRING,true).setStorageRuntime().build() @TO@ FieldDeclaration@@static, final, AttributeDefinition, [ENDPOINT_TYPE=new SimpleAttributeDefinitionBuilder(Constants.ENDPOINT_TYPE,ModelType.STRING,true).setStorageRuntime().build()] @AT@ 5264 @LENGTH@ 168
+------INS SimpleName@@ENDPOINT_TYPE @TO@ VariableDeclarationFragment@@ENDPOINT_TYPE=new SimpleAttributeDefinitionBuilder(Constants.ENDPOINT_TYPE,ModelType.STRING,true).setStorageRuntime().build() @AT@ 5264 @LENGTH@ 13
+------INS MethodInvocation@@new SimpleAttributeDefinitionBuilder(Constants.ENDPOINT_TYPE,ModelType.STRING,true).setStorageRuntime().build() @TO@ VariableDeclarationFragment@@ENDPOINT_TYPE=new SimpleAttributeDefinitionBuilder(Constants.ENDPOINT_TYPE,ModelType.STRING,true).setStorageRuntime().build() @AT@ 5280 @LENGTH@ 152
+---------INS ClassInstanceCreation@@SimpleAttributeDefinitionBuilder[Constants.ENDPOINT_TYPE, ModelType.STRING, true] @TO@ MethodInvocation@@new SimpleAttributeDefinitionBuilder(Constants.ENDPOINT_TYPE,ModelType.STRING,true).setStorageRuntime().build() @AT@ 5280 @LENGTH@ 98
+------------INS New@@new @TO@ ClassInstanceCreation@@SimpleAttributeDefinitionBuilder[Constants.ENDPOINT_TYPE, ModelType.STRING, true] @AT@ 5280 @LENGTH@ 3
+------------INS SimpleType@@SimpleAttributeDefinitionBuilder @TO@ ClassInstanceCreation@@SimpleAttributeDefinitionBuilder[Constants.ENDPOINT_TYPE, ModelType.STRING, true] @AT@ 5284 @LENGTH@ 32
+------------INS QualifiedName@@Constants.ENDPOINT_TYPE @TO@ ClassInstanceCreation@@SimpleAttributeDefinitionBuilder[Constants.ENDPOINT_TYPE, ModelType.STRING, true] @AT@ 5330 @LENGTH@ 23
+---------------INS SimpleName@@Constants @TO@ QualifiedName@@Constants.ENDPOINT_TYPE @AT@ 5330 @LENGTH@ 9
+---------------INS SimpleName@@ENDPOINT_TYPE @TO@ QualifiedName@@Constants.ENDPOINT_TYPE @AT@ 5340 @LENGTH@ 13
+------------INS QualifiedName@@ModelType.STRING @TO@ ClassInstanceCreation@@SimpleAttributeDefinitionBuilder[Constants.ENDPOINT_TYPE, ModelType.STRING, true] @AT@ 5355 @LENGTH@ 16
+---------------INS SimpleName@@ModelType @TO@ QualifiedName@@ModelType.STRING @AT@ 5355 @LENGTH@ 9
+---------------INS SimpleName@@STRING @TO@ QualifiedName@@ModelType.STRING @AT@ 5365 @LENGTH@ 6
+------------INS BooleanLiteral@@true @TO@ ClassInstanceCreation@@SimpleAttributeDefinitionBuilder[Constants.ENDPOINT_TYPE, ModelType.STRING, true] @AT@ 5373 @LENGTH@ 4
+---------INS MethodInvocation@@MethodName:setStorageRuntime:[] @TO@ MethodInvocation@@new SimpleAttributeDefinitionBuilder(Constants.ENDPOINT_TYPE,ModelType.STRING,true).setStorageRuntime().build() @AT@ 5280 @LENGTH@ 131
+---------INS SimpleName@@MethodName:build:[] @TO@ MethodInvocation@@new SimpleAttributeDefinitionBuilder(Constants.ENDPOINT_TYPE,ModelType.STRING,true).setStorageRuntime().build() @AT@ 5425 @LENGTH@ 7
+

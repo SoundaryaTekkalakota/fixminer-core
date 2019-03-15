@@ -1,0 +1,6 @@
+INS TypeDeclaration@@[public, static]DatePersistenceDelegate, PersistenceDelegate @TO@ TypeDeclaration@@[@SuppressWarnings("nls"), public, final]Utilities,  @AT@ 13825 @LENGTH@ 556
+---INS Modifier@@public @TO@ TypeDeclaration@@[public, static]DatePersistenceDelegate, PersistenceDelegate @AT@ 13825 @LENGTH@ 6
+---INS Modifier@@static @TO@ TypeDeclaration@@[public, static]DatePersistenceDelegate, PersistenceDelegate @AT@ 13832 @LENGTH@ 6
+---INS SimpleName@@ClassName:DatePersistenceDelegate @TO@ TypeDeclaration@@[public, static]DatePersistenceDelegate, PersistenceDelegate @AT@ 13845 @LENGTH@ 23
+---INS SimpleType@@PersistenceDelegate @TO@ TypeDeclaration@@[public, static]DatePersistenceDelegate, PersistenceDelegate @AT@ 13877 @LENGTH@ 19
+

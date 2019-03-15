@@ -1,0 +1,5 @@
+UPD IfStatement@@MethodInvocation:DEFAULT_VALUE.equals(lazyInit) @TO@ MethodInvocation:isDefaultValue(lazyInit) @AT@ 11583 @LENGTH@ 216
+---UPD MethodInvocation@@DEFAULT_VALUE.equals(lazyInit) @TO@ isDefaultValue(lazyInit) @AT@ 11587 @LENGTH@ 30
+------DEL SimpleName@@Name:DEFAULT_VALUE @AT@ 11587 @LENGTH@ 13
+------UPD SimpleName@@MethodName:equals:[lazyInit] @TO@ MethodName:isDefaultValue:[lazyInit] @AT@ 11601 @LENGTH@ 16
+

@@ -1,0 +1,8 @@
+INS IfStatement@@InfixExpression:list == null @TO@ MethodDeclaration@@public, List<?>, MethodName:getList, Object list,  @AT@ 12689 @LENGTH@ 48
+---INS InfixExpression@@list == null @TO@ IfStatement@@InfixExpression:list == null @AT@ 12693 @LENGTH@ 12
+------INS SimpleName@@list @TO@ InfixExpression@@list == null @AT@ 12693 @LENGTH@ 4
+------INS Operator@@== @TO@ InfixExpression@@list == null @AT@ 12697 @LENGTH@ 2
+------INS NullLiteral@@null @TO@ InfixExpression@@list == null @AT@ 12701 @LENGTH@ 4
+---INS ReturnStatement@@NullLiteral:null @TO@ IfStatement@@InfixExpression:list == null @AT@ 12717 @LENGTH@ 12
+------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 12724 @LENGTH@ 4
+

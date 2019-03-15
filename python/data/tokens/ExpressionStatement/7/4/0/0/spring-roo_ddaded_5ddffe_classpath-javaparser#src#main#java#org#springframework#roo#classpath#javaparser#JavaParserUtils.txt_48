@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(IllegalAccessException.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("IllegalAccessException") @AT@ 4230 @LENGTH@ 74
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(IllegalAccessException.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("IllegalAccessException") @AT@ 4230 @LENGTH@ 73
+------UPD SimpleName@@MethodName:add:[IllegalAccessException.class.getSimpleName()] @TO@ MethodName:add:["IllegalAccessException"] @AT@ 4254 @LENGTH@ 49
+---------INS StringLiteral@@"IllegalAccessException" @TO@ SimpleName@@MethodName:add:[IllegalAccessException.class.getSimpleName()] @AT@ 3848 @LENGTH@ 24
+---------DEL MethodInvocation@@IllegalAccessException.class.getSimpleName() @AT@ 4258 @LENGTH@ 44
+------------DEL TypeLiteral@@IllegalAccessException.class @AT@ 4258 @LENGTH@ 28
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 4287 @LENGTH@ 15
+

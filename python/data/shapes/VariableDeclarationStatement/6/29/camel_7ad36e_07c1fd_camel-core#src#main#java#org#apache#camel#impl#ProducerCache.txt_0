@@ -1,0 +1,6 @@
+VariableDeclarationStatement
+---PrimitiveType
+---SimpleType
+---VariableDeclarationFragment
+------SimpleName
+------BooleanLiteral

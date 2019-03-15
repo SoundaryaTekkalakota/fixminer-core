@@ -1,0 +1,6 @@
+ExpressionStatement
+---Assignment
+------CastExpression
+---------SimpleType
+---------SimpleName
+------SimpleName

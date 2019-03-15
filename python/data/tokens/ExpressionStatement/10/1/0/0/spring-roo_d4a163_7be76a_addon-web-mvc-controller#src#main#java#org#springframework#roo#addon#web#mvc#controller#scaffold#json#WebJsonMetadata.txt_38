@@ -1,0 +1,11 @@
+INS ExpressionStatement@@MethodInvocation:bodyBuilder.appendFormalLine(httpHeadersShortName + " headers = new " + httpHeadersShortName+ "();") @TO@ MethodDeclaration@@private, MethodMetadata, MethodName:getFinderJsonMethod, FinderMetadataDetails finderDetails,  @AT@ 35494 @LENGTH@ 102
+---INS MethodInvocation@@bodyBuilder.appendFormalLine(httpHeadersShortName + " headers = new " + httpHeadersShortName+ "();") @TO@ ExpressionStatement@@MethodInvocation:bodyBuilder.appendFormalLine(httpHeadersShortName + " headers = new " + httpHeadersShortName+ "();") @AT@ 35494 @LENGTH@ 101
+------INS SimpleName@@Name:bodyBuilder @TO@ MethodInvocation@@bodyBuilder.appendFormalLine(httpHeadersShortName + " headers = new " + httpHeadersShortName+ "();") @AT@ 35494 @LENGTH@ 11
+------INS SimpleName@@MethodName:appendFormalLine:[httpHeadersShortName + " headers = new " + httpHeadersShortName+ "();"] @TO@ MethodInvocation@@bodyBuilder.appendFormalLine(httpHeadersShortName + " headers = new " + httpHeadersShortName+ "();") @AT@ 35506 @LENGTH@ 89
+---------INS InfixExpression@@httpHeadersShortName + " headers = new " + httpHeadersShortName+ "();" @TO@ SimpleName@@MethodName:appendFormalLine:[httpHeadersShortName + " headers = new " + httpHeadersShortName+ "();"] @AT@ 35523 @LENGTH@ 71
+------------INS SimpleName@@httpHeadersShortName @TO@ InfixExpression@@httpHeadersShortName + " headers = new " + httpHeadersShortName+ "();" @AT@ 35523 @LENGTH@ 20
+------------INS Operator@@+ @TO@ InfixExpression@@httpHeadersShortName + " headers = new " + httpHeadersShortName+ "();" @AT@ 35543 @LENGTH@ 1
+------------INS StringLiteral@@" headers = new " @TO@ InfixExpression@@httpHeadersShortName + " headers = new " + httpHeadersShortName+ "();" @AT@ 35546 @LENGTH@ 17
+------------INS SimpleName@@httpHeadersShortName @TO@ InfixExpression@@httpHeadersShortName + " headers = new " + httpHeadersShortName+ "();" @AT@ 35566 @LENGTH@ 20
+------------INS StringLiteral@@"();" @TO@ InfixExpression@@httpHeadersShortName + " headers = new " + httpHeadersShortName+ "();" @AT@ 35589 @LENGTH@ 5
+

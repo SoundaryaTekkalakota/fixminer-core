@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, boolean, [unwrapping] @TO@ private, final, boolean, [unwrapping] @AT@ 20459 @LENGTH@ 27
+---INS Modifier@@final @TO@ FieldDeclaration@@private, boolean, [unwrapping] @AT@ 20120 @LENGTH@ 5
+

@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(VirtualMachineError.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("VirtualMachineError") @AT@ 7070 @LENGTH@ 71
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(VirtualMachineError.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("VirtualMachineError") @AT@ 7070 @LENGTH@ 70
+------UPD SimpleName@@MethodName:add:[VirtualMachineError.class.getSimpleName()] @TO@ MethodName:add:["VirtualMachineError"] @AT@ 7094 @LENGTH@ 46
+---------INS StringLiteral@@"VirtualMachineError" @TO@ SimpleName@@MethodName:add:[VirtualMachineError.class.getSimpleName()] @AT@ 5986 @LENGTH@ 21
+---------DEL MethodInvocation@@VirtualMachineError.class.getSimpleName() @AT@ 7098 @LENGTH@ 41
+------------DEL TypeLiteral@@VirtualMachineError.class @AT@ 7098 @LENGTH@ 25
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 7124 @LENGTH@ 15
+

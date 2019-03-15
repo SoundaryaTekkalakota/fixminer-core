@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, transient, CompressionCodec, [snappyCodec] @TO@ private, volatile, transient, CompressionCodec, [snappyCodec] @AT@ 5415 @LENGTH@ 47
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, transient, CompressionCodec, [snappyCodec] @AT@ 5991 @LENGTH@ 8
+

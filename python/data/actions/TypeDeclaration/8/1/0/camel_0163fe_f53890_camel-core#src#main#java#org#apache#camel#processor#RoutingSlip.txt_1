@@ -1,0 +1,8 @@
+ INS TypeDeclaration
+--- INS Modifier
+--- INS Modifier
+--- INS SimpleName
+--- INS ParameterizedType
+------ INS SimpleType
+------ INS SimpleType
+------ INS SimpleType

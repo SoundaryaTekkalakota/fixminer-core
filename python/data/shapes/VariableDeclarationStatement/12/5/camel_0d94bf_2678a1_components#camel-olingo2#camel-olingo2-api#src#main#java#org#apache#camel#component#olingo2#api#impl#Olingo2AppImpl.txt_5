@@ -1,0 +1,12 @@
+VariableDeclarationStatement
+---VariableDeclarationFragment
+------MethodInvocation
+---------MethodInvocation
+------------SimpleName
+------------ClassInstanceCreation
+---------------New
+---------------SimpleType
+---------------InfixExpression
+------------------SimpleName
+------------------Operator
+------------------SimpleName

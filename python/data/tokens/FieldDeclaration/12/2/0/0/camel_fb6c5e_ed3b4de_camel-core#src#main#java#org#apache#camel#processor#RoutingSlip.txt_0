@@ -1,0 +1,13 @@
+INS FieldDeclaration@@private, static, final, transient, Log, [LOG=LogFactory.getLog(RoutingSlip.class)] @TO@ TypeDeclaration@@[public]RoutingSlip, ServiceSupport[Processor, Traceable] @AT@ 1778 @LENGTH@ 78
+---INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, transient, Log, [LOG=LogFactory.getLog(RoutingSlip.class)] @AT@ 1778 @LENGTH@ 7
+---INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, transient, Log, [LOG=LogFactory.getLog(RoutingSlip.class)] @AT@ 1786 @LENGTH@ 6
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, transient, Log, [LOG=LogFactory.getLog(RoutingSlip.class)] @AT@ 1793 @LENGTH@ 5
+---INS Modifier@@transient @TO@ FieldDeclaration@@private, static, final, transient, Log, [LOG=LogFactory.getLog(RoutingSlip.class)] @AT@ 1799 @LENGTH@ 9
+---INS SimpleType@@Log @TO@ FieldDeclaration@@private, static, final, transient, Log, [LOG=LogFactory.getLog(RoutingSlip.class)] @AT@ 1809 @LENGTH@ 3
+---INS VariableDeclarationFragment@@LOG=LogFactory.getLog(RoutingSlip.class) @TO@ FieldDeclaration@@private, static, final, transient, Log, [LOG=LogFactory.getLog(RoutingSlip.class)] @AT@ 1813 @LENGTH@ 42
+------INS SimpleName@@LOG @TO@ VariableDeclarationFragment@@LOG=LogFactory.getLog(RoutingSlip.class) @AT@ 1813 @LENGTH@ 3
+------INS MethodInvocation@@LogFactory.getLog(RoutingSlip.class) @TO@ VariableDeclarationFragment@@LOG=LogFactory.getLog(RoutingSlip.class) @AT@ 1819 @LENGTH@ 36
+---------INS SimpleName@@Name:LogFactory @TO@ MethodInvocation@@LogFactory.getLog(RoutingSlip.class) @AT@ 1819 @LENGTH@ 10
+---------INS SimpleName@@MethodName:getLog:[RoutingSlip.class] @TO@ MethodInvocation@@LogFactory.getLog(RoutingSlip.class) @AT@ 1830 @LENGTH@ 25
+------------INS TypeLiteral@@RoutingSlip.class @TO@ SimpleName@@MethodName:getLog:[RoutingSlip.class] @AT@ 1837 @LENGTH@ 17
+

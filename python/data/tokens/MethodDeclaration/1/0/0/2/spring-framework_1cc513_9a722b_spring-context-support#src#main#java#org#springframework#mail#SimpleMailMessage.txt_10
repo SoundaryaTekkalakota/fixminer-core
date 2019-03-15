@@ -1,0 +1,2 @@
+MOV MethodDeclaration@@public, String, MethodName:toString,  @TO@ TypeDeclaration@@[@SuppressWarnings("serial"), public]SimpleMailMessage, [MailMessage, Serializable] @AT@ 4850 @LENGTH@ 660
+

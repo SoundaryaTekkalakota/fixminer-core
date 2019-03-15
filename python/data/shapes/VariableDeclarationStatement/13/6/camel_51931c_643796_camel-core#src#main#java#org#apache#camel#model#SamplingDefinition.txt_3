@@ -1,0 +1,13 @@
+VariableDeclarationStatement
+---SimpleType
+---VariableDeclarationFragment
+------SimpleName
+------ConditionalExpression
+---------InfixExpression
+------------MethodInvocation
+------------Operator
+------------NullLiteral
+---------MethodInvocation
+---------QualifiedName
+------------SimpleName
+------------SimpleName

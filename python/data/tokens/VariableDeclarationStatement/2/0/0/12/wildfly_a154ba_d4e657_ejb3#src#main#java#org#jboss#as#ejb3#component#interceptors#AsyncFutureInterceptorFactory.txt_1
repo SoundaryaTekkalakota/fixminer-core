@@ -1,0 +1,59 @@
+UPD VariableDeclarationStatement@@final AsyncInvocationTask task=new AsyncInvocationTask(flag){
+  @Override protected Object runInvocation() throws Exception {
+    setSecurityContextOnAssociation(clonedSecurityContext);
+    try {
+      return asyncInterceptorContext.proceed();
+    }
+  finally {
+      clearSecurityContextOnAssociation();
+    }
+  }
+}
+; @TO@ final AsyncInvocationTask task=new AsyncInvocationTask(flag){
+  @Override protected Object runInvocation() throws Exception {
+    setSecurityContextOnAssociation(clonedSecurityContext);
+    setConnection(remoteConnection);
+    try {
+      return asyncInterceptorContext.proceed();
+    }
+  finally {
+      try {
+        clearSecurityContextOnAssociation();
+      }
+  finally {
+        clearConnection();
+      }
+    }
+  }
+}
+; @AT@ 4665 @LENGTH@ 514
+---UPD VariableDeclarationFragment@@task=new AsyncInvocationTask(flag){
+  @Override protected Object runInvocation() throws Exception {
+    setSecurityContextOnAssociation(clonedSecurityContext);
+    try {
+      return asyncInterceptorContext.proceed();
+    }
+  finally {
+      clearSecurityContextOnAssociation();
+    }
+  }
+}
+ @TO@ task=new AsyncInvocationTask(flag){
+  @Override protected Object runInvocation() throws Exception {
+    setSecurityContextOnAssociation(clonedSecurityContext);
+    setConnection(remoteConnection);
+    try {
+      return asyncInterceptorContext.proceed();
+    }
+  finally {
+      try {
+        clearSecurityContextOnAssociation();
+      }
+  finally {
+        clearConnection();
+      }
+    }
+  }
+}
+ @AT@ 4691 @LENGTH@ 487
+

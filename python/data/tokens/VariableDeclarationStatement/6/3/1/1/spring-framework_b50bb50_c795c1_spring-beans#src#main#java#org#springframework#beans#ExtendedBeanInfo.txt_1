@@ -1,0 +1,7 @@
+UPD VariableDeclarationStatement@@Method readMethod=pd.getReadMethod(); @TO@ Method readMethod=readMethodFor(pd); @AT@ 3425 @LENGTH@ 39
+---UPD VariableDeclarationFragment@@readMethod=pd.getReadMethod() @TO@ readMethod=readMethodFor(pd) @AT@ 3432 @LENGTH@ 31
+------UPD MethodInvocation@@pd.getReadMethod() @TO@ readMethodFor(pd) @AT@ 3445 @LENGTH@ 18
+---------DEL SimpleName@@Name:pd @AT@ 3445 @LENGTH@ 2
+---------UPD SimpleName@@MethodName:getReadMethod:[] @TO@ MethodName:readMethodFor:[pd] @AT@ 3448 @LENGTH@ 15
+------------INS SimpleName@@pd @TO@ SimpleName@@MethodName:getReadMethod:[] @AT@ 3528 @LENGTH@ 2
+

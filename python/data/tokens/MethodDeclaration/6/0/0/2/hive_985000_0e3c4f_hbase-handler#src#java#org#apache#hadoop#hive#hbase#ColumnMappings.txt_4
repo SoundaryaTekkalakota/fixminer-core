@@ -1,0 +1,7 @@
+INS MethodDeclaration@@public, String, MethodName:getQualifierName,  @TO@ TypeDeclaration@@[static]ColumnMapping,  @AT@ 12699 @LENGTH@ 68
+---INS Modifier@@public @TO@ MethodDeclaration@@public, String, MethodName:getQualifierName,  @AT@ 12699 @LENGTH@ 6
+---INS SimpleType@@String @TO@ MethodDeclaration@@public, String, MethodName:getQualifierName,  @AT@ 12706 @LENGTH@ 6
+---INS SimpleName@@MethodName:getQualifierName @TO@ MethodDeclaration@@public, String, MethodName:getQualifierName,  @AT@ 12713 @LENGTH@ 16
+---INS ReturnStatement@@SimpleName:qualifierName @TO@ MethodDeclaration@@public, String, MethodName:getQualifierName,  @AT@ 12740 @LENGTH@ 21
+------INS SimpleName@@qualifierName @TO@ ReturnStatement@@SimpleName:qualifierName @AT@ 12747 @LENGTH@ 13
+

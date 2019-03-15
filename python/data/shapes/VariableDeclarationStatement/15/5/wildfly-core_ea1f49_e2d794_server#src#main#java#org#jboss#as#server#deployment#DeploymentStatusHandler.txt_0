@@ -1,0 +1,15 @@
+VariableDeclarationStatement
+---VariableDeclarationFragment
+------MethodInvocation
+---------MethodInvocation
+------------QualifiedName
+---------------SimpleName
+---------------SimpleName
+---------SimpleName
+---------SimpleName
+------MethodInvocation
+---------QualifiedName
+---------SimpleName
+------------MethodInvocation
+---------------SimpleName
+------------------QualifiedName

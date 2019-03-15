@@ -1,0 +1,54 @@
+INS MethodDeclaration@@public, ProjectOperations, MethodName:getProjectOperations,  @TO@ TypeDeclaration@@[@Component, @Service, public]TypeLocationServiceImpl, [TypeLocationService] @AT@ 33428 @LENGTH@ 654
+---INS Modifier@@public @TO@ MethodDeclaration@@public, ProjectOperations, MethodName:getProjectOperations,  @AT@ 33428 @LENGTH@ 6
+---INS SimpleType@@ProjectOperations @TO@ MethodDeclaration@@public, ProjectOperations, MethodName:getProjectOperations,  @AT@ 33435 @LENGTH@ 17
+---INS SimpleName@@MethodName:getProjectOperations @TO@ MethodDeclaration@@public, ProjectOperations, MethodName:getProjectOperations,  @AT@ 33453 @LENGTH@ 20
+---INS IfStatement@@InfixExpression:projectOperations == null @TO@ MethodDeclaration@@public, ProjectOperations, MethodName:getProjectOperations,  @AT@ 33482 @LENGTH@ 594
+------INS InfixExpression@@projectOperations == null @TO@ IfStatement@@InfixExpression:projectOperations == null @AT@ 33485 @LENGTH@ 25
+---------INS SimpleName@@projectOperations @TO@ InfixExpression@@projectOperations == null @AT@ 33485 @LENGTH@ 17
+---------INS Operator@@== @TO@ InfixExpression@@projectOperations == null @AT@ 33502 @LENGTH@ 2
+---------INS NullLiteral@@null @TO@ InfixExpression@@projectOperations == null @AT@ 33506 @LENGTH@ 4
+------INS TryStatement@@try:[] @TO@ IfStatement@@InfixExpression:projectOperations == null @AT@ 33586 @LENGTH@ 439
+---------INS VariableDeclarationStatement@@ServiceReference<?>[] references=context.getAllServiceReferences(ProjectOperations.class.getName(),null); @TO@ TryStatement@@try:[] @AT@ 33599 @LENGTH@ 108
+------------INS ArrayType@@ServiceReference<?>[] @TO@ VariableDeclarationStatement@@ServiceReference<?>[] references=context.getAllServiceReferences(ProjectOperations.class.getName(),null); @AT@ 33599 @LENGTH@ 21
+---------------INS ParameterizedType@@ServiceReference<?> @TO@ ArrayType@@ServiceReference<?>[] @AT@ 33599 @LENGTH@ 19
+------------------INS SimpleType@@ServiceReference @TO@ ParameterizedType@@ServiceReference<?> @AT@ 33599 @LENGTH@ 16
+------------------INS WildcardType@@? @TO@ ParameterizedType@@ServiceReference<?> @AT@ 33616 @LENGTH@ 1
+------------INS VariableDeclarationFragment@@references=context.getAllServiceReferences(ProjectOperations.class.getName(),null) @TO@ VariableDeclarationStatement@@ServiceReference<?>[] references=context.getAllServiceReferences(ProjectOperations.class.getName(),null); @AT@ 33621 @LENGTH@ 85
+---------------INS SimpleName@@references @TO@ VariableDeclarationFragment@@references=context.getAllServiceReferences(ProjectOperations.class.getName(),null) @AT@ 33621 @LENGTH@ 10
+---------------INS MethodInvocation@@context.getAllServiceReferences(ProjectOperations.class.getName(),null) @TO@ VariableDeclarationFragment@@references=context.getAllServiceReferences(ProjectOperations.class.getName(),null) @AT@ 33634 @LENGTH@ 72
+------------------INS SimpleName@@Name:context @TO@ MethodInvocation@@context.getAllServiceReferences(ProjectOperations.class.getName(),null) @AT@ 33634 @LENGTH@ 7
+------------------INS SimpleName@@MethodName:getAllServiceReferences:[ProjectOperations.class.getName(), null] @TO@ MethodInvocation@@context.getAllServiceReferences(ProjectOperations.class.getName(),null) @AT@ 33642 @LENGTH@ 64
+---------------------INS MethodInvocation@@ProjectOperations.class.getName() @TO@ SimpleName@@MethodName:getAllServiceReferences:[ProjectOperations.class.getName(), null] @AT@ 33666 @LENGTH@ 33
+------------------------INS TypeLiteral@@ProjectOperations.class @TO@ MethodInvocation@@ProjectOperations.class.getName() @AT@ 33666 @LENGTH@ 23
+------------------------INS SimpleName@@MethodName:getName:[] @TO@ MethodInvocation@@ProjectOperations.class.getName() @AT@ 33690 @LENGTH@ 9
+---------------------INS NullLiteral@@null @TO@ SimpleName@@MethodName:getAllServiceReferences:[ProjectOperations.class.getName(), null] @AT@ 33701 @LENGTH@ 4
+---------INS EnhancedForStatement@@ServiceReference<?> ref, SimpleName:references @TO@ TryStatement@@try:[] @AT@ 33723 @LENGTH@ 111
+------------INS SingleVariableDeclaration@@ServiceReference<?> ref @TO@ EnhancedForStatement@@ServiceReference<?> ref, SimpleName:references @AT@ 33727 @LENGTH@ 23
+---------------INS ParameterizedType@@ServiceReference<?> @TO@ SingleVariableDeclaration@@ServiceReference<?> ref @AT@ 33727 @LENGTH@ 19
+------------------INS SimpleType@@ServiceReference @TO@ ParameterizedType@@ServiceReference<?> @AT@ 33727 @LENGTH@ 16
+------------------INS WildcardType@@? @TO@ ParameterizedType@@ServiceReference<?> @AT@ 33744 @LENGTH@ 1
+---------------INS SimpleName@@ref @TO@ SingleVariableDeclaration@@ServiceReference<?> ref @AT@ 33747 @LENGTH@ 3
+------------INS SimpleName@@references @TO@ EnhancedForStatement@@ServiceReference<?> ref, SimpleName:references @AT@ 33753 @LENGTH@ 10
+------------INS ReturnStatement@@CastExpression:(ProjectOperations)context.getService(ref) @TO@ EnhancedForStatement@@ServiceReference<?> ref, SimpleName:references @AT@ 33774 @LENGTH@ 51
+---------------INS CastExpression@@(ProjectOperations)context.getService(ref) @TO@ ReturnStatement@@CastExpression:(ProjectOperations)context.getService(ref) @AT@ 33781 @LENGTH@ 43
+------------------INS SimpleType@@ProjectOperations @TO@ CastExpression@@(ProjectOperations)context.getService(ref) @AT@ 33782 @LENGTH@ 17
+------------------INS MethodInvocation@@context.getService(ref) @TO@ CastExpression@@(ProjectOperations)context.getService(ref) @AT@ 33801 @LENGTH@ 23
+---------------------INS SimpleName@@Name:context @TO@ MethodInvocation@@context.getService(ref) @AT@ 33801 @LENGTH@ 7
+---------------------INS SimpleName@@MethodName:getService:[ref] @TO@ MethodInvocation@@context.getService(ref) @AT@ 33809 @LENGTH@ 15
+------------------------INS SimpleName@@ref @TO@ SimpleName@@MethodName:getService:[ref] @AT@ 33820 @LENGTH@ 3
+---------INS ReturnStatement@@NullLiteral:null @TO@ TryStatement@@try:[] @AT@ 33850 @LENGTH@ 12
+------------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 33857 @LENGTH@ 4
+---------INS CatchClause@@InvalidSyntaxException e @TO@ TryStatement@@try:[] @AT@ 33879 @LENGTH@ 146
+------------INS SingleVariableDeclaration@@InvalidSyntaxException e @TO@ CatchClause@@InvalidSyntaxException e @AT@ 33886 @LENGTH@ 24
+---------------INS SimpleType@@InvalidSyntaxException @TO@ SingleVariableDeclaration@@InvalidSyntaxException e @AT@ 33886 @LENGTH@ 22
+---------------INS SimpleName@@e @TO@ SingleVariableDeclaration@@InvalidSyntaxException e @AT@ 33909 @LENGTH@ 1
+------------INS ExpressionStatement@@MethodInvocation:LOGGER.warning("Cannot load ProjectOperations on TypeLocationServiceImpl.") @TO@ CatchClause@@InvalidSyntaxException e @AT@ 33921 @LENGTH@ 76
+---------------INS MethodInvocation@@LOGGER.warning("Cannot load ProjectOperations on TypeLocationServiceImpl.") @TO@ ExpressionStatement@@MethodInvocation:LOGGER.warning("Cannot load ProjectOperations on TypeLocationServiceImpl.") @AT@ 33921 @LENGTH@ 75
+------------------INS SimpleName@@Name:LOGGER @TO@ MethodInvocation@@LOGGER.warning("Cannot load ProjectOperations on TypeLocationServiceImpl.") @AT@ 33921 @LENGTH@ 6
+------------------INS SimpleName@@MethodName:warning:["Cannot load ProjectOperations on TypeLocationServiceImpl."] @TO@ MethodInvocation@@LOGGER.warning("Cannot load ProjectOperations on TypeLocationServiceImpl.") @AT@ 33928 @LENGTH@ 68
+---------------------INS StringLiteral@@"Cannot load ProjectOperations on TypeLocationServiceImpl." @TO@ SimpleName@@MethodName:warning:["Cannot load ProjectOperations on TypeLocationServiceImpl."] @AT@ 33936 @LENGTH@ 59
+------------INS ReturnStatement@@NullLiteral:null @TO@ CatchClause@@InvalidSyntaxException e @AT@ 34005 @LENGTH@ 12
+---------------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 34012 @LENGTH@ 4
+------INS ReturnStatement@@SimpleName:projectOperations @TO@ IfStatement@@InfixExpression:projectOperations == null @AT@ 34044 @LENGTH@ 25
+---------INS SimpleName@@projectOperations @TO@ ReturnStatement@@SimpleName:projectOperations @AT@ 34051 @LENGTH@ 17
+

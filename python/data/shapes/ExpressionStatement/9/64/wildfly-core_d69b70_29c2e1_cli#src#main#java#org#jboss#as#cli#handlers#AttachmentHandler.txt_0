@@ -1,0 +1,9 @@
+ExpressionStatement
+---Assignment
+------SimpleName
+------Operator
+------MethodInvocation
+---------SimpleName
+---------SimpleName
+------------NumberLiteral
+------------SimpleName

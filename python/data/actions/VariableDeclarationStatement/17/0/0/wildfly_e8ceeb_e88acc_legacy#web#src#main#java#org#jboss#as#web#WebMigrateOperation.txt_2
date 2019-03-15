@@ -1,0 +1,17 @@
+ INS VariableDeclarationStatement
+--- INS Modifier
+--- INS SimpleType
+--- INS VariableDeclarationFragment
+------ INS SimpleName
+------ INS MethodInvocation
+--------- INS SimpleName
+------------ INS QualifiedName
+--------------- INS SimpleName
+--------------- INS SimpleName
+------------ INS SimpleName
+------------ INS MethodInvocation
+--------------- INS SimpleName
+------------------ INS MethodInvocation
+--------------------- INS QualifiedName
+--------------------- INS MethodInvocation
+--------------------- INS SimpleName

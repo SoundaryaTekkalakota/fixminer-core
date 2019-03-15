@@ -1,0 +1,7 @@
+FieldDeclaration
+---VariableDeclarationFragment
+------ArrayInitializer
+---------MethodInvocation
+------------SimpleName
+------------SimpleName
+---------------StringLiteral

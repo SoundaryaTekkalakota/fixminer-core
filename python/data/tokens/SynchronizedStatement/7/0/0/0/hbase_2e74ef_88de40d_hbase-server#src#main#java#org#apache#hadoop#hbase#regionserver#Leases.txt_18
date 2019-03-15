@@ -1,0 +1,8 @@
+DEL SynchronizedStatement@@SimpleName:leaseQueue @AT@ 6251 @LENGTH@ 519
+---DEL SimpleName@@leaseQueue @AT@ 6265 @LENGTH@ 10
+---DEL ExpressionStatement@@MethodInvocation:leaseQueue.add(lease) @AT@ 6742 @LENGTH@ 22
+------DEL MethodInvocation@@leaseQueue.add(lease) @AT@ 6742 @LENGTH@ 21
+---------DEL SimpleName@@Name:leaseQueue @AT@ 6742 @LENGTH@ 10
+---------DEL SimpleName@@MethodName:add:[lease] @AT@ 6753 @LENGTH@ 10
+------------DEL SimpleName@@lease @AT@ 6757 @LENGTH@ 5
+

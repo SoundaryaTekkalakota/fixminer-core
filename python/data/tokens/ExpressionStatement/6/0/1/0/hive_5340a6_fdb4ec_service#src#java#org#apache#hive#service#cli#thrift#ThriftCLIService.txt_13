@@ -1,0 +1,7 @@
+UPD ExpressionStatement@@MethodInvocation:e.printStackTrace() @TO@ MethodInvocation:LOG.warn("Error canceling operation: ",e) @AT@ 11923 @LENGTH@ 20
+---UPD MethodInvocation@@e.printStackTrace() @TO@ LOG.warn("Error canceling operation: ",e) @AT@ 11923 @LENGTH@ 19
+------UPD SimpleName@@Name:e @TO@ Name:LOG @AT@ 11923 @LENGTH@ 1
+------UPD SimpleName@@MethodName:printStackTrace:[] @TO@ MethodName:warn:["Error canceling operation: ", e] @AT@ 11925 @LENGTH@ 17
+---------INS StringLiteral@@"Error canceling operation: " @TO@ SimpleName@@MethodName:printStackTrace:[] @AT@ 12617 @LENGTH@ 29
+---------INS SimpleName@@e @TO@ SimpleName@@MethodName:printStackTrace:[] @AT@ 12648 @LENGTH@ 1
+

@@ -1,0 +1,7 @@
+VariableDeclarationStatement
+---VariableDeclarationFragment
+------ArrayCreation
+---------ArrayInitializer
+------------ArrayInitializer
+---------------StringLiteral
+---------------StringLiteral

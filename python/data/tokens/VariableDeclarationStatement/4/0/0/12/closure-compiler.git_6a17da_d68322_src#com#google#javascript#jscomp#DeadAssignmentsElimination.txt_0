@@ -1,0 +1,5 @@
+UPD VariableDeclarationStatement@@VariableLiveness state=readVariableBeforeKilling(sibling,variable); @TO@ VariableLiveness state=isVariableReadBeforeKill(sibling,variable); @AT@ 10414 @LENGTH@ 70
+---UPD VariableDeclarationFragment@@state=readVariableBeforeKilling(sibling,variable) @TO@ state=isVariableReadBeforeKill(sibling,variable) @AT@ 10431 @LENGTH@ 52
+------UPD MethodInvocation@@readVariableBeforeKilling(sibling,variable) @TO@ isVariableReadBeforeKill(sibling,variable) @AT@ 10439 @LENGTH@ 44
+---------UPD SimpleName@@MethodName:readVariableBeforeKilling:[sibling, variable] @TO@ MethodName:isVariableReadBeforeKill:[sibling, variable] @AT@ 10439 @LENGTH@ 44
+

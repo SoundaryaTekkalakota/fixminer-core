@@ -1,0 +1,9 @@
+UPD ReturnStatement@@MethodInvocation:LocalDateTimeToDateConverter.INSTANCE.convert(date) @TO@ ConditionalExpression:date == null ? null : LocalDateTimeToDateConverter.INSTANCE.convert(date) @AT@ 3315 @LENGTH@ 59
+---INS ConditionalExpression@@date == null ? null : LocalDateTimeToDateConverter.INSTANCE.convert(date) @TO@ ReturnStatement@@MethodInvocation:LocalDateTimeToDateConverter.INSTANCE.convert(date) @AT@ 3410 @LENGTH@ 73
+------MOV MethodInvocation@@LocalDateTimeToDateConverter.INSTANCE.convert(date) @TO@ ConditionalExpression@@date == null ? null : LocalDateTimeToDateConverter.INSTANCE.convert(date) @AT@ 3322 @LENGTH@ 51
+------INS InfixExpression@@date == null @TO@ ConditionalExpression@@date == null ? null : LocalDateTimeToDateConverter.INSTANCE.convert(date) @AT@ 3410 @LENGTH@ 12
+---------INS SimpleName@@date @TO@ InfixExpression@@date == null @AT@ 3410 @LENGTH@ 4
+---------INS Operator@@== @TO@ InfixExpression@@date == null @AT@ 3414 @LENGTH@ 2
+---------INS NullLiteral@@null @TO@ InfixExpression@@date == null @AT@ 3418 @LENGTH@ 4
+------INS NullLiteral@@null @TO@ ConditionalExpression@@date == null ? null : LocalDateTimeToDateConverter.INSTANCE.convert(date) @AT@ 3425 @LENGTH@ 4
+

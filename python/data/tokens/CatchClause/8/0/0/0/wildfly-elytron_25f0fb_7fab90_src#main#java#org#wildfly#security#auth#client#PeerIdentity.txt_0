@@ -1,0 +1,9 @@
+INS CatchClause@@RuntimeException|PrivilegedActionException e @TO@ TryStatement@@try:[] @AT@ 5452 @LENGTH@ 87
+---INS SingleVariableDeclaration@@RuntimeException|PrivilegedActionException e @TO@ CatchClause@@RuntimeException|PrivilegedActionException e @AT@ 5459 @LENGTH@ 46
+------INS UnionType@@RuntimeException|PrivilegedActionException @TO@ SingleVariableDeclaration@@RuntimeException|PrivilegedActionException e @AT@ 5459 @LENGTH@ 44
+---------INS SimpleType@@RuntimeException @TO@ UnionType@@RuntimeException|PrivilegedActionException @AT@ 5459 @LENGTH@ 16
+---------INS SimpleType@@PrivilegedActionException @TO@ UnionType@@RuntimeException|PrivilegedActionException @AT@ 5478 @LENGTH@ 25
+------INS SimpleName@@e @TO@ SingleVariableDeclaration@@RuntimeException|PrivilegedActionException e @AT@ 5504 @LENGTH@ 1
+---INS ThrowStatement@@SimpleName:e @TO@ CatchClause@@RuntimeException|PrivilegedActionException e @AT@ 5521 @LENGTH@ 8
+------INS SimpleName@@e @TO@ ThrowStatement@@SimpleName:e @AT@ 5527 @LENGTH@ 1
+

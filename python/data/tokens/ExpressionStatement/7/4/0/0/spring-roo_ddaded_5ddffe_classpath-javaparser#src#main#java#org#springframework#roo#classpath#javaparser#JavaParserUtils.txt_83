@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(UnknownError.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("UnknownError") @AT@ 6779 @LENGTH@ 64
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(UnknownError.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("UnknownError") @AT@ 6779 @LENGTH@ 63
+------UPD SimpleName@@MethodName:add:[UnknownError.class.getSimpleName()] @TO@ MethodName:add:["UnknownError"] @AT@ 6803 @LENGTH@ 39
+---------INS StringLiteral@@"UnknownError" @TO@ SimpleName@@MethodName:add:[UnknownError.class.getSimpleName()] @AT@ 5775 @LENGTH@ 14
+---------DEL MethodInvocation@@UnknownError.class.getSimpleName() @AT@ 6807 @LENGTH@ 34
+------------DEL TypeLiteral@@UnknownError.class @AT@ 6807 @LENGTH@ 18
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 6826 @LENGTH@ 15
+

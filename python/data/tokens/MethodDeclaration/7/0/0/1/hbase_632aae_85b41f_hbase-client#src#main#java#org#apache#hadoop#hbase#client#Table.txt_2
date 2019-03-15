@@ -1,0 +1,8 @@
+UPD MethodDeclaration@@void, MethodName:batch, final List<? extends Row> actions, final Object[] results, IOException, InterruptedException,  @TO@ default, void, MethodName:batch, final List<? extends Row> actions, final Object[] results, IOException, InterruptedException,  @AT@ 5532 @LENGTH@ 110
+---INS Modifier@@default @TO@ MethodDeclaration@@void, MethodName:batch, final List<? extends Row> actions, final Object[] results, IOException, InterruptedException,  @AT@ 5753 @LENGTH@ 7
+---INS ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @TO@ MethodDeclaration@@void, MethodName:batch, final List<? extends Row> actions, final Object[] results, IOException, InterruptedException,  @AT@ 5882 @LENGTH@ 60
+------INS ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @TO@ ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @AT@ 5888 @LENGTH@ 53
+---------INS New@@new @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 5888 @LENGTH@ 3
+---------INS SimpleType@@NotImplementedException @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 5892 @LENGTH@ 23
+---------INS StringLiteral@@"Add an implementation!" @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 5916 @LENGTH@ 24
+

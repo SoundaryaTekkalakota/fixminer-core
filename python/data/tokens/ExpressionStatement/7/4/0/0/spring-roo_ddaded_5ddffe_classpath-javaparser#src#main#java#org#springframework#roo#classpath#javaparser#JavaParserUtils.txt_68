@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(ClassCircularityError.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("ClassCircularityError") @AT@ 5698 @LENGTH@ 73
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(ClassCircularityError.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("ClassCircularityError") @AT@ 5698 @LENGTH@ 72
+------UPD SimpleName@@MethodName:add:[ClassCircularityError.class.getSimpleName()] @TO@ MethodName:add:["ClassCircularityError"] @AT@ 5722 @LENGTH@ 48
+---------INS StringLiteral@@"ClassCircularityError" @TO@ SimpleName@@MethodName:add:[ClassCircularityError.class.getSimpleName()] @AT@ 4994 @LENGTH@ 23
+---------DEL MethodInvocation@@ClassCircularityError.class.getSimpleName() @AT@ 5726 @LENGTH@ 43
+------------DEL TypeLiteral@@ClassCircularityError.class @AT@ 5726 @LENGTH@ 27
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 5754 @LENGTH@ 15
+

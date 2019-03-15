@@ -1,0 +1,33 @@
+INS MethodDeclaration@@public, LongWritable, MethodName:evaluate, LongWritable n,  @TO@ TypeDeclaration@@[@Description(name="round",value="_FUNC_(x[, d]) - round x to d decimal places",extended="Example:\n" + "  > SELECT _FUNC_(12.3456, 1) FROM src LIMIT 1;\n" + "  12.3'"), public]UDFRound, UDF @AT@ 3162 @LENGTH@ 230
+---INS Modifier@@public @TO@ MethodDeclaration@@public, LongWritable, MethodName:evaluate, LongWritable n,  @AT@ 3162 @LENGTH@ 6
+---INS SimpleType@@LongWritable @TO@ MethodDeclaration@@public, LongWritable, MethodName:evaluate, LongWritable n,  @AT@ 3169 @LENGTH@ 12
+---INS SimpleName@@MethodName:evaluate @TO@ MethodDeclaration@@public, LongWritable, MethodName:evaluate, LongWritable n,  @AT@ 3182 @LENGTH@ 8
+---INS SingleVariableDeclaration@@LongWritable n @TO@ MethodDeclaration@@public, LongWritable, MethodName:evaluate, LongWritable n,  @AT@ 3191 @LENGTH@ 14
+------INS SimpleType@@LongWritable @TO@ SingleVariableDeclaration@@LongWritable n @AT@ 3191 @LENGTH@ 12
+------INS SimpleName@@n @TO@ SingleVariableDeclaration@@LongWritable n @AT@ 3204 @LENGTH@ 1
+---INS IfStatement@@InfixExpression:n == null @TO@ MethodDeclaration@@public, LongWritable, MethodName:evaluate, LongWritable n,  @AT@ 3213 @LENGTH@ 41
+------INS InfixExpression@@n == null @TO@ IfStatement@@InfixExpression:n == null @AT@ 3217 @LENGTH@ 9
+---------INS SimpleName@@n @TO@ InfixExpression@@n == null @AT@ 3217 @LENGTH@ 1
+---------INS Operator@@== @TO@ InfixExpression@@n == null @AT@ 3218 @LENGTH@ 2
+---------INS NullLiteral@@null @TO@ InfixExpression@@n == null @AT@ 3222 @LENGTH@ 4
+------INS ReturnStatement@@NullLiteral:null @TO@ IfStatement@@InfixExpression:n == null @AT@ 3236 @LENGTH@ 12
+---------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 3243 @LENGTH@ 4
+---INS ExpressionStatement@@MethodInvocation:longWritable.set(BigDecimal.valueOf(n.get()).setScale(0,RoundingMode.HALF_UP).longValue()) @TO@ MethodDeclaration@@public, LongWritable, MethodName:evaluate, LongWritable n,  @AT@ 3259 @LENGTH@ 104
+------INS MethodInvocation@@longWritable.set(BigDecimal.valueOf(n.get()).setScale(0,RoundingMode.HALF_UP).longValue()) @TO@ ExpressionStatement@@MethodInvocation:longWritable.set(BigDecimal.valueOf(n.get()).setScale(0,RoundingMode.HALF_UP).longValue()) @AT@ 3259 @LENGTH@ 103
+---------INS SimpleName@@Name:longWritable @TO@ MethodInvocation@@longWritable.set(BigDecimal.valueOf(n.get()).setScale(0,RoundingMode.HALF_UP).longValue()) @AT@ 3259 @LENGTH@ 12
+---------INS SimpleName@@MethodName:set:[BigDecimal.valueOf(n.get()).setScale(0,RoundingMode.HALF_UP).longValue()] @TO@ MethodInvocation@@longWritable.set(BigDecimal.valueOf(n.get()).setScale(0,RoundingMode.HALF_UP).longValue()) @AT@ 3272 @LENGTH@ 90
+------------INS MethodInvocation@@BigDecimal.valueOf(n.get()).setScale(0,RoundingMode.HALF_UP).longValue() @TO@ SimpleName@@MethodName:set:[BigDecimal.valueOf(n.get()).setScale(0,RoundingMode.HALF_UP).longValue()] @AT@ 3276 @LENGTH@ 85
+---------------INS SimpleName@@Name:BigDecimal @TO@ MethodInvocation@@BigDecimal.valueOf(n.get()).setScale(0,RoundingMode.HALF_UP).longValue() @AT@ 3276 @LENGTH@ 10
+---------------INS MethodInvocation@@MethodName:valueOf:[n.get()] @TO@ MethodInvocation@@BigDecimal.valueOf(n.get()).setScale(0,RoundingMode.HALF_UP).longValue() @AT@ 3276 @LENGTH@ 27
+------------------INS MethodInvocation@@n.get() @TO@ MethodInvocation@@MethodName:valueOf:[n.get()] @AT@ 3295 @LENGTH@ 7
+---------------------INS SimpleName@@Name:n @TO@ MethodInvocation@@n.get() @AT@ 3295 @LENGTH@ 1
+---------------------INS SimpleName@@MethodName:get:[] @TO@ MethodInvocation@@n.get() @AT@ 3297 @LENGTH@ 5
+---------------INS MethodInvocation@@MethodName:setScale:[0, RoundingMode.HALF_UP] @TO@ MethodInvocation@@BigDecimal.valueOf(n.get()).setScale(0,RoundingMode.HALF_UP).longValue() @AT@ 3276 @LENGTH@ 73
+------------------INS NumberLiteral@@0 @TO@ MethodInvocation@@MethodName:setScale:[0, RoundingMode.HALF_UP] @AT@ 3313 @LENGTH@ 1
+------------------INS QualifiedName@@RoundingMode.HALF_UP @TO@ MethodInvocation@@MethodName:setScale:[0, RoundingMode.HALF_UP] @AT@ 3328 @LENGTH@ 20
+---------------------INS SimpleName@@RoundingMode @TO@ QualifiedName@@RoundingMode.HALF_UP @AT@ 3328 @LENGTH@ 12
+---------------------INS SimpleName@@HALF_UP @TO@ QualifiedName@@RoundingMode.HALF_UP @AT@ 3341 @LENGTH@ 7
+---------------INS SimpleName@@MethodName:longValue:[] @TO@ MethodInvocation@@BigDecimal.valueOf(n.get()).setScale(0,RoundingMode.HALF_UP).longValue() @AT@ 3350 @LENGTH@ 11
+---INS ReturnStatement@@SimpleName:longWritable @TO@ MethodDeclaration@@public, LongWritable, MethodName:evaluate, LongWritable n,  @AT@ 3368 @LENGTH@ 20
+------INS SimpleName@@longWritable @TO@ ReturnStatement@@SimpleName:longWritable @AT@ 3375 @LENGTH@ 12
+

@@ -1,0 +1,8 @@
+INS VariableDeclarationStatement@@String colTypeLowerCase=colType.toLowerCase(); @TO@ MethodDeclaration@@private, static, Range, MethodName:getRangePartitionColumn, Set<Partition> partitions, String partColName, String colType, String defaultPartName,  @AT@ 18716 @LENGTH@ 48
+---INS SimpleType@@String @TO@ VariableDeclarationStatement@@String colTypeLowerCase=colType.toLowerCase(); @AT@ 18716 @LENGTH@ 6
+---INS VariableDeclarationFragment@@colTypeLowerCase=colType.toLowerCase() @TO@ VariableDeclarationStatement@@String colTypeLowerCase=colType.toLowerCase(); @AT@ 18723 @LENGTH@ 40
+------INS SimpleName@@colTypeLowerCase @TO@ VariableDeclarationFragment@@colTypeLowerCase=colType.toLowerCase() @AT@ 18723 @LENGTH@ 16
+------INS MethodInvocation@@colType.toLowerCase() @TO@ VariableDeclarationFragment@@colTypeLowerCase=colType.toLowerCase() @AT@ 18742 @LENGTH@ 21
+---------INS SimpleName@@Name:colType @TO@ MethodInvocation@@colType.toLowerCase() @AT@ 18742 @LENGTH@ 7
+---------INS SimpleName@@MethodName:toLowerCase:[] @TO@ MethodInvocation@@colType.toLowerCase() @AT@ 18750 @LENGTH@ 13
+

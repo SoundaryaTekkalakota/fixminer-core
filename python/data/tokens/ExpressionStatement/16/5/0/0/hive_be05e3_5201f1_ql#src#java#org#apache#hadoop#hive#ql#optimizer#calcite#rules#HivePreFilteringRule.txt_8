@@ -1,0 +1,17 @@
+UPD ExpressionStatement@@MethodInvocation:reductionCondition.put(conjCall.operands.get(1).toString(),conjCall) @TO@ Assignment:ref=conjCall.operands.get(1) @AT@ 7494 @LENGTH@ 90
+---DEL MethodInvocation@@reductionCondition.put(conjCall.operands.get(1).toString(),conjCall) @AT@ 7494 @LENGTH@ 89
+------DEL SimpleName@@Name:reductionCondition @AT@ 7494 @LENGTH@ 18
+------DEL SimpleName@@MethodName:put:[conjCall.operands.get(1).toString(), conjCall] @AT@ 7513 @LENGTH@ 70
+---------DEL MethodInvocation@@conjCall.operands.get(1).toString() @AT@ 7517 @LENGTH@ 35
+------------DEL MethodInvocation@@MethodName:get:[1] @AT@ 7517 @LENGTH@ 24
+---------------DEL NumberLiteral@@1 @AT@ 7539 @LENGTH@ 1
+------------DEL SimpleName@@MethodName:toString:[] @AT@ 7542 @LENGTH@ 10
+---------DEL SimpleName@@conjCall @AT@ 7574 @LENGTH@ 8
+---INS Assignment@@ref=conjCall.operands.get(1) @TO@ ExpressionStatement@@MethodInvocation:reductionCondition.put(conjCall.operands.get(1).toString(),conjCall) @AT@ 7602 @LENGTH@ 30
+------INS SimpleName@@ref @TO@ Assignment@@ref=conjCall.operands.get(1) @AT@ 7602 @LENGTH@ 3
+------INS Operator@@= @TO@ Assignment@@ref=conjCall.operands.get(1) @AT@ 7605 @LENGTH@ 1
+------INS MethodInvocation@@conjCall.operands.get(1) @TO@ Assignment@@ref=conjCall.operands.get(1) @AT@ 7608 @LENGTH@ 24
+---------MOV QualifiedName@@Name:conjCall.operands @TO@ MethodInvocation@@conjCall.operands.get(1) @AT@ 7517 @LENGTH@ 17
+---------INS SimpleName@@MethodName:get:[1] @TO@ MethodInvocation@@conjCall.operands.get(1) @AT@ 7626 @LENGTH@ 6
+------------INS NumberLiteral@@1 @TO@ SimpleName@@MethodName:get:[1] @AT@ 7630 @LENGTH@ 1
+

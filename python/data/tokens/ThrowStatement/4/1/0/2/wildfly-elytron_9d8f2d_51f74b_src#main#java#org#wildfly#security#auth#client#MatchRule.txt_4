@@ -1,0 +1,5 @@
+DEL ThrowStatement@@ClassInstanceCreation:new IllegalStateException() @AT@ 2491 @LENGTH@ 34
+---DEL ClassInstanceCreation@@IllegalStateException[] @AT@ 2497 @LENGTH@ 27
+------DEL New@@new @AT@ 2497 @LENGTH@ 3
+------DEL SimpleType@@IllegalStateException @AT@ 2501 @LENGTH@ 21
+

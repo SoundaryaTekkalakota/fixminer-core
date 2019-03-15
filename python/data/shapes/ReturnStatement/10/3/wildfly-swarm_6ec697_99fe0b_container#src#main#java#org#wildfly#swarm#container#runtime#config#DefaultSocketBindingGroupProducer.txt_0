@@ -1,0 +1,10 @@
+ReturnStatement
+---ClassInstanceCreation
+------StringLiteral
+------MethodInvocation
+---------SimpleName
+---------SimpleName
+------------QualifiedName
+---------------SimpleName
+---------------SimpleName
+------------StringLiteral

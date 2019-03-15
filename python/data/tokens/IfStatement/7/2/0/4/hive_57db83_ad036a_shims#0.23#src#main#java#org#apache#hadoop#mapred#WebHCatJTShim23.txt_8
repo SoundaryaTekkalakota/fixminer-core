@@ -1,0 +1,8 @@
+INS IfStatement@@InfixExpression:rj == null @TO@ MethodDeclaration@@public, JobStatus, MethodName:getJobStatus, JobID jobid, IOException,  @AT@ 2733 @LENGTH@ 41
+---INS InfixExpression@@rj == null @TO@ IfStatement@@InfixExpression:rj == null @AT@ 2736 @LENGTH@ 10
+------INS SimpleName@@rj @TO@ InfixExpression@@rj == null @AT@ 2736 @LENGTH@ 2
+------INS Operator@@== @TO@ InfixExpression@@rj == null @AT@ 2738 @LENGTH@ 2
+------INS NullLiteral@@null @TO@ InfixExpression@@rj == null @AT@ 2742 @LENGTH@ 4
+---INS ReturnStatement@@NullLiteral:null @TO@ IfStatement@@InfixExpression:rj == null @AT@ 2756 @LENGTH@ 12
+------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 2763 @LENGTH@ 4
+

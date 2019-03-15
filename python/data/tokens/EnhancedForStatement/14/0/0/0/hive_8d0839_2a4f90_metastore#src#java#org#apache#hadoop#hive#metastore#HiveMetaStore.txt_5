@@ -1,0 +1,15 @@
+INS EnhancedForStatement@@String colName, MethodInvocation:request.getColNames() @TO@ MethodDeclaration@@public, TableStatsResult, MethodName:get_table_statistics_req, TableStatsRequest request, MetaException, NoSuchObjectException, TException,  @AT@ 157373 @LENGTH@ 108
+---INS SingleVariableDeclaration@@String colName @TO@ EnhancedForStatement@@String colName, MethodInvocation:request.getColNames() @AT@ 157378 @LENGTH@ 14
+------INS SimpleType@@String @TO@ SingleVariableDeclaration@@String colName @AT@ 157378 @LENGTH@ 6
+------INS SimpleName@@colName @TO@ SingleVariableDeclaration@@String colName @AT@ 157385 @LENGTH@ 7
+---INS MethodInvocation@@request.getColNames() @TO@ EnhancedForStatement@@String colName, MethodInvocation:request.getColNames() @AT@ 157395 @LENGTH@ 21
+------INS SimpleName@@Name:request @TO@ MethodInvocation@@request.getColNames() @AT@ 157395 @LENGTH@ 7
+------INS SimpleName@@MethodName:getColNames:[] @TO@ MethodInvocation@@request.getColNames() @AT@ 157403 @LENGTH@ 13
+---INS ExpressionStatement@@MethodInvocation:lowerCaseColNames.add(colName.toLowerCase()) @TO@ EnhancedForStatement@@String colName, MethodInvocation:request.getColNames() @AT@ 157428 @LENGTH@ 45
+------INS MethodInvocation@@lowerCaseColNames.add(colName.toLowerCase()) @TO@ ExpressionStatement@@MethodInvocation:lowerCaseColNames.add(colName.toLowerCase()) @AT@ 157428 @LENGTH@ 44
+---------INS SimpleName@@Name:lowerCaseColNames @TO@ MethodInvocation@@lowerCaseColNames.add(colName.toLowerCase()) @AT@ 157428 @LENGTH@ 17
+---------INS SimpleName@@MethodName:add:[colName.toLowerCase()] @TO@ MethodInvocation@@lowerCaseColNames.add(colName.toLowerCase()) @AT@ 157446 @LENGTH@ 26
+------------INS MethodInvocation@@colName.toLowerCase() @TO@ SimpleName@@MethodName:add:[colName.toLowerCase()] @AT@ 157450 @LENGTH@ 21
+---------------INS SimpleName@@Name:colName @TO@ MethodInvocation@@colName.toLowerCase() @AT@ 157450 @LENGTH@ 7
+---------------INS SimpleName@@MethodName:toLowerCase:[] @TO@ MethodInvocation@@colName.toLowerCase() @AT@ 157458 @LENGTH@ 13
+

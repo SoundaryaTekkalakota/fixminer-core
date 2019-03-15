@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(IncompatibleClassChangeError.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("IncompatibleClassChangeError") @AT@ 6060 @LENGTH@ 80
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(IncompatibleClassChangeError.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("IncompatibleClassChangeError") @AT@ 6060 @LENGTH@ 79
+------UPD SimpleName@@MethodName:add:[IncompatibleClassChangeError.class.getSimpleName()] @TO@ MethodName:add:["IncompatibleClassChangeError"] @AT@ 6084 @LENGTH@ 55
+---------INS StringLiteral@@"IncompatibleClassChangeError" @TO@ SimpleName@@MethodName:add:[IncompatibleClassChangeError.class.getSimpleName()] @AT@ 5256 @LENGTH@ 30
+---------DEL MethodInvocation@@IncompatibleClassChangeError.class.getSimpleName() @AT@ 6088 @LENGTH@ 50
+------------DEL TypeLiteral@@IncompatibleClassChangeError.class @AT@ 6088 @LENGTH@ 34
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 6123 @LENGTH@ 15
+

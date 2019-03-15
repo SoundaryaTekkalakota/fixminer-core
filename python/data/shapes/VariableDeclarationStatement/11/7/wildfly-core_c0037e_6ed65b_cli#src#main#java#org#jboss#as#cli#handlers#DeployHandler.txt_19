@@ -1,0 +1,11 @@
+VariableDeclarationStatement
+---Modifier
+---PrimitiveType
+---VariableDeclarationFragment
+------SimpleName
+------MethodInvocation
+---------FieldAccess
+------------ThisExpression
+------------SimpleName
+---------SimpleName
+------------SimpleName

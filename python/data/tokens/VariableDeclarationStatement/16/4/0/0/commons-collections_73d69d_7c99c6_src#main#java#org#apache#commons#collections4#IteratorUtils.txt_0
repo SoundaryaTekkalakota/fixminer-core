@@ -1,0 +1,17 @@
+INS VariableDeclarationStatement@@@SuppressWarnings("unchecked") final Comparator<E> comp=comparator == null ? ComparatorUtils.NATURAL_COMPARATOR : comparator; @TO@ MethodDeclaration@@public, static, Iterator<E>, E, MethodName:collatedIterator, final Comparator<? super E> comparator, final Iterator<? extends E> iterator1, final Iterator<? extends E> iterator2,  @AT@ 25486 @LENGTH@ 135
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@@SuppressWarnings("unchecked") final Comparator<E> comp=comparator == null ? ComparatorUtils.NATURAL_COMPARATOR : comparator; @AT@ 25525 @LENGTH@ 5
+---INS ParameterizedType@@Comparator<E> @TO@ VariableDeclarationStatement@@@SuppressWarnings("unchecked") final Comparator<E> comp=comparator == null ? ComparatorUtils.NATURAL_COMPARATOR : comparator; @AT@ 25531 @LENGTH@ 13
+------INS SimpleType@@Comparator @TO@ ParameterizedType@@Comparator<E> @AT@ 25531 @LENGTH@ 10
+------INS SimpleType@@E @TO@ ParameterizedType@@Comparator<E> @AT@ 25542 @LENGTH@ 1
+---INS VariableDeclarationFragment@@comp=comparator == null ? ComparatorUtils.NATURAL_COMPARATOR : comparator @TO@ VariableDeclarationStatement@@@SuppressWarnings("unchecked") final Comparator<E> comp=comparator == null ? ComparatorUtils.NATURAL_COMPARATOR : comparator; @AT@ 25545 @LENGTH@ 75
+------INS SimpleName@@comp @TO@ VariableDeclarationFragment@@comp=comparator == null ? ComparatorUtils.NATURAL_COMPARATOR : comparator @AT@ 25545 @LENGTH@ 4
+------INS ConditionalExpression@@comparator == null ? ComparatorUtils.NATURAL_COMPARATOR : comparator @TO@ VariableDeclarationFragment@@comp=comparator == null ? ComparatorUtils.NATURAL_COMPARATOR : comparator @AT@ 25552 @LENGTH@ 68
+---------INS InfixExpression@@comparator == null @TO@ ConditionalExpression@@comparator == null ? ComparatorUtils.NATURAL_COMPARATOR : comparator @AT@ 25552 @LENGTH@ 18
+------------INS SimpleName@@comparator @TO@ InfixExpression@@comparator == null @AT@ 25552 @LENGTH@ 10
+------------INS Operator@@== @TO@ InfixExpression@@comparator == null @AT@ 25562 @LENGTH@ 2
+------------INS NullLiteral@@null @TO@ InfixExpression@@comparator == null @AT@ 25566 @LENGTH@ 4
+---------INS QualifiedName@@ComparatorUtils.NATURAL_COMPARATOR @TO@ ConditionalExpression@@comparator == null ? ComparatorUtils.NATURAL_COMPARATOR : comparator @AT@ 25573 @LENGTH@ 34
+------------INS SimpleName@@ComparatorUtils @TO@ QualifiedName@@ComparatorUtils.NATURAL_COMPARATOR @AT@ 25573 @LENGTH@ 15
+------------INS SimpleName@@NATURAL_COMPARATOR @TO@ QualifiedName@@ComparatorUtils.NATURAL_COMPARATOR @AT@ 25589 @LENGTH@ 18
+---------INS SimpleName@@comparator @TO@ ConditionalExpression@@comparator == null ? ComparatorUtils.NATURAL_COMPARATOR : comparator @AT@ 25610 @LENGTH@ 10
+

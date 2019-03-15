@@ -1,0 +1,14 @@
+FieldDeclaration
+---Modifier
+---Modifier
+---Modifier
+---ParameterizedType
+------SimpleType
+------SimpleType
+---VariableDeclarationFragment
+------SimpleName
+------ClassInstanceCreation
+---------New
+---------ParameterizedType
+------------SimpleType
+------------SimpleType

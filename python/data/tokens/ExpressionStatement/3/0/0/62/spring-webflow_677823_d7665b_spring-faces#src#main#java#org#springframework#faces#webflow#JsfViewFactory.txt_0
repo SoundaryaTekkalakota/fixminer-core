@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:processComponentBinding(facesContext,viewRoot) @TO@ MethodInvocation:processTree(facesContext,viewRoot) @AT@ 3620 @LENGTH@ 48
+---UPD MethodInvocation@@processComponentBinding(facesContext,viewRoot) @TO@ processTree(facesContext,viewRoot) @AT@ 3620 @LENGTH@ 47
+------UPD SimpleName@@MethodName:processComponentBinding:[facesContext, viewRoot] @TO@ MethodName:processTree:[facesContext, viewRoot] @AT@ 3620 @LENGTH@ 47
+

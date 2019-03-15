@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, State, [state] @TO@ private, final, State, [state] @AT@ 4295 @LENGTH@ 20
+---INS Modifier@@final @TO@ FieldDeclaration@@private, State, [state] @AT@ 4303 @LENGTH@ 5
+

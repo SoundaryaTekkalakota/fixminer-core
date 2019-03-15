@@ -1,0 +1,12 @@
+INS FieldDeclaration@@private, static, final, Logger, [log=HandlerUtils.getLogger(MailOperationsImpl.class)] @TO@ TypeDeclaration@@[@Component, @Service, public]MailOperationsImpl, [MailOperations] @AT@ 3106 @LENGTH@ 83
+---INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, Logger, [log=HandlerUtils.getLogger(MailOperationsImpl.class)] @AT@ 3106 @LENGTH@ 7
+---INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, Logger, [log=HandlerUtils.getLogger(MailOperationsImpl.class)] @AT@ 3114 @LENGTH@ 6
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, Logger, [log=HandlerUtils.getLogger(MailOperationsImpl.class)] @AT@ 3121 @LENGTH@ 5
+---INS SimpleType@@Logger @TO@ FieldDeclaration@@private, static, final, Logger, [log=HandlerUtils.getLogger(MailOperationsImpl.class)] @AT@ 3127 @LENGTH@ 6
+---INS VariableDeclarationFragment@@log=HandlerUtils.getLogger(MailOperationsImpl.class) @TO@ FieldDeclaration@@private, static, final, Logger, [log=HandlerUtils.getLogger(MailOperationsImpl.class)] @AT@ 3134 @LENGTH@ 54
+------INS SimpleName@@log @TO@ VariableDeclarationFragment@@log=HandlerUtils.getLogger(MailOperationsImpl.class) @AT@ 3134 @LENGTH@ 3
+------INS MethodInvocation@@HandlerUtils.getLogger(MailOperationsImpl.class) @TO@ VariableDeclarationFragment@@log=HandlerUtils.getLogger(MailOperationsImpl.class) @AT@ 3140 @LENGTH@ 48
+---------INS SimpleName@@Name:HandlerUtils @TO@ MethodInvocation@@HandlerUtils.getLogger(MailOperationsImpl.class) @AT@ 3140 @LENGTH@ 12
+---------INS SimpleName@@MethodName:getLogger:[MailOperationsImpl.class] @TO@ MethodInvocation@@HandlerUtils.getLogger(MailOperationsImpl.class) @AT@ 3153 @LENGTH@ 35
+------------INS TypeLiteral@@MailOperationsImpl.class @TO@ SimpleName@@MethodName:getLogger:[MailOperationsImpl.class] @AT@ 3163 @LENGTH@ 24
+

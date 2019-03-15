@@ -1,0 +1,12 @@
+INS FieldDeclaration@@private, static, final, Log, [logger=LogFactory.getLog(SpringBeanContainer.class)] @TO@ TypeDeclaration@@[public, final]SpringBeanContainer, [BeanContainer] @AT@ 3278 @LENGTH@ 79
+---INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, Log, [logger=LogFactory.getLog(SpringBeanContainer.class)] @AT@ 3278 @LENGTH@ 7
+---INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, Log, [logger=LogFactory.getLog(SpringBeanContainer.class)] @AT@ 3286 @LENGTH@ 6
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, Log, [logger=LogFactory.getLog(SpringBeanContainer.class)] @AT@ 3293 @LENGTH@ 5
+---INS SimpleType@@Log @TO@ FieldDeclaration@@private, static, final, Log, [logger=LogFactory.getLog(SpringBeanContainer.class)] @AT@ 3299 @LENGTH@ 3
+---INS VariableDeclarationFragment@@logger=LogFactory.getLog(SpringBeanContainer.class) @TO@ FieldDeclaration@@private, static, final, Log, [logger=LogFactory.getLog(SpringBeanContainer.class)] @AT@ 3303 @LENGTH@ 53
+------INS SimpleName@@logger @TO@ VariableDeclarationFragment@@logger=LogFactory.getLog(SpringBeanContainer.class) @AT@ 3303 @LENGTH@ 6
+------INS MethodInvocation@@LogFactory.getLog(SpringBeanContainer.class) @TO@ VariableDeclarationFragment@@logger=LogFactory.getLog(SpringBeanContainer.class) @AT@ 3312 @LENGTH@ 44
+---------INS SimpleName@@Name:LogFactory @TO@ MethodInvocation@@LogFactory.getLog(SpringBeanContainer.class) @AT@ 3312 @LENGTH@ 10
+---------INS SimpleName@@MethodName:getLog:[SpringBeanContainer.class] @TO@ MethodInvocation@@LogFactory.getLog(SpringBeanContainer.class) @AT@ 3323 @LENGTH@ 33
+------------INS TypeLiteral@@SpringBeanContainer.class @TO@ SimpleName@@MethodName:getLog:[SpringBeanContainer.class] @AT@ 3330 @LENGTH@ 25
+

@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(Thread.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("Thread") @AT@ 3463 @LENGTH@ 58
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(Thread.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("Thread") @AT@ 3463 @LENGTH@ 57
+------UPD SimpleName@@MethodName:add:[Thread.class.getSimpleName()] @TO@ MethodName:add:["Thread"] @AT@ 3487 @LENGTH@ 33
+---------INS StringLiteral@@"Thread" @TO@ SimpleName@@MethodName:add:[Thread.class.getSimpleName()] @AT@ 3178 @LENGTH@ 8
+---------DEL MethodInvocation@@Thread.class.getSimpleName() @AT@ 3491 @LENGTH@ 28
+------------DEL TypeLiteral@@Thread.class @AT@ 3491 @LENGTH@ 12
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 3504 @LENGTH@ 15
+

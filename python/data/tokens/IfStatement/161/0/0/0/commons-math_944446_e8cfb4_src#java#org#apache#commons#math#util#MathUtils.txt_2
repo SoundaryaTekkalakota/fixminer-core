@@ -1,0 +1,162 @@
+UPD IfStatement@@InfixExpression:result == Long.MAX_VALUE @TO@ InfixExpression:n <= 61 @AT@ 6113 @LENGTH@ 152
+---DEL InfixExpression@@result == Long.MAX_VALUE @AT@ 6117 @LENGTH@ 24
+------DEL QualifiedName@@Long.MAX_VALUE @AT@ 6127 @LENGTH@ 14
+---------DEL SimpleName@@Long @AT@ 6127 @LENGTH@ 4
+---------DEL SimpleName@@MAX_VALUE @AT@ 6132 @LENGTH@ 9
+---DEL ThrowStatement@@ClassInstanceCreation:new ArithmeticException("result too large to represent in a long integer") @AT@ 6157 @LENGTH@ 98
+------DEL ClassInstanceCreation@@ArithmeticException["result too large to represent in a long integer"] @AT@ 6163 @LENGTH@ 91
+---------DEL New@@new @AT@ 6163 @LENGTH@ 3
+---------DEL SimpleType@@ArithmeticException @AT@ 6167 @LENGTH@ 19
+---------DEL StringLiteral@@"result too large to represent in a long integer" @AT@ 6204 @LENGTH@ 49
+---INS InfixExpression@@n <= 61 @TO@ IfStatement@@InfixExpression:result == Long.MAX_VALUE @AT@ 6406 @LENGTH@ 7
+------INS SimpleName@@n @TO@ InfixExpression@@n <= 61 @AT@ 6406 @LENGTH@ 1
+------INS Operator@@<= @TO@ InfixExpression@@n <= 61 @AT@ 6407 @LENGTH@ 2
+------INS NumberLiteral@@61 @TO@ InfixExpression@@n <= 61 @AT@ 6411 @LENGTH@ 2
+---INS ForStatement@@[int j=1, i=n - k + 1];j <= k; [i++, j++] @TO@ IfStatement@@InfixExpression:result == Long.MAX_VALUE @AT@ 6499 @LENGTH@ 105
+------INS VariableDeclarationExpression@@int j=1, i=n - k + 1 @TO@ ForStatement@@[int j=1, i=n - k + 1];j <= k; [i++, j++] @AT@ 6504 @LENGTH@ 24
+---------INS PrimitiveType@@int @TO@ VariableDeclarationExpression@@int j=1, i=n - k + 1 @AT@ 6504 @LENGTH@ 3
+---------INS VariableDeclarationFragment@@j=1 @TO@ VariableDeclarationExpression@@int j=1, i=n - k + 1 @AT@ 6508 @LENGTH@ 5
+------------INS SimpleName@@j @TO@ VariableDeclarationFragment@@j=1 @AT@ 6508 @LENGTH@ 1
+------------INS NumberLiteral@@1 @TO@ VariableDeclarationFragment@@j=1 @AT@ 6512 @LENGTH@ 1
+---------INS VariableDeclarationFragment@@i=n - k + 1 @TO@ VariableDeclarationExpression@@int j=1, i=n - k + 1 @AT@ 6515 @LENGTH@ 13
+------------INS SimpleName@@i @TO@ VariableDeclarationFragment@@i=n - k + 1 @AT@ 6515 @LENGTH@ 1
+------------INS InfixExpression@@n - k + 1 @TO@ VariableDeclarationFragment@@i=n - k + 1 @AT@ 6519 @LENGTH@ 9
+---------------INS InfixExpression@@n - k @TO@ InfixExpression@@n - k + 1 @AT@ 6519 @LENGTH@ 5
+------------------INS SimpleName@@n @TO@ InfixExpression@@n - k @AT@ 6519 @LENGTH@ 1
+------------------INS Operator@@- @TO@ InfixExpression@@n - k @AT@ 6520 @LENGTH@ 1
+------------------INS SimpleName@@k @TO@ InfixExpression@@n - k @AT@ 6523 @LENGTH@ 1
+---------------INS Operator@@+ @TO@ InfixExpression@@n - k + 1 @AT@ 6524 @LENGTH@ 1
+---------------INS NumberLiteral@@1 @TO@ InfixExpression@@n - k + 1 @AT@ 6527 @LENGTH@ 1
+------INS InfixExpression@@j <= k @TO@ ForStatement@@[int j=1, i=n - k + 1];j <= k; [i++, j++] @AT@ 6530 @LENGTH@ 6
+---------INS SimpleName@@j @TO@ InfixExpression@@j <= k @AT@ 6530 @LENGTH@ 1
+---------INS Operator@@<= @TO@ InfixExpression@@j <= k @AT@ 6531 @LENGTH@ 2
+---------INS SimpleName@@k @TO@ InfixExpression@@j <= k @AT@ 6535 @LENGTH@ 1
+------INS PostfixExpression@@i++ @TO@ ForStatement@@[int j=1, i=n - k + 1];j <= k; [i++, j++] @AT@ 6538 @LENGTH@ 3
+---------INS SimpleName@@i @TO@ PostfixExpression@@i++ @AT@ 6538 @LENGTH@ 1
+---------INS Operator@@++ @TO@ PostfixExpression@@i++ @AT@ 6540 @LENGTH@ 2
+------INS PostfixExpression@@j++ @TO@ ForStatement@@[int j=1, i=n - k + 1];j <= k; [i++, j++] @AT@ 6543 @LENGTH@ 3
+---------INS SimpleName@@j @TO@ PostfixExpression@@j++ @AT@ 6543 @LENGTH@ 1
+---------INS Operator@@++ @TO@ PostfixExpression@@j++ @AT@ 6545 @LENGTH@ 2
+------INS ExpressionStatement@@Assignment:result=result * i / j @TO@ ForStatement@@[int j=1, i=n - k + 1];j <= k; [i++, j++] @AT@ 6566 @LENGTH@ 24
+---------INS Assignment@@result=result * i / j @TO@ ExpressionStatement@@Assignment:result=result * i / j @AT@ 6566 @LENGTH@ 23
+------------INS SimpleName@@result @TO@ Assignment@@result=result * i / j @AT@ 6566 @LENGTH@ 6
+------------INS Operator@@= @TO@ Assignment@@result=result * i / j @AT@ 6572 @LENGTH@ 1
+------------INS InfixExpression@@result * i / j @TO@ Assignment@@result=result * i / j @AT@ 6575 @LENGTH@ 14
+---------------INS InfixExpression@@result * i @TO@ InfixExpression@@result * i / j @AT@ 6575 @LENGTH@ 10
+------------------MOV SimpleName@@result @TO@ InfixExpression@@result * i @AT@ 6117 @LENGTH@ 6
+------------------MOV Operator@@== @TO@ InfixExpression@@result * i @AT@ 6123 @LENGTH@ 2
+------------------INS SimpleName@@i @TO@ InfixExpression@@result * i @AT@ 6584 @LENGTH@ 1
+---------------INS Operator@@/ @TO@ InfixExpression@@result * i / j @AT@ 6585 @LENGTH@ 1
+---------------INS SimpleName@@j @TO@ InfixExpression@@result * i / j @AT@ 6588 @LENGTH@ 1
+---INS IfStatement@@InfixExpression:n <= 66 @TO@ IfStatement@@InfixExpression:result == Long.MAX_VALUE @AT@ 6620 @LENGTH@ 1053
+------INS InfixExpression@@n <= 66 @TO@ IfStatement@@InfixExpression:n <= 66 @AT@ 6624 @LENGTH@ 7
+---------INS SimpleName@@n @TO@ InfixExpression@@n <= 66 @AT@ 6624 @LENGTH@ 1
+---------INS Operator@@<= @TO@ InfixExpression@@n <= 66 @AT@ 6625 @LENGTH@ 2
+---------INS NumberLiteral@@66 @TO@ InfixExpression@@n <= 66 @AT@ 6629 @LENGTH@ 2
+------INS ForStatement@@[int j=1, i=n - k + 1];j <= k; [i++, j++] @TO@ IfStatement@@InfixExpression:n <= 66 @AT@ 6788 @LENGTH@ 517
+---------INS VariableDeclarationExpression@@int j=1, i=n - k + 1 @TO@ ForStatement@@[int j=1, i=n - k + 1];j <= k; [i++, j++] @AT@ 6793 @LENGTH@ 24
+------------INS PrimitiveType@@int @TO@ VariableDeclarationExpression@@int j=1, i=n - k + 1 @AT@ 6793 @LENGTH@ 3
+------------INS VariableDeclarationFragment@@j=1 @TO@ VariableDeclarationExpression@@int j=1, i=n - k + 1 @AT@ 6797 @LENGTH@ 5
+---------------INS SimpleName@@j @TO@ VariableDeclarationFragment@@j=1 @AT@ 6797 @LENGTH@ 1
+---------------INS NumberLiteral@@1 @TO@ VariableDeclarationFragment@@j=1 @AT@ 6801 @LENGTH@ 1
+------------INS VariableDeclarationFragment@@i=n - k + 1 @TO@ VariableDeclarationExpression@@int j=1, i=n - k + 1 @AT@ 6804 @LENGTH@ 13
+---------------INS SimpleName@@i @TO@ VariableDeclarationFragment@@i=n - k + 1 @AT@ 6804 @LENGTH@ 1
+---------------INS InfixExpression@@n - k + 1 @TO@ VariableDeclarationFragment@@i=n - k + 1 @AT@ 6808 @LENGTH@ 9
+------------------INS InfixExpression@@n - k @TO@ InfixExpression@@n - k + 1 @AT@ 6808 @LENGTH@ 5
+---------------------INS SimpleName@@n @TO@ InfixExpression@@n - k @AT@ 6808 @LENGTH@ 1
+---------------------INS Operator@@- @TO@ InfixExpression@@n - k @AT@ 6809 @LENGTH@ 1
+---------------------INS SimpleName@@k @TO@ InfixExpression@@n - k @AT@ 6812 @LENGTH@ 1
+------------------INS Operator@@+ @TO@ InfixExpression@@n - k + 1 @AT@ 6813 @LENGTH@ 1
+------------------INS NumberLiteral@@1 @TO@ InfixExpression@@n - k + 1 @AT@ 6816 @LENGTH@ 1
+---------INS InfixExpression@@j <= k @TO@ ForStatement@@[int j=1, i=n - k + 1];j <= k; [i++, j++] @AT@ 6819 @LENGTH@ 6
+------------INS SimpleName@@j @TO@ InfixExpression@@j <= k @AT@ 6819 @LENGTH@ 1
+------------INS Operator@@<= @TO@ InfixExpression@@j <= k @AT@ 6820 @LENGTH@ 2
+------------INS SimpleName@@k @TO@ InfixExpression@@j <= k @AT@ 6824 @LENGTH@ 1
+---------INS PostfixExpression@@i++ @TO@ ForStatement@@[int j=1, i=n - k + 1];j <= k; [i++, j++] @AT@ 6827 @LENGTH@ 3
+------------INS SimpleName@@i @TO@ PostfixExpression@@i++ @AT@ 6827 @LENGTH@ 1
+------------INS Operator@@++ @TO@ PostfixExpression@@i++ @AT@ 6829 @LENGTH@ 2
+---------INS PostfixExpression@@j++ @TO@ ForStatement@@[int j=1, i=n - k + 1];j <= k; [i++, j++] @AT@ 6832 @LENGTH@ 3
+------------INS SimpleName@@j @TO@ PostfixExpression@@j++ @AT@ 6832 @LENGTH@ 1
+------------INS Operator@@++ @TO@ PostfixExpression@@j++ @AT@ 6834 @LENGTH@ 2
+---------INS VariableDeclarationStatement@@long d=gcd(i,j); @TO@ ForStatement@@[int j=1, i=n - k + 1];j <= k; [i++, j++] @AT@ 7217 @LENGTH@ 19
+------------INS PrimitiveType@@long @TO@ VariableDeclarationStatement@@long d=gcd(i,j); @AT@ 7217 @LENGTH@ 4
+------------INS VariableDeclarationFragment@@d=gcd(i,j) @TO@ VariableDeclarationStatement@@long d=gcd(i,j); @AT@ 7222 @LENGTH@ 13
+---------------INS SimpleName@@d @TO@ VariableDeclarationFragment@@d=gcd(i,j) @AT@ 7222 @LENGTH@ 1
+---------------INS MethodInvocation@@gcd(i,j) @TO@ VariableDeclarationFragment@@d=gcd(i,j) @AT@ 7226 @LENGTH@ 9
+------------------INS SimpleName@@MethodName:gcd:[i, j] @TO@ MethodInvocation@@gcd(i,j) @AT@ 7226 @LENGTH@ 9
+---------------------INS SimpleName@@i @TO@ SimpleName@@MethodName:gcd:[i, j] @AT@ 7230 @LENGTH@ 1
+---------------------INS SimpleName@@j @TO@ SimpleName@@MethodName:gcd:[i, j] @AT@ 7233 @LENGTH@ 1
+---------INS ExpressionStatement@@Assignment:result=(result / (j / d)) * (i / d) @TO@ ForStatement@@[int j=1, i=n - k + 1];j <= k; [i++, j++] @AT@ 7253 @LENGTH@ 38
+------------INS Assignment@@result=(result / (j / d)) * (i / d) @TO@ ExpressionStatement@@Assignment:result=(result / (j / d)) * (i / d) @AT@ 7253 @LENGTH@ 37
+---------------INS SimpleName@@result @TO@ Assignment@@result=(result / (j / d)) * (i / d) @AT@ 7253 @LENGTH@ 6
+---------------INS Operator@@= @TO@ Assignment@@result=(result / (j / d)) * (i / d) @AT@ 7259 @LENGTH@ 1
+---------------INS InfixExpression@@(result / (j / d)) * (i / d) @TO@ Assignment@@result=(result / (j / d)) * (i / d) @AT@ 7262 @LENGTH@ 28
+------------------INS ParenthesizedExpression@@(result / (j / d)) @TO@ InfixExpression@@(result / (j / d)) * (i / d) @AT@ 7262 @LENGTH@ 18
+---------------------INS InfixExpression@@result / (j / d) @TO@ ParenthesizedExpression@@(result / (j / d)) @AT@ 7263 @LENGTH@ 16
+------------------------INS SimpleName@@result @TO@ InfixExpression@@result / (j / d) @AT@ 7263 @LENGTH@ 6
+------------------------INS Operator@@/ @TO@ InfixExpression@@result / (j / d) @AT@ 7269 @LENGTH@ 1
+------------------------INS ParenthesizedExpression@@(j / d) @TO@ InfixExpression@@result / (j / d) @AT@ 7272 @LENGTH@ 7
+---------------------------INS InfixExpression@@j / d @TO@ ParenthesizedExpression@@(j / d) @AT@ 7273 @LENGTH@ 5
+------------------------------INS SimpleName@@j @TO@ InfixExpression@@j / d @AT@ 7273 @LENGTH@ 1
+------------------------------INS Operator@@/ @TO@ InfixExpression@@j / d @AT@ 7274 @LENGTH@ 1
+------------------------------INS SimpleName@@d @TO@ InfixExpression@@j / d @AT@ 7277 @LENGTH@ 1
+------------------INS Operator@@* @TO@ InfixExpression@@(result / (j / d)) * (i / d) @AT@ 7280 @LENGTH@ 1
+------------------INS ParenthesizedExpression@@(i / d) @TO@ InfixExpression@@(result / (j / d)) * (i / d) @AT@ 7283 @LENGTH@ 7
+---------------------INS InfixExpression@@i / d @TO@ ParenthesizedExpression@@(i / d) @AT@ 7284 @LENGTH@ 5
+------------------------INS SimpleName@@i @TO@ InfixExpression@@i / d @AT@ 7284 @LENGTH@ 1
+------------------------INS Operator@@/ @TO@ InfixExpression@@i / d @AT@ 7285 @LENGTH@ 1
+------------------------INS SimpleName@@d @TO@ InfixExpression@@i / d @AT@ 7288 @LENGTH@ 1
+------INS ForStatement@@[int j=1, i=n - k + 1];j <= k; [i++, j++] @TO@ IfStatement@@InfixExpression:n <= 66 @AT@ 7496 @LENGTH@ 167
+---------INS VariableDeclarationExpression@@int j=1, i=n - k + 1 @TO@ ForStatement@@[int j=1, i=n - k + 1];j <= k; [i++, j++] @AT@ 7501 @LENGTH@ 24
+------------INS PrimitiveType@@int @TO@ VariableDeclarationExpression@@int j=1, i=n - k + 1 @AT@ 7501 @LENGTH@ 3
+------------INS VariableDeclarationFragment@@j=1 @TO@ VariableDeclarationExpression@@int j=1, i=n - k + 1 @AT@ 7505 @LENGTH@ 5
+---------------INS SimpleName@@j @TO@ VariableDeclarationFragment@@j=1 @AT@ 7505 @LENGTH@ 1
+---------------INS NumberLiteral@@1 @TO@ VariableDeclarationFragment@@j=1 @AT@ 7509 @LENGTH@ 1
+------------INS VariableDeclarationFragment@@i=n - k + 1 @TO@ VariableDeclarationExpression@@int j=1, i=n - k + 1 @AT@ 7512 @LENGTH@ 13
+---------------INS SimpleName@@i @TO@ VariableDeclarationFragment@@i=n - k + 1 @AT@ 7512 @LENGTH@ 1
+---------------INS InfixExpression@@n - k + 1 @TO@ VariableDeclarationFragment@@i=n - k + 1 @AT@ 7516 @LENGTH@ 9
+------------------INS InfixExpression@@n - k @TO@ InfixExpression@@n - k + 1 @AT@ 7516 @LENGTH@ 5
+---------------------INS SimpleName@@n @TO@ InfixExpression@@n - k @AT@ 7516 @LENGTH@ 1
+---------------------INS Operator@@- @TO@ InfixExpression@@n - k @AT@ 7517 @LENGTH@ 1
+---------------------INS SimpleName@@k @TO@ InfixExpression@@n - k @AT@ 7520 @LENGTH@ 1
+------------------INS Operator@@+ @TO@ InfixExpression@@n - k + 1 @AT@ 7521 @LENGTH@ 1
+------------------INS NumberLiteral@@1 @TO@ InfixExpression@@n - k + 1 @AT@ 7524 @LENGTH@ 1
+---------INS InfixExpression@@j <= k @TO@ ForStatement@@[int j=1, i=n - k + 1];j <= k; [i++, j++] @AT@ 7527 @LENGTH@ 6
+------------INS SimpleName@@j @TO@ InfixExpression@@j <= k @AT@ 7527 @LENGTH@ 1
+------------INS Operator@@<= @TO@ InfixExpression@@j <= k @AT@ 7528 @LENGTH@ 2
+------------INS SimpleName@@k @TO@ InfixExpression@@j <= k @AT@ 7532 @LENGTH@ 1
+---------INS PostfixExpression@@i++ @TO@ ForStatement@@[int j=1, i=n - k + 1];j <= k; [i++, j++] @AT@ 7535 @LENGTH@ 3
+------------INS SimpleName@@i @TO@ PostfixExpression@@i++ @AT@ 7535 @LENGTH@ 1
+------------INS Operator@@++ @TO@ PostfixExpression@@i++ @AT@ 7537 @LENGTH@ 2
+---------INS PostfixExpression@@j++ @TO@ ForStatement@@[int j=1, i=n - k + 1];j <= k; [i++, j++] @AT@ 7540 @LENGTH@ 3
+------------INS SimpleName@@j @TO@ PostfixExpression@@j++ @AT@ 7540 @LENGTH@ 1
+------------INS Operator@@++ @TO@ PostfixExpression@@j++ @AT@ 7542 @LENGTH@ 2
+---------INS VariableDeclarationStatement@@long d=gcd(i,j); @TO@ ForStatement@@[int j=1, i=n - k + 1];j <= k; [i++, j++] @AT@ 7563 @LENGTH@ 19
+------------INS PrimitiveType@@long @TO@ VariableDeclarationStatement@@long d=gcd(i,j); @AT@ 7563 @LENGTH@ 4
+------------INS VariableDeclarationFragment@@d=gcd(i,j) @TO@ VariableDeclarationStatement@@long d=gcd(i,j); @AT@ 7568 @LENGTH@ 13
+---------------INS SimpleName@@d @TO@ VariableDeclarationFragment@@d=gcd(i,j) @AT@ 7568 @LENGTH@ 1
+---------------INS MethodInvocation@@gcd(i,j) @TO@ VariableDeclarationFragment@@d=gcd(i,j) @AT@ 7572 @LENGTH@ 9
+------------------INS SimpleName@@MethodName:gcd:[i, j] @TO@ MethodInvocation@@gcd(i,j) @AT@ 7572 @LENGTH@ 9
+---------------------INS SimpleName@@i @TO@ SimpleName@@MethodName:gcd:[i, j] @AT@ 7576 @LENGTH@ 1
+---------------------INS SimpleName@@j @TO@ SimpleName@@MethodName:gcd:[i, j] @AT@ 7579 @LENGTH@ 1
+---------INS ExpressionStatement@@Assignment:result=mulAndCheck((result / (j / d)),(i / d)) @TO@ ForStatement@@[int j=1, i=n - k + 1];j <= k; [i++, j++] @AT@ 7599 @LENGTH@ 50
+------------INS Assignment@@result=mulAndCheck((result / (j / d)),(i / d)) @TO@ ExpressionStatement@@Assignment:result=mulAndCheck((result / (j / d)),(i / d)) @AT@ 7599 @LENGTH@ 49
+---------------INS SimpleName@@result @TO@ Assignment@@result=mulAndCheck((result / (j / d)),(i / d)) @AT@ 7599 @LENGTH@ 6
+---------------INS Operator@@= @TO@ Assignment@@result=mulAndCheck((result / (j / d)),(i / d)) @AT@ 7605 @LENGTH@ 1
+---------------INS MethodInvocation@@mulAndCheck((result / (j / d)),(i / d)) @TO@ Assignment@@result=mulAndCheck((result / (j / d)),(i / d)) @AT@ 7608 @LENGTH@ 40
+------------------INS SimpleName@@MethodName:mulAndCheck:[(result / (j / d)), (i / d)] @TO@ MethodInvocation@@mulAndCheck((result / (j / d)),(i / d)) @AT@ 7608 @LENGTH@ 40
+---------------------INS ParenthesizedExpression@@(result / (j / d)) @TO@ SimpleName@@MethodName:mulAndCheck:[(result / (j / d)), (i / d)] @AT@ 7620 @LENGTH@ 18
+------------------------INS InfixExpression@@result / (j / d) @TO@ ParenthesizedExpression@@(result / (j / d)) @AT@ 7621 @LENGTH@ 16
+---------------------------INS SimpleName@@result @TO@ InfixExpression@@result / (j / d) @AT@ 7621 @LENGTH@ 6
+---------------------------INS Operator@@/ @TO@ InfixExpression@@result / (j / d) @AT@ 7627 @LENGTH@ 1
+---------------------------INS ParenthesizedExpression@@(j / d) @TO@ InfixExpression@@result / (j / d) @AT@ 7630 @LENGTH@ 7
+------------------------------INS InfixExpression@@j / d @TO@ ParenthesizedExpression@@(j / d) @AT@ 7631 @LENGTH@ 5
+---------------------------------INS SimpleName@@j @TO@ InfixExpression@@j / d @AT@ 7631 @LENGTH@ 1
+---------------------------------INS Operator@@/ @TO@ InfixExpression@@j / d @AT@ 7632 @LENGTH@ 1
+---------------------------------INS SimpleName@@d @TO@ InfixExpression@@j / d @AT@ 7635 @LENGTH@ 1
+---------------------INS ParenthesizedExpression@@(i / d) @TO@ SimpleName@@MethodName:mulAndCheck:[(result / (j / d)), (i / d)] @AT@ 7640 @LENGTH@ 7
+------------------------INS InfixExpression@@i / d @TO@ ParenthesizedExpression@@(i / d) @AT@ 7641 @LENGTH@ 5
+---------------------------INS SimpleName@@i @TO@ InfixExpression@@i / d @AT@ 7641 @LENGTH@ 1
+---------------------------INS Operator@@/ @TO@ InfixExpression@@i / d @AT@ 7642 @LENGTH@ 1
+---------------------------INS SimpleName@@d @TO@ InfixExpression@@i / d @AT@ 7645 @LENGTH@ 1
+

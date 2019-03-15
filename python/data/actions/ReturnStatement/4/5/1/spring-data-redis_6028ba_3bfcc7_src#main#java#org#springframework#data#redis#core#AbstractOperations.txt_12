@@ -1,0 +1,4 @@
+ UPD ReturnStatement
+--- UPD MethodInvocation
+------ INS MethodInvocation
+------ DEL SimpleName

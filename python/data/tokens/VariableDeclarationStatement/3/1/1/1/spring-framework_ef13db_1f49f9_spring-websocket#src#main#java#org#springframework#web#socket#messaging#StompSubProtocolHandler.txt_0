@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@Message<?> message; @TO@ Message<?> message=null; @AT@ 3376 @LENGTH@ 19
+---UPD VariableDeclarationFragment@@message @TO@ message=null @AT@ 3387 @LENGTH@ 7
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@message @AT@ 3397 @LENGTH@ 4
+

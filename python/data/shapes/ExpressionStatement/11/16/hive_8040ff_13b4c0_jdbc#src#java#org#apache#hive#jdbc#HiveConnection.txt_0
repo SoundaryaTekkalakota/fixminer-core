@@ -1,0 +1,11 @@
+ExpressionStatement
+---Assignment
+------SimpleName
+------Operator
+------ClassInstanceCreation
+---------New
+---------SimpleType
+---------ClassInstanceCreation
+------------New
+------------SimpleType
+------------SimpleName

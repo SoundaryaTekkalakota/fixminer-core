@@ -1,0 +1,16 @@
+DEL MethodDeclaration@@public, boolean, MethodName:remove, Object o,  @AT@ 16562 @LENGTH@ 107
+---DEL Modifier@@public @AT@ 16562 @LENGTH@ 6
+---DEL PrimitiveType@@boolean @AT@ 16569 @LENGTH@ 7
+---DEL SimpleName@@MethodName:remove @AT@ 16577 @LENGTH@ 6
+---DEL SingleVariableDeclaration@@Object o @AT@ 16584 @LENGTH@ 8
+------DEL SimpleType@@Object @AT@ 16584 @LENGTH@ 6
+------DEL SimpleName@@o @AT@ 16591 @LENGTH@ 1
+---DEL ExpressionStatement@@MethodInvocation:copyOnWrite() @AT@ 16602 @LENGTH@ 14
+------DEL MethodInvocation@@MethodName:copyOnWrite:[] @AT@ 16602 @LENGTH@ 13
+---DEL ReturnStatement@@MethodInvocation:shared.getBucketCols().remove(o) @AT@ 16623 @LENGTH@ 40
+------DEL MethodInvocation@@shared.getBucketCols().remove(o) @AT@ 16630 @LENGTH@ 32
+---------DEL SimpleName@@Name:shared @AT@ 16630 @LENGTH@ 6
+---------DEL MethodInvocation@@MethodName:getBucketCols:[] @AT@ 16630 @LENGTH@ 22
+---------DEL SimpleName@@MethodName:remove:[o] @AT@ 16653 @LENGTH@ 9
+------------DEL SimpleName@@o @AT@ 16660 @LENGTH@ 1
+

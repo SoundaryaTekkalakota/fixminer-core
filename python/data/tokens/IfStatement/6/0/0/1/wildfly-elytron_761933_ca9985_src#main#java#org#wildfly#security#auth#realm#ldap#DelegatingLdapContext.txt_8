@@ -1,0 +1,7 @@
+DEL IfStatement@@InfixExpression:socketFactory != null @AT@ 3977 @LENGTH@ 63
+---DEL InfixExpression@@socketFactory != null @AT@ 3981 @LENGTH@ 21
+------DEL SimpleName@@socketFactory @AT@ 3981 @LENGTH@ 13
+------DEL Operator@@!= @AT@ 3994 @LENGTH@ 2
+------DEL NullLiteral@@null @AT@ 3998 @LENGTH@ 4
+---DEL ExpressionStatement@@MethodInvocation:ThreadLocalSSLSocketFactory.unset() @AT@ 4004 @LENGTH@ 36
+

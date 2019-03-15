@@ -1,0 +1,3 @@
+ INS SynchronizedStatement
+--- MOV ExpressionStatement
+--- INS ThisExpression

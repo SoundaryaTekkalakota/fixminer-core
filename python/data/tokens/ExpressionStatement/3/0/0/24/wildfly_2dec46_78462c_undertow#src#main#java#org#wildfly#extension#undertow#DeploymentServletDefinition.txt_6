@@ -1,0 +1,34 @@
+UPD ExpressionStatement@@MethodInvocation:registration.registerMetric(MIN_REQUEST_TIME,new AbstractMetricsHandler(){
+  @Override void handle(  final ModelNode response,  final String name,  final MetricsHandler.MetricResult metricResult,  final ServletInfo servlet){
+    response.set((long)metricResult.getMinRequestTime());
+  }
+}
+) @TO@ MethodInvocation:registration.registerMetric(MIN_REQUEST_TIME,new AbstractMetricsHandler(){
+  @Override void handle(  final ModelNode response,  final MetricsHandler.MetricResult metricResult){
+    response.set((long)metricResult.getMinRequestTime());
+  }
+}
+) @AT@ 4461 @LENGTH@ 341
+---UPD MethodInvocation@@registration.registerMetric(MIN_REQUEST_TIME,new AbstractMetricsHandler(){
+  @Override void handle(  final ModelNode response,  final String name,  final MetricsHandler.MetricResult metricResult,  final ServletInfo servlet){
+    response.set((long)metricResult.getMinRequestTime());
+  }
+}
+) @TO@ registration.registerMetric(MIN_REQUEST_TIME,new AbstractMetricsHandler(){
+  @Override void handle(  final ModelNode response,  final MetricsHandler.MetricResult metricResult){
+    response.set((long)metricResult.getMinRequestTime());
+  }
+}
+) @AT@ 4461 @LENGTH@ 340
+------UPD SimpleName@@MethodName:registerMetric:[MIN_REQUEST_TIME, new AbstractMetricsHandler(){
+  @Override void handle(  final ModelNode response,  final String name,  final MetricsHandler.MetricResult metricResult,  final ServletInfo servlet){
+    response.set((long)metricResult.getMinRequestTime());
+  }
+}
+] @TO@ MethodName:registerMetric:[MIN_REQUEST_TIME, new AbstractMetricsHandler(){
+  @Override void handle(  final ModelNode response,  final MetricsHandler.MetricResult metricResult){
+    response.set((long)metricResult.getMinRequestTime());
+  }
+}
+] @AT@ 4474 @LENGTH@ 327
+

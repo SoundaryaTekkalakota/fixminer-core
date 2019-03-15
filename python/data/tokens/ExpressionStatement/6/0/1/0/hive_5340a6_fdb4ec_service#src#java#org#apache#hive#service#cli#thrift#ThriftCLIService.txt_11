@@ -1,0 +1,7 @@
+UPD ExpressionStatement@@MethodInvocation:e.printStackTrace() @TO@ MethodInvocation:LOG.warn("Error getting functions: ",e) @AT@ 11500 @LENGTH@ 20
+---UPD MethodInvocation@@e.printStackTrace() @TO@ LOG.warn("Error getting functions: ",e) @AT@ 11500 @LENGTH@ 19
+------UPD SimpleName@@Name:e @TO@ Name:LOG @AT@ 11500 @LENGTH@ 1
+------UPD SimpleName@@MethodName:printStackTrace:[] @TO@ MethodName:warn:["Error getting functions: ", e] @AT@ 11502 @LENGTH@ 17
+---------INS StringLiteral@@"Error getting functions: " @TO@ SimpleName@@MethodName:printStackTrace:[] @AT@ 11728 @LENGTH@ 27
+---------INS SimpleName@@e @TO@ SimpleName@@MethodName:printStackTrace:[] @AT@ 11757 @LENGTH@ 1
+

@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@static, final, AttributeDefinition, [VERSION=SimpleAttributeDefinitionBuilder.create("version",ModelType.STRING).setStorageRuntime().setRuntimeServiceNotRequired().build()] @TO@ private, static, final, AttributeDefinition, [VERSION=SimpleAttributeDefinitionBuilder.create("version",ModelType.STRING).setStorageRuntime().setRuntimeServiceNotRequired().build()] @AT@ 3211 @LENGTH@ 210
+---INS Modifier@@private @TO@ FieldDeclaration@@static, final, AttributeDefinition, [VERSION=SimpleAttributeDefinitionBuilder.create("version",ModelType.STRING).setStorageRuntime().setRuntimeServiceNotRequired().build()] @AT@ 3219 @LENGTH@ 7
+

@@ -1,0 +1,15 @@
+UPD ExpressionStatement@@MethodInvocation:builder.source(source).defaultText(msgText.toString()).warning() @TO@ Assignment:summaryResolver=new MessageBuilder().source(summarySource).defaultText(summaryText.toString()).warning().build() @AT@ 3882 @LENGTH@ 65
+---DEL MethodInvocation@@builder.source(source).defaultText(msgText.toString()).warning() @AT@ 3882 @LENGTH@ 64
+------DEL SimpleName@@Name:builder @AT@ 3882 @LENGTH@ 7
+---INS Assignment@@summaryResolver=new MessageBuilder().source(summarySource).defaultText(summaryText.toString()).warning().build() @TO@ ExpressionStatement@@MethodInvocation:builder.source(source).defaultText(msgText.toString()).warning() @AT@ 4369 @LENGTH@ 120
+------INS SimpleName@@summaryResolver @TO@ Assignment@@summaryResolver=new MessageBuilder().source(summarySource).defaultText(summaryText.toString()).warning().build() @AT@ 4369 @LENGTH@ 15
+------INS Operator@@= @TO@ Assignment@@summaryResolver=new MessageBuilder().source(summarySource).defaultText(summaryText.toString()).warning().build() @AT@ 4384 @LENGTH@ 1
+------INS MethodInvocation@@new MessageBuilder().source(summarySource).defaultText(summaryText.toString()).warning().build() @TO@ Assignment@@summaryResolver=new MessageBuilder().source(summarySource).defaultText(summaryText.toString()).warning().build() @AT@ 4387 @LENGTH@ 102
+---------MOV MethodInvocation@@MethodName:source:[source] @TO@ MethodInvocation@@new MessageBuilder().source(summarySource).defaultText(summaryText.toString()).warning().build() @AT@ 3882 @LENGTH@ 22
+---------MOV MethodInvocation@@MethodName:defaultText:[msgText.toString()] @TO@ MethodInvocation@@new MessageBuilder().source(summarySource).defaultText(summaryText.toString()).warning().build() @AT@ 3882 @LENGTH@ 54
+---------MOV SimpleName@@MethodName:warning:[] @TO@ MethodInvocation@@new MessageBuilder().source(summarySource).defaultText(summaryText.toString()).warning().build() @AT@ 3937 @LENGTH@ 9
+---------INS ClassInstanceCreation@@MessageBuilder[] @TO@ MethodInvocation@@new MessageBuilder().source(summarySource).defaultText(summaryText.toString()).warning().build() @AT@ 4387 @LENGTH@ 20
+------------INS New@@new @TO@ ClassInstanceCreation@@MessageBuilder[] @AT@ 4387 @LENGTH@ 3
+------------INS SimpleType@@MessageBuilder @TO@ ClassInstanceCreation@@MessageBuilder[] @AT@ 4391 @LENGTH@ 14
+---------INS MethodInvocation@@MethodName:warning:[] @TO@ MethodInvocation@@new MessageBuilder().source(summarySource).defaultText(summaryText.toString()).warning().build() @AT@ 4387 @LENGTH@ 88
+

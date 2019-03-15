@@ -1,0 +1,35 @@
+UPD ExpressionStatement@@MethodInvocation:registry.registerOperationHandler(LIST_HEURISTIC_COMMITTED_TRANSACTIONS,this,new DescriptionProvider(){
+  @Override public ModelNode getModelDescription(  Locale locale){
+    return MessagingDescriptions.getNoArgSimpleListReplyOperation(locale,LIST_HEURISTIC_COMMITTED_TRANSACTIONS,HQ_SERVER,ModelType.STRING,true);
+  }
+}
+,readOnly) @TO@ MethodInvocation:registry.registerOperationHandler(LIST_HEURISTIC_COMMITTED_TRANSACTIONS,this,new DescriptionProvider(){
+  @Override public ModelNode getModelDescription(  Locale locale){
+    return MessagingDescriptions.getNoArgSimpleListReplyOperation(locale,LIST_HEURISTIC_COMMITTED_TRANSACTIONS,HQ_SERVER,ModelType.STRING,true);
+  }
+}
+,readOnlyRuntimeOnly) @AT@ 16716 @LENGTH@ 391
+---UPD MethodInvocation@@registry.registerOperationHandler(LIST_HEURISTIC_COMMITTED_TRANSACTIONS,this,new DescriptionProvider(){
+  @Override public ModelNode getModelDescription(  Locale locale){
+    return MessagingDescriptions.getNoArgSimpleListReplyOperation(locale,LIST_HEURISTIC_COMMITTED_TRANSACTIONS,HQ_SERVER,ModelType.STRING,true);
+  }
+}
+,readOnly) @TO@ registry.registerOperationHandler(LIST_HEURISTIC_COMMITTED_TRANSACTIONS,this,new DescriptionProvider(){
+  @Override public ModelNode getModelDescription(  Locale locale){
+    return MessagingDescriptions.getNoArgSimpleListReplyOperation(locale,LIST_HEURISTIC_COMMITTED_TRANSACTIONS,HQ_SERVER,ModelType.STRING,true);
+  }
+}
+,readOnlyRuntimeOnly) @AT@ 16716 @LENGTH@ 390
+------UPD SimpleName@@MethodName:registerOperationHandler:[LIST_HEURISTIC_COMMITTED_TRANSACTIONS, this, new DescriptionProvider(){
+  @Override public ModelNode getModelDescription(  Locale locale){
+    return MessagingDescriptions.getNoArgSimpleListReplyOperation(locale,LIST_HEURISTIC_COMMITTED_TRANSACTIONS,HQ_SERVER,ModelType.STRING,true);
+  }
+}
+, readOnly] @TO@ MethodName:registerOperationHandler:[LIST_HEURISTIC_COMMITTED_TRANSACTIONS, this, new DescriptionProvider(){
+  @Override public ModelNode getModelDescription(  Locale locale){
+    return MessagingDescriptions.getNoArgSimpleListReplyOperation(locale,LIST_HEURISTIC_COMMITTED_TRANSACTIONS,HQ_SERVER,ModelType.STRING,true);
+  }
+}
+, readOnlyRuntimeOnly] @AT@ 16725 @LENGTH@ 381
+---------UPD SimpleName@@readOnly @TO@ readOnlyRuntimeOnly @AT@ 17097 @LENGTH@ 8
+

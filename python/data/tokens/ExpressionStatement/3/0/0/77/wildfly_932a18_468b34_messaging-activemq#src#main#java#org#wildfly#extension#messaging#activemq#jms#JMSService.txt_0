@@ -1,0 +1,262 @@
+UPD ExpressionStatement@@MethodInvocation:activeMQServer.getValue().registerActivateCallback(new ActivateCallback(){
+  private volatile ServiceController<Void> activeMQActivationController;
+  public void preActivate(){
+  }
+  public void activated(){
+    if (overrideInVMSecurity) {
+      activeMQServer.getValue().getRemotingService().allowInvmSecurityOverride(new ActiveMQPrincipal(DefaultCredentials.getUsername(),DefaultCredentials.getPassword()));
+    }
+    if (serviceContainer.isShutdown()) {
+      return;
+    }
+    if (activeMQActivationController == null) {
+      activeMQActivationController=serviceContainer.addService(ActiveMQActivationService.getServiceName(serverServiceName),new ActiveMQActivationService()).setInitialMode(Mode.ACTIVE).install();
+    }
+ else {
+      activeMQActivationController.setMode(ACTIVE);
+    }
+  }
+  @Override public void activationComplete(){
+  }
+  public void deActivate(){
+    if (activeMQActivationController != null) {
+      if (!activeMQActivationController.getState().in(STOPPING,REMOVED)) {
+        final CountDownLatch latch=new CountDownLatch(1);
+        activeMQActivationController.compareAndSetMode(ACTIVE,REMOVE);
+        activeMQActivationController.addListener(new AbstractServiceListener<Void>(){
+          @Override public void transition(          ServiceController<? extends Void> controller,          ServiceController.Transition transition){
+            if (transition.enters(REMOVED)) {
+              latch.countDown();
+            }
+          }
+        }
+);
+        try {
+          latch.await(5,TimeUnit.SECONDS);
+        }
+ catch (        InterruptedException e) {
+        }
+        activeMQActivationController=null;
+      }
+    }
+  }
+}
+) @TO@ MethodInvocation:activeMQServer.getValue().registerActivateCallback(new ActivateCallback(){
+  private volatile ServiceController<Void> activeMQActivationController;
+  public void preActivate(){
+  }
+  public void activated(){
+    if (overrideInVMSecurity) {
+      activeMQServer.getValue().getRemotingService().allowInvmSecurityOverride(new ActiveMQPrincipal(DefaultCredentials.getUsername(),DefaultCredentials.getPassword()));
+    }
+    if (serviceContainer.isShutdown()) {
+      return;
+    }
+    if (activeMQActivationController == null) {
+      activeMQActivationController=context.getChildTarget().addService(ActiveMQActivationService.getServiceName(serverServiceName),new ActiveMQActivationService()).setInitialMode(Mode.ACTIVE).install();
+    }
+ else {
+      activeMQActivationController.setMode(ACTIVE);
+    }
+  }
+  @Override public void activationComplete(){
+  }
+  public void deActivate(){
+    if (activeMQActivationController != null) {
+      if (!activeMQActivationController.getState().in(STOPPING,REMOVED)) {
+        final CountDownLatch latch=new CountDownLatch(1);
+        activeMQActivationController.compareAndSetMode(ACTIVE,REMOVE);
+        activeMQActivationController.addListener(new AbstractServiceListener<Void>(){
+          @Override public void transition(          ServiceController<? extends Void> controller,          ServiceController.Transition transition){
+            if (transition.enters(REMOVED)) {
+              latch.countDown();
+            }
+          }
+        }
+);
+        try {
+          latch.await(5,TimeUnit.SECONDS);
+        }
+ catch (        InterruptedException e) {
+        }
+        activeMQActivationController=null;
+      }
+    }
+  }
+}
+) @AT@ 6180 @LENGTH@ 3900
+---UPD MethodInvocation@@activeMQServer.getValue().registerActivateCallback(new ActivateCallback(){
+  private volatile ServiceController<Void> activeMQActivationController;
+  public void preActivate(){
+  }
+  public void activated(){
+    if (overrideInVMSecurity) {
+      activeMQServer.getValue().getRemotingService().allowInvmSecurityOverride(new ActiveMQPrincipal(DefaultCredentials.getUsername(),DefaultCredentials.getPassword()));
+    }
+    if (serviceContainer.isShutdown()) {
+      return;
+    }
+    if (activeMQActivationController == null) {
+      activeMQActivationController=serviceContainer.addService(ActiveMQActivationService.getServiceName(serverServiceName),new ActiveMQActivationService()).setInitialMode(Mode.ACTIVE).install();
+    }
+ else {
+      activeMQActivationController.setMode(ACTIVE);
+    }
+  }
+  @Override public void activationComplete(){
+  }
+  public void deActivate(){
+    if (activeMQActivationController != null) {
+      if (!activeMQActivationController.getState().in(STOPPING,REMOVED)) {
+        final CountDownLatch latch=new CountDownLatch(1);
+        activeMQActivationController.compareAndSetMode(ACTIVE,REMOVE);
+        activeMQActivationController.addListener(new AbstractServiceListener<Void>(){
+          @Override public void transition(          ServiceController<? extends Void> controller,          ServiceController.Transition transition){
+            if (transition.enters(REMOVED)) {
+              latch.countDown();
+            }
+          }
+        }
+);
+        try {
+          latch.await(5,TimeUnit.SECONDS);
+        }
+ catch (        InterruptedException e) {
+        }
+        activeMQActivationController=null;
+      }
+    }
+  }
+}
+) @TO@ activeMQServer.getValue().registerActivateCallback(new ActivateCallback(){
+  private volatile ServiceController<Void> activeMQActivationController;
+  public void preActivate(){
+  }
+  public void activated(){
+    if (overrideInVMSecurity) {
+      activeMQServer.getValue().getRemotingService().allowInvmSecurityOverride(new ActiveMQPrincipal(DefaultCredentials.getUsername(),DefaultCredentials.getPassword()));
+    }
+    if (serviceContainer.isShutdown()) {
+      return;
+    }
+    if (activeMQActivationController == null) {
+      activeMQActivationController=context.getChildTarget().addService(ActiveMQActivationService.getServiceName(serverServiceName),new ActiveMQActivationService()).setInitialMode(Mode.ACTIVE).install();
+    }
+ else {
+      activeMQActivationController.setMode(ACTIVE);
+    }
+  }
+  @Override public void activationComplete(){
+  }
+  public void deActivate(){
+    if (activeMQActivationController != null) {
+      if (!activeMQActivationController.getState().in(STOPPING,REMOVED)) {
+        final CountDownLatch latch=new CountDownLatch(1);
+        activeMQActivationController.compareAndSetMode(ACTIVE,REMOVE);
+        activeMQActivationController.addListener(new AbstractServiceListener<Void>(){
+          @Override public void transition(          ServiceController<? extends Void> controller,          ServiceController.Transition transition){
+            if (transition.enters(REMOVED)) {
+              latch.countDown();
+            }
+          }
+        }
+);
+        try {
+          latch.await(5,TimeUnit.SECONDS);
+        }
+ catch (        InterruptedException e) {
+        }
+        activeMQActivationController=null;
+      }
+    }
+  }
+}
+) @AT@ 6180 @LENGTH@ 3899
+------UPD SimpleName@@MethodName:registerActivateCallback:[new ActivateCallback(){
+  private volatile ServiceController<Void> activeMQActivationController;
+  public void preActivate(){
+  }
+  public void activated(){
+    if (overrideInVMSecurity) {
+      activeMQServer.getValue().getRemotingService().allowInvmSecurityOverride(new ActiveMQPrincipal(DefaultCredentials.getUsername(),DefaultCredentials.getPassword()));
+    }
+    if (serviceContainer.isShutdown()) {
+      return;
+    }
+    if (activeMQActivationController == null) {
+      activeMQActivationController=serviceContainer.addService(ActiveMQActivationService.getServiceName(serverServiceName),new ActiveMQActivationService()).setInitialMode(Mode.ACTIVE).install();
+    }
+ else {
+      activeMQActivationController.setMode(ACTIVE);
+    }
+  }
+  @Override public void activationComplete(){
+  }
+  public void deActivate(){
+    if (activeMQActivationController != null) {
+      if (!activeMQActivationController.getState().in(STOPPING,REMOVED)) {
+        final CountDownLatch latch=new CountDownLatch(1);
+        activeMQActivationController.compareAndSetMode(ACTIVE,REMOVE);
+        activeMQActivationController.addListener(new AbstractServiceListener<Void>(){
+          @Override public void transition(          ServiceController<? extends Void> controller,          ServiceController.Transition transition){
+            if (transition.enters(REMOVED)) {
+              latch.countDown();
+            }
+          }
+        }
+);
+        try {
+          latch.await(5,TimeUnit.SECONDS);
+        }
+ catch (        InterruptedException e) {
+        }
+        activeMQActivationController=null;
+      }
+    }
+  }
+}
+] @TO@ MethodName:registerActivateCallback:[new ActivateCallback(){
+  private volatile ServiceController<Void> activeMQActivationController;
+  public void preActivate(){
+  }
+  public void activated(){
+    if (overrideInVMSecurity) {
+      activeMQServer.getValue().getRemotingService().allowInvmSecurityOverride(new ActiveMQPrincipal(DefaultCredentials.getUsername(),DefaultCredentials.getPassword()));
+    }
+    if (serviceContainer.isShutdown()) {
+      return;
+    }
+    if (activeMQActivationController == null) {
+      activeMQActivationController=context.getChildTarget().addService(ActiveMQActivationService.getServiceName(serverServiceName),new ActiveMQActivationService()).setInitialMode(Mode.ACTIVE).install();
+    }
+ else {
+      activeMQActivationController.setMode(ACTIVE);
+    }
+  }
+  @Override public void activationComplete(){
+  }
+  public void deActivate(){
+    if (activeMQActivationController != null) {
+      if (!activeMQActivationController.getState().in(STOPPING,REMOVED)) {
+        final CountDownLatch latch=new CountDownLatch(1);
+        activeMQActivationController.compareAndSetMode(ACTIVE,REMOVE);
+        activeMQActivationController.addListener(new AbstractServiceListener<Void>(){
+          @Override public void transition(          ServiceController<? extends Void> controller,          ServiceController.Transition transition){
+            if (transition.enters(REMOVED)) {
+              latch.countDown();
+            }
+          }
+        }
+);
+        try {
+          latch.await(5,TimeUnit.SECONDS);
+        }
+ catch (        InterruptedException e) {
+        }
+        activeMQActivationController=null;
+      }
+    }
+  }
+}
+] @AT@ 6206 @LENGTH@ 3873
+

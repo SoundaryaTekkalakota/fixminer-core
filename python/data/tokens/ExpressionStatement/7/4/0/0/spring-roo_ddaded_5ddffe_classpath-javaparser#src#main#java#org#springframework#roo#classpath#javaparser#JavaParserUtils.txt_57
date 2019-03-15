@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(NegativeArraySizeException.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("NegativeArraySizeException") @AT@ 4859 @LENGTH@ 78
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(NegativeArraySizeException.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("NegativeArraySizeException") @AT@ 4859 @LENGTH@ 77
+------UPD SimpleName@@MethodName:add:[NegativeArraySizeException.class.getSimpleName()] @TO@ MethodName:add:["NegativeArraySizeException"] @AT@ 4883 @LENGTH@ 53
+---------INS StringLiteral@@"NegativeArraySizeException" @TO@ SimpleName@@MethodName:add:[NegativeArraySizeException.class.getSimpleName()] @AT@ 4317 @LENGTH@ 28
+---------DEL MethodInvocation@@NegativeArraySizeException.class.getSimpleName() @AT@ 4887 @LENGTH@ 48
+------------DEL TypeLiteral@@NegativeArraySizeException.class @AT@ 4887 @LENGTH@ 32
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 4920 @LENGTH@ 15
+

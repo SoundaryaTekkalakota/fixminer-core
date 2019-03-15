@@ -1,0 +1,10 @@
+ INS EnhancedForStatement
+--- INS SingleVariableDeclaration
+------ INS Modifier
+------ INS SimpleType
+------ INS SimpleName
+--- INS SimpleName
+--- INS ExpressionStatement
+------ MOV MethodInvocation
+--- INS ExpressionStatement
+------ MOV Assignment

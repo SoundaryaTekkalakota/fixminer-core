@@ -1,0 +1,13 @@
+ UPD ExpressionStatement
+--- UPD MethodInvocation
+------ UPD SimpleName
+--------- INS MethodInvocation
+------------ MOV SimpleName
+--------- DEL ConditionalExpression
+------------ DEL SimpleName
+------------ DEL MethodInvocation
+--------------- DEL SimpleName
+------------ DEL MethodInvocation
+--------------- DEL SimpleName
+--------------- DEL SimpleName
+------------------ DEL SimpleName

@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(UnsatisfiedLinkError.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("UnsatisfiedLinkError") @AT@ 6846 @LENGTH@ 72
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(UnsatisfiedLinkError.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("UnsatisfiedLinkError") @AT@ 6846 @LENGTH@ 71
+------UPD SimpleName@@MethodName:add:[UnsatisfiedLinkError.class.getSimpleName()] @TO@ MethodName:add:["UnsatisfiedLinkError"] @AT@ 6870 @LENGTH@ 47
+---------INS StringLiteral@@"UnsatisfiedLinkError" @TO@ SimpleName@@MethodName:add:[UnsatisfiedLinkError.class.getSimpleName()] @AT@ 5822 @LENGTH@ 22
+---------DEL MethodInvocation@@UnsatisfiedLinkError.class.getSimpleName() @AT@ 6874 @LENGTH@ 42
+------------DEL TypeLiteral@@UnsatisfiedLinkError.class @AT@ 6874 @LENGTH@ 26
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 6901 @LENGTH@ 15
+

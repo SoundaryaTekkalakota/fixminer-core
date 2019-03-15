@@ -1,0 +1,9 @@
+CatchClause
+---SingleVariableDeclaration
+------SimpleName
+---ExpressionStatement
+------MethodInvocation
+---------SimpleName
+---------SimpleName
+------------StringLiteral
+------------SimpleName

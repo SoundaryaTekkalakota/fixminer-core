@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, Metamodel, [metamodel] @TO@ TypeDeclaration@@[public]JpaMetamodelEntityInformation, JpaEntityInformationSupport<T,ID> @AT@ 1983 @LENGTH@ 34
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, Metamodel, [metamodel] @AT@ 1983 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, Metamodel, [metamodel] @AT@ 1991 @LENGTH@ 5
+---INS SimpleType@@Metamodel @TO@ FieldDeclaration@@private, final, Metamodel, [metamodel] @AT@ 1997 @LENGTH@ 9
+---INS VariableDeclarationFragment@@metamodel @TO@ FieldDeclaration@@private, final, Metamodel, [metamodel] @AT@ 2007 @LENGTH@ 9
+------INS SimpleName@@metamodel @TO@ VariableDeclarationFragment@@metamodel @AT@ 2007 @LENGTH@ 9
+

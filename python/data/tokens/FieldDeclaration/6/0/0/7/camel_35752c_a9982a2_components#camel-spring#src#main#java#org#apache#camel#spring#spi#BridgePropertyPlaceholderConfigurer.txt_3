@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, PropertiesParser, [parser] @TO@ TypeDeclaration@@[private]BridgePropertiesParser, [PropertiesParser] @AT@ 10042 @LENGTH@ 38
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, PropertiesParser, [parser] @AT@ 10042 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, PropertiesParser, [parser] @AT@ 10050 @LENGTH@ 5
+---INS SimpleType@@PropertiesParser @TO@ FieldDeclaration@@private, final, PropertiesParser, [parser] @AT@ 10056 @LENGTH@ 16
+---INS VariableDeclarationFragment@@parser @TO@ FieldDeclaration@@private, final, PropertiesParser, [parser] @AT@ 10073 @LENGTH@ 6
+------INS SimpleName@@parser @TO@ VariableDeclarationFragment@@parser @AT@ 10073 @LENGTH@ 6
+

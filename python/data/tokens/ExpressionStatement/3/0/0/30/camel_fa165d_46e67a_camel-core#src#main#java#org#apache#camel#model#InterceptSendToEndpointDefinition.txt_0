@@ -1,0 +1,100 @@
+UPD ExpressionStatement@@MethodInvocation:routeContext.getCamelContext().addRegisterEndpointCallback(new EndpointStrategy(){
+  public Endpoint registerEndpoint(  String uri,  Endpoint endpoint){
+    if (endpoint instanceof InterceptSendToEndpoint) {
+      return endpoint;
+    }
+ else     if (getUri() == null || EndpointHelper.matchEndpoint(routeContext.getCamelContext(),uri,getUri())) {
+      boolean skip=isSkipSendToOriginalEndpoint();
+      InterceptSendToEndpoint proxy=new InterceptSendToEndpoint(endpoint,skip);
+      proxy.setDetour(detour);
+      return proxy;
+    }
+ else {
+      return endpoint;
+    }
+  }
+}
+) @TO@ MethodInvocation:routeContext.getCamelContext().addRegisterEndpointCallback(new EndpointStrategy(){
+  public Endpoint registerEndpoint(  String uri,  Endpoint endpoint){
+    if (endpoint instanceof InterceptSendToEndpoint) {
+      return endpoint;
+    }
+ else     if (getUri() == null || matchPattern(routeContext.getCamelContext(),uri,getUri())) {
+      boolean skip=isSkipSendToOriginalEndpoint();
+      InterceptSendToEndpoint proxy=new InterceptSendToEndpoint(endpoint,skip);
+      proxy.setDetour(detour);
+      return proxy;
+    }
+ else {
+      return endpoint;
+    }
+  }
+}
+) @AT@ 3186 @LENGTH@ 988
+---UPD MethodInvocation@@routeContext.getCamelContext().addRegisterEndpointCallback(new EndpointStrategy(){
+  public Endpoint registerEndpoint(  String uri,  Endpoint endpoint){
+    if (endpoint instanceof InterceptSendToEndpoint) {
+      return endpoint;
+    }
+ else     if (getUri() == null || EndpointHelper.matchEndpoint(routeContext.getCamelContext(),uri,getUri())) {
+      boolean skip=isSkipSendToOriginalEndpoint();
+      InterceptSendToEndpoint proxy=new InterceptSendToEndpoint(endpoint,skip);
+      proxy.setDetour(detour);
+      return proxy;
+    }
+ else {
+      return endpoint;
+    }
+  }
+}
+) @TO@ routeContext.getCamelContext().addRegisterEndpointCallback(new EndpointStrategy(){
+  public Endpoint registerEndpoint(  String uri,  Endpoint endpoint){
+    if (endpoint instanceof InterceptSendToEndpoint) {
+      return endpoint;
+    }
+ else     if (getUri() == null || matchPattern(routeContext.getCamelContext(),uri,getUri())) {
+      boolean skip=isSkipSendToOriginalEndpoint();
+      InterceptSendToEndpoint proxy=new InterceptSendToEndpoint(endpoint,skip);
+      proxy.setDetour(detour);
+      return proxy;
+    }
+ else {
+      return endpoint;
+    }
+  }
+}
+) @AT@ 3186 @LENGTH@ 987
+------UPD SimpleName@@MethodName:addRegisterEndpointCallback:[new EndpointStrategy(){
+  public Endpoint registerEndpoint(  String uri,  Endpoint endpoint){
+    if (endpoint instanceof InterceptSendToEndpoint) {
+      return endpoint;
+    }
+ else     if (getUri() == null || EndpointHelper.matchEndpoint(routeContext.getCamelContext(),uri,getUri())) {
+      boolean skip=isSkipSendToOriginalEndpoint();
+      InterceptSendToEndpoint proxy=new InterceptSendToEndpoint(endpoint,skip);
+      proxy.setDetour(detour);
+      return proxy;
+    }
+ else {
+      return endpoint;
+    }
+  }
+}
+] @TO@ MethodName:addRegisterEndpointCallback:[new EndpointStrategy(){
+  public Endpoint registerEndpoint(  String uri,  Endpoint endpoint){
+    if (endpoint instanceof InterceptSendToEndpoint) {
+      return endpoint;
+    }
+ else     if (getUri() == null || matchPattern(routeContext.getCamelContext(),uri,getUri())) {
+      boolean skip=isSkipSendToOriginalEndpoint();
+      InterceptSendToEndpoint proxy=new InterceptSendToEndpoint(endpoint,skip);
+      proxy.setDetour(detour);
+      return proxy;
+    }
+ else {
+      return endpoint;
+    }
+  }
+}
+] @AT@ 3217 @LENGTH@ 956
+

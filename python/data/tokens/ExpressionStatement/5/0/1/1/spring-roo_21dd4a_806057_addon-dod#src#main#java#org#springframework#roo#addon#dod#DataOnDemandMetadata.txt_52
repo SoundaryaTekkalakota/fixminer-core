@@ -1,0 +1,6 @@
+DEL ExpressionStatement@@MethodInvocation:paramTypes.add(entityType) @AT@ 21233 @LENGTH@ 27
+---DEL MethodInvocation@@paramTypes.add(entityType) @AT@ 21233 @LENGTH@ 26
+------DEL SimpleName@@Name:paramTypes @AT@ 21233 @LENGTH@ 10
+------DEL SimpleName@@MethodName:add:[entityType] @AT@ 21244 @LENGTH@ 15
+---------DEL SimpleName@@entityType @AT@ 21248 @LENGTH@ 10
+

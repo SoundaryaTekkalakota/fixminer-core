@@ -1,0 +1,8 @@
+UPD ReturnStatement@@MethodInvocation:StringUtils.defaultIfEmpty(mergeMethod,MERGE_METHOD_DEFAULT) @TO@ SimpleName:mergeMethod @AT@ 3864 @LENGTH@ 69
+---INS SimpleName@@mergeMethod @TO@ ReturnStatement@@MethodInvocation:StringUtils.defaultIfEmpty(mergeMethod,MERGE_METHOD_DEFAULT) @AT@ 3558 @LENGTH@ 11
+---DEL MethodInvocation@@StringUtils.defaultIfEmpty(mergeMethod,MERGE_METHOD_DEFAULT) @AT@ 3871 @LENGTH@ 61
+------DEL SimpleName@@Name:StringUtils @AT@ 3871 @LENGTH@ 11
+------DEL SimpleName@@MethodName:defaultIfEmpty:[mergeMethod, MERGE_METHOD_DEFAULT] @AT@ 3883 @LENGTH@ 49
+---------DEL SimpleName@@mergeMethod @AT@ 3898 @LENGTH@ 11
+---------DEL SimpleName@@MERGE_METHOD_DEFAULT @AT@ 3911 @LENGTH@ 20
+

@@ -1,0 +1,12 @@
+INS FieldDeclaration@@private, static, final, Logger, [LOG=LoggerFactory.getLogger(ChoiceProcessor.class)] @TO@ TypeDeclaration@@[public]ChoiceProcessor, ServiceSupport[AsyncProcessor, Navigate<Processor>, Traceable] @AT@ 1795 @LENGTH@ 81
+---INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, Logger, [LOG=LoggerFactory.getLogger(ChoiceProcessor.class)] @AT@ 1795 @LENGTH@ 7
+---INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, Logger, [LOG=LoggerFactory.getLogger(ChoiceProcessor.class)] @AT@ 1803 @LENGTH@ 6
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, Logger, [LOG=LoggerFactory.getLogger(ChoiceProcessor.class)] @AT@ 1810 @LENGTH@ 5
+---INS SimpleType@@Logger @TO@ FieldDeclaration@@private, static, final, Logger, [LOG=LoggerFactory.getLogger(ChoiceProcessor.class)] @AT@ 1816 @LENGTH@ 6
+---INS VariableDeclarationFragment@@LOG=LoggerFactory.getLogger(ChoiceProcessor.class) @TO@ FieldDeclaration@@private, static, final, Logger, [LOG=LoggerFactory.getLogger(ChoiceProcessor.class)] @AT@ 1823 @LENGTH@ 52
+------INS SimpleName@@LOG @TO@ VariableDeclarationFragment@@LOG=LoggerFactory.getLogger(ChoiceProcessor.class) @AT@ 1823 @LENGTH@ 3
+------INS MethodInvocation@@LoggerFactory.getLogger(ChoiceProcessor.class) @TO@ VariableDeclarationFragment@@LOG=LoggerFactory.getLogger(ChoiceProcessor.class) @AT@ 1829 @LENGTH@ 46
+---------INS SimpleName@@Name:LoggerFactory @TO@ MethodInvocation@@LoggerFactory.getLogger(ChoiceProcessor.class) @AT@ 1829 @LENGTH@ 13
+---------INS SimpleName@@MethodName:getLogger:[ChoiceProcessor.class] @TO@ MethodInvocation@@LoggerFactory.getLogger(ChoiceProcessor.class) @AT@ 1843 @LENGTH@ 32
+------------INS TypeLiteral@@ChoiceProcessor.class @TO@ SimpleName@@MethodName:getLogger:[ChoiceProcessor.class] @AT@ 1853 @LENGTH@ 21
+

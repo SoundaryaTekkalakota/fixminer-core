@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(IndexOutOfBoundsException.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("IndexOutOfBoundsException") @AT@ 4627 @LENGTH@ 77
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(IndexOutOfBoundsException.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("IndexOutOfBoundsException") @AT@ 4627 @LENGTH@ 76
+------UPD SimpleName@@MethodName:add:[IndexOutOfBoundsException.class.getSimpleName()] @TO@ MethodName:add:["IndexOutOfBoundsException"] @AT@ 4651 @LENGTH@ 52
+---------INS StringLiteral@@"IndexOutOfBoundsException" @TO@ SimpleName@@MethodName:add:[IndexOutOfBoundsException.class.getSimpleName()] @AT@ 4145 @LENGTH@ 27
+---------DEL MethodInvocation@@IndexOutOfBoundsException.class.getSimpleName() @AT@ 4655 @LENGTH@ 47
+------------DEL TypeLiteral@@IndexOutOfBoundsException.class @AT@ 4655 @LENGTH@ 31
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 4687 @LENGTH@ 15
+

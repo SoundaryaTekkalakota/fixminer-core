@@ -1,0 +1,2 @@
+INS BreakStatement@@ @TO@ SwitchStatement@@MethodInvocation:xObjectInspector.getPrimitiveCategory() @AT@ 8020 @LENGTH@ 6
+

@@ -1,0 +1,10 @@
+FieldDeclaration
+---Modifier
+---Modifier
+---SimpleType
+---VariableDeclarationFragment
+------SimpleName
+------ClassInstanceCreation
+---------New
+---------SimpleType
+---------BooleanLiteral

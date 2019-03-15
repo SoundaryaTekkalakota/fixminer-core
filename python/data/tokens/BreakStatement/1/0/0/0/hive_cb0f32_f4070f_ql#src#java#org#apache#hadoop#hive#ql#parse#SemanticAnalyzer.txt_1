@@ -1,0 +1,2 @@
+INS BreakStatement@@ @TO@ SwitchStatement@@MethodInvocation:rowChild.getToken().getType() @AT@ 106585 @LENGTH@ 6
+

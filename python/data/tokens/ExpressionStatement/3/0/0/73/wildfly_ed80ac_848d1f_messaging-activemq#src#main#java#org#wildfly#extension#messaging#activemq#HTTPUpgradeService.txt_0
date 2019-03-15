@@ -1,0 +1,172 @@
+UPD ExpressionStatement@@MethodInvocation:injectedRegistry.getValue().addProtocol(getProtocol(),httpUpgradeListener,new SimpleHttpUpgradeHandshake(MAGIC_NUMBER,getSecKeyHeader(),getSecAcceptHeader()){
+  /** 
+ * override the default upgrade handshake to take into account the  {@code TransportConstants.HTTP_UPGRADE_ENDPOINT_PROP_NAME} headerto select the correct acceptors among all that are configured in ActiveMQ. If the request does not have this header, the first acceptor will be used.
+ */
+  @Override public boolean handleUpgrade(  HttpServerExchange exchange) throws IOException {
+    if (super.handleUpgrade(exchange)) {
+      ActiveMQServer server=selectServer(exchange,activeMQServer);
+      RemotingService remotingService=server.getRemotingService();
+      if (!server.isActive() || !remotingService.isStarted()) {
+        return false;
+      }
+      final String endpoint=exchange.getRequestHeaders().getFirst(getHttpUpgradeEndpointKey());
+      if (endpoint == null) {
+        return true;
+      }
+ else {
+        return acceptorName.equals(endpoint);
+      }
+    }
+ else {
+      return false;
+    }
+  }
+}
+) @TO@ MethodInvocation:injectedRegistry.getValue().addProtocol(getProtocol(),httpUpgradeListener,new SimpleHttpUpgradeHandshake(MAGIC_NUMBER,getSecKeyHeader(),getSecAcceptHeader()){
+  /** 
+ * override the default upgrade handshake to take into account the  {@code TransportConstants.HTTP_UPGRADE_ENDPOINT_PROP_NAME} headerto select the correct acceptors among all that are configured in ActiveMQ. If the request does not have this header, the first acceptor will be used.
+ */
+  @Override public boolean handleUpgrade(  HttpServerExchange exchange) throws IOException {
+    if (super.handleUpgrade(exchange)) {
+      ActiveMQServer server=selectServer(exchange,activeMQServer);
+      if (server == null) {
+        return false;
+      }
+      RemotingService remotingService=server.getRemotingService();
+      final String endpoint=exchange.getRequestHeaders().getFirst(getHttpUpgradeEndpointKey());
+      if (!server.isActive() || !remotingService.isStarted()) {
+        return false;
+      }
+      if (endpoint == null) {
+        return true;
+      }
+ else {
+        if (acceptorName.equals(endpoint)) {
+          return !remotingService.isPaused();
+        }
+ else {
+          return false;
+        }
+      }
+    }
+ else {
+      return false;
+    }
+  }
+}
+) @AT@ 6411 @LENGTH@ 1859
+---UPD MethodInvocation@@injectedRegistry.getValue().addProtocol(getProtocol(),httpUpgradeListener,new SimpleHttpUpgradeHandshake(MAGIC_NUMBER,getSecKeyHeader(),getSecAcceptHeader()){
+  /** 
+ * override the default upgrade handshake to take into account the  {@code TransportConstants.HTTP_UPGRADE_ENDPOINT_PROP_NAME} headerto select the correct acceptors among all that are configured in ActiveMQ. If the request does not have this header, the first acceptor will be used.
+ */
+  @Override public boolean handleUpgrade(  HttpServerExchange exchange) throws IOException {
+    if (super.handleUpgrade(exchange)) {
+      ActiveMQServer server=selectServer(exchange,activeMQServer);
+      RemotingService remotingService=server.getRemotingService();
+      if (!server.isActive() || !remotingService.isStarted()) {
+        return false;
+      }
+      final String endpoint=exchange.getRequestHeaders().getFirst(getHttpUpgradeEndpointKey());
+      if (endpoint == null) {
+        return true;
+      }
+ else {
+        return acceptorName.equals(endpoint);
+      }
+    }
+ else {
+      return false;
+    }
+  }
+}
+) @TO@ injectedRegistry.getValue().addProtocol(getProtocol(),httpUpgradeListener,new SimpleHttpUpgradeHandshake(MAGIC_NUMBER,getSecKeyHeader(),getSecAcceptHeader()){
+  /** 
+ * override the default upgrade handshake to take into account the  {@code TransportConstants.HTTP_UPGRADE_ENDPOINT_PROP_NAME} headerto select the correct acceptors among all that are configured in ActiveMQ. If the request does not have this header, the first acceptor will be used.
+ */
+  @Override public boolean handleUpgrade(  HttpServerExchange exchange) throws IOException {
+    if (super.handleUpgrade(exchange)) {
+      ActiveMQServer server=selectServer(exchange,activeMQServer);
+      if (server == null) {
+        return false;
+      }
+      RemotingService remotingService=server.getRemotingService();
+      final String endpoint=exchange.getRequestHeaders().getFirst(getHttpUpgradeEndpointKey());
+      if (!server.isActive() || !remotingService.isStarted()) {
+        return false;
+      }
+      if (endpoint == null) {
+        return true;
+      }
+ else {
+        if (acceptorName.equals(endpoint)) {
+          return !remotingService.isPaused();
+        }
+ else {
+          return false;
+        }
+      }
+    }
+ else {
+      return false;
+    }
+  }
+}
+) @AT@ 6411 @LENGTH@ 1858
+------UPD SimpleName@@MethodName:addProtocol:[getProtocol(), httpUpgradeListener, new SimpleHttpUpgradeHandshake(MAGIC_NUMBER,getSecKeyHeader(),getSecAcceptHeader()){
+  /** 
+ * override the default upgrade handshake to take into account the  {@code TransportConstants.HTTP_UPGRADE_ENDPOINT_PROP_NAME} headerto select the correct acceptors among all that are configured in ActiveMQ. If the request does not have this header, the first acceptor will be used.
+ */
+  @Override public boolean handleUpgrade(  HttpServerExchange exchange) throws IOException {
+    if (super.handleUpgrade(exchange)) {
+      ActiveMQServer server=selectServer(exchange,activeMQServer);
+      RemotingService remotingService=server.getRemotingService();
+      if (!server.isActive() || !remotingService.isStarted()) {
+        return false;
+      }
+      final String endpoint=exchange.getRequestHeaders().getFirst(getHttpUpgradeEndpointKey());
+      if (endpoint == null) {
+        return true;
+      }
+ else {
+        return acceptorName.equals(endpoint);
+      }
+    }
+ else {
+      return false;
+    }
+  }
+}
+] @TO@ MethodName:addProtocol:[getProtocol(), httpUpgradeListener, new SimpleHttpUpgradeHandshake(MAGIC_NUMBER,getSecKeyHeader(),getSecAcceptHeader()){
+  /** 
+ * override the default upgrade handshake to take into account the  {@code TransportConstants.HTTP_UPGRADE_ENDPOINT_PROP_NAME} headerto select the correct acceptors among all that are configured in ActiveMQ. If the request does not have this header, the first acceptor will be used.
+ */
+  @Override public boolean handleUpgrade(  HttpServerExchange exchange) throws IOException {
+    if (super.handleUpgrade(exchange)) {
+      ActiveMQServer server=selectServer(exchange,activeMQServer);
+      if (server == null) {
+        return false;
+      }
+      RemotingService remotingService=server.getRemotingService();
+      final String endpoint=exchange.getRequestHeaders().getFirst(getHttpUpgradeEndpointKey());
+      if (!server.isActive() || !remotingService.isStarted()) {
+        return false;
+      }
+      if (endpoint == null) {
+        return true;
+      }
+ else {
+        if (acceptorName.equals(endpoint)) {
+          return !remotingService.isPaused();
+        }
+ else {
+          return false;
+        }
+      }
+    }
+ else {
+      return false;
+    }
+  }
+}
+] @AT@ 6439 @LENGTH@ 1830
+

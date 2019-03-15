@@ -1,0 +1,2 @@
+INS ContinueStatement@@ @TO@ IfStatement@@InfixExpression:startQuote[0] == -1 && index < line.length() - 1 && line.charAt(index) == '-' && line.charAt(index + 1) == '-' @AT@ 35584 @LENGTH@ 9
+

@@ -1,0 +1,52 @@
+UPD ExpressionStatement@@MethodInvocation:opRules.put(new RuleRegExp("No user code in select",SelectOperator.getOperatorName() + "%"),new NodeProcessor(){
+  @Override public Object process(  Node n,  Stack<Node> s,  NodeProcessorCtx c,  Object... os){
+    @SuppressWarnings({"unchecked"}) List<ExprNodeDesc> exprs=((Operator<SelectDesc>)n).getConf().getColList();
+    return new Boolean(checkExpressions(exprs));
+  }
+}
+) @TO@ MethodInvocation:opRules.put(new RuleRegExp("No user code in select",SelectOperator.getOperatorName() + "%"),new NodeProcessor(){
+  @Override public Object process(  Node n,  Stack<Node> s,  NodeProcessorCtx c,  Object... os){
+    @SuppressWarnings({"unchecked"}) List<ExprNodeDesc> exprs=((Operator<SelectDesc>)n).getConf().getColList();
+    Boolean retval=new Boolean(checkExpressions(exprs));
+    if (!retval) {
+      LOG.info("Cannot run select operator [" + n + "] in llap mode");
+    }
+    return new Boolean(retval);
+  }
+}
+) @AT@ 12401 @LENGTH@ 472
+---UPD MethodInvocation@@opRules.put(new RuleRegExp("No user code in select",SelectOperator.getOperatorName() + "%"),new NodeProcessor(){
+  @Override public Object process(  Node n,  Stack<Node> s,  NodeProcessorCtx c,  Object... os){
+    @SuppressWarnings({"unchecked"}) List<ExprNodeDesc> exprs=((Operator<SelectDesc>)n).getConf().getColList();
+    return new Boolean(checkExpressions(exprs));
+  }
+}
+) @TO@ opRules.put(new RuleRegExp("No user code in select",SelectOperator.getOperatorName() + "%"),new NodeProcessor(){
+  @Override public Object process(  Node n,  Stack<Node> s,  NodeProcessorCtx c,  Object... os){
+    @SuppressWarnings({"unchecked"}) List<ExprNodeDesc> exprs=((Operator<SelectDesc>)n).getConf().getColList();
+    Boolean retval=new Boolean(checkExpressions(exprs));
+    if (!retval) {
+      LOG.info("Cannot run select operator [" + n + "] in llap mode");
+    }
+    return new Boolean(retval);
+  }
+}
+) @AT@ 12401 @LENGTH@ 471
+------UPD SimpleName@@MethodName:put:[new RuleRegExp("No user code in select",SelectOperator.getOperatorName() + "%"), new NodeProcessor(){
+  @Override public Object process(  Node n,  Stack<Node> s,  NodeProcessorCtx c,  Object... os){
+    @SuppressWarnings({"unchecked"}) List<ExprNodeDesc> exprs=((Operator<SelectDesc>)n).getConf().getColList();
+    return new Boolean(checkExpressions(exprs));
+  }
+}
+] @TO@ MethodName:put:[new RuleRegExp("No user code in select",SelectOperator.getOperatorName() + "%"), new NodeProcessor(){
+  @Override public Object process(  Node n,  Stack<Node> s,  NodeProcessorCtx c,  Object... os){
+    @SuppressWarnings({"unchecked"}) List<ExprNodeDesc> exprs=((Operator<SelectDesc>)n).getConf().getColList();
+    Boolean retval=new Boolean(checkExpressions(exprs));
+    if (!retval) {
+      LOG.info("Cannot run select operator [" + n + "] in llap mode");
+    }
+    return new Boolean(retval);
+  }
+}
+] @AT@ 12409 @LENGTH@ 463
+

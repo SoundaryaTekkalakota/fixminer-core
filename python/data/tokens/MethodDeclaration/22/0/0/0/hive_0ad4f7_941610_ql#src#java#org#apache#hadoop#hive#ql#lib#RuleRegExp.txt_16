@@ -1,0 +1,23 @@
+INS MethodDeclaration@@boolean, MethodName:rulePatternIsValidWithoutWildCardChar,  @TO@ TypeDeclaration@@[public]RuleRegExp, [Rule] @AT@ 6705 @LENGTH@ 161
+---INS PrimitiveType@@boolean @TO@ MethodDeclaration@@boolean, MethodName:rulePatternIsValidWithoutWildCardChar,  @AT@ 6697 @LENGTH@ 7
+---INS SimpleName@@MethodName:rulePatternIsValidWithoutWildCardChar @TO@ MethodDeclaration@@boolean, MethodName:rulePatternIsValidWithoutWildCardChar,  @AT@ 6705 @LENGTH@ 37
+---INS ReturnStatement@@InfixExpression:patternWithWildCardChar == null && patternWithoutWildCardChar != null && this.patternORWildChar == null @TO@ MethodDeclaration@@boolean, MethodName:rulePatternIsValidWithoutWildCardChar,  @AT@ 6751 @LENGTH@ 111
+------INS InfixExpression@@patternWithWildCardChar == null && patternWithoutWildCardChar != null && this.patternORWildChar == null @TO@ ReturnStatement@@InfixExpression:patternWithWildCardChar == null && patternWithoutWildCardChar != null && this.patternORWildChar == null @AT@ 6758 @LENGTH@ 103
+---------INS InfixExpression@@patternWithWildCardChar == null && patternWithoutWildCardChar != null @TO@ InfixExpression@@patternWithWildCardChar == null && patternWithoutWildCardChar != null && this.patternORWildChar == null @AT@ 6758 @LENGTH@ 69
+------------INS InfixExpression@@patternWithWildCardChar == null @TO@ InfixExpression@@patternWithWildCardChar == null && patternWithoutWildCardChar != null @AT@ 6758 @LENGTH@ 31
+---------------INS SimpleName@@patternWithWildCardChar @TO@ InfixExpression@@patternWithWildCardChar == null @AT@ 6758 @LENGTH@ 23
+---------------INS Operator@@== @TO@ InfixExpression@@patternWithWildCardChar == null @AT@ 6781 @LENGTH@ 2
+---------------INS NullLiteral@@null @TO@ InfixExpression@@patternWithWildCardChar == null @AT@ 6785 @LENGTH@ 4
+------------INS Operator@@&& @TO@ InfixExpression@@patternWithWildCardChar == null && patternWithoutWildCardChar != null @AT@ 6789 @LENGTH@ 2
+------------INS InfixExpression@@patternWithoutWildCardChar != null @TO@ InfixExpression@@patternWithWildCardChar == null && patternWithoutWildCardChar != null @AT@ 6793 @LENGTH@ 34
+---------------INS SimpleName@@patternWithoutWildCardChar @TO@ InfixExpression@@patternWithoutWildCardChar != null @AT@ 6793 @LENGTH@ 26
+---------------INS Operator@@!= @TO@ InfixExpression@@patternWithoutWildCardChar != null @AT@ 6819 @LENGTH@ 2
+---------------INS NullLiteral@@null @TO@ InfixExpression@@patternWithoutWildCardChar != null @AT@ 6823 @LENGTH@ 4
+---------INS Operator@@&& @TO@ InfixExpression@@patternWithWildCardChar == null && patternWithoutWildCardChar != null && this.patternORWildChar == null @AT@ 6827 @LENGTH@ 2
+---------INS InfixExpression@@this.patternORWildChar == null @TO@ InfixExpression@@patternWithWildCardChar == null && patternWithoutWildCardChar != null && this.patternORWildChar == null @AT@ 6831 @LENGTH@ 30
+------------INS FieldAccess@@this.patternORWildChar @TO@ InfixExpression@@this.patternORWildChar == null @AT@ 6831 @LENGTH@ 22
+---------------INS ThisExpression@@this @TO@ FieldAccess@@this.patternORWildChar @AT@ 6831 @LENGTH@ 4
+---------------INS SimpleName@@patternORWildChar @TO@ FieldAccess@@this.patternORWildChar @AT@ 6836 @LENGTH@ 17
+------------INS Operator@@== @TO@ InfixExpression@@this.patternORWildChar == null @AT@ 6853 @LENGTH@ 2
+------------INS NullLiteral@@null @TO@ InfixExpression@@this.patternORWildChar == null @AT@ 6857 @LENGTH@ 4
+

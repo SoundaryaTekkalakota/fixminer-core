@@ -1,0 +1,11 @@
+INS FieldDeclaration@@private, final, static, Object, [NULL_CACHING_ATTRIBUTE=new Object()] @TO@ TypeDeclaration@@[public, abstract]AbstractFallbackJCacheOperationSource, [JCacheOperationSource] @AT@ 1705 @LENGTH@ 66
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, static, Object, [NULL_CACHING_ATTRIBUTE=new Object()] @AT@ 1705 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, static, Object, [NULL_CACHING_ATTRIBUTE=new Object()] @AT@ 1713 @LENGTH@ 5
+---INS Modifier@@static @TO@ FieldDeclaration@@private, final, static, Object, [NULL_CACHING_ATTRIBUTE=new Object()] @AT@ 1719 @LENGTH@ 6
+---INS SimpleType@@Object @TO@ FieldDeclaration@@private, final, static, Object, [NULL_CACHING_ATTRIBUTE=new Object()] @AT@ 1726 @LENGTH@ 6
+---INS VariableDeclarationFragment@@NULL_CACHING_ATTRIBUTE=new Object() @TO@ FieldDeclaration@@private, final, static, Object, [NULL_CACHING_ATTRIBUTE=new Object()] @AT@ 1733 @LENGTH@ 37
+------INS SimpleName@@NULL_CACHING_ATTRIBUTE @TO@ VariableDeclarationFragment@@NULL_CACHING_ATTRIBUTE=new Object() @AT@ 1733 @LENGTH@ 22
+------INS ClassInstanceCreation@@Object[] @TO@ VariableDeclarationFragment@@NULL_CACHING_ATTRIBUTE=new Object() @AT@ 1758 @LENGTH@ 12
+---------INS New@@new @TO@ ClassInstanceCreation@@Object[] @AT@ 1758 @LENGTH@ 3
+---------INS SimpleType@@Object @TO@ ClassInstanceCreation@@Object[] @AT@ 1762 @LENGTH@ 6
+

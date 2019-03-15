@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, ReturnedType, [returnType] @TO@ TypeDeclaration@@[@RequiredArgsConstructor, static]StreamQueryResultHandler,  @AT@ 8273 @LENGTH@ 47
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, ReturnedType, [returnType] @AT@ 8273 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, ReturnedType, [returnType] @AT@ 8281 @LENGTH@ 5
+---INS SimpleType@@ReturnedType @TO@ FieldDeclaration@@private, final, ReturnedType, [returnType] @AT@ 8296 @LENGTH@ 12
+---INS VariableDeclarationFragment@@returnType @TO@ FieldDeclaration@@private, final, ReturnedType, [returnType] @AT@ 8309 @LENGTH@ 10
+------INS SimpleName@@returnType @TO@ VariableDeclarationFragment@@returnType @AT@ 8309 @LENGTH@ 10
+

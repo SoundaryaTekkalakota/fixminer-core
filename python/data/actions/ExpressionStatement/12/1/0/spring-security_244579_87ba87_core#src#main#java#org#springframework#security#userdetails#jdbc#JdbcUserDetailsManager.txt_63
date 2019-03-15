@@ -1,0 +1,12 @@
+ UPD ExpressionStatement
+--- UPD MethodInvocation
+------ INS SimpleName
+------ UPD SimpleName
+--------- INS NumberLiteral
+--------- INS SimpleName
+--------- DEL ClassInstanceCreation
+------------ DEL New
+------------ DEL SimpleType
+------------ DEL QualifiedName
+--------------- DEL SimpleName
+--------------- DEL SimpleName

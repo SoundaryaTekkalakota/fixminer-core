@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(Throwable.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("Throwable") @AT@ 3656 @LENGTH@ 61
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(Throwable.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("Throwable") @AT@ 3656 @LENGTH@ 60
+------UPD SimpleName@@MethodName:add:[Throwable.class.getSimpleName()] @TO@ MethodName:add:["Throwable"] @AT@ 3680 @LENGTH@ 36
+---------INS StringLiteral@@"Throwable" @TO@ SimpleName@@MethodName:add:[Throwable.class.getSimpleName()] @AT@ 3311 @LENGTH@ 11
+---------DEL MethodInvocation@@Throwable.class.getSimpleName() @AT@ 3684 @LENGTH@ 31
+------------DEL TypeLiteral@@Throwable.class @AT@ 3684 @LENGTH@ 15
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 3700 @LENGTH@ 15
+

@@ -1,0 +1,5 @@
+UPD IfStatement@@MethodInvocation:DEFAULT_VALUE.equals(merge) @TO@ MethodInvocation:isDefaultValue(merge) @AT@ 11898 @LENGTH@ 207
+---UPD MethodInvocation@@DEFAULT_VALUE.equals(merge) @TO@ isDefaultValue(merge) @AT@ 11902 @LENGTH@ 27
+------DEL SimpleName@@Name:DEFAULT_VALUE @AT@ 11902 @LENGTH@ 13
+------UPD SimpleName@@MethodName:equals:[merge] @TO@ MethodName:isDefaultValue:[merge] @AT@ 11916 @LENGTH@ 13
+

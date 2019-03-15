@@ -1,0 +1,11 @@
+ UPD MethodDeclaration
+--- INS SingleVariableDeclaration
+------ INS SimpleType
+------ INS SimpleName
+--- INS ExpressionStatement
+------ INS Assignment
+--------- INS FieldAccess
+------------ INS ThisExpression
+------------ INS SimpleName
+--------- INS Operator
+--------- INS SimpleName

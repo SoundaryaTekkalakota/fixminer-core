@@ -1,0 +1,16 @@
+MethodDeclaration
+---Modifier
+---ArrayType
+------PrimitiveType
+---SimpleName
+---VariableDeclarationStatement
+------Modifier
+------ArrayType
+---------PrimitiveType
+------VariableDeclarationFragment
+---------MethodInvocation
+---------SimpleName
+---ReturnStatement
+------MethodInvocation
+---------SimpleName
+------------SimpleName

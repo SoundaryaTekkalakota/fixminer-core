@@ -1,0 +1,86 @@
+INS MethodDeclaration@@public, void, MethodName:startRoute, String camelContextName, final String routeId, Exception,  @TO@ TypeDeclaration@@[public]CamelControllerImpl, AbstractLocalCamelController @AT@ 5027 @LENGTH@ 394
+---INS Modifier@@public @TO@ MethodDeclaration@@public, void, MethodName:startRoute, String camelContextName, final String routeId, Exception,  @AT@ 5027 @LENGTH@ 6
+---INS PrimitiveType@@void @TO@ MethodDeclaration@@public, void, MethodName:startRoute, String camelContextName, final String routeId, Exception,  @AT@ 5034 @LENGTH@ 4
+---INS SimpleName@@MethodName:startRoute @TO@ MethodDeclaration@@public, void, MethodName:startRoute, String camelContextName, final String routeId, Exception,  @AT@ 5039 @LENGTH@ 10
+---INS SingleVariableDeclaration@@String camelContextName @TO@ MethodDeclaration@@public, void, MethodName:startRoute, String camelContextName, final String routeId, Exception,  @AT@ 5050 @LENGTH@ 23
+------INS SimpleType@@String @TO@ SingleVariableDeclaration@@String camelContextName @AT@ 5050 @LENGTH@ 6
+------INS SimpleName@@camelContextName @TO@ SingleVariableDeclaration@@String camelContextName @AT@ 5057 @LENGTH@ 16
+---INS SingleVariableDeclaration@@final String routeId @TO@ MethodDeclaration@@public, void, MethodName:startRoute, String camelContextName, final String routeId, Exception,  @AT@ 5075 @LENGTH@ 20
+------INS Modifier@@final @TO@ SingleVariableDeclaration@@final String routeId @AT@ 5075 @LENGTH@ 5
+------INS SimpleType@@String @TO@ SingleVariableDeclaration@@final String routeId @AT@ 5081 @LENGTH@ 6
+------INS SimpleName@@routeId @TO@ SingleVariableDeclaration@@final String routeId @AT@ 5088 @LENGTH@ 7
+---INS SimpleType@@Exception @TO@ MethodDeclaration@@public, void, MethodName:startRoute, String camelContextName, final String routeId, Exception,  @AT@ 5104 @LENGTH@ 9
+---INS VariableDeclarationStatement@@final CamelContext context=getLocalCamelContext(camelContextName); @TO@ MethodDeclaration@@public, void, MethodName:startRoute, String camelContextName, final String routeId, Exception,  @AT@ 5124 @LENGTH@ 68
+------INS Modifier@@final @TO@ VariableDeclarationStatement@@final CamelContext context=getLocalCamelContext(camelContextName); @AT@ 5124 @LENGTH@ 5
+------INS SimpleType@@CamelContext @TO@ VariableDeclarationStatement@@final CamelContext context=getLocalCamelContext(camelContextName); @AT@ 5130 @LENGTH@ 12
+------INS VariableDeclarationFragment@@context=getLocalCamelContext(camelContextName) @TO@ VariableDeclarationStatement@@final CamelContext context=getLocalCamelContext(camelContextName); @AT@ 5143 @LENGTH@ 48
+---------INS SimpleName@@context @TO@ VariableDeclarationFragment@@context=getLocalCamelContext(camelContextName) @AT@ 5143 @LENGTH@ 7
+---------INS MethodInvocation@@getLocalCamelContext(camelContextName) @TO@ VariableDeclarationFragment@@context=getLocalCamelContext(camelContextName) @AT@ 5153 @LENGTH@ 38
+------------INS SimpleName@@MethodName:getLocalCamelContext:[camelContextName] @TO@ MethodInvocation@@getLocalCamelContext(camelContextName) @AT@ 5153 @LENGTH@ 38
+---------------INS SimpleName@@camelContextName @TO@ SimpleName@@MethodName:getLocalCamelContext:[camelContextName] @AT@ 5174 @LENGTH@ 16
+---INS IfStatement@@InfixExpression:context != null @TO@ MethodDeclaration@@public, void, MethodName:startRoute, String camelContextName, final String routeId, Exception,  @AT@ 5201 @LENGTH@ 214
+------INS InfixExpression@@context != null @TO@ IfStatement@@InfixExpression:context != null @AT@ 5205 @LENGTH@ 15
+---------INS SimpleName@@context @TO@ InfixExpression@@context != null @AT@ 5205 @LENGTH@ 7
+---------INS Operator@@!= @TO@ InfixExpression@@context != null @AT@ 5212 @LENGTH@ 2
+---------INS NullLiteral@@null @TO@ InfixExpression@@context != null @AT@ 5216 @LENGTH@ 4
+------INS ExpressionStatement@@MethodInvocation:ObjectHelper.callWithTCCL(() -> {
+  context.getRouteController().startRoute(routeId);
+  return null;
+}
+,getClassLoader(context)) @TO@ IfStatement@@InfixExpression:context != null @AT@ 5236 @LENGTH@ 169
+---------INS MethodInvocation@@ObjectHelper.callWithTCCL(() -> {
+  context.getRouteController().startRoute(routeId);
+  return null;
+}
+,getClassLoader(context)) @TO@ ExpressionStatement@@MethodInvocation:ObjectHelper.callWithTCCL(() -> {
+  context.getRouteController().startRoute(routeId);
+  return null;
+}
+,getClassLoader(context)) @AT@ 5236 @LENGTH@ 168
+------------INS SimpleName@@Name:ObjectHelper @TO@ MethodInvocation@@ObjectHelper.callWithTCCL(() -> {
+  context.getRouteController().startRoute(routeId);
+  return null;
+}
+,getClassLoader(context)) @AT@ 5236 @LENGTH@ 12
+------------INS SimpleName@@MethodName:callWithTCCL:[() -> {
+  context.getRouteController().startRoute(routeId);
+  return null;
+}
+, getClassLoader(context)] @TO@ MethodInvocation@@ObjectHelper.callWithTCCL(() -> {
+  context.getRouteController().startRoute(routeId);
+  return null;
+}
+,getClassLoader(context)) @AT@ 5249 @LENGTH@ 155
+---------------INS LambdaExpression@@() -> {
+  context.getRouteController().startRoute(routeId);
+  return null;
+}
+ @TO@ SimpleName@@MethodName:callWithTCCL:[() -> {
+  context.getRouteController().startRoute(routeId);
+  return null;
+}
+, getClassLoader(context)] @AT@ 5262 @LENGTH@ 116
+------------------INS ExpressionStatement@@MethodInvocation:context.getRouteController().startRoute(routeId) @TO@ LambdaExpression@@() -> {
+  context.getRouteController().startRoute(routeId);
+  return null;
+}
+ @AT@ 5286 @LENGTH@ 49
+---------------------INS MethodInvocation@@context.getRouteController().startRoute(routeId) @TO@ ExpressionStatement@@MethodInvocation:context.getRouteController().startRoute(routeId) @AT@ 5286 @LENGTH@ 48
+------------------------INS SimpleName@@Name:context @TO@ MethodInvocation@@context.getRouteController().startRoute(routeId) @AT@ 5286 @LENGTH@ 7
+------------------------INS MethodInvocation@@MethodName:getRouteController:[] @TO@ MethodInvocation@@context.getRouteController().startRoute(routeId) @AT@ 5286 @LENGTH@ 28
+------------------------INS SimpleName@@MethodName:startRoute:[routeId] @TO@ MethodInvocation@@context.getRouteController().startRoute(routeId) @AT@ 5315 @LENGTH@ 19
+---------------------------INS SimpleName@@routeId @TO@ SimpleName@@MethodName:startRoute:[routeId] @AT@ 5326 @LENGTH@ 7
+------------------INS ReturnStatement@@NullLiteral:null @TO@ LambdaExpression@@() -> {
+  context.getRouteController().startRoute(routeId);
+  return null;
+}
+ @AT@ 5352 @LENGTH@ 12
+---------------------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 5359 @LENGTH@ 4
+---------------INS MethodInvocation@@getClassLoader(context) @TO@ SimpleName@@MethodName:callWithTCCL:[() -> {
+  context.getRouteController().startRoute(routeId);
+  return null;
+}
+, getClassLoader(context)] @AT@ 5380 @LENGTH@ 23
+------------------INS SimpleName@@MethodName:getClassLoader:[context] @TO@ MethodInvocation@@getClassLoader(context) @AT@ 5380 @LENGTH@ 23
+---------------------INS SimpleName@@context @TO@ SimpleName@@MethodName:getClassLoader:[context] @AT@ 5395 @LENGTH@ 7
+

@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, FileInputStream, [in] @TO@ TypeDeclaration@@[private, static]EncodingFileReader, InputStreamReader @AT@ 14751 @LENGTH@ 33
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, FileInputStream, [in] @AT@ 14751 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, FileInputStream, [in] @AT@ 14759 @LENGTH@ 5
+---INS SimpleType@@FileInputStream @TO@ FieldDeclaration@@private, final, FileInputStream, [in] @AT@ 14765 @LENGTH@ 15
+---INS VariableDeclarationFragment@@in @TO@ FieldDeclaration@@private, final, FileInputStream, [in] @AT@ 14781 @LENGTH@ 2
+------INS SimpleName@@in @TO@ VariableDeclarationFragment@@in @AT@ 14781 @LENGTH@ 2
+

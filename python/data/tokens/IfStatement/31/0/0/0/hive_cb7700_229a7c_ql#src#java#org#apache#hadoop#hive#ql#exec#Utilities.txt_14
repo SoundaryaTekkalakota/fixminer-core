@@ -1,0 +1,32 @@
+DEL IfStatement@@InfixExpression:tasks != null @AT@ 93304 @LENGTH@ 215
+---DEL InfixExpression@@tasks != null @AT@ 93308 @LENGTH@ 13
+------DEL SimpleName@@tasks @AT@ 93308 @LENGTH@ 5
+------DEL Operator@@!= @AT@ 93313 @LENGTH@ 2
+------DEL NullLiteral@@null @AT@ 93317 @LENGTH@ 4
+---DEL VariableDeclarationStatement@@Set<Task<? extends Serializable>> visited=new HashSet<Task<? extends Serializable>>(); @AT@ 93331 @LENGTH@ 88
+------DEL ParameterizedType@@Set<Task<? extends Serializable>> @AT@ 93331 @LENGTH@ 33
+---------DEL SimpleType@@Set @AT@ 93331 @LENGTH@ 3
+---------DEL ParameterizedType@@Task<? extends Serializable> @AT@ 93335 @LENGTH@ 28
+------------DEL SimpleType@@Task @AT@ 93335 @LENGTH@ 4
+------------DEL WildcardType@@? @AT@ 93340 @LENGTH@ 22
+------DEL VariableDeclarationFragment@@visited=new HashSet<Task<? extends Serializable>>() @AT@ 93365 @LENGTH@ 53
+---------DEL SimpleName@@visited @AT@ 93365 @LENGTH@ 7
+---------DEL ClassInstanceCreation@@HashSet<Task<? extends Serializable>>[] @AT@ 93375 @LENGTH@ 43
+------------DEL New@@new @AT@ 93375 @LENGTH@ 3
+------------DEL ParameterizedType@@HashSet<Task<? extends Serializable>> @AT@ 93379 @LENGTH@ 37
+---------------DEL SimpleType@@HashSet @AT@ 93379 @LENGTH@ 7
+---------------DEL ParameterizedType@@Task<? extends Serializable> @AT@ 93387 @LENGTH@ 28
+------------------DEL SimpleType@@Task @AT@ 93387 @LENGTH@ 4
+------------------DEL WildcardType@@? @AT@ 93392 @LENGTH@ 22
+---DEL WhileStatement@@PrefixExpression:!tasks.isEmpty() @AT@ 93426 @LENGTH@ 87
+------DEL PrefixExpression@@!tasks.isEmpty() @AT@ 93433 @LENGTH@ 16
+---------DEL Operator@@! @AT@ 93433 @LENGTH@ 1
+---------DEL MethodInvocation@@tasks.isEmpty() @AT@ 93434 @LENGTH@ 15
+------------DEL SimpleName@@Name:tasks @AT@ 93434 @LENGTH@ 5
+------------DEL SimpleName@@MethodName:isEmpty:[] @AT@ 93440 @LENGTH@ 9
+------DEL ExpressionStatement@@Assignment:tasks=getMRTasks(tasks,mrTasks,visited) @AT@ 93461 @LENGTH@ 44
+---------DEL Assignment@@tasks=getMRTasks(tasks,mrTasks,visited) @AT@ 93461 @LENGTH@ 43
+------------DEL SimpleName@@tasks @AT@ 93461 @LENGTH@ 5
+------------DEL Operator@@= @AT@ 93466 @LENGTH@ 1
+------------DEL MethodInvocation@@getMRTasks(tasks,mrTasks,visited) @AT@ 93469 @LENGTH@ 35
+

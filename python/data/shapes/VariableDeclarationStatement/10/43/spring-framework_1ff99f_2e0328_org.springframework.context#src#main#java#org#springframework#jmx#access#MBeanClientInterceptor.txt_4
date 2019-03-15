@@ -1,0 +1,10 @@
+VariableDeclarationStatement
+---VariableDeclarationFragment
+------MethodInvocation
+---------SimpleName
+------------ArrayCreation
+---------------ArrayType
+------------------SimpleType
+---------------ArrayInitializer
+------------------TypeLiteral
+------------TypeLiteral

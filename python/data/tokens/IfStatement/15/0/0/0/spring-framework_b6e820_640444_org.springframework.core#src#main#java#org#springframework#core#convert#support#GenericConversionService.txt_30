@@ -1,0 +1,16 @@
+DEL IfStatement@@MethodInvocation:logger.isTraceEnabled() @AT@ 19964 @LENGTH@ 124
+---DEL MethodInvocation@@logger.isTraceEnabled() @AT@ 19968 @LENGTH@ 23
+------DEL SimpleName@@Name:logger @AT@ 19968 @LENGTH@ 6
+------DEL SimpleName@@MethodName:isTraceEnabled:[] @AT@ 19975 @LENGTH@ 16
+---DEL ExpressionStatement@@MethodInvocation:logger.trace("and indexed by target interface [" + interfaceType.getName() + "]") @AT@ 20000 @LENGTH@ 82
+------DEL MethodInvocation@@logger.trace("and indexed by target interface [" + interfaceType.getName() + "]") @AT@ 20000 @LENGTH@ 81
+---------DEL SimpleName@@Name:logger @AT@ 20000 @LENGTH@ 6
+---------DEL SimpleName@@MethodName:trace:["and indexed by target interface [" + interfaceType.getName() + "]"] @AT@ 20007 @LENGTH@ 74
+------------DEL InfixExpression@@"and indexed by target interface [" + interfaceType.getName() + "]" @AT@ 20013 @LENGTH@ 67
+---------------DEL StringLiteral@@"and indexed by target interface [" @AT@ 20013 @LENGTH@ 35
+---------------DEL Operator@@+ @AT@ 20048 @LENGTH@ 1
+---------------DEL MethodInvocation@@interfaceType.getName() @AT@ 20051 @LENGTH@ 23
+------------------DEL SimpleName@@Name:interfaceType @AT@ 20051 @LENGTH@ 13
+------------------DEL SimpleName@@MethodName:getName:[] @AT@ 20065 @LENGTH@ 9
+---------------DEL StringLiteral@@"]" @AT@ 20077 @LENGTH@ 3
+

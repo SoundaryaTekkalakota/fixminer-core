@@ -1,0 +1,87 @@
+UPD VariableDeclarationStatement@@RegionServerCallable<Void> callable=new RegionServerCallable<Void>(connection,getName(),rm.getRow()){
+  @Override public Void call(  int callTimeout) throws IOException {
+    PayloadCarryingRpcController controller=rpcControllerFactory.newController();
+    controller.setPriority(tableName);
+    controller.setCallTimeout(callTimeout);
+    try {
+      RegionAction.Builder regionMutationBuilder=RequestConverter.buildRegionAction(getLocation().getRegionInfo().getRegionName(),rm);
+      regionMutationBuilder.setAtomic(true);
+      MultiRequest request=MultiRequest.newBuilder().addRegionAction(regionMutationBuilder.build()).build();
+      getStub().multi(controller,request);
+    }
+ catch (    ServiceException se) {
+      throw ProtobufUtil.getRemoteException(se);
+    }
+    return null;
+  }
+}
+; @TO@ RegionServerCallable<Void> callable=new RegionServerCallable<Void>(connection,getName(),rm.getRow()){
+  @Override public Void call(  int callTimeout) throws IOException {
+    PayloadCarryingRpcController controller=rpcControllerFactory.newController();
+    controller.setPriority(tableName);
+    controller.setCallTimeout(callTimeout);
+    try {
+      RegionAction.Builder regionMutationBuilder=RequestConverter.buildRegionAction(getLocation().getRegionInfo().getRegionName(),rm);
+      regionMutationBuilder.setAtomic(true);
+      MultiRequest request=MultiRequest.newBuilder().addRegionAction(regionMutationBuilder.build()).build();
+      ClientProtos.MultiResponse response=getStub().multi(controller,request);
+      ClientProtos.RegionActionResult res=response.getRegionActionResultList().get(0);
+      if (res.hasException()) {
+        Throwable ex=ProtobufUtil.toException(res.getException());
+        if (ex instanceof IOException) {
+          throw (IOException)ex;
+        }
+        throw new IOException("Failed to mutate row: " + Bytes.toStringBinary(rm.getRow()),ex);
+      }
+    }
+ catch (    ServiceException se) {
+      throw ProtobufUtil.getRemoteException(se);
+    }
+    return null;
+  }
+}
+; @AT@ 37849 @LENGTH@ 902
+---UPD VariableDeclarationFragment@@callable=new RegionServerCallable<Void>(connection,getName(),rm.getRow()){
+  @Override public Void call(  int callTimeout) throws IOException {
+    PayloadCarryingRpcController controller=rpcControllerFactory.newController();
+    controller.setPriority(tableName);
+    controller.setCallTimeout(callTimeout);
+    try {
+      RegionAction.Builder regionMutationBuilder=RequestConverter.buildRegionAction(getLocation().getRegionInfo().getRegionName(),rm);
+      regionMutationBuilder.setAtomic(true);
+      MultiRequest request=MultiRequest.newBuilder().addRegionAction(regionMutationBuilder.build()).build();
+      getStub().multi(controller,request);
+    }
+ catch (    ServiceException se) {
+      throw ProtobufUtil.getRemoteException(se);
+    }
+    return null;
+  }
+}
+ @TO@ callable=new RegionServerCallable<Void>(connection,getName(),rm.getRow()){
+  @Override public Void call(  int callTimeout) throws IOException {
+    PayloadCarryingRpcController controller=rpcControllerFactory.newController();
+    controller.setPriority(tableName);
+    controller.setCallTimeout(callTimeout);
+    try {
+      RegionAction.Builder regionMutationBuilder=RequestConverter.buildRegionAction(getLocation().getRegionInfo().getRegionName(),rm);
+      regionMutationBuilder.setAtomic(true);
+      MultiRequest request=MultiRequest.newBuilder().addRegionAction(regionMutationBuilder.build()).build();
+      ClientProtos.MultiResponse response=getStub().multi(controller,request);
+      ClientProtos.RegionActionResult res=response.getRegionActionResultList().get(0);
+      if (res.hasException()) {
+        Throwable ex=ProtobufUtil.toException(res.getException());
+        if (ex instanceof IOException) {
+          throw (IOException)ex;
+        }
+        throw new IOException("Failed to mutate row: " + Bytes.toStringBinary(rm.getRow()),ex);
+      }
+    }
+ catch (    ServiceException se) {
+      throw ProtobufUtil.getRemoteException(se);
+    }
+    return null;
+  }
+}
+ @AT@ 37876 @LENGTH@ 874
+

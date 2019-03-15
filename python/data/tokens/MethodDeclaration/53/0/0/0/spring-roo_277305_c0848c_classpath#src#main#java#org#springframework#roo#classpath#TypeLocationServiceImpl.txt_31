@@ -1,0 +1,54 @@
+INS MethodDeclaration@@public, TypeResolutionService, MethodName:getTypeResolutionService,  @TO@ TypeDeclaration@@[@Component, @Service, public]TypeLocationServiceImpl, [TypeLocationService] @AT@ 34692 @LENGTH@ 686
+---INS Modifier@@public @TO@ MethodDeclaration@@public, TypeResolutionService, MethodName:getTypeResolutionService,  @AT@ 34692 @LENGTH@ 6
+---INS SimpleType@@TypeResolutionService @TO@ MethodDeclaration@@public, TypeResolutionService, MethodName:getTypeResolutionService,  @AT@ 34699 @LENGTH@ 21
+---INS SimpleName@@MethodName:getTypeResolutionService @TO@ MethodDeclaration@@public, TypeResolutionService, MethodName:getTypeResolutionService,  @AT@ 34721 @LENGTH@ 24
+---INS IfStatement@@InfixExpression:typeResolutionService == null @TO@ MethodDeclaration@@public, TypeResolutionService, MethodName:getTypeResolutionService,  @AT@ 34754 @LENGTH@ 618
+------INS InfixExpression@@typeResolutionService == null @TO@ IfStatement@@InfixExpression:typeResolutionService == null @AT@ 34757 @LENGTH@ 29
+---------INS SimpleName@@typeResolutionService @TO@ InfixExpression@@typeResolutionService == null @AT@ 34757 @LENGTH@ 21
+---------INS Operator@@== @TO@ InfixExpression@@typeResolutionService == null @AT@ 34778 @LENGTH@ 2
+---------INS NullLiteral@@null @TO@ InfixExpression@@typeResolutionService == null @AT@ 34782 @LENGTH@ 4
+------INS TryStatement@@try:[] @TO@ IfStatement@@InfixExpression:typeResolutionService == null @AT@ 34866 @LENGTH@ 451
+---------INS VariableDeclarationStatement@@ServiceReference<?>[] references=context.getAllServiceReferences(TypeResolutionService.class.getName(),null); @TO@ TryStatement@@try:[] @AT@ 34879 @LENGTH@ 112
+------------INS ArrayType@@ServiceReference<?>[] @TO@ VariableDeclarationStatement@@ServiceReference<?>[] references=context.getAllServiceReferences(TypeResolutionService.class.getName(),null); @AT@ 34879 @LENGTH@ 21
+---------------INS ParameterizedType@@ServiceReference<?> @TO@ ArrayType@@ServiceReference<?>[] @AT@ 34879 @LENGTH@ 19
+------------------INS SimpleType@@ServiceReference @TO@ ParameterizedType@@ServiceReference<?> @AT@ 34879 @LENGTH@ 16
+------------------INS WildcardType@@? @TO@ ParameterizedType@@ServiceReference<?> @AT@ 34896 @LENGTH@ 1
+------------INS VariableDeclarationFragment@@references=context.getAllServiceReferences(TypeResolutionService.class.getName(),null) @TO@ VariableDeclarationStatement@@ServiceReference<?>[] references=context.getAllServiceReferences(TypeResolutionService.class.getName(),null); @AT@ 34901 @LENGTH@ 89
+---------------INS SimpleName@@references @TO@ VariableDeclarationFragment@@references=context.getAllServiceReferences(TypeResolutionService.class.getName(),null) @AT@ 34901 @LENGTH@ 10
+---------------INS MethodInvocation@@context.getAllServiceReferences(TypeResolutionService.class.getName(),null) @TO@ VariableDeclarationFragment@@references=context.getAllServiceReferences(TypeResolutionService.class.getName(),null) @AT@ 34914 @LENGTH@ 76
+------------------INS SimpleName@@Name:context @TO@ MethodInvocation@@context.getAllServiceReferences(TypeResolutionService.class.getName(),null) @AT@ 34914 @LENGTH@ 7
+------------------INS SimpleName@@MethodName:getAllServiceReferences:[TypeResolutionService.class.getName(), null] @TO@ MethodInvocation@@context.getAllServiceReferences(TypeResolutionService.class.getName(),null) @AT@ 34922 @LENGTH@ 68
+---------------------INS MethodInvocation@@TypeResolutionService.class.getName() @TO@ SimpleName@@MethodName:getAllServiceReferences:[TypeResolutionService.class.getName(), null] @AT@ 34946 @LENGTH@ 37
+------------------------INS TypeLiteral@@TypeResolutionService.class @TO@ MethodInvocation@@TypeResolutionService.class.getName() @AT@ 34946 @LENGTH@ 27
+------------------------INS SimpleName@@MethodName:getName:[] @TO@ MethodInvocation@@TypeResolutionService.class.getName() @AT@ 34974 @LENGTH@ 9
+---------------------INS NullLiteral@@null @TO@ SimpleName@@MethodName:getAllServiceReferences:[TypeResolutionService.class.getName(), null] @AT@ 34985 @LENGTH@ 4
+---------INS EnhancedForStatement@@ServiceReference<?> ref, SimpleName:references @TO@ TryStatement@@try:[] @AT@ 35007 @LENGTH@ 115
+------------INS SingleVariableDeclaration@@ServiceReference<?> ref @TO@ EnhancedForStatement@@ServiceReference<?> ref, SimpleName:references @AT@ 35011 @LENGTH@ 23
+---------------INS ParameterizedType@@ServiceReference<?> @TO@ SingleVariableDeclaration@@ServiceReference<?> ref @AT@ 35011 @LENGTH@ 19
+------------------INS SimpleType@@ServiceReference @TO@ ParameterizedType@@ServiceReference<?> @AT@ 35011 @LENGTH@ 16
+------------------INS WildcardType@@? @TO@ ParameterizedType@@ServiceReference<?> @AT@ 35028 @LENGTH@ 1
+---------------INS SimpleName@@ref @TO@ SingleVariableDeclaration@@ServiceReference<?> ref @AT@ 35031 @LENGTH@ 3
+------------INS SimpleName@@references @TO@ EnhancedForStatement@@ServiceReference<?> ref, SimpleName:references @AT@ 35037 @LENGTH@ 10
+------------INS ReturnStatement@@CastExpression:(TypeResolutionService)context.getService(ref) @TO@ EnhancedForStatement@@ServiceReference<?> ref, SimpleName:references @AT@ 35058 @LENGTH@ 55
+---------------INS CastExpression@@(TypeResolutionService)context.getService(ref) @TO@ ReturnStatement@@CastExpression:(TypeResolutionService)context.getService(ref) @AT@ 35065 @LENGTH@ 47
+------------------INS SimpleType@@TypeResolutionService @TO@ CastExpression@@(TypeResolutionService)context.getService(ref) @AT@ 35066 @LENGTH@ 21
+------------------INS MethodInvocation@@context.getService(ref) @TO@ CastExpression@@(TypeResolutionService)context.getService(ref) @AT@ 35089 @LENGTH@ 23
+---------------------INS SimpleName@@Name:context @TO@ MethodInvocation@@context.getService(ref) @AT@ 35089 @LENGTH@ 7
+---------------------INS SimpleName@@MethodName:getService:[ref] @TO@ MethodInvocation@@context.getService(ref) @AT@ 35097 @LENGTH@ 15
+------------------------INS SimpleName@@ref @TO@ SimpleName@@MethodName:getService:[ref] @AT@ 35108 @LENGTH@ 3
+---------INS ReturnStatement@@NullLiteral:null @TO@ TryStatement@@try:[] @AT@ 35138 @LENGTH@ 12
+------------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 35145 @LENGTH@ 4
+---------INS CatchClause@@InvalidSyntaxException e @TO@ TryStatement@@try:[] @AT@ 35167 @LENGTH@ 150
+------------INS SingleVariableDeclaration@@InvalidSyntaxException e @TO@ CatchClause@@InvalidSyntaxException e @AT@ 35174 @LENGTH@ 24
+---------------INS SimpleType@@InvalidSyntaxException @TO@ SingleVariableDeclaration@@InvalidSyntaxException e @AT@ 35174 @LENGTH@ 22
+---------------INS SimpleName@@e @TO@ SingleVariableDeclaration@@InvalidSyntaxException e @AT@ 35197 @LENGTH@ 1
+------------INS ExpressionStatement@@MethodInvocation:LOGGER.warning("Cannot load TypeResolutionService on TypeLocationServiceImpl.") @TO@ CatchClause@@InvalidSyntaxException e @AT@ 35209 @LENGTH@ 80
+---------------INS MethodInvocation@@LOGGER.warning("Cannot load TypeResolutionService on TypeLocationServiceImpl.") @TO@ ExpressionStatement@@MethodInvocation:LOGGER.warning("Cannot load TypeResolutionService on TypeLocationServiceImpl.") @AT@ 35209 @LENGTH@ 79
+------------------INS SimpleName@@Name:LOGGER @TO@ MethodInvocation@@LOGGER.warning("Cannot load TypeResolutionService on TypeLocationServiceImpl.") @AT@ 35209 @LENGTH@ 6
+------------------INS SimpleName@@MethodName:warning:["Cannot load TypeResolutionService on TypeLocationServiceImpl."] @TO@ MethodInvocation@@LOGGER.warning("Cannot load TypeResolutionService on TypeLocationServiceImpl.") @AT@ 35216 @LENGTH@ 72
+---------------------INS StringLiteral@@"Cannot load TypeResolutionService on TypeLocationServiceImpl." @TO@ SimpleName@@MethodName:warning:["Cannot load TypeResolutionService on TypeLocationServiceImpl."] @AT@ 35224 @LENGTH@ 63
+------------INS ReturnStatement@@NullLiteral:null @TO@ CatchClause@@InvalidSyntaxException e @AT@ 35297 @LENGTH@ 12
+---------------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 35304 @LENGTH@ 4
+------INS ReturnStatement@@SimpleName:typeResolutionService @TO@ IfStatement@@InfixExpression:typeResolutionService == null @AT@ 35336 @LENGTH@ 29
+---------INS SimpleName@@typeResolutionService @TO@ ReturnStatement@@SimpleName:typeResolutionService @AT@ 35343 @LENGTH@ 21
+

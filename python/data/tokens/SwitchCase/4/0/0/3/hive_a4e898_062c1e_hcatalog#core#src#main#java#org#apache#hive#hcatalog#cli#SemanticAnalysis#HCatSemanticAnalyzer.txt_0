@@ -1,0 +1,5 @@
+INS SwitchCase@@QualifiedName:HiveParser.TOK_ALTERVIEW @TO@ SwitchStatement@@MethodInvocation:ast.getToken().getType() @AT@ 4466 @LENGTH@ 30
+---INS QualifiedName@@HiveParser.TOK_ALTERVIEW @TO@ SwitchCase@@QualifiedName:HiveParser.TOK_ALTERVIEW @AT@ 4471 @LENGTH@ 24
+------INS SimpleName@@HiveParser @TO@ QualifiedName@@HiveParser.TOK_ALTERVIEW @AT@ 4471 @LENGTH@ 10
+------INS SimpleName@@TOK_ALTERVIEW @TO@ QualifiedName@@HiveParser.TOK_ALTERVIEW @AT@ 4482 @LENGTH@ 13
+

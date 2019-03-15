@@ -1,0 +1,76 @@
+UPD ExpressionStatement@@MethodInvocation:hibernateTemplate.execute(new HibernateCallback<Object>(){
+  public Object doInHibernate(  Session session) throws HibernateException, SQLException {
+    session.doWork(new Work(){
+      public void execute(      Connection connection) throws SQLException {
+        Dialect dialect=Dialect.getDialect(getConfiguration().getProperties());
+        DatabaseMetadata metadata=new DatabaseMetadata(connection,dialect);
+        String[] sql=getConfiguration().generateSchemaUpdateScript(dialect,metadata);
+        executeSchemaScript(connection,sql);
+      }
+    }
+);
+    return null;
+  }
+}
+) @TO@ MethodInvocation:hibernateTemplate.execute(new HibernateCallback<Object>(){
+  public Object doInHibernate(  Session session) throws HibernateException, SQLException {
+    Connection con=session.connection();
+    Dialect dialect=Dialect.getDialect(getConfiguration().getProperties());
+    DatabaseMetadata metadata=new DatabaseMetadata(con,dialect);
+    String[] sql=getConfiguration().generateSchemaUpdateScript(dialect,metadata);
+    executeSchemaScript(con,sql);
+    return null;
+  }
+}
+) @AT@ 41424 @LENGTH@ 601
+---UPD MethodInvocation@@hibernateTemplate.execute(new HibernateCallback<Object>(){
+  public Object doInHibernate(  Session session) throws HibernateException, SQLException {
+    session.doWork(new Work(){
+      public void execute(      Connection connection) throws SQLException {
+        Dialect dialect=Dialect.getDialect(getConfiguration().getProperties());
+        DatabaseMetadata metadata=new DatabaseMetadata(connection,dialect);
+        String[] sql=getConfiguration().generateSchemaUpdateScript(dialect,metadata);
+        executeSchemaScript(connection,sql);
+      }
+    }
+);
+    return null;
+  }
+}
+) @TO@ hibernateTemplate.execute(new HibernateCallback<Object>(){
+  public Object doInHibernate(  Session session) throws HibernateException, SQLException {
+    Connection con=session.connection();
+    Dialect dialect=Dialect.getDialect(getConfiguration().getProperties());
+    DatabaseMetadata metadata=new DatabaseMetadata(con,dialect);
+    String[] sql=getConfiguration().generateSchemaUpdateScript(dialect,metadata);
+    executeSchemaScript(con,sql);
+    return null;
+  }
+}
+) @AT@ 41424 @LENGTH@ 600
+------UPD SimpleName@@MethodName:execute:[new HibernateCallback<Object>(){
+  public Object doInHibernate(  Session session) throws HibernateException, SQLException {
+    session.doWork(new Work(){
+      public void execute(      Connection connection) throws SQLException {
+        Dialect dialect=Dialect.getDialect(getConfiguration().getProperties());
+        DatabaseMetadata metadata=new DatabaseMetadata(connection,dialect);
+        String[] sql=getConfiguration().generateSchemaUpdateScript(dialect,metadata);
+        executeSchemaScript(connection,sql);
+      }
+    }
+);
+    return null;
+  }
+}
+] @TO@ MethodName:execute:[new HibernateCallback<Object>(){
+  public Object doInHibernate(  Session session) throws HibernateException, SQLException {
+    Connection con=session.connection();
+    Dialect dialect=Dialect.getDialect(getConfiguration().getProperties());
+    DatabaseMetadata metadata=new DatabaseMetadata(con,dialect);
+    String[] sql=getConfiguration().generateSchemaUpdateScript(dialect,metadata);
+    executeSchemaScript(con,sql);
+    return null;
+  }
+}
+] @AT@ 41442 @LENGTH@ 582
+

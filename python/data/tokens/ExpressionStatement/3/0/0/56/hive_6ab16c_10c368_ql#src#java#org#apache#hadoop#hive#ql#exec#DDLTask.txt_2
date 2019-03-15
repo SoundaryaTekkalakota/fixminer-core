@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:createTab_stmt.setAttribute(LIST_COLUMNS,tbl_columns) @TO@ MethodInvocation:createTab_stmt.add(LIST_COLUMNS,tbl_columns) @AT@ 81761 @LENGTH@ 55
+---UPD MethodInvocation@@createTab_stmt.setAttribute(LIST_COLUMNS,tbl_columns) @TO@ createTab_stmt.add(LIST_COLUMNS,tbl_columns) @AT@ 81761 @LENGTH@ 54
+------UPD SimpleName@@MethodName:setAttribute:[LIST_COLUMNS, tbl_columns] @TO@ MethodName:add:[LIST_COLUMNS, tbl_columns] @AT@ 81776 @LENGTH@ 39
+

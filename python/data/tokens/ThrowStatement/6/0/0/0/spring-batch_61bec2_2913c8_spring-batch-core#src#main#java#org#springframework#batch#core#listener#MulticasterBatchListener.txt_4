@@ -1,0 +1,7 @@
+UPD ThrowStatement@@ClassInstanceCreation:new StepListenerFailedException("Error in afterRead.",e) @TO@ ClassInstanceCreation:new StepListenerFailedException("Error in afterRead.",getTargetException(e)) @AT@ 7708 @LENGTH@ 64
+---UPD ClassInstanceCreation@@StepListenerFailedException["Error in afterRead.", e] @TO@ StepListenerFailedException["Error in afterRead.", getTargetException(e)] @AT@ 7714 @LENGTH@ 57
+------DEL SimpleName@@e @AT@ 7769 @LENGTH@ 1
+------INS MethodInvocation@@getTargetException(e) @TO@ ClassInstanceCreation@@StepListenerFailedException["Error in afterRead.", e] @AT@ 7932 @LENGTH@ 21
+---------INS SimpleName@@MethodName:getTargetException:[e] @TO@ MethodInvocation@@getTargetException(e) @AT@ 7932 @LENGTH@ 21
+------------INS SimpleName@@e @TO@ SimpleName@@MethodName:getTargetException:[e] @AT@ 7951 @LENGTH@ 1
+

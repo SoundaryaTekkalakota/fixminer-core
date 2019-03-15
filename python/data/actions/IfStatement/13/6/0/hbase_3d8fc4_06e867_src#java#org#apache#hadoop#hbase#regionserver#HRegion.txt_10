@@ -1,0 +1,13 @@
+ DEL IfStatement
+--- DEL PrefixExpression
+------ DEL Operator
+------ DEL FieldAccess
+--------- DEL FieldAccess
+------------ DEL ThisExpression
+------------ DEL SimpleName
+--------- DEL SimpleName
+--- DEL ThrowStatement
+------ DEL ClassInstanceCreation
+--------- DEL New
+--------- DEL SimpleType
+--------- DEL StringLiteral

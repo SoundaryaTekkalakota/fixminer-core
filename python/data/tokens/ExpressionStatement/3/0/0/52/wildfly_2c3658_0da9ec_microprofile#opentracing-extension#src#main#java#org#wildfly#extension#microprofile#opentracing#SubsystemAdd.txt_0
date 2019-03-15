@@ -1,0 +1,40 @@
+UPD ExpressionStatement@@MethodInvocation:context.addStep(new AbstractDeploymentChainStep(){
+  public void execute(  DeploymentProcessorTarget processorTarget){
+    processorTarget.addDeploymentProcessor(SubsystemExtension.SUBSYSTEM_NAME,Phase.DEPENDENCIES,Phase.DEPENDENCIES_MODULE,new TracingDependencyProcessor());
+    processorTarget.addDeploymentProcessor(SubsystemExtension.SUBSYSTEM_NAME,Phase.POST_MODULE,Phase.POST_MODULE_WELD_PORTABLE_EXTENSIONS + 11,new TracingDeploymentProcessor());
+  }
+}
+,OperationContext.Stage.RUNTIME) @TO@ MethodInvocation:context.addStep(new AbstractDeploymentChainStep(){
+  public void execute(  DeploymentProcessorTarget processorTarget){
+    processorTarget.addDeploymentProcessor(SubsystemExtension.SUBSYSTEM_NAME,Phase.DEPENDENCIES,Phase.DEPENDENCIES_MICROPROFILE_OPENTRACING,new TracingDependencyProcessor());
+    processorTarget.addDeploymentProcessor(SubsystemExtension.SUBSYSTEM_NAME,Phase.POST_MODULE,Phase.POST_MODULE_MICROPROFILE_OPENTRACING,new TracingDeploymentProcessor());
+  }
+}
+,OperationContext.Stage.RUNTIME) @AT@ 1745 @LENGTH@ 755
+---UPD MethodInvocation@@context.addStep(new AbstractDeploymentChainStep(){
+  public void execute(  DeploymentProcessorTarget processorTarget){
+    processorTarget.addDeploymentProcessor(SubsystemExtension.SUBSYSTEM_NAME,Phase.DEPENDENCIES,Phase.DEPENDENCIES_MODULE,new TracingDependencyProcessor());
+    processorTarget.addDeploymentProcessor(SubsystemExtension.SUBSYSTEM_NAME,Phase.POST_MODULE,Phase.POST_MODULE_WELD_PORTABLE_EXTENSIONS + 11,new TracingDeploymentProcessor());
+  }
+}
+,OperationContext.Stage.RUNTIME) @TO@ context.addStep(new AbstractDeploymentChainStep(){
+  public void execute(  DeploymentProcessorTarget processorTarget){
+    processorTarget.addDeploymentProcessor(SubsystemExtension.SUBSYSTEM_NAME,Phase.DEPENDENCIES,Phase.DEPENDENCIES_MICROPROFILE_OPENTRACING,new TracingDependencyProcessor());
+    processorTarget.addDeploymentProcessor(SubsystemExtension.SUBSYSTEM_NAME,Phase.POST_MODULE,Phase.POST_MODULE_MICROPROFILE_OPENTRACING,new TracingDeploymentProcessor());
+  }
+}
+,OperationContext.Stage.RUNTIME) @AT@ 1745 @LENGTH@ 754
+------UPD SimpleName@@MethodName:addStep:[new AbstractDeploymentChainStep(){
+  public void execute(  DeploymentProcessorTarget processorTarget){
+    processorTarget.addDeploymentProcessor(SubsystemExtension.SUBSYSTEM_NAME,Phase.DEPENDENCIES,Phase.DEPENDENCIES_MODULE,new TracingDependencyProcessor());
+    processorTarget.addDeploymentProcessor(SubsystemExtension.SUBSYSTEM_NAME,Phase.POST_MODULE,Phase.POST_MODULE_WELD_PORTABLE_EXTENSIONS + 11,new TracingDeploymentProcessor());
+  }
+}
+, OperationContext.Stage.RUNTIME] @TO@ MethodName:addStep:[new AbstractDeploymentChainStep(){
+  public void execute(  DeploymentProcessorTarget processorTarget){
+    processorTarget.addDeploymentProcessor(SubsystemExtension.SUBSYSTEM_NAME,Phase.DEPENDENCIES,Phase.DEPENDENCIES_MICROPROFILE_OPENTRACING,new TracingDependencyProcessor());
+    processorTarget.addDeploymentProcessor(SubsystemExtension.SUBSYSTEM_NAME,Phase.POST_MODULE,Phase.POST_MODULE_MICROPROFILE_OPENTRACING,new TracingDeploymentProcessor());
+  }
+}
+, OperationContext.Stage.RUNTIME] @AT@ 1753 @LENGTH@ 746
+

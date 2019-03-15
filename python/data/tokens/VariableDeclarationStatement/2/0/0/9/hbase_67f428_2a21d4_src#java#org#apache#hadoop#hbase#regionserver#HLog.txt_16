@@ -1,0 +1,221 @@
+UPD VariableDeclarationStatement@@Thread thread=new Thread(Bytes.toString(key)){
+  @Override public void run(){
+    LinkedList<HLogEntry> entries=logEntries.get(key);
+    LOG.debug("Thread got " + entries.size() + " to process");
+    long threadTime=System.currentTimeMillis();
+    try {
+      int count=0;
+      for (ListIterator<HLogEntry> i=entries.listIterator(entries.size()); i.hasPrevious(); ) {
+        HLogEntry logEntry=i.previous();
+        WriterAndPath wap=logWriters.get(key);
+        if (wap == null) {
+          Path logfile=new Path(HRegion.getRegionDir(HTableDescriptor.getTableDir(rootDir,logEntry.getKey().getTablename()),HRegionInfo.encodeRegionName(key)),HREGION_OLDLOGFILE_NAME);
+          Path oldlogfile=null;
+          SequenceFile.Reader old=null;
+          if (fs.exists(logfile)) {
+            LOG.warn("Old hlog file " + logfile + " already exists. Copying existing file to new file");
+            oldlogfile=new Path(logfile.toString() + ".old");
+            fs.rename(logfile,oldlogfile);
+            old=new SequenceFile.Reader(fs,oldlogfile,conf);
+          }
+          SequenceFile.Writer w=SequenceFile.createWriter(fs,conf,logfile,HLogKey.class,KeyValue.class,getCompressionType(conf));
+          wap=new WriterAndPath(logfile,w);
+          logWriters.put(key,wap);
+          if (LOG.isDebugEnabled()) {
+            LOG.debug("Creating new hlog file writer for path " + logfile + " and region "+ Bytes.toString(key));
+          }
+          if (old != null) {
+            HLogKey oldkey=new HLogKey();
+            KeyValue oldval=new KeyValue();
+            for (; old.next(oldkey,oldval); count++) {
+              if (LOG.isDebugEnabled() && count > 0 && count % 10000 == 0) {
+                LOG.debug("Copied " + count + " edits");
+              }
+              w.append(oldkey,oldval);
+            }
+            old.close();
+            fs.delete(oldlogfile,true);
+          }
+        }
+        if (wap == null) {
+          throw new NullPointerException();
+        }
+        wap.w.append(logEntry.getKey(),logEntry.getEdit());
+        count++;
+      }
+      if (LOG.isDebugEnabled()) {
+        LOG.debug("Applied " + count + " total edits to "+ Bytes.toString(key)+ " in "+ (System.currentTimeMillis() - threadTime)+ "ms");
+      }
+    }
+ catch (    IOException e) {
+      e=RemoteExceptionHandler.checkIOException(e);
+      LOG.warn("Got while writing region " + Bytes.toString(key) + " log "+ e);
+      e.printStackTrace();
+    }
+  }
+}
+; @TO@ Thread thread=new Thread(Bytes.toString(key)){
+  @Override public void run(){
+    LinkedList<HLogEntry> entries=logEntries.get(key);
+    LOG.debug("Thread got " + entries.size() + " to process");
+    long threadTime=System.currentTimeMillis();
+    try {
+      int count=0;
+      for (ListIterator<HLogEntry> i=entries.listIterator(entries.size()); i.hasPrevious(); ) {
+        HLogEntry logEntry=i.previous();
+        WriterAndPath wap=logWriters.get(key);
+        if (wap == null) {
+          Path logfile=new Path(HRegion.getRegionDir(HTableDescriptor.getTableDir(rootDir,logEntry.getKey().getTablename()),HRegionInfo.encodeRegionName(key)),HREGION_OLDLOGFILE_NAME);
+          Path oldlogfile=null;
+          SequenceFile.Reader old=null;
+          if (fs.exists(logfile)) {
+            LOG.warn("Old hlog file " + logfile + " already exists. Copying existing file to new file");
+            oldlogfile=new Path(logfile.toString() + ".old");
+            fs.rename(logfile,oldlogfile);
+            old=new SequenceFile.Reader(fs,oldlogfile,conf);
+          }
+          SequenceFile.Writer w=SequenceFile.createWriter(fs,conf,logfile,HLogKey.class,KeyValue.class,getCompressionType(conf));
+          wap=new WriterAndPath(logfile,w);
+          logWriters.put(key,wap);
+          if (LOG.isDebugEnabled()) {
+            LOG.debug("Creating new hlog file writer for path " + logfile + " and region "+ Bytes.toString(key));
+          }
+          if (old != null) {
+            HLogKey oldkey=new HLogKey();
+            KeyValue oldval=new KeyValue();
+            for (; old.next(oldkey,oldval); count++) {
+              if (LOG.isDebugEnabled() && count > 0 && count % 10000 == 0) {
+                LOG.debug("Copied " + count + " edits");
+              }
+              w.append(oldkey,oldval);
+            }
+            old.close();
+            fs.delete(oldlogfile,true);
+          }
+        }
+        wap.w.append(logEntry.getKey(),logEntry.getEdit());
+        count++;
+      }
+      if (LOG.isDebugEnabled()) {
+        LOG.debug("Applied " + count + " total edits to "+ Bytes.toString(key)+ " in "+ (System.currentTimeMillis() - threadTime)+ "ms");
+      }
+    }
+ catch (    IOException e) {
+      e=RemoteExceptionHandler.checkIOException(e);
+      LOG.warn("Got while writing region " + Bytes.toString(key) + " log "+ e);
+      e.printStackTrace();
+    }
+  }
+}
+; @AT@ 31334 @LENGTH@ 3519
+---UPD VariableDeclarationFragment@@thread=new Thread(Bytes.toString(key)){
+  @Override public void run(){
+    LinkedList<HLogEntry> entries=logEntries.get(key);
+    LOG.debug("Thread got " + entries.size() + " to process");
+    long threadTime=System.currentTimeMillis();
+    try {
+      int count=0;
+      for (ListIterator<HLogEntry> i=entries.listIterator(entries.size()); i.hasPrevious(); ) {
+        HLogEntry logEntry=i.previous();
+        WriterAndPath wap=logWriters.get(key);
+        if (wap == null) {
+          Path logfile=new Path(HRegion.getRegionDir(HTableDescriptor.getTableDir(rootDir,logEntry.getKey().getTablename()),HRegionInfo.encodeRegionName(key)),HREGION_OLDLOGFILE_NAME);
+          Path oldlogfile=null;
+          SequenceFile.Reader old=null;
+          if (fs.exists(logfile)) {
+            LOG.warn("Old hlog file " + logfile + " already exists. Copying existing file to new file");
+            oldlogfile=new Path(logfile.toString() + ".old");
+            fs.rename(logfile,oldlogfile);
+            old=new SequenceFile.Reader(fs,oldlogfile,conf);
+          }
+          SequenceFile.Writer w=SequenceFile.createWriter(fs,conf,logfile,HLogKey.class,KeyValue.class,getCompressionType(conf));
+          wap=new WriterAndPath(logfile,w);
+          logWriters.put(key,wap);
+          if (LOG.isDebugEnabled()) {
+            LOG.debug("Creating new hlog file writer for path " + logfile + " and region "+ Bytes.toString(key));
+          }
+          if (old != null) {
+            HLogKey oldkey=new HLogKey();
+            KeyValue oldval=new KeyValue();
+            for (; old.next(oldkey,oldval); count++) {
+              if (LOG.isDebugEnabled() && count > 0 && count % 10000 == 0) {
+                LOG.debug("Copied " + count + " edits");
+              }
+              w.append(oldkey,oldval);
+            }
+            old.close();
+            fs.delete(oldlogfile,true);
+          }
+        }
+        if (wap == null) {
+          throw new NullPointerException();
+        }
+        wap.w.append(logEntry.getKey(),logEntry.getEdit());
+        count++;
+      }
+      if (LOG.isDebugEnabled()) {
+        LOG.debug("Applied " + count + " total edits to "+ Bytes.toString(key)+ " in "+ (System.currentTimeMillis() - threadTime)+ "ms");
+      }
+    }
+ catch (    IOException e) {
+      e=RemoteExceptionHandler.checkIOException(e);
+      LOG.warn("Got while writing region " + Bytes.toString(key) + " log "+ e);
+      e.printStackTrace();
+    }
+  }
+}
+ @TO@ thread=new Thread(Bytes.toString(key)){
+  @Override public void run(){
+    LinkedList<HLogEntry> entries=logEntries.get(key);
+    LOG.debug("Thread got " + entries.size() + " to process");
+    long threadTime=System.currentTimeMillis();
+    try {
+      int count=0;
+      for (ListIterator<HLogEntry> i=entries.listIterator(entries.size()); i.hasPrevious(); ) {
+        HLogEntry logEntry=i.previous();
+        WriterAndPath wap=logWriters.get(key);
+        if (wap == null) {
+          Path logfile=new Path(HRegion.getRegionDir(HTableDescriptor.getTableDir(rootDir,logEntry.getKey().getTablename()),HRegionInfo.encodeRegionName(key)),HREGION_OLDLOGFILE_NAME);
+          Path oldlogfile=null;
+          SequenceFile.Reader old=null;
+          if (fs.exists(logfile)) {
+            LOG.warn("Old hlog file " + logfile + " already exists. Copying existing file to new file");
+            oldlogfile=new Path(logfile.toString() + ".old");
+            fs.rename(logfile,oldlogfile);
+            old=new SequenceFile.Reader(fs,oldlogfile,conf);
+          }
+          SequenceFile.Writer w=SequenceFile.createWriter(fs,conf,logfile,HLogKey.class,KeyValue.class,getCompressionType(conf));
+          wap=new WriterAndPath(logfile,w);
+          logWriters.put(key,wap);
+          if (LOG.isDebugEnabled()) {
+            LOG.debug("Creating new hlog file writer for path " + logfile + " and region "+ Bytes.toString(key));
+          }
+          if (old != null) {
+            HLogKey oldkey=new HLogKey();
+            KeyValue oldval=new KeyValue();
+            for (; old.next(oldkey,oldval); count++) {
+              if (LOG.isDebugEnabled() && count > 0 && count % 10000 == 0) {
+                LOG.debug("Copied " + count + " edits");
+              }
+              w.append(oldkey,oldval);
+            }
+            old.close();
+            fs.delete(oldlogfile,true);
+          }
+        }
+        wap.w.append(logEntry.getKey(),logEntry.getEdit());
+        count++;
+      }
+      if (LOG.isDebugEnabled()) {
+        LOG.debug("Applied " + count + " total edits to "+ Bytes.toString(key)+ " in "+ (System.currentTimeMillis() - threadTime)+ "ms");
+      }
+    }
+ catch (    IOException e) {
+      e=RemoteExceptionHandler.checkIOException(e);
+      LOG.warn("Got while writing region " + Bytes.toString(key) + " log "+ e);
+      e.printStackTrace();
+    }
+  }
+}
+ @AT@ 31341 @LENGTH@ 3511
+

@@ -1,0 +1,8 @@
+UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(UnsupportedClassVersionError.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("UnsupportedClassVersionError") @AT@ 6921 @LENGTH@ 80
+---UPD MethodInvocation@@javaLangSimpleTypeNames.add(UnsupportedClassVersionError.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("UnsupportedClassVersionError") @AT@ 6921 @LENGTH@ 79
+------UPD SimpleName@@MethodName:add:[UnsupportedClassVersionError.class.getSimpleName()] @TO@ MethodName:add:["UnsupportedClassVersionError"] @AT@ 6945 @LENGTH@ 55
+---------INS StringLiteral@@"UnsupportedClassVersionError" @TO@ SimpleName@@MethodName:add:[UnsupportedClassVersionError.class.getSimpleName()] @AT@ 5877 @LENGTH@ 30
+---------DEL MethodInvocation@@UnsupportedClassVersionError.class.getSimpleName() @AT@ 6949 @LENGTH@ 50
+------------DEL TypeLiteral@@UnsupportedClassVersionError.class @AT@ 6949 @LENGTH@ 34
+------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 6984 @LENGTH@ 15
+

@@ -1,0 +1,7 @@
+ReturnStatement
+---MethodInvocation
+------SimpleName
+---------NumberLiteral
+---------QualifiedName
+------------SimpleName
+------------SimpleName

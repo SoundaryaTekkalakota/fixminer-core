@@ -1,0 +1,12 @@
+INS FieldDeclaration@@private, static, final, Log, [logger=LogFactory.getLog(AbstractListenerFactoryBean.class)] @TO@ TypeDeclaration@@[@SuppressWarnings("rawtypes"), public, abstract]AbstractListenerFactoryBean, [FactoryBean, InitializingBean] @AT@ 2978 @LENGTH@ 87
+---INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, Log, [logger=LogFactory.getLog(AbstractListenerFactoryBean.class)] @AT@ 2978 @LENGTH@ 7
+---INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, Log, [logger=LogFactory.getLog(AbstractListenerFactoryBean.class)] @AT@ 2986 @LENGTH@ 6
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, Log, [logger=LogFactory.getLog(AbstractListenerFactoryBean.class)] @AT@ 2993 @LENGTH@ 5
+---INS SimpleType@@Log @TO@ FieldDeclaration@@private, static, final, Log, [logger=LogFactory.getLog(AbstractListenerFactoryBean.class)] @AT@ 2999 @LENGTH@ 3
+---INS VariableDeclarationFragment@@logger=LogFactory.getLog(AbstractListenerFactoryBean.class) @TO@ FieldDeclaration@@private, static, final, Log, [logger=LogFactory.getLog(AbstractListenerFactoryBean.class)] @AT@ 3003 @LENGTH@ 61
+------INS SimpleName@@logger @TO@ VariableDeclarationFragment@@logger=LogFactory.getLog(AbstractListenerFactoryBean.class) @AT@ 3003 @LENGTH@ 6
+------INS MethodInvocation@@LogFactory.getLog(AbstractListenerFactoryBean.class) @TO@ VariableDeclarationFragment@@logger=LogFactory.getLog(AbstractListenerFactoryBean.class) @AT@ 3012 @LENGTH@ 52
+---------INS SimpleName@@Name:LogFactory @TO@ MethodInvocation@@LogFactory.getLog(AbstractListenerFactoryBean.class) @AT@ 3012 @LENGTH@ 10
+---------INS SimpleName@@MethodName:getLog:[AbstractListenerFactoryBean.class] @TO@ MethodInvocation@@LogFactory.getLog(AbstractListenerFactoryBean.class) @AT@ 3023 @LENGTH@ 41
+------------INS TypeLiteral@@AbstractListenerFactoryBean.class @TO@ SimpleName@@MethodName:getLog:[AbstractListenerFactoryBean.class] @AT@ 3030 @LENGTH@ 33
+

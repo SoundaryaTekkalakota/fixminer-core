@@ -1,0 +1,11 @@
+ExpressionStatement
+---Assignment
+------MethodInvocation
+---------SimpleName
+------------LambdaExpression
+---------------MethodInvocation
+------------------SimpleName
+---------------------MethodInvocation
+------------------------SimpleName
+---------------------------ClassInstanceCreation
+------------------------------SimpleName
