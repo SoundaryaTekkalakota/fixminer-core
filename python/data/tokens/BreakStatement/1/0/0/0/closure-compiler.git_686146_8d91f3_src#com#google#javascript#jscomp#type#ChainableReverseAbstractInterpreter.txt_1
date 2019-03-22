@@ -1,2 +1,0 @@
-INS BreakStatement@@ @TO@ SwitchStatement@@MethodInvocation:node.getType() @AT@ 6605 @LENGTH@ 6
-

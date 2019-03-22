@@ -1,2 +1,0 @@
-INS BreakStatement@@ @TO@ SwitchStatement@@MethodInvocation:event.getState() @AT@ 10603 @LENGTH@ 6
-

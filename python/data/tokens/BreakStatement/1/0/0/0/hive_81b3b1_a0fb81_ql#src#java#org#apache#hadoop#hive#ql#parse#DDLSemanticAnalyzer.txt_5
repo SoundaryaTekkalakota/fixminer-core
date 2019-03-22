@@ -1,2 +1,0 @@
-INS BreakStatement@@ @TO@ SwitchStatement@@MethodInvocation:child.getToken().getType() @AT@ 55462 @LENGTH@ 6
-
