@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@static, final, int, [SHUTDOWN_HOOK_PRIORITY=0] @TO@ private, static, final, int, [SHUTDOWN_HOOK_PRIORITY=0] @AT@ 3726 @LENGTH@ 44
+---INS Modifier@@private @TO@ FieldDeclaration@@static, final, int, [SHUTDOWN_HOOK_PRIORITY=0] @AT@ 3669 @LENGTH@ 7
+

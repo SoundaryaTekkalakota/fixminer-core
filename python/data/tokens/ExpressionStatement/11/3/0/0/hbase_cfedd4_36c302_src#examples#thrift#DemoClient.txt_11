@@ -1,0 +1,12 @@
+UPD ExpressionStatement@@MethodInvocation:client.deleteAllRow(t,row) @TO@ MethodInvocation:client.deleteAllRow(ByteBuffer.wrap(t),ByteBuffer.wrap(row)) @AT@ 8097 @LENGTH@ 28
+---UPD MethodInvocation@@client.deleteAllRow(t,row) @TO@ client.deleteAllRow(ByteBuffer.wrap(t),ByteBuffer.wrap(row)) @AT@ 8097 @LENGTH@ 27
+------UPD SimpleName@@MethodName:deleteAllRow:[t, row] @TO@ MethodName:deleteAllRow:[ByteBuffer.wrap(t), ByteBuffer.wrap(row)] @AT@ 8104 @LENGTH@ 20
+---------INS MethodInvocation@@ByteBuffer.wrap(t) @TO@ SimpleName@@MethodName:deleteAllRow:[t, row] @AT@ 9205 @LENGTH@ 18
+------------INS SimpleName@@Name:ByteBuffer @TO@ MethodInvocation@@ByteBuffer.wrap(t) @AT@ 9205 @LENGTH@ 10
+------------INS SimpleName@@MethodName:wrap:[t] @TO@ MethodInvocation@@ByteBuffer.wrap(t) @AT@ 9216 @LENGTH@ 7
+---------------MOV SimpleName@@t @TO@ SimpleName@@MethodName:wrap:[t] @AT@ 8117 @LENGTH@ 1
+---------INS MethodInvocation@@ByteBuffer.wrap(row) @TO@ SimpleName@@MethodName:deleteAllRow:[t, row] @AT@ 9225 @LENGTH@ 20
+------------INS SimpleName@@Name:ByteBuffer @TO@ MethodInvocation@@ByteBuffer.wrap(row) @AT@ 9225 @LENGTH@ 10
+------------INS SimpleName@@MethodName:wrap:[row] @TO@ MethodInvocation@@ByteBuffer.wrap(row) @AT@ 9236 @LENGTH@ 9
+---------------MOV SimpleName@@row @TO@ SimpleName@@MethodName:wrap:[row] @AT@ 8120 @LENGTH@ 3
+

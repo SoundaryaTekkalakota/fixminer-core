@@ -1,2 +1,0 @@
-MOV MethodDeclaration@@public, Map<String,String>, MethodName:getWriteFailures,  @TO@ TypeDeclaration@@[public, static]StdOutSink, [Sink] @AT@ 8352 @LENGTH@ 81
-

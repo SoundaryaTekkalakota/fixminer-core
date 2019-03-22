@@ -1,11 +1,11 @@
- INS CatchClause
---- INS SingleVariableDeclaration
------- INS SimpleType
------- INS SimpleName
---- INS ThrowStatement
------- INS ClassInstanceCreation
---------- INS New
---------- INS SimpleType
---------- INS MethodInvocation
------------- INS SimpleName
------------- INS SimpleName
+ INS CatchClause TO TryStatement 
+--- INS SingleVariableDeclaration TO CatchClause 
+------ INS SimpleType TO SingleVariableDeclaration 
+------ INS SimpleName TO SingleVariableDeclaration 
+--- INS ThrowStatement TO CatchClause 
+------ INS ClassInstanceCreation TO ThrowStatement 
+--------- INS New TO ClassInstanceCreation 
+--------- INS SimpleType TO ClassInstanceCreation 
+--------- INS MethodInvocation TO ClassInstanceCreation 
+------------ INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO MethodInvocation

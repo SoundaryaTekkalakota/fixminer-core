@@ -1,15 +1,15 @@
- INS TryStatement
---- INS VariableDeclarationExpression
------- INS SimpleType
------- INS VariableDeclarationFragment
---------- INS SimpleName
---------- INS ClassInstanceCreation
------------- MOV New
------------- MOV SimpleType
------------- MOV SimpleName
---- INS ExpressionStatement
------- INS MethodInvocation
---------- INS SimpleName
---------- INS SimpleName
------------- MOV MethodInvocation
------------- INS SimpleName
+ INS TryStatement TO TryStatement 
+--- INS VariableDeclarationExpression TO TryStatement 
+------ INS SimpleType TO VariableDeclarationExpression 
+------ INS VariableDeclarationFragment TO VariableDeclarationExpression 
+--------- INS SimpleName TO VariableDeclarationFragment 
+--------- INS ClassInstanceCreation TO VariableDeclarationFragment 
+------------ MOV New TO ClassInstanceCreation 
+------------ MOV SimpleType TO ClassInstanceCreation 
+------------ MOV SimpleName TO ClassInstanceCreation 
+--- INS ExpressionStatement TO TryStatement 
+------ INS MethodInvocation TO ExpressionStatement 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ MOV MethodInvocation TO SimpleName 
+------------ INS SimpleName TO SimpleName

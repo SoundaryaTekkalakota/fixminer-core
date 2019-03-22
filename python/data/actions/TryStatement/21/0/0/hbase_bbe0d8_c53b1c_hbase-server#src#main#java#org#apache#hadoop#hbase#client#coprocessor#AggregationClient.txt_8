@@ -1,21 +1,21 @@
- INS TryStatement
---- MOV ExpressionStatement
---- INS ExpressionStatement
------- INS Assignment
---------- INS SimpleName
---------- INS Operator
---------- INS ClassInstanceCreation
------------- MOV New
------------- MOV SimpleType
------------- MOV SimpleName
------------- MOV SimpleName
---- INS Block
------- INS IfStatement
---------- INS InfixExpression
------------- INS SimpleName
------------- INS Operator
------------- INS NullLiteral
---------- INS ExpressionStatement
------------- INS MethodInvocation
---------------- INS SimpleName
---------------- INS SimpleName
+ INS TryStatement TO MethodDeclaration 
+--- MOV ExpressionStatement TO TryStatement 
+--- INS ExpressionStatement TO TryStatement 
+------ INS Assignment TO ExpressionStatement 
+--------- INS SimpleName TO Assignment 
+--------- INS Operator TO Assignment 
+--------- INS ClassInstanceCreation TO Assignment 
+------------ MOV New TO ClassInstanceCreation 
+------------ MOV SimpleType TO ClassInstanceCreation 
+------------ MOV SimpleName TO ClassInstanceCreation 
+------------ MOV SimpleName TO ClassInstanceCreation 
+--- INS Block TO TryStatement 
+------ INS IfStatement TO Block 
+--------- INS InfixExpression TO IfStatement 
+------------ INS SimpleName TO InfixExpression 
+------------ INS Operator TO InfixExpression 
+------------ INS NullLiteral TO InfixExpression 
+--------- INS ExpressionStatement TO IfStatement 
+------------ INS MethodInvocation TO ExpressionStatement 
+--------------- INS SimpleName TO MethodInvocation 
+--------------- INS SimpleName TO MethodInvocation

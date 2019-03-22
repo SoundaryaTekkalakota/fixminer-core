@@ -1,5 +1,0 @@
-UPD IfStatement@@MethodInvocation:DEFAULT_VALUE.equals(att) @TO@ MethodInvocation:isDefaultValue(att) @AT@ 23855 @LENGTH@ 74
----UPD MethodInvocation@@DEFAULT_VALUE.equals(att) @TO@ isDefaultValue(att) @AT@ 23859 @LENGTH@ 25
-------DEL SimpleName@@Name:DEFAULT_VALUE @AT@ 23859 @LENGTH@ 13
-------UPD SimpleName@@MethodName:equals:[att] @TO@ MethodName:isDefaultValue:[att] @AT@ 23873 @LENGTH@ 11
-

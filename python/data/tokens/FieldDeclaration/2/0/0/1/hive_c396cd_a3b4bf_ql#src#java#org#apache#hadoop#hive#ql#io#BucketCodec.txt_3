@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, static, int, [TOP3BITS_MASK=0b1110_0000_0000_0000_0000_0000_0000_0000] @TO@ private, static, final, int, [TOP3BITS_MASK=0b1110_0000_0000_0000_0000_0000_0000_0000] @AT@ 4580 @LENGTH@ 77
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, int, [TOP3BITS_MASK=0b1110_0000_0000_0000_0000_0000_0000_0000] @AT@ 5163 @LENGTH@ 5
+

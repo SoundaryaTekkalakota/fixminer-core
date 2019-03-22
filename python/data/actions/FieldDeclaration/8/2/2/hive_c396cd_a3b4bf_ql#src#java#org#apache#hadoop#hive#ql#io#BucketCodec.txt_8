@@ -1,8 +1,8 @@
- INS FieldDeclaration
---- INS Modifier
---- INS Modifier
---- INS Modifier
---- INS PrimitiveType
---- INS VariableDeclarationFragment
------- INS SimpleName
------- INS NumberLiteral
+ INS FieldDeclaration TO EnumDeclaration 
+--- INS Modifier TO FieldDeclaration 
+--- INS Modifier TO FieldDeclaration 
+--- INS Modifier TO FieldDeclaration 
+--- INS PrimitiveType TO FieldDeclaration 
+--- INS VariableDeclarationFragment TO FieldDeclaration 
+------ INS SimpleName TO VariableDeclarationFragment 
+------ INS NumberLiteral TO VariableDeclarationFragment

@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, LinkedBlockingQueue<Event>, [events=new LinkedBlockingQueue<Event>()] @TO@ private, final, LinkedBlockingQueue<Event>, [events=new LinkedBlockingQueue<Event>()] @AT@ 5672 @LENGTH@ 77
+---INS Modifier@@final @TO@ FieldDeclaration@@private, LinkedBlockingQueue<Event>, [events=new LinkedBlockingQueue<Event>()] @AT@ 5686 @LENGTH@ 5
+

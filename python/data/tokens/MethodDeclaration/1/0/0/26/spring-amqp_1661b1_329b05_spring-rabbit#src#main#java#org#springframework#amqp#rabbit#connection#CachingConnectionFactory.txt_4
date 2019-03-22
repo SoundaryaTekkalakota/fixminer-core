@@ -1,2 +1,0 @@
-MOV MethodDeclaration@@public, void, MethodName:resetConnection,  @TO@ TypeDeclaration@@[@ManagedResource, public]CachingConnectionFactory, AbstractConnectionFactory[InitializingBean, ShutdownListener, ApplicationContextAware, ApplicationListener<ContextClosedEvent>, PublisherCallbackChannelConnectionFactory, SmartLifecycle] @AT@ 25519 @LENGTH@ 400
-

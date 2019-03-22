@@ -1,3 +1,0 @@
-DEL TryStatement@@try:[] @AT@ 8658 @LENGTH@ 283
----DEL VariableDeclarationStatement@@GetTableTypesOperation operation=getOperationManager().newGetTableTypesOperation(getSession()); @AT@ 8670 @LENGTH@ 97
-

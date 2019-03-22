@@ -1,7 +1,7 @@
- INS VariableDeclarationStatement
---- INS SimpleType
---- INS VariableDeclarationFragment
------- INS SimpleName
------- INS MethodInvocation
---------- INS SimpleName
---------- INS SimpleName
+ INS VariableDeclarationStatement TO IfStatement 
+--- INS SimpleType TO VariableDeclarationStatement 
+--- INS VariableDeclarationFragment TO VariableDeclarationStatement 
+------ INS SimpleName TO VariableDeclarationFragment 
+------ INS MethodInvocation TO VariableDeclarationFragment 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation

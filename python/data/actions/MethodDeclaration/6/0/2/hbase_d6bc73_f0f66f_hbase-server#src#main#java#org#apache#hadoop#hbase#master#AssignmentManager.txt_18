@@ -1,6 +1,6 @@
- INS MethodDeclaration
---- INS Modifier
---- INS SimpleType
---- INS SimpleName
---- INS ReturnStatement
------- INS SimpleName
+ INS MethodDeclaration TO AnonymousClassDeclaration 
+--- INS Modifier TO MethodDeclaration 
+--- INS SimpleType TO MethodDeclaration 
+--- INS SimpleName TO MethodDeclaration 
+--- INS ReturnStatement TO MethodDeclaration 
+------ INS SimpleName TO ReturnStatement

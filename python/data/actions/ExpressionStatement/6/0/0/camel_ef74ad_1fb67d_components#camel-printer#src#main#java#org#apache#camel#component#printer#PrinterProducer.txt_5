@@ -1,6 +1,6 @@
- INS ExpressionStatement
---- INS MethodInvocation
------- INS SimpleName
------- INS SimpleName
---------- INS StringLiteral
---------- INS SimpleName
+ INS ExpressionStatement TO ForStatement 
+--- INS MethodInvocation TO ExpressionStatement 
+------ INS SimpleName TO MethodInvocation 
+------ INS SimpleName TO MethodInvocation 
+--------- INS StringLiteral TO SimpleName 
+--------- INS SimpleName TO SimpleName

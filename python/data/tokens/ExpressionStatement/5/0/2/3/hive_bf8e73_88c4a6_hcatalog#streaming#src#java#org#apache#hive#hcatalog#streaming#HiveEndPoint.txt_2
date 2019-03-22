@@ -1,0 +1,6 @@
+UPD ExpressionStatement@@MethodInvocation:conf.setBoolVar(HiveConf.ConfVars.HIVE_SUPPORT_CONCURRENCY,true) @TO@ MethodInvocation:setHiveConf(conf,HiveConf.ConfVars.HIVE_SUPPORT_CONCURRENCY,true) @AT@ 31817 @LENGTH@ 66
+---UPD MethodInvocation@@conf.setBoolVar(HiveConf.ConfVars.HIVE_SUPPORT_CONCURRENCY,true) @TO@ setHiveConf(conf,HiveConf.ConfVars.HIVE_SUPPORT_CONCURRENCY,true) @AT@ 31817 @LENGTH@ 65
+------DEL SimpleName@@Name:conf @AT@ 31817 @LENGTH@ 4
+------UPD SimpleName@@MethodName:setBoolVar:[HiveConf.ConfVars.HIVE_SUPPORT_CONCURRENCY, true] @TO@ MethodName:setHiveConf:[conf, HiveConf.ConfVars.HIVE_SUPPORT_CONCURRENCY, true] @AT@ 31822 @LENGTH@ 60
+---------INS SimpleName@@conf @TO@ SimpleName@@MethodName:setBoolVar:[HiveConf.ConfVars.HIVE_SUPPORT_CONCURRENCY, true] @AT@ 32130 @LENGTH@ 4
+

@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.error("Creating context: " + colCtxs[i].toString()) @TO@ MethodInvocation:LOG.trace("Creating context: " + colCtxs[i].toString()) @AT@ 10056 @LENGTH@ 56
+---UPD MethodInvocation@@LOG.error("Creating context: " + colCtxs[i].toString()) @TO@ LOG.trace("Creating context: " + colCtxs[i].toString()) @AT@ 10056 @LENGTH@ 55
+------UPD SimpleName@@MethodName:error:["Creating context: " + colCtxs[i].toString()] @TO@ MethodName:trace:["Creating context: " + colCtxs[i].toString()] @AT@ 10060 @LENGTH@ 51
+

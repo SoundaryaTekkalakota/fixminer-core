@@ -1,7 +1,0 @@
-INS MethodDeclaration@@public, ReaderKey, MethodName:getKey,  @TO@ TypeDeclaration@@[static]ReaderPair,  @AT@ 9538 @LENGTH@ 51
----INS Modifier@@public @TO@ MethodDeclaration@@public, ReaderKey, MethodName:getKey,  @AT@ 9538 @LENGTH@ 6
----INS SimpleType@@ReaderKey @TO@ MethodDeclaration@@public, ReaderKey, MethodName:getKey,  @AT@ 9545 @LENGTH@ 9
----INS SimpleName@@MethodName:getKey @TO@ MethodDeclaration@@public, ReaderKey, MethodName:getKey,  @AT@ 9555 @LENGTH@ 6
----INS ReturnStatement@@SimpleName:key @TO@ MethodDeclaration@@public, ReaderKey, MethodName:getKey,  @AT@ 9572 @LENGTH@ 11
-------INS SimpleName@@key @TO@ ReturnStatement@@SimpleName:key @AT@ 9579 @LENGTH@ 3
-

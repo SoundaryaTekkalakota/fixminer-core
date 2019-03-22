@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:codec.getConf().setInt("io.file.buffer.size",downStreamBufferSize) @TO@ MethodInvocation:c.getConf().setInt("io.file.buffer.size",downStreamBufferSize) @AT@ 5357 @LENGTH@ 68
+---UPD MethodInvocation@@codec.getConf().setInt("io.file.buffer.size",downStreamBufferSize) @TO@ c.getConf().setInt("io.file.buffer.size",downStreamBufferSize) @AT@ 5357 @LENGTH@ 67
+------UPD SimpleName@@Name:codec @TO@ Name:c @AT@ 5357 @LENGTH@ 5
+

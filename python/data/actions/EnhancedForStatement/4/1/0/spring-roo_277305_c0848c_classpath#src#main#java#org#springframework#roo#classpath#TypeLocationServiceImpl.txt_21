@@ -1,4 +1,4 @@
- UPD EnhancedForStatement
---- UPD MethodInvocation
------- DEL SimpleName
------- INS MethodInvocation
+ UPD EnhancedForStatement 
+--- UPD MethodInvocation 
+------ DEL SimpleName 
+------ INS MethodInvocation TO MethodInvocation

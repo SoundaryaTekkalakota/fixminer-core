@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:listeners.add(listener) @TO@ MethodInvocation:listeners.remove(listener) @AT@ 3350 @LENGTH@ 24
+---UPD MethodInvocation@@listeners.add(listener) @TO@ listeners.remove(listener) @AT@ 3350 @LENGTH@ 23
+------UPD SimpleName@@MethodName:add:[listener] @TO@ MethodName:remove:[listener] @AT@ 3360 @LENGTH@ 13
+

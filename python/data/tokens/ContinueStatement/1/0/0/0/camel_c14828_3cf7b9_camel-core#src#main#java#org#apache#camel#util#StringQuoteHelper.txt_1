@@ -1,2 +1,0 @@
-INS ContinueStatement@@ @TO@ IfStatement@@InfixExpression:!isQuoting && ch == separator @AT@ 5814 @LENGTH@ 9
-

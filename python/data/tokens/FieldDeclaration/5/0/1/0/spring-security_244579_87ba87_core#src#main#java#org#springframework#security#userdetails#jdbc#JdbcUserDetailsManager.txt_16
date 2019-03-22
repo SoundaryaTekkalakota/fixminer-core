@@ -1,6 +1,0 @@
-DEL FieldDeclaration@@private, SqlUpdate, [renameGroup] @AT@ 6620 @LENGTH@ 30
----DEL Modifier@@private @AT@ 6620 @LENGTH@ 7
----DEL SimpleType@@SqlUpdate @AT@ 6628 @LENGTH@ 9
----DEL VariableDeclarationFragment@@renameGroup @AT@ 6638 @LENGTH@ 11
-------DEL SimpleName@@renameGroup @AT@ 6638 @LENGTH@ 11
-

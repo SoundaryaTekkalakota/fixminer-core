@@ -1,3 +1,0 @@
-UPD IfStatement@@MethodInvocation:CollectionFactory.isApproximableMapType(requiredType) @TO@ SimpleName:approximable @AT@ 21911 @LENGTH@ 221
----INS SimpleName@@approximable @TO@ IfStatement@@MethodInvocation:CollectionFactory.isApproximableMapType(requiredType) @AT@ 22594 @LENGTH@ 12
-

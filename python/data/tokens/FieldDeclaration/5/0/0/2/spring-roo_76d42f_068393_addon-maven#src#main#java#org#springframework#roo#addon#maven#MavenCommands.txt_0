@@ -1,0 +1,6 @@
+INS FieldDeclaration@@private, ProcessManager, [processManager] @TO@ TypeDeclaration@@[@Component, @Service, public]MavenCommands, [CommandMarker] @AT@ 1260 @LENGTH@ 38
+---INS Modifier@@private @TO@ FieldDeclaration@@private, ProcessManager, [processManager] @AT@ 1260 @LENGTH@ 7
+---INS SimpleType@@ProcessManager @TO@ FieldDeclaration@@private, ProcessManager, [processManager] @AT@ 1268 @LENGTH@ 14
+---INS VariableDeclarationFragment@@processManager @TO@ FieldDeclaration@@private, ProcessManager, [processManager] @AT@ 1283 @LENGTH@ 14
+------INS SimpleName@@processManager @TO@ VariableDeclarationFragment@@processManager @AT@ 1283 @LENGTH@ 14
+

@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@OrcFile.WriterVersion writerVersion=extractWriterVersion(ps); @TO@ OrcFile.WriterVersion writerVersion=null; @AT@ 18689 @LENGTH@ 63
+---UPD VariableDeclarationFragment@@writerVersion=extractWriterVersion(ps) @TO@ writerVersion=null @AT@ 18711 @LENGTH@ 40
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@writerVersion=extractWriterVersion(ps) @AT@ 17892 @LENGTH@ 4
+

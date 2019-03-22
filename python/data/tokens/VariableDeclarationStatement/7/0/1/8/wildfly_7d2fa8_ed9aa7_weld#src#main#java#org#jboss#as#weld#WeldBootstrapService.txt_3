@@ -1,8 +1,0 @@
-INS VariableDeclarationStatement@@ClassLoader oldTccl=WildFlySecurityManager.getCurrentContextClassLoaderPrivileged(); @TO@ MethodDeclaration@@public, void, MethodName:run,  @AT@ 6979 @LENGTH@ 86
----INS SimpleType@@ClassLoader @TO@ VariableDeclarationStatement@@ClassLoader oldTccl=WildFlySecurityManager.getCurrentContextClassLoaderPrivileged(); @AT@ 6979 @LENGTH@ 11
----INS VariableDeclarationFragment@@oldTccl=WildFlySecurityManager.getCurrentContextClassLoaderPrivileged() @TO@ VariableDeclarationStatement@@ClassLoader oldTccl=WildFlySecurityManager.getCurrentContextClassLoaderPrivileged(); @AT@ 6991 @LENGTH@ 73
-------INS SimpleName@@oldTccl @TO@ VariableDeclarationFragment@@oldTccl=WildFlySecurityManager.getCurrentContextClassLoaderPrivileged() @AT@ 6991 @LENGTH@ 7
-------INS MethodInvocation@@WildFlySecurityManager.getCurrentContextClassLoaderPrivileged() @TO@ VariableDeclarationFragment@@oldTccl=WildFlySecurityManager.getCurrentContextClassLoaderPrivileged() @AT@ 7001 @LENGTH@ 63
----------INS SimpleName@@Name:WildFlySecurityManager @TO@ MethodInvocation@@WildFlySecurityManager.getCurrentContextClassLoaderPrivileged() @AT@ 7001 @LENGTH@ 22
----------INS SimpleName@@MethodName:getCurrentContextClassLoaderPrivileged:[] @TO@ MethodInvocation@@WildFlySecurityManager.getCurrentContextClassLoaderPrivileged() @AT@ 7024 @LENGTH@ 40
-

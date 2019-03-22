@@ -1,32 +1,32 @@
- INS IfStatement
---- INS MethodInvocation
------- INS StringLiteral
------- INS SimpleName
---------- INS SimpleName
---- INS ExpressionStatement
------- INS Assignment
---------- INS QualifiedName
------------- INS SimpleName
------------- INS SimpleName
---------- INS Operator
---------- INS MethodInvocation
------------- INS TypeLiteral
------------- INS SimpleName
---- INS ExpressionStatement
------- INS Assignment
---------- INS QualifiedName
------------- INS SimpleName
------------- INS SimpleName
---------- INS Operator
---------- INS MethodInvocation
------------- INS TypeLiteral
------------- INS SimpleName
---- INS ExpressionStatement
------- INS Assignment
---------- INS QualifiedName
------------- INS SimpleName
------------- INS SimpleName
---------- INS Operator
---------- INS MethodInvocation
------------- INS TypeLiteral
------------- INS SimpleName
+ INS IfStatement TO IfStatement 
+--- INS MethodInvocation TO IfStatement 
+------ INS StringLiteral TO MethodInvocation 
+------ INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO SimpleName 
+--- INS ExpressionStatement TO IfStatement 
+------ INS Assignment TO ExpressionStatement 
+--------- INS QualifiedName TO Assignment 
+------------ INS SimpleName TO QualifiedName 
+------------ INS SimpleName TO QualifiedName 
+--------- INS Operator TO Assignment 
+--------- INS MethodInvocation TO Assignment 
+------------ INS TypeLiteral TO MethodInvocation 
+------------ INS SimpleName TO MethodInvocation 
+--- INS ExpressionStatement TO IfStatement 
+------ INS Assignment TO ExpressionStatement 
+--------- INS QualifiedName TO Assignment 
+------------ INS SimpleName TO QualifiedName 
+------------ INS SimpleName TO QualifiedName 
+--------- INS Operator TO Assignment 
+--------- INS MethodInvocation TO Assignment 
+------------ INS TypeLiteral TO MethodInvocation 
+------------ INS SimpleName TO MethodInvocation 
+--- INS ExpressionStatement TO IfStatement 
+------ INS Assignment TO ExpressionStatement 
+--------- INS QualifiedName TO Assignment 
+------------ INS SimpleName TO QualifiedName 
+------------ INS SimpleName TO QualifiedName 
+--------- INS Operator TO Assignment 
+--------- INS MethodInvocation TO Assignment 
+------------ INS TypeLiteral TO MethodInvocation 
+------------ INS SimpleName TO MethodInvocation

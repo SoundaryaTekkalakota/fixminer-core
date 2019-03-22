@@ -1,0 +1,6 @@
+UPD ExpressionStatement@@MethodInvocation:sb.append(appPath.get()) @TO@ MethodInvocation:safeAppend(sb,appPath.get()) @AT@ 2765 @LENGTH@ 25
+---UPD MethodInvocation@@sb.append(appPath.get()) @TO@ safeAppend(sb,appPath.get()) @AT@ 2765 @LENGTH@ 24
+------DEL SimpleName@@Name:sb @AT@ 2765 @LENGTH@ 2
+------UPD SimpleName@@MethodName:append:[appPath.get()] @TO@ MethodName:safeAppend:[sb, appPath.get()] @AT@ 2768 @LENGTH@ 21
+---------INS SimpleName@@sb @TO@ SimpleName@@MethodName:append:[appPath.get()] @AT@ 3417 @LENGTH@ 2
+

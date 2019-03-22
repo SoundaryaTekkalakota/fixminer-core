@@ -1,2 +1,0 @@
-MOV ExpressionStatement@@MethodInvocation:migrateAccessLogValve(newAddOperations,newAddOp,valveName,warnings) @TO@ SwitchStatement@@SimpleName:valveClassName @AT@ 49430 @LENGTH@ 71
-

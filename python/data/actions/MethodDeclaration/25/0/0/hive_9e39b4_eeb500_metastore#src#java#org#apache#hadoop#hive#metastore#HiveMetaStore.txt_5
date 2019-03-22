@@ -1,25 +1,25 @@
- INS MethodDeclaration
---- INS Modifier
---- INS PrimitiveType
---- INS SimpleName
---- INS SimpleType
---- INS TryStatement
------- INS ExpressionStatement
---------- INS MethodInvocation
------- INS CatchClause
---------- INS SingleVariableDeclaration
------------- INS SimpleType
------------- INS SimpleName
---------- INS ExpressionStatement
------------- INS MethodInvocation
---------------- INS SimpleName
---------------- INS SimpleName
------------------- INS InfixExpression
---------------------- INS StringLiteral
---------------------- INS Operator
---------------------- INS MethodInvocation
------------------------- INS SimpleName
------------------------- INS SimpleName
------------------- INS SimpleName
---------- INS ExpressionStatement
------------- INS MethodInvocation
+ INS MethodDeclaration TO TypeDeclaration 
+--- INS Modifier TO MethodDeclaration 
+--- INS PrimitiveType TO MethodDeclaration 
+--- INS SimpleName TO MethodDeclaration 
+--- INS SimpleType TO MethodDeclaration 
+--- INS TryStatement TO MethodDeclaration 
+------ INS ExpressionStatement TO TryStatement 
+--------- INS MethodInvocation TO ExpressionStatement 
+------ INS CatchClause TO TryStatement 
+--------- INS SingleVariableDeclaration TO CatchClause 
+------------ INS SimpleType TO SingleVariableDeclaration 
+------------ INS SimpleName TO SingleVariableDeclaration 
+--------- INS ExpressionStatement TO CatchClause 
+------------ INS MethodInvocation TO ExpressionStatement 
+--------------- INS SimpleName TO MethodInvocation 
+--------------- INS SimpleName TO MethodInvocation 
+------------------ INS InfixExpression TO SimpleName 
+--------------------- INS StringLiteral TO InfixExpression 
+--------------------- INS Operator TO InfixExpression 
+--------------------- INS MethodInvocation TO InfixExpression 
+------------------------ INS SimpleName TO MethodInvocation 
+------------------------ INS SimpleName TO MethodInvocation 
+------------------ INS SimpleName TO SimpleName 
+--------- INS ExpressionStatement TO CatchClause 
+------------ INS MethodInvocation TO ExpressionStatement

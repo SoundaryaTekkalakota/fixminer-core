@@ -1,3 +1,0 @@
-DEL TryStatement@@try:[] @AT@ 6944 @LENGTH@ 279
----DEL VariableDeclarationStatement@@GetTypeInfoOperation operation=getOperationManager().newGetTypeInfoOperation(getSession()); @AT@ 6956 @LENGTH@ 93
-

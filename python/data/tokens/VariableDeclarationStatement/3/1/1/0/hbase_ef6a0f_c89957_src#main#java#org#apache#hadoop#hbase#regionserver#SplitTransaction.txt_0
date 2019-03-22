@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@List<StoreFile> hstoreFilesToSplit=this.parent.close(false); @TO@ List<StoreFile> hstoreFilesToSplit=null; @AT@ 9122 @LENGTH@ 62
+---UPD VariableDeclarationFragment@@hstoreFilesToSplit=this.parent.close(false) @TO@ hstoreFilesToSplit=null @AT@ 9138 @LENGTH@ 45
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@hstoreFilesToSplit=this.parent.close(false) @AT@ 9160 @LENGTH@ 4
+

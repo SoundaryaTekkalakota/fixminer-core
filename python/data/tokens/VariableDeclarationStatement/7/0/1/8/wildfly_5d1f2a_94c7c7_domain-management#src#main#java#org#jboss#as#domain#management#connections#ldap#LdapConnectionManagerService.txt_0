@@ -1,8 +1,0 @@
-INS VariableDeclarationStatement@@ClassLoader old=WildFlySecurityManager.getCurrentContextClassLoaderPrivileged(); @TO@ MethodDeclaration@@private, Object, MethodName:getConnection, final Properties properties, final SSLContext sslContext, Exception,  @AT@ 4509 @LENGTH@ 82
----INS SimpleType@@ClassLoader @TO@ VariableDeclarationStatement@@ClassLoader old=WildFlySecurityManager.getCurrentContextClassLoaderPrivileged(); @AT@ 4509 @LENGTH@ 11
----INS VariableDeclarationFragment@@old=WildFlySecurityManager.getCurrentContextClassLoaderPrivileged() @TO@ VariableDeclarationStatement@@ClassLoader old=WildFlySecurityManager.getCurrentContextClassLoaderPrivileged(); @AT@ 4521 @LENGTH@ 69
-------INS SimpleName@@old @TO@ VariableDeclarationFragment@@old=WildFlySecurityManager.getCurrentContextClassLoaderPrivileged() @AT@ 4521 @LENGTH@ 3
-------INS MethodInvocation@@WildFlySecurityManager.getCurrentContextClassLoaderPrivileged() @TO@ VariableDeclarationFragment@@old=WildFlySecurityManager.getCurrentContextClassLoaderPrivileged() @AT@ 4527 @LENGTH@ 63
----------INS SimpleName@@Name:WildFlySecurityManager @TO@ MethodInvocation@@WildFlySecurityManager.getCurrentContextClassLoaderPrivileged() @AT@ 4527 @LENGTH@ 22
----------INS SimpleName@@MethodName:getCurrentContextClassLoaderPrivileged:[] @TO@ MethodInvocation@@WildFlySecurityManager.getCurrentContextClassLoaderPrivileged() @AT@ 4550 @LENGTH@ 40
-

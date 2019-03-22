@@ -1,4 +1,4 @@
- UPD IfStatement
---- UPD MethodInvocation
------- DEL SimpleName
+ UPD IfStatement 
+--- UPD MethodInvocation 
+------ DEL SimpleName 
 ------ UPD SimpleName

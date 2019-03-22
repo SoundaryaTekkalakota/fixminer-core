@@ -1,8 +1,0 @@
-INS VariableDeclarationStatement@@ImmutableBitSet.Builder origColEqCondsPosBuilder=ImmutableBitSet.builder(); @TO@ MethodDeclaration@@public, static, RexNode, MethodName:projectNonColumnEquiConditions, ProjectFactory factory, RelNode[] inputRels, List<RexNode> leftJoinKeys, List<RexNode> rightJoinKeys, int systemColCount, List<Integer> leftKeys, List<Integer> rightKeys,  @AT@ 7401 @LENGTH@ 77
----INS SimpleType@@ImmutableBitSet.Builder @TO@ VariableDeclarationStatement@@ImmutableBitSet.Builder origColEqCondsPosBuilder=ImmutableBitSet.builder(); @AT@ 7401 @LENGTH@ 23
----INS VariableDeclarationFragment@@origColEqCondsPosBuilder=ImmutableBitSet.builder() @TO@ VariableDeclarationStatement@@ImmutableBitSet.Builder origColEqCondsPosBuilder=ImmutableBitSet.builder(); @AT@ 7425 @LENGTH@ 52
-------INS SimpleName@@origColEqCondsPosBuilder @TO@ VariableDeclarationFragment@@origColEqCondsPosBuilder=ImmutableBitSet.builder() @AT@ 7425 @LENGTH@ 24
-------INS MethodInvocation@@ImmutableBitSet.builder() @TO@ VariableDeclarationFragment@@origColEqCondsPosBuilder=ImmutableBitSet.builder() @AT@ 7452 @LENGTH@ 25
----------INS SimpleName@@Name:ImmutableBitSet @TO@ MethodInvocation@@ImmutableBitSet.builder() @AT@ 7452 @LENGTH@ 15
----------INS SimpleName@@MethodName:builder:[] @TO@ MethodInvocation@@ImmutableBitSet.builder() @AT@ 7468 @LENGTH@ 9
-

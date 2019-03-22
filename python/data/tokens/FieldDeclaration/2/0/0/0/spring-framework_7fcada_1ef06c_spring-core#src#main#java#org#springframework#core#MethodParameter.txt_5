@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, String, [parameterName] @TO@ private, volatile, String, [parameterName] @AT@ 1734 @LENGTH@ 29
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, String, [parameterName] @AT@ 1917 @LENGTH@ 8
+

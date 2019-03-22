@@ -1,2 +1,2 @@
- MOV ExpressionStatement
---- MOV MethodInvocation
+ MOV ExpressionStatement TO TryStatement 
+--- MOV MethodInvocation TO ExpressionStatement

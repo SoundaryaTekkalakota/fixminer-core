@@ -1,2 +1,0 @@
-MOV MethodDeclaration@@public, static, Set<Class<? extends Credential>>, MethodName:getSupportedClientCredentialTypes, String mechName,  @TO@ TypeDeclaration@@[public, final]SaslMechanismInformation,  @AT@ 10798 @LENGTH@ 1356
-

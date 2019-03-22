@@ -1,11 +1,11 @@
- INS TryStatement
---- INS ReturnStatement
------- INS MethodInvocation
---------- INS SimpleName
---------- INS SimpleName
------------- INS SimpleName
------------- INS SimpleName
---- INS CatchClause
------- INS SingleVariableDeclaration
---------- INS SimpleType
---------- INS SimpleName
+ INS TryStatement TO CatchClause 
+--- INS ReturnStatement TO TryStatement 
+------ INS MethodInvocation TO ReturnStatement 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO SimpleName 
+------------ INS SimpleName TO SimpleName 
+--- INS CatchClause TO TryStatement 
+------ INS SingleVariableDeclaration TO CatchClause 
+--------- INS SimpleType TO SingleVariableDeclaration 
+--------- INS SimpleName TO SingleVariableDeclaration

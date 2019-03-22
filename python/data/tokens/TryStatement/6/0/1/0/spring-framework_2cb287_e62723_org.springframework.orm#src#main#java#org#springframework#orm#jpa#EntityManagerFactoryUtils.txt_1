@@ -1,7 +1,0 @@
-INS TryStatement@@try:[] @TO@ IfStatement@@InfixExpression:emHolder != null && emHolder.hasTimeout() @AT@ 12169 @LENGTH@ 164
----MOV ExpressionStatement@@MethodInvocation:query.setHint("javax.persistence.query.timeout",timeoutValue) @TO@ TryStatement@@try:[] @AT@ 12071 @LENGTH@ 63
----INS CatchClause@@IllegalArgumentException ex @TO@ TryStatement@@try:[] @AT@ 12251 @LENGTH@ 82
-------INS SingleVariableDeclaration@@IllegalArgumentException ex @TO@ CatchClause@@IllegalArgumentException ex @AT@ 12258 @LENGTH@ 27
----------INS SimpleType@@IllegalArgumentException @TO@ SingleVariableDeclaration@@IllegalArgumentException ex @AT@ 12258 @LENGTH@ 24
----------INS SimpleName@@ex @TO@ SingleVariableDeclaration@@IllegalArgumentException ex @AT@ 12283 @LENGTH@ 2
-

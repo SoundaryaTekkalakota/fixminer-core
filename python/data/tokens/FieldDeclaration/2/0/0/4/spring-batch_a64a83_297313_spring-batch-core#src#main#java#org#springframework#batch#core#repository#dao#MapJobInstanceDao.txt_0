@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, long, [currentId=0] @TO@ private, static, long, [currentId=0] @AT@ 712 @LENGTH@ 27
+---INS Modifier@@static @TO@ FieldDeclaration@@private, long, [currentId=0] @AT@ 720 @LENGTH@ 6
+

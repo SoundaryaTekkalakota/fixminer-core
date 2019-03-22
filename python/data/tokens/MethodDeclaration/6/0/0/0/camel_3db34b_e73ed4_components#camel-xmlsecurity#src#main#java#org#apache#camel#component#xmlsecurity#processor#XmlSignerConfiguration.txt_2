@@ -1,7 +1,0 @@
-INS MethodDeclaration@@public, String, MethodName:getKeyAccessorName,  @TO@ TypeDeclaration@@[public]XmlSignerConfiguration, XmlSignatureConfiguration @AT@ 12602 @LENGTH@ 76
----INS Modifier@@public @TO@ MethodDeclaration@@public, String, MethodName:getKeyAccessorName,  @AT@ 12602 @LENGTH@ 6
----INS SimpleType@@String @TO@ MethodDeclaration@@public, String, MethodName:getKeyAccessorName,  @AT@ 12609 @LENGTH@ 6
----INS SimpleName@@MethodName:getKeyAccessorName @TO@ MethodDeclaration@@public, String, MethodName:getKeyAccessorName,  @AT@ 12616 @LENGTH@ 18
----INS ReturnStatement@@SimpleName:keyAccessorName @TO@ MethodDeclaration@@public, String, MethodName:getKeyAccessorName,  @AT@ 12648 @LENGTH@ 23
-------INS SimpleName@@keyAccessorName @TO@ ReturnStatement@@SimpleName:keyAccessorName @AT@ 12655 @LENGTH@ 15
-

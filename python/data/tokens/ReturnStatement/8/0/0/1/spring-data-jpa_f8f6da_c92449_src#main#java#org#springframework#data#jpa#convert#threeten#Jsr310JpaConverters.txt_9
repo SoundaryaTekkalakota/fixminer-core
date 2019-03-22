@@ -1,9 +1,0 @@
-UPD ReturnStatement@@MethodInvocation:StringToZoneIdConverter.INSTANCE.convert(zoneId) @TO@ ConditionalExpression:zoneId == null ? null : StringToZoneIdConverter.INSTANCE.convert(zoneId) @AT@ 4217 @LENGTH@ 56
----INS ConditionalExpression@@zoneId == null ? null : StringToZoneIdConverter.INSTANCE.convert(zoneId) @TO@ ReturnStatement@@MethodInvocation:StringToZoneIdConverter.INSTANCE.convert(zoneId) @AT@ 4427 @LENGTH@ 72
-------MOV MethodInvocation@@StringToZoneIdConverter.INSTANCE.convert(zoneId) @TO@ ConditionalExpression@@zoneId == null ? null : StringToZoneIdConverter.INSTANCE.convert(zoneId) @AT@ 4224 @LENGTH@ 48
-------INS InfixExpression@@zoneId == null @TO@ ConditionalExpression@@zoneId == null ? null : StringToZoneIdConverter.INSTANCE.convert(zoneId) @AT@ 4427 @LENGTH@ 14
----------INS SimpleName@@zoneId @TO@ InfixExpression@@zoneId == null @AT@ 4427 @LENGTH@ 6
----------INS Operator@@== @TO@ InfixExpression@@zoneId == null @AT@ 4433 @LENGTH@ 2
----------INS NullLiteral@@null @TO@ InfixExpression@@zoneId == null @AT@ 4437 @LENGTH@ 4
-------INS NullLiteral@@null @TO@ ConditionalExpression@@zoneId == null ? null : StringToZoneIdConverter.INSTANCE.convert(zoneId) @AT@ 4444 @LENGTH@ 4
-

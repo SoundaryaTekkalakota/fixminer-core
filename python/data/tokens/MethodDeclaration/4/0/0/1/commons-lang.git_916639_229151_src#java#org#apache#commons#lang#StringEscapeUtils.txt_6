@@ -1,0 +1,5 @@
+UPD MethodDeclaration@@private, static, void, MethodName:escapeJavaStyleString, Writer out, String str, boolean escapeSingleQuote, IOException,  @TO@ private, static, void, MethodName:escapeJavaStyleString, Writer out, String str, boolean escapeSingleQuote, boolean escapeForwardSlash, IOException,  @AT@ 6575 @LENGTH@ 2595
+---INS SingleVariableDeclaration@@boolean escapeForwardSlash @TO@ MethodDeclaration@@private, static, void, MethodName:escapeJavaStyleString, Writer out, String str, boolean escapeSingleQuote, IOException,  @AT@ 6830 @LENGTH@ 26
+------INS PrimitiveType@@boolean @TO@ SingleVariableDeclaration@@boolean escapeForwardSlash @AT@ 6830 @LENGTH@ 7
+------INS SimpleName@@escapeForwardSlash @TO@ SingleVariableDeclaration@@boolean escapeForwardSlash @AT@ 6838 @LENGTH@ 18
+

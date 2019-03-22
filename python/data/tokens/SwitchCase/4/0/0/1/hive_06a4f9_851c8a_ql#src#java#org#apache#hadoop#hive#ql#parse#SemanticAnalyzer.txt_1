@@ -1,5 +1,0 @@
-INS SwitchCase@@QualifiedName:HiveParser.TOK_INTERVAL_DAY_TIME @TO@ SwitchStatement@@MethodInvocation:condn.getToken().getType() @AT@ 114583 @LENGTH@ 38
----INS QualifiedName@@HiveParser.TOK_INTERVAL_DAY_TIME @TO@ SwitchCase@@QualifiedName:HiveParser.TOK_INTERVAL_DAY_TIME @AT@ 114588 @LENGTH@ 32
-------INS SimpleName@@HiveParser @TO@ QualifiedName@@HiveParser.TOK_INTERVAL_DAY_TIME @AT@ 114588 @LENGTH@ 10
-------INS SimpleName@@TOK_INTERVAL_DAY_TIME @TO@ QualifiedName@@HiveParser.TOK_INTERVAL_DAY_TIME @AT@ 114599 @LENGTH@ 21
-

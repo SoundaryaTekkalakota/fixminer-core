@@ -1,0 +1,2 @@
+MOV ExpressionStatement@@MethodInvocation:paramTypes.add(new AnnotatedJavaType(beanInfoMetadata.getJavaBean(),new ArrayList<AnnotationMetadata>())) @TO@ MethodDeclaration@@private, MethodMetadata, MethodName:getIndexEntityMethod,  @AT@ 7737 @LENGTH@ 107
+

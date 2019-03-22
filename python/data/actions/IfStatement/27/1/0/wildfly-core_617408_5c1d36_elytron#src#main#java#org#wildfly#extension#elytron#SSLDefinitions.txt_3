@@ -1,27 +1,27 @@
- INS IfStatement
---- INS InfixExpression
------- INS InstanceofExpression
---------- INS SimpleName
---------- INS Instanceof
---------- INS SimpleType
------- INS Operator
------- INS MethodInvocation
---------- INS SimpleName
---------- INS SimpleName
---- INS ExpressionStatement
------- INS MethodInvocation
---------- INS SimpleName
---------- INS SimpleName
------------- INS StringLiteral
---- INS ExpressionStatement
------- INS Assignment
---------- INS SimpleName
---------- INS Operator
---------- INS MethodInvocation
------------- INS FieldAccess
---------------- INS ParenthesizedExpression
------------------- INS CastExpression
---------------------- INS SimpleType
---------------------- INS SimpleName
---------------- INS SimpleName
------------- INS SimpleName
+ INS IfStatement TO IfStatement 
+--- INS InfixExpression TO IfStatement 
+------ INS InstanceofExpression TO InfixExpression 
+--------- INS SimpleName TO InstanceofExpression 
+--------- INS Instanceof TO InstanceofExpression 
+--------- INS SimpleType TO InstanceofExpression 
+------ INS Operator TO InfixExpression 
+------ INS MethodInvocation TO InfixExpression 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+--- INS ExpressionStatement TO IfStatement 
+------ INS MethodInvocation TO ExpressionStatement 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS StringLiteral TO SimpleName 
+--- INS ExpressionStatement TO IfStatement 
+------ INS Assignment TO ExpressionStatement 
+--------- INS SimpleName TO Assignment 
+--------- INS Operator TO Assignment 
+--------- INS MethodInvocation TO Assignment 
+------------ INS FieldAccess TO MethodInvocation 
+--------------- INS ParenthesizedExpression TO FieldAccess 
+------------------ INS CastExpression TO ParenthesizedExpression 
+--------------------- INS SimpleType TO CastExpression 
+--------------------- INS SimpleName TO CastExpression 
+--------------- INS SimpleName TO FieldAccess 
+------------ INS SimpleName TO MethodInvocation

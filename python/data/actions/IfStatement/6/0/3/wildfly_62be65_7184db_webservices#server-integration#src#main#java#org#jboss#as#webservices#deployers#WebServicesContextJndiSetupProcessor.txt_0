@@ -1,6 +1,6 @@
- INS IfStatement
---- INS InfixExpression
------- INS SimpleName
------- INS Operator
------- INS NullLiteral
---- MOV ExpressionStatement
+ INS IfStatement TO MethodDeclaration 
+--- INS InfixExpression TO IfStatement 
+------ INS SimpleName TO InfixExpression 
+------ INS Operator TO InfixExpression 
+------ INS NullLiteral TO InfixExpression 
+--- MOV ExpressionStatement TO IfStatement

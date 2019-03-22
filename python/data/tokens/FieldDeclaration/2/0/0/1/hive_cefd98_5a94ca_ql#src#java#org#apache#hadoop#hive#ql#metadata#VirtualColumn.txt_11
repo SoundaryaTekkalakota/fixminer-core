@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, ObjectInspector, [oi] @TO@ private, final, ObjectInspector, [oi] @AT@ 3215 @LENGTH@ 27
+---INS Modifier@@final @TO@ FieldDeclaration@@private, ObjectInspector, [oi] @AT@ 3374 @LENGTH@ 5
+

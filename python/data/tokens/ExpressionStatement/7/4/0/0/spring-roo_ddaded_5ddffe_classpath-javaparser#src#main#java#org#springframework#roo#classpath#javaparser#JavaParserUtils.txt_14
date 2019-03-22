@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(Double.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("Double") @AT@ 2249 @LENGTH@ 58
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(Double.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("Double") @AT@ 2249 @LENGTH@ 57
-------UPD SimpleName@@MethodName:add:[Double.class.getSimpleName()] @TO@ MethodName:add:["Double"] @AT@ 2273 @LENGTH@ 33
----------INS StringLiteral@@"Double" @TO@ SimpleName@@MethodName:add:[Double.class.getSimpleName()] @AT@ 2208 @LENGTH@ 8
----------DEL MethodInvocation@@Double.class.getSimpleName() @AT@ 2277 @LENGTH@ 28
-------------DEL TypeLiteral@@Double.class @AT@ 2277 @LENGTH@ 12
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 2290 @LENGTH@ 15
-

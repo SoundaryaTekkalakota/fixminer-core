@@ -1,5 +1,0 @@
-INS SwitchCase@@QualifiedName:HiveParser.TOK_INTERVAL_MINUTE_LITERAL @TO@ SwitchStatement@@MethodInvocation:condn.getToken().getType() @AT@ 114724 @LENGTH@ 44
----INS QualifiedName@@HiveParser.TOK_INTERVAL_MINUTE_LITERAL @TO@ SwitchCase@@QualifiedName:HiveParser.TOK_INTERVAL_MINUTE_LITERAL @AT@ 114729 @LENGTH@ 38
-------INS SimpleName@@HiveParser @TO@ QualifiedName@@HiveParser.TOK_INTERVAL_MINUTE_LITERAL @AT@ 114729 @LENGTH@ 10
-------INS SimpleName@@TOK_INTERVAL_MINUTE_LITERAL @TO@ QualifiedName@@HiveParser.TOK_INTERVAL_MINUTE_LITERAL @AT@ 114740 @LENGTH@ 27
-

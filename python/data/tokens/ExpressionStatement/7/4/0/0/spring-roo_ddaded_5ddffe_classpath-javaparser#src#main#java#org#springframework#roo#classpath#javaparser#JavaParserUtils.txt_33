@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(StringBuffer.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("StringBuffer") @AT@ 3335 @LENGTH@ 64
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(StringBuffer.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("StringBuffer") @AT@ 3335 @LENGTH@ 63
-------UPD SimpleName@@MethodName:add:[StringBuffer.class.getSimpleName()] @TO@ MethodName:add:["StringBuffer"] @AT@ 3359 @LENGTH@ 39
----------INS StringLiteral@@"StringBuffer" @TO@ SimpleName@@MethodName:add:[StringBuffer.class.getSimpleName()] @AT@ 3042 @LENGTH@ 14
----------DEL MethodInvocation@@StringBuffer.class.getSimpleName() @AT@ 3363 @LENGTH@ 34
-------------DEL TypeLiteral@@StringBuffer.class @AT@ 3363 @LENGTH@ 18
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 3382 @LENGTH@ 15
-

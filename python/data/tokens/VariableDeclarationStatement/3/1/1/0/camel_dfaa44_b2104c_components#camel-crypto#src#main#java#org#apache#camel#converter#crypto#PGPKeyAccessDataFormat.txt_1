@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@InputStream encData=getDecryptedData(exchange,in); @TO@ InputStream encData=null; @AT@ 16184 @LENGTH@ 53
+---UPD VariableDeclarationFragment@@encData=getDecryptedData(exchange,in) @TO@ encData=null @AT@ 16196 @LENGTH@ 40
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@encData=getDecryptedData(exchange,in) @AT@ 16169 @LENGTH@ 4
+

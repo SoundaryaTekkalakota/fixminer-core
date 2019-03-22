@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, final, Pattern, [patternKey=Pattern.compile("^([a-zA-Z0-9_\\-\\:\\s]+).*")] @TO@ private, static, final, Pattern, [patternKey=Pattern.compile("^([a-zA-Z0-9_\\-\\:\\s]+).*")] @AT@ 2381 @LENGTH@ 82
+---INS Modifier@@static @TO@ FieldDeclaration@@private, final, Pattern, [patternKey=Pattern.compile("^([a-zA-Z0-9_\\-\\:\\s]+).*")] @AT@ 2389 @LENGTH@ 6
+

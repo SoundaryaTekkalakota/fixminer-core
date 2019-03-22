@@ -1,8 +1,8 @@
- DEL FieldDeclaration
---- DEL Modifier
---- DEL Modifier
---- DEL Modifier
---- DEL PrimitiveType
---- DEL VariableDeclarationFragment
------- DEL SimpleName
+ DEL FieldDeclaration 
+--- DEL Modifier 
+--- DEL Modifier 
+--- DEL Modifier 
+--- DEL PrimitiveType 
+--- DEL VariableDeclarationFragment 
+------ DEL SimpleName 
 ------ DEL NumberLiteral

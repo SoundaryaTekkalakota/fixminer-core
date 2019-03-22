@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(RuntimePermission.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("RuntimePermission") @AT@ 2935 @LENGTH@ 69
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(RuntimePermission.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("RuntimePermission") @AT@ 2935 @LENGTH@ 68
-------UPD SimpleName@@MethodName:add:[RuntimePermission.class.getSimpleName()] @TO@ MethodName:add:["RuntimePermission"] @AT@ 2959 @LENGTH@ 44
----------INS StringLiteral@@"RuntimePermission" @TO@ SimpleName@@MethodName:add:[RuntimePermission.class.getSimpleName()] @AT@ 2762 @LENGTH@ 19
----------DEL MethodInvocation@@RuntimePermission.class.getSimpleName() @AT@ 2963 @LENGTH@ 39
-------------DEL TypeLiteral@@RuntimePermission.class @AT@ 2963 @LENGTH@ 23
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 2987 @LENGTH@ 15
-

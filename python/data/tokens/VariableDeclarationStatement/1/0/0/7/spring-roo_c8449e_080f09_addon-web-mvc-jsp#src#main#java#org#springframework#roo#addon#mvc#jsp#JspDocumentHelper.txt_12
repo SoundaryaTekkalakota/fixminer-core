@@ -1,0 +1,2 @@
+MOV VariableDeclarationStatement@@Element script=document.createElement("script"); @TO@ MethodDeclaration@@private, Element, MethodName:getTextAreaDojo, Document document, FieldMetadata field,  @AT@ 24402 @LENGTH@ 50
+

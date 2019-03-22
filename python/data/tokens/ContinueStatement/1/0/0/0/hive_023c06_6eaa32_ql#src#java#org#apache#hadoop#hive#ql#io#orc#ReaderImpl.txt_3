@@ -1,2 +1,0 @@
-INS ContinueStatement@@ @TO@ IfStatement@@MethodInvocation:fieldNames.contains(colName) @AT@ 21743 @LENGTH@ 9
-

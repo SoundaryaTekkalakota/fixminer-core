@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, Class<?>, [parameterType] @TO@ private, volatile, Class<?>, [parameterType] @AT@ 1559 @LENGTH@ 31
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, Class<?>, [parameterType] @AT@ 1706 @LENGTH@ 8
+

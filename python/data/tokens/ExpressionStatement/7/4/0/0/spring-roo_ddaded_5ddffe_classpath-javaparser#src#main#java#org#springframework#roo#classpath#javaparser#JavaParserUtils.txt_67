@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(AssertionError.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("AssertionError") @AT@ 5629 @LENGTH@ 66
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(AssertionError.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("AssertionError") @AT@ 5629 @LENGTH@ 65
-------UPD SimpleName@@MethodName:add:[AssertionError.class.getSimpleName()] @TO@ MethodName:add:["AssertionError"] @AT@ 5653 @LENGTH@ 41
----------INS StringLiteral@@"AssertionError" @TO@ SimpleName@@MethodName:add:[AssertionError.class.getSimpleName()] @AT@ 4945 @LENGTH@ 16
----------DEL MethodInvocation@@AssertionError.class.getSimpleName() @AT@ 5657 @LENGTH@ 36
-------------DEL TypeLiteral@@AssertionError.class @AT@ 5657 @LENGTH@ 20
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 5678 @LENGTH@ 15
-

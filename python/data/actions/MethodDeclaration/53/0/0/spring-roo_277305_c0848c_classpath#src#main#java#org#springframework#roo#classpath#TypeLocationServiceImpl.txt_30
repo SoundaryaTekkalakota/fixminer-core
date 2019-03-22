@@ -1,53 +1,53 @@
- INS MethodDeclaration
---- INS Modifier
---- INS SimpleType
---- INS SimpleName
---- INS IfStatement
------- INS InfixExpression
---------- INS SimpleName
---------- INS Operator
---------- INS NullLiteral
------- INS TryStatement
---------- INS VariableDeclarationStatement
------------- INS ArrayType
---------------- INS ParameterizedType
------------------- INS SimpleType
------------------- INS WildcardType
------------- INS VariableDeclarationFragment
---------------- INS SimpleName
---------------- INS MethodInvocation
------------------- INS SimpleName
------------------- INS SimpleName
---------------------- INS MethodInvocation
------------------------- INS TypeLiteral
------------------------- INS SimpleName
---------------------- INS NullLiteral
---------- INS EnhancedForStatement
------------- INS SingleVariableDeclaration
---------------- INS ParameterizedType
------------------- INS SimpleType
------------------- INS WildcardType
---------------- INS SimpleName
------------- INS SimpleName
------------- INS ReturnStatement
---------------- INS CastExpression
------------------- INS SimpleType
------------------- INS MethodInvocation
---------------------- INS SimpleName
---------------------- INS SimpleName
------------------------- INS SimpleName
---------- INS ReturnStatement
------------- INS NullLiteral
---------- INS CatchClause
------------- INS SingleVariableDeclaration
---------------- INS SimpleType
---------------- INS SimpleName
------------- INS ExpressionStatement
---------------- INS MethodInvocation
------------------- INS SimpleName
------------------- INS SimpleName
---------------------- INS StringLiteral
------------- INS ReturnStatement
---------------- INS NullLiteral
------- INS ReturnStatement
---------- INS SimpleName
+ INS MethodDeclaration TO TypeDeclaration 
+--- INS Modifier TO MethodDeclaration 
+--- INS SimpleType TO MethodDeclaration 
+--- INS SimpleName TO MethodDeclaration 
+--- INS IfStatement TO MethodDeclaration 
+------ INS InfixExpression TO IfStatement 
+--------- INS SimpleName TO InfixExpression 
+--------- INS Operator TO InfixExpression 
+--------- INS NullLiteral TO InfixExpression 
+------ INS TryStatement TO IfStatement 
+--------- INS VariableDeclarationStatement TO TryStatement 
+------------ INS ArrayType TO VariableDeclarationStatement 
+--------------- INS ParameterizedType TO ArrayType 
+------------------ INS SimpleType TO ParameterizedType 
+------------------ INS WildcardType TO ParameterizedType 
+------------ INS VariableDeclarationFragment TO VariableDeclarationStatement 
+--------------- INS SimpleName TO VariableDeclarationFragment 
+--------------- INS MethodInvocation TO VariableDeclarationFragment 
+------------------ INS SimpleName TO MethodInvocation 
+------------------ INS SimpleName TO MethodInvocation 
+--------------------- INS MethodInvocation TO SimpleName 
+------------------------ INS TypeLiteral TO MethodInvocation 
+------------------------ INS SimpleName TO MethodInvocation 
+--------------------- INS NullLiteral TO SimpleName 
+--------- INS EnhancedForStatement TO TryStatement 
+------------ INS SingleVariableDeclaration TO EnhancedForStatement 
+--------------- INS ParameterizedType TO SingleVariableDeclaration 
+------------------ INS SimpleType TO ParameterizedType 
+------------------ INS WildcardType TO ParameterizedType 
+--------------- INS SimpleName TO SingleVariableDeclaration 
+------------ INS SimpleName TO EnhancedForStatement 
+------------ INS ReturnStatement TO EnhancedForStatement 
+--------------- INS CastExpression TO ReturnStatement 
+------------------ INS SimpleType TO CastExpression 
+------------------ INS MethodInvocation TO CastExpression 
+--------------------- INS SimpleName TO MethodInvocation 
+--------------------- INS SimpleName TO MethodInvocation 
+------------------------ INS SimpleName TO SimpleName 
+--------- INS ReturnStatement TO TryStatement 
+------------ INS NullLiteral TO ReturnStatement 
+--------- INS CatchClause TO TryStatement 
+------------ INS SingleVariableDeclaration TO CatchClause 
+--------------- INS SimpleType TO SingleVariableDeclaration 
+--------------- INS SimpleName TO SingleVariableDeclaration 
+------------ INS ExpressionStatement TO CatchClause 
+--------------- INS MethodInvocation TO ExpressionStatement 
+------------------ INS SimpleName TO MethodInvocation 
+------------------ INS SimpleName TO MethodInvocation 
+--------------------- INS StringLiteral TO SimpleName 
+------------ INS ReturnStatement TO CatchClause 
+--------------- INS NullLiteral TO ReturnStatement 
+------ INS ReturnStatement TO IfStatement 
+--------- INS SimpleName TO ReturnStatement

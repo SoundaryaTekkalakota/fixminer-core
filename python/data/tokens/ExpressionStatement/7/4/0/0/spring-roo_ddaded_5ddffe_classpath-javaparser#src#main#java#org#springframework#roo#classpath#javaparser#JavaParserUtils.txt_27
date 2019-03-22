@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(SecurityManager.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("SecurityManager") @AT@ 3007 @LENGTH@ 67
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(SecurityManager.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("SecurityManager") @AT@ 3007 @LENGTH@ 66
-------UPD SimpleName@@MethodName:add:[SecurityManager.class.getSimpleName()] @TO@ MethodName:add:["SecurityManager"] @AT@ 3031 @LENGTH@ 42
----------INS StringLiteral@@"SecurityManager" @TO@ SimpleName@@MethodName:add:[SecurityManager.class.getSimpleName()] @AT@ 2814 @LENGTH@ 17
----------DEL MethodInvocation@@SecurityManager.class.getSimpleName() @AT@ 3035 @LENGTH@ 37
-------------DEL TypeLiteral@@SecurityManager.class @AT@ 3035 @LENGTH@ 21
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 3057 @LENGTH@ 15
-

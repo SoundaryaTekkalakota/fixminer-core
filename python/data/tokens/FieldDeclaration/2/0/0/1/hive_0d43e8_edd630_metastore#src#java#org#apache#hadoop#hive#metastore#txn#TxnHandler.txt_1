@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, long, [deadlockRetryInterval] @TO@ private, final, long, [deadlockRetryInterval] @AT@ 3660 @LENGTH@ 35
+---INS Modifier@@final @TO@ FieldDeclaration@@private, long, [deadlockRetryInterval] @AT@ 3666 @LENGTH@ 5
+

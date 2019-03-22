@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.debug("Subscribing {} to topic {}",threadId,topicName) @TO@ MethodInvocation:LOG.info("Subscribing {} to topic {}",threadId,topicName) @AT@ 4744 @LENGTH@ 61
+---UPD MethodInvocation@@LOG.debug("Subscribing {} to topic {}",threadId,topicName) @TO@ LOG.info("Subscribing {} to topic {}",threadId,topicName) @AT@ 4744 @LENGTH@ 60
+------UPD SimpleName@@MethodName:debug:["Subscribing {} to topic {}", threadId, topicName] @TO@ MethodName:info:["Subscribing {} to topic {}", threadId, topicName] @AT@ 4748 @LENGTH@ 56
+

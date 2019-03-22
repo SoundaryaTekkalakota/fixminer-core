@@ -1,2 +1,0 @@
-MOV EnhancedForStatement@@Map.Entry<LongWritable,LongWritable> e, MethodInvocation:other.counts.entrySet() @TO@ MethodDeclaration@@public, boolean, MethodName:merge, State other,  @AT@ 8016 @LENGTH@ 142
-

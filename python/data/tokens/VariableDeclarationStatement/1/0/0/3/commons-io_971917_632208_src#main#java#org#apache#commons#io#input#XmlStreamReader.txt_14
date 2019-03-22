@@ -1,0 +1,2 @@
+MOV VariableDeclarationStatement@@BOMInputStream bom=new BOMInputStream(new BufferedInputStream(is,BUFFER_SIZE),false,BOMS); @TO@ MethodDeclaration@@public, voidMethodName:XmlStreamReader, InputStream is, boolean lenient, String defaultEncoding, IOException,  @AT@ 16969 @LENGTH@ 95
+

@@ -1,0 +1,2 @@
+MOV VariableDeclarationStatement@@Pair<HRegionInfo,Long> smallestNeighborOfSmallestRegion; @TO@ MethodDeclaration@@public, NormalizationPlan, MethodName:computePlanForTable, TableName table, HBaseIOException,  @AT@ 5066 @LENGTH@ 57
+

@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.error("Self-test query [" + selfTestQuery + "] failed; direct SQL is disabled",ex) @TO@ MethodInvocation:LOG.warn("Self-test query [" + selfTestQuery + "] failed; direct SQL is disabled",ex) @AT@ 6791 @LENGTH@ 88
+---UPD MethodInvocation@@LOG.error("Self-test query [" + selfTestQuery + "] failed; direct SQL is disabled",ex) @TO@ LOG.warn("Self-test query [" + selfTestQuery + "] failed; direct SQL is disabled",ex) @AT@ 6791 @LENGTH@ 87
+------UPD SimpleName@@MethodName:error:["Self-test query [" + selfTestQuery + "] failed; direct SQL is disabled", ex] @TO@ MethodName:warn:["Self-test query [" + selfTestQuery + "] failed; direct SQL is disabled", ex] @AT@ 6795 @LENGTH@ 83
+

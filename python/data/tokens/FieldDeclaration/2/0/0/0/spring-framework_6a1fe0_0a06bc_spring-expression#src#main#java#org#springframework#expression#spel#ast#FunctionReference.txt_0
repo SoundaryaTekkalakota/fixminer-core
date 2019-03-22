@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, Method, [method] @TO@ private, volatile, Method, [method] @AT@ 2459 @LENGTH@ 22
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, Method, [method] @AT@ 2494 @LENGTH@ 8
+

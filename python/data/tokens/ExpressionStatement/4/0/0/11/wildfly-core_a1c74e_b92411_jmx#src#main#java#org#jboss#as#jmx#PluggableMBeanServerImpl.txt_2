@@ -1,5 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:LogAction.doLog(acc,auditLogger,readOnly,error,methodName,methodSignature,methodParams) @TO@ MethodInvocation:LogAction.doLog(userId,auditLogger,readOnly,error,methodName,methodSignature,methodParams) @AT@ 55100 @LENGTH@ 94
----UPD MethodInvocation@@LogAction.doLog(acc,auditLogger,readOnly,error,methodName,methodSignature,methodParams) @TO@ LogAction.doLog(userId,auditLogger,readOnly,error,methodName,methodSignature,methodParams) @AT@ 55100 @LENGTH@ 93
-------UPD SimpleName@@MethodName:doLog:[acc, auditLogger, readOnly, error, methodName, methodSignature, methodParams] @TO@ MethodName:doLog:[userId, auditLogger, readOnly, error, methodName, methodSignature, methodParams] @AT@ 55110 @LENGTH@ 83
----------UPD SimpleName@@acc @TO@ userId @AT@ 55116 @LENGTH@ 3
-

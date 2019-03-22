@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@ContainerAnalysis ret; @TO@ ContainerAnalysis ret=null; @AT@ 2965 @LENGTH@ 22
+---UPD VariableDeclarationFragment@@ret @TO@ ret=null @AT@ 2983 @LENGTH@ 3
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@ret @AT@ 3064 @LENGTH@ 4
+

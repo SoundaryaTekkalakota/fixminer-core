@@ -1,0 +1,5 @@
+UPD VariableDeclarationStatement@@String[] tokens=cmd.split("\\s+"); @TO@ String[] tokens=cmd_trimmed.split("\\s+"); @AT@ 2042 @LENGTH@ 36
+---UPD VariableDeclarationFragment@@tokens=cmd.split("\\s+") @TO@ tokens=cmd_trimmed.split("\\s+") @AT@ 2051 @LENGTH@ 26
+------UPD MethodInvocation@@cmd.split("\\s+") @TO@ cmd_trimmed.split("\\s+") @AT@ 2060 @LENGTH@ 17
+---------UPD SimpleName@@Name:cmd @TO@ Name:cmd_trimmed @AT@ 2060 @LENGTH@ 3
+

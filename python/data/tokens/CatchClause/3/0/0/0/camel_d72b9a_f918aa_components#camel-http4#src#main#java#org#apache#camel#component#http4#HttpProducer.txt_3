@@ -1,4 +1,0 @@
-UPD CatchClause@@IOException e @TO@ Throwable e @AT@ 8691 @LENGTH@ 84
----UPD SingleVariableDeclaration@@IOException e @TO@ Throwable e @AT@ 8698 @LENGTH@ 13
-------UPD SimpleType@@IOException @TO@ Throwable @AT@ 8698 @LENGTH@ 11
-

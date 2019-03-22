@@ -1,0 +1,2 @@
+MOV ExpressionStatement@@MethodInvocation:bodyBuilder.indentRemove() @TO@ MethodDeclaration@@private, MethodMetadata, MethodName:getDeleteIndexMethod,  @AT@ 13942 @LENGTH@ 27
+

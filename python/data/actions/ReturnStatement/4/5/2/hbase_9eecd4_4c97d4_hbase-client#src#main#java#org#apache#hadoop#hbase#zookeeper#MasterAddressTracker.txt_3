@@ -1,4 +1,4 @@
- UPD ReturnStatement
---- UPD MethodInvocation
------- DEL MethodInvocation
------- MOV SimpleName
+ UPD ReturnStatement 
+--- UPD MethodInvocation 
+------ DEL MethodInvocation 
+------ MOV SimpleName TO MethodInvocation

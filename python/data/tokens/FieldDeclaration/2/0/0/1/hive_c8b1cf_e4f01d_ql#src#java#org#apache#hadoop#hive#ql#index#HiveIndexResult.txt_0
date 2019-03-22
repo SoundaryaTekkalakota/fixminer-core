@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, SortedSet<Long>, [offsets=new TreeSet<Long>()] @TO@ private, final, SortedSet<Long>, [offsets=new TreeSet<Long>()] @AT@ 2005 @LENGTH@ 54
+---INS Modifier@@final @TO@ FieldDeclaration@@private, SortedSet<Long>, [offsets=new TreeSet<Long>()] @AT@ 2013 @LENGTH@ 5
+

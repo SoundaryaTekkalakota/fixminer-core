@@ -1,2 +1,0 @@
-INS ReturnStatement@@ @TO@ IfStatement@@InfixExpression:Bytes.compareTo(finalKey.getRow(),searchKey.getRow()) < 0 @AT@ 63333 @LENGTH@ 7
-

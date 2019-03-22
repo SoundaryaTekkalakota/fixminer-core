@@ -1,2 +1,2 @@
- INS ThrowStatement
---- INS SimpleName
+ INS ThrowStatement TO CatchClause 
+--- INS SimpleName TO ThrowStatement

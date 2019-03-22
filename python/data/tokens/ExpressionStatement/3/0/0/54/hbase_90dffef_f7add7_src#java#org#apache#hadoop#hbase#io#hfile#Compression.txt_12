@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:codec.getConf().setInt("io.file.buffer.size",32 * 1024) @TO@ MethodInvocation:c.getConf().setInt("io.file.buffer.size",32 * 1024) @AT@ 6042 @LENGTH@ 57
+---UPD MethodInvocation@@codec.getConf().setInt("io.file.buffer.size",32 * 1024) @TO@ c.getConf().setInt("io.file.buffer.size",32 * 1024) @AT@ 6042 @LENGTH@ 56
+------UPD SimpleName@@Name:codec @TO@ Name:c @AT@ 6042 @LENGTH@ 5
+

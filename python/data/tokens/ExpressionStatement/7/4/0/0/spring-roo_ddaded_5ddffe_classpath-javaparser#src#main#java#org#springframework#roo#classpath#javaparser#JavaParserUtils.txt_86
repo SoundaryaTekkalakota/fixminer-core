@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(VerifyError.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("VerifyError") @AT@ 7004 @LENGTH@ 63
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(VerifyError.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("VerifyError") @AT@ 7004 @LENGTH@ 62
-------UPD SimpleName@@MethodName:add:[VerifyError.class.getSimpleName()] @TO@ MethodName:add:["VerifyError"] @AT@ 7028 @LENGTH@ 38
----------INS StringLiteral@@"VerifyError" @TO@ SimpleName@@MethodName:add:[VerifyError.class.getSimpleName()] @AT@ 5940 @LENGTH@ 13
----------DEL MethodInvocation@@VerifyError.class.getSimpleName() @AT@ 7032 @LENGTH@ 33
-------------DEL TypeLiteral@@VerifyError.class @AT@ 7032 @LENGTH@ 17
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 7050 @LENGTH@ 15
-

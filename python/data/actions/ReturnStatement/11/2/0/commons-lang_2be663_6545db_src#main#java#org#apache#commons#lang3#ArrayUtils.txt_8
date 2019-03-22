@@ -1,11 +1,11 @@
- UPD ReturnStatement
---- UPD MethodInvocation
------- UPD SimpleName
---------- DEL SimpleName
---------- INS CastExpression
------------- INS SimpleType
------------- INS SimpleName
---- INS CastExpression
------- MOV MethodInvocation
------- INS ArrayType
---------- INS PrimitiveType
+ UPD ReturnStatement 
+--- UPD MethodInvocation 
+------ UPD SimpleName 
+--------- DEL SimpleName 
+--------- INS CastExpression TO SimpleName 
+------------ INS SimpleType TO CastExpression 
+------------ INS SimpleName TO CastExpression 
+--- INS CastExpression TO ReturnStatement 
+------ MOV MethodInvocation TO CastExpression 
+------ INS ArrayType TO CastExpression 
+--------- INS PrimitiveType TO ArrayType

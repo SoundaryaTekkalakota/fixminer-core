@@ -1,0 +1,6 @@
+UPD ExpressionStatement@@MethodInvocation:System.exit(processFile(fileName)) @TO@ MethodInvocation:sysExit(ss,processFile(fileName)) @AT@ 6167 @LENGTH@ 35
+---UPD MethodInvocation@@System.exit(processFile(fileName)) @TO@ sysExit(ss,processFile(fileName)) @AT@ 6167 @LENGTH@ 34
+------DEL SimpleName@@Name:System @AT@ 6167 @LENGTH@ 6
+------UPD SimpleName@@MethodName:exit:[processFile(fileName)] @TO@ MethodName:sysExit:[ss, processFile(fileName)] @AT@ 6174 @LENGTH@ 27
+---------INS SimpleName@@ss @TO@ SimpleName@@MethodName:exit:[processFile(fileName)] @AT@ 6175 @LENGTH@ 2
+

@@ -1,6 +1,0 @@
-INS TypeDeclaration@@[private, static]Spring4ObjenesisInstanceCreatorStrategy, [InstanceCreatorStrategy] @TO@ TypeDeclaration@@[private, static]ObjenesisProxyEnhancer,  @AT@ 13465 @LENGTH@ 1212
----INS Modifier@@private @TO@ TypeDeclaration@@[private, static]Spring4ObjenesisInstanceCreatorStrategy, [InstanceCreatorStrategy] @AT@ 13465 @LENGTH@ 7
----INS Modifier@@static @TO@ TypeDeclaration@@[private, static]Spring4ObjenesisInstanceCreatorStrategy, [InstanceCreatorStrategy] @AT@ 13473 @LENGTH@ 6
----INS SimpleName@@ClassName:Spring4ObjenesisInstanceCreatorStrategy @TO@ TypeDeclaration@@[private, static]Spring4ObjenesisInstanceCreatorStrategy, [InstanceCreatorStrategy] @AT@ 13486 @LENGTH@ 39
----INS SimpleType@@InstanceCreatorStrategy @TO@ TypeDeclaration@@[private, static]Spring4ObjenesisInstanceCreatorStrategy, [InstanceCreatorStrategy] @AT@ 13537 @LENGTH@ 23
-

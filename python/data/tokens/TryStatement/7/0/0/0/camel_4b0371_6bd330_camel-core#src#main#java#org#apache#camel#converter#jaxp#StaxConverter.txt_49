@@ -1,8 +1,0 @@
-INS TryStatement@@try:[] @TO@ MethodDeclaration@@public, XMLEventReader, MethodName:createXMLEventReader, InputStream in, XMLStreamException,  @AT@ 8435 @LENGTH@ 151
----MOV ReturnStatement@@MethodInvocation:getInputFactory().createXMLEventReader(IOHelper.buffered(in)) @TO@ TryStatement@@try:[] @AT@ 4421 @LENGTH@ 69
----INS Block@@FinallyBody @TO@ TryStatement@@try:[] @AT@ 8531 @LENGTH@ 55
-------INS ExpressionStatement@@MethodInvocation:returnXMLInputFactory(factory) @TO@ Block@@FinallyBody @AT@ 8545 @LENGTH@ 31
----------INS MethodInvocation@@returnXMLInputFactory(factory) @TO@ ExpressionStatement@@MethodInvocation:returnXMLInputFactory(factory) @AT@ 8545 @LENGTH@ 30
-------------INS SimpleName@@MethodName:returnXMLInputFactory:[factory] @TO@ MethodInvocation@@returnXMLInputFactory(factory) @AT@ 8545 @LENGTH@ 30
----------------INS SimpleName@@factory @TO@ SimpleName@@MethodName:returnXMLInputFactory:[factory] @AT@ 8567 @LENGTH@ 7
-

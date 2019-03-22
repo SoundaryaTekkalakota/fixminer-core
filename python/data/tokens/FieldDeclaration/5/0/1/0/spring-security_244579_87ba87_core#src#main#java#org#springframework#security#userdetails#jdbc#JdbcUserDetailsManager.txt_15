@@ -1,6 +1,0 @@
-DEL FieldDeclaration@@private, SqlUpdate, [deleteGroupAuthorities] @AT@ 6574 @LENGTH@ 41
----DEL Modifier@@private @AT@ 6574 @LENGTH@ 7
----DEL SimpleType@@SqlUpdate @AT@ 6582 @LENGTH@ 9
----DEL VariableDeclarationFragment@@deleteGroupAuthorities @AT@ 6592 @LENGTH@ 22
-------DEL SimpleName@@deleteGroupAuthorities @AT@ 6592 @LENGTH@ 22
-

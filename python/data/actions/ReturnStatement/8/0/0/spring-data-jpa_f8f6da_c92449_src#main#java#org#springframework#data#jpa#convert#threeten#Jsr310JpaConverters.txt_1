@@ -1,8 +1,8 @@
- UPD ReturnStatement
---- INS ConditionalExpression
------- MOV MethodInvocation
------- INS InfixExpression
---------- INS SimpleName
---------- INS Operator
---------- INS NullLiteral
------- INS NullLiteral
+ UPD ReturnStatement 
+--- INS ConditionalExpression TO ReturnStatement 
+------ MOV MethodInvocation TO ConditionalExpression 
+------ INS InfixExpression TO ConditionalExpression 
+--------- INS SimpleName TO InfixExpression 
+--------- INS Operator TO InfixExpression 
+--------- INS NullLiteral TO InfixExpression 
+------ INS NullLiteral TO ConditionalExpression

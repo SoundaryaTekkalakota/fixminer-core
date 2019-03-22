@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:log.debug(message,exception) @TO@ MethodInvocation:log.info(message,exception) @AT@ 7637 @LENGTH@ 30
+---UPD MethodInvocation@@log.debug(message,exception) @TO@ log.info(message,exception) @AT@ 7637 @LENGTH@ 29
+------UPD SimpleName@@MethodName:debug:[message, exception] @TO@ MethodName:info:[message, exception] @AT@ 7641 @LENGTH@ 25
+

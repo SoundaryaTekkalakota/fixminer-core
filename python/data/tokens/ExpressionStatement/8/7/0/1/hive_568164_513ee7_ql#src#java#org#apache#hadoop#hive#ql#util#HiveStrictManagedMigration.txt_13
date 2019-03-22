@@ -1,9 +1,0 @@
-INS ExpressionStatement@@Assignment:oldWhRootPath=oldWhRootFs.makeQualified(oldWhRootPath) @TO@ IfStatement@@MethodInvocation:arePathsEqual(conf,runOptions.oldWarehouseRoot,curWarehouseRoot) @AT@ 12418 @LENGTH@ 57
----INS Assignment@@oldWhRootPath=oldWhRootFs.makeQualified(oldWhRootPath) @TO@ ExpressionStatement@@Assignment:oldWhRootPath=oldWhRootFs.makeQualified(oldWhRootPath) @AT@ 12418 @LENGTH@ 56
-------INS SimpleName@@oldWhRootPath @TO@ Assignment@@oldWhRootPath=oldWhRootFs.makeQualified(oldWhRootPath) @AT@ 12418 @LENGTH@ 13
-------INS Operator@@= @TO@ Assignment@@oldWhRootPath=oldWhRootFs.makeQualified(oldWhRootPath) @AT@ 12431 @LENGTH@ 1
-------INS MethodInvocation@@oldWhRootFs.makeQualified(oldWhRootPath) @TO@ Assignment@@oldWhRootPath=oldWhRootFs.makeQualified(oldWhRootPath) @AT@ 12434 @LENGTH@ 40
----------INS SimpleName@@Name:oldWhRootFs @TO@ MethodInvocation@@oldWhRootFs.makeQualified(oldWhRootPath) @AT@ 12434 @LENGTH@ 11
----------INS SimpleName@@MethodName:makeQualified:[oldWhRootPath] @TO@ MethodInvocation@@oldWhRootFs.makeQualified(oldWhRootPath) @AT@ 12446 @LENGTH@ 28
-------------INS SimpleName@@oldWhRootPath @TO@ SimpleName@@MethodName:makeQualified:[oldWhRootPath] @AT@ 12460 @LENGTH@ 13
-

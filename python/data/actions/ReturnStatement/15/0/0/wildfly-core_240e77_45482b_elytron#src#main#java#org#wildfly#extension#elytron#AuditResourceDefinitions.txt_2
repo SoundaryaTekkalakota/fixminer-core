@@ -1,15 +1,15 @@
- UPD ReturnStatement
---- UPD LambdaExpression
------- UPD VariableDeclarationStatement
---------- UPD VariableDeclarationFragment
------------- UPD ConditionalExpression
---------------- UPD MethodInvocation
------------------- INS MethodInvocation
---------------------- INS MethodInvocation
------------------------- INS SimpleName
---------------------------- INS SimpleName
---------------- UPD MethodInvocation
------------------- INS MethodInvocation
---------------------- INS MethodInvocation
------------------------- INS SimpleName
---------------------------- INS SimpleName
+ UPD ReturnStatement 
+--- UPD LambdaExpression 
+------ UPD VariableDeclarationStatement 
+--------- UPD VariableDeclarationFragment 
+------------ UPD ConditionalExpression 
+--------------- UPD MethodInvocation 
+------------------ INS MethodInvocation TO MethodInvocation 
+--------------------- INS MethodInvocation TO MethodInvocation 
+------------------------ INS SimpleName TO MethodInvocation 
+--------------------------- INS SimpleName TO SimpleName 
+--------------- UPD MethodInvocation 
+------------------ INS MethodInvocation TO MethodInvocation 
+--------------------- INS MethodInvocation TO MethodInvocation 
+------------------------ INS SimpleName TO MethodInvocation 
+--------------------------- INS SimpleName TO SimpleName

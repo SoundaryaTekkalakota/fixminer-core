@@ -1,4 +1,4 @@
- INS SwitchCase
---- INS QualifiedName
------- INS SimpleName
------- INS SimpleName
+ INS SwitchCase TO SwitchStatement 
+--- INS QualifiedName TO SwitchCase 
+------ INS SimpleName TO QualifiedName 
+------ INS SimpleName TO QualifiedName

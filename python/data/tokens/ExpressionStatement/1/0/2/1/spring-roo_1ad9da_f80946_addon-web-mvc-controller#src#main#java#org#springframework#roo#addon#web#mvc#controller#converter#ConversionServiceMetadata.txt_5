@@ -1,0 +1,2 @@
+MOV ExpressionStatement@@MethodInvocation:bodyBuilder.appendFormalLine("}") @TO@ MethodDeclaration@@private, MethodMetadata, MethodName:getStringToTypeConverterMethod, final JavaType targetType, final JavaSymbolName methodName, final JavaType idType,  @AT@ 12444 @LENGTH@ 34
+

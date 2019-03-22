@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(CloneNotSupportedException.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("CloneNotSupportedException") @AT@ 4085 @LENGTH@ 78
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(CloneNotSupportedException.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("CloneNotSupportedException") @AT@ 4085 @LENGTH@ 77
-------UPD SimpleName@@MethodName:add:[CloneNotSupportedException.class.getSimpleName()] @TO@ MethodName:add:["CloneNotSupportedException"] @AT@ 4109 @LENGTH@ 53
----------INS StringLiteral@@"CloneNotSupportedException" @TO@ SimpleName@@MethodName:add:[CloneNotSupportedException.class.getSimpleName()] @AT@ 3677 @LENGTH@ 28
----------DEL MethodInvocation@@CloneNotSupportedException.class.getSimpleName() @AT@ 4113 @LENGTH@ 48
-------------DEL TypeLiteral@@CloneNotSupportedException.class @AT@ 4113 @LENGTH@ 32
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 4146 @LENGTH@ 15
-

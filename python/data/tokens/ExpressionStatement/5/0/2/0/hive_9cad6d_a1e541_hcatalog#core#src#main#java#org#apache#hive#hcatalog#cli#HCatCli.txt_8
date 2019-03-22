@@ -1,0 +1,6 @@
+UPD ExpressionStatement@@MethodInvocation:System.exit(ret) @TO@ MethodInvocation:sysExit(ss,ret) @AT@ 8486 @LENGTH@ 17
+---UPD MethodInvocation@@System.exit(ret) @TO@ sysExit(ss,ret) @AT@ 8486 @LENGTH@ 16
+------DEL SimpleName@@Name:System @AT@ 8486 @LENGTH@ 6
+------UPD SimpleName@@MethodName:exit:[ret] @TO@ MethodName:sysExit:[ss, ret] @AT@ 8493 @LENGTH@ 9
+---------INS SimpleName@@ss @TO@ SimpleName@@MethodName:exit:[ret] @AT@ 9361 @LENGTH@ 2
+

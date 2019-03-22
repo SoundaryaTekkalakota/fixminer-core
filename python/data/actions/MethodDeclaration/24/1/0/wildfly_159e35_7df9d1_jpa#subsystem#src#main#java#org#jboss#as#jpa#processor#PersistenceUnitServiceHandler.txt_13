@@ -1,24 +1,24 @@
- INS MethodDeclaration
---- INS Modifier
---- INS PrimitiveType
---- INS SimpleName
---- INS SingleVariableDeclaration
------- INS SimpleType
------- INS SimpleName
---- INS SingleVariableDeclaration
------- INS SimpleType
------- INS SimpleName
---- INS ExpressionStatement
------- INS Assignment
---------- INS FieldAccess
------------- INS ThisExpression
------------- INS SimpleName
---------- INS Operator
---------- INS SimpleName
---- INS ExpressionStatement
------- INS Assignment
---------- INS FieldAccess
------------- INS ThisExpression
------------- INS SimpleName
---------- INS Operator
---------- INS SimpleName
+ INS MethodDeclaration TO TypeDeclaration 
+--- INS Modifier TO MethodDeclaration 
+--- INS PrimitiveType TO MethodDeclaration 
+--- INS SimpleName TO MethodDeclaration 
+--- INS SingleVariableDeclaration TO MethodDeclaration 
+------ INS SimpleType TO SingleVariableDeclaration 
+------ INS SimpleName TO SingleVariableDeclaration 
+--- INS SingleVariableDeclaration TO MethodDeclaration 
+------ INS SimpleType TO SingleVariableDeclaration 
+------ INS SimpleName TO SingleVariableDeclaration 
+--- INS ExpressionStatement TO MethodDeclaration 
+------ INS Assignment TO ExpressionStatement 
+--------- INS FieldAccess TO Assignment 
+------------ INS ThisExpression TO FieldAccess 
+------------ INS SimpleName TO FieldAccess 
+--------- INS Operator TO Assignment 
+--------- INS SimpleName TO Assignment 
+--- INS ExpressionStatement TO MethodDeclaration 
+------ INS Assignment TO ExpressionStatement 
+--------- INS FieldAccess TO Assignment 
+------------ INS ThisExpression TO FieldAccess 
+------------ INS SimpleName TO FieldAccess 
+--------- INS Operator TO Assignment 
+--------- INS SimpleName TO Assignment

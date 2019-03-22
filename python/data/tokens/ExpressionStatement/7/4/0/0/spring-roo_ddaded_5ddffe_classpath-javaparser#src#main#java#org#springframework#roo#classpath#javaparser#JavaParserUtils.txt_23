@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(Package.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("Package") @AT@ 2749 @LENGTH@ 59
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(Package.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("Package") @AT@ 2749 @LENGTH@ 58
-------UPD SimpleName@@MethodName:add:[Package.class.getSimpleName()] @TO@ MethodName:add:["Package"] @AT@ 2773 @LENGTH@ 34
----------INS StringLiteral@@"Package" @TO@ SimpleName@@MethodName:add:[Package.class.getSimpleName()] @AT@ 2587 @LENGTH@ 9
----------DEL MethodInvocation@@Package.class.getSimpleName() @AT@ 2777 @LENGTH@ 29
-------------DEL TypeLiteral@@Package.class @AT@ 2777 @LENGTH@ 13
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 2791 @LENGTH@ 15
-

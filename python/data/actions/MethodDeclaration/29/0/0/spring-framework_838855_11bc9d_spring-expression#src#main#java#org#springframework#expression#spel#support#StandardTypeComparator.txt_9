@@ -1,29 +1,29 @@
- INS MethodDeclaration
---- INS Modifier
---- INS Modifier
---- INS PrimitiveType
---- INS SimpleName
---- INS SingleVariableDeclaration
------- INS PrimitiveType
------- INS SimpleName
---- INS SingleVariableDeclaration
------- INS PrimitiveType
------- INS SimpleName
---- INS ReturnStatement
------- INS ParenthesizedExpression
---------- INS ConditionalExpression
------------- INS InfixExpression
---------------- INS SimpleName
---------------- INS Operator
---------------- INS SimpleName
------------- INS PrefixExpression
---------------- INS Operator
---------------- INS NumberLiteral
------------- INS ParenthesizedExpression
---------------- INS ConditionalExpression
------------------- INS InfixExpression
---------------------- INS SimpleName
---------------------- INS Operator
---------------------- INS SimpleName
------------------- INS NumberLiteral
------------------- INS NumberLiteral
+ INS MethodDeclaration TO TypeDeclaration 
+--- INS Modifier TO MethodDeclaration 
+--- INS Modifier TO MethodDeclaration 
+--- INS PrimitiveType TO MethodDeclaration 
+--- INS SimpleName TO MethodDeclaration 
+--- INS SingleVariableDeclaration TO MethodDeclaration 
+------ INS PrimitiveType TO SingleVariableDeclaration 
+------ INS SimpleName TO SingleVariableDeclaration 
+--- INS SingleVariableDeclaration TO MethodDeclaration 
+------ INS PrimitiveType TO SingleVariableDeclaration 
+------ INS SimpleName TO SingleVariableDeclaration 
+--- INS ReturnStatement TO MethodDeclaration 
+------ INS ParenthesizedExpression TO ReturnStatement 
+--------- INS ConditionalExpression TO ParenthesizedExpression 
+------------ INS InfixExpression TO ConditionalExpression 
+--------------- INS SimpleName TO InfixExpression 
+--------------- INS Operator TO InfixExpression 
+--------------- INS SimpleName TO InfixExpression 
+------------ INS PrefixExpression TO ConditionalExpression 
+--------------- INS Operator TO PrefixExpression 
+--------------- INS NumberLiteral TO PrefixExpression 
+------------ INS ParenthesizedExpression TO ConditionalExpression 
+--------------- INS ConditionalExpression TO ParenthesizedExpression 
+------------------ INS InfixExpression TO ConditionalExpression 
+--------------------- INS SimpleName TO InfixExpression 
+--------------------- INS Operator TO InfixExpression 
+--------------------- INS SimpleName TO InfixExpression 
+------------------ INS NumberLiteral TO ConditionalExpression 
+------------------ INS NumberLiteral TO ConditionalExpression

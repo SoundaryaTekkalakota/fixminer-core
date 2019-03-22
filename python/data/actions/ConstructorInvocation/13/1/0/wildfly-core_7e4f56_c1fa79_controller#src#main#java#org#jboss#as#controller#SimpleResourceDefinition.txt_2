@@ -1,13 +1,13 @@
- UPD ConstructorInvocation
---- INS NullLiteral
---- INS NullLiteral
---- DEL QualifiedName
------- DEL QualifiedName
---------- DEL SimpleName
---------- DEL SimpleName
------- DEL SimpleName
---- DEL QualifiedName
------- DEL QualifiedName
---------- DEL SimpleName
---------- DEL SimpleName
+ UPD ConstructorInvocation 
+--- INS NullLiteral TO ConstructorInvocation 
+--- INS NullLiteral TO ConstructorInvocation 
+--- DEL QualifiedName 
+------ DEL QualifiedName 
+--------- DEL SimpleName 
+--------- DEL SimpleName 
+------ DEL SimpleName 
+--- DEL QualifiedName 
+------ DEL QualifiedName 
+--------- DEL SimpleName 
+--------- DEL SimpleName 
 ------ DEL SimpleName

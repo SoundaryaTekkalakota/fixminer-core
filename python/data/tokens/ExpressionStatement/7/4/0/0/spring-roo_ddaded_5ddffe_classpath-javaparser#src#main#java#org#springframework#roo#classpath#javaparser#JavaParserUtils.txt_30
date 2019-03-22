@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(StackTraceElement.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("StackTraceElement") @AT@ 3137 @LENGTH@ 69
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(StackTraceElement.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("StackTraceElement") @AT@ 3137 @LENGTH@ 68
-------UPD SimpleName@@MethodName:add:[StackTraceElement.class.getSimpleName()] @TO@ MethodName:add:["StackTraceElement"] @AT@ 3161 @LENGTH@ 44
----------INS StringLiteral@@"StackTraceElement" @TO@ SimpleName@@MethodName:add:[StackTraceElement.class.getSimpleName()] @AT@ 2904 @LENGTH@ 19
----------DEL MethodInvocation@@StackTraceElement.class.getSimpleName() @AT@ 3165 @LENGTH@ 39
-------------DEL TypeLiteral@@StackTraceElement.class @AT@ 3165 @LENGTH@ 23
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 3189 @LENGTH@ 15
-

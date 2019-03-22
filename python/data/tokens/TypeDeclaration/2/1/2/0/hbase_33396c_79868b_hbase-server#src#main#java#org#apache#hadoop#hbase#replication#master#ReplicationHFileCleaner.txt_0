@@ -1,3 +1,0 @@
-UPD TypeDeclaration@@[@InterfaceAudience.LimitedPrivate(HBaseInterfaceAudience.CONFIG), public]ReplicationHFileCleaner, BaseHFileCleanerDelegate[Abortable] @TO@ [@InterfaceAudience.LimitedPrivate(HBaseInterfaceAudience.CONFIG), public]ReplicationHFileCleaner, BaseHFileCleanerDelegate @AT@ 2065 @LENGTH@ 5365
----DEL SimpleType@@Abortable @AT@ 2211 @LENGTH@ 9
-

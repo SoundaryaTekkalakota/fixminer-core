@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@RowLock rowLock=getRowLockInternal(mutation.getRow(),false); @TO@ RowLock rowLock=null; @AT@ 291866 @LENGTH@ 63
+---UPD VariableDeclarationFragment@@rowLock=getRowLockInternal(mutation.getRow(),false) @TO@ rowLock=null @AT@ 291874 @LENGTH@ 54
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@rowLock=getRowLockInternal(mutation.getRow(),false) @AT@ 293019 @LENGTH@ 4
+

@@ -1,3 +1,0 @@
-DEL TryStatement@@try:[] @AT@ 7732 @LENGTH@ 312
----DEL VariableDeclarationStatement@@GetSchemasOperation operation=getOperationManager().newGetSchemasOperation(getSession(),catalogName,schemaName); @AT@ 7744 @LENGTH@ 126
-

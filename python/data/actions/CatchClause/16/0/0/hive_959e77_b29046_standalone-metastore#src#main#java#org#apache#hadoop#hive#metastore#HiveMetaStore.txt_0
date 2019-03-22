@@ -1,16 +1,16 @@
- INS CatchClause
---- INS SingleVariableDeclaration
------- INS UnionType
---------- INS SimpleType
---------- INS SimpleType
------- INS SimpleName
---- INS ExpressionStatement
------- INS Assignment
---------- INS SimpleName
---------- INS Operator
---------- INS BooleanLiteral
---- INS ExpressionStatement
------- INS MethodInvocation
---------- INS SimpleName
---------- INS SimpleName
------------- INS SimpleName
+ INS CatchClause TO TryStatement 
+--- INS SingleVariableDeclaration TO CatchClause 
+------ INS UnionType TO SingleVariableDeclaration 
+--------- INS SimpleType TO UnionType 
+--------- INS SimpleType TO UnionType 
+------ INS SimpleName TO SingleVariableDeclaration 
+--- INS ExpressionStatement TO CatchClause 
+------ INS Assignment TO ExpressionStatement 
+--------- INS SimpleName TO Assignment 
+--------- INS Operator TO Assignment 
+--------- INS BooleanLiteral TO Assignment 
+--- INS ExpressionStatement TO CatchClause 
+------ INS MethodInvocation TO ExpressionStatement 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO SimpleName

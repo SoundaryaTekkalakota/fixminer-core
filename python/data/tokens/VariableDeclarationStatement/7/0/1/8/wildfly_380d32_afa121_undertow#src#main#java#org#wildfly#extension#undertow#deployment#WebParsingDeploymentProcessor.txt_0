@@ -1,8 +1,0 @@
-INS VariableDeclarationStatement@@ClassLoader old=WildFlySecurityManager.getCurrentContextClassLoaderPrivileged(); @TO@ MethodDeclaration@@public, void, MethodName:deploy, DeploymentPhaseContext phaseContext, DeploymentUnitProcessingException,  @AT@ 2945 @LENGTH@ 82
----INS SimpleType@@ClassLoader @TO@ VariableDeclarationStatement@@ClassLoader old=WildFlySecurityManager.getCurrentContextClassLoaderPrivileged(); @AT@ 2945 @LENGTH@ 11
----INS VariableDeclarationFragment@@old=WildFlySecurityManager.getCurrentContextClassLoaderPrivileged() @TO@ VariableDeclarationStatement@@ClassLoader old=WildFlySecurityManager.getCurrentContextClassLoaderPrivileged(); @AT@ 2957 @LENGTH@ 69
-------INS SimpleName@@old @TO@ VariableDeclarationFragment@@old=WildFlySecurityManager.getCurrentContextClassLoaderPrivileged() @AT@ 2957 @LENGTH@ 3
-------INS MethodInvocation@@WildFlySecurityManager.getCurrentContextClassLoaderPrivileged() @TO@ VariableDeclarationFragment@@old=WildFlySecurityManager.getCurrentContextClassLoaderPrivileged() @AT@ 2963 @LENGTH@ 63
----------INS SimpleName@@Name:WildFlySecurityManager @TO@ MethodInvocation@@WildFlySecurityManager.getCurrentContextClassLoaderPrivileged() @AT@ 2963 @LENGTH@ 22
----------INS SimpleName@@MethodName:getCurrentContextClassLoaderPrivileged:[] @TO@ MethodInvocation@@WildFlySecurityManager.getCurrentContextClassLoaderPrivileged() @AT@ 2986 @LENGTH@ 40
-

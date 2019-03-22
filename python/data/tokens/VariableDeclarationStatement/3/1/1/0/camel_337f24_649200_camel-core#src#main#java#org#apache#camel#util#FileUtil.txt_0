@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@FileChannel in=new FileInputStream(from).getChannel(); @TO@ FileChannel in=null; @AT@ 14506 @LENGTH@ 56
+---UPD VariableDeclarationFragment@@in=new FileInputStream(from).getChannel() @TO@ in=null @AT@ 14518 @LENGTH@ 43
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@in=new FileInputStream(from).getChannel() @AT@ 14523 @LENGTH@ 4
+

@@ -1,0 +1,6 @@
+UPD ExpressionStatement@@MethodInvocation:conf.setVar(HiveConf.ConfVars.METASTOREURIS,metaStoreUri) @TO@ MethodInvocation:setHiveConf(conf,HiveConf.ConfVars.METASTOREURIS,metaStoreUri) @AT@ 31993 @LENGTH@ 59
+---UPD MethodInvocation@@conf.setVar(HiveConf.ConfVars.METASTOREURIS,metaStoreUri) @TO@ setHiveConf(conf,HiveConf.ConfVars.METASTOREURIS,metaStoreUri) @AT@ 31993 @LENGTH@ 58
+------DEL SimpleName@@Name:conf @AT@ 31993 @LENGTH@ 4
+------UPD SimpleName@@MethodName:setVar:[HiveConf.ConfVars.METASTOREURIS, metaStoreUri] @TO@ MethodName:setHiveConf:[conf, HiveConf.ConfVars.METASTOREURIS, metaStoreUri] @AT@ 31998 @LENGTH@ 53
+---------INS SimpleName@@conf @TO@ SimpleName@@MethodName:setVar:[HiveConf.ConfVars.METASTOREURIS, metaStoreUri] @AT@ 31806 @LENGTH@ 4
+

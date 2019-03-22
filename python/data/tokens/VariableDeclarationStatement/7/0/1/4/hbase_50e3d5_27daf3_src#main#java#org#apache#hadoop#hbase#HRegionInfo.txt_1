@@ -1,8 +1,0 @@
-INS VariableDeclarationStatement@@Configuration c=HBaseConfiguration.create(); @TO@ MethodDeclaration@@public, HTableDescriptor, MethodName:getTableDesc,  @AT@ 18672 @LENGTH@ 46
----INS SimpleType@@Configuration @TO@ VariableDeclarationStatement@@Configuration c=HBaseConfiguration.create(); @AT@ 18672 @LENGTH@ 13
----INS VariableDeclarationFragment@@c=HBaseConfiguration.create() @TO@ VariableDeclarationStatement@@Configuration c=HBaseConfiguration.create(); @AT@ 18686 @LENGTH@ 31
-------INS SimpleName@@c @TO@ VariableDeclarationFragment@@c=HBaseConfiguration.create() @AT@ 18686 @LENGTH@ 1
-------INS MethodInvocation@@HBaseConfiguration.create() @TO@ VariableDeclarationFragment@@c=HBaseConfiguration.create() @AT@ 18690 @LENGTH@ 27
----------INS SimpleName@@Name:HBaseConfiguration @TO@ MethodInvocation@@HBaseConfiguration.create() @AT@ 18690 @LENGTH@ 18
----------INS SimpleName@@MethodName:create:[] @TO@ MethodInvocation@@HBaseConfiguration.create() @AT@ 18709 @LENGTH@ 8
-

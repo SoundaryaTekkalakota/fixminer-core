@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.debug("The list of auths are " + auths) @TO@ MethodInvocation:LOG.trace("The list of auths are " + auths) @AT@ 53235 @LENGTH@ 42
+---UPD MethodInvocation@@LOG.debug("The list of auths are " + auths) @TO@ LOG.trace("The list of auths are " + auths) @AT@ 53235 @LENGTH@ 41
+------UPD SimpleName@@MethodName:debug:["The list of auths are " + auths] @TO@ MethodName:trace:["The list of auths are " + auths] @AT@ 53239 @LENGTH@ 37
+

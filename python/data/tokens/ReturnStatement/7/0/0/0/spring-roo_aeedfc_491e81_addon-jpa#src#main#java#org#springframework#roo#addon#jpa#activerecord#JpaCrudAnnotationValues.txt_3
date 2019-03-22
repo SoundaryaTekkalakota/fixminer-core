@@ -1,8 +1,0 @@
-UPD ReturnStatement@@MethodInvocation:StringUtils.defaultIfEmpty(findMethod,FIND_METHOD_DEFAULT) @TO@ SimpleName:findMethod @AT@ 3622 @LENGTH@ 67
----INS SimpleName@@findMethod @TO@ ReturnStatement@@MethodInvocation:StringUtils.defaultIfEmpty(findMethod,FIND_METHOD_DEFAULT) @AT@ 3415 @LENGTH@ 10
----DEL MethodInvocation@@StringUtils.defaultIfEmpty(findMethod,FIND_METHOD_DEFAULT) @AT@ 3629 @LENGTH@ 59
-------DEL SimpleName@@Name:StringUtils @AT@ 3629 @LENGTH@ 11
-------DEL SimpleName@@MethodName:defaultIfEmpty:[findMethod, FIND_METHOD_DEFAULT] @AT@ 3641 @LENGTH@ 47
----------DEL SimpleName@@findMethod @AT@ 3656 @LENGTH@ 10
----------DEL SimpleName@@FIND_METHOD_DEFAULT @AT@ 3668 @LENGTH@ 19
-

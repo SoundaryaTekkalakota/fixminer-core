@@ -1,2 +1,0 @@
-MOV ExpressionStatement@@MethodInvocation:bodyBuilder.appendFormalLine("return " + fieldName + ";") @TO@ SwitchStatement@@SimpleName:action @AT@ 43642 @LENGTH@ 58
-

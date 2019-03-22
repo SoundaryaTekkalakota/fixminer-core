@@ -1,0 +1,2 @@
+MOV ExpressionStatement@@MethodInvocation:bodyBuilder.appendFormalLine("}") @TO@ MethodDeclaration@@private, MethodMetadata, MethodName:getUpdateFromJsonArrayMethod,  @AT@ 55068 @LENGTH@ 34
+

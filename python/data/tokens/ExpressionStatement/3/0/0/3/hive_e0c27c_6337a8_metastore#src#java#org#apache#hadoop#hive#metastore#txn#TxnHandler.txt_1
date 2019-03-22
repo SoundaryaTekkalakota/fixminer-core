@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.debug("  " + info) @TO@ MethodInvocation:LOG.trace("  " + info) @AT@ 111648 @LENGTH@ 23
+---UPD MethodInvocation@@LOG.debug("  " + info) @TO@ LOG.trace("  " + info) @AT@ 111648 @LENGTH@ 22
+------UPD SimpleName@@MethodName:debug:["  " + info] @TO@ MethodName:trace:["  " + info] @AT@ 111652 @LENGTH@ 18
+

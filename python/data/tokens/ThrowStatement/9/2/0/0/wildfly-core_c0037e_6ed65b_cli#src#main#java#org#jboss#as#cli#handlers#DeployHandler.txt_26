@@ -1,0 +1,10 @@
+UPD ThrowStatement@@ClassInstanceCreation:new OperationFormatException(this.disabled.getFullName() + " requires a filesystem path of the deployment to be added to the deployment repository.") @TO@ ClassInstanceCreation:new OperationFormatException(flag + " requires a filesystem path of the deployment to be added to the deployment repository.") @AT@ 26801 @LENGTH@ 180
+---UPD ClassInstanceCreation@@OperationFormatException[this.disabled.getFullName() + " requires a filesystem path of the deployment to be added to the deployment repository."] @TO@ OperationFormatException[flag + " requires a filesystem path of the deployment to be added to the deployment repository."] @AT@ 26807 @LENGTH@ 173
+------UPD InfixExpression@@this.disabled.getFullName() + " requires a filesystem path of the deployment to be added to the deployment repository." @TO@ flag + " requires a filesystem path of the deployment to be added to the deployment repository." @AT@ 26836 @LENGTH@ 143
+---------DEL MethodInvocation@@this.disabled.getFullName() @AT@ 26836 @LENGTH@ 27
+------------DEL FieldAccess@@this.disabled @AT@ 26836 @LENGTH@ 13
+---------------DEL ThisExpression@@this @AT@ 26836 @LENGTH@ 4
+---------------DEL SimpleName@@disabled @AT@ 26841 @LENGTH@ 8
+------------DEL SimpleName@@MethodName:getFullName:[] @AT@ 26850 @LENGTH@ 13
+---------INS SimpleName@@flag @TO@ InfixExpression@@this.disabled.getFullName() + " requires a filesystem path of the deployment to be added to the deployment repository." @AT@ 28559 @LENGTH@ 4
+

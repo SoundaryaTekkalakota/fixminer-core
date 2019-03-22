@@ -1,7 +1,0 @@
-INS FieldDeclaration@@private, final, ArchiveInputStream, [in] @TO@ TypeDeclaration@@[private, static]ArchiveInputStreamIterator, [ArchiveEntryIterator] @AT@ 8878 @LENGTH@ 36
----INS Modifier@@private @TO@ FieldDeclaration@@private, final, ArchiveInputStream, [in] @AT@ 8878 @LENGTH@ 7
----INS Modifier@@final @TO@ FieldDeclaration@@private, final, ArchiveInputStream, [in] @AT@ 8886 @LENGTH@ 5
----INS SimpleType@@ArchiveInputStream @TO@ FieldDeclaration@@private, final, ArchiveInputStream, [in] @AT@ 8892 @LENGTH@ 18
----INS VariableDeclarationFragment@@in @TO@ FieldDeclaration@@private, final, ArchiveInputStream, [in] @AT@ 8911 @LENGTH@ 2
-------INS SimpleName@@in @TO@ VariableDeclarationFragment@@in @AT@ 8911 @LENGTH@ 2
-

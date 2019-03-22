@@ -1,0 +1,2 @@
+MOV ExpressionStatement@@MethodInvocation:bodyBuilder.indentRemove() @TO@ MethodDeclaration@@private, MethodMetadata, MethodName:getSetAsTextMethod,  @AT@ 4764 @LENGTH@ 27
+

@@ -1,0 +1,2 @@
+MOV ExpressionStatement@@MethodInvocation:bodyBuilder.appendFormalLine("}") @TO@ MethodDeclaration@@public, MethodMetadata, MethodName:getInitMethod,  @AT@ 28162 @LENGTH@ 34
+

@@ -1,42 +1,42 @@
- INS MethodDeclaration
---- INS Modifier
---- INS SimpleType
---- INS SimpleName
---- INS SingleVariableDeclaration
------- INS SimpleType
------- INS SimpleName
---- INS TryStatement
------- INS VariableDeclarationStatement
---------- INS ParameterizedType
------------- INS SimpleType
------------- INS WildcardType
---------- INS VariableDeclarationFragment
------------- INS SimpleName
------------- INS CastExpression
---------------- INS ParameterizedType
------------------- INS SimpleType
------------------- INS WildcardType
---------------- INS MethodInvocation
------------------- INS SimpleName
------------------- INS SimpleName
---------------------- INS SimpleName
------- INS ReturnStatement
---------- INS MethodInvocation
------------- INS SimpleName
------------- INS SimpleName
---------------- INS SimpleName
---------------- INS ClassInstanceCreation
------------------- INS New
------------------- INS SimpleType
------- INS CatchClause
---------- INS SingleVariableDeclaration
------------- INS SimpleType
------------- INS SimpleName
---------- INS ThrowStatement
------------- INS ClassInstanceCreation
---------------- INS New
---------------- INS SimpleType
---------------- INS InfixExpression
------------------- INS StringLiteral
------------------- INS Operator
------------------- INS SimpleName
+ INS MethodDeclaration TO TypeDeclaration 
+--- INS Modifier TO MethodDeclaration 
+--- INS SimpleType TO MethodDeclaration 
+--- INS SimpleName TO MethodDeclaration 
+--- INS SingleVariableDeclaration TO MethodDeclaration 
+------ INS SimpleType TO SingleVariableDeclaration 
+------ INS SimpleName TO SingleVariableDeclaration 
+--- INS TryStatement TO MethodDeclaration 
+------ INS VariableDeclarationStatement TO TryStatement 
+--------- INS ParameterizedType TO VariableDeclarationStatement 
+------------ INS SimpleType TO ParameterizedType 
+------------ INS WildcardType TO ParameterizedType 
+--------- INS VariableDeclarationFragment TO VariableDeclarationStatement 
+------------ INS SimpleName TO VariableDeclarationFragment 
+------------ INS CastExpression TO VariableDeclarationFragment 
+--------------- INS ParameterizedType TO CastExpression 
+------------------ INS SimpleType TO ParameterizedType 
+------------------ INS WildcardType TO ParameterizedType 
+--------------- INS MethodInvocation TO CastExpression 
+------------------ INS SimpleName TO MethodInvocation 
+------------------ INS SimpleName TO MethodInvocation 
+--------------------- INS SimpleName TO SimpleName 
+------ INS ReturnStatement TO TryStatement 
+--------- INS MethodInvocation TO ReturnStatement 
+------------ INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO MethodInvocation 
+--------------- INS SimpleName TO SimpleName 
+--------------- INS ClassInstanceCreation TO SimpleName 
+------------------ INS New TO ClassInstanceCreation 
+------------------ INS SimpleType TO ClassInstanceCreation 
+------ INS CatchClause TO TryStatement 
+--------- INS SingleVariableDeclaration TO CatchClause 
+------------ INS SimpleType TO SingleVariableDeclaration 
+------------ INS SimpleName TO SingleVariableDeclaration 
+--------- INS ThrowStatement TO CatchClause 
+------------ INS ClassInstanceCreation TO ThrowStatement 
+--------------- INS New TO ClassInstanceCreation 
+--------------- INS SimpleType TO ClassInstanceCreation 
+--------------- INS InfixExpression TO ClassInstanceCreation 
+------------------ INS StringLiteral TO InfixExpression 
+------------------ INS Operator TO InfixExpression 
+------------------ INS SimpleName TO InfixExpression

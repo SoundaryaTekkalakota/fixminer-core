@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@GSSCredential credential; @TO@ GSSCredential credential=null; @AT@ 3122 @LENGTH@ 25
+---UPD VariableDeclarationFragment@@credential @TO@ credential=null @AT@ 3136 @LENGTH@ 10
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@credential @AT@ 3230 @LENGTH@ 4
+

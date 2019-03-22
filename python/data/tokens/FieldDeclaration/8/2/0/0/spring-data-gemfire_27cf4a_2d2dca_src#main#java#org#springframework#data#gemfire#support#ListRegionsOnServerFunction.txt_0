@@ -1,9 +1,0 @@
-INS FieldDeclaration@@private, static, final, long, [serialVersionUID=867530169l] @TO@ TypeDeclaration@@[@SuppressWarnings("serial"), public]ListRegionsOnServerFunction, [Function] @AT@ 1298 @LENGTH@ 56
----INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, long, [serialVersionUID=867530169l] @AT@ 1298 @LENGTH@ 7
----INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, long, [serialVersionUID=867530169l] @AT@ 1306 @LENGTH@ 6
----INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, long, [serialVersionUID=867530169l] @AT@ 1313 @LENGTH@ 5
----INS PrimitiveType@@long @TO@ FieldDeclaration@@private, static, final, long, [serialVersionUID=867530169l] @AT@ 1319 @LENGTH@ 4
----INS VariableDeclarationFragment@@serialVersionUID=867530169l @TO@ FieldDeclaration@@private, static, final, long, [serialVersionUID=867530169l] @AT@ 1324 @LENGTH@ 29
-------INS SimpleName@@serialVersionUID @TO@ VariableDeclarationFragment@@serialVersionUID=867530169l @AT@ 1324 @LENGTH@ 16
-------INS NumberLiteral@@867530169l @TO@ VariableDeclarationFragment@@serialVersionUID=867530169l @AT@ 1343 @LENGTH@ 10
-

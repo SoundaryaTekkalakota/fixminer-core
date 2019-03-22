@@ -1,2 +1,0 @@
-MOV MethodDeclaration@@protected, void, MethodName:initFrameworkServlet, ServletException, BeansException,  @TO@ TypeDeclaration@@[public]MessageDispatcherServlet, FrameworkServlet @AT@ 10300 @LENGTH@ 301
-

@@ -1,0 +1,2 @@
+MOV VariableDeclarationStatement@@int outColumn=ocm.allocateOutputColumn(returnType); @TO@ MethodDeclaration@@private, VectorExpression, MethodName:getCoalesceExpression, List<ExprNodeDesc> childExpr, TypeInfo returnType, HiveException,  @AT@ 58880 @LENGTH@ 53
+

@@ -1,8 +1,0 @@
-INS TryStatement@@try:[] @TO@ MethodDeclaration@@public, XMLEventWriter, MethodName:createXMLEventWriter, OutputStream out, Exchange exchange, XMLStreamException,  @AT@ 2962 @LENGTH@ 188
----MOV ReturnStatement@@MethodInvocation:getOutputFactory().createXMLEventWriter(IOHelper.buffered(out),IOHelper.getCharsetName(exchange)) @TO@ TryStatement@@try:[] @AT@ 1651 @LENGTH@ 106
----INS Block@@FinallyBody @TO@ TryStatement@@try:[] @AT@ 3094 @LENGTH@ 56
-------INS ExpressionStatement@@MethodInvocation:returnXMLOutputFactory(factory) @TO@ Block@@FinallyBody @AT@ 3108 @LENGTH@ 32
----------INS MethodInvocation@@returnXMLOutputFactory(factory) @TO@ ExpressionStatement@@MethodInvocation:returnXMLOutputFactory(factory) @AT@ 3108 @LENGTH@ 31
-------------INS SimpleName@@MethodName:returnXMLOutputFactory:[factory] @TO@ MethodInvocation@@returnXMLOutputFactory(factory) @AT@ 3108 @LENGTH@ 31
----------------INS SimpleName@@factory @TO@ SimpleName@@MethodName:returnXMLOutputFactory:[factory] @AT@ 3131 @LENGTH@ 7
-

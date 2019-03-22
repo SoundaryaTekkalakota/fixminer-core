@@ -1,16 +1,16 @@
- INS WhileStatement
---- INS InfixExpression
------- INS MethodInvocation
---------- INS SimpleName
---------- INS SimpleName
------------- INS NumberLiteral
------- INS Operator
------- INS CharacterLiteral
---- INS ExpressionStatement
------- INS Assignment
---------- INS SimpleName
---------- INS Operator
---------- INS MethodInvocation
------------- INS SimpleName
------------- INS SimpleName
---------------- INS NumberLiteral
+ INS WhileStatement TO MethodDeclaration 
+--- INS InfixExpression TO WhileStatement 
+------ INS MethodInvocation TO InfixExpression 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS NumberLiteral TO SimpleName 
+------ INS Operator TO InfixExpression 
+------ INS CharacterLiteral TO InfixExpression 
+--- INS ExpressionStatement TO WhileStatement 
+------ INS Assignment TO ExpressionStatement 
+--------- INS SimpleName TO Assignment 
+--------- INS Operator TO Assignment 
+--------- INS MethodInvocation TO Assignment 
+------------ INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO MethodInvocation 
+--------------- INS NumberLiteral TO SimpleName

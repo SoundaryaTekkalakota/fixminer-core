@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(AbstractMethodError.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("AbstractMethodError") @AT@ 5555 @LENGTH@ 71
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(AbstractMethodError.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("AbstractMethodError") @AT@ 5555 @LENGTH@ 70
-------UPD SimpleName@@MethodName:add:[AbstractMethodError.class.getSimpleName()] @TO@ MethodName:add:["AbstractMethodError"] @AT@ 5579 @LENGTH@ 46
----------INS StringLiteral@@"AbstractMethodError" @TO@ SimpleName@@MethodName:add:[AbstractMethodError.class.getSimpleName()] @AT@ 4891 @LENGTH@ 21
----------DEL MethodInvocation@@AbstractMethodError.class.getSimpleName() @AT@ 5583 @LENGTH@ 41
-------------DEL TypeLiteral@@AbstractMethodError.class @AT@ 5583 @LENGTH@ 25
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 5609 @LENGTH@ 15
-

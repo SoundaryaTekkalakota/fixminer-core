@@ -1,0 +1,6 @@
+INS FieldDeclaration@@private, ApplicationContext, [applicationContext] @TO@ TypeDeclaration@@[public]ScheduledAnnotationBeanPostProcessor, [BeanPostProcessor, Ordered, EmbeddedValueResolverAware, BeanFactoryAware, SmartInitializingSingleton, DisposableBean] @AT@ 4156 @LENGTH@ 46
+---INS Modifier@@private @TO@ FieldDeclaration@@private, ApplicationContext, [applicationContext] @AT@ 4156 @LENGTH@ 7
+---INS SimpleType@@ApplicationContext @TO@ FieldDeclaration@@private, ApplicationContext, [applicationContext] @AT@ 4164 @LENGTH@ 18
+---INS VariableDeclarationFragment@@applicationContext @TO@ FieldDeclaration@@private, ApplicationContext, [applicationContext] @AT@ 4183 @LENGTH@ 18
+------INS SimpleName@@applicationContext @TO@ VariableDeclarationFragment@@applicationContext @AT@ 4183 @LENGTH@ 18
+

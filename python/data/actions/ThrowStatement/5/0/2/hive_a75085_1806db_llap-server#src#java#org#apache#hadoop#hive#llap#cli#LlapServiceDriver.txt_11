@@ -1,5 +1,5 @@
- INS ThrowStatement
---- INS ClassInstanceCreation
------- INS New
------- INS SimpleType
------- INS StringLiteral
+ INS ThrowStatement TO IfStatement 
+--- INS ClassInstanceCreation TO ThrowStatement 
+------ INS New TO ClassInstanceCreation 
+------ INS SimpleType TO ClassInstanceCreation 
+------ INS StringLiteral TO ClassInstanceCreation

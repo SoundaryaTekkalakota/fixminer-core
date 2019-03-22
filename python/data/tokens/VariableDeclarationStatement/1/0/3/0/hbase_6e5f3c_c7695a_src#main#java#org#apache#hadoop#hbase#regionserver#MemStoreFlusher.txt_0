@@ -1,2 +1,0 @@
-DEL VariableDeclarationStatement@@HRegion bestFlushableRegion=getBiggestMemstoreRegion(regionsBySize,true); @AT@ 5917 @LENGTH@ 76
-

@@ -1,2 +1,0 @@
-INS ContinueStatement@@ @TO@ IfStatement@@PrefixExpression:!findProperty.isPresent() @AT@ 10948 @LENGTH@ 9
-

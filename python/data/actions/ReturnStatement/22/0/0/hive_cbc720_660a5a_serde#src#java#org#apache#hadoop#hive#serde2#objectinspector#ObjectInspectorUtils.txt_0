@@ -1,22 +1,22 @@
- UPD ReturnStatement
---- INS MethodInvocation
------- INS SimpleName
------- INS SimpleName
---------- INS SimpleName
---------- INS SimpleName
---- DEL ConditionalExpression
------- DEL InfixExpression
---------- DEL SimpleName
---------- DEL Operator
---------- DEL SimpleName
------- DEL NumberLiteral
------- DEL ParenthesizedExpression
---------- DEL ConditionalExpression
------------- DEL InfixExpression
---------------- DEL SimpleName
---------------- DEL Operator
---------------- DEL SimpleName
------------- DEL PrefixExpression
---------------- DEL Operator
---------------- DEL NumberLiteral
+ UPD ReturnStatement 
+--- INS MethodInvocation TO ReturnStatement 
+------ INS SimpleName TO MethodInvocation 
+------ INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO SimpleName 
+--------- INS SimpleName TO SimpleName 
+--- DEL ConditionalExpression 
+------ DEL InfixExpression 
+--------- DEL SimpleName 
+--------- DEL Operator 
+--------- DEL SimpleName 
+------ DEL NumberLiteral 
+------ DEL ParenthesizedExpression 
+--------- DEL ConditionalExpression 
+------------ DEL InfixExpression 
+--------------- DEL SimpleName 
+--------------- DEL Operator 
+--------------- DEL SimpleName 
+------------ DEL PrefixExpression 
+--------------- DEL Operator 
+--------------- DEL NumberLiteral 
 ------------ DEL NumberLiteral

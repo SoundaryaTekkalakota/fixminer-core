@@ -1,0 +1,6 @@
+INS FieldDeclaration@@private, ApplicationContext, [applicationContext] @TO@ TypeDeclaration@@[@SuppressWarnings("unused"), public]GemfireRepositoryFactoryBean, RepositoryFactoryBeanSupport<T,S,ID>[ApplicationContextAware] @AT@ 1877 @LENGTH@ 46
+---INS Modifier@@private @TO@ FieldDeclaration@@private, ApplicationContext, [applicationContext] @AT@ 1877 @LENGTH@ 7
+---INS SimpleType@@ApplicationContext @TO@ FieldDeclaration@@private, ApplicationContext, [applicationContext] @AT@ 1885 @LENGTH@ 18
+---INS VariableDeclarationFragment@@applicationContext @TO@ FieldDeclaration@@private, ApplicationContext, [applicationContext] @AT@ 1904 @LENGTH@ 18
+------INS SimpleName@@applicationContext @TO@ VariableDeclarationFragment@@applicationContext @AT@ 1904 @LENGTH@ 18
+

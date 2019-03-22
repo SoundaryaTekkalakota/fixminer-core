@@ -1,7 +1,0 @@
-INS FieldDeclaration@@private, final, PathAddress, [pathAddress] @TO@ TypeDeclaration@@[private, static, final]NoSuchResourceTypeException, OperationFailedRuntimeException @AT@ 66081 @LENGTH@ 38
----INS Modifier@@private @TO@ FieldDeclaration@@private, final, PathAddress, [pathAddress] @AT@ 66081 @LENGTH@ 7
----INS Modifier@@final @TO@ FieldDeclaration@@private, final, PathAddress, [pathAddress] @AT@ 66089 @LENGTH@ 5
----INS SimpleType@@PathAddress @TO@ FieldDeclaration@@private, final, PathAddress, [pathAddress] @AT@ 66095 @LENGTH@ 11
----INS VariableDeclarationFragment@@pathAddress @TO@ FieldDeclaration@@private, final, PathAddress, [pathAddress] @AT@ 66107 @LENGTH@ 11
-------INS SimpleName@@pathAddress @TO@ VariableDeclarationFragment@@pathAddress @AT@ 66107 @LENGTH@ 11
-

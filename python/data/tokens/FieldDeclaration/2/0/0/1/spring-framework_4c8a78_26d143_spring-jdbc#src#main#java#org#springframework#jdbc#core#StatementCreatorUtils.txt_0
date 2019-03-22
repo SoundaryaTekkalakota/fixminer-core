@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, static, Map<Class<?>,Integer>, [javaTypeToSqlTypeMap=new HashMap<Class<?>,Integer>(32)] @TO@ private, static, final, Map<Class<?>,Integer>, [javaTypeToSqlTypeMap=new HashMap<Class<?>,Integer>(32)] @AT@ 2023 @LENGTH@ 96
+---INS Modifier@@final @TO@ FieldDeclaration@@private, static, Map<Class<?>,Integer>, [javaTypeToSqlTypeMap=new HashMap<Class<?>,Integer>(32)] @AT@ 2279 @LENGTH@ 5
+

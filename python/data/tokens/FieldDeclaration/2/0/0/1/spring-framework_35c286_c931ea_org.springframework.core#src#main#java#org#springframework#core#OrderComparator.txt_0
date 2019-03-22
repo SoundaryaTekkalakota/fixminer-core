@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@public, static, OrderComparator, [INSTANCE=new OrderComparator()] @TO@ public, static, final, OrderComparator, [INSTANCE=new OrderComparator()] @AT@ 1437 @LENGTH@ 63
+---INS Modifier@@final @TO@ FieldDeclaration@@public, static, OrderComparator, [INSTANCE=new OrderComparator()] @AT@ 1451 @LENGTH@ 5
+

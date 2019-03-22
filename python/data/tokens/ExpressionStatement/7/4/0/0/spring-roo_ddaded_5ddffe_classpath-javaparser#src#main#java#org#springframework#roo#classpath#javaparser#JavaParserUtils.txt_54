@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(InstantiationException.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("InstantiationException") @AT@ 4707 @LENGTH@ 74
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(InstantiationException.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("InstantiationException") @AT@ 4707 @LENGTH@ 73
-------UPD SimpleName@@MethodName:add:[InstantiationException.class.getSimpleName()] @TO@ MethodName:add:["InstantiationException"] @AT@ 4731 @LENGTH@ 49
----------INS StringLiteral@@"InstantiationException" @TO@ SimpleName@@MethodName:add:[InstantiationException.class.getSimpleName()] @AT@ 4205 @LENGTH@ 24
----------DEL MethodInvocation@@InstantiationException.class.getSimpleName() @AT@ 4735 @LENGTH@ 44
-------------DEL TypeLiteral@@InstantiationException.class @AT@ 4735 @LENGTH@ 28
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 4764 @LENGTH@ 15
-

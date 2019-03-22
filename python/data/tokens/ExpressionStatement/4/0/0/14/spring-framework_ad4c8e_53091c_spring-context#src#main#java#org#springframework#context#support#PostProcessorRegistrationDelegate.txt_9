@@ -1,5 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:invokeBeanDefinitionRegistryPostProcessors(priorityOrderedPostProcessors,registry) @TO@ MethodInvocation:invokeBeanDefinitionRegistryPostProcessors(currentRegistryProcessors,registry) @AT@ 4045 @LENGTH@ 84
----UPD MethodInvocation@@invokeBeanDefinitionRegistryPostProcessors(priorityOrderedPostProcessors,registry) @TO@ invokeBeanDefinitionRegistryPostProcessors(currentRegistryProcessors,registry) @AT@ 4045 @LENGTH@ 83
-------UPD SimpleName@@MethodName:invokeBeanDefinitionRegistryPostProcessors:[priorityOrderedPostProcessors, registry] @TO@ MethodName:invokeBeanDefinitionRegistryPostProcessors:[currentRegistryProcessors, registry] @AT@ 4045 @LENGTH@ 83
----------UPD SimpleName@@priorityOrderedPostProcessors @TO@ currentRegistryProcessors @AT@ 4088 @LENGTH@ 29
-

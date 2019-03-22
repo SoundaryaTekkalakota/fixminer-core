@@ -1,9 +1,0 @@
-DEL MethodDeclaration@@public, boolean, MethodName:isSetBucketCols,  @AT@ 5158 @LENGTH@ 75
----DEL Modifier@@public @AT@ 5158 @LENGTH@ 6
----DEL PrimitiveType@@boolean @AT@ 5165 @LENGTH@ 7
----DEL SimpleName@@MethodName:isSetBucketCols @AT@ 5173 @LENGTH@ 15
----DEL ReturnStatement@@MethodInvocation:shared.isSetBucketCols() @AT@ 5197 @LENGTH@ 32
-------DEL MethodInvocation@@shared.isSetBucketCols() @AT@ 5204 @LENGTH@ 24
----------DEL SimpleName@@Name:shared @AT@ 5204 @LENGTH@ 6
----------DEL SimpleName@@MethodName:isSetBucketCols:[] @AT@ 5211 @LENGTH@ 17
-

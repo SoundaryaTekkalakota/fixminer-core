@@ -1,0 +1,10 @@
+UPD ThrowStatement@@ClassInstanceCreation:new OperationFormatException(this.disabled.getFullName() + " can't be used in combination with a CLI archive.") @TO@ ClassInstanceCreation:new OperationFormatException(flag + " can't be used in combination with a CLI archive.") @AT@ 27345 @LENGTH@ 118
+---UPD ClassInstanceCreation@@OperationFormatException[this.disabled.getFullName() + " can't be used in combination with a CLI archive."] @TO@ OperationFormatException[flag + " can't be used in combination with a CLI archive."] @AT@ 27351 @LENGTH@ 111
+------UPD InfixExpression@@this.disabled.getFullName() + " can't be used in combination with a CLI archive." @TO@ flag + " can't be used in combination with a CLI archive." @AT@ 27380 @LENGTH@ 81
+---------DEL MethodInvocation@@this.disabled.getFullName() @AT@ 27380 @LENGTH@ 27
+------------DEL FieldAccess@@this.disabled @AT@ 27380 @LENGTH@ 13
+---------------DEL ThisExpression@@this @AT@ 27380 @LENGTH@ 4
+---------------DEL SimpleName@@disabled @AT@ 27385 @LENGTH@ 8
+------------DEL SimpleName@@MethodName:getFullName:[] @AT@ 27394 @LENGTH@ 13
+---------INS SimpleName@@flag @TO@ InfixExpression@@this.disabled.getFullName() + " can't be used in combination with a CLI archive." @AT@ 29058 @LENGTH@ 4
+

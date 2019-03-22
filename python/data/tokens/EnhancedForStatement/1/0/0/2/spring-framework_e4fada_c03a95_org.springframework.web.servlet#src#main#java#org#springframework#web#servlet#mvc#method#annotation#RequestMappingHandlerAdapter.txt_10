@@ -1,2 +1,0 @@
-MOV EnhancedForStatement@@Method method, MethodInvocation:HandlerMethodSelector.selectMethods(handlerType,INIT_BINDER_METHODS) @TO@ MethodDeclaration@@private, WebDataBinderFactory, MethodName:getDataBinderFactory, HandlerMethod handlerMethod, Exception,  @AT@ 29942 @LENGTH@ 496
-

@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, String, [collection] @TO@ private, final, String, [collection] @AT@ 12510 @LENGTH@ 26
+---INS Modifier@@final @TO@ FieldDeclaration@@private, String, [collection] @AT@ 16019 @LENGTH@ 5
+

@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@PGPPublicKeyEncryptedData encryptedData; @TO@ PGPPublicKeyEncryptedData encryptedData=null; @AT@ 7198 @LENGTH@ 40
+---UPD VariableDeclarationFragment@@encryptedData @TO@ encryptedData=null @AT@ 7224 @LENGTH@ 13
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@encryptedData @AT@ 7345 @LENGTH@ 4
+

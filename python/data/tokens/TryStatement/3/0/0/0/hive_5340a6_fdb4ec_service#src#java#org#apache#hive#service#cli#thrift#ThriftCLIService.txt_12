@@ -1,4 +1,0 @@
-MOV TryStatement@@try:[] @TO@ MethodDeclaration@@public, TCloseOperationResp, MethodName:CloseOperation, TCloseOperationReq req, TException,  @AT@ 11769 @LENGTH@ 233
----MOV ExpressionStatement@@MethodInvocation:cliService.closeOperation(new OperationHandle(req.getOperationHandle())) @TO@ TryStatement@@try:[] @AT@ 12199 @LENGTH@ 73
----MOV ExpressionStatement@@MethodInvocation:resp.setStatus(OK_STATUS) @TO@ TryStatement@@try:[] @AT@ 12279 @LENGTH@ 26
-

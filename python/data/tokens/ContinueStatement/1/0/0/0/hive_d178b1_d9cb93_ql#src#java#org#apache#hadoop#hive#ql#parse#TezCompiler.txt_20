@@ -1,2 +1,0 @@
-INS ContinueStatement@@ @TO@ IfStatement@@InfixExpression:parentJoin.getChildOperators().size() == 1 @AT@ 29633 @LENGTH@ 9
-

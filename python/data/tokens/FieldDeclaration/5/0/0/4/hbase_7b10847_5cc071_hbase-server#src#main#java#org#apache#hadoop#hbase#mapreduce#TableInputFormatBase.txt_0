@@ -1,0 +1,6 @@
+INS FieldDeclaration@@private, Connection, [connection] @TO@ TypeDeclaration@@[@InterfaceAudience.Public, @InterfaceStability.Stable, public, abstract]TableInputFormatBase, InputFormat<ImmutableBytesWritable,Result> @AT@ 4295 @LENGTH@ 30
+---INS Modifier@@private @TO@ FieldDeclaration@@private, Connection, [connection] @AT@ 4295 @LENGTH@ 7
+---INS SimpleType@@Connection @TO@ FieldDeclaration@@private, Connection, [connection] @AT@ 4303 @LENGTH@ 10
+---INS VariableDeclarationFragment@@connection @TO@ FieldDeclaration@@private, Connection, [connection] @AT@ 4314 @LENGTH@ 10
+------INS SimpleName@@connection @TO@ VariableDeclarationFragment@@connection @AT@ 4314 @LENGTH@ 10
+

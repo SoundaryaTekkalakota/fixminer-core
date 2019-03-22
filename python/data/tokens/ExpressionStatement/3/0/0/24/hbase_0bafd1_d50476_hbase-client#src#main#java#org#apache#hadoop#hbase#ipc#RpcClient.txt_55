@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.debug("Couldn't lower timeout, which may result in longer than expected calls") @TO@ MethodInvocation:LOG.warn("Couldn't lower timeout, which may result in longer than expected calls") @AT@ 46870 @LENGTH@ 84
+---UPD MethodInvocation@@LOG.debug("Couldn't lower timeout, which may result in longer than expected calls") @TO@ LOG.warn("Couldn't lower timeout, which may result in longer than expected calls") @AT@ 46870 @LENGTH@ 83
+------UPD SimpleName@@MethodName:debug:["Couldn't lower timeout, which may result in longer than expected calls"] @TO@ MethodName:warn:["Couldn't lower timeout, which may result in longer than expected calls"] @AT@ 46874 @LENGTH@ 79
+

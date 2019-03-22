@@ -1,0 +1,2 @@
+MOV VariableDeclarationStatement@@int i=0; @TO@ MethodDeclaration@@private, VectorExpression, MethodName:getCoalesceExpression, List<ExprNodeDesc> childExpr, TypeInfo returnType, HiveException,  @AT@ 58753 @LENGTH@ 10
+

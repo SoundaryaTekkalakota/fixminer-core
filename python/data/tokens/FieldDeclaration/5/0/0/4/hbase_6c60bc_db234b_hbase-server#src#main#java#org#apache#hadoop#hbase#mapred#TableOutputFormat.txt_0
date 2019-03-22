@@ -1,0 +1,6 @@
+INS FieldDeclaration@@private, Connection, [connection] @TO@ TypeDeclaration@@[protected, static]TableRecordWriter, [RecordWriter<ImmutableBytesWritable,Put>] @AT@ 2300 @LENGTH@ 30
+---INS Modifier@@private @TO@ FieldDeclaration@@private, Connection, [connection] @AT@ 2300 @LENGTH@ 7
+---INS SimpleType@@Connection @TO@ FieldDeclaration@@private, Connection, [connection] @AT@ 2308 @LENGTH@ 10
+---INS VariableDeclarationFragment@@connection @TO@ FieldDeclaration@@private, Connection, [connection] @AT@ 2319 @LENGTH@ 10
+------INS SimpleName@@connection @TO@ VariableDeclarationFragment@@connection @AT@ 2319 @LENGTH@ 10
+

@@ -1,2 +1,0 @@
-MOV MethodDeclaration@@protected, void, MethodName:initFrameworkServlet, ServletException,  @TO@ TypeDeclaration@@[private]ContextRefreshListener, [ApplicationListener<ContextRefreshedEvent>] @AT@ 20648 @LENGTH@ 66
-

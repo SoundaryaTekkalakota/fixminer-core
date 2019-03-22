@@ -1,7 +1,0 @@
-INS FieldDeclaration@@private, final, OutputStream, [delegate] @TO@ TypeDeclaration@@[private, static]UncloseableOutputStream, OutputStream @AT@ 10839 @LENGTH@ 36
----INS Modifier@@private @TO@ FieldDeclaration@@private, final, OutputStream, [delegate] @AT@ 10839 @LENGTH@ 7
----INS Modifier@@final @TO@ FieldDeclaration@@private, final, OutputStream, [delegate] @AT@ 10847 @LENGTH@ 5
----INS SimpleType@@OutputStream @TO@ FieldDeclaration@@private, final, OutputStream, [delegate] @AT@ 10853 @LENGTH@ 12
----INS VariableDeclarationFragment@@delegate @TO@ FieldDeclaration@@private, final, OutputStream, [delegate] @AT@ 10866 @LENGTH@ 8
-------INS SimpleName@@delegate @TO@ VariableDeclarationFragment@@delegate @AT@ 10866 @LENGTH@ 8
-

@@ -1,18 +1,18 @@
- INS CatchClause
---- INS SingleVariableDeclaration
------- INS SimpleType
------- INS SimpleName
---- INS ExpressionStatement
------- INS MethodInvocation
---------- INS SimpleName
---------- INS SimpleName
------------- INS StringLiteral
------------- INS SimpleName
---- INS ExpressionStatement
------- INS MethodInvocation
---------- INS SimpleName
---------- INS SimpleName
------------- INS MethodInvocation
---------------- INS SimpleName
---------------- INS SimpleName
------------------- INS SimpleName
+ INS CatchClause TO TryStatement 
+--- INS SingleVariableDeclaration TO CatchClause 
+------ INS SimpleType TO SingleVariableDeclaration 
+------ INS SimpleName TO SingleVariableDeclaration 
+--- INS ExpressionStatement TO CatchClause 
+------ INS MethodInvocation TO ExpressionStatement 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS StringLiteral TO SimpleName 
+------------ INS SimpleName TO SimpleName 
+--- INS ExpressionStatement TO CatchClause 
+------ INS MethodInvocation TO ExpressionStatement 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS MethodInvocation TO SimpleName 
+--------------- INS SimpleName TO MethodInvocation 
+--------------- INS SimpleName TO MethodInvocation 
+------------------ INS SimpleName TO SimpleName

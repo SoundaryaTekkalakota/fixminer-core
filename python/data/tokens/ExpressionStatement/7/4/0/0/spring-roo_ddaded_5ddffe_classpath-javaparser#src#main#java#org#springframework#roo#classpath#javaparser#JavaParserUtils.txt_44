@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(ArrayStoreException.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("ArrayStoreException") @AT@ 3938 @LENGTH@ 71
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(ArrayStoreException.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("ArrayStoreException") @AT@ 3938 @LENGTH@ 70
-------UPD SimpleName@@MethodName:add:[ArrayStoreException.class.getSimpleName()] @TO@ MethodName:add:["ArrayStoreException"] @AT@ 3962 @LENGTH@ 46
----------INS StringLiteral@@"ArrayStoreException" @TO@ SimpleName@@MethodName:add:[ArrayStoreException.class.getSimpleName()] @AT@ 3513 @LENGTH@ 21
----------DEL MethodInvocation@@ArrayStoreException.class.getSimpleName() @AT@ 3966 @LENGTH@ 41
-------------DEL TypeLiteral@@ArrayStoreException.class @AT@ 3966 @LENGTH@ 25
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 3992 @LENGTH@ 15
-

@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@ByteBuffer newBuf=ByteBuffer.allocate(newSize); @TO@ ByteBuffer newBuf=null; @AT@ 2291 @LENGTH@ 49
+---UPD VariableDeclarationFragment@@newBuf=ByteBuffer.allocate(newSize) @TO@ newBuf=null @AT@ 2302 @LENGTH@ 37
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@newBuf=ByteBuffer.allocate(newSize) @AT@ 2310 @LENGTH@ 4
+

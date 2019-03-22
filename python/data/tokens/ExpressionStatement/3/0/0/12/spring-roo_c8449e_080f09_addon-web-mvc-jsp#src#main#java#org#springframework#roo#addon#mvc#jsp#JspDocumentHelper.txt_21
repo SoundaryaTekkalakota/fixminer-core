@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:formInput.setAttribute("path",field.getFieldName().getSymbolName()) @TO@ MethodInvocation:textArea.setAttribute("path",field.getFieldName().getSymbolName()) @AT@ 26582 @LENGTH@ 69
+---UPD MethodInvocation@@formInput.setAttribute("path",field.getFieldName().getSymbolName()) @TO@ textArea.setAttribute("path",field.getFieldName().getSymbolName()) @AT@ 26582 @LENGTH@ 68
+------UPD SimpleName@@Name:formInput @TO@ Name:textArea @AT@ 26582 @LENGTH@ 9
+

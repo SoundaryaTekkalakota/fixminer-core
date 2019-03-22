@@ -1,0 +1,2 @@
+MOV VariableDeclarationStatement@@BOMInputStream pis=new BOMInputStream(bom,true,XML_GUESS_BYTES); @TO@ MethodDeclaration@@public, voidMethodName:XmlStreamReader, InputStream is, String httpContentType, boolean lenient, String defaultEncoding, IOException,  @AT@ 15937 @LENGTH@ 68
+

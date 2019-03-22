@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:dep.putAttachment(IntegrationConstants.BUNDLE_KEY,bundle) @TO@ MethodInvocation:deployment.putAttachment(IntegrationConstants.BUNDLE_KEY,bundle) @AT@ 22579 @LENGTH@ 59
+---UPD MethodInvocation@@dep.putAttachment(IntegrationConstants.BUNDLE_KEY,bundle) @TO@ deployment.putAttachment(IntegrationConstants.BUNDLE_KEY,bundle) @AT@ 22579 @LENGTH@ 58
+------UPD SimpleName@@Name:dep @TO@ Name:deployment @AT@ 22579 @LENGTH@ 3
+

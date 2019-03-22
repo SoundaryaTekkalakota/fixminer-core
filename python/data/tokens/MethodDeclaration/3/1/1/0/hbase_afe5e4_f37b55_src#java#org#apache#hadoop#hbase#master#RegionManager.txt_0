@@ -1,0 +1,4 @@
+UPD MethodDeclaration@@private, void, MethodName:applyActions, final HServerInfo serverInfo, final ArrayList<HMsg> returnMsgs, SortedMap<byte[],Pair<HRegionInfo,HServerAddress>> map, final HMsg.Type msg,  @TO@ private, void, MethodName:applyActions, final HServerInfo serverInfo, final ArrayList<HMsg> returnMsgs, final SortedMap<byte[],Pair<HRegionInfo,HServerAddress>> map, final HMsg.Type msg,  @AT@ 37034 @LENGTH@ 716
+---UPD SingleVariableDeclaration@@SortedMap<byte[],Pair<HRegionInfo,HServerAddress>> map @TO@ final SortedMap<byte[],Pair<HRegionInfo,HServerAddress>> map @AT@ 37136 @LENGTH@ 55
+------INS Modifier@@final @TO@ SingleVariableDeclaration@@SortedMap<byte[],Pair<HRegionInfo,HServerAddress>> map @AT@ 37136 @LENGTH@ 5
+

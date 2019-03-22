@@ -1,7 +1,0 @@
-INS FieldDeclaration@@private, final, String, [methodName] @TO@ TypeDeclaration@@[static, final]MostSpecificMethodFilter, [MethodFilter] @AT@ 13588 @LENGTH@ 32
----INS Modifier@@private @TO@ FieldDeclaration@@private, final, String, [methodName] @AT@ 13588 @LENGTH@ 7
----INS Modifier@@final @TO@ FieldDeclaration@@private, final, String, [methodName] @AT@ 13596 @LENGTH@ 5
----INS SimpleType@@String @TO@ FieldDeclaration@@private, final, String, [methodName] @AT@ 13602 @LENGTH@ 6
----INS VariableDeclarationFragment@@methodName @TO@ FieldDeclaration@@private, final, String, [methodName] @AT@ 13609 @LENGTH@ 10
-------INS SimpleName@@methodName @TO@ VariableDeclarationFragment@@methodName @AT@ 13609 @LENGTH@ 10
-

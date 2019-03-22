@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(Float.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("Float") @AT@ 2310 @LENGTH@ 57
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(Float.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("Float") @AT@ 2310 @LENGTH@ 56
-------UPD SimpleName@@MethodName:add:[Float.class.getSimpleName()] @TO@ MethodName:add:["Float"] @AT@ 2334 @LENGTH@ 32
----------INS StringLiteral@@"Float" @TO@ SimpleName@@MethodName:add:[Float.class.getSimpleName()] @AT@ 2288 @LENGTH@ 7
----------DEL MethodInvocation@@Float.class.getSimpleName() @AT@ 2338 @LENGTH@ 27
-------------DEL TypeLiteral@@Float.class @AT@ 2338 @LENGTH@ 11
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 2350 @LENGTH@ 15
-

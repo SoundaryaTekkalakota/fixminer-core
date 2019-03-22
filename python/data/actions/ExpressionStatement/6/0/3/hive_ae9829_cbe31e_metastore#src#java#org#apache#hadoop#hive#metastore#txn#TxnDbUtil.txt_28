@@ -1,6 +1,6 @@
- UPD ExpressionStatement
---- UPD MethodInvocation
------- DEL SimpleName
------- UPD SimpleName
---------- UPD StringLiteral
---------- INS SimpleName
+ UPD ExpressionStatement 
+--- UPD MethodInvocation 
+------ DEL SimpleName 
+------ UPD SimpleName 
+--------- UPD StringLiteral 
+--------- INS SimpleName TO SimpleName

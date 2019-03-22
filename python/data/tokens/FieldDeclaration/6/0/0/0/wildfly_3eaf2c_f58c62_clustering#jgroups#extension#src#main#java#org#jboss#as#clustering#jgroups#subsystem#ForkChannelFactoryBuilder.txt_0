@@ -1,7 +1,0 @@
-INS FieldDeclaration@@private, final, String, [forkName] @TO@ TypeDeclaration@@[public]ForkChannelFactoryBuilder, CapabilityServiceNameProvider[ResourceServiceBuilder<ChannelFactory>] @AT@ 2775 @LENGTH@ 30
----INS Modifier@@private @TO@ FieldDeclaration@@private, final, String, [forkName] @AT@ 2775 @LENGTH@ 7
----INS Modifier@@final @TO@ FieldDeclaration@@private, final, String, [forkName] @AT@ 2783 @LENGTH@ 5
----INS SimpleType@@String @TO@ FieldDeclaration@@private, final, String, [forkName] @AT@ 2789 @LENGTH@ 6
----INS VariableDeclarationFragment@@forkName @TO@ FieldDeclaration@@private, final, String, [forkName] @AT@ 2796 @LENGTH@ 8
-------INS SimpleName@@forkName @TO@ VariableDeclarationFragment@@forkName @AT@ 2796 @LENGTH@ 8
-

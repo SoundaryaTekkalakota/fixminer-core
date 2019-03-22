@@ -1,0 +1,5 @@
+INS ExpressionStatement@@MethodInvocation:validateDatabase(dbName) @TO@ SwitchStatement@@MethodInvocation:ast.getChildCount() @AT@ 59662 @LENGTH@ 25
+---INS MethodInvocation@@validateDatabase(dbName) @TO@ ExpressionStatement@@MethodInvocation:validateDatabase(dbName) @AT@ 59662 @LENGTH@ 24
+------INS SimpleName@@MethodName:validateDatabase:[dbName] @TO@ MethodInvocation@@validateDatabase(dbName) @AT@ 59662 @LENGTH@ 24
+---------INS SimpleName@@dbName @TO@ SimpleName@@MethodName:validateDatabase:[dbName] @AT@ 59679 @LENGTH@ 6
+

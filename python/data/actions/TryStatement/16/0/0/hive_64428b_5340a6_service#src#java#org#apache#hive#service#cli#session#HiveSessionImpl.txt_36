@@ -1,16 +1,16 @@
- INS TryStatement
---- MOV ExpressionStatement
---- MOV ExpressionStatement
---- MOV Block
---- MOV ReturnStatement
---- INS CatchClause
------- INS SingleVariableDeclaration
---------- INS SimpleType
---------- INS SimpleName
------- INS ExpressionStatement
---------- INS MethodInvocation
------------- INS SimpleName
------------- INS SimpleName
---------------- INS SimpleName
------- INS ThrowStatement
---------- INS SimpleName
+ INS TryStatement TO MethodDeclaration 
+--- MOV ExpressionStatement TO TryStatement 
+--- MOV ExpressionStatement TO TryStatement 
+--- MOV Block TO TryStatement 
+--- MOV ReturnStatement TO TryStatement 
+--- INS CatchClause TO TryStatement 
+------ INS SingleVariableDeclaration TO CatchClause 
+--------- INS SimpleType TO SingleVariableDeclaration 
+--------- INS SimpleName TO SingleVariableDeclaration 
+------ INS ExpressionStatement TO CatchClause 
+--------- INS MethodInvocation TO ExpressionStatement 
+------------ INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO MethodInvocation 
+--------------- INS SimpleName TO SimpleName 
+------ INS ThrowStatement TO CatchClause 
+--------- INS SimpleName TO ThrowStatement

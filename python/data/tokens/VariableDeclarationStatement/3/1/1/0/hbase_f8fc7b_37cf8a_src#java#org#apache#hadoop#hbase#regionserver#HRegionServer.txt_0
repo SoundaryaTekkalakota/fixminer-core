@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@Set<Text> columnSet=new HashSet<Text>(); @TO@ Set<Text> columnSet=null; @AT@ 33784 @LENGTH@ 42
+---UPD VariableDeclarationFragment@@columnSet=new HashSet<Text>() @TO@ columnSet=null @AT@ 33794 @LENGTH@ 31
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@columnSet=new HashSet<Text>() @AT@ 33806 @LENGTH@ 4
+

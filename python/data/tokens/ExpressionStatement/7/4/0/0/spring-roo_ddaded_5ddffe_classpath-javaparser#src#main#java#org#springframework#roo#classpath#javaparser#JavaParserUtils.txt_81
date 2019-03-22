@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(StackOverflowError.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("StackOverflowError") @AT@ 6640 @LENGTH@ 70
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(StackOverflowError.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("StackOverflowError") @AT@ 6640 @LENGTH@ 69
-------UPD SimpleName@@MethodName:add:[StackOverflowError.class.getSimpleName()] @TO@ MethodName:add:["StackOverflowError"] @AT@ 6664 @LENGTH@ 45
----------INS StringLiteral@@"StackOverflowError" @TO@ SimpleName@@MethodName:add:[StackOverflowError.class.getSimpleName()] @AT@ 5676 @LENGTH@ 20
----------DEL MethodInvocation@@StackOverflowError.class.getSimpleName() @AT@ 6668 @LENGTH@ 40
-------------DEL TypeLiteral@@StackOverflowError.class @AT@ 6668 @LENGTH@ 24
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 6693 @LENGTH@ 15
-

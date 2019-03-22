@@ -1,0 +1,5 @@
+INS ExpressionStatement@@MethodInvocation:checkElementNameStrategy(exchange) @TO@ MethodDeclaration@@public, Object, MethodName:unmarshal, Exchange exchange, InputStream stream, IOException,  @AT@ 14538 @LENGTH@ 35
+---INS MethodInvocation@@checkElementNameStrategy(exchange) @TO@ ExpressionStatement@@MethodInvocation:checkElementNameStrategy(exchange) @AT@ 14538 @LENGTH@ 34
+------INS SimpleName@@MethodName:checkElementNameStrategy:[exchange] @TO@ MethodInvocation@@checkElementNameStrategy(exchange) @AT@ 14538 @LENGTH@ 34
+---------INS SimpleName@@exchange @TO@ SimpleName@@MethodName:checkElementNameStrategy:[exchange] @AT@ 14563 @LENGTH@ 8
+

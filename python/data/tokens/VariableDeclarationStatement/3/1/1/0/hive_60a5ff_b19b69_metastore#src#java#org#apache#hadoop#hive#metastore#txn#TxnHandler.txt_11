@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@Connection tmp=getDbConn(Connection.TRANSACTION_READ_COMMITTED); @TO@ Connection tmp=null; @AT@ 95452 @LENGTH@ 66
+---UPD VariableDeclarationFragment@@tmp=getDbConn(Connection.TRANSACTION_READ_COMMITTED) @TO@ tmp=null @AT@ 95463 @LENGTH@ 54
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@tmp=getDbConn(Connection.TRANSACTION_READ_COMMITTED) @AT@ 95850 @LENGTH@ 4
+

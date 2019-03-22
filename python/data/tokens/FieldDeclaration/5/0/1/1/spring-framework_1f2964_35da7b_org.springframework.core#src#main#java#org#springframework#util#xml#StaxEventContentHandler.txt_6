@@ -1,6 +1,0 @@
-DEL FieldDeclaration@@private, Locator, [locator] @AT@ 5783 @LENGTH@ 24
----DEL Modifier@@private @AT@ 5783 @LENGTH@ 7
----DEL SimpleType@@Locator @AT@ 5791 @LENGTH@ 7
----DEL VariableDeclarationFragment@@locator @AT@ 5799 @LENGTH@ 7
-------DEL SimpleName@@locator @AT@ 5799 @LENGTH@ 7
-

@@ -1,9 +1,0 @@
-DEL MethodDeclaration@@public, boolean, MethodName:isClosed,  @AT@ 13918 @LENGTH@ 63
----DEL Modifier@@public @AT@ 13918 @LENGTH@ 6
----DEL PrimitiveType@@boolean @AT@ 13925 @LENGTH@ 7
----DEL SimpleName@@MethodName:isClosed @AT@ 13933 @LENGTH@ 8
----DEL ReturnStatement@@MethodInvocation:delegate.isClosed() @AT@ 13950 @LENGTH@ 27
-------DEL MethodInvocation@@delegate.isClosed() @AT@ 13957 @LENGTH@ 19
----------DEL SimpleName@@Name:delegate @AT@ 13957 @LENGTH@ 8
----------DEL SimpleName@@MethodName:isClosed:[] @AT@ 13966 @LENGTH@ 10
-

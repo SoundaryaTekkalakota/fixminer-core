@@ -1,2 +1,0 @@
-MOV FieldDeclaration@@static, final, String, [CONF_TEST_RETRY="test.snapshot.export.failure.retry"] @TO@ TypeDeclaration@@[static]Testing,  @AT@ 5514 @LENGTH@ 75
-

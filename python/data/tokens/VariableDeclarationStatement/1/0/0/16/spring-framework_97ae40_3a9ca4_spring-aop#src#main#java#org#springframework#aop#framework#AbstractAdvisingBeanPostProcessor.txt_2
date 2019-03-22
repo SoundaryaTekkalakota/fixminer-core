@@ -1,0 +1,2 @@
+MOV VariableDeclarationStatement@@Class<?> targetClass=AopUtils.getTargetClass(bean); @TO@ MethodDeclaration@@protected, boolean, MethodName:isEligible, Object bean, String beanName,  @AT@ 3265 @LENGTH@ 53
+

@@ -1,8 +1,0 @@
-INS TryStatement@@try:[] @TO@ MethodDeclaration@@public, XMLEventReader, MethodName:createXMLEventReader, File file, Exchange exchange, XMLStreamException, FileNotFoundException,  @AT@ 9178 @LENGTH@ 209
----MOV ReturnStatement@@MethodInvocation:getInputFactory().createXMLEventReader(IOHelper.buffered(new FileInputStream(file)),IOHelper.getCharsetName(exchange)) @TO@ TryStatement@@try:[] @AT@ 4894 @LENGTH@ 127
----INS Block@@FinallyBody @TO@ TryStatement@@try:[] @AT@ 9332 @LENGTH@ 55
-------INS ExpressionStatement@@MethodInvocation:returnXMLInputFactory(factory) @TO@ Block@@FinallyBody @AT@ 9346 @LENGTH@ 31
----------INS MethodInvocation@@returnXMLInputFactory(factory) @TO@ ExpressionStatement@@MethodInvocation:returnXMLInputFactory(factory) @AT@ 9346 @LENGTH@ 30
-------------INS SimpleName@@MethodName:returnXMLInputFactory:[factory] @TO@ MethodInvocation@@returnXMLInputFactory(factory) @AT@ 9346 @LENGTH@ 30
----------------INS SimpleName@@factory @TO@ SimpleName@@MethodName:returnXMLInputFactory:[factory] @AT@ 9368 @LENGTH@ 7
-

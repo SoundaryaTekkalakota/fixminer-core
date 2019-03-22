@@ -1,20 +1,20 @@
- INS IfStatement
---- MOV IfStatement
------- MOV ReturnStatement
---- INS InfixExpression
------- INS MethodInvocation
---------- INS SimpleName
---------- INS SimpleName
------------- INS MethodInvocation
---------------- INS SimpleName
------------------- INS SimpleName
------------------- INS SimpleName
------------- INS NumberLiteral
------------- INS SimpleName
------- INS Operator
------- INS ParenthesizedExpression
---------- INS InfixExpression
------------- INS SimpleName
------------- INS Operator
------------- INS NullLiteral
---- MOV ExpressionStatement
+ INS IfStatement TO ForStatement 
+--- MOV IfStatement TO IfStatement 
+------ MOV ReturnStatement TO IfStatement 
+--- INS InfixExpression TO IfStatement 
+------ INS MethodInvocation TO InfixExpression 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS MethodInvocation TO SimpleName 
+--------------- INS SimpleName TO MethodInvocation 
+------------------ INS SimpleName TO SimpleName 
+------------------ INS SimpleName TO SimpleName 
+------------ INS NumberLiteral TO SimpleName 
+------------ INS SimpleName TO SimpleName 
+------ INS Operator TO InfixExpression 
+------ INS ParenthesizedExpression TO InfixExpression 
+--------- INS InfixExpression TO ParenthesizedExpression 
+------------ INS SimpleName TO InfixExpression 
+------------ INS Operator TO InfixExpression 
+------------ INS NullLiteral TO InfixExpression 
+--- MOV ExpressionStatement TO IfStatement

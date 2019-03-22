@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:out.setHeader(name,value) @TO@ MethodInvocation:answer.setHeader(name,value) @AT@ 4010 @LENGTH@ 27
+---UPD MethodInvocation@@out.setHeader(name,value) @TO@ answer.setHeader(name,value) @AT@ 4010 @LENGTH@ 26
+------UPD SimpleName@@Name:out @TO@ Name:answer @AT@ 4010 @LENGTH@ 3
+

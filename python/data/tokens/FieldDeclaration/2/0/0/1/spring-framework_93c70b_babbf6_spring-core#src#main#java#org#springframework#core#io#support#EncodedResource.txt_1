@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, Charset, [charset] @TO@ private, final, Charset, [charset] @AT@ 1401 @LENGTH@ 24
+---INS Modifier@@final @TO@ FieldDeclaration@@private, Charset, [charset] @AT@ 1473 @LENGTH@ 5
+

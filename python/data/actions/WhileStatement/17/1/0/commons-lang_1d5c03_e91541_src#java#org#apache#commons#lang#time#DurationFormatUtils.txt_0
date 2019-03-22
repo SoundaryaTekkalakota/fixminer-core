@@ -1,17 +1,17 @@
- INS WhileStatement
---- MOV InfixExpression
---- INS ExpressionStatement
------- INS MethodInvocation
---------- INS SimpleName
---------- INS SimpleName
------------- INS PrefixExpression
---------------- INS Operator
---------------- INS NumberLiteral
------------- MOV QualifiedName
---- INS ExpressionStatement
------- MOV Assignment
---- MOV ExpressionStatement
---- INS ExpressionStatement
------- INS MethodInvocation
---------- INS SimpleName
---------- MOV SimpleName
+ INS WhileStatement TO MethodDeclaration 
+--- MOV InfixExpression TO WhileStatement 
+--- INS ExpressionStatement TO WhileStatement 
+------ INS MethodInvocation TO ExpressionStatement 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS PrefixExpression TO SimpleName 
+--------------- INS Operator TO PrefixExpression 
+--------------- INS NumberLiteral TO PrefixExpression 
+------------ MOV QualifiedName TO SimpleName 
+--- INS ExpressionStatement TO WhileStatement 
+------ MOV Assignment TO ExpressionStatement 
+--- MOV ExpressionStatement TO WhileStatement 
+--- INS ExpressionStatement TO WhileStatement 
+------ INS MethodInvocation TO ExpressionStatement 
+--------- INS SimpleName TO MethodInvocation 
+--------- MOV SimpleName TO MethodInvocation

@@ -1,0 +1,2 @@
+MOV ExpressionStatement@@MethodInvocation:part.setHeader("Content-Type",contentType) @TO@ MethodDeclaration@@protected, String, MethodName:populateContentOnBodyPart, BodyPart part, MailConfiguration configuration, Exchange exchange, MessagingException, IOException,  @AT@ 6347 @LENGTH@ 44
+

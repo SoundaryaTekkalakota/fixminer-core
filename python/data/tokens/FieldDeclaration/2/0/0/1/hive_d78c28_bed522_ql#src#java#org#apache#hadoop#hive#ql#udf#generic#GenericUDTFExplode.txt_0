@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, Object[], [forwardObj=new Object[1]] @TO@ private, final, Object[], [forwardObj=new Object[1]] @AT@ 2425 @LENGTH@ 44
+---INS Modifier@@final @TO@ FieldDeclaration@@private, Object[], [forwardObj=new Object[1]] @AT@ 2433 @LENGTH@ 5
+

@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(ArrayIndexOutOfBoundsException.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("ArrayIndexOutOfBoundsException") @AT@ 3853 @LENGTH@ 82
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(ArrayIndexOutOfBoundsException.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("ArrayIndexOutOfBoundsException") @AT@ 3853 @LENGTH@ 81
-------UPD SimpleName@@MethodName:add:[ArrayIndexOutOfBoundsException.class.getSimpleName()] @TO@ MethodName:add:["ArrayIndexOutOfBoundsException"] @AT@ 3877 @LENGTH@ 57
----------INS StringLiteral@@"ArrayIndexOutOfBoundsException" @TO@ SimpleName@@MethodName:add:[ArrayIndexOutOfBoundsException.class.getSimpleName()] @AT@ 3448 @LENGTH@ 32
----------DEL MethodInvocation@@ArrayIndexOutOfBoundsException.class.getSimpleName() @AT@ 3881 @LENGTH@ 52
-------------DEL TypeLiteral@@ArrayIndexOutOfBoundsException.class @AT@ 3881 @LENGTH@ 36
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 3918 @LENGTH@ 15
-

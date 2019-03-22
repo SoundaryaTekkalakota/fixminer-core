@@ -1,7 +1,0 @@
-UPD VariableDeclarationStatement@@Method indexedReadMethod=ipd.getIndexedReadMethod(); @TO@ Method indexedReadMethod=indexedReadMethodFor(ipd); @AT@ 5264 @LENGTH@ 54
----UPD VariableDeclarationFragment@@indexedReadMethod=ipd.getIndexedReadMethod() @TO@ indexedReadMethod=indexedReadMethodFor(ipd) @AT@ 5271 @LENGTH@ 46
-------UPD MethodInvocation@@ipd.getIndexedReadMethod() @TO@ indexedReadMethodFor(ipd) @AT@ 5291 @LENGTH@ 26
----------DEL SimpleName@@Name:ipd @AT@ 5291 @LENGTH@ 3
----------UPD SimpleName@@MethodName:getIndexedReadMethod:[] @TO@ MethodName:indexedReadMethodFor:[ipd] @AT@ 5295 @LENGTH@ 22
-------------INS SimpleName@@ipd @TO@ SimpleName@@MethodName:getIndexedReadMethod:[] @AT@ 5377 @LENGTH@ 3
-

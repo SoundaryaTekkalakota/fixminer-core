@@ -1,6 +1,6 @@
- UPD ThrowStatement
---- UPD ClassInstanceCreation
------- DEL SimpleName
------- INS MethodInvocation
---------- INS SimpleName
------------- INS SimpleName
+ UPD ThrowStatement 
+--- UPD ClassInstanceCreation 
+------ DEL SimpleName 
+------ INS MethodInvocation TO ClassInstanceCreation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO SimpleName

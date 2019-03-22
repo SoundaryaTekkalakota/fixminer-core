@@ -1,6 +1,0 @@
-UPD IfStatement@@InfixExpression:(e.getCause() instanceof MetaException) && e.getCause().getMessage().matches("JDO[a-zA-Z]*Exception") @TO@ InfixExpression:(e.getCause() instanceof MetaException) && e.getCause().getMessage().matches("(?s).*JDO[a-zA-Z]*Exception.*") @AT@ 3992 @LENGTH@ 235
----UPD InfixExpression@@(e.getCause() instanceof MetaException) && e.getCause().getMessage().matches("JDO[a-zA-Z]*Exception") @TO@ (e.getCause() instanceof MetaException) && e.getCause().getMessage().matches("(?s).*JDO[a-zA-Z]*Exception.*") @AT@ 3996 @LENGTH@ 113
-------UPD MethodInvocation@@e.getCause().getMessage().matches("JDO[a-zA-Z]*Exception") @TO@ e.getCause().getMessage().matches("(?s).*JDO[a-zA-Z]*Exception.*") @AT@ 4051 @LENGTH@ 58
----------UPD SimpleName@@MethodName:matches:["JDO[a-zA-Z]*Exception"] @TO@ MethodName:matches:["(?s).*JDO[a-zA-Z]*Exception.*"] @AT@ 4077 @LENGTH@ 32
-------------UPD StringLiteral@@"JDO[a-zA-Z]*Exception" @TO@ "(?s).*JDO[a-zA-Z]*Exception.*" @AT@ 4085 @LENGTH@ 23
-

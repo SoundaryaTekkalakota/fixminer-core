@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@byte[] region=location == null ? null : location.getRegionInfo().getEncodedNameAsBytes(); @TO@ byte[] region=null; @AT@ 24858 @LENGTH@ 91
+---UPD VariableDeclarationFragment@@region=location == null ? null : location.getRegionInfo().getEncodedNameAsBytes() @TO@ region=null @AT@ 24865 @LENGTH@ 83
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@region=location == null ? null : location.getRegionInfo().getEncodedNameAsBytes() @AT@ 24878 @LENGTH@ 4
+

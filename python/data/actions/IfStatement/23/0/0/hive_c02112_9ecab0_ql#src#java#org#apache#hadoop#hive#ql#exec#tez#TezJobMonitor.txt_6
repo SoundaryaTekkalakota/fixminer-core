@@ -1,23 +1,23 @@
- INS IfStatement
---- INS PrefixExpression
------- INS Operator
------- INS MethodInvocation
---------- INS SimpleName
---------- INS SimpleName
------------- INS InfixExpression
---------------- INS QualifiedName
------------------- INS SimpleName
------------------- INS SimpleName
---------------- INS Operator
---------------- INS SimpleName
---- INS ExpressionStatement
------- INS MethodInvocation
---------- INS SimpleName
---------- INS SimpleName
------------- INS SimpleName
------------- INS InfixExpression
---------------- INS QualifiedName
------------------- INS SimpleName
------------------- INS SimpleName
---------------- INS Operator
---------------- INS SimpleName
+ INS IfStatement TO IfStatement 
+--- INS PrefixExpression TO IfStatement 
+------ INS Operator TO PrefixExpression 
+------ INS MethodInvocation TO PrefixExpression 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS InfixExpression TO SimpleName 
+--------------- INS QualifiedName TO InfixExpression 
+------------------ INS SimpleName TO QualifiedName 
+------------------ INS SimpleName TO QualifiedName 
+--------------- INS Operator TO InfixExpression 
+--------------- INS SimpleName TO InfixExpression 
+--- INS ExpressionStatement TO IfStatement 
+------ INS MethodInvocation TO ExpressionStatement 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO SimpleName 
+------------ INS InfixExpression TO SimpleName 
+--------------- INS QualifiedName TO InfixExpression 
+------------------ INS SimpleName TO QualifiedName 
+------------------ INS SimpleName TO QualifiedName 
+--------------- INS Operator TO InfixExpression 
+--------------- INS SimpleName TO InfixExpression

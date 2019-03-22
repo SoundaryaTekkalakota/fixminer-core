@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(InterruptedException.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("InterruptedException") @AT@ 4784 @LENGTH@ 72
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(InterruptedException.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("InterruptedException") @AT@ 4784 @LENGTH@ 71
-------UPD SimpleName@@MethodName:add:[InterruptedException.class.getSimpleName()] @TO@ MethodName:add:["InterruptedException"] @AT@ 4808 @LENGTH@ 47
----------INS StringLiteral@@"InterruptedException" @TO@ SimpleName@@MethodName:add:[InterruptedException.class.getSimpleName()] @AT@ 4262 @LENGTH@ 22
----------DEL MethodInvocation@@InterruptedException.class.getSimpleName() @AT@ 4812 @LENGTH@ 42
-------------DEL TypeLiteral@@InterruptedException.class @AT@ 4812 @LENGTH@ 26
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 4839 @LENGTH@ 15
-

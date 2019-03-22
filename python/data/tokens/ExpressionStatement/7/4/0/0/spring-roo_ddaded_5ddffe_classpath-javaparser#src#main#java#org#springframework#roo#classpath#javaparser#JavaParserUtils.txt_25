@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(Runtime.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("Runtime") @AT@ 2873 @LENGTH@ 59
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(Runtime.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("Runtime") @AT@ 2873 @LENGTH@ 58
-------UPD SimpleName@@MethodName:add:[Runtime.class.getSimpleName()] @TO@ MethodName:add:["Runtime"] @AT@ 2897 @LENGTH@ 34
----------INS StringLiteral@@"Runtime" @TO@ SimpleName@@MethodName:add:[Runtime.class.getSimpleName()] @AT@ 2720 @LENGTH@ 9
----------DEL MethodInvocation@@Runtime.class.getSimpleName() @AT@ 2901 @LENGTH@ 29
-------------DEL TypeLiteral@@Runtime.class @AT@ 2901 @LENGTH@ 13
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 2915 @LENGTH@ 15
-

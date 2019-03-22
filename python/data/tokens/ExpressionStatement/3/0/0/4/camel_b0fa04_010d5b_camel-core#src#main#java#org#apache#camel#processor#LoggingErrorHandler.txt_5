@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:log.debug(logMessage(exchange,e),e) @TO@ MethodInvocation:log.info(logMessage(exchange,e),e) @AT@ 3190 @LENGTH@ 38
+---UPD MethodInvocation@@log.debug(logMessage(exchange,e),e) @TO@ log.info(logMessage(exchange,e),e) @AT@ 3190 @LENGTH@ 37
+------UPD SimpleName@@MethodName:debug:[logMessage(exchange,e), e] @TO@ MethodName:info:[logMessage(exchange,e), e] @AT@ 3194 @LENGTH@ 33
+

@@ -1,6 +1,0 @@
-INS VariableDeclarationStatement@@Step step=registryActiveStep; @TO@ MethodDeclaration@@public, void, MethodName:setMode, Mode mode,  @AT@ 115614 @LENGTH@ 31
----INS SimpleType@@Step @TO@ VariableDeclarationStatement@@Step step=registryActiveStep; @AT@ 115614 @LENGTH@ 4
----INS VariableDeclarationFragment@@step=registryActiveStep @TO@ VariableDeclarationStatement@@Step step=registryActiveStep; @AT@ 115619 @LENGTH@ 25
-------INS SimpleName@@step @TO@ VariableDeclarationFragment@@step=registryActiveStep @AT@ 115619 @LENGTH@ 4
-------INS SimpleName@@registryActiveStep @TO@ VariableDeclarationFragment@@step=registryActiveStep @AT@ 115626 @LENGTH@ 18
-

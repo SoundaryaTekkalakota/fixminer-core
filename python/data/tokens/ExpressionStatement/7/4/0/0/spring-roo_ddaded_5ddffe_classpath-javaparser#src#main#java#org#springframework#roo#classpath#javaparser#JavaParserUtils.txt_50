@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(IllegalMonitorStateException.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("IllegalMonitorStateException") @AT@ 4386 @LENGTH@ 80
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(IllegalMonitorStateException.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("IllegalMonitorStateException") @AT@ 4386 @LENGTH@ 79
-------UPD SimpleName@@MethodName:add:[IllegalMonitorStateException.class.getSimpleName()] @TO@ MethodName:add:["IllegalMonitorStateException"] @AT@ 4410 @LENGTH@ 55
----------INS StringLiteral@@"IllegalMonitorStateException" @TO@ SimpleName@@MethodName:add:[IllegalMonitorStateException.class.getSimpleName()] @AT@ 3964 @LENGTH@ 30
----------DEL MethodInvocation@@IllegalMonitorStateException.class.getSimpleName() @AT@ 4414 @LENGTH@ 50
-------------DEL TypeLiteral@@IllegalMonitorStateException.class @AT@ 4414 @LENGTH@ 34
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 4449 @LENGTH@ 15
-

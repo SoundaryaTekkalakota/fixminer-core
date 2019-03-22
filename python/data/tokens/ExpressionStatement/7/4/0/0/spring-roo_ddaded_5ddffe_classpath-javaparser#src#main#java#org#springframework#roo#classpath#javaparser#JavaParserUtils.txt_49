@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(IllegalArgumentException.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("IllegalArgumentException") @AT@ 4307 @LENGTH@ 76
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(IllegalArgumentException.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("IllegalArgumentException") @AT@ 4307 @LENGTH@ 75
-------UPD SimpleName@@MethodName:add:[IllegalArgumentException.class.getSimpleName()] @TO@ MethodName:add:["IllegalArgumentException"] @AT@ 4331 @LENGTH@ 51
----------INS StringLiteral@@"IllegalArgumentException" @TO@ SimpleName@@MethodName:add:[IllegalArgumentException.class.getSimpleName()] @AT@ 3905 @LENGTH@ 26
----------DEL MethodInvocation@@IllegalArgumentException.class.getSimpleName() @AT@ 4335 @LENGTH@ 46
-------------DEL TypeLiteral@@IllegalArgumentException.class @AT@ 4335 @LENGTH@ 30
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 4366 @LENGTH@ 15
-

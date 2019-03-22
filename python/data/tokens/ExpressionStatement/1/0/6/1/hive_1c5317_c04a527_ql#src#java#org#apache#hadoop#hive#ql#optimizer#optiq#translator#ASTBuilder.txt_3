@@ -1,2 +1,0 @@
-MOV ExpressionStatement@@Assignment:val=literal.getValue3() + "BD" @TO@ SwitchStatement@@SimpleName:sqlType @AT@ 6510 @LENGTH@ 33
-

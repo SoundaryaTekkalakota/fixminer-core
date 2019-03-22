@@ -1,28 +1,28 @@
- UPD IfStatement
---- DEL FieldAccess
---- UPD IfStatement
------- DEL FieldAccess
------- UPD ExpressionStatement
---------- UPD Assignment
------------- UPD FieldAccess
---------------- UPD SimpleName
------------- DEL BooleanLiteral
------------- INS QualifiedName
---------------- INS SimpleName
---------------- INS SimpleName
------- INS InfixExpression
---------- INS FieldAccess
------------- MOV ThisExpression
------------- MOV SimpleName
---------- INS Operator
---------- INS QualifiedName
------------- INS SimpleName
------------- INS SimpleName
---- INS InfixExpression
------- INS FieldAccess
---------- MOV ThisExpression
---------- MOV SimpleName
------- INS Operator
------- INS QualifiedName
---------- INS SimpleName
---------- INS SimpleName
+ UPD IfStatement 
+--- DEL FieldAccess 
+--- UPD IfStatement 
+------ DEL FieldAccess 
+------ UPD ExpressionStatement 
+--------- UPD Assignment 
+------------ UPD FieldAccess 
+--------------- UPD SimpleName 
+------------ DEL BooleanLiteral 
+------------ INS QualifiedName TO Assignment 
+--------------- INS SimpleName TO QualifiedName 
+--------------- INS SimpleName TO QualifiedName 
+------ INS InfixExpression TO IfStatement 
+--------- INS FieldAccess TO InfixExpression 
+------------ MOV ThisExpression TO FieldAccess 
+------------ MOV SimpleName TO FieldAccess 
+--------- INS Operator TO InfixExpression 
+--------- INS QualifiedName TO InfixExpression 
+------------ INS SimpleName TO QualifiedName 
+------------ INS SimpleName TO QualifiedName 
+--- INS InfixExpression TO IfStatement 
+------ INS FieldAccess TO InfixExpression 
+--------- MOV ThisExpression TO FieldAccess 
+--------- MOV SimpleName TO FieldAccess 
+------ INS Operator TO InfixExpression 
+------ INS QualifiedName TO InfixExpression 
+--------- INS SimpleName TO QualifiedName 
+--------- INS SimpleName TO QualifiedName

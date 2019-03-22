@@ -1,5 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:DEFAULT_TYPES.put(EJB.packaging,MAVEN_PLUGIN) @TO@ MethodInvocation:DEFAULT_TYPES.put(EJB.packaging,EJB) @AT@ 1870 @LENGTH@ 47
----UPD MethodInvocation@@DEFAULT_TYPES.put(EJB.packaging,MAVEN_PLUGIN) @TO@ DEFAULT_TYPES.put(EJB.packaging,EJB) @AT@ 1870 @LENGTH@ 46
-------UPD SimpleName@@MethodName:put:[EJB.packaging, MAVEN_PLUGIN] @TO@ MethodName:put:[EJB.packaging, EJB] @AT@ 1884 @LENGTH@ 32
----------UPD SimpleName@@MAVEN_PLUGIN @TO@ EJB @AT@ 1903 @LENGTH@ 12
-

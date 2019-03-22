@@ -1,0 +1,2 @@
+MOV EnhancedForStatement@@ExprNodeDesc desc, MethodInvocation:selOp.getConf().getColList() @TO@ TryStatement@@try:[] @AT@ 8260 @LENGTH@ 203
+

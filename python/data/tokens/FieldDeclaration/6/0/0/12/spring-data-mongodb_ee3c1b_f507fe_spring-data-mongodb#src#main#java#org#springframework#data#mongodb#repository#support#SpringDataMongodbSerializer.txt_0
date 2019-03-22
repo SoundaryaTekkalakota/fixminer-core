@@ -1,7 +1,0 @@
-INS FieldDeclaration@@private, final, QueryMapper, [mapper] @TO@ TypeDeclaration@@SpringDataMongodbSerializer, MongodbSerializer @AT@ 1633 @LENGTH@ 33
----INS Modifier@@private @TO@ FieldDeclaration@@private, final, QueryMapper, [mapper] @AT@ 1633 @LENGTH@ 7
----INS Modifier@@final @TO@ FieldDeclaration@@private, final, QueryMapper, [mapper] @AT@ 1641 @LENGTH@ 5
----INS SimpleType@@QueryMapper @TO@ FieldDeclaration@@private, final, QueryMapper, [mapper] @AT@ 1647 @LENGTH@ 11
----INS VariableDeclarationFragment@@mapper @TO@ FieldDeclaration@@private, final, QueryMapper, [mapper] @AT@ 1659 @LENGTH@ 6
-------INS SimpleName@@mapper @TO@ VariableDeclarationFragment@@mapper @AT@ 1659 @LENGTH@ 6
-

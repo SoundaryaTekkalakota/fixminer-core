@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@Testing, [testing=null] @TO@ volatile, Testing, [testing=null] @AT@ 4242 @LENGTH@ 23
+---INS Modifier@@volatile @TO@ FieldDeclaration@@Testing, [testing=null] @AT@ 4242 @LENGTH@ 8
+

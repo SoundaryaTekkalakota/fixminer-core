@@ -1,11 +1,11 @@
- UPD IfStatement
---- DEL InfixExpression
------- DEL SimpleName
------- DEL Operator
------- DEL NullLiteral
---- INS SimpleName
---- INS ExpressionStatement
------- INS Assignment
---------- INS SimpleName
---------- INS Operator
---------- INS BooleanLiteral
+ UPD IfStatement 
+--- DEL InfixExpression 
+------ DEL SimpleName 
+------ DEL Operator 
+------ DEL NullLiteral 
+--- INS SimpleName TO IfStatement 
+--- INS ExpressionStatement TO IfStatement 
+------ INS Assignment TO ExpressionStatement 
+--------- INS SimpleName TO Assignment 
+--------- INS Operator TO Assignment 
+--------- INS BooleanLiteral TO Assignment

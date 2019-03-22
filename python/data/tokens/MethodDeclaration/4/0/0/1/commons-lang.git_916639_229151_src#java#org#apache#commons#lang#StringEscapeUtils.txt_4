@@ -1,0 +1,5 @@
+UPD MethodDeclaration@@private, static, String, MethodName:escapeJavaStyleString, String str, boolean escapeSingleQuotes,  @TO@ private, static, String, MethodName:escapeJavaStyleString, String str, boolean escapeSingleQuotes, boolean escapeForwardSlash,  @AT@ 5701 @LENGTH@ 526
+---INS SingleVariableDeclaration@@boolean escapeForwardSlash @TO@ MethodDeclaration@@private, static, String, MethodName:escapeJavaStyleString, String str, boolean escapeSingleQuotes,  @AT@ 5849 @LENGTH@ 26
+------INS PrimitiveType@@boolean @TO@ SingleVariableDeclaration@@boolean escapeForwardSlash @AT@ 5849 @LENGTH@ 7
+------INS SimpleName@@escapeForwardSlash @TO@ SingleVariableDeclaration@@boolean escapeForwardSlash @AT@ 5857 @LENGTH@ 18
+

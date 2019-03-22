@@ -1,7 +1,7 @@
- DEL SynchronizedStatement
---- DEL SimpleName
---- DEL ExpressionStatement
------- DEL MethodInvocation
---------- DEL SimpleName
---------- DEL SimpleName
+ DEL SynchronizedStatement 
+--- DEL SimpleName 
+--- DEL ExpressionStatement 
+------ DEL MethodInvocation 
+--------- DEL SimpleName 
+--------- DEL SimpleName 
 ------------ DEL SimpleName

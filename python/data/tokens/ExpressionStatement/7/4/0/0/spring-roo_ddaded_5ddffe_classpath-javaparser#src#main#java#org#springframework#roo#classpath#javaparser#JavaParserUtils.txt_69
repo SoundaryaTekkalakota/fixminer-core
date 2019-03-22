@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(ClassFormatError.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("ClassFormatError") @AT@ 5774 @LENGTH@ 68
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(ClassFormatError.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("ClassFormatError") @AT@ 5774 @LENGTH@ 67
-------UPD SimpleName@@MethodName:add:[ClassFormatError.class.getSimpleName()] @TO@ MethodName:add:["ClassFormatError"] @AT@ 5798 @LENGTH@ 43
----------INS StringLiteral@@"ClassFormatError" @TO@ SimpleName@@MethodName:add:[ClassFormatError.class.getSimpleName()] @AT@ 5050 @LENGTH@ 18
----------DEL MethodInvocation@@ClassFormatError.class.getSimpleName() @AT@ 5802 @LENGTH@ 38
-------------DEL TypeLiteral@@ClassFormatError.class @AT@ 5802 @LENGTH@ 22
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 5825 @LENGTH@ 15
-

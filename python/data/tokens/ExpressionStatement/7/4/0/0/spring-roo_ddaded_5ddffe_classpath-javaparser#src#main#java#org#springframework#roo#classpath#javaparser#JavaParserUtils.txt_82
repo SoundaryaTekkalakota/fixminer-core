@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(ThreadDeath.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("ThreadDeath") @AT@ 6713 @LENGTH@ 63
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(ThreadDeath.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("ThreadDeath") @AT@ 6713 @LENGTH@ 62
-------UPD SimpleName@@MethodName:add:[ThreadDeath.class.getSimpleName()] @TO@ MethodName:add:["ThreadDeath"] @AT@ 6737 @LENGTH@ 38
----------INS StringLiteral@@"ThreadDeath" @TO@ SimpleName@@MethodName:add:[ThreadDeath.class.getSimpleName()] @AT@ 5729 @LENGTH@ 13
----------DEL MethodInvocation@@ThreadDeath.class.getSimpleName() @AT@ 6741 @LENGTH@ 33
-------------DEL TypeLiteral@@ThreadDeath.class @AT@ 6741 @LENGTH@ 17
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 6759 @LENGTH@ 15
-

@@ -1,6 +1,0 @@
-UPD ReturnStatement@@MethodInvocation:children.get(1) @TO@ ConditionalExpression:isAnd ? children.get(1) : null @AT@ 7973 @LENGTH@ 23
----INS ConditionalExpression@@isAnd ? children.get(1) : null @TO@ ReturnStatement@@MethodInvocation:children.get(1) @AT@ 8186 @LENGTH@ 30
-------MOV MethodInvocation@@children.get(1) @TO@ ConditionalExpression@@isAnd ? children.get(1) : null @AT@ 7980 @LENGTH@ 15
-------INS SimpleName@@isAnd @TO@ ConditionalExpression@@isAnd ? children.get(1) : null @AT@ 8186 @LENGTH@ 5
-------INS NullLiteral@@null @TO@ ConditionalExpression@@isAnd ? children.get(1) : null @AT@ 8212 @LENGTH@ 4
-

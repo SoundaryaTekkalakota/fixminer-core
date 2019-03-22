@@ -1,0 +1,6 @@
+INS FieldDeclaration@@private, ClassLoader, [classLoader] @TO@ TypeDeclaration@@[static]ClassLoaderAwareObjectInputStream, ObjectInputStream @AT@ 9215 @LENGTH@ 32
+---INS Modifier@@private @TO@ FieldDeclaration@@private, ClassLoader, [classLoader] @AT@ 9215 @LENGTH@ 7
+---INS SimpleType@@ClassLoader @TO@ FieldDeclaration@@private, ClassLoader, [classLoader] @AT@ 9223 @LENGTH@ 11
+---INS VariableDeclarationFragment@@classLoader @TO@ FieldDeclaration@@private, ClassLoader, [classLoader] @AT@ 9235 @LENGTH@ 11
+------INS SimpleName@@classLoader @TO@ VariableDeclarationFragment@@classLoader @AT@ 9235 @LENGTH@ 11
+

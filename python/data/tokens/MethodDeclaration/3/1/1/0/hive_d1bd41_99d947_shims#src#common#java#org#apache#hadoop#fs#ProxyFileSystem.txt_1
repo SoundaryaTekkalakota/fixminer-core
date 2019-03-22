@@ -1,0 +1,4 @@
+UPD MethodDeclaration@@protected, void, MethodName:checkPath, Path path,  @TO@ protected, void, MethodName:checkPath, final Path path,  @AT@ 3963 @LENGTH@ 86
+---UPD SingleVariableDeclaration@@Path path @TO@ final Path path @AT@ 3988 @LENGTH@ 9
+------INS Modifier@@final @TO@ SingleVariableDeclaration@@Path path @AT@ 4291 @LENGTH@ 5
+

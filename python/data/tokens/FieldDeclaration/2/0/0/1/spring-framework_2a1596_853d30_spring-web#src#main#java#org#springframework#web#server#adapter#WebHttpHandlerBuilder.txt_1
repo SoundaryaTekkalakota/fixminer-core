@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, ApplicationContext, [applicationContext] @TO@ private, final, ApplicationContext, [applicationContext] @AT@ 3771 @LENGTH@ 46
+---INS Modifier@@final @TO@ FieldDeclaration@@private, ApplicationContext, [applicationContext] @AT@ 3456 @LENGTH@ 5
+

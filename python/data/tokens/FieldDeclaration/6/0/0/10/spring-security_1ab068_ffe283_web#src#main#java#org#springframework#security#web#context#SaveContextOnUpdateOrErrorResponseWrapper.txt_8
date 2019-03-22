@@ -1,7 +1,0 @@
-INS FieldDeclaration@@private, final, ServletOutputStream, [delegate] @TO@ TypeDeclaration@@[private]SaveContextServletOutputStream, ServletOutputStream @AT@ 6170 @LENGTH@ 43
----INS Modifier@@private @TO@ FieldDeclaration@@private, final, ServletOutputStream, [delegate] @AT@ 6170 @LENGTH@ 7
----INS Modifier@@final @TO@ FieldDeclaration@@private, final, ServletOutputStream, [delegate] @AT@ 6178 @LENGTH@ 5
----INS SimpleType@@ServletOutputStream @TO@ FieldDeclaration@@private, final, ServletOutputStream, [delegate] @AT@ 6184 @LENGTH@ 19
----INS VariableDeclarationFragment@@delegate @TO@ FieldDeclaration@@private, final, ServletOutputStream, [delegate] @AT@ 6204 @LENGTH@ 8
-------INS SimpleName@@delegate @TO@ VariableDeclarationFragment@@delegate @AT@ 6204 @LENGTH@ 8
-

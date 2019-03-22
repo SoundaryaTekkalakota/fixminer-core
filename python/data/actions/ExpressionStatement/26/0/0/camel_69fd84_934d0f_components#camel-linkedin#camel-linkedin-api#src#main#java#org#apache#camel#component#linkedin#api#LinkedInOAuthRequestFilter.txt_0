@@ -1,26 +1,26 @@
- INS ExpressionStatement
---- INS ClassInstanceCreation
------- INS New
------- INS SimpleType
------- INS SimpleName
------- INS AnonymousClassDeclaration
---------- INS MethodDeclaration
------------- INS Modifier
------------- INS SimpleType
------------- INS SimpleName
------------- INS SingleVariableDeclaration
---------------- INS SimpleType
---------------- INS SimpleName
------------- INS SimpleType
------------- INS ExpressionStatement
---------------- INS MethodInvocation
------------------- INS SimpleName
------------------- INS SimpleName
---------------------- INS QualifiedName
------------------------- INS SimpleName
------------------------- INS SimpleName
---------------------- INS StringLiteral
------------- INS ReturnStatement
---------------- INS SuperMethodInvocation
------------------- INS SimpleName
------------------- INS SimpleName
+ INS ExpressionStatement TO MethodDeclaration 
+--- INS ClassInstanceCreation TO ExpressionStatement 
+------ INS New TO ClassInstanceCreation 
+------ INS SimpleType TO ClassInstanceCreation 
+------ INS SimpleName TO ClassInstanceCreation 
+------ INS AnonymousClassDeclaration TO ClassInstanceCreation 
+--------- INS MethodDeclaration TO AnonymousClassDeclaration 
+------------ INS Modifier TO MethodDeclaration 
+------------ INS SimpleType TO MethodDeclaration 
+------------ INS SimpleName TO MethodDeclaration 
+------------ INS SingleVariableDeclaration TO MethodDeclaration 
+--------------- INS SimpleType TO SingleVariableDeclaration 
+--------------- INS SimpleName TO SingleVariableDeclaration 
+------------ INS SimpleType TO MethodDeclaration 
+------------ INS ExpressionStatement TO MethodDeclaration 
+--------------- INS MethodInvocation TO ExpressionStatement 
+------------------ INS SimpleName TO MethodInvocation 
+------------------ INS SimpleName TO MethodInvocation 
+--------------------- INS QualifiedName TO SimpleName 
+------------------------ INS SimpleName TO QualifiedName 
+------------------------ INS SimpleName TO QualifiedName 
+--------------------- INS StringLiteral TO SimpleName 
+------------ INS ReturnStatement TO MethodDeclaration 
+--------------- INS SuperMethodInvocation TO ReturnStatement 
+------------------ INS SimpleName TO SuperMethodInvocation 
+------------------ INS SimpleName TO SuperMethodInvocation

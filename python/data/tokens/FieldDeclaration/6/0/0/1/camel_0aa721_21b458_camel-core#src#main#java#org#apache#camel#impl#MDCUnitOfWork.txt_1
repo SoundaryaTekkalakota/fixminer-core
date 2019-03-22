@@ -1,7 +1,0 @@
-INS FieldDeclaration@@private, final, String, [originalExchangeId] @TO@ TypeDeclaration@@[public]MDCUnitOfWork, DefaultUnitOfWork @AT@ 1601 @LENGTH@ 40
----INS Modifier@@private @TO@ FieldDeclaration@@private, final, String, [originalExchangeId] @AT@ 1601 @LENGTH@ 7
----INS Modifier@@final @TO@ FieldDeclaration@@private, final, String, [originalExchangeId] @AT@ 1609 @LENGTH@ 5
----INS SimpleType@@String @TO@ FieldDeclaration@@private, final, String, [originalExchangeId] @AT@ 1615 @LENGTH@ 6
----INS VariableDeclarationFragment@@originalExchangeId @TO@ FieldDeclaration@@private, final, String, [originalExchangeId] @AT@ 1622 @LENGTH@ 18
-------INS SimpleName@@originalExchangeId @TO@ VariableDeclarationFragment@@originalExchangeId @AT@ 1622 @LENGTH@ 18
-

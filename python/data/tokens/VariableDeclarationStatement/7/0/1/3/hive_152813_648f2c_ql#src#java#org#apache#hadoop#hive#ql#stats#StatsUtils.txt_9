@@ -1,8 +1,0 @@
-INS VariableDeclarationStatement@@String colTypeLowCase=colType.toLowerCase(); @TO@ MethodDeclaration@@public, static, long, MethodName:getAvgColLenOfVariableLengthTypes, HiveConf conf, ObjectInspector oi, String colType,  @AT@ 31911 @LENGTH@ 46
----INS SimpleType@@String @TO@ VariableDeclarationStatement@@String colTypeLowCase=colType.toLowerCase(); @AT@ 31911 @LENGTH@ 6
----INS VariableDeclarationFragment@@colTypeLowCase=colType.toLowerCase() @TO@ VariableDeclarationStatement@@String colTypeLowCase=colType.toLowerCase(); @AT@ 31918 @LENGTH@ 38
-------INS SimpleName@@colTypeLowCase @TO@ VariableDeclarationFragment@@colTypeLowCase=colType.toLowerCase() @AT@ 31918 @LENGTH@ 14
-------INS MethodInvocation@@colType.toLowerCase() @TO@ VariableDeclarationFragment@@colTypeLowCase=colType.toLowerCase() @AT@ 31935 @LENGTH@ 21
----------INS SimpleName@@Name:colType @TO@ MethodInvocation@@colType.toLowerCase() @AT@ 31935 @LENGTH@ 7
----------INS SimpleName@@MethodName:toLowerCase:[] @TO@ MethodInvocation@@colType.toLowerCase() @AT@ 31943 @LENGTH@ 13
-

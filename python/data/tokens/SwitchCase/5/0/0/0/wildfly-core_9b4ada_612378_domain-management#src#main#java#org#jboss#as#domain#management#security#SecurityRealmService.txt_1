@@ -1,6 +1,0 @@
-UPD SwitchCase@@StringLiteral:"DIGEST" @TO@ QualifiedName:HttpConstants.DIGEST_NAME @AT@ 14407 @LENGTH@ 14
----DEL StringLiteral@@"DIGEST" @AT@ 14412 @LENGTH@ 8
----INS QualifiedName@@HttpConstants.DIGEST_NAME @TO@ SwitchCase@@StringLiteral:"DIGEST" @AT@ 14477 @LENGTH@ 25
-------INS SimpleName@@HttpConstants @TO@ QualifiedName@@HttpConstants.DIGEST_NAME @AT@ 14477 @LENGTH@ 13
-------INS SimpleName@@DIGEST_NAME @TO@ QualifiedName@@HttpConstants.DIGEST_NAME @AT@ 14491 @LENGTH@ 11
-

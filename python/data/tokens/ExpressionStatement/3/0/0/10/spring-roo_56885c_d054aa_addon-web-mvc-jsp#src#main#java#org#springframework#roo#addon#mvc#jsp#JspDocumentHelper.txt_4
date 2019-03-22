@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:theadElement.appendChild(idThElement) @TO@ MethodInvocation:trElement.appendChild(idThElement) @AT@ 5243 @LENGTH@ 38
+---UPD MethodInvocation@@theadElement.appendChild(idThElement) @TO@ trElement.appendChild(idThElement) @AT@ 5243 @LENGTH@ 37
+------UPD SimpleName@@Name:theadElement @TO@ Name:trElement @AT@ 5243 @LENGTH@ 12
+

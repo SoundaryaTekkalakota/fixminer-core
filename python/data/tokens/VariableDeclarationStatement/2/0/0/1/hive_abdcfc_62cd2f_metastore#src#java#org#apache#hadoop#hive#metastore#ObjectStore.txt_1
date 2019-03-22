@@ -1,3 +1,0 @@
-UPD VariableDeclarationStatement@@List<MPartitionColumnPrivilege> mSecurityTabPartList=(List<MPartitionColumnPrivilege>)query.executeWithArray(principalName,principalType.toString()); @TO@ List<MPartitionColumnPrivilege> mSecurityTabPartList; @AT@ 174670 @LENGTH@ 163
----UPD VariableDeclarationFragment@@mSecurityTabPartList=(List<MPartitionColumnPrivilege>)query.executeWithArray(principalName,principalType.toString()) @TO@ mSecurityTabPartList @AT@ 174702 @LENGTH@ 130
-

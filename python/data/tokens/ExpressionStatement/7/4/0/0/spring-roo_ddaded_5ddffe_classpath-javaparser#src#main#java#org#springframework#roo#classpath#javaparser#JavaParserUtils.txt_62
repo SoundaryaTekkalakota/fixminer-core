@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(RuntimeException.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("RuntimeException") @AT@ 5242 @LENGTH@ 68
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(RuntimeException.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("RuntimeException") @AT@ 5242 @LENGTH@ 67
-------UPD SimpleName@@MethodName:add:[RuntimeException.class.getSimpleName()] @TO@ MethodName:add:["RuntimeException"] @AT@ 5266 @LENGTH@ 43
----------INS StringLiteral@@"RuntimeException" @TO@ SimpleName@@MethodName:add:[RuntimeException.class.getSimpleName()] @AT@ 4600 @LENGTH@ 18
----------DEL MethodInvocation@@RuntimeException.class.getSimpleName() @AT@ 5270 @LENGTH@ 38
-------------DEL TypeLiteral@@RuntimeException.class @AT@ 5270 @LENGTH@ 22
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 5293 @LENGTH@ 15
-

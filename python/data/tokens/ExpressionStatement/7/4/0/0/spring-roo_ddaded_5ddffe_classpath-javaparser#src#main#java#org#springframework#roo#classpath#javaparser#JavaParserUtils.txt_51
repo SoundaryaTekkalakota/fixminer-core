@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(IllegalStateException.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("IllegalStateException") @AT@ 4469 @LENGTH@ 73
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(IllegalStateException.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("IllegalStateException") @AT@ 4469 @LENGTH@ 72
-------UPD SimpleName@@MethodName:add:[IllegalStateException.class.getSimpleName()] @TO@ MethodName:add:["IllegalStateException"] @AT@ 4493 @LENGTH@ 48
----------INS StringLiteral@@"IllegalStateException" @TO@ SimpleName@@MethodName:add:[IllegalStateException.class.getSimpleName()] @AT@ 4027 @LENGTH@ 23
----------DEL MethodInvocation@@IllegalStateException.class.getSimpleName() @AT@ 4497 @LENGTH@ 43
-------------DEL TypeLiteral@@IllegalStateException.class @AT@ 4497 @LENGTH@ 27
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 4525 @LENGTH@ 15
-

@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:bodyBuilder.appendFormalLine("public String convert(" + conversionType.getSimpleTypeName() + " "+ conversionTypeFieldName+ ") {") @TO@ MethodInvocation:converterBodyBuilder.appendFormalLine("public String convert(" + conversionType.getSimpleTypeName() + " "+ conversionTypeFieldName+ ") {") @AT@ 41786 @LENGTH@ 132
+---UPD MethodInvocation@@bodyBuilder.appendFormalLine("public String convert(" + conversionType.getSimpleTypeName() + " "+ conversionTypeFieldName+ ") {") @TO@ converterBodyBuilder.appendFormalLine("public String convert(" + conversionType.getSimpleTypeName() + " "+ conversionTypeFieldName+ ") {") @AT@ 41786 @LENGTH@ 131
+------UPD SimpleName@@Name:bodyBuilder @TO@ Name:converterBodyBuilder @AT@ 41786 @LENGTH@ 11
+

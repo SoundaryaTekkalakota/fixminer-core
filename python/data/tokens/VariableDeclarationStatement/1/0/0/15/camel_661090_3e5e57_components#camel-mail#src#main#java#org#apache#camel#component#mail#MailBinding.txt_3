@@ -1,0 +1,2 @@
+MOV VariableDeclarationStatement@@DataSource ds=new ByteArrayDataSource(exchange.getIn().getBody(String.class),contentType); @TO@ MethodDeclaration@@protected, String, MethodName:populateContentOnBodyPart, BodyPart part, MailConfiguration configuration, Exchange exchange, MessagingException, IOException,  @AT@ 6169 @LENGTH@ 93
+

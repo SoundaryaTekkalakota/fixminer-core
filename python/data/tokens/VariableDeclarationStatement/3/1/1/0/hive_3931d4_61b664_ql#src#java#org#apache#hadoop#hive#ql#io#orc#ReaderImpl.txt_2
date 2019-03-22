@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@OrcProto.PostScript ps=extractPostScript(buffer,path,psLen,psOffset); @TO@ OrcProto.PostScript ps=null; @AT@ 18507 @LENGTH@ 74
+---UPD VariableDeclarationFragment@@ps=extractPostScript(buffer,path,psLen,psOffset) @TO@ ps=null @AT@ 18527 @LENGTH@ 53
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@ps=extractPostScript(buffer,path,psLen,psOffset) @AT@ 17844 @LENGTH@ 4
+

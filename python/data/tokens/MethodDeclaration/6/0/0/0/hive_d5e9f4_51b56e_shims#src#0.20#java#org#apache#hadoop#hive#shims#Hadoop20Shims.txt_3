@@ -1,7 +1,0 @@
-INS MethodDeclaration@@public, Object, MethodName:getKey,  @TO@ TypeDeclaration@@[public, static]CombineHiveKey, [WritableComparable] @AT@ 4767 @LENGTH@ 48
----INS Modifier@@public @TO@ MethodDeclaration@@public, Object, MethodName:getKey,  @AT@ 4767 @LENGTH@ 6
----INS SimpleType@@Object @TO@ MethodDeclaration@@public, Object, MethodName:getKey,  @AT@ 4774 @LENGTH@ 6
----INS SimpleName@@MethodName:getKey @TO@ MethodDeclaration@@public, Object, MethodName:getKey,  @AT@ 4781 @LENGTH@ 6
----INS ReturnStatement@@SimpleName:key @TO@ MethodDeclaration@@public, Object, MethodName:getKey,  @AT@ 4798 @LENGTH@ 11
-------INS SimpleName@@key @TO@ ReturnStatement@@SimpleName:key @AT@ 4805 @LENGTH@ 3
-

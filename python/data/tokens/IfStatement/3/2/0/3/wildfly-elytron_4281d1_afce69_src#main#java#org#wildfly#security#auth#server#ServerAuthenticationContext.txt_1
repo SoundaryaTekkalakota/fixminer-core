@@ -1,4 +1,0 @@
-UPD IfStatement@@InfixExpression:preRealmPrincipal == null @TO@ InfixExpression:finalPrincipal == null @AT@ 61109 @LENGTH@ 264
----UPD InfixExpression@@preRealmPrincipal == null @TO@ finalPrincipal == null @AT@ 61113 @LENGTH@ 25
-------UPD SimpleName@@preRealmPrincipal @TO@ finalPrincipal @AT@ 61113 @LENGTH@ 17
-

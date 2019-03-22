@@ -1,7 +1,0 @@
-INS FieldDeclaration@@private, final, ReturnedType, [type] @TO@ TypeDeclaration@@[static]TupleConverter, [Converter<Object,Object>] @AT@ 7503 @LENGTH@ 32
----INS Modifier@@private @TO@ FieldDeclaration@@private, final, ReturnedType, [type] @AT@ 7503 @LENGTH@ 7
----INS Modifier@@final @TO@ FieldDeclaration@@private, final, ReturnedType, [type] @AT@ 7511 @LENGTH@ 5
----INS SimpleType@@ReturnedType @TO@ FieldDeclaration@@private, final, ReturnedType, [type] @AT@ 7517 @LENGTH@ 12
----INS VariableDeclarationFragment@@type @TO@ FieldDeclaration@@private, final, ReturnedType, [type] @AT@ 7530 @LENGTH@ 4
-------INS SimpleName@@type @TO@ VariableDeclarationFragment@@type @AT@ 7530 @LENGTH@ 4
-

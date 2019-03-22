@@ -1,7 +1,0 @@
-INS FieldDeclaration@@private, final, ObjectMapper, [mapper] @TO@ TypeDeclaration@@[private]MergingPropertyHandler, [SimplePropertyHandler] @AT@ 19521 @LENGTH@ 34
----INS Modifier@@private @TO@ FieldDeclaration@@private, final, ObjectMapper, [mapper] @AT@ 19521 @LENGTH@ 7
----INS Modifier@@final @TO@ FieldDeclaration@@private, final, ObjectMapper, [mapper] @AT@ 19529 @LENGTH@ 5
----INS SimpleType@@ObjectMapper @TO@ FieldDeclaration@@private, final, ObjectMapper, [mapper] @AT@ 19535 @LENGTH@ 12
----INS VariableDeclarationFragment@@mapper @TO@ FieldDeclaration@@private, final, ObjectMapper, [mapper] @AT@ 19548 @LENGTH@ 6
-------INS SimpleName@@mapper @TO@ VariableDeclarationFragment@@mapper @AT@ 19548 @LENGTH@ 6
-

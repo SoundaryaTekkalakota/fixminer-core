@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, boolean, [decompressConcatenated=false] @TO@ private, volatile, boolean, [decompressConcatenated=false] @AT@ 4863 @LENGTH@ 47
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, boolean, [decompressConcatenated=false] @AT@ 5590 @LENGTH@ 8
+

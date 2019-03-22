@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, Map<String,FetchOperator>, [fetchOperators=new HashMap<String,FetchOperator>()] @TO@ private, final, Map<String,FetchOperator>, [fetchOperators=new HashMap<String,FetchOperator>()] @AT@ 3779 @LENGTH@ 89
+---INS Modifier@@final @TO@ FieldDeclaration@@private, Map<String,FetchOperator>, [fetchOperators=new HashMap<String,FetchOperator>()] @AT@ 3841 @LENGTH@ 5
+

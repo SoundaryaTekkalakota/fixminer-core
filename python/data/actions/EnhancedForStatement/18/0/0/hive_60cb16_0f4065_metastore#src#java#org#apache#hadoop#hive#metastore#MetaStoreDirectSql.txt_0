@@ -1,18 +1,18 @@
- INS EnhancedForStatement
---- INS SingleVariableDeclaration
------- INS SimpleType
------- INS SimpleName
---- INS MethodInvocation
------- INS SimpleName
------- INS SimpleName
---- INS ExpressionStatement
------- INS MethodInvocation
---------- INS SimpleName
---------- INS SimpleName
------------- INS MethodInvocation
---------------- INS SimpleName
---------------- INS SimpleName
------------------- INS MethodInvocation
---------------------- INS SimpleName
---------------------- INS SimpleName
------------------- INS SimpleName
+ INS EnhancedForStatement TO MethodDeclaration 
+--- INS SingleVariableDeclaration TO EnhancedForStatement 
+------ INS SimpleType TO SingleVariableDeclaration 
+------ INS SimpleName TO SingleVariableDeclaration 
+--- INS MethodInvocation TO EnhancedForStatement 
+------ INS SimpleName TO MethodInvocation 
+------ INS SimpleName TO MethodInvocation 
+--- INS ExpressionStatement TO EnhancedForStatement 
+------ INS MethodInvocation TO ExpressionStatement 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS MethodInvocation TO SimpleName 
+--------------- INS SimpleName TO MethodInvocation 
+--------------- INS SimpleName TO MethodInvocation 
+------------------ INS MethodInvocation TO SimpleName 
+--------------------- INS SimpleName TO MethodInvocation 
+--------------------- INS SimpleName TO MethodInvocation 
+------------------ INS SimpleName TO SimpleName

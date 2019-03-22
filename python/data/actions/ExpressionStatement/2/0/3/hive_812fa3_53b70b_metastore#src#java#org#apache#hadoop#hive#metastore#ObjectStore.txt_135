@@ -1,2 +1,2 @@
- INS ExpressionStatement
---- MOV MethodInvocation
+ INS ExpressionStatement TO Block 
+--- MOV MethodInvocation TO ExpressionStatement

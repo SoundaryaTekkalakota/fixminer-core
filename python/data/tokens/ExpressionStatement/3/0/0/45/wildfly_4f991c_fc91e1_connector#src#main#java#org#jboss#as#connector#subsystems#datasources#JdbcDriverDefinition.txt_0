@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:resourceRegistration.registerMetric(DATASOURCE_CLASS_INFO,GetDataSourceClassInfoOperationHandler.INSTANCE) @TO@ MethodInvocation:resourceRegistration.registerReadOnlyAttribute(DATASOURCE_CLASS_INFO,GetDataSourceClassInfoOperationHandler.INSTANCE) @AT@ 2920 @LENGTH@ 108
+---UPD MethodInvocation@@resourceRegistration.registerMetric(DATASOURCE_CLASS_INFO,GetDataSourceClassInfoOperationHandler.INSTANCE) @TO@ resourceRegistration.registerReadOnlyAttribute(DATASOURCE_CLASS_INFO,GetDataSourceClassInfoOperationHandler.INSTANCE) @AT@ 2920 @LENGTH@ 107
+------UPD SimpleName@@MethodName:registerMetric:[DATASOURCE_CLASS_INFO, GetDataSourceClassInfoOperationHandler.INSTANCE] @TO@ MethodName:registerReadOnlyAttribute:[DATASOURCE_CLASS_INFO, GetDataSourceClassInfoOperationHandler.INSTANCE] @AT@ 2941 @LENGTH@ 86
+

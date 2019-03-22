@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:formInput.setAttribute("cssStyle","width:250px;height:" + Math.round(new Float(maxValue) / 10) + "em") @TO@ MethodInvocation:textArea.setAttribute("cssStyle","width:250px;height:" + Math.round(new Float(maxValue) / 10) + "em") @AT@ 26654 @LENGTH@ 104
+---UPD MethodInvocation@@formInput.setAttribute("cssStyle","width:250px;height:" + Math.round(new Float(maxValue) / 10) + "em") @TO@ textArea.setAttribute("cssStyle","width:250px;height:" + Math.round(new Float(maxValue) / 10) + "em") @AT@ 26654 @LENGTH@ 103
+------UPD SimpleName@@Name:formInput @TO@ Name:textArea @AT@ 26654 @LENGTH@ 9
+

@@ -1,7 +1,0 @@
-INS FieldDeclaration@@private, final, UrlPathHelper, [pathHelper] @TO@ TypeDeclaration@@[private, static]ForwardedPrefixExtractor,  @AT@ 8987 @LENGTH@ 39
----INS Modifier@@private @TO@ FieldDeclaration@@private, final, UrlPathHelper, [pathHelper] @AT@ 8987 @LENGTH@ 7
----INS Modifier@@final @TO@ FieldDeclaration@@private, final, UrlPathHelper, [pathHelper] @AT@ 8995 @LENGTH@ 5
----INS SimpleType@@UrlPathHelper @TO@ FieldDeclaration@@private, final, UrlPathHelper, [pathHelper] @AT@ 9001 @LENGTH@ 13
----INS VariableDeclarationFragment@@pathHelper @TO@ FieldDeclaration@@private, final, UrlPathHelper, [pathHelper] @AT@ 9015 @LENGTH@ 10
-------INS SimpleName@@pathHelper @TO@ VariableDeclarationFragment@@pathHelper @AT@ 9015 @LENGTH@ 10
-

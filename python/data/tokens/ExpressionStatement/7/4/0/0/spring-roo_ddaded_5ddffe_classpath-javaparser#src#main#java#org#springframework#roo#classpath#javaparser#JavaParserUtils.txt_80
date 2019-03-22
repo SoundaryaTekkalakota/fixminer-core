@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(OutOfMemoryError.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("OutOfMemoryError") @AT@ 6569 @LENGTH@ 68
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(OutOfMemoryError.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("OutOfMemoryError") @AT@ 6569 @LENGTH@ 67
-------UPD SimpleName@@MethodName:add:[OutOfMemoryError.class.getSimpleName()] @TO@ MethodName:add:["OutOfMemoryError"] @AT@ 6593 @LENGTH@ 43
----------INS StringLiteral@@"OutOfMemoryError" @TO@ SimpleName@@MethodName:add:[OutOfMemoryError.class.getSimpleName()] @AT@ 5625 @LENGTH@ 18
----------DEL MethodInvocation@@OutOfMemoryError.class.getSimpleName() @AT@ 6597 @LENGTH@ 38
-------------DEL TypeLiteral@@OutOfMemoryError.class @AT@ 6597 @LENGTH@ 22
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 6620 @LENGTH@ 15
-

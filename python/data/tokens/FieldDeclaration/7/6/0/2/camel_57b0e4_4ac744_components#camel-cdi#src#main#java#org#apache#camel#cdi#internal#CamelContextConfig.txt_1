@@ -1,0 +1,8 @@
+UPD FieldDeclaration@@private, final, List<ProcessAnnotatedType<?>>, [patRouteBuilders=new ArrayList<ProcessAnnotatedType<?>>()] @TO@ private, final, Set<ProcessAnnotatedType<?>>, [patRouteBuilders=new LinkedHashSet<ProcessAnnotatedType<?>>()] @AT@ 1608 @LENGTH@ 104
+---UPD ParameterizedType@@List<ProcessAnnotatedType<?>> @TO@ Set<ProcessAnnotatedType<?>> @AT@ 1622 @LENGTH@ 29
+------UPD SimpleType@@List @TO@ Set @AT@ 1622 @LENGTH@ 4
+---UPD VariableDeclarationFragment@@patRouteBuilders=new ArrayList<ProcessAnnotatedType<?>>() @TO@ patRouteBuilders=new LinkedHashSet<ProcessAnnotatedType<?>>() @AT@ 1652 @LENGTH@ 59
+------UPD ClassInstanceCreation@@ArrayList<ProcessAnnotatedType<?>>[] @TO@ LinkedHashSet<ProcessAnnotatedType<?>>[] @AT@ 1671 @LENGTH@ 40
+---------UPD ParameterizedType@@ArrayList<ProcessAnnotatedType<?>> @TO@ LinkedHashSet<ProcessAnnotatedType<?>> @AT@ 1675 @LENGTH@ 34
+------------UPD SimpleType@@ArrayList @TO@ LinkedHashSet @AT@ 1675 @LENGTH@ 9
+

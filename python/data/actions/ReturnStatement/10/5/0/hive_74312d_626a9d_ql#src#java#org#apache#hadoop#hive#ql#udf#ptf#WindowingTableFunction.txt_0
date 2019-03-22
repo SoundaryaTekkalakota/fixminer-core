@@ -1,10 +1,10 @@
- UPD ReturnStatement
---- UPD InfixExpression
------- INS ParenthesizedExpression
---------- INS InfixExpression
------------- MOV MethodInvocation
------------- INS InfixExpression
---------------- INS SimpleName
---------------- INS Operator
---------------- INS NullLiteral
------------- INS Operator
+ UPD ReturnStatement 
+--- UPD InfixExpression 
+------ INS ParenthesizedExpression TO InfixExpression 
+--------- INS InfixExpression TO ParenthesizedExpression 
+------------ MOV MethodInvocation TO InfixExpression 
+------------ INS InfixExpression TO InfixExpression 
+--------------- INS SimpleName TO InfixExpression 
+--------------- INS Operator TO InfixExpression 
+--------------- INS NullLiteral TO InfixExpression 
+------------ INS Operator TO InfixExpression

@@ -1,6 +1,6 @@
- INS TryStatement
---- MOV ExpressionStatement
---- INS CatchClause
------- INS SingleVariableDeclaration
---------- INS SimpleType
---------- INS SimpleName
+ INS TryStatement TO IfStatement 
+--- MOV ExpressionStatement TO TryStatement 
+--- INS CatchClause TO TryStatement 
+------ INS SingleVariableDeclaration TO CatchClause 
+--------- INS SimpleType TO SingleVariableDeclaration 
+--------- INS SimpleName TO SingleVariableDeclaration

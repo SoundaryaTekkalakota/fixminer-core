@@ -1,6 +1,6 @@
- UPD ReturnStatement
---- DEL ClassInstanceCreation
------- DEL New
------- DEL SimpleType
------- DEL NumberLiteral
---- INS MethodInvocation
+ UPD ReturnStatement 
+--- DEL ClassInstanceCreation 
+------ DEL New 
+------ DEL SimpleType 
+------ DEL NumberLiteral 
+--- INS MethodInvocation TO ReturnStatement

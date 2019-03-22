@@ -1,0 +1,2 @@
+MOV VariableDeclarationStatement@@String currentDir=null; @TO@ MethodDeclaration@@private, boolean, MethodName:retrieveFileToStreamInBody, String name, Exchange exchange, GenericFileOperationFailedException,  @AT@ 19258 @LENGTH@ 25
+

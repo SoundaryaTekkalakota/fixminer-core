@@ -1,0 +1,2 @@
+MOV ExpressionStatement@@Assignment:key=new Pair(key,locale) @TO@ MethodDeclaration@@public, static, synchronized, FastDateFormat, MethodName:getDateInstance, int style, TimeZone timeZone, Locale locale,  @AT@ 10208 @LENGTH@ 28
+

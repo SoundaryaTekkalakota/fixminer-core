@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.debug("loaded config from classpath " + x) @TO@ MethodInvocation:LOG.info("loaded config from classpath " + x) @AT@ 7453 @LENGTH@ 47
+---UPD MethodInvocation@@LOG.debug("loaded config from classpath " + x) @TO@ LOG.info("loaded config from classpath " + x) @AT@ 7453 @LENGTH@ 46
+------UPD SimpleName@@MethodName:debug:["loaded config from classpath " + x] @TO@ MethodName:info:["loaded config from classpath " + x] @AT@ 7457 @LENGTH@ 42
+

@@ -1,4 +1,4 @@
- UPD FieldDeclaration
---- UPD VariableDeclarationFragment
------- DEL NumberLiteral
---- INS Modifier
+ UPD FieldDeclaration 
+--- UPD VariableDeclarationFragment 
+------ DEL NumberLiteral 
+--- INS Modifier TO FieldDeclaration

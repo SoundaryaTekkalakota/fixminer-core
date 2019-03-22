@@ -1,8 +1,0 @@
-INS VariableDeclarationStatement@@String colTypeLowerCase=colType.toLowerCase(); @TO@ MethodDeclaration@@public, static, long, MethodName:getAvgColLenOfFixedLengthTypes, String colType,  @AT@ 39133 @LENGTH@ 48
----INS SimpleType@@String @TO@ VariableDeclarationStatement@@String colTypeLowerCase=colType.toLowerCase(); @AT@ 39133 @LENGTH@ 6
----INS VariableDeclarationFragment@@colTypeLowerCase=colType.toLowerCase() @TO@ VariableDeclarationStatement@@String colTypeLowerCase=colType.toLowerCase(); @AT@ 39140 @LENGTH@ 40
-------INS SimpleName@@colTypeLowerCase @TO@ VariableDeclarationFragment@@colTypeLowerCase=colType.toLowerCase() @AT@ 39140 @LENGTH@ 16
-------INS MethodInvocation@@colType.toLowerCase() @TO@ VariableDeclarationFragment@@colTypeLowerCase=colType.toLowerCase() @AT@ 39159 @LENGTH@ 21
----------INS SimpleName@@Name:colType @TO@ MethodInvocation@@colType.toLowerCase() @AT@ 39159 @LENGTH@ 7
----------INS SimpleName@@MethodName:toLowerCase:[] @TO@ MethodInvocation@@colType.toLowerCase() @AT@ 39167 @LENGTH@ 13
-

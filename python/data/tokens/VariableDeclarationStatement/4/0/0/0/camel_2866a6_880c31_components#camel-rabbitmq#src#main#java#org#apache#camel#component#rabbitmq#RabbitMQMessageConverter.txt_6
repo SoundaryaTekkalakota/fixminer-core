@@ -1,0 +1,5 @@
+UPD VariableDeclarationStatement@@final Object deliveryMode=msg.getHeader(RabbitMQConstants.DELIVERY_MODE); @TO@ final Object deliveryMode=msg.removeHeader(RabbitMQConstants.DELIVERY_MODE); @AT@ 4851 @LENGTH@ 75
+---UPD VariableDeclarationFragment@@deliveryMode=msg.getHeader(RabbitMQConstants.DELIVERY_MODE) @TO@ deliveryMode=msg.removeHeader(RabbitMQConstants.DELIVERY_MODE) @AT@ 4864 @LENGTH@ 61
+------UPD MethodInvocation@@msg.getHeader(RabbitMQConstants.DELIVERY_MODE) @TO@ msg.removeHeader(RabbitMQConstants.DELIVERY_MODE) @AT@ 4879 @LENGTH@ 46
+---------UPD SimpleName@@MethodName:getHeader:[RabbitMQConstants.DELIVERY_MODE] @TO@ MethodName:removeHeader:[RabbitMQConstants.DELIVERY_MODE] @AT@ 4883 @LENGTH@ 42
+

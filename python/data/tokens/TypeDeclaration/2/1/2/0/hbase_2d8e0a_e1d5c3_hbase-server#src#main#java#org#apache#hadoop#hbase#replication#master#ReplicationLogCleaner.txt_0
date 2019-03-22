@@ -1,3 +1,0 @@
-UPD TypeDeclaration@@[@InterfaceAudience.LimitedPrivate(HBaseInterfaceAudience.CONFIG), public]ReplicationLogCleaner, BaseLogCleanerDelegate[Abortable] @TO@ [@InterfaceAudience.LimitedPrivate(HBaseInterfaceAudience.CONFIG), public]ReplicationLogCleaner, BaseLogCleanerDelegate @AT@ 2026 @LENGTH@ 4465
----DEL SimpleType@@Abortable @AT@ 2168 @LENGTH@ 9
-

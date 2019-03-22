@@ -1,10 +1,10 @@
- UPD IfStatement
---- DEL PrefixExpression
------- DEL Operator
------- DEL MethodInvocation
---------- DEL SimpleName
---------- DEL SimpleName
---- INS InfixExpression
------- INS SimpleName
------- INS Operator
------- INS NullLiteral
+ UPD IfStatement 
+--- DEL PrefixExpression 
+------ DEL Operator 
+------ DEL MethodInvocation 
+--------- DEL SimpleName 
+--------- DEL SimpleName 
+--- INS InfixExpression TO IfStatement 
+------ INS SimpleName TO InfixExpression 
+------ INS Operator TO InfixExpression 
+------ INS NullLiteral TO InfixExpression

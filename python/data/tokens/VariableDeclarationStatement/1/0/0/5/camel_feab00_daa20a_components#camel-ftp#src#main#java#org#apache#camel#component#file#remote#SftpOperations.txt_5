@@ -1,0 +1,2 @@
+MOV VariableDeclarationStatement@@String currentDir=null; @TO@ MethodDeclaration@@private, boolean, MethodName:retrieveFileToFileInLocalWorkDirectory, String name, Exchange exchange, GenericFileOperationFailedException,  @AT@ 22852 @LENGTH@ 25
+

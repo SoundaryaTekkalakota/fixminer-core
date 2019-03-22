@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.debug("Hive Prewarm threw an exception ",ie) @TO@ MethodInvocation:LOG.warn("Hive Prewarm threw an exception ",ie) @AT@ 14043 @LENGTH@ 50
+---UPD MethodInvocation@@LOG.debug("Hive Prewarm threw an exception ",ie) @TO@ LOG.warn("Hive Prewarm threw an exception ",ie) @AT@ 14043 @LENGTH@ 49
+------UPD SimpleName@@MethodName:debug:["Hive Prewarm threw an exception ", ie] @TO@ MethodName:warn:["Hive Prewarm threw an exception ", ie] @AT@ 14047 @LENGTH@ 45
+

@@ -1,3 +1,0 @@
-UPD MethodDeclaration@@public, long, MethodName:computeOnlineDataSizeFast2, Statistics statistics,  @TO@ public, long, MethodName:computeOnlineDataSizeFastLongKeyed, Statistics statistics,  @AT@ 11198 @LENGTH@ 233
----UPD SimpleName@@MethodName:computeOnlineDataSizeFast2 @TO@ MethodName:computeOnlineDataSizeFastLongKeyed @AT@ 11210 @LENGTH@ 26
-

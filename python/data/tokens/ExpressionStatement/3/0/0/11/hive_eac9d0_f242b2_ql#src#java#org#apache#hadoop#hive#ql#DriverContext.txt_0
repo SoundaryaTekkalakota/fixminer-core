@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.warn("Shutting down query " + ctx.getCmd()) @TO@ MethodInvocation:LOG.debug("Shutting down query " + ctx.getCmd()) @AT@ 4066 @LENGTH@ 48
+---UPD MethodInvocation@@LOG.warn("Shutting down query " + ctx.getCmd()) @TO@ LOG.debug("Shutting down query " + ctx.getCmd()) @AT@ 4066 @LENGTH@ 47
+------UPD SimpleName@@MethodName:warn:["Shutting down query " + ctx.getCmd()] @TO@ MethodName:debug:["Shutting down query " + ctx.getCmd()] @AT@ 4070 @LENGTH@ 43
+

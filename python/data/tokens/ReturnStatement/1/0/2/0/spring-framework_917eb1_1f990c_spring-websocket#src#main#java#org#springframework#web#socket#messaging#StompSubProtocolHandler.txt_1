@@ -1,2 +1,0 @@
-INS ReturnStatement@@ @TO@ IfStatement@@InstanceofExpression:webSocketMessage instanceof BinaryMessage @AT@ 7210 @LENGTH@ 7
-

@@ -1,7 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:e.printStackTrace() @TO@ MethodInvocation:LOG.warn("Error closing operation: ",e) @AT@ 12867 @LENGTH@ 20
----UPD MethodInvocation@@e.printStackTrace() @TO@ LOG.warn("Error closing operation: ",e) @AT@ 12867 @LENGTH@ 19
-------UPD SimpleName@@Name:e @TO@ Name:LOG @AT@ 12867 @LENGTH@ 1
-------UPD SimpleName@@MethodName:printStackTrace:[] @TO@ MethodName:warn:["Error closing operation: ", e] @AT@ 12869 @LENGTH@ 17
----------INS StringLiteral@@"Error closing operation: " @TO@ SimpleName@@MethodName:printStackTrace:[] @AT@ 13167 @LENGTH@ 27
----------INS SimpleName@@e @TO@ SimpleName@@MethodName:printStackTrace:[] @AT@ 13196 @LENGTH@ 1
-

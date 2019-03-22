@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@Timestamp result; @TO@ Timestamp result=null; @AT@ 42669 @LENGTH@ 17
+---UPD VariableDeclarationFragment@@result @TO@ result=null @AT@ 42679 @LENGTH@ 6
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@result @AT@ 42921 @LENGTH@ 4
+

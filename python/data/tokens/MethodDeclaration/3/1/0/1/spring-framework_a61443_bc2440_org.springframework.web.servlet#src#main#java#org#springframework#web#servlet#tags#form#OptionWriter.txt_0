@@ -1,4 +1,0 @@
-UPD MethodDeclaration@@private, void, MethodName:renderFromMap, final TagWriter tagWriter, JspException,  @TO@ private, void, MethodName:renderFromMap, TagWriter tagWriter, JspException,  @AT@ 6105 @LENGTH@ 760
----UPD SingleVariableDeclaration@@final TagWriter tagWriter @TO@ TagWriter tagWriter @AT@ 6132 @LENGTH@ 25
-------DEL Modifier@@final @AT@ 6132 @LENGTH@ 5
-

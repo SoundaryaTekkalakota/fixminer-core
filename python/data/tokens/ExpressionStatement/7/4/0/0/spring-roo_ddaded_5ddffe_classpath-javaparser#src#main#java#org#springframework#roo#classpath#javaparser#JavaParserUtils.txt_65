@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(UnsupportedOperationException.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("UnsupportedOperationException") @AT@ 5471 @LENGTH@ 81
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(UnsupportedOperationException.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("UnsupportedOperationException") @AT@ 5471 @LENGTH@ 80
-------UPD SimpleName@@MethodName:add:[UnsupportedOperationException.class.getSimpleName()] @TO@ MethodName:add:["UnsupportedOperationException"] @AT@ 5495 @LENGTH@ 56
----------INS StringLiteral@@"UnsupportedOperationException" @TO@ SimpleName@@MethodName:add:[UnsupportedOperationException.class.getSimpleName()] @AT@ 4827 @LENGTH@ 31
----------DEL MethodInvocation@@UnsupportedOperationException.class.getSimpleName() @AT@ 5499 @LENGTH@ 51
-------------DEL TypeLiteral@@UnsupportedOperationException.class @AT@ 5499 @LENGTH@ 35
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 5535 @LENGTH@ 15
-

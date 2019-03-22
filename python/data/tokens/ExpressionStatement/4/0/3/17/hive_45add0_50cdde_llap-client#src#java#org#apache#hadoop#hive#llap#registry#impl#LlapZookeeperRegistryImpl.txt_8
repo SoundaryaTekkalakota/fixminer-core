@@ -1,0 +1,5 @@
+INS ExpressionStatement@@MethodInvocation:setUpAcls(pathToCheck) @TO@ IfStatement@@InfixExpression:acls == null || acls.isEmpty() @AT@ 14535 @LENGTH@ 23
+---INS MethodInvocation@@setUpAcls(pathToCheck) @TO@ ExpressionStatement@@MethodInvocation:setUpAcls(pathToCheck) @AT@ 14535 @LENGTH@ 22
+------INS SimpleName@@MethodName:setUpAcls:[pathToCheck] @TO@ MethodInvocation@@setUpAcls(pathToCheck) @AT@ 14535 @LENGTH@ 22
+---------INS SimpleName@@pathToCheck @TO@ SimpleName@@MethodName:setUpAcls:[pathToCheck] @AT@ 14545 @LENGTH@ 11
+

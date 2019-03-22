@@ -1,0 +1,5 @@
+INS ExpressionStatement@@MethodInvocation:trackReadBytes(read) @TO@ MethodDeclaration@@private, String, MethodName:getBSDLongName, final String bsdLongName, IOException,  @AT@ 12879 @LENGTH@ 21
+---INS MethodInvocation@@trackReadBytes(read) @TO@ ExpressionStatement@@MethodInvocation:trackReadBytes(read) @AT@ 12879 @LENGTH@ 20
+------INS SimpleName@@MethodName:trackReadBytes:[read] @TO@ MethodInvocation@@trackReadBytes(read) @AT@ 12879 @LENGTH@ 20
+---------INS SimpleName@@read @TO@ SimpleName@@MethodName:trackReadBytes:[read] @AT@ 12894 @LENGTH@ 4
+

@@ -1,8 +1,0 @@
-INS TryStatement@@try:[] @TO@ MethodDeclaration@@public, XMLStreamWriter, MethodName:createXMLStreamWriter, Writer writer, XMLStreamException,  @AT@ 4747 @LENGTH@ 157
----MOV ReturnStatement@@MethodInvocation:getOutputFactory().createXMLStreamWriter(IOHelper.buffered(writer)) @TO@ TryStatement@@try:[] @AT@ 2529 @LENGTH@ 75
----INS Block@@FinallyBody @TO@ TryStatement@@try:[] @AT@ 4848 @LENGTH@ 56
-------INS ExpressionStatement@@MethodInvocation:returnXMLOutputFactory(factory) @TO@ Block@@FinallyBody @AT@ 4862 @LENGTH@ 32
----------INS MethodInvocation@@returnXMLOutputFactory(factory) @TO@ ExpressionStatement@@MethodInvocation:returnXMLOutputFactory(factory) @AT@ 4862 @LENGTH@ 31
-------------INS SimpleName@@MethodName:returnXMLOutputFactory:[factory] @TO@ MethodInvocation@@returnXMLOutputFactory(factory) @AT@ 4862 @LENGTH@ 31
----------------INS SimpleName@@factory @TO@ SimpleName@@MethodName:returnXMLOutputFactory:[factory] @AT@ 4885 @LENGTH@ 7
-

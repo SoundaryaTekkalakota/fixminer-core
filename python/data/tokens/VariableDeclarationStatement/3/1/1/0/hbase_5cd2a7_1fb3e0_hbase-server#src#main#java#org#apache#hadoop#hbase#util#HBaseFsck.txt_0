@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@FileStatus[] dirs=fs.listStatus(contained.getHdfsRegionDir()); @TO@ FileStatus[] dirs=null; @AT@ 77999 @LENGTH@ 64
+---UPD VariableDeclarationFragment@@dirs=fs.listStatus(contained.getHdfsRegionDir()) @TO@ dirs=null @AT@ 78012 @LENGTH@ 50
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@dirs=fs.listStatus(contained.getHdfsRegionDir()) @AT@ 78057 @LENGTH@ 4
+

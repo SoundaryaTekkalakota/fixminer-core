@@ -1,6 +1,0 @@
-UPD SwitchCase@@StringLiteral:"BASIC" @TO@ QualifiedName:HttpConstants.BASIC_NAME @AT@ 14585 @LENGTH@ 13
----DEL StringLiteral@@"BASIC" @AT@ 14590 @LENGTH@ 7
----INS QualifiedName@@HttpConstants.BASIC_NAME @TO@ SwitchCase@@StringLiteral:"BASIC" @AT@ 14689 @LENGTH@ 24
-------INS SimpleName@@HttpConstants @TO@ QualifiedName@@HttpConstants.BASIC_NAME @AT@ 14689 @LENGTH@ 13
-------INS SimpleName@@BASIC_NAME @TO@ QualifiedName@@HttpConstants.BASIC_NAME @AT@ 14703 @LENGTH@ 10
-

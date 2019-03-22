@@ -1,6 +1,0 @@
-INS TypeDeclaration@@[private, static]StatefulCacheRefTransformer, [CombinedTransformer] @TO@ TypeDeclaration@@[public]EJBTransformers, [ExtensionTransformerRegistration] @AT@ 21751 @LENGTH@ 2239
----INS Modifier@@private @TO@ TypeDeclaration@@[private, static]StatefulCacheRefTransformer, [CombinedTransformer] @AT@ 21751 @LENGTH@ 7
----INS Modifier@@static @TO@ TypeDeclaration@@[private, static]StatefulCacheRefTransformer, [CombinedTransformer] @AT@ 21759 @LENGTH@ 6
----INS SimpleName@@ClassName:StatefulCacheRefTransformer @TO@ TypeDeclaration@@[private, static]StatefulCacheRefTransformer, [CombinedTransformer] @AT@ 21772 @LENGTH@ 27
----INS SimpleType@@CombinedTransformer @TO@ TypeDeclaration@@[private, static]StatefulCacheRefTransformer, [CombinedTransformer] @AT@ 21811 @LENGTH@ 19
-

@@ -1,7 +1,0 @@
-INS FieldDeclaration@@private, final, Exchange, [original] @TO@ TypeDeclaration@@[private, final]ParallelAggregateTimeoutTask, [Runnable] @AT@ 24057 @LENGTH@ 32
----INS Modifier@@private @TO@ FieldDeclaration@@private, final, Exchange, [original] @AT@ 24057 @LENGTH@ 7
----INS Modifier@@final @TO@ FieldDeclaration@@private, final, Exchange, [original] @AT@ 24065 @LENGTH@ 5
----INS SimpleType@@Exchange @TO@ FieldDeclaration@@private, final, Exchange, [original] @AT@ 24071 @LENGTH@ 8
----INS VariableDeclarationFragment@@original @TO@ FieldDeclaration@@private, final, Exchange, [original] @AT@ 24080 @LENGTH@ 8
-------INS SimpleName@@original @TO@ VariableDeclarationFragment@@original @AT@ 24080 @LENGTH@ 8
-

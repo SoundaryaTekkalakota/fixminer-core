@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@boolean, [textline] @TO@ private, boolean, [textline] @AT@ 3068 @LENGTH@ 17
+---INS Modifier@@private @TO@ FieldDeclaration@@boolean, [textline] @AT@ 3076 @LENGTH@ 7
+

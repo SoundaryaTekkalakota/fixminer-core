@@ -1,2 +1,0 @@
-MOV MethodDeclaration@@public, long, MethodName:getWriteFailureCount,  @TO@ TypeDeclaration@@[public, static]StdOutSink, [Sink] @AT@ 8453 @LENGTH@ 80
-

@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(LinkageError.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("LinkageError") @AT@ 6284 @LENGTH@ 64
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(LinkageError.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("LinkageError") @AT@ 6284 @LENGTH@ 63
-------UPD SimpleName@@MethodName:add:[LinkageError.class.getSimpleName()] @TO@ MethodName:add:["LinkageError"] @AT@ 6308 @LENGTH@ 39
----------INS StringLiteral@@"LinkageError" @TO@ SimpleName@@MethodName:add:[LinkageError.class.getSimpleName()] @AT@ 5420 @LENGTH@ 14
----------DEL MethodInvocation@@LinkageError.class.getSimpleName() @AT@ 6312 @LENGTH@ 34
-------------DEL TypeLiteral@@LinkageError.class @AT@ 6312 @LENGTH@ 18
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 6331 @LENGTH@ 15
-

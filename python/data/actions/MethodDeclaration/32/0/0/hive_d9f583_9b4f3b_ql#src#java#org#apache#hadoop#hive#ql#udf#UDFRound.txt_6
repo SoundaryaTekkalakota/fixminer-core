@@ -1,32 +1,32 @@
- INS MethodDeclaration
---- INS Modifier
---- INS SimpleType
---- INS SimpleName
---- INS SingleVariableDeclaration
------- INS SimpleType
------- INS SimpleName
---- INS IfStatement
------- INS InfixExpression
---------- INS SimpleName
---------- INS Operator
---------- INS NullLiteral
------- INS ReturnStatement
---------- INS NullLiteral
---- INS ExpressionStatement
------- INS MethodInvocation
---------- INS SimpleName
---------- INS SimpleName
------------- INS MethodInvocation
---------------- INS SimpleName
---------------- INS MethodInvocation
------------------- INS MethodInvocation
---------------------- INS SimpleName
---------------------- INS SimpleName
---------------- INS MethodInvocation
------------------- INS NumberLiteral
------------------- INS QualifiedName
---------------------- INS SimpleName
---------------------- INS SimpleName
---------------- INS SimpleName
---- INS ReturnStatement
------- INS SimpleName
+ INS MethodDeclaration TO TypeDeclaration 
+--- INS Modifier TO MethodDeclaration 
+--- INS SimpleType TO MethodDeclaration 
+--- INS SimpleName TO MethodDeclaration 
+--- INS SingleVariableDeclaration TO MethodDeclaration 
+------ INS SimpleType TO SingleVariableDeclaration 
+------ INS SimpleName TO SingleVariableDeclaration 
+--- INS IfStatement TO MethodDeclaration 
+------ INS InfixExpression TO IfStatement 
+--------- INS SimpleName TO InfixExpression 
+--------- INS Operator TO InfixExpression 
+--------- INS NullLiteral TO InfixExpression 
+------ INS ReturnStatement TO IfStatement 
+--------- INS NullLiteral TO ReturnStatement 
+--- INS ExpressionStatement TO MethodDeclaration 
+------ INS MethodInvocation TO ExpressionStatement 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS MethodInvocation TO SimpleName 
+--------------- INS SimpleName TO MethodInvocation 
+--------------- INS MethodInvocation TO MethodInvocation 
+------------------ INS MethodInvocation TO MethodInvocation 
+--------------------- INS SimpleName TO MethodInvocation 
+--------------------- INS SimpleName TO MethodInvocation 
+--------------- INS MethodInvocation TO MethodInvocation 
+------------------ INS NumberLiteral TO MethodInvocation 
+------------------ INS QualifiedName TO MethodInvocation 
+--------------------- INS SimpleName TO QualifiedName 
+--------------------- INS SimpleName TO QualifiedName 
+--------------- INS SimpleName TO MethodInvocation 
+--- INS ReturnStatement TO MethodDeclaration 
+------ INS SimpleName TO ReturnStatement

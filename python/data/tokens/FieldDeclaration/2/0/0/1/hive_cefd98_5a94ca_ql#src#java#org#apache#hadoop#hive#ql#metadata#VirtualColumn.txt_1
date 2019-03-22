@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@public, static, VirtualColumn, [FILENAME=new VirtualColumn("INPUT__FILE__NAME",(PrimitiveTypeInfo)TypeInfoFactory.stringTypeInfo)] @TO@ public, static, final, VirtualColumn, [FILENAME=new VirtualColumn("INPUT__FILE__NAME",(PrimitiveTypeInfo)TypeInfoFactory.stringTypeInfo)] @AT@ 1719 @LENGTH@ 129
+---INS Modifier@@final @TO@ FieldDeclaration@@public, static, VirtualColumn, [FILENAME=new VirtualColumn("INPUT__FILE__NAME",(PrimitiveTypeInfo)TypeInfoFactory.stringTypeInfo)] @AT@ 1831 @LENGTH@ 5
+

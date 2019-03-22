@@ -1,9 +1,0 @@
-INS VariableDeclarationStatement@@FileSystem fs=indexFinalPath.getFileSystem(conf); @TO@ EnhancedForStatement@@Path indexFinalPath, SimpleName:paths @AT@ 3790 @LENGTH@ 51
----INS SimpleType@@FileSystem @TO@ VariableDeclarationStatement@@FileSystem fs=indexFinalPath.getFileSystem(conf); @AT@ 3790 @LENGTH@ 10
----INS VariableDeclarationFragment@@fs=indexFinalPath.getFileSystem(conf) @TO@ VariableDeclarationStatement@@FileSystem fs=indexFinalPath.getFileSystem(conf); @AT@ 3801 @LENGTH@ 39
-------INS SimpleName@@fs @TO@ VariableDeclarationFragment@@fs=indexFinalPath.getFileSystem(conf) @AT@ 3801 @LENGTH@ 2
-------INS MethodInvocation@@indexFinalPath.getFileSystem(conf) @TO@ VariableDeclarationFragment@@fs=indexFinalPath.getFileSystem(conf) @AT@ 3806 @LENGTH@ 34
----------INS SimpleName@@Name:indexFinalPath @TO@ MethodInvocation@@indexFinalPath.getFileSystem(conf) @AT@ 3806 @LENGTH@ 14
----------INS SimpleName@@MethodName:getFileSystem:[conf] @TO@ MethodInvocation@@indexFinalPath.getFileSystem(conf) @AT@ 3821 @LENGTH@ 19
-------------INS SimpleName@@conf @TO@ SimpleName@@MethodName:getFileSystem:[conf] @AT@ 3835 @LENGTH@ 4
-

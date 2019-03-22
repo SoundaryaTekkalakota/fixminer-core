@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@byte tmp[]=fileInfo.get(HFileWriterV2.MAX_MEMSTORE_TS_KEY); @TO@ byte tmp[]=null; @AT@ 5887 @LENGTH@ 61
+---UPD VariableDeclarationFragment@@tmp[]=fileInfo.get(HFileWriterV2.MAX_MEMSTORE_TS_KEY) @TO@ tmp[]=null @AT@ 5892 @LENGTH@ 55
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@tmp[]=fileInfo.get(HFileWriterV2.MAX_MEMSTORE_TS_KEY) @AT@ 5900 @LENGTH@ 4
+

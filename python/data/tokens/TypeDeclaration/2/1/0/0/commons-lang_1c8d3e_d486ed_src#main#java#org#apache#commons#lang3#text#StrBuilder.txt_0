@@ -1,0 +1,3 @@
+UPD TypeDeclaration@@[public]StrBuilder, [CharSequence, Appendable] @TO@ [public]StrBuilder, [CharSequence, Appendable, Serializable] @AT@ 2995 @LENGTH@ 93323
+---INS SimpleType@@Serializable @TO@ TypeDeclaration@@[public]StrBuilder, [CharSequence, Appendable] @AT@ 3085 @LENGTH@ 12
+

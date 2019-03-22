@@ -1,11 +1,11 @@
- INS VariableDeclarationStatement
---- INS ParameterizedType
------- INS SimpleType
------- INS SimpleType
---- INS VariableDeclarationFragment
------- INS SimpleName
------- INS ClassInstanceCreation
---------- INS New
---------- INS ParameterizedType
------------- INS SimpleType
------------- INS SimpleType
+ INS VariableDeclarationStatement TO IfStatement 
+--- INS ParameterizedType TO VariableDeclarationStatement 
+------ INS SimpleType TO ParameterizedType 
+------ INS SimpleType TO ParameterizedType 
+--- INS VariableDeclarationFragment TO VariableDeclarationStatement 
+------ INS SimpleName TO VariableDeclarationFragment 
+------ INS ClassInstanceCreation TO VariableDeclarationFragment 
+--------- INS New TO ClassInstanceCreation 
+--------- INS ParameterizedType TO ClassInstanceCreation 
+------------ INS SimpleType TO ParameterizedType 
+------------ INS SimpleType TO ParameterizedType

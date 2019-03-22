@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(System.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("System") @AT@ 3402 @LENGTH@ 58
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(System.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("System") @AT@ 3402 @LENGTH@ 57
-------UPD SimpleName@@MethodName:add:[System.class.getSimpleName()] @TO@ MethodName:add:["System"] @AT@ 3426 @LENGTH@ 33
----------INS StringLiteral@@"System" @TO@ SimpleName@@MethodName:add:[System.class.getSimpleName()] @AT@ 3137 @LENGTH@ 8
----------DEL MethodInvocation@@System.class.getSimpleName() @AT@ 3430 @LENGTH@ 28
-------------DEL TypeLiteral@@System.class @AT@ 3430 @LENGTH@ 12
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 3443 @LENGTH@ 15
-

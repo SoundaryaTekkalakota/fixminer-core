@@ -1,6 +1,0 @@
-UPD SwitchCase@@StringLiteral:"CLIENT-CERT" @TO@ QualifiedName:HttpConstants.CLIENT_CERT_NAME @AT@ 14309 @LENGTH@ 19
----DEL StringLiteral@@"CLIENT-CERT" @AT@ 14314 @LENGTH@ 13
----INS QualifiedName@@HttpConstants.CLIENT_CERT_NAME @TO@ SwitchCase@@StringLiteral:"CLIENT-CERT" @AT@ 14362 @LENGTH@ 30
-------INS SimpleName@@HttpConstants @TO@ QualifiedName@@HttpConstants.CLIENT_CERT_NAME @AT@ 14362 @LENGTH@ 13
-------INS SimpleName@@CLIENT_CERT_NAME @TO@ QualifiedName@@HttpConstants.CLIENT_CERT_NAME @AT@ 14376 @LENGTH@ 16
-

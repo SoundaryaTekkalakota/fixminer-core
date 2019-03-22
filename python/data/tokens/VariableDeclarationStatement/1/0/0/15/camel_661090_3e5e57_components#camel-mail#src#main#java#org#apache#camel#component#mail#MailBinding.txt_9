@@ -1,0 +1,2 @@
+MOV VariableDeclarationStatement@@DataSource ds=new ByteArrayDataSource(exchange.getIn().getBody(String.class),contentType); @TO@ MethodDeclaration@@protected, String, MethodName:populateContentOnMimeMessage, MimeMessage part, MailConfiguration configuration, Exchange exchange, MessagingException, IOException,  @AT@ 7009 @LENGTH@ 93
+

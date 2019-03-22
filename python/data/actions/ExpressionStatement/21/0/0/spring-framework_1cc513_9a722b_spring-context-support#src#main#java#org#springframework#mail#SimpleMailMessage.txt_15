@@ -1,21 +1,21 @@
- UPD ExpressionStatement
---- UPD Assignment
------- UPD InfixExpression
---------- INS MethodInvocation
------------- INS SimpleName
------------- INS SimpleName
---------------- INS FieldAccess
------------------- MOV ThisExpression
------------------- MOV SimpleName
---------- DEL ParenthesizedExpression
------------- DEL ConditionalExpression
---------------- DEL InfixExpression
------------------- DEL FieldAccess
---------------------- DEL ThisExpression
---------------------- DEL SimpleName
------------------- DEL Operator
------------------- DEL NullLiteral
---------------- DEL NumberLiteral
---------------- DEL MethodInvocation
------------------- DEL FieldAccess
+ UPD ExpressionStatement 
+--- UPD Assignment 
+------ UPD InfixExpression 
+--------- INS MethodInvocation TO InfixExpression 
+------------ INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO MethodInvocation 
+--------------- INS FieldAccess TO SimpleName 
+------------------ MOV ThisExpression TO FieldAccess 
+------------------ MOV SimpleName TO FieldAccess 
+--------- DEL ParenthesizedExpression 
+------------ DEL ConditionalExpression 
+--------------- DEL InfixExpression 
+------------------ DEL FieldAccess 
+--------------------- DEL ThisExpression 
+--------------------- DEL SimpleName 
+------------------ DEL Operator 
+------------------ DEL NullLiteral 
+--------------- DEL NumberLiteral 
+--------------- DEL MethodInvocation 
+------------------ DEL FieldAccess 
 ------------------ DEL SimpleName

@@ -1,8 +1,0 @@
-INS TryStatement@@try:[] @TO@ MethodDeclaration@@public, XMLStreamReader, MethodName:createXMLStreamReader, InputStream in, Exchange exchange, XMLStreamException,  @AT@ 6217 @LENGTH@ 187
----MOV ReturnStatement@@MethodInvocation:getInputFactory().createXMLStreamReader(IOHelper.buffered(in),IOHelper.getCharsetName(exchange)) @TO@ TryStatement@@try:[] @AT@ 3233 @LENGTH@ 105
----INS Block@@FinallyBody @TO@ TryStatement@@try:[] @AT@ 6349 @LENGTH@ 55
-------INS ExpressionStatement@@MethodInvocation:returnXMLInputFactory(factory) @TO@ Block@@FinallyBody @AT@ 6363 @LENGTH@ 31
----------INS MethodInvocation@@returnXMLInputFactory(factory) @TO@ ExpressionStatement@@MethodInvocation:returnXMLInputFactory(factory) @AT@ 6363 @LENGTH@ 30
-------------INS SimpleName@@MethodName:returnXMLInputFactory:[factory] @TO@ MethodInvocation@@returnXMLInputFactory(factory) @AT@ 6363 @LENGTH@ 30
----------------INS SimpleName@@factory @TO@ SimpleName@@MethodName:returnXMLInputFactory:[factory] @AT@ 6385 @LENGTH@ 7
-

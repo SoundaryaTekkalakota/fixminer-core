@@ -1,7 +1,7 @@
- UPD CatchClause
---- UPD SingleVariableDeclaration
------- UPD SimpleName
---- UPD ExpressionStatement
------- UPD MethodInvocation
---------- UPD SimpleName
+ UPD CatchClause 
+--- UPD SingleVariableDeclaration 
+------ UPD SimpleName 
+--- UPD ExpressionStatement 
+------ UPD MethodInvocation 
+--------- UPD SimpleName 
 ------------ UPD SimpleName

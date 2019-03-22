@@ -1,14 +1,14 @@
- INS IfStatement
---- INS InfixExpression
------- INS MethodInvocation
---------- INS SimpleName
---------- INS SimpleName
------- INS Operator
------- INS NullLiteral
---- INS ExpressionStatement
------- INS MethodInvocation
---------- INS SimpleName
---------- INS SimpleName
------------- INS MethodInvocation
---------------- INS SimpleName
---------------- INS SimpleName
+ INS IfStatement TO MethodDeclaration 
+--- INS InfixExpression TO IfStatement 
+------ INS MethodInvocation TO InfixExpression 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------ INS Operator TO InfixExpression 
+------ INS NullLiteral TO InfixExpression 
+--- INS ExpressionStatement TO IfStatement 
+------ INS MethodInvocation TO ExpressionStatement 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS MethodInvocation TO SimpleName 
+--------------- INS SimpleName TO MethodInvocation 
+--------------- INS SimpleName TO MethodInvocation

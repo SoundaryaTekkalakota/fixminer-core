@@ -1,7 +1,7 @@
- UPD ThrowStatement
---- UPD ClassInstanceCreation
------- DEL StringLiteral
------- INS InfixExpression
---------- INS StringLiteral
---------- INS Operator
---------- INS SimpleName
+ UPD ThrowStatement 
+--- UPD ClassInstanceCreation 
+------ DEL StringLiteral 
+------ INS InfixExpression TO ClassInstanceCreation 
+--------- INS StringLiteral TO InfixExpression 
+--------- INS Operator TO InfixExpression 
+--------- INS SimpleName TO InfixExpression

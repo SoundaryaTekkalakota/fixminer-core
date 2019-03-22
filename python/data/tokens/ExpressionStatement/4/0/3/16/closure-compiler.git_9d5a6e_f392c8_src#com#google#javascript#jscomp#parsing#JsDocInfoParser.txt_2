@@ -1,0 +1,5 @@
+INS ExpressionStatement@@MethodInvocation:restoreLookAhead(token) @TO@ IfStatement@@InfixExpression:token != JsDocToken.LP @AT@ 59135 @LENGTH@ 24
+---INS MethodInvocation@@restoreLookAhead(token) @TO@ ExpressionStatement@@MethodInvocation:restoreLookAhead(token) @AT@ 59135 @LENGTH@ 23
+------INS SimpleName@@MethodName:restoreLookAhead:[token] @TO@ MethodInvocation@@restoreLookAhead(token) @AT@ 59135 @LENGTH@ 23
+---------INS SimpleName@@token @TO@ SimpleName@@MethodName:restoreLookAhead:[token] @AT@ 59152 @LENGTH@ 5
+

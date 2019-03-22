@@ -1,32 +1,32 @@
- INS ForStatement
---- INS VariableDeclarationExpression
------- INS PrimitiveType
------- INS VariableDeclarationFragment
---------- INS SimpleName
---------- INS NumberLiteral
---- INS InfixExpression
------- INS SimpleName
------- INS Operator
------- INS SimpleName
---- INS PostfixExpression
------- INS SimpleName
------- INS Operator
---- INS ExpressionStatement
------- INS Assignment
---------- INS SimpleName
---------- INS Operator
---------- INS InfixExpression
------------- INS CastExpression
---------------- INS PrimitiveType
---------------- INS ParenthesizedExpression
------------------- INS InfixExpression
---------------------- MOV Operator
---------------------- INS InfixExpression
------------------------- INS SimpleName
------------------------- INS Operator
------------------------- INS SimpleName
---------------------- INS SimpleName
------------- INS Operator
------------- INS CastExpression
---------------- INS PrimitiveType
---------------- INS SimpleName
+ INS ForStatement TO MethodDeclaration 
+--- INS VariableDeclarationExpression TO ForStatement 
+------ INS PrimitiveType TO VariableDeclarationExpression 
+------ INS VariableDeclarationFragment TO VariableDeclarationExpression 
+--------- INS SimpleName TO VariableDeclarationFragment 
+--------- INS NumberLiteral TO VariableDeclarationFragment 
+--- INS InfixExpression TO ForStatement 
+------ INS SimpleName TO InfixExpression 
+------ INS Operator TO InfixExpression 
+------ INS SimpleName TO InfixExpression 
+--- INS PostfixExpression TO ForStatement 
+------ INS SimpleName TO PostfixExpression 
+------ INS Operator TO PostfixExpression 
+--- INS ExpressionStatement TO ForStatement 
+------ INS Assignment TO ExpressionStatement 
+--------- INS SimpleName TO Assignment 
+--------- INS Operator TO Assignment 
+--------- INS InfixExpression TO Assignment 
+------------ INS CastExpression TO InfixExpression 
+--------------- INS PrimitiveType TO CastExpression 
+--------------- INS ParenthesizedExpression TO CastExpression 
+------------------ INS InfixExpression TO ParenthesizedExpression 
+--------------------- MOV Operator TO InfixExpression 
+--------------------- INS InfixExpression TO InfixExpression 
+------------------------ INS SimpleName TO InfixExpression 
+------------------------ INS Operator TO InfixExpression 
+------------------------ INS SimpleName TO InfixExpression 
+--------------------- INS SimpleName TO InfixExpression 
+------------ INS Operator TO InfixExpression 
+------------ INS CastExpression TO InfixExpression 
+--------------- INS PrimitiveType TO CastExpression 
+--------------- INS SimpleName TO CastExpression

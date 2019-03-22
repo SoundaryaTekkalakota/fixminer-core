@@ -1,9 +1,0 @@
-INS FieldDeclaration@@private, static, final, int, [TIMEOUT_ERROR_EXIT_CODE=3] @TO@ TypeDeclaration@@[public, final]Canary, [Tool] @AT@ 4565 @LENGTH@ 53
----INS Modifier@@private @TO@ FieldDeclaration@@private, static, final, int, [TIMEOUT_ERROR_EXIT_CODE=3] @AT@ 4565 @LENGTH@ 7
----INS Modifier@@static @TO@ FieldDeclaration@@private, static, final, int, [TIMEOUT_ERROR_EXIT_CODE=3] @AT@ 4573 @LENGTH@ 6
----INS Modifier@@final @TO@ FieldDeclaration@@private, static, final, int, [TIMEOUT_ERROR_EXIT_CODE=3] @AT@ 4580 @LENGTH@ 5
----INS PrimitiveType@@int @TO@ FieldDeclaration@@private, static, final, int, [TIMEOUT_ERROR_EXIT_CODE=3] @AT@ 4586 @LENGTH@ 3
----INS VariableDeclarationFragment@@TIMEOUT_ERROR_EXIT_CODE=3 @TO@ FieldDeclaration@@private, static, final, int, [TIMEOUT_ERROR_EXIT_CODE=3] @AT@ 4590 @LENGTH@ 27
-------INS SimpleName@@TIMEOUT_ERROR_EXIT_CODE @TO@ VariableDeclarationFragment@@TIMEOUT_ERROR_EXIT_CODE=3 @AT@ 4590 @LENGTH@ 23
-------INS NumberLiteral@@3 @TO@ VariableDeclarationFragment@@TIMEOUT_ERROR_EXIT_CODE=3 @AT@ 4616 @LENGTH@ 1
-

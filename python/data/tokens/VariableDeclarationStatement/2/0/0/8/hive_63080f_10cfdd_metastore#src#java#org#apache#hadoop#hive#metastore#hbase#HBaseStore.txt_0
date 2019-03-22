@@ -1,3 +1,0 @@
-UPD VariableDeclarationStatement@@List<PrivilegeGrantInfo> pgi=global.getUserPrivileges().get(userName); @TO@ List<PrivilegeGrantInfo> pgi; @AT@ 24361 @LENGTH@ 72
----UPD VariableDeclarationFragment@@pgi=global.getUserPrivileges().get(userName) @TO@ pgi @AT@ 24386 @LENGTH@ 46
-

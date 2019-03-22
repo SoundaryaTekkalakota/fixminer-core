@@ -1,0 +1,5 @@
+INS ExpressionStatement@@MethodInvocation:setCharsetWithContentType(camelExchange) @TO@ MethodDeclaration@@public, void, MethodName:populateExchangeFromCxfRsRequest, org.apache.cxf.message.Exchange cxfExchange, Exchange camelExchange, Method method, Object[] paramArray,  @AT@ 5472 @LENGTH@ 41
+---INS MethodInvocation@@setCharsetWithContentType(camelExchange) @TO@ ExpressionStatement@@MethodInvocation:setCharsetWithContentType(camelExchange) @AT@ 5472 @LENGTH@ 40
+------INS SimpleName@@MethodName:setCharsetWithContentType:[camelExchange] @TO@ MethodInvocation@@setCharsetWithContentType(camelExchange) @AT@ 5472 @LENGTH@ 40
+---------INS SimpleName@@camelExchange @TO@ SimpleName@@MethodName:setCharsetWithContentType:[camelExchange] @AT@ 5498 @LENGTH@ 13
+

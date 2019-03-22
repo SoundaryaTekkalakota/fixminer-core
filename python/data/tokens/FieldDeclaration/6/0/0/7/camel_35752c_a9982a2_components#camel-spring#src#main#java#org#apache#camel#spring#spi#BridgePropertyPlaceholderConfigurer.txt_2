@@ -1,7 +1,0 @@
-INS FieldDeclaration@@private, final, PropertiesParser, [delegate] @TO@ TypeDeclaration@@[private]BridgePropertiesParser, [PropertiesParser] @AT@ 9993 @LENGTH@ 40
----INS Modifier@@private @TO@ FieldDeclaration@@private, final, PropertiesParser, [delegate] @AT@ 9993 @LENGTH@ 7
----INS Modifier@@final @TO@ FieldDeclaration@@private, final, PropertiesParser, [delegate] @AT@ 10001 @LENGTH@ 5
----INS SimpleType@@PropertiesParser @TO@ FieldDeclaration@@private, final, PropertiesParser, [delegate] @AT@ 10007 @LENGTH@ 16
----INS VariableDeclarationFragment@@delegate @TO@ FieldDeclaration@@private, final, PropertiesParser, [delegate] @AT@ 10024 @LENGTH@ 8
-------INS SimpleName@@delegate @TO@ VariableDeclarationFragment@@delegate @AT@ 10024 @LENGTH@ 8
-

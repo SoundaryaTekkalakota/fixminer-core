@@ -1,0 +1,5 @@
+INS ExpressionStatement@@MethodInvocation:removeOpHandle(opHandle) @TO@ CatchClause@@HiveSQLException e @AT@ 22094 @LENGTH@ 25
+---INS MethodInvocation@@removeOpHandle(opHandle) @TO@ ExpressionStatement@@MethodInvocation:removeOpHandle(opHandle) @AT@ 22094 @LENGTH@ 24
+------INS SimpleName@@MethodName:removeOpHandle:[opHandle] @TO@ MethodInvocation@@removeOpHandle(opHandle) @AT@ 22094 @LENGTH@ 24
+---------INS SimpleName@@opHandle @TO@ SimpleName@@MethodName:removeOpHandle:[opHandle] @AT@ 22109 @LENGTH@ 8
+

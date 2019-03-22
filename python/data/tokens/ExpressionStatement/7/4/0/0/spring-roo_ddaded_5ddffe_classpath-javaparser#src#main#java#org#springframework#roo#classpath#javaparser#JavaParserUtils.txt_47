@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(Exception.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("Exception") @AT@ 4166 @LENGTH@ 61
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(Exception.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("Exception") @AT@ 4166 @LENGTH@ 60
-------UPD SimpleName@@MethodName:add:[Exception.class.getSimpleName()] @TO@ MethodName:add:["Exception"] @AT@ 4190 @LENGTH@ 36
----------INS StringLiteral@@"Exception" @TO@ SimpleName@@MethodName:add:[Exception.class.getSimpleName()] @AT@ 3804 @LENGTH@ 11
----------DEL MethodInvocation@@Exception.class.getSimpleName() @AT@ 4194 @LENGTH@ 31
-------------DEL TypeLiteral@@Exception.class @AT@ 4194 @LENGTH@ 15
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 4210 @LENGTH@ 15
-

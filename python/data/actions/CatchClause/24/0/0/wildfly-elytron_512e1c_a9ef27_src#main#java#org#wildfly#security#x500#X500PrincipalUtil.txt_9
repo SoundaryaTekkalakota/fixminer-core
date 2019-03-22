@@ -1,24 +1,24 @@
- INS CatchClause
---- INS SingleVariableDeclaration
------- INS SimpleType
------- INS SimpleName
---- INS VariableDeclarationStatement
------- INS Modifier
------- INS SimpleType
------- INS VariableDeclarationFragment
---------- INS SimpleName
---------- INS ClassInstanceCreation
------------- INS New
------------- INS SimpleType
------------- INS MethodInvocation
---------------- INS SimpleName
---------------- INS SimpleName
---- INS ExpressionStatement
------- INS MethodInvocation
---------- INS SimpleName
---------- INS SimpleName
------------- INS MethodInvocation
---------------- INS SimpleName
---------------- INS SimpleName
---- INS ThrowStatement
------- INS SimpleName
+ INS CatchClause TO TryStatement 
+--- INS SingleVariableDeclaration TO CatchClause 
+------ INS SimpleType TO SingleVariableDeclaration 
+------ INS SimpleName TO SingleVariableDeclaration 
+--- INS VariableDeclarationStatement TO CatchClause 
+------ INS Modifier TO VariableDeclarationStatement 
+------ INS SimpleType TO VariableDeclarationStatement 
+------ INS VariableDeclarationFragment TO VariableDeclarationStatement 
+--------- INS SimpleName TO VariableDeclarationFragment 
+--------- INS ClassInstanceCreation TO VariableDeclarationFragment 
+------------ INS New TO ClassInstanceCreation 
+------------ INS SimpleType TO ClassInstanceCreation 
+------------ INS MethodInvocation TO ClassInstanceCreation 
+--------------- INS SimpleName TO MethodInvocation 
+--------------- INS SimpleName TO MethodInvocation 
+--- INS ExpressionStatement TO CatchClause 
+------ INS MethodInvocation TO ExpressionStatement 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS MethodInvocation TO SimpleName 
+--------------- INS SimpleName TO MethodInvocation 
+--------------- INS SimpleName TO MethodInvocation 
+--- INS ThrowStatement TO CatchClause 
+------ INS SimpleName TO ThrowStatement

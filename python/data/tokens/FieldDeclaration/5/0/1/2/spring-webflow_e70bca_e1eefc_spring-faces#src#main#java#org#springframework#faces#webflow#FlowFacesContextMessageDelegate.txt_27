@@ -1,6 +1,0 @@
-DEL FieldDeclaration@@private, String, [clientId] @AT@ 8109 @LENGTH@ 24
----DEL Modifier@@private @AT@ 8109 @LENGTH@ 7
----DEL SimpleType@@String @AT@ 8117 @LENGTH@ 6
----DEL VariableDeclarationFragment@@clientId @AT@ 8124 @LENGTH@ 8
-------DEL SimpleName@@clientId @AT@ 8124 @LENGTH@ 8
-

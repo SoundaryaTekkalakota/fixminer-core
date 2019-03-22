@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@RegionState rootState=regionsInTransition.get(HRegionInfo.ROOT_REGIONINFO.getRegionNameAsString()); @TO@ RegionState rootState=null; @AT@ 14793 @LENGTH@ 101
+---UPD VariableDeclarationFragment@@rootState=regionsInTransition.get(HRegionInfo.ROOT_REGIONINFO.getRegionNameAsString()) @TO@ rootState=null @AT@ 14805 @LENGTH@ 88
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@rootState=regionsInTransition.get(HRegionInfo.ROOT_REGIONINFO.getRegionNameAsString()) @AT@ 14794 @LENGTH@ 4
+

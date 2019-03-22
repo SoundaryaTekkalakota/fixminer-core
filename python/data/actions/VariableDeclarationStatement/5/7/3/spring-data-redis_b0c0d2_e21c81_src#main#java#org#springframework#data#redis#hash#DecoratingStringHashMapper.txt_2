@@ -1,5 +1,5 @@
- DEL VariableDeclarationStatement
---- DEL SimpleType
---- DEL VariableDeclarationFragment
------- DEL SimpleName
+ DEL VariableDeclarationStatement 
+--- DEL SimpleType 
+--- DEL VariableDeclarationFragment 
+------ DEL SimpleName 
 ------ DEL SimpleName

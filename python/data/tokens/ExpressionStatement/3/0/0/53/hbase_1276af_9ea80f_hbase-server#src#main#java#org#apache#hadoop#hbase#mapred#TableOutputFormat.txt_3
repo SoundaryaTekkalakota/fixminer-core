@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:m_table.close() @TO@ MethodInvocation:table.close() @AT@ 2696 @LENGTH@ 16
+---UPD MethodInvocation@@m_table.close() @TO@ table.close() @AT@ 2696 @LENGTH@ 15
+------UPD SimpleName@@Name:m_table @TO@ Name:table @AT@ 2696 @LENGTH@ 7
+

@@ -1,2 +1,2 @@
- INS ReturnStatement
---- MOV SimpleName
+ INS ReturnStatement TO MethodDeclaration 
+--- MOV SimpleName TO ReturnStatement

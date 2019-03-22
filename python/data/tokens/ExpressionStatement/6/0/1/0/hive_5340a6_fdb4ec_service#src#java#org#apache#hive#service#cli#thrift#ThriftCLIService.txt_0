@@ -1,7 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:e.printStackTrace() @TO@ MethodInvocation:LOG.warn("Error opening session: ",e) @AT@ 4056 @LENGTH@ 20
----UPD MethodInvocation@@e.printStackTrace() @TO@ LOG.warn("Error opening session: ",e) @AT@ 4056 @LENGTH@ 19
-------UPD SimpleName@@Name:e @TO@ Name:LOG @AT@ 4056 @LENGTH@ 1
-------UPD SimpleName@@MethodName:printStackTrace:[] @TO@ MethodName:warn:["Error opening session: ", e] @AT@ 4058 @LENGTH@ 17
----------INS StringLiteral@@"Error opening session: " @TO@ SimpleName@@MethodName:printStackTrace:[] @AT@ 4065 @LENGTH@ 25
----------INS SimpleName@@e @TO@ SimpleName@@MethodName:printStackTrace:[] @AT@ 4092 @LENGTH@ 1
-

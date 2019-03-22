@@ -1,4 +1,0 @@
-UPD FieldDeclaration@@private, static, com.google.protobuf.Descriptors.Descriptor, [internal_static_org_apache_hadoop_hive_ql_io_orc_RowIndex_descriptor] @TO@ private, static, com.google.protobuf.Descriptors.Descriptor, [internal_static_orc_proto_RowIndex_descriptor] @AT@ 696485 @LENGTH@ 131
----UPD VariableDeclarationFragment@@internal_static_org_apache_hadoop_hive_ql_io_orc_RowIndex_descriptor @TO@ internal_static_orc_proto_RowIndex_descriptor @AT@ 696547 @LENGTH@ 68
-------UPD SimpleName@@internal_static_org_apache_hadoop_hive_ql_io_orc_RowIndex_descriptor @TO@ internal_static_orc_proto_RowIndex_descriptor @AT@ 696547 @LENGTH@ 68
-

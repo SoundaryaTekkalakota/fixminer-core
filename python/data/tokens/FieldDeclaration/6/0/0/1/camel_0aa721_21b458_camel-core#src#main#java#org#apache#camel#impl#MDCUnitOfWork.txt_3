@@ -1,7 +1,0 @@
-INS FieldDeclaration@@private, final, String, [originalRouteId] @TO@ TypeDeclaration@@[public]MDCUnitOfWork, DefaultUnitOfWork @AT@ 1694 @LENGTH@ 37
----INS Modifier@@private @TO@ FieldDeclaration@@private, final, String, [originalRouteId] @AT@ 1694 @LENGTH@ 7
----INS Modifier@@final @TO@ FieldDeclaration@@private, final, String, [originalRouteId] @AT@ 1702 @LENGTH@ 5
----INS SimpleType@@String @TO@ FieldDeclaration@@private, final, String, [originalRouteId] @AT@ 1708 @LENGTH@ 6
----INS VariableDeclarationFragment@@originalRouteId @TO@ FieldDeclaration@@private, final, String, [originalRouteId] @AT@ 1715 @LENGTH@ 15
-------INS SimpleName@@originalRouteId @TO@ VariableDeclarationFragment@@originalRouteId @AT@ 1715 @LENGTH@ 15
-

@@ -1,2 +1,2 @@
- INS ExpressionStatement
---- INS MethodInvocation
+ INS ExpressionStatement TO SynchronizedStatement 
+--- INS MethodInvocation TO ExpressionStatement

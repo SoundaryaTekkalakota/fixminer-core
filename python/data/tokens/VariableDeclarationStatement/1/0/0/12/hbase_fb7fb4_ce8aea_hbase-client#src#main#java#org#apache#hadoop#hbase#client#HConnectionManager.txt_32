@@ -1,0 +1,2 @@
+MOV VariableDeclarationStatement@@Map<byte[],HRegionLocation> tableLocations=getTableLocations(tableName); @TO@ MethodDeclaration@@public, void, MethodName:deleteCachedRegionLocation, final HRegionLocation location,  @AT@ 88117 @LENGTH@ 75
+

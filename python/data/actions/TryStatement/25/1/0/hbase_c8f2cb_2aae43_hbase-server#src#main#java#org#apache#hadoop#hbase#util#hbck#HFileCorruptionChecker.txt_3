@@ -1,25 +1,25 @@
- INS TryStatement
---- INS ExpressionStatement
------- INS Assignment
---------- MOV MethodInvocation
---------- INS SimpleName
---------- INS Operator
---- INS CatchClause
------- INS SingleVariableDeclaration
---------- INS SimpleType
---------- INS SimpleName
------- INS ExpressionStatement
---------- INS MethodInvocation
------------- INS SimpleName
------------- INS SimpleName
---------------- INS InfixExpression
------------------- INS StringLiteral
------------------- INS Operator
------------------- INS SimpleName
------------------- INS StringLiteral
------- INS ExpressionStatement
---------- INS MethodInvocation
------------- INS SimpleName
------------- INS SimpleName
---------------- INS SimpleName
------- INS ReturnStatement
+ INS TryStatement TO MethodDeclaration 
+--- INS ExpressionStatement TO TryStatement 
+------ INS Assignment TO ExpressionStatement 
+--------- MOV MethodInvocation TO Assignment 
+--------- INS SimpleName TO Assignment 
+--------- INS Operator TO Assignment 
+--- INS CatchClause TO TryStatement 
+------ INS SingleVariableDeclaration TO CatchClause 
+--------- INS SimpleType TO SingleVariableDeclaration 
+--------- INS SimpleName TO SingleVariableDeclaration 
+------ INS ExpressionStatement TO CatchClause 
+--------- INS MethodInvocation TO ExpressionStatement 
+------------ INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO MethodInvocation 
+--------------- INS InfixExpression TO SimpleName 
+------------------ INS StringLiteral TO InfixExpression 
+------------------ INS Operator TO InfixExpression 
+------------------ INS SimpleName TO InfixExpression 
+------------------ INS StringLiteral TO InfixExpression 
+------ INS ExpressionStatement TO CatchClause 
+--------- INS MethodInvocation TO ExpressionStatement 
+------------ INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO MethodInvocation 
+--------------- INS SimpleName TO SimpleName 
+------ INS ReturnStatement TO CatchClause

@@ -1,4 +1,0 @@
-UPD WhileStatement@@InfixExpression:elemIndex > this.itemBeginPos[index] @TO@ InfixExpression:elemIndex >= this.itemBeginPos[index] @AT@ 5313 @LENGTH@ 169
----UPD InfixExpression@@elemIndex > this.itemBeginPos[index] @TO@ elemIndex >= this.itemBeginPos[index] @AT@ 5320 @LENGTH@ 36
-------UPD Operator@@> @TO@ >= @AT@ 5329 @LENGTH@ 1
-

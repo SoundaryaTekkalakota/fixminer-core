@@ -1,16 +1,16 @@
- INS VariableDeclarationStatement
---- INS Modifier
---- INS ParameterizedType
------- INS SimpleType
------- INS SimpleType
---- INS VariableDeclarationFragment
------- INS SimpleName
------- INS ConditionalExpression
---------- INS InfixExpression
------------- INS SimpleName
------------- INS Operator
------------- INS NullLiteral
---------- INS QualifiedName
------------- INS SimpleName
------------- INS SimpleName
---------- INS SimpleName
+ INS VariableDeclarationStatement TO MethodDeclaration 
+--- INS Modifier TO VariableDeclarationStatement 
+--- INS ParameterizedType TO VariableDeclarationStatement 
+------ INS SimpleType TO ParameterizedType 
+------ INS SimpleType TO ParameterizedType 
+--- INS VariableDeclarationFragment TO VariableDeclarationStatement 
+------ INS SimpleName TO VariableDeclarationFragment 
+------ INS ConditionalExpression TO VariableDeclarationFragment 
+--------- INS InfixExpression TO ConditionalExpression 
+------------ INS SimpleName TO InfixExpression 
+------------ INS Operator TO InfixExpression 
+------------ INS NullLiteral TO InfixExpression 
+--------- INS QualifiedName TO ConditionalExpression 
+------------ INS SimpleName TO QualifiedName 
+------------ INS SimpleName TO QualifiedName 
+--------- INS SimpleName TO ConditionalExpression

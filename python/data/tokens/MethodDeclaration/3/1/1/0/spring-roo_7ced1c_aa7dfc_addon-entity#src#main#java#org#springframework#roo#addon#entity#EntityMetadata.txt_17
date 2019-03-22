@@ -1,0 +1,4 @@
+UPD MethodDeclaration@@private, void, MethodName:addTransactionalAnnotation, List<AnnotationMetadataBuilder> annotations,  @TO@ private, void, MethodName:addTransactionalAnnotation, final List<AnnotationMetadataBuilder> annotations,  @AT@ 15043 @LENGTH@ 139
+---UPD SingleVariableDeclaration@@List<AnnotationMetadataBuilder> annotations @TO@ final List<AnnotationMetadataBuilder> annotations @AT@ 15083 @LENGTH@ 43
+------INS Modifier@@final @TO@ SingleVariableDeclaration@@List<AnnotationMetadataBuilder> annotations @AT@ 15189 @LENGTH@ 5
+

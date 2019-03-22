@@ -1,8 +1,8 @@
- INS ThrowStatement
---- INS ClassInstanceCreation
------- INS New
------- INS SimpleType
------- INS InfixExpression
---------- INS StringLiteral
---------- INS Operator
---------- INS SimpleName
+ INS ThrowStatement TO IfStatement 
+--- INS ClassInstanceCreation TO ThrowStatement 
+------ INS New TO ClassInstanceCreation 
+------ INS SimpleType TO ClassInstanceCreation 
+------ INS InfixExpression TO ClassInstanceCreation 
+--------- INS StringLiteral TO InfixExpression 
+--------- INS Operator TO InfixExpression 
+--------- INS SimpleName TO InfixExpression

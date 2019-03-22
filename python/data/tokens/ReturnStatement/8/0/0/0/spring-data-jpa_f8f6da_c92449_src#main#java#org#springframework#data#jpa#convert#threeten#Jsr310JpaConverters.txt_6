@@ -1,9 +1,0 @@
-UPD ReturnStatement@@MethodInvocation:InstantToDateConverter.INSTANCE.convert(instant) @TO@ ConditionalExpression:instant == null ? null : InstantToDateConverter.INSTANCE.convert(instant) @AT@ 3712 @LENGTH@ 56
----INS ConditionalExpression@@instant == null ? null : InstantToDateConverter.INSTANCE.convert(instant) @TO@ ReturnStatement@@MethodInvocation:InstantToDateConverter.INSTANCE.convert(instant) @AT@ 3851 @LENGTH@ 73
-------MOV MethodInvocation@@InstantToDateConverter.INSTANCE.convert(instant) @TO@ ConditionalExpression@@instant == null ? null : InstantToDateConverter.INSTANCE.convert(instant) @AT@ 3719 @LENGTH@ 48
-------INS InfixExpression@@instant == null @TO@ ConditionalExpression@@instant == null ? null : InstantToDateConverter.INSTANCE.convert(instant) @AT@ 3851 @LENGTH@ 15
----------INS SimpleName@@instant @TO@ InfixExpression@@instant == null @AT@ 3851 @LENGTH@ 7
----------INS Operator@@== @TO@ InfixExpression@@instant == null @AT@ 3858 @LENGTH@ 2
----------INS NullLiteral@@null @TO@ InfixExpression@@instant == null @AT@ 3862 @LENGTH@ 4
-------INS NullLiteral@@null @TO@ ConditionalExpression@@instant == null ? null : InstantToDateConverter.INSTANCE.convert(instant) @AT@ 3869 @LENGTH@ 4
-

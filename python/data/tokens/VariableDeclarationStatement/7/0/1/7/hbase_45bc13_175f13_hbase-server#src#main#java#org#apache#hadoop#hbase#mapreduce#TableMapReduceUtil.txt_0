@@ -1,8 +1,0 @@
-INS VariableDeclarationStatement@@Configuration conf=job.getConfiguration(); @TO@ MethodDeclaration@@public, static, void, MethodName:initTableMapperJob, List<Scan> scans, Class<? extends TableMapper> mapper, Class<? extends WritableComparable> outputKeyClass, Class<? extends Writable> outputValueClass, Job job, boolean addDependencyJars, boolean initCredentials, IOException,  @AT@ 17460 @LENGTH@ 44
----INS SimpleType@@Configuration @TO@ VariableDeclarationStatement@@Configuration conf=job.getConfiguration(); @AT@ 17460 @LENGTH@ 13
----INS VariableDeclarationFragment@@conf=job.getConfiguration() @TO@ VariableDeclarationStatement@@Configuration conf=job.getConfiguration(); @AT@ 17474 @LENGTH@ 29
-------INS SimpleName@@conf @TO@ VariableDeclarationFragment@@conf=job.getConfiguration() @AT@ 17474 @LENGTH@ 4
-------INS MethodInvocation@@job.getConfiguration() @TO@ VariableDeclarationFragment@@conf=job.getConfiguration() @AT@ 17481 @LENGTH@ 22
----------INS SimpleName@@Name:job @TO@ MethodInvocation@@job.getConfiguration() @AT@ 17481 @LENGTH@ 3
----------INS SimpleName@@MethodName:getConfiguration:[] @TO@ MethodInvocation@@job.getConfiguration() @AT@ 17485 @LENGTH@ 18
-

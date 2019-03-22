@@ -1,0 +1,5 @@
+INS ExpressionStatement@@MethodInvocation:doNext(calendar) @TO@ IfStatement@@InfixExpression:dayOfMonth == updateDayOfMonth @AT@ 4919 @LENGTH@ 17
+---INS MethodInvocation@@doNext(calendar) @TO@ ExpressionStatement@@MethodInvocation:doNext(calendar) @AT@ 4919 @LENGTH@ 16
+------INS SimpleName@@MethodName:doNext:[calendar] @TO@ MethodInvocation@@doNext(calendar) @AT@ 4919 @LENGTH@ 16
+---------INS SimpleName@@calendar @TO@ SimpleName@@MethodName:doNext:[calendar] @AT@ 4926 @LENGTH@ 8
+

@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@public, static, VirtualColumn, [RAWDATASIZE=new VirtualColumn("RAW__DATA__SIZE",(PrimitiveTypeInfo)TypeInfoFactory.longTypeInfo)] @TO@ public, static, final, VirtualColumn, [RAWDATASIZE=new VirtualColumn("RAW__DATA__SIZE",(PrimitiveTypeInfo)TypeInfoFactory.longTypeInfo)] @AT@ 2135 @LENGTH@ 128
+---INS Modifier@@final @TO@ FieldDeclaration@@public, static, VirtualColumn, [RAWDATASIZE=new VirtualColumn("RAW__DATA__SIZE",(PrimitiveTypeInfo)TypeInfoFactory.longTypeInfo)] @AT@ 2265 @LENGTH@ 5
+

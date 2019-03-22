@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, int, [heartbeaterThreadPoolSize=0] @TO@ private, static, int, [heartbeaterThreadPoolSize=0] @AT@ 4370 @LENGTH@ 42
+---INS Modifier@@static @TO@ FieldDeclaration@@private, int, [heartbeaterThreadPoolSize=0] @AT@ 4378 @LENGTH@ 6
+

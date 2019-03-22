@@ -1,9 +1,0 @@
-DEL MethodDeclaration@@public, boolean, MethodName:isAborted,  @AT@ 4351 @LENGTH@ 65
----DEL Modifier@@public @AT@ 4351 @LENGTH@ 6
----DEL PrimitiveType@@boolean @AT@ 4358 @LENGTH@ 7
----DEL SimpleName@@MethodName:isAborted @AT@ 4366 @LENGTH@ 9
----DEL ReturnStatement@@MethodInvocation:delegate.isAborted() @AT@ 4384 @LENGTH@ 28
-------DEL MethodInvocation@@delegate.isAborted() @AT@ 4391 @LENGTH@ 20
----------DEL SimpleName@@Name:delegate @AT@ 4391 @LENGTH@ 8
----------DEL SimpleName@@MethodName:isAborted:[] @AT@ 4400 @LENGTH@ 11
-

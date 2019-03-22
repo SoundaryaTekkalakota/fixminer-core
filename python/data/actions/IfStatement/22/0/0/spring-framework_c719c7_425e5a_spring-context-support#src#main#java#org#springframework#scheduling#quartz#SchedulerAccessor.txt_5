@@ -1,22 +1,22 @@
- INS IfStatement
---- MOV ExpressionStatement
---- INS SimpleName
---- INS VariableDeclarationStatement
------- INS ParameterizedType
---------- INS SimpleType
---------- INS WildcardType
------- INS VariableDeclarationFragment
---------- INS SimpleName
---------- INS ClassInstanceCreation
------------- INS New
------------- INS ParameterizedType
---------------- INS SimpleType
---------------- INS SimpleType
---- INS ExpressionStatement
------- INS MethodInvocation
---------- INS SimpleName
---------- INS SimpleName
------------- INS SimpleName
------------- INS SimpleName
------------- INS SimpleName
------------- INS SimpleName
+ INS IfStatement TO EnhancedForStatement 
+--- MOV ExpressionStatement TO IfStatement 
+--- INS SimpleName TO IfStatement 
+--- INS VariableDeclarationStatement TO IfStatement 
+------ INS ParameterizedType TO VariableDeclarationStatement 
+--------- INS SimpleType TO ParameterizedType 
+--------- INS WildcardType TO ParameterizedType 
+------ INS VariableDeclarationFragment TO VariableDeclarationStatement 
+--------- INS SimpleName TO VariableDeclarationFragment 
+--------- INS ClassInstanceCreation TO VariableDeclarationFragment 
+------------ INS New TO ClassInstanceCreation 
+------------ INS ParameterizedType TO ClassInstanceCreation 
+--------------- INS SimpleType TO ParameterizedType 
+--------------- INS SimpleType TO ParameterizedType 
+--- INS ExpressionStatement TO IfStatement 
+------ INS MethodInvocation TO ExpressionStatement 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO SimpleName 
+------------ INS SimpleName TO SimpleName 
+------------ INS SimpleName TO SimpleName 
+------------ INS SimpleName TO SimpleName

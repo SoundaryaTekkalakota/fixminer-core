@@ -1,5 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:checkTargetLocationEmpty(fs,tgtPath,replicationSpec) @TO@ MethodInvocation:checkTargetLocationEmpty(tgtFs,tgtPath,replicationSpec) @AT@ 17765 @LENGTH@ 55
----UPD MethodInvocation@@checkTargetLocationEmpty(fs,tgtPath,replicationSpec) @TO@ checkTargetLocationEmpty(tgtFs,tgtPath,replicationSpec) @AT@ 17765 @LENGTH@ 54
-------UPD SimpleName@@MethodName:checkTargetLocationEmpty:[fs, tgtPath, replicationSpec] @TO@ MethodName:checkTargetLocationEmpty:[tgtFs, tgtPath, replicationSpec] @AT@ 17765 @LENGTH@ 54
----------UPD SimpleName@@fs @TO@ tgtFs @AT@ 17790 @LENGTH@ 2
-

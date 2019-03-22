@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.debug((replace ? "Replacing src:" : "Renaming src:") + srcf.toString() + ";dest: "+ destf.toString()+ ";Status:"+ success) @TO@ MethodInvocation:LOG.info((replace ? "Replacing src:" : "Renaming src:") + srcf.toString() + ";dest: "+ destf.toString()+ ";Status:"+ success) @AT@ 78171 @LENGTH@ 141
+---UPD MethodInvocation@@LOG.debug((replace ? "Replacing src:" : "Renaming src:") + srcf.toString() + ";dest: "+ destf.toString()+ ";Status:"+ success) @TO@ LOG.info((replace ? "Replacing src:" : "Renaming src:") + srcf.toString() + ";dest: "+ destf.toString()+ ";Status:"+ success) @AT@ 78171 @LENGTH@ 140
+------UPD SimpleName@@MethodName:debug:[(replace ? "Replacing src:" : "Renaming src:") + srcf.toString() + ";dest: "+ destf.toString()+ ";Status:"+ success] @TO@ MethodName:info:[(replace ? "Replacing src:" : "Renaming src:") + srcf.toString() + ";dest: "+ destf.toString()+ ";Status:"+ success] @AT@ 78175 @LENGTH@ 136
+

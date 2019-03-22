@@ -1,68 +1,68 @@
- INS MethodDeclaration
---- INS Modifier
---- INS PrimitiveType
---- INS SimpleName
---- INS SingleVariableDeclaration
------- INS SimpleType
------- INS SimpleName
---- INS IfStatement
------- INS InfixExpression
---------- INS SimpleName
---------- INS Operator
---------- INS ThisExpression
------- INS ReturnStatement
---------- INS BooleanLiteral
---- INS IfStatement
------- INS InfixExpression
---------- INS SimpleName
---------- INS Operator
---------- INS NullLiteral
------- INS ReturnStatement
---------- INS BooleanLiteral
---- INS IfStatement
------- INS PrefixExpression
---------- INS Operator
---------- INS SuperMethodInvocation
------------- INS SimpleName
------------- INS SimpleName
------- INS ReturnStatement
---------- INS BooleanLiteral
---- INS IfStatement
------- INS MethodInvocation
---------- INS SimpleName
---------- INS SimpleName
------------- INS MethodInvocation
------------- INS MethodInvocation
---------------- INS SimpleName
---------------- INS SimpleName
------- INS ReturnStatement
---------- INS BooleanLiteral
---- INS VariableDeclarationStatement
------- INS SimpleType
------- INS VariableDeclarationFragment
---------- INS SimpleName
---------- INS CastExpression
------------- INS SimpleType
------------- INS SimpleName
---- INS IfStatement
------- INS MethodInvocation
---------- INS SimpleName
---------- INS SimpleName
------------- INS SimpleName
------------- INS QualifiedName
---------------- INS SimpleName
---------------- INS SimpleName
------- INS ReturnStatement
---------- INS BooleanLiteral
---- INS IfStatement
------- INS MethodInvocation
---------- INS SimpleName
---------- INS SimpleName
------------- INS SimpleName
------------- INS QualifiedName
---------------- INS SimpleName
---------------- INS SimpleName
------- INS ReturnStatement
---------- INS BooleanLiteral
---- INS ReturnStatement
------- INS BooleanLiteral
+ INS MethodDeclaration TO TypeDeclaration 
+--- INS Modifier TO MethodDeclaration 
+--- INS PrimitiveType TO MethodDeclaration 
+--- INS SimpleName TO MethodDeclaration 
+--- INS SingleVariableDeclaration TO MethodDeclaration 
+------ INS SimpleType TO SingleVariableDeclaration 
+------ INS SimpleName TO SingleVariableDeclaration 
+--- INS IfStatement TO MethodDeclaration 
+------ INS InfixExpression TO IfStatement 
+--------- INS SimpleName TO InfixExpression 
+--------- INS Operator TO InfixExpression 
+--------- INS ThisExpression TO InfixExpression 
+------ INS ReturnStatement TO IfStatement 
+--------- INS BooleanLiteral TO ReturnStatement 
+--- INS IfStatement TO MethodDeclaration 
+------ INS InfixExpression TO IfStatement 
+--------- INS SimpleName TO InfixExpression 
+--------- INS Operator TO InfixExpression 
+--------- INS NullLiteral TO InfixExpression 
+------ INS ReturnStatement TO IfStatement 
+--------- INS BooleanLiteral TO ReturnStatement 
+--- INS IfStatement TO MethodDeclaration 
+------ INS PrefixExpression TO IfStatement 
+--------- INS Operator TO PrefixExpression 
+--------- INS SuperMethodInvocation TO PrefixExpression 
+------------ INS SimpleName TO SuperMethodInvocation 
+------------ INS SimpleName TO SuperMethodInvocation 
+------ INS ReturnStatement TO IfStatement 
+--------- INS BooleanLiteral TO ReturnStatement 
+--- INS IfStatement TO MethodDeclaration 
+------ INS MethodInvocation TO IfStatement 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS MethodInvocation TO SimpleName 
+------------ INS MethodInvocation TO SimpleName 
+--------------- INS SimpleName TO MethodInvocation 
+--------------- INS SimpleName TO MethodInvocation 
+------ INS ReturnStatement TO IfStatement 
+--------- INS BooleanLiteral TO ReturnStatement 
+--- INS VariableDeclarationStatement TO MethodDeclaration 
+------ INS SimpleType TO VariableDeclarationStatement 
+------ INS VariableDeclarationFragment TO VariableDeclarationStatement 
+--------- INS SimpleName TO VariableDeclarationFragment 
+--------- INS CastExpression TO VariableDeclarationFragment 
+------------ INS SimpleType TO CastExpression 
+------------ INS SimpleName TO CastExpression 
+--- INS IfStatement TO MethodDeclaration 
+------ INS MethodInvocation TO IfStatement 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO SimpleName 
+------------ INS QualifiedName TO SimpleName 
+--------------- INS SimpleName TO QualifiedName 
+--------------- INS SimpleName TO QualifiedName 
+------ INS ReturnStatement TO IfStatement 
+--------- INS BooleanLiteral TO ReturnStatement 
+--- INS IfStatement TO MethodDeclaration 
+------ INS MethodInvocation TO IfStatement 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO SimpleName 
+------------ INS QualifiedName TO SimpleName 
+--------------- INS SimpleName TO QualifiedName 
+--------------- INS SimpleName TO QualifiedName 
+------ INS ReturnStatement TO IfStatement 
+--------- INS BooleanLiteral TO ReturnStatement 
+--- INS ReturnStatement TO MethodDeclaration 
+------ INS BooleanLiteral TO ReturnStatement

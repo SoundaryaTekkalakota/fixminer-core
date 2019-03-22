@@ -1,2 +1,0 @@
-MOV MethodDeclaration@@public, void, MethodName:contextDestroyed, ServletContextEvent servletContextEvent,  @TO@ TypeDeclaration@@[public]ThriftHttpCLIService, ThriftCLIService @AT@ 7982 @LENGTH@ 421
-

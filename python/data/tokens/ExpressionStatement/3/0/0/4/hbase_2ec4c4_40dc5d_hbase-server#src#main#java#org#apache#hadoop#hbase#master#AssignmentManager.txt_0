@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.debug("Assigning region " + state.getRegion().getRegionNameAsString() + " to "+ plan.getDestination().toString()) @TO@ MethodInvocation:LOG.info("Assigning region " + state.getRegion().getRegionNameAsString() + " to "+ plan.getDestination().toString()) @AT@ 68868 @LENGTH@ 129
+---UPD MethodInvocation@@LOG.debug("Assigning region " + state.getRegion().getRegionNameAsString() + " to "+ plan.getDestination().toString()) @TO@ LOG.info("Assigning region " + state.getRegion().getRegionNameAsString() + " to "+ plan.getDestination().toString()) @AT@ 68868 @LENGTH@ 128
+------UPD SimpleName@@MethodName:debug:["Assigning region " + state.getRegion().getRegionNameAsString() + " to "+ plan.getDestination().toString()] @TO@ MethodName:info:["Assigning region " + state.getRegion().getRegionNameAsString() + " to "+ plan.getDestination().toString()] @AT@ 68872 @LENGTH@ 124
+

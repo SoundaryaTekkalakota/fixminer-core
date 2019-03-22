@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@String address; @TO@ String address=null; @AT@ 16611 @LENGTH@ 15
+---UPD VariableDeclarationFragment@@address @TO@ address=null @AT@ 16618 @LENGTH@ 7
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@address @AT@ 16628 @LENGTH@ 4
+

@@ -1,4 +1,4 @@
- UPD VariableDeclarationStatement
---- UPD VariableDeclarationFragment
------- UPD MethodInvocation
---------- INS SimpleName
+ UPD VariableDeclarationStatement 
+--- UPD VariableDeclarationFragment 
+------ UPD MethodInvocation 
+--------- INS SimpleName TO MethodInvocation

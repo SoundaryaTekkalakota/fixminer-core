@@ -1,3 +1,3 @@
- UPD IfStatement
---- UPD InfixExpression
------- INS SimpleName
+ UPD IfStatement 
+--- UPD InfixExpression 
+------ INS SimpleName TO InfixExpression

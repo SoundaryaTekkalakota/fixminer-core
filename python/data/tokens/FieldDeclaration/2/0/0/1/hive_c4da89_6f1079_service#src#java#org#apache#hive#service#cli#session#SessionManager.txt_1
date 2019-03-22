@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, OperationManager, [operationManager=new OperationManager()] @TO@ private, final, OperationManager, [operationManager=new OperationManager()] @AT@ 1848 @LENGTH@ 67
+---INS Modifier@@final @TO@ FieldDeclaration@@private, OperationManager, [operationManager=new OperationManager()] @AT@ 1896 @LENGTH@ 5
+

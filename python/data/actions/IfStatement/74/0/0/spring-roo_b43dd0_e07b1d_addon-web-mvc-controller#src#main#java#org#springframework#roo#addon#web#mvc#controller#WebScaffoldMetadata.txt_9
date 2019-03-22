@@ -1,74 +1,74 @@
- INS IfStatement
---- INS InfixExpression
------- INS MethodInvocation
---------- INS SimpleName
---------- INS SimpleName
------- INS Operator
------- INS NumberLiteral
---- INS EnhancedForStatement
------- INS SingleVariableDeclaration
---------- INS SimpleType
---------- INS SimpleName
------- INS SimpleName
------- INS VariableDeclarationStatement
---------- INS SimpleType
---------- INS VariableDeclarationFragment
------------- INS SimpleName
------------- INS CastExpression
---------------- INS SimpleType
---------------- INS MethodInvocation
------------------- INS SimpleName
------------------- INS SimpleName
---------------------- INS MethodInvocation
------------------------- INS SimpleName
------------------------- INS SimpleName
---------------------------- INS SimpleName
---------------------------- INS QualifiedName
------------------------------- INS SimpleName
------------------------------- INS SimpleName
------- INS IfStatement
---------- INS InfixExpression
------------- INS SimpleName
------------- INS Operator
------------- INS NullLiteral
---------- INS ExpressionStatement
------------- INS MethodInvocation
---------------- INS SimpleName
---------------- INS SimpleName
------------------- INS InfixExpression
---------------------- INS StringLiteral
---------------------- INS Operator
---------------------- INS MethodInvocation
------------------------- INS SimpleName
------------------------- INS MethodInvocation
------------------------- INS SimpleName
---------------------- INS StringLiteral
---------------------- INS MethodInvocation
------------------------- INS SimpleName
------------------------- INS SimpleName
---------------------- INS StringLiteral
---------------------- INS MethodInvocation
------------------------- INS SimpleName
------------------------- INS MethodInvocation
------------------------- INS SimpleName
---------------------- INS StringLiteral
---------- INS IfStatement
------------- INS MethodInvocation
---------------- INS SimpleName
------------------- INS SimpleName
------------- INS ExpressionStatement
---------------- INS MethodInvocation
------------------- INS SimpleName
------------------- INS SimpleName
---------------------- INS InfixExpression
------------------------- INS StringLiteral
------------------------- INS Operator
------------------------- INS MethodInvocation
---------------------------- INS SimpleName
---------------------------- INS MethodInvocation
---------------------------- INS SimpleName
------------------------- INS StringLiteral
------------------------- INS MethodInvocation
---------------------------- INS SimpleName
---------------------------- INS SimpleName
------------------------- INS StringLiteral
+ INS IfStatement TO MethodDeclaration 
+--- INS InfixExpression TO IfStatement 
+------ INS MethodInvocation TO InfixExpression 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------ INS Operator TO InfixExpression 
+------ INS NumberLiteral TO InfixExpression 
+--- INS EnhancedForStatement TO IfStatement 
+------ INS SingleVariableDeclaration TO EnhancedForStatement 
+--------- INS SimpleType TO SingleVariableDeclaration 
+--------- INS SimpleName TO SingleVariableDeclaration 
+------ INS SimpleName TO EnhancedForStatement 
+------ INS VariableDeclarationStatement TO EnhancedForStatement 
+--------- INS SimpleType TO VariableDeclarationStatement 
+--------- INS VariableDeclarationFragment TO VariableDeclarationStatement 
+------------ INS SimpleName TO VariableDeclarationFragment 
+------------ INS CastExpression TO VariableDeclarationFragment 
+--------------- INS SimpleType TO CastExpression 
+--------------- INS MethodInvocation TO CastExpression 
+------------------ INS SimpleName TO MethodInvocation 
+------------------ INS SimpleName TO MethodInvocation 
+--------------------- INS MethodInvocation TO SimpleName 
+------------------------ INS SimpleName TO MethodInvocation 
+------------------------ INS SimpleName TO MethodInvocation 
+--------------------------- INS SimpleName TO SimpleName 
+--------------------------- INS QualifiedName TO SimpleName 
+------------------------------ INS SimpleName TO QualifiedName 
+------------------------------ INS SimpleName TO QualifiedName 
+------ INS IfStatement TO EnhancedForStatement 
+--------- INS InfixExpression TO IfStatement 
+------------ INS SimpleName TO InfixExpression 
+------------ INS Operator TO InfixExpression 
+------------ INS NullLiteral TO InfixExpression 
+--------- INS ExpressionStatement TO IfStatement 
+------------ INS MethodInvocation TO ExpressionStatement 
+--------------- INS SimpleName TO MethodInvocation 
+--------------- INS SimpleName TO MethodInvocation 
+------------------ INS InfixExpression TO SimpleName 
+--------------------- INS StringLiteral TO InfixExpression 
+--------------------- INS Operator TO InfixExpression 
+--------------------- INS MethodInvocation TO InfixExpression 
+------------------------ INS SimpleName TO MethodInvocation 
+------------------------ INS MethodInvocation TO MethodInvocation 
+------------------------ INS SimpleName TO MethodInvocation 
+--------------------- INS StringLiteral TO InfixExpression 
+--------------------- INS MethodInvocation TO InfixExpression 
+------------------------ INS SimpleName TO MethodInvocation 
+------------------------ INS SimpleName TO MethodInvocation 
+--------------------- INS StringLiteral TO InfixExpression 
+--------------------- INS MethodInvocation TO InfixExpression 
+------------------------ INS SimpleName TO MethodInvocation 
+------------------------ INS MethodInvocation TO MethodInvocation 
+------------------------ INS SimpleName TO MethodInvocation 
+--------------------- INS StringLiteral TO InfixExpression 
+--------- INS IfStatement TO IfStatement 
+------------ INS MethodInvocation TO IfStatement 
+--------------- INS SimpleName TO MethodInvocation 
+------------------ INS SimpleName TO SimpleName 
+------------ INS ExpressionStatement TO IfStatement 
+--------------- INS MethodInvocation TO ExpressionStatement 
+------------------ INS SimpleName TO MethodInvocation 
+------------------ INS SimpleName TO MethodInvocation 
+--------------------- INS InfixExpression TO SimpleName 
+------------------------ INS StringLiteral TO InfixExpression 
+------------------------ INS Operator TO InfixExpression 
+------------------------ INS MethodInvocation TO InfixExpression 
+--------------------------- INS SimpleName TO MethodInvocation 
+--------------------------- INS MethodInvocation TO MethodInvocation 
+--------------------------- INS SimpleName TO MethodInvocation 
+------------------------ INS StringLiteral TO InfixExpression 
+------------------------ INS MethodInvocation TO InfixExpression 
+--------------------------- INS SimpleName TO MethodInvocation 
+--------------------------- INS SimpleName TO MethodInvocation 
+------------------------ INS StringLiteral TO InfixExpression

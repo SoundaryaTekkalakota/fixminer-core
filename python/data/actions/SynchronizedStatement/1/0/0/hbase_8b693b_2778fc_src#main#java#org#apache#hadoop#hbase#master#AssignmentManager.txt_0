@@ -1,1 +1,1 @@
- MOV SynchronizedStatement
+ MOV SynchronizedStatement TO MethodDeclaration

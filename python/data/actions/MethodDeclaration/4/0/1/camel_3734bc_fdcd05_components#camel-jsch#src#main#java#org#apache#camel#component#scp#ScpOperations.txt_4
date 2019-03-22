@@ -1,4 +1,4 @@
- UPD MethodDeclaration
---- DEL SingleVariableDeclaration
------- DEL PrimitiveType
+ UPD MethodDeclaration 
+--- DEL SingleVariableDeclaration 
+------ DEL PrimitiveType 
 ------ DEL SimpleName

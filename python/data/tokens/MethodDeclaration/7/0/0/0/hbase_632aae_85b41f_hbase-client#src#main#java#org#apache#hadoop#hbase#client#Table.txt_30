@@ -1,0 +1,8 @@
+UPD MethodDeclaration@@void, T extends Service, R, MethodName:coprocessorService, final Class<T> service, byte[] startKey, byte[] endKey, final Batch.Call<T,R> callable, final Batch.Callback<R> callback, ServiceException, Throwable,  @TO@ default, void, T extends Service, R, MethodName:coprocessorService, final Class<T> service, byte[] startKey, byte[] endKey, final Batch.Call<T,R> callable, final Batch.Callback<R> callback, ServiceException, Throwable,  @AT@ 27159 @LENGTH@ 184
+---INS Modifier@@default @TO@ MethodDeclaration@@void, T extends Service, R, MethodName:coprocessorService, final Class<T> service, byte[] startKey, byte[] endKey, final Batch.Call<T,R> callable, final Batch.Callback<R> callback, ServiceException, Throwable,  @AT@ 29417 @LENGTH@ 7
+---INS ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @TO@ MethodDeclaration@@void, T extends Service, R, MethodName:coprocessorService, final Class<T> service, byte[] startKey, byte[] endKey, final Batch.Call<T,R> callable, final Batch.Callback<R> callback, ServiceException, Throwable,  @AT@ 29643 @LENGTH@ 60
+------INS ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @TO@ ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @AT@ 29649 @LENGTH@ 53
+---------INS New@@new @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 29649 @LENGTH@ 3
+---------INS SimpleType@@NotImplementedException @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 29653 @LENGTH@ 23
+---------INS StringLiteral@@"Add an implementation!" @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 29677 @LENGTH@ 24
+

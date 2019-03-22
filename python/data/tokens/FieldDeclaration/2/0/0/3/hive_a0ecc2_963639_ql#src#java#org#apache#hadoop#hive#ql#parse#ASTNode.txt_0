@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, ASTNodeOrigin, [origin] @TO@ private, transient, ASTNodeOrigin, [origin] @AT@ 1198 @LENGTH@ 29
+---INS Modifier@@transient @TO@ FieldDeclaration@@private, ASTNodeOrigin, [origin] @AT@ 1206 @LENGTH@ 9
+

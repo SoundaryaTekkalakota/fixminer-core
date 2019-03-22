@@ -1,4 +1,4 @@
- DEL SynchronizedStatement
---- DEL FieldAccess
------- DEL ThisExpression
+ DEL SynchronizedStatement 
+--- DEL FieldAccess 
+------ DEL ThisExpression 
 ------ DEL SimpleName

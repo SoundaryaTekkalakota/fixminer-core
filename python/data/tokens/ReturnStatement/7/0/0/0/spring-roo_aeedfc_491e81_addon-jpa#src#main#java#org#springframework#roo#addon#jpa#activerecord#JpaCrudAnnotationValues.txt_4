@@ -1,8 +1,0 @@
-UPD ReturnStatement@@MethodInvocation:StringUtils.defaultIfEmpty(flushMethod,FLUSH_METHOD_DEFAULT) @TO@ SimpleName:flushMethod @AT@ 3742 @LENGTH@ 69
----INS SimpleName@@flushMethod @TO@ ReturnStatement@@MethodInvocation:StringUtils.defaultIfEmpty(flushMethod,FLUSH_METHOD_DEFAULT) @AT@ 3486 @LENGTH@ 11
----DEL MethodInvocation@@StringUtils.defaultIfEmpty(flushMethod,FLUSH_METHOD_DEFAULT) @AT@ 3749 @LENGTH@ 61
-------DEL SimpleName@@Name:StringUtils @AT@ 3749 @LENGTH@ 11
-------DEL SimpleName@@MethodName:defaultIfEmpty:[flushMethod, FLUSH_METHOD_DEFAULT] @AT@ 3761 @LENGTH@ 49
----------DEL SimpleName@@flushMethod @AT@ 3776 @LENGTH@ 11
----------DEL SimpleName@@FLUSH_METHOD_DEFAULT @AT@ 3789 @LENGTH@ 20
-

@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:s.execute("DROP INDEX HL_TXNID_INDEX") @TO@ MethodInvocation:stmt.execute("DROP INDEX HL_TXNID_INDEX") @AT@ 5029 @LENGTH@ 39
+---UPD MethodInvocation@@s.execute("DROP INDEX HL_TXNID_INDEX") @TO@ stmt.execute("DROP INDEX HL_TXNID_INDEX") @AT@ 5029 @LENGTH@ 38
+------UPD SimpleName@@Name:s @TO@ Name:stmt @AT@ 5029 @LENGTH@ 1
+

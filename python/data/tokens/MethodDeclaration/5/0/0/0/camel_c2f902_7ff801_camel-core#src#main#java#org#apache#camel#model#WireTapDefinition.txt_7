@@ -1,0 +1,6 @@
+UPD MethodDeclaration@@public, WireTapDefinition, MethodName:newExchange, Processor processor,  @TO@ public, WireTapDefinition<Type>, MethodName:newExchange, Processor processor,  @AT@ 8691 @LENGTH@ 130
+---INS ParameterizedType@@WireTapDefinition<Type> @TO@ MethodDeclaration@@public, WireTapDefinition, MethodName:newExchange, Processor processor,  @AT@ 8679 @LENGTH@ 23
+------INS SimpleType@@WireTapDefinition @TO@ ParameterizedType@@WireTapDefinition<Type> @AT@ 8679 @LENGTH@ 17
+------INS SimpleType@@Type @TO@ ParameterizedType@@WireTapDefinition<Type> @AT@ 8697 @LENGTH@ 4
+---DEL SimpleType@@WireTapDefinition @AT@ 8698 @LENGTH@ 17
+

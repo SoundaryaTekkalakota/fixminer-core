@@ -1,0 +1,2 @@
+MOV VariableDeclarationStatement@@List<JavaSymbolName> names=new ArrayList<JavaSymbolName>(); @TO@ MethodDeclaration@@private, MethodMetadata, MethodName:getGetAsTextMethod,  @AT@ 4031 @LENGTH@ 61
+

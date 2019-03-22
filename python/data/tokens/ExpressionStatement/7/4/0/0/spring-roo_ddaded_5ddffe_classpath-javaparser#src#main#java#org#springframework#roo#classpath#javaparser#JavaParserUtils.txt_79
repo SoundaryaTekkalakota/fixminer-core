@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(NoSuchMethodError.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("NoSuchMethodError") @AT@ 6497 @LENGTH@ 69
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(NoSuchMethodError.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("NoSuchMethodError") @AT@ 6497 @LENGTH@ 68
-------UPD SimpleName@@MethodName:add:[NoSuchMethodError.class.getSimpleName()] @TO@ MethodName:add:["NoSuchMethodError"] @AT@ 6521 @LENGTH@ 44
----------INS StringLiteral@@"NoSuchMethodError" @TO@ SimpleName@@MethodName:add:[NoSuchMethodError.class.getSimpleName()] @AT@ 5573 @LENGTH@ 19
----------DEL MethodInvocation@@NoSuchMethodError.class.getSimpleName() @AT@ 6525 @LENGTH@ 39
-------------DEL TypeLiteral@@NoSuchMethodError.class @AT@ 6525 @LENGTH@ 23
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 6549 @LENGTH@ 15
-

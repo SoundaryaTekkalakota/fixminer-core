@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, Object, [result=RESULT_NONE] @TO@ private, volatile, Object, [result=RESULT_NONE] @AT@ 2424 @LENGTH@ 36
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, Object, [result=RESULT_NONE] @AT@ 2433 @LENGTH@ 8
+

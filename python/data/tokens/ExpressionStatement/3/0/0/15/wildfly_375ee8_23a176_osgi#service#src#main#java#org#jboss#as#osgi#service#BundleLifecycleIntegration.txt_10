@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:dep.putAttachment(RUNTIME_NAME_KEY,runtimeName) @TO@ MethodInvocation:deployment.putAttachment(RUNTIME_NAME_KEY,runtimeName) @AT@ 20714 @LENGTH@ 49
+---UPD MethodInvocation@@dep.putAttachment(RUNTIME_NAME_KEY,runtimeName) @TO@ deployment.putAttachment(RUNTIME_NAME_KEY,runtimeName) @AT@ 20714 @LENGTH@ 48
+------UPD SimpleName@@Name:dep @TO@ Name:deployment @AT@ 20714 @LENGTH@ 3
+

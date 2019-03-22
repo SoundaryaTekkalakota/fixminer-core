@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@Message rpcResponseType; @TO@ Message rpcResponseType=null; @AT@ 38275 @LENGTH@ 24
+---UPD VariableDeclarationFragment@@rpcResponseType @TO@ rpcResponseType=null @AT@ 38283 @LENGTH@ 15
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@rpcResponseType @AT@ 38316 @LENGTH@ 4
+

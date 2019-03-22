@@ -1,7 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:e.printStackTrace() @TO@ MethodInvocation:LOG.warn("Error closing session: ",e) @AT@ 5787 @LENGTH@ 20
----UPD MethodInvocation@@e.printStackTrace() @TO@ LOG.warn("Error closing session: ",e) @AT@ 5787 @LENGTH@ 19
-------UPD SimpleName@@Name:e @TO@ Name:LOG @AT@ 5787 @LENGTH@ 1
-------UPD SimpleName@@MethodName:printStackTrace:[] @TO@ MethodName:warn:["Error closing session: ", e] @AT@ 5789 @LENGTH@ 17
----------INS StringLiteral@@"Error closing session: " @TO@ SimpleName@@MethodName:printStackTrace:[] @AT@ 5815 @LENGTH@ 25
----------INS SimpleName@@e @TO@ SimpleName@@MethodName:printStackTrace:[] @AT@ 5842 @LENGTH@ 1
-

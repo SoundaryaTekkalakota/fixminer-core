@@ -1,0 +1,6 @@
+UPD ExpressionStatement@@MethodInvocation:conf.setVar(HiveConf.ConfVars.HIVE_TXN_MANAGER,"org.apache.hadoop.hive.ql.lockmgr.DbTxnManager") @TO@ MethodInvocation:setHiveConf(conf,HiveConf.ConfVars.HIVE_TXN_MANAGER,"org.apache.hadoop.hive.ql.lockmgr.DbTxnManager") @AT@ 31702 @LENGTH@ 110
+---UPD MethodInvocation@@conf.setVar(HiveConf.ConfVars.HIVE_TXN_MANAGER,"org.apache.hadoop.hive.ql.lockmgr.DbTxnManager") @TO@ setHiveConf(conf,HiveConf.ConfVars.HIVE_TXN_MANAGER,"org.apache.hadoop.hive.ql.lockmgr.DbTxnManager") @AT@ 31702 @LENGTH@ 109
+------DEL SimpleName@@Name:conf @AT@ 31702 @LENGTH@ 4
+------UPD SimpleName@@MethodName:setVar:[HiveConf.ConfVars.HIVE_TXN_MANAGER, "org.apache.hadoop.hive.ql.lockmgr.DbTxnManager"] @TO@ MethodName:setHiveConf:[conf, HiveConf.ConfVars.HIVE_TXN_MANAGER, "org.apache.hadoop.hive.ql.lockmgr.DbTxnManager"] @AT@ 31707 @LENGTH@ 104
+---------INS SimpleName@@conf @TO@ SimpleName@@MethodName:setVar:[HiveConf.ConfVars.HIVE_TXN_MANAGER, "org.apache.hadoop.hive.ql.lockmgr.DbTxnManager"] @AT@ 32009 @LENGTH@ 4
+

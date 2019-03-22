@@ -1,5 +1,0 @@
-INS TypeDeclaration@@[private, static]Holder,  @TO@ TypeDeclaration@@[public]TransactionRollbackSetupAction, [SetupAction, Service<TransactionRollbackSetupAction>] @AT@ 5335 @LENGTH@ 94
----INS Modifier@@private @TO@ TypeDeclaration@@[private, static]Holder,  @AT@ 5335 @LENGTH@ 7
----INS Modifier@@static @TO@ TypeDeclaration@@[private, static]Holder,  @AT@ 5343 @LENGTH@ 6
----INS SimpleName@@ClassName:Holder @TO@ TypeDeclaration@@[private, static]Holder,  @AT@ 5356 @LENGTH@ 6
-

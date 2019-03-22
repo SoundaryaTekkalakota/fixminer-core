@@ -1,6 +1,0 @@
-DEL ExpressionStatement@@MethodInvocation:srcHeap.position(startSrcPos) @AT@ 57241 @LENGTH@ 30
----DEL MethodInvocation@@srcHeap.position(startSrcPos) @AT@ 57241 @LENGTH@ 29
-------DEL SimpleName@@Name:srcHeap @AT@ 57241 @LENGTH@ 7
-------DEL SimpleName@@MethodName:position:[startSrcPos] @AT@ 57249 @LENGTH@ 21
----------DEL SimpleName@@startSrcPos @AT@ 57258 @LENGTH@ 11
-

@@ -1,0 +1,6 @@
+UPD ExpressionStatement@@MethodInvocation:conf.setBoolVar(HiveConf.ConfVars.METASTORE_EXECUTE_SET_UGI,true) @TO@ MethodInvocation:setHiveConf(conf,HiveConf.ConfVars.METASTORE_EXECUTE_SET_UGI,true) @AT@ 31888 @LENGTH@ 67
+---UPD MethodInvocation@@conf.setBoolVar(HiveConf.ConfVars.METASTORE_EXECUTE_SET_UGI,true) @TO@ setHiveConf(conf,HiveConf.ConfVars.METASTORE_EXECUTE_SET_UGI,true) @AT@ 31888 @LENGTH@ 66
+------DEL SimpleName@@Name:conf @AT@ 31888 @LENGTH@ 4
+------UPD SimpleName@@MethodName:setBoolVar:[HiveConf.ConfVars.METASTORE_EXECUTE_SET_UGI, true] @TO@ MethodName:setHiveConf:[conf, HiveConf.ConfVars.METASTORE_EXECUTE_SET_UGI, true] @AT@ 31893 @LENGTH@ 61
+---------INS SimpleName@@conf @TO@ SimpleName@@MethodName:setBoolVar:[HiveConf.ConfVars.METASTORE_EXECUTE_SET_UGI, true] @AT@ 32203 @LENGTH@ 4
+

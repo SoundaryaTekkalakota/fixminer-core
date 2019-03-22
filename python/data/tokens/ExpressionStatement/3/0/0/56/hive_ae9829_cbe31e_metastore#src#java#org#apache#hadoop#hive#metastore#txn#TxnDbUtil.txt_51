@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:prop.put("user",user) @TO@ MethodInvocation:prop.setProperty("user",user) @AT@ 8292 @LENGTH@ 23
+---UPD MethodInvocation@@prop.put("user",user) @TO@ prop.setProperty("user",user) @AT@ 8292 @LENGTH@ 22
+------UPD SimpleName@@MethodName:put:["user", user] @TO@ MethodName:setProperty:["user", user] @AT@ 8297 @LENGTH@ 17
+

@@ -1,2 +1,0 @@
-MOV EnhancedForStatement@@VectorExpression ve, SimpleName:vectorChildren @TO@ MethodDeclaration@@private, VectorExpression, MethodName:getEltExpression, List<ExprNodeDesc> childExpr, TypeInfo returnType, HiveException,  @AT@ 59767 @LENGTH@ 102
-

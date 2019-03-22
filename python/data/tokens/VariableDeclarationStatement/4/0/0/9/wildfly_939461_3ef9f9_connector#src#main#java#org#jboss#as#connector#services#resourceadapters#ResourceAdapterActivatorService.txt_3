@@ -1,5 +1,0 @@
-UPD VariableDeclarationStatement@@Iterator<String> it=raMcfClasses.iterator(); @TO@ Iterator<String> it=ijMcfClasses.iterator(); @AT@ 9907 @LENGTH@ 46
----UPD VariableDeclarationFragment@@it=raMcfClasses.iterator() @TO@ it=ijMcfClasses.iterator() @AT@ 9924 @LENGTH@ 28
-------UPD MethodInvocation@@raMcfClasses.iterator() @TO@ ijMcfClasses.iterator() @AT@ 9929 @LENGTH@ 23
----------UPD SimpleName@@Name:raMcfClasses @TO@ Name:ijMcfClasses @AT@ 9929 @LENGTH@ 12
-

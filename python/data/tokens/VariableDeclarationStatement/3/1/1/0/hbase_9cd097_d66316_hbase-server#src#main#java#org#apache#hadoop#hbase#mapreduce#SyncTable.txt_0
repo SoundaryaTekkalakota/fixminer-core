@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@ResultScanner targetScanner=targetTable.getScanner(scan); @TO@ ResultScanner targetScanner=null; @AT@ 25471 @LENGTH@ 59
+---UPD VariableDeclarationFragment@@targetScanner=targetTable.getScanner(scan) @TO@ targetScanner=null @AT@ 25485 @LENGTH@ 44
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@targetScanner=targetTable.getScanner(scan) @AT@ 25501 @LENGTH@ 4
+

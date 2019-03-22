@@ -1,8 +1,8 @@
- DEL MethodDeclaration
---- DEL Modifier
---- DEL PrimitiveType
---- DEL SimpleName
---- DEL ReturnStatement
------- DEL MethodInvocation
---------- DEL SimpleName
+ DEL MethodDeclaration 
+--- DEL Modifier 
+--- DEL PrimitiveType 
+--- DEL SimpleName 
+--- DEL ReturnStatement 
+------ DEL MethodInvocation 
+--------- DEL SimpleName 
 --------- DEL SimpleName

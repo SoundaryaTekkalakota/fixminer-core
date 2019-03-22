@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@FileStatus[] status=fs.listStatus(versionFile); @TO@ FileStatus[] status=null; @AT@ 9620 @LENGTH@ 50
+---UPD VariableDeclarationFragment@@status=fs.listStatus(versionFile) @TO@ status=null @AT@ 9634 @LENGTH@ 35
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@status=fs.listStatus(versionFile) @AT@ 9642 @LENGTH@ 4
+

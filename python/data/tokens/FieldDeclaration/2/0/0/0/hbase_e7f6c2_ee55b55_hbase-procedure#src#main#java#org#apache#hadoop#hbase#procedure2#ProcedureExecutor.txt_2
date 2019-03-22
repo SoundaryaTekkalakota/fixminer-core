@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@protected, boolean, [killIfSuspended=false] @TO@ protected, volatile, boolean, [killIfSuspended=false] @AT@ 4440 @LENGTH@ 42
+---INS Modifier@@volatile @TO@ FieldDeclaration@@protected, boolean, [killIfSuspended=false] @AT@ 4468 @LENGTH@ 8
+

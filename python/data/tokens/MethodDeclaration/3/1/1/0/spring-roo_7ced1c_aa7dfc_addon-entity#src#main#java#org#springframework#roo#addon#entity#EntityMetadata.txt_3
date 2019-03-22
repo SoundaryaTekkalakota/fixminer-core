@@ -1,0 +1,4 @@
+UPD MethodDeclaration@@public, static, Path, MethodName:getPath, String metadataIdentificationString,  @TO@ public, static, Path, MethodName:getPath, final String metadataIdentificationString,  @AT@ 2950 @LENGTH@ 172
+---UPD SingleVariableDeclaration@@String metadataIdentificationString @TO@ final String metadataIdentificationString @AT@ 2977 @LENGTH@ 35
+------INS Modifier@@final @TO@ SingleVariableDeclaration@@String metadataIdentificationString @AT@ 3071 @LENGTH@ 5
+

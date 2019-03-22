@@ -1,6 +1,0 @@
-DEL FieldDeclaration@@private, ApplicationContext, [applicationContext] @AT@ 2660 @LENGTH@ 46
----DEL Modifier@@private @AT@ 2660 @LENGTH@ 7
----DEL SimpleType@@ApplicationContext @AT@ 2668 @LENGTH@ 18
----DEL VariableDeclarationFragment@@applicationContext @AT@ 2687 @LENGTH@ 18
-------DEL SimpleName@@applicationContext @AT@ 2687 @LENGTH@ 18
-

@@ -1,0 +1,3 @@
+INS ReturnStatement@@SimpleName:answer @TO@ MethodDeclaration@@public, boolean, MethodName:hasNext,  @AT@ 5723 @LENGTH@ 14
+---INS SimpleName@@answer @TO@ ReturnStatement@@SimpleName:answer @AT@ 5730 @LENGTH@ 6
+

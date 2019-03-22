@@ -1,7 +1,0 @@
-UPD VariableDeclarationStatement@@Method writeMethod=ipd.getWriteMethod(); @TO@ Method writeMethod=writeMethodFor(ipd); @AT@ 5216 @LENGTH@ 42
----UPD VariableDeclarationFragment@@writeMethod=ipd.getWriteMethod() @TO@ writeMethod=writeMethodFor(ipd) @AT@ 5223 @LENGTH@ 34
-------UPD MethodInvocation@@ipd.getWriteMethod() @TO@ writeMethodFor(ipd) @AT@ 5237 @LENGTH@ 20
----------DEL SimpleName@@Name:ipd @AT@ 5237 @LENGTH@ 3
----------UPD SimpleName@@MethodName:getWriteMethod:[] @TO@ MethodName:writeMethodFor:[ipd] @AT@ 5241 @LENGTH@ 16
-------------INS SimpleName@@ipd @TO@ SimpleName@@MethodName:getWriteMethod:[] @AT@ 5318 @LENGTH@ 3
-

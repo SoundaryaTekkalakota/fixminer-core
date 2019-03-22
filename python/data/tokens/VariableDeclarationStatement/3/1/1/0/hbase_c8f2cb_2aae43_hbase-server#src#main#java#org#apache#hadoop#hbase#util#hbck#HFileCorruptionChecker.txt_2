@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@FileStatus[] cfs=fs.listStatus(regionDir,new FamilyDirFilter(fs)); @TO@ FileStatus[] cfs=null; @AT@ 6477 @LENGTH@ 69
+---UPD VariableDeclarationFragment@@cfs=fs.listStatus(regionDir,new FamilyDirFilter(fs)) @TO@ cfs=null @AT@ 6490 @LENGTH@ 55
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@cfs=fs.listStatus(regionDir,new FamilyDirFilter(fs)) @AT@ 6829 @LENGTH@ 4
+

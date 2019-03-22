@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@static, final, long, [MUTATION_OVERHEAD=ClassSize.align(ClassSize.OBJECT + 2 * ClassSize.REFERENCE + 1 * Bytes.SIZEOF_LONG + ClassSize.REFERENCE + ClassSize.REFERENCE + ClassSize.TREEMAP)] @TO@ public, static, final, long, [MUTATION_OVERHEAD=ClassSize.align(ClassSize.OBJECT + 2 * ClassSize.REFERENCE + 1 * Bytes.SIZEOF_LONG + ClassSize.REFERENCE + ClassSize.REFERENCE + ClassSize.TREEMAP)] @AT@ 1745 @LENGTH@ 475
+---INS Modifier@@public @TO@ FieldDeclaration@@static, final, long, [MUTATION_OVERHEAD=ClassSize.align(ClassSize.OBJECT + 2 * ClassSize.REFERENCE + 1 * Bytes.SIZEOF_LONG + ClassSize.REFERENCE + ClassSize.REFERENCE + ClassSize.TREEMAP)] @AT@ 1745 @LENGTH@ 6
+

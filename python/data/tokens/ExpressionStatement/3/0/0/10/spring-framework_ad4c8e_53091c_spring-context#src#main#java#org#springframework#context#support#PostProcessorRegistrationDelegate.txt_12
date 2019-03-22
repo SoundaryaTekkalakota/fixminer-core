@@ -1,4 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:orderedPostProcessors.add(beanFactory.getBean(ppName,BeanDefinitionRegistryPostProcessor.class)) @TO@ MethodInvocation:currentRegistryProcessors.add(beanFactory.getBean(ppName,BeanDefinitionRegistryPostProcessor.class)) @AT@ 4561 @LENGTH@ 98
----UPD MethodInvocation@@orderedPostProcessors.add(beanFactory.getBean(ppName,BeanDefinitionRegistryPostProcessor.class)) @TO@ currentRegistryProcessors.add(beanFactory.getBean(ppName,BeanDefinitionRegistryPostProcessor.class)) @AT@ 4561 @LENGTH@ 97
-------UPD SimpleName@@Name:orderedPostProcessors @TO@ Name:currentRegistryProcessors @AT@ 4561 @LENGTH@ 21
-

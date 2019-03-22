@@ -1,0 +1,2 @@
+MOV ExpressionStatement@@MethodInvocation:transportLock.lock() @TO@ MethodDeclaration@@void, MethodName:closeClientOperation, SQLException,  @AT@ 5002 @LENGTH@ 21
+

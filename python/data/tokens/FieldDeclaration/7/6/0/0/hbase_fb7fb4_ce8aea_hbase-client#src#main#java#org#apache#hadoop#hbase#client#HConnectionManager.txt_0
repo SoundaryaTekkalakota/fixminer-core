@@ -1,0 +1,8 @@
+UPD FieldDeclaration@@private, final, Map<TableName,ConcurrentSkipListMap<byte[],HRegionLocation>>, [cachedRegionLocations=new HashMap<TableName,ConcurrentSkipListMap<byte[],HRegionLocation>>()] @TO@ private, final, ConcurrentMap<TableName,ConcurrentSkipListMap<byte[],HRegionLocation>>, [cachedRegionLocations=new ConcurrentHashMap<TableName,ConcurrentSkipListMap<byte[],HRegionLocation>>()] @AT@ 27022 @LENGTH@ 188
+---UPD ParameterizedType@@Map<TableName,ConcurrentSkipListMap<byte[],HRegionLocation>> @TO@ ConcurrentMap<TableName,ConcurrentSkipListMap<byte[],HRegionLocation>> @AT@ 27036 @LENGTH@ 62
+------UPD SimpleType@@Map @TO@ ConcurrentMap @AT@ 27036 @LENGTH@ 3
+---UPD VariableDeclarationFragment@@cachedRegionLocations=new HashMap<TableName,ConcurrentSkipListMap<byte[],HRegionLocation>>() @TO@ cachedRegionLocations=new ConcurrentHashMap<TableName,ConcurrentSkipListMap<byte[],HRegionLocation>>() @AT@ 27107 @LENGTH@ 102
+------UPD ClassInstanceCreation@@HashMap<TableName,ConcurrentSkipListMap<byte[],HRegionLocation>>[] @TO@ ConcurrentHashMap<TableName,ConcurrentSkipListMap<byte[],HRegionLocation>>[] @AT@ 27137 @LENGTH@ 72
+---------UPD ParameterizedType@@HashMap<TableName,ConcurrentSkipListMap<byte[],HRegionLocation>> @TO@ ConcurrentHashMap<TableName,ConcurrentSkipListMap<byte[],HRegionLocation>> @AT@ 27141 @LENGTH@ 66
+------------UPD SimpleType@@HashMap @TO@ ConcurrentHashMap @AT@ 27141 @LENGTH@ 7
+

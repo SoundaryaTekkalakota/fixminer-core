@@ -1,6 +1,6 @@
- UPD CatchClause
---- UPD SingleVariableDeclaration
------- DEL SimpleType
------- INS UnionType
---------- INS SimpleType
---------- INS SimpleType
+ UPD CatchClause 
+--- UPD SingleVariableDeclaration 
+------ DEL SimpleType 
+------ INS UnionType TO SingleVariableDeclaration 
+--------- INS SimpleType TO UnionType 
+--------- INS SimpleType TO UnionType

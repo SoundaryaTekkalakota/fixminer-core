@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@List<RowLock> acquiredRowLocks; @TO@ List<RowLock> acquiredRowLocks=null; @AT@ 283434 @LENGTH@ 31
+---UPD VariableDeclarationFragment@@acquiredRowLocks @TO@ acquiredRowLocks=null @AT@ 283448 @LENGTH@ 16
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@acquiredRowLocks @AT@ 283475 @LENGTH@ 4
+

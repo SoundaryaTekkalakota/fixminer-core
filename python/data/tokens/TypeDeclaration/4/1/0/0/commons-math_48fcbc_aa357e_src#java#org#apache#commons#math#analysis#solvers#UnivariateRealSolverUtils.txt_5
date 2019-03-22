@@ -1,5 +1,0 @@
-INS TypeDeclaration@@[private, static]LazyHolder,  @TO@ TypeDeclaration@@[public]UnivariateRealSolverUtils,  @AT@ 9790 @LENGTH@ 198
----INS Modifier@@private @TO@ TypeDeclaration@@[private, static]LazyHolder,  @AT@ 9790 @LENGTH@ 7
----INS Modifier@@static @TO@ TypeDeclaration@@[private, static]LazyHolder,  @AT@ 9798 @LENGTH@ 6
----INS SimpleName@@ClassName:LazyHolder @TO@ TypeDeclaration@@[private, static]LazyHolder,  @AT@ 9811 @LENGTH@ 10
-

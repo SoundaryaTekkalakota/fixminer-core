@@ -1,2 +1,2 @@
- INS ReturnStatement
---- INS SimpleName
+ INS ReturnStatement TO MethodDeclaration 
+--- INS SimpleName TO ReturnStatement

@@ -1,5 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:modules.add(dep) @TO@ MethodInvocation:modules.add(depName) @AT@ 19133 @LENGTH@ 17
----UPD MethodInvocation@@modules.add(dep) @TO@ modules.add(depName) @AT@ 19133 @LENGTH@ 16
-------UPD SimpleName@@MethodName:add:[dep] @TO@ MethodName:add:[depName] @AT@ 19141 @LENGTH@ 8
----------UPD SimpleName@@dep @TO@ depName @AT@ 19145 @LENGTH@ 3
-

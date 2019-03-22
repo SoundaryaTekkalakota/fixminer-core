@@ -1,6 +1,0 @@
-DEL ExpressionStatement@@MethodInvocation:HBaseConfiguration.addHbaseResources(conf) @AT@ 4491 @LENGTH@ 43
----DEL MethodInvocation@@HBaseConfiguration.addHbaseResources(conf) @AT@ 4491 @LENGTH@ 42
-------DEL SimpleName@@Name:HBaseConfiguration @AT@ 4491 @LENGTH@ 18
-------DEL SimpleName@@MethodName:addHbaseResources:[conf] @AT@ 4510 @LENGTH@ 23
----------DEL SimpleName@@conf @AT@ 4528 @LENGTH@ 4
-

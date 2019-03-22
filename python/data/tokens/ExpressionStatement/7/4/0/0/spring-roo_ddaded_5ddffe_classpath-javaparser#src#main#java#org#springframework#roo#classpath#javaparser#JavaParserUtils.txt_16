@@ -1,8 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:javaLangSimpleTypeNames.add(InheritableThreadLocal.class.getSimpleName()) @TO@ MethodInvocation:javaLangSimpleTypeNames.add("InheritableThreadLocal") @AT@ 2370 @LENGTH@ 74
----UPD MethodInvocation@@javaLangSimpleTypeNames.add(InheritableThreadLocal.class.getSimpleName()) @TO@ javaLangSimpleTypeNames.add("InheritableThreadLocal") @AT@ 2370 @LENGTH@ 73
-------UPD SimpleName@@MethodName:add:[InheritableThreadLocal.class.getSimpleName()] @TO@ MethodName:add:["InheritableThreadLocal"] @AT@ 2394 @LENGTH@ 49
----------INS StringLiteral@@"InheritableThreadLocal" @TO@ SimpleName@@MethodName:add:[InheritableThreadLocal.class.getSimpleName()] @AT@ 2328 @LENGTH@ 24
----------DEL MethodInvocation@@InheritableThreadLocal.class.getSimpleName() @AT@ 2398 @LENGTH@ 44
-------------DEL TypeLiteral@@InheritableThreadLocal.class @AT@ 2398 @LENGTH@ 28
-------------DEL SimpleName@@MethodName:getSimpleName:[] @AT@ 2427 @LENGTH@ 15
-

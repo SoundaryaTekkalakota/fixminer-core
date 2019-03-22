@@ -1,9 +1,9 @@
- DEL ExpressionStatement
---- DEL MethodInvocation
------- DEL SimpleName
------- DEL SimpleName
---------- DEL InfixExpression
------------- DEL StringLiteral
------------- DEL Operator
------------- DEL SimpleName
+ DEL ExpressionStatement 
+--- DEL MethodInvocation 
+------ DEL SimpleName 
+------ DEL SimpleName 
+--------- DEL InfixExpression 
+------------ DEL StringLiteral 
+------------ DEL Operator 
+------------ DEL SimpleName 
 ------------ DEL StringLiteral

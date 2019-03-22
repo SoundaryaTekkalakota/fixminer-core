@@ -1,5 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:setResult(yMin,0) @TO@ MethodInvocation:setResult(min,0) @AT@ 4470 @LENGTH@ 19
----UPD MethodInvocation@@setResult(yMin,0) @TO@ setResult(min,0) @AT@ 4470 @LENGTH@ 18
-------UPD SimpleName@@MethodName:setResult:[yMin, 0] @TO@ MethodName:setResult:[min, 0] @AT@ 4470 @LENGTH@ 18
----------UPD SimpleName@@yMin @TO@ min @AT@ 4480 @LENGTH@ 4
-

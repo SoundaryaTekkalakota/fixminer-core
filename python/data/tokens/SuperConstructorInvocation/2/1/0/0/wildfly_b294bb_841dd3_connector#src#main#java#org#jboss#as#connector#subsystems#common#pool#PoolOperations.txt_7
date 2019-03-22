@@ -1,6 +1,0 @@
-UPD SuperConstructorInvocation@@super(matcher);
- @TO@ super(matcher,true);
- @AT@ 7935 @LENGTH@ 15
----INS BooleanLiteral@@true @TO@ SuperConstructorInvocation@@super(matcher);
- @AT@ 8095 @LENGTH@ 4
-

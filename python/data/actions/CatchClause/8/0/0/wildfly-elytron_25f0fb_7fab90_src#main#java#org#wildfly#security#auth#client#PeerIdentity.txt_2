@@ -1,8 +1,8 @@
- INS CatchClause
---- INS SingleVariableDeclaration
------- INS UnionType
---------- INS SimpleType
---------- INS SimpleType
------- INS SimpleName
---- INS ThrowStatement
------- INS SimpleName
+ INS CatchClause TO TryStatement 
+--- INS SingleVariableDeclaration TO CatchClause 
+------ INS UnionType TO SingleVariableDeclaration 
+--------- INS SimpleType TO UnionType 
+--------- INS SimpleType TO UnionType 
+------ INS SimpleName TO SingleVariableDeclaration 
+--- INS ThrowStatement TO CatchClause 
+------ INS SimpleName TO ThrowStatement

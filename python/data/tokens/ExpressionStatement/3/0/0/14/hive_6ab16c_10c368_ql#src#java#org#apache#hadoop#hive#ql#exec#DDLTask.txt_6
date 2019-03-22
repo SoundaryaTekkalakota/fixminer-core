@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:createTab_stmt.setAttribute(ROW_FORMAT,tbl_row_format) @TO@ MethodInvocation:createTab_stmt.add(ROW_FORMAT,tbl_row_format) @AT@ 82017 @LENGTH@ 56
+---UPD MethodInvocation@@createTab_stmt.setAttribute(ROW_FORMAT,tbl_row_format) @TO@ createTab_stmt.add(ROW_FORMAT,tbl_row_format) @AT@ 82017 @LENGTH@ 55
+------UPD SimpleName@@MethodName:setAttribute:[ROW_FORMAT, tbl_row_format] @TO@ MethodName:add:[ROW_FORMAT, tbl_row_format] @AT@ 82032 @LENGTH@ 40
+

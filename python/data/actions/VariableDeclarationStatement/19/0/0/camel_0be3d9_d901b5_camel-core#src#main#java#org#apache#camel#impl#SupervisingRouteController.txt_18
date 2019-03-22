@@ -1,19 +1,19 @@
- UPD VariableDeclarationStatement
---- DEL SimpleType
---- UPD VariableDeclarationFragment
------- DEL MethodInvocation
------- INS MethodInvocation
---------- INS SimpleName
---------- INS MethodInvocation
---------- INS MethodInvocation
------------- INS LambdaExpression
---------------- INS VariableDeclarationFragment
------------------- INS SimpleName
---------------- INS MethodInvocation
------------------- MOV SimpleName
------------------- MOV SimpleName
------------------- INS MethodInvocation
---------- INS SimpleName
---- INS ParameterizedType
------- INS SimpleType
------- INS SimpleType
+ UPD VariableDeclarationStatement 
+--- DEL SimpleType 
+--- UPD VariableDeclarationFragment 
+------ DEL MethodInvocation 
+------ INS MethodInvocation TO VariableDeclarationFragment 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS MethodInvocation TO MethodInvocation 
+--------- INS MethodInvocation TO MethodInvocation 
+------------ INS LambdaExpression TO MethodInvocation 
+--------------- INS VariableDeclarationFragment TO LambdaExpression 
+------------------ INS SimpleName TO VariableDeclarationFragment 
+--------------- INS MethodInvocation TO LambdaExpression 
+------------------ MOV SimpleName TO MethodInvocation 
+------------------ MOV SimpleName TO MethodInvocation 
+------------------ INS MethodInvocation TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+--- INS ParameterizedType TO VariableDeclarationStatement 
+------ INS SimpleType TO ParameterizedType 
+------ INS SimpleType TO ParameterizedType

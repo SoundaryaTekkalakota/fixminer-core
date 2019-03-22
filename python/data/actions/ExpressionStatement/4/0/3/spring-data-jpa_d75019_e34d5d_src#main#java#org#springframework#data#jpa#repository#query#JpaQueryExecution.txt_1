@@ -1,4 +1,4 @@
- INS ExpressionStatement
---- INS MethodInvocation
------- INS SimpleName
---------- INS SimpleName
+ INS ExpressionStatement TO Initializer 
+--- INS MethodInvocation TO ExpressionStatement 
+------ INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO SimpleName

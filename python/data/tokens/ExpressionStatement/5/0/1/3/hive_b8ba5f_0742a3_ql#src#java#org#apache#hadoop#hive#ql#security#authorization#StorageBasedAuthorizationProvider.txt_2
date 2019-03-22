@@ -1,6 +1,0 @@
-DEL ExpressionStatement@@MethodInvocation:ex.initCause(e) @AT@ 11171 @LENGTH@ 16
----DEL MethodInvocation@@ex.initCause(e) @AT@ 11171 @LENGTH@ 15
-------DEL SimpleName@@Name:ex @AT@ 11171 @LENGTH@ 2
-------DEL SimpleName@@MethodName:initCause:[e] @AT@ 11174 @LENGTH@ 12
----------DEL SimpleName@@e @AT@ 11184 @LENGTH@ 1
-

@@ -1,0 +1,2 @@
+MOV VariableDeclarationStatement@@OperationHandle opHandle=operation.getHandle(); @TO@ MethodDeclaration@@public, OperationHandle, MethodName:getTypeInfo, HiveSQLException,  @AT@ 7079 @LENGTH@ 49
+

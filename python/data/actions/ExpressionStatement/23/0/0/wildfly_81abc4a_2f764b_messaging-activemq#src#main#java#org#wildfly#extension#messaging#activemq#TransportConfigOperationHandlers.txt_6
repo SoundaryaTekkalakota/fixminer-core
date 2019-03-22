@@ -1,23 +1,23 @@
- INS ExpressionStatement
---- INS MethodInvocation
------- INS SimpleName
------- INS SimpleName
---------- INS QualifiedName
------------- INS QualifiedName
---------------- INS QualifiedName
------------------- INS QualifiedName
---------------------- INS QualifiedName
------------------------- INS QualifiedName
---------------------------- INS QualifiedName
------------------------------- INS QualifiedName
---------------------------------- INS QualifiedName
------------------------------------- INS SimpleName
------------------------------------- INS SimpleName
---------------------------------- INS SimpleName
------------------------------- INS SimpleName
---------------------------- INS SimpleName
------------------------- INS SimpleName
---------------------- INS SimpleName
------------------- INS SimpleName
---------------- INS SimpleName
------------- INS SimpleName
+ INS ExpressionStatement TO Initializer 
+--- INS MethodInvocation TO ExpressionStatement 
+------ INS SimpleName TO MethodInvocation 
+------ INS SimpleName TO MethodInvocation 
+--------- INS QualifiedName TO SimpleName 
+------------ INS QualifiedName TO QualifiedName 
+--------------- INS QualifiedName TO QualifiedName 
+------------------ INS QualifiedName TO QualifiedName 
+--------------------- INS QualifiedName TO QualifiedName 
+------------------------ INS QualifiedName TO QualifiedName 
+--------------------------- INS QualifiedName TO QualifiedName 
+------------------------------ INS QualifiedName TO QualifiedName 
+--------------------------------- INS QualifiedName TO QualifiedName 
+------------------------------------ INS SimpleName TO QualifiedName 
+------------------------------------ INS SimpleName TO QualifiedName 
+--------------------------------- INS SimpleName TO QualifiedName 
+------------------------------ INS SimpleName TO QualifiedName 
+--------------------------- INS SimpleName TO QualifiedName 
+------------------------ INS SimpleName TO QualifiedName 
+--------------------- INS SimpleName TO QualifiedName 
+------------------ INS SimpleName TO QualifiedName 
+--------------- INS SimpleName TO QualifiedName 
+------------ INS SimpleName TO QualifiedName

@@ -1,6 +1,0 @@
-INS TypeDeclaration@@[private, static]UncloseableOutputStream, OutputStream @TO@ TypeDeclaration@@[@Named, @Singleton, public]CommandExecutor,  @AT@ 10763 @LENGTH@ 859
----INS Modifier@@private @TO@ TypeDeclaration@@[private, static]UncloseableOutputStream, OutputStream @AT@ 10763 @LENGTH@ 7
----INS Modifier@@static @TO@ TypeDeclaration@@[private, static]UncloseableOutputStream, OutputStream @AT@ 10771 @LENGTH@ 6
----INS SimpleName@@ClassName:UncloseableOutputStream @TO@ TypeDeclaration@@[private, static]UncloseableOutputStream, OutputStream @AT@ 10784 @LENGTH@ 23
----INS SimpleType@@OutputStream @TO@ TypeDeclaration@@[private, static]UncloseableOutputStream, OutputStream @AT@ 10816 @LENGTH@ 12
-

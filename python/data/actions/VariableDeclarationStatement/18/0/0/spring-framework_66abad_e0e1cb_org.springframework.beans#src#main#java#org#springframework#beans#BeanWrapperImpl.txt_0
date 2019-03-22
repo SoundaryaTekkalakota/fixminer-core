@@ -1,18 +1,18 @@
- UPD VariableDeclarationStatement
---- UPD VariableDeclarationFragment
------- UPD MethodInvocation
---------- UPD SimpleName
------------- INS ClassInstanceCreation
---------------- INS New
---------------- INS SimpleType
---------------- INS SimpleName
---------------- INS ClassInstanceCreation
------------------- INS New
------------------- INS SimpleType
------------------- INS MethodInvocation
---------------------- INS SimpleName
---------------------- INS SimpleName
------------------- INS PrefixExpression
---------------------- INS Operator
---------------------- INS NumberLiteral
---------------- INS SimpleName
+ UPD VariableDeclarationStatement 
+--- UPD VariableDeclarationFragment 
+------ UPD MethodInvocation 
+--------- UPD SimpleName 
+------------ INS ClassInstanceCreation TO SimpleName 
+--------------- INS New TO ClassInstanceCreation 
+--------------- INS SimpleType TO ClassInstanceCreation 
+--------------- INS SimpleName TO ClassInstanceCreation 
+--------------- INS ClassInstanceCreation TO ClassInstanceCreation 
+------------------ INS New TO ClassInstanceCreation 
+------------------ INS SimpleType TO ClassInstanceCreation 
+------------------ INS MethodInvocation TO ClassInstanceCreation 
+--------------------- INS SimpleName TO MethodInvocation 
+--------------------- INS SimpleName TO MethodInvocation 
+------------------ INS PrefixExpression TO ClassInstanceCreation 
+--------------------- INS Operator TO PrefixExpression 
+--------------------- INS NumberLiteral TO PrefixExpression 
+--------------- INS SimpleName TO ClassInstanceCreation

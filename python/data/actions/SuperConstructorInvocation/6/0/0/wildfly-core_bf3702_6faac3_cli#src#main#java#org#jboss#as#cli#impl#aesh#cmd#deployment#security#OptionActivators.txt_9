@@ -1,6 +1,6 @@
- UPD SuperConstructorInvocation
---- INS StringLiteral
---- INS StringLiteral
---- DEL BooleanLiteral
---- DEL SimpleName
+ UPD SuperConstructorInvocation 
+--- INS StringLiteral TO SuperConstructorInvocation 
+--- INS StringLiteral TO SuperConstructorInvocation 
+--- DEL BooleanLiteral 
+--- DEL SimpleName 
 --- DEL SimpleName

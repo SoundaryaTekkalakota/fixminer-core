@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@static, final, String, [META_WAL_PROVIDER="hbase.wal.meta_provider"] @TO@ public, static, final, String, [META_WAL_PROVIDER="hbase.wal.meta_provider"] @AT@ 3600 @LENGTH@ 66
+---INS Modifier@@public @TO@ FieldDeclaration@@static, final, String, [META_WAL_PROVIDER="hbase.wal.meta_provider"] @AT@ 3600 @LENGTH@ 6
+

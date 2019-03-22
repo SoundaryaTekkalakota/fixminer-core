@@ -1,6 +1,0 @@
-DEL FieldDeclaration@@transient, HiveConf, [conf] @AT@ 2370 @LENGTH@ 24
----DEL Modifier@@transient @AT@ 2370 @LENGTH@ 9
----DEL SimpleType@@HiveConf @AT@ 2380 @LENGTH@ 8
----DEL VariableDeclarationFragment@@conf @AT@ 2389 @LENGTH@ 4
-------DEL SimpleName@@conf @AT@ 2389 @LENGTH@ 4
-

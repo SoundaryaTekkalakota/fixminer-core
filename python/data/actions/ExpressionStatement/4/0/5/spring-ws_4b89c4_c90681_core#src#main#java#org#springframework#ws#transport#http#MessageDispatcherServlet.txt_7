@@ -1,4 +1,4 @@
- UPD ExpressionStatement
---- UPD MethodInvocation
------- INS SimpleName
---------- INS SimpleName
+ UPD ExpressionStatement 
+--- UPD MethodInvocation 
+------ INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO SimpleName

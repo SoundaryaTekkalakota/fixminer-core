@@ -1,8 +1,0 @@
-INS VariableDeclarationStatement@@String username=uri.getUserInfo(); @TO@ MethodDeclaration@@public, void, MethodName:configure, URI uri,  @AT@ 1988 @LENGTH@ 36
----INS SimpleType@@String @TO@ VariableDeclarationStatement@@String username=uri.getUserInfo(); @AT@ 1988 @LENGTH@ 6
----INS VariableDeclarationFragment@@username=uri.getUserInfo() @TO@ VariableDeclarationStatement@@String username=uri.getUserInfo(); @AT@ 1995 @LENGTH@ 28
-------INS SimpleName@@username @TO@ VariableDeclarationFragment@@username=uri.getUserInfo() @AT@ 1995 @LENGTH@ 8
-------INS MethodInvocation@@uri.getUserInfo() @TO@ VariableDeclarationFragment@@username=uri.getUserInfo() @AT@ 2006 @LENGTH@ 17
----------INS SimpleName@@Name:uri @TO@ MethodInvocation@@uri.getUserInfo() @AT@ 2006 @LENGTH@ 3
----------INS SimpleName@@MethodName:getUserInfo:[] @TO@ MethodInvocation@@uri.getUserInfo() @AT@ 2010 @LENGTH@ 13
-

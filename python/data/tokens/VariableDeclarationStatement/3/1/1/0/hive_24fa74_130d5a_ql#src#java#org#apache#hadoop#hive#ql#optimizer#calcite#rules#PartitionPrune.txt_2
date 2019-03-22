@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@GenericUDF hiveUDF=SqlFunctionConverter.getHiveUDF(call.getOperator(),call.getType(),call.operands.size()); @TO@ GenericUDF hiveUDF=null; @AT@ 3965 @LENGTH@ 121
+---UPD VariableDeclarationFragment@@hiveUDF=SqlFunctionConverter.getHiveUDF(call.getOperator(),call.getType(),call.operands.size()) @TO@ hiveUDF=null @AT@ 3976 @LENGTH@ 109
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@hiveUDF=SqlFunctionConverter.getHiveUDF(call.getOperator(),call.getType(),call.operands.size()) @AT@ 4098 @LENGTH@ 4
+

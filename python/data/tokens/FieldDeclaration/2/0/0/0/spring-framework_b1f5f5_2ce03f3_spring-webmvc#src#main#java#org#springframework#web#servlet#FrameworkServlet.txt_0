@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, boolean, [refreshEventReceived=false] @TO@ private, volatile, boolean, [refreshEventReceived=false] @AT@ 9877 @LENGTH@ 45
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, boolean, [refreshEventReceived=false] @AT@ 10036 @LENGTH@ 8
+

@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, int[], [a] @TO@ private, final, int[], [a] @AT@ 1824 @LENGTH@ 16
+---INS Modifier@@final @TO@ FieldDeclaration@@private, int[], [a] @AT@ 1846 @LENGTH@ 5
+

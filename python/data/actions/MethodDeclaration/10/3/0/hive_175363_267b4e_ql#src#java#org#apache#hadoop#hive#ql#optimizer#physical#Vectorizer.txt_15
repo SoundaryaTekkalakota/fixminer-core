@@ -1,10 +1,10 @@
- INS MethodDeclaration
---- INS Modifier
---- INS ParameterizedType
------- INS SimpleType
------- INS ParameterizedType
---------- INS SimpleType
---------- INS WildcardType
---- INS SimpleName
---- INS ReturnStatement
------- INS SimpleName
+ INS MethodDeclaration TO TypeDeclaration 
+--- INS Modifier TO MethodDeclaration 
+--- INS ParameterizedType TO MethodDeclaration 
+------ INS SimpleType TO ParameterizedType 
+------ INS ParameterizedType TO ParameterizedType 
+--------- INS SimpleType TO ParameterizedType 
+--------- INS WildcardType TO ParameterizedType 
+--- INS SimpleName TO MethodDeclaration 
+--- INS ReturnStatement TO MethodDeclaration 
+------ INS SimpleName TO ReturnStatement

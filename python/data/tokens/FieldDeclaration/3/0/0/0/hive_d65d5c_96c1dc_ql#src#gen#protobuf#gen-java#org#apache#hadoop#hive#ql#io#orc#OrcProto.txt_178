@@ -1,4 +1,0 @@
-UPD FieldDeclaration@@private, static, com.google.protobuf.GeneratedMessage.FieldAccessorTable, [internal_static_org_apache_hadoop_hive_ql_io_orc_ColumnEncoding_fieldAccessorTable] @TO@ private, static, com.google.protobuf.GeneratedMessage.FieldAccessorTable, [internal_static_orc_proto_ColumnEncoding_fieldAccessorTable] @AT@ 697823 @LENGTH@ 164
----UPD VariableDeclarationFragment@@internal_static_org_apache_hadoop_hive_ql_io_orc_ColumnEncoding_fieldAccessorTable @TO@ internal_static_orc_proto_ColumnEncoding_fieldAccessorTable @AT@ 697904 @LENGTH@ 82
-------UPD SimpleName@@internal_static_org_apache_hadoop_hive_ql_io_orc_ColumnEncoding_fieldAccessorTable @TO@ internal_static_orc_proto_ColumnEncoding_fieldAccessorTable @AT@ 697904 @LENGTH@ 82
-

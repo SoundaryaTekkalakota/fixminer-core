@@ -1,7 +1,0 @@
-INS FieldDeclaration@@private, final, InputStream, [delegate] @TO@ TypeDeclaration@@[private, static]UncloseableInputStream, InputStream @AT@ 9499 @LENGTH@ 35
----INS Modifier@@private @TO@ FieldDeclaration@@private, final, InputStream, [delegate] @AT@ 9499 @LENGTH@ 7
----INS Modifier@@final @TO@ FieldDeclaration@@private, final, InputStream, [delegate] @AT@ 9507 @LENGTH@ 5
----INS SimpleType@@InputStream @TO@ FieldDeclaration@@private, final, InputStream, [delegate] @AT@ 9513 @LENGTH@ 11
----INS VariableDeclarationFragment@@delegate @TO@ FieldDeclaration@@private, final, InputStream, [delegate] @AT@ 9525 @LENGTH@ 8
-------INS SimpleName@@delegate @TO@ VariableDeclarationFragment@@delegate @AT@ 9525 @LENGTH@ 8
-

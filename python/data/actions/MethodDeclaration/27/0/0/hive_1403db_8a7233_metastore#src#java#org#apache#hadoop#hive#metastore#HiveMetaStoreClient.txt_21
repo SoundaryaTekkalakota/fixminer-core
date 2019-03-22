@@ -1,27 +1,27 @@
- INS MethodDeclaration
---- INS Modifier
---- INS SimpleType
---- INS SimpleName
---- INS SingleVariableDeclaration
------- INS SimpleType
------- INS SimpleName
---- INS VariableDeclarationStatement
------- INS SimpleType
------- INS VariableDeclarationFragment
---------- INS SimpleName
---------- INS NullLiteral
---- INS IfStatement
------- INS InfixExpression
---------- INS SimpleName
---------- INS Operator
---------- INS NullLiteral
------- INS ExpressionStatement
---------- INS Assignment
------------- INS SimpleName
------------- INS Operator
------------- INS ClassInstanceCreation
---------------- INS New
---------------- INS SimpleType
---------------- INS SimpleName
---- INS ReturnStatement
------- INS SimpleName
+ INS MethodDeclaration TO TypeDeclaration 
+--- INS Modifier TO MethodDeclaration 
+--- INS SimpleType TO MethodDeclaration 
+--- INS SimpleName TO MethodDeclaration 
+--- INS SingleVariableDeclaration TO MethodDeclaration 
+------ INS SimpleType TO SingleVariableDeclaration 
+------ INS SimpleName TO SingleVariableDeclaration 
+--- INS VariableDeclarationStatement TO MethodDeclaration 
+------ INS SimpleType TO VariableDeclarationStatement 
+------ INS VariableDeclarationFragment TO VariableDeclarationStatement 
+--------- INS SimpleName TO VariableDeclarationFragment 
+--------- INS NullLiteral TO VariableDeclarationFragment 
+--- INS IfStatement TO MethodDeclaration 
+------ INS InfixExpression TO IfStatement 
+--------- INS SimpleName TO InfixExpression 
+--------- INS Operator TO InfixExpression 
+--------- INS NullLiteral TO InfixExpression 
+------ INS ExpressionStatement TO IfStatement 
+--------- INS Assignment TO ExpressionStatement 
+------------ INS SimpleName TO Assignment 
+------------ INS Operator TO Assignment 
+------------ INS ClassInstanceCreation TO Assignment 
+--------------- INS New TO ClassInstanceCreation 
+--------------- INS SimpleType TO ClassInstanceCreation 
+--------------- INS SimpleName TO ClassInstanceCreation 
+--- INS ReturnStatement TO MethodDeclaration 
+------ INS SimpleName TO ReturnStatement

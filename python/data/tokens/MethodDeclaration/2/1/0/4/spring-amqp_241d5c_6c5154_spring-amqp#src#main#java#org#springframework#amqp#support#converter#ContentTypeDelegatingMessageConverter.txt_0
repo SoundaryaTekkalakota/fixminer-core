@@ -1,3 +1,0 @@
-UPD MethodDeclaration@@public, void, MethodName:addDelgate, String contentType, MessageConverter messageConverter,  @TO@ public, void, MethodName:addDelegate, String contentType, MessageConverter messageConverter,  @AT@ 2340 @LENGTH@ 135
----UPD SimpleName@@MethodName:addDelgate @TO@ MethodName:addDelegate @AT@ 2352 @LENGTH@ 10
-

@@ -1,0 +1,9 @@
+DEL VariableDeclarationStatement@@String requestUri=urlPathHelper.getRequestUri(request); @AT@ 38282 @LENGTH@ 57
+---DEL SimpleType@@String @AT@ 38282 @LENGTH@ 6
+---DEL VariableDeclarationFragment@@requestUri=urlPathHelper.getRequestUri(request) @AT@ 38289 @LENGTH@ 49
+------DEL SimpleName@@requestUri @AT@ 38289 @LENGTH@ 10
+------DEL MethodInvocation@@urlPathHelper.getRequestUri(request) @AT@ 38302 @LENGTH@ 36
+---------DEL SimpleName@@Name:urlPathHelper @AT@ 38302 @LENGTH@ 13
+---------DEL SimpleName@@MethodName:getRequestUri:[request] @AT@ 38316 @LENGTH@ 22
+------------DEL SimpleName@@request @AT@ 38330 @LENGTH@ 7
+

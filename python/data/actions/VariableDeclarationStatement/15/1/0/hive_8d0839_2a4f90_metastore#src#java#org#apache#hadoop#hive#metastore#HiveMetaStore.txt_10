@@ -1,15 +1,15 @@
- INS VariableDeclarationStatement
---- INS ParameterizedType
------- INS SimpleType
------- INS SimpleType
---- INS VariableDeclarationFragment
------- INS SimpleName
------- INS ClassInstanceCreation
---------- INS New
---------- INS ParameterizedType
------------- INS SimpleType
------------- INS SimpleType
---------- INS MethodInvocation
------------- INS SimpleName
------------- INS MethodInvocation
------------- INS SimpleName
+ INS VariableDeclarationStatement TO MethodDeclaration 
+--- INS ParameterizedType TO VariableDeclarationStatement 
+------ INS SimpleType TO ParameterizedType 
+------ INS SimpleType TO ParameterizedType 
+--- INS VariableDeclarationFragment TO VariableDeclarationStatement 
+------ INS SimpleName TO VariableDeclarationFragment 
+------ INS ClassInstanceCreation TO VariableDeclarationFragment 
+--------- INS New TO ClassInstanceCreation 
+--------- INS ParameterizedType TO ClassInstanceCreation 
+------------ INS SimpleType TO ParameterizedType 
+------------ INS SimpleType TO ParameterizedType 
+--------- INS MethodInvocation TO ClassInstanceCreation 
+------------ INS SimpleName TO MethodInvocation 
+------------ INS MethodInvocation TO MethodInvocation 
+------------ INS SimpleName TO MethodInvocation

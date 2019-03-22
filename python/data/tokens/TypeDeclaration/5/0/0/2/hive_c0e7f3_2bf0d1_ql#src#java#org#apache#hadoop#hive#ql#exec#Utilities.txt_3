@@ -1,6 +1,0 @@
-INS TypeDeclaration@@[public, static]TimestampPersistenceDelegate, DatePersistenceDelegate @TO@ TypeDeclaration@@[@SuppressWarnings("nls"), public, final]Utilities,  @AT@ 14516 @LENGTH@ 379
----INS Modifier@@public @TO@ TypeDeclaration@@[public, static]TimestampPersistenceDelegate, DatePersistenceDelegate @AT@ 14516 @LENGTH@ 6
----INS Modifier@@static @TO@ TypeDeclaration@@[public, static]TimestampPersistenceDelegate, DatePersistenceDelegate @AT@ 14523 @LENGTH@ 6
----INS SimpleName@@ClassName:TimestampPersistenceDelegate @TO@ TypeDeclaration@@[public, static]TimestampPersistenceDelegate, DatePersistenceDelegate @AT@ 14536 @LENGTH@ 28
----INS SimpleType@@DatePersistenceDelegate @TO@ TypeDeclaration@@[public, static]TimestampPersistenceDelegate, DatePersistenceDelegate @AT@ 14573 @LENGTH@ 23
-

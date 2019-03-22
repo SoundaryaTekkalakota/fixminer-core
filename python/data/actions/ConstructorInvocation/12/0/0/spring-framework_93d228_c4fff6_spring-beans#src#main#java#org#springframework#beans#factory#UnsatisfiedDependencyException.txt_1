@@ -1,12 +1,12 @@
- UPD ConstructorInvocation
---- DEL ParenthesizedExpression
------- DEL ConditionalExpression
---------- DEL InfixExpression
------------- DEL SimpleName
------------- DEL Operator
------------- DEL NullLiteral
---------- DEL MethodInvocation
------------- DEL SimpleName
------------- DEL SimpleName
---------- DEL StringLiteral
---- INS StringLiteral
+ UPD ConstructorInvocation 
+--- DEL ParenthesizedExpression 
+------ DEL ConditionalExpression 
+--------- DEL InfixExpression 
+------------ DEL SimpleName 
+------------ DEL Operator 
+------------ DEL NullLiteral 
+--------- DEL MethodInvocation 
+------------ DEL SimpleName 
+------------ DEL SimpleName 
+--------- DEL StringLiteral 
+--- INS StringLiteral TO ConstructorInvocation

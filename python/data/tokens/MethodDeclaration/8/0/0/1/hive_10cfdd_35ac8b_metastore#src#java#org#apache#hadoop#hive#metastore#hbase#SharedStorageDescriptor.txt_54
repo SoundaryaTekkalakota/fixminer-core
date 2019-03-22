@@ -1,9 +1,0 @@
-DEL MethodDeclaration@@public, boolean, MethodName:isSetSkewedInfo,  @AT@ 6790 @LENGTH@ 75
----DEL Modifier@@public @AT@ 6790 @LENGTH@ 6
----DEL PrimitiveType@@boolean @AT@ 6797 @LENGTH@ 7
----DEL SimpleName@@MethodName:isSetSkewedInfo @AT@ 6805 @LENGTH@ 15
----DEL ReturnStatement@@MethodInvocation:shared.isSetSkewedInfo() @AT@ 6829 @LENGTH@ 32
-------DEL MethodInvocation@@shared.isSetSkewedInfo() @AT@ 6836 @LENGTH@ 24
----------DEL SimpleName@@Name:shared @AT@ 6836 @LENGTH@ 6
----------DEL SimpleName@@MethodName:isSetSkewedInfo:[] @AT@ 6843 @LENGTH@ 17
-

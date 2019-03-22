@@ -1,7 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:e.printStackTrace() @TO@ MethodInvocation:LOG.warn("Error getting type info: ",e) @AT@ 8162 @LENGTH@ 20
----UPD MethodInvocation@@e.printStackTrace() @TO@ LOG.warn("Error getting type info: ",e) @AT@ 8162 @LENGTH@ 19
-------UPD SimpleName@@Name:e @TO@ Name:LOG @AT@ 8162 @LENGTH@ 1
-------UPD SimpleName@@MethodName:printStackTrace:[] @TO@ MethodName:warn:["Error getting type info: ", e] @AT@ 8164 @LENGTH@ 17
----------INS StringLiteral@@"Error getting type info: " @TO@ SimpleName@@MethodName:printStackTrace:[] @AT@ 8270 @LENGTH@ 27
----------INS SimpleName@@e @TO@ SimpleName@@MethodName:printStackTrace:[] @AT@ 8299 @LENGTH@ 1
-

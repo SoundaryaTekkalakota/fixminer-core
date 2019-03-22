@@ -1,25 +1,25 @@
- INS IfStatement
---- MOV ExpressionStatement
---- MOV ExpressionStatement
---- INS InfixExpression
------- INS MethodInvocation
---------- INS FieldAccess
------------- INS ThisExpression
------------- INS SimpleName
---------- INS SimpleName
------- INS Operator
------- INS SimpleName
---- INS ExpressionStatement
------- INS MethodInvocation
---------- INS FieldAccess
------------- INS ThisExpression
------------- INS SimpleName
---------- INS SimpleName
------------- INS SimpleName
---- INS ExpressionStatement
------- INS MethodInvocation
---------- INS FieldAccess
------------- INS ThisExpression
------------- INS SimpleName
---------- INS SimpleName
------------- INS SimpleName
+ INS IfStatement TO IfStatement 
+--- MOV ExpressionStatement TO IfStatement 
+--- MOV ExpressionStatement TO IfStatement 
+--- INS InfixExpression TO IfStatement 
+------ INS MethodInvocation TO InfixExpression 
+--------- INS FieldAccess TO MethodInvocation 
+------------ INS ThisExpression TO FieldAccess 
+------------ INS SimpleName TO FieldAccess 
+--------- INS SimpleName TO MethodInvocation 
+------ INS Operator TO InfixExpression 
+------ INS SimpleName TO InfixExpression 
+--- INS ExpressionStatement TO IfStatement 
+------ INS MethodInvocation TO ExpressionStatement 
+--------- INS FieldAccess TO MethodInvocation 
+------------ INS ThisExpression TO FieldAccess 
+------------ INS SimpleName TO FieldAccess 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO SimpleName 
+--- INS ExpressionStatement TO IfStatement 
+------ INS MethodInvocation TO ExpressionStatement 
+--------- INS FieldAccess TO MethodInvocation 
+------------ INS ThisExpression TO FieldAccess 
+------------ INS SimpleName TO FieldAccess 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO SimpleName

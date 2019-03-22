@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:Log.warn("STUCK: " + this) @TO@ MethodInvocation:LOG.warn("STUCK: " + this) @AT@ 7112 @LENGTH@ 27
+---UPD MethodInvocation@@Log.warn("STUCK: " + this) @TO@ LOG.warn("STUCK: " + this) @AT@ 7112 @LENGTH@ 26
+------UPD SimpleName@@Name:Log @TO@ Name:LOG @AT@ 7112 @LENGTH@ 3
+

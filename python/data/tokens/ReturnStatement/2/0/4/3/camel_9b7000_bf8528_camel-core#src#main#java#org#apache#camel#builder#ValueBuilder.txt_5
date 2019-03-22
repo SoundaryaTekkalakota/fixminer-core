@@ -1,0 +1,3 @@
+INS ReturnStatement@@SimpleName:answer @TO@ MethodDeclaration@@public, ExpressionClause<Predicate>, MethodName:matches,  @AT@ 3879 @LENGTH@ 14
+---INS SimpleName@@answer @TO@ ReturnStatement@@SimpleName:answer @AT@ 3886 @LENGTH@ 6
+

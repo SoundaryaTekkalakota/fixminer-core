@@ -1,6 +1,0 @@
-INS TypeDeclaration@@[private, static]NullOutputStream, OutputStream @TO@ TypeDeclaration@@[public, abstract]AxiomUtils,  @AT@ 7289 @LENGTH@ 285
----INS Modifier@@private @TO@ TypeDeclaration@@[private, static]NullOutputStream, OutputStream @AT@ 7289 @LENGTH@ 7
----INS Modifier@@static @TO@ TypeDeclaration@@[private, static]NullOutputStream, OutputStream @AT@ 7297 @LENGTH@ 6
----INS SimpleName@@ClassName:NullOutputStream @TO@ TypeDeclaration@@[private, static]NullOutputStream, OutputStream @AT@ 7310 @LENGTH@ 16
----INS SimpleType@@OutputStream @TO@ TypeDeclaration@@[private, static]NullOutputStream, OutputStream @AT@ 7335 @LENGTH@ 12
-

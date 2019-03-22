@@ -1,5 +1,5 @@
- DEL TypeDeclaration
---- DEL Modifier
---- DEL Modifier
---- DEL SimpleName
+ DEL TypeDeclaration 
+--- DEL Modifier 
+--- DEL Modifier 
+--- DEL SimpleName 
 --- DEL SimpleType

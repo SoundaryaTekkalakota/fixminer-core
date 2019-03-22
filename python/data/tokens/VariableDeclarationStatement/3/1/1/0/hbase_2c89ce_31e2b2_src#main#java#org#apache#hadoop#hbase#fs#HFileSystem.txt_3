@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@FileSystem fs=(FileSystem)ReflectionUtils.newInstance(clazz,conf); @TO@ FileSystem fs=null; @AT@ 5284 @LENGTH@ 69
+---UPD VariableDeclarationFragment@@fs=(FileSystem)ReflectionUtils.newInstance(clazz,conf) @TO@ fs=null @AT@ 5295 @LENGTH@ 57
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@fs=(FileSystem)ReflectionUtils.newInstance(clazz,conf) @AT@ 5160 @LENGTH@ 4
+

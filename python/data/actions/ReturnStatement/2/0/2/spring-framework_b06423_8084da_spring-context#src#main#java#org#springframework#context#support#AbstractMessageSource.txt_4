@@ -1,2 +1,2 @@
- INS ReturnStatement
---- INS SimpleName
+ INS ReturnStatement TO IfStatement 
+--- INS SimpleName TO ReturnStatement

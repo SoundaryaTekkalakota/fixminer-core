@@ -1,10 +1,10 @@
- INS ExpressionStatement
---- INS MethodInvocation
------- INS SimpleName
------- INS SimpleName
---------- INS InfixExpression
------------- INS SimpleName
------------- INS Operator
------------- INS StringLiteral
------------- INS SimpleName
------------- INS StringLiteral
+ INS ExpressionStatement TO MethodDeclaration 
+--- INS MethodInvocation TO ExpressionStatement 
+------ INS SimpleName TO MethodInvocation 
+------ INS SimpleName TO MethodInvocation 
+--------- INS InfixExpression TO SimpleName 
+------------ INS SimpleName TO InfixExpression 
+------------ INS Operator TO InfixExpression 
+------------ INS StringLiteral TO InfixExpression 
+------------ INS SimpleName TO InfixExpression 
+------------ INS StringLiteral TO InfixExpression

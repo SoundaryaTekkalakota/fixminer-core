@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@InputStream uncompressedData=getUncompressedData(encData); @TO@ InputStream uncompressedData=null; @AT@ 16246 @LENGTH@ 60
+---UPD VariableDeclarationFragment@@uncompressedData=getUncompressedData(encData) @TO@ uncompressedData=null @AT@ 16258 @LENGTH@ 47
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@uncompressedData=getUncompressedData(encData) @AT@ 16214 @LENGTH@ 4
+

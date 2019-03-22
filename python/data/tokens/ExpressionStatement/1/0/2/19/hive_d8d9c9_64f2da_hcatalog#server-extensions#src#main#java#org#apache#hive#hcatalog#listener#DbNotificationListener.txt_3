@@ -1,0 +1,2 @@
+MOV ExpressionStatement@@MethodInvocation:enqueue(event) @TO@ MethodDeclaration@@public, void, MethodName:onAlterTable, AlterTableEvent tableEvent, MetaException,  @AT@ 6711 @LENGTH@ 15
+

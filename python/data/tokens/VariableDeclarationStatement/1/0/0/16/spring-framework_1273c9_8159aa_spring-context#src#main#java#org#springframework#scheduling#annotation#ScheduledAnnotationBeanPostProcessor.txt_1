@@ -1,0 +1,2 @@
+MOV VariableDeclarationStatement@@Class<?> targetClass=AopUtils.getTargetClass(bean); @TO@ MethodDeclaration@@public, Object, MethodName:postProcessAfterInitialization, final Object bean, String beanName,  @AT@ 8609 @LENGTH@ 53
+

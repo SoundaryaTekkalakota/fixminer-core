@@ -1,2 +1,0 @@
-DEL VariableDeclarationStatement@@long value=Long.parseLong(partition.getSpec().get(partColName)); @AT@ 18614 @LENGTH@ 66
-

@@ -1,0 +1,3 @@
+INS ReturnStatement@@SimpleName:result @TO@ MethodDeclaration@@private, boolean, MethodName:updateVersions, final HRegionInfo hri,  @AT@ 9778 @LENGTH@ 14
+---INS SimpleName@@result @TO@ ReturnStatement@@SimpleName:result @AT@ 9785 @LENGTH@ 6
+
