@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, void, MethodName:removeContext, String contextName,  @TO@ public, synchronized, void, MethodName:removeContext, String contextName,  @AT@ 10699 @LENGTH@ 543
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, void, MethodName:removeContext, String contextName,  @AT@ 10745 @LENGTH@ 12
+

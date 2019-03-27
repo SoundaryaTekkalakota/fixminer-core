@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@int total=progress.getTotalTaskCount(); @TO@ final int total=progress.getTotalTaskCount(); @AT@ 7449 @LENGTH@ 41
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@int total=progress.getTotalTaskCount(); @AT@ 7455 @LENGTH@ 5
+

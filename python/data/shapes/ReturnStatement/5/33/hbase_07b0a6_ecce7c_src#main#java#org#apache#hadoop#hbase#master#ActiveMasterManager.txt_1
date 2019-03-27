@@ -1,5 +1,0 @@
-ReturnStatement
----MethodInvocation
-------FieldAccess
----------ThisExpression
----------SimpleName

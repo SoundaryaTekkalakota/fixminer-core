@@ -1,9 +1,9 @@
-FieldDeclaration
----Modifier
----Modifier
----SimpleType
----VariableDeclarationFragment
-------SimpleName
-------ClassInstanceCreation
----------New
+FieldDeclaration 
+---Modifier 
+---Modifier 
+---SimpleType 
+---VariableDeclarationFragment 
+------SimpleName 
+------ClassInstanceCreation 
+---------New 
 ---------SimpleType

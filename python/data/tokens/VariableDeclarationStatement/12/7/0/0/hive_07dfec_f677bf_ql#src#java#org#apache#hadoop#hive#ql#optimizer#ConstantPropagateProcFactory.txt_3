@@ -1,0 +1,13 @@
+INS VariableDeclarationStatement@@ExprNodeGenericFuncDesc newCaseOrWhenExpr=ExprNodeGenericFuncDesc.newInstance(childUDF,caseOrWhenexpr.getFuncText(),children); @TO@ IfStatement@@InstanceofExpression:childUDF instanceof GenericUDFCase @AT@ 25124 @LENGTH@ 141
+---INS SimpleType@@ExprNodeGenericFuncDesc @TO@ VariableDeclarationStatement@@ExprNodeGenericFuncDesc newCaseOrWhenExpr=ExprNodeGenericFuncDesc.newInstance(childUDF,caseOrWhenexpr.getFuncText(),children); @AT@ 25124 @LENGTH@ 23
+---INS VariableDeclarationFragment@@newCaseOrWhenExpr=ExprNodeGenericFuncDesc.newInstance(childUDF,caseOrWhenexpr.getFuncText(),children) @TO@ VariableDeclarationStatement@@ExprNodeGenericFuncDesc newCaseOrWhenExpr=ExprNodeGenericFuncDesc.newInstance(childUDF,caseOrWhenexpr.getFuncText(),children); @AT@ 25148 @LENGTH@ 116
+------INS SimpleName@@newCaseOrWhenExpr @TO@ VariableDeclarationFragment@@newCaseOrWhenExpr=ExprNodeGenericFuncDesc.newInstance(childUDF,caseOrWhenexpr.getFuncText(),children) @AT@ 25148 @LENGTH@ 17
+------INS MethodInvocation@@ExprNodeGenericFuncDesc.newInstance(childUDF,caseOrWhenexpr.getFuncText(),children) @TO@ VariableDeclarationFragment@@newCaseOrWhenExpr=ExprNodeGenericFuncDesc.newInstance(childUDF,caseOrWhenexpr.getFuncText(),children) @AT@ 25168 @LENGTH@ 96
+---------INS SimpleName@@Name:ExprNodeGenericFuncDesc @TO@ MethodInvocation@@ExprNodeGenericFuncDesc.newInstance(childUDF,caseOrWhenexpr.getFuncText(),children) @AT@ 25168 @LENGTH@ 23
+---------INS SimpleName@@MethodName:newInstance:[childUDF, caseOrWhenexpr.getFuncText(), children] @TO@ MethodInvocation@@ExprNodeGenericFuncDesc.newInstance(childUDF,caseOrWhenexpr.getFuncText(),children) @AT@ 25192 @LENGTH@ 72
+------------INS SimpleName@@childUDF @TO@ SimpleName@@MethodName:newInstance:[childUDF, caseOrWhenexpr.getFuncText(), children] @AT@ 25204 @LENGTH@ 8
+------------INS MethodInvocation@@caseOrWhenexpr.getFuncText() @TO@ SimpleName@@MethodName:newInstance:[childUDF, caseOrWhenexpr.getFuncText(), children] @AT@ 25225 @LENGTH@ 28
+---------------INS SimpleName@@Name:caseOrWhenexpr @TO@ MethodInvocation@@caseOrWhenexpr.getFuncText() @AT@ 25225 @LENGTH@ 14
+---------------INS SimpleName@@MethodName:getFuncText:[] @TO@ MethodInvocation@@caseOrWhenexpr.getFuncText() @AT@ 25240 @LENGTH@ 13
+------------INS SimpleName@@children @TO@ SimpleName@@MethodName:newInstance:[childUDF, caseOrWhenexpr.getFuncText(), children] @AT@ 25255 @LENGTH@ 8
+

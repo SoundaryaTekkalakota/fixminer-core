@@ -1,0 +1,5 @@
+UPD MethodDeclaration@@private, void, MethodName:initXsdSchemaHandlerAdapter,  @TO@ private, void, MethodName:initXsdSchemaHandlerAdapter, ApplicationContext context,  @AT@ 15688 @LENGTH@ 764
+---INS SingleVariableDeclaration@@ApplicationContext context @TO@ MethodDeclaration@@private, void, MethodName:initXsdSchemaHandlerAdapter,  @AT@ 15859 @LENGTH@ 26
+------INS SimpleType@@ApplicationContext @TO@ SingleVariableDeclaration@@ApplicationContext context @AT@ 15859 @LENGTH@ 18
+------INS SimpleName@@context @TO@ SingleVariableDeclaration@@ApplicationContext context @AT@ 15878 @LENGTH@ 7
+

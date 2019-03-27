@@ -1,8 +1,0 @@
-VariableDeclarationStatement
----PrimitiveType
----VariableDeclarationFragment
-------SimpleName
-------InstanceofExpression
----------SimpleName
----------Instanceof
----------SimpleType

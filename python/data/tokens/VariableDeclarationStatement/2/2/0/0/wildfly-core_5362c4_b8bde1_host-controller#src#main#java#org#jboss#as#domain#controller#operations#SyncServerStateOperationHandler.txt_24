@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@ModelNode hashNode=existing.getModel().get(HASH); @TO@ final ModelNode hashNode=existing.getModel().get(HASH); @AT@ 15921 @LENGTH@ 51
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@ModelNode hashNode=existing.getModel().get(HASH); @AT@ 19771 @LENGTH@ 5
+

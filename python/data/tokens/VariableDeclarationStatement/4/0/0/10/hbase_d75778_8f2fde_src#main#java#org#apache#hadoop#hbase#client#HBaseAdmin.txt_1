@@ -1,5 +1,0 @@
-UPD VariableDeclarationStatement@@HRegionInfo info=Writables.getHRegionInfo(rowResult.getValue(HConstants.CATALOG_FAMILY,HConstants.REGIONINFO_QUALIFIER)); @TO@ HRegionInfo info=Writables.getHRegionInfoOrNull(rowResult.getValue(HConstants.CATALOG_FAMILY,HConstants.REGIONINFO_QUALIFIER)); @AT@ 13858 @LENGTH@ 157
----UPD VariableDeclarationFragment@@info=Writables.getHRegionInfo(rowResult.getValue(HConstants.CATALOG_FAMILY,HConstants.REGIONINFO_QUALIFIER)) @TO@ info=Writables.getHRegionInfoOrNull(rowResult.getValue(HConstants.CATALOG_FAMILY,HConstants.REGIONINFO_QUALIFIER)) @AT@ 13870 @LENGTH@ 144
-------UPD MethodInvocation@@Writables.getHRegionInfo(rowResult.getValue(HConstants.CATALOG_FAMILY,HConstants.REGIONINFO_QUALIFIER)) @TO@ Writables.getHRegionInfoOrNull(rowResult.getValue(HConstants.CATALOG_FAMILY,HConstants.REGIONINFO_QUALIFIER)) @AT@ 13877 @LENGTH@ 137
----------UPD SimpleName@@MethodName:getHRegionInfo:[rowResult.getValue(HConstants.CATALOG_FAMILY,HConstants.REGIONINFO_QUALIFIER)] @TO@ MethodName:getHRegionInfoOrNull:[rowResult.getValue(HConstants.CATALOG_FAMILY,HConstants.REGIONINFO_QUALIFIER)] @AT@ 13887 @LENGTH@ 127
-

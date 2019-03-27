@@ -1,9 +1,0 @@
-DEL VariableDeclarationStatement@@String encodedRegionName=HRegionInfo.encodeRegionName(regBytes); @AT@ 37676 @LENGTH@ 66
----DEL SimpleType@@String @AT@ 37676 @LENGTH@ 6
----DEL VariableDeclarationFragment@@encodedRegionName=HRegionInfo.encodeRegionName(regBytes) @AT@ 37683 @LENGTH@ 58
-------DEL SimpleName@@encodedRegionName @AT@ 37683 @LENGTH@ 17
-------DEL MethodInvocation@@HRegionInfo.encodeRegionName(regBytes) @AT@ 37703 @LENGTH@ 38
----------DEL SimpleName@@Name:HRegionInfo @AT@ 37703 @LENGTH@ 11
----------DEL SimpleName@@MethodName:encodeRegionName:[regBytes] @AT@ 37715 @LENGTH@ 26
-------------DEL SimpleName@@regBytes @AT@ 37732 @LENGTH@ 8
-

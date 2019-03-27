@@ -1,9 +1,9 @@
-CatchClause
----SingleVariableDeclaration
-------SimpleName
----ExpressionStatement
-------MethodInvocation
----------SimpleName
----------SimpleName
-------------StringLiteral
+CatchClause 
+---SingleVariableDeclaration 
+------SimpleName 
+---ExpressionStatement 
+------MethodInvocation 
+---------SimpleName 
+---------SimpleName 
+------------StringLiteral 
 ------------SimpleName

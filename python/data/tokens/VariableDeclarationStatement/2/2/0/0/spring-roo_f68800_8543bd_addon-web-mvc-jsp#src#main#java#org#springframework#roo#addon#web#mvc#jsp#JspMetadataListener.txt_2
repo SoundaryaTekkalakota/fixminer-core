@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@Map<String,String> properties=new LinkedHashMap<String,String>(); @TO@ final Map<String,String> properties=new LinkedHashMap<String,String>(); @AT@ 9851 @LENGTH@ 69
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@Map<String,String> properties=new LinkedHashMap<String,String>(); @AT@ 9761 @LENGTH@ 5
+

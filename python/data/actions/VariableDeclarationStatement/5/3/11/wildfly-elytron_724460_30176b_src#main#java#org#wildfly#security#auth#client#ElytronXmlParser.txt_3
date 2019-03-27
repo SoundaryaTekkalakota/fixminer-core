@@ -1,0 +1,5 @@
+ INS VariableDeclarationStatement TO Block 
+--- INS SimpleType TO VariableDeclarationStatement 
+--- INS VariableDeclarationFragment TO VariableDeclarationStatement 
+------ INS SimpleName TO VariableDeclarationFragment 
+------ MOV MethodInvocation TO VariableDeclarationFragment

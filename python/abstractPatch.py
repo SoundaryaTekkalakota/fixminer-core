@@ -161,7 +161,7 @@ def clusterCore(clusterPath, level, match, pairsPath, root, s,action ,token=''):
     parallelRun(dumpFilesCore,workList)
     # for wl in workList:
     #     dumpFilesCore(wl)
-
+    # dumpFilesCore(('hive_d65d5c_96c1dc_ql#src#gen#protobuf#gen-java#org#apache#hadoop#hive#ql#io#orc#OrcProto.txt_31', 'ReturnStatement', 'tokens', '/Users/anil.koyuncu/projects/fixminer-all/enhancedASTDiff/python/data/tokens', '3', '1', '0', 10))
 
 
 def dumpFilesCore(t):
@@ -196,48 +196,68 @@ def dumpFilesCore(t):
             # with open(filePath, 'r', encoding='utf-8') as fi:
             #     lines = fi.read()
 
-        lines = re.split("@LENGTH@ \d+", lines)
-        tokens = []
-        for line in lines:
-            levelPatch  = len(re.findall('\w*---', line))
-            line = line.strip().strip('-')
-            type = ''
-            if line is '':
-                continue
-            t = []
-            searchPattern = ''
-            if line.startswith('INS'):
-                t = [1]
-                searchPattern = insPattern
-                type =' INS '
-            elif line.startswith('UPD'):
-                t = [1]
-                searchPattern = updPattern
-                type = ' UPD '
-            elif line.startswith('DEL'):
-                t = [1]
-                searchPattern = delPattern
-                type = ' DEL '
-            elif line.startswith('MOV'):
-                t = [1]
-                searchPattern = movPattern
-                type = ' MOV '
-        # from common.preprocessing import preprocessingForSimi
-            m = re.search(searchPattern, line, re.DOTALL)
-            if t is None:
-                print()
-            if m:
-                for k in t:
-                    prefix = '---' * levelPatch
-                    token = m.group(k)
+        if level =='shapes' or level=='actions':
+
+            lines = re.split("@LENGTH@ \d+", lines)
+            tokens = []
+            for line in lines:
+                levelPatch  = len(re.findall('\w*---', line))
+                line = line.strip().strip('-')
+                type = ''
+                if line is '':
+                    continue
+                t = []
+                searchPattern = ''
+                if line.startswith('INS'):
                     if level =='actions':
-                        prefix = prefix + type
+                        t= [1,3]
+                    else:
+                        t = [1]
+                    searchPattern = insPattern
+                    type =' INS '
+                elif line.startswith('UPD'):
+                    t = [1]
+                    searchPattern = updPattern
+                    type = ' UPD '
+                elif line.startswith('DEL'):
+                    t = [1]
+                    searchPattern = delPattern
+                    type = ' DEL '
+                elif line.startswith('MOV'):
+                    if level == 'actions':
+                        t = [1, 3]
+                    else:
+                        t = [1]
+                    searchPattern = movPattern
+                    type = ' MOV '
+            # from common.preprocessing import preprocessingForSimi
+                m = re.search(searchPattern, line, re.DOTALL)
+                if t is None:
+                    print()
+                if m:
+                    for k in t:
+                        prefix = '---' * levelPatch
+                        if prefix != '':
+                            prefix = '\n'+prefix
+                        token = m.group(k)
+                        if level =='actions':
+                            if k ==3:
+                                prefix = 'TO '
+                            else:
+                                prefix = prefix + type
 
-                    tokens.append(prefix+token)
+                        tokens.append(prefix+token)
 
-        os.makedirs(clusterSavePath, exist_ok=True)
-        with open(join(clusterSavePath, dumpFile), 'w', encoding='utf-8') as writeFile:
-            writeFile.write('\n'.join(tokens))
+            os.makedirs(clusterSavePath, exist_ok=True)
+            with open(join(clusterSavePath, dumpFile), 'w', encoding='utf-8') as writeFile:
+                # if levelPatch == 0:
+                writeFile.write(' '.join(tokens))
+                # else:
+                #     writeFile.write('\n'.join(tokens))
+        else:
+            os.makedirs(clusterSavePath, exist_ok=True)
+            with open(join(clusterSavePath, dumpFile), 'w', encoding='utf-8') as writeFile:
+                writeFile.write(lines)
 
 
 

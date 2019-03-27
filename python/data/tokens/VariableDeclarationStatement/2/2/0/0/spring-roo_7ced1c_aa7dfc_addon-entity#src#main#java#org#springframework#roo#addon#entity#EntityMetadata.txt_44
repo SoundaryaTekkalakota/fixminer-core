@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@JavaType returnType=new JavaType("java.util.List",0,DataType.TYPE,null,typeParams); @TO@ final JavaType returnType=new JavaType("java.util.List",0,DataType.TYPE,null,typeParams); @AT@ 21010 @LENGTH@ 89
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@JavaType returnType=new JavaType("java.util.List",0,DataType.TYPE,null,typeParams); @AT@ 21271 @LENGTH@ 5
+

@@ -1,8 +1,0 @@
-UPD FieldDeclaration@@private, final, List<Bean<?>>, [routeBuilderBeans=new ArrayList<Bean<?>>()] @TO@ private, final, Set<Bean<?>>, [routeBuilderBeans=new LinkedHashSet<Bean<?>>()] @AT@ 1530 @LENGTH@ 73
----UPD ParameterizedType@@List<Bean<?>> @TO@ Set<Bean<?>> @AT@ 1544 @LENGTH@ 13
-------UPD SimpleType@@List @TO@ Set @AT@ 1544 @LENGTH@ 4
----UPD VariableDeclarationFragment@@routeBuilderBeans=new ArrayList<Bean<?>>() @TO@ routeBuilderBeans=new LinkedHashSet<Bean<?>>() @AT@ 1558 @LENGTH@ 44
-------UPD ClassInstanceCreation@@ArrayList<Bean<?>>[] @TO@ LinkedHashSet<Bean<?>>[] @AT@ 1578 @LENGTH@ 24
----------UPD ParameterizedType@@ArrayList<Bean<?>> @TO@ LinkedHashSet<Bean<?>> @AT@ 1582 @LENGTH@ 18
-------------UPD SimpleType@@ArrayList @TO@ LinkedHashSet @AT@ 1582 @LENGTH@ 9
-

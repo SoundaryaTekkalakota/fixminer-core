@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@FieldMetadata candidate=MemberFindingUtils.getField(governorTypeDetails,fieldSymbolName); @TO@ final FieldMetadata candidate=MemberFindingUtils.getField(governorTypeDetails,fieldSymbolName); @AT@ 7336 @LENGTH@ 92
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@FieldMetadata candidate=MemberFindingUtils.getField(governorTypeDetails,fieldSymbolName); @AT@ 7448 @LENGTH@ 5
+

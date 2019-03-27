@@ -1,6 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:sb.append(methodPathValue) @TO@ MethodInvocation:safeAppend(sb,methodPathValue) @AT@ 3205 @LENGTH@ 27
----UPD MethodInvocation@@sb.append(methodPathValue) @TO@ safeAppend(sb,methodPathValue) @AT@ 3205 @LENGTH@ 26
-------DEL SimpleName@@Name:sb @AT@ 3205 @LENGTH@ 2
-------UPD SimpleName@@MethodName:append:[methodPathValue] @TO@ MethodName:safeAppend:[sb, methodPathValue] @AT@ 3208 @LENGTH@ 23
----------INS SimpleName@@sb @TO@ SimpleName@@MethodName:append:[methodPathValue] @AT@ 3862 @LENGTH@ 2
-

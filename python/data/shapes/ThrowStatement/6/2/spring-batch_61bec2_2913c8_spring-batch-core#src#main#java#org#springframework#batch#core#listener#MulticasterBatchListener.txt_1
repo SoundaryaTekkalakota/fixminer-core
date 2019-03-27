@@ -1,0 +1,6 @@
+ThrowStatement 
+---ClassInstanceCreation 
+------SimpleName 
+------MethodInvocation 
+---------SimpleName 
+------------SimpleName

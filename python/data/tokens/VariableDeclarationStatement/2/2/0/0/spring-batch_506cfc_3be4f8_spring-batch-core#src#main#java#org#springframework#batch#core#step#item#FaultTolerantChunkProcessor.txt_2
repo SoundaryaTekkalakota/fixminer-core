@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@@SuppressWarnings("unchecked") UserData<O> data=(UserData<O>)inputs.getUserData(); @TO@ @SuppressWarnings("unchecked") final UserData<O> data=(UserData<O>)inputs.getUserData(); @AT@ 6414 @LENGTH@ 87
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@@SuppressWarnings("unchecked") UserData<O> data=(UserData<O>)inputs.getUserData(); @AT@ 6395 @LENGTH@ 5
+

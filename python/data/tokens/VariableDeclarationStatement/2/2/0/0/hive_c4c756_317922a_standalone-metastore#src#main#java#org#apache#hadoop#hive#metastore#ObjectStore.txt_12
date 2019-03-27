@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@MTable childTable=nChildTable.mtbl; @TO@ final MTable childTable=nChildTable.mtbl; @AT@ 152126 @LENGTH@ 37
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@MTable childTable=nChildTable.mtbl; @AT@ 152741 @LENGTH@ 5
+

@@ -1,0 +1,15 @@
+INS EnhancedForStatement@@ResourceManager external, SimpleName:externalOverlays @TO@ MethodDeclaration@@public, void, MethodName:removeResourceChangeListener, ResourceChangeListener listener,  @AT@ 4850 @LENGTH@ 202
+---INS SingleVariableDeclaration@@ResourceManager external @TO@ EnhancedForStatement@@ResourceManager external, SimpleName:externalOverlays @AT@ 4854 @LENGTH@ 24
+------INS SimpleType@@ResourceManager @TO@ SingleVariableDeclaration@@ResourceManager external @AT@ 4854 @LENGTH@ 15
+------INS SimpleName@@external @TO@ SingleVariableDeclaration@@ResourceManager external @AT@ 4870 @LENGTH@ 8
+---INS SimpleName@@externalOverlays @TO@ EnhancedForStatement@@ResourceManager external, SimpleName:externalOverlays @AT@ 4881 @LENGTH@ 16
+---INS IfStatement@@MethodInvocation:external.isResourceChangeListenerSupported() @TO@ EnhancedForStatement@@ResourceManager external, SimpleName:externalOverlays @AT@ 4913 @LENGTH@ 129
+------INS MethodInvocation@@external.isResourceChangeListenerSupported() @TO@ IfStatement@@MethodInvocation:external.isResourceChangeListenerSupported() @AT@ 4916 @LENGTH@ 44
+---------INS SimpleName@@Name:external @TO@ MethodInvocation@@external.isResourceChangeListenerSupported() @AT@ 4916 @LENGTH@ 8
+---------INS SimpleName@@MethodName:isResourceChangeListenerSupported:[] @TO@ MethodInvocation@@external.isResourceChangeListenerSupported() @AT@ 4925 @LENGTH@ 35
+------INS ExpressionStatement@@MethodInvocation:external.removeResourceChangeListener(listener) @TO@ IfStatement@@MethodInvocation:external.isResourceChangeListenerSupported() @AT@ 4980 @LENGTH@ 48
+---------INS MethodInvocation@@external.removeResourceChangeListener(listener) @TO@ ExpressionStatement@@MethodInvocation:external.removeResourceChangeListener(listener) @AT@ 4980 @LENGTH@ 47
+------------INS SimpleName@@Name:external @TO@ MethodInvocation@@external.removeResourceChangeListener(listener) @AT@ 4980 @LENGTH@ 8
+------------INS SimpleName@@MethodName:removeResourceChangeListener:[listener] @TO@ MethodInvocation@@external.removeResourceChangeListener(listener) @AT@ 4989 @LENGTH@ 38
+---------------INS SimpleName@@listener @TO@ SimpleName@@MethodName:removeResourceChangeListener:[listener] @AT@ 5018 @LENGTH@ 8
+

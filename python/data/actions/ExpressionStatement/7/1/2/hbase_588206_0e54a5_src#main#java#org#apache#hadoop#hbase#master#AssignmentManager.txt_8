@@ -1,0 +1,7 @@
+ DEL ExpressionStatement 
+--- DEL Assignment 
+------ DEL SimpleName 
+------ DEL Operator 
+------ DEL MethodInvocation 
+--------- DEL SimpleName 
+--------- DEL SimpleName

@@ -1,0 +1,3 @@
+UPD TypeDeclaration@@[protected, static]MovedRegionsCleaner, ScheduledChore[Stoppable] @TO@ [protected, final, static]MovedRegionsCleaner, ScheduledChore[Stoppable] @AT@ 110545 @LENGTH@ 1052
+---INS Modifier@@final @TO@ TypeDeclaration@@[protected, static]MovedRegionsCleaner, ScheduledChore[Stoppable] @AT@ 110885 @LENGTH@ 5
+

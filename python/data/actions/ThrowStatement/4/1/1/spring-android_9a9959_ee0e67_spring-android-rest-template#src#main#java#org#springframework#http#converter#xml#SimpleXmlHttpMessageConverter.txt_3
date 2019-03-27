@@ -1,4 +1,0 @@
- INS ThrowStatement TO MethodDeclaration 
---- INS ClassInstanceCreation TO ThrowStatement 
------- INS New TO ClassInstanceCreation 
------- INS SimpleType TO ClassInstanceCreation

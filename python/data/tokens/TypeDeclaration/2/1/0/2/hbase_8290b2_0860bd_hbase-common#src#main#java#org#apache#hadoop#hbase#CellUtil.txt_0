@@ -1,3 +1,0 @@
-UPD TypeDeclaration@@[@InterfaceAudience.Private, private, static, abstract]EmptyByteBufferedCell, ByteBufferedCell @TO@ [@InterfaceAudience.Private, private, static, abstract]EmptyByteBufferedCell, ByteBufferedCell[SettableSequenceId] @AT@ 71266 @LENGTH@ 2457
----INS SimpleType@@SettableSequenceId @TO@ TypeDeclaration@@[@InterfaceAudience.Private, private, static, abstract]EmptyByteBufferedCell, ByteBufferedCell @AT@ 71538 @LENGTH@ 18
-

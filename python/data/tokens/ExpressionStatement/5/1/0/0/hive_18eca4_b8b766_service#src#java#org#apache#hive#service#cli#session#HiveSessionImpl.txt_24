@@ -1,0 +1,6 @@
+INS ExpressionStatement@@MethodInvocation:opHandleSet.add(opHandle) @TO@ TryStatement@@try:[] @AT@ 7862 @LENGTH@ 26
+---INS MethodInvocation@@opHandleSet.add(opHandle) @TO@ ExpressionStatement@@MethodInvocation:opHandleSet.add(opHandle) @AT@ 7862 @LENGTH@ 25
+------INS SimpleName@@Name:opHandleSet @TO@ MethodInvocation@@opHandleSet.add(opHandle) @AT@ 7862 @LENGTH@ 11
+------INS SimpleName@@MethodName:add:[opHandle] @TO@ MethodInvocation@@opHandleSet.add(opHandle) @AT@ 7874 @LENGTH@ 13
+---------INS SimpleName@@opHandle @TO@ SimpleName@@MethodName:add:[opHandle] @AT@ 7878 @LENGTH@ 8
+

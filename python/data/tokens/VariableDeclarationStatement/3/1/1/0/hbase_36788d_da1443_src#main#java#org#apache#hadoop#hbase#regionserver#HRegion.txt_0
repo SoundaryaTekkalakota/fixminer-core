@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@HLog.Reader reader=HLog.getReader(this.fs,edits,conf); @TO@ HLog.Reader reader=null; @AT@ 98147 @LENGTH@ 58
----UPD VariableDeclarationFragment@@reader=HLog.getReader(this.fs,edits,conf) @TO@ reader=null @AT@ 98159 @LENGTH@ 45
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@reader=HLog.getReader(this.fs,edits,conf) @AT@ 98168 @LENGTH@ 4
-

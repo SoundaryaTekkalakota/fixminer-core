@@ -1,0 +1,14 @@
+ INS VariableDeclarationStatement TO ForStatement 
+--- INS PrimitiveType TO VariableDeclarationStatement 
+--- INS VariableDeclarationFragment TO VariableDeclarationStatement 
+------ INS SimpleName TO VariableDeclarationFragment 
+------ INS InfixExpression TO VariableDeclarationFragment 
+--------- INS ParenthesizedExpression TO InfixExpression 
+------------ INS InfixExpression TO ParenthesizedExpression 
+--------------- INS ArrayAccess TO InfixExpression 
+------------------ INS SimpleName TO ArrayAccess 
+------------------ INS SimpleName TO ArrayAccess 
+--------------- INS Operator TO InfixExpression 
+--------------- INS SimpleName TO InfixExpression 
+--------- INS Operator TO InfixExpression 
+--------- INS SimpleName TO InfixExpression

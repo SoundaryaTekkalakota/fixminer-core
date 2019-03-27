@@ -1,5 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:freeNonColumns(vectorChildren) @TO@ MethodDeclaration@@private, VectorExpression, MethodName:getCoalesceExpression, List<ExprNodeDesc> childExpr, TypeInfo returnType, HiveException,  @AT@ 59381 @LENGTH@ 31
----INS MethodInvocation@@freeNonColumns(vectorChildren) @TO@ ExpressionStatement@@MethodInvocation:freeNonColumns(vectorChildren) @AT@ 59381 @LENGTH@ 30
-------INS SimpleName@@MethodName:freeNonColumns:[vectorChildren] @TO@ MethodInvocation@@freeNonColumns(vectorChildren) @AT@ 59381 @LENGTH@ 30
----------INS SimpleName@@vectorChildren @TO@ SimpleName@@MethodName:freeNonColumns:[vectorChildren] @AT@ 59396 @LENGTH@ 14
-

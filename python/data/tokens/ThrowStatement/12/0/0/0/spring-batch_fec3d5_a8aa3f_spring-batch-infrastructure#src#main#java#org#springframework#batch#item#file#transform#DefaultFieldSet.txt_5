@@ -1,0 +1,13 @@
+INS ThrowStatement@@ClassInstanceCreation:new IllegalArgumentException(e.getMessage() + ", name: [" + name+ "]") @TO@ CatchClause@@IllegalArgumentException e @AT@ 13544 @LENGTH@ 78
+---INS ClassInstanceCreation@@IllegalArgumentException[e.getMessage() + ", name: [" + name+ "]"] @TO@ ThrowStatement@@ClassInstanceCreation:new IllegalArgumentException(e.getMessage() + ", name: [" + name+ "]") @AT@ 13550 @LENGTH@ 71
+------INS New@@new @TO@ ClassInstanceCreation@@IllegalArgumentException[e.getMessage() + ", name: [" + name+ "]"] @AT@ 13550 @LENGTH@ 3
+------INS SimpleType@@IllegalArgumentException @TO@ ClassInstanceCreation@@IllegalArgumentException[e.getMessage() + ", name: [" + name+ "]"] @AT@ 13554 @LENGTH@ 24
+------INS InfixExpression@@e.getMessage() + ", name: [" + name+ "]" @TO@ ClassInstanceCreation@@IllegalArgumentException[e.getMessage() + ", name: [" + name+ "]"] @AT@ 13579 @LENGTH@ 41
+---------INS MethodInvocation@@e.getMessage() @TO@ InfixExpression@@e.getMessage() + ", name: [" + name+ "]" @AT@ 13579 @LENGTH@ 14
+------------INS SimpleName@@Name:e @TO@ MethodInvocation@@e.getMessage() @AT@ 13579 @LENGTH@ 1
+------------INS SimpleName@@MethodName:getMessage:[] @TO@ MethodInvocation@@e.getMessage() @AT@ 13581 @LENGTH@ 12
+---------INS Operator@@+ @TO@ InfixExpression@@e.getMessage() + ", name: [" + name+ "]" @AT@ 13593 @LENGTH@ 1
+---------INS StringLiteral@@", name: [" @TO@ InfixExpression@@e.getMessage() + ", name: [" + name+ "]" @AT@ 13596 @LENGTH@ 11
+---------INS SimpleName@@name @TO@ InfixExpression@@e.getMessage() + ", name: [" + name+ "]" @AT@ 13610 @LENGTH@ 4
+---------INS StringLiteral@@"]" @TO@ InfixExpression@@e.getMessage() + ", name: [" + name+ "]" @AT@ 13617 @LENGTH@ 3
+

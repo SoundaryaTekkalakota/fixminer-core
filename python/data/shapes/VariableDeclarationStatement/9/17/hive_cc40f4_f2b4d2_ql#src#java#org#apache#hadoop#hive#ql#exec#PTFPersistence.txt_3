@@ -1,9 +1,0 @@
-VariableDeclarationStatement
----SimpleType
----VariableDeclarationFragment
-------MethodInvocation
----------SimpleName
----------SimpleName
-------CastExpression
----------SimpleType
----------MethodInvocation

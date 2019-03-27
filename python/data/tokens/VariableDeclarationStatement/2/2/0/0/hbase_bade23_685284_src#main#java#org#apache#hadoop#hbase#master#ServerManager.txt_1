@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@long timeout=this.master.getConfiguration().getLong("hbase.master.wait.on.regionservers.timeout",4500); @TO@ final long timeout=this.master.getConfiguration().getLong("hbase.master.wait.on.regionservers.timeout",4500); @AT@ 19614 @LENGTH@ 111
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@long timeout=this.master.getConfiguration().getLong("hbase.master.wait.on.regionservers.timeout",4500); @AT@ 20068 @LENGTH@ 5
+

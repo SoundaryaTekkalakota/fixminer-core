@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@DBCursor cursor=collectionCallback.doInCollection(getAndPrepareCollection(getDb(),collectionName)); @TO@ DBCursor cursor=null; @AT@ 59033 @LENGTH@ 102
----UPD VariableDeclarationFragment@@cursor=collectionCallback.doInCollection(getAndPrepareCollection(getDb(),collectionName)) @TO@ cursor=null @AT@ 59042 @LENGTH@ 92
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@cursor=collectionCallback.doInCollection(getAndPrepareCollection(getDb(),collectionName)) @AT@ 59052 @LENGTH@ 4
-

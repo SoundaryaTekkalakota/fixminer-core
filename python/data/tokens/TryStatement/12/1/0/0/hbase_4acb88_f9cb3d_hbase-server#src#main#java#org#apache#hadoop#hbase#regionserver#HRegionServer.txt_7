@@ -1,0 +1,13 @@
+INS TryStatement@@try:[] @TO@ MethodDeclaration@@public, GetServerInfoResponse, MethodName:getServerInfo, final RpcController controller, final GetServerInfoRequest request, ServiceException,  @AT@ 156560 @LENGTH@ 99
+---INS ExpressionStatement@@MethodInvocation:checkOpen() @TO@ TryStatement@@try:[] @AT@ 156572 @LENGTH@ 12
+------INS MethodInvocation@@MethodName:checkOpen:[] @TO@ ExpressionStatement@@MethodInvocation:checkOpen() @AT@ 156572 @LENGTH@ 11
+---INS CatchClause@@IOException ie @TO@ TryStatement@@try:[] @AT@ 156591 @LENGTH@ 68
+------INS SingleVariableDeclaration@@IOException ie @TO@ CatchClause@@IOException ie @AT@ 156598 @LENGTH@ 14
+---------INS SimpleType@@IOException @TO@ SingleVariableDeclaration@@IOException ie @AT@ 156598 @LENGTH@ 11
+---------INS SimpleName@@ie @TO@ SingleVariableDeclaration@@IOException ie @AT@ 156610 @LENGTH@ 2
+------INS ThrowStatement@@ClassInstanceCreation:new ServiceException(ie) @TO@ CatchClause@@IOException ie @AT@ 156622 @LENGTH@ 31
+---------INS ClassInstanceCreation@@ServiceException[ie] @TO@ ThrowStatement@@ClassInstanceCreation:new ServiceException(ie) @AT@ 156628 @LENGTH@ 24
+------------INS New@@new @TO@ ClassInstanceCreation@@ServiceException[ie] @AT@ 156628 @LENGTH@ 3
+------------INS SimpleType@@ServiceException @TO@ ClassInstanceCreation@@ServiceException[ie] @AT@ 156632 @LENGTH@ 16
+------------INS SimpleName@@ie @TO@ ClassInstanceCreation@@ServiceException[ie] @AT@ 156649 @LENGTH@ 2
+

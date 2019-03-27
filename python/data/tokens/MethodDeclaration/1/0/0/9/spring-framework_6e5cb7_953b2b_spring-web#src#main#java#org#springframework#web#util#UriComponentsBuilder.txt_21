@@ -1,2 +1,0 @@
-MOV MethodDeclaration@@public, PathComponentBuilder, MethodName:appendPath, String path,  @TO@ TypeDeclaration@@[private, static]FullPathComponentBuilder, [PathComponentBuilder] @AT@ 18253 @LENGTH@ 100
-

@@ -1,0 +1,13 @@
+MethodDeclaration 
+---PrimitiveType 
+---SimpleName 
+---SingleVariableDeclaration 
+------SimpleType 
+------SimpleName 
+---ExpressionStatement 
+------Assignment 
+---------FieldAccess 
+------------ThisExpression 
+------------SimpleName 
+---------Operator 
+---------SimpleName

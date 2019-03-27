@@ -1,3 +1,0 @@
-INS ThrowStatement@@SimpleName:metaException @TO@ IfStatement@@PrefixExpression:!success @AT@ 74324 @LENGTH@ 20
----INS SimpleName@@metaException @TO@ ThrowStatement@@SimpleName:metaException @AT@ 74330 @LENGTH@ 13
-

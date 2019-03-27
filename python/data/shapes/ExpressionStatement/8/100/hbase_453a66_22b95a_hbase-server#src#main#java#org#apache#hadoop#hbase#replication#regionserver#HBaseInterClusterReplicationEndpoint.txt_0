@@ -1,0 +1,8 @@
+ExpressionStatement 
+---Assignment 
+------ClassInstanceCreation 
+---------NumberLiteral 
+---------SimpleName 
+---------ClassInstanceCreation 
+------------ParameterizedType 
+---------------SimpleType

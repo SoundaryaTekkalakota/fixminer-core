@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@MethodMetadata found=parent.getRemoveMethod(); @TO@ final MethodMetadata found=parent.getRemoveMethod(); @AT@ 9512 @LENGTH@ 48
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@MethodMetadata found=parent.getRemoveMethod(); @AT@ 9654 @LENGTH@ 5
+

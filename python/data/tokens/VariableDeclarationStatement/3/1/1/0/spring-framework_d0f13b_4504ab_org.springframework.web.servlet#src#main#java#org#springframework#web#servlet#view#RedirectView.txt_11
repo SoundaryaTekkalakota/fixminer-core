@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@Iterator valueIter; @TO@ Iterator valueIter=null; @AT@ 9686 @LENGTH@ 19
----UPD VariableDeclarationFragment@@valueIter @TO@ valueIter=null @AT@ 9695 @LENGTH@ 9
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@valueIter @AT@ 9434 @LENGTH@ 4
-

@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, KeyValueHeap, MethodName:getStoreHeap,  @TO@ public, synchronized, KeyValueHeap, MethodName:getStoreHeap,  @AT@ 66798 @LENGTH@ 71
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, KeyValueHeap, MethodName:getStoreHeap,  @AT@ 67128 @LENGTH@ 12
+

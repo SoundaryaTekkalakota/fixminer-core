@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@HTable metaTable=new HTable(configuration,HConstants.META_TABLE_NAME); @TO@ HTable metaTable=null; @AT@ 5780 @LENGTH@ 73
----UPD VariableDeclarationFragment@@metaTable=new HTable(configuration,HConstants.META_TABLE_NAME) @TO@ metaTable=null @AT@ 5787 @LENGTH@ 65
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@metaTable=new HTable(configuration,HConstants.META_TABLE_NAME) @AT@ 5798 @LENGTH@ 4
-

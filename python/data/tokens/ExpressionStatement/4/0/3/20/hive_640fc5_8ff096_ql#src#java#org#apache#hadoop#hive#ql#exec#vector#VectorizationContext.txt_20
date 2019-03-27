@@ -1,5 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:freeNonColumns(vectorChildren) @TO@ MethodDeclaration@@private, VectorExpression, MethodName:getEltExpression, List<ExprNodeDesc> childExpr, TypeInfo returnType, HiveException,  @AT@ 60100 @LENGTH@ 31
----INS MethodInvocation@@freeNonColumns(vectorChildren) @TO@ ExpressionStatement@@MethodInvocation:freeNonColumns(vectorChildren) @AT@ 60100 @LENGTH@ 30
-------INS SimpleName@@MethodName:freeNonColumns:[vectorChildren] @TO@ MethodInvocation@@freeNonColumns(vectorChildren) @AT@ 60100 @LENGTH@ 30
----------INS SimpleName@@vectorChildren @TO@ SimpleName@@MethodName:freeNonColumns:[vectorChildren] @AT@ 60115 @LENGTH@ 14
-

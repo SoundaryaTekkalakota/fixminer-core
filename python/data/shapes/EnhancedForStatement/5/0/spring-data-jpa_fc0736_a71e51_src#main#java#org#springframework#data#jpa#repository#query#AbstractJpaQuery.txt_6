@@ -1,5 +1,5 @@
-EnhancedForStatement
----MethodInvocation
-------SimpleName
-------SimpleName
+EnhancedForStatement 
+---MethodInvocation 
+------SimpleName 
+------SimpleName 
 ---SimpleName

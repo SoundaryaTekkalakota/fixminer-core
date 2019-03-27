@@ -1,6 +1,0 @@
-IfStatement
----ExpressionStatement
----MethodInvocation
-------SimpleName
-------MethodInvocation
-------SimpleName

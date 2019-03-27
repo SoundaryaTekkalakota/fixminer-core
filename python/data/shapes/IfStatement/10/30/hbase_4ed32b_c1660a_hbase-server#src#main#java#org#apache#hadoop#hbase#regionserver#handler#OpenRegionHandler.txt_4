@@ -1,0 +1,10 @@
+IfStatement 
+---InfixExpression 
+------SimpleName 
+------Operator 
+------NumberLiteral 
+---ExpressionStatement 
+------Assignment 
+---------SimpleName 
+---------Operator 
+---------SimpleName

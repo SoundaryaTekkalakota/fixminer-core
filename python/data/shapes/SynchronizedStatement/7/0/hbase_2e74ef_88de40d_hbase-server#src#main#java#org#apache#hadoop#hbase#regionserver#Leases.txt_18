@@ -1,7 +1,7 @@
-SynchronizedStatement
----SimpleName
----ExpressionStatement
-------MethodInvocation
----------SimpleName
----------SimpleName
+SynchronizedStatement 
+---SimpleName 
+---ExpressionStatement 
+------MethodInvocation 
+---------SimpleName 
+---------SimpleName 
 ------------SimpleName

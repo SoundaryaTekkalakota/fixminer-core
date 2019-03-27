@@ -1,6 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:sb.append(methodInfo.annotation(PATH).value().asString()) @TO@ MethodInvocation:safeAppend(sb,methodInfo.annotation(PATH).value().asString()) @AT@ 4197 @LENGTH@ 58
----UPD MethodInvocation@@sb.append(methodInfo.annotation(PATH).value().asString()) @TO@ safeAppend(sb,methodInfo.annotation(PATH).value().asString()) @AT@ 4197 @LENGTH@ 57
-------DEL SimpleName@@Name:sb @AT@ 4197 @LENGTH@ 2
-------UPD SimpleName@@MethodName:append:[methodInfo.annotation(PATH).value().asString()] @TO@ MethodName:safeAppend:[sb, methodInfo.annotation(PATH).value().asString()] @AT@ 4200 @LENGTH@ 54
----------INS SimpleName@@sb @TO@ SimpleName@@MethodName:append:[methodInfo.annotation(PATH).value().asString()] @AT@ 4208 @LENGTH@ 2
-

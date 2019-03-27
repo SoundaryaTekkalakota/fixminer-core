@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, void, MethodName:clear,  @TO@ public, synchronized, void, MethodName:clear,  @AT@ 3468 @LENGTH@ 150
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, void, MethodName:clear,  @AT@ 3783 @LENGTH@ 12
+

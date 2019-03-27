@@ -1,5 +1,0 @@
-UPD MethodDeclaration@@private, long, MethodName:evaluateChildExpr, Statistics stats, ExprNodeDesc child, AnnotateStatsProcCtx aspCtx, List<String> neededCols, FilterOperator fop, CloneNotSupportedException,  @TO@ private, long, MethodName:evaluateChildExpr, Statistics stats, ExprNodeDesc child, AnnotateStatsProcCtx aspCtx, List<String> neededCols, FilterOperator fop, long evaluatedRowCount, CloneNotSupportedException,  @AT@ 18409 @LENGTH@ 3993
----INS SingleVariableDeclaration@@long evaluatedRowCount @TO@ MethodDeclaration@@private, long, MethodName:evaluateChildExpr, Statistics stats, ExprNodeDesc child, AnnotateStatsProcCtx aspCtx, List<String> neededCols, FilterOperator fop, CloneNotSupportedException,  @AT@ 18926 @LENGTH@ 22
-------INS PrimitiveType@@long @TO@ SingleVariableDeclaration@@long evaluatedRowCount @AT@ 18926 @LENGTH@ 4
-------INS SimpleName@@evaluatedRowCount @TO@ SingleVariableDeclaration@@long evaluatedRowCount @AT@ 18931 @LENGTH@ 17
-

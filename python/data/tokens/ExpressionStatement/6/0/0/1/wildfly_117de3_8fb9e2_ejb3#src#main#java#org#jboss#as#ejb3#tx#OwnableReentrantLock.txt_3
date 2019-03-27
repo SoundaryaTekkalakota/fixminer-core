@@ -1,7 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:Assert.checkNotNullParam("owner",owner) @TO@ MethodDeclaration@@public, boolean, MethodName:tryLock, long timeValue, TimeUnit timeUnit, Object owner,  @AT@ 2628 @LENGTH@ 41
----INS MethodInvocation@@Assert.checkNotNullParam("owner",owner) @TO@ ExpressionStatement@@MethodInvocation:Assert.checkNotNullParam("owner",owner) @AT@ 2628 @LENGTH@ 40
-------INS SimpleName@@Name:Assert @TO@ MethodInvocation@@Assert.checkNotNullParam("owner",owner) @AT@ 2628 @LENGTH@ 6
-------INS SimpleName@@MethodName:checkNotNullParam:["owner", owner] @TO@ MethodInvocation@@Assert.checkNotNullParam("owner",owner) @AT@ 2635 @LENGTH@ 33
----------INS StringLiteral@@"owner" @TO@ SimpleName@@MethodName:checkNotNullParam:["owner", owner] @AT@ 2653 @LENGTH@ 7
----------INS SimpleName@@owner @TO@ SimpleName@@MethodName:checkNotNullParam:["owner", owner] @AT@ 2662 @LENGTH@ 5
-

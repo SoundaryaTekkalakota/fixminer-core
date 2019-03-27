@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, boolean, MethodName:containsValue, Object value,  @TO@ public, synchronized, boolean, MethodName:containsValue, Object value,  @AT@ 3483 @LENGTH@ 197
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, boolean, MethodName:containsValue, Object value,  @AT@ 3556 @LENGTH@ 12
+

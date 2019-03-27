@@ -1,6 +1,0 @@
-MethodDeclaration
----SingleVariableDeclaration
-------ParameterizedType
----------SimpleType
----------WildcardType
-------SimpleType

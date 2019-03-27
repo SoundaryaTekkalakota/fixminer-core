@@ -1,3 +1,0 @@
-UPD TypeDeclaration@@[@InterfaceAudience.Private, private, static, abstract]EmptyCell, [Cell] @TO@ [@InterfaceAudience.Private, private, static, abstract]EmptyCell, [Cell, SettableSequenceId] @AT@ 63182 @LENGTH@ 1475
----INS SimpleType@@SettableSequenceId @TO@ TypeDeclaration@@[@InterfaceAudience.Private, private, static, abstract]EmptyCell, [Cell] @AT@ 63423 @LENGTH@ 18
-

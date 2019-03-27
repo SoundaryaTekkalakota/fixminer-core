@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:Collections.reverse(synchronizations) @TO@ MethodInvocation:Collections.reverse(copy) @AT@ 1464 @LENGTH@ 38
+---UPD MethodInvocation@@Collections.reverse(synchronizations) @TO@ Collections.reverse(copy) @AT@ 1464 @LENGTH@ 37
+------UPD SimpleName@@MethodName:reverse:[synchronizations] @TO@ MethodName:reverse:[copy] @AT@ 1476 @LENGTH@ 25
+---------UPD SimpleName@@synchronizations @TO@ copy @AT@ 1484 @LENGTH@ 16
+

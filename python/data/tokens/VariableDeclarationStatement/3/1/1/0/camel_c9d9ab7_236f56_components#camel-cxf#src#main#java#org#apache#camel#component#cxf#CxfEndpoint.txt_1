@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@Class<?> cls=ClassLoaderUtils.loadClass(getServiceClass(),getClass()); @TO@ Class<?> cls=null; @AT@ 10654 @LENGTH@ 73
----UPD VariableDeclarationFragment@@cls=ClassLoaderUtils.loadClass(getServiceClass(),getClass()) @TO@ cls=null @AT@ 10663 @LENGTH@ 63
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@cls=ClassLoaderUtils.loadClass(getServiceClass(),getClass()) @AT@ 10748 @LENGTH@ 4
-

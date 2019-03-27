@@ -1,7 +1,0 @@
-ExpressionStatement
----Assignment
-------SimpleName
-------Operator
-------CastExpression
----------SimpleType
----------SimpleName

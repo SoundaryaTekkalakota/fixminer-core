@@ -1,5 +1,5 @@
-VariableDeclarationStatement
----PrimitiveType
----VariableDeclarationFragment
-------SimpleName
+VariableDeclarationStatement 
+---PrimitiveType 
+---VariableDeclarationFragment 
+------SimpleName 
 ------BooleanLiteral

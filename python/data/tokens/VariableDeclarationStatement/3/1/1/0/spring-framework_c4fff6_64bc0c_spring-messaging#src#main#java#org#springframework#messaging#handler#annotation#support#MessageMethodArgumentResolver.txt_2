@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@Object result; @TO@ Object result=null; @AT@ 4380 @LENGTH@ 14
----UPD VariableDeclarationFragment@@result @TO@ result=null @AT@ 4387 @LENGTH@ 6
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@result @AT@ 4469 @LENGTH@ 4
-

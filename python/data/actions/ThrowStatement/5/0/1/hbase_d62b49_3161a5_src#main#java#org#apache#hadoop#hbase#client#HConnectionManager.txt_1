@@ -1,5 +1,0 @@
- INS ThrowStatement TO CatchClause 
---- INS ClassInstanceCreation TO ThrowStatement 
------- INS New TO ClassInstanceCreation 
------- INS SimpleType TO ClassInstanceCreation 
------- INS StringLiteral TO ClassInstanceCreation

@@ -1,0 +1,5 @@
+INS VariableDeclarationStatement@@WriteResult wr; @TO@ MethodDeclaration@@public, Object, MethodName:doInCollection, DBCollection collection, MongoException, DataAccessException,  @AT@ 29621 @LENGTH@ 15
+---INS SimpleType@@WriteResult @TO@ VariableDeclarationStatement@@WriteResult wr; @AT@ 29621 @LENGTH@ 11
+---INS VariableDeclarationFragment@@wr @TO@ VariableDeclarationStatement@@WriteResult wr; @AT@ 29633 @LENGTH@ 2
+------INS SimpleName@@wr @TO@ VariableDeclarationFragment@@wr @AT@ 29633 @LENGTH@ 2
+

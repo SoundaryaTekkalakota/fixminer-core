@@ -1,0 +1,11 @@
+ReturnStatement 
+---MethodInvocation 
+------SimpleName 
+---------ClassInstanceCreation 
+---------LambdaExpression 
+------------VariableDeclarationFragment 
+---------------SimpleName 
+------------ClassInstanceCreation 
+---------------New 
+---------------ParameterizedType 
+---------------SimpleName

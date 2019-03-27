@@ -1,7 +1,0 @@
-MethodDeclaration
----SimpleName
----SingleVariableDeclaration
-------SimpleType
-------SimpleName
----SuperConstructorInvocation
-------SimpleName

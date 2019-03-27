@@ -1,9 +1,0 @@
-IfStatement
----MethodInvocation
-------SimpleName
-------SimpleName
----ExpressionStatement
-------Assignment
----------SimpleName
----------Operator
----------NumberLiteral

@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, SoftValueSortedMap<K,V>, MethodName:subMap, K fromKey, K toKey,  @TO@ public, synchronized, SoftValueSortedMap<K,V>, MethodName:subMap, K fromKey, K toKey,  @AT@ 4160 @LENGTH@ 167
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, SoftValueSortedMap<K,V>, MethodName:subMap, K fromKey, K toKey,  @AT@ 4298 @LENGTH@ 12
+

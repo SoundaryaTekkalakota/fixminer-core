@@ -1,9 +1,0 @@
-DEL VariableDeclarationStatement@@KeyValue kv=KeyValueUtil.ensureKeyValue(cell); @AT@ 202981 @LENGTH@ 48
----DEL SimpleType@@KeyValue @AT@ 202981 @LENGTH@ 8
----DEL VariableDeclarationFragment@@kv=KeyValueUtil.ensureKeyValue(cell) @AT@ 202990 @LENGTH@ 38
-------DEL SimpleName@@kv @AT@ 202990 @LENGTH@ 2
-------DEL MethodInvocation@@KeyValueUtil.ensureKeyValue(cell) @AT@ 202995 @LENGTH@ 33
----------DEL SimpleName@@Name:KeyValueUtil @AT@ 202995 @LENGTH@ 12
----------DEL SimpleName@@MethodName:ensureKeyValue:[cell] @AT@ 203008 @LENGTH@ 20
-------------DEL SimpleName@@cell @AT@ 203023 @LENGTH@ 4
-

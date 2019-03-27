@@ -1,2 +1,0 @@
-MOV MethodDeclaration@@public, void, MethodName:run,  @TO@ TypeDeclaration@@[@Plugin(name="RabbitMQ",category="Core",elementType="appender",printObject=true), public]AmqpAppender, AbstractAppender @AT@ 8985 @LENGTH@ 3761
-

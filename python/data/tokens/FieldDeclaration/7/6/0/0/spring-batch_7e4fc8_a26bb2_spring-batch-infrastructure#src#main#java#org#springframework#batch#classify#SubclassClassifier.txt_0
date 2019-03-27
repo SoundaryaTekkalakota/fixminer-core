@@ -1,8 +1,0 @@
-UPD FieldDeclaration@@private, Map<Class<? extends T>,C>, [classified=new HashMap<Class<? extends T>,C>()] @TO@ private, ConcurrentMap<Class<? extends T>,C>, [classified=new ConcurrentHashMap<Class<? extends T>,C>()] @AT@ 1323 @LENGTH@ 85
----UPD ParameterizedType@@Map<Class<? extends T>,C> @TO@ ConcurrentMap<Class<? extends T>,C> @AT@ 1331 @LENGTH@ 26
-------UPD SimpleType@@Map @TO@ ConcurrentMap @AT@ 1331 @LENGTH@ 3
----UPD VariableDeclarationFragment@@classified=new HashMap<Class<? extends T>,C>() @TO@ classified=new ConcurrentHashMap<Class<? extends T>,C>() @AT@ 1358 @LENGTH@ 49
-------UPD ClassInstanceCreation@@HashMap<Class<? extends T>,C>[] @TO@ ConcurrentHashMap<Class<? extends T>,C>[] @AT@ 1371 @LENGTH@ 36
----------UPD ParameterizedType@@HashMap<Class<? extends T>,C> @TO@ ConcurrentHashMap<Class<? extends T>,C> @AT@ 1375 @LENGTH@ 30
-------------UPD SimpleType@@HashMap @TO@ ConcurrentHashMap @AT@ 1375 @LENGTH@ 7
-

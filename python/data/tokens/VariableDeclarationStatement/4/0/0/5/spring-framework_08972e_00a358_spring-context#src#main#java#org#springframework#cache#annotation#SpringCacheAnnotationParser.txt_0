@@ -1,5 +1,0 @@
-UPD VariableDeclarationStatement@@Collection<Cacheable> cacheables=AnnotatedElementUtils.findAllMergedAnnotations(ae,Cacheable.class); @TO@ Collection<Cacheable> cacheables=AnnotatedElementUtils.getAllMergedAnnotations(ae,Cacheable.class); @AT@ 2378 @LENGTH@ 103
----UPD VariableDeclarationFragment@@cacheables=AnnotatedElementUtils.findAllMergedAnnotations(ae,Cacheable.class) @TO@ cacheables=AnnotatedElementUtils.getAllMergedAnnotations(ae,Cacheable.class) @AT@ 2400 @LENGTH@ 80
-------UPD MethodInvocation@@AnnotatedElementUtils.findAllMergedAnnotations(ae,Cacheable.class) @TO@ AnnotatedElementUtils.getAllMergedAnnotations(ae,Cacheable.class) @AT@ 2413 @LENGTH@ 67
----------UPD SimpleName@@MethodName:findAllMergedAnnotations:[ae, Cacheable.class] @TO@ MethodName:getAllMergedAnnotations:[ae, Cacheable.class] @AT@ 2435 @LENGTH@ 45
-

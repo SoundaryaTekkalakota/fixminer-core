@@ -1,5 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:commitIfRequired(conn) @TO@ TryStatement@@try:[] @AT@ 11350 @LENGTH@ 23
----INS MethodInvocation@@commitIfRequired(conn) @TO@ ExpressionStatement@@MethodInvocation:commitIfRequired(conn) @AT@ 11350 @LENGTH@ 22
-------INS SimpleName@@MethodName:commitIfRequired:[conn] @TO@ MethodInvocation@@commitIfRequired(conn) @AT@ 11350 @LENGTH@ 22
----------INS SimpleName@@conn @TO@ SimpleName@@MethodName:commitIfRequired:[conn] @AT@ 11367 @LENGTH@ 4
-

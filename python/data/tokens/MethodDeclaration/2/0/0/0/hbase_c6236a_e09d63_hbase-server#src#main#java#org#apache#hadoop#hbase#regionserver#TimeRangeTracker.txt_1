@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, boolean, MethodName:includesTimeRange, final TimeRange tr,  @TO@ public, synchronized, boolean, MethodName:includesTimeRange, final TimeRange tr,  @AT@ 3850 @LENGTH@ 156
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, boolean, MethodName:includesTimeRange, final TimeRange tr,  @AT@ 3870 @LENGTH@ 12
+

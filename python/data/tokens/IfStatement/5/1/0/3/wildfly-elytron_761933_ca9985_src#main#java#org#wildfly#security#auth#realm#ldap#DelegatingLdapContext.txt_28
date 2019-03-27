@@ -1,0 +1,6 @@
+DEL IfStatement@@InfixExpression:socketFactory != null @AT@ 6731 @LENGTH@ 74
+---DEL InfixExpression@@socketFactory != null @AT@ 6735 @LENGTH@ 21
+------DEL SimpleName@@socketFactory @AT@ 6735 @LENGTH@ 13
+------DEL Operator@@!= @AT@ 6748 @LENGTH@ 2
+------DEL NullLiteral@@null @AT@ 6752 @LENGTH@ 4
+

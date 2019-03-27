@@ -1,8 +1,0 @@
-IfStatement
----PrefixExpression
-------Operator
-------SimpleName
----ReturnStatement
-------ClassInstanceCreation
----------New
----------SimpleType

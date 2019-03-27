@@ -1,5 +1,0 @@
- UPD EnhancedForStatement 
---- DEL MethodInvocation 
------- DEL SimpleName 
------- DEL SimpleName 
---- INS SimpleName TO EnhancedForStatement

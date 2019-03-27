@@ -1,2 +1,0 @@
-MOV ExpressionStatement@@MethodInvocation:paramTypes.add(new AnnotatedJavaType(beanInfoMetadata.getJavaBean(),new ArrayList<AnnotationMetadata>())) @TO@ MethodDeclaration@@private, MethodMetadata, MethodName:getDeleteIndexMethod,  @AT@ 14085 @LENGTH@ 107
-

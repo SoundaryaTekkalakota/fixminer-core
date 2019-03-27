@@ -1,0 +1,4 @@
+UPD ThrowStatement@@ClassInstanceCreation:new IOException(toString() + " closed") @TO@ ClassInstanceCreation:new DoNotRetryIOException(toString() + " closed") @AT@ 24916 @LENGTH@ 46
+---UPD ClassInstanceCreation@@IOException[toString() + " closed"] @TO@ DoNotRetryIOException[toString() + " closed"] @AT@ 24922 @LENGTH@ 39
+------UPD SimpleType@@IOException @TO@ DoNotRetryIOException @AT@ 24926 @LENGTH@ 11
+

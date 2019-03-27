@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@OutputStream os; @TO@ OutputStream os=null; @AT@ 17481 @LENGTH@ 16
----UPD VariableDeclarationFragment@@os @TO@ os=null @AT@ 17494 @LENGTH@ 2
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@os @AT@ 16350 @LENGTH@ 4
-

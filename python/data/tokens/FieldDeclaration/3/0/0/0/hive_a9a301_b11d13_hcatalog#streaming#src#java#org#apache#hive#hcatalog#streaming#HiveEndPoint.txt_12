@@ -1,4 +1,0 @@
-UPD FieldDeclaration@@private, final, String, [proxyUser] @TO@ private, final, String, [username] @AT@ 10541 @LENGTH@ 31
----UPD VariableDeclarationFragment@@proxyUser @TO@ username @AT@ 10562 @LENGTH@ 9
-------UPD SimpleName@@proxyUser @TO@ username @AT@ 10562 @LENGTH@ 9
-

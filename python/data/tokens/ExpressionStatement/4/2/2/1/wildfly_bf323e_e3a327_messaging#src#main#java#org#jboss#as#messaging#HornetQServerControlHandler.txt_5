@@ -1,0 +1,35 @@
+UPD ExpressionStatement@@MethodInvocation:registry.registerOperationHandler(LIST_PREPARED_TRANSACTIONS,this,new DescriptionProvider(){
+  @Override public ModelNode getModelDescription(  Locale locale){
+    return MessagingDescriptions.getNoArgSimpleListReplyOperation(locale,LIST_PREPARED_TRANSACTIONS,HQ_SERVER,ModelType.STRING,true);
+  }
+}
+,readOnly) @TO@ MethodInvocation:registry.registerOperationHandler(LIST_PREPARED_TRANSACTIONS,this,new DescriptionProvider(){
+  @Override public ModelNode getModelDescription(  Locale locale){
+    return MessagingDescriptions.getNoArgSimpleListReplyOperation(locale,LIST_PREPARED_TRANSACTIONS,HQ_SERVER,ModelType.STRING,true);
+  }
+}
+,readOnlyRuntimeOnly) @AT@ 15527 @LENGTH@ 369
+---UPD MethodInvocation@@registry.registerOperationHandler(LIST_PREPARED_TRANSACTIONS,this,new DescriptionProvider(){
+  @Override public ModelNode getModelDescription(  Locale locale){
+    return MessagingDescriptions.getNoArgSimpleListReplyOperation(locale,LIST_PREPARED_TRANSACTIONS,HQ_SERVER,ModelType.STRING,true);
+  }
+}
+,readOnly) @TO@ registry.registerOperationHandler(LIST_PREPARED_TRANSACTIONS,this,new DescriptionProvider(){
+  @Override public ModelNode getModelDescription(  Locale locale){
+    return MessagingDescriptions.getNoArgSimpleListReplyOperation(locale,LIST_PREPARED_TRANSACTIONS,HQ_SERVER,ModelType.STRING,true);
+  }
+}
+,readOnlyRuntimeOnly) @AT@ 15527 @LENGTH@ 368
+------UPD SimpleName@@MethodName:registerOperationHandler:[LIST_PREPARED_TRANSACTIONS, this, new DescriptionProvider(){
+  @Override public ModelNode getModelDescription(  Locale locale){
+    return MessagingDescriptions.getNoArgSimpleListReplyOperation(locale,LIST_PREPARED_TRANSACTIONS,HQ_SERVER,ModelType.STRING,true);
+  }
+}
+, readOnly] @TO@ MethodName:registerOperationHandler:[LIST_PREPARED_TRANSACTIONS, this, new DescriptionProvider(){
+  @Override public ModelNode getModelDescription(  Locale locale){
+    return MessagingDescriptions.getNoArgSimpleListReplyOperation(locale,LIST_PREPARED_TRANSACTIONS,HQ_SERVER,ModelType.STRING,true);
+  }
+}
+, readOnlyRuntimeOnly] @AT@ 15536 @LENGTH@ 359
+---------UPD SimpleName@@readOnly @TO@ readOnlyRuntimeOnly @AT@ 15886 @LENGTH@ 8
+

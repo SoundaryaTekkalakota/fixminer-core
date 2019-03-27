@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@boolean, MethodName:isEncapsulating,  @TO@ public, boolean, MethodName:isEncapsulating,  @AT@ 9689 @LENGTH@ 57
+---INS Modifier@@public @TO@ MethodDeclaration@@boolean, MethodName:isEncapsulating,  @AT@ 9820 @LENGTH@ 6
+

@@ -1,0 +1,6 @@
+INS ExpressionStatement@@MethodInvocation:filter.write(out) @TO@ IfStatement@@InfixExpression:this.filter == null @AT@ 15285 @LENGTH@ 18
+---INS MethodInvocation@@filter.write(out) @TO@ ExpressionStatement@@MethodInvocation:filter.write(out) @AT@ 15285 @LENGTH@ 17
+------INS SimpleName@@Name:filter @TO@ MethodInvocation@@filter.write(out) @AT@ 15285 @LENGTH@ 6
+------INS SimpleName@@MethodName:write:[out] @TO@ MethodInvocation@@filter.write(out) @AT@ 15292 @LENGTH@ 10
+---------INS SimpleName@@out @TO@ SimpleName@@MethodName:write:[out] @AT@ 15298 @LENGTH@ 3
+

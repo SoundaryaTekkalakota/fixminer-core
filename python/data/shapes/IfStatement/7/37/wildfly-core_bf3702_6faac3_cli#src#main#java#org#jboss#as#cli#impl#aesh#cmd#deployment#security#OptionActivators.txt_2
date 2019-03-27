@@ -1,7 +1,0 @@
-IfStatement
----MethodInvocation
-------SimpleName
-------MethodInvocation
-------SimpleName
----ReturnStatement
-------BooleanLiteral

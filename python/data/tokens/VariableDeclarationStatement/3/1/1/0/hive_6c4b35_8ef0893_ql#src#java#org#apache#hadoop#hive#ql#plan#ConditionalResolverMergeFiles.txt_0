@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@FileStatus[] fStats=inpFs.listStatus(dirPath); @TO@ FileStatus[] fStats=null; @AT@ 3894 @LENGTH@ 48
----UPD VariableDeclarationFragment@@fStats=inpFs.listStatus(dirPath) @TO@ fStats=null @AT@ 3907 @LENGTH@ 34
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@fStats=inpFs.listStatus(dirPath) @AT@ 4007 @LENGTH@ 4
-

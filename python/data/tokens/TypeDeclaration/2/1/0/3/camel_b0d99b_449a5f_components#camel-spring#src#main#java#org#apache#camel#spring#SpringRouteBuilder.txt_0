@@ -1,3 +1,0 @@
-UPD TypeDeclaration@@[public, abstract]SpringRouteBuilder, RouteBuilder @TO@ [public, abstract]SpringRouteBuilder, RouteBuilder[ApplicationContextAware] @AT@ 1355 @LENGTH@ 3367
----INS SimpleType@@ApplicationContextAware @TO@ TypeDeclaration@@[public, abstract]SpringRouteBuilder, RouteBuilder @AT@ 1531 @LENGTH@ 23
-

@@ -1,0 +1,12 @@
+VariableDeclarationStatement 
+---Modifier 
+---ParameterizedType 
+------SimpleType 
+------SimpleType 
+------SimpleType 
+---VariableDeclarationFragment 
+------SimpleName 
+------MethodInvocation 
+---------SimpleName 
+------------SimpleName 
+------------SimpleName

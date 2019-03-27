@@ -1,5 +1,0 @@
-UPD VariableDeclarationStatement@@String runningUser=UserGroupInformation.getLoginUser().getUserName(); @TO@ String runningUser=UserGroupInformation.getLoginUser().getShortUserName(); @AT@ 158703 @LENGTH@ 71
----UPD VariableDeclarationFragment@@runningUser=UserGroupInformation.getLoginUser().getUserName() @TO@ runningUser=UserGroupInformation.getLoginUser().getShortUserName() @AT@ 158710 @LENGTH@ 63
-------UPD MethodInvocation@@UserGroupInformation.getLoginUser().getUserName() @TO@ UserGroupInformation.getLoginUser().getShortUserName() @AT@ 158724 @LENGTH@ 49
----------UPD SimpleName@@MethodName:getUserName:[] @TO@ MethodName:getShortUserName:[] @AT@ 158760 @LENGTH@ 13
-

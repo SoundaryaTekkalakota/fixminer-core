@@ -1,0 +1,17 @@
+MethodDeclaration 
+---Modifier 
+---Modifier 
+---PrimitiveType 
+---SimpleName 
+---SingleVariableDeclaration 
+------SimpleType 
+------SimpleName 
+---SingleVariableDeclaration 
+------PrimitiveType 
+------SimpleName 
+---ExpressionStatement 
+------MethodInvocation 
+---------SimpleName 
+---------SimpleName 
+------------SimpleName 
+------------SimpleName

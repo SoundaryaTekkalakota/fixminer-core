@@ -1,0 +1,15 @@
+INS ExpressionStatement@@Assignment:outputVector[i]=vector1[i] & vector2[0] @TO@ ForStatement@@[int j=0];j != n; [j++] @AT@ 7162 @LENGTH@ 42
+---INS Assignment@@outputVector[i]=vector1[i] & vector2[0] @TO@ ExpressionStatement@@Assignment:outputVector[i]=vector1[i] & vector2[0] @AT@ 7162 @LENGTH@ 41
+------INS ArrayAccess@@outputVector[i] @TO@ Assignment@@outputVector[i]=vector1[i] & vector2[0] @AT@ 7162 @LENGTH@ 15
+---------INS SimpleName@@outputVector @TO@ ArrayAccess@@outputVector[i] @AT@ 7162 @LENGTH@ 12
+---------INS SimpleName@@i @TO@ ArrayAccess@@outputVector[i] @AT@ 7175 @LENGTH@ 1
+------INS Operator@@= @TO@ Assignment@@outputVector[i]=vector1[i] & vector2[0] @AT@ 7177 @LENGTH@ 1
+------INS InfixExpression@@vector1[i] & vector2[0] @TO@ Assignment@@outputVector[i]=vector1[i] & vector2[0] @AT@ 7180 @LENGTH@ 23
+---------INS ArrayAccess@@vector1[i] @TO@ InfixExpression@@vector1[i] & vector2[0] @AT@ 7180 @LENGTH@ 10
+------------INS SimpleName@@vector1 @TO@ ArrayAccess@@vector1[i] @AT@ 7180 @LENGTH@ 7
+------------INS SimpleName@@i @TO@ ArrayAccess@@vector1[i] @AT@ 7188 @LENGTH@ 1
+---------INS Operator@@& @TO@ InfixExpression@@vector1[i] & vector2[0] @AT@ 7190 @LENGTH@ 1
+---------INS ArrayAccess@@vector2[0] @TO@ InfixExpression@@vector1[i] & vector2[0] @AT@ 7193 @LENGTH@ 10
+------------INS SimpleName@@vector2 @TO@ ArrayAccess@@vector2[0] @AT@ 7193 @LENGTH@ 7
+------------INS NumberLiteral@@0 @TO@ ArrayAccess@@vector2[0] @AT@ 7201 @LENGTH@ 1
+

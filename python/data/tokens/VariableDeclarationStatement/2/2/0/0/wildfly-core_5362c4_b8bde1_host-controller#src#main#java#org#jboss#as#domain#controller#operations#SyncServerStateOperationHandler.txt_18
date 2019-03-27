@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@Set<byte[]> currentHashes=new HashSet<>(); @TO@ final Set<byte[]> currentHashes=new HashSet<>(); @AT@ 13858 @LENGTH@ 44
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@Set<byte[]> currentHashes=new HashSet<>(); @AT@ 17654 @LENGTH@ 5
+

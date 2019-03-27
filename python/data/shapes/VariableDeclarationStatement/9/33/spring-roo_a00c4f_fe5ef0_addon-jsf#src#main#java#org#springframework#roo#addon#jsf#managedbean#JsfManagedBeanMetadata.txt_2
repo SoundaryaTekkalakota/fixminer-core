@@ -1,9 +1,0 @@
-VariableDeclarationStatement
----Modifier
----SimpleType
----VariableDeclarationFragment
-------SimpleName
-------ClassInstanceCreation
----------New
----------SimpleType
----------SimpleName

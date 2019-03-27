@@ -1,0 +1,12 @@
+INS IfStatement@@PrefixExpression:!LazyUtils.isNumberMaybe(bytes,fieldStart,fieldLength) @TO@ SwitchStatement@@ArrayAccess:primitiveCategories[fieldIndex] @AT@ 9619 @LENGTH@ 92
+---INS PrefixExpression@@!LazyUtils.isNumberMaybe(bytes,fieldStart,fieldLength) @TO@ IfStatement@@PrefixExpression:!LazyUtils.isNumberMaybe(bytes,fieldStart,fieldLength) @AT@ 9623 @LENGTH@ 56
+------INS Operator@@! @TO@ PrefixExpression@@!LazyUtils.isNumberMaybe(bytes,fieldStart,fieldLength) @AT@ 9623 @LENGTH@ 1
+------INS MethodInvocation@@LazyUtils.isNumberMaybe(bytes,fieldStart,fieldLength) @TO@ PrefixExpression@@!LazyUtils.isNumberMaybe(bytes,fieldStart,fieldLength) @AT@ 9624 @LENGTH@ 55
+---------INS SimpleName@@Name:LazyUtils @TO@ MethodInvocation@@LazyUtils.isNumberMaybe(bytes,fieldStart,fieldLength) @AT@ 9624 @LENGTH@ 9
+---------INS SimpleName@@MethodName:isNumberMaybe:[bytes, fieldStart, fieldLength] @TO@ MethodInvocation@@LazyUtils.isNumberMaybe(bytes,fieldStart,fieldLength) @AT@ 9634 @LENGTH@ 45
+------------INS SimpleName@@bytes @TO@ SimpleName@@MethodName:isNumberMaybe:[bytes, fieldStart, fieldLength] @AT@ 9648 @LENGTH@ 5
+------------INS SimpleName@@fieldStart @TO@ SimpleName@@MethodName:isNumberMaybe:[bytes, fieldStart, fieldLength] @AT@ 9655 @LENGTH@ 10
+------------INS SimpleName@@fieldLength @TO@ SimpleName@@MethodName:isNumberMaybe:[bytes, fieldStart, fieldLength] @AT@ 9667 @LENGTH@ 11
+---INS ReturnStatement@@BooleanLiteral:true @TO@ IfStatement@@PrefixExpression:!LazyUtils.isNumberMaybe(bytes,fieldStart,fieldLength) @AT@ 9691 @LENGTH@ 12
+------INS BooleanLiteral@@true @TO@ ReturnStatement@@BooleanLiteral:true @AT@ 9698 @LENGTH@ 4
+

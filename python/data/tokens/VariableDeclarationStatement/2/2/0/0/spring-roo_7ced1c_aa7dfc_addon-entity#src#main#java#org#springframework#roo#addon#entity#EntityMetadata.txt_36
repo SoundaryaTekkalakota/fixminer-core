@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@List<AnnotationMetadataBuilder> annotations=new ArrayList<AnnotationMetadataBuilder>(); @TO@ final List<AnnotationMetadataBuilder> annotations=new ArrayList<AnnotationMetadataBuilder>(); @AT@ 19506 @LENGTH@ 89
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@List<AnnotationMetadataBuilder> annotations=new ArrayList<AnnotationMetadataBuilder>(); @AT@ 19712 @LENGTH@ 5
+

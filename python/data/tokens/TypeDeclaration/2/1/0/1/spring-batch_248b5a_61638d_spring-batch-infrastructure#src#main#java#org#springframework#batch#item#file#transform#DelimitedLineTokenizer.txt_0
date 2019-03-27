@@ -1,3 +1,0 @@
-UPD TypeDeclaration@@[public]DelimitedLineTokenizer, AbstractLineTokenizer @TO@ [public]DelimitedLineTokenizer, AbstractLineTokenizer[InitializingBean] @AT@ 1162 @LENGTH@ 6235
----INS SimpleType@@InitializingBean @TO@ TypeDeclaration@@[public]DelimitedLineTokenizer, AbstractLineTokenizer @AT@ 1300 @LENGTH@ 16
-

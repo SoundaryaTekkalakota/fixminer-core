@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@Object val=m.invoke(work); @TO@ Object val=null; @AT@ 9289 @LENGTH@ 28
----UPD VariableDeclarationFragment@@val=m.invoke(work) @TO@ val=null @AT@ 9296 @LENGTH@ 20
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@val=m.invoke(work) @AT@ 9354 @LENGTH@ 4
-

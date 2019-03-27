@@ -1,6 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:WildFlySecurityManager.setPropertyPrivileged(SYSPROP_KEY_JBOSS_DOMAIN_BASE_DIR,jbossBaseDir) @TO@ MethodInvocation:resetEmbeddedServerProperty(SYSPROP_KEY_JBOSS_DOMAIN_BASE_DIR,jbossBaseDir,shouldReset) @AT@ 20676 @LENGTH@ 94
----UPD MethodInvocation@@WildFlySecurityManager.setPropertyPrivileged(SYSPROP_KEY_JBOSS_DOMAIN_BASE_DIR,jbossBaseDir) @TO@ resetEmbeddedServerProperty(SYSPROP_KEY_JBOSS_DOMAIN_BASE_DIR,jbossBaseDir,shouldReset) @AT@ 20676 @LENGTH@ 93
-------DEL SimpleName@@Name:WildFlySecurityManager @AT@ 20676 @LENGTH@ 22
-------UPD SimpleName@@MethodName:setPropertyPrivileged:[SYSPROP_KEY_JBOSS_DOMAIN_BASE_DIR, jbossBaseDir] @TO@ MethodName:resetEmbeddedServerProperty:[SYSPROP_KEY_JBOSS_DOMAIN_BASE_DIR, jbossBaseDir, shouldReset] @AT@ 20699 @LENGTH@ 70
----------INS SimpleName@@shouldReset @TO@ SimpleName@@MethodName:setPropertyPrivileged:[SYSPROP_KEY_JBOSS_DOMAIN_BASE_DIR, jbossBaseDir] @AT@ 20919 @LENGTH@ 11
-

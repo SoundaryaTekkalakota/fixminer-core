@@ -1,0 +1,9 @@
+VariableDeclarationStatement 
+---Modifier 
+---PrimitiveType 
+---VariableDeclarationFragment 
+------SimpleName 
+------InfixExpression 
+---------SimpleName 
+---------Operator 
+---------NumberLiteral

@@ -1,0 +1,5 @@
+UPD MethodDeclaration@@private, void, MethodName:handleItemHandler, String handlerName, String propertyName, String adapterClassName, boolean required, Element element, ParserContext parserContext, MutablePropertyValues propertyValues, boolean underspecified,  @TO@ private, void, MethodName:handleItemHandler, AbstractBeanDefinition enclosing, String handlerName, String propertyName, String adapterClassName, boolean required, Element element, ParserContext parserContext, MutablePropertyValues propertyValues, boolean underspecified,  @AT@ 7643 @LENGTH@ 1387
+---INS SingleVariableDeclaration@@AbstractBeanDefinition enclosing @TO@ MethodDeclaration@@private, void, MethodName:handleItemHandler, String handlerName, String propertyName, String adapterClassName, boolean required, Element element, ParserContext parserContext, MutablePropertyValues propertyValues, boolean underspecified,  @AT@ 7694 @LENGTH@ 32
+------INS SimpleType@@AbstractBeanDefinition @TO@ SingleVariableDeclaration@@AbstractBeanDefinition enclosing @AT@ 7694 @LENGTH@ 22
+------INS SimpleName@@enclosing @TO@ SingleVariableDeclaration@@AbstractBeanDefinition enclosing @AT@ 7717 @LENGTH@ 9
+

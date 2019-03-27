@@ -1,5 +1,5 @@
-ExpressionStatement
----Assignment
-------MethodInvocation
----------SimpleName
+ExpressionStatement 
+---Assignment 
+------MethodInvocation 
+---------SimpleName 
 ------------SimpleName

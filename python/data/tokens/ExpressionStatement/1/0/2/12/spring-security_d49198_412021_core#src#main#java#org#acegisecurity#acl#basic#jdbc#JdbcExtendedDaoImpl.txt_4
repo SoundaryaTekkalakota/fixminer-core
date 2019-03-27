@@ -1,2 +1,0 @@
-MOV ExpressionStatement@@MethodInvocation:declareParameter(new SqlParameter(Types.INTEGER)) @TO@ MethodDeclaration@@protected, voidMethodName:AclPermissionInsert, DataSource ds,  @AT@ 15650 @LENGTH@ 50
-

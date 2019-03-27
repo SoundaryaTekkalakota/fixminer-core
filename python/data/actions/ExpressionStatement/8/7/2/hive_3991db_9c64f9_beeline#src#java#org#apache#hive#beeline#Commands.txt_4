@@ -1,8 +1,0 @@
- UPD ExpressionStatement 
---- DEL Assignment 
------- DEL SimpleName 
------- DEL Operator 
---- INS MethodInvocation TO ExpressionStatement 
------- INS SimpleName TO MethodInvocation 
------- INS SimpleName TO MethodInvocation 
---------- INS SimpleName TO SimpleName

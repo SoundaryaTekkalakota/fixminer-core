@@ -1,0 +1,5 @@
+ INS SynchronizedStatement TO MethodDeclaration 
+--- MOV IfStatement TO SynchronizedStatement 
+--- INS FieldAccess TO SynchronizedStatement 
+------ INS ThisExpression TO FieldAccess 
+------ INS SimpleName TO FieldAccess

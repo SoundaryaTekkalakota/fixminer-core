@@ -1,0 +1,6 @@
+INS VariableDeclarationStatement@@XMLOutputFactory factory=getOutputFactory(); @TO@ MethodDeclaration@@public, XMLStreamWriter, MethodName:createXMLStreamWriter, OutputStream outputStream, Exchange exchange, XMLStreamException,  @AT@ 4316 @LENGTH@ 46
+---INS SimpleType@@XMLOutputFactory @TO@ VariableDeclarationStatement@@XMLOutputFactory factory=getOutputFactory(); @AT@ 4316 @LENGTH@ 16
+---INS VariableDeclarationFragment@@factory=getOutputFactory() @TO@ VariableDeclarationStatement@@XMLOutputFactory factory=getOutputFactory(); @AT@ 4333 @LENGTH@ 28
+------INS SimpleName@@factory @TO@ VariableDeclarationFragment@@factory=getOutputFactory() @AT@ 4333 @LENGTH@ 7
+------INS MethodInvocation@@MethodName:getOutputFactory:[] @TO@ VariableDeclarationFragment@@factory=getOutputFactory() @AT@ 4343 @LENGTH@ 18
+

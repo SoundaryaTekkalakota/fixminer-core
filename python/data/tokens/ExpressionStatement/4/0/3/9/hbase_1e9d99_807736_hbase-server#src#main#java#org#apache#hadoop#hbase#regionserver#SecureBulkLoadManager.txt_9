@@ -1,5 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:incrementUgiReference(ugi) @TO@ TryStatement@@try:[] @AT@ 9290 @LENGTH@ 27
----INS MethodInvocation@@incrementUgiReference(ugi) @TO@ ExpressionStatement@@MethodInvocation:incrementUgiReference(ugi) @AT@ 9290 @LENGTH@ 26
-------INS SimpleName@@MethodName:incrementUgiReference:[ugi] @TO@ MethodInvocation@@incrementUgiReference(ugi) @AT@ 9290 @LENGTH@ 26
----------INS SimpleName@@ugi @TO@ SimpleName@@MethodName:incrementUgiReference:[ugi] @AT@ 9312 @LENGTH@ 3
-

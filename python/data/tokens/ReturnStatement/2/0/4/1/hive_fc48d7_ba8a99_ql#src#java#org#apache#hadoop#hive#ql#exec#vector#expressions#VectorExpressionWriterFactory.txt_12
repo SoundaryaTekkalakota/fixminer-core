@@ -1,3 +1,0 @@
-INS ReturnStatement@@SimpleName:obj @TO@ MethodDeclaration@@public, Object, MethodName:writeValue, ColumnVector column, int row, HiveException,  @AT@ 58569 @LENGTH@ 11
----INS SimpleName@@obj @TO@ ReturnStatement@@SimpleName:obj @AT@ 58576 @LENGTH@ 3
-

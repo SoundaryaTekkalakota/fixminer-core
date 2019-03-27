@@ -1,9 +1,9 @@
-IfStatement
----MethodInvocation
-------SimpleName
-------SimpleName
----ExpressionStatement
-------MethodInvocation
----------SimpleName
----------SimpleName
+IfStatement 
+---MethodInvocation 
+------SimpleName 
+------SimpleName 
+---ExpressionStatement 
+------MethodInvocation 
+---------SimpleName 
+---------SimpleName 
 ------------StringLiteral

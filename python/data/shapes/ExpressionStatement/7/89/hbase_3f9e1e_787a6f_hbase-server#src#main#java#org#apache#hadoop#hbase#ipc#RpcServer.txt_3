@@ -1,7 +1,0 @@
-ExpressionStatement
----PostfixExpression
-------SimpleName
-------Operator
----MethodInvocation
-------SimpleName
-------SimpleName

@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@boolean, MethodName:isEscaping,  @TO@ public, boolean, MethodName:isEscaping,  @AT@ 11974 @LENGTH@ 47
+---INS Modifier@@public @TO@ MethodDeclaration@@boolean, MethodName:isEscaping,  @AT@ 12240 @LENGTH@ 6
+

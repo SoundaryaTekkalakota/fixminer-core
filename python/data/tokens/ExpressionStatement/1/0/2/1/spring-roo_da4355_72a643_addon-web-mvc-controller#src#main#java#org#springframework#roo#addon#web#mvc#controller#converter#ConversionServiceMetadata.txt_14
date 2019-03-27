@@ -1,2 +1,0 @@
-MOV ExpressionStatement@@MethodInvocation:bodyBuilder.appendFormalLine("}") @TO@ MethodDeclaration@@private, MethodMetadata, MethodName:getToTypeConverterMethod, JavaType targetType, JavaSymbolName methodName, MemberTypeAdditions findMethod, JavaType idType,  @AT@ 13750 @LENGTH@ 34
-

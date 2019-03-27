@@ -1,0 +1,6 @@
+INS ExpressionStatement@@MethodInvocation:visited.add(task) @TO@ EnhancedForStatement@@Task<? extends Serializable> task, SimpleName:tasks @AT@ 91404 @LENGTH@ 18
+---INS MethodInvocation@@visited.add(task) @TO@ ExpressionStatement@@MethodInvocation:visited.add(task) @AT@ 91404 @LENGTH@ 17
+------INS SimpleName@@Name:visited @TO@ MethodInvocation@@visited.add(task) @AT@ 91404 @LENGTH@ 7
+------INS SimpleName@@MethodName:add:[task] @TO@ MethodInvocation@@visited.add(task) @AT@ 91412 @LENGTH@ 9
+---------INS SimpleName@@task @TO@ SimpleName@@MethodName:add:[task] @AT@ 91416 @LENGTH@ 4
+

@@ -1,7 +1,7 @@
-ExpressionStatement
----Assignment
-------MethodInvocation
----------MethodInvocation
-------------MethodInvocation
----------------SimpleName
+ExpressionStatement 
+---Assignment 
+------MethodInvocation 
+---------MethodInvocation 
+------------MethodInvocation 
+---------------SimpleName 
 ------------------SimpleName

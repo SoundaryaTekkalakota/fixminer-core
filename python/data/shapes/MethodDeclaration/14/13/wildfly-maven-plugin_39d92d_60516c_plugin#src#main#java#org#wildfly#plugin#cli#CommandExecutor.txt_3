@@ -1,0 +1,14 @@
+MethodDeclaration 
+---Modifier 
+---SimpleName 
+---SingleVariableDeclaration 
+------Modifier 
+------SimpleType 
+------SimpleName 
+---ExpressionStatement 
+------Assignment 
+---------FieldAccess 
+------------ThisExpression 
+------------SimpleName 
+---------Operator 
+---------SimpleName

@@ -1,4 +1,4 @@
-SynchronizedStatement
----FieldAccess
-------ThisExpression
+SynchronizedStatement 
+---FieldAccess 
+------ThisExpression 
 ------SimpleName

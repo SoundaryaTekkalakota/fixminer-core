@@ -103,62 +103,65 @@ def preprocessingForSimi(res):
 
     return underScore
 
-# def preprocessingNL(res):
-#
-#     printDetail = False
-#
-#     if isinstance(res, list):
-#         merged = str()
-#         for r in res:
-#             if isinstance(r, list):
-#                 merged = merged + ' ' + ' '.join(r)
-#             else:
-#                 merged = merged +' ' + r
-#     else:
-#         merged=res
-#
-#     res = html.unescape(merged)
-#     html_decoded_string = res.replace("&amp;", "&").replace("&quot;", '"').replace("&apos;", "'").replace("&gt;",
-#                                                                                                            ">").replace(
-#         "&lt;", "<")
-#     html_decoded_string = re.sub(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', '',html_decoded_string)
-#
-#     tokens = getTokens(html_decoded_string,printDetail)
-#
-#     stripped = []
-#     for t in tokens:
-#         splits = re.split('\.|\(|\)|:|>|<|:|=|/|\\\\|\'|-',t)
-#         for s in splits:
-#             stripped.append(s)
-#     punc = removeEndingPunct(stripped,printDetail)
-#
-#     non_empty = [i for i in punc if i != '']
-#
-#     stripped = removeEndingPunct(non_empty,printDetail)
-#
-#     camelCase = handleCamelCase(stripped,printDetail,True)
-#
-#     underScore = handleUnderScore(camelCase,printDetail,True)
-#
-#     lower = [i.lower() for i in underScore]
-#
-#     stopped_tokens = [i for i in lower if not i in en_stop]
-#
-#     nonDigit = [i for i in stopped_tokens if (not i.isdigit())]
-#
-#     doc = nlp(' '.join(nonDigit))
-#     newWord = []
-#     for token in doc:
-#         if(token.text in nlp.vocab):
-#             newWord.append(token.text)
-#
-#     stem2 = stem(newWord,printDetail)
-#
-#     if printDetail:
-#         print('=====CLEANED=========')
-#         print(stem2)
-#
-#     return stem2
+def preprocessingNL(res):
+    try:
+        printDetail = False
+
+        if isinstance(res, list):
+            merged = str()
+            for r in res:
+                if isinstance(r, list):
+                    merged = merged + ' ' + ' '.join(r)
+                else:
+                    merged = merged +' ' + r
+        else:
+            merged=res
+
+        res = html.unescape(merged)
+        html_decoded_string = res.replace("&amp;", "&").replace("&quot;", '"').replace("&apos;", "'").replace("&gt;",
+                                                                                                               ">").replace(
+            "&lt;", "<")
+        html_decoded_string = re.sub(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', '',html_decoded_string)
+
+        tokens = getTokens(html_decoded_string,printDetail)
+
+        stripped = []
+        for t in tokens:
+            splits = re.split('\.|\(|\)|:|>|<|:|=|/|\\\\|\'|-|,|\]|\[',t)
+            # splits = re.split('\.|\(|\)|:|>|<|:|=|/|\\\\|\'|-',t)
+            for s in splits:
+                stripped.append(s)
+        punc = removeEndingPunct(stripped,printDetail)
+
+        non_empty = [i for i in punc if i != '']
+
+        stripped = removeEndingPunct(non_empty,printDetail)
+
+        camelCase = handleCamelCase(stripped,printDetail,True)
+
+        underScore = handleUnderScore(camelCase,printDetail,True)
+
+        lower = [i.lower() for i in underScore]
+
+        stopped_tokens = [i for i in lower if not i in en_stop]
+
+        nonDigit = [i for i in stopped_tokens if (not i.isdigit())]
+
+        # doc = nlp(' '.join(nonDigit))
+        # newWord = []
+        # for token in doc:
+        #     if(token.text in nlp.vocab):
+        #         newWord.append(token.text)
+
+        stem2 = stem(nonDigit,printDetail)
+
+        if printDetail:
+            print('=====CLEANED=========')
+            print(stem2)
+
+        return stem2
+    except Exception as e:
+        logging.error(e)
 
 def getTokens(re,printDetail=False):
     tokenizer = RegexpTokenizer(r'\S+')

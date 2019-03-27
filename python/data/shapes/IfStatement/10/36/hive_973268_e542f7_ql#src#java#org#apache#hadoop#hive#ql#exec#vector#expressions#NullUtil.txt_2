@@ -1,0 +1,10 @@
+IfStatement 
+---Assignment 
+------ParenthesizedExpression 
+---------InfixExpression 
+------------ParenthesizedExpression 
+---------------InfixExpression 
+------------------ArrayAccess 
+------------------SimpleName 
+------------------Operator 
+------ArrayAccess

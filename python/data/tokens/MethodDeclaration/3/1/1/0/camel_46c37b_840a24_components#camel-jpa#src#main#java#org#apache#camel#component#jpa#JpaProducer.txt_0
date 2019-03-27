@@ -1,4 +1,0 @@
-UPD MethodDeclaration@@public, void, MethodName:process, Exchange exchange,  @TO@ public, void, MethodName:process, final Exchange exchange,  @AT@ 1621 @LENGTH@ 1068
----UPD SingleVariableDeclaration@@Exchange exchange @TO@ final Exchange exchange @AT@ 1641 @LENGTH@ 17
-------INS Modifier@@final @TO@ SingleVariableDeclaration@@Exchange exchange @AT@ 1678 @LENGTH@ 5
-

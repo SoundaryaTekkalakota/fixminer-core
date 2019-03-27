@@ -1,3 +1,0 @@
-INS ReturnStatement@@SimpleName:ret @TO@ MethodDeclaration@@public, static, boolean, MethodName:createEphemeralNodeAndWatch, ZooKeeperWatcher zkw, String znode, byte[] data, KeeperException,  @AT@ 38379 @LENGTH@ 11
----INS SimpleName@@ret @TO@ ReturnStatement@@SimpleName:ret @AT@ 38386 @LENGTH@ 3
-

@@ -1,0 +1,13 @@
+MethodDeclaration 
+---Modifier 
+---PrimitiveType 
+---SimpleName 
+---SingleVariableDeclaration 
+------SimpleType 
+------SimpleName 
+---SingleVariableDeclaration 
+------SimpleType 
+------SimpleName 
+---SingleVariableDeclaration 
+------SimpleType 
+------SimpleName

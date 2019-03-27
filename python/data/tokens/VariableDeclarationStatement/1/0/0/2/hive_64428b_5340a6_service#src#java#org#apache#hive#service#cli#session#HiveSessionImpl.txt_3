@@ -1,2 +1,0 @@
-MOV VariableDeclarationStatement@@OperationHandle opHandle=operation.getHandle(); @TO@ MethodDeclaration@@private, OperationHandle, MethodName:executeStatementInternal, String statement, Map<String,String> confOverlay, boolean runAsync, HiveSQLException,  @AT@ 6704 @LENGTH@ 49
-

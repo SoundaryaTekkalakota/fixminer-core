@@ -1,0 +1,17 @@
+MethodDeclaration 
+---Modifier 
+---Modifier 
+---PrimitiveType 
+---SimpleName 
+---IfStatement 
+------InfixExpression 
+---------SimpleName 
+---------Operator 
+---------NullLiteral 
+------ExpressionStatement 
+---------Assignment 
+------------SimpleName 
+------------Operator 
+------------ClassInstanceCreation 
+---------------New 
+---------------SimpleType

@@ -1,0 +1,7 @@
+MethodDeclaration 
+---SingleVariableDeclaration 
+------Modifier 
+---SingleVariableDeclaration 
+------Modifier 
+---VariableDeclarationStatement 
+------Modifier

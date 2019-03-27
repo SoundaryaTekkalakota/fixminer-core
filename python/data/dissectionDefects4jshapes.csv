@@ -1,97 +1,112 @@
-SwitchCase-4-0,25,"['closure-compiler.git-3', 'closure-compiler.git-19', 'closure-compiler.git-80', 'closure-compiler.git-85', 'closure-compiler.git-94', 'closure-compiler.git-119', 'closure-compiler.git-49']"
-ExpressionStatement-1-0,15,"['commons-math.git-7', 'commons-lang.git-50', 'commons-math.git-51', 'commons-lang.git-63', 'commons-math.git-63', 'commons-math.git-52', 'closure-compiler.git-68']"
-IfStatement-1-0,12,"['commons-lang.git-53', 'closure-compiler.git-76', 'closure-compiler.git-32', 'closure-compiler.git-117', 'closure-compiler.git-24', 'commons-lang.git-50', 'closure-compiler.git-11', 'commons-math.git-52', 'closure-compiler.git-40']"
-VariableDeclarationStatement-7-1,12,"['commons-lang.git-65', 'closure-compiler.git-81', 'commons-lang.git-40', 'commons-lang.git-31', 'commons-lang.git-19', 'commons-lang.git-30', 'commons-math.git-52']"
-VariableDeclarationStatement-7-0,12,"['commons-lang.git-65', 'commons-lang.git-8', 'closure-compiler.git-2', 'closure-compiler.git-87', 'closure-compiler.git-88', 'mockito.git-33', 'closure-compiler.git-84', 'closure-compiler.git-16', 'closure-compiler.git-36', 'commons-math.git-52', 'closure-compiler.git-91']"
-VariableDeclarationStatement-2-1,11,"['commons-math.git-21', 'commons-math.git-82', 'commons-math.git-16']"
-ReturnStatement-2-0,10,"['commons-math.git-23', 'commons-math.git-36', 'commons-math.git-95', 'commons-math.git-9', 'commons-lang.git-35', 'commons-math.git-5', 'closure-compiler.git-84', 'commons-math.git-91', 'commons-math.git-31']"
-VariableDeclarationStatement-5-3,8,"['commons-lang.git-17', 'commons-math.git-95', 'commons-lang.git-1', 'commons-math.git-92', 'commons-math.git-56', 'commons-lang.git-3', 'commons-math.git-31']"
-BreakStatement-1-0,8,"['commons-lang.git-52', 'closure-compiler.git-19', 'closure-compiler.git-77', 'commons-lang.git-62', 'closure-compiler.git-49']"
-ExpressionStatement-6-12,8,['commons-lang.git-13']
-VariableDeclarationStatement-5-4,8,"['commons-lang.git-65', 'commons-lang.git-10', 'commons-math.git-7', 'closure-compiler.git-41', 'commons-math.git-84', 'closure-compiler.git-45', 'closure-compiler.git-115', 'closure-compiler.git-116']"
-ExpressionStatement-4-0,7,"['commons-lang.git-46', 'commons-lang.git-43', 'commons-lang.git-59', 'commons-math.git-72', 'closure-compiler.git-68']"
-VariableDeclarationStatement-4-0,7,"['closure-compiler.git-92', 'closure-compiler.git-93', 'closure-compiler.git-87', 'closure-compiler.git-88', 'closure-compiler.git-133']"
-ReturnStatement-3-0,7,"['commons-lang.git-32', 'commons-math.git-75', 'closure-compiler.git-10', 'closure-compiler.git-48']"
-VariableDeclarationStatement-8-31,6,"['commons-lang.git-31', 'commons-lang.git-30', 'closure-compiler.git-97']"
-ReturnStatement-2-1,6,"['commons-lang.git-36', 'commons-lang.git-51', 'commons-lang.git-40', 'closure-compiler.git-87', 'mockito.git-33', 'closure-compiler.git-86']"
-VariableDeclarationStatement-3-0,5,"['mockito.git-3', 'closure-compiler.git-23', 'commons-math.git-31', 'commons-lang.git-20']"
-VariableDeclarationStatement-1-0,5,"['closure-compiler.git-46', 'commons-lang.git-35', 'closure-compiler.git-117', 'commons-math.git-47']"
-VariableDeclarationStatement-9-10,5,"['commons-math.git-60', 'commons-math.git-81', 'commons-math.git-40']"
-ExpressionStatement-6-33,5,['commons-math.git-63']
-VariableDeclarationStatement-9-6,4,"['commons-math.git-40', 'commons-math.git-38']"
-IfStatement-5-17,4,['closure-compiler.git-55']
-VariableDeclarationStatement-9-4,4,['commons-math.git-52']
-SwitchCase-2-0,3,['closure-compiler.git-32']
-ExpressionStatement-5-8,3,"['commons-math.git-44', 'commons-lang.git-10', 'closure-compiler.git-66']"
-IfStatement-5-1,3,"['commons-math.git-87', 'commons-lang.git-50']"
-ExpressionStatement-5-10,3,"['closure-compiler.git-87', 'closure-compiler.git-27']"
-SwitchCase-1-0,3,"['closure-compiler.git-32', 'closure-compiler.git-49']"
-EnhancedForStatement-12-0,3,"['commons-math.git-7', 'commons-math.git-44']"
-VariableDeclarationStatement-2-2,3,"['commons-math.git-57', 'commons-math.git-79']"
-ExpressionStatement-4-5,3,"['commons-lang.git-46', 'closure-compiler.git-70']"
-ExpressionStatement-4-1,3,"['closure-compiler.git-108', 'commons-lang.git-38', 'closure-compiler.git-49']"
-ReturnStatement-4-3,3,"['closure-compiler.git-64', 'commons-lang.git-46']"
-VariableDeclarationStatement-5-58,3,['commons-math.git-49']
-IfStatement-4-4,3,"['closure-compiler.git-62', 'closure-compiler.git-63', 'closure-compiler.git-73']"
-ExpressionStatement-12-5,3,['commons-lang.git-63']
-ExpressionStatement-5-6,3,"['closure-compiler.git-25', 'closure-compiler.git-78']"
-VariableDeclarationStatement-5-1,3,"['closure-compiler.git-23', 'closure-compiler.git-96']"
-IfStatement-4-1,3,"['closure-compiler.git-24', 'closure-compiler.git-11', 'closure-compiler.git-40']"
-IfStatement-12-8,3,['commons-math.git-43']
-MethodDeclaration-2-1,3,"['closure-compiler.git-87', 'closure-compiler.git-88', 'closure-compiler.git-10']"
-FieldDeclaration-3-0,3,"['commons-lang.git-32', 'closure-compiler.git-16']"
-VariableDeclarationStatement-7-20,3,"['commons-lang.git-31', 'commons-lang.git-30']"
-VariableDeclarationStatement-7-10,3,"['closure-compiler.git-12', 'closure-compiler.git-74']"
-VariableDeclarationStatement-16-0,3,['commons-math.git-52']
-MethodDeclaration-2-0,3,"['mockito.git-21', 'closure-compiler.git-124', 'closure-compiler.git-125']"
-ThrowStatement-4-1,3,"['mockito.git-1', 'commons-math.git-38']"
-VariableDeclarationStatement-6-3,3,['commons-math.git-52']
-VariableDeclarationStatement-10-27,3,['commons-lang.git-65']
-ExpressionStatement-7-25,2,['closure-compiler.git-123']
-IfStatement-10-16,2,"['commons-math.git-92', 'commons-math.git-93']"
-ExpressionStatement-9-28,2,['commons-math.git-81']
-IfStatement-6-48,2,"['closure-compiler.git-5', 'closure-compiler.git-15']"
-ExpressionStatement-11-9,2,['closure-compiler.git-74']
-VariableDeclarationStatement-5-2,2,"['closure-compiler.git-84', 'closure-compiler.git-124']"
-ExpressionStatement-10-7,2,['commons-math.git-35']
-VariableDeclarationStatement-5-14,2,['closure-compiler.git-133']
-ExpressionStatement-7-1,2,"['closure-compiler.git-108', 'closure-compiler.git-29']"
-SwitchCase-2-2,2,"['closure-compiler.git-75', 'commons-lang.git-52']"
-IfStatement-11-7,2,"['closure-compiler.git-113', 'closure-compiler.git-125']"
-ExpressionStatement-7-75,2,['commons-math.git-38']
-ReturnStatement-4-2,2,"['mockito.git-21', 'commons-math.git-70']"
-IfStatement-9-3,2,"['commons-math.git-53', 'closure-compiler.git-88']"
-ExpressionStatement-7-48,2,"['commons-math.git-56', 'commons-math.git-81']"
-ReturnStatement-6-11,2,['closure-compiler.git-10']
-IfStatement-10-5,2,['commons-lang.git-47']
-ReturnStatement-7-12,2,['commons-math.git-68']
-MethodDeclaration-4-0,2,['commons-lang.git-46']
-ExpressionStatement-5-58,2,['commons-lang.git-52']
-VariableDeclarationStatement-5-17,2,['commons-math.git-52']
-VariableDeclarationStatement-7-3,2,"['closure-compiler.git-123', 'closure-compiler.git-85']"
-VariableDeclarationStatement-5-7,2,"['commons-math.git-68', 'commons-math.git-23']"
-VariableDeclarationStatement-10-13,2,['commons-math.git-52']
-VariableDeclarationStatement-10-21,2,"['closure-compiler.git-3', 'closure-compiler.git-16']"
-FieldDeclaration-11-11,2,"['closure-compiler.git-69', 'closure-compiler.git-78']"
-VariableDeclarationStatement-6-19,2,"['commons-math.git-82', 'commons-math.git-84']"
-IfStatement-12-7,2,['commons-lang.git-62']
-FieldDeclaration-1-0,2,['commons-math.git-38']
-VariableDeclarationStatement-7-21,2,['commons-lang.git-32']
-IfStatement-3-2,2,['commons-lang.git-20']
-VariableDeclarationStatement-7-42,2,['commons-math.git-45']
-FieldDeclaration-8-2,2,"['commons-math.git-12', 'commons-lang.git-23']"
-IfStatement-14-6,2,['commons-math.git-106']
-VariableDeclarationStatement-11-19,2,['commons-math.git-76']
-VariableDeclarationStatement-11-18,2,['commons-math.git-18']
-FieldDeclaration-2-0,2,['commons-lang.git-56']
-FieldDeclaration-2-1,2,"['closure-compiler.git-111', 'closure-compiler.git-15']"
-ThrowStatement-11-0,2,['mockito.git-4']
-ThrowStatement-10-1,2,['mockito.git-4']
-ExpressionStatement-5-15,2,"['commons-lang.git-12', 'closure-compiler.git-32']"
-VariableDeclarationStatement-5-0,2,"['commons-math.git-95', 'closure-compiler.git-38']"
-ExpressionStatement-20-0,2,['commons-math.git-52']
-ExpressionStatement-5-12,2,"['commons-lang.git-63', 'commons-math.git-83']"
-VariableDeclarationStatement-13-8,2,['commons-math.git-40']
-VariableDeclarationStatement-4-3,2,"['closure-compiler.git-41', 'commons-math.git-52']"
-VariableDeclarationStatement-4-4,2,"['closure-compiler.git-2', 'commons-lang.git-35']"
-VariableDeclarationStatement-4-5,2,"['closure-compiler.git-2', 'closure-compiler.git-27']"
+SwitchCase-4-0,26,"['closure-compiler-60', 'closure-compiler-19', 'closure-compiler-49', 'closure-compiler-119', 'closure-compiler-3', 'closure-compiler-85', 'closure-compiler-80', 'closure-compiler-94']"
+ReturnStatement-10-0,12,['mockito-6']
+ExpressionStatement-4-2,10,"['closure-compiler-68', 'commons-lang-59', 'commons-math-64', 'mockito-2', 'commons-math-72', 'commons-lang-46', 'commons-lang-43']"
+ExpressionStatement-5-7,10,"['commons-lang-8', 'closure-compiler-133', 'commons-math-31', 'commons-math-64']"
+ReturnStatement-4-0,10,"['mockito-35', 'mockito-21', 'joda-time-26', 'commons-math-70', 'mockito-25']"
+IfStatement-6-15,10,"['joda-time-3', 'commons-lang-65']"
+ExpressionStatement-6-31,9,['commons-lang-13']
+VariableDeclarationStatement-8-12,9,"['commons-lang-30', 'commons-lang-31', 'closure-compiler-97']"
+VariableDeclarationStatement-7-0,8,"['commons-lang-65', 'closure-compiler-84', 'closure-compiler-88', 'closure-compiler-16', 'closure-compiler-91', 'commons-lang-8', 'closure-compiler-43', 'closure-compiler-122']"
+ReturnStatement-2-2,7,"['closure-compiler-86', 'commons-lang-51', 'closure-compiler-87', 'commons-lang-36', 'jfreechart-6', 'mockito-33', 'commons-lang-40']"
+VariableDeclarationStatement-5-4,6,"['commons-lang-65', 'commons-lang-10', 'closure-compiler-115', 'closure-compiler-116', 'closure-compiler-45', 'commons-math-84']"
+ThrowStatement-4-1,5,"['commons-math-66', 'commons-math-51', 'commons-math-38', 'mockito-1']"
+ExpressionStatement-4-3,5,"['joda-time-23', 'closure-compiler-65']"
+VariableDeclarationStatement-7-4,5,"['commons-lang-65', 'joda-time-13', 'closure-compiler-81', 'closure-compiler-100', 'commons-lang-40']"
+ExpressionStatement-9-14,5,"['commons-math-81', 'jfreechart-2']"
+VariableDeclarationStatement-4-0,5,"['closure-compiler-92', 'jfreechart-11', 'commons-math-83', 'closure-compiler-93']"
+VariableDeclarationStatement-5-7,5,"['commons-lang-1', 'commons-math-56', 'commons-math-31', 'commons-math-92']"
+ExpressionStatement-12-12,4,['commons-lang-63']
+VariableDeclarationStatement-5-42,4,['commons-math-49']
+VariableDeclarationStatement-8-21,4,['joda-time-17']
+ExpressionStatement-9-47,4,['jfreechart-21']
+ExpressionStatement-5-3,4,"['commons-math-44', 'closure-compiler-66', 'jfreechart-22', 'commons-lang-10']"
+IfStatement-3-1,4,"['commons-math-82', 'commons-math-85', 'joda-time-19', 'jfreechart-1']"
+FieldDeclaration-6-0,4,"['closure-compiler-16', 'commons-lang-8', 'mockito-23']"
+ExpressionStatement-5-65,4,['joda-time-23']
+ReturnStatement-10-1,3,['mockito-6']
+FieldDeclaration-2-1,3,"['closure-compiler-15', 'closure-compiler-111', 'commons-lang-32']"
+VariableDeclarationStatement-2-3,3,"['commons-math-79', 'commons-math-57']"
+IfStatement-4-8,3,"['closure-compiler-63', 'closure-compiler-62', 'closure-compiler-73']"
+ReturnStatement-6-17,3,"['commons-math-46', 'commons-math-47']"
+VariableDeclarationStatement-5-0,3,"['jfreechart-21', 'jfreechart-6']"
+IfStatement-4-5,3,"['closure-compiler-40', 'closure-compiler-24', 'closure-compiler-11']"
+EnhancedForStatement-12-1,3,"['commons-math-44', 'commons-math-7']"
+IfStatement-12-11,3,['commons-math-43']
+IfStatement-5-1,3,"['commons-math-87', 'commons-lang-50']"
+VariableDeclarationStatement-14-1,3,['commons-math-55']
+ReturnStatement-4-6,3,"['closure-compiler-64', 'commons-lang-46']"
+ExpressionStatement-4-1,3,"['closure-compiler-49', 'commons-lang-38', 'closure-compiler-108']"
+ExpressionStatement-2-1,3,"['closure-compiler-101', 'commons-math-31', 'closure-compiler-25']"
+ExpressionStatement-10-17,3,"['commons-math-35', 'jfreechart-12']"
+ExpressionStatement-4-9,3,"['closure-compiler-70', 'commons-lang-46']"
+ExpressionStatement-4-4,3,"['commons-math-66', 'mockito-26']"
+VariableDeclarationStatement-10-12,3,['commons-lang-65']
+VariableDeclarationStatement-10-0,3,"['closure-compiler-16', 'closure-compiler-3', 'mockito-31']"
+VariableDeclarationStatement-10-20,3,['closure-compiler-76']
+ExpressionStatement-3-1,3,"['commons-math-31', 'commons-math-65']"
+ExpressionStatement-2-0,3,"['mockito-23', 'commons-math-64']"
+IfStatement-9-16,3,"['commons-math-53', 'closure-compiler-76', 'closure-compiler-88']"
+ReturnStatement-2-0,3,"['mockito-33', 'mockito-21', 'closure-compiler-87']"
+IfStatement-10-50,2,['commons-math-37']
+IfStatement-6-6,2,['jfreechart-25']
+IfStatement-12-36,2,['commons-lang-62']
+IfStatement-6-21,2,"['closure-compiler-15', 'closure-compiler-5']"
+IfStatement-54-0,2,['joda-time-6']
+IfStatement-10-1,2,['commons-lang-47']
+IfStatement-10-4,2,['jfreechart-19']
+IfStatement-10-13,2,"['commons-math-93', 'commons-math-92']"
+IfStatement-26-0,2,['commons-math-16']
+IfStatement-19-1,2,['commons-lang-1']
+IfStatement-2-1,2,['closure-compiler-4']
+ExpressionStatement-9-3,2,['jfreechart-3']
+IfStatement-5-6,2,"['closure-compiler-22', 'closure-compiler-21']"
+ExpressionStatement-4-23,2,"['closure-compiler-97', 'commons-math-31']"
+FieldDeclaration-2-0,2,['commons-lang-56']
+FieldDeclaration-3-3,2,"['mockito-23', 'joda-time-11']"
+FieldDeclaration-8-1,2,"['commons-lang-23', 'commons-math-12']"
+FieldDeclaration-6-1,2,['closure-compiler-98']
+ThrowStatement-5-0,2,['commons-lang-35']
+ExpressionStatement-25-0,2,['commons-math-40']
+ExpressionStatement-5-12,2,['closure-compiler-27']
+ExpressionStatement-5-1,2,"['closure-compiler-26', 'mockito-28']"
+ExpressionStatement-5-20,2,"['commons-lang-63', 'joda-time-5']"
+ExpressionStatement-5-50,2,['commons-lang-52']
+ExpressionStatement-6-2,2,"['joda-time-20', 'closure-compiler-39']"
+IfStatement-14-14,2,['commons-math-106']
+ExpressionStatement-7-3,2,"['closure-compiler-108', 'closure-compiler-29']"
+ExpressionStatement-7-1,2,['joda-time-22']
+ExpressionStatement-9-49,2,['closure-compiler-78']
+IfStatement-7-44,2,"['commons-lang-7', 'closure-compiler-75']"
+ExpressionStatement-9-6,2,"['commons-math-68', 'commons-math-64']"
+MethodDeclaration-3-3,2,['commons-lang-30']
+MethodDeclaration-4-1,2,['commons-lang-46']
+MethodDeclaration-17-4,2,['mockito-23']
+ForStatement-17-0,2,['commons-math-74']
+ForStatement-35-0,2,['commons-math-76']
+IfStatement-6-16,2,"['commons-math-95', 'joda-time-3']"
+VariableDeclarationStatement-9-34,2,['commons-math-40']
+VariableDeclarationStatement-6-56,2,['commons-math-76']
+ReturnStatement-4-5,2,"['commons-lang-57', 'commons-math-34']"
+VariableDeclarationStatement-6-62,2,['jfreechart-7']
+VariableDeclarationStatement-6-1,2,['closure-compiler-74']
+VariableDeclarationStatement-5-6,2,"['commons-math-68', 'commons-math-23']"
+SwitchCase-2-3,2,"['closure-compiler-77', 'commons-lang-52']"
+VariableDeclarationStatement-7-41,2,['commons-math-45']
+VariableDeclarationStatement-8-4,2,['jfreechart-22']
+ReturnStatement-7-17,2,['commons-math-68']
+VariableDeclarationStatement-7-17,2,['commons-lang-32']
+ReturnStatement-7-19,2,['commons-math-67']
+VariableDeclarationStatement-5-2,2,"['commons-math-66', 'joda-time-26']"
+VariableDeclarationStatement-7-27,2,['joda-time-17']
+VariableDeclarationStatement-7-56,2,['commons-math-38']
+VariableDeclarationStatement-8-13,2,['commons-math-55']
+VariableDeclarationStatement-12-3,2,['commons-math-55']
+VariableDeclarationStatement-13-12,2,['commons-math-40']
+VariableDeclarationStatement-9-3,2,['jfreechart-2']
+ReturnStatement-12-3,2,['mockito-35']
+IfStatement-11-13,2,"['closure-compiler-125', 'closure-compiler-113']"
+IfStatement-33-0,2,"['closure-compiler-116', 'closure-compiler-115']"
+VariableDeclarationStatement-9-64,2,['commons-math-64']
+ReturnStatement-2-1,2,"['commons-math-23', 'commons-math-5']"
+VariableDeclarationStatement-9-52,2,['commons-math-40']
+ReturnStatement-3-2,2,"['commons-math-75', 'closure-compiler-10']"

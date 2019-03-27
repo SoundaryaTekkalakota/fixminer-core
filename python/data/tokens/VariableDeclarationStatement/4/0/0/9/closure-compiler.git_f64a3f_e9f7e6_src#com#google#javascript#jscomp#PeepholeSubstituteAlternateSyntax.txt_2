@@ -1,5 +1,0 @@
-UPD VariableDeclarationStatement@@boolean elseBranchIsExpressionBlock=isExpressBlock(elseBranch); @TO@ boolean elseBranchIsExpressionBlock=isFoldableExpressBlock(elseBranch); @AT@ 11457 @LENGTH@ 65
----UPD VariableDeclarationFragment@@elseBranchIsExpressionBlock=isExpressBlock(elseBranch) @TO@ elseBranchIsExpressionBlock=isFoldableExpressBlock(elseBranch) @AT@ 11465 @LENGTH@ 56
-------UPD MethodInvocation@@isExpressBlock(elseBranch) @TO@ isFoldableExpressBlock(elseBranch) @AT@ 11495 @LENGTH@ 26
----------UPD SimpleName@@MethodName:isExpressBlock:[elseBranch] @TO@ MethodName:isFoldableExpressBlock:[elseBranch] @AT@ 11495 @LENGTH@ 26
-

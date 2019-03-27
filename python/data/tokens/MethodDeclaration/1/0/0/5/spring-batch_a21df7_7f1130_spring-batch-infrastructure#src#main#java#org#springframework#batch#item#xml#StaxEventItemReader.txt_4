@@ -1,2 +1,0 @@
-MOV MethodDeclaration@@public, void, MethodName:afterPropertiesSet, Exception,  @TO@ TypeDeclaration@@[public]StaxEventItemReader, AbstractItemCountingItemStreamItemReader<T>[ResourceAwareItemReaderItemStream<T>, InitializingBean] @AT@ 4001 @LENGTH@ 447
-

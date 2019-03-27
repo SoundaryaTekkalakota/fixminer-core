@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@UsernamePasswordAuthenticationToken userToken=(UsernamePasswordAuthenticationToken)authentication; @TO@ final UsernamePasswordAuthenticationToken userToken=(UsernamePasswordAuthenticationToken)authentication; @AT@ 12125 @LENGTH@ 100
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@UsernamePasswordAuthenticationToken userToken=(UsernamePasswordAuthenticationToken)authentication; @AT@ 12125 @LENGTH@ 5
+

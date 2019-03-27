@@ -1,5 +1,0 @@
-UPD VariableDeclarationStatement@@int index=path.indexOf(prefix); @TO@ int index=path.lastIndexOf(prefix); @AT@ 13440 @LENGTH@ 33
----UPD VariableDeclarationFragment@@index=path.indexOf(prefix) @TO@ index=path.lastIndexOf(prefix) @AT@ 13444 @LENGTH@ 28
-------UPD MethodInvocation@@path.indexOf(prefix) @TO@ path.lastIndexOf(prefix) @AT@ 13452 @LENGTH@ 20
----------UPD SimpleName@@MethodName:indexOf:[prefix] @TO@ MethodName:lastIndexOf:[prefix] @AT@ 13457 @LENGTH@ 15
-

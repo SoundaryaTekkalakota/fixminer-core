@@ -1,0 +1,16 @@
+VariableDeclarationStatement 
+---SimpleType 
+---VariableDeclarationFragment 
+------MethodInvocation 
+---------SimpleName 
+------------SimpleName 
+------------NumberLiteral 
+------------SimpleName 
+------------MethodInvocation 
+---------------ArrayAccess 
+------------------SimpleName 
+------------------NumberLiteral 
+---------------SimpleName 
+---------FieldAccess 
+------------ThisExpression 
+------------SimpleName

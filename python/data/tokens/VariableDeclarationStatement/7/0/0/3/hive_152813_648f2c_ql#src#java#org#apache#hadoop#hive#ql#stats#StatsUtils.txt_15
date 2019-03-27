@@ -1,0 +1,8 @@
+INS VariableDeclarationStatement@@String colTypeLowerCase=colType.toLowerCase(); @TO@ MethodDeclaration@@public, static, long, MethodName:getSizeOfPrimitiveTypeArraysFromType, String colType, int length,  @AT@ 40502 @LENGTH@ 48
+---INS SimpleType@@String @TO@ VariableDeclarationStatement@@String colTypeLowerCase=colType.toLowerCase(); @AT@ 40502 @LENGTH@ 6
+---INS VariableDeclarationFragment@@colTypeLowerCase=colType.toLowerCase() @TO@ VariableDeclarationStatement@@String colTypeLowerCase=colType.toLowerCase(); @AT@ 40509 @LENGTH@ 40
+------INS SimpleName@@colTypeLowerCase @TO@ VariableDeclarationFragment@@colTypeLowerCase=colType.toLowerCase() @AT@ 40509 @LENGTH@ 16
+------INS MethodInvocation@@colType.toLowerCase() @TO@ VariableDeclarationFragment@@colTypeLowerCase=colType.toLowerCase() @AT@ 40528 @LENGTH@ 21
+---------INS SimpleName@@Name:colType @TO@ MethodInvocation@@colType.toLowerCase() @AT@ 40528 @LENGTH@ 7
+---------INS SimpleName@@MethodName:toLowerCase:[] @TO@ MethodInvocation@@colType.toLowerCase() @AT@ 40536 @LENGTH@ 13
+

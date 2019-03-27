@@ -1,8 +1,0 @@
-IfStatement
----InfixExpression
-------PrefixExpression
-------Operator
-------InfixExpression
----------SimpleName
----------Operator
----------CharacterLiteral

@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, SoftValueSortedMap<K,V>, MethodName:tailMap, K key,  @TO@ public, synchronized, SoftValueSortedMap<K,V>, MethodName:tailMap, K key,  @AT@ 4009 @LENGTH@ 145
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, SoftValueSortedMap<K,V>, MethodName:tailMap, K key,  @AT@ 4134 @LENGTH@ 12
+

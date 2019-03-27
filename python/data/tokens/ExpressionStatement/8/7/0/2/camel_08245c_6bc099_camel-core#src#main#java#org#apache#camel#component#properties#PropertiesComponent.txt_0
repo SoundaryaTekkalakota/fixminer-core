@@ -1,9 +1,0 @@
-INS ExpressionStatement@@Assignment:value=Matcher.quoteReplacement(value) @TO@ WhileStatement@@MethodInvocation:matcher.find() @AT@ 6073 @LENGTH@ 40
----INS Assignment@@value=Matcher.quoteReplacement(value) @TO@ ExpressionStatement@@Assignment:value=Matcher.quoteReplacement(value) @AT@ 6073 @LENGTH@ 39
-------INS SimpleName@@value @TO@ Assignment@@value=Matcher.quoteReplacement(value) @AT@ 6073 @LENGTH@ 5
-------INS Operator@@= @TO@ Assignment@@value=Matcher.quoteReplacement(value) @AT@ 6078 @LENGTH@ 1
-------INS MethodInvocation@@Matcher.quoteReplacement(value) @TO@ Assignment@@value=Matcher.quoteReplacement(value) @AT@ 6081 @LENGTH@ 31
----------INS SimpleName@@Name:Matcher @TO@ MethodInvocation@@Matcher.quoteReplacement(value) @AT@ 6081 @LENGTH@ 7
----------INS SimpleName@@MethodName:quoteReplacement:[value] @TO@ MethodInvocation@@Matcher.quoteReplacement(value) @AT@ 6089 @LENGTH@ 23
-------------INS SimpleName@@value @TO@ SimpleName@@MethodName:quoteReplacement:[value] @AT@ 6106 @LENGTH@ 5
-

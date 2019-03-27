@@ -1,0 +1,4 @@
+UPD ReturnStatement@@MethodInvocation:uri.endsWith(request.getContextPath() + url) @TO@ MethodInvocation:uri.equals(request.getContextPath() + url) @AT@ 10449 @LENGTH@ 52
+---UPD MethodInvocation@@uri.endsWith(request.getContextPath() + url) @TO@ uri.equals(request.getContextPath() + url) @AT@ 10456 @LENGTH@ 44
+------UPD SimpleName@@MethodName:endsWith:[request.getContextPath() + url] @TO@ MethodName:equals:[request.getContextPath() + url] @AT@ 10460 @LENGTH@ 40
+

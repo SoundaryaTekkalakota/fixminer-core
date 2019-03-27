@@ -1,6 +1,6 @@
-FieldDeclaration
----ParameterizedType
-------SimpleType
-------SimpleType
----VariableDeclarationFragment
+FieldDeclaration 
+---ParameterizedType 
+------SimpleType 
+------SimpleType 
+---VariableDeclarationFragment 
 ------SimpleName

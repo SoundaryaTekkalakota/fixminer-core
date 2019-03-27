@@ -1,0 +1,3 @@
+UPD TypeDeclaration@@[@InterfaceAudience.Private, public]BloomFilterUtil,  @TO@ [@InterfaceAudience.Private, public, final]BloomFilterUtil,  @AT@ 1048 @LENGTH@ 8464
+---INS Modifier@@final @TO@ TypeDeclaration@@[@InterfaceAudience.Private, public]BloomFilterUtil,  @AT@ 1082 @LENGTH@ 5
+

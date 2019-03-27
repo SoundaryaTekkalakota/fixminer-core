@@ -1,5 +1,0 @@
-UPD VariableDeclarationStatement@@int firstQuestionMarkIndex=url.lastIndexOf("?"); @TO@ int firstQuestionMarkIndex=url.indexOf("?"); @AT@ 3602 @LENGTH@ 50
----UPD VariableDeclarationFragment@@firstQuestionMarkIndex=url.lastIndexOf("?") @TO@ firstQuestionMarkIndex=url.indexOf("?") @AT@ 3606 @LENGTH@ 45
-------UPD MethodInvocation@@url.lastIndexOf("?") @TO@ url.indexOf("?") @AT@ 3631 @LENGTH@ 20
----------UPD SimpleName@@MethodName:lastIndexOf:["?"] @TO@ MethodName:indexOf:["?"] @AT@ 3635 @LENGTH@ 16
-

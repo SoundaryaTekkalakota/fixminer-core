@@ -1,0 +1,6 @@
+INS ExpressionStatement@@MethodInvocation:TableMapReduceUtil.initCredentials(job) @TO@ IfStatement@@InfixExpression:hfileOutPath != null @AT@ 10018 @LENGTH@ 40
+---INS MethodInvocation@@TableMapReduceUtil.initCredentials(job) @TO@ ExpressionStatement@@MethodInvocation:TableMapReduceUtil.initCredentials(job) @AT@ 10018 @LENGTH@ 39
+------INS SimpleName@@Name:TableMapReduceUtil @TO@ MethodInvocation@@TableMapReduceUtil.initCredentials(job) @AT@ 10018 @LENGTH@ 18
+------INS SimpleName@@MethodName:initCredentials:[job] @TO@ MethodInvocation@@TableMapReduceUtil.initCredentials(job) @AT@ 10037 @LENGTH@ 20
+---------INS SimpleName@@job @TO@ SimpleName@@MethodName:initCredentials:[job] @AT@ 10053 @LENGTH@ 3
+

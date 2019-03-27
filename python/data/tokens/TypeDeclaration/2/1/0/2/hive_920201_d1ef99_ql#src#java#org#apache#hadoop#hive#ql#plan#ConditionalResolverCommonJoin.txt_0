@@ -1,0 +1,3 @@
+UPD TypeDeclaration@@AliasFileSizePair, [Comparable<AliasFileSizePair>] @TO@ [static]AliasFileSizePair, [Comparable<AliasFileSizePair>] @AT@ 4385 @LENGTH@ 369
+---INS Modifier@@static @TO@ TypeDeclaration@@AliasFileSizePair, [Comparable<AliasFileSizePair>] @AT@ 4379 @LENGTH@ 6
+

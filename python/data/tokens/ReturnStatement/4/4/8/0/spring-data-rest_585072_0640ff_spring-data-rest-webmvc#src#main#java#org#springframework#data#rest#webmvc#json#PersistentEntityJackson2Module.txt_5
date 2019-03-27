@@ -1,0 +1,5 @@
+UPD ReturnStatement@@ @TO@ MethodInvocation:Optional.empty() @AT@ 11330 @LENGTH@ 7
+---INS MethodInvocation@@Optional.empty() @TO@ ReturnStatement@@ @AT@ 11321 @LENGTH@ 16
+------INS SimpleName@@Name:Optional @TO@ MethodInvocation@@Optional.empty() @AT@ 11321 @LENGTH@ 8
+------INS SimpleName@@MethodName:empty:[] @TO@ MethodInvocation@@Optional.empty() @AT@ 11330 @LENGTH@ 7
+

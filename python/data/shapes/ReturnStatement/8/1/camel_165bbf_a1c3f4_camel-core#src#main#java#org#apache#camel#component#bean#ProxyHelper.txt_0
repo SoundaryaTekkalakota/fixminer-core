@@ -1,8 +1,0 @@
-ReturnStatement
----CastExpression
-------MethodInvocation
----------SimpleName
-------------MethodInvocation
----------------SimpleName
----------------SimpleName
-------------SimpleName

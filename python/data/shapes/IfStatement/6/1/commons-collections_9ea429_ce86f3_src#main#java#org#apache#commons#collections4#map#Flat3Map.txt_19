@@ -1,6 +1,0 @@
-IfStatement
----SimpleName
----InfixExpression
-------SimpleName
-------Operator
-------BooleanLiteral

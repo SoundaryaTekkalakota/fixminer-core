@@ -1,4 +1,4 @@
-VariableDeclarationStatement
----VariableDeclarationFragment
-------SimpleName
+VariableDeclarationStatement 
+---VariableDeclarationFragment 
+------SimpleName 
 ------NullLiteral

@@ -1,7 +1,0 @@
-IfStatement
----InfixExpression
-------SimpleName
-------Operator
-------NumberLiteral
----ReturnStatement
-------SimpleName

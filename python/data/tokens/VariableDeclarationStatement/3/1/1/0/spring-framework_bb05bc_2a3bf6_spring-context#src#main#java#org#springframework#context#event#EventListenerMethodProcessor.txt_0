@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@Class<?> type=AutoProxyUtils.determineTargetClass(this.applicationContext.getBeanFactory(),beanName); @TO@ Class<?> type=null; @AT@ 3074 @LENGTH@ 104
----UPD VariableDeclarationFragment@@type=AutoProxyUtils.determineTargetClass(this.applicationContext.getBeanFactory(),beanName) @TO@ type=null @AT@ 3083 @LENGTH@ 94
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@type=AutoProxyUtils.determineTargetClass(this.applicationContext.getBeanFactory(),beanName) @AT@ 3090 @LENGTH@ 4
-

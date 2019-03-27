@@ -1,5 +1,0 @@
-UPD FieldDeclaration@@public, static, int, [OBJECT=0] @TO@ public, static, final, int, [OBJECT] @AT@ 1836 @LENGTH@ 29
----UPD VariableDeclarationFragment@@OBJECT=0 @TO@ OBJECT @AT@ 1854 @LENGTH@ 10
-------DEL NumberLiteral@@0 @AT@ 1863 @LENGTH@ 1
----INS Modifier@@final @TO@ FieldDeclaration@@public, static, int, [OBJECT=0] @AT@ 1860 @LENGTH@ 5
-

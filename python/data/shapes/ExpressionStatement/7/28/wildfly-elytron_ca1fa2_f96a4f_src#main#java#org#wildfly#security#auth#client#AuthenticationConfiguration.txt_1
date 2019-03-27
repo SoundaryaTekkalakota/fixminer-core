@@ -1,7 +1,0 @@
-ExpressionStatement
----Assignment
-------ClassInstanceCreation
----------MethodInvocation
-------------SimpleName
-------------SimpleName
----------SimpleName

@@ -1,2 +1,0 @@
-MOV ExpressionStatement@@MethodInvocation:part.setDataHandler(new DataHandler(ds)) @TO@ MethodDeclaration@@protected, String, MethodName:populateContentOnBodyPart, BodyPart part, MailConfiguration configuration, Exchange exchange, MessagingException, IOException,  @AT@ 6279 @LENGTH@ 41
-

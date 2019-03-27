@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@byte[] mrInput=MRHelpers.createMRInputPayload(serializedConf,null); @TO@ byte[] mrInput=null; @AT@ 9976 @LENGTH@ 70
----UPD VariableDeclarationFragment@@mrInput=MRHelpers.createMRInputPayload(serializedConf,null) @TO@ mrInput=null @AT@ 9983 @LENGTH@ 62
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@mrInput=MRHelpers.createMRInputPayload(serializedConf,null) @AT@ 10563 @LENGTH@ 4
-

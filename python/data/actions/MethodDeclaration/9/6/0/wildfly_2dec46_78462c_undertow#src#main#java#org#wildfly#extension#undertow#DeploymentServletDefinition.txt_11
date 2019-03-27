@@ -1,9 +1,0 @@
- UPD MethodDeclaration 
---- DEL SingleVariableDeclaration 
------- DEL Modifier 
------- DEL SimpleType 
------- DEL SimpleName 
---- DEL SingleVariableDeclaration 
------- DEL Modifier 
------- DEL SimpleType 
------- DEL SimpleName

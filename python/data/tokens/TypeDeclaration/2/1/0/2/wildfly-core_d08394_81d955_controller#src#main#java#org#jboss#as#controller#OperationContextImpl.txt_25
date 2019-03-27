@@ -1,0 +1,3 @@
+UPD TypeDeclaration@@[private]OperationContextServiceController, [ServiceController<S>] @TO@ [private, static]OperationContextServiceController, [ServiceController<S>] @AT@ 112823 @LENGTH@ 3267
+---INS Modifier@@static @TO@ TypeDeclaration@@[private]OperationContextServiceController, [ServiceController<S>] @AT@ 114221 @LENGTH@ 6
+

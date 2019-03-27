@@ -1,8 +1,0 @@
-ExpressionStatement
----Assignment
-------InfixExpression
----------ParenthesizedExpression
-------------InfixExpression
----------------Operator
----------------SimpleName
----------SimpleName

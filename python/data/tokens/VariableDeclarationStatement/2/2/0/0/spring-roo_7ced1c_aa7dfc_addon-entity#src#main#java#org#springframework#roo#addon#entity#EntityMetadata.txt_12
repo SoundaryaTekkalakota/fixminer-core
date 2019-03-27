@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@MethodMetadata found=parent.getFlushMethod(); @TO@ final MethodMetadata found=parent.getFlushMethod(); @AT@ 9924 @LENGTH@ 47
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@MethodMetadata found=parent.getFlushMethod(); @AT@ 10072 @LENGTH@ 5
+

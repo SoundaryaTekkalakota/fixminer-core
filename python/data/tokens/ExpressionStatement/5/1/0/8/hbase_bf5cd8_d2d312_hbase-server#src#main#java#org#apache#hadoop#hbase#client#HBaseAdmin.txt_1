@@ -1,0 +1,6 @@
+INS ExpressionStatement@@MethodInvocation:HTableDescriptor.isLegalTableName(tableName) @TO@ MethodDeclaration@@public, void, MethodName:disableTableAsync, final byte[] tableName, IOException,  @AT@ 31868 @LENGTH@ 45
+---INS MethodInvocation@@HTableDescriptor.isLegalTableName(tableName) @TO@ ExpressionStatement@@MethodInvocation:HTableDescriptor.isLegalTableName(tableName) @AT@ 31868 @LENGTH@ 44
+------INS SimpleName@@Name:HTableDescriptor @TO@ MethodInvocation@@HTableDescriptor.isLegalTableName(tableName) @AT@ 31868 @LENGTH@ 16
+------INS SimpleName@@MethodName:isLegalTableName:[tableName] @TO@ MethodInvocation@@HTableDescriptor.isLegalTableName(tableName) @AT@ 31885 @LENGTH@ 27
+---------INS SimpleName@@tableName @TO@ SimpleName@@MethodName:isLegalTableName:[tableName] @AT@ 31902 @LENGTH@ 9
+

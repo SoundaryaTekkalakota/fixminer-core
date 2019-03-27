@@ -1,0 +1,5 @@
+ DEL EnhancedForStatement 
+--- DEL SingleVariableDeclaration 
+------ DEL SimpleType 
+------ DEL SimpleName 
+--- DEL SimpleName

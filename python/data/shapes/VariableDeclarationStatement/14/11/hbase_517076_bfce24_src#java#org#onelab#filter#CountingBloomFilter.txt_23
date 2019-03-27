@@ -1,0 +1,14 @@
+VariableDeclarationStatement 
+---PrimitiveType 
+---VariableDeclarationFragment 
+------SimpleName 
+------InfixExpression 
+---------ParenthesizedExpression 
+------------InfixExpression 
+---------------ArrayAccess 
+------------------SimpleName 
+------------------SimpleName 
+---------------Operator 
+---------------NumberLiteral 
+---------Operator 
+---------NumberLiteral

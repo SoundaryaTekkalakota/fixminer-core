@@ -1,0 +1,13 @@
+ DEL ForStatement 
+--- DEL VariableDeclarationExpression 
+------ DEL PrimitiveType 
+------ DEL VariableDeclarationFragment 
+--------- DEL SimpleName 
+--------- DEL NumberLiteral 
+--- DEL InfixExpression 
+------ DEL SimpleName 
+------ DEL Operator 
+------ DEL SimpleName 
+--- DEL PostfixExpression 
+------ DEL SimpleName 
+------ DEL Operator

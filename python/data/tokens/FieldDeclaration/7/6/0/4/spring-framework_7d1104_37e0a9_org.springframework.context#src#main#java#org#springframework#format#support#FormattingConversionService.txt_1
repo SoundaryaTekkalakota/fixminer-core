@@ -1,8 +1,0 @@
-UPD FieldDeclaration@@private, final, Map<FieldFormatterKey,GenericConverter>, [cachedParsers=new ConcurrentHashMap<FieldFormatterKey,GenericConverter>()] @TO@ private, final, Map<AnnotationConverterKey,GenericConverter>, [cachedParsers=new ConcurrentHashMap<AnnotationConverterKey,GenericConverter>()] @AT@ 2219 @LENGTH@ 135
----UPD ParameterizedType@@Map<FieldFormatterKey,GenericConverter> @TO@ Map<AnnotationConverterKey,GenericConverter> @AT@ 2233 @LENGTH@ 40
-------UPD SimpleType@@FieldFormatterKey @TO@ AnnotationConverterKey @AT@ 2237 @LENGTH@ 17
----UPD VariableDeclarationFragment@@cachedParsers=new ConcurrentHashMap<FieldFormatterKey,GenericConverter>() @TO@ cachedParsers=new ConcurrentHashMap<AnnotationConverterKey,GenericConverter>() @AT@ 2274 @LENGTH@ 79
-------UPD ClassInstanceCreation@@ConcurrentHashMap<FieldFormatterKey,GenericConverter>[] @TO@ ConcurrentHashMap<AnnotationConverterKey,GenericConverter>[] @AT@ 2293 @LENGTH@ 60
----------UPD ParameterizedType@@ConcurrentHashMap<FieldFormatterKey,GenericConverter> @TO@ ConcurrentHashMap<AnnotationConverterKey,GenericConverter> @AT@ 2297 @LENGTH@ 54
-------------UPD SimpleType@@FieldFormatterKey @TO@ AnnotationConverterKey @AT@ 2315 @LENGTH@ 17
-

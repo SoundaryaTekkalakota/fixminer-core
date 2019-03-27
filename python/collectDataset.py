@@ -1,6 +1,9 @@
 from common.commons import *
 
 
+
+
+
 if __name__ == '__main__':
 
 
@@ -25,6 +28,17 @@ if __name__ == '__main__':
 
         pd.options.mode.chained_assignment = None
 
+
+        #dataset stats
+        #matches = load_zipped_pickle( join(DATA_PATH, 'studyDataset.pickle'))
+        #matches = matches[matches.repo.apply(lambda i: not (i.startswith('commons-math') or i.startswith('commons-lang') or i.startswith('closure-compiler.git') or i.startswith('joda-time.git') or i.startswith('mockito.git')))]
+        #ds =matches.groupby('repo', as_index=False).agg({'bid': "nunique"})
+        #ds['repo'] = ds['repo'].apply(lambda x:subjects.query("Repo == '{0}'".format(x)).iloc[0].Group.upper() +'-'+subjects.query("Repo == '{0}'".format(x)).iloc[0].Subject)
+        #ds.sort_values(by='repo').to_latex('dataset.tex')
+
+
+
+
         if job == 'clone':
             from commitCollector import *
 
@@ -38,15 +52,15 @@ if __name__ == '__main__':
 
             caseFix(args.subject)
 
-        elif job =='getSingleFix':
-            for i in listdir(COMMIT_DFS):
-                commits = load_zipped_pickle(join(COMMIT_DFS,i))
-
-                singleFix = commits.fix.value_counts().loc[lambda x: x == 1].reset_index(name='count')['index']
-
-                singleCommits = commits[commits.fix.isin(singleFix)]
-                singleCommits['fix'] = singleCommits.fix.apply(lambda x: x.strip().upper())
-                save_zipped_pickle(singleCommits,join(COMMIT_DFS,i))
+        # elif job =='getSingleFix':
+        #     for i in listdir(COMMIT_DFS):
+        #         commits = load_zipped_pickle(join(COMMIT_DFS,i))
+        #
+        #         singleFix = commits.fix.value_counts().loc[lambda x: x == 1].reset_index(name='count')['index']
+        #
+        #         singleCommits = commits[commits.fix.isin(singleFix)]
+        #         singleCommits['fix'] = singleCommits.fix.apply(lambda x: x.strip().upper())
+        #         save_zipped_pickle(singleCommits,join(COMMIT_DFS,i))
 
         elif job =='brDownload':
             from bugReportDownloader import caseBRDownload
@@ -54,6 +68,11 @@ if __name__ == '__main__':
         elif job =='brParser':
             from bugReportParser import step1
             step1(args.subject)
+
+        elif job == 'datasetDefects4J':
+            from defects4JDataset import core
+            core()
+
         elif job =='dataset':
 
             if not isfile(join(DATA_PATH,'singleBR.pickle')):
@@ -97,113 +116,11 @@ if __name__ == '__main__':
                 parallelRun(prepareFiles,workList)
 
         elif job =='calculatePairs':
-
-            dbDir = join(DATA_PATH, 'redis')
-
-            portInner = '6399'
-            startDB(dbDir, portInner, "ALLdumps-gumInput.rdb")
-            # cmd = "bash " + dbDir + "/" + "startServer.sh " + dbDir + " ALLdumps-gumInput.rdb " + " " + portInner;
-            #
-            # o, e = shellGitCheckout(cmd)
-            # ping = "redis-cli -p 6399 ping"
-            # o, e = shellGitCheckout(ping)
-            # m = re.search('PONG', o)
-            #
-            # while not m:
-            #     time.sleep(10)
-            #     logging.info('Waiting for checkout')
-            #     m = re.search('PONG', o)
-            import redis
-            redis_db = redis.StrictRedis(host="localhost", port=portInner, db=0)
-            keys = redis_db.scan(0, match='*', count='1000000')
-
-            matches = pd.DataFrame(keys[1], columns=['pairs_key'])
-
-            # matches = load_zipped_pickle(join(DATA_PATH,'singleHunks'))
-            matches['pairs_key'] = matches['pairs_key'].apply(lambda x: x.decode())
-            matches['root'] = matches['pairs_key'].apply(lambda x: x.split('/')[0])
-            matches['size'] = matches['pairs_key'].apply(lambda x: x.split('/')[1])
-            matches['file'] = matches['pairs_key'].apply(lambda x: x.split('/')[2])
-
-            roots =matches.root.unique().tolist()
-            # roots = listdir(join(DATA_PATH,'EnhancedASTDiffgumInput'))
-            for root in roots:
-                # if root.startswith('.'):
-                #     continue
-                rootMatch = matches[matches['root'] == root]
-                sizes = rootMatch['size'].unique().tolist()
-                for sf in sizes:
-                    # if sf.startswith('.'):
-                    #     continue
-                    match = rootMatch[rootMatch['size'] == sf]
-                    files = match.file.unique().tolist()
-
-                    if len(files)>1:
-                        files
-                        indexCompared = []
-                        if not os.path.exists(join(DATA_PATH, 'pairs', root)):
-                            os.makedirs(join(DATA_PATH, 'pairs', root))
-
-                        with open(join(DATA_PATH, 'pairs', root, sf + '.index'), 'w') as out:
-                            # csv_out = csv.writer(out)
-
-                            for idx, val in enumerate(files):
-
-                                out.write(str(idx) + ',' + val + '\n')
-                                indexCompared.append(str(idx))
-
-                        pairs = list(itertools.combinations(indexCompared,2))
-                        pairs
-                        # import csv
-
-
-
-                        with open(join(DATA_PATH,'pairs',root,sf+'.txt'),'w') as out:
-                            # csv_out = csv.writer(out)
-                            for row in pairs:
-                                a, b = row
-                                out.write(a + ','+b+'\n')
+            from pairs import shapePairs
+            shapePairs()
         elif job == 'importShapesPairs':
-
-            dbDir = join(DATA_PATH, 'redis')
-
-            portInner = '6380'
-            # startDB(dbDir, portInner, "test.rdb")
-            startDB(dbDir, portInner, "clusterl0-gumInputALL.rdb")
-            # cmd = "bash " + dbDir + "/" + "startServer.sh " + dbDir + " clusterl0-gumInputALL.rdb " + " " + portInner;
-            #
-            # o, e = shellGitCheckout(cmd)
-            # ping = "redis-cli -p 6380 ping"
-            # o, e = shellGitCheckout(ping)
-            # m = re.search('PONG', o)
-            #
-            # while not m:
-            #     time.sleep(10)
-            #     logging.info('Waiting for checkout')
-            #     m = re.search('PONG', o)
-
-            import redis
-            pairsShapes = join(DATA_PATH, 'pairs')
-            redis_db = redis.StrictRedis(host="localhost", port=portInner, db=1)
-            pairs = get_filepaths(pairsShapes,'.txt')
-            for pair in pairs:
-                split = pair.split("/")
-                shapeName = split[-2]
-                sizeCluster = split[-1].replace('.txt','')
-                cmd ="bash " + join(DATA_PATH,'redisSingleImport.sh') + " " +  pair + " 6380 " +shapeName+"-"+sizeCluster ;
-
-                o,e = shellGitCheckout(cmd)
-                print(o)
-                indexFile = pair.replace('.txt','.index')
-                with open(indexFile,'r') as iFile:
-                    idx =iFile.readlines()
-                for i in idx:
-                    k,v = i.split(',')
-                    key = shapeName+"-"+sizeCluster+"-" + k
-                    redis_db.set(key,v.strip())
-
-            # stopServer = "bash " + dbDir + "/" + "stopServer.sh " + portInner
-            # o,e = shellGitCheckout(stopServer)
+            from pairs import importShape
+            importShape()
 
         elif job == 'cluster':
             from abstractPatch import cluster
@@ -215,93 +132,12 @@ if __name__ == '__main__':
             cluster(join(DATA_PATH,'shapes'),join(DATA_PATH, 'pairs'),'shapes')
 
         elif job =='actionPairs':
-            shapes = listdir(join(DATA_PATH,'shapes'))
-            shapes = [f for f in shapes if isdir(join(DATA_PATH,'shapes',f))]
-            shapes
-            for shape in shapes:
-                sizes = listdir(join(DATA_PATH, 'shapes',shape))
-                sizes = [f for f in  sizes if isdir(join(DATA_PATH, 'shapes', shape,f))]
-                for sf in sizes:
-                    if sf.startswith('.'):
-                        continue
-                    clusters = listdir(join(DATA_PATH, 'shapes', shape,sf))
-                    for cluster in clusters:
-                        if cluster.startswith('.'):
-                            continue
-                        files = listdir(join(DATA_PATH, 'shapes', shape, sf,cluster))
-                        indexCompared = []
-                        if not os.path.exists(join(DATA_PATH, 'pairsAction', shape,sf)):
-                            os.makedirs(join(DATA_PATH, 'pairsAction', shape,sf))
-
-                        with open(join(DATA_PATH, 'pairsAction', shape,sf,cluster + '.index'), 'w') as out:
-                            # csv_out = csv.writer(out)
-
-                            for idx, val in enumerate(files):
-                                out.write(str(idx) + ',' + val + '\n')
-                                indexCompared.append(str(idx))
-
-                        pairs = list(itertools.combinations(indexCompared, 2))
-
-                        with open(join(DATA_PATH, 'pairsAction', shape,sf, cluster + '.txt'), 'w') as out:
-                            # csv_out = csv.writer(out)
-                            for row in pairs:
-                                a, b = row
-                                out.write(a + ',' + b + '\n')
+            from pairs import actionPairs
+            actionPairs()
 
         elif job =='importActionPairs':
-
-            dbDir = join(DATA_PATH,'redis')
-
-            portInner = '6380'
-            # cmd = "bash "+dbDir + "/" + "startServer.sh " +dbDir+ " clusterl1-gumInputALL.rdb "+  " " + portInner ;
-            #
-            # o,e = shellGitCheckout(cmd)
-            # ping = "redis-cli -p 6380 ping"
-            # o, e = shellGitCheckout(ping)
-            # m = re.search('PONG', o)
-            #
-            # while not m:
-            #     time.sleep(10)
-            #     logging.info('Waiting for checkout')
-            #     m = re.search('PONG', o)
-            startDB(dbDir,portInner,"clusterl1-gumInputALL.rdb")
-
-            import redis
-            #import pairs
-            pairsAction = join(DATA_PATH, 'pairsAction')
-            redis_db = redis.StrictRedis(host="localhost", port=portInner, db=1)
-            pairs = get_filepaths(pairsAction,'.txt')
-            for pair in pairs:
-                 split = pair.split("/")
-                 shapeName = split[-3]
-                 shapeSize = split[-2]
-                 cluster = split[-1].replace('.txt','')
-                 cmd ="bash " + join(DATA_PATH,'redisSingleImport.sh') + " " +  pair + " 6380 " +  shapeName +"-"+shapeSize +"-"+cluster ;#+, portInner,f.getName()+"-"+pair.getName().split("\\.")[0]);
-            
-                 o,e = shellGitCheckout(cmd)
-                 print(o)
-                 indexFile = pair.replace('.txt','.index')
-                 with open(indexFile,'r') as iFile:
-                     idx =iFile.readlines()
-                 for i in idx:
-                     k,v = i.split(',')
-                     key = shapeName +"-"+shapeSize +"-"+cluster+"-" + k
-                     redis_db.set(key,v.strip())
-
-            # redis_db = redis.StrictRedis(host="localhost", port=portInner, db=0)
-            # keys = redis_db.scan(0, match='*', count='100000000')
-            #
-            # workList = [f.decode() for f in keys[1]]
-            # workList
-            #
-            # javaClassPAth = '/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/bin/java -Dfile.encoding=UTF-8 -classpath "/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/lib/tools.jar:/Users/anil.koyuncu/projects/fixminer-all/fixminer_source/target/classes:/Users/anil.koyuncu/.m2/repository/org/javatuples/javatuples/1.2/javatuples-1.2.jar:/Users/anil.koyuncu/projects/fixminer-all/simple-utils/target/classes:/Users/anil.koyuncu/.m2/repository/org/apache/poi/poi/3.12/poi-3.12.jar:/Users/anil.koyuncu/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/anil.koyuncu/.m2/repository/org/apache/poi/poi-ooxml/3.12/poi-ooxml-3.12.jar:/Users/anil.koyuncu/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.12/poi-ooxml-schemas-3.12.jar:/Users/anil.koyuncu/.m2/repository/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar:/Users/anil.koyuncu/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/anil.koyuncu/.m2/repository/net/sourceforge/jexcelapi/jxl/2.6.12/jxl-2.6.12.jar:/Users/anil.koyuncu/.m2/repository/log4j/log4j/1.2.14/log4j-1.2.14.jar:/Users/anil.koyuncu/.m2/repository/com/typesafe/akka/akka-actor_2.11/2.4.11/akka-actor_2.11-2.4.11.jar:/Users/anil.koyuncu/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar:/Users/anil.koyuncu/.m2/repository/com/typesafe/config/1.3.0/config-1.3.0.jar:/Users/anil.koyuncu/.m2/repository/org/scala-lang/modules/scala-java8-compat_2.11/0.7.0/scala-java8-compat_2.11-0.7.0.jar:/Users/anil.koyuncu/projects/fixminer-all/gumtree/core/target/classes:/Users/anil.koyuncu/.m2/repository/com/github/mpkorstanje/simmetrics-core/3.0.3/simmetrics-core-3.0.3.jar:/Users/anil.koyuncu/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar:/Users/anil.koyuncu/.m2/repository/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar:/Users/anil.koyuncu/.m2/repository/com/google/code/gson/gson/2.3/gson-2.3.jar:/Users/anil.koyuncu/projects/fixminer-all/gumtree/gen.jdt/target/classes:/Users/anil.koyuncu/.m2/repository/org/eclipse/core/runtime/3.10.0-v20140318-2214/runtime-3.10.0-v20140318-2214.jar:/Users/anil.koyuncu/.m2/repository/org/eclipse/osgi/3.10.0-v20140606-1445/osgi-3.10.0-v20140606-1445.jar:/Users/anil.koyuncu/.m2/repository/org/eclipse/equinox/common/3.6.200-v20130402-1505/common-3.6.200-v20130402-1505.jar:/Users/anil.koyuncu/.m2/repository/org/eclipse/core/jobs/3.6.0-v20140424-0053/jobs-3.6.0-v20140424-0053.jar:/Users/anil.koyuncu/.m2/repository/org/eclipse/equinox/registry/3.5.400-v20140428-1507/registry-3.5.400-v20140428-1507.jar:/Users/anil.koyuncu/.m2/repository/org/eclipse/equinox/preferences/3.5.200-v20140224-1527/preferences-3.5.200-v20140224-1527.jar:/Users/anil.koyuncu/.m2/repository/org/eclipse/core/contenttype/3.4.200-v20140207-1251/contenttype-3.4.200-v20140207-1251.jar:/Users/anil.koyuncu/.m2/repository/org/eclipse/equinox/app/1.3.200-v20130910-1609/app-1.3.200-v20130910-1609.jar:/Users/anil.koyuncu/.m2/repository/org/eclipse/birt/runtime/org.eclipse.core.resources/3.10.0.v20150423-0755/org.eclipse.core.resources-3.10.0.v20150423-0755.jar:/Users/anil.koyuncu/.m2/repository/org/eclipse/tycho/org.eclipse.jdt.core/3.12.2.v20161117-1814/org.eclipse.jdt.core-3.12.2.v20161117-1814.jar:/Users/anil.koyuncu/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/Users/anil.koyuncu/.m2/repository/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar:/Users/anil.koyuncu/.m2/repository/ch/qos/logback/logback-core/1.1.2/logback-core-1.1.2.jar:/Users/anil.koyuncu/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/anil.koyuncu/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/anil.koyuncu/.m2/repository/redis/clients/jedis/2.8.1/jedis-2.8.1.jar:/Users/anil.koyuncu/.m2/repository/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar:/Users/anil.koyuncu/.m2/repository/org/apache/commons/commons-text/1.3/commons-text-1.3.jar:/Users/anil.koyuncu/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/Users/anil.koyuncu/.m2/repository/com/rabbitmq/amqp-client/4.0.0/amqp-client-4.0.0.jar:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar"'
-            # def run(aKey):
-            #     cmd = javaClassPAth+" -jar /Users/anil.koyuncu/projects/fixminer-all/fixminer_source/target/FixPatternMiner-0.0.1-SNAPSHOT-jar-with-dependencies.jar " + aKey + " action"
-            #     o,e = shellGitCheckout(cmd)
-            #     # logging.info(o)
-            #     # logging.error(e)
-            #
-            # parallelRun(run,workList)
+            from pairs import importAction
+            importAction()
 
         elif job == 'clusterActions':
             from abstractPatch import cluster
@@ -313,90 +149,22 @@ if __name__ == '__main__':
             cluster( join(DATA_PATH, 'actions'),join(DATA_PATH, 'pairsAction'),'actions')
 
         elif job == 'tokenPairs':
-            shapes = listdir(join(DATA_PATH, 'actions'))
-            shapes = [f for f in shapes if isdir(join(DATA_PATH, 'actions', f))]
-
-            for shape in shapes:
-                sizes = listdir(join(DATA_PATH, 'actions', shape))
-                sizes = [f for f in sizes if isdir(join(DATA_PATH, 'actions', shape, f))]
-                for sf in sizes:
-                    if sf.startswith('.'):
-                        continue
-                    clusters = listdir(join(DATA_PATH, 'actions', shape, sf))
-                    for cluster in clusters:
-                        if cluster.startswith('.'):
-                            continue
-                        actions = listdir(join(DATA_PATH, 'actions', shape, sf,cluster))
-                        for action in actions:
-
-                            files = listdir(join(DATA_PATH, 'actions', shape, sf, cluster,action))
-                            indexCompared = []
-                            if not os.path.exists(join(DATA_PATH, 'pairsToken', shape,sf,cluster)):
-                                os.makedirs(join(DATA_PATH, 'pairsToken', shape,sf,cluster))
-
-                            with open(join(DATA_PATH, 'pairsToken', shape, sf,cluster, action+ '.index'), 'w') as out:
-                                # csv_out = csv.writer(out)
-
-                                for idx, val in enumerate(files):
-                                    out.write(str(idx) + ',' + val + '\n')
-                                    indexCompared.append(str(idx))
-
-                            pairs = list(itertools.combinations(indexCompared, 2))
-
-                            with open(join(DATA_PATH, 'pairsToken', shape, sf,cluster,action + '.txt'), 'w') as out:
-                                # csv_out = csv.writer(out)
-                                for row in pairs:
-                                    a, b = row
-                                    out.write(a + ',' + b + '\n')
+            from pairs import tokenPairs
+            tokenPairs()
 
         elif job == 'importTokenPairs':
+            from pairs import importToken
+            importToken()
+
+        elif job == 'clusterTokens':
+            from abstractPatch import cluster
 
             dbDir = join(DATA_PATH, 'redis')
+            startDB(dbDir, "6399", "ALLdumps-gumInput.rdb")
+            startDB(dbDir, "6380", "clusterl2-gumInputALL.rdb")
+            cluster(join(DATA_PATH, 'tokens'), join(DATA_PATH, 'pairsToken'),'tokens')
 
-            portInner = '6380'
-            dbDir = join(DATA_PATH, 'redis')
-
-            startDB(dbDir, portInner, "clusterl2-gumInputALL.rdb")
-
-            # cmd = "bash " + dbDir + "/" + "startServer.sh " + dbDir + " clusterl2-gumInputALL.rdb " + " " + portInner;
-            #
-            # o, e = shellGitCheckout(cmd)
-            # ping = "redis-cli -p 6380 ping"
-            # o, e = shellGitCheckout(ping)
-            # m = re.search('PONG', o)
-            #
-            # while not m:
-            #     time.sleep(10)
-            #     logging.info('Waiting for checkout')
-            #     o, e = shellGitCheckout(ping)
-            #     m = re.search('PONG', o)
-
-            import redis
-            pairsToken = join(DATA_PATH, 'pairsToken')
-            redis_db = redis.StrictRedis(host="localhost", port=portInner, db=1)
-            pairs = get_filepaths(pairsToken,'.txt')
-            for pair in pairs:
-                split = pair.split("/")
-
-                shapeName = split[-4]
-                shapeSize = split[-3]
-                cluster = split[-2]
-                action = split[-1].replace('.txt', '')
-
-                # cmd ="bash " + join(DATA_PATH,'redisSingleImport.sh') + " " +  pair + " 6380 " +  shapeName + "-"+sizeCluster+"-"+actionCluster ;#+, portInner,f.getName()+"-"+pair.getName().split("\\.")[0]);
-                cmd = "bash " + join(DATA_PATH,
-                                     'redisSingleImport.sh') + " " + pair + " 6380 " + shapeName + "-" + shapeSize + "-" + cluster + "-" + action;  # +, portInner,f.getName()+"-"+pair.getName().split("\\.")[0]);
-
-                o,e = shellGitCheckout(cmd)
-                o
-                indexFile = pair.replace('.txt','.index')
-                with open(indexFile,'r') as iFile:
-                    idx =iFile.readlines()
-                for i in idx:
-                    k,v = i.split(',')
-                    key = shapeName + "-" + shapeSize + "-" + cluster + "-" + action+"-" + k
-                    redis_db.set(key,v.strip())
-
+        #TODO optional
         elif job == 'compareTokens':
             roots = listdir(join(DATA_PATH,'pairsToken'))
             import redis
@@ -414,106 +182,21 @@ if __name__ == '__main__':
             keys = [i.decode() for i in keys[1]]
 
 
-
-
-
-
-
-
-            # for key in keys:
-            #     simiCore(key)
             from tokens import simiCore
-            parallelRun(simiCore,keys)
-
-
-
-
+            for key in keys:
+                simiCore(key)
+            # parallelRun(simiCore,keys)
 
             print()
-        elif job == 'clusterTokens':
-            from abstractPatch import cluster
 
-            dbDir = join(DATA_PATH, 'redis')
-            startDB(dbDir, "6399", "ALLdumps-gumInput.rdb")
-            startDB(dbDir, "6380", "clusterl2-gumInputALL.rdb")
-            cluster(join(DATA_PATH, 'tokens'), join(DATA_PATH, 'pairsToken'),'tokens')
 
 
         elif job =='stats':
-            # tokens = join(DATA_PATH, 'tokens')
-            # actions = join(DATA_PATH, 'actions')
-            for type in ['tokens','actions','shapes']:
-                shapesPath = join(DATA_PATH, type)
-                shapes = listdir(shapesPath)
-                shapes = [f for f in shapes if isdir(join(shapesPath, f))]
-
-                shape= size =cluster =action =token = None
-
-                def statsCore(cs):
-
-                    cs = [i for i in cs if not (i.startswith('commons-math') or i.startswith('commons-lang'))]
-                    # print('Cluster %s : member size %s' % (shape+"-"+size +"-"+cluster, len(cs)))
-                    if token is None:
-                        if action is None:
-                            t = shape + "-" + size + "-" + cluster, len(cs)
-                        else:
-                            t = shape + "-" + size + "-" + cluster + "-"+ action, len(cs)
-                    else:
-                        clusterSize = len(cs)
-                        if clusterSize>0:
-                            clusterSize = len(set([re.split('.txt_[0-9]+', i)[0] for i in cs]))
-                        t = shape + "-" + size + "-" + cluster+ "-"+ action+ "-"+ token,clusterSize
-                    # t = shape + "-" + size + "-" + cluster, len(cs)
-                    # if len(cs)>0:
-                    #     with open(join(shapesPath,t[0].replace('-','/'),cs[0]),'r') as pattern:
-                    #         line = pattern.read()
-                    #         if line.startswith('MOV') or line.startswith('DEL'):
-                    #             t = t[0],0
-                    statsS.append(t)
-                statsS = []
-                for shape in shapes:
-                    if shape.startswith('.'):
-                        continue
-                    sizes = listdir(join(shapesPath,shape))
-
-                    for size in sizes:
-                        if size.startswith('.'):
-                            continue
-                        clusters = listdir(join(shapesPath,shape,size))
-                        for cluster in clusters:
-                            if cluster.startswith('.'):
-                                continue
-                            cs = listdir(join(shapesPath,shape,size,cluster))
-
-                            if shapesPath.endswith('shapes'):
-                                cs = listdir(join(shapesPath, shape, size, cluster))
-                                statsCore(cs)
-                            else:
-                                #level3
-                                for action in cs:
-                                    if action.startswith('.'):
-                                        continue
-                                    tokens = listdir(join(shapesPath,shape,size,cluster,action))
-                                    if shapesPath.endswith('actions'):
-                                        statsCore(tokens)
-                                    else:
-                                        for token in tokens:
-                                            if token.startswith('.'):
-                                                continue
-                                            cs = listdir(join(shapesPath, shape, size, cluster,action,token))
-                                            statsCore(cs)
-
-
-
-                matches = pd.DataFrame(statsS, columns=['cluster','memberCount'])
-                matches.sort_values(by='memberCount', ascending=False,inplace=True)
-                matches
-                matches.to_csv(join(DATA_PATH,"stats"+type+".csv"),index=False)
-            # for i in range(2, 21):
-            #     print('%d %d %d' % (matches[matches.memberCount >= i].memberCount.sum(), len(matches[matches.memberCount >= i]),i))
-
-            # save_zipped_pickle(join(DATA_PATH,'statsShapes'))
+            from stats import statsNormal
+            statsNormal(True)
         elif job == 'test':
+
+            # if not isfile(join(DATA_PATH, 'patchPatterns.pickle')):
             import redis
             redis_db = redis.StrictRedis(host="localhost", port=6399, db=0)
 
@@ -521,29 +204,484 @@ if __name__ == '__main__':
 
             # redis_db = redis.Redis(connection_pool=redis_pool,db=0)
 
-            keys = redis_db.scan(0, match='*', count='1000000')
-            keys = [i.decode() for i in keys[1]]
 
-            matches = pd.DataFrame(keys, columns=['hunks'])
+            dbDir = join(DATA_PATH, 'redis')
+
+            portInner = '6399'
+            startDB(dbDir, portInner, "ALLdumps-gumInput.rdb")
+
+            import redis
+
+            redis_db = redis.StrictRedis(host="localhost", port=portInner, db=0)
+            keys = redis_db.scan(0, match='*', count='1000000')
+
+            matches = pd.DataFrame(keys[1], columns=['pairs_key'])
+
+            # matches = load_zipped_pickle(join(DATA_PATH,'singleHunks'))
+            matches['pairs_key'] = matches['pairs_key'].apply(lambda x: x.decode())
+            matches['root'] = matches['pairs_key'].apply(lambda x: x.split('/')[0])
+            matches['size'] = matches['pairs_key'].apply(lambda x: x.split('/')[1])
+            matches['file'] = matches['pairs_key'].apply(lambda x: x.split('/')[2])
+            matches['repo'] = matches['file'].apply(lambda x: x.split('_')[0])
+            matches['commit'] = matches['file'].apply(lambda x: x.split('_')[1])
+            matches['hunk'] = matches['pairs_key'].apply(lambda x: x.split('/')[2].split('_')[-1])
+            matches['fileName'] = matches['pairs_key'].apply(lambda x: '_'.join(x.split('/')[2].split('_')[:-1]))
+            # matches[matches['size'] > 1]
+            save_zipped_pickle(matches, join(DATA_PATH, 'matches.pickle'))
+            test = matches.sort_values(by=['fileName', 'hunk'])[['root', 'size', 'fileName']]
+            df = test.groupby(by=['fileName'], as_index=False).agg(lambda x: x.tolist())
+
+
+
+            df['root'] = df['root'].apply(lambda x: ','.join(x))
+            df['size'] = df['size'].apply(lambda x: ','.join(x))
+
+            df = df.reindex(df.root.sort_values().index)
+            roots = df.root.value_counts().loc[lambda x: x == 1].reset_index(name='count')['index']
+            multipleroots = df[~df.root.isin(roots)]
+
+            patterns = multipleroots.groupby(by=['root', 'size'], as_index=False).agg(lambda x: x.tolist())
+                # save_zipped_pickle(patterns, join(DATA_PATH, 'patchPatterns.pickle'))
+            # else:
+            #     patterns = load_zipped_pickle(join(DATA_PATH, 'patchPatterns.pickle'))
+            #     matches = load_zipped_pickle(join(DATA_PATH, 'matches.pickle'))
+
+            patterns2verify = patterns[patterns.fileName.str.len() > 1]
+
+
+            def fileList(source):
+                matches = []
+                for root, dirnames, filenames in os.walk(source):
+                    for filename in filenames:
+                        # if filename.endswith(('.txt')):
+                            matches.append(filename)
+                return matches
+            # if not isfile(join(DATA_PATH,'shapePatchFiles')):
+            def check(x):
+                root = x['root']
+                size = x['size']
+
+                roots = root.split(',')
+                sizes = size.split(',')
+                res = []
+                for r,s in zip(roots,sizes):
+                    fileNames = x['fileName']
+                    path = join(DATA_PATH,'shapes',r,s)
+                    if isdir(path):
+                        pairs = fileList(path)
+                        pairs
+                        filenames = list(set([re.split('.txt_[0-9]+', i)[0] + '.txt' for i in pairs]))
+                        res.append( np.all([f in filenames for f in fileNames]))
+                    else:
+                        res.append( False)
+                return np.all(res)
+            patterns2verify['check'] = patterns2verify.apply(lambda x:check(x),axis=1)
+            patterns2verify = patterns2verify[patterns2verify.check]
+
+            def clusterList(source,f):
+                matches = []
+                for root, dirnames, filenames in os.walk(source):
+                    for filename in filenames:
+                        if filename.startswith(f):
+                            matches.append(root.split('/')[-1])
+                            # break
+                return matches
+
+            def cluster(x):
+                root = x['root']
+                size = x['size']
+
+                roots = root.split(',')
+                sizes = size.split(',')
+                res = []
+                fileNames = x['fileName']
+                for fn in fileNames:
+                    fCluster = []
+                    for r,s in zip(roots,sizes):
+                        path = join(DATA_PATH,'shapes',r,s)
+                        if isdir(path):
+                            clusters = clusterList(path,fn)
+                            fCluster.extend(clusters)
+                        else:
+                            res.append( False)
+                    res.append(tuple(fCluster))
+                return res
+
+
+            patterns2verify['cluster'] = patterns2verify.apply(lambda x: cluster(x), axis=1)
+
+
+            def checkCluster(x):
+                res = dict()
+                for k,v in Counter(x).items():
+                    if v>1:
+                        res[k] = v
+                return res
+
+
+
+            patterns2verify['clusters'] = patterns2verify.cluster.apply(lambda x: checkCluster(x))
+            patterns2verify = patterns2verify[patterns2verify.clusters != {}]
+            lines = []
+            patches = []
+            def exportClusters(x):
+                clusters = x['clusters']
+                cluster = x['cluster']
+                fileName = x['fileName']
+                for k, v in clusters.items():
+                    idx = [index for index, value in enumerate(cluster) if value == k]
+                    files = [fileName[i] for i in idx]
+                    patches.extend(files)
+                    lines.append(str(x['root'])+str(x['size'])+str(k) + ','.join(files))
+
+
+
+            patterns2verify.apply(lambda x:exportClusters(x),axis=1)
+            with open('clusters2export','w')as f:
+                f.writelines('\n'.join(lines))
+
+            patterns2verify.to_csv('patterns2verify.csv', index=None, header=None, sep=';')
+
+                # save_zipped_pickle(patches,join(DATA_PATH,'shapePatchFiles'))
+            # else:
+            #     patches = load_zipped_pickle(join(DATA_PATH,'shapePatchFiles'))
+            #actions
+
+
+            shapes =matches[matches.fileName.isin(patches)]
+            test = shapes.sort_values(by=['fileName', 'hunk'])[['root', 'size', 'fileName']]
+            df = test.groupby(by=['fileName'], as_index=False).agg(lambda x: x.tolist())
+            # patterns2verify.fileName = patterns2verify.fileName.apply(lambda x: ','.join(x))
+            df['root'] = df['root'].apply(lambda x: ','.join(x))
+            df['size'] = df['size'].apply(lambda x: ','.join(x))
+
+            df = df.reindex(df.root.sort_values().index)
+            roots = df.root.value_counts().loc[lambda x: x == 1].reset_index(name='count')['index']
+            multipleroots = df[~df.root.isin(roots)]
+
+            patterns = multipleroots.groupby(by=['root', 'size'], as_index=False).agg(lambda x: x.tolist())
+
+            patterns2verify = patterns[patterns.fileName.str.len() > 1]
+
+
+
+            def check(x):
+                root = x['root']
+                size = x['size']
+
+                roots = root.split(',')
+                sizes = size.split(',')
+                res = []
+                for r, s in zip(roots, sizes):
+                    fileNames = x['fileName']
+                    path = join(DATA_PATH, 'actions', r, s)
+                    if isdir(path):
+                        pairs = fileList(path)
+                        pairs
+                        filenames = list(set([re.split('.txt_[0-9]+', i)[0] + '.txt' for i in pairs]))
+                        res.append(np.all([f in filenames for f in fileNames]))
+                    else:
+                        res.append(False)
+                return np.all(res)
+
+
+            patterns2verify['check'] = patterns2verify.apply(lambda x: check(x), axis=1)
+            patterns2verify = patterns2verify[patterns2verify.check]
+
+
+            def clusterList(source, f):
+                matches = []
+                for root, dirnames, filenames in os.walk(source):
+                    for filename in filenames:
+                        if filename.startswith(f):
+                            matches.append(tuple(root.split('/')[-2:]))
+                            # break
+                return matches
+
+
+            def cluster(x):
+                root = x['root']
+                size = x['size']
+
+                roots = root.split(',')
+                sizes = size.split(',')
+                res = []
+                fileNames = x['fileName']
+                for fn in fileNames:
+                    fCluster = []
+                    for r, s in zip(roots, sizes):
+                        path = join(DATA_PATH, 'actions', r, s)
+                        if isdir(path):
+                            clusters = clusterList(path, fn)
+                            fCluster.extend(clusters)
+                        else:
+                            res.append(False)
+                    res.append(tuple(fCluster))
+                return res
+
+
+            patterns2verify['cluster'] = patterns2verify.apply(lambda x: cluster(x), axis=1)
+
+
+            def checkCluster(x):
+                res = dict()
+                for k, v in Counter(x).items():
+                    if v > 1:
+                        res[k] = v
+                return res
+
+
+            patterns2verify['clusters'] = patterns2verify.cluster.apply(lambda x: checkCluster(x))
+            patterns2verify = patterns2verify[patterns2verify.clusters != {}]
+            lines = []
+            patches = []
+
+
+            def exportClusters(x):
+                clusters = x['clusters']
+                cluster = x['cluster']
+                fileName = x['fileName']
+                for k, v in clusters.items():
+                    idx = [index for index, value in enumerate(cluster) if value == k]
+                    files = [fileName[i] for i in idx]
+                    patches.extend(files)
+                    lines.append(str(x['root']) + str(x['size']) + str(k) + ','.join(files))
+
+
+            patterns2verify.apply(lambda x: exportClusters(x), axis=1)
+            lines
+
+            # counts = pd.DataFrame(matches.file.value_counts())
+            # counts.reset_index(inplace=True)
+            # counts.columns = ['file','count']
+            # counts
+            # counts[counts['count'] == 1]
+            # files = counts[counts['count'] == 1].file.values.tolist()
+            #
+            # keysToExport = matches[matches.file.isin(files)][['hunks']]
+            # keysToExport.rename(columns={'hunks': 'pairs_key'}, inplace=True)
+            # save_zipped_pickle(keysToExport,join(DATA_PATH,'singleHunks'))
+
+        elif job =='bug':
+
+            if isfile(join(DATA_PATH,'studyBugReports.pickle')):
+                studyBugReports = load_zipped_pickle(join(DATA_PATH,'studyBugReports.pickle'))
+            else:
+                brs = load_zipped_pickle(join(DATA_PATH, args.subject + "bugReportsComplete.pickle"))
+                commits = load_zipped_pickle(join(DATA_PATH, 'singleBR.pickle'))
+
+
+                dbDir = join(DATA_PATH, 'redis')
+
+                portInner = '6399'
+                startDB(dbDir, portInner, "ALLdumps-gumInput.rdb")
+
+                import redis
+
+                redis_db = redis.StrictRedis(host="localhost", port=portInner, db=0)
+                keys = redis_db.scan(0, match='*', count='1000000')
+
+                matches = pd.DataFrame(keys[1], columns=['pairs_key'])
+
+                # matches = load_zipped_pickle(join(DATA_PATH,'singleHunks'))
+                matches['pairs_key'] = matches['pairs_key'].apply(lambda x: x.decode())
+                matches['root'] = matches['pairs_key'].apply(lambda x: x.split('/')[0])
+                matches['size'] = matches['pairs_key'].apply(lambda x: x.split('/')[1])
+                matches['file'] = matches['pairs_key'].apply(lambda x: x.split('/')[2])
+                matches['repo'] = matches['file'].apply(lambda x: x.split('_')[0])
+                matches['commit'] = matches['file'].apply(lambda x: x.split('_')[1])
+
+                subjects = pd.read_csv(join(DATA_PATH, 'subjects.csv'))
+
+                def getBID(x):
+                    try:
+                        if x['repo'].endswith('.git'):
+                            return None
+                        subject = subjects.query("Repo == '{0}'".format(x['repo'])).Subject.tolist()[0]
+                        bids = commits.query("commit.str.startswith('{0}') and project== '{1}'".format(x['commit'],subject)).bid.tolist()
+                        return bids[0]
+                    except Exception as e:
+                        logging.error(e)
+
+                matches['bid'] = matches.apply(lambda x:getBID(x),axis=1)
+
+
+
+                subjects
+                # res = pd.merge(matches, brs, on=['bid'])
+                save_zipped_pickle(matches, join(DATA_PATH, 'studyDataset.pickle'))
+                studyBugReports = brs[brs.bid.isin(matches.bid.unique())]
+                save_zipped_pickle(studyBugReports,join(DATA_PATH,'studyBugReports.pickle'))
+            if isfile(join(DATA_PATH,'studyBR_DTM_index')):
+                brIndexes = load_zipped_pickle(join(DATA_PATH,'studyBR_DTM_index'))
+                bugDTM = load_zipped_pickle(join(DATA_PATH, 'studyBR_DTM'))
+                vectorDF = load_zipped_pickle(join(DATA_PATH,'studyBR_vector'))
+                matches = load_zipped_pickle( join(DATA_PATH, 'studyDataset.pickle'))
+            else:
+                studyBugReports['description'] = studyBugReports['description'].fillna("")
+                studyBugReports['sumDesc'] = studyBugReports['summary'] +studyBugReports['description']
+                # corpus['sumDesc'] = corpus['summary'] + corpus['desc']
+                # from common.preprocessing import
+                # result, aVector = getVectorAndDtm(corpus, 'summary')
+                from common.preprocessing import calculateTfIdfNLList
+
+                corpusBug = studyBugReports['sumDesc'].values.tolist()
+                from common.preprocessing import preprocessingNL
+
+                preCorpusBug = list(map(preprocessingNL, corpusBug))
+
+                v = calculateTfIdfNLList(preCorpusBug)
+                bugDTM = v.transform(preCorpusBug)
+                bugDTM
+                save_zipped_pickle(bugDTM, join(DATA_PATH, 'studyBR_DTM'))
+                brIndexes = studyBugReports['bid'].values.tolist()
+
+                save_zipped_pickle(brIndexes,join(DATA_PATH,'studyBR_DTM_index'))
+            # from sklearn.metrics.pairwise import cosine_similarity
+            # cosine_similarity(bugDTM[11701], bugDTM[11111])
+                vectorDF = pd.DataFrame(columns=['bid','dtm'])
+                # idx = 0
+                for idx, val in enumerate(brIndexes):
+                    vectorDF.loc[idx] = [val,bugDTM[idx]]
+                vectorDF
+
+                save_zipped_pickle(vectorDF,join(DATA_PATH,'studyBR_vector'))
 
             matches
-            matches['root'] = matches['hunks'].apply(lambda x: x.split('/')[0])
-            matches['size'] = matches['hunks'].apply(lambda x: x.split('/')[1])
-            matches['hunk'] = matches['hunks'].apply(lambda x: x.split('/')[2].split('_')[-1])
-            matches['file'] = matches['hunks'].apply(lambda x: '_'.join(x.split('/')[2].split('_')[:-1]))
+            if isfile(join(DATA_PATH,'study_clusters')):
+                clustersDF = load_zipped_pickle(join(DATA_PATH,'study_clusters'))
+            else:
+                clustersDF = pd.DataFrame(columns=['cid','type','members'])
+                idx = 0
+                def statsCore(cs,type):
+                    global idx
 
-            counts = pd.DataFrame(matches.file.value_counts())
-            counts.reset_index(inplace=True)
-            counts.columns = ['file','count']
-            counts
-            counts[counts['count'] == 1]
-            files = counts[counts['count'] == 1].file.values.tolist()
+                    cs = [i for i in cs if not (i.startswith('commons-math') or i.startswith('commons-lang') or i.startswith('closure-compiler.git') or i.startswith('joda-time.git') or i.startswith('mockito.git'))]
+                    # print('Cluster %s : member size %s' % (shape+"-"+size +"-"+cluster, len(cs)))
+                    if len(cs)>0:
+                        if token is None:
+                            if action is None:
+                                t = shape + "-" + size + "-" + cluster
 
-            keysToExport = matches[matches.file.isin(files)][['hunks']]
-            keysToExport.rename(columns={'hunks': 'pairs_key'}, inplace=True)
-            save_zipped_pickle(keysToExport,join(DATA_PATH,'singleHunks'))
+                                clustersDF.loc[idx] = [t,type,cs]
+                                idx = idx+1
+                            else:
+                                t = shape + "-" + size + "-" + cluster + "-" + action#, len(cs)
+                                clustersDF.loc[idx] = [t, type, cs]
+                                idx = idx + 1
+                        else:
+                            # clusterSize = len(cs)
+                            # if clusterSize > 0:
+                            #     clusterSize = len(set([re.split('.txt_[0-9]+', i)[0] for i in cs]))
+                            t = shape + "-" + size + "-" + cluster + "-" + action + "-" + token #, clusterSize
+                            clustersDF.loc[idx] = [t, type, cs]
+                            idx = idx + 1
+
+                for type in ['tokens','actions','shapes']:
+                    shapesPath = join(DATA_PATH, type)
+                    shapes = listdir(shapesPath)
+                    shapes = [f for f in shapes if isdir(join(shapesPath, f))]
+                    shape = size = cluster = action = token = None
+
+                    for shape in shapes:
+                        if shape.startswith('.'):
+                            continue
+                        sizes = listdir(join(shapesPath, shape))
+
+                        for size in sizes:
+                            if size.startswith('.'):
+                                continue
+                            clusters = listdir(join(shapesPath, shape, size))
+                            for cluster in clusters:
+                                if cluster.startswith('.'):
+                                    continue
+                                cs = listdir(join(shapesPath, shape, size, cluster))
+
+                                if shapesPath.endswith('shapes'):
+                                    cs = listdir(join(shapesPath, shape, size, cluster))
+                                    statsCore(cs,'shapes')
+                                else:
+                                    # level3
+                                    for action in cs:
+                                        if action.startswith('.'):
+                                            continue
+                                        tokens = listdir(join(shapesPath, shape, size, cluster, action))
+                                        if shapesPath.endswith('actions'):
+                                            statsCore(tokens,'actions')
+                                        else:
+                                            for token in tokens:
+                                                if token.startswith('.'):
+                                                    continue
+                                                cs = listdir(join(shapesPath, shape, size, cluster, action, token))
+                                                statsCore(cs,'tokens')
+
+                clustersDF
+                save_zipped_pickle(clustersDF,join(DATA_PATH,'study_clusters'))
+                clustersDF
+
+                # selected = clustersDF[clustersDF.type =='shapes']
 
 
+                from sklearn.metrics.pairwise import cosine_similarity
+                # cosine_similarity(bugDTM[11701], bugDTM[11111])
+                def getSimilarity(x):
+                    try:
+                        if len(x) == 1:
+                            return [1]
+                        else:
+                            filenames = list(set([re.split('.txt_[0-9]+', i)[0] for i in x]))
+                            if len(filenames) == 1:
+                                return [1]
+                            else:
+                                bids2Compare = [matches[matches.file.str.startswith(fn)].bid.unique()[0] for fn in filenames]
+
+                                pairs = list(itertools.combinations(bids2Compare, 2))
+                                pairs
+                                res = []
+                                for p in pairs:
+                                    p
+                                    simi =cosine_similarity(vectorDF[vectorDF.bid == p[0]].iloc[0].dtm,vectorDF[vectorDF.bid == p[1]].iloc[0].dtm)
+                                    res.append(simi[0][0])
+                                return res
+                    except Exception as e:
+                        logging.error(e)
+
+
+                # import swifter
+                clustersDF['simi'] =clustersDF.members.apply(lambda x:getSimilarity(x))
+                save_zipped_pickle(clustersDF,join(DATA_PATH,'study_clusters'))
+
+            clustersDF
+
+            shapes = clustersDF[clustersDF.type == 'shapes']
+            actions = clustersDF[clustersDF.type == 'actions']
+            tokens = clustersDF[clustersDF.type == 'tokens']
+
+
+
+            # shapes
+            # yList = [list(itertools.chain.from_iterable(shapes.simi.values.tolist())),
+            # list(itertools.chain.from_iterable(actions.simi.values.tolist())),
+            # list(itertools.chain.from_iterable(tokens.simi.values.tolist()))]
+            # colNames = ['shapes','actions','tokens']
+            # plotBox(yList, colNames, 'bugReport' + '.pdf', True)
+            for ds in [shapes,actions,tokens]:
+                ds['ms'] = ds.members.str.len()
+                ds.sort_values(by=['ms'], ascending=False,inplace=True)
+                top10  = ds.head(9)
+
+                colNames = top10.cid.values.tolist()
+
+                yList = yList = top10.simi.values.tolist()
+                colNames.insert(0,'ALL')
+                yList.insert(0,list(itertools.chain.from_iterable(ds.simi.values.tolist())))
+                type = ds.type.iloc[0]
+                from common.commons import plotBox
+                plotBox(yList,colNames,type+'.pdf',True)
+
+        elif job == 'defects4j':
+            from stats import defects4jStats
+            defects4jStats()
 
 
 

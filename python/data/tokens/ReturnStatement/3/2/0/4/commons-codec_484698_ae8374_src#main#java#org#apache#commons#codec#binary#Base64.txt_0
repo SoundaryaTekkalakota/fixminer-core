@@ -1,0 +1,4 @@
+UPD ReturnStatement@@MethodInvocation:StringUtils.newStringUtf8(encodeBase64(binaryData,false)) @TO@ MethodInvocation:StringUtils.newStringUsAscii(encodeBase64(binaryData,false)) @AT@ 25421 @LENGTH@ 66
+---UPD MethodInvocation@@StringUtils.newStringUtf8(encodeBase64(binaryData,false)) @TO@ StringUtils.newStringUsAscii(encodeBase64(binaryData,false)) @AT@ 25428 @LENGTH@ 58
+------UPD SimpleName@@MethodName:newStringUtf8:[encodeBase64(binaryData,false)] @TO@ MethodName:newStringUsAscii:[encodeBase64(binaryData,false)] @AT@ 25440 @LENGTH@ 46
+

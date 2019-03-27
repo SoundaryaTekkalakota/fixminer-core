@@ -1,0 +1,8 @@
+MethodDeclaration 
+---VariableDeclarationStatement 
+------VariableDeclarationFragment 
+---------ClassInstanceCreation 
+------------SimpleName 
+---SingleVariableDeclaration 
+------SimpleType 
+------SimpleName

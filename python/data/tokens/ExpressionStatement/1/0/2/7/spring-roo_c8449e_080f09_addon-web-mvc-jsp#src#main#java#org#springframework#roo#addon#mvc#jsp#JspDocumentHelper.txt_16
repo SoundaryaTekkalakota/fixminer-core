@@ -1,2 +1,0 @@
-MOV ExpressionStatement@@MethodInvocation:script.setAttribute("type","text/javascript") @TO@ MethodDeclaration@@private, Element, MethodName:getSelectDojo, Document document, FieldMetadata field,  @AT@ 24890 @LENGTH@ 47
-

@@ -1,3 +1,0 @@
-UPD TypeDeclaration@@[public, abstract]UriComponents,  @TO@ [public, abstract]UriComponents, [Serializable] @AT@ 1337 @LENGTH@ 6399
----INS SimpleType@@Serializable @TO@ TypeDeclaration@@[public, abstract]UriComponents,  @AT@ 1413 @LENGTH@ 12
-

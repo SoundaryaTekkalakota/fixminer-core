@@ -1,6 +1,6 @@
-FieldDeclaration
----Modifier
----ArrayType
-------PrimitiveType
----VariableDeclarationFragment
+FieldDeclaration 
+---Modifier 
+---ArrayType 
+------PrimitiveType 
+---VariableDeclarationFragment 
 ------SimpleName

@@ -1,2 +1,0 @@
-MOV TryStatement@@try:[] @TO@ MethodDeclaration@@public, Object, MethodName:process, Node nd, Stack<Node> stack, NodeProcessorCtx procCtx, Object... nodeOutputs, SemanticException,  @AT@ 14599 @LENGTH@ 383
-

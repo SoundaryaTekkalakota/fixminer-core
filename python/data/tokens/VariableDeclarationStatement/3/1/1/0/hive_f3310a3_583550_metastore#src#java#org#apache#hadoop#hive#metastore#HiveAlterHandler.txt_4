@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@FileSystem destFs; @TO@ FileSystem destFs=null; @AT@ 16712 @LENGTH@ 18
----UPD VariableDeclarationFragment@@destFs @TO@ destFs=null @AT@ 16723 @LENGTH@ 6
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@destFs @AT@ 19475 @LENGTH@ 4
-

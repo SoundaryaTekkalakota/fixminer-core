@@ -1,0 +1,12 @@
+VariableDeclarationStatement 
+---SimpleType 
+---VariableDeclarationFragment 
+------SimpleName 
+------MethodInvocation 
+---------SimpleName 
+------------SimpleName 
+------------StringLiteral 
+------------TypeLiteral 
+------------FieldAccess 
+---------------ThisExpression 
+---------------SimpleName

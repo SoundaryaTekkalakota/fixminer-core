@@ -1,7 +1,0 @@
-IfStatement
----InfixExpression
-------ParenthesizedExpression
----------InfixExpression
-------------MethodInvocation
-------------Operator
-------------MethodInvocation

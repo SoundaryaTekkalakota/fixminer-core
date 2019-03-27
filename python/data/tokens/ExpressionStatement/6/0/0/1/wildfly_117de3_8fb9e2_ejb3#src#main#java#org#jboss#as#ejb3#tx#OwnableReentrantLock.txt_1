@@ -1,7 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:Assert.checkNotNullParam("owner",owner) @TO@ MethodDeclaration@@public, void, MethodName:lock, Object owner,  @AT@ 1724 @LENGTH@ 41
----INS MethodInvocation@@Assert.checkNotNullParam("owner",owner) @TO@ ExpressionStatement@@MethodInvocation:Assert.checkNotNullParam("owner",owner) @AT@ 1724 @LENGTH@ 40
-------INS SimpleName@@Name:Assert @TO@ MethodInvocation@@Assert.checkNotNullParam("owner",owner) @AT@ 1724 @LENGTH@ 6
-------INS SimpleName@@MethodName:checkNotNullParam:["owner", owner] @TO@ MethodInvocation@@Assert.checkNotNullParam("owner",owner) @AT@ 1731 @LENGTH@ 33
----------INS StringLiteral@@"owner" @TO@ SimpleName@@MethodName:checkNotNullParam:["owner", owner] @AT@ 1749 @LENGTH@ 7
----------INS SimpleName@@owner @TO@ SimpleName@@MethodName:checkNotNullParam:["owner", owner] @AT@ 1758 @LENGTH@ 5
-

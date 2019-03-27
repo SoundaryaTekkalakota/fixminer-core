@@ -1,0 +1,7 @@
+ExpressionStatement 
+---Assignment 
+------ClassInstanceCreation 
+------FieldAccess 
+---------ThisExpression 
+---------SimpleName 
+------Operator

@@ -1,5 +1,0 @@
-UPD VariableDeclarationStatement@@InputStream input=dep.getRoot().openStream(); @TO@ InputStream input=deployment.getRoot().openStream(); @AT@ 22831 @LENGTH@ 47
----UPD VariableDeclarationFragment@@input=dep.getRoot().openStream() @TO@ input=deployment.getRoot().openStream() @AT@ 22843 @LENGTH@ 34
-------UPD MethodInvocation@@dep.getRoot().openStream() @TO@ deployment.getRoot().openStream() @AT@ 22851 @LENGTH@ 26
----------UPD SimpleName@@Name:dep @TO@ Name:deployment @AT@ 22851 @LENGTH@ 3
-

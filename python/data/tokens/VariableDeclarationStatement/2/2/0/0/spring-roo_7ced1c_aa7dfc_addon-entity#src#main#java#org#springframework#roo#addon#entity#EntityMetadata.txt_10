@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@MethodMetadata found=parent.getPersistMethod(); @TO@ final MethodMetadata found=parent.getPersistMethod(); @AT@ 9097 @LENGTH@ 49
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@MethodMetadata found=parent.getPersistMethod(); @AT@ 9233 @LENGTH@ 5
+

@@ -1,0 +1,18 @@
+DEL WhileStatement@@InfixExpression:currentOp.getNumChild() <= 1 @AT@ 45223 @LENGTH@ 159
+---DEL InfixExpression@@currentOp.getNumChild() <= 1 @AT@ 45230 @LENGTH@ 28
+------DEL MethodInvocation@@currentOp.getNumChild() @AT@ 45230 @LENGTH@ 23
+---------DEL SimpleName@@Name:currentOp @AT@ 45230 @LENGTH@ 9
+---------DEL SimpleName@@MethodName:getNumChild:[] @AT@ 45240 @LENGTH@ 13
+------DEL Operator@@<= @AT@ 45253 @LENGTH@ 2
+------DEL NumberLiteral@@1 @AT@ 45257 @LENGTH@ 1
+---DEL ExpressionStatement@@MethodInvocation:dppBranches.add(currentOp) @AT@ 45276 @LENGTH@ 27
+---DEL ExpressionStatement@@Assignment:currentOp=currentOp.getParentOperators().get(0) @AT@ 45318 @LENGTH@ 50
+------DEL Assignment@@currentOp=currentOp.getParentOperators().get(0) @AT@ 45318 @LENGTH@ 49
+---------DEL SimpleName@@currentOp @AT@ 45318 @LENGTH@ 9
+---------DEL Operator@@= @AT@ 45327 @LENGTH@ 1
+---------DEL MethodInvocation@@currentOp.getParentOperators().get(0) @AT@ 45330 @LENGTH@ 37
+------------DEL SimpleName@@Name:currentOp @AT@ 45330 @LENGTH@ 9
+------------DEL MethodInvocation@@MethodName:getParentOperators:[] @AT@ 45330 @LENGTH@ 30
+------------DEL SimpleName@@MethodName:get:[0] @AT@ 45361 @LENGTH@ 6
+---------------DEL NumberLiteral@@0 @AT@ 45365 @LENGTH@ 1
+

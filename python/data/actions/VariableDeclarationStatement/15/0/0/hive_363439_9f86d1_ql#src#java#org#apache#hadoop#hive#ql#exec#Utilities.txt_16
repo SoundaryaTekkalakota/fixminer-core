@@ -1,0 +1,15 @@
+ INS VariableDeclarationStatement TO MethodDeclaration 
+--- INS ParameterizedType TO VariableDeclarationStatement 
+------ INS SimpleType TO ParameterizedType 
+------ INS ParameterizedType TO ParameterizedType 
+--------- INS SimpleType TO ParameterizedType 
+--------- INS WildcardType TO ParameterizedType 
+--- INS VariableDeclarationFragment TO VariableDeclarationStatement 
+------ INS SimpleName TO VariableDeclarationFragment 
+------ INS ClassInstanceCreation TO VariableDeclarationFragment 
+--------- INS New TO ClassInstanceCreation 
+--------- INS ParameterizedType TO ClassInstanceCreation 
+------------ INS SimpleType TO ParameterizedType 
+------------ INS ParameterizedType TO ParameterizedType 
+--------------- INS SimpleType TO ParameterizedType 
+--------------- INS WildcardType TO ParameterizedType

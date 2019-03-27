@@ -1,5 +1,0 @@
-UPD FieldDeclaration@@public, static, int, [ATOMIC_INTEGER=0] @TO@ public, static, final, int, [ATOMIC_INTEGER] @AT@ 2765 @LENGTH@ 37
----UPD VariableDeclarationFragment@@ATOMIC_INTEGER=0 @TO@ ATOMIC_INTEGER @AT@ 2783 @LENGTH@ 18
-------DEL NumberLiteral@@0 @AT@ 2800 @LENGTH@ 1
----INS Modifier@@final @TO@ FieldDeclaration@@public, static, int, [ATOMIC_INTEGER=0] @AT@ 2811 @LENGTH@ 5
-

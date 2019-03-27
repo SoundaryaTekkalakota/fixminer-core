@@ -1,0 +1,8 @@
+INS FieldDeclaration@@private, volatile, boolean, [initialized=false] @TO@ TypeDeclaration@@[public]AccessController, BaseRegionObserver[MasterObserver, RegionServerObserver, AccessControlService.Interface, CoprocessorService] @AT@ 6227 @LENGTH@ 45
+---INS Modifier@@private @TO@ FieldDeclaration@@private, volatile, boolean, [initialized=false] @AT@ 6227 @LENGTH@ 7
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, volatile, boolean, [initialized=false] @AT@ 6235 @LENGTH@ 8
+---INS PrimitiveType@@boolean @TO@ FieldDeclaration@@private, volatile, boolean, [initialized=false] @AT@ 6244 @LENGTH@ 7
+---INS VariableDeclarationFragment@@initialized=false @TO@ FieldDeclaration@@private, volatile, boolean, [initialized=false] @AT@ 6252 @LENGTH@ 19
+------INS SimpleName@@initialized @TO@ VariableDeclarationFragment@@initialized=false @AT@ 6252 @LENGTH@ 11
+------INS BooleanLiteral@@false @TO@ VariableDeclarationFragment@@initialized=false @AT@ 6266 @LENGTH@ 5
+

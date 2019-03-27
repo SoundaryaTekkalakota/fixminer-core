@@ -1,0 +1,4 @@
+UPD EnhancedForStatement@@Link l, MethodInvocation:incoming.getLinks() @TO@ Link l, MethodInvocation:source.getLinks() @AT@ 13299 @LENGTH@ 141
+---UPD MethodInvocation@@incoming.getLinks() @TO@ source.getLinks() @AT@ 13313 @LENGTH@ 19
+------UPD SimpleName@@Name:incoming @TO@ Name:source @AT@ 13313 @LENGTH@ 8
+

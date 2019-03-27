@@ -1,6 +1,0 @@
-ReturnStatement
----NullLiteral
----ClassInstanceCreation
-------New
-------SimpleType
-------SimpleName

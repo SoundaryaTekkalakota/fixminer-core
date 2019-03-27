@@ -1,0 +1,12 @@
+ExpressionStatement 
+---MethodInvocation 
+------SimpleName 
+---------QualifiedName 
+------------SimpleName 
+------------SimpleName 
+---------ClassInstanceCreation 
+------------New 
+------------ParameterizedType 
+---------------SimpleType 
+---------------SimpleType 
+------------AnonymousClassDeclaration

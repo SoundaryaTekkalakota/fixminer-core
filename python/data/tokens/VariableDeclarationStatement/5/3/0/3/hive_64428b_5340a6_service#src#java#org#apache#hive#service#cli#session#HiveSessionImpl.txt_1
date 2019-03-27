@@ -1,0 +1,6 @@
+INS VariableDeclarationStatement@@OperationManager operationManager=getOperationManager(); @TO@ MethodDeclaration@@private, OperationHandle, MethodName:executeStatementInternal, String statement, Map<String,String> confOverlay, boolean runAsync, HiveSQLException,  @AT@ 6515 @LENGTH@ 58
+---INS SimpleType@@OperationManager @TO@ VariableDeclarationStatement@@OperationManager operationManager=getOperationManager(); @AT@ 6515 @LENGTH@ 16
+---INS VariableDeclarationFragment@@operationManager=getOperationManager() @TO@ VariableDeclarationStatement@@OperationManager operationManager=getOperationManager(); @AT@ 6532 @LENGTH@ 40
+------INS SimpleName@@operationManager @TO@ VariableDeclarationFragment@@operationManager=getOperationManager() @AT@ 6532 @LENGTH@ 16
+------INS MethodInvocation@@MethodName:getOperationManager:[] @TO@ VariableDeclarationFragment@@operationManager=getOperationManager() @AT@ 6551 @LENGTH@ 21
+

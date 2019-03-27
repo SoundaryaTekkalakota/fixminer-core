@@ -1,0 +1,6 @@
+IfStatement 
+---ExpressionStatement 
+---ExpressionStatement 
+---FieldAccess 
+------ThisExpression 
+------SimpleName

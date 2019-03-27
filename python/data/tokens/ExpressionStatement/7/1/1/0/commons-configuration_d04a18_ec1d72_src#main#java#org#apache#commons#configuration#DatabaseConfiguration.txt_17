@@ -1,0 +1,8 @@
+INS ExpressionStatement@@Assignment:rs=pstmt.executeQuery() @TO@ TryStatement@@try:[] @AT@ 19419 @LENGTH@ 26
+---INS Assignment@@rs=pstmt.executeQuery() @TO@ ExpressionStatement@@Assignment:rs=pstmt.executeQuery() @AT@ 19419 @LENGTH@ 25
+------INS SimpleName@@rs @TO@ Assignment@@rs=pstmt.executeQuery() @AT@ 19419 @LENGTH@ 2
+------INS Operator@@= @TO@ Assignment@@rs=pstmt.executeQuery() @AT@ 19421 @LENGTH@ 1
+------INS MethodInvocation@@pstmt.executeQuery() @TO@ Assignment@@rs=pstmt.executeQuery() @AT@ 19424 @LENGTH@ 20
+---------MOV SimpleName@@Name:pstmt @TO@ MethodInvocation@@pstmt.executeQuery() @AT@ 19318 @LENGTH@ 5
+---------MOV SimpleName@@MethodName:executeQuery:[] @TO@ MethodInvocation@@pstmt.executeQuery() @AT@ 19324 @LENGTH@ 14
+

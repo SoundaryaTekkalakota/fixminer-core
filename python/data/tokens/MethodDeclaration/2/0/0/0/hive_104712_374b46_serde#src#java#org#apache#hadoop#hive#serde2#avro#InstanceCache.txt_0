@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, Instance, MethodName:retrieve, SeedObject hv, Set<SeedObject> seenSchemas, AvroSerdeException,  @TO@ public, synchronized, Instance, MethodName:retrieve, SeedObject hv, Set<SeedObject> seenSchemas, AvroSerdeException,  @AT@ 2136 @LENGTH@ 512
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, Instance, MethodName:retrieve, SeedObject hv, Set<SeedObject> seenSchemas, AvroSerdeException,  @AT@ 2143 @LENGTH@ 12
+

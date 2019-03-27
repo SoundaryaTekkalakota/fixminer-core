@@ -1,5 +1,0 @@
-UPD FieldDeclaration@@public, static, int, [CONCURRENT_SKIPLISTMAP=0] @TO@ public, static, final, int, [CONCURRENT_SKIPLISTMAP] @AT@ 2418 @LENGTH@ 45
----UPD VariableDeclarationFragment@@CONCURRENT_SKIPLISTMAP=0 @TO@ CONCURRENT_SKIPLISTMAP @AT@ 2436 @LENGTH@ 26
-------DEL NumberLiteral@@0 @AT@ 2461 @LENGTH@ 1
----INS Modifier@@final @TO@ FieldDeclaration@@public, static, int, [CONCURRENT_SKIPLISTMAP=0] @AT@ 2456 @LENGTH@ 5
-

@@ -1,9 +1,0 @@
-IfStatement
----VariableDeclarationStatement
----IfStatement
----InfixExpression
-------MethodInvocation
----------SimpleName
----------SimpleName
-------Operator
-------NullLiteral

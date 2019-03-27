@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, Comparator, MethodName:comparator,  @TO@ public, synchronized, Comparator, MethodName:comparator,  @AT@ 4723 @LENGTH@ 78
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, Comparator, MethodName:comparator,  @AT@ 4926 @LENGTH@ 12
+

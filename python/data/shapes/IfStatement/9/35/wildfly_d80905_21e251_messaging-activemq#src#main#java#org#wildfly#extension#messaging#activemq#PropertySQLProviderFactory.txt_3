@@ -1,9 +1,0 @@
-IfStatement
----MethodInvocation
-------SimpleName
----------StringLiteral
----------SimpleName
----ExpressionStatement
-------Assignment
----------StringLiteral
----------SimpleName

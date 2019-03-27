@@ -1,6 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:System.exit(processLine(execString)) @TO@ MethodInvocation:sysExit(ss,processLine(execString)) @AT@ 6074 @LENGTH@ 37
----UPD MethodInvocation@@System.exit(processLine(execString)) @TO@ sysExit(ss,processLine(execString)) @AT@ 6074 @LENGTH@ 36
-------DEL SimpleName@@Name:System @AT@ 6074 @LENGTH@ 6
-------UPD SimpleName@@MethodName:exit:[processLine(execString)] @TO@ MethodName:sysExit:[ss, processLine(execString)] @AT@ 6081 @LENGTH@ 29
----------INS SimpleName@@ss @TO@ SimpleName@@MethodName:exit:[processLine(execString)] @AT@ 6082 @LENGTH@ 2
-

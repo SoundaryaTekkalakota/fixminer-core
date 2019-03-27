@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@List<TCell> list=new ArrayList<TCell>(in.length); @TO@ List<TCell> list=null; @AT@ 3822 @LENGTH@ 51
----UPD VariableDeclarationFragment@@list=new ArrayList<TCell>(in.length) @TO@ list=null @AT@ 3834 @LENGTH@ 38
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@list=new ArrayList<TCell>(in.length) @AT@ 3841 @LENGTH@ 4
-

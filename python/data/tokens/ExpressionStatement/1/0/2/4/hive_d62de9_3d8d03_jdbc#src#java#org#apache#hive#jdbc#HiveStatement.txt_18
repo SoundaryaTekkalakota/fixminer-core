@@ -1,2 +1,0 @@
-MOV ExpressionStatement@@MethodInvocation:transportLock.lock() @TO@ MethodDeclaration@@public, boolean, MethodName:execute, String sql, SQLException,  @AT@ 6558 @LENGTH@ 21
-

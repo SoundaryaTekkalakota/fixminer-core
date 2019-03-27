@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@protected, boolean, MethodName:tryRelease, int permit,  @TO@ protected, synchronized, boolean, MethodName:tryRelease, int permit,  @AT@ 3130 @LENGTH@ 863
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@protected, boolean, MethodName:tryRelease, int permit,  @AT@ 3059 @LENGTH@ 12
+

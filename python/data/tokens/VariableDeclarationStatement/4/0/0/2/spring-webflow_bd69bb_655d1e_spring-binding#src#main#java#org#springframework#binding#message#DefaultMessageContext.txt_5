@@ -1,5 +1,0 @@
-UPD VariableDeclarationStatement@@Iterator it=objectMessages.values().iterator(); @TO@ Iterator it=sourceMessages.values().iterator(); @AT@ 2354 @LENGTH@ 49
----UPD VariableDeclarationFragment@@it=objectMessages.values().iterator() @TO@ it=sourceMessages.values().iterator() @AT@ 2363 @LENGTH@ 39
-------UPD MethodInvocation@@objectMessages.values().iterator() @TO@ sourceMessages.values().iterator() @AT@ 2368 @LENGTH@ 34
----------UPD SimpleName@@Name:objectMessages @TO@ Name:sourceMessages @AT@ 2368 @LENGTH@ 14
-

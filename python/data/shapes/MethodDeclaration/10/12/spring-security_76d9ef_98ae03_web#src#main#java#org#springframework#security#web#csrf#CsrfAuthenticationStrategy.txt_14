@@ -1,0 +1,10 @@
+MethodDeclaration 
+---Modifier 
+---SimpleType 
+---SimpleName 
+---ReturnStatement 
+------InfixExpression 
+---------StringLiteral 
+---------Operator 
+---------SimpleName 
+---------StringLiteral

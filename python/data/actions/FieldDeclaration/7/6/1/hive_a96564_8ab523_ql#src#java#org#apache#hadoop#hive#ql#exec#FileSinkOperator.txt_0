@@ -1,0 +1,7 @@
+ DEL FieldDeclaration 
+--- DEL Modifier 
+--- DEL Modifier 
+--- DEL PrimitiveType 
+--- DEL VariableDeclarationFragment 
+------ DEL SimpleName 
+------ DEL BooleanLiteral

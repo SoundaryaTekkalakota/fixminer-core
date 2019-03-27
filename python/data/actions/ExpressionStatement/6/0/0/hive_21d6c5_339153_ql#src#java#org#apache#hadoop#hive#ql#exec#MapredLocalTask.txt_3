@@ -1,6 +1,0 @@
- INS ExpressionStatement TO TryStatement 
---- INS MethodInvocation TO ExpressionStatement 
------- INS SimpleName TO MethodInvocation 
------- INS SimpleName TO MethodInvocation 
---------- INS StringLiteral TO SimpleName 
---------- INS SimpleName TO SimpleName

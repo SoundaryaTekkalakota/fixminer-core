@@ -1,8 +1,0 @@
-INS VariableDeclarationStatement@@OperationHandle opHandle=operation.getHandle(); @TO@ TryStatement@@try:[] @AT@ 8303 @LENGTH@ 49
----INS SimpleType@@OperationHandle @TO@ VariableDeclarationStatement@@OperationHandle opHandle=operation.getHandle(); @AT@ 8303 @LENGTH@ 15
----INS VariableDeclarationFragment@@opHandle=operation.getHandle() @TO@ VariableDeclarationStatement@@OperationHandle opHandle=operation.getHandle(); @AT@ 8319 @LENGTH@ 32
-------INS SimpleName@@opHandle @TO@ VariableDeclarationFragment@@opHandle=operation.getHandle() @AT@ 8319 @LENGTH@ 8
-------INS MethodInvocation@@operation.getHandle() @TO@ VariableDeclarationFragment@@opHandle=operation.getHandle() @AT@ 8330 @LENGTH@ 21
----------MOV SimpleName@@Name:operation @TO@ MethodInvocation@@operation.getHandle() @AT@ 7723 @LENGTH@ 9
----------MOV SimpleName@@MethodName:getHandle:[] @TO@ MethodInvocation@@operation.getHandle() @AT@ 7733 @LENGTH@ 11
-

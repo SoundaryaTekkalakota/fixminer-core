@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@Object result=reader.next(previous); @TO@ final Object result=reader.next(previous); @AT@ 112668 @LENGTH@ 38
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@Object result=reader.next(previous); @AT@ 112802 @LENGTH@ 5
+

@@ -1,0 +1,14 @@
+ExpressionStatement 
+---MethodInvocation 
+------SimpleName 
+---------ClassInstanceCreation 
+------------New 
+------------SimpleType 
+------------ThisExpression 
+------------SimpleName 
+------------SimpleName 
+------------MethodInvocation 
+---------------TypeLiteral 
+---------------SimpleName 
+------------SimpleName 
+------------SimpleName

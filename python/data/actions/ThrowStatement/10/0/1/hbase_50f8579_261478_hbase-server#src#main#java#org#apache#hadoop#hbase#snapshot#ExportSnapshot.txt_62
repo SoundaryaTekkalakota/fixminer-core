@@ -1,0 +1,10 @@
+ INS ThrowStatement TO CatchClause 
+--- INS ClassInstanceCreation TO ThrowStatement 
+------ INS New TO ClassInstanceCreation 
+------ INS SimpleType TO ClassInstanceCreation 
+------ INS InfixExpression TO ClassInstanceCreation 
+--------- MOV StringLiteral TO InfixExpression 
+--------- MOV Operator TO InfixExpression 
+--------- MOV SimpleName TO InfixExpression 
+--------- MOV StringLiteral TO InfixExpression 
+--------- MOV SimpleName TO InfixExpression

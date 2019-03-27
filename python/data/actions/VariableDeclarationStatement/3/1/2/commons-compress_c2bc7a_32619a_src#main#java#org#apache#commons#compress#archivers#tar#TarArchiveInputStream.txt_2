@@ -1,3 +1,0 @@
- DEL VariableDeclarationStatement 
---- DEL VariableDeclarationFragment 
------- DEL NullLiteral

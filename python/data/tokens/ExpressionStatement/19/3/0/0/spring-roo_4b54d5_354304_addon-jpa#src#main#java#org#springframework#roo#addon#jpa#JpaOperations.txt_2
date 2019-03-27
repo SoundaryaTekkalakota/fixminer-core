@@ -1,0 +1,20 @@
+DEL ExpressionStatement@@MethodInvocation:root.appendChild(appCtx.createTextNode(System.getProperty("line.separator") + "\t" + System.getProperty("line.separator")+ "\t")) @AT@ 5837 @LENGTH@ 131
+---DEL MethodInvocation@@root.appendChild(appCtx.createTextNode(System.getProperty("line.separator") + "\t" + System.getProperty("line.separator")+ "\t")) @AT@ 5837 @LENGTH@ 130
+------DEL SimpleName@@Name:root @AT@ 5837 @LENGTH@ 4
+------DEL SimpleName@@MethodName:appendChild:[appCtx.createTextNode(System.getProperty("line.separator") + "\t" + System.getProperty("line.separator")+ "\t")] @AT@ 5842 @LENGTH@ 125
+---------DEL MethodInvocation@@appCtx.createTextNode(System.getProperty("line.separator") + "\t" + System.getProperty("line.separator")+ "\t") @AT@ 5854 @LENGTH@ 112
+------------DEL SimpleName@@Name:appCtx @AT@ 5854 @LENGTH@ 6
+------------DEL SimpleName@@MethodName:createTextNode:[System.getProperty("line.separator") + "\t" + System.getProperty("line.separator")+ "\t"] @AT@ 5861 @LENGTH@ 105
+---------------DEL InfixExpression@@System.getProperty("line.separator") + "\t" + System.getProperty("line.separator")+ "\t" @AT@ 5876 @LENGTH@ 89
+------------------DEL MethodInvocation@@System.getProperty("line.separator") @AT@ 5876 @LENGTH@ 36
+---------------------DEL SimpleName@@Name:System @AT@ 5876 @LENGTH@ 6
+---------------------DEL SimpleName@@MethodName:getProperty:["line.separator"] @AT@ 5883 @LENGTH@ 29
+------------------------DEL StringLiteral@@"line.separator" @AT@ 5895 @LENGTH@ 16
+------------------DEL Operator@@+ @AT@ 5912 @LENGTH@ 1
+------------------DEL StringLiteral@@"\t" @AT@ 5915 @LENGTH@ 4
+------------------DEL MethodInvocation@@System.getProperty("line.separator") @AT@ 5922 @LENGTH@ 36
+---------------------DEL SimpleName@@Name:System @AT@ 5922 @LENGTH@ 6
+---------------------DEL SimpleName@@MethodName:getProperty:["line.separator"] @AT@ 5929 @LENGTH@ 29
+------------------------DEL StringLiteral@@"line.separator" @AT@ 5941 @LENGTH@ 16
+------------------DEL StringLiteral@@"\t" @AT@ 5961 @LENGTH@ 4
+

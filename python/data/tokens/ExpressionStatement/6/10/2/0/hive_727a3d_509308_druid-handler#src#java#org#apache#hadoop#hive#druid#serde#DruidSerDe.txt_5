@@ -1,0 +1,7 @@
+UPD ExpressionStatement@@MethodInvocation:inferSchema((GroupByQuery)query,columnNames,columnTypes) @TO@ MethodInvocation:inferSchema((GroupByQuery)query,columnNames,columnTypes,mapColumnNamesTypes.build()) @AT@ 10505 @LENGTH@ 60
+---UPD MethodInvocation@@inferSchema((GroupByQuery)query,columnNames,columnTypes) @TO@ inferSchema((GroupByQuery)query,columnNames,columnTypes,mapColumnNamesTypes.build()) @AT@ 10505 @LENGTH@ 59
+------UPD SimpleName@@MethodName:inferSchema:[(GroupByQuery)query, columnNames, columnTypes] @TO@ MethodName:inferSchema:[(GroupByQuery)query, columnNames, columnTypes, mapColumnNamesTypes.build()] @AT@ 10505 @LENGTH@ 59
+---------INS MethodInvocation@@mapColumnNamesTypes.build() @TO@ SimpleName@@MethodName:inferSchema:[(GroupByQuery)query, columnNames, columnTypes] @AT@ 11649 @LENGTH@ 27
+------------INS SimpleName@@Name:mapColumnNamesTypes @TO@ MethodInvocation@@mapColumnNamesTypes.build() @AT@ 11649 @LENGTH@ 19
+------------INS SimpleName@@MethodName:build:[] @TO@ MethodInvocation@@mapColumnNamesTypes.build() @AT@ 11669 @LENGTH@ 7
+

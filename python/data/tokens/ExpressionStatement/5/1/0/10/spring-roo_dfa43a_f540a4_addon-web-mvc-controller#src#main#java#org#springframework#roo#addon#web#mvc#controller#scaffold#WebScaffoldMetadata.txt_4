@@ -1,0 +1,6 @@
+INS ExpressionStatement@@MethodInvocation:requestMappingAttributes.add(PRODUCES_HTML) @TO@ MethodDeclaration@@private, MethodMetadataBuilder, MethodName:getCreateMethod, final MemberTypeAdditions persistMethod,  @AT@ 22429 @LENGTH@ 44
+---INS MethodInvocation@@requestMappingAttributes.add(PRODUCES_HTML) @TO@ ExpressionStatement@@MethodInvocation:requestMappingAttributes.add(PRODUCES_HTML) @AT@ 22429 @LENGTH@ 43
+------INS SimpleName@@Name:requestMappingAttributes @TO@ MethodInvocation@@requestMappingAttributes.add(PRODUCES_HTML) @AT@ 22429 @LENGTH@ 24
+------INS SimpleName@@MethodName:add:[PRODUCES_HTML] @TO@ MethodInvocation@@requestMappingAttributes.add(PRODUCES_HTML) @AT@ 22454 @LENGTH@ 18
+---------INS SimpleName@@PRODUCES_HTML @TO@ SimpleName@@MethodName:add:[PRODUCES_HTML] @AT@ 22458 @LENGTH@ 13
+

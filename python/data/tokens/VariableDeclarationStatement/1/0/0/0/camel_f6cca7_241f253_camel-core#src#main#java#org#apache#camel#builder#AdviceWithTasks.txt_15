@@ -1,2 +1,0 @@
-MOV VariableDeclarationStatement@@Iterator<ProcessorDefinition<?>> it=AdviceWithTasks.createMatchByIterator(route,matchBy,selectFirst,selectLast,selectFrom,selectTo,maxDeep); @TO@ MethodDeclaration@@public, void, MethodName:task, Exception,  @AT@ 8013 @LENGTH@ 148
-

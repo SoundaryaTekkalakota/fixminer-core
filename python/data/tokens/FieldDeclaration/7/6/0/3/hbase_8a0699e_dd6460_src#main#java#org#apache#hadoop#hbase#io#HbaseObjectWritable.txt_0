@@ -1,8 +1,0 @@
-UPD FieldDeclaration@@static, final, Map<Byte,Class<?>>, [CODE_TO_CLASS=new HashMap<Byte,Class<?>>()] @TO@ static, final, Map<Integer,Class<?>>, [CODE_TO_CLASS=new HashMap<Integer,Class<?>>()] @AT@ 5531 @LENGTH@ 83
----UPD ParameterizedType@@Map<Byte,Class<?>> @TO@ Map<Integer,Class<?>> @AT@ 5544 @LENGTH@ 19
-------UPD SimpleType@@Byte @TO@ Integer @AT@ 5548 @LENGTH@ 4
----UPD VariableDeclarationFragment@@CODE_TO_CLASS=new HashMap<Byte,Class<?>>() @TO@ CODE_TO_CLASS=new HashMap<Integer,Class<?>>() @AT@ 5564 @LENGTH@ 49
-------UPD ClassInstanceCreation@@HashMap<Byte,Class<?>>[] @TO@ HashMap<Integer,Class<?>>[] @AT@ 5584 @LENGTH@ 29
----------UPD ParameterizedType@@HashMap<Byte,Class<?>> @TO@ HashMap<Integer,Class<?>> @AT@ 5588 @LENGTH@ 23
-------------UPD SimpleType@@Byte @TO@ Integer @AT@ 5596 @LENGTH@ 4
-

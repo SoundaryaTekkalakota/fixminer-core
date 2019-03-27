@@ -1,2 +1,0 @@
-MOV ExpressionStatement@@MethodInvocation:bodyBuilder.appendFormalLine("return new ResponseEntity<String>(" + new JavaType("org.springframework.http.HttpStatus").getNameIncludingTypeParameters(false,builder.getImportRegistrationResolver()) + ".OK);") @TO@ MethodDeclaration@@private, MethodMetadata, MethodName:getJsonUpdateMethod,  @AT@ 51483 @LENGTH@ 210
-

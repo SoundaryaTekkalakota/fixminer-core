@@ -1,0 +1,7 @@
+INS MethodDeclaration@@public, String, MethodName:getRegionName,  @TO@ AnonymousClassDeclaration@@AnonymousClass @AT@ 43642 @LENGTH@ 70
+---INS Modifier@@public @TO@ MethodDeclaration@@public, String, MethodName:getRegionName,  @AT@ 43642 @LENGTH@ 6
+---INS SimpleType@@String @TO@ MethodDeclaration@@public, String, MethodName:getRegionName,  @AT@ 43649 @LENGTH@ 6
+---INS SimpleName@@MethodName:getRegionName @TO@ MethodDeclaration@@public, String, MethodName:getRegionName,  @AT@ 43656 @LENGTH@ 13
+---INS ReturnStatement@@SimpleName:regionName @TO@ MethodDeclaration@@public, String, MethodName:getRegionName,  @AT@ 43684 @LENGTH@ 18
+------INS SimpleName@@regionName @TO@ ReturnStatement@@SimpleName:regionName @AT@ 43691 @LENGTH@ 10
+

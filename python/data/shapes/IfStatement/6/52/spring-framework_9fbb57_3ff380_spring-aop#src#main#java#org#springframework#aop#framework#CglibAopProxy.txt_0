@@ -1,6 +1,0 @@
-IfStatement
----VariableDeclarationStatement
----MethodInvocation
-------SimpleName
-------SimpleName
----EnhancedForStatement

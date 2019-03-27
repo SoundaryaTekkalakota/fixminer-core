@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, ProjectionDefinitionRegistar, MethodName:projectionDefinitionRegistrar, ObjectFactory<RepositoryRestConfiguration> config,  @TO@ public, static, ProjectionDefinitionRegistar, MethodName:projectionDefinitionRegistrar, ObjectFactory<RepositoryRestConfiguration> config,  @AT@ 13864 @LENGTH@ 172
+---INS Modifier@@static @TO@ MethodDeclaration@@public, ProjectionDefinitionRegistar, MethodName:projectionDefinitionRegistrar, ObjectFactory<RepositoryRestConfiguration> config,  @AT@ 13871 @LENGTH@ 6
+

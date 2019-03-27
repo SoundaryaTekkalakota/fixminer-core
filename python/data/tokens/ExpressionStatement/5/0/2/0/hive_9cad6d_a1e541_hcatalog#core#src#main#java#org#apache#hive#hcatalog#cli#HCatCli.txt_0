@@ -1,6 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:System.exit(0) @TO@ MethodInvocation:sysExit(ss,0) @AT@ 5344 @LENGTH@ 15
----UPD MethodInvocation@@System.exit(0) @TO@ sysExit(ss,0) @AT@ 5344 @LENGTH@ 14
-------DEL SimpleName@@Name:System @AT@ 5344 @LENGTH@ 6
-------UPD SimpleName@@MethodName:exit:[0] @TO@ MethodName:sysExit:[ss, 0] @AT@ 5351 @LENGTH@ 7
----------INS SimpleName@@ss @TO@ SimpleName@@MethodName:exit:[0] @AT@ 5352 @LENGTH@ 2
-

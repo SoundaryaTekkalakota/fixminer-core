@@ -1,2 +1,0 @@
-MOV VariableDeclarationStatement@@boolean originalAllowed=requiredType.isInstance(original); @TO@ MethodDeclaration@@protected, Map, MethodName:convertToTypedMap, Map original, String propertyName, Class requiredType, TypeDescriptor typeDescriptor,  @AT@ 20850 @LENGTH@ 60
-

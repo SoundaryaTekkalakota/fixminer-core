@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@SequenceFile.Reader logReader=new SequenceFile.Reader(this.fs,reconstructionLog,this.conf); @TO@ SequenceFile.Reader logReader=null; @AT@ 11981 @LENGTH@ 101
----UPD VariableDeclarationFragment@@logReader=new SequenceFile.Reader(this.fs,reconstructionLog,this.conf) @TO@ logReader=null @AT@ 12001 @LENGTH@ 80
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@logReader=new SequenceFile.Reader(this.fs,reconstructionLog,this.conf) @AT@ 12013 @LENGTH@ 4
-

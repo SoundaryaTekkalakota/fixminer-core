@@ -1,0 +1,6 @@
+VariableDeclarationStatement 
+---VariableDeclarationFragment 
+------InfixExpression 
+---------QualifiedName 
+------------SimpleName 
+------------SimpleName

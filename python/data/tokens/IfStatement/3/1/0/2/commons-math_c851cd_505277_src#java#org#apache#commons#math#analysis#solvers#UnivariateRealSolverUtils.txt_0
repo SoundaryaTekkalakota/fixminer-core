@@ -1,0 +1,4 @@
+UPD IfStatement@@InfixExpression:fa * fb >= 0.0 @TO@ InfixExpression:fa * fb > 0.0 @AT@ 8825 @LENGTH@ 435
+---UPD InfixExpression@@fa * fb >= 0.0 @TO@ fa * fb > 0.0 @AT@ 8829 @LENGTH@ 14
+------UPD Operator@@>= @TO@ > @AT@ 8836 @LENGTH@ 2
+

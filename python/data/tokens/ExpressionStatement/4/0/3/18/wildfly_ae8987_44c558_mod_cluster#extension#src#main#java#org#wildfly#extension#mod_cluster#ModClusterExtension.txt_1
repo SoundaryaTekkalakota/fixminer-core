@@ -1,5 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:registerTransformers_1_4_0(subsystem) @TO@ IfStatement@@MethodInvocation:context.isRegisterTransformers() @AT@ 7963 @LENGTH@ 38
----INS MethodInvocation@@registerTransformers_1_4_0(subsystem) @TO@ ExpressionStatement@@MethodInvocation:registerTransformers_1_4_0(subsystem) @AT@ 7963 @LENGTH@ 37
-------INS SimpleName@@MethodName:registerTransformers_1_4_0:[subsystem] @TO@ MethodInvocation@@registerTransformers_1_4_0(subsystem) @AT@ 7963 @LENGTH@ 37
----------INS SimpleName@@subsystem @TO@ SimpleName@@MethodName:registerTransformers_1_4_0:[subsystem] @AT@ 7990 @LENGTH@ 9
-

@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:queue.put(exchange) @TO@ MethodInvocation:queue.put(target) @AT@ 9694 @LENGTH@ 20
+---UPD MethodInvocation@@queue.put(exchange) @TO@ queue.put(target) @AT@ 9694 @LENGTH@ 19
+------UPD SimpleName@@MethodName:put:[exchange] @TO@ MethodName:put:[target] @AT@ 9700 @LENGTH@ 13
+---------UPD SimpleName@@exchange @TO@ target @AT@ 9704 @LENGTH@ 8
+

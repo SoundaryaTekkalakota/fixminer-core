@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, String, MethodName:readFileToString, File file, IOException,  @TO@ public, static, String, MethodName:readFileToString, File file, IOException,  @AT@ 40018 @LENGTH@ 113
+---INS Modifier@@static @TO@ MethodDeclaration@@public, String, MethodName:readFileToString, File file, IOException,  @AT@ 40025 @LENGTH@ 6
+

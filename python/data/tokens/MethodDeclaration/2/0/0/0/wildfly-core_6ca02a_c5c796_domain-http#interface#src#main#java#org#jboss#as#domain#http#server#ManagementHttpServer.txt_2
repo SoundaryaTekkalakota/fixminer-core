@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, void, MethodName:addManagementGetRemapContext, String contextName, PathRemapper remapper,  @TO@ public, synchronized, void, MethodName:addManagementGetRemapContext, String contextName, PathRemapper remapper,  @AT@ 10070 @LENGTH@ 623
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, void, MethodName:addManagementGetRemapContext, String contextName, PathRemapper remapper,  @AT@ 10103 @LENGTH@ 12
+

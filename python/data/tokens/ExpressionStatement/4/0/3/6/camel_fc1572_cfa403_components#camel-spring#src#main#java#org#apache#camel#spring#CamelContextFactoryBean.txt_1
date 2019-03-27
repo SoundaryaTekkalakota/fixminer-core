@@ -1,5 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:initPolicies(route) @TO@ EnhancedForStatement@@RouteDefinition route, SimpleName:routes @AT@ 9898 @LENGTH@ 20
----INS MethodInvocation@@initPolicies(route) @TO@ ExpressionStatement@@MethodInvocation:initPolicies(route) @AT@ 9898 @LENGTH@ 19
-------INS SimpleName@@MethodName:initPolicies:[route] @TO@ MethodInvocation@@initPolicies(route) @AT@ 9898 @LENGTH@ 19
----------INS SimpleName@@route @TO@ SimpleName@@MethodName:initPolicies:[route] @AT@ 9911 @LENGTH@ 5
-

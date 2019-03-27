@@ -1,3 +1,0 @@
- INS SynchronizedStatement TO MethodDeclaration 
---- MOV ExpressionStatement TO SynchronizedStatement 
---- INS ThisExpression TO SynchronizedStatement

@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:facesContext.getAttributes().remove(attributeName) @TO@ MethodInvocation:facesContext.getAttributes().remove(name) @AT@ 7973 @LENGTH@ 51
+---UPD MethodInvocation@@facesContext.getAttributes().remove(attributeName) @TO@ facesContext.getAttributes().remove(name) @AT@ 7973 @LENGTH@ 50
+------UPD SimpleName@@MethodName:remove:[attributeName] @TO@ MethodName:remove:[name] @AT@ 8002 @LENGTH@ 21
+---------UPD SimpleName@@attributeName @TO@ name @AT@ 8009 @LENGTH@ 13
+

@@ -1,3 +1,0 @@
-UPD ConstructorInvocation@@this(argument,new DummyLocalizable(pattern),argument); @TO@ this(argument,new DummyLocalizable(pattern),arguments); @AT@ 3876 @LENGTH@ 56
----UPD SimpleName@@argument @TO@ arguments @AT@ 3922 @LENGTH@ 8
-

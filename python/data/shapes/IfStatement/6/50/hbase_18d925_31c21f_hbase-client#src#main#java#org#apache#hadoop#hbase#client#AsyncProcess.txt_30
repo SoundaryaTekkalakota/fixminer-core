@@ -1,6 +1,0 @@
-IfStatement
----InfixExpression
-------SimpleName
----ExpressionStatement
-------Assignment
----------SimpleName

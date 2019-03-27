@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:Collections.sort(synchronizations,new OrderedComparator()) @TO@ MethodInvocation:Collections.sort(copy,new OrderedComparator()) @AT@ 1585 @LENGTH@ 60
+---UPD MethodInvocation@@Collections.sort(synchronizations,new OrderedComparator()) @TO@ Collections.sort(copy,new OrderedComparator()) @AT@ 1585 @LENGTH@ 59
+------UPD SimpleName@@MethodName:sort:[synchronizations, new OrderedComparator()] @TO@ MethodName:sort:[copy, new OrderedComparator()] @AT@ 1597 @LENGTH@ 47
+---------UPD SimpleName@@synchronizations @TO@ copy @AT@ 1602 @LENGTH@ 16
+

@@ -1,7 +1,7 @@
-CatchClause
----SingleVariableDeclaration
-------SimpleName
----ExpressionStatement
-------MethodInvocation
----------SimpleName
+CatchClause 
+---SingleVariableDeclaration 
+------SimpleName 
+---ExpressionStatement 
+------MethodInvocation 
+---------SimpleName 
 ------------SimpleName

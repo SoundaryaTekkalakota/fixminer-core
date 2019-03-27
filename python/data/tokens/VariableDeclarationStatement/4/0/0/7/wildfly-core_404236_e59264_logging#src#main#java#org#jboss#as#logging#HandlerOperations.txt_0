@@ -1,5 +1,0 @@
-UPD VariableDeclarationStatement@@final ModuleIdentifier id=ModuleIdentifier.create(moduleName); @TO@ final ModuleIdentifier id=ModuleIdentifier.fromString(moduleName); @AT@ 15403 @LENGTH@ 64
----UPD VariableDeclarationFragment@@id=ModuleIdentifier.create(moduleName) @TO@ id=ModuleIdentifier.fromString(moduleName) @AT@ 15426 @LENGTH@ 40
-------UPD MethodInvocation@@ModuleIdentifier.create(moduleName) @TO@ ModuleIdentifier.fromString(moduleName) @AT@ 15431 @LENGTH@ 35
----------UPD SimpleName@@MethodName:create:[moduleName] @TO@ MethodName:fromString:[moduleName] @AT@ 15448 @LENGTH@ 18
-

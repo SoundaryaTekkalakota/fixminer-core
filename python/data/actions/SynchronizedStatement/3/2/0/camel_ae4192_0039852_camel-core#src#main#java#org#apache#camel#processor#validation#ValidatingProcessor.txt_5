@@ -1,0 +1,3 @@
+ INS SynchronizedStatement TO IfStatement 
+--- MOV ReturnStatement TO SynchronizedStatement 
+--- INS ThisExpression TO SynchronizedStatement

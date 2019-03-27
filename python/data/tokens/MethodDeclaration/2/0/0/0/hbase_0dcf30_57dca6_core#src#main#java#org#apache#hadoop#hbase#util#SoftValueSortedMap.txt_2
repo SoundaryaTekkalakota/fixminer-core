@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, void, MethodName:putAll, Map map,  @TO@ public, synchronized, void, MethodName:putAll, Map map,  @AT@ 2785 @LENGTH@ 84
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, void, MethodName:putAll, Map map,  @AT@ 2806 @LENGTH@ 12
+

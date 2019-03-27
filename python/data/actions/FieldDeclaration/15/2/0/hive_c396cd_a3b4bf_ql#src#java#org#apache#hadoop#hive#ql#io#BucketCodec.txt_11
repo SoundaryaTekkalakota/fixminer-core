@@ -1,0 +1,15 @@
+ INS FieldDeclaration TO EnumDeclaration 
+--- INS Modifier TO FieldDeclaration 
+--- INS Modifier TO FieldDeclaration 
+--- INS Modifier TO FieldDeclaration 
+--- INS PrimitiveType TO FieldDeclaration 
+--- INS VariableDeclarationFragment TO FieldDeclaration 
+------ INS SimpleName TO VariableDeclarationFragment 
+------ INS InfixExpression TO VariableDeclarationFragment 
+--------- INS ParenthesizedExpression TO InfixExpression 
+------------ INS InfixExpression TO ParenthesizedExpression 
+--------------- INS NumberLiteral TO InfixExpression 
+--------------- INS Operator TO InfixExpression 
+--------------- INS SimpleName TO InfixExpression 
+--------- INS Operator TO InfixExpression 
+--------- INS NumberLiteral TO InfixExpression

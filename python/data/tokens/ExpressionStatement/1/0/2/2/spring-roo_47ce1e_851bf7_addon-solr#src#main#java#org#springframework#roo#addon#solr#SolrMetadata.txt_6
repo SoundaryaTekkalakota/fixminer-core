@@ -1,2 +1,0 @@
-MOV ExpressionStatement@@MethodInvocation:bodyBuilder.indentRemove() @TO@ MethodDeclaration@@private, MethodMetadataBuilder, MethodName:getIndexEntitiesMethod, final Map<MethodMetadata,FieldMetadata> accessorDetails, final MethodMetadata identifierAccessor, final FieldMetadata versionField,  @AT@ 13946 @LENGTH@ 27
-

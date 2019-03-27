@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@private, Map<String,Object>, MethodName:getAsMap, Object source,  @TO@ private, static, Map<String,Object>, MethodName:getAsMap, Object source,  @AT@ 3709 @LENGTH@ 228
+---INS Modifier@@static @TO@ MethodDeclaration@@private, Map<String,Object>, MethodName:getAsMap, Object source,  @AT@ 3834 @LENGTH@ 6
+

@@ -1,0 +1,6 @@
+INS VariableDeclarationStatement@@ClassLoader previous=setSocketFactory(); @TO@ MethodDeclaration@@public, LdapContext, MethodName:newInitialLdapContext, Hashtable<?,?> environment, Control[] connCtls, NamingException,  @AT@ 3095 @LENGTH@ 42
+---INS SimpleType@@ClassLoader @TO@ VariableDeclarationStatement@@ClassLoader previous=setSocketFactory(); @AT@ 3095 @LENGTH@ 11
+---INS VariableDeclarationFragment@@previous=setSocketFactory() @TO@ VariableDeclarationStatement@@ClassLoader previous=setSocketFactory(); @AT@ 3107 @LENGTH@ 29
+------INS SimpleName@@previous @TO@ VariableDeclarationFragment@@previous=setSocketFactory() @AT@ 3107 @LENGTH@ 8
+------INS MethodInvocation@@MethodName:setSocketFactory:[] @TO@ VariableDeclarationFragment@@previous=setSocketFactory() @AT@ 3118 @LENGTH@ 18
+

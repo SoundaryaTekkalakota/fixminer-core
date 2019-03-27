@@ -1,6 +1,0 @@
-VariableDeclarationStatement
----SimpleType
----VariableDeclarationFragment
-------SimpleName
-------ClassInstanceCreation
----------SimpleType

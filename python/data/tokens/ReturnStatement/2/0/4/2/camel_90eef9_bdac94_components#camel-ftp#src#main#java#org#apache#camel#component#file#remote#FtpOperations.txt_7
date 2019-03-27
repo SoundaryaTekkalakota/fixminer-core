@@ -1,3 +1,0 @@
-INS ReturnStatement@@SimpleName:result @TO@ MethodDeclaration@@public, boolean, MethodName:deleteFile, String name, GenericFileOperationFailedException,  @AT@ 10101 @LENGTH@ 14
----INS SimpleName@@result @TO@ ReturnStatement@@SimpleName:result @AT@ 10108 @LENGTH@ 6
-

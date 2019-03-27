@@ -1,0 +1,4 @@
+UPD ThrowStatement@@ClassInstanceCreation:new SQLException("Method not supported") @TO@ ClassInstanceCreation:new SQLFeatureNotSupportedException("Method not supported") @AT@ 12753 @LENGTH@ 47
+---UPD ClassInstanceCreation@@SQLException["Method not supported"] @TO@ SQLFeatureNotSupportedException["Method not supported"] @AT@ 12759 @LENGTH@ 40
+------UPD SimpleType@@SQLException @TO@ SQLFeatureNotSupportedException @AT@ 12763 @LENGTH@ 12
+

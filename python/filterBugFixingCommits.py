@@ -133,7 +133,11 @@ def caseFix(subjec):
                 url = futures[future]
                 try:
                     data = future.result()
-                    save_zipped_pickle(data,join(COMMIT_DFS, subjects.query("Subject == '{0}'".format(url)).iloc[0].Repo + ".pickle"))
+                    data = data[~data.fix.isna()]
+                    data.fix = data.fix.apply(lambda x: x.strip().upper())
+                    singleFix = data.fix.value_counts().loc[lambda x: x == 1].reset_index(name='count')['index']
+                    singleCommits = data[data.fix.isin(singleFix)]
+                    save_zipped_pickle(singleCommits,join(COMMIT_DFS, subjects.query("Subject == '{0}'".format(url)).iloc[0].Repo + ".pickle"))
                 except Exception as exc:
                     logging.error('%r generated an exception: %s' % (url, exc))
                     raise

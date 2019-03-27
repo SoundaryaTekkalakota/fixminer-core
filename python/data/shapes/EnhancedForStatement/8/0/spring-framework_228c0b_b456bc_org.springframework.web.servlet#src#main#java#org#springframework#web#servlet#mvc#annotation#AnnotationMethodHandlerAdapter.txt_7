@@ -1,0 +1,8 @@
+EnhancedForStatement 
+---SingleVariableDeclaration 
+------SimpleType 
+------SimpleName 
+---QualifiedName 
+------SimpleName 
+------SimpleName 
+---ExpressionStatement

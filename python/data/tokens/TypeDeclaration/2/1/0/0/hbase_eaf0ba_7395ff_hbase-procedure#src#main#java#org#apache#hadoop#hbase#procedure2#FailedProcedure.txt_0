@@ -1,0 +1,3 @@
+UPD TypeDeclaration@@[@InterfaceAudience.Private]FailedProcedure, Procedure<TEnvironment> @TO@ [@InterfaceAudience.Private, public]FailedProcedure, Procedure<TEnvironment> @AT@ 1201 @LENGTH@ 1398
+---INS Modifier@@public @TO@ TypeDeclaration@@[@InterfaceAudience.Private]FailedProcedure, Procedure<TEnvironment> @AT@ 1228 @LENGTH@ 6
+

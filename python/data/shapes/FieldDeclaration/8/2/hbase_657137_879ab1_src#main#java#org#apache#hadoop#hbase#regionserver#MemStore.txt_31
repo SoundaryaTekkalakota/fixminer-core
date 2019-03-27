@@ -1,0 +1,8 @@
+FieldDeclaration 
+---VariableDeclarationFragment 
+------MethodInvocation 
+---------SimpleName 
+------------InfixExpression 
+---------------ParenthesizedExpression 
+------------------InfixExpression 
+---------------------NumberLiteral

@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, Set<K>, MethodName:keySet,  @TO@ public, synchronized, Set<K>, MethodName:keySet,  @AT@ 4597 @LENGTH@ 89
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, Set<K>, MethodName:keySet,  @AT@ 4787 @LENGTH@ 12
+

@@ -1,0 +1,7 @@
+UPD ExpressionStatement@@MethodInvocation:incTaskCounters(multi.getRegions()) @TO@ MethodInvocation:incTaskCounters(multi.getRegions(),loc.getServerName()) @AT@ 16886 @LENGTH@ 36
+---UPD MethodInvocation@@incTaskCounters(multi.getRegions()) @TO@ incTaskCounters(multi.getRegions(),loc.getServerName()) @AT@ 16886 @LENGTH@ 35
+------UPD SimpleName@@MethodName:incTaskCounters:[multi.getRegions()] @TO@ MethodName:incTaskCounters:[multi.getRegions(), loc.getServerName()] @AT@ 16886 @LENGTH@ 35
+---------INS MethodInvocation@@loc.getServerName() @TO@ SimpleName@@MethodName:incTaskCounters:[multi.getRegions()] @AT@ 19400 @LENGTH@ 19
+------------INS SimpleName@@Name:loc @TO@ MethodInvocation@@loc.getServerName() @AT@ 19400 @LENGTH@ 3
+------------INS SimpleName@@MethodName:getServerName:[] @TO@ MethodInvocation@@loc.getServerName() @AT@ 19404 @LENGTH@ 15
+

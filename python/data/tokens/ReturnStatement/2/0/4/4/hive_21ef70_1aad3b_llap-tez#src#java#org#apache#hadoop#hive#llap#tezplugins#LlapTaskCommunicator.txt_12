@@ -1,3 +1,0 @@
-INS ReturnStatement@@SimpleName:url @TO@ MethodDeclaration@@public, String, MethodName:getCompletedLogsUrl, TezTaskAttemptID attemptID, NodeId containerNodeId,  @AT@ 26081 @LENGTH@ 11
----INS SimpleName@@url @TO@ ReturnStatement@@SimpleName:url @AT@ 26088 @LENGTH@ 3
-

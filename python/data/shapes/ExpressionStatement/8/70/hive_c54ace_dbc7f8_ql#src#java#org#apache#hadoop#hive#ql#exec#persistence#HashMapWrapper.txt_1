@@ -1,8 +1,0 @@
-ExpressionStatement
----Assignment
-------ClassInstanceCreation
----------ClassInstanceCreation
-------------ClassInstanceCreation
-------------New
-------------SimpleType
-------------NumberLiteral

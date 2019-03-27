@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@protected, String, MethodName:determineCharSet, MailConfiguration configuration, Exchange exchange,  @TO@ protected, static, String, MethodName:determineCharSet, MailConfiguration configuration, Exchange exchange,  @AT@ 6840 @LENGTH@ 1570
+---INS Modifier@@static @TO@ MethodDeclaration@@protected, String, MethodName:determineCharSet, MailConfiguration configuration, Exchange exchange,  @AT@ 7025 @LENGTH@ 6
+

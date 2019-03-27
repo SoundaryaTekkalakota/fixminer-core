@@ -1,9 +1,9 @@
-CatchClause
----SingleVariableDeclaration
-------SimpleType
-------SimpleName
----ExpressionStatement
-------Assignment
----------SimpleName
----------Operator
+CatchClause 
+---SingleVariableDeclaration 
+------SimpleType 
+------SimpleName 
+---ExpressionStatement 
+------Assignment 
+---------SimpleName 
+---------Operator 
 ---------SimpleName

@@ -1,8 +1,0 @@
-MethodDeclaration
----ReturnStatement
-------MethodInvocation
----------SimpleName
-------------SimpleName
----SingleVariableDeclaration
-------SimpleType
-------SimpleName

@@ -1,8 +1,0 @@
-INS IfStatement@@InfixExpression:object == null @TO@ MethodDeclaration@@public, static, T, T extends Serializable, MethodName:clone, T object,  @AT@ 2830 @LENGTH@ 56
----INS InfixExpression@@object == null @TO@ IfStatement@@InfixExpression:object == null @AT@ 2834 @LENGTH@ 14
-------INS SimpleName@@object @TO@ InfixExpression@@object == null @AT@ 2834 @LENGTH@ 6
-------INS Operator@@== @TO@ InfixExpression@@object == null @AT@ 2840 @LENGTH@ 2
-------INS NullLiteral@@null @TO@ InfixExpression@@object == null @AT@ 2844 @LENGTH@ 4
----INS ReturnStatement@@NullLiteral:null @TO@ IfStatement@@InfixExpression:object == null @AT@ 2864 @LENGTH@ 12
-------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 2871 @LENGTH@ 4
-

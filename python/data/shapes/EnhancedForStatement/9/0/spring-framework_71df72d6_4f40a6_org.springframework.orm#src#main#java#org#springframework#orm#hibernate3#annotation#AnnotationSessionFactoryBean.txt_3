@@ -1,0 +1,9 @@
+EnhancedForStatement 
+---SingleVariableDeclaration 
+------SimpleType 
+------SimpleName 
+---FieldAccess 
+------ThisExpression 
+------SimpleName 
+---ExpressionStatement 
+------MethodInvocation

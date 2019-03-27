@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@InputStream in=PGPUtil.getDecoderStream(encryptedStream); @TO@ InputStream in=null; @AT@ 16116 @LENGTH@ 59
----UPD VariableDeclarationFragment@@in=PGPUtil.getDecoderStream(encryptedStream) @TO@ in=null @AT@ 16128 @LENGTH@ 46
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@in=PGPUtil.getDecoderStream(encryptedStream) @AT@ 16133 @LENGTH@ 4
-

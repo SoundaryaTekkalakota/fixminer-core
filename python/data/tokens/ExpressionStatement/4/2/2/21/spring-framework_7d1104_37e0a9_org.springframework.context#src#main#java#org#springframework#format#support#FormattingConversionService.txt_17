@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:cachedParsers.put(key,converter) @TO@ MethodInvocation:cachedParsers.put(converterKey,converter) @AT@ 6380 @LENGTH@ 34
+---UPD MethodInvocation@@cachedParsers.put(key,converter) @TO@ cachedParsers.put(converterKey,converter) @AT@ 6380 @LENGTH@ 33
+------UPD SimpleName@@MethodName:put:[key, converter] @TO@ MethodName:put:[converterKey, converter] @AT@ 6394 @LENGTH@ 19
+---------UPD SimpleName@@key @TO@ converterKey @AT@ 6398 @LENGTH@ 3
+

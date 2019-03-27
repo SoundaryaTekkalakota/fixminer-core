@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, void, MethodName:parse, InputSource input, IOException, SAXException,  @TO@ public, synchronized, void, MethodName:parse, InputSource input, IOException, SAXException,  @AT@ 7738 @LENGTH@ 230
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, void, MethodName:parse, InputSource input, IOException, SAXException,  @AT@ 7700 @LENGTH@ 12
+

@@ -1,3 +1,0 @@
-UPD TypeDeclaration@@[private, static]ReflectionFactory, [Factory] @TO@ [private, static]ReflectionFactory, [Factory, Serializable] @AT@ 14663 @LENGTH@ 434
----INS SimpleType@@Serializable @TO@ TypeDeclaration@@[private, static]ReflectionFactory, [Factory] @AT@ 15747 @LENGTH@ 12
-

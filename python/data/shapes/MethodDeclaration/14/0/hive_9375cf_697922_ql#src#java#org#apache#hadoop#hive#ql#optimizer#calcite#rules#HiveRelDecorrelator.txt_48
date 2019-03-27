@@ -1,0 +1,14 @@
+MethodDeclaration 
+---Modifier 
+---SimpleType 
+---SimpleName 
+---SingleVariableDeclaration 
+------SimpleType 
+------SimpleName 
+---ExpressionStatement 
+------Assignment 
+---------SimpleName 
+---------Operator 
+---------BooleanLiteral 
+---ReturnStatement 
+------SimpleName

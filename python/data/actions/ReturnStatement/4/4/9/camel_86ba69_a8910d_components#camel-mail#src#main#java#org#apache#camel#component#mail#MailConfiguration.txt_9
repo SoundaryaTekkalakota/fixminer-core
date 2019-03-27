@@ -1,0 +1,4 @@
+ INS ReturnStatement TO TryStatement 
+--- INS MethodInvocation TO ReturnStatement 
+------ MOV SimpleName TO MethodInvocation 
+------ MOV SimpleName TO MethodInvocation

@@ -1,0 +1,3 @@
+ UPD VariableDeclarationStatement 
+--- UPD VariableDeclarationFragment 
+------ MOV MethodInvocation TO VariableDeclarationFragment

@@ -1,0 +1,8 @@
+INS ExpressionStatement@@Assignment:deleteCellVisTagsFormat=VisibilityUtils.extractVisibilityTags(delCell,delTags) @TO@ SwitchStatement@@SimpleName:type @AT@ 7363 @LENGTH@ 82
+---INS Assignment@@deleteCellVisTagsFormat=VisibilityUtils.extractVisibilityTags(delCell,delTags) @TO@ ExpressionStatement@@Assignment:deleteCellVisTagsFormat=VisibilityUtils.extractVisibilityTags(delCell,delTags) @AT@ 7363 @LENGTH@ 81
+------INS SimpleName@@deleteCellVisTagsFormat @TO@ Assignment@@deleteCellVisTagsFormat=VisibilityUtils.extractVisibilityTags(delCell,delTags) @AT@ 7363 @LENGTH@ 23
+------INS Operator@@= @TO@ Assignment@@deleteCellVisTagsFormat=VisibilityUtils.extractVisibilityTags(delCell,delTags) @AT@ 7386 @LENGTH@ 1
+------INS MethodInvocation@@VisibilityUtils.extractVisibilityTags(delCell,delTags) @TO@ Assignment@@deleteCellVisTagsFormat=VisibilityUtils.extractVisibilityTags(delCell,delTags) @AT@ 7389 @LENGTH@ 55
+---------MOV SimpleName@@Name:VisibilityUtils @TO@ MethodInvocation@@VisibilityUtils.extractVisibilityTags(delCell,delTags) @AT@ 6076 @LENGTH@ 15
+---------MOV SimpleName@@MethodName:extractVisibilityTags:[delCell, delTags] @TO@ MethodInvocation@@VisibilityUtils.extractVisibilityTags(delCell,delTags) @AT@ 6092 @LENGTH@ 39
+

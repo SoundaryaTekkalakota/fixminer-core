@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@Object instance; @TO@ final Object instance; @AT@ 2053 @LENGTH@ 16
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@Object instance; @AT@ 2053 @LENGTH@ 5
+

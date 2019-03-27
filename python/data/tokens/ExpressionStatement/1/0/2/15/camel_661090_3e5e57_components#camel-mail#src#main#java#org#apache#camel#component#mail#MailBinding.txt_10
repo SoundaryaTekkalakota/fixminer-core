@@ -1,2 +1,0 @@
-MOV ExpressionStatement@@MethodInvocation:part.setDataHandler(new DataHandler(ds)) @TO@ MethodDeclaration@@protected, String, MethodName:populateContentOnMimeMessage, MimeMessage part, MailConfiguration configuration, Exchange exchange, MessagingException, IOException,  @AT@ 7119 @LENGTH@ 41
-

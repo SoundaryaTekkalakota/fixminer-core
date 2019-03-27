@@ -1,7 +1,0 @@
-VariableDeclarationStatement
----VariableDeclarationFragment
-------ClassInstanceCreation
----------PrefixExpression
-------------Operator
-------------NumberLiteral
----------NumberLiteral

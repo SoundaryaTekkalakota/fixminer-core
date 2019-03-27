@@ -1,0 +1,6 @@
+INS ExpressionStatement@@MethodInvocation:argsHolderToUse.storeCache(mbd) @TO@ IfStatement@@InfixExpression:explicitArgs == null @AT@ 21025 @LENGTH@ 32
+---INS MethodInvocation@@argsHolderToUse.storeCache(mbd) @TO@ ExpressionStatement@@MethodInvocation:argsHolderToUse.storeCache(mbd) @AT@ 21025 @LENGTH@ 31
+------INS SimpleName@@Name:argsHolderToUse @TO@ MethodInvocation@@argsHolderToUse.storeCache(mbd) @AT@ 21025 @LENGTH@ 15
+------INS SimpleName@@MethodName:storeCache:[mbd] @TO@ MethodInvocation@@argsHolderToUse.storeCache(mbd) @AT@ 21041 @LENGTH@ 15
+---------INS SimpleName@@mbd @TO@ SimpleName@@MethodName:storeCache:[mbd] @AT@ 21052 @LENGTH@ 3
+

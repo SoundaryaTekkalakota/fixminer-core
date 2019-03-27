@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, static, long, MethodName:getCountForMapJoinDumpFilePrefix,  @TO@ public, static, synchronized, long, MethodName:getCountForMapJoinDumpFilePrefix,  @AT@ 3520 @LENGTH@ 103
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, static, long, MethodName:getCountForMapJoinDumpFilePrefix,  @AT@ 3534 @LENGTH@ 12
+

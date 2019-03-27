@@ -31,6 +31,8 @@ redis_db = redis.StrictRedis(host="localhost", port=port, db=0)
 redis_db1 = redis.StrictRedis(host="localhost", port=port, db=1)
 redis_db2 = redis.StrictRedis(host="localhost", port=port, db=2)
 
+redis_out  = redis.StrictRedis(host="localhost", port=6399, db=0)
+
 def getTokens(prefix, i):
     dist2load = redis_db1.get(prefix + "-" + i);
 

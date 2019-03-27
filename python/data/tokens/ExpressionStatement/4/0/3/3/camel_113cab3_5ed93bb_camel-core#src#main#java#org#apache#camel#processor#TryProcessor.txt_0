@@ -1,5 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:handleAll(exchange) @TO@ IfStatement@@InfixExpression:e != null @AT@ 2896 @LENGTH@ 20
----INS MethodInvocation@@handleAll(exchange) @TO@ ExpressionStatement@@MethodInvocation:handleAll(exchange) @AT@ 2896 @LENGTH@ 19
-------INS SimpleName@@MethodName:handleAll:[exchange] @TO@ MethodInvocation@@handleAll(exchange) @AT@ 2896 @LENGTH@ 19
----------INS SimpleName@@exchange @TO@ SimpleName@@MethodName:handleAll:[exchange] @AT@ 2906 @LENGTH@ 8
-

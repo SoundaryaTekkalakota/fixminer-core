@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@JavaSymbolName methodName=new JavaSymbolName(ENTITY_MANAGER_METHOD_NAME); @TO@ final JavaSymbolName methodName=new JavaSymbolName(ENTITY_MANAGER_METHOD_NAME); @AT@ 15588 @LENGTH@ 75
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@JavaSymbolName methodName=new JavaSymbolName(ENTITY_MANAGER_METHOD_NAME); @AT@ 15700 @LENGTH@ 5
+

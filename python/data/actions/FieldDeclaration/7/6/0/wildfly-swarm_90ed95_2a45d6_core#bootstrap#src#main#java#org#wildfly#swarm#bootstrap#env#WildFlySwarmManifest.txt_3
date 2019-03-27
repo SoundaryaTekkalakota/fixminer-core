@@ -1,7 +1,0 @@
- UPD FieldDeclaration 
---- UPD ParameterizedType 
------- UPD SimpleType 
---- UPD VariableDeclarationFragment 
------- UPD ClassInstanceCreation 
---------- UPD ParameterizedType 
------------- UPD SimpleType

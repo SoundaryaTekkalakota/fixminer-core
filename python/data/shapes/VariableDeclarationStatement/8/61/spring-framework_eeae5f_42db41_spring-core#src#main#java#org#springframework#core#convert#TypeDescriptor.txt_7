@@ -1,8 +1,0 @@
-VariableDeclarationStatement
----VariableDeclarationFragment
-------ParenthesizedExpression
----------ConditionalExpression
-------------InfixExpression
----------------Operator
-------------NullLiteral
-------------NullLiteral

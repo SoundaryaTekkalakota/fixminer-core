@@ -1,9 +1,0 @@
-IfStatement
----MethodInvocation
----ExpressionStatement
-------MethodInvocation
----------SimpleName
----------SimpleName
-------------ClassInstanceCreation
----------------New
----------------SimpleType

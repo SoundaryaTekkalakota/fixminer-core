@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@voidMethodName:Partition, Table tbl, org.apache.hadoop.hive.metastore.api.Partition tp, HiveException,  @TO@ public, voidMethodName:Partition, Table tbl, org.apache.hadoop.hive.metastore.api.Partition tp, HiveException,  @AT@ 2217 @LENGTH@ 1026
+---INS Modifier@@public @TO@ MethodDeclaration@@voidMethodName:Partition, Table tbl, org.apache.hadoop.hive.metastore.api.Partition tp, HiveException,  @AT@ 2217 @LENGTH@ 6
+

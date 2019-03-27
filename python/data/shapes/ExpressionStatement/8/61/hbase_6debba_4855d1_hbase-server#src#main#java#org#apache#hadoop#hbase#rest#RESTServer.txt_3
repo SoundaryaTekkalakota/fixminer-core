@@ -1,8 +1,0 @@
-ExpressionStatement
----MethodInvocation
-------SimpleName
-------SimpleName
----------QualifiedName
-------------SimpleName
-------------SimpleName
----------StringLiteral

@@ -1,8 +1,0 @@
-FieldDeclaration
----Modifier
----PrimitiveType
----VariableDeclarationFragment
-------SimpleName
-------PrefixExpression
----------Operator
----------NumberLiteral

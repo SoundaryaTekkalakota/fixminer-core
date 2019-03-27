@@ -1,0 +1,10 @@
+ INS MethodDeclaration TO TypeDeclaration 
+--- INS Modifier TO MethodDeclaration 
+--- INS SimpleType TO MethodDeclaration 
+--- INS SimpleName TO MethodDeclaration 
+--- INS ReturnStatement TO MethodDeclaration 
+------ INS MethodInvocation TO ReturnStatement 
+--------- INS FieldAccess TO MethodInvocation 
+------------ INS ThisExpression TO FieldAccess 
+------------ INS SimpleName TO FieldAccess 
+--------- INS SimpleName TO MethodInvocation

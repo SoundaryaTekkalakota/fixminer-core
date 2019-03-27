@@ -1,5 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:trackReadBytes(read) @TO@ IfStatement@@InfixExpression:offset == 0 @AT@ 3852 @LENGTH@ 21
----INS MethodInvocation@@trackReadBytes(read) @TO@ ExpressionStatement@@MethodInvocation:trackReadBytes(read) @AT@ 3852 @LENGTH@ 20
-------INS SimpleName@@MethodName:trackReadBytes:[read] @TO@ MethodInvocation@@trackReadBytes(read) @AT@ 3852 @LENGTH@ 20
----------INS SimpleName@@read @TO@ SimpleName@@MethodName:trackReadBytes:[read] @AT@ 3867 @LENGTH@ 4
-

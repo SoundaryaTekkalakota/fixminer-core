@@ -1,2 +1,0 @@
-MOV ExpressionStatement@@Assignment:key=new Pair(key,locale) @TO@ MethodDeclaration@@public, static, synchronized, FastDateFormat, MethodName:getDateTimeInstance, int dateStyle, int timeStyle, TimeZone timeZone, Locale locale,  @AT@ 17244 @LENGTH@ 28
-

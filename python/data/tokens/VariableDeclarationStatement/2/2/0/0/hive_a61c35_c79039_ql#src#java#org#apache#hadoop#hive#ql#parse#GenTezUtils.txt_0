@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@int maxReducers=context.conf.getIntVar(HiveConf.ConfVars.MAXREDUCERS); @TO@ final int maxReducers=context.conf.getIntVar(HiveConf.ConfVars.MAXREDUCERS); @AT@ 4897 @LENGTH@ 72
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@int maxReducers=context.conf.getIntVar(HiveConf.ConfVars.MAXREDUCERS); @AT@ 4848 @LENGTH@ 5
+

@@ -1,0 +1,7 @@
+UPD VariableDeclarationStatement@@Method indexedWriteMethod=ipd.getIndexedWriteMethod(); @TO@ Method indexedWriteMethod=indexedWriteMethodFor(ipd); @AT@ 5324 @LENGTH@ 56
+---UPD VariableDeclarationFragment@@indexedWriteMethod=ipd.getIndexedWriteMethod() @TO@ indexedWriteMethod=indexedWriteMethodFor(ipd) @AT@ 5331 @LENGTH@ 48
+------UPD MethodInvocation@@ipd.getIndexedWriteMethod() @TO@ indexedWriteMethodFor(ipd) @AT@ 5352 @LENGTH@ 27
+---------DEL SimpleName@@Name:ipd @AT@ 5352 @LENGTH@ 3
+---------UPD SimpleName@@MethodName:getIndexedWriteMethod:[] @TO@ MethodName:indexedWriteMethodFor:[ipd] @AT@ 5356 @LENGTH@ 23
+------------INS SimpleName@@ipd @TO@ SimpleName@@MethodName:getIndexedWriteMethod:[] @AT@ 5438 @LENGTH@ 3
+

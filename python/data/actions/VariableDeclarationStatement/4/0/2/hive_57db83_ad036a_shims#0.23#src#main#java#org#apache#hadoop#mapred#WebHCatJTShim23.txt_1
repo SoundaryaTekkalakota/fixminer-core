@@ -1,4 +1,0 @@
- UPD VariableDeclarationStatement 
---- UPD VariableDeclarationFragment 
------- UPD MethodInvocation 
---------- DEL SimpleName

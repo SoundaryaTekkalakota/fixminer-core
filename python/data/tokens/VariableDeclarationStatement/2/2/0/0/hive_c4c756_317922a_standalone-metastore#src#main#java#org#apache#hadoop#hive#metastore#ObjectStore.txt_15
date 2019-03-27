@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@List<MFieldSchema> childCols=childCD.getCols(); @TO@ final List<MFieldSchema> childCols=childCD.getCols(); @AT@ 152789 @LENGTH@ 49
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@List<MFieldSchema> childCols=childCD.getCols(); @AT@ 153023 @LENGTH@ 5
+

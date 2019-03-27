@@ -1,9 +1,0 @@
- INS VariableDeclarationStatement TO IfStatement 
---- INS Modifier TO VariableDeclarationStatement 
---- INS PrimitiveType TO VariableDeclarationStatement 
---- INS VariableDeclarationFragment TO VariableDeclarationStatement 
------- INS SimpleName TO VariableDeclarationFragment 
------- INS InfixExpression TO VariableDeclarationFragment 
---------- INS SimpleName TO InfixExpression 
---------- INS Operator TO InfixExpression 
---------- INS NumberLiteral TO InfixExpression

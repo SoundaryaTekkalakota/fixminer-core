@@ -1,9 +1,0 @@
-MethodDeclaration
----Modifier
----SimpleType
----SimpleName
----SimpleType
----ReturnStatement
-------MethodInvocation
----------SimpleName
----------SimpleName

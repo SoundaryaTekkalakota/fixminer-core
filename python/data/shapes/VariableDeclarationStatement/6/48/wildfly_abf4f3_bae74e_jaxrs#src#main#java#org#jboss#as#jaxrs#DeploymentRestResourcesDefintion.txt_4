@@ -1,6 +1,0 @@
-VariableDeclarationStatement
----ParameterizedType
-------SimpleType
-------WildcardType
----VariableDeclarationFragment
-------SimpleName

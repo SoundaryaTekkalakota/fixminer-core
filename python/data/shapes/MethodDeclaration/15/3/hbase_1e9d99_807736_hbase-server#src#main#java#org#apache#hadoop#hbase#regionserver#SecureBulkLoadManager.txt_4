@@ -1,0 +1,15 @@
+MethodDeclaration 
+---PrimitiveType 
+---SimpleName 
+---SingleVariableDeclaration 
+------ParameterizedType 
+---------SimpleType 
+---------SimpleType 
+------SimpleName 
+---ExpressionStatement 
+------Assignment 
+---------FieldAccess 
+------------ThisExpression 
+------------SimpleName 
+---------Operator 
+---------SimpleName

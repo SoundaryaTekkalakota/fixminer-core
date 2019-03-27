@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@ExpressionTree, MethodName:foldMaybe, ExpressionTree expr,  @TO@ static, ExpressionTree, MethodName:foldMaybe, ExpressionTree expr,  @AT@ 19924 @LENGTH@ 755
+---INS Modifier@@static @TO@ MethodDeclaration@@ExpressionTree, MethodName:foldMaybe, ExpressionTree expr,  @AT@ 19909 @LENGTH@ 6
+

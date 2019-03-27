@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@AnnotationMetadataBuilder annotationBuilder=new AnnotationMetadataBuilder(PERSISTENCE_CONTEXT); @TO@ final AnnotationMetadataBuilder annotationBuilder=new AnnotationMetadataBuilder(PERSISTENCE_CONTEXT); @AT@ 8469 @LENGTH@ 97
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@AnnotationMetadataBuilder annotationBuilder=new AnnotationMetadataBuilder(PERSISTENCE_CONTEXT); @AT@ 8593 @LENGTH@ 5
+

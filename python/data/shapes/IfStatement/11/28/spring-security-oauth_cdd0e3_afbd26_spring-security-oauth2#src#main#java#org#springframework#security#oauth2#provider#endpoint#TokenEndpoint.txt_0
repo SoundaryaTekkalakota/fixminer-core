@@ -1,0 +1,11 @@
+IfStatement 
+---MethodInvocation 
+------SimpleName 
+------MethodInvocation 
+------SimpleName 
+---------StringLiteral 
+---ThrowStatement 
+------ClassInstanceCreation 
+---------New 
+---------SimpleType 
+---------StringLiteral

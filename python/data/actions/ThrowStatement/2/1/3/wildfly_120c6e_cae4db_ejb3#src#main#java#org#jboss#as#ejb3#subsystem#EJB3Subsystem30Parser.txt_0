@@ -1,0 +1,2 @@
+ INS ThrowStatement TO SwitchStatement 
+--- MOV MethodInvocation TO ThrowStatement

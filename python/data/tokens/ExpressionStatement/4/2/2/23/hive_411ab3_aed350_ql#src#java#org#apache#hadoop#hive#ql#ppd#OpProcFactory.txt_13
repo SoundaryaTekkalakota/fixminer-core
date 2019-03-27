@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:parent.removeChild(fop) @TO@ MethodInvocation:parent.removeChild(operator) @AT@ 37316 @LENGTH@ 24
+---UPD MethodInvocation@@parent.removeChild(fop) @TO@ parent.removeChild(operator) @AT@ 37316 @LENGTH@ 23
+------UPD SimpleName@@MethodName:removeChild:[fop] @TO@ MethodName:removeChild:[operator] @AT@ 37323 @LENGTH@ 16
+---------UPD SimpleName@@fop @TO@ operator @AT@ 37335 @LENGTH@ 3
+

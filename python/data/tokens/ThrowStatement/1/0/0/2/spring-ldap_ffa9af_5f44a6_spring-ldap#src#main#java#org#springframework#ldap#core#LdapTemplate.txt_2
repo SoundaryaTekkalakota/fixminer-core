@@ -1,2 +1,0 @@
-DEL ThrowStatement@@MethodInvocation:getExceptionTranslator().translate(e) @AT@ 12150 @LENGTH@ 44
-

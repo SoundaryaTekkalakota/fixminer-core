@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, V, MethodName:put, K key, V value,  @TO@ public, synchronized, V, MethodName:put, K key, V value,  @AT@ 2532 @LENGTH@ 214
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, V, MethodName:put, K key, V value,  @AT@ 2540 @LENGTH@ 12
+

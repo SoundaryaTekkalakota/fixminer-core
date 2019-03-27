@@ -1,4 +1,0 @@
-UPD MethodDeclaration@@private, void, MethodName:addSuppressWarnings, List<AnnotationMetadataBuilder> annotations,  @TO@ private, void, MethodName:addSuppressWarnings, final List<AnnotationMetadataBuilder> annotations,  @AT@ 28196 @LENGTH@ 375
----UPD SingleVariableDeclaration@@List<AnnotationMetadataBuilder> annotations @TO@ final List<AnnotationMetadataBuilder> annotations @AT@ 28229 @LENGTH@ 43
-------INS Modifier@@final @TO@ SingleVariableDeclaration@@List<AnnotationMetadataBuilder> annotations @AT@ 28634 @LENGTH@ 5
-

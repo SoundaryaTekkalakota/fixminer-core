@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@HRegionLocation possibleRegion=matchingRegions.get(matchingRegions.lastKey()); @TO@ HRegionLocation possibleRegion=null; @AT@ 40917 @LENGTH@ 90
----UPD VariableDeclarationFragment@@possibleRegion=matchingRegions.get(matchingRegions.lastKey()) @TO@ possibleRegion=null @AT@ 40933 @LENGTH@ 73
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@possibleRegion=matchingRegions.get(matchingRegions.lastKey()) @AT@ 40991 @LENGTH@ 4
-

@@ -1,8 +1,0 @@
-MethodDeclaration
----ReturnStatement
-------FieldAccess
----------ThisExpression
----------SimpleName
----Modifier
----SimpleType
----SimpleName

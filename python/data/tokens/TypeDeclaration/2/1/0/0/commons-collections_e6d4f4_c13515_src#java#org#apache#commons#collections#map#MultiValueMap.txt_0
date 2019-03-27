@@ -1,3 +1,0 @@
-UPD TypeDeclaration@@[public]MultiValueMap, AbstractMapDecorator[MultiMap] @TO@ [public]MultiValueMap, AbstractMapDecorator[MultiMap, Serializable] @AT@ 2629 @LENGTH@ 12471
----INS SimpleType@@Serializable @TO@ TypeDeclaration@@[public]MultiValueMap, AbstractMapDecorator[MultiMap] @AT@ 2833 @LENGTH@ 12
-

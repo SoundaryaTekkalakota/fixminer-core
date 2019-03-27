@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@ModelNode requestProps=response.get("result","request-properties"); @TO@ final ModelNode requestProps=response.get("result","request-properties"); @AT@ 4197 @LENGTH@ 70
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@ModelNode requestProps=response.get("result","request-properties"); @AT@ 4334 @LENGTH@ 5
+

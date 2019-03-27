@@ -1,0 +1,16 @@
+EnhancedForStatement 
+---SingleVariableDeclaration 
+------SimpleType 
+------SimpleName 
+---MethodInvocation 
+------SimpleName 
+------SimpleName 
+---ExpressionStatement 
+------MethodInvocation 
+---------SimpleName 
+---------MethodInvocation 
+---------MethodInvocation 
+---------SimpleName 
+------------MethodInvocation 
+---------------SimpleName 
+---------------SimpleName

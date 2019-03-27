@@ -1,0 +1,15 @@
+ UPD ExpressionStatement 
+--- UPD MethodInvocation 
+------ UPD SimpleName 
+--------- DEL MethodInvocation 
+--------- INS InfixExpression TO SimpleName 
+------------ INS MethodInvocation TO InfixExpression 
+--------------- MOV SimpleName TO MethodInvocation 
+--------------- MOV MethodInvocation TO MethodInvocation 
+--------------- MOV SimpleName TO MethodInvocation 
+------------ INS Operator TO InfixExpression 
+------------ INS StringLiteral TO InfixExpression 
+------------ INS MethodInvocation TO InfixExpression 
+--------------- INS SimpleName TO MethodInvocation 
+--------------- INS MethodInvocation TO MethodInvocation 
+--------------- INS SimpleName TO MethodInvocation

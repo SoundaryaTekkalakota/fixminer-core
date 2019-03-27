@@ -1,2 +1,0 @@
-MOV VariableDeclarationStatement@@Element script=document.createElement("script"); @TO@ MethodDeclaration@@private, Element, MethodName:getMultiSelectDojo, Document document, FieldMetadata field,  @AT@ 23988 @LENGTH@ 50
-

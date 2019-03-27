@@ -1,5 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:processSendError(originalError) @TO@ IfStatement@@InstanceofExpression:t instanceof RemoteException @AT@ 15391 @LENGTH@ 32
----INS MethodInvocation@@processSendError(originalError) @TO@ ExpressionStatement@@MethodInvocation:processSendError(originalError) @AT@ 15391 @LENGTH@ 31
-------INS SimpleName@@MethodName:processSendError:[originalError] @TO@ MethodInvocation@@processSendError(originalError) @AT@ 15391 @LENGTH@ 31
----------INS SimpleName@@originalError @TO@ SimpleName@@MethodName:processSendError:[originalError] @AT@ 15408 @LENGTH@ 13
-

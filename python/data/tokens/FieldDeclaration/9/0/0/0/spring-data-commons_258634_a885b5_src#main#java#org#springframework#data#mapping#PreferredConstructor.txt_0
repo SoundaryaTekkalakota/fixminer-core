@@ -1,0 +1,10 @@
+INS FieldDeclaration@@private, final, ReentrantReadWriteLock, [lock=new ReentrantReadWriteLock()] @TO@ TypeDeclaration@@[public]PreferredConstructor,  @AT@ 1790 @LENGTH@ 73
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, ReentrantReadWriteLock, [lock=new ReentrantReadWriteLock()] @AT@ 1790 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, ReentrantReadWriteLock, [lock=new ReentrantReadWriteLock()] @AT@ 1798 @LENGTH@ 5
+---INS SimpleType@@ReentrantReadWriteLock @TO@ FieldDeclaration@@private, final, ReentrantReadWriteLock, [lock=new ReentrantReadWriteLock()] @AT@ 1804 @LENGTH@ 22
+---INS VariableDeclarationFragment@@lock=new ReentrantReadWriteLock() @TO@ FieldDeclaration@@private, final, ReentrantReadWriteLock, [lock=new ReentrantReadWriteLock()] @AT@ 1827 @LENGTH@ 35
+------INS SimpleName@@lock @TO@ VariableDeclarationFragment@@lock=new ReentrantReadWriteLock() @AT@ 1827 @LENGTH@ 4
+------INS ClassInstanceCreation@@ReentrantReadWriteLock[] @TO@ VariableDeclarationFragment@@lock=new ReentrantReadWriteLock() @AT@ 1834 @LENGTH@ 28
+---------INS New@@new @TO@ ClassInstanceCreation@@ReentrantReadWriteLock[] @AT@ 1834 @LENGTH@ 3
+---------INS SimpleType@@ReentrantReadWriteLock @TO@ ClassInstanceCreation@@ReentrantReadWriteLock[] @AT@ 1838 @LENGTH@ 22
+

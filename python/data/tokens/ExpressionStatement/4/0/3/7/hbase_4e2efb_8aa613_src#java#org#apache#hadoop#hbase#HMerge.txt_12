@@ -1,5 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:checkOfflined(region) @TO@ TryStatement@@try:[] @AT@ 7865 @LENGTH@ 22
----INS MethodInvocation@@checkOfflined(region) @TO@ ExpressionStatement@@MethodInvocation:checkOfflined(region) @AT@ 7865 @LENGTH@ 21
-------INS SimpleName@@MethodName:checkOfflined:[region] @TO@ MethodInvocation@@checkOfflined(region) @AT@ 7865 @LENGTH@ 21
----------INS SimpleName@@region @TO@ SimpleName@@MethodName:checkOfflined:[region] @AT@ 7879 @LENGTH@ 6
-

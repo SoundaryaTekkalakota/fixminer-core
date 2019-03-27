@@ -1,0 +1,6 @@
+INS VariableDeclarationStatement@@XMLInputFactory factory=getInputFactory(); @TO@ MethodDeclaration@@public, XMLEventReader, MethodName:createXMLEventReader, InputStream in, Exchange exchange, XMLStreamException,  @AT@ 8727 @LENGTH@ 44
+---INS SimpleType@@XMLInputFactory @TO@ VariableDeclarationStatement@@XMLInputFactory factory=getInputFactory(); @AT@ 8727 @LENGTH@ 15
+---INS VariableDeclarationFragment@@factory=getInputFactory() @TO@ VariableDeclarationStatement@@XMLInputFactory factory=getInputFactory(); @AT@ 8743 @LENGTH@ 27
+------INS SimpleName@@factory @TO@ VariableDeclarationFragment@@factory=getInputFactory() @AT@ 8743 @LENGTH@ 7
+------INS MethodInvocation@@MethodName:getInputFactory:[] @TO@ VariableDeclarationFragment@@factory=getInputFactory() @AT@ 8753 @LENGTH@ 17
+

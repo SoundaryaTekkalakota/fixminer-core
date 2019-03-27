@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@MColumnDescriptor childCD=retrieveCD ? nChildTable.mcd : childTable.getSd().getCD(); @TO@ final MColumnDescriptor childCD=retrieveCD ? nChildTable.mcd : childTable.getSd().getCD(); @AT@ 152696 @LENGTH@ 86
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@MColumnDescriptor childCD=retrieveCD ? nChildTable.mcd : childTable.getSd().getCD(); @AT@ 152922 @LENGTH@ 5
+

@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, boolean, MethodName:containsKey, Object key,  @TO@ public, synchronized, boolean, MethodName:containsKey, Object key,  @AT@ 3363 @LENGTH@ 114
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, boolean, MethodName:containsKey, Object key,  @AT@ 3423 @LENGTH@ 12
+

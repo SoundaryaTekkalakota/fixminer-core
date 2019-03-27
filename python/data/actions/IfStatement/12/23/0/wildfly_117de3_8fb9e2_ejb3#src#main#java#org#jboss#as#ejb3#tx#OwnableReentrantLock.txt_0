@@ -1,0 +1,12 @@
+ UPD IfStatement 
+--- DEL InfixExpression 
+------ DEL SimpleName 
+------ DEL Operator 
+------ DEL FieldAccess 
+--- INS MethodInvocation TO IfStatement 
+------ INS SimpleName TO MethodInvocation 
+------ INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO SimpleName 
+--------- INS FieldAccess TO SimpleName 
+------------ MOV ThisExpression TO FieldAccess 
+------------ MOV SimpleName TO FieldAccess

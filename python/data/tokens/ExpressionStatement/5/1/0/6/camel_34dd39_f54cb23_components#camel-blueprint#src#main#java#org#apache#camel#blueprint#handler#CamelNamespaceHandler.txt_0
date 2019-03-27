@@ -1,0 +1,6 @@
+INS ExpressionStatement@@MethodInvocation:ctx.setActivation(ACTIVATION_LAZY) @TO@ MethodDeclaration@@private, Metadata, MethodName:parseRouteContextNode, Element element, ParserContext context,  @AT@ 15094 @LENGTH@ 35
+---INS MethodInvocation@@ctx.setActivation(ACTIVATION_LAZY) @TO@ ExpressionStatement@@MethodInvocation:ctx.setActivation(ACTIVATION_LAZY) @AT@ 15094 @LENGTH@ 34
+------INS SimpleName@@Name:ctx @TO@ MethodInvocation@@ctx.setActivation(ACTIVATION_LAZY) @AT@ 15094 @LENGTH@ 3
+------INS SimpleName@@MethodName:setActivation:[ACTIVATION_LAZY] @TO@ MethodInvocation@@ctx.setActivation(ACTIVATION_LAZY) @AT@ 15098 @LENGTH@ 30
+---------INS SimpleName@@ACTIVATION_LAZY @TO@ SimpleName@@MethodName:setActivation:[ACTIVATION_LAZY] @AT@ 15112 @LENGTH@ 15
+

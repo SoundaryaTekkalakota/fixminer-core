@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@Long writeId; @TO@ Long writeId=null; @AT@ 145406 @LENGTH@ 13
----UPD VariableDeclarationFragment@@writeId @TO@ writeId=null @AT@ 145411 @LENGTH@ 7
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@writeId @AT@ 145421 @LENGTH@ 4
-

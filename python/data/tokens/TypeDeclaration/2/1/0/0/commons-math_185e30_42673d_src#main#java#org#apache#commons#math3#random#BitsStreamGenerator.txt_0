@@ -1,3 +1,0 @@
-UPD TypeDeclaration@@[public, abstract]BitsStreamGenerator, [RandomGenerator] @TO@ [public, abstract]BitsStreamGenerator, [RandomGenerator, Serializable] @AT@ 1075 @LENGTH@ 4310
----INS SimpleType@@Serializable @TO@ TypeDeclaration@@[public, abstract]BitsStreamGenerator, [RandomGenerator] @AT@ 1195 @LENGTH@ 12
-

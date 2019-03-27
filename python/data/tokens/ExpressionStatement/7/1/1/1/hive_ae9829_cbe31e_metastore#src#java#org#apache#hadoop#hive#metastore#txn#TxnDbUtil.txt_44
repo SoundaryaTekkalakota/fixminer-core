@@ -1,0 +1,8 @@
+INS ExpressionStatement@@Assignment:stmt=conn.createStatement() @TO@ TryStatement@@try:[] @AT@ 7259 @LENGTH@ 30
+---INS Assignment@@stmt=conn.createStatement() @TO@ ExpressionStatement@@Assignment:stmt=conn.createStatement() @AT@ 7259 @LENGTH@ 29
+------INS SimpleName@@stmt @TO@ Assignment@@stmt=conn.createStatement() @AT@ 7259 @LENGTH@ 4
+------INS Operator@@= @TO@ Assignment@@stmt=conn.createStatement() @AT@ 7263 @LENGTH@ 1
+------INS MethodInvocation@@conn.createStatement() @TO@ Assignment@@stmt=conn.createStatement() @AT@ 7266 @LENGTH@ 22
+---------MOV SimpleName@@Name:conn @TO@ MethodInvocation@@conn.createStatement() @AT@ 6974 @LENGTH@ 4
+---------MOV SimpleName@@MethodName:createStatement:[] @TO@ MethodInvocation@@conn.createStatement() @AT@ 6979 @LENGTH@ 17
+

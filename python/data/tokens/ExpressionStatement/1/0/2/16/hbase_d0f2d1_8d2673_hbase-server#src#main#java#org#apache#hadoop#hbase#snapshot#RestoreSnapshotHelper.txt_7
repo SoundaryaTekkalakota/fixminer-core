@@ -1,2 +1,0 @@
-MOV ExpressionStatement@@MethodInvocation:monitor.rethrowException() @TO@ MethodDeclaration@@private, RestoreMetaChanges, MethodName:restoreHdfsRegions, final ThreadPoolExecutor exec, IOException,  @AT@ 8795 @LENGTH@ 27
-

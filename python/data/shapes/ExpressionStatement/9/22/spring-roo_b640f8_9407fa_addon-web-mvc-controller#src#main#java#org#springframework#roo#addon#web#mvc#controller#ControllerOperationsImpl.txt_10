@@ -1,9 +1,0 @@
-ExpressionStatement
----MethodInvocation
-------SimpleName
----------ClassInstanceCreation
-------------ClassInstanceCreation
----------------New
----------------SimpleType
----------------StringLiteral
-------------SimpleName

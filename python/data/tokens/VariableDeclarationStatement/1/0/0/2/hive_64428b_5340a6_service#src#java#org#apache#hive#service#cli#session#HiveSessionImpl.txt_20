@@ -1,2 +1,0 @@
-MOV VariableDeclarationStatement@@OperationHandle opHandle=operation.getHandle(); @TO@ MethodDeclaration@@public, OperationHandle, MethodName:getSchemas, String catalogName, String schemaName, HiveSQLException,  @AT@ 8414 @LENGTH@ 49
-

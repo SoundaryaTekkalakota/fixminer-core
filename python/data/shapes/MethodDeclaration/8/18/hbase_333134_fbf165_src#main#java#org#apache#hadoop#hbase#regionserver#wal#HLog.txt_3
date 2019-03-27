@@ -1,0 +1,8 @@
+MethodDeclaration 
+---PrimitiveType 
+---SimpleName 
+---ExpressionStatement 
+------Assignment 
+---------SimpleName 
+---------Operator 
+---------BooleanLiteral

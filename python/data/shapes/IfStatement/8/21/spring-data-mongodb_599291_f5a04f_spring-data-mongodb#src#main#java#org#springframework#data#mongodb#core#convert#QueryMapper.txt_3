@@ -1,8 +1,0 @@
-IfStatement
----PrefixExpression
-------Operator
-------MethodInvocation
----------SimpleName
----------SimpleName
----ReturnStatement
-------BooleanLiteral

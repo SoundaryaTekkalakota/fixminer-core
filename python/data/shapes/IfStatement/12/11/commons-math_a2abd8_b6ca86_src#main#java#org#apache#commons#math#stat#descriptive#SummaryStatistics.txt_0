@@ -1,0 +1,12 @@
+IfStatement 
+---InfixExpression 
+------SimpleName 
+------Operator 
+------SimpleName 
+---PrefixExpression 
+------Operator 
+------ParenthesizedExpression 
+---------InstanceofExpression 
+------------SimpleName 
+------------Instanceof 
+------------SimpleType

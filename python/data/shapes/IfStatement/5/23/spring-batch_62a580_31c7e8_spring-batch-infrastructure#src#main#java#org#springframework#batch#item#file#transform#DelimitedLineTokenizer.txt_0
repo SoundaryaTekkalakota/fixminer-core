@@ -1,5 +1,0 @@
-IfStatement
----InfixExpression
-------ParenthesizedExpression
----------InfixExpression
-------------Operator

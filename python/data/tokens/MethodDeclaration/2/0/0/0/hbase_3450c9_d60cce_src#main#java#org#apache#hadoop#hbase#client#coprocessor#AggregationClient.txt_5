@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, void, MethodName:update, byte[] region, byte[] row, S result,  @TO@ public, synchronized, void, MethodName:update, byte[] region, byte[] row, S result,  @AT@ 7699 @LENGTH@ 106
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, void, MethodName:update, byte[] region, byte[] row, S result,  @AT@ 7820 @LENGTH@ 12
+

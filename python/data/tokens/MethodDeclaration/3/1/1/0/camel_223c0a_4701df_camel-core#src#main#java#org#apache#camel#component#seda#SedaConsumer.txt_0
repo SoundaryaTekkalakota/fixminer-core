@@ -1,4 +1,0 @@
-UPD MethodDeclaration@@protected, void, MethodName:sendToConsumers, Exchange exchange, Exception,  @TO@ protected, void, MethodName:sendToConsumers, final Exchange exchange, Exception,  @AT@ 9507 @LENGTH@ 1447
----UPD SingleVariableDeclaration@@Exchange exchange @TO@ final Exchange exchange @AT@ 9538 @LENGTH@ 17
-------INS Modifier@@final @TO@ SingleVariableDeclaration@@Exchange exchange @AT@ 9653 @LENGTH@ 5
-

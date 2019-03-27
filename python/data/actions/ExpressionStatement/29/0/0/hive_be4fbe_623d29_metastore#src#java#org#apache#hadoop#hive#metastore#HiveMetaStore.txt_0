@@ -1,0 +1,29 @@
+ UPD ExpressionStatement 
+--- UPD MethodInvocation 
+------ UPD SimpleName 
+------ UPD SimpleName 
+--------- UPD MethodInvocation 
+------------ UPD SimpleName 
+------------ UPD SimpleName 
+--------------- UPD ClassInstanceCreation 
+------------------ DEL SimpleType 
+------------------ INS ParameterizedType TO ClassInstanceCreation 
+--------------------- INS SimpleType TO ParameterizedType 
+--------------------- INS SimpleType TO ParameterizedType 
+--------- INS ClassInstanceCreation TO SimpleName 
+------------ INS New TO ClassInstanceCreation 
+------------ INS SimpleType TO ClassInstanceCreation 
+------------ INS AnonymousClassDeclaration TO ClassInstanceCreation 
+--------------- INS MethodDeclaration TO AnonymousClassDeclaration 
+------------------ INS Modifier TO MethodDeclaration 
+------------------ INS SimpleType TO MethodDeclaration 
+------------------ INS SimpleName TO MethodDeclaration 
+------------------ INS SimpleType TO MethodDeclaration 
+------------------ INS ExpressionStatement TO MethodDeclaration 
+--------------------- MOV MethodInvocation TO ExpressionStatement 
+------------------ INS ReturnStatement TO MethodDeclaration 
+--------------------- INS SimpleName TO ReturnStatement 
+--- INS MethodInvocation TO ExpressionStatement 
+------ INS SimpleName TO MethodInvocation 
+------ INS SimpleName TO MethodInvocation 
+--------- MOV MethodInvocation TO SimpleName

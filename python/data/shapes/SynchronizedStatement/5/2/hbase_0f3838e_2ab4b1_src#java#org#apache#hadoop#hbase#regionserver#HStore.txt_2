@@ -1,5 +1,0 @@
-SynchronizedStatement
----IfStatement
----FieldAccess
-------ThisExpression
-------SimpleName

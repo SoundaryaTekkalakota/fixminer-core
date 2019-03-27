@@ -1,0 +1,14 @@
+ INS ExpressionStatement TO ForStatement 
+--- INS Assignment TO ExpressionStatement 
+------ INS ArrayAccess TO Assignment 
+--------- INS SimpleName TO ArrayAccess 
+--------- INS SimpleName TO ArrayAccess 
+------ INS Operator TO Assignment 
+------ INS InfixExpression TO Assignment 
+--------- INS ArrayAccess TO InfixExpression 
+------------ INS SimpleName TO ArrayAccess 
+------------ INS SimpleName TO ArrayAccess 
+--------- INS Operator TO InfixExpression 
+--------- INS ArrayAccess TO InfixExpression 
+------------ INS SimpleName TO ArrayAccess 
+------------ INS NumberLiteral TO ArrayAccess

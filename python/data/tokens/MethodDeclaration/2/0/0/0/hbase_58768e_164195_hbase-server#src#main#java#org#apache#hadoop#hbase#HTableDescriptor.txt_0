@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, void, MethodName:setDeferredLogFlush, final boolean isDeferredLogFlush,  @TO@ public, synchronized, void, MethodName:setDeferredLogFlush, final boolean isDeferredLogFlush,  @AT@ 21301 @LENGTH@ 185
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, void, MethodName:setDeferredLogFlush, final boolean isDeferredLogFlush,  @AT@ 21308 @LENGTH@ 12
+

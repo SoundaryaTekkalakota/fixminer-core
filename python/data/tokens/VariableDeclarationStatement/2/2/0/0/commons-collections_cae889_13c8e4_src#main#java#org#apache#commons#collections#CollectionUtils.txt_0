@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@ArrayList<O> list=new ArrayList<O>(); @TO@ final ArrayList<O> list=new ArrayList<O>(); @AT@ 10041 @LENGTH@ 39
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@ArrayList<O> list=new ArrayList<O>(); @AT@ 10667 @LENGTH@ 5
+

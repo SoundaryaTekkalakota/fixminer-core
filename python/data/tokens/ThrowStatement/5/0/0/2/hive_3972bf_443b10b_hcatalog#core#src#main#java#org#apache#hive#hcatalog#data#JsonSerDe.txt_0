@@ -1,6 +1,0 @@
-DEL ThrowStatement@@ClassInstanceCreation:new IOException("JsonSerDe does not support BINARY type") @AT@ 13237 @LENGTH@ 64
----DEL ClassInstanceCreation@@IOException["JsonSerDe does not support BINARY type"] @AT@ 13243 @LENGTH@ 57
-------DEL New@@new @AT@ 13243 @LENGTH@ 3
-------DEL SimpleType@@IOException @AT@ 13247 @LENGTH@ 11
-------DEL StringLiteral@@"JsonSerDe does not support BINARY type" @AT@ 13259 @LENGTH@ 40
-

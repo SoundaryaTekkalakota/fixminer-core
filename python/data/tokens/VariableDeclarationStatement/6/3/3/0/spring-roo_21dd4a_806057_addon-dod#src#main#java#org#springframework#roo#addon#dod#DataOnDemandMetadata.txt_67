@@ -1,7 +1,0 @@
-UPD VariableDeclarationStatement@@MethodMetadata userMethod=MemberFindingUtils.getMethod(governorTypeDetails,methodName,paramTypes); @TO@ MethodMetadata userMethod=getMethodOnGovernor(methodName,paramTypes); @AT@ 40642 @LENGTH@ 102
----UPD VariableDeclarationFragment@@userMethod=MemberFindingUtils.getMethod(governorTypeDetails,methodName,paramTypes) @TO@ userMethod=getMethodOnGovernor(methodName,paramTypes) @AT@ 40657 @LENGTH@ 86
-------UPD MethodInvocation@@MemberFindingUtils.getMethod(governorTypeDetails,methodName,paramTypes) @TO@ getMethodOnGovernor(methodName,paramTypes) @AT@ 40670 @LENGTH@ 73
----------DEL SimpleName@@Name:MemberFindingUtils @AT@ 40670 @LENGTH@ 18
----------UPD SimpleName@@MethodName:getMethod:[governorTypeDetails, methodName, paramTypes] @TO@ MethodName:getMethodOnGovernor:[methodName, paramTypes] @AT@ 40689 @LENGTH@ 54
-------------DEL SimpleName@@governorTypeDetails @AT@ 40699 @LENGTH@ 19
-

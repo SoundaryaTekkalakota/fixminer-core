@@ -1,0 +1,11 @@
+VariableDeclarationStatement 
+---PrimitiveType 
+---VariableDeclarationFragment 
+------SimpleName 
+------CastExpression 
+---------PrimitiveType 
+---------ParenthesizedExpression 
+------------InfixExpression 
+---------------SimpleName 
+---------------Operator 
+---------------SimpleName

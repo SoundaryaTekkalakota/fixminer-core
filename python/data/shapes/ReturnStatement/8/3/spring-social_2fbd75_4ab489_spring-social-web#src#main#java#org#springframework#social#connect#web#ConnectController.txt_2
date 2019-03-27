@@ -1,8 +1,0 @@
-ReturnStatement
----MethodInvocation
-------SimpleName
----------SimpleName
----------InfixExpression
-------------SimpleName
-------------Operator
-------------StringLiteral

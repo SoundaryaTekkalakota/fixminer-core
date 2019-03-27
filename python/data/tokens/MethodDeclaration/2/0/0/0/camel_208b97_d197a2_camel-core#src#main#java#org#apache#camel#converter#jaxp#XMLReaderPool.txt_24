@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, void, MethodName:parse, String systemId, IOException, SAXException,  @TO@ public, synchronized, void, MethodName:parse, String systemId, IOException, SAXException,  @AT@ 7996 @LENGTH@ 231
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, void, MethodName:parse, String systemId, IOException, SAXException,  @AT@ 7971 @LENGTH@ 12
+

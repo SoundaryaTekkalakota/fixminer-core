@@ -1,0 +1,6 @@
+INS ExpressionStatement@@MethodInvocation:IOHelper.close(inputStreamToClose) @TO@ MethodDeclaration@@public, void, MethodName:doStop, Exception,  @AT@ 3521 @LENGTH@ 35
+---INS MethodInvocation@@IOHelper.close(inputStreamToClose) @TO@ ExpressionStatement@@MethodInvocation:IOHelper.close(inputStreamToClose) @AT@ 3521 @LENGTH@ 34
+------INS SimpleName@@Name:IOHelper @TO@ MethodInvocation@@IOHelper.close(inputStreamToClose) @AT@ 3521 @LENGTH@ 8
+------INS SimpleName@@MethodName:close:[inputStreamToClose] @TO@ MethodInvocation@@IOHelper.close(inputStreamToClose) @AT@ 3530 @LENGTH@ 25
+---------INS SimpleName@@inputStreamToClose @TO@ SimpleName@@MethodName:close:[inputStreamToClose] @AT@ 3536 @LENGTH@ 18
+

@@ -1,7 +1,0 @@
-IfStatement
----InfixExpression
-------InfixExpression
-------Operator
-------MethodInvocation
----------SimpleName
----------SimpleName

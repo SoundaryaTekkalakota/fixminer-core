@@ -1,2 +1,0 @@
-MOV ExpressionStatement@@MethodInvocation:getOrCreateRedeliveryPolicy().collisionAvoidanceFactor(collisionAvoidanceFactor) @TO@ MethodDeclaration@@public, OnExceptionDefinition, MethodName:collisionAvoidanceFactor, String collisionAvoidanceFactor,  @AT@ 15191 @LENGTH@ 81
-

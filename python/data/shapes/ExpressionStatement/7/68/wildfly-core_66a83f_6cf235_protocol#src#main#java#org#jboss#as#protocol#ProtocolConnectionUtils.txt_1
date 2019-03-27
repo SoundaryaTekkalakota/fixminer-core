@@ -1,7 +1,0 @@
-ExpressionStatement
----Assignment
-------ConditionalExpression
----------NullLiteral
----------ClassInstanceCreation
-------------New
-------------SimpleType

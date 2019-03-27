@@ -1,0 +1,10 @@
+INS CatchClause@@Exception exception @TO@ TryStatement@@try:[] @AT@ 73985 @LENGTH@ 56
+---INS SingleVariableDeclaration@@Exception exception @TO@ CatchClause@@Exception exception @AT@ 73992 @LENGTH@ 19
+------INS SimpleType@@Exception @TO@ SingleVariableDeclaration@@Exception exception @AT@ 73992 @LENGTH@ 9
+------INS SimpleName@@exception @TO@ SingleVariableDeclaration@@Exception exception @AT@ 74002 @LENGTH@ 9
+---INS ExpressionStatement@@Assignment:e=exception @TO@ CatchClause@@Exception exception @AT@ 74021 @LENGTH@ 14
+------INS Assignment@@e=exception @TO@ ExpressionStatement@@Assignment:e=exception @AT@ 74021 @LENGTH@ 13
+---------INS SimpleName@@e @TO@ Assignment@@e=exception @AT@ 74021 @LENGTH@ 1
+---------INS Operator@@= @TO@ Assignment@@e=exception @AT@ 74022 @LENGTH@ 1
+---------INS SimpleName@@exception @TO@ Assignment@@e=exception @AT@ 74025 @LENGTH@ 9
+

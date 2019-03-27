@@ -1,5 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:setupPolicyRegistration(context) @TO@ MethodDeclaration@@public, void, MethodName:start, StartContext context, StartException,  @AT@ 3857 @LENGTH@ 33
----INS MethodInvocation@@setupPolicyRegistration(context) @TO@ ExpressionStatement@@MethodInvocation:setupPolicyRegistration(context) @AT@ 3857 @LENGTH@ 32
-------INS SimpleName@@MethodName:setupPolicyRegistration:[context] @TO@ MethodInvocation@@setupPolicyRegistration(context) @AT@ 3857 @LENGTH@ 32
----------INS SimpleName@@context @TO@ SimpleName@@MethodName:setupPolicyRegistration:[context] @AT@ 3881 @LENGTH@ 7
-

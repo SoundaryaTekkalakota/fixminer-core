@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@HTableDescriptor htd=new HTableDescriptor(tableName); @TO@ final HTableDescriptor htd=new HTableDescriptor(tableName); @AT@ 35983 @LENGTH@ 55
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@HTableDescriptor htd=new HTableDescriptor(tableName); @AT@ 36542 @LENGTH@ 5
+

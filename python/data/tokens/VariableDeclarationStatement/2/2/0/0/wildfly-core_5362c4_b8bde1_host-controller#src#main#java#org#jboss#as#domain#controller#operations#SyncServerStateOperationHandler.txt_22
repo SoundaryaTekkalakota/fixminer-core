@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@PathElement rolloutPlansElement=PathElement.pathElement(MANAGEMENT_CLIENT_CONTENT,ROLLOUT_PLANS); @TO@ final PathElement rolloutPlansElement=PathElement.pathElement(MANAGEMENT_CLIENT_CONTENT,ROLLOUT_PLANS); @AT@ 15671 @LENGTH@ 100
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@PathElement rolloutPlansElement=PathElement.pathElement(MANAGEMENT_CLIENT_CONTENT,ROLLOUT_PLANS); @AT@ 19509 @LENGTH@ 5
+

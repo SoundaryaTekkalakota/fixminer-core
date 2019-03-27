@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@Method aggEvaluateMethod=FunctionRegistry.getUDAFEvaluateMethod(aggName,mode); @TO@ Method aggEvaluateMethod=null; @AT@ 53665 @LENGTH@ 81
----UPD VariableDeclarationFragment@@aggEvaluateMethod=FunctionRegistry.getUDAFEvaluateMethod(aggName,mode) @TO@ aggEvaluateMethod=null @AT@ 53672 @LENGTH@ 73
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@aggEvaluateMethod=FunctionRegistry.getUDAFEvaluateMethod(aggName,mode) @AT@ 51996 @LENGTH@ 4
-

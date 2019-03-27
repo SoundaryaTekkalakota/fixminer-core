@@ -1,0 +1,7 @@
+IfStatement 
+---MethodInvocation 
+------SimpleName 
+------SimpleName 
+---------StringLiteral 
+---ReturnStatement 
+------NullLiteral

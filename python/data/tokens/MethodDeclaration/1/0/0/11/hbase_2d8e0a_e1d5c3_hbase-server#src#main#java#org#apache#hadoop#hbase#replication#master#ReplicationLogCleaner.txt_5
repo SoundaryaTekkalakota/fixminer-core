@@ -1,2 +1,0 @@
-MOV MethodDeclaration@@public, void, MethodName:abort, String why, Throwable e,  @TO@ TypeDeclaration@@[private, static]WarnOnlyAbortable, [Abortable] @AT@ 6262 @LENGTH@ 154
-

@@ -1,0 +1,15 @@
+VariableDeclarationStatement 
+---VariableDeclarationFragment 
+------FieldAccess 
+------ConditionalExpression 
+---------ParenthesizedExpression 
+------------InfixExpression 
+---------------FieldAccess 
+------------------ThisExpression 
+------------------SimpleName 
+---------------Operator 
+---------------NumberLiteral 
+---------SimpleName 
+---------FieldAccess 
+------------ThisExpression 
+------------SimpleName

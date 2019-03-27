@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@private, void, MethodName:includeTimestamp, final long timestamp,  @TO@ private, synchronized, void, MethodName:includeTimestamp, final long timestamp,  @AT@ 3344 @LENGTH@ 355
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@private, void, MethodName:includeTimestamp, final long timestamp,  @AT@ 3352 @LENGTH@ 12
+

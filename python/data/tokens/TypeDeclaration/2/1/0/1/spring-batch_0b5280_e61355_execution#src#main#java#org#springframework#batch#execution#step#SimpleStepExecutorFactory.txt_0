@@ -1,3 +1,0 @@
-UPD TypeDeclaration@@[public]SimpleStepExecutorFactory, [StepExecutorFactory] @TO@ [public]SimpleStepExecutorFactory, [StepExecutorFactory, InitializingBean] @AT@ 1420 @LENGTH@ 1545
----INS SimpleType@@InitializingBean @TO@ TypeDeclaration@@[public]SimpleStepExecutorFactory, [StepExecutorFactory] @AT@ 1551 @LENGTH@ 16
-

@@ -1,7 +1,0 @@
-IfStatement
----MethodInvocation
----ThrowStatement
-------ClassInstanceCreation
----------New
----------SimpleType
----------StringLiteral

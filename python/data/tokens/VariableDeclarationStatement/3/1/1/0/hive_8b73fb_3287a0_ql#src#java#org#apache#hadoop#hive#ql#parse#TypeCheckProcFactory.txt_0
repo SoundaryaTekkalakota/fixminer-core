@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@ColumnInfo colInfo=input.get(null,tableOrCol); @TO@ ColumnInfo colInfo=null; @AT@ 25909 @LENGTH@ 49
----UPD VariableDeclarationFragment@@colInfo=input.get(null,tableOrCol) @TO@ colInfo=null @AT@ 25920 @LENGTH@ 37
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@colInfo=input.get(null,tableOrCol) @AT@ 25930 @LENGTH@ 4
-

@@ -1,3 +1,0 @@
-INS ReturnStatement@@SimpleName:answer @TO@ MethodDeclaration@@public, boolean, MethodName:remove, String key,  @AT@ 5572 @LENGTH@ 14
----INS SimpleName@@answer @TO@ ReturnStatement@@SimpleName:answer @AT@ 5579 @LENGTH@ 6
-

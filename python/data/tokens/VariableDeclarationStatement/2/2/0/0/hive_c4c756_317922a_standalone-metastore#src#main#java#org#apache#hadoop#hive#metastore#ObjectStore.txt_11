@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@AttachedMTableInfo nChildTable=getMTable(fkTableDB,fkTableName,retrieveCD); @TO@ final AttachedMTableInfo nChildTable=getMTable(fkTableDB,fkTableName,retrieveCD); @AT@ 152040 @LENGTH@ 79
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@AttachedMTableInfo nChildTable=getMTable(fkTableDB,fkTableName,retrieveCD); @AT@ 152647 @LENGTH@ 5
+

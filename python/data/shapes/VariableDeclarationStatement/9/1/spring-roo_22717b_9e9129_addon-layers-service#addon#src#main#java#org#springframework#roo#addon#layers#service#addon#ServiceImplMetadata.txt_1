@@ -1,9 +1,9 @@
-VariableDeclarationStatement
----ParameterizedType
-------SimpleType
-------WildcardType
----VariableDeclarationFragment
-------SimpleName
-------MethodInvocation
----------SimpleName
+VariableDeclarationStatement 
+---ParameterizedType 
+------SimpleType 
+------WildcardType 
+---VariableDeclarationFragment 
+------SimpleName 
+------MethodInvocation 
+---------SimpleName 
 ---------SimpleName

@@ -1,0 +1,7 @@
+UPD VariableDeclarationStatement@@Method writeMethod=pd.getWriteMethod(); @TO@ Method writeMethod=writeMethodFor(pd); @AT@ 3470 @LENGTH@ 41
+---UPD VariableDeclarationFragment@@writeMethod=pd.getWriteMethod() @TO@ writeMethod=writeMethodFor(pd) @AT@ 3477 @LENGTH@ 33
+------UPD MethodInvocation@@pd.getWriteMethod() @TO@ writeMethodFor(pd) @AT@ 3491 @LENGTH@ 19
+---------DEL SimpleName@@Name:pd @AT@ 3491 @LENGTH@ 2
+---------UPD SimpleName@@MethodName:getWriteMethod:[] @TO@ MethodName:writeMethodFor:[pd] @AT@ 3494 @LENGTH@ 16
+------------INS SimpleName@@pd @TO@ SimpleName@@MethodName:getWriteMethod:[] @AT@ 3574 @LENGTH@ 2
+

@@ -1,5 +1,0 @@
-IfStatement
----InfixExpression
-------BooleanLiteral
-------Operator
----PrefixExpression

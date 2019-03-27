@@ -1,6 +1,0 @@
-FieldDeclaration
----VariableDeclarationFragment
-------PrefixExpression
----------Operator
----------NumberLiteral
-------NumberLiteral

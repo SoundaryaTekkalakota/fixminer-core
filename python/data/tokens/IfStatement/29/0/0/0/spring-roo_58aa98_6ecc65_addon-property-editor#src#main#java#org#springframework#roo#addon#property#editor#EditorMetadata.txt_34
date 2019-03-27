@@ -1,0 +1,30 @@
+INS IfStatement@@InfixExpression:userMethod != null @TO@ MethodDeclaration@@private, MethodMetadata, MethodName:getSetAsTextMethod,  @AT@ 6204 @LENGTH@ 256
+---INS InfixExpression@@userMethod != null @TO@ IfStatement@@InfixExpression:userMethod != null @AT@ 6208 @LENGTH@ 18
+------INS SimpleName@@userMethod @TO@ InfixExpression@@userMethod != null @AT@ 6208 @LENGTH@ 10
+------INS Operator@@!= @TO@ InfixExpression@@userMethod != null @AT@ 6218 @LENGTH@ 2
+------INS NullLiteral@@null @TO@ InfixExpression@@userMethod != null @AT@ 6222 @LENGTH@ 4
+---INS ExpressionStatement@@MethodInvocation:Assert.isTrue(userMethod.getReturnType().equals(returnType),"Method '" + methodName + "' on '"+ governorTypeDetails.getName()+ "' must return '"+ returnType.getNameIncludingTypeParameters()+ "'") @TO@ IfStatement@@InfixExpression:userMethod != null @AT@ 6233 @LENGTH@ 201
+------INS MethodInvocation@@Assert.isTrue(userMethod.getReturnType().equals(returnType),"Method '" + methodName + "' on '"+ governorTypeDetails.getName()+ "' must return '"+ returnType.getNameIncludingTypeParameters()+ "'") @TO@ ExpressionStatement@@MethodInvocation:Assert.isTrue(userMethod.getReturnType().equals(returnType),"Method '" + methodName + "' on '"+ governorTypeDetails.getName()+ "' must return '"+ returnType.getNameIncludingTypeParameters()+ "'") @AT@ 6233 @LENGTH@ 200
+---------INS SimpleName@@Name:Assert @TO@ MethodInvocation@@Assert.isTrue(userMethod.getReturnType().equals(returnType),"Method '" + methodName + "' on '"+ governorTypeDetails.getName()+ "' must return '"+ returnType.getNameIncludingTypeParameters()+ "'") @AT@ 6233 @LENGTH@ 6
+---------INS SimpleName@@MethodName:isTrue:[userMethod.getReturnType().equals(returnType), "Method '" + methodName + "' on '"+ governorTypeDetails.getName()+ "' must return '"+ returnType.getNameIncludingTypeParameters()+ "'"] @TO@ MethodInvocation@@Assert.isTrue(userMethod.getReturnType().equals(returnType),"Method '" + methodName + "' on '"+ governorTypeDetails.getName()+ "' must return '"+ returnType.getNameIncludingTypeParameters()+ "'") @AT@ 6240 @LENGTH@ 193
+------------INS MethodInvocation@@userMethod.getReturnType().equals(returnType) @TO@ SimpleName@@MethodName:isTrue:[userMethod.getReturnType().equals(returnType), "Method '" + methodName + "' on '"+ governorTypeDetails.getName()+ "' must return '"+ returnType.getNameIncludingTypeParameters()+ "'"] @AT@ 6247 @LENGTH@ 45
+---------------INS SimpleName@@Name:userMethod @TO@ MethodInvocation@@userMethod.getReturnType().equals(returnType) @AT@ 6247 @LENGTH@ 10
+---------------INS MethodInvocation@@MethodName:getReturnType:[] @TO@ MethodInvocation@@userMethod.getReturnType().equals(returnType) @AT@ 6247 @LENGTH@ 26
+---------------INS SimpleName@@MethodName:equals:[returnType] @TO@ MethodInvocation@@userMethod.getReturnType().equals(returnType) @AT@ 6274 @LENGTH@ 18
+------------------INS SimpleName@@returnType @TO@ SimpleName@@MethodName:equals:[returnType] @AT@ 6281 @LENGTH@ 10
+------------INS InfixExpression@@"Method '" + methodName + "' on '"+ governorTypeDetails.getName()+ "' must return '"+ returnType.getNameIncludingTypeParameters()+ "'" @TO@ SimpleName@@MethodName:isTrue:[userMethod.getReturnType().equals(returnType), "Method '" + methodName + "' on '"+ governorTypeDetails.getName()+ "' must return '"+ returnType.getNameIncludingTypeParameters()+ "'"] @AT@ 6294 @LENGTH@ 138
+---------------INS StringLiteral@@"Method '" @TO@ InfixExpression@@"Method '" + methodName + "' on '"+ governorTypeDetails.getName()+ "' must return '"+ returnType.getNameIncludingTypeParameters()+ "'" @AT@ 6294 @LENGTH@ 10
+---------------INS Operator@@+ @TO@ InfixExpression@@"Method '" + methodName + "' on '"+ governorTypeDetails.getName()+ "' must return '"+ returnType.getNameIncludingTypeParameters()+ "'" @AT@ 6304 @LENGTH@ 1
+---------------INS SimpleName@@methodName @TO@ InfixExpression@@"Method '" + methodName + "' on '"+ governorTypeDetails.getName()+ "' must return '"+ returnType.getNameIncludingTypeParameters()+ "'" @AT@ 6307 @LENGTH@ 10
+---------------INS StringLiteral@@"' on '" @TO@ InfixExpression@@"Method '" + methodName + "' on '"+ governorTypeDetails.getName()+ "' must return '"+ returnType.getNameIncludingTypeParameters()+ "'" @AT@ 6320 @LENGTH@ 8
+---------------INS MethodInvocation@@governorTypeDetails.getName() @TO@ InfixExpression@@"Method '" + methodName + "' on '"+ governorTypeDetails.getName()+ "' must return '"+ returnType.getNameIncludingTypeParameters()+ "'" @AT@ 6331 @LENGTH@ 29
+------------------INS SimpleName@@Name:governorTypeDetails @TO@ MethodInvocation@@governorTypeDetails.getName() @AT@ 6331 @LENGTH@ 19
+------------------INS SimpleName@@MethodName:getName:[] @TO@ MethodInvocation@@governorTypeDetails.getName() @AT@ 6351 @LENGTH@ 9
+---------------INS StringLiteral@@"' must return '" @TO@ InfixExpression@@"Method '" + methodName + "' on '"+ governorTypeDetails.getName()+ "' must return '"+ returnType.getNameIncludingTypeParameters()+ "'" @AT@ 6363 @LENGTH@ 17
+---------------INS MethodInvocation@@returnType.getNameIncludingTypeParameters() @TO@ InfixExpression@@"Method '" + methodName + "' on '"+ governorTypeDetails.getName()+ "' must return '"+ returnType.getNameIncludingTypeParameters()+ "'" @AT@ 6383 @LENGTH@ 43
+------------------INS SimpleName@@Name:returnType @TO@ MethodInvocation@@returnType.getNameIncludingTypeParameters() @AT@ 6383 @LENGTH@ 10
+------------------INS SimpleName@@MethodName:getNameIncludingTypeParameters:[] @TO@ MethodInvocation@@returnType.getNameIncludingTypeParameters() @AT@ 6394 @LENGTH@ 32
+---------------INS StringLiteral@@"'" @TO@ InfixExpression@@"Method '" + methodName + "' on '"+ governorTypeDetails.getName()+ "' must return '"+ returnType.getNameIncludingTypeParameters()+ "'" @AT@ 6429 @LENGTH@ 3
+---INS ReturnStatement@@SimpleName:userMethod @TO@ IfStatement@@InfixExpression:userMethod != null @AT@ 6438 @LENGTH@ 18
+------INS SimpleName@@userMethod @TO@ ReturnStatement@@SimpleName:userMethod @AT@ 6445 @LENGTH@ 10
+

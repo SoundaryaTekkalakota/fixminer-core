@@ -1,9 +1,0 @@
- INS ExpressionStatement TO SwitchStatement 
---- INS MethodInvocation TO ExpressionStatement 
------- INS SimpleName TO MethodInvocation 
------- INS SimpleName TO MethodInvocation 
---------- INS InfixExpression TO SimpleName 
------------- INS StringLiteral TO InfixExpression 
------------- INS Operator TO InfixExpression 
------------- INS SimpleName TO InfixExpression 
------------- INS StringLiteral TO InfixExpression

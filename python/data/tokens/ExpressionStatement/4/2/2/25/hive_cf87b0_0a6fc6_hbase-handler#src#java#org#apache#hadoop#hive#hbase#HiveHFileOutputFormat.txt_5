@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:fs.createNewFile(outputdir) @TO@ MethodInvocation:fs.createNewFile(taskAttemptOutputdir) @AT@ 6836 @LENGTH@ 28
+---UPD MethodInvocation@@fs.createNewFile(outputdir) @TO@ fs.createNewFile(taskAttemptOutputdir) @AT@ 6836 @LENGTH@ 27
+------UPD SimpleName@@MethodName:createNewFile:[outputdir] @TO@ MethodName:createNewFile:[taskAttemptOutputdir] @AT@ 6839 @LENGTH@ 24
+---------UPD SimpleName@@outputdir @TO@ taskAttemptOutputdir @AT@ 6853 @LENGTH@ 9
+

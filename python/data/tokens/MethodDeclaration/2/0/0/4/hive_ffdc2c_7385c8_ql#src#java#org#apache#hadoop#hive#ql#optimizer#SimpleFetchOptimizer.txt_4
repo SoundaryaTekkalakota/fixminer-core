@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, boolean, MethodName:hasOnlyPruningFilter,  @TO@ public, final, boolean, MethodName:hasOnlyPruningFilter,  @AT@ 12988 @LENGTH@ 82
+---INS Modifier@@final @TO@ MethodDeclaration@@public, boolean, MethodName:hasOnlyPruningFilter,  @AT@ 13452 @LENGTH@ 5
+

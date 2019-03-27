@@ -1,9 +1,0 @@
- UPD IfStatement 
---- INS InfixExpression TO IfStatement 
------- MOV InfixExpression TO InfixExpression 
------- INS PrefixExpression TO InfixExpression 
---------- INS Operator TO PrefixExpression 
---------- INS MethodInvocation TO PrefixExpression 
------------- INS SimpleName TO MethodInvocation 
------------- INS SimpleName TO MethodInvocation 
------- INS Operator TO InfixExpression

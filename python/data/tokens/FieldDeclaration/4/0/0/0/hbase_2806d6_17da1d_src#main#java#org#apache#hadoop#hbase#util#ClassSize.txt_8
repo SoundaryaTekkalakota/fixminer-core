@@ -1,5 +1,0 @@
-UPD FieldDeclaration@@public, static, int, [TREEMAP=0] @TO@ public, static, final, int, [TREEMAP] @AT@ 2057 @LENGTH@ 30
----UPD VariableDeclarationFragment@@TREEMAP=0 @TO@ TREEMAP @AT@ 2075 @LENGTH@ 11
-------DEL NumberLiteral@@0 @AT@ 2085 @LENGTH@ 1
----INS Modifier@@final @TO@ FieldDeclaration@@public, static, int, [TREEMAP=0] @AT@ 2087 @LENGTH@ 5
-

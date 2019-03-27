@@ -1,0 +1,4 @@
+UPD MethodDeclaration@@public, void, MethodName:handleFailed, AsyncFuture<? extends OperationResponse> future, Throwable cause, TransactionalProtocolClient attachment,  @TO@ public, void, MethodName:handleFailed, AsyncFuture<? extends OperationResponse> ignored, Throwable cause, TransactionalProtocolClient attachment,  @AT@ 5353 @LENGTH@ 202
+---UPD SingleVariableDeclaration@@AsyncFuture<? extends OperationResponse> future @TO@ AsyncFuture<? extends OperationResponse> ignored @AT@ 5378 @LENGTH@ 47
+------UPD SimpleName@@future @TO@ ignored @AT@ 5419 @LENGTH@ 6
+

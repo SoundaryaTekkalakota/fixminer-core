@@ -1,0 +1,6 @@
+INS VariableDeclarationStatement@@XMLInputFactory factory=getInputFactory(); @TO@ MethodDeclaration@@public, XMLStreamReader, MethodName:createXMLStreamReader, String string, XMLStreamException,  @AT@ 7943 @LENGTH@ 44
+---INS SimpleType@@XMLInputFactory @TO@ VariableDeclarationStatement@@XMLInputFactory factory=getInputFactory(); @AT@ 7943 @LENGTH@ 15
+---INS VariableDeclarationFragment@@factory=getInputFactory() @TO@ VariableDeclarationStatement@@XMLInputFactory factory=getInputFactory(); @AT@ 7959 @LENGTH@ 27
+------INS SimpleName@@factory @TO@ VariableDeclarationFragment@@factory=getInputFactory() @AT@ 7959 @LENGTH@ 7
+------INS MethodInvocation@@MethodName:getInputFactory:[] @TO@ VariableDeclarationFragment@@factory=getInputFactory() @AT@ 7969 @LENGTH@ 17
+

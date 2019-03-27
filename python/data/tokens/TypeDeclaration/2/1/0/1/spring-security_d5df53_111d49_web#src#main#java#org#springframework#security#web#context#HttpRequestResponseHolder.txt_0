@@ -1,0 +1,3 @@
+UPD TypeDeclaration@@[public]HttpRequestResponseHolder,  @TO@ [public, final]HttpRequestResponseHolder,  @AT@ 433 @LENGTH@ 602
+---INS Modifier@@final @TO@ TypeDeclaration@@[public]HttpRequestResponseHolder,  @AT@ 440 @LENGTH@ 5
+

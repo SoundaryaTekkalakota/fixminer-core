@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, void, MethodName:registerListener, Watcher watcher,  @TO@ public, synchronized, void, MethodName:registerListener, Watcher watcher,  @AT@ 9065 @LENGTH@ 79
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, void, MethodName:registerListener, Watcher watcher,  @AT@ 9072 @LENGTH@ 12
+

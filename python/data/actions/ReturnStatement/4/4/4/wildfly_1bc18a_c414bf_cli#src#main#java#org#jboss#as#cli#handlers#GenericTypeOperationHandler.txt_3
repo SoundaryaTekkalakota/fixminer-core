@@ -1,0 +1,4 @@
+ INS ReturnStatement TO MethodDeclaration 
+--- INS MethodInvocation TO ReturnStatement 
+------ MOV SimpleName TO MethodInvocation 
+------ INS SimpleName TO MethodInvocation

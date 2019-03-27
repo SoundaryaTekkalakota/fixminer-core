@@ -1,9 +1,0 @@
-ExpressionStatement
----MethodInvocation
-------SimpleName
----------FieldAccess
-------------ThisExpression
-------------SimpleName
----------QualifiedName
-------------SimpleName
-------------SimpleName

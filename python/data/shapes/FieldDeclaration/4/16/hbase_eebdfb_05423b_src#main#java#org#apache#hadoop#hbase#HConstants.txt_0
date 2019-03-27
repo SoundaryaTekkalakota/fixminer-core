@@ -1,4 +1,4 @@
-FieldDeclaration
----VariableDeclarationFragment
-------InfixExpression
+FieldDeclaration 
+---VariableDeclarationFragment 
+------InfixExpression 
 ---------NumberLiteral

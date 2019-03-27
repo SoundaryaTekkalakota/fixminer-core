@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@Path hfofDir=new Path(dirPath); @TO@ final Path hfofDir=new Path(dirPath); @AT@ 35573 @LENGTH@ 33
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@Path hfofDir=new Path(dirPath); @AT@ 36383 @LENGTH@ 5
+

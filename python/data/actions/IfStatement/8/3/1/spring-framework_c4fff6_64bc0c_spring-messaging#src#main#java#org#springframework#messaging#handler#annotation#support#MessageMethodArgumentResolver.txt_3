@@ -1,8 +1,0 @@
- INS IfStatement TO IfStatement 
---- MOV ExpressionStatement TO IfStatement 
---- INS InfixExpression TO IfStatement 
------- INS FieldAccess TO InfixExpression 
---------- INS ThisExpression TO FieldAccess 
---------- INS SimpleName TO FieldAccess 
------- INS Operator TO InfixExpression 
------- INS NullLiteral TO InfixExpression

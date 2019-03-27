@@ -1,0 +1,5 @@
+UPD MethodDeclaration@@private, void, MethodName:initWsdlDefinitionHandlerAdapter,  @TO@ private, void, MethodName:initWsdlDefinitionHandlerAdapter, ApplicationContext context,  @AT@ 14891 @LENGTH@ 791
+---INS SingleVariableDeclaration@@ApplicationContext context @TO@ MethodDeclaration@@private, void, MethodName:initWsdlDefinitionHandlerAdapter,  @AT@ 15092 @LENGTH@ 26
+------INS SimpleType@@ApplicationContext @TO@ SingleVariableDeclaration@@ApplicationContext context @AT@ 15092 @LENGTH@ 18
+------INS SimpleName@@context @TO@ SingleVariableDeclaration@@ApplicationContext context @AT@ 15111 @LENGTH@ 7
+

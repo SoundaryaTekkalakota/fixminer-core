@@ -1,0 +1,2 @@
+ INS ThrowStatement TO IfStatement 
+--- MOV MethodInvocation TO ThrowStatement

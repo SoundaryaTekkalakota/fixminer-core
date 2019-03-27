@@ -1,2 +1,0 @@
-MOV ExpressionStatement@@MethodInvocation:bodyBuilder.indentRemove() @TO@ MethodDeclaration@@private, MethodMetadata, MethodName:getStringToTypeConverterMethod, final JavaType targetType, final JavaSymbolName methodName, final JavaType idType,  @AT@ 12414 @LENGTH@ 27
-

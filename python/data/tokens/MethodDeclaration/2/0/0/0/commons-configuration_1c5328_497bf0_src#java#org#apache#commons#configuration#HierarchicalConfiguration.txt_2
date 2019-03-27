@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, static, void, MethodName:setDefaultExpressionEngine, ExpressionEngine engine,  @TO@ public, static, synchronized, void, MethodName:setDefaultExpressionEngine, ExpressionEngine engine,  @AT@ 10517 @LENGTH@ 288
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, static, void, MethodName:setDefaultExpressionEngine, ExpressionEngine engine,  @AT@ 10646 @LENGTH@ 12
+

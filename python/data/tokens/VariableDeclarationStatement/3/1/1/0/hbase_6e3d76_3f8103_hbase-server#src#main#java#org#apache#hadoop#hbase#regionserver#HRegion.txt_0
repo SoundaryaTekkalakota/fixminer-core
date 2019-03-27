@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@Integer acquiredLockId=getLock(providedLockId,mutation.getRow(),shouldBlock); @TO@ Integer acquiredLockId=null; @AT@ 78952 @LENGTH@ 81
----UPD VariableDeclarationFragment@@acquiredLockId=getLock(providedLockId,mutation.getRow(),shouldBlock) @TO@ acquiredLockId=null @AT@ 78960 @LENGTH@ 72
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@acquiredLockId=getLock(providedLockId,mutation.getRow(),shouldBlock) @AT@ 78977 @LENGTH@ 4
-

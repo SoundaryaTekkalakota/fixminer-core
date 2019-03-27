@@ -1,5 +1,0 @@
-VariableDeclarationStatement
----VariableDeclarationFragment
-------SimpleName
-------CastExpression
----------SimpleName

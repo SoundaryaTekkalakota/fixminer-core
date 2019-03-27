@@ -1,0 +1,4 @@
+ INS VariableDeclarationStatement TO IfStatement 
+--- MOV SimpleType TO VariableDeclarationStatement 
+--- INS VariableDeclarationFragment TO VariableDeclarationStatement 
+------ MOV SimpleName TO VariableDeclarationFragment

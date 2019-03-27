@@ -1,0 +1,16 @@
+VariableDeclarationStatement 
+---SimpleType 
+---VariableDeclarationFragment 
+------SimpleName 
+------ConditionalExpression 
+---------InstanceofExpression 
+------------SimpleName 
+------------Instanceof 
+------------SimpleType 
+---------MethodInvocation 
+------------ParenthesizedExpression 
+---------------CastExpression 
+------------------SimpleType 
+------------------SimpleName 
+------------SimpleName 
+---------SimpleName

@@ -1,5 +1,0 @@
-UPD VariableDeclarationStatement@@String cmd_1=cmd.substring(tokens[0].length()); @TO@ String cmd_1=cmd_trimmed.substring(tokens[0].length()); @AT@ 2083 @LENGTH@ 49
----UPD VariableDeclarationFragment@@cmd_1=cmd.substring(tokens[0].length()) @TO@ cmd_1=cmd_trimmed.substring(tokens[0].length()) @AT@ 2090 @LENGTH@ 41
-------UPD MethodInvocation@@cmd.substring(tokens[0].length()) @TO@ cmd_trimmed.substring(tokens[0].length()) @AT@ 2098 @LENGTH@ 33
----------UPD SimpleName@@Name:cmd @TO@ Name:cmd_trimmed @AT@ 2098 @LENGTH@ 3
-

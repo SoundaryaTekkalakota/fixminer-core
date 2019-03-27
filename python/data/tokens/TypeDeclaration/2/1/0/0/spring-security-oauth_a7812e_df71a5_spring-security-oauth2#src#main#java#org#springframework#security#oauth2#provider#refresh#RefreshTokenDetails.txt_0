@@ -1,3 +1,0 @@
-UPD TypeDeclaration@@[public]RefreshTokenDetails,  @TO@ [public]RefreshTokenDetails, [Serializable] @AT@ 157 @LENGTH@ 354
----INS SimpleType@@Serializable @TO@ TypeDeclaration@@[public]RefreshTokenDetails,  @AT@ 252 @LENGTH@ 12
-

@@ -1,9 +1,0 @@
- UPD ThrowStatement 
---- UPD ClassInstanceCreation 
------- UPD InfixExpression 
---------- DEL MethodInvocation 
------------- DEL FieldAccess 
---------------- DEL ThisExpression 
---------------- DEL SimpleName 
------------- DEL SimpleName 
---------- INS SimpleName TO InfixExpression

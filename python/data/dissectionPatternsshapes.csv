@@ -1,0 +1,159 @@
+jfreechart,6,['condBlockRetAdd'],jfreechart-6,"['ReturnStatement-2-2', 'VariableDeclarationStatement-5-0']",Fixminer
+jfreechart,7,"['copyPaste', 'expArithMod', 'wrongVarRef']",jfreechart-7,['VariableDeclarationStatement-6-62'],Dissection
+jfreechart,3,[],jfreechart-3,['ExpressionStatement-9-3'],Fixminer
+jfreechart,2,"['condBlockOthersAdd', 'copyPaste']",jfreechart-2,"['ExpressionStatement-9-14', 'VariableDeclarationStatement-9-3']",Equal
+jfreechart,1,"['expLogicMod', 'singleLine']",jfreechart-1,['IfStatement-3-1'],Dissection
+jfreechart,12,"['singleLine', 'wrapsMethod', 'wrongVarRef']",jfreechart-12,['ExpressionStatement-10-17'],Dissection
+jfreechart,11,"['singleLine', 'wrongVarRef']",jfreechart-11,['VariableDeclarationStatement-4-0'],Dissection
+jfreechart,21,"['condBlockOthersAdd', 'wrapsElse']",jfreechart-21,"['ExpressionStatement-9-47', 'VariableDeclarationStatement-5-0']",Equal
+jfreechart,19,"['condBlockExcAdd', 'copyPaste', 'missNullCheckP']",jfreechart-19,['IfStatement-10-4'],Dissection
+jfreechart,22,"['condBlockExcAdd', 'condBlockOthersAdd', 'unwrapIfElse', 'wrongVarRef']",jfreechart-22,"['ExpressionStatement-5-3', 'VariableDeclarationStatement-8-4']",Dissection
+jfreechart,25,"['condBlockRetAdd', 'copyPaste', 'missNullCheckN', 'missNullCheckP', 'wrapsIf']",jfreechart-25,['IfStatement-6-6'],Dissection
+closure-compiler,3,"['condBlockOthersAdd', 'condBlockRetAdd']",closure-compiler-3,"['SwitchCase-4-0', 'VariableDeclarationStatement-10-0']",Equal
+closure-compiler,5,['condBlockRetAdd'],closure-compiler-5,['IfStatement-6-21'],Equal
+closure-compiler,4,"['copyPaste', 'expLogicMod', 'wrongMethodRef']",closure-compiler-4,['IfStatement-2-1'],Dissection
+closure-compiler,11,['condBlockRem'],closure-compiler-11,['IfStatement-4-5'],Equal
+closure-compiler,10,"['singleLine', 'wrongMethodRef']",closure-compiler-10,['ReturnStatement-3-2'],Dissection
+closure-compiler,21,"['condBlockRem', 'expLogicExpand', 'expLogicMod']",closure-compiler-21,['IfStatement-5-6'],Dissection
+closure-compiler,15,['condBlockRetAdd'],closure-compiler-15,"['FieldDeclaration-2-1', 'IfStatement-6-21']",Fixminer
+closure-compiler,16,['wrapsMethod'],closure-compiler-16,"['VariableDeclarationStatement-7-0', 'FieldDeclaration-6-0', 'VariableDeclarationStatement-10-0']",Fixminer
+closure-compiler,19,['condBlockOthersAdd'],closure-compiler-19,['SwitchCase-4-0'],Equal
+closure-compiler,24,"['condBlockOthersAdd', 'expLogicExpand']",closure-compiler-24,['IfStatement-4-5'],Dissection
+closure-compiler,22,"['condBlockRem', 'expLogicMod', 'missNullCheckN', 'unwrapIfElse']",closure-compiler-22,['IfStatement-5-6'],Dissection
+closure-compiler,26,['condBlockRetAdd'],closure-compiler-26,['ExpressionStatement-5-1'],Equal
+closure-compiler,25,[],closure-compiler-25,['ExpressionStatement-2-1'],Fixminer
+closure-compiler,27,"['copyPaste', 'wrongMethodRef']",closure-compiler-27,['ExpressionStatement-5-12'],Dissection
+closure-compiler,29,"['condBlockOthersAdd', 'condBlockRetAdd']",closure-compiler-29,['ExpressionStatement-7-3'],Dissection
+closure-compiler,39,"['expLogicExpand', 'wrapsIfElse', 'wrongMethodRef']",closure-compiler-39,['ExpressionStatement-6-2'],Dissection
+closure-compiler,45,"['condBlockOthersAdd', 'expLogicExpand', 'wrongMethodRef']",closure-compiler-45,['VariableDeclarationStatement-5-4'],Dissection
+closure-compiler,40,"['constChange', 'unwrapIfElse']",closure-compiler-40,['IfStatement-4-5'],Dissection
+closure-compiler,43,"['condBlockOthersAdd', 'missNullCheckN', 'missNullCheckP', 'wrapsIfElse']",closure-compiler-43,['VariableDeclarationStatement-7-0'],Dissection
+closure-compiler,49,"['condBlockOthersAdd', 'condBlockRem']",closure-compiler-49,"['SwitchCase-4-0', 'ExpressionStatement-4-1']",Equal
+closure-compiler,62,"['expLogicMod', 'singleLine']",closure-compiler-62,['IfStatement-4-8'],Dissection
+closure-compiler,60,"['condBlockRetAdd', 'wrapsIf']",closure-compiler-60,['SwitchCase-4-0'],Dissection
+closure-compiler,63,"['expLogicMod', 'singleLine']",closure-compiler-63,['IfStatement-4-8'],Dissection
+closure-compiler,64,['expLogicExpand'],closure-compiler-64,['ReturnStatement-4-6'],Equal
+closure-compiler,65,"['constChange', 'singleLine']",closure-compiler-65,['ExpressionStatement-4-3'],Dissection
+closure-compiler,66,['condBlockOthersAdd'],closure-compiler-66,['ExpressionStatement-5-3'],Equal
+closure-compiler,73,"['expLogicMod', 'singleLine']",closure-compiler-73,['IfStatement-4-8'],Dissection
+closure-compiler,74,"['condBlockRetAdd', 'copyPaste', 'wrongMethodRef']",closure-compiler-74,['VariableDeclarationStatement-6-1'],Dissection
+closure-compiler,68,"['codeMove', 'copyPaste', 'unwrapIfElse']",closure-compiler-68,['ExpressionStatement-4-2'],Dissection
+closure-compiler,70,"['constChange', 'singleLine']",closure-compiler-70,['ExpressionStatement-4-9'],Dissection
+closure-compiler,76,"['condBlockOthersAdd', 'condBlockRetAdd', 'missNullCheckN', 'unwrapIfElse']",closure-compiler-76,"['VariableDeclarationStatement-10-20', 'IfStatement-9-16']",Dissection
+closure-compiler,77,"['condBlockOthersAdd', 'singleLine']",closure-compiler-77,['SwitchCase-2-3'],Dissection
+closure-compiler,75,"['condBlockRetAdd', 'constChange', 'wrongVarRef']",closure-compiler-75,['IfStatement-7-44'],Dissection
+closure-compiler,78,['copyPaste'],closure-compiler-78,['ExpressionStatement-9-49'],Equal
+closure-compiler,80,['expLogicExpand'],closure-compiler-80,['SwitchCase-4-0'],Equal
+closure-compiler,81,['condBlockOthersAdd'],closure-compiler-81,['VariableDeclarationStatement-7-4'],Equal
+closure-compiler,85,"['condBlockOthersAdd', 'condBlockRem', 'missNullCheckN', 'unwrapMethod']",closure-compiler-85,['SwitchCase-4-0'],Dissection
+closure-compiler,86,"['constChange', 'expLogicMod', 'singleLine']",closure-compiler-86,['ReturnStatement-2-2'],Dissection
+closure-compiler,84,"['condBlockOthersAdd', 'condBlockRetAdd']",closure-compiler-84,['VariableDeclarationStatement-7-0'],Dissection
+closure-compiler,88,['condBlockRetAdd'],closure-compiler-88,"['VariableDeclarationStatement-7-0', 'IfStatement-9-16']",Fixminer
+closure-compiler,87,['condBlockRetAdd'],closure-compiler-87,"['ReturnStatement-2-2', 'ReturnStatement-2-0']",Fixminer
+closure-compiler,92,"['singleLine', 'wrongMethodRef']",closure-compiler-92,['VariableDeclarationStatement-4-0'],Dissection
+closure-compiler,94,"['condBlockRetAdd', 'expLogicExpand']",closure-compiler-94,['SwitchCase-4-0'],Dissection
+closure-compiler,91,"['condBlockOthersAdd', 'condBlockRetAdd']",closure-compiler-91,['VariableDeclarationStatement-7-0'],Dissection
+closure-compiler,93,"['singleLine', 'wrongMethodRef']",closure-compiler-93,['VariableDeclarationStatement-4-0'],Dissection
+closure-compiler,97,"['expArithMod', 'singleLine']",closure-compiler-97,"['VariableDeclarationStatement-8-12', 'ExpressionStatement-4-23']",Equal
+closure-compiler,101,['condBlockRem'],closure-compiler-101,['ExpressionStatement-2-1'],Equal
+closure-compiler,100,"['condBlockRetAdd', 'missNullCheckN']",closure-compiler-100,['VariableDeclarationStatement-7-4'],Dissection
+closure-compiler,98,"['condBlockOthersAdd', 'condBlockRetAdd', 'missNullCheckN']",closure-compiler-98,['FieldDeclaration-6-1'],Dissection
+closure-compiler,108,['expLogicExpand'],closure-compiler-108,"['ExpressionStatement-4-1', 'ExpressionStatement-7-3']",Fixminer
+closure-compiler,113,"['expLogicExpand', 'singleLine']",closure-compiler-113,['IfStatement-11-13'],Dissection
+closure-compiler,115,['condBlockRem'],closure-compiler-115,"['VariableDeclarationStatement-5-4', 'IfStatement-33-0']",Fixminer
+closure-compiler,116,"['condBlockOthersAdd', 'condBlockRetAdd']",closure-compiler-116,"['VariableDeclarationStatement-5-4', 'IfStatement-33-0']",Equal
+closure-compiler,111,"['singleLine', 'wrapsIfElse']",closure-compiler-111,['FieldDeclaration-2-1'],Dissection
+closure-compiler,119,"['expLogicExpand', 'singleLine']",closure-compiler-119,['SwitchCase-4-0'],Dissection
+closure-compiler,122,['expLogicMod'],closure-compiler-122,['VariableDeclarationStatement-7-0'],Equal
+closure-compiler,125,"['expLogicExpand', 'singleLine']",closure-compiler-125,['IfStatement-11-13'],Dissection
+commons-lang,1,"['condBlockOthersAdd', 'copyPaste', 'expLogicExpand']",commons-lang-1,"['VariableDeclarationStatement-5-7', 'IfStatement-19-1']",Dissection
+closure-compiler,133,['singleLine'],closure-compiler-133,['ExpressionStatement-5-7'],Equal
+commons-lang,7,"['condBlockExcAdd', 'condBlockRem']",commons-lang-7,['IfStatement-7-44'],Dissection
+commons-lang,8,[],commons-lang-8,"['ExpressionStatement-5-7', 'VariableDeclarationStatement-7-0', 'FieldDeclaration-6-0']",Fixminer
+commons-lang,10,['condBlockRem'],commons-lang-10,"['VariableDeclarationStatement-5-4', 'ExpressionStatement-5-3']",Fixminer
+commons-lang,13,"['condBlockExcAdd', 'condBlockRetAdd', 'wrapsTryCatch']",commons-lang-13,['ExpressionStatement-6-31'],Dissection
+commons-lang,23,['condBlockRetAdd'],commons-lang-23,['FieldDeclaration-8-1'],Equal
+commons-lang,30,"['condBlockOthersAdd', 'condBlockRetAdd', 'copyPaste', 'expLogicExpand', 'expLogicMod', 'wrapsIf', 'wrapsIfElse']",commons-lang-30,"['VariableDeclarationStatement-8-12', 'MethodDeclaration-3-3']",Dissection
+commons-lang,31,"['condBlockRetAdd', 'wrapsIfElse']",commons-lang-31,['VariableDeclarationStatement-8-12'],Dissection
+commons-lang,32,"['condBlockOthersAdd', 'expLogicMod', 'missNullCheckN', 'missNullCheckP']",commons-lang-32,"['FieldDeclaration-2-1', 'VariableDeclarationStatement-7-17']",Dissection
+commons-lang,35,[],commons-lang-35,['ThrowStatement-5-0'],Fixminer
+commons-lang,38,['singleLine'],commons-lang-38,['ExpressionStatement-4-1'],Equal
+commons-lang,43,['singleLine'],commons-lang-43,['ExpressionStatement-4-2'],Equal
+commons-lang,36,"['condBlockRetAdd', 'expLogicExpand']",commons-lang-36,['ReturnStatement-2-2'],Dissection
+commons-lang,40,['condBlockRetAdd'],commons-lang-40,"['ReturnStatement-2-2', 'VariableDeclarationStatement-7-4']",Fixminer
+commons-lang,47,"['condBlockOthersAdd', 'copyPaste', 'missNullCheckP']",commons-lang-47,['IfStatement-10-1'],Dissection
+commons-lang,52,['condBlockOthersAdd'],commons-lang-52,"['ExpressionStatement-5-50', 'SwitchCase-2-3']",Fixminer
+commons-lang,46,['wrapsIf'],commons-lang-46,"['ExpressionStatement-4-2', 'ReturnStatement-4-6', 'ExpressionStatement-4-9', 'MethodDeclaration-4-1']",Fixminer
+commons-lang,50,"['condBlockRem', 'copyPaste', 'expLogicMod', 'unwrapIfElse']",commons-lang-50,['IfStatement-5-1'],Dissection
+commons-lang,51,['singleLine'],commons-lang-51,['ReturnStatement-2-2'],Equal
+commons-lang,57,"['singleLine', 'wrongVarRef']",commons-lang-57,['ReturnStatement-4-5'],Dissection
+commons-lang,56,[],commons-lang-56,['FieldDeclaration-2-0'],Fixminer
+commons-lang,59,"['singleLine', 'wrongVarRef']",commons-lang-59,['ExpressionStatement-4-2'],Dissection
+commons-lang,62,"['condBlockOthersAdd', 'copyPaste']",commons-lang-62,['IfStatement-12-36'],Dissection
+commons-lang,63,['expArithMod'],commons-lang-63,"['ExpressionStatement-12-12', 'ExpressionStatement-5-20']",Fixminer
+commons-lang,65,"['condBlockOthersAdd', 'condBlockRetAdd', 'wrapsIf']",commons-lang-65,"['IfStatement-6-15', 'VariableDeclarationStatement-7-0', 'VariableDeclarationStatement-5-4', 'VariableDeclarationStatement-7-4', 'VariableDeclarationStatement-10-12']",Fixminer
+commons-math,5,"['constChange', 'expArithMod', 'singleLine']",commons-math-5,['ReturnStatement-2-1'],Dissection
+commons-math,7,"['copyPaste', 'wrapsLoop', 'wrongVarRef']",commons-math-7,['EnhancedForStatement-12-1'],Dissection
+commons-math,12,[],commons-math-12,['FieldDeclaration-8-1'],Fixminer
+commons-math,16,"['copyPaste', 'wrapsIfElse']",commons-math-16,['IfStatement-26-0'],Dissection
+commons-math,23,['wrapsMethod'],commons-math-23,"['VariableDeclarationStatement-5-6', 'ReturnStatement-2-1']",Fixminer
+commons-math,31,"['condBlockOthersAdd', 'condBlockRem', 'expArithMod', 'wrongVarRef']",commons-math-31,"['ExpressionStatement-5-7', 'VariableDeclarationStatement-5-7', 'ExpressionStatement-2-1', 'ExpressionStatement-3-1', 'ExpressionStatement-4-23']",Fixminer
+commons-math,35,"['copyPaste', 'wrapsMethod', 'wrongVarRef']",commons-math-35,['ExpressionStatement-10-17'],Dissection
+commons-math,37,"['condBlockRetAdd', 'copyPaste', 'expLogicExpand']",commons-math-37,['IfStatement-10-50'],Dissection
+commons-math,34,"['singleLine', 'wrongVarRef']",commons-math-34,['ReturnStatement-4-5'],Dissection
+commons-math,40,"['copyPaste', 'expArithMod']",commons-math-40,"['ExpressionStatement-25-0', 'VariableDeclarationStatement-9-34', 'VariableDeclarationStatement-13-12', 'VariableDeclarationStatement-9-52']",Fixminer
+commons-math,38,"['copyPaste', 'expArithMod']",commons-math-38,"['ThrowStatement-4-1', 'VariableDeclarationStatement-7-56']",Equal
+commons-math,44,['copyPaste'],commons-math-44,"['ExpressionStatement-5-3', 'EnhancedForStatement-12-1']",Fixminer
+commons-math,43,['expLogicMod'],commons-math-43,['IfStatement-12-11'],Equal
+commons-math,47,"['copyPaste', 'expLogicMod', 'wrapsIfElse']",commons-math-47,['ReturnStatement-6-17'],Dissection
+commons-math,49,"['copyPaste', 'wrongVarRef']",commons-math-49,['VariableDeclarationStatement-5-42'],Dissection
+commons-math,46,"['copyPaste', 'unwrapIfElse']",commons-math-46,['ReturnStatement-6-17'],Dissection
+commons-math,45,['condBlockExcAdd'],commons-math-45,['VariableDeclarationStatement-7-41'],Equal
+commons-math,51,['condBlockOthersAdd'],commons-math-51,['ThrowStatement-4-1'],Equal
+commons-math,57,['singleLine'],commons-math-57,['VariableDeclarationStatement-2-3'],Equal
+commons-math,53,['condBlockRetAdd'],commons-math-53,['IfStatement-9-16'],Equal
+commons-math,55,"['condBlockRetAdd', 'expArithMod']",commons-math-55,"['VariableDeclarationStatement-14-1', 'VariableDeclarationStatement-8-13', 'VariableDeclarationStatement-12-3']",Fixminer
+commons-math,56,['expArithMod'],commons-math-56,['VariableDeclarationStatement-5-7'],Equal
+commons-math,66,"['constChange', 'expLogicMod', 'wrongMethodRef', 'wrongVarRef']",commons-math-66,"['ThrowStatement-4-1', 'ExpressionStatement-4-4', 'VariableDeclarationStatement-5-2']",Dissection
+commons-math,65,"['expArithMod', 'wrongVarRef']",commons-math-65,['ExpressionStatement-3-1'],Dissection
+commons-math,64,"['codeMove', 'condBlockOthersAdd', 'condBlockRem', 'condBlockRetAdd', 'expArithMod', 'missNullCheckN', 'wrongVarRef']",commons-math-64,"['ExpressionStatement-4-2', 'ExpressionStatement-5-7', 'ExpressionStatement-2-0', 'ExpressionStatement-9-6', 'VariableDeclarationStatement-9-64']",Dissection
+commons-math,70,"['singleLine', 'wrongMethodRef']",commons-math-70,['ReturnStatement-4-0'],Dissection
+commons-math,68,"['condBlockRetAdd', 'missNullCheckN', 'wrapsIfElse']",commons-math-68,"['ExpressionStatement-9-6', 'VariableDeclarationStatement-5-6', 'ReturnStatement-7-17']",Equal
+commons-math,72,['wrongVarRef'],commons-math-72,['ExpressionStatement-4-2'],Equal
+commons-math,67,['wrongMethodRef'],commons-math-67,['ReturnStatement-7-19'],Equal
+commons-math,74,[],commons-math-74,['ForStatement-17-0'],Fixminer
+commons-math,75,"['singleLine', 'wrongMethodRef']",commons-math-75,['ReturnStatement-3-2'],Dissection
+commons-math,82,"['expLogicMod', 'singleLine']",commons-math-82,['IfStatement-3-1'],Dissection
+commons-math,76,"['copyPaste', 'expArithMod', 'expLogicMod', 'wrapsIfElse', 'wrongVarRef']",commons-math-76,"['ForStatement-35-0', 'VariableDeclarationStatement-6-56']",Dissection
+commons-math,84,['condBlockRetAdd'],commons-math-84,['VariableDeclarationStatement-5-4'],Equal
+commons-math,81,"['constChange', 'expArithMod', 'expLogicMod']",commons-math-81,['ExpressionStatement-9-14'],Dissection
+commons-math,83,"['wrapsIfElse', 'wrongMethodRef']",commons-math-83,['VariableDeclarationStatement-4-0'],Dissection
+commons-math,79,[],commons-math-79,['VariableDeclarationStatement-2-3'],Fixminer
+commons-math,85,"['expLogicMod', 'singleLine']",commons-math-85,['IfStatement-3-1'],Dissection
+commons-math,87,['wrapsIfElse'],commons-math-87,['IfStatement-5-1'],Equal
+commons-math,93,"['condBlockExcAdd', 'condBlockRetAdd', 'expLogicMod']",commons-math-93,['IfStatement-10-13'],Dissection
+commons-math,95,['wrapsIf'],commons-math-95,['IfStatement-6-16'],Equal
+commons-math,92,"['condBlockExcAdd', 'condBlockOthersAdd', 'condBlockRem', 'condBlockRetAdd', 'expArithMod', 'wrongMethodRef']",commons-math-92,"['VariableDeclarationStatement-5-7', 'IfStatement-10-13']",Dissection
+commons-math,106,"['condBlockRetAdd', 'copyPaste']",commons-math-106,['IfStatement-14-14'],Dissection
+mockito,2,['condBlockOthersAdd'],mockito-2,['ExpressionStatement-4-2'],Equal
+mockito,1,['condBlockOthersAdd'],mockito-1,['ThrowStatement-4-1'],Equal
+mockito,6,"['copyPaste', 'wrongMethodRef', 'wrongVarRef']",mockito-6,"['ReturnStatement-10-0', 'ReturnStatement-10-1']",Dissection
+mockito,21,"['condBlockOthersAdd', 'condBlockRetAdd']",mockito-21,"['ReturnStatement-4-0', 'ReturnStatement-2-0']",Equal
+mockito,23,"['condBlockOthersAdd', 'missNullCheckP']",mockito-23,"['FieldDeclaration-6-0', 'ExpressionStatement-2-0', 'FieldDeclaration-3-3', 'MethodDeclaration-17-4']",Fixminer
+mockito,28,"['singleLine', 'wrapsMethod']",mockito-28,['ExpressionStatement-5-1'],Dissection
+mockito,25,[],mockito-25,['ReturnStatement-4-0'],Fixminer
+mockito,26,"['constChange', 'singleLine']",mockito-26,['ExpressionStatement-4-4'],Dissection
+mockito,31,[],mockito-31,['VariableDeclarationStatement-10-0'],Fixminer
+mockito,33,"['condBlockOthersAdd', 'condBlockRetAdd', 'missNullCheckN']",mockito-33,"['ReturnStatement-2-2', 'ReturnStatement-2-0']",Dissection
+mockito,35,"['copyPaste', 'wrongMethodRef']",mockito-35,"['ReturnStatement-4-0', 'ReturnStatement-12-3']",Equal
+joda-time,5,"['condBlockExcAdd', 'expLogicMod', 'wrongVarRef']",joda-time-5,['ExpressionStatement-5-20'],Dissection
+joda-time,3,"['copyPaste', 'wrapsIf']",joda-time-3,"['IfStatement-6-15', 'IfStatement-6-16']",Equal
+joda-time,6,"['condBlockExcAdd', 'condBlockOthersAdd', 'copyPaste']",joda-time-6,['IfStatement-54-0'],Dissection
+joda-time,11,[],joda-time-11,['FieldDeclaration-3-3'],Fixminer
+joda-time,13,"['condBlockOthersAdd', 'expArithMod', 'wrapsIfElse']",joda-time-13,['VariableDeclarationStatement-7-4'],Dissection
+joda-time,17,"['condBlockRetAdd', 'expArithMod', 'expLogicMod', 'unwrapMethod']",joda-time-17,"['VariableDeclarationStatement-8-21', 'VariableDeclarationStatement-7-27']",Dissection
+joda-time,20,"['condBlockOthersAdd', 'condBlockRetAdd', 'missNullCheckN', 'missNullCheckP']",joda-time-20,['ExpressionStatement-6-2'],Dissection
+joda-time,19,"['expLogicMod', 'singleLine']",joda-time-19,['IfStatement-3-1'],Dissection
+joda-time,22,[],joda-time-22,['ExpressionStatement-7-1'],Fixminer
+joda-time,23,['constChange'],joda-time-23,"['ExpressionStatement-4-3', 'ExpressionStatement-5-65']",Fixminer
+joda-time,26,"['copyPaste', 'wrongMethodRef']",joda-time-26,"['ReturnStatement-4-0', 'VariableDeclarationStatement-5-2']",Equal

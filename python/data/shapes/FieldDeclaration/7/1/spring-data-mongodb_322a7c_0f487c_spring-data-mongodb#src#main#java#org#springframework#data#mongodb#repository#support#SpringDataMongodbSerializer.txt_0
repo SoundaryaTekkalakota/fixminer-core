@@ -1,7 +1,7 @@
-FieldDeclaration
----Modifier
----Modifier
----SimpleType
----VariableDeclarationFragment
-------SimpleName
+FieldDeclaration 
+---Modifier 
+---Modifier 
+---SimpleType 
+---VariableDeclarationFragment 
+------SimpleName 
 ------StringLiteral

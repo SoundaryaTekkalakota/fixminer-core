@@ -1,7 +1,0 @@
-VariableDeclarationStatement
----SimpleType
----VariableDeclarationFragment
-------SimpleName
-------FieldAccess
----------ThisExpression
----------SimpleName

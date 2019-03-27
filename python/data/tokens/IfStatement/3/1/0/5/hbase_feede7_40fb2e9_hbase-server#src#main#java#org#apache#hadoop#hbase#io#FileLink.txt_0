@@ -1,0 +1,4 @@
+UPD IfStatement@@InfixExpression:currentPath != null @TO@ InfixExpression:currentPath == null @AT@ 10110 @LENGTH@ 198
+---UPD InfixExpression@@currentPath != null @TO@ currentPath == null @AT@ 10114 @LENGTH@ 19
+------UPD Operator@@!= @TO@ == @AT@ 10125 @LENGTH@ 2
+

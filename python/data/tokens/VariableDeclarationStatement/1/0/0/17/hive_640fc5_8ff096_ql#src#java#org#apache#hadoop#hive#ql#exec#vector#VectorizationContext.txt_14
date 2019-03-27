@@ -1,2 +1,0 @@
-MOV VariableDeclarationStatement@@int i=0; @TO@ MethodDeclaration@@private, VectorExpression, MethodName:getEltExpression, List<ExprNodeDesc> childExpr, TypeInfo returnType, HiveException,  @AT@ 59750 @LENGTH@ 10
-

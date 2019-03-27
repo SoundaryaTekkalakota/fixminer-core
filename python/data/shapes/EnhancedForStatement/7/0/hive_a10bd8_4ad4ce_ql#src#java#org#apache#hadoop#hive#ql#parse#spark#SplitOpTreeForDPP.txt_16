@@ -1,7 +1,7 @@
-EnhancedForStatement
----SingleVariableDeclaration
-------SimpleType
-------SimpleName
----SimpleName
----ExpressionStatement
+EnhancedForStatement 
+---SingleVariableDeclaration 
+------SimpleType 
+------SimpleName 
+---SimpleName 
+---ExpressionStatement 
 ------MethodInvocation

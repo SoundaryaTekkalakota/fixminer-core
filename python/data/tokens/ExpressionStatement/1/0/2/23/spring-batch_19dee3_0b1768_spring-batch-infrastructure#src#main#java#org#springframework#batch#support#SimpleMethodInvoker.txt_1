@@ -1,2 +1,0 @@
-MOV ExpressionStatement@@Assignment:this.object=object @TO@ MethodDeclaration@@public, voidMethodName:SimpleMethodInvoker, Object object, String methodName, Class<?>... paramTypes,  @AT@ 2344 @LENGTH@ 21
-

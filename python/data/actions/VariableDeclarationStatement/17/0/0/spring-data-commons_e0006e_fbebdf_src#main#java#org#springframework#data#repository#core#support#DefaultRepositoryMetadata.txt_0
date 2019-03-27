@@ -1,0 +1,17 @@
+ UPD VariableDeclarationStatement 
+--- DEL ArrayType 
+------ DEL ParameterizedType 
+--- UPD VariableDeclarationFragment 
+------ UPD MethodInvocation 
+--------- DEL SimpleName 
+------------ DEL SimpleName 
+------------ DEL TypeLiteral 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS MethodInvocation TO MethodInvocation 
+------------ INS TypeLiteral TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+--- INS ParameterizedType TO VariableDeclarationStatement 
+------ INS SimpleType TO ParameterizedType 
+------ INS ParameterizedType TO ParameterizedType 
+--------- MOV SimpleType TO ParameterizedType 
+--------- MOV WildcardType TO ParameterizedType

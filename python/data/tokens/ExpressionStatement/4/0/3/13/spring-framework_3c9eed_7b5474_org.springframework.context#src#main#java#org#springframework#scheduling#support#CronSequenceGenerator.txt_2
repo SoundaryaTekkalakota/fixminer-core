@@ -1,5 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:doNext(calendar) @TO@ IfStatement@@InfixExpression:minute == updateMinute @AT@ 4321 @LENGTH@ 17
----INS MethodInvocation@@doNext(calendar) @TO@ ExpressionStatement@@MethodInvocation:doNext(calendar) @AT@ 4321 @LENGTH@ 16
-------INS SimpleName@@MethodName:doNext:[calendar] @TO@ MethodInvocation@@doNext(calendar) @AT@ 4321 @LENGTH@ 16
----------INS SimpleName@@calendar @TO@ SimpleName@@MethodName:doNext:[calendar] @AT@ 4328 @LENGTH@ 8
-

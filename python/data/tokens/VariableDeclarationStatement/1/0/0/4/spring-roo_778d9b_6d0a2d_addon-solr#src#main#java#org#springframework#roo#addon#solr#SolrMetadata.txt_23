@@ -1,2 +1,0 @@
-MOV VariableDeclarationStatement@@List<AnnotatedJavaType> paramTypes=new ArrayList<AnnotatedJavaType>(); @TO@ MethodDeclaration@@private, MethodMetadata, MethodName:getDeleteIndexMethod,  @AT@ 14010 @LENGTH@ 72
-

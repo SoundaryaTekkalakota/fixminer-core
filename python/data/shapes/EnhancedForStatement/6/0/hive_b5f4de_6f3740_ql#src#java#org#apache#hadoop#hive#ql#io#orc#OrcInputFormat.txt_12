@@ -1,6 +1,0 @@
-EnhancedForStatement
----SingleVariableDeclaration
-------SimpleType
-------SimpleName
----SimpleName
----ExpressionStatement

@@ -1,0 +1,16 @@
+VariableDeclarationStatement 
+---ArrayType 
+------SimpleType 
+---ParameterizedType 
+------SimpleType 
+------SimpleType 
+---VariableDeclarationFragment 
+------MethodInvocation 
+---------SimpleName 
+---------MethodInvocation 
+---------SimpleName 
+------------PrefixExpression 
+---------------Operator 
+---------------NumberLiteral 
+------------SimpleName 
+------------SimpleName

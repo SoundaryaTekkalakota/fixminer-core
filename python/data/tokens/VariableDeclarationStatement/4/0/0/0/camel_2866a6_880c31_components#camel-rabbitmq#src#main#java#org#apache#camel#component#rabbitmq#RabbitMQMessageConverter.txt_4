@@ -1,5 +1,0 @@
-UPD VariableDeclarationStatement@@final Object replyTo=msg.getHeader(RabbitMQConstants.REPLY_TO); @TO@ final Object replyTo=msg.removeHeader(RabbitMQConstants.REPLY_TO); @AT@ 4486 @LENGTH@ 65
----UPD VariableDeclarationFragment@@replyTo=msg.getHeader(RabbitMQConstants.REPLY_TO) @TO@ replyTo=msg.removeHeader(RabbitMQConstants.REPLY_TO) @AT@ 4499 @LENGTH@ 51
-------UPD MethodInvocation@@msg.getHeader(RabbitMQConstants.REPLY_TO) @TO@ msg.removeHeader(RabbitMQConstants.REPLY_TO) @AT@ 4509 @LENGTH@ 41
----------UPD SimpleName@@MethodName:getHeader:[RabbitMQConstants.REPLY_TO] @TO@ MethodName:removeHeader:[RabbitMQConstants.REPLY_TO] @AT@ 4513 @LENGTH@ 37
-

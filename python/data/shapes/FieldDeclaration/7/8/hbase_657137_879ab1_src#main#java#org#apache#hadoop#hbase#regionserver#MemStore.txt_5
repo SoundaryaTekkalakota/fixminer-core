@@ -1,0 +1,7 @@
+FieldDeclaration 
+---Modifier 
+---ParameterizedType 
+------SimpleType 
+------SimpleType 
+---VariableDeclarationFragment 
+------SimpleName

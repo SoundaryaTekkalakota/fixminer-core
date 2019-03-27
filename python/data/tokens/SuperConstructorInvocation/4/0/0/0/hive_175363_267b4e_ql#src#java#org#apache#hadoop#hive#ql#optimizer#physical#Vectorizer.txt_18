@@ -1,8 +1,0 @@
-UPD SuperConstructorInvocation@@super();
- @TO@ super(vectorTaskColumnInfo.getNonVectorizedOps());
- @AT@ 43357 @LENGTH@ 8
----INS MethodInvocation@@vectorTaskColumnInfo.getNonVectorizedOps() @TO@ SuperConstructorInvocation@@super();
- @AT@ 45377 @LENGTH@ 42
-------INS SimpleName@@Name:vectorTaskColumnInfo @TO@ MethodInvocation@@vectorTaskColumnInfo.getNonVectorizedOps() @AT@ 45377 @LENGTH@ 20
-------INS SimpleName@@MethodName:getNonVectorizedOps:[] @TO@ MethodInvocation@@vectorTaskColumnInfo.getNonVectorizedOps() @AT@ 45398 @LENGTH@ 21
-

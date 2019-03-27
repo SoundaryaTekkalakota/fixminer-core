@@ -1,0 +1,3 @@
+UPD TypeDeclaration@@[public]ServiceActivatorArchiveImpl, AssignableBase<ArchiveBase<?>>[ServiceActivatorArchive] @TO@ [public, final]ServiceActivatorArchiveImpl, AssignableBase<ArchiveBase<?>>[ServiceActivatorArchive] @AT@ 1092 @LENGTH@ 2308
+---INS Modifier@@final @TO@ TypeDeclaration@@[public]ServiceActivatorArchiveImpl, AssignableBase<ArchiveBase<?>>[ServiceActivatorArchive] @AT@ 1099 @LENGTH@ 5
+

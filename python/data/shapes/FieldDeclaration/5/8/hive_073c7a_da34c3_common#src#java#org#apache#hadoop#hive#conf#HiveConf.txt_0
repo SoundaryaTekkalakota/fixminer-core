@@ -1,5 +1,0 @@
-FieldDeclaration
----VariableDeclarationFragment
-------ArrayCreation
----------ArrayInitializer
-------------StringLiteral

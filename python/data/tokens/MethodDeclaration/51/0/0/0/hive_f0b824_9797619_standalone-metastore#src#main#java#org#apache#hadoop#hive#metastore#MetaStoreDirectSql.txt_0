@@ -1,0 +1,52 @@
+UPD MethodDeclaration@@public, List<String>, MethodName:getTables, String db_name, TableType tableType, MetaException,  @TO@ public, List<String>, MethodName:getTables, String dbName, TableType tableType, MetaException,  @AT@ 15474 @LENGTH@ 905
+---UPD SingleVariableDeclaration@@String db_name @TO@ String dbName @AT@ 15504 @LENGTH@ 14
+------UPD SimpleName@@db_name @TO@ dbName @AT@ 15511 @LENGTH@ 7
+---DEL VariableDeclarationStatement@@List<String> ret=new ArrayList<String>(); @AT@ 15568 @LENGTH@ 43
+------DEL ParameterizedType@@List<String> @AT@ 15568 @LENGTH@ 12
+---------DEL SimpleType@@List @AT@ 15568 @LENGTH@ 4
+---------DEL SimpleType@@String @AT@ 15573 @LENGTH@ 6
+------DEL VariableDeclarationFragment@@ret=new ArrayList<String>() @AT@ 15581 @LENGTH@ 29
+---------DEL SimpleName@@ret @AT@ 15581 @LENGTH@ 3
+---------DEL ClassInstanceCreation@@ArrayList<String>[] @AT@ 15587 @LENGTH@ 23
+------------DEL New@@new @AT@ 15587 @LENGTH@ 3
+------------DEL ParameterizedType@@ArrayList<String> @AT@ 15591 @LENGTH@ 17
+---------------DEL SimpleType@@ArrayList @AT@ 15591 @LENGTH@ 9
+---------------DEL SimpleType@@String @AT@ 15601 @LENGTH@ 6
+---UPD ExpressionStatement@@MethodInvocation:pms.add(db_name) @TO@ MethodInvocation:pms.add(dbName) @AT@ 15955 @LENGTH@ 17
+------UPD MethodInvocation@@pms.add(db_name) @TO@ pms.add(dbName) @AT@ 15955 @LENGTH@ 16
+---------UPD SimpleName@@MethodName:add:[db_name] @TO@ MethodName:add:[dbName] @AT@ 15959 @LENGTH@ 12
+------------UPD SimpleName@@db_name @TO@ dbName @AT@ 15963 @LENGTH@ 7
+---DEL VariableDeclarationStatement@@List<Object[]> sqlResult=ensureList(executeWithArray(queryParams,pms.toArray(),queryText)); @AT@ 16124 @LENGTH@ 104
+------DEL ParameterizedType@@List<Object[]> @AT@ 16124 @LENGTH@ 14
+---------DEL SimpleType@@List @AT@ 16124 @LENGTH@ 4
+---------DEL ArrayType@@Object[] @AT@ 16129 @LENGTH@ 8
+------------DEL SimpleType@@Object @AT@ 16129 @LENGTH@ 6
+------DEL VariableDeclarationFragment@@sqlResult=ensureList(executeWithArray(queryParams,pms.toArray(),queryText)) @AT@ 16139 @LENGTH@ 88
+---------DEL SimpleName@@sqlResult @AT@ 16139 @LENGTH@ 9
+---------DEL MethodInvocation@@ensureList(executeWithArray(queryParams,pms.toArray(),queryText)) @AT@ 16151 @LENGTH@ 76
+------------DEL SimpleName@@MethodName:ensureList:[executeWithArray(queryParams,pms.toArray(),queryText)] @AT@ 16151 @LENGTH@ 76
+---DEL IfStatement@@PrefixExpression:!sqlResult.isEmpty() @AT@ 16234 @LENGTH@ 125
+------DEL PrefixExpression@@!sqlResult.isEmpty() @AT@ 16238 @LENGTH@ 20
+---------DEL Operator@@! @AT@ 16238 @LENGTH@ 1
+---------DEL MethodInvocation@@sqlResult.isEmpty() @AT@ 16239 @LENGTH@ 19
+------------DEL SimpleName@@Name:sqlResult @AT@ 16239 @LENGTH@ 9
+------------DEL SimpleName@@MethodName:isEmpty:[] @AT@ 16249 @LENGTH@ 9
+------DEL EnhancedForStatement@@Object[] line, SimpleName:sqlResult @AT@ 16268 @LENGTH@ 85
+---------DEL SingleVariableDeclaration@@Object[] line @AT@ 16273 @LENGTH@ 13
+------------DEL ArrayType@@Object[] @AT@ 16273 @LENGTH@ 8
+---------------DEL SimpleType@@Object @AT@ 16273 @LENGTH@ 6
+------------DEL SimpleName@@line @AT@ 16282 @LENGTH@ 4
+---------DEL SimpleName@@sqlResult @AT@ 16289 @LENGTH@ 9
+---------DEL ExpressionStatement@@MethodInvocation:ret.add(extractSqlString(line[0])) @AT@ 16310 @LENGTH@ 35
+------------DEL MethodInvocation@@ret.add(extractSqlString(line[0])) @AT@ 16310 @LENGTH@ 34
+---------------DEL SimpleName@@Name:ret @AT@ 16310 @LENGTH@ 3
+---------------DEL SimpleName@@MethodName:add:[extractSqlString(line[0])] @AT@ 16314 @LENGTH@ 30
+------------------DEL MethodInvocation@@extractSqlString(line[0]) @AT@ 16318 @LENGTH@ 25
+---------------------DEL SimpleName@@MethodName:extractSqlString:[line[0]] @AT@ 16318 @LENGTH@ 25
+------------------------DEL ArrayAccess@@line[0] @AT@ 16335 @LENGTH@ 7
+---------------------------DEL SimpleName@@line @AT@ 16335 @LENGTH@ 4
+---------------------------DEL NumberLiteral@@0 @AT@ 16340 @LENGTH@ 1
+---UPD ReturnStatement@@SimpleName:ret @TO@ MethodInvocation:executeWithArray(queryParams,pms.toArray(),queryText) @AT@ 16364 @LENGTH@ 11
+------MOV MethodInvocation@@executeWithArray(queryParams,pms.toArray(),queryText) @TO@ ReturnStatement@@SimpleName:ret @AT@ 16162 @LENGTH@ 64
+------DEL SimpleName@@ret @AT@ 16371 @LENGTH@ 3
+

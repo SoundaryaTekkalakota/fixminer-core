@@ -1,2 +1,0 @@
-MOV TryStatement@@try:[] @TO@ MethodDeclaration@@public, void, MethodName:setSessionUGI, String owner, HiveSQLException,  @AT@ 2604 @LENGTH@ 229
-

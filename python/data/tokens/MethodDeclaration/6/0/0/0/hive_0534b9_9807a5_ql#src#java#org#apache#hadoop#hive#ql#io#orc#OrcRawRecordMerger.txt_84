@@ -1,7 +1,0 @@
-INS MethodDeclaration@@public, Reader, MethodName:getReader,  @TO@ TypeDeclaration@@[@VisibleForTesting, final, static]OriginalReaderPairToCompact, OriginalReaderPair @AT@ 23296 @LENGTH@ 44
----INS Modifier@@public @TO@ MethodDeclaration@@public, Reader, MethodName:getReader,  @AT@ 23296 @LENGTH@ 6
----INS SimpleType@@Reader @TO@ MethodDeclaration@@public, Reader, MethodName:getReader,  @AT@ 23303 @LENGTH@ 6
----INS SimpleName@@MethodName:getReader @TO@ MethodDeclaration@@public, Reader, MethodName:getReader,  @AT@ 23310 @LENGTH@ 9
----INS ReturnStatement@@SimpleName:reader @TO@ MethodDeclaration@@public, Reader, MethodName:getReader,  @AT@ 23324 @LENGTH@ 14
-------INS SimpleName@@reader @TO@ ReturnStatement@@SimpleName:reader @AT@ 23331 @LENGTH@ 6
-

@@ -1,0 +1,5 @@
+VariableDeclarationStatement 
+---VariableDeclarationFragment 
+------ClassInstanceCreation 
+---------StringLiteral 
+---------SimpleName

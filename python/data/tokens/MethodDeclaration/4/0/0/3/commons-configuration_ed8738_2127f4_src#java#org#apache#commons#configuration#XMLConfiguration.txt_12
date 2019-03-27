@@ -1,5 +1,0 @@
-UPD MethodDeclaration@@static, void, MethodName:updateAttribute, Node node, String name, char listDelimiter,  @TO@ static, void, MethodName:updateAttribute, Node node, String name, char listDelimiter, boolean isAttributeSplittingDisabled,  @AT@ 53586 @LENGTH@ 240
----INS SingleVariableDeclaration@@boolean isAttributeSplittingDisabled @TO@ MethodDeclaration@@static, void, MethodName:updateAttribute, Node node, String name, char listDelimiter,  @AT@ 54706 @LENGTH@ 36
-------INS PrimitiveType@@boolean @TO@ SingleVariableDeclaration@@boolean isAttributeSplittingDisabled @AT@ 54706 @LENGTH@ 7
-------INS SimpleName@@isAttributeSplittingDisabled @TO@ SingleVariableDeclaration@@boolean isAttributeSplittingDisabled @AT@ 54714 @LENGTH@ 28
-

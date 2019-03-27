@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@InputStream webMvcConfigInputStream=fileManager.getInputStream(webConfigFile); @TO@ InputStream webMvcConfigInputStream=null; @AT@ 10959 @LENGTH@ 80
----UPD VariableDeclarationFragment@@webMvcConfigInputStream=fileManager.getInputStream(webConfigFile) @TO@ webMvcConfigInputStream=null @AT@ 10971 @LENGTH@ 67
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@webMvcConfigInputStream=fileManager.getInputStream(webConfigFile) @AT@ 11050 @LENGTH@ 4
-

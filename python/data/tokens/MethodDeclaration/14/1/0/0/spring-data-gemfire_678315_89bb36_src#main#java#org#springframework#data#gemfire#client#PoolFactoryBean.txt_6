@@ -1,0 +1,15 @@
+INS MethodDeclaration@@public, void, MethodName:setBeanClassLoader, ClassLoader classLoader,  @TO@ TypeDeclaration@@[public]PoolFactoryBean, [FactoryBean<Pool>, InitializingBean, DisposableBean, BeanNameAware] @AT@ 10429 @LENGTH@ 94
+---INS Modifier@@public @TO@ MethodDeclaration@@public, void, MethodName:setBeanClassLoader, ClassLoader classLoader,  @AT@ 10429 @LENGTH@ 6
+---INS PrimitiveType@@void @TO@ MethodDeclaration@@public, void, MethodName:setBeanClassLoader, ClassLoader classLoader,  @AT@ 10436 @LENGTH@ 4
+---INS SimpleName@@MethodName:setBeanClassLoader @TO@ MethodDeclaration@@public, void, MethodName:setBeanClassLoader, ClassLoader classLoader,  @AT@ 10441 @LENGTH@ 18
+---INS SingleVariableDeclaration@@ClassLoader classLoader @TO@ MethodDeclaration@@public, void, MethodName:setBeanClassLoader, ClassLoader classLoader,  @AT@ 10460 @LENGTH@ 23
+------INS SimpleType@@ClassLoader @TO@ SingleVariableDeclaration@@ClassLoader classLoader @AT@ 10460 @LENGTH@ 11
+------INS SimpleName@@classLoader @TO@ SingleVariableDeclaration@@ClassLoader classLoader @AT@ 10472 @LENGTH@ 11
+---INS ExpressionStatement@@Assignment:this.classLoader=classLoader @TO@ MethodDeclaration@@public, void, MethodName:setBeanClassLoader, ClassLoader classLoader,  @AT@ 10489 @LENGTH@ 31
+------INS Assignment@@this.classLoader=classLoader @TO@ ExpressionStatement@@Assignment:this.classLoader=classLoader @AT@ 10489 @LENGTH@ 30
+---------INS FieldAccess@@this.classLoader @TO@ Assignment@@this.classLoader=classLoader @AT@ 10489 @LENGTH@ 16
+------------INS ThisExpression@@this @TO@ FieldAccess@@this.classLoader @AT@ 10489 @LENGTH@ 4
+------------INS SimpleName@@classLoader @TO@ FieldAccess@@this.classLoader @AT@ 10494 @LENGTH@ 11
+---------INS Operator@@= @TO@ Assignment@@this.classLoader=classLoader @AT@ 10505 @LENGTH@ 1
+---------INS SimpleName@@classLoader @TO@ Assignment@@this.classLoader=classLoader @AT@ 10508 @LENGTH@ 11
+

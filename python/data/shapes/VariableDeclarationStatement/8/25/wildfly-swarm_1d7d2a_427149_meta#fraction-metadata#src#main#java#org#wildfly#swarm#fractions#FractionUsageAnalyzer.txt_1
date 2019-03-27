@@ -1,8 +1,0 @@
-VariableDeclarationStatement
----ParameterizedType
-------SimpleType
----VariableDeclarationFragment
-------MethodInvocation
----------SimpleName
-------------MethodInvocation
----------------SimpleName

@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@AggrStats aggrStats=Hive.get().getAggrColStatsFor(table.getDbName(),table.getTableName(),neededColumns,partNames); @TO@ AggrStats aggrStats=null; @AT@ 11207 @LENGTH@ 131
----UPD VariableDeclarationFragment@@aggrStats=Hive.get().getAggrColStatsFor(table.getDbName(),table.getTableName(),neededColumns,partNames) @TO@ aggrStats=null @AT@ 11217 @LENGTH@ 120
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@aggrStats=Hive.get().getAggrColStatsFor(table.getDbName(),table.getTableName(),neededColumns,partNames) @AT@ 11229 @LENGTH@ 4
-

@@ -1,2 +1,0 @@
-MOV VariableDeclarationStatement@@OperationHandle opHandle=operation.getHandle(); @TO@ MethodDeclaration@@public, OperationHandle, MethodName:getCatalogs, HiveSQLException,  @AT@ 7900 @LENGTH@ 49
-

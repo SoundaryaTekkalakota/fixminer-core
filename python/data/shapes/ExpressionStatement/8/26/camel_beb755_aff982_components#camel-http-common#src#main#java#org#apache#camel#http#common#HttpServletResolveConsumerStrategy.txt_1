@@ -1,8 +1,8 @@
-ExpressionStatement
----Assignment
-------SimpleName
-------Operator
-------MethodInvocation
----MethodInvocation
-------SimpleName
+ExpressionStatement 
+---Assignment 
+------SimpleName 
+------Operator 
+------MethodInvocation 
+---MethodInvocation 
+------SimpleName 
 ------SimpleName

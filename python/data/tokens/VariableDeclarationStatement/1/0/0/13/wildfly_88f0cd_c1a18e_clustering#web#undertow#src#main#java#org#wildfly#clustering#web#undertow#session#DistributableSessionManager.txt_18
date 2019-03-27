@@ -1,2 +1,0 @@
-MOV VariableDeclarationStatement@@Batch batch=batcher.createBatch(); @TO@ MethodDeclaration@@public, io.undertow.server.session.Session, MethodName:getSession, HttpServerExchange exchange, SessionConfig config,  @AT@ 8236 @LENGTH@ 36
-

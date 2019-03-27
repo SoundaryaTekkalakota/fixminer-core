@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, HiveTxnManager, MethodName:initTxnMgr, HiveConf conf, LockException,  @TO@ public, synchronized, HiveTxnManager, MethodName:initTxnMgr, HiveConf conf, LockException,  @AT@ 12676 @LENGTH@ 202
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, HiveTxnManager, MethodName:initTxnMgr, HiveConf conf, LockException,  @AT@ 12683 @LENGTH@ 12
+

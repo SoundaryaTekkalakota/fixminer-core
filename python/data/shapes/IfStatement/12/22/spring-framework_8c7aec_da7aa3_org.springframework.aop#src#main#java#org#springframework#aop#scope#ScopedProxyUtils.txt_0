@@ -1,0 +1,12 @@
+IfStatement 
+---InstanceofExpression 
+------SimpleName 
+------Instanceof 
+------SimpleType 
+---ExpressionStatement 
+------MethodInvocation 
+---------SimpleName 
+---------SimpleName 
+------------CastExpression 
+---------------SimpleType 
+---------------SimpleName

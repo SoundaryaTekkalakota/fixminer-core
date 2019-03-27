@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@UriComponents uri=builder.replaceQueryParam("code").build(true); @TO@ UriComponents uri=null; @AT@ 4637 @LENGTH@ 66
----UPD VariableDeclarationFragment@@uri=builder.replaceQueryParam("code").build(true) @TO@ uri=null @AT@ 4651 @LENGTH@ 51
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@uri=builder.replaceQueryParam("code").build(true) @AT@ 4657 @LENGTH@ 4
-

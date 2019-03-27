@@ -1,6 +1,6 @@
-ReturnStatement
----ClassInstanceCreation
-------SimpleName
-------FieldAccess
----------ThisExpression
+ReturnStatement 
+---ClassInstanceCreation 
+------SimpleName 
+------FieldAccess 
+---------ThisExpression 
 ---------SimpleName

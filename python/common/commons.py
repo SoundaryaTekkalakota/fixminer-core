@@ -368,6 +368,38 @@ def unique_everseen(iterable, key=None):
                 seen_add(k)
                 yield element
 
+def plotBox(yList,labels, fn, rotate=False,limit=True):
+    import matplotlib
+    matplotlib.use("TkAgg")
+    import matplotlib.pyplot as plt
+
+    fig = plt.figure()
+    ax1 = fig.add_subplot(111)
+    ax1.boxplot(yList, 0, sym='+', showmeans=True, vert=True)
+    # ax1.boxplot(yList,notch=False, sym='', vert=True, whis=1.5,
+    #     positions=None, widths=None, patch_artist=True,
+    #     bootstrap=None, usermedians=None, conf_intervals=None)
+    if rotate:
+        ax1.set_xticklabels(labels, rotation=45, ha='right')
+    else:
+        ax1.set_xticklabels(labels)
+    # sns.boxplot(yList, ax=ax1)
+    if limit:
+        ax1.set_ylim(top=1.01,bottom=0)
+    else:
+        ax1.set_yscale('log')
+        ax1.set_xlabel('Cluster Member Size')
+        ax1.set_ylabel('Folds')
+    plt.ion()
+
+    plt.subplots_adjust(wspace=0, hspace=0)
+    fig = plt.gcf()
+    fig.set_size_inches(4, 4, forward=True)
+    fig.savefig(fn, dpi=100, bbox_inches='tight')
+
+
+    plt.show()
+
 import threading
 class BackgroundTask(object):
     """ Threading example class

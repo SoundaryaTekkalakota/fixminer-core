@@ -1,0 +1,4 @@
+UPD IfStatement@@InfixExpression:clazz1.isInstance(this) || clazz2.isInstance(this) @TO@ InfixExpression:clazz1.isInstance(this) && clazz2.isInstance(this) @AT@ 10597 @LENGTH@ 70
+---UPD InfixExpression@@clazz1.isInstance(this) || clazz2.isInstance(this) @TO@ clazz1.isInstance(this) && clazz2.isInstance(this) @AT@ 10601 @LENGTH@ 50
+------UPD Operator@@|| @TO@ && @AT@ 10624 @LENGTH@ 2
+

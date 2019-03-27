@@ -1,0 +1,9 @@
+MethodDeclaration 
+---PrimitiveType 
+---VariableDeclarationStatement 
+------PrimitiveType 
+------VariableDeclarationFragment 
+---------SimpleName 
+---------BooleanLiteral 
+---ReturnStatement 
+------SimpleName

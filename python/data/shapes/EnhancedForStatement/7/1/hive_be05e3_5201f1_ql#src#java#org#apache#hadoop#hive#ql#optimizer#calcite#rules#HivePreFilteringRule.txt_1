@@ -1,0 +1,7 @@
+EnhancedForStatement 
+---SingleVariableDeclaration 
+------SimpleType 
+------SimpleName 
+---SimpleName 
+---VariableDeclarationStatement 
+------PrimitiveType

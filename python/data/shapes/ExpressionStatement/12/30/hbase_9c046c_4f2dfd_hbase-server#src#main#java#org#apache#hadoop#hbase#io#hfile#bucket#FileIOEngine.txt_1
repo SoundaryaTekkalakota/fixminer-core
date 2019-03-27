@@ -1,0 +1,12 @@
+ExpressionStatement 
+---Assignment 
+------FieldAccess 
+---------ThisExpression 
+---------SimpleName 
+------Operator 
+------ArrayCreation 
+---------ArrayType 
+------------SimpleType 
+---------QualifiedName 
+------------SimpleName 
+------------SimpleName

@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:triggerPostActivationEvents(session) @TO@ MethodInvocation:triggerPostActivationEvents(immutableSession) @AT@ 10924 @LENGTH@ 37
+---UPD MethodInvocation@@triggerPostActivationEvents(session) @TO@ triggerPostActivationEvents(immutableSession) @AT@ 10924 @LENGTH@ 36
+------UPD SimpleName@@MethodName:triggerPostActivationEvents:[session] @TO@ MethodName:triggerPostActivationEvents:[immutableSession] @AT@ 10924 @LENGTH@ 36
+---------UPD SimpleName@@session @TO@ immutableSession @AT@ 10952 @LENGTH@ 7
+

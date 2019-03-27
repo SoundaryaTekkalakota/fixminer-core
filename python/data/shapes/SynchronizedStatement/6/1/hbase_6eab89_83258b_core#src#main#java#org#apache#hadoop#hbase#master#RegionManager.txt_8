@@ -1,6 +1,0 @@
-SynchronizedStatement
----VariableDeclarationStatement
----IfStatement
----FieldAccess
-------ThisExpression
-------SimpleName

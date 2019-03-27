@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@voidMethodName:VirtualColumn, String name, TypeInfo typeInfo, boolean isHidden, ObjectInspector oi,  @TO@ private, voidMethodName:VirtualColumn, String name, TypeInfo typeInfo, boolean isHidden, ObjectInspector oi,  @AT@ 3467 @LENGTH@ 189
+---INS Modifier@@private @TO@ MethodDeclaration@@voidMethodName:VirtualColumn, String name, TypeInfo typeInfo, boolean isHidden, ObjectInspector oi,  @AT@ 3593 @LENGTH@ 7
+

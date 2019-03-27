@@ -1,5 +1,0 @@
- INS VariableDeclarationStatement TO EnhancedForStatement 
---- INS SimpleType TO VariableDeclarationStatement 
---- INS VariableDeclarationFragment TO VariableDeclarationStatement 
------- INS SimpleName TO VariableDeclarationFragment 
------- INS SimpleName TO VariableDeclarationFragment

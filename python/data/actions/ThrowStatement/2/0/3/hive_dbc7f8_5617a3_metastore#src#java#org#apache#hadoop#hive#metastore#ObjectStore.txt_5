@@ -1,2 +1,0 @@
- INS ThrowStatement TO IfStatement 
---- INS SimpleName TO ThrowStatement

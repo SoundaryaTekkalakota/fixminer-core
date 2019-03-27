@@ -1,4 +1,0 @@
-UPD MethodDeclaration@@public, static, JavaType, MethodName:getJavaType, String metadataIdentificationString,  @TO@ public, static, JavaType, MethodName:getJavaType, final String metadataIdentificationString,  @AT@ 2763 @LENGTH@ 184
----UPD SingleVariableDeclaration@@String metadataIdentificationString @TO@ final String metadataIdentificationString @AT@ 2798 @LENGTH@ 35
-------INS Modifier@@final @TO@ SingleVariableDeclaration@@String metadataIdentificationString @AT@ 2886 @LENGTH@ 5
-

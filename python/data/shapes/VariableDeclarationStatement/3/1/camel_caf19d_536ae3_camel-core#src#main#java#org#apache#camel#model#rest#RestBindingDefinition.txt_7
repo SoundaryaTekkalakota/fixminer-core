@@ -1,3 +1,3 @@
-VariableDeclarationStatement
----VariableDeclarationFragment
+VariableDeclarationStatement 
+---VariableDeclarationFragment 
 ------NullLiteral

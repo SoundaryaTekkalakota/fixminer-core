@@ -1,5 +1,5 @@
-FieldDeclaration
----VariableDeclarationFragment
-------SimpleName
-------ArrayCreation
+FieldDeclaration 
+---VariableDeclarationFragment 
+------SimpleName 
+------ArrayCreation 
 ---------NumberLiteral

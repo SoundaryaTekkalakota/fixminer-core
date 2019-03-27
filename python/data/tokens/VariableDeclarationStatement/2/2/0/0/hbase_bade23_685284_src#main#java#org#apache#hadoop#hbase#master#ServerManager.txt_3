@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@int maxToStart=this.master.getConfiguration().getInt("hbase.master.wait.on.regionservers.maxtostart",Integer.MAX_VALUE); @TO@ final int maxToStart=this.master.getConfiguration().getInt("hbase.master.wait.on.regionservers.maxtostart",Integer.MAX_VALUE); @AT@ 19847 @LENGTH@ 128
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@int maxToStart=this.master.getConfiguration().getInt("hbase.master.wait.on.regionservers.maxtostart",Integer.MAX_VALUE); @AT@ 20313 @LENGTH@ 5
+

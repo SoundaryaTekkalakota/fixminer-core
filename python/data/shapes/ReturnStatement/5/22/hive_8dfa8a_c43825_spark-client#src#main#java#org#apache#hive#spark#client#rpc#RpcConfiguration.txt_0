@@ -1,5 +1,0 @@
-ReturnStatement
----ConditionalExpression
-------MethodInvocation
----------SimpleName
----------SimpleName

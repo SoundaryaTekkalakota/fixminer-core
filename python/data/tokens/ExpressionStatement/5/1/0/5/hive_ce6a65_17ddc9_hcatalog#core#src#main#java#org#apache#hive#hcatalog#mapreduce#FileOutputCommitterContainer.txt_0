@@ -1,0 +1,6 @@
+INS ExpressionStatement@@MethodInvocation:FileOutputFormatContainer.setWorkOutputPath(context) @TO@ IfStatement@@PrefixExpression:!dynamicPartitioningUsed @AT@ 5291 @LENGTH@ 53
+---INS MethodInvocation@@FileOutputFormatContainer.setWorkOutputPath(context) @TO@ ExpressionStatement@@MethodInvocation:FileOutputFormatContainer.setWorkOutputPath(context) @AT@ 5291 @LENGTH@ 52
+------INS SimpleName@@Name:FileOutputFormatContainer @TO@ MethodInvocation@@FileOutputFormatContainer.setWorkOutputPath(context) @AT@ 5291 @LENGTH@ 25
+------INS SimpleName@@MethodName:setWorkOutputPath:[context] @TO@ MethodInvocation@@FileOutputFormatContainer.setWorkOutputPath(context) @AT@ 5317 @LENGTH@ 26
+---------INS SimpleName@@context @TO@ SimpleName@@MethodName:setWorkOutputPath:[context] @AT@ 5335 @LENGTH@ 7
+

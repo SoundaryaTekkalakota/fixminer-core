@@ -1,5 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:processSendError(t) @TO@ MethodDeclaration@@public, void, MethodName:indicateError, Throwable t,  @AT@ 20055 @LENGTH@ 20
----INS MethodInvocation@@processSendError(t) @TO@ ExpressionStatement@@MethodInvocation:processSendError(t) @AT@ 20055 @LENGTH@ 19
-------INS SimpleName@@MethodName:processSendError:[t] @TO@ MethodInvocation@@processSendError(t) @AT@ 20055 @LENGTH@ 19
----------INS SimpleName@@t @TO@ SimpleName@@MethodName:processSendError:[t] @AT@ 20072 @LENGTH@ 1
-

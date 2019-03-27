@@ -1,3 +1,0 @@
-INS ReturnStatement@@SimpleName:reverted @TO@ MethodDeclaration@@public, Line, MethodName:revert,  @AT@ 3803 @LENGTH@ 16
----INS SimpleName@@reverted @TO@ ReturnStatement@@SimpleName:reverted @AT@ 3810 @LENGTH@ 8
-

@@ -1,5 +1,0 @@
-UPD VariableDeclarationStatement@@final Object expiration=msg.getHeader(RabbitMQConstants.EXPIRATION); @TO@ final Object expiration=msg.removeHeader(RabbitMQConstants.EXPIRATION); @AT@ 5584 @LENGTH@ 70
----UPD VariableDeclarationFragment@@expiration=msg.getHeader(RabbitMQConstants.EXPIRATION) @TO@ expiration=msg.removeHeader(RabbitMQConstants.EXPIRATION) @AT@ 5597 @LENGTH@ 56
-------UPD MethodInvocation@@msg.getHeader(RabbitMQConstants.EXPIRATION) @TO@ msg.removeHeader(RabbitMQConstants.EXPIRATION) @AT@ 5610 @LENGTH@ 43
----------UPD SimpleName@@MethodName:getHeader:[RabbitMQConstants.EXPIRATION] @TO@ MethodName:removeHeader:[RabbitMQConstants.EXPIRATION] @AT@ 5614 @LENGTH@ 39
-

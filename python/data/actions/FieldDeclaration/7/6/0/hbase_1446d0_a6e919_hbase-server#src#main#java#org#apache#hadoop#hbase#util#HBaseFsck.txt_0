@@ -1,0 +1,7 @@
+ INS FieldDeclaration TO TypeDeclaration 
+--- INS Modifier TO FieldDeclaration 
+--- INS Modifier TO FieldDeclaration 
+--- INS PrimitiveType TO FieldDeclaration 
+--- INS VariableDeclarationFragment TO FieldDeclaration 
+------ INS SimpleName TO VariableDeclarationFragment 
+------ INS BooleanLiteral TO VariableDeclarationFragment

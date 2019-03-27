@@ -1,0 +1,7 @@
+MethodDeclaration 
+---SimpleName 
+---SingleVariableDeclaration 
+------PrimitiveType 
+------SimpleName 
+---SuperConstructorInvocation 
+------SimpleName

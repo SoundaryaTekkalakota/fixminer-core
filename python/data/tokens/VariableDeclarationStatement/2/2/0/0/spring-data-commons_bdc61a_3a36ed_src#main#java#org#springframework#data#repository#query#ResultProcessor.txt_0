@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@ChainingConverter converter=ChainingConverter.of(type.getReturnedType(),preparingConverter).and(this.converter); @TO@ final ChainingConverter converter=ChainingConverter.of(type.getReturnedType(),preparingConverter).and(this.converter); @AT@ 3997 @LENGTH@ 115
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@ChainingConverter converter=ChainingConverter.of(type.getReturnedType(),preparingConverter).and(this.converter); @AT@ 4252 @LENGTH@ 5
+

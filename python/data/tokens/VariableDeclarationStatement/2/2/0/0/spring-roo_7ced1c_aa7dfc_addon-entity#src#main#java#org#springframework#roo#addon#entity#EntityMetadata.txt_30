@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@JavaSymbolName methodName=new JavaSymbolName(crudAnnotationValues.getCountMethod() + plural); @TO@ final JavaSymbolName methodName=new JavaSymbolName(crudAnnotationValues.getCountMethod() + plural); @AT@ 18788 @LENGTH@ 95
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@JavaSymbolName methodName=new JavaSymbolName(crudAnnotationValues.getCountMethod() + plural); @AT@ 19057 @LENGTH@ 5
+

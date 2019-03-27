@@ -1,8 +1,0 @@
-ExpressionStatement
----Assignment
-------ClassInstanceCreation
----------MethodInvocation
----------New
----------ParameterizedType
-------------SimpleType
-------------SimpleType

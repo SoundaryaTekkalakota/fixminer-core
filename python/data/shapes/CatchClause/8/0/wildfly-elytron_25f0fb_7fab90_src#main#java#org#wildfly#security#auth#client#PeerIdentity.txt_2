@@ -1,8 +1,8 @@
-CatchClause
----SingleVariableDeclaration
-------UnionType
----------SimpleType
----------SimpleType
-------SimpleName
----ThrowStatement
+CatchClause 
+---SingleVariableDeclaration 
+------UnionType 
+---------SimpleType 
+---------SimpleType 
+------SimpleName 
+---ThrowStatement 
 ------SimpleName

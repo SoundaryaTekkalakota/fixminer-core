@@ -1,3 +1,0 @@
-UPD FieldDeclaration@@private, int, [mMaxLengthEstimate] @TO@ private, transient, int, [mMaxLengthEstimate] @AT@ 4768 @LENGTH@ 31
----INS Modifier@@transient @TO@ FieldDeclaration@@private, int, [mMaxLengthEstimate] @AT@ 4849 @LENGTH@ 9
-

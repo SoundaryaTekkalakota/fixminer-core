@@ -1,3 +1,0 @@
-INS ReturnStatement@@SimpleName:ret @TO@ MethodDeclaration@@protected, double, MethodName:getInitialDomain, double p,  @AT@ 5430 @LENGTH@ 11
----INS SimpleName@@ret @TO@ ReturnStatement@@SimpleName:ret @AT@ 5437 @LENGTH@ 3
-

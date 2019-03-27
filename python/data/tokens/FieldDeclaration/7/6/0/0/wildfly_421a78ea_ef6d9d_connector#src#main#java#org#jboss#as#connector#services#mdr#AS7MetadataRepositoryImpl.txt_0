@@ -1,8 +1,0 @@
-UPD FieldDeclaration@@private, final, Map<String,Activation>, [ironJacamarMetaData=new HashMap<>()] @TO@ private, final, ConcurrentMap<String,Activation>, [ironJacamarMetaData=new ConcurrentHashMap<>()] @AT@ 1770 @LENGTH@ 76
----UPD ParameterizedType@@Map<String,Activation> @TO@ ConcurrentMap<String,Activation> @AT@ 1784 @LENGTH@ 23
-------UPD SimpleType@@Map @TO@ ConcurrentMap @AT@ 1784 @LENGTH@ 3
----UPD VariableDeclarationFragment@@ironJacamarMetaData=new HashMap<>() @TO@ ironJacamarMetaData=new ConcurrentHashMap<>() @AT@ 1808 @LENGTH@ 37
-------UPD ClassInstanceCreation@@HashMap<>[] @TO@ ConcurrentHashMap<>[] @AT@ 1830 @LENGTH@ 15
----------UPD ParameterizedType@@HashMap<> @TO@ ConcurrentHashMap<> @AT@ 1834 @LENGTH@ 9
-------------UPD SimpleType@@HashMap @TO@ ConcurrentHashMap @AT@ 1834 @LENGTH@ 7
-

@@ -1,4 +1,0 @@
-UPD MethodDeclaration@@public, static, boolean, MethodName:isValid, String metadataIdentificationString,  @TO@ public, static, boolean, MethodName:isValid, final String metadataIdentificationString,  @AT@ 3125 @LENGTH@ 175
----UPD SingleVariableDeclaration@@String metadataIdentificationString @TO@ final String metadataIdentificationString @AT@ 3155 @LENGTH@ 35
-------INS Modifier@@final @TO@ SingleVariableDeclaration@@String metadataIdentificationString @AT@ 3255 @LENGTH@ 5
-

@@ -1,6 +1,6 @@
-VariableDeclarationStatement
----VariableDeclarationFragment
-------ClassInstanceCreation
----------ClassInstanceCreation
-------------MethodInvocation
+VariableDeclarationStatement 
+---VariableDeclarationFragment 
+------ClassInstanceCreation 
+---------ClassInstanceCreation 
+------------MethodInvocation 
 ---------------SimpleName

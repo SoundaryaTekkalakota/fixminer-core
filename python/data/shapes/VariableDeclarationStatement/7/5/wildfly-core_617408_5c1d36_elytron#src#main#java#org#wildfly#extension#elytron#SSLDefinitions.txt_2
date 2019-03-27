@@ -1,7 +1,7 @@
-VariableDeclarationStatement
----SimpleType
----VariableDeclarationFragment
-------SimpleName
-------CastExpression
----------SimpleType
+VariableDeclarationStatement 
+---SimpleType 
+---VariableDeclarationFragment 
+------SimpleName 
+------CastExpression 
+---------SimpleType 
 ---------SimpleName

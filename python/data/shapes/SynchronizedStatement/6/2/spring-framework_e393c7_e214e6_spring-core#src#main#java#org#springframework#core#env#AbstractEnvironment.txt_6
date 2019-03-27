@@ -1,6 +1,0 @@
-SynchronizedStatement
----ExpressionStatement
----EnhancedForStatement
----FieldAccess
-------ThisExpression
-------SimpleName

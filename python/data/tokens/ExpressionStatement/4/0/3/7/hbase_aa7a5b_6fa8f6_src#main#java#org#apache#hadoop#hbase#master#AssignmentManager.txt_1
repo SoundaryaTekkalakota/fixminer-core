@@ -1,5 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:deleteClosingOrClosedNode(region) @TO@ IfStatement@@MethodInvocation:checkIfRegionBelongsToDisabling(region) @AT@ 73736 @LENGTH@ 34
----INS MethodInvocation@@deleteClosingOrClosedNode(region) @TO@ ExpressionStatement@@MethodInvocation:deleteClosingOrClosedNode(region) @AT@ 73736 @LENGTH@ 33
-------INS SimpleName@@MethodName:deleteClosingOrClosedNode:[region] @TO@ MethodInvocation@@deleteClosingOrClosedNode(region) @AT@ 73736 @LENGTH@ 33
----------INS SimpleName@@region @TO@ SimpleName@@MethodName:deleteClosingOrClosedNode:[region] @AT@ 73762 @LENGTH@ 6
-

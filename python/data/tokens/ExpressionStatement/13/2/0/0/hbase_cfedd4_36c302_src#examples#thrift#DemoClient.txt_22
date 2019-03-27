@@ -1,0 +1,14 @@
+UPD ExpressionStatement@@MethodInvocation:printRow(client.getRow(t,row)) @TO@ MethodInvocation:printRow(client.getRow(ByteBuffer.wrap(t),ByteBuffer.wrap(row))) @AT@ 8752 @LENGTH@ 32
+---UPD MethodInvocation@@printRow(client.getRow(t,row)) @TO@ printRow(client.getRow(ByteBuffer.wrap(t),ByteBuffer.wrap(row))) @AT@ 8752 @LENGTH@ 31
+------UPD SimpleName@@MethodName:printRow:[client.getRow(t,row)] @TO@ MethodName:printRow:[client.getRow(ByteBuffer.wrap(t),ByteBuffer.wrap(row))] @AT@ 8752 @LENGTH@ 31
+---------UPD MethodInvocation@@client.getRow(t,row) @TO@ client.getRow(ByteBuffer.wrap(t),ByteBuffer.wrap(row)) @AT@ 8761 @LENGTH@ 21
+------------UPD SimpleName@@MethodName:getRow:[t, row] @TO@ MethodName:getRow:[ByteBuffer.wrap(t), ByteBuffer.wrap(row)] @AT@ 8768 @LENGTH@ 14
+---------------INS MethodInvocation@@ByteBuffer.wrap(t) @TO@ SimpleName@@MethodName:getRow:[t, row] @AT@ 10220 @LENGTH@ 18
+------------------INS SimpleName@@Name:ByteBuffer @TO@ MethodInvocation@@ByteBuffer.wrap(t) @AT@ 10220 @LENGTH@ 10
+------------------INS SimpleName@@MethodName:wrap:[t] @TO@ MethodInvocation@@ByteBuffer.wrap(t) @AT@ 10231 @LENGTH@ 7
+---------------------MOV SimpleName@@t @TO@ SimpleName@@MethodName:wrap:[t] @AT@ 8775 @LENGTH@ 1
+---------------INS MethodInvocation@@ByteBuffer.wrap(row) @TO@ SimpleName@@MethodName:getRow:[t, row] @AT@ 10240 @LENGTH@ 20
+------------------INS SimpleName@@Name:ByteBuffer @TO@ MethodInvocation@@ByteBuffer.wrap(row) @AT@ 10240 @LENGTH@ 10
+------------------INS SimpleName@@MethodName:wrap:[row] @TO@ MethodInvocation@@ByteBuffer.wrap(row) @AT@ 10251 @LENGTH@ 9
+---------------------MOV SimpleName@@row @TO@ SimpleName@@MethodName:wrap:[row] @AT@ 8778 @LENGTH@ 3
+

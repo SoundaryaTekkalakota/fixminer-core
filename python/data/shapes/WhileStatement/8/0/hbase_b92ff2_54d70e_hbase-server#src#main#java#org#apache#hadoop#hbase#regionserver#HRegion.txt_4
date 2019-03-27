@@ -1,8 +1,8 @@
-WhileStatement
----MethodInvocation
-------SimpleName
----ExpressionStatement
-------MethodInvocation
----------SimpleName
-------------MethodInvocation
+WhileStatement 
+---MethodInvocation 
+------SimpleName 
+---ExpressionStatement 
+------MethodInvocation 
+---------SimpleName 
+------------MethodInvocation 
 ---------------SimpleName

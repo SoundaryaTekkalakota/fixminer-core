@@ -1,2 +1,0 @@
-MOV VariableDeclarationStatement@@List<AnnotatedJavaType> types=new ArrayList<AnnotatedJavaType>(); @TO@ MethodDeclaration@@private, MethodMetadata, MethodName:getGetAsTextMethod,  @AT@ 3958 @LENGTH@ 67
-

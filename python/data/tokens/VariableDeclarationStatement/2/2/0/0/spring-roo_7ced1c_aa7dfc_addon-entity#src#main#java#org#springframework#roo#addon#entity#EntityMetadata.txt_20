@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@JavaType returnType=ENTITY_MANAGER; @TO@ final JavaType returnType=ENTITY_MANAGER; @AT@ 15723 @LENGTH@ 37
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@JavaType returnType=ENTITY_MANAGER; @AT@ 15847 @LENGTH@ 5
+

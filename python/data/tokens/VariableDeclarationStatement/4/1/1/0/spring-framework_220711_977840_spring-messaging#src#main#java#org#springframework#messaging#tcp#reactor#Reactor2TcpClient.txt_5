@@ -1,0 +1,5 @@
+INS VariableDeclarationStatement@@Runnable cleanupTask; @TO@ MethodDeclaration@@public, ListenableFuture<Void>, MethodName:connect, TcpConnectionHandler<P> connectionHandler, ReconnectStrategy strategy,  @AT@ 7587 @LENGTH@ 21
+---INS SimpleType@@Runnable @TO@ VariableDeclarationStatement@@Runnable cleanupTask; @AT@ 7587 @LENGTH@ 8
+---INS VariableDeclarationFragment@@cleanupTask @TO@ VariableDeclarationStatement@@Runnable cleanupTask; @AT@ 7596 @LENGTH@ 11
+------INS SimpleName@@cleanupTask @TO@ VariableDeclarationFragment@@cleanupTask @AT@ 7596 @LENGTH@ 11
+

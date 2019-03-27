@@ -1,0 +1,10 @@
+ INS ExpressionStatement TO ForStatement 
+--- INS Assignment TO ExpressionStatement 
+------ INS SimpleName TO Assignment 
+------ INS Operator TO Assignment 
+------ INS MethodInvocation TO Assignment 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS QualifiedName TO SimpleName 
+--------------- INS SimpleName TO QualifiedName 
+--------------- INS SimpleName TO QualifiedName

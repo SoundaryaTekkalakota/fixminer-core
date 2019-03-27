@@ -1,3 +1,0 @@
- UPD FieldDeclaration 
---- INS VariableDeclarationFragment TO FieldDeclaration 
------- INS SimpleName TO VariableDeclarationFragment

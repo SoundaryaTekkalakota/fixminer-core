@@ -1,0 +1,5 @@
+UPD EnhancedForStatement@@final Pom pom, MethodInvocation:projectOperations.getPoms() @TO@ final Pom pom, MethodInvocation:getProjectOperations().getPoms() @AT@ 24313 @LENGTH@ 597
+---UPD MethodInvocation@@projectOperations.getPoms() @TO@ getProjectOperations().getPoms() @AT@ 24334 @LENGTH@ 27
+------DEL SimpleName@@Name:projectOperations @AT@ 24334 @LENGTH@ 17
+------INS MethodInvocation@@MethodName:getProjectOperations:[] @TO@ MethodInvocation@@projectOperations.getPoms() @AT@ 24989 @LENGTH@ 22
+

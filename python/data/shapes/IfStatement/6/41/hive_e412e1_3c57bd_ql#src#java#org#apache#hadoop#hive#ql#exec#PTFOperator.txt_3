@@ -1,6 +1,0 @@
-IfStatement
----WhileStatement
----InfixExpression
-------SimpleName
-------Operator
-------NullLiteral

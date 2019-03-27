@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@HRegionInfo090x info=Writables.getHRegionInfoForMigration(bytes); @TO@ HRegionInfo090x info=null; @AT@ 11219 @LENGTH@ 67
----UPD VariableDeclarationFragment@@info=Writables.getHRegionInfoForMigration(bytes) @TO@ info=null @AT@ 11235 @LENGTH@ 50
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@info=Writables.getHRegionInfoForMigration(bytes) @AT@ 11144 @LENGTH@ 4
-

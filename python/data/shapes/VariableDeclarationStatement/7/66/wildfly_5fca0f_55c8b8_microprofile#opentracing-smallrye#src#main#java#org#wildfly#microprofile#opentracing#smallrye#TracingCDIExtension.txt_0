@@ -1,7 +1,7 @@
-VariableDeclarationStatement
----SimpleType
----VariableDeclarationFragment
-------SimpleName
-------MethodInvocation
----------TypeLiteral
+VariableDeclarationStatement 
+---SimpleType 
+---VariableDeclarationFragment 
+------SimpleName 
+------MethodInvocation 
+---------TypeLiteral 
 ---------SimpleName

@@ -1,0 +1,4 @@
+UPD MethodDeclaration@@protected, int, MethodName:seekToOrBeforeUsingPositionAtOrBefore, byte[] keyOnlyBytes, int offset, int length, boolean forceBeforeOnExactMatch,  @TO@ protected, int, MethodName:seekToOrBeforeUsingPositionAtOrBefore, byte[] keyOnlyBytes, int offset, int length, boolean seekBefore,  @AT@ 5535 @LENGTH@ 565
+---UPD SingleVariableDeclaration@@boolean forceBeforeOnExactMatch @TO@ boolean seekBefore @AT@ 5638 @LENGTH@ 31
+------UPD SimpleName@@forceBeforeOnExactMatch @TO@ seekBefore @AT@ 5646 @LENGTH@ 23
+

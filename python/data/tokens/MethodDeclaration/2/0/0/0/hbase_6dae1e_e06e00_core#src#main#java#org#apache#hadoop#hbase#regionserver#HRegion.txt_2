@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, boolean, MethodName:next, List<KeyValue> outResults, IOException,  @TO@ public, synchronized, boolean, MethodName:next, List<KeyValue> outResults, IOException,  @AT@ 63938 @LENGTH@ 156
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, boolean, MethodName:next, List<KeyValue> outResults, IOException,  @AT@ 64383 @LENGTH@ 12
+

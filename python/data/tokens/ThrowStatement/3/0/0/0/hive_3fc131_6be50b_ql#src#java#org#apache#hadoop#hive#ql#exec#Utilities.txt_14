@@ -1,4 +1,0 @@
-UPD ThrowStatement@@ClassInstanceCreation:new IOException("Operation is Canceled. ") @TO@ ClassInstanceCreation:new IOException("Operation is Canceled.") @AT@ 120538 @LENGTH@ 49
----UPD ClassInstanceCreation@@IOException["Operation is Canceled. "] @TO@ IOException["Operation is Canceled."] @AT@ 120544 @LENGTH@ 42
-------UPD StringLiteral@@"Operation is Canceled. " @TO@ "Operation is Canceled." @AT@ 120560 @LENGTH@ 25
-

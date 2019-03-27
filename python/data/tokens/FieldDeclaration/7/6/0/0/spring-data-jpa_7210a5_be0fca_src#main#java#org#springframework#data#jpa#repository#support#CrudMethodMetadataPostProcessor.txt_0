@@ -1,8 +1,0 @@
-UPD FieldDeclaration@@private, final, Map<Method,CrudMethodMetadata>, [metadataCache=new HashMap<Method,CrudMethodMetadata>()] @TO@ private, final, ConcurrentMap<Method,CrudMethodMetadata>, [metadataCache=new ConcurrentHashMap<Method,CrudMethodMetadata>()] @AT@ 3523 @LENGTH@ 104
----UPD ParameterizedType@@Map<Method,CrudMethodMetadata> @TO@ ConcurrentMap<Method,CrudMethodMetadata> @AT@ 3537 @LENGTH@ 31
-------UPD SimpleType@@Map @TO@ ConcurrentMap @AT@ 3537 @LENGTH@ 3
----UPD VariableDeclarationFragment@@metadataCache=new HashMap<Method,CrudMethodMetadata>() @TO@ metadataCache=new ConcurrentHashMap<Method,CrudMethodMetadata>() @AT@ 3569 @LENGTH@ 57
-------UPD ClassInstanceCreation@@HashMap<Method,CrudMethodMetadata>[] @TO@ ConcurrentHashMap<Method,CrudMethodMetadata>[] @AT@ 3585 @LENGTH@ 41
----------UPD ParameterizedType@@HashMap<Method,CrudMethodMetadata> @TO@ ConcurrentHashMap<Method,CrudMethodMetadata> @AT@ 3589 @LENGTH@ 35
-------------UPD SimpleType@@HashMap @TO@ ConcurrentHashMap @AT@ 3589 @LENGTH@ 7
-

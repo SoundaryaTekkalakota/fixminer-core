@@ -1,0 +1,3 @@
+ UPD VariableDeclarationStatement 
+--- UPD VariableDeclarationFragment 
+------ INS MethodInvocation TO VariableDeclarationFragment

@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, boolean, MethodName:isDeliveryActive,  @TO@ public, synchronized, boolean, MethodName:isDeliveryActive,  @AT@ 10674 @LENGTH@ 72
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, boolean, MethodName:isDeliveryActive,  @AT@ 11382 @LENGTH@ 12
+

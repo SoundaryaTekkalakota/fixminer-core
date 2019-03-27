@@ -1,0 +1,18 @@
+UPD VariableDeclarationStatement@@Class<?>[] arguments=resolveTypeArguments(repositoryInterface,Repository.class); @TO@ List<TypeInformation<?>> arguments=information.getSuperTypeInformation(Repository.class).getTypeArguments(); @AT@ 2424 @LENGTH@ 83
+---DEL ArrayType@@Class<?>[] @AT@ 2424 @LENGTH@ 10
+------DEL ParameterizedType@@Class<?> @AT@ 2424 @LENGTH@ 8
+---UPD VariableDeclarationFragment@@arguments=resolveTypeArguments(repositoryInterface,Repository.class) @TO@ arguments=information.getSuperTypeInformation(Repository.class).getTypeArguments() @AT@ 2435 @LENGTH@ 71
+------UPD MethodInvocation@@resolveTypeArguments(repositoryInterface,Repository.class) @TO@ information.getSuperTypeInformation(Repository.class).getTypeArguments() @AT@ 2447 @LENGTH@ 59
+---------DEL SimpleName@@MethodName:resolveTypeArguments:[repositoryInterface, Repository.class] @AT@ 2447 @LENGTH@ 59
+------------DEL SimpleName@@repositoryInterface @AT@ 2468 @LENGTH@ 19
+------------DEL TypeLiteral@@Repository.class @AT@ 2489 @LENGTH@ 16
+---------INS SimpleName@@Name:information @TO@ MethodInvocation@@resolveTypeArguments(repositoryInterface,Repository.class) @AT@ 2617 @LENGTH@ 11
+---------INS MethodInvocation@@MethodName:getSuperTypeInformation:[Repository.class] @TO@ MethodInvocation@@resolveTypeArguments(repositoryInterface,Repository.class) @AT@ 2617 @LENGTH@ 53
+------------INS TypeLiteral@@Repository.class @TO@ MethodInvocation@@MethodName:getSuperTypeInformation:[Repository.class] @AT@ 2653 @LENGTH@ 16
+---------INS SimpleName@@MethodName:getTypeArguments:[] @TO@ MethodInvocation@@resolveTypeArguments(repositoryInterface,Repository.class) @AT@ 2671 @LENGTH@ 18
+---INS ParameterizedType@@List<TypeInformation<?>> @TO@ VariableDeclarationStatement@@Class<?>[] arguments=resolveTypeArguments(repositoryInterface,Repository.class); @AT@ 2580 @LENGTH@ 24
+------INS SimpleType@@List @TO@ ParameterizedType@@List<TypeInformation<?>> @AT@ 2580 @LENGTH@ 4
+------INS ParameterizedType@@TypeInformation<?> @TO@ ParameterizedType@@List<TypeInformation<?>> @AT@ 2585 @LENGTH@ 18
+---------MOV SimpleType@@Class @TO@ ParameterizedType@@TypeInformation<?> @AT@ 2424 @LENGTH@ 5
+---------MOV WildcardType@@? @TO@ ParameterizedType@@TypeInformation<?> @AT@ 2430 @LENGTH@ 1
+

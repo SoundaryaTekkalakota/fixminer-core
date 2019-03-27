@@ -1,6 +1,0 @@
- UPD VariableDeclarationStatement 
---- UPD VariableDeclarationFragment 
------- UPD MethodInvocation 
---------- UPD SimpleName 
---------- UPD SimpleName 
------------- UPD SimpleName

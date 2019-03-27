@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, void, MethodName:close, IOException,  @TO@ public, synchronized, void, MethodName:close, IOException,  @AT@ 91682 @LENGTH@ 144
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, void, MethodName:close, IOException,  @AT@ 91689 @LENGTH@ 12
+

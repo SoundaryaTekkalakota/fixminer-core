@@ -1,5 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:closeDbConn(dbConn) @TO@ TryStatement@@try:[] @AT@ 23677 @LENGTH@ 20
----INS MethodInvocation@@closeDbConn(dbConn) @TO@ ExpressionStatement@@MethodInvocation:closeDbConn(dbConn) @AT@ 23677 @LENGTH@ 19
-------INS SimpleName@@MethodName:closeDbConn:[dbConn] @TO@ MethodInvocation@@closeDbConn(dbConn) @AT@ 23677 @LENGTH@ 19
----------INS SimpleName@@dbConn @TO@ SimpleName@@MethodName:closeDbConn:[dbConn] @AT@ 23689 @LENGTH@ 6
-

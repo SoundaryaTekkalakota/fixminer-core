@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:replaceFiles(tblPath,loadPath,destPath,tblPath,sessionConf,isSrcLocal,isAutopurge,newFiles,filter,isMmTable ? true : false,!tbl.isTemporary()) @TO@ MethodInvocation:replaceFiles(tblPath,loadPath,destPath,tblPath,conf,isSrcLocal,isAutopurge,newFiles,filter,isMmTable ? true : false,!tbl.isTemporary()) @AT@ 96400 @LENGTH@ 161
+---UPD MethodInvocation@@replaceFiles(tblPath,loadPath,destPath,tblPath,sessionConf,isSrcLocal,isAutopurge,newFiles,filter,isMmTable ? true : false,!tbl.isTemporary()) @TO@ replaceFiles(tblPath,loadPath,destPath,tblPath,conf,isSrcLocal,isAutopurge,newFiles,filter,isMmTable ? true : false,!tbl.isTemporary()) @AT@ 96400 @LENGTH@ 160
+------UPD SimpleName@@MethodName:replaceFiles:[tblPath, loadPath, destPath, tblPath, sessionConf, isSrcLocal, isAutopurge, newFiles, filter, isMmTable ? true : false, !tbl.isTemporary()] @TO@ MethodName:replaceFiles:[tblPath, loadPath, destPath, tblPath, conf, isSrcLocal, isAutopurge, newFiles, filter, isMmTable ? true : false, !tbl.isTemporary()] @AT@ 96400 @LENGTH@ 160
+---------UPD SimpleName@@sessionConf @TO@ conf @AT@ 96463 @LENGTH@ 11
+

@@ -1,5 +1,0 @@
-UPD ReturnStatement@@MethodInvocation:getOutputFactory().createXMLEventWriter(IOHelper.buffered(out),IOHelper.getCharsetName(exchange)) @TO@ MethodInvocation:factory.createXMLEventWriter(IOHelper.buffered(out),IOHelper.getCharsetName(exchange)) @AT@ 1651 @LENGTH@ 106
----UPD MethodInvocation@@getOutputFactory().createXMLEventWriter(IOHelper.buffered(out),IOHelper.getCharsetName(exchange)) @TO@ factory.createXMLEventWriter(IOHelper.buffered(out),IOHelper.getCharsetName(exchange)) @AT@ 1658 @LENGTH@ 98
-------DEL MethodInvocation@@MethodName:getOutputFactory:[] @AT@ 1658 @LENGTH@ 18
-------INS SimpleName@@Name:factory @TO@ MethodInvocation@@getOutputFactory().createXMLEventWriter(IOHelper.buffered(out),IOHelper.getCharsetName(exchange)) @AT@ 2987 @LENGTH@ 7
-

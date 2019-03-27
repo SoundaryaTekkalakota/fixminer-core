@@ -1,0 +1,4 @@
+UPD ThrowStatement@@ClassInstanceCreation:new RuntimeException("Invalid Column Reference: " + grpbyExpr.dump()) @TO@ ClassInstanceCreation:new OptiqSemanticException("Invalid Column Reference: " + grpbyExpr.dump()) @AT@ 531863 @LENGTH@ 76
+---UPD ClassInstanceCreation@@RuntimeException["Invalid Column Reference: " + grpbyExpr.dump()] @TO@ OptiqSemanticException["Invalid Column Reference: " + grpbyExpr.dump()] @AT@ 531869 @LENGTH@ 69
+------UPD SimpleType@@RuntimeException @TO@ OptiqSemanticException @AT@ 531873 @LENGTH@ 16
+

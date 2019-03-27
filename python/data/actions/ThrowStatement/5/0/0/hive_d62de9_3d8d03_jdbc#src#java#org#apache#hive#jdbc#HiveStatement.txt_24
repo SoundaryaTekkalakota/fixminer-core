@@ -1,5 +1,0 @@
- DEL ThrowStatement 
---- DEL ClassInstanceCreation 
------- DEL New 
------- DEL SimpleType 
------- DEL StringLiteral

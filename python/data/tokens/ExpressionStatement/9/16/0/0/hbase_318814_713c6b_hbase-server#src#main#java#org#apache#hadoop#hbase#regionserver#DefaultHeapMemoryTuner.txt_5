@@ -1,0 +1,10 @@
+UPD ExpressionStatement@@Assignment:tunerLog+="Reverting previous tuning." @TO@ MethodInvocation:tunerLog.append("We will revert previous tuning") @AT@ 10893 @LENGTH@ 41
+---DEL Assignment@@tunerLog+="Reverting previous tuning." @AT@ 10893 @LENGTH@ 40
+------DEL SimpleName@@tunerLog @AT@ 10893 @LENGTH@ 8
+------DEL Operator@@+= @AT@ 10901 @LENGTH@ 2
+------DEL StringLiteral@@"Reverting previous tuning." @AT@ 10905 @LENGTH@ 28
+---INS MethodInvocation@@tunerLog.append("We will revert previous tuning") @TO@ ExpressionStatement@@Assignment:tunerLog+="Reverting previous tuning." @AT@ 14778 @LENGTH@ 49
+------INS SimpleName@@Name:tunerLog @TO@ MethodInvocation@@tunerLog.append("We will revert previous tuning") @AT@ 14778 @LENGTH@ 8
+------INS SimpleName@@MethodName:append:["We will revert previous tuning"] @TO@ MethodInvocation@@tunerLog.append("We will revert previous tuning") @AT@ 14787 @LENGTH@ 40
+---------INS StringLiteral@@"We will revert previous tuning" @TO@ SimpleName@@MethodName:append:["We will revert previous tuning"] @AT@ 14794 @LENGTH@ 32
+

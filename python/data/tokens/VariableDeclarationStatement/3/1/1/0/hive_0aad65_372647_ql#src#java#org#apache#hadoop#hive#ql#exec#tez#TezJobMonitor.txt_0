@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@DAGStatus status; @TO@ DAGStatus status=null; @AT@ 2259 @LENGTH@ 17
----UPD VariableDeclarationFragment@@status @TO@ status=null @AT@ 2269 @LENGTH@ 6
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@status @AT@ 2278 @LENGTH@ 4
-

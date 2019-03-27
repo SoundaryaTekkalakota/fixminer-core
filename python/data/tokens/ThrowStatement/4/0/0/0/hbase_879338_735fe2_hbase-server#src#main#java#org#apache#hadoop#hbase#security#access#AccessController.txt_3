@@ -1,0 +1,5 @@
+UPD ThrowStatement@@ClassInstanceCreation:new AccessDeniedException("Insufficient permissions (table=" + e.getRegion().getTableDesc().getTableName() + ", action=WRITE)") @TO@ ClassInstanceCreation:new AccessDeniedException("Insufficient permissions (table=" + e.getRegion().getTableDesc().getTableName() + ", action=CREATE)") @AT@ 84456 @LENGTH@ 142
+---UPD ClassInstanceCreation@@AccessDeniedException["Insufficient permissions (table=" + e.getRegion().getTableDesc().getTableName() + ", action=WRITE)"] @TO@ AccessDeniedException["Insufficient permissions (table=" + e.getRegion().getTableDesc().getTableName() + ", action=CREATE)"] @AT@ 84462 @LENGTH@ 135
+------UPD InfixExpression@@"Insufficient permissions (table=" + e.getRegion().getTableDesc().getTableName() + ", action=WRITE)" @TO@ "Insufficient permissions (table=" + e.getRegion().getTableDesc().getTableName() + ", action=CREATE)" @AT@ 84488 @LENGTH@ 108
+---------UPD StringLiteral@@", action=WRITE)" @TO@ ", action=CREATE)" @AT@ 84579 @LENGTH@ 17
+

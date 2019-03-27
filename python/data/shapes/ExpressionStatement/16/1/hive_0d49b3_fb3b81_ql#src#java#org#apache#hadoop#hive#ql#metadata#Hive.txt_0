@@ -1,0 +1,16 @@
+ExpressionStatement 
+---Assignment 
+------ClassInstanceCreation 
+---------InfixExpression 
+------------ParenthesizedExpression 
+---------------ConditionalExpression 
+------------------PrefixExpression 
+---------------------Operator 
+---------------------MethodInvocation 
+------------------------SimpleName 
+------------------------SimpleName 
+------------------InfixExpression 
+---------------------SimpleName 
+---------------------StringLiteral 
+---------------------Operator 
+------------------StringLiteral

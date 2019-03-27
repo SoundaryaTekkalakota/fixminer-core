@@ -1,6 +1,0 @@
-MethodDeclaration
----SingleVariableDeclaration
-------SimpleName
----ExpressionStatement
-------Assignment
----------SimpleName

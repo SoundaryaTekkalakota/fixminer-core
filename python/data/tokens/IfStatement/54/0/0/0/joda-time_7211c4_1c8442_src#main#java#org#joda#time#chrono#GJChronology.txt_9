@@ -1,0 +1,55 @@
+INS IfStatement@@SimpleName:iConvertByWeekyear @TO@ IfStatement@@InfixExpression:instant + iGapDuration < iCutover @AT@ 40121 @LENGTH@ 582
+---INS SimpleName@@iConvertByWeekyear @TO@ IfStatement@@SimpleName:iConvertByWeekyear @AT@ 40125 @LENGTH@ 18
+---INS VariableDeclarationStatement@@int wyear=iGregorianChronology.weekyear().get(instant); @TO@ IfStatement@@SimpleName:iConvertByWeekyear @AT@ 40175 @LENGTH@ 57
+------INS PrimitiveType@@int @TO@ VariableDeclarationStatement@@int wyear=iGregorianChronology.weekyear().get(instant); @AT@ 40175 @LENGTH@ 3
+------INS VariableDeclarationFragment@@wyear=iGregorianChronology.weekyear().get(instant) @TO@ VariableDeclarationStatement@@int wyear=iGregorianChronology.weekyear().get(instant); @AT@ 40179 @LENGTH@ 52
+---------INS SimpleName@@wyear @TO@ VariableDeclarationFragment@@wyear=iGregorianChronology.weekyear().get(instant) @AT@ 40179 @LENGTH@ 5
+---------INS MethodInvocation@@iGregorianChronology.weekyear().get(instant) @TO@ VariableDeclarationFragment@@wyear=iGregorianChronology.weekyear().get(instant) @AT@ 40187 @LENGTH@ 44
+------------INS SimpleName@@Name:iGregorianChronology @TO@ MethodInvocation@@iGregorianChronology.weekyear().get(instant) @AT@ 40187 @LENGTH@ 20
+------------INS MethodInvocation@@MethodName:weekyear:[] @TO@ MethodInvocation@@iGregorianChronology.weekyear().get(instant) @AT@ 40187 @LENGTH@ 31
+------------INS SimpleName@@MethodName:get:[instant] @TO@ MethodInvocation@@iGregorianChronology.weekyear().get(instant) @AT@ 40219 @LENGTH@ 12
+---------------INS SimpleName@@instant @TO@ SimpleName@@MethodName:get:[instant] @AT@ 40223 @LENGTH@ 7
+---INS IfStatement@@InfixExpression:wyear <= 0 @TO@ IfStatement@@SimpleName:iConvertByWeekyear @AT@ 40261 @LENGTH@ 139
+------INS InfixExpression@@wyear <= 0 @TO@ IfStatement@@InfixExpression:wyear <= 0 @AT@ 40265 @LENGTH@ 10
+---------INS SimpleName@@wyear @TO@ InfixExpression@@wyear <= 0 @AT@ 40265 @LENGTH@ 5
+---------INS Operator@@<= @TO@ InfixExpression@@wyear <= 0 @AT@ 40270 @LENGTH@ 2
+---------INS NumberLiteral@@0 @TO@ InfixExpression@@wyear <= 0 @AT@ 40274 @LENGTH@ 1
+------INS ExpressionStatement@@Assignment:instant=iGregorianChronology.weekyear().add(instant,-1) @TO@ IfStatement@@InfixExpression:wyear <= 0 @AT@ 40311 @LENGTH@ 59
+---------INS Assignment@@instant=iGregorianChronology.weekyear().add(instant,-1) @TO@ ExpressionStatement@@Assignment:instant=iGregorianChronology.weekyear().add(instant,-1) @AT@ 40311 @LENGTH@ 58
+------------INS SimpleName@@instant @TO@ Assignment@@instant=iGregorianChronology.weekyear().add(instant,-1) @AT@ 40311 @LENGTH@ 7
+------------INS Operator@@= @TO@ Assignment@@instant=iGregorianChronology.weekyear().add(instant,-1) @AT@ 40318 @LENGTH@ 1
+------------INS MethodInvocation@@iGregorianChronology.weekyear().add(instant,-1) @TO@ Assignment@@instant=iGregorianChronology.weekyear().add(instant,-1) @AT@ 40321 @LENGTH@ 48
+---------------INS SimpleName@@Name:iGregorianChronology @TO@ MethodInvocation@@iGregorianChronology.weekyear().add(instant,-1) @AT@ 40321 @LENGTH@ 20
+---------------INS MethodInvocation@@MethodName:weekyear:[] @TO@ MethodInvocation@@iGregorianChronology.weekyear().add(instant,-1) @AT@ 40321 @LENGTH@ 31
+---------------INS SimpleName@@MethodName:add:[instant, -1] @TO@ MethodInvocation@@iGregorianChronology.weekyear().add(instant,-1) @AT@ 40353 @LENGTH@ 16
+------------------INS SimpleName@@instant @TO@ SimpleName@@MethodName:add:[instant, -1] @AT@ 40357 @LENGTH@ 7
+------------------INS PrefixExpression@@-1 @TO@ SimpleName@@MethodName:add:[instant, -1] @AT@ 40366 @LENGTH@ 2
+---------------------INS Operator@@- @TO@ PrefixExpression@@-1 @AT@ 40366 @LENGTH@ 1
+---------------------INS NumberLiteral@@1 @TO@ PrefixExpression@@-1 @AT@ 40367 @LENGTH@ 1
+---INS VariableDeclarationStatement@@int year=iGregorianChronology.year().get(instant); @TO@ IfStatement@@SimpleName:iConvertByWeekyear @AT@ 40462 @LENGTH@ 52
+------INS PrimitiveType@@int @TO@ VariableDeclarationStatement@@int year=iGregorianChronology.year().get(instant); @AT@ 40462 @LENGTH@ 3
+------INS VariableDeclarationFragment@@year=iGregorianChronology.year().get(instant) @TO@ VariableDeclarationStatement@@int year=iGregorianChronology.year().get(instant); @AT@ 40466 @LENGTH@ 47
+---------INS SimpleName@@year @TO@ VariableDeclarationFragment@@year=iGregorianChronology.year().get(instant) @AT@ 40466 @LENGTH@ 4
+---------INS MethodInvocation@@iGregorianChronology.year().get(instant) @TO@ VariableDeclarationFragment@@year=iGregorianChronology.year().get(instant) @AT@ 40473 @LENGTH@ 40
+------------INS SimpleName@@Name:iGregorianChronology @TO@ MethodInvocation@@iGregorianChronology.year().get(instant) @AT@ 40473 @LENGTH@ 20
+------------INS MethodInvocation@@MethodName:year:[] @TO@ MethodInvocation@@iGregorianChronology.year().get(instant) @AT@ 40473 @LENGTH@ 27
+------------INS SimpleName@@MethodName:get:[instant] @TO@ MethodInvocation@@iGregorianChronology.year().get(instant) @AT@ 40501 @LENGTH@ 12
+---------------INS SimpleName@@instant @TO@ SimpleName@@MethodName:get:[instant] @AT@ 40505 @LENGTH@ 7
+---INS IfStatement@@InfixExpression:year <= 0 @TO@ IfStatement@@SimpleName:iConvertByWeekyear @AT@ 40543 @LENGTH@ 134
+------INS InfixExpression@@year <= 0 @TO@ IfStatement@@InfixExpression:year <= 0 @AT@ 40547 @LENGTH@ 9
+---------INS SimpleName@@year @TO@ InfixExpression@@year <= 0 @AT@ 40547 @LENGTH@ 4
+---------INS Operator@@<= @TO@ InfixExpression@@year <= 0 @AT@ 40551 @LENGTH@ 2
+---------INS NumberLiteral@@0 @TO@ InfixExpression@@year <= 0 @AT@ 40555 @LENGTH@ 1
+------INS ExpressionStatement@@Assignment:instant=iGregorianChronology.year().add(instant,-1) @TO@ IfStatement@@InfixExpression:year <= 0 @AT@ 40592 @LENGTH@ 55
+---------INS Assignment@@instant=iGregorianChronology.year().add(instant,-1) @TO@ ExpressionStatement@@Assignment:instant=iGregorianChronology.year().add(instant,-1) @AT@ 40592 @LENGTH@ 54
+------------INS SimpleName@@instant @TO@ Assignment@@instant=iGregorianChronology.year().add(instant,-1) @AT@ 40592 @LENGTH@ 7
+------------INS Operator@@= @TO@ Assignment@@instant=iGregorianChronology.year().add(instant,-1) @AT@ 40599 @LENGTH@ 1
+------------INS MethodInvocation@@iGregorianChronology.year().add(instant,-1) @TO@ Assignment@@instant=iGregorianChronology.year().add(instant,-1) @AT@ 40602 @LENGTH@ 44
+---------------INS SimpleName@@Name:iGregorianChronology @TO@ MethodInvocation@@iGregorianChronology.year().add(instant,-1) @AT@ 40602 @LENGTH@ 20
+---------------INS MethodInvocation@@MethodName:year:[] @TO@ MethodInvocation@@iGregorianChronology.year().add(instant,-1) @AT@ 40602 @LENGTH@ 27
+---------------INS SimpleName@@MethodName:add:[instant, -1] @TO@ MethodInvocation@@iGregorianChronology.year().add(instant,-1) @AT@ 40630 @LENGTH@ 16
+------------------INS SimpleName@@instant @TO@ SimpleName@@MethodName:add:[instant, -1] @AT@ 40634 @LENGTH@ 7
+------------------INS PrefixExpression@@-1 @TO@ SimpleName@@MethodName:add:[instant, -1] @AT@ 40643 @LENGTH@ 2
+---------------------INS Operator@@- @TO@ PrefixExpression@@-1 @AT@ 40643 @LENGTH@ 1
+---------------------INS NumberLiteral@@1 @TO@ PrefixExpression@@-1 @AT@ 40644 @LENGTH@ 1
+

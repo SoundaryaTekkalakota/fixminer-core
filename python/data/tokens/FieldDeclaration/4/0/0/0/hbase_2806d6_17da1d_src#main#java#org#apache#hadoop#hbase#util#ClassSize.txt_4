@@ -1,5 +1,0 @@
-UPD FieldDeclaration@@public, static, int, [MAP_ENTRY=0] @TO@ public, static, final, int, [MAP_ENTRY] @AT@ 1725 @LENGTH@ 32
----UPD VariableDeclarationFragment@@MAP_ENTRY=0 @TO@ MAP_ENTRY @AT@ 1743 @LENGTH@ 13
-------DEL NumberLiteral@@0 @AT@ 1755 @LENGTH@ 1
----INS Modifier@@final @TO@ FieldDeclaration@@public, static, int, [MAP_ENTRY=0] @AT@ 1747 @LENGTH@ 5
-

@@ -1,2 +1,0 @@
-MOV ExpressionStatement@@MethodInvocation:bodyBuilder.indentRemove() @TO@ MethodDeclaration@@private, MethodMetadata, MethodName:getUpdateFromJsonArrayMethod,  @AT@ 55038 @LENGTH@ 27
-

@@ -1,2 +1,0 @@
-MOV ExpressionStatement@@MethodInvocation:enqueue(event) @TO@ MethodDeclaration@@public, void, MethodName:onAlterPartition, AlterPartitionEvent partitionEvent, MetaException,  @AT@ 8374 @LENGTH@ 15
-

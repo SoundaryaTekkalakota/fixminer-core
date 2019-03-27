@@ -1,0 +1,14 @@
+ DEL MethodDeclaration 
+--- DEL Modifier 
+--- DEL PrimitiveType 
+--- DEL SimpleName 
+--- DEL SingleVariableDeclaration 
+------ DEL SimpleType 
+------ DEL SimpleName 
+--- DEL ExpressionStatement 
+------ DEL Assignment 
+--------- DEL FieldAccess 
+------------ DEL ThisExpression 
+------------ DEL SimpleName 
+--------- DEL Operator 
+--------- DEL SimpleName

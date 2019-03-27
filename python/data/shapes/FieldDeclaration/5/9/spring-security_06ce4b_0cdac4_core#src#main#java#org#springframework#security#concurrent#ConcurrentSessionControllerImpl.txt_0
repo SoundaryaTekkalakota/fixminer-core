@@ -1,5 +1,0 @@
-FieldDeclaration
----VariableDeclarationFragment
-------ClassInstanceCreation
----------New
----------SimpleType

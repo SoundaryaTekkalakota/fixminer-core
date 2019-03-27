@@ -1,8 +1,0 @@
-ExpressionStatement
----MethodInvocation
-------MethodInvocation
----------QualifiedName
-------------QualifiedName
----------------SimpleName
----------------SimpleName
-------------SimpleName

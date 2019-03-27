@@ -1,0 +1,11 @@
+ INS ExpressionStatement TO MethodDeclaration 
+--- INS Assignment TO ExpressionStatement 
+------ INS FieldAccess TO Assignment 
+--------- INS ThisExpression TO FieldAccess 
+--------- INS SimpleName TO FieldAccess 
+------ INS Operator TO Assignment 
+------ INS MethodInvocation TO Assignment 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS StringLiteral TO SimpleName 
+------------ INS NumberLiteral TO SimpleName

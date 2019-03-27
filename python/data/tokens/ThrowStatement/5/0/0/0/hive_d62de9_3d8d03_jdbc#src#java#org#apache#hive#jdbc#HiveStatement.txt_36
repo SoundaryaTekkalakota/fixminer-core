@@ -1,6 +1,0 @@
-DEL ThrowStatement@@ClassInstanceCreation:new SQLException("Method not supported") @AT@ 14512 @LENGTH@ 47
----DEL ClassInstanceCreation@@SQLException["Method not supported"] @AT@ 14518 @LENGTH@ 40
-------DEL New@@new @AT@ 14518 @LENGTH@ 3
-------DEL SimpleType@@SQLException @AT@ 14522 @LENGTH@ 12
-------DEL StringLiteral@@"Method not supported" @AT@ 14535 @LENGTH@ 22
-

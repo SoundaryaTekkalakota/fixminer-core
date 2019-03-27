@@ -1,7 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:LOG.debug("Exception received while closing the table",ioe) @TO@ CatchClause@@IOException ioe @AT@ 8754 @LENGTH@ 61
----INS MethodInvocation@@LOG.debug("Exception received while closing the table",ioe) @TO@ ExpressionStatement@@MethodInvocation:LOG.debug("Exception received while closing the table",ioe) @AT@ 8754 @LENGTH@ 60
-------INS SimpleName@@Name:LOG @TO@ MethodInvocation@@LOG.debug("Exception received while closing the table",ioe) @AT@ 8754 @LENGTH@ 3
-------INS SimpleName@@MethodName:debug:["Exception received while closing the table", ioe] @TO@ MethodInvocation@@LOG.debug("Exception received while closing the table",ioe) @AT@ 8758 @LENGTH@ 56
----------INS StringLiteral@@"Exception received while closing the table" @TO@ SimpleName@@MethodName:debug:["Exception received while closing the table", ioe] @AT@ 8764 @LENGTH@ 44
----------INS SimpleName@@ioe @TO@ SimpleName@@MethodName:debug:["Exception received while closing the table", ioe] @AT@ 8810 @LENGTH@ 3
-

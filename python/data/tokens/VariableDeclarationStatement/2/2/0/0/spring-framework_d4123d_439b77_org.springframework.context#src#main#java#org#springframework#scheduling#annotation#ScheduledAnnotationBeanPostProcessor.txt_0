@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@Class<?> targetClass=AopUtils.getTargetClass(bean); @TO@ final Class<?> targetClass=AopUtils.getTargetClass(bean); @AT@ 4273 @LENGTH@ 53
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@Class<?> targetClass=AopUtils.getTargetClass(bean); @AT@ 4273 @LENGTH@ 5
+

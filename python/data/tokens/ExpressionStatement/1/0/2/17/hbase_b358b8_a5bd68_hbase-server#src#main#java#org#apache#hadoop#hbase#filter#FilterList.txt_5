@@ -1,2 +1,0 @@
-MOV ExpressionStatement@@Assignment:this.operator=operator @TO@ MethodDeclaration@@public, voidMethodName:FilterList, final Operator operator, final List<Filter> rowFilters,  @AT@ 3866 @LENGTH@ 25
-

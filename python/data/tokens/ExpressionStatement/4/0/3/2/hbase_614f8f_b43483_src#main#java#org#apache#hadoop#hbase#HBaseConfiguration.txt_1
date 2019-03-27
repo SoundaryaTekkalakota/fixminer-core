@@ -1,5 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:checkDefaultsVersion(conf) @TO@ MethodDeclaration@@public, static, Configuration, MethodName:addHbaseResources, Configuration conf,  @AT@ 2724 @LENGTH@ 27
----INS MethodInvocation@@checkDefaultsVersion(conf) @TO@ ExpressionStatement@@MethodInvocation:checkDefaultsVersion(conf) @AT@ 2724 @LENGTH@ 26
-------INS SimpleName@@MethodName:checkDefaultsVersion:[conf] @TO@ MethodInvocation@@checkDefaultsVersion(conf) @AT@ 2724 @LENGTH@ 26
----------INS SimpleName@@conf @TO@ SimpleName@@MethodName:checkDefaultsVersion:[conf] @AT@ 2745 @LENGTH@ 4
-

@@ -1,0 +1,17 @@
+CatchClause 
+---SingleVariableDeclaration 
+------SimpleType 
+------SimpleName 
+---IfStatement 
+------MethodInvocation 
+---------SimpleName 
+---------SimpleName 
+------------SimpleName 
+------ThrowStatement 
+---------SimpleName 
+------ExpressionStatement 
+---------MethodInvocation 
+------------SimpleName 
+------------SimpleName 
+---------------StringLiteral 
+---------------SimpleName

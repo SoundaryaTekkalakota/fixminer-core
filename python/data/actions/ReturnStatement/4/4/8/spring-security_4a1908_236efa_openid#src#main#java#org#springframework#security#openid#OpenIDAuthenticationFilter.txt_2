@@ -1,0 +1,4 @@
+ UPD ReturnStatement 
+--- INS MethodInvocation TO ReturnStatement 
+------ INS SimpleName TO MethodInvocation 
+------ INS SimpleName TO MethodInvocation

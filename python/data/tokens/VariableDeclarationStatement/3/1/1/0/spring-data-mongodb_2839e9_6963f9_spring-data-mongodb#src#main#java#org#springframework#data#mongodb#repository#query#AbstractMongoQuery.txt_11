@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@Object result=new SingleEntityExecution(isCountQuery()).execute(query); @TO@ Object result=null; @AT@ 3916 @LENGTH@ 73
----UPD VariableDeclarationFragment@@result=new SingleEntityExecution(isCountQuery()).execute(query) @TO@ result=null @AT@ 3923 @LENGTH@ 65
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@result=new SingleEntityExecution(isCountQuery()).execute(query) @AT@ 3156 @LENGTH@ 4
-

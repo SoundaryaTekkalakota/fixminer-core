@@ -1,7 +1,0 @@
-IfStatement
----InstanceofExpression
-------SimpleName
-------Instanceof
-------SimpleType
----ReturnStatement
-------NullLiteral

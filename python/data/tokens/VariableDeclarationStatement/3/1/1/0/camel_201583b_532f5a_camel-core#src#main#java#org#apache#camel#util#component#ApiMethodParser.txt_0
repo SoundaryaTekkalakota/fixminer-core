@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@Class<?> result; @TO@ Class<?> result=null; @AT@ 9789 @LENGTH@ 16
----UPD VariableDeclarationFragment@@result @TO@ result=null @AT@ 9798 @LENGTH@ 6
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@result @AT@ 9807 @LENGTH@ 4
-

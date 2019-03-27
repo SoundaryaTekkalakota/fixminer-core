@@ -1,5 +1,0 @@
-VariableDeclarationStatement
----VariableDeclarationFragment
-------CastExpression
----------SimpleType
-------MethodInvocation

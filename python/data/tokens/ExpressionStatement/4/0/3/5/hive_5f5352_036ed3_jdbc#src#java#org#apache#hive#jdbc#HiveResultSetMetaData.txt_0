@@ -1,5 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:validateColumnType(column) @TO@ MethodDeclaration@@public, String, MethodName:getColumnTypeName, int column, SQLException,  @AT@ 2674 @LENGTH@ 27
----INS MethodInvocation@@validateColumnType(column) @TO@ ExpressionStatement@@MethodInvocation:validateColumnType(column) @AT@ 2674 @LENGTH@ 26
-------INS SimpleName@@MethodName:validateColumnType:[column] @TO@ MethodInvocation@@validateColumnType(column) @AT@ 2674 @LENGTH@ 26
----------INS SimpleName@@column @TO@ SimpleName@@MethodName:validateColumnType:[column] @AT@ 2693 @LENGTH@ 6
-

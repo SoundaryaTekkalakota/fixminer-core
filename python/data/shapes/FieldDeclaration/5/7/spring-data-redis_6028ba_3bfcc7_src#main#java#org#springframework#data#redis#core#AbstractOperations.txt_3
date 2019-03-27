@@ -1,5 +1,5 @@
-FieldDeclaration
----SimpleType
----VariableDeclarationFragment
-------SimpleName
+FieldDeclaration 
+---SimpleType 
+---VariableDeclarationFragment 
+------SimpleName 
 ------NullLiteral

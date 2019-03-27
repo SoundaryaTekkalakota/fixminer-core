@@ -1,5 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:restoreLookAhead(token) @TO@ MethodDeclaration@@private, Node, MethodName:parseBasicTypeExpression, JsDocToken token,  @AT@ 57643 @LENGTH@ 24
----INS MethodInvocation@@restoreLookAhead(token) @TO@ ExpressionStatement@@MethodInvocation:restoreLookAhead(token) @AT@ 57643 @LENGTH@ 23
-------INS SimpleName@@MethodName:restoreLookAhead:[token] @TO@ MethodInvocation@@restoreLookAhead(token) @AT@ 57643 @LENGTH@ 23
----------INS SimpleName@@token @TO@ SimpleName@@MethodName:restoreLookAhead:[token] @AT@ 57660 @LENGTH@ 5
-

@@ -1,5 +1,0 @@
-ReturnStatement
----SimpleName
----FieldAccess
-------ThisExpression
-------SimpleName

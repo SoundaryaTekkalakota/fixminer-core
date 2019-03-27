@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@long, MethodName:getStartPosition,  @TO@ public, long, MethodName:getStartPosition,  @AT@ 2367 @LENGTH@ 405
+---INS Modifier@@public @TO@ MethodDeclaration@@long, MethodName:getStartPosition,  @AT@ 2362 @LENGTH@ 6
+

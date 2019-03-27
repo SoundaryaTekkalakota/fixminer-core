@@ -1,8 +1,0 @@
-MethodDeclaration
----SingleVariableDeclaration
-------SimpleName
----ExpressionStatement
-------Assignment
----------FieldAccess
-------------SimpleName
----------SimpleName

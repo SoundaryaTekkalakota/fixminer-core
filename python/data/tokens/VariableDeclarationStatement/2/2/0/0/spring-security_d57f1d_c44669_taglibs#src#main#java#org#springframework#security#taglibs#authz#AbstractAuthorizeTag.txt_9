@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@Set<String> grantedRoles=authoritiesToRoles(granted); @TO@ final Set<String> grantedRoles=authoritiesToRoles(granted); @AT@ 9926 @LENGTH@ 55
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@Set<String> grantedRoles=authoritiesToRoles(granted); @AT@ 5101 @LENGTH@ 5
+

@@ -1,3 +1,0 @@
-UPD TypeDeclaration@@[public]GrantedAuthoritiesContainer,  @TO@ [public]GrantedAuthoritiesContainer, [Serializable] @AT@ 315 @LENGTH@ 96
----INS SimpleType@@Serializable @TO@ TypeDeclaration@@[public]GrantedAuthoritiesContainer,  @AT@ 398 @LENGTH@ 12
-

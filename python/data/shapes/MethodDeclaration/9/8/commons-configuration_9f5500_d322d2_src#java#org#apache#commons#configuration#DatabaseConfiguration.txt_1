@@ -1,9 +1,0 @@
-MethodDeclaration
----SingleVariableDeclaration
-------PrimitiveType
-------SimpleName
----ExpressionStatement
-------Assignment
----------SimpleName
----------Operator
----------SimpleName

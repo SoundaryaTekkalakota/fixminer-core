@@ -1,0 +1,9 @@
+MethodDeclaration 
+---IfStatement 
+------MethodInvocation 
+---------SimpleName 
+---------SimpleName 
+------SimpleName 
+---SingleVariableDeclaration 
+------PrimitiveType 
+------SimpleName

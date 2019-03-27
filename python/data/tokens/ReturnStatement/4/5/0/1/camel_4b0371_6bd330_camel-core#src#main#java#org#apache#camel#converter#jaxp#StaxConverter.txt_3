@@ -1,5 +1,0 @@
-UPD ReturnStatement@@MethodInvocation:getOutputFactory().createXMLEventWriter(IOHelper.buffered(writer)) @TO@ MethodInvocation:factory.createXMLEventWriter(IOHelper.buffered(writer)) @AT@ 1882 @LENGTH@ 74
----UPD MethodInvocation@@getOutputFactory().createXMLEventWriter(IOHelper.buffered(writer)) @TO@ factory.createXMLEventWriter(IOHelper.buffered(writer)) @AT@ 1889 @LENGTH@ 66
-------DEL MethodInvocation@@MethodName:getOutputFactory:[] @AT@ 1889 @LENGTH@ 18
-------INS SimpleName@@Name:factory @TO@ MethodInvocation@@getOutputFactory().createXMLEventWriter(IOHelper.buffered(writer)) @AT@ 3355 @LENGTH@ 7
-

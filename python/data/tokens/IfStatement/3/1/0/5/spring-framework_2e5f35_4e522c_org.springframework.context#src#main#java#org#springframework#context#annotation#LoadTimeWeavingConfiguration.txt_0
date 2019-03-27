@@ -1,0 +1,4 @@
+UPD IfStatement@@InfixExpression:this.beanClassLoader.getResource(ASPECTJ_AOP_XML_RESOURCE) != null @TO@ InfixExpression:this.beanClassLoader.getResource(ASPECTJ_AOP_XML_RESOURCE) == null @AT@ 3217 @LENGTH@ 158
+---UPD InfixExpression@@this.beanClassLoader.getResource(ASPECTJ_AOP_XML_RESOURCE) != null @TO@ this.beanClassLoader.getResource(ASPECTJ_AOP_XML_RESOURCE) == null @AT@ 3221 @LENGTH@ 66
+------UPD Operator@@!= @TO@ == @AT@ 3279 @LENGTH@ 2
+

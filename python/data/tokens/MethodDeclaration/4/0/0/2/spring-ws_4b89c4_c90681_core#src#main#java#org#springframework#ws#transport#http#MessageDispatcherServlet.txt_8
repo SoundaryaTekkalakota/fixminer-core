@@ -1,0 +1,5 @@
+UPD MethodDeclaration@@private, void, MethodName:initWebServiceMessageFactory,  @TO@ private, void, MethodName:initWebServiceMessageFactory, ApplicationContext context,  @AT@ 14090 @LENGTH@ 795
+---INS SingleVariableDeclaration@@ApplicationContext context @TO@ MethodDeclaration@@private, void, MethodName:initWebServiceMessageFactory,  @AT@ 14374 @LENGTH@ 26
+------INS SimpleType@@ApplicationContext @TO@ SingleVariableDeclaration@@ApplicationContext context @AT@ 14374 @LENGTH@ 18
+------INS SimpleName@@context @TO@ SingleVariableDeclaration@@ApplicationContext context @AT@ 14393 @LENGTH@ 7
+

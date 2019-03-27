@@ -1,0 +1,17 @@
+IfStatement 
+---ExpressionStatement 
+---InfixExpression 
+------SimpleName 
+------Operator 
+------NullLiteral 
+---ExpressionStatement 
+------Assignment 
+---------FieldAccess 
+------------ThisExpression 
+------------SimpleName 
+---------Operator 
+---------ClassInstanceCreation 
+------------New 
+------------ParameterizedType 
+---------------SimpleType 
+---------------SimpleType

@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@private, void, MethodName:setupAuth,  @TO@ private, synchronized, void, MethodName:setupAuth,  @AT@ 31365 @LENGTH@ 1762
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@private, void, MethodName:setupAuth,  @AT@ 31373 @LENGTH@ 12
+

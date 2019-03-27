@@ -1,5 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:initInterceptors(route) @TO@ EnhancedForStatement@@RouteDefinition route, SimpleName:routes @AT@ 9861 @LENGTH@ 24
----INS MethodInvocation@@initInterceptors(route) @TO@ ExpressionStatement@@MethodInvocation:initInterceptors(route) @AT@ 9861 @LENGTH@ 23
-------INS SimpleName@@MethodName:initInterceptors:[route] @TO@ MethodInvocation@@initInterceptors(route) @AT@ 9861 @LENGTH@ 23
----------INS SimpleName@@route @TO@ SimpleName@@MethodName:initInterceptors:[route] @AT@ 9878 @LENGTH@ 5
-

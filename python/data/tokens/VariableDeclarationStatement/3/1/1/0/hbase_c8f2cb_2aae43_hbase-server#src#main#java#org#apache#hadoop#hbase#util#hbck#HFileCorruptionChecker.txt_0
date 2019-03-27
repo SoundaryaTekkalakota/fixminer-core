@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@FileStatus[] hfs=fs.listStatus(cfDir,new HFileFilter(fs)); @TO@ FileStatus[] hfs=null; @AT@ 5754 @LENGTH@ 61
----UPD VariableDeclarationFragment@@hfs=fs.listStatus(cfDir,new HFileFilter(fs)) @TO@ hfs=null @AT@ 5767 @LENGTH@ 47
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@hfs=fs.listStatus(cfDir,new HFileFilter(fs)) @AT@ 5773 @LENGTH@ 4
-

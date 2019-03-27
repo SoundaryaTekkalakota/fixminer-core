@@ -1,8 +1,0 @@
-VariableDeclarationStatement
----VariableDeclarationFragment
-------ClassInstanceCreation
----------InfixExpression
-------------MethodInvocation
----------------SimpleName
----------------SimpleName
-------------SimpleName

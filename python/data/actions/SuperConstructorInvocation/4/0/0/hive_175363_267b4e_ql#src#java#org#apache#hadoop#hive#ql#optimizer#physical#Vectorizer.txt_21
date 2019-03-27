@@ -1,4 +1,0 @@
- UPD SuperConstructorInvocation 
---- INS MethodInvocation TO SuperConstructorInvocation 
------- INS SimpleName TO MethodInvocation 
------- INS SimpleName TO MethodInvocation

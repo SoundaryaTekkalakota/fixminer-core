@@ -1,4 +1,0 @@
-UPD VariableDeclarationStatement@@AbstractResponse res; @TO@ AbstractResponse res=null; @AT@ 32738 @LENGTH@ 21
----UPD VariableDeclarationFragment@@res @TO@ res=null @AT@ 32755 @LENGTH@ 3
-------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@res @AT@ 32761 @LENGTH@ 4
-

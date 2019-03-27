@@ -1,8 +1,0 @@
-ReturnStatement
----InfixExpression
-------ParenthesizedExpression
----------InfixExpression
-------------InfixExpression
----------------Operator
----------------SimpleName
----------------NumberLiteral

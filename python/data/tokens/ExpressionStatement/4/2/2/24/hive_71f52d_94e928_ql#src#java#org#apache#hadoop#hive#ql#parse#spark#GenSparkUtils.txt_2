@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:setupMapWork(mapWork,context,partitions,(TableScanOperator)root,alias) @TO@ MethodInvocation:setupMapWork(mapWork,context,partitions,(TableScanOperator)root,alias_id) @AT@ 6825 @LENGTH@ 75
+---UPD MethodInvocation@@setupMapWork(mapWork,context,partitions,(TableScanOperator)root,alias) @TO@ setupMapWork(mapWork,context,partitions,(TableScanOperator)root,alias_id) @AT@ 6825 @LENGTH@ 74
+------UPD SimpleName@@MethodName:setupMapWork:[mapWork, context, partitions, (TableScanOperator)root, alias] @TO@ MethodName:setupMapWork:[mapWork, context, partitions, (TableScanOperator)root, alias_id] @AT@ 6825 @LENGTH@ 74
+---------UPD SimpleName@@alias @TO@ alias_id @AT@ 6893 @LENGTH@ 5
+

@@ -1,2 +1,0 @@
-MOV ExpressionStatement@@MethodInvocation:out.println("") @TO@ MethodDeclaration@@protected, HBaseFsck, MethodName:printUsageAndExit,  @AT@ 167492 @LENGTH@ 16
-

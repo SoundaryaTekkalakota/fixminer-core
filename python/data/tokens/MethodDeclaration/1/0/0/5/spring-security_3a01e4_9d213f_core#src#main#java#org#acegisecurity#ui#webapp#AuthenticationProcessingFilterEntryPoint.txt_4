@@ -1,2 +1,0 @@
-MOV MethodDeclaration@@public, void, MethodName:afterPropertiesSet, Exception,  @TO@ TypeDeclaration@@[public]AuthenticationProcessingFilterEntryPoint, [AuthenticationEntryPoint, InitializingBean] @AT@ 3957 @LENGTH@ 271
-

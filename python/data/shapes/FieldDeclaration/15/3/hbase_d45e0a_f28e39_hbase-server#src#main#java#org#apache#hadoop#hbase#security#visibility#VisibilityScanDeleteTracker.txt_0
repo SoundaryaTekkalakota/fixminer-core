@@ -1,0 +1,15 @@
+FieldDeclaration 
+---ParameterizedType 
+------SimpleType 
+------SimpleType 
+------ParameterizedType 
+---------SimpleType 
+---------SimpleType 
+---VariableDeclarationFragment 
+------ClassInstanceCreation 
+---------ParameterizedType 
+------------SimpleType 
+------------SimpleType 
+------------ParameterizedType 
+---------------SimpleType 
+---------------SimpleType

@@ -1,0 +1,22 @@
+ UPD IfStatement 
+--- DEL InfixExpression 
+--- INS InfixExpression TO IfStatement 
+------ INS InfixExpression TO InfixExpression 
+--------- INS InfixExpression TO InfixExpression 
+------------ INS SimpleName TO InfixExpression 
+------------ INS Operator TO InfixExpression 
+------------ INS NullLiteral TO InfixExpression 
+--------- INS Operator TO InfixExpression 
+--------- INS InfixExpression TO InfixExpression 
+------------ MOV QualifiedName TO InfixExpression 
+------------ MOV Operator TO InfixExpression 
+------------ MOV NullLiteral TO InfixExpression 
+------ INS Operator TO InfixExpression 
+------ INS InfixExpression TO InfixExpression 
+--------- INS QualifiedName TO InfixExpression 
+------------ INS SimpleName TO QualifiedName 
+------------ INS SimpleName TO QualifiedName 
+--------- INS Operator TO InfixExpression 
+--------- INS NullLiteral TO InfixExpression 
+--- INS ReturnStatement TO IfStatement 
+------ INS BooleanLiteral TO ReturnStatement

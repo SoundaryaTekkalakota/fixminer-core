@@ -1,9 +1,0 @@
-VariableDeclarationStatement
----VariableDeclarationFragment
-------InfixExpression
----------MethodInvocation
-------------SimpleName
-------------SimpleName
----------Operator
----------NumberLiteral
-------MethodInvocation

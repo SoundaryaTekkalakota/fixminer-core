@@ -1,0 +1,8 @@
+ExpressionStatement 
+---Assignment 
+------SimpleName 
+------Operator 
+------ArrayCreation 
+---------ArrayType 
+------------PrimitiveType 
+---------NumberLiteral

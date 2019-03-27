@@ -1,0 +1,10 @@
+ DEL ThrowStatement 
+--- DEL ClassInstanceCreation 
+------ DEL New 
+------ DEL SimpleType 
+------ DEL InfixExpression 
+--------- DEL StringLiteral 
+--------- DEL Operator 
+--------- DEL SimpleName 
+--------- DEL StringLiteral 
+--------- DEL SimpleName

@@ -1,5 +1,0 @@
-UPD VariableDeclarationStatement@@final Object clusterId=msg.getHeader(RabbitMQConstants.CLUSTERID); @TO@ final Object clusterId=msg.removeHeader(RabbitMQConstants.CLUSTERID); @AT@ 4309 @LENGTH@ 68
----UPD VariableDeclarationFragment@@clusterId=msg.getHeader(RabbitMQConstants.CLUSTERID) @TO@ clusterId=msg.removeHeader(RabbitMQConstants.CLUSTERID) @AT@ 4322 @LENGTH@ 54
-------UPD MethodInvocation@@msg.getHeader(RabbitMQConstants.CLUSTERID) @TO@ msg.removeHeader(RabbitMQConstants.CLUSTERID) @AT@ 4334 @LENGTH@ 42
----------UPD SimpleName@@MethodName:getHeader:[RabbitMQConstants.CLUSTERID] @TO@ MethodName:removeHeader:[RabbitMQConstants.CLUSTERID] @AT@ 4338 @LENGTH@ 38
-

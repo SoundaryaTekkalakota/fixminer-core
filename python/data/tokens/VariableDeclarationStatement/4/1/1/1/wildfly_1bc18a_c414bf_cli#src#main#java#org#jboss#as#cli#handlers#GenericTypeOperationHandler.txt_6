@@ -1,0 +1,5 @@
+INS VariableDeclarationStatement@@OperationCommand handler; @TO@ MethodDeclaration@@public, Collection<CommandArgument>, MethodName:getArguments, CommandContext ctx,  @AT@ 12137 @LENGTH@ 25
+---INS SimpleType@@OperationCommand @TO@ VariableDeclarationStatement@@OperationCommand handler; @AT@ 12137 @LENGTH@ 16
+---INS VariableDeclarationFragment@@handler @TO@ VariableDeclarationStatement@@OperationCommand handler; @AT@ 12154 @LENGTH@ 7
+------INS SimpleName@@handler @TO@ VariableDeclarationFragment@@handler @AT@ 12154 @LENGTH@ 7
+

@@ -1,9 +1,0 @@
-IfStatement
----PrefixExpression
-------Operator
-------ParenthesizedExpression
----------InstanceofExpression
-------------SimpleName
-------------Instanceof
-------------SimpleType
----ExpressionStatement

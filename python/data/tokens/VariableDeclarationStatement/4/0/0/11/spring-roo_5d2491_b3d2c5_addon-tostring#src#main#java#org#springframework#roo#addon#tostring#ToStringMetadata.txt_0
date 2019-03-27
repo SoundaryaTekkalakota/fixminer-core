@@ -1,5 +1,0 @@
-UPD VariableDeclarationStatement@@String fieldName=beanInfoMetadata.getPropertyNameForJavaBeanMethod(accessor).getSymbolName(); @TO@ String fieldName=BeanInfoMetadata.getPropertyNameForJavaBeanMethod(accessor).getSymbolName(); @AT@ 4278 @LENGTH@ 95
----UPD VariableDeclarationFragment@@fieldName=beanInfoMetadata.getPropertyNameForJavaBeanMethod(accessor).getSymbolName() @TO@ fieldName=BeanInfoMetadata.getPropertyNameForJavaBeanMethod(accessor).getSymbolName() @AT@ 4285 @LENGTH@ 87
-------UPD MethodInvocation@@beanInfoMetadata.getPropertyNameForJavaBeanMethod(accessor).getSymbolName() @TO@ BeanInfoMetadata.getPropertyNameForJavaBeanMethod(accessor).getSymbolName() @AT@ 4297 @LENGTH@ 75
----------UPD SimpleName@@Name:beanInfoMetadata @TO@ Name:BeanInfoMetadata @AT@ 4297 @LENGTH@ 16
-

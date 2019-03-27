@@ -1,0 +1,13 @@
+MethodDeclaration 
+---Modifier 
+---SimpleName 
+---SingleVariableDeclaration 
+------SimpleType 
+------SimpleName 
+---SingleVariableDeclaration 
+------SimpleType 
+------SimpleName 
+---ConstructorInvocation 
+------SimpleName 
+------SimpleName 
+------BooleanLiteral

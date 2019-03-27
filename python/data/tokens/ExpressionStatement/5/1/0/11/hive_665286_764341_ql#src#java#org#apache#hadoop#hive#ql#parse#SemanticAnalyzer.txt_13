@@ -1,0 +1,6 @@
+INS ExpressionStatement@@MethodInvocation:outputCols.add(colInfo) @TO@ ForStatement@@[int i=0];i < ccount; [++i] @AT@ 48494 @LENGTH@ 24
+---INS MethodInvocation@@outputCols.add(colInfo) @TO@ ExpressionStatement@@MethodInvocation:outputCols.add(colInfo) @AT@ 48494 @LENGTH@ 23
+------INS SimpleName@@Name:outputCols @TO@ MethodInvocation@@outputCols.add(colInfo) @AT@ 48494 @LENGTH@ 10
+------INS SimpleName@@MethodName:add:[colInfo] @TO@ MethodInvocation@@outputCols.add(colInfo) @AT@ 48505 @LENGTH@ 12
+---------INS SimpleName@@colInfo @TO@ SimpleName@@MethodName:add:[colInfo] @AT@ 48509 @LENGTH@ 7
+

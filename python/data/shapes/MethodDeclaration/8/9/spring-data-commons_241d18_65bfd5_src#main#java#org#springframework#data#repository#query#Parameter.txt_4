@@ -1,8 +1,0 @@
-MethodDeclaration
----Modifier
----ParameterizedType
-------SimpleType
-------WildcardType
----SimpleName
----ReturnStatement
-------SimpleName

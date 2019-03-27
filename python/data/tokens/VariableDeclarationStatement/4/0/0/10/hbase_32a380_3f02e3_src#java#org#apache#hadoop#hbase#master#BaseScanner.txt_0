@@ -1,5 +1,0 @@
-UPD VariableDeclarationStatement@@HRegionInfo split=Writables.getHRegionInfo(rowContent.getValue(splitFamily,splitQualifier)); @TO@ HRegionInfo split=Writables.getHRegionInfoOrNull(rowContent.getValue(splitFamily,splitQualifier)); @AT@ 11183 @LENGTH@ 101
----UPD VariableDeclarationFragment@@split=Writables.getHRegionInfo(rowContent.getValue(splitFamily,splitQualifier)) @TO@ split=Writables.getHRegionInfoOrNull(rowContent.getValue(splitFamily,splitQualifier)) @AT@ 11195 @LENGTH@ 88
-------UPD MethodInvocation@@Writables.getHRegionInfo(rowContent.getValue(splitFamily,splitQualifier)) @TO@ Writables.getHRegionInfoOrNull(rowContent.getValue(splitFamily,splitQualifier)) @AT@ 11209 @LENGTH@ 74
----------UPD SimpleName@@MethodName:getHRegionInfo:[rowContent.getValue(splitFamily,splitQualifier)] @TO@ MethodName:getHRegionInfoOrNull:[rowContent.getValue(splitFamily,splitQualifier)] @AT@ 11219 @LENGTH@ 64
-
