@@ -5,11 +5,67 @@ DATA_PATH = os.environ["DATA_PATH"]
 def statsNormal(isFixminer=True):
     # tokens = join(DATA_PATH, 'tokens')
     # actions = join(DATA_PATH, 'actions')
+    df = load_zipped_pickle('datasetGroupByHunk.pickle')
     yList = []
     colNames = []
+
+    def haveAll(x):
+        check = dict()
+        if len(x)<2:
+            return False
+        for hunk in x:
+            filename, hunkNo = hunk.rsplit('_',1)
+            if filename in check:
+                check[filename].append(hunkNo)
+            else:
+                check[filename] = [hunkNo]
+
+        tv = []
+        for k,v in check.items():
+            selected = df[df.fileName == k]
+            if tuple(selected.iloc[0].hunk) == tuple(v):
+                tv.append(True)
+            else:
+                tv.append(False)
+        result = np.all(tv)
+        return result
+
+    def combinationOfPatterns(x):
+        check = dict()
+        if len(x)<2:
+            return False
+        for hunk in x:
+            filename, hunkNo = hunk.rsplit('_',1)
+            if filename in check:
+                check[filename].append(hunkNo)
+            else:
+                check[filename] = [hunkNo]
+
+        tv = []
+
+        res = check.copy()
+        for k,v in check.items():
+            if len(v) == 1:
+                res.pop(k,None)
+            selected = df[df.fileName == k]
+            if tuple(selected.iloc[0].hunk) != tuple(v):
+                res.pop(k, None)
+        # result = np.all(tv)
+        indices = [i for i, val in enumerate(tv) if val == True]
+        return res
+
+
     for type in ['tokens', 'actions', 'shapes']:
         statsS,clusterDF = stats(type,isFixminer)
 
+        singlePatternAll= clusterDF[clusterDF.members.apply(lambda x:haveAll(x))]
+        hunks = set(itertools.chain.from_iterable(singlePatternAll.members.values.tolist()))
+        logging.info("Single Fix\n %s # bugs: %d , # hunks %d ,#patterns %d", type,len(set([re.split('.txt_[0-9]+', i)[0] for i in hunks])),
+                     len(hunks),
+                     len(singlePatternAll))
+        allhunks =set(itertools.chain.from_iterable(clusterDF.members.values.tolist()))
+        byCombi = combinationOfPatterns(allhunks)
+        logging.info("By combining several patterns %d",len(byCombi))
         matches = pd.DataFrame(statsS, columns=['cluster', 'memberCount'])
         matches.sort_values(by='memberCount', ascending=False, inplace=True)
         matches
