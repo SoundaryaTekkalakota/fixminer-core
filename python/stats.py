@@ -117,7 +117,7 @@ def statsNormal(isFixminer=True):
         matches
         if isFixminer:
             matches.to_csv(join(DATA_PATH, "stats" + type + ".csv"), index=False)
-            if type == 'tokens':
+            if type == 'actions':
                 clusterDF['ms'] = clusterDF.members.str.len()
                 clusterDF.sort_values(by='ms', ascending=False, inplace=True)
                 top50 = clusterDF.head(50)
@@ -125,7 +125,7 @@ def statsNormal(isFixminer=True):
                 top50['cid'] = top50.cid.apply(lambda x: x[0])
                 top50['path'] = top50.apply(lambda x:x['cid'].replace('-','/')+'/'+x['member'],axis=1)
                 def readFile(x):
-                    with open(join(DATA_PATH,'tokens',x), 'r', encoding='utf-8') as writeFile:
+                    with open(join(DATA_PATH,'actions',x), 'r', encoding='utf-8') as writeFile:
                         lines = writeFile.read()
                         return lines
                         # if lines.startswith('UPD'):
@@ -135,7 +135,7 @@ def statsNormal(isFixminer=True):
                     # return lines
 
                 top50['pattern'] = top50.path.apply(lambda x:readFile(x))
-                top50[['cid','pattern']].to_csv('tokenPattern2verify.csv',index=False,header=None)
+                top50[['cid','pattern']].to_csv('actionsPattern2verify.csv',index=False,header=None)
 
 
 
