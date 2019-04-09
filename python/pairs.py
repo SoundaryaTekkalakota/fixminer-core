@@ -61,30 +61,65 @@ def importAction():
             key = shapeName + "-" + shapeSize + "-" + cluster + "-" + k
             redis_db.set(key, v.strip())
 
+
 def importShape():
     # global dbDir, portInner, redis_db, pairs, pair, split, shapeName, cmd, o, e, indexFile, iFile, idx, i, k, v, key
     dbDir = join(DATA_PATH, 'redis')
     portInner = '6380'
-    startDB(dbDir, portInner, "clusterl0-gumInputALL.rdb")
+    startDB(dbDir, portInner, "clusterl1-gumInputALL.rdb")
     import redis
     pairsShapes = join(DATA_PATH, 'pairs')
     redis_db = redis.StrictRedis(host="localhost", port=portInner, db=1)
-    pairs = get_filepaths(pairsShapes, '.txt')
+    pairs = get_filepaths(pairsShapes, '.index')
+    l = []
     for pair in pairs:
-        split = pair.split("/")
-        shapeName = split[-2]
-        sizeCluster = split[-1].replace('.txt', '')
-        cmd = "bash " + join(DATA_PATH, 'redisSingleImport.sh') + " " + pair + " 6380 " + shapeName + "-" + sizeCluster;
-
-        o, e = shellGitCheckout(cmd)
-        print(o)
-        indexFile = pair.replace('.txt', '.index')
-        with open(indexFile, 'r') as iFile:
+        # split = pair.split("/")
+        # shapeName = split[-2]
+        # sizeCluster = split[-1].replace('.txt', '')
+        # cmd = "bash " + join(DATA_PATH, 'redisSingleImport.sh') + " " + pair + " 6380 " + shapeName + "-" + sizeCluster;
+        #
+        # o, e = shellGitCheckout(cmd)
+        # print(o)
+        # indexFile = pair.replace('.txt', '.index')
+        with open(pair, 'r') as iFile:
             idx = iFile.readlines()
-        for i in idx:
-            k, v = i.split(',')
-            key = shapeName + "-" + sizeCluster + "-" + k
-            redis_db.set(key, v.strip())
+            idx = [i.split(',')[1] for i in idx]
+            l.append(idx)
+    l = list(itertools.chain.from_iterable(l))
+    l = [i for i in l if not (i.startswith('commons-math') or i.startswith('commons-lang') or i.startswith(
+        'closure-compiler') or i.startswith('joda-time') or i.startswith('mockito') or i.startswith('jfreechart'))]
+    l
+
+        # for i in idx:
+        #     k, v = i.split(',')
+        #     key = shapeName + "-" + sizeCluster + "-" + k
+        #     redis_db.set(key, v.strip())
+
+
+# def importShape():
+#     # global dbDir, portInner, redis_db, pairs, pair, split, shapeName, cmd, o, e, indexFile, iFile, idx, i, k, v, key
+#     dbDir = join(DATA_PATH, 'redis')
+#     portInner = '6380'
+#     startDB(dbDir, portInner, "clusterl0-gumInputALL.rdb")
+#     import redis
+#     pairsShapes = join(DATA_PATH, 'pairs')
+#     redis_db = redis.StrictRedis(host="localhost", port=portInner, db=1)
+#     pairs = get_filepaths(pairsShapes, '.txt')
+#     for pair in pairs:
+#         split = pair.split("/")
+#         shapeName = split[-2]
+#         sizeCluster = split[-1].replace('.txt', '')
+#         cmd = "bash " + join(DATA_PATH, 'redisSingleImport.sh') + " " + pair + " 6380 " + shapeName + "-" + sizeCluster;
+#
+#         o, e = shellGitCheckout(cmd)
+#         print(o)
+#         indexFile = pair.replace('.txt', '.index')
+#         with open(indexFile, 'r') as iFile:
+#             idx = iFile.readlines()
+#         for i in idx:
+#             k, v = i.split(',')
+#             key = shapeName + "-" + sizeCluster + "-" + k
+#             redis_db.set(key, v.strip())
 
 def tokenPairs():
     global shapes, shape, sizes, clusters, cluster, actions, action, idx, val, pairs

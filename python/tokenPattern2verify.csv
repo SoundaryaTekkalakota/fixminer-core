@@ -1,0 +1,393 @@
+VariableDeclarationStatement-2-2-0-0,"UPD VariableDeclarationStatement@@MethodMetadata found=parent.getFlushMethod(); @TO@ final MethodMetadata found=parent.getFlushMethod(); @AT@ 9924 @LENGTH@ 47
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@MethodMetadata found=parent.getFlushMethod(); @AT@ 10072 @LENGTH@ 5
+
+"
+FieldDeclaration-2-0-0-0,"UPD FieldDeclaration@@private, AtomicBoolean, [jobPaused=new AtomicBoolean(false)] @TO@ private, final, AtomicBoolean, [jobPaused=new AtomicBoolean(false)] @AT@ 2973 @LENGTH@ 59
+---INS Modifier@@final @TO@ FieldDeclaration@@private, AtomicBoolean, [jobPaused=new AtomicBoolean(false)] @AT@ 2987 @LENGTH@ 5
+
+"
+MethodDeclaration-2-0-0-0,"UPD MethodDeclaration@@public, void, MethodName:reset, IOException,  @TO@ public, synchronized, void, MethodName:reset, IOException,  @AT@ 5981 @LENGTH@ 158
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, void, MethodName:reset, IOException,  @AT@ 6122 @LENGTH@ 12
+
+"
+ExpressionStatement-2-0-3-0,"INS ExpressionStatement@@MethodInvocation:rollbackAndCleanup(commited,query) @TO@ Block@@FinallyBody @AT@ 197766 @LENGTH@ 36
+---MOV MethodInvocation@@query.closeAll() @TO@ ExpressionStatement@@MethodInvocation:rollbackAndCleanup(commited,query) @AT@ 199910 @LENGTH@ 16
+
+"
+IfStatement-6-1-0-0,"DEL IfStatement@@InfixExpression:query != null @AT@ 161599 @LENGTH@ 54
+---DEL InfixExpression@@query != null @AT@ 161603 @LENGTH@ 13
+------DEL SimpleName@@query @AT@ 161603 @LENGTH@ 5
+------DEL Operator@@!= @AT@ 161608 @LENGTH@ 2
+------DEL NullLiteral@@null @AT@ 161612 @LENGTH@ 4
+---DEL ExpressionStatement@@MethodInvocation:query.closeAll() @AT@ 161628 @LENGTH@ 17
+
+"
+FieldDeclaration-2-0-0-1,"UPD FieldDeclaration@@protected, String, [charset] @TO@ protected, volatile, String, [charset] @AT@ 2298 @LENGTH@ 25
+---INS Modifier@@volatile @TO@ FieldDeclaration@@protected, String, [charset] @AT@ 2304 @LENGTH@ 8
+
+"
+FieldDeclaration-2-0-0-2,"UPD FieldDeclaration@@static, final, OperationDefinition, [AGEOUT_HISTORY=new SimpleOperationDefinitionBuilder(Constants.AGEOUT_HISTORY,getResourceDescriptionResolver(PatchResourceDefinition.NAME)).build()] @TO@ private, static, final, OperationDefinition, [AGEOUT_HISTORY=new SimpleOperationDefinitionBuilder(Constants.AGEOUT_HISTORY,getResourceDescriptionResolver(PatchResourceDefinition.NAME)).build()] @AT@ 7916 @LENGTH@ 196
+---INS Modifier@@private @TO@ FieldDeclaration@@static, final, OperationDefinition, [AGEOUT_HISTORY=new SimpleOperationDefinitionBuilder(Constants.AGEOUT_HISTORY,getResourceDescriptionResolver(PatchResourceDefinition.NAME)).build()] @AT@ 8020 @LENGTH@ 7
+
+"
+ExpressionStatement-3-0-0-1,"UPD ExpressionStatement@@MethodInvocation:LOG.info(sb.toString()) @TO@ MethodInvocation:LOG.debug(sb.toString()) @AT@ 30061 @LENGTH@ 24
+---UPD MethodInvocation@@LOG.info(sb.toString()) @TO@ LOG.debug(sb.toString()) @AT@ 30061 @LENGTH@ 23
+------UPD SimpleName@@MethodName:info:[sb.toString()] @TO@ MethodName:debug:[sb.toString()] @AT@ 30065 @LENGTH@ 19
+
+"
+MethodDeclaration-7-0-0-0,"UPD MethodDeclaration@@long, MethodName:getRpcTimeout, TimeUnit unit,  @TO@ default, long, MethodName:getRpcTimeout, TimeUnit unit,  @AT@ 33105 @LENGTH@ 29
+---INS Modifier@@default @TO@ MethodDeclaration@@long, MethodName:getRpcTimeout, TimeUnit unit,  @AT@ 35583 @LENGTH@ 7
+---INS ThrowStatement@@ClassInstanceCreation:new NotImplementedException(""Add an implementation!"") @TO@ MethodDeclaration@@long, MethodName:getRpcTimeout, TimeUnit unit,  @AT@ 35631 @LENGTH@ 60
+------INS ClassInstanceCreation@@NotImplementedException[""Add an implementation!""] @TO@ ThrowStatement@@ClassInstanceCreation:new NotImplementedException(""Add an implementation!"") @AT@ 35637 @LENGTH@ 53
+---------INS New@@new @TO@ ClassInstanceCreation@@NotImplementedException[""Add an implementation!""] @AT@ 35637 @LENGTH@ 3
+---------INS SimpleType@@NotImplementedException @TO@ ClassInstanceCreation@@NotImplementedException[""Add an implementation!""] @AT@ 35641 @LENGTH@ 23
+---------INS StringLiteral@@""Add an implementation!"" @TO@ ClassInstanceCreation@@NotImplementedException[""Add an implementation!""] @AT@ 35665 @LENGTH@ 24
+
+"
+MethodDeclaration-2-0-0-2,"UPD MethodDeclaration@@HandlerExceptionResolver, MethodName:handlerExceptionResolver, Exception,  @TO@ public, HandlerExceptionResolver, MethodName:handlerExceptionResolver, Exception,  @AT@ 19158 @LENGTH@ 500
+---INS Modifier@@public @TO@ MethodDeclaration@@HandlerExceptionResolver, MethodName:handlerExceptionResolver, Exception,  @AT@ 19404 @LENGTH@ 6
+
+"
+CatchClause-3-0-0-0,"UPD CatchClause@@Exception e @TO@ Throwable e @AT@ 2599 @LENGTH@ 69
+---UPD SingleVariableDeclaration@@Exception e @TO@ Throwable e @AT@ 2606 @LENGTH@ 11
+------UPD SimpleType@@Exception @TO@ Throwable @AT@ 2606 @LENGTH@ 9
+
+"
+ExpressionStatement-3-0-0-7,"UPD ExpressionStatement@@MethodInvocation:s.execute(""CREATE TABLE NEXT_TXN_ID ("" + ""  NTXN_NEXT bigint NOT NULL)"") @TO@ MethodInvocation:stmt.execute(""CREATE TABLE NEXT_TXN_ID ("" + ""  NTXN_NEXT bigint NOT NULL)"") @AT@ 3056 @LENGTH@ 83
+---UPD MethodInvocation@@s.execute(""CREATE TABLE NEXT_TXN_ID ("" + ""  NTXN_NEXT bigint NOT NULL)"") @TO@ stmt.execute(""CREATE TABLE NEXT_TXN_ID ("" + ""  NTXN_NEXT bigint NOT NULL)"") @AT@ 3056 @LENGTH@ 82
+------UPD SimpleName@@Name:s @TO@ Name:stmt @AT@ 3056 @LENGTH@ 1
+
+"
+SwitchCase-2-0-1-0,"DEL SwitchCase@@SimpleName:SESSIONEXPIRED @AT@ 21748 @LENGTH@ 20
+---DEL SimpleName@@SESSIONEXPIRED @AT@ 21753 @LENGTH@ 14
+
+"
+FieldDeclaration-2-0-0-3,"UPD FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(TryProcessor.class)] @TO@ private, static, final, transient, Log, [LOG=LogFactory.getLog(TryProcessor.class)] @AT@ 1317 @LENGTH@ 69
+---INS Modifier@@transient @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(TryProcessor.class)] @AT@ 1338 @LENGTH@ 9
+
+"
+VariableDeclarationStatement-5-3-0-1,"INS VariableDeclarationStatement@@XMLInputFactory factory=getInputFactory(); @TO@ MethodDeclaration@@public, XMLStreamReader, MethodName:createXMLStreamReader, File file, Exchange exchange, XMLStreamException, FileNotFoundException,  @AT@ 6565 @LENGTH@ 44
+---INS SimpleType@@XMLInputFactory @TO@ VariableDeclarationStatement@@XMLInputFactory factory=getInputFactory(); @AT@ 6565 @LENGTH@ 15
+---INS VariableDeclarationFragment@@factory=getInputFactory() @TO@ VariableDeclarationStatement@@XMLInputFactory factory=getInputFactory(); @AT@ 6581 @LENGTH@ 27
+------INS SimpleName@@factory @TO@ VariableDeclarationFragment@@factory=getInputFactory() @AT@ 6581 @LENGTH@ 7
+------INS MethodInvocation@@MethodName:getInputFactory:[] @TO@ VariableDeclarationFragment@@factory=getInputFactory() @AT@ 6591 @LENGTH@ 17
+
+"
+ExpressionStatement-4-2-2-1,"UPD ExpressionStatement@@MethodInvocation:registry.registerOperationHandler(LIST_PREPARED_TRANSACTIONS,this,new DescriptionProvider(){
+  @Override public ModelNode getModelDescription(  Locale locale){
+    return MessagingDescriptions.getNoArgSimpleListReplyOperation(locale,LIST_PREPARED_TRANSACTIONS,HQ_SERVER,ModelType.STRING,true);
+  }
+}
+,readOnly) @TO@ MethodInvocation:registry.registerOperationHandler(LIST_PREPARED_TRANSACTIONS,this,new DescriptionProvider(){
+  @Override public ModelNode getModelDescription(  Locale locale){
+    return MessagingDescriptions.getNoArgSimpleListReplyOperation(locale,LIST_PREPARED_TRANSACTIONS,HQ_SERVER,ModelType.STRING,true);
+  }
+}
+,readOnlyRuntimeOnly) @AT@ 15527 @LENGTH@ 369
+---UPD MethodInvocation@@registry.registerOperationHandler(LIST_PREPARED_TRANSACTIONS,this,new DescriptionProvider(){
+  @Override public ModelNode getModelDescription(  Locale locale){
+    return MessagingDescriptions.getNoArgSimpleListReplyOperation(locale,LIST_PREPARED_TRANSACTIONS,HQ_SERVER,ModelType.STRING,true);
+  }
+}
+,readOnly) @TO@ registry.registerOperationHandler(LIST_PREPARED_TRANSACTIONS,this,new DescriptionProvider(){
+  @Override public ModelNode getModelDescription(  Locale locale){
+    return MessagingDescriptions.getNoArgSimpleListReplyOperation(locale,LIST_PREPARED_TRANSACTIONS,HQ_SERVER,ModelType.STRING,true);
+  }
+}
+,readOnlyRuntimeOnly) @AT@ 15527 @LENGTH@ 368
+------UPD SimpleName@@MethodName:registerOperationHandler:[LIST_PREPARED_TRANSACTIONS, this, new DescriptionProvider(){
+  @Override public ModelNode getModelDescription(  Locale locale){
+    return MessagingDescriptions.getNoArgSimpleListReplyOperation(locale,LIST_PREPARED_TRANSACTIONS,HQ_SERVER,ModelType.STRING,true);
+  }
+}
+, readOnly] @TO@ MethodName:registerOperationHandler:[LIST_PREPARED_TRANSACTIONS, this, new DescriptionProvider(){
+  @Override public ModelNode getModelDescription(  Locale locale){
+    return MessagingDescriptions.getNoArgSimpleListReplyOperation(locale,LIST_PREPARED_TRANSACTIONS,HQ_SERVER,ModelType.STRING,true);
+  }
+}
+, readOnlyRuntimeOnly] @AT@ 15536 @LENGTH@ 359
+---------UPD SimpleName@@readOnly @TO@ readOnlyRuntimeOnly @AT@ 15886 @LENGTH@ 8
+
+"
+ExpressionStatement-3-0-0-3,"UPD ExpressionStatement@@MethodInvocation:LOG.debug(""Subscribing {} to topic {}"",threadId,topicName) @TO@ MethodInvocation:LOG.info(""Subscribing {} to topic {}"",threadId,topicName) @AT@ 4744 @LENGTH@ 61
+---UPD MethodInvocation@@LOG.debug(""Subscribing {} to topic {}"",threadId,topicName) @TO@ LOG.info(""Subscribing {} to topic {}"",threadId,topicName) @AT@ 4744 @LENGTH@ 60
+------UPD SimpleName@@MethodName:debug:[""Subscribing {} to topic {}"", threadId, topicName] @TO@ MethodName:info:[""Subscribing {} to topic {}"", threadId, topicName] @AT@ 4748 @LENGTH@ 56
+
+"
+MethodDeclaration-2-0-0-1,"UPD MethodDeclaration@@protected, String, MethodName:determineCharSet, MailConfiguration configuration, Exchange exchange,  @TO@ protected, static, String, MethodName:determineCharSet, MailConfiguration configuration, Exchange exchange,  @AT@ 6840 @LENGTH@ 1570
+---INS Modifier@@static @TO@ MethodDeclaration@@protected, String, MethodName:determineCharSet, MailConfiguration configuration, Exchange exchange,  @AT@ 7025 @LENGTH@ 6
+
+"
+MethodDeclaration-5-2-0-0,"UPD MethodDeclaration@@public, WireTapDefinition, MethodName:copy, boolean copy,  @TO@ public, WireTapDefinition<Type>, MethodName:copy, boolean copy,  @AT@ 7103 @LENGTH@ 95
+---INS ParameterizedType@@WireTapDefinition<Type> @TO@ MethodDeclaration@@public, WireTapDefinition, MethodName:copy, boolean copy,  @AT@ 7067 @LENGTH@ 23
+------INS SimpleType@@WireTapDefinition @TO@ ParameterizedType@@WireTapDefinition<Type> @AT@ 7067 @LENGTH@ 17
+------INS SimpleType@@Type @TO@ ParameterizedType@@WireTapDefinition<Type> @AT@ 7085 @LENGTH@ 4
+---DEL SimpleType@@WireTapDefinition @AT@ 7110 @LENGTH@ 17
+
+"
+ReturnStatement-2-1-0-0,"DEL ReturnStatement@@SimpleName:result @AT@ 8019 @LENGTH@ 14
+---DEL SimpleName@@result @AT@ 8026 @LENGTH@ 6
+
+"
+IfStatement-3-1-0-0,"UPD IfStatement@@InfixExpression:pos > 0 @TO@ InfixExpression:pos >= 0 @AT@ 8818 @LENGTH@ 163
+---UPD InfixExpression@@pos > 0 @TO@ pos >= 0 @AT@ 8822 @LENGTH@ 7
+------UPD Operator@@> @TO@ >= @AT@ 8825 @LENGTH@ 1
+
+"
+TypeDeclaration-2-1-0-0,"UPD TypeDeclaration@@[static]XMLConfigurationProvider, FileConfigurationProvider @TO@ [public, static]XMLConfigurationProvider, FileConfigurationProvider @AT@ 49279 @LENGTH@ 1172
+---INS Modifier@@public @TO@ TypeDeclaration@@[static]XMLConfigurationProvider, FileConfigurationProvider @AT@ 49304 @LENGTH@ 6
+
+"
+TypeDeclaration-2-1-0-1,"UPD TypeDeclaration@@[static]Tracker, PhantomReference @TO@ [static, final]Tracker, PhantomReference @AT@ 5815 @LENGTH@ 1342
+---INS Modifier@@final @TO@ TypeDeclaration@@[static]Tracker, PhantomReference @AT@ 8838 @LENGTH@ 5
+
+"
+ExpressionStatement-3-0-0-2,"UPD ExpressionStatement@@MethodInvocation:pw.print(""["") @TO@ MethodInvocation:out.print(""["") @AT@ 7565 @LENGTH@ 14
+---UPD MethodInvocation@@pw.print(""["") @TO@ out.print(""["") @AT@ 7565 @LENGTH@ 13
+------UPD SimpleName@@Name:pw @TO@ Name:out @AT@ 7565 @LENGTH@ 2
+
+"
+ExpressionStatement-5-1-0-0,"INS ExpressionStatement@@MethodInvocation:opHandleSet.remove(opHandle) @TO@ TryStatement@@try:[] @AT@ 10159 @LENGTH@ 29
+---INS MethodInvocation@@opHandleSet.remove(opHandle) @TO@ ExpressionStatement@@MethodInvocation:opHandleSet.remove(opHandle) @AT@ 10159 @LENGTH@ 28
+------INS SimpleName@@Name:opHandleSet @TO@ MethodInvocation@@opHandleSet.remove(opHandle) @AT@ 10159 @LENGTH@ 11
+------INS SimpleName@@MethodName:remove:[opHandle] @TO@ MethodInvocation@@opHandleSet.remove(opHandle) @AT@ 10171 @LENGTH@ 16
+---------INS SimpleName@@opHandle @TO@ SimpleName@@MethodName:remove:[opHandle] @AT@ 10178 @LENGTH@ 8
+
+"
+ExpressionStatement-3-0-0-11,"UPD ExpressionStatement@@MethodInvocation:LOG.debug(""No hfiles found for family: "" + familyDir + "", skipping."") @TO@ MethodInvocation:LOG.trace(""No hfiles found for family: "" + familyDir + "", skipping."") @AT@ 4556 @LENGTH@ 70
+---UPD MethodInvocation@@LOG.debug(""No hfiles found for family: "" + familyDir + "", skipping."") @TO@ LOG.trace(""No hfiles found for family: "" + familyDir + "", skipping."") @AT@ 4556 @LENGTH@ 69
+------UPD SimpleName@@MethodName:debug:[""No hfiles found for family: "" + familyDir + "", skipping.""] @TO@ MethodName:trace:[""No hfiles found for family: "" + familyDir + "", skipping.""] @AT@ 4560 @LENGTH@ 65
+
+"
+ThrowStatement-6-2-0-0,"UPD ThrowStatement@@ClassInstanceCreation:new StepListenerFailedException(""Error in beforeChunk."",e) @TO@ ClassInstanceCreation:new StepListenerFailedException(""Error in beforeChunk."",getTargetException(e)) @AT@ 7393 @LENGTH@ 66
+---UPD ClassInstanceCreation@@StepListenerFailedException[""Error in beforeChunk."", e] @TO@ StepListenerFailedException[""Error in beforeChunk."", getTargetException(e)] @AT@ 7399 @LENGTH@ 59
+------DEL SimpleName@@e @AT@ 7456 @LENGTH@ 1
+------INS MethodInvocation@@getTargetException(e) @TO@ ClassInstanceCreation@@StepListenerFailedException[""Error in beforeChunk."", e] @AT@ 7599 @LENGTH@ 21
+---------INS SimpleName@@MethodName:getTargetException:[e] @TO@ MethodInvocation@@getTargetException(e) @AT@ 7599 @LENGTH@ 21
+------------INS SimpleName@@e @TO@ SimpleName@@MethodName:getTargetException:[e] @AT@ 7618 @LENGTH@ 1
+
+"
+TryStatement-46-0-0-0,"INS TryStatement@@try:[] @TO@ MethodDeclaration@@private, void, MethodName:analyzeAlterTableClusterSort, ASTNode ast, SemanticException,  @AT@ 25267 @LENGTH@ 324
+---INS VariableDeclarationStatement@@Table tab=db.getTable(MetaStoreUtils.DEFAULT_DATABASE_NAME,tableName,false); @TO@ TryStatement@@try:[] @AT@ 25279 @LENGTH@ 80
+------INS SimpleType@@Table @TO@ VariableDeclarationStatement@@Table tab=db.getTable(MetaStoreUtils.DEFAULT_DATABASE_NAME,tableName,false); @AT@ 25279 @LENGTH@ 5
+------INS VariableDeclarationFragment@@tab=db.getTable(MetaStoreUtils.DEFAULT_DATABASE_NAME,tableName,false) @TO@ VariableDeclarationStatement@@Table tab=db.getTable(MetaStoreUtils.DEFAULT_DATABASE_NAME,tableName,false); @AT@ 25285 @LENGTH@ 73
+---------INS SimpleName@@tab @TO@ VariableDeclarationFragment@@tab=db.getTable(MetaStoreUtils.DEFAULT_DATABASE_NAME,tableName,false) @AT@ 25285 @LENGTH@ 3
+---------INS MethodInvocation@@db.getTable(MetaStoreUtils.DEFAULT_DATABASE_NAME,tableName,false) @TO@ VariableDeclarationFragment@@tab=db.getTable(MetaStoreUtils.DEFAULT_DATABASE_NAME,tableName,false) @AT@ 25291 @LENGTH@ 67
+------------INS SimpleName@@Name:db @TO@ MethodInvocation@@db.getTable(MetaStoreUtils.DEFAULT_DATABASE_NAME,tableName,false) @AT@ 25291 @LENGTH@ 2
+------------INS SimpleName@@MethodName:getTable:[MetaStoreUtils.DEFAULT_DATABASE_NAME, tableName, false] @TO@ MethodInvocation@@db.getTable(MetaStoreUtils.DEFAULT_DATABASE_NAME,tableName,false) @AT@ 25294 @LENGTH@ 64
+---------------INS QualifiedName@@MetaStoreUtils.DEFAULT_DATABASE_NAME @TO@ SimpleName@@MethodName:getTable:[MetaStoreUtils.DEFAULT_DATABASE_NAME, tableName, false] @AT@ 25303 @LENGTH@ 36
+------------------INS SimpleName@@MetaStoreUtils @TO@ QualifiedName@@MetaStoreUtils.DEFAULT_DATABASE_NAME @AT@ 25303 @LENGTH@ 14
+------------------INS SimpleName@@DEFAULT_DATABASE_NAME @TO@ QualifiedName@@MetaStoreUtils.DEFAULT_DATABASE_NAME @AT@ 25318 @LENGTH@ 21
+---------------INS SimpleName@@tableName @TO@ SimpleName@@MethodName:getTable:[MetaStoreUtils.DEFAULT_DATABASE_NAME, tableName, false] @AT@ 25341 @LENGTH@ 9
+---------------INS BooleanLiteral@@false @TO@ SimpleName@@MethodName:getTable:[MetaStoreUtils.DEFAULT_DATABASE_NAME, tableName, false] @AT@ 25352 @LENGTH@ 5
+---INS IfStatement@@InfixExpression:tab != null @TO@ TryStatement@@try:[] @AT@ 25366 @LENGTH@ 110
+------INS InfixExpression@@tab != null @TO@ IfStatement@@InfixExpression:tab != null @AT@ 25370 @LENGTH@ 11
+---------INS SimpleName@@tab @TO@ InfixExpression@@tab != null @AT@ 25370 @LENGTH@ 3
+---------INS Operator@@!= @TO@ InfixExpression@@tab != null @AT@ 25373 @LENGTH@ 2
+---------INS NullLiteral@@null @TO@ InfixExpression@@tab != null @AT@ 25377 @LENGTH@ 4
+------INS ExpressionStatement@@MethodInvocation:inputs.add(new ReadEntity(tab)) @TO@ IfStatement@@InfixExpression:tab != null @AT@ 25393 @LENGTH@ 32
+---------INS MethodInvocation@@inputs.add(new ReadEntity(tab)) @TO@ ExpressionStatement@@MethodInvocation:inputs.add(new ReadEntity(tab)) @AT@ 25393 @LENGTH@ 31
+------------INS SimpleName@@Name:inputs @TO@ MethodInvocation@@inputs.add(new ReadEntity(tab)) @AT@ 25393 @LENGTH@ 6
+------------INS SimpleName@@MethodName:add:[new ReadEntity(tab)] @TO@ MethodInvocation@@inputs.add(new ReadEntity(tab)) @AT@ 25400 @LENGTH@ 24
+---------------INS ClassInstanceCreation@@ReadEntity[tab] @TO@ SimpleName@@MethodName:add:[new ReadEntity(tab)] @AT@ 25404 @LENGTH@ 19
+------------------INS New@@new @TO@ ClassInstanceCreation@@ReadEntity[tab] @AT@ 25404 @LENGTH@ 3
+------------------INS SimpleType@@ReadEntity @TO@ ClassInstanceCreation@@ReadEntity[tab] @AT@ 25408 @LENGTH@ 10
+------------------INS SimpleName@@tab @TO@ ClassInstanceCreation@@ReadEntity[tab] @AT@ 25419 @LENGTH@ 3
+------INS ExpressionStatement@@MethodInvocation:outputs.add(new WriteEntity(tab)) @TO@ IfStatement@@InfixExpression:tab != null @AT@ 25434 @LENGTH@ 34
+---------INS MethodInvocation@@outputs.add(new WriteEntity(tab)) @TO@ ExpressionStatement@@MethodInvocation:outputs.add(new WriteEntity(tab)) @AT@ 25434 @LENGTH@ 33
+------------INS SimpleName@@Name:outputs @TO@ MethodInvocation@@outputs.add(new WriteEntity(tab)) @AT@ 25434 @LENGTH@ 7
+------------INS SimpleName@@MethodName:add:[new WriteEntity(tab)] @TO@ MethodInvocation@@outputs.add(new WriteEntity(tab)) @AT@ 25442 @LENGTH@ 25
+---------------INS ClassInstanceCreation@@WriteEntity[tab] @TO@ SimpleName@@MethodName:add:[new WriteEntity(tab)] @AT@ 25446 @LENGTH@ 20
+------------------INS New@@new @TO@ ClassInstanceCreation@@WriteEntity[tab] @AT@ 25446 @LENGTH@ 3
+------------------INS SimpleType@@WriteEntity @TO@ ClassInstanceCreation@@WriteEntity[tab] @AT@ 25450 @LENGTH@ 11
+------------------INS SimpleName@@tab @TO@ ClassInstanceCreation@@WriteEntity[tab] @AT@ 25462 @LENGTH@ 3
+---INS CatchClause@@HiveException e @TO@ TryStatement@@try:[] @AT@ 25483 @LENGTH@ 108
+------INS SingleVariableDeclaration@@HiveException e @TO@ CatchClause@@HiveException e @AT@ 25490 @LENGTH@ 15
+---------INS SimpleType@@HiveException @TO@ SingleVariableDeclaration@@HiveException e @AT@ 25490 @LENGTH@ 13
+---------INS SimpleName@@e @TO@ SingleVariableDeclaration@@HiveException e @AT@ 25504 @LENGTH@ 1
+------INS ThrowStatement@@ClassInstanceCreation:new SemanticException(ErrorMsg.INVALID_TABLE.getMsg(tableName)) @TO@ CatchClause@@HiveException e @AT@ 25515 @LENGTH@ 70
+---------INS ClassInstanceCreation@@SemanticException[ErrorMsg.INVALID_TABLE.getMsg(tableName)] @TO@ ThrowStatement@@ClassInstanceCreation:new SemanticException(ErrorMsg.INVALID_TABLE.getMsg(tableName)) @AT@ 25521 @LENGTH@ 63
+------------INS New@@new @TO@ ClassInstanceCreation@@SemanticException[ErrorMsg.INVALID_TABLE.getMsg(tableName)] @AT@ 25521 @LENGTH@ 3
+------------INS SimpleType@@SemanticException @TO@ ClassInstanceCreation@@SemanticException[ErrorMsg.INVALID_TABLE.getMsg(tableName)] @AT@ 25525 @LENGTH@ 17
+------------INS MethodInvocation@@ErrorMsg.INVALID_TABLE.getMsg(tableName) @TO@ ClassInstanceCreation@@SemanticException[ErrorMsg.INVALID_TABLE.getMsg(tableName)] @AT@ 25543 @LENGTH@ 40
+---------------INS QualifiedName@@Name:ErrorMsg.INVALID_TABLE @TO@ MethodInvocation@@ErrorMsg.INVALID_TABLE.getMsg(tableName) @AT@ 25543 @LENGTH@ 22
+---------------INS SimpleName@@MethodName:getMsg:[tableName] @TO@ MethodInvocation@@ErrorMsg.INVALID_TABLE.getMsg(tableName) @AT@ 25566 @LENGTH@ 17
+------------------INS SimpleName@@tableName @TO@ SimpleName@@MethodName:getMsg:[tableName] @AT@ 25573 @LENGTH@ 9
+
+"
+VariableDeclarationStatement-5-3-0-3,"INS VariableDeclarationStatement@@OperationManager operationManager=getOperationManager(); @TO@ MethodDeclaration@@public, OperationHandle, MethodName:getTypeInfo, HiveSQLException,  @AT@ 7099 @LENGTH@ 58
+---INS SimpleType@@OperationManager @TO@ VariableDeclarationStatement@@OperationManager operationManager=getOperationManager(); @AT@ 7099 @LENGTH@ 16
+---INS VariableDeclarationFragment@@operationManager=getOperationManager() @TO@ VariableDeclarationStatement@@OperationManager operationManager=getOperationManager(); @AT@ 7116 @LENGTH@ 40
+------INS SimpleName@@operationManager @TO@ VariableDeclarationFragment@@operationManager=getOperationManager() @AT@ 7116 @LENGTH@ 16
+------INS MethodInvocation@@MethodName:getOperationManager:[] @TO@ VariableDeclarationFragment@@operationManager=getOperationManager() @AT@ 7135 @LENGTH@ 21
+
+"
+ExpressionStatement-3-0-0-13,"UPD ExpressionStatement@@MethodInvocation:createTab_stmt.setAttribute(SORT_BUCKET,tbl_sort_bucket) @TO@ MethodInvocation:createTab_stmt.add(SORT_BUCKET,tbl_sort_bucket) @AT@ 81952 @LENGTH@ 58
+---UPD MethodInvocation@@createTab_stmt.setAttribute(SORT_BUCKET,tbl_sort_bucket) @TO@ createTab_stmt.add(SORT_BUCKET,tbl_sort_bucket) @AT@ 81952 @LENGTH@ 57
+------UPD SimpleName@@MethodName:setAttribute:[SORT_BUCKET, tbl_sort_bucket] @TO@ MethodName:add:[SORT_BUCKET, tbl_sort_bucket] @AT@ 81967 @LENGTH@ 42
+
+"
+ExpressionStatement-3-0-0-0,"UPD ExpressionStatement@@MethodInvocation:WWW_FORM_URL.set('-') @TO@ MethodInvocation:WWW_FORM_URL_SAFE.set('-') @AT@ 3063 @LENGTH@ 22
+---UPD MethodInvocation@@WWW_FORM_URL.set('-') @TO@ WWW_FORM_URL_SAFE.set('-') @AT@ 3063 @LENGTH@ 21
+------UPD SimpleName@@Name:WWW_FORM_URL @TO@ Name:WWW_FORM_URL_SAFE @AT@ 3063 @LENGTH@ 12
+
+"
+ExpressionStatement-3-0-0-4,"UPD ExpressionStatement@@MethodInvocation:LOG.info(""Region "" + regionInfo.getRegionNameAsString() + "" moved to ""+ rme.getHostname()+ "":""+ rme.getPort()+ "" according to ""+ source.getHostnamePort()) @TO@ MethodInvocation:LOG.trace(""Region "" + regionInfo.getRegionNameAsString() + "" moved to ""+ rme.getHostname()+ "":""+ rme.getPort()+ "" according to ""+ source.getHostnamePort()) @AT@ 74961 @LENGTH@ 170
+---UPD MethodInvocation@@LOG.info(""Region "" + regionInfo.getRegionNameAsString() + "" moved to ""+ rme.getHostname()+ "":""+ rme.getPort()+ "" according to ""+ source.getHostnamePort()) @TO@ LOG.trace(""Region "" + regionInfo.getRegionNameAsString() + "" moved to ""+ rme.getHostname()+ "":""+ rme.getPort()+ "" according to ""+ source.getHostnamePort()) @AT@ 74961 @LENGTH@ 169
+------UPD SimpleName@@MethodName:info:[""Region "" + regionInfo.getRegionNameAsString() + "" moved to ""+ rme.getHostname()+ "":""+ rme.getPort()+ "" according to ""+ source.getHostnamePort()] @TO@ MethodName:trace:[""Region "" + regionInfo.getRegionNameAsString() + "" moved to ""+ rme.getHostname()+ "":""+ rme.getPort()+ "" according to ""+ source.getHostnamePort()] @AT@ 74965 @LENGTH@ 165
+
+"
+TypeDeclaration-2-1-0-2,"UPD TypeDeclaration@@[@SuppressWarnings(""rawtypes""), private, final]ByIdsSpecification, [Specification<T>] @TO@ [@SuppressWarnings(""rawtypes""), private, static, final]ByIdsSpecification, [Specification<T>] @AT@ 16489 @LENGTH@ 603
+---INS Modifier@@static @TO@ TypeDeclaration@@[@SuppressWarnings(""rawtypes""), private, final]ByIdsSpecification, [Specification<T>] @AT@ 16721 @LENGTH@ 6
+
+"
+ExpressionStatement-3-0-0-5,"UPD ExpressionStatement@@MethodInvocation:bodyBuilder.indent() @TO@ MethodInvocation:converterBodyBuilder.indent() @AT@ 41924 @LENGTH@ 21
+---UPD MethodInvocation@@bodyBuilder.indent() @TO@ converterBodyBuilder.indent() @AT@ 41924 @LENGTH@ 20
+------UPD SimpleName@@Name:bodyBuilder @TO@ Name:converterBodyBuilder @AT@ 41924 @LENGTH@ 11
+
+"
+IfStatement-6-1-0-1,"DEL IfStatement@@InfixExpression:socketFactory != null @AT@ 5718 @LENGTH@ 63
+---DEL InfixExpression@@socketFactory != null @AT@ 5722 @LENGTH@ 21
+------DEL SimpleName@@socketFactory @AT@ 5722 @LENGTH@ 13
+------DEL Operator@@!= @AT@ 5735 @LENGTH@ 2
+------DEL NullLiteral@@null @AT@ 5739 @LENGTH@ 4
+---DEL ExpressionStatement@@MethodInvocation:ThreadLocalSSLSocketFactory.unset() @AT@ 5745 @LENGTH@ 36
+
+"
+ThrowStatement-3-1-0-0,"UPD ThrowStatement@@ClassInstanceCreation:new RuntimeException(e) @TO@ ClassInstanceCreation:new TException(e) @AT@ 243139 @LENGTH@ 30
+---UPD ClassInstanceCreation@@RuntimeException[e] @TO@ TException[e] @AT@ 243145 @LENGTH@ 23
+------UPD SimpleType@@RuntimeException @TO@ TException @AT@ 243149 @LENGTH@ 16
+
+"
+ExpressionStatement-2-0-3-1,"INS ExpressionStatement@@MethodInvocation:unsetSocketFactory(previous) @TO@ Block@@FinallyBody @AT@ 3939 @LENGTH@ 29
+---MOV MethodInvocation@@ThreadLocalSSLSocketFactory.unset() @TO@ ExpressionStatement@@MethodInvocation:unsetSocketFactory(previous) @AT@ 4004 @LENGTH@ 35
+
+"
+SwitchCase-3-0-0-0,"UPD SwitchCase@@StringLiteral:""urn:elytron:1.0"" @TO@ SimpleName:NS_ELYTRON_1_0 @AT@ 7454 @LENGTH@ 23
+---INS SimpleName@@NS_ELYTRON_1_0 @TO@ SwitchCase@@StringLiteral:""urn:elytron:1.0"" @AT@ 7459 @LENGTH@ 14
+---DEL StringLiteral@@""urn:elytron:1.0"" @AT@ 7459 @LENGTH@ 17
+
+"
+FieldDeclaration-2-0-0-4,"UPD FieldDeclaration@@private, int, [heartbeaterThreadPoolSize=0] @TO@ private, static, int, [heartbeaterThreadPoolSize=0] @AT@ 4370 @LENGTH@ 42
+---INS Modifier@@static @TO@ FieldDeclaration@@private, int, [heartbeaterThreadPoolSize=0] @AT@ 4378 @LENGTH@ 6
+
+"
+VariableDeclarationStatement-5-3-0-4,"INS VariableDeclarationStatement@@ClassLoader previous=setSocketFactory(); @TO@ MethodDeclaration@@public, SearchResult, MethodName:next, NamingException,  @AT@ 4419 @LENGTH@ 42
+---INS SimpleType@@ClassLoader @TO@ VariableDeclarationStatement@@ClassLoader previous=setSocketFactory(); @AT@ 4419 @LENGTH@ 11
+---INS VariableDeclarationFragment@@previous=setSocketFactory() @TO@ VariableDeclarationStatement@@ClassLoader previous=setSocketFactory(); @AT@ 4431 @LENGTH@ 29
+------INS SimpleName@@previous @TO@ VariableDeclarationFragment@@previous=setSocketFactory() @AT@ 4431 @LENGTH@ 8
+------INS MethodInvocation@@MethodName:setSocketFactory:[] @TO@ VariableDeclarationFragment@@previous=setSocketFactory() @AT@ 4442 @LENGTH@ 18
+
+"
+VariableDeclarationStatement-5-3-0-2,"INS VariableDeclarationStatement@@XMLOutputFactory factory=getOutputFactory(); @TO@ MethodDeclaration@@public, XMLEventWriter, MethodName:createXMLEventWriter, Writer writer, XMLStreamException,  @AT@ 3275 @LENGTH@ 46
+---INS SimpleType@@XMLOutputFactory @TO@ VariableDeclarationStatement@@XMLOutputFactory factory=getOutputFactory(); @AT@ 3275 @LENGTH@ 16
+---INS VariableDeclarationFragment@@factory=getOutputFactory() @TO@ VariableDeclarationStatement@@XMLOutputFactory factory=getOutputFactory(); @AT@ 3292 @LENGTH@ 28
+------INS SimpleName@@factory @TO@ VariableDeclarationFragment@@factory=getOutputFactory() @AT@ 3292 @LENGTH@ 7
+------INS MethodInvocation@@MethodName:getOutputFactory:[] @TO@ VariableDeclarationFragment@@factory=getOutputFactory() @AT@ 3302 @LENGTH@ 18
+
+"
+IfStatement-7-0-0-1,"INS IfStatement@@InfixExpression:a == null @TO@ MethodDeclaration@@public, ShortWritable, MethodName:evaluate, ShortWritable a,  @AT@ 1843 @LENGTH@ 43
+---INS InfixExpression@@a == null @TO@ IfStatement@@InfixExpression:a == null @AT@ 1848 @LENGTH@ 9
+------INS SimpleName@@a @TO@ InfixExpression@@a == null @AT@ 1848 @LENGTH@ 1
+------INS Operator@@== @TO@ InfixExpression@@a == null @AT@ 1849 @LENGTH@ 2
+------INS NullLiteral@@null @TO@ InfixExpression@@a == null @AT@ 1853 @LENGTH@ 4
+---INS ReturnStatement@@NullLiteral:null @TO@ IfStatement@@InfixExpression:a == null @AT@ 1868 @LENGTH@ 12
+------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 1875 @LENGTH@ 4
+
+"
+ReturnStatement-9-0-0-0,"UPD ReturnStatement@@MethodInvocation:logger.isEnabled(Level.INFO,null,null) @TO@ MethodInvocation:this.logger.isEnabled(Level.INFO) @AT@ 7343 @LENGTH@ 48
+---UPD MethodInvocation@@logger.isEnabled(Level.INFO,null,null) @TO@ this.logger.isEnabled(Level.INFO) @AT@ 7350 @LENGTH@ 40
+------INS FieldAccess@@this.logger @TO@ MethodInvocation@@logger.isEnabled(Level.INFO,null,null) @AT@ 7329 @LENGTH@ 11
+---------INS ThisExpression@@this @TO@ FieldAccess@@this.logger @AT@ 7329 @LENGTH@ 4
+---------INS SimpleName@@logger @TO@ FieldAccess@@this.logger @AT@ 7334 @LENGTH@ 6
+------DEL SimpleName@@Name:logger @AT@ 7350 @LENGTH@ 6
+------UPD SimpleName@@MethodName:isEnabled:[Level.INFO, null, null] @TO@ MethodName:isEnabled:[Level.INFO] @AT@ 7357 @LENGTH@ 33
+---------DEL NullLiteral@@null @AT@ 7379 @LENGTH@ 4
+---------DEL NullLiteral@@null @AT@ 7385 @LENGTH@ 4
+
+"
+TryStatement-21-0-0-0,"INS TryStatement@@try:[] @TO@ MethodDeclaration@@public, R, R, S, MethodName:min, final byte[] tableName, final ColumnInterpreter<R,S> ci, final Scan scan, Throwable,  @AT@ 6040 @LENGTH@ 458
+---MOV ExpressionStatement@@MethodInvocation:table.coprocessorExec(AggregateProtocol.class,scan.getStartRow(),scan.getStopRow(),new Batch.Call<AggregateProtocol,R>(){
+  @Override public R call(  AggregateProtocol instance) throws IOException {
+    return instance.getMin(ci,scan);
+  }
+}
+,minCallBack) @TO@ TryStatement@@try:[] @AT@ 5921 @LENGTH@ 292
+---INS ExpressionStatement@@Assignment:table=new HTable(conf,tableName) @TO@ TryStatement@@try:[] @AT@ 6052 @LENGTH@ 36
+------INS Assignment@@table=new HTable(conf,tableName) @TO@ ExpressionStatement@@Assignment:table=new HTable(conf,tableName) @AT@ 6052 @LENGTH@ 35
+---------INS SimpleName@@table @TO@ Assignment@@table=new HTable(conf,tableName) @AT@ 6052 @LENGTH@ 5
+---------INS Operator@@= @TO@ Assignment@@table=new HTable(conf,tableName) @AT@ 6057 @LENGTH@ 1
+---------INS ClassInstanceCreation@@HTable[conf, tableName] @TO@ Assignment@@table=new HTable(conf,tableName) @AT@ 6060 @LENGTH@ 27
+------------MOV New@@new @TO@ ClassInstanceCreation@@HTable[conf, tableName] @AT@ 5839 @LENGTH@ 3
+------------MOV SimpleType@@HTable @TO@ ClassInstanceCreation@@HTable[conf, tableName] @AT@ 5843 @LENGTH@ 6
+------------MOV SimpleName@@conf @TO@ ClassInstanceCreation@@HTable[conf, tableName] @AT@ 5850 @LENGTH@ 4
+------------MOV SimpleName@@tableName @TO@ ClassInstanceCreation@@HTable[conf, tableName] @AT@ 5856 @LENGTH@ 9
+---INS Block@@FinallyBody @TO@ TryStatement@@try:[] @AT@ 6433 @LENGTH@ 65
+------INS IfStatement@@InfixExpression:table != null @TO@ Block@@FinallyBody @AT@ 6441 @LENGTH@ 51
+---------INS InfixExpression@@table != null @TO@ IfStatement@@InfixExpression:table != null @AT@ 6445 @LENGTH@ 13
+------------INS SimpleName@@table @TO@ InfixExpression@@table != null @AT@ 6445 @LENGTH@ 5
+------------INS Operator@@!= @TO@ InfixExpression@@table != null @AT@ 6450 @LENGTH@ 2
+------------INS NullLiteral@@null @TO@ InfixExpression@@table != null @AT@ 6454 @LENGTH@ 4
+---------INS ExpressionStatement@@MethodInvocation:table.close() @TO@ IfStatement@@InfixExpression:table != null @AT@ 6470 @LENGTH@ 14
+------------INS MethodInvocation@@table.close() @TO@ ExpressionStatement@@MethodInvocation:table.close() @AT@ 6470 @LENGTH@ 13
+---------------INS SimpleName@@Name:table @TO@ MethodInvocation@@table.close() @AT@ 6470 @LENGTH@ 5
+---------------INS SimpleName@@MethodName:close:[] @TO@ MethodInvocation@@table.close() @AT@ 6476 @LENGTH@ 7
+
+"
+ExpressionStatement-3-0-0-20,"UPD ExpressionStatement@@MethodInvocation:connection.connect() @TO@ MethodInvocation:newConnection.connect() @AT@ 5704 @LENGTH@ 21
+---UPD MethodInvocation@@connection.connect() @TO@ newConnection.connect() @AT@ 5704 @LENGTH@ 20
+------UPD SimpleName@@Name:connection @TO@ Name:newConnection @AT@ 5704 @LENGTH@ 10
+
+"
+VariableDeclarationStatement-19-0-0-0,"UPD VariableDeclarationStatement@@final Route route=context.getRoute(routeId); @TO@ final Optional<RouteHolder> route=routes.stream().filter(r -> r.getId().equals(routeId)).findFirst(); @AT@ 6715 @LENGTH@ 46
+---DEL SimpleType@@Route @AT@ 6721 @LENGTH@ 5
+---UPD VariableDeclarationFragment@@route=context.getRoute(routeId) @TO@ route=routes.stream().filter(r -> r.getId().equals(routeId)).findFirst() @AT@ 6727 @LENGTH@ 33
+------DEL MethodInvocation@@context.getRoute(routeId) @AT@ 6735 @LENGTH@ 25
+------INS MethodInvocation@@routes.stream().filter(r -> r.getId().equals(routeId)).findFirst() @TO@ VariableDeclarationFragment@@route=context.getRoute(routeId) @AT@ 6957 @LENGTH@ 66
+---------INS SimpleName@@Name:routes @TO@ MethodInvocation@@routes.stream().filter(r -> r.getId().equals(routeId)).findFirst() @AT@ 6957 @LENGTH@ 6
+---------INS MethodInvocation@@MethodName:stream:[] @TO@ MethodInvocation@@routes.stream().filter(r -> r.getId().equals(routeId)).findFirst() @AT@ 6957 @LENGTH@ 15
+---------INS MethodInvocation@@MethodName:filter:[r -> r.getId().equals(routeId)] @TO@ MethodInvocation@@routes.stream().filter(r -> r.getId().equals(routeId)).findFirst() @AT@ 6957 @LENGTH@ 54
+------------INS LambdaExpression@@r -> r.getId().equals(routeId) @TO@ MethodInvocation@@MethodName:filter:[r -> r.getId().equals(routeId)] @AT@ 6980 @LENGTH@ 30
+---------------INS VariableDeclarationFragment@@r @TO@ LambdaExpression@@r -> r.getId().equals(routeId) @AT@ 6980 @LENGTH@ 1
+------------------INS SimpleName@@r @TO@ VariableDeclarationFragment@@r @AT@ 6980 @LENGTH@ 1
+---------------INS MethodInvocation@@r.getId().equals(routeId) @TO@ LambdaExpression@@r -> r.getId().equals(routeId) @AT@ 6985 @LENGTH@ 25
+------------------MOV SimpleName@@Name:context @TO@ MethodInvocation@@r.getId().equals(routeId) @AT@ 6735 @LENGTH@ 7
+------------------MOV SimpleName@@MethodName:getRoute:[routeId] @TO@ MethodInvocation@@r.getId().equals(routeId) @AT@ 6743 @LENGTH@ 17
+------------------INS MethodInvocation@@MethodName:getId:[] @TO@ MethodInvocation@@r.getId().equals(routeId) @AT@ 6985 @LENGTH@ 9
+---------INS SimpleName@@MethodName:findFirst:[] @TO@ MethodInvocation@@routes.stream().filter(r -> r.getId().equals(routeId)).findFirst() @AT@ 7012 @LENGTH@ 11
+---INS ParameterizedType@@Optional<RouteHolder> @TO@ VariableDeclarationStatement@@final Route route=context.getRoute(routeId); @AT@ 6927 @LENGTH@ 21
+------INS SimpleType@@Optional @TO@ ParameterizedType@@Optional<RouteHolder> @AT@ 6927 @LENGTH@ 8
+------INS SimpleType@@RouteHolder @TO@ ParameterizedType@@Optional<RouteHolder> @AT@ 6936 @LENGTH@ 11
+
+"
+ExpressionStatement-4-2-2-3,"UPD ExpressionStatement@@MethodInvocation:timingTrace(doTrace,qText,start,end) @TO@ MethodInvocation:timingTrace(doTrace,queryText,start,end) @AT@ 50454 @LENGTH@ 40
+---UPD MethodInvocation@@timingTrace(doTrace,qText,start,end) @TO@ timingTrace(doTrace,queryText,start,end) @AT@ 50454 @LENGTH@ 39
+------UPD SimpleName@@MethodName:timingTrace:[doTrace, qText, start, end] @TO@ MethodName:timingTrace:[doTrace, queryText, start, end] @AT@ 50454 @LENGTH@ 39
+---------UPD SimpleName@@qText @TO@ queryText @AT@ 50475 @LENGTH@ 5
+
+"
+CatchClause-11-0-0-0,"INS CatchClause@@ForeignException e @TO@ TryStatement@@try:[] @AT@ 41131 @LENGTH@ 82
+---INS SingleVariableDeclaration@@ForeignException e @TO@ CatchClause@@ForeignException e @AT@ 41138 @LENGTH@ 18
+------INS SimpleType@@ForeignException @TO@ SingleVariableDeclaration@@ForeignException e @AT@ 41138 @LENGTH@ 16
+------INS SimpleName@@e @TO@ SingleVariableDeclaration@@ForeignException e @AT@ 41155 @LENGTH@ 1
+---INS ThrowStatement@@ClassInstanceCreation:new ServiceException(e.getCause()) @TO@ CatchClause@@ForeignException e @AT@ 41166 @LENGTH@ 41
+------INS ClassInstanceCreation@@ServiceException[e.getCause()] @TO@ ThrowStatement@@ClassInstanceCreation:new ServiceException(e.getCause()) @AT@ 41172 @LENGTH@ 34
+---------INS New@@new @TO@ ClassInstanceCreation@@ServiceException[e.getCause()] @AT@ 41172 @LENGTH@ 3
+---------INS SimpleType@@ServiceException @TO@ ClassInstanceCreation@@ServiceException[e.getCause()] @AT@ 41176 @LENGTH@ 16
+---------INS MethodInvocation@@e.getCause() @TO@ ClassInstanceCreation@@ServiceException[e.getCause()] @AT@ 41193 @LENGTH@ 12
+------------INS SimpleName@@Name:e @TO@ MethodInvocation@@e.getCause() @AT@ 41193 @LENGTH@ 1
+------------INS SimpleName@@MethodName:getCause:[] @TO@ MethodInvocation@@e.getCause() @AT@ 41195 @LENGTH@ 10
+
+"
+SynchronizedStatement-4-0-0-0,"DEL SynchronizedStatement@@FieldAccess:this.cachedRegionLocations @AT@ 58413 @LENGTH@ 130
+---DEL FieldAccess@@this.cachedRegionLocations @AT@ 58426 @LENGTH@ 26
+------DEL ThisExpression@@this @AT@ 58426 @LENGTH@ 4
+------DEL SimpleName@@cachedRegionLocations @AT@ 58431 @LENGTH@ 21
+
+"
+MethodDeclaration-4-0-0-2,"UPD MethodDeclaration@@private, void, MethodName:initWsdlDefinitionHandlerAdapter,  @TO@ private, void, MethodName:initWsdlDefinitionHandlerAdapter, ApplicationContext context,  @AT@ 14891 @LENGTH@ 791
+---INS SingleVariableDeclaration@@ApplicationContext context @TO@ MethodDeclaration@@private, void, MethodName:initWsdlDefinitionHandlerAdapter,  @AT@ 15092 @LENGTH@ 26
+------INS SimpleType@@ApplicationContext @TO@ SingleVariableDeclaration@@ApplicationContext context @AT@ 15092 @LENGTH@ 18
+------INS SimpleName@@context @TO@ SingleVariableDeclaration@@ApplicationContext context @AT@ 15111 @LENGTH@ 7
+
+"

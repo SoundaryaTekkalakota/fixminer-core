@@ -373,19 +373,35 @@ def plotBox(yList,labels, fn, rotate=False,limit=True):
     matplotlib.use("TkAgg")
     import matplotlib.pyplot as plt
 
+
+
     fig = plt.figure()
     ax1 = fig.add_subplot(111)
-    ax1.boxplot(yList, 0, sym='+', showmeans=True, vert=True)
+    meanpointsprops = dict(markeredgecolor ='blue',markerfacecolor=
+                           'blue')
+
+    flierprops = dict(markeredgecolor ='black',markerfacecolor=
+                           'black',marker='.',markersize=2)
+    box = ax1.boxplot(yList, 0, flierprops=flierprops,widths=0.5, showmeans=False, vert=True,meanprops=meanpointsprops)
+    for line in box['medians']:
+        x,y = line.get_xydata()[1]
+        line.set(linewidth=3)
+        line.set_color('blue')
+    # plt.scatter(labels, yList, color='r')
+    # plt.plot(labels, yList, '-o')
     # ax1.boxplot(yList,notch=False, sym='', vert=True, whis=1.5,
     #     positions=None, widths=None, patch_artist=True,
     #     bootstrap=None, usermedians=None, conf_intervals=None)
     if rotate:
         ax1.set_xticklabels(labels, rotation=45, ha='right')
     else:
-        ax1.set_xticklabels(labels)
+        # ax1.set_xticklabels(labels)
+        # ax1.set_xticklabels(None)
+        ax1.get_xaxis().set_ticklabels([])
     # sns.boxplot(yList, ax=ax1)
     if limit:
-        ax1.set_ylim(top=1.01,bottom=0)
+        ax1.set_ylim(top=1.1,bottom=0)
+        ax1.yaxis.set_ticks([0.0,1.0])
     else:
         ax1.set_yscale('log')
         ax1.set_xlabel('Cluster Member Size')
@@ -394,11 +410,138 @@ def plotBox(yList,labels, fn, rotate=False,limit=True):
 
     plt.subplots_adjust(wspace=0, hspace=0)
     fig = plt.gcf()
-    fig.set_size_inches(4, 4, forward=True)
+
+    # fig.tight_layout()
+    fig.set_size_inches(7, 1, forward=True)
     fig.savefig(fn, dpi=100, bbox_inches='tight')
 
 
     plt.show()
+
+def plotBox2(ys,labels, fn,means, rotate=False,limit=True):
+
+
+    import matplotlib
+    matplotlib.use("TkAgg")
+    import matplotlib.pyplot as plt
+
+
+    fig,axes = plt.subplots(nrows=3,ncols=1)
+
+    for ax1,yList,l,l2,mean in zip(axes.flat,ys,labels,['Shapes','Actions','Tokens'],means):
+        # plt.setp(ax1.get_xticks(),visible=False)
+        # ax1 = fig.add_subplot(111)
+        meanpointsprops = dict(markeredgecolor ='blue',markerfacecolor=
+                               'blue')
+
+        flierprops = dict(markeredgecolor ='black',markerfacecolor=
+                               'black',marker='.',markersize=2)
+        box = ax1.boxplot(yList, 0, flierprops=flierprops,widths=0.5, showmeans=False, vert=True,meanprops=meanpointsprops)
+
+        ax1.axhline(linewidth=2, color='r',y=mean)
+
+        for line in box['medians']:
+            x,y = line.get_xydata()[1]
+            line.set(linewidth=3)
+            line.set_color('blue')
+        # plt.scatter(labels, yList, color='r')
+        # plt.plot(labels, yList, '-o')
+        # ax1.boxplot(yList,notch=False, sym='', vert=True, whis=1.5,
+        #     positions=None, widths=None, patch_artist=True,
+        #     bootstrap=None, usermedians=None, conf_intervals=None)
+        if rotate:
+            ax1.set_xticklabels(l, rotation=45, ha='right')
+        else:
+            # ax1.set_xticklabels(labels)
+            # ax1.set_xticklabels(None)
+            ax1.get_xaxis().set_ticklabels([])
+            # ax1.get_xaxis().set_ticks([])
+        # sns.boxplot(yList, ax=ax1)
+        if limit:
+            if l2 !='Tokens':
+                ax1.set_ylim(top=1,bottom=0)
+            else:
+                ax1.set_ylim(top=1.1, bottom=0)
+            ax1.yaxis.set_ticks([0.0,mean,0.5,1.0])
+            ax1.yaxis.set_ticklabels([0,'',0.5,1])
+            ax1.tick_params(direction='out', length=6, width=2, axis='y',
+                         grid_color='r', grid_alpha=0.5)
+
+        else:
+            # ax1.set_yscale('log')
+            ax1.set_xlabel('Cluster Member Size')
+            ax1.set_ylabel('Folds')
+        ax1.set_aspect('auto')
+
+        ax1.set_ylabel(l2)
+    labels = ['C-'+str(i+1) for i in labels[0]]
+    ax1.set_xticklabels(labels)
+    ax1.set_xticklabels(labels, rotation=45, ha='right')
+    # plt.setp(ax1.get_xticks(), visible=True)
+
+    ax1.set_xlabel('Clusters')
+    # ax1.set_xlabel('Similarity')
+    plt.ion()
+
+    plt.subplots_adjust(wspace=0, hspace=0.05)
+    fig = plt.gcf()
+
+
+    # fig.tight_layout()
+    fig.set_size_inches(7, 7, forward=True)
+    fig.savefig(fn, dpi=100, bbox_inches='tight')
+
+
+    plt.show()
+
+
+def plotScatter(s1,s2,vs,label,limits,type):
+    import matplotlib
+    matplotlib.use("TkAgg")
+    import matplotlib.pyplot as plt
+    plt.figure(figsize=(2.5, 2.5))
+
+    # s1 = (df1[whichColumn]).apply(lambda x: round(Decimal(x), 3))
+    # s2 = (df2[whichColumn]).apply(lambda x: round(Decimal(x), 3))
+    plt.scatter(s1, s2, color='r')
+    # plt.text(0.5, 0.25, '\\textbf{%s wins}' %
+    #          vs, ha='center', va='center', rotation=45)
+    # plt.text(0.2, 0.5, '\\textbf{%s wins}' %
+    #          label, ha='center', va='center', rotation=45)
+    # plt.title('%s vs. %s ' % (label, vs))
+    ax = plt.gca()
+    ax.grid(False)
+    # ax.patch.set_alpha(0)
+    ax.set_xlim([0, limits])
+    ax.set_ylim([0, limits])
+    start, end = ax.get_xlim()
+    stepsize = 1
+    ax.xaxis.set_ticks(np.arange(0, end, stepsize))
+    ax.yaxis.set_ticks(np.arange(0, end, stepsize))
+    x = np.linspace(start, end, limits+1)
+    y = np.linspace(start, end, limits+1)
+    ax.fill_between(x, y, end, facecolor='b', alpha=0.3)
+    # plt.plot(np.linspace(0, 1, 10), np.linspace(0, 1, 10), lw=1)
+    ax.spines['top'].set_visible(True)
+    ax.spines['right'].set_visible(True)
+    ax.spines['bottom'].set_visible(True)
+    ax.spines['left'].set_visible(True)
+
+    ax.set_xlabel(vs)
+    ax.set_ylabel(label)
+
+    plt.subplots_adjust(wspace=0, hspace=0)
+    # fig = plt.gcf()
+    # fig.set_size_inches(4, 4, forward=True)
+
+    plt.savefig(
+        os.path.join(
+            'scatter',
+            '{}.pdf'.format(
+                type).replace(' ', '-')
+        ),
+        tight_bbox=True
+    )
 
 import threading
 class BackgroundTask(object):

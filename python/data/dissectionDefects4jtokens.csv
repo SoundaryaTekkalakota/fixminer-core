@@ -1,10 +1,13 @@
-SwitchCase-4-0-0-0,2,['closure-compiler-80']
-SwitchCase-4-0-0-3,2,['closure-compiler-49']
-IfStatement-26-0-0-0,2,['commons-math-16']
-IfStatement-54-0-0-0,2,['joda-time-6']
-IfStatement-4-8-0-0,2,"['closure-compiler-63', 'closure-compiler-62']"
-IfStatement-3-1-0-2,2,"['commons-math-82', 'commons-math-85']"
-IfStatement-5-1-0-2,2,['commons-lang-50']
-ForStatement-35-0-0-0,2,['commons-math-76']
-EnhancedForStatement-12-1-0-0,2,['commons-math-7']
-FieldDeclaration-2-0-0-3,2,['commons-lang-56']
+"('SwitchCase-4-0-0-0', 2)",2,['closure-compiler-80']
+"('SwitchCase-4-0-0-3', 2)",2,['closure-compiler-49']
+"('IfStatement-26-0-0-0', 2)",2,['commons-math-16']
+"('IfStatement-54-0-0-0', 2)",2,['joda-time-6']
+"('IfStatement-4-8-0-0', 2)",2,"['closure-compiler-63', 'closure-compiler-62']"
+"('IfStatement-3-1-0-2', 2)",2,"['commons-math-82', 'commons-math-85']"
+"('IfStatement-5-1-0-2', 2)",2,['commons-lang-50']
+"('ForStatement-35-0-0-0', 2)",2,['commons-math-76']
+"('EnhancedForStatement-12-1-0-0', 2)",2,['commons-math-7']
+"('FieldDeclaration-2-0-0-3', 2)",2,['commons-lang-56']
+"('IfStatement-4-8-0-2', 1)",1,['closure-compiler-73']
+"('IfStatement-3-1-0-0', 1)",1,['joda-time-19']
+"('IfStatement-3-1-0-5', 1)",1,['jfreechart-1']

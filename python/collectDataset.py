@@ -503,6 +503,11 @@ if __name__ == '__main__':
                     except Exception as e:
                         logging.error(e)
 
+
+                matches= matches[~matches.repo.apply(
+                    lambda i: (i.startswith('commons-math') or i.startswith('commons-lang') or i.startswith(
+                        'closure-compiler') or i.startswith('joda-time') or i.startswith('mockito') or i.startswith(
+                        'jfreechart')))]
                 matches['bid'] = matches.apply(lambda x:getBID(x),axis=1)
 
 
@@ -556,7 +561,9 @@ if __name__ == '__main__':
                 def statsCore(cs,type):
                     global idx
 
-                    cs = [i for i in cs if not (i.startswith('commons-math') or i.startswith('commons-lang') or i.startswith('closure-compiler.git') or i.startswith('joda-time.git') or i.startswith('mockito.git'))]
+                    cs = [i for i in cs if not (i.startswith('commons-math') or i.startswith('commons-lang') or i.startswith(
+                        'closure-compiler') or i.startswith('joda-time') or i.startswith('mockito') or i.startswith(
+                        'jfreechart'))]
                     # print('Cluster %s : member size %s' % (shape+"-"+size +"-"+cluster, len(cs)))
                     if len(cs)>0:
                         if token is None:
@@ -664,24 +671,47 @@ if __name__ == '__main__':
             # list(itertools.chain.from_iterable(actions.simi.values.tolist())),
             # list(itertools.chain.from_iterable(tokens.simi.values.tolist()))]
             # colNames = ['shapes','actions','tokens']
+
+            ys= []
+            cols = []
+            means = []
             # plotBox(yList, colNames, 'bugReport' + '.pdf', True)
             for ds in [shapes,actions,tokens]:
                 ds['ms'] = ds.members.str.len()
                 ds.sort_values(by=['ms'], ascending=False,inplace=True)
-                top10  = ds.head(9)
+                top10  = ds.head(20)
 
                 colNames = top10.cid.values.tolist()
-
+                # colNames = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+                colNames = list(range(len(colNames)))
                 yList = yList = top10.simi.values.tolist()
-                colNames.insert(0,'ALL')
-                yList.insert(0,list(itertools.chain.from_iterable(ds.simi.values.tolist())))
+                # yList = [np.mean(i) for i in yList]
+                # colNames.insert(0,'ALL')
+                # yList.insert(0,list(itertools.chain.from_iterable(ds.simi.values.tolist())))
+                mean = np.mean(list(itertools.chain.from_iterable(ds.simi.values.tolist())))
                 type = ds.type.iloc[0]
-                from common.commons import plotBox
-                plotBox(yList,colNames,type+'.pdf',True)
+                # from common.commons import plotBox
+                # plotBox(yList,colNames,type+'.pdf',False)
+                ys.append(yList)
+                cols.append(colNames)
+                means.append(mean)
+            plotBox2(ys,cols,'test.pdf',means,False)
+
 
         elif job == 'defects4j':
             from stats import defects4jStats
             defects4jStats()
+
+        elif job =='export':
+            patternPath = join(DATA_PATH,'actions','ExpressionStatement','3','0','0')
+            patterns = listdir(patternPath)
+            for pattern in patterns:
+                repo = pattern.split('_')[0]
+                file = pattern.replace(repo+'_','')
+                print(file)
+                filename = file.rsplit('_',1)[0]
+                print(join(DATA_PATH,'gumInput',repo,'DiffEntries',filename))
+                break
 
 
 

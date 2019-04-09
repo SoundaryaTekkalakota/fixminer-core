@@ -1,0 +1,13 @@
+IfStatement-4-8-0-0,"['closure-compiler-63', 'closure-compiler-62']","['expLogicMod', 'singleLine']"
+IfStatement-3-1-0-2,"['commons-math-82', 'commons-math-85']","['expLogicMod', 'singleLine']"
+SwitchCase-4-0-0-0,['closure-compiler-80'],['expLogicExpand']
+SwitchCase-4-0-0-3,['closure-compiler-49'],"['condBlockOthersAdd', 'condBlockRem']"
+IfStatement-26-0-0-0,['commons-math-16'],"['copyPaste', 'wrapsIfElse']"
+IfStatement-54-0-0-0,['joda-time-6'],"['condBlockExcAdd', 'condBlockOthersAdd', 'copyPaste']"
+IfStatement-5-1-0-2,['commons-lang-50'],"['condBlockRem', 'copyPaste', 'expLogicMod', 'unwrapIfElse']"
+ForStatement-35-0-0-0,['commons-math-76'],"['copyPaste', 'expArithMod', 'expLogicMod', 'wrapsIfElse', 'wrongVarRef']"
+EnhancedForStatement-12-1-0-0,['commons-math-7'],"['copyPaste', 'wrapsLoop', 'wrongVarRef']"
+FieldDeclaration-2-0-0-3,['commons-lang-56'],[]
+IfStatement-4-8-0-2,['closure-compiler-73'],"['expLogicMod', 'singleLine']"
+IfStatement-3-1-0-0,['joda-time-19'],"['expLogicMod', 'singleLine']"
+IfStatement-3-1-0-5,['jfreechart-1'],"['expLogicMod', 'singleLine']"

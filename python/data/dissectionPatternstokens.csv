@@ -1,12 +1,15 @@
-closure-compiler,49,"['condBlockOthersAdd', 'condBlockRem']",closure-compiler-49,['SwitchCase-4-0-0-3'],Dissection
-closure-compiler,62,"['expLogicMod', 'singleLine']",closure-compiler-62,['IfStatement-4-8-0-0'],Dissection
-closure-compiler,63,"['expLogicMod', 'singleLine']",closure-compiler-63,['IfStatement-4-8-0-0'],Dissection
-closure-compiler,80,['expLogicExpand'],closure-compiler-80,['SwitchCase-4-0-0-0'],Equal
-commons-lang,50,"['condBlockRem', 'copyPaste', 'expLogicMod', 'unwrapIfElse']",commons-lang-50,['IfStatement-5-1-0-2'],Dissection
-commons-lang,56,[],commons-lang-56,['FieldDeclaration-2-0-0-3'],Fixminer
-commons-math,7,"['copyPaste', 'wrapsLoop', 'wrongVarRef']",commons-math-7,['EnhancedForStatement-12-1-0-0'],Dissection
-commons-math,16,"['copyPaste', 'wrapsIfElse']",commons-math-16,['IfStatement-26-0-0-0'],Dissection
-commons-math,82,"['expLogicMod', 'singleLine']",commons-math-82,['IfStatement-3-1-0-2'],Dissection
-commons-math,76,"['copyPaste', 'expArithMod', 'expLogicMod', 'wrapsIfElse', 'wrongVarRef']",commons-math-76,['ForStatement-35-0-0-0'],Dissection
-commons-math,85,"['expLogicMod', 'singleLine']",commons-math-85,['IfStatement-3-1-0-2'],Dissection
-joda-time,6,"['condBlockExcAdd', 'condBlockOthersAdd', 'copyPaste']",joda-time-6,['IfStatement-54-0-0-0'],Dissection
+jfreechart,1,"['expLogicMod', 'singleLine']",['condExpMod'],jfreechart-1,"[('IfStatement-3-1-0-5', 1)]",Dissection
+closure-compiler,49,"['condBlockOthersAdd', 'condBlockRem']","['assignAdd', 'assignRem', 'condBranCaseAdd', 'condBranRem', 'loopAdd', 'loopRem', 'mcAdd', 'mcRem', 'varAdd', 'varRem']",closure-compiler-49,"[('SwitchCase-4-0-0-3', 2)]",Dissection
+closure-compiler,62,"['expLogicMod', 'singleLine']",['condExpMod'],closure-compiler-62,"[('IfStatement-4-8-0-0', 2)]",Dissection
+closure-compiler,63,"['expLogicMod', 'singleLine']",['condExpMod'],closure-compiler-63,"[('IfStatement-4-8-0-0', 2)]",Dissection
+closure-compiler,73,"['expLogicMod', 'singleLine']",['condExpMod'],closure-compiler-73,"[('IfStatement-4-8-0-2', 1)]",Dissection
+closure-compiler,80,['expLogicExpand'],['condBranCaseAdd'],closure-compiler-80,"[('SwitchCase-4-0-0-0', 2)]",Equal
+commons-lang,50,"['condBlockRem', 'copyPaste', 'expLogicMod', 'unwrapIfElse']","['assignAdd', 'assignRem', 'condBranRem', 'condExpMod', 'mcAdd', 'mcRem', 'objInstAdd', 'objInstRem']",commons-lang-50,"[('IfStatement-5-1-0-2', 2)]",Dissection
+commons-lang,56,[],"['mcAdd', 'mdAdd', 'mdOverride', 'varModChange']",commons-lang-56,"[('FieldDeclaration-2-0-0-3', 2)]",Fixminer
+commons-math,7,"['copyPaste', 'wrapsLoop', 'wrongVarRef']","['assignAdd', 'assignExpChange', 'assignRem', 'loopRem', 'mcRem', 'varReplVar']",commons-math-7,"[('EnhancedForStatement-12-1-0-0', 2)]",Dissection
+commons-math,16,"['copyPaste', 'wrapsIfElse']","['assignAdd', 'condBranIfElseAdd', 'mcAdd', 'retBranchAdd', 'varAdd']",commons-math-16,"[('IfStatement-26-0-0-0', 2)]",Dissection
+commons-math,82,"['expLogicMod', 'singleLine']",['condExpMod'],commons-math-82,"[('IfStatement-3-1-0-2', 2)]",Dissection
+commons-math,76,"['copyPaste', 'expArithMod', 'expLogicMod', 'wrapsIfElse', 'wrongVarRef']","['assignAdd', 'assignExpChange', 'assignRem', 'condBranIfElseAdd', 'loopCondChange', 'mcParValChange', 'varReplVar']",commons-math-76,"[('ForStatement-35-0-0-0', 2)]",Dissection
+commons-math,85,"['expLogicMod', 'singleLine']",['condExpMod'],commons-math-85,"[('IfStatement-3-1-0-2', 2)]",Dissection
+joda-time,6,"['condBlockExcAdd', 'condBlockOthersAdd', 'copyPaste']","['assignAdd', 'condBranIfAdd', 'condBranIfElseAdd', 'exThrowsAdd', 'mcAdd', 'objInstAdd', 'varAdd']",joda-time-6,"[('IfStatement-54-0-0-0', 2)]",Dissection
+joda-time,19,"['expLogicMod', 'singleLine']",['condExpMod'],joda-time-19,"[('IfStatement-3-1-0-0', 1)]",Dissection
