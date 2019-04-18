@@ -1,9 +1,0 @@
- INS SynchronizedStatement TO MethodDeclaration 
---- INS FieldAccess TO SynchronizedStatement 
------- INS ThisExpression TO FieldAccess 
------- INS SimpleName TO FieldAccess 
---- INS ExpressionStatement TO SynchronizedStatement 
------- INS Assignment TO ExpressionStatement 
---------- MOV MethodInvocation TO Assignment 
---------- INS SimpleName TO Assignment 
---------- INS Operator TO Assignment

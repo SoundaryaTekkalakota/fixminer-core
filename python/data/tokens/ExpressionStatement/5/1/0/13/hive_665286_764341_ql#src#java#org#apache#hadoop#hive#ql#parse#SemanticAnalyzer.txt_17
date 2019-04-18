@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:colInfo.setAlias(colAlias) @TO@ ForStatement@@[int i=0];i < ccount; [++i] @AT@ 49089 @LENGTH@ 27
----INS MethodInvocation@@colInfo.setAlias(colAlias) @TO@ ExpressionStatement@@MethodInvocation:colInfo.setAlias(colAlias) @AT@ 49089 @LENGTH@ 26
-------INS SimpleName@@Name:colInfo @TO@ MethodInvocation@@colInfo.setAlias(colAlias) @AT@ 49089 @LENGTH@ 7
-------INS SimpleName@@MethodName:setAlias:[colAlias] @TO@ MethodInvocation@@colInfo.setAlias(colAlias) @AT@ 49097 @LENGTH@ 18
----------INS SimpleName@@colAlias @TO@ SimpleName@@MethodName:setAlias:[colAlias] @AT@ 49106 @LENGTH@ 8
-

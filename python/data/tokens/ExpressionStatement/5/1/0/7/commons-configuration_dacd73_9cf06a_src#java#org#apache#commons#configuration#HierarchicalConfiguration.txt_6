@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:nd.setParentNode(parent) @TO@ ForStatement@@[Iterator it=src.getChildren().iterator()];it.hasNext(); [] @AT@ 44164 @LENGTH@ 25
----INS MethodInvocation@@nd.setParentNode(parent) @TO@ ExpressionStatement@@MethodInvocation:nd.setParentNode(parent) @AT@ 44164 @LENGTH@ 24
-------INS SimpleName@@Name:nd @TO@ MethodInvocation@@nd.setParentNode(parent) @AT@ 44164 @LENGTH@ 2
-------INS SimpleName@@MethodName:setParentNode:[parent] @TO@ MethodInvocation@@nd.setParentNode(parent) @AT@ 44167 @LENGTH@ 21
----------INS SimpleName@@parent @TO@ SimpleName@@MethodName:setParentNode:[parent] @AT@ 44181 @LENGTH@ 6
-

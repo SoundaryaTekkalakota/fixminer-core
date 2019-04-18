@@ -1,8 +1,0 @@
- DEL EnhancedForStatement 
---- DEL SingleVariableDeclaration 
------- DEL SimpleType 
------- DEL SimpleName 
---- DEL QualifiedName 
------- DEL SimpleName 
------- DEL SimpleName 
---- DEL ExpressionStatement

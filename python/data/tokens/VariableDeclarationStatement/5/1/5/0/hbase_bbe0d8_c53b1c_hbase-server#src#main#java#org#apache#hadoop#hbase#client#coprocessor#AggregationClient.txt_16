@@ -1,0 +1,6 @@
+INS VariableDeclarationStatement@@HTable table=null; @TO@ MethodDeclaration@@private, Pair<List<S>,Long>, R, S, MethodName:getStdArgs, final byte[] tableName, final ColumnInterpreter<R,S> ci, final Scan scan, Throwable,  @AT@ 13017 @LENGTH@ 20
+---MOV SimpleType@@HTable @TO@ VariableDeclarationStatement@@HTable table=null; @AT@ 12277 @LENGTH@ 6
+---INS VariableDeclarationFragment@@table=null @TO@ VariableDeclarationStatement@@HTable table=null; @AT@ 13024 @LENGTH@ 12
+------MOV SimpleName@@table @TO@ VariableDeclarationFragment@@table=null @AT@ 12284 @LENGTH@ 5
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@table=null @AT@ 13032 @LENGTH@ 4
+

@@ -1,4 +1,0 @@
-UPD ReturnStatement@@MethodInvocation:root.isNull() @TO@ MethodInvocation:path.isNull() @AT@ 5692 @LENGTH@ 21
----UPD MethodInvocation@@root.isNull() @TO@ path.isNull() @AT@ 5699 @LENGTH@ 13
-------UPD SimpleName@@Name:root @TO@ Name:path @AT@ 5699 @LENGTH@ 4
-

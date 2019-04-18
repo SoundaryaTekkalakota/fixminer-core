@@ -1,4 +1,0 @@
- INS ReturnStatement TO IfStatement 
---- INS MethodInvocation TO ReturnStatement 
------- MOV SimpleName TO MethodInvocation 
------- MOV SimpleName TO MethodInvocation

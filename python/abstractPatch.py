@@ -4,7 +4,7 @@ import redis
 from common.commons import *
 
 DATA_PATH = os.environ["DATA_PATH"]
-
+jdk8 = os.environ["JDK8"]
 # def localPairCore(aTuple):
 #     redis_db = redis.StrictRedis(host="localhost", port=6380, db=1)
 #     idx, key = aTuple
@@ -172,7 +172,8 @@ def dumpFilesCore(t):
         filePath = join(DATA_PATH,'gumInput', project, 'DiffEntries', filename)
 
         key = root + '/*/'+dumpFile
-        cmd = 'java -jar ' + join(DATA_PATH,'Cluster2Pattern.jar') + " " + key
+        jdk8 = os.environ["JDK8"]
+        cmd = "JAVA_HOME='"+jdk8+"' java -jar "+ join(DATA_PATH,'Cluster2Pattern.jar') + " " + key
 
 
 

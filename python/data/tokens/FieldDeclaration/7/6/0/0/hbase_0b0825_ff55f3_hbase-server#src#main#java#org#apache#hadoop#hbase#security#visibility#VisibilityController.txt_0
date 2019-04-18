@@ -1,8 +1,0 @@
-INS FieldDeclaration@@private, volatile, boolean, [initialized=false] @TO@ TypeDeclaration@@[@InterfaceAudience.Private, public]VisibilityController, BaseRegionObserver[MasterObserver, RegionObserver, VisibilityLabelsService.Interface, CoprocessorService] @AT@ 7523 @LENGTH@ 45
----INS Modifier@@private @TO@ FieldDeclaration@@private, volatile, boolean, [initialized=false] @AT@ 7523 @LENGTH@ 7
----INS Modifier@@volatile @TO@ FieldDeclaration@@private, volatile, boolean, [initialized=false] @AT@ 7531 @LENGTH@ 8
----INS PrimitiveType@@boolean @TO@ FieldDeclaration@@private, volatile, boolean, [initialized=false] @AT@ 7540 @LENGTH@ 7
----INS VariableDeclarationFragment@@initialized=false @TO@ FieldDeclaration@@private, volatile, boolean, [initialized=false] @AT@ 7548 @LENGTH@ 19
-------INS SimpleName@@initialized @TO@ VariableDeclarationFragment@@initialized=false @AT@ 7548 @LENGTH@ 11
-------INS BooleanLiteral@@false @TO@ VariableDeclarationFragment@@initialized=false @AT@ 7562 @LENGTH@ 5
-

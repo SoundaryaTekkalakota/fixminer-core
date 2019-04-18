@@ -1,7 +1,0 @@
-ExpressionStatement 
----MethodInvocation 
-------SimpleName 
----------MethodInvocation 
-------------SimpleName 
----------------BooleanLiteral 
----------------SimpleName

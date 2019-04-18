@@ -1,6 +1,0 @@
-INS VariableDeclarationStatement@@String alias=extractTableAlias(); @TO@ MethodDeclaration@@public, String, MethodName:generateJumpToItemQuery, int itemIndex, int pageSize,  @AT@ 3306 @LENGTH@ 35
----INS SimpleType@@String @TO@ VariableDeclarationStatement@@String alias=extractTableAlias(); @AT@ 3306 @LENGTH@ 6
----INS VariableDeclarationFragment@@alias=extractTableAlias() @TO@ VariableDeclarationStatement@@String alias=extractTableAlias(); @AT@ 3313 @LENGTH@ 27
-------INS SimpleName@@alias @TO@ VariableDeclarationFragment@@alias=extractTableAlias() @AT@ 3313 @LENGTH@ 5
-------INS MethodInvocation@@MethodName:extractTableAlias:[] @TO@ VariableDeclarationFragment@@alias=extractTableAlias() @AT@ 3321 @LENGTH@ 19
-

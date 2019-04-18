@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:updateAttribute(parent,getElement(parent),newNode.getName(),listDelimiter) @TO@ MethodInvocation:updateAttribute(parent,getElement(parent),newNode.getName(),listDelimiter,isAttributeSplittingDisabled) @AT@ 50376 @LENGTH@ 78
+---UPD MethodInvocation@@updateAttribute(parent,getElement(parent),newNode.getName(),listDelimiter) @TO@ updateAttribute(parent,getElement(parent),newNode.getName(),listDelimiter,isAttributeSplittingDisabled) @AT@ 50376 @LENGTH@ 77
+------UPD SimpleName@@MethodName:updateAttribute:[parent, getElement(parent), newNode.getName(), listDelimiter] @TO@ MethodName:updateAttribute:[parent, getElement(parent), newNode.getName(), listDelimiter, isAttributeSplittingDisabled] @AT@ 50376 @LENGTH@ 77
+---------INS SimpleName@@isAttributeSplittingDisabled @TO@ SimpleName@@MethodName:updateAttribute:[parent, getElement(parent), newNode.getName(), listDelimiter] @AT@ 51040 @LENGTH@ 28
+

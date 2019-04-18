@@ -1,7 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:inferSchema((TimeseriesQuery)query,columnNames,columnTypes) @TO@ MethodInvocation:inferSchema((TimeseriesQuery)query,columnNames,columnTypes,mapColumnNamesTypes.build()) @AT@ 9818 @LENGTH@ 63
----UPD MethodInvocation@@inferSchema((TimeseriesQuery)query,columnNames,columnTypes) @TO@ inferSchema((TimeseriesQuery)query,columnNames,columnTypes,mapColumnNamesTypes.build()) @AT@ 9818 @LENGTH@ 62
-------UPD SimpleName@@MethodName:inferSchema:[(TimeseriesQuery)query, columnNames, columnTypes] @TO@ MethodName:inferSchema:[(TimeseriesQuery)query, columnNames, columnTypes, mapColumnNamesTypes.build()] @AT@ 9818 @LENGTH@ 62
----------INS MethodInvocation@@mapColumnNamesTypes.build() @TO@ SimpleName@@MethodName:inferSchema:[(TimeseriesQuery)query, columnNames, columnTypes] @AT@ 10818 @LENGTH@ 27
-------------INS SimpleName@@Name:mapColumnNamesTypes @TO@ MethodInvocation@@mapColumnNamesTypes.build() @AT@ 10818 @LENGTH@ 19
-------------INS SimpleName@@MethodName:build:[] @TO@ MethodInvocation@@mapColumnNamesTypes.build() @AT@ 10838 @LENGTH@ 7
-

@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:ServiceHelper.stopService(producerCache) @TO@ MethodInvocation:ServiceHelper.stopServices(producerCache,errorHandlers) @AT@ 16828 @LENGTH@ 41
+---UPD MethodInvocation@@ServiceHelper.stopService(producerCache) @TO@ ServiceHelper.stopServices(producerCache,errorHandlers) @AT@ 16828 @LENGTH@ 40
+------UPD SimpleName@@MethodName:stopService:[producerCache] @TO@ MethodName:stopServices:[producerCache, errorHandlers] @AT@ 16842 @LENGTH@ 26
+---------INS SimpleName@@errorHandlers @TO@ SimpleName@@MethodName:stopService:[producerCache] @AT@ 19959 @LENGTH@ 13
+

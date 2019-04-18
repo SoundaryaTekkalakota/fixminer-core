@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@Class<?> beanClass=predictBeanType(beanName,mbd,FactoryBean.class); @TO@ Class<?> beanType=predictBeanType(beanName,mbd,FactoryBean.class); @AT@ 52505 @LENGTH@ 71
+---UPD VariableDeclarationFragment@@beanClass=predictBeanType(beanName,mbd,FactoryBean.class) @TO@ beanType=predictBeanType(beanName,mbd,FactoryBean.class) @AT@ 52514 @LENGTH@ 61
+------UPD SimpleName@@beanClass @TO@ beanType @AT@ 52514 @LENGTH@ 9
+

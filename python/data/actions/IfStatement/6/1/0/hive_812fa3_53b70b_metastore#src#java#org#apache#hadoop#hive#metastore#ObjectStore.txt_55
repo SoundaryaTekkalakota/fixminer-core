@@ -1,0 +1,6 @@
+ DEL IfStatement 
+--- DEL PrefixExpression 
+------ DEL Operator 
+------ DEL SimpleName 
+--- DEL ExpressionStatement 
+------ DEL MethodInvocation

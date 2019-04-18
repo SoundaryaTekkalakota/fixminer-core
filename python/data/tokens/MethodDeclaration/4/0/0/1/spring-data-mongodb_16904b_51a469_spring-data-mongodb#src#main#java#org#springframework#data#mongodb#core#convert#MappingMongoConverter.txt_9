@@ -1,5 +1,0 @@
-UPD MethodDeclaration@@private, Collection<?>, MethodName:readCollectionOrArray, TypeInformation<?> targetType, BasicDBList sourceValue,  @TO@ private, Collection<?>, MethodName:readCollectionOrArray, TypeInformation<?> targetType, BasicDBList sourceValue, Object parent,  @AT@ 24615 @LENGTH@ 1008
----INS SingleVariableDeclaration@@Object parent @TO@ MethodDeclaration@@private, Collection<?>, MethodName:readCollectionOrArray, TypeInformation<?> targetType, BasicDBList sourceValue,  @AT@ 24991 @LENGTH@ 13
-------INS SimpleType@@Object @TO@ SingleVariableDeclaration@@Object parent @AT@ 24991 @LENGTH@ 6
-------INS SimpleName@@parent @TO@ SingleVariableDeclaration@@Object parent @AT@ 24998 @LENGTH@ 6
-

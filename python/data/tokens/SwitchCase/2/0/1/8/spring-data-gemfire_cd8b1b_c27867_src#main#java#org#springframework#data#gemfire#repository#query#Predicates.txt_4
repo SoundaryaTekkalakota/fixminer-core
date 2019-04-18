@@ -1,0 +1,3 @@
+INS SwitchCase@@SimpleName:TRUE @TO@ SwitchStatement@@SimpleName:type @AT@ 4665 @LENGTH@ 10
+---INS SimpleName@@TRUE @TO@ SwitchCase@@SimpleName:TRUE @AT@ 4670 @LENGTH@ 4
+

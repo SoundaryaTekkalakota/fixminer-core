@@ -1,6 +1,0 @@
-ExpressionStatement 
----MethodInvocation 
-------SimpleName 
----------SimpleName 
----------SimpleName 
----------NullLiteral

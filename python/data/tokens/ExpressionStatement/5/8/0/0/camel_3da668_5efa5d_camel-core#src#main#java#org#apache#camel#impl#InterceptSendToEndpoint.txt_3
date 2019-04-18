@@ -1,0 +1,6 @@
+INS ExpressionStatement@@MethodInvocation:callback.done(true) @TO@ CatchClause@@Exception e @AT@ 4622 @LENGTH@ 20
+---INS MethodInvocation@@callback.done(true) @TO@ ExpressionStatement@@MethodInvocation:callback.done(true) @AT@ 4622 @LENGTH@ 19
+------INS SimpleName@@Name:callback @TO@ MethodInvocation@@callback.done(true) @AT@ 4622 @LENGTH@ 8
+------INS SimpleName@@MethodName:done:[true] @TO@ MethodInvocation@@callback.done(true) @AT@ 4631 @LENGTH@ 10
+---------INS BooleanLiteral@@true @TO@ SimpleName@@MethodName:done:[true] @AT@ 4636 @LENGTH@ 4
+

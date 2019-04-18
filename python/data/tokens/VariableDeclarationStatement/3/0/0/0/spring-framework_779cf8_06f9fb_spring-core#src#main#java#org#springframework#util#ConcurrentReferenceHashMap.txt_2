@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@Reference<K,V> reference=getReference(key,Restructure.WHEN_NECESSARY); @TO@ Reference<K,V> ref=getReference(key,Restructure.WHEN_NECESSARY); @AT@ 8751 @LENGTH@ 74
+---UPD VariableDeclarationFragment@@reference=getReference(key,Restructure.WHEN_NECESSARY) @TO@ ref=getReference(key,Restructure.WHEN_NECESSARY) @AT@ 8767 @LENGTH@ 57
+------UPD SimpleName@@reference @TO@ ref @AT@ 8767 @LENGTH@ 9
+

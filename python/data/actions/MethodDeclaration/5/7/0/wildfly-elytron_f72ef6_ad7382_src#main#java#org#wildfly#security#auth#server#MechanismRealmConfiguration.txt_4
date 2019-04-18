@@ -1,0 +1,5 @@
+ UPD MethodDeclaration 
+--- DEL PrimitiveType 
+--- INS SimpleType TO MethodDeclaration 
+--- INS ReturnStatement TO MethodDeclaration 
+------ INS ThisExpression TO ReturnStatement

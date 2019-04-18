@@ -1,6 +1,0 @@
-INS VariableDeclarationStatement@@XMLOutputFactory factory=getOutputFactory(); @TO@ MethodDeclaration@@public, XMLEventWriter, MethodName:createXMLEventWriter, Result result, XMLStreamException,  @AT@ 3607 @LENGTH@ 46
----INS SimpleType@@XMLOutputFactory @TO@ VariableDeclarationStatement@@XMLOutputFactory factory=getOutputFactory(); @AT@ 3607 @LENGTH@ 16
----INS VariableDeclarationFragment@@factory=getOutputFactory() @TO@ VariableDeclarationStatement@@XMLOutputFactory factory=getOutputFactory(); @AT@ 3624 @LENGTH@ 28
-------INS SimpleName@@factory @TO@ VariableDeclarationFragment@@factory=getOutputFactory() @AT@ 3624 @LENGTH@ 7
-------INS MethodInvocation@@MethodName:getOutputFactory:[] @TO@ VariableDeclarationFragment@@factory=getOutputFactory() @AT@ 3634 @LENGTH@ 18
-

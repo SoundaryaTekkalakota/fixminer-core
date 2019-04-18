@@ -1,0 +1,10 @@
+INS IfStatement@@MethodInvocation:grpByExprs.isEmpty() @TO@ MethodDeclaration@@private, ReduceSinkOperator, MethodName:genCommonGroupByPlanReduceSinkOperator, QB qb, List<String> dests, Operator inputOperatorInfo, SemanticException,  @AT@ 181481 @LENGTH@ 56
+---INS MethodInvocation@@grpByExprs.isEmpty() @TO@ IfStatement@@MethodInvocation:grpByExprs.isEmpty() @AT@ 181485 @LENGTH@ 20
+------INS SimpleName@@Name:grpByExprs @TO@ MethodInvocation@@grpByExprs.isEmpty() @AT@ 181485 @LENGTH@ 10
+------INS SimpleName@@MethodName:isEmpty:[] @TO@ MethodInvocation@@grpByExprs.isEmpty() @AT@ 181496 @LENGTH@ 9
+---INS ExpressionStatement@@Assignment:numReducers=1 @TO@ IfStatement@@MethodInvocation:grpByExprs.isEmpty() @AT@ 181515 @LENGTH@ 16
+------INS Assignment@@numReducers=1 @TO@ ExpressionStatement@@Assignment:numReducers=1 @AT@ 181515 @LENGTH@ 15
+---------INS SimpleName@@numReducers @TO@ Assignment@@numReducers=1 @AT@ 181515 @LENGTH@ 11
+---------INS Operator@@= @TO@ Assignment@@numReducers=1 @AT@ 181526 @LENGTH@ 1
+---------INS NumberLiteral@@1 @TO@ Assignment@@numReducers=1 @AT@ 181529 @LENGTH@ 1
+

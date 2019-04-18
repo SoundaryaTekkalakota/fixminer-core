@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:changeFAR(filter.filterRowKey(buffer,offset,length)) @TO@ MethodInvocation:changeFAR(value) @AT@ 1580 @LENGTH@ 55
+---UPD MethodInvocation@@changeFAR(filter.filterRowKey(buffer,offset,length)) @TO@ changeFAR(value) @AT@ 1580 @LENGTH@ 54
+------UPD SimpleName@@MethodName:changeFAR:[filter.filterRowKey(buffer,offset,length)] @TO@ MethodName:changeFAR:[value] @AT@ 1580 @LENGTH@ 54
+---------INS SimpleName@@value @TO@ SimpleName@@MethodName:changeFAR:[filter.filterRowKey(buffer,offset,length)] @AT@ 2060 @LENGTH@ 5
+

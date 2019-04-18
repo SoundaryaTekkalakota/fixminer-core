@@ -1,6 +1,0 @@
-INS VariableDeclarationStatement@@OperationManager operationManager=getOperationManager(); @TO@ MethodDeclaration@@public, OperationHandle, MethodName:getTables, String catalogName, String schemaName, String tableName, List<String> tableTypes, HiveSQLException,  @AT@ 8837 @LENGTH@ 58
----INS SimpleType@@OperationManager @TO@ VariableDeclarationStatement@@OperationManager operationManager=getOperationManager(); @AT@ 8837 @LENGTH@ 16
----INS VariableDeclarationFragment@@operationManager=getOperationManager() @TO@ VariableDeclarationStatement@@OperationManager operationManager=getOperationManager(); @AT@ 8854 @LENGTH@ 40
-------INS SimpleName@@operationManager @TO@ VariableDeclarationFragment@@operationManager=getOperationManager() @AT@ 8854 @LENGTH@ 16
-------INS MethodInvocation@@MethodName:getOperationManager:[] @TO@ VariableDeclarationFragment@@operationManager=getOperationManager() @AT@ 8873 @LENGTH@ 21
-

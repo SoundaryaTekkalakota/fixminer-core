@@ -1,5 +1,0 @@
-INS SwitchCase@@QualifiedName:Token.LP @TO@ SwitchStatement@@MethodInvocation:n.getType() @AT@ 4233 @LENGTH@ 14
----INS QualifiedName@@Token.LP @TO@ SwitchCase@@QualifiedName:Token.LP @AT@ 4238 @LENGTH@ 8
-------INS SimpleName@@Token @TO@ QualifiedName@@Token.LP @AT@ 4238 @LENGTH@ 5
-------INS SimpleName@@LP @TO@ QualifiedName@@Token.LP @AT@ 4244 @LENGTH@ 2
-

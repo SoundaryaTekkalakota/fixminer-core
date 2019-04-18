@@ -1,8 +1,0 @@
-INS IfStatement@@InfixExpression:object == null @TO@ MethodDeclaration@@public, List<Object>, MethodName:getStructFieldsDataAsList, Object object,  @AT@ 6623 @LENGTH@ 50
----INS InfixExpression@@object == null @TO@ IfStatement@@InfixExpression:object == null @AT@ 6627 @LENGTH@ 14
-------INS SimpleName@@object @TO@ InfixExpression@@object == null @AT@ 6627 @LENGTH@ 6
-------INS Operator@@== @TO@ InfixExpression@@object == null @AT@ 6633 @LENGTH@ 2
-------INS NullLiteral@@null @TO@ InfixExpression@@object == null @AT@ 6637 @LENGTH@ 4
----INS ReturnStatement@@NullLiteral:null @TO@ IfStatement@@InfixExpression:object == null @AT@ 6653 @LENGTH@ 12
-------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 6660 @LENGTH@ 4
-

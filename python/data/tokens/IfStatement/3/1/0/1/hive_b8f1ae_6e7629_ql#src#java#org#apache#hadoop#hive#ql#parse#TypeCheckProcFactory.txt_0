@@ -1,4 +1,0 @@
-UPD IfStatement@@InfixExpression:triedDouble || (genericUDF instanceof GenericUDFOPEqual && !columnType.equals(serdeConstants.STRING_TYPE_NAME)) @TO@ InfixExpression:triedDouble && (genericUDF instanceof GenericUDFOPEqual && !columnType.equals(serdeConstants.STRING_TYPE_NAME)) @AT@ 41455 @LENGTH@ 226
----UPD InfixExpression@@triedDouble || (genericUDF instanceof GenericUDFOPEqual && !columnType.equals(serdeConstants.STRING_TYPE_NAME)) @TO@ triedDouble && (genericUDF instanceof GenericUDFOPEqual && !columnType.equals(serdeConstants.STRING_TYPE_NAME)) @AT@ 41459 @LENGTH@ 147
-------UPD Operator@@|| @TO@ && @AT@ 41470 @LENGTH@ 2
-

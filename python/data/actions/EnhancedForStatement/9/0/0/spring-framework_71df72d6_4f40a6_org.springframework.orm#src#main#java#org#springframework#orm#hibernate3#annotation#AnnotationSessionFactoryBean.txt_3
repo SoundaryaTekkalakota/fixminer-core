@@ -1,9 +1,0 @@
- INS EnhancedForStatement TO IfStatement 
---- INS SingleVariableDeclaration TO EnhancedForStatement 
------- INS SimpleType TO SingleVariableDeclaration 
------- INS SimpleName TO SingleVariableDeclaration 
---- INS FieldAccess TO EnhancedForStatement 
------- MOV ThisExpression TO FieldAccess 
------- MOV SimpleName TO FieldAccess 
---- INS ExpressionStatement TO EnhancedForStatement 
------- MOV MethodInvocation TO ExpressionStatement

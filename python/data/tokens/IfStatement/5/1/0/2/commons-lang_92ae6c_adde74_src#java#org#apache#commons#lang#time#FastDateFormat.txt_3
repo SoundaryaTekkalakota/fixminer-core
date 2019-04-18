@@ -1,6 +1,0 @@
-DEL IfStatement@@InfixExpression:locale != null @AT@ 17211 @LENGTH@ 72
----DEL InfixExpression@@locale != null @AT@ 17215 @LENGTH@ 14
-------DEL SimpleName@@locale @AT@ 17215 @LENGTH@ 6
-------DEL Operator@@!= @AT@ 17221 @LENGTH@ 2
-------DEL NullLiteral@@null @AT@ 17225 @LENGTH@ 4
-

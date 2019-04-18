@@ -1,4 +1,0 @@
- INS VariableDeclarationStatement TO MethodDeclaration 
---- INS SimpleType TO VariableDeclarationStatement 
---- INS VariableDeclarationFragment TO VariableDeclarationStatement 
------- INS SimpleName TO VariableDeclarationFragment

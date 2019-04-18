@@ -1,0 +1,11 @@
+ UPD MethodDeclaration 
+--- DEL SingleVariableDeclaration 
+------ DEL SimpleType 
+------ DEL SimpleName 
+--- DEL ExpressionStatement 
+------ DEL Assignment 
+--------- DEL FieldAccess 
+------------ DEL ThisExpression 
+------------ DEL SimpleName 
+--------- DEL Operator 
+--------- DEL SimpleName

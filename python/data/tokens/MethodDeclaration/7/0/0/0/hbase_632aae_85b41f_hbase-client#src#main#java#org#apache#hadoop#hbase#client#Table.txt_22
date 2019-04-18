@@ -1,8 +1,0 @@
-UPD MethodDeclaration@@Result, MethodName:append, final Append append, IOException,  @TO@ default, Result, MethodName:append, final Append append, IOException,  @AT@ 20186 @LENGTH@ 47
----INS Modifier@@default @TO@ MethodDeclaration@@Result, MethodName:append, final Append append, IOException,  @AT@ 21917 @LENGTH@ 7
----INS ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @TO@ MethodDeclaration@@Result, MethodName:append, final Append append, IOException,  @AT@ 21985 @LENGTH@ 60
-------INS ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @TO@ ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @AT@ 21991 @LENGTH@ 53
----------INS New@@new @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 21991 @LENGTH@ 3
----------INS SimpleType@@NotImplementedException @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 21995 @LENGTH@ 23
----------INS StringLiteral@@"Add an implementation!" @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 22019 @LENGTH@ 24
-

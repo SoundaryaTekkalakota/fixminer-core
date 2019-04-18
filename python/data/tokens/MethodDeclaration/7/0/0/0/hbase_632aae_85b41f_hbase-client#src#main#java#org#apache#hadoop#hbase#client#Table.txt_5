@@ -1,8 +1,0 @@
-UPD MethodDeclaration@@Result[], MethodName:get, List<Get> gets, IOException,  @TO@ default, Result[], MethodName:get, List<Get> gets, IOException,  @AT@ 7504 @LENGTH@ 39
----INS Modifier@@default @TO@ MethodDeclaration@@Result[], MethodName:get, List<Get> gets, IOException,  @AT@ 7985 @LENGTH@ 7
----INS ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @TO@ MethodDeclaration@@Result[], MethodName:get, List<Get> gets, IOException,  @AT@ 8047 @LENGTH@ 60
-------INS ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @TO@ ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @AT@ 8053 @LENGTH@ 53
----------INS New@@new @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 8053 @LENGTH@ 3
----------INS SimpleType@@NotImplementedException @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 8057 @LENGTH@ 23
----------INS StringLiteral@@"Add an implementation!" @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 8081 @LENGTH@ 24
-

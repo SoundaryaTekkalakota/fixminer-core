@@ -1,8 +1,0 @@
-UPD MethodDeclaration@@Result, MethodName:increment, final Increment increment, IOException,  @TO@ default, Result, MethodName:increment, final Increment increment, IOException,  @AT@ 20753 @LENGTH@ 56
----INS Modifier@@default @TO@ MethodDeclaration@@Result, MethodName:increment, final Increment increment, IOException,  @AT@ 22562 @LENGTH@ 7
----INS ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @TO@ MethodDeclaration@@Result, MethodName:increment, final Increment increment, IOException,  @AT@ 22639 @LENGTH@ 60
-------INS ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @TO@ ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @AT@ 22645 @LENGTH@ 53
----------INS New@@new @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 22645 @LENGTH@ 3
----------INS SimpleType@@NotImplementedException @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 22649 @LENGTH@ 23
----------INS StringLiteral@@"Add an implementation!" @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 22673 @LENGTH@ 24
-

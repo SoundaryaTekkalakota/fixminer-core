@@ -1,0 +1,14 @@
+DEL FieldDeclaration@@private, static, final, Set<String>, [NOT_EXPECTED=new HashSet<>()] @AT@ 8602 @LENGTH@ 64
+---DEL Modifier@@private @AT@ 8602 @LENGTH@ 7
+---DEL Modifier@@static @AT@ 8610 @LENGTH@ 6
+---DEL Modifier@@final @AT@ 8617 @LENGTH@ 5
+---DEL ParameterizedType@@Set<String> @AT@ 8623 @LENGTH@ 11
+------DEL SimpleType@@Set @AT@ 8623 @LENGTH@ 3
+------DEL SimpleType@@String @AT@ 8627 @LENGTH@ 6
+---DEL VariableDeclarationFragment@@NOT_EXPECTED=new HashSet<>() @AT@ 8635 @LENGTH@ 30
+------DEL SimpleName@@NOT_EXPECTED @AT@ 8635 @LENGTH@ 12
+------DEL ClassInstanceCreation@@HashSet<>[] @AT@ 8650 @LENGTH@ 15
+---------DEL New@@new @AT@ 8650 @LENGTH@ 3
+---------DEL ParameterizedType@@HashSet<> @AT@ 8654 @LENGTH@ 9
+------------DEL SimpleType@@HashSet @AT@ 8654 @LENGTH@ 7
+

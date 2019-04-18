@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:handleItemHandler("skip-policy","skipPolicy",null,false,element,parserContext,propertyValues,underspecified) @TO@ MethodInvocation:handleItemHandler(bd,"skip-policy","skipPolicy",null,false,element,parserContext,propertyValues,underspecified) @AT@ 5807 @LENGTH@ 120
+---UPD MethodInvocation@@handleItemHandler("skip-policy","skipPolicy",null,false,element,parserContext,propertyValues,underspecified) @TO@ handleItemHandler(bd,"skip-policy","skipPolicy",null,false,element,parserContext,propertyValues,underspecified) @AT@ 5807 @LENGTH@ 119
+------UPD SimpleName@@MethodName:handleItemHandler:["skip-policy", "skipPolicy", null, false, element, parserContext, propertyValues, underspecified] @TO@ MethodName:handleItemHandler:[bd, "skip-policy", "skipPolicy", null, false, element, parserContext, propertyValues, underspecified] @AT@ 5807 @LENGTH@ 119
+---------INS SimpleName@@bd @TO@ SimpleName@@MethodName:handleItemHandler:["skip-policy", "skipPolicy", null, false, element, parserContext, propertyValues, underspecified] @AT@ 5837 @LENGTH@ 2
+

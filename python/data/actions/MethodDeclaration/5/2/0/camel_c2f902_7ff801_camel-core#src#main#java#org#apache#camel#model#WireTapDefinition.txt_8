@@ -1,5 +1,0 @@
- UPD MethodDeclaration 
---- INS ParameterizedType TO MethodDeclaration 
------- INS SimpleType TO ParameterizedType 
------- INS SimpleType TO ParameterizedType 
---- DEL SimpleType

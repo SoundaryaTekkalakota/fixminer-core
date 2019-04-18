@@ -1,0 +1,3 @@
+UPD TypeDeclaration@@[public]ScheduledAnnotationBeanPostProcessor, [BeanPostProcessor, Ordered, ApplicationListener<ContextRefreshedEvent>, DisposableBean] @TO@ [public]ScheduledAnnotationBeanPostProcessor, [BeanPostProcessor, Ordered, ApplicationContextAware, ApplicationListener<ContextRefreshedEvent>, DisposableBean] @AT@ 1775 @LENGTH@ 3437
+---INS SimpleType@@ApplicationContextAware @TO@ TypeDeclaration@@[public]ScheduledAnnotationBeanPostProcessor, [BeanPostProcessor, Ordered, ApplicationListener<ContextRefreshedEvent>, DisposableBean] @AT@ 2106 @LENGTH@ 23
+

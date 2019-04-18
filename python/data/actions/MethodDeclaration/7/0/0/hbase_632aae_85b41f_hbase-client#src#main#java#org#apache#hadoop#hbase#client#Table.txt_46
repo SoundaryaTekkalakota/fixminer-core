@@ -1,7 +1,0 @@
- UPD MethodDeclaration 
---- INS Modifier TO MethodDeclaration 
---- INS ThrowStatement TO MethodDeclaration 
------- INS ClassInstanceCreation TO ThrowStatement 
---------- INS New TO ClassInstanceCreation 
---------- INS SimpleType TO ClassInstanceCreation 
---------- INS StringLiteral TO ClassInstanceCreation

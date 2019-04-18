@@ -1,7 +1,0 @@
- INS VariableDeclarationStatement TO SwitchStatement 
---- INS SimpleType TO VariableDeclarationStatement 
---- INS VariableDeclarationFragment TO VariableDeclarationStatement 
------- INS SimpleName TO VariableDeclarationFragment 
------- INS MethodInvocation TO VariableDeclarationFragment 
---------- INS SimpleName TO MethodInvocation 
---------- INS SimpleName TO MethodInvocation

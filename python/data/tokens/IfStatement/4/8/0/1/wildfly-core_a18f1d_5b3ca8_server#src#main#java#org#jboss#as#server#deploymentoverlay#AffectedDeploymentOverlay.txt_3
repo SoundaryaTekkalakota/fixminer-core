@@ -1,5 +1,0 @@
-UPD IfStatement@@InfixExpression:operationAddress.size() > 1 && operationAddress.size() >= overlayAddress.size() @TO@ InfixExpression:operationAddress.size() >= 1 && operationAddress.size() >= overlayAddress.size() @AT@ 15971 @LENGTH@ 394
----UPD InfixExpression@@operationAddress.size() > 1 && operationAddress.size() >= overlayAddress.size() @TO@ operationAddress.size() >= 1 && operationAddress.size() >= overlayAddress.size() @AT@ 15975 @LENGTH@ 79
-------UPD InfixExpression@@operationAddress.size() > 1 @TO@ operationAddress.size() >= 1 @AT@ 15975 @LENGTH@ 27
----------UPD Operator@@> @TO@ >= @AT@ 15998 @LENGTH@ 1
-

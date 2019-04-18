@@ -1,8 +1,0 @@
-UPD MethodDeclaration@@ResultScanner, MethodName:getScanner, Scan scan, IOException,  @TO@ default, ResultScanner, MethodName:getScanner, Scan scan, IOException,  @AT@ 7922 @LENGTH@ 41
----INS Modifier@@default @TO@ MethodDeclaration@@ResultScanner, MethodName:getScanner, Scan scan, IOException,  @AT@ 8476 @LENGTH@ 7
----INS ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @TO@ MethodDeclaration@@ResultScanner, MethodName:getScanner, Scan scan, IOException,  @AT@ 8545 @LENGTH@ 60
-------INS ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @TO@ ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @AT@ 8551 @LENGTH@ 53
----------INS New@@new @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 8551 @LENGTH@ 3
----------INS SimpleType@@NotImplementedException @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 8555 @LENGTH@ 23
----------INS StringLiteral@@"Add an implementation!" @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 8579 @LENGTH@ 24
-

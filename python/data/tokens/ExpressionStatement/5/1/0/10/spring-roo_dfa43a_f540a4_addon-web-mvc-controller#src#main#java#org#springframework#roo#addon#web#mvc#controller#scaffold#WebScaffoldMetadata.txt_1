@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:requestMappingAttributes.add(PRODUCES_HTML) @TO@ MethodDeclaration@@private, MethodMetadataBuilder, MethodName:getDeleteMethod, final MemberTypeAdditions deleteMethodAdditions, final MemberTypeAdditions findMethod,  @AT@ 13739 @LENGTH@ 44
----INS MethodInvocation@@requestMappingAttributes.add(PRODUCES_HTML) @TO@ ExpressionStatement@@MethodInvocation:requestMappingAttributes.add(PRODUCES_HTML) @AT@ 13739 @LENGTH@ 43
-------INS SimpleName@@Name:requestMappingAttributes @TO@ MethodInvocation@@requestMappingAttributes.add(PRODUCES_HTML) @AT@ 13739 @LENGTH@ 24
-------INS SimpleName@@MethodName:add:[PRODUCES_HTML] @TO@ MethodInvocation@@requestMappingAttributes.add(PRODUCES_HTML) @AT@ 13764 @LENGTH@ 18
----------INS SimpleName@@PRODUCES_HTML @TO@ SimpleName@@MethodName:add:[PRODUCES_HTML] @AT@ 13768 @LENGTH@ 13
-

@@ -1,9 +1,0 @@
-VariableDeclarationStatement 
----ArrayType 
-------PrimitiveType 
----VariableDeclarationFragment 
-------SimpleName 
-------ArrayCreation 
----------ArrayType 
-------------PrimitiveType 
----------SimpleName

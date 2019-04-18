@@ -73,14 +73,18 @@ def parseCore(br):
 
                     commentsCount = len(re.findall(r'\"comment-[0-9]+', soup.getText()))
                     if desc is not None:
-                        bugReport.loc[ind] = [br, summary, desc.text,created,updated,resolved,reporterDN,reporterEmail,isAttachment,attachmentTime,isPR,commentsCount]
-                        ind += 1
+                        # bugReport.loc[ind] = [br, summary, desc.text,created,updated,resolved,reporterDN,reporterEmail,isAttachment,attachmentTime,isPR,commentsCount]
+                        return [br, summary, desc.text, created, updated, resolved, reporterDN,
+                                              reporterEmail, isAttachment, attachmentTime, isPR, commentsCount]
+                        # ind += 1
                     else:
-                        bugReport.loc[ind] = [br, summary, None, created, updated, resolved, reporterDN, reporterEmail,
+                        # bugReport.loc[ind] = [br, summary, None, created, updated, resolved, reporterDN, reporterEmail,
+                        #                       isAttachment,attachmentTime,isPR,commentsCount]
+                        return [br, summary, None, created, updated, resolved, reporterDN, reporterEmail,
                                               isAttachment,attachmentTime,isPR,commentsCount]
-                        ind += 1
-            else:
-                print(type.text.strip())
+                        # ind += 1
+            # else:
+            #     print(type.text.strip())
         else:
             importance = (
                 soup.find('a', {'href': 'page.cgi?id=fields.html#importance'}).parent.parent.parent.td.text.strip())
@@ -99,7 +103,7 @@ def parseCore(br):
                         bugReport.loc[ind] = [br, summary, desc]
                         ind += 1
                 # desc
-        return  bugReport
+        # return  bugReport
 
 def parallelRun(coreFun,elements,*args):
     with concurrent.futures.ProcessPoolExecutor() as executor:
@@ -150,7 +154,19 @@ def step1(subject):
     else:
         bids = [f for f in os.listdir(BUG_REPORT_PATH) if f.startswith(subject)]
     bids = [i for i in bids if not i.startswith('.')]
-    br = parallelRun(parseCore,bids)
+
+    # bids = bids[:100]
+
+
+
+    dataL = parallelRunMerge(parseCore,bids)
+    logging.info('Finish parsing')
+    # list(filter(None.__ne__, dataL))
+    br = pd.DataFrame(
+        columns=['bugReport', 'summary', 'description', 'created', 'updated', 'resolved', 'reporterDN', 'reporterEmail',
+                 'hasAttachment', 'attachmentTime', 'hasPR', 'commentsCount'], data=list(filter(None.__ne__, dataL)))
+    # br = pd.concat(dataL)
+    logging.info('Finish parsing')
     br['project'] = br.bugReport.apply(lambda x: x.split('-')[0])
     br['bid'] = br.bugReport.apply(lambda x: x.split('.')[0])
     br['committerEmail'] = br.bid.apply(lambda x: getCommitter(x))

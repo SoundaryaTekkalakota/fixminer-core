@@ -1,0 +1,15 @@
+ INS IfStatement TO MethodDeclaration 
+--- MOV PrefixExpression TO IfStatement 
+--- INS IfStatement TO IfStatement 
+------ MOV InfixExpression TO IfStatement 
+------ MOV ExpressionStatement TO IfStatement 
+------ INS ThrowStatement TO IfStatement 
+--------- INS ClassInstanceCreation TO ThrowStatement 
+------------ INS New TO ClassInstanceCreation 
+------------ INS SimpleType TO ClassInstanceCreation 
+------------ INS InfixExpression TO ClassInstanceCreation 
+--------------- INS StringLiteral TO InfixExpression 
+--------------- INS Operator TO InfixExpression 
+--------------- INS MethodInvocation TO InfixExpression 
+------------------ MOV SimpleName TO MethodInvocation 
+------------------ MOV SimpleName TO MethodInvocation

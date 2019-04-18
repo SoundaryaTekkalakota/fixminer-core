@@ -1,5 +1,0 @@
-INS VariableDeclarationStatement@@Runnable cleanupTask; @TO@ MethodDeclaration@@public, ListenableFuture<Void>, MethodName:connect, final TcpConnectionHandler<P> connectionHandler,  @AT@ 6318 @LENGTH@ 21
----INS SimpleType@@Runnable @TO@ VariableDeclarationStatement@@Runnable cleanupTask; @AT@ 6318 @LENGTH@ 8
----INS VariableDeclarationFragment@@cleanupTask @TO@ VariableDeclarationStatement@@Runnable cleanupTask; @AT@ 6327 @LENGTH@ 11
-------INS SimpleName@@cleanupTask @TO@ VariableDeclarationFragment@@cleanupTask @AT@ 6327 @LENGTH@ 11
-

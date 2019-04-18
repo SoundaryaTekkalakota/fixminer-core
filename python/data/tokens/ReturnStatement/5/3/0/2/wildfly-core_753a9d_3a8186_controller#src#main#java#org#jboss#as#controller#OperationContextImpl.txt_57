@@ -1,0 +1,6 @@
+INS ReturnStatement@@MethodInvocation:delegate.addDependency(dependency) @TO@ MethodDeclaration@@public, ServiceTarget, MethodName:addDependency, final ServiceName dependency,  @AT@ 102807 @LENGTH@ 42
+---INS MethodInvocation@@delegate.addDependency(dependency) @TO@ ReturnStatement@@MethodInvocation:delegate.addDependency(dependency) @AT@ 102814 @LENGTH@ 34
+------INS SimpleName@@Name:delegate @TO@ MethodInvocation@@delegate.addDependency(dependency) @AT@ 102814 @LENGTH@ 8
+------INS SimpleName@@MethodName:addDependency:[dependency] @TO@ MethodInvocation@@delegate.addDependency(dependency) @AT@ 102823 @LENGTH@ 25
+---------INS SimpleName@@dependency @TO@ SimpleName@@MethodName:addDependency:[dependency] @AT@ 102837 @LENGTH@ 10
+

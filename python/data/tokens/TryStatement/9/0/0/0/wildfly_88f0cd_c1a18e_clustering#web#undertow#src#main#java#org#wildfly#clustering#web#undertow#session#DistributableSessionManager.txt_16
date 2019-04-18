@@ -1,0 +1,10 @@
+DEL TryStatement@@try:[] @AT@ 8154 @LENGTH@ 980
+---DEL Block@@FinallyBody @AT@ 9040 @LENGTH@ 94
+------DEL IfStatement@@SimpleName:close @AT@ 9054 @LENGTH@ 70
+---------DEL SimpleName@@close @AT@ 9058 @LENGTH@ 5
+---------DEL ExpressionStatement@@MethodInvocation:closeTask.accept(exchange) @AT@ 9083 @LENGTH@ 27
+------------DEL MethodInvocation@@closeTask.accept(exchange) @AT@ 9083 @LENGTH@ 26
+---------------DEL SimpleName@@Name:closeTask @AT@ 9083 @LENGTH@ 9
+---------------DEL SimpleName@@MethodName:accept:[exchange] @AT@ 9093 @LENGTH@ 16
+------------------DEL SimpleName@@exchange @AT@ 9100 @LENGTH@ 8
+

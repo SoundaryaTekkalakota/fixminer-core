@@ -1,8 +1,0 @@
- INS EnumDeclaration TO TypeDeclaration 
---- INS SimpleName TO EnumDeclaration 
---- INS EnumConstantDeclaration TO EnumDeclaration 
------- INS SimpleName TO EnumConstantDeclaration 
---- INS EnumConstantDeclaration TO EnumDeclaration 
------- INS SimpleName TO EnumConstantDeclaration 
---- INS EnumConstantDeclaration TO EnumDeclaration 
------- INS SimpleName TO EnumConstantDeclaration

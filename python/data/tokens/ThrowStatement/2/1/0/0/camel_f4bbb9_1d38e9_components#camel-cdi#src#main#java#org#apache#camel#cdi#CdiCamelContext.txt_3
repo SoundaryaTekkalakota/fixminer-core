@@ -1,3 +1,0 @@
-INS ThrowStatement@@MethodInvocation:ObjectHelper.wrapRuntimeCamelException(e) @TO@ CatchClause@@Exception e @AT@ 2213 @LENGTH@ 48
----MOV MethodInvocation@@ObjectHelper.wrapRuntimeCamelException(e) @TO@ ThrowStatement@@MethodInvocation:ObjectHelper.wrapRuntimeCamelException(e) @AT@ 2207 @LENGTH@ 41
-

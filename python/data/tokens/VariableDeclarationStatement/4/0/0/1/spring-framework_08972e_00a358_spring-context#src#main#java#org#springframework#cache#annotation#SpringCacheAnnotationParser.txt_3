@@ -1,0 +1,5 @@
+UPD VariableDeclarationStatement@@Collection<Caching> cachings=AnnotatedElementUtils.findAllMergedAnnotations(ae,Caching.class); @TO@ Collection<Caching> cachings=AnnotatedElementUtils.getAllMergedAnnotations(ae,Caching.class); @AT@ 3167 @LENGTH@ 97
+---UPD VariableDeclarationFragment@@cachings=AnnotatedElementUtils.findAllMergedAnnotations(ae,Caching.class) @TO@ cachings=AnnotatedElementUtils.getAllMergedAnnotations(ae,Caching.class) @AT@ 3187 @LENGTH@ 76
+------UPD MethodInvocation@@AnnotatedElementUtils.findAllMergedAnnotations(ae,Caching.class) @TO@ AnnotatedElementUtils.getAllMergedAnnotations(ae,Caching.class) @AT@ 3198 @LENGTH@ 65
+---------UPD SimpleName@@MethodName:findAllMergedAnnotations:[ae, Caching.class] @TO@ MethodName:getAllMergedAnnotations:[ae, Caching.class] @AT@ 3220 @LENGTH@ 43
+

@@ -1,0 +1,7 @@
+INS ExpressionStatement@@MethodInvocation:failoverProcessedRegions.put(encodedRegionName,regionInfo) @TO@ SwitchStatement@@MethodInvocation:data.getEventType() @AT@ 22510 @LENGTH@ 60
+---INS MethodInvocation@@failoverProcessedRegions.put(encodedRegionName,regionInfo) @TO@ ExpressionStatement@@MethodInvocation:failoverProcessedRegions.put(encodedRegionName,regionInfo) @AT@ 22510 @LENGTH@ 59
+------INS SimpleName@@Name:failoverProcessedRegions @TO@ MethodInvocation@@failoverProcessedRegions.put(encodedRegionName,regionInfo) @AT@ 22510 @LENGTH@ 24
+------INS SimpleName@@MethodName:put:[encodedRegionName, regionInfo] @TO@ MethodInvocation@@failoverProcessedRegions.put(encodedRegionName,regionInfo) @AT@ 22535 @LENGTH@ 34
+---------INS SimpleName@@encodedRegionName @TO@ SimpleName@@MethodName:put:[encodedRegionName, regionInfo] @AT@ 22539 @LENGTH@ 17
+---------INS SimpleName@@regionInfo @TO@ SimpleName@@MethodName:put:[encodedRegionName, regionInfo] @AT@ 22558 @LENGTH@ 10
+

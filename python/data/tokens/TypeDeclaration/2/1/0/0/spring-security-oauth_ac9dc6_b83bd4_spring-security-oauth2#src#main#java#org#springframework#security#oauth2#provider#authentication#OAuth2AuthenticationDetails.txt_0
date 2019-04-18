@@ -1,0 +1,3 @@
+UPD TypeDeclaration@@[public]OAuth2AuthenticationDetails,  @TO@ [public]OAuth2AuthenticationDetails, [Serializable] @AT@ 789 @LENGTH@ 1412
+---INS SimpleType@@Serializable @TO@ TypeDeclaration@@[public]OAuth2AuthenticationDetails,  @AT@ 871 @LENGTH@ 12
+

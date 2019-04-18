@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.error("Failed to rollback, everything will probably go bad from here.") @TO@ MethodInvocation:LOG.error("Failed to rollback, everything will probably go bad from here.",e) @AT@ 37460 @LENGTH@ 76
+---UPD MethodInvocation@@LOG.error("Failed to rollback, everything will probably go bad from here.") @TO@ LOG.error("Failed to rollback, everything will probably go bad from here.",e) @AT@ 37460 @LENGTH@ 75
+------UPD SimpleName@@MethodName:error:["Failed to rollback, everything will probably go bad from here."] @TO@ MethodName:error:["Failed to rollback, everything will probably go bad from here.", e] @AT@ 37464 @LENGTH@ 71
+---------INS SimpleName@@e @TO@ SimpleName@@MethodName:error:["Failed to rollback, everything will probably go bad from here."] @AT@ 37161 @LENGTH@ 1
+

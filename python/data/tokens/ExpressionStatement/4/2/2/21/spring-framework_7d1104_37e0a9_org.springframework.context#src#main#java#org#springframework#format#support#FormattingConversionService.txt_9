@@ -1,5 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:cachedPrinters.put(key,converter) @TO@ MethodInvocation:cachedPrinters.put(converterKey,converter) @AT@ 5233 @LENGTH@ 35
----UPD MethodInvocation@@cachedPrinters.put(key,converter) @TO@ cachedPrinters.put(converterKey,converter) @AT@ 5233 @LENGTH@ 34
-------UPD SimpleName@@MethodName:put:[key, converter] @TO@ MethodName:put:[converterKey, converter] @AT@ 5248 @LENGTH@ 19
----------UPD SimpleName@@key @TO@ converterKey @AT@ 5252 @LENGTH@ 3
-

@@ -1,5 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:setOwner(outputFs,snapshotTmpDir,filesUser,filesGroup,true) @TO@ MethodInvocation:setOwner(outputFs,needSetOwnerDir,filesUser,filesGroup,true) @AT@ 39395 @LENGTH@ 64
----UPD MethodInvocation@@setOwner(outputFs,snapshotTmpDir,filesUser,filesGroup,true) @TO@ setOwner(outputFs,needSetOwnerDir,filesUser,filesGroup,true) @AT@ 39395 @LENGTH@ 63
-------UPD SimpleName@@MethodName:setOwner:[outputFs, snapshotTmpDir, filesUser, filesGroup, true] @TO@ MethodName:setOwner:[outputFs, needSetOwnerDir, filesUser, filesGroup, true] @AT@ 39395 @LENGTH@ 63
----------UPD SimpleName@@snapshotTmpDir @TO@ needSetOwnerDir @AT@ 39414 @LENGTH@ 14
-

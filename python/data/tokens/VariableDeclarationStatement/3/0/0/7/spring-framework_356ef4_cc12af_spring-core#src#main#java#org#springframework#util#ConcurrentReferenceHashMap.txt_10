@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@V previousValue=entry.getValue(); @TO@ V oldValue=entry.getValue(); @AT@ 9655 @LENGTH@ 35
+---UPD VariableDeclarationFragment@@previousValue=entry.getValue() @TO@ oldValue=entry.getValue() @AT@ 9657 @LENGTH@ 32
+------UPD SimpleName@@previousValue @TO@ oldValue @AT@ 9657 @LENGTH@ 13
+

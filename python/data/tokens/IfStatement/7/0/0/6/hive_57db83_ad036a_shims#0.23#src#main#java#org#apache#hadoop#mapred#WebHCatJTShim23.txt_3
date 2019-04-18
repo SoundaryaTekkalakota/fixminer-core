@@ -1,8 +1,0 @@
-INS IfStatement@@InfixExpression:rj == null @TO@ MethodDeclaration@@public, JobProfile, MethodName:getJobProfile, JobID jobid, IOException,  @AT@ 2224 @LENGTH@ 41
----INS InfixExpression@@rj == null @TO@ IfStatement@@InfixExpression:rj == null @AT@ 2227 @LENGTH@ 10
-------INS SimpleName@@rj @TO@ InfixExpression@@rj == null @AT@ 2227 @LENGTH@ 2
-------INS Operator@@== @TO@ InfixExpression@@rj == null @AT@ 2229 @LENGTH@ 2
-------INS NullLiteral@@null @TO@ InfixExpression@@rj == null @AT@ 2233 @LENGTH@ 4
----INS ReturnStatement@@NullLiteral:null @TO@ IfStatement@@InfixExpression:rj == null @AT@ 2247 @LENGTH@ 12
-------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 2254 @LENGTH@ 4
-

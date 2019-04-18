@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.error("Unable to shutdown local metastore client") @TO@ MethodInvocation:LOG.error("Unable to shutdown local metastore client",e) @AT@ 11827 @LENGTH@ 55
+---UPD MethodInvocation@@LOG.error("Unable to shutdown local metastore client") @TO@ LOG.error("Unable to shutdown local metastore client",e) @AT@ 11827 @LENGTH@ 54
+------UPD SimpleName@@MethodName:error:["Unable to shutdown local metastore client"] @TO@ MethodName:error:["Unable to shutdown local metastore client", e] @AT@ 11831 @LENGTH@ 50
+---------INS SimpleName@@e @TO@ SimpleName@@MethodName:error:["Unable to shutdown local metastore client"] @AT@ 11829 @LENGTH@ 1
+

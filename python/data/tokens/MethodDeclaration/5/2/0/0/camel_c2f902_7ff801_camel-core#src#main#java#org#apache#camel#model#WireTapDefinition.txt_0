@@ -1,6 +1,0 @@
-UPD MethodDeclaration@@public, WireTapDefinition, MethodName:executorService, ExecutorService executorService,  @TO@ public, WireTapDefinition<Type>, MethodName:executorService, ExecutorService executorService,  @AT@ 6111 @LENGTH@ 147
----INS ParameterizedType@@WireTapDefinition<Type> @TO@ MethodDeclaration@@public, WireTapDefinition, MethodName:executorService, ExecutorService executorService,  @AT@ 6057 @LENGTH@ 23
-------INS SimpleType@@WireTapDefinition @TO@ ParameterizedType@@WireTapDefinition<Type> @AT@ 6057 @LENGTH@ 17
-------INS SimpleType@@Type @TO@ ParameterizedType@@WireTapDefinition<Type> @AT@ 6075 @LENGTH@ 4
----DEL SimpleType@@WireTapDefinition @AT@ 6118 @LENGTH@ 17
-

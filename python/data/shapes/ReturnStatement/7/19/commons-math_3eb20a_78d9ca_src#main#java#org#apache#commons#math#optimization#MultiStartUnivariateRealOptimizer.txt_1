@@ -1,7 +1,0 @@
-ReturnStatement 
----ArrayAccess 
-------SimpleName 
-------NumberLiteral 
----MethodInvocation 
-------SimpleName 
-------SimpleName

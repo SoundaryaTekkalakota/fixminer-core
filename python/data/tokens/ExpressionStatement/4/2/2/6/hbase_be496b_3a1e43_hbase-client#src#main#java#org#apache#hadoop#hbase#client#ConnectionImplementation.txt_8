@@ -1,5 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:relocateRegion(TableName.META_TABLE_NAME,metaKey,replicaId) @TO@ MethodInvocation:relocateRegion(TableName.META_TABLE_NAME,metaStartKey,replicaId) @AT@ 37448 @LENGTH@ 62
----UPD MethodInvocation@@relocateRegion(TableName.META_TABLE_NAME,metaKey,replicaId) @TO@ relocateRegion(TableName.META_TABLE_NAME,metaStartKey,replicaId) @AT@ 37448 @LENGTH@ 61
-------UPD SimpleName@@MethodName:relocateRegion:[TableName.META_TABLE_NAME, metaKey, replicaId] @TO@ MethodName:relocateRegion:[TableName.META_TABLE_NAME, metaStartKey, replicaId] @AT@ 37448 @LENGTH@ 61
----------UPD SimpleName@@metaKey @TO@ metaStartKey @AT@ 37490 @LENGTH@ 7
-

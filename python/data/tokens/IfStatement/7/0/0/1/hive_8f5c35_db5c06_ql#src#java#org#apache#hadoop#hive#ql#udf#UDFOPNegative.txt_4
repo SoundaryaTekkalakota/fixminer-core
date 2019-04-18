@@ -1,8 +1,0 @@
-INS IfStatement@@InfixExpression:a == null @TO@ MethodDeclaration@@public, FloatWritable, MethodName:evaluate, FloatWritable a,  @AT@ 2363 @LENGTH@ 43
----INS InfixExpression@@a == null @TO@ IfStatement@@InfixExpression:a == null @AT@ 2368 @LENGTH@ 9
-------INS SimpleName@@a @TO@ InfixExpression@@a == null @AT@ 2368 @LENGTH@ 1
-------INS Operator@@== @TO@ InfixExpression@@a == null @AT@ 2369 @LENGTH@ 2
-------INS NullLiteral@@null @TO@ InfixExpression@@a == null @AT@ 2373 @LENGTH@ 4
----INS ReturnStatement@@NullLiteral:null @TO@ IfStatement@@InfixExpression:a == null @AT@ 2388 @LENGTH@ 12
-------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 2395 @LENGTH@ 4
-

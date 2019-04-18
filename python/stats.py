@@ -5,7 +5,25 @@ DATA_PATH = os.environ["DATA_PATH"]
 def statsNormal(isFixminer=True):
     # tokens = join(DATA_PATH, 'tokens')
     # actions = join(DATA_PATH, 'actions')
-    df = load_zipped_pickle('datasetGroupByHunk.pickle')
+    import redis
+    redis_db = redis.StrictRedis(host="localhost", port=6399, db=0)
+    keys = redis_db.scan(0, match='*', count='1000000')
+
+    matches = pd.DataFrame(keys[1], columns=['pairs_key'])
+
+    # matches = load_zipped_pickle(join(DATA_PATH,'singleHunks'))
+    matches['pairs_key'] = matches['pairs_key'].apply(lambda x: x.decode())
+    matches['root'] = matches['pairs_key'].apply(lambda x: x.split('/')[0])
+    matches['size'] = matches['pairs_key'].apply(lambda x: x.split('/')[1])
+    matches['file'] = matches['pairs_key'].apply(lambda x: x.split('/')[2])
+    matches['repo'] = matches['file'].apply(lambda x: x.split('_')[0])
+    matches['commit'] = matches['file'].apply(lambda x: x.split('_')[1])
+    matches['hunk'] = matches['pairs_key'].apply(lambda x: x.split('/')[2].split('_')[-1])
+    matches['fileName'] = matches['pairs_key'].apply(lambda x: '_'.join(x.split('/')[2].split('_')[:-1]))
+    test = matches[['fileName','hunk']]
+    df = test.groupby(by=['fileName'], as_index=False).agg(lambda x: x.tolist())
+
+    # df = load_zipped_pickle('datasetGroupByHunk.pickle')
     yList = []
     colNames = []
 

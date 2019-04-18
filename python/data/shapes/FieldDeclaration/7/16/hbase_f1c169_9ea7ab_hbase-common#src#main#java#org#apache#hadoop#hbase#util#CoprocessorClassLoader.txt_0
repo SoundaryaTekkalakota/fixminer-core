@@ -1,0 +1,7 @@
+FieldDeclaration 
+---VariableDeclarationFragment 
+------ArrayCreation 
+---------ArrayInitializer 
+------------StringLiteral 
+------------StringLiteral 
+------------StringLiteral

@@ -1,7 +1,0 @@
- INS ExpressionStatement TO SwitchStatement 
---- INS Assignment TO ExpressionStatement 
------- INS SimpleName TO Assignment 
------- INS Operator TO Assignment 
------- INS MethodInvocation TO Assignment 
---------- MOV SimpleName TO MethodInvocation 
---------- MOV SimpleName TO MethodInvocation

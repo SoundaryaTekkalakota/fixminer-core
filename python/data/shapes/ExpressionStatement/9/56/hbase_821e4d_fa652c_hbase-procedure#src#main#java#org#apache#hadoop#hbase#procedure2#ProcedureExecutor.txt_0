@@ -1,9 +1,0 @@
-ExpressionStatement 
----MethodInvocation 
-------SimpleName 
-------SimpleName 
----------InfixExpression 
-------------SimpleName 
-------------Operator 
-------------NumberLiteral 
----------StringLiteral

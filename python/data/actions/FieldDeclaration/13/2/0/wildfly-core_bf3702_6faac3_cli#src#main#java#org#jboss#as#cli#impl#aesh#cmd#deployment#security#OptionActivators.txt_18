@@ -1,0 +1,13 @@
+ DEL FieldDeclaration 
+--- DEL Modifier 
+--- DEL Modifier 
+--- DEL Modifier 
+--- DEL ParameterizedType 
+------ DEL SimpleType 
+------ DEL SimpleType 
+--- DEL VariableDeclarationFragment 
+------ DEL SimpleName 
+------ DEL ClassInstanceCreation 
+--------- DEL New 
+--------- DEL ParameterizedType 
+------------ DEL SimpleType

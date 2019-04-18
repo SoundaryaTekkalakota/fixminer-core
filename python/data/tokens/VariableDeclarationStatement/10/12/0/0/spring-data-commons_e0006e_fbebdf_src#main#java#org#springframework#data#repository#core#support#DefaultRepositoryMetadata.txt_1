@@ -1,0 +1,11 @@
+INS VariableDeclarationStatement@@TypeInformation<?> information=ClassTypeInformation.from(repositoryInterface); @TO@ MethodDeclaration@@private, Class<? extends Serializable>, MethodName:resolveIdType, Class<?> repositoryInterface,  @AT@ 2497 @LENGTH@ 80
+---INS ParameterizedType@@TypeInformation<?> @TO@ VariableDeclarationStatement@@TypeInformation<?> information=ClassTypeInformation.from(repositoryInterface); @AT@ 2497 @LENGTH@ 18
+------INS SimpleType@@TypeInformation @TO@ ParameterizedType@@TypeInformation<?> @AT@ 2497 @LENGTH@ 15
+------INS WildcardType@@? @TO@ ParameterizedType@@TypeInformation<?> @AT@ 2513 @LENGTH@ 1
+---INS VariableDeclarationFragment@@information=ClassTypeInformation.from(repositoryInterface) @TO@ VariableDeclarationStatement@@TypeInformation<?> information=ClassTypeInformation.from(repositoryInterface); @AT@ 2516 @LENGTH@ 60
+------INS SimpleName@@information @TO@ VariableDeclarationFragment@@information=ClassTypeInformation.from(repositoryInterface) @AT@ 2516 @LENGTH@ 11
+------INS MethodInvocation@@ClassTypeInformation.from(repositoryInterface) @TO@ VariableDeclarationFragment@@information=ClassTypeInformation.from(repositoryInterface) @AT@ 2530 @LENGTH@ 46
+---------INS SimpleName@@Name:ClassTypeInformation @TO@ MethodInvocation@@ClassTypeInformation.from(repositoryInterface) @AT@ 2530 @LENGTH@ 20
+---------INS SimpleName@@MethodName:from:[repositoryInterface] @TO@ MethodInvocation@@ClassTypeInformation.from(repositoryInterface) @AT@ 2551 @LENGTH@ 25
+------------INS SimpleName@@repositoryInterface @TO@ SimpleName@@MethodName:from:[repositoryInterface] @AT@ 2556 @LENGTH@ 19
+

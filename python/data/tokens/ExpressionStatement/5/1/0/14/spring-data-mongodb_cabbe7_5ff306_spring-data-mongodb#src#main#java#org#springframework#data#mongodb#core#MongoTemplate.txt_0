@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:Assert.notNull(objectToSave) @TO@ MethodDeclaration@@public, void, MethodName:save, Object objectToSave,  @AT@ 27382 @LENGTH@ 29
----INS MethodInvocation@@Assert.notNull(objectToSave) @TO@ ExpressionStatement@@MethodInvocation:Assert.notNull(objectToSave) @AT@ 27382 @LENGTH@ 28
-------INS SimpleName@@Name:Assert @TO@ MethodInvocation@@Assert.notNull(objectToSave) @AT@ 27382 @LENGTH@ 6
-------INS SimpleName@@MethodName:notNull:[objectToSave] @TO@ MethodInvocation@@Assert.notNull(objectToSave) @AT@ 27389 @LENGTH@ 21
----------INS SimpleName@@objectToSave @TO@ SimpleName@@MethodName:notNull:[objectToSave] @AT@ 27397 @LENGTH@ 12
-

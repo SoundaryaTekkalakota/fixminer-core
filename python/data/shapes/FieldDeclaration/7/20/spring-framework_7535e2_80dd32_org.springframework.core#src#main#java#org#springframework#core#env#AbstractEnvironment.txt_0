@@ -1,0 +1,7 @@
+FieldDeclaration 
+---VariableDeclarationFragment 
+------ClassInstanceCreation 
+---------FieldAccess 
+------------ThisExpression 
+------------SimpleName 
+---------SimpleName

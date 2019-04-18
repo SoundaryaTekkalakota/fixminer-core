@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:addAttribute((ConfigurationNode)it.next()) @TO@ MethodInvocation:addAttribute(nd) @AT@ 44033 @LENGTH@ 44
+---UPD MethodInvocation@@addAttribute((ConfigurationNode)it.next()) @TO@ addAttribute(nd) @AT@ 44033 @LENGTH@ 43
+------UPD SimpleName@@MethodName:addAttribute:[(ConfigurationNode)it.next()] @TO@ MethodName:addAttribute:[nd] @AT@ 44033 @LENGTH@ 43
+---------INS SimpleName@@nd @TO@ SimpleName@@MethodName:addAttribute:[(ConfigurationNode)it.next()] @AT@ 44507 @LENGTH@ 2
+

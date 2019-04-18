@@ -1,0 +1,10 @@
+INS ExpressionStatement@@Assignment:this.globalStartTime=EnvironmentEdgeManager.currentTimeMillis() @TO@ MethodDeclaration@@public, T, MethodName:withRetries, IOException, RuntimeException,  @AT@ 5765 @LENGTH@ 66
+---INS Assignment@@this.globalStartTime=EnvironmentEdgeManager.currentTimeMillis() @TO@ ExpressionStatement@@Assignment:this.globalStartTime=EnvironmentEdgeManager.currentTimeMillis() @AT@ 5765 @LENGTH@ 65
+------INS FieldAccess@@this.globalStartTime @TO@ Assignment@@this.globalStartTime=EnvironmentEdgeManager.currentTimeMillis() @AT@ 5765 @LENGTH@ 20
+---------INS ThisExpression@@this @TO@ FieldAccess@@this.globalStartTime @AT@ 5765 @LENGTH@ 4
+---------INS SimpleName@@globalStartTime @TO@ FieldAccess@@this.globalStartTime @AT@ 5770 @LENGTH@ 15
+------INS Operator@@= @TO@ Assignment@@this.globalStartTime=EnvironmentEdgeManager.currentTimeMillis() @AT@ 5785 @LENGTH@ 1
+------INS MethodInvocation@@EnvironmentEdgeManager.currentTimeMillis() @TO@ Assignment@@this.globalStartTime=EnvironmentEdgeManager.currentTimeMillis() @AT@ 5788 @LENGTH@ 42
+---------INS SimpleName@@Name:EnvironmentEdgeManager @TO@ MethodInvocation@@EnvironmentEdgeManager.currentTimeMillis() @AT@ 5788 @LENGTH@ 22
+---------INS SimpleName@@MethodName:currentTimeMillis:[] @TO@ MethodInvocation@@EnvironmentEdgeManager.currentTimeMillis() @AT@ 5811 @LENGTH@ 19
+

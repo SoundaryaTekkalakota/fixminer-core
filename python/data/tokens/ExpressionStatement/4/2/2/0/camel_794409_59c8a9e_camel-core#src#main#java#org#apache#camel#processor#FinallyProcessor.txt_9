@@ -1,5 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:exchange.setProperty(Exchange.EXCEPTION_CAUGHT,e) @TO@ MethodInvocation:exchange.setProperty(Exchange.EXCEPTION_CAUGHT,exception) @AT@ 2533 @LENGTH@ 51
----UPD MethodInvocation@@exchange.setProperty(Exchange.EXCEPTION_CAUGHT,e) @TO@ exchange.setProperty(Exchange.EXCEPTION_CAUGHT,exception) @AT@ 2533 @LENGTH@ 50
-------UPD SimpleName@@MethodName:setProperty:[Exchange.EXCEPTION_CAUGHT, e] @TO@ MethodName:setProperty:[Exchange.EXCEPTION_CAUGHT, exception] @AT@ 2542 @LENGTH@ 41
----------UPD SimpleName@@e @TO@ exception @AT@ 2581 @LENGTH@ 1
-

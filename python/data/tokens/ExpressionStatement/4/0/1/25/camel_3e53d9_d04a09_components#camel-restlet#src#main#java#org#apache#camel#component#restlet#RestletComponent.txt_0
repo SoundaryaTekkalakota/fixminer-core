@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:attachUriPatternToRestlet(endpoint.getUriPattern(),endpoint,consumer.getRestlet()) @TO@ MethodInvocation:attachUriPatternToRestlet(offsetPath,endpoint.getUriPattern(),endpoint,consumer.getRestlet()) @AT@ 4897 @LENGTH@ 85
+---UPD MethodInvocation@@attachUriPatternToRestlet(endpoint.getUriPattern(),endpoint,consumer.getRestlet()) @TO@ attachUriPatternToRestlet(offsetPath,endpoint.getUriPattern(),endpoint,consumer.getRestlet()) @AT@ 4897 @LENGTH@ 84
+------UPD SimpleName@@MethodName:attachUriPatternToRestlet:[endpoint.getUriPattern(), endpoint, consumer.getRestlet()] @TO@ MethodName:attachUriPatternToRestlet:[offsetPath, endpoint.getUriPattern(), endpoint, consumer.getRestlet()] @AT@ 4897 @LENGTH@ 84
+---------INS SimpleName@@offsetPath @TO@ SimpleName@@MethodName:attachUriPatternToRestlet:[endpoint.getUriPattern(), endpoint, consumer.getRestlet()] @AT@ 5233 @LENGTH@ 10
+

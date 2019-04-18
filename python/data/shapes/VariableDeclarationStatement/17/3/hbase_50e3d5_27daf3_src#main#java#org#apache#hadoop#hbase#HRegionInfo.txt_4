@@ -1,0 +1,17 @@
+VariableDeclarationStatement 
+---SimpleType 
+---VariableDeclarationFragment 
+------SimpleName 
+------ClassInstanceCreation 
+---------New 
+---------SimpleType 
+---------SimpleName 
+---------ClassInstanceCreation 
+------------New 
+------------SimpleType 
+------------MethodInvocation 
+---------------SimpleName 
+---------------SimpleName 
+------------------QualifiedName 
+---------------------SimpleName 
+---------------------SimpleName

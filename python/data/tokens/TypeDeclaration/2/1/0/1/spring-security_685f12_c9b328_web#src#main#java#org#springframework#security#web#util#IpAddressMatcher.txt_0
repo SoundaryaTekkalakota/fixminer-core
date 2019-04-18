@@ -1,3 +1,0 @@
-UPD TypeDeclaration@@[public]IpAddressMatcher, [RequestMatcher] @TO@ [public, final]IpAddressMatcher, [RequestMatcher] @AT@ 563 @LENGTH@ 2177
----INS Modifier@@final @TO@ TypeDeclaration@@[public]IpAddressMatcher, [RequestMatcher] @AT@ 570 @LENGTH@ 5
-

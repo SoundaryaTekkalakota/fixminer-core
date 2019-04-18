@@ -1,0 +1,4 @@
+ UPD MethodDeclaration 
+--- INS SingleVariableDeclaration TO MethodDeclaration 
+------ INS PrimitiveType TO SingleVariableDeclaration 
+------ INS SimpleName TO SingleVariableDeclaration

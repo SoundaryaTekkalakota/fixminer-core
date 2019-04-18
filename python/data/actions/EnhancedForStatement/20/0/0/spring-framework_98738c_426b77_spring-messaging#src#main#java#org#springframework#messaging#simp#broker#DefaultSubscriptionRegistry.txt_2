@@ -1,0 +1,20 @@
+ UPD EnhancedForStatement 
+--- UPD SingleVariableDeclaration 
+------ DEL SimpleType 
+------ UPD SimpleName 
+------ INS ParameterizedType TO SingleVariableDeclaration 
+--------- INS SimpleType TO ParameterizedType 
+--------- INS SimpleType TO ParameterizedType 
+--------- INS ParameterizedType TO ParameterizedType 
+------------ INS SimpleType TO ParameterizedType 
+------------ INS SimpleType TO ParameterizedType 
+------------ INS SimpleType TO ParameterizedType 
+--- UPD MethodInvocation 
+------ UPD SimpleName 
+--- INS VariableDeclarationStatement TO EnhancedForStatement 
+------ INS SimpleType TO VariableDeclarationStatement 
+------ INS VariableDeclarationFragment TO VariableDeclarationStatement 
+--------- INS SimpleName TO VariableDeclarationFragment 
+--------- INS MethodInvocation TO VariableDeclarationFragment 
+------------ INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO MethodInvocation

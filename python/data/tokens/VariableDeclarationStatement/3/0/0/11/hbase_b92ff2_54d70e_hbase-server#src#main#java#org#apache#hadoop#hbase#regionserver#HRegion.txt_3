@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@Iterator<Tag> i=CellUtil.tagsIterator(cell.getTagsArray(),cell.getTagsOffset(),cell.getTagsLength()); @TO@ Iterator<Tag> itr=CellUtil.tagsIterator(cell.getTagsArray(),cell.getTagsOffset(),cell.getTagsLength()); @AT@ 259676 @LENGTH@ 123
+---UPD VariableDeclarationFragment@@i=CellUtil.tagsIterator(cell.getTagsArray(),cell.getTagsOffset(),cell.getTagsLength()) @TO@ itr=CellUtil.tagsIterator(cell.getTagsArray(),cell.getTagsOffset(),cell.getTagsLength()) @AT@ 259690 @LENGTH@ 108
+------UPD SimpleName@@i @TO@ itr @AT@ 259690 @LENGTH@ 1
+

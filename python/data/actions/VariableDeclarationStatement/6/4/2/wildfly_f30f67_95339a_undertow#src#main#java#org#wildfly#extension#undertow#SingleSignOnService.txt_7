@@ -1,0 +1,6 @@
+ DEL VariableDeclarationStatement 
+--- DEL SimpleType 
+--- DEL VariableDeclarationFragment 
+------ DEL SimpleName 
+------ DEL MethodInvocation 
+--------- DEL SimpleName

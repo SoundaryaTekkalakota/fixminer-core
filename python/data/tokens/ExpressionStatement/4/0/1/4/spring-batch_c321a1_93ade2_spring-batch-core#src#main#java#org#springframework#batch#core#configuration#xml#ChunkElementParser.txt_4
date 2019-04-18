@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:handleItemHandler("retry-policy","retryPolicy",null,false,element,parserContext,propertyValues,underspecified) @TO@ MethodInvocation:handleItemHandler(bd,"retry-policy","retryPolicy",null,false,element,parserContext,propertyValues,underspecified) @AT@ 6550 @LENGTH@ 122
+---UPD MethodInvocation@@handleItemHandler("retry-policy","retryPolicy",null,false,element,parserContext,propertyValues,underspecified) @TO@ handleItemHandler(bd,"retry-policy","retryPolicy",null,false,element,parserContext,propertyValues,underspecified) @AT@ 6550 @LENGTH@ 121
+------UPD SimpleName@@MethodName:handleItemHandler:["retry-policy", "retryPolicy", null, false, element, parserContext, propertyValues, underspecified] @TO@ MethodName:handleItemHandler:[bd, "retry-policy", "retryPolicy", null, false, element, parserContext, propertyValues, underspecified] @AT@ 6550 @LENGTH@ 121
+---------INS SimpleName@@bd @TO@ SimpleName@@MethodName:handleItemHandler:["retry-policy", "retryPolicy", null, false, element, parserContext, propertyValues, underspecified] @AT@ 6584 @LENGTH@ 2
+

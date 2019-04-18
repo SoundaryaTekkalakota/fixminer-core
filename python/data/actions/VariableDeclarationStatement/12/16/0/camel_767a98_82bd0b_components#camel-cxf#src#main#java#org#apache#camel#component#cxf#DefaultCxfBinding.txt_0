@@ -1,0 +1,12 @@
+ INS VariableDeclarationStatement TO MethodDeclaration 
+--- INS SimpleType TO VariableDeclarationStatement 
+--- INS VariableDeclarationFragment TO VariableDeclarationStatement 
+------ INS SimpleName TO VariableDeclarationFragment 
+------ INS CastExpression TO VariableDeclarationFragment 
+--------- INS SimpleType TO CastExpression 
+--------- INS MethodInvocation TO CastExpression 
+------------ INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO MethodInvocation 
+--------------- INS QualifiedName TO SimpleName 
+------------------ INS SimpleName TO QualifiedName 
+------------------ INS SimpleName TO QualifiedName

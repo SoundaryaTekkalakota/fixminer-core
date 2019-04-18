@@ -1,4 +1,0 @@
-UPD ReturnStatement@@MethodInvocation:responses.cancel(mayInterruptIfRunning) @TO@ MethodInvocation:futureResponses.cancel(mayInterruptIfRunning) @AT@ 4947 @LENGTH@ 47
----UPD MethodInvocation@@responses.cancel(mayInterruptIfRunning) @TO@ futureResponses.cancel(mayInterruptIfRunning) @AT@ 4954 @LENGTH@ 39
-------UPD SimpleName@@Name:responses @TO@ Name:futureResponses @AT@ 4954 @LENGTH@ 9
-

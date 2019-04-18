@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@Reference<K,V> reference=ConcurrentReferenceHashMap.this.getReference(entry.getKey(),Restructure.NEVER); @TO@ Reference<K,V> ref=ConcurrentReferenceHashMap.this.getReference(entry.getKey(),Restructure.NEVER); @AT@ 24984 @LENGTH@ 108
+---UPD VariableDeclarationFragment@@reference=ConcurrentReferenceHashMap.this.getReference(entry.getKey(),Restructure.NEVER) @TO@ ref=ConcurrentReferenceHashMap.this.getReference(entry.getKey(),Restructure.NEVER) @AT@ 25000 @LENGTH@ 91
+------UPD SimpleName@@reference @TO@ ref @AT@ 25000 @LENGTH@ 9
+

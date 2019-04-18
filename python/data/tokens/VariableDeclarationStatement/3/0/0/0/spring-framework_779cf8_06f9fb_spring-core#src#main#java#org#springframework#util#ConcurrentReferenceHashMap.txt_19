@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@Reference<K,V> reference=findInChain(head,key,hash); @TO@ Reference<K,V> ref=findInChain(head,key,hash); @AT@ 16435 @LENGTH@ 57
+---UPD VariableDeclarationFragment@@reference=findInChain(head,key,hash) @TO@ ref=findInChain(head,key,hash) @AT@ 16451 @LENGTH@ 40
+------UPD SimpleName@@reference @TO@ ref @AT@ 16451 @LENGTH@ 9
+

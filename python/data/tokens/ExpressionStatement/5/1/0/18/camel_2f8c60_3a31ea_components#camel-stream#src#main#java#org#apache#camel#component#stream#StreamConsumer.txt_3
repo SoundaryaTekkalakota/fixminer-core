@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:IOHelper.close(inputStreamToClose) @TO@ MethodDeclaration@@private, BufferedReader, MethodName:initializeStream, Exception,  @AT@ 3891 @LENGTH@ 35
----INS MethodInvocation@@IOHelper.close(inputStreamToClose) @TO@ ExpressionStatement@@MethodInvocation:IOHelper.close(inputStreamToClose) @AT@ 3891 @LENGTH@ 34
-------INS SimpleName@@Name:IOHelper @TO@ MethodInvocation@@IOHelper.close(inputStreamToClose) @AT@ 3891 @LENGTH@ 8
-------INS SimpleName@@MethodName:close:[inputStreamToClose] @TO@ MethodInvocation@@IOHelper.close(inputStreamToClose) @AT@ 3900 @LENGTH@ 25
----------INS SimpleName@@inputStreamToClose @TO@ SimpleName@@MethodName:close:[inputStreamToClose] @AT@ 3906 @LENGTH@ 18
-

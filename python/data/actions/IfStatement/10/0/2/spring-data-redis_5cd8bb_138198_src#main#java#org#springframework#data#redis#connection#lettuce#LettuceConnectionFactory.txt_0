@@ -1,0 +1,10 @@
+ DEL IfStatement 
+--- DEL InfixExpression 
+------ DEL SimpleName 
+------ DEL Operator 
+------ DEL NullLiteral 
+--- DEL ExpressionStatement 
+------ DEL MethodInvocation 
+--------- DEL SimpleName 
+--------- DEL SimpleName 
+------------ DEL SimpleName

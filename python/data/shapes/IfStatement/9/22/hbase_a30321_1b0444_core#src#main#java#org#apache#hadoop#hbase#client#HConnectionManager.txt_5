@@ -1,9 +1,0 @@
-IfStatement 
----InstanceofExpression 
-------SimpleName 
-------Instanceof 
-------SimpleType 
----ThrowStatement 
-------CastExpression 
----------SimpleType 
----------SimpleName

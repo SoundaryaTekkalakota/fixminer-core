@@ -1,0 +1,15 @@
+INS CatchClause@@Exception e @TO@ TryStatement@@try:[] @AT@ 3186 @LENGTH@ 110
+---INS SingleVariableDeclaration@@Exception e @TO@ CatchClause@@Exception e @AT@ 3193 @LENGTH@ 11
+------INS SimpleType@@Exception @TO@ SingleVariableDeclaration@@Exception e @AT@ 3193 @LENGTH@ 9
+------INS SimpleName@@e @TO@ SingleVariableDeclaration@@Exception e @AT@ 3203 @LENGTH@ 1
+---INS ThrowStatement@@ClassInstanceCreation:new RuntimeException("Error loading expression '" + oldPath + "'",e) @TO@ CatchClause@@Exception e @AT@ 3214 @LENGTH@ 76
+------INS ClassInstanceCreation@@RuntimeException["Error loading expression '" + oldPath + "'", e] @TO@ ThrowStatement@@ClassInstanceCreation:new RuntimeException("Error loading expression '" + oldPath + "'",e) @AT@ 3220 @LENGTH@ 69
+---------INS New@@new @TO@ ClassInstanceCreation@@RuntimeException["Error loading expression '" + oldPath + "'", e] @AT@ 3220 @LENGTH@ 3
+---------INS SimpleType@@RuntimeException @TO@ ClassInstanceCreation@@RuntimeException["Error loading expression '" + oldPath + "'", e] @AT@ 3224 @LENGTH@ 16
+---------INS InfixExpression@@"Error loading expression '" + oldPath + "'" @TO@ ClassInstanceCreation@@RuntimeException["Error loading expression '" + oldPath + "'", e] @AT@ 3241 @LENGTH@ 44
+------------INS StringLiteral@@"Error loading expression '" @TO@ InfixExpression@@"Error loading expression '" + oldPath + "'" @AT@ 3241 @LENGTH@ 28
+------------INS Operator@@+ @TO@ InfixExpression@@"Error loading expression '" + oldPath + "'" @AT@ 3269 @LENGTH@ 1
+------------INS SimpleName@@oldPath @TO@ InfixExpression@@"Error loading expression '" + oldPath + "'" @AT@ 3272 @LENGTH@ 7
+------------INS StringLiteral@@"'" @TO@ InfixExpression@@"Error loading expression '" + oldPath + "'" @AT@ 3282 @LENGTH@ 3
+---------INS SimpleName@@e @TO@ ClassInstanceCreation@@RuntimeException["Error loading expression '" + oldPath + "'", e] @AT@ 3287 @LENGTH@ 1
+

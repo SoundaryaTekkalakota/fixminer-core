@@ -1,6 +1,0 @@
-INS VariableDeclarationStatement@@String alias=extractTableAlias(); @TO@ MethodDeclaration@@public, String, MethodName:generateFirstPageQuery, int pageSize,  @AT@ 1476 @LENGTH@ 35
----INS SimpleType@@String @TO@ VariableDeclarationStatement@@String alias=extractTableAlias(); @AT@ 1476 @LENGTH@ 6
----INS VariableDeclarationFragment@@alias=extractTableAlias() @TO@ VariableDeclarationStatement@@String alias=extractTableAlias(); @AT@ 1483 @LENGTH@ 27
-------INS SimpleName@@alias @TO@ VariableDeclarationFragment@@alias=extractTableAlias() @AT@ 1483 @LENGTH@ 5
-------INS MethodInvocation@@MethodName:extractTableAlias:[] @TO@ VariableDeclarationFragment@@alias=extractTableAlias() @AT@ 1491 @LENGTH@ 19
-

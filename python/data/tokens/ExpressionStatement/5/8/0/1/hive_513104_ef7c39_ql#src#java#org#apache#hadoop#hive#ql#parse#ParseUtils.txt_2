@@ -1,0 +1,6 @@
+INS ExpressionStatement@@MethodInvocation:ctx.setIsLoadingMaterializedView(true) @TO@ MethodDeclaration@@public, static, RelNode, MethodName:parseQuery, HiveConf conf, String viewQuery, SemanticException, IOException, ParseException,  @AT@ 21241 @LENGTH@ 39
+---INS MethodInvocation@@ctx.setIsLoadingMaterializedView(true) @TO@ ExpressionStatement@@MethodInvocation:ctx.setIsLoadingMaterializedView(true) @AT@ 21241 @LENGTH@ 38
+------INS SimpleName@@Name:ctx @TO@ MethodInvocation@@ctx.setIsLoadingMaterializedView(true) @AT@ 21241 @LENGTH@ 3
+------INS SimpleName@@MethodName:setIsLoadingMaterializedView:[true] @TO@ MethodInvocation@@ctx.setIsLoadingMaterializedView(true) @AT@ 21245 @LENGTH@ 34
+---------INS BooleanLiteral@@true @TO@ SimpleName@@MethodName:setIsLoadingMaterializedView:[true] @AT@ 21274 @LENGTH@ 4
+

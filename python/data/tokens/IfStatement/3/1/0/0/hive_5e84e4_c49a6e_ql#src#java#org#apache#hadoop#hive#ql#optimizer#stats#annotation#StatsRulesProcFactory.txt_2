@@ -1,4 +1,0 @@
-UPD IfStatement@@InfixExpression:minValue > value @TO@ InfixExpression:minValue >= value @AT@ 33269 @LENGTH@ 71
----UPD InfixExpression@@minValue > value @TO@ minValue >= value @AT@ 33273 @LENGTH@ 16
-------UPD Operator@@> @TO@ >= @AT@ 33281 @LENGTH@ 1
-

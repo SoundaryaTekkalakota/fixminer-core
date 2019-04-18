@@ -1,5 +1,0 @@
-IfStatement 
----InfixExpression 
-------MethodInvocation 
----------SimpleName 
-------------SimpleName

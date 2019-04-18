@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@Reference<K,V> reference=this.referenceManager.pollForPurge(); @TO@ Reference<K,V> ref=this.referenceManager.pollForPurge(); @AT@ 17913 @LENGTH@ 65
+---UPD VariableDeclarationFragment@@reference=this.referenceManager.pollForPurge() @TO@ ref=this.referenceManager.pollForPurge() @AT@ 17929 @LENGTH@ 48
+------UPD SimpleName@@reference @TO@ ref @AT@ 17929 @LENGTH@ 9
+

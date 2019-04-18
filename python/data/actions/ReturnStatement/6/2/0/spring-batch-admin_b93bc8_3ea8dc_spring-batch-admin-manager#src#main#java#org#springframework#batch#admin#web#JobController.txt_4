@@ -1,6 +1,0 @@
- UPD ReturnStatement 
---- UPD MethodInvocation 
------- UPD SimpleName 
---------- DEL ClassInstanceCreation 
------------- DEL New 
------------- DEL SimpleType

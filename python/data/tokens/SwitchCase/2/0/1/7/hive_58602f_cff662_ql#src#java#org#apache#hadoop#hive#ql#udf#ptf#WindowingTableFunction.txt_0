@@ -1,0 +1,3 @@
+INS SwitchCase@@SimpleName:DECIMAL @TO@ SwitchStatement@@MethodInvocation:pOI.getPrimitiveCategory() @AT@ 25932 @LENGTH@ 13
+---INS SimpleName@@DECIMAL @TO@ SwitchCase@@SimpleName:DECIMAL @AT@ 25937 @LENGTH@ 7
+

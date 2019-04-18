@@ -1,0 +1,8 @@
+UPD ForStatement@@[index=0];index < bitVectorSize; [index++] @TO@ [index=0];index < BIT_VECTOR_SIZE; [index++] @AT@ 8367 @LENGTH@ 122
+---UPD InfixExpression@@index < bitVectorSize @TO@ index < BIT_VECTOR_SIZE @AT@ 8381 @LENGTH@ 19
+------UPD SimpleName@@bitVectorSize @TO@ BIT_VECTOR_SIZE @AT@ 8387 @LENGTH@ 13
+---UPD IfStatement@@InfixExpression:rho % 2 == 1 @TO@ InfixExpression:rho % 2 != 0 @AT@ 8419 @LENGTH@ 42
+------UPD InfixExpression@@rho % 2 == 1 @TO@ rho % 2 != 0 @AT@ 8423 @LENGTH@ 12
+---------UPD Operator@@== @TO@ != @AT@ 8430 @LENGTH@ 2
+---------UPD NumberLiteral@@1 @TO@ 0 @AT@ 8434 @LENGTH@ 1
+

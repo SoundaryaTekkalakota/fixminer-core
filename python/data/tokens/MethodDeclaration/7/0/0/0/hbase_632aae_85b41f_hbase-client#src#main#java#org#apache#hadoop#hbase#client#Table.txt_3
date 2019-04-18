@@ -1,8 +1,0 @@
-UPD MethodDeclaration@@void, R, MethodName:batchCallback, final List<? extends Row> actions, final Object[] results, final Batch.Callback<R> callback, IOException, InterruptedException,  @TO@ default, void, R, MethodName:batchCallback, final List<? extends Row> actions, final Object[] results, final Batch.Callback<R> callback, IOException, InterruptedException,  @AT@ 5752 @LENGTH@ 156
----INS Modifier@@default @TO@ MethodDeclaration@@void, R, MethodName:batchCallback, final List<? extends Row> actions, final Object[] results, final Batch.Callback<R> callback, IOException, InterruptedException,  @AT@ 6047 @LENGTH@ 7
----INS ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @TO@ MethodDeclaration@@void, R, MethodName:batchCallback, final List<? extends Row> actions, final Object[] results, final Batch.Callback<R> callback, IOException, InterruptedException,  @AT@ 6229 @LENGTH@ 60
-------INS ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @TO@ ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @AT@ 6235 @LENGTH@ 53
----------INS New@@new @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 6235 @LENGTH@ 3
----------INS SimpleType@@NotImplementedException @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 6239 @LENGTH@ 23
----------INS StringLiteral@@"Add an implementation!" @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 6263 @LENGTH@ 24
-

@@ -1,3 +1,0 @@
-UPD TypeDeclaration@@ShutdownTask, [Runnable] @TO@ [static]ShutdownTask, [Runnable] @AT@ 12350 @LENGTH@ 7743
----INS Modifier@@static @TO@ TypeDeclaration@@ShutdownTask, [Runnable] @AT@ 12384 @LENGTH@ 6
-

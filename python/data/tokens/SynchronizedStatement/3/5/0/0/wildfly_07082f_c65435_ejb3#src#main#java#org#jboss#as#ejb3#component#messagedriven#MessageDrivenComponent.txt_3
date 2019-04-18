@@ -1,0 +1,4 @@
+INS SynchronizedStatement@@ThisExpression:MessageDrivenComponent.this @TO@ MethodDeclaration@@public, void, MethodName:preSuspend, ServerActivityCallback listener,  @AT@ 3901 @LENGTH@ 148
+---MOV IfStatement@@SimpleName:deliveryActive @TO@ SynchronizedStatement@@ThisExpression:MessageDrivenComponent.this @AT@ 3881 @LENGTH@ 64
+---INS ThisExpression@@this @TO@ SynchronizedStatement@@ThisExpression:MessageDrivenComponent.this @AT@ 3915 @LENGTH@ 27
+

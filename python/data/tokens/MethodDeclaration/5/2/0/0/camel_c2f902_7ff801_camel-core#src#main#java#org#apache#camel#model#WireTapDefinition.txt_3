@@ -1,6 +1,0 @@
-UPD MethodDeclaration@@public, WireTapDefinition, MethodName:copy, boolean copy,  @TO@ public, WireTapDefinition<Type>, MethodName:copy, boolean copy,  @AT@ 7103 @LENGTH@ 95
----INS ParameterizedType@@WireTapDefinition<Type> @TO@ MethodDeclaration@@public, WireTapDefinition, MethodName:copy, boolean copy,  @AT@ 7067 @LENGTH@ 23
-------INS SimpleType@@WireTapDefinition @TO@ ParameterizedType@@WireTapDefinition<Type> @AT@ 7067 @LENGTH@ 17
-------INS SimpleType@@Type @TO@ ParameterizedType@@WireTapDefinition<Type> @AT@ 7085 @LENGTH@ 4
----DEL SimpleType@@WireTapDefinition @AT@ 7110 @LENGTH@ 17
-

@@ -1,4 +1,0 @@
- UPD ReturnStatement 
---- UPD MethodInvocation 
------- UPD SimpleName 
------- UPD SimpleName

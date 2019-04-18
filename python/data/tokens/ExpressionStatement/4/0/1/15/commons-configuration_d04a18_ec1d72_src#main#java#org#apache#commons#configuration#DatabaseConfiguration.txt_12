@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:close(conn,pstmt) @TO@ MethodInvocation:close(conn,pstmt,rs) @AT@ 15437 @LENGTH@ 19
+---UPD MethodInvocation@@close(conn,pstmt) @TO@ close(conn,pstmt,rs) @AT@ 15437 @LENGTH@ 18
+------UPD SimpleName@@MethodName:close:[conn, pstmt] @TO@ MethodName:close:[conn, pstmt, rs] @AT@ 15437 @LENGTH@ 18
+---------INS SimpleName@@rs @TO@ SimpleName@@MethodName:close:[conn, pstmt] @AT@ 15527 @LENGTH@ 2
+

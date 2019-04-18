@@ -1,0 +1,16 @@
+ UPD ExpressionStatement 
+--- UPD MethodInvocation 
+------ UPD SimpleName 
+------ UPD SimpleName 
+--------- DEL FieldAccess 
+------------ DEL ThisExpression 
+------------ DEL SimpleName 
+--------- DEL TypeLiteral 
+--------- DEL NullLiteral 
+--------- INS MethodInvocation TO SimpleName 
+------------ INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO MethodInvocation 
+--------------- INS MethodInvocation TO SimpleName 
+------------------ INS SimpleName TO MethodInvocation 
+------------------ INS MethodInvocation TO MethodInvocation 
+------------------ INS SimpleName TO MethodInvocation

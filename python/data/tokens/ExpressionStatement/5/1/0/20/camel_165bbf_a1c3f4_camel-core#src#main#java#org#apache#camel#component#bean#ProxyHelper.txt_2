@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:ServiceHelper.startService(producer) @TO@ MethodDeclaration@@public, static, T, T, MethodName:createProxy, Endpoint endpoint, ClassLoader cl, Class[] interfaces, MethodInfoCache methodCache, Exception,  @AT@ 1974 @LENGTH@ 37
----INS MethodInvocation@@ServiceHelper.startService(producer) @TO@ ExpressionStatement@@MethodInvocation:ServiceHelper.startService(producer) @AT@ 1974 @LENGTH@ 36
-------INS SimpleName@@Name:ServiceHelper @TO@ MethodInvocation@@ServiceHelper.startService(producer) @AT@ 1974 @LENGTH@ 13
-------INS SimpleName@@MethodName:startService:[producer] @TO@ MethodInvocation@@ServiceHelper.startService(producer) @AT@ 1988 @LENGTH@ 22
----------INS SimpleName@@producer @TO@ SimpleName@@MethodName:startService:[producer] @AT@ 2001 @LENGTH@ 8
-

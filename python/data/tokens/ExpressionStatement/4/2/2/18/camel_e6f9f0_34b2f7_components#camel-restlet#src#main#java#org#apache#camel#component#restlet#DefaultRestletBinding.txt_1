@@ -1,5 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:inMessage.setBody(key) @TO@ MethodInvocation:inMessage.setBody(paramName) @AT@ 4926 @LENGTH@ 23
----UPD MethodInvocation@@inMessage.setBody(key) @TO@ inMessage.setBody(paramName) @AT@ 4926 @LENGTH@ 22
-------UPD SimpleName@@MethodName:setBody:[key] @TO@ MethodName:setBody:[paramName] @AT@ 4936 @LENGTH@ 12
----------UPD SimpleName@@key @TO@ paramName @AT@ 4944 @LENGTH@ 3
-

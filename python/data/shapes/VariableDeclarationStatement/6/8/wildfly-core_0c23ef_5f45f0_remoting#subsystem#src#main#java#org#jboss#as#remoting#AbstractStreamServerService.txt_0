@@ -1,6 +1,0 @@
-VariableDeclarationStatement 
----ArrayType 
-------SimpleType 
----VariableDeclarationFragment 
-------SimpleName 
-------NullLiteral

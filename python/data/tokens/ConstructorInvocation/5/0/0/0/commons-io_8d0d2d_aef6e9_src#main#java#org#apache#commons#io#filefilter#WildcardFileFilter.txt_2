@@ -1,0 +1,6 @@
+UPD ConstructorInvocation@@this(wildcards,null); @TO@ this(wildcards,IOCase.SENSITIVE); @AT@ 4596 @LENGTH@ 22
+---DEL NullLiteral@@null @AT@ 4612 @LENGTH@ 4
+---INS QualifiedName@@IOCase.SENSITIVE @TO@ ConstructorInvocation@@this(wildcards,null); @AT@ 4636 @LENGTH@ 16
+------INS SimpleName@@IOCase @TO@ QualifiedName@@IOCase.SENSITIVE @AT@ 4636 @LENGTH@ 6
+------INS SimpleName@@SENSITIVE @TO@ QualifiedName@@IOCase.SENSITIVE @AT@ 4643 @LENGTH@ 9
+

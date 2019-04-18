@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:calls.remove(id) @TO@ IfStatement@@InfixExpression:call != null @AT@ 33021 @LENGTH@ 17
----INS MethodInvocation@@calls.remove(id) @TO@ ExpressionStatement@@MethodInvocation:calls.remove(id) @AT@ 33021 @LENGTH@ 16
-------INS SimpleName@@Name:calls @TO@ MethodInvocation@@calls.remove(id) @AT@ 33021 @LENGTH@ 5
-------INS SimpleName@@MethodName:remove:[id] @TO@ MethodInvocation@@calls.remove(id) @AT@ 33027 @LENGTH@ 10
----------INS SimpleName@@id @TO@ SimpleName@@MethodName:remove:[id] @AT@ 33034 @LENGTH@ 2
-

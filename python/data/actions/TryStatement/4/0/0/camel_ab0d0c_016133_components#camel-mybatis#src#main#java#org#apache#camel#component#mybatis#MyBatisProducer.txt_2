@@ -1,4 +1,0 @@
- INS TryStatement TO Block 
---- MOV ExpressionStatement TO TryStatement 
---- INS Block TO TryStatement 
------- MOV ExpressionStatement TO Block

@@ -1,0 +1,8 @@
+INS VariableDeclarationStatement@@HadoopShims shim=ShimLoader.getHadoopShims(); @TO@ TryStatement@@try:[] @AT@ 159089 @LENGTH@ 47
+---INS SimpleType@@HadoopShims @TO@ VariableDeclarationStatement@@HadoopShims shim=ShimLoader.getHadoopShims(); @AT@ 159089 @LENGTH@ 11
+---INS VariableDeclarationFragment@@shim=ShimLoader.getHadoopShims() @TO@ VariableDeclarationStatement@@HadoopShims shim=ShimLoader.getHadoopShims(); @AT@ 159101 @LENGTH@ 34
+------INS SimpleName@@shim @TO@ VariableDeclarationFragment@@shim=ShimLoader.getHadoopShims() @AT@ 159101 @LENGTH@ 4
+------INS MethodInvocation@@ShimLoader.getHadoopShims() @TO@ VariableDeclarationFragment@@shim=ShimLoader.getHadoopShims() @AT@ 159108 @LENGTH@ 27
+---------INS SimpleName@@Name:ShimLoader @TO@ MethodInvocation@@ShimLoader.getHadoopShims() @AT@ 159108 @LENGTH@ 10
+---------INS SimpleName@@MethodName:getHadoopShims:[] @TO@ MethodInvocation@@ShimLoader.getHadoopShims() @AT@ 159119 @LENGTH@ 16
+

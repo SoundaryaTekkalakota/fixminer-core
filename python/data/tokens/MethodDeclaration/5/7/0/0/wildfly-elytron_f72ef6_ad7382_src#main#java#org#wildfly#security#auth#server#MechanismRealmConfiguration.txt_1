@@ -1,0 +1,6 @@
+UPD MethodDeclaration@@public, void, MethodName:setPreRealmRewriter, final NameRewriter preRealmRewriter,  @TO@ public, Builder, MethodName:setPreRealmRewriter, final NameRewriter preRealmRewriter,  @AT@ 4647 @LENGTH@ 134
+---DEL PrimitiveType@@void @AT@ 4654 @LENGTH@ 4
+---INS SimpleType@@Builder @TO@ MethodDeclaration@@public, void, MethodName:setPreRealmRewriter, final NameRewriter preRealmRewriter,  @AT@ 4683 @LENGTH@ 7
+---INS ReturnStatement@@ThisExpression:this @TO@ MethodDeclaration@@public, void, MethodName:setPreRealmRewriter, final NameRewriter preRealmRewriter,  @AT@ 4817 @LENGTH@ 12
+------INS ThisExpression@@this @TO@ ReturnStatement@@ThisExpression:this @AT@ 4824 @LENGTH@ 4
+

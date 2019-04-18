@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:TableMapReduceUtil.addDependencyJars(job) @TO@ MethodDeclaration@@private, int, MethodName:doMapReduce, final FileSystem fs, final Set<Path> toCompactDirs, final boolean compactOnce, final boolean major, Exception,  @AT@ 14093 @LENGTH@ 42
----INS MethodInvocation@@TableMapReduceUtil.addDependencyJars(job) @TO@ ExpressionStatement@@MethodInvocation:TableMapReduceUtil.addDependencyJars(job) @AT@ 14093 @LENGTH@ 41
-------INS SimpleName@@Name:TableMapReduceUtil @TO@ MethodInvocation@@TableMapReduceUtil.addDependencyJars(job) @AT@ 14093 @LENGTH@ 18
-------INS SimpleName@@MethodName:addDependencyJars:[job] @TO@ MethodInvocation@@TableMapReduceUtil.addDependencyJars(job) @AT@ 14112 @LENGTH@ 22
----------INS SimpleName@@job @TO@ SimpleName@@MethodName:addDependencyJars:[job] @AT@ 14130 @LENGTH@ 3
-

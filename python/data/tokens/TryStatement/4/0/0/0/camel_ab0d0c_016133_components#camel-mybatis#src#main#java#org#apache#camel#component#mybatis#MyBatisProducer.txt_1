@@ -1,5 +1,0 @@
-INS TryStatement@@try:[] @TO@ Block@@FinallyBody @AT@ 5701 @LENGTH@ 126
----MOV ExpressionStatement@@MethodInvocation:session.commit() @TO@ TryStatement@@try:[] @AT@ 5621 @LENGTH@ 17
----INS Block@@FinallyBody @TO@ TryStatement@@try:[] @AT@ 5763 @LENGTH@ 64
-------MOV ExpressionStatement@@MethodInvocation:session.close() @TO@ Block@@FinallyBody @AT@ 5651 @LENGTH@ 16
-

@@ -1,5 +1,0 @@
-UPD MethodDeclaration@@private, void, MethodName:initMessageReceiver,  @TO@ private, void, MethodName:initMessageReceiver, ApplicationContext context,  @AT@ 16458 @LENGTH@ 814
----INS SingleVariableDeclaration@@ApplicationContext context @TO@ MethodDeclaration@@private, void, MethodName:initMessageReceiver,  @AT@ 16602 @LENGTH@ 26
-------INS SimpleType@@ApplicationContext @TO@ SingleVariableDeclaration@@ApplicationContext context @AT@ 16602 @LENGTH@ 18
-------INS SimpleName@@context @TO@ SingleVariableDeclaration@@ApplicationContext context @AT@ 16621 @LENGTH@ 7
-

@@ -1,5 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:fs.delete(outputdir,true) @TO@ MethodInvocation:fs.delete(taskAttemptOutputdir,true) @AT@ 6798 @LENGTH@ 27
----UPD MethodInvocation@@fs.delete(outputdir,true) @TO@ fs.delete(taskAttemptOutputdir,true) @AT@ 6798 @LENGTH@ 26
-------UPD SimpleName@@MethodName:delete:[outputdir, true] @TO@ MethodName:delete:[taskAttemptOutputdir, true] @AT@ 6801 @LENGTH@ 23
----------UPD SimpleName@@outputdir @TO@ taskAttemptOutputdir @AT@ 6808 @LENGTH@ 9
-

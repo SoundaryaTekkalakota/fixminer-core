@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:addChild((ConfigurationNode)it.next()) @TO@ MethodInvocation:addChild(nd) @AT@ 43870 @LENGTH@ 40
+---UPD MethodInvocation@@addChild((ConfigurationNode)it.next()) @TO@ addChild(nd) @AT@ 43870 @LENGTH@ 39
+------UPD SimpleName@@MethodName:addChild:[(ConfigurationNode)it.next()] @TO@ MethodName:addChild:[nd] @AT@ 43870 @LENGTH@ 39
+---------INS SimpleName@@nd @TO@ SimpleName@@MethodName:addChild:[(ConfigurationNode)it.next()] @AT@ 44143 @LENGTH@ 2
+

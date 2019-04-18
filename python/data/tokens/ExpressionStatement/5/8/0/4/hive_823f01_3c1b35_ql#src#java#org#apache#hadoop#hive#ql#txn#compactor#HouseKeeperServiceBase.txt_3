@@ -1,0 +1,6 @@
+INS ExpressionStatement@@MethodInvocation:t.setDaemon(true) @TO@ MethodDeclaration@@public, Thread, MethodName:newThread, Runnable r,  @AT@ 2468 @LENGTH@ 18
+---INS MethodInvocation@@t.setDaemon(true) @TO@ ExpressionStatement@@MethodInvocation:t.setDaemon(true) @AT@ 2468 @LENGTH@ 17
+------INS SimpleName@@Name:t @TO@ MethodInvocation@@t.setDaemon(true) @AT@ 2468 @LENGTH@ 1
+------INS SimpleName@@MethodName:setDaemon:[true] @TO@ MethodInvocation@@t.setDaemon(true) @AT@ 2470 @LENGTH@ 15
+---------INS BooleanLiteral@@true @TO@ SimpleName@@MethodName:setDaemon:[true] @AT@ 2480 @LENGTH@ 4
+

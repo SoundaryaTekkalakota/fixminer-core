@@ -1,0 +1,12 @@
+UPD ReturnStatement@@MethodInvocation:toResource(page,new SimplePagedResourceAssembler<>(),selfLink) @TO@ MethodInvocation:toResource(page,it -> new Resource<>(it),selfLink) @AT@ 4168 @LENGTH@ 72
+---UPD MethodInvocation@@toResource(page,new SimplePagedResourceAssembler<>(),selfLink) @TO@ toResource(page,it -> new Resource<>(it),selfLink) @AT@ 4175 @LENGTH@ 64
+------UPD SimpleName@@MethodName:toResource:[page, new SimplePagedResourceAssembler<>(), selfLink] @TO@ MethodName:toResource:[page, it -> new Resource<>(it), selfLink] @AT@ 4175 @LENGTH@ 64
+---------DEL ClassInstanceCreation@@SimplePagedResourceAssembler<>[] @AT@ 4192 @LENGTH@ 36
+---------INS LambdaExpression@@it -> new Resource<>(it) @TO@ SimpleName@@MethodName:toResource:[page, new SimplePagedResourceAssembler<>(), selfLink] @AT@ 4238 @LENGTH@ 24
+------------INS VariableDeclarationFragment@@it @TO@ LambdaExpression@@it -> new Resource<>(it) @AT@ 4238 @LENGTH@ 2
+---------------INS SimpleName@@it @TO@ VariableDeclarationFragment@@it @AT@ 4238 @LENGTH@ 2
+------------INS ClassInstanceCreation@@Resource<>[it] @TO@ LambdaExpression@@it -> new Resource<>(it) @AT@ 4244 @LENGTH@ 18
+---------------MOV New@@new @TO@ ClassInstanceCreation@@Resource<>[it] @AT@ 4192 @LENGTH@ 3
+---------------MOV ParameterizedType@@SimplePagedResourceAssembler<> @TO@ ClassInstanceCreation@@Resource<>[it] @AT@ 4196 @LENGTH@ 30
+---------------INS SimpleName@@it @TO@ ClassInstanceCreation@@Resource<>[it] @AT@ 4259 @LENGTH@ 2
+

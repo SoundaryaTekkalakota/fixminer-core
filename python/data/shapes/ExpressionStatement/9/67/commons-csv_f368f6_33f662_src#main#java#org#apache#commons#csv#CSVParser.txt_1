@@ -1,9 +1,0 @@
-ExpressionStatement 
----Assignment 
-------FieldAccess 
----------ThisExpression 
----------SimpleName 
-------Operator 
-------ClassInstanceCreation 
----------New 
----------SimpleType

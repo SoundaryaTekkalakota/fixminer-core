@@ -1,0 +1,9 @@
+ INS EnhancedForStatement TO MethodDeclaration 
+--- MOV ExpressionStatement TO EnhancedForStatement 
+--- INS SingleVariableDeclaration TO EnhancedForStatement 
+------ INS Modifier TO SingleVariableDeclaration 
+------ INS SimpleType TO SingleVariableDeclaration 
+------ INS SimpleName TO SingleVariableDeclaration 
+--- INS MethodInvocation TO EnhancedForStatement 
+------ INS SimpleName TO MethodInvocation 
+------ INS SimpleName TO MethodInvocation

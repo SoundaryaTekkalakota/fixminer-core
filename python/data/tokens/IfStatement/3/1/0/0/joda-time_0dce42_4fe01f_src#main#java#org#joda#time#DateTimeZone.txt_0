@@ -1,4 +1,0 @@
-UPD IfStatement@@InfixExpression:offsetLocal > 0 @TO@ InfixExpression:offsetLocal >= 0 @AT@ 34135 @LENGTH@ 363
----UPD InfixExpression@@offsetLocal > 0 @TO@ offsetLocal >= 0 @AT@ 34139 @LENGTH@ 15
-------UPD Operator@@> @TO@ >= @AT@ 34150 @LENGTH@ 1
-

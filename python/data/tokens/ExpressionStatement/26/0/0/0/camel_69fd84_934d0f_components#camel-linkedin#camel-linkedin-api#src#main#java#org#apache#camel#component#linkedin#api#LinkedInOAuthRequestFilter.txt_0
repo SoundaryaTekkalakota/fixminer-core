@@ -1,0 +1,39 @@
+INS ExpressionStatement@@ClassInstanceCreation:new WebConnectionWrapper(webClient){
+  @Override public WebResponse getResponse(  WebRequest request) throws IOException {
+    request.setAdditionalHeader(HttpHeaders.ACCEPT_ENCODING,"identity");
+    return super.getResponse(request);
+  }
+}
+ @TO@ MethodDeclaration@@public, voidMethodName:LinkedInOAuthRequestFilter, OAuthParams oAuthParams, Map<String,Object> httpParams, boolean lazyAuth, String[] enabledProtocols,  @AT@ 5066 @LENGTH@ 305
+---INS ClassInstanceCreation@@WebConnectionWrapper[webClient] @TO@ ExpressionStatement@@ClassInstanceCreation:new WebConnectionWrapper(webClient){
+  @Override public WebResponse getResponse(  WebRequest request) throws IOException {
+    request.setAdditionalHeader(HttpHeaders.ACCEPT_ENCODING,"identity");
+    return super.getResponse(request);
+  }
+}
+ @AT@ 5066 @LENGTH@ 304
+------INS New@@new @TO@ ClassInstanceCreation@@WebConnectionWrapper[webClient] @AT@ 5066 @LENGTH@ 3
+------INS SimpleType@@WebConnectionWrapper @TO@ ClassInstanceCreation@@WebConnectionWrapper[webClient] @AT@ 5070 @LENGTH@ 20
+------INS SimpleName@@webClient @TO@ ClassInstanceCreation@@WebConnectionWrapper[webClient] @AT@ 5091 @LENGTH@ 9
+------INS AnonymousClassDeclaration@@AnonymousClass @TO@ ClassInstanceCreation@@WebConnectionWrapper[webClient] @AT@ 5102 @LENGTH@ 268
+---------INS MethodDeclaration@@public, WebResponse, MethodName:getResponse, WebRequest request, IOException,  @TO@ AnonymousClassDeclaration@@AnonymousClass @AT@ 5138 @LENGTH@ 222
+------------INS Modifier@@public @TO@ MethodDeclaration@@public, WebResponse, MethodName:getResponse, WebRequest request, IOException,  @AT@ 5138 @LENGTH@ 6
+------------INS SimpleType@@WebResponse @TO@ MethodDeclaration@@public, WebResponse, MethodName:getResponse, WebRequest request, IOException,  @AT@ 5145 @LENGTH@ 11
+------------INS SimpleName@@MethodName:getResponse @TO@ MethodDeclaration@@public, WebResponse, MethodName:getResponse, WebRequest request, IOException,  @AT@ 5157 @LENGTH@ 11
+------------INS SingleVariableDeclaration@@WebRequest request @TO@ MethodDeclaration@@public, WebResponse, MethodName:getResponse, WebRequest request, IOException,  @AT@ 5169 @LENGTH@ 18
+---------------INS SimpleType@@WebRequest @TO@ SingleVariableDeclaration@@WebRequest request @AT@ 5169 @LENGTH@ 10
+---------------INS SimpleName@@request @TO@ SingleVariableDeclaration@@WebRequest request @AT@ 5180 @LENGTH@ 7
+------------INS SimpleType@@IOException @TO@ MethodDeclaration@@public, WebResponse, MethodName:getResponse, WebRequest request, IOException,  @AT@ 5196 @LENGTH@ 11
+------------INS ExpressionStatement@@MethodInvocation:request.setAdditionalHeader(HttpHeaders.ACCEPT_ENCODING,"identity") @TO@ MethodDeclaration@@public, WebResponse, MethodName:getResponse, WebRequest request, IOException,  @AT@ 5226 @LENGTH@ 69
+---------------INS MethodInvocation@@request.setAdditionalHeader(HttpHeaders.ACCEPT_ENCODING,"identity") @TO@ ExpressionStatement@@MethodInvocation:request.setAdditionalHeader(HttpHeaders.ACCEPT_ENCODING,"identity") @AT@ 5226 @LENGTH@ 68
+------------------INS SimpleName@@Name:request @TO@ MethodInvocation@@request.setAdditionalHeader(HttpHeaders.ACCEPT_ENCODING,"identity") @AT@ 5226 @LENGTH@ 7
+------------------INS SimpleName@@MethodName:setAdditionalHeader:[HttpHeaders.ACCEPT_ENCODING, "identity"] @TO@ MethodInvocation@@request.setAdditionalHeader(HttpHeaders.ACCEPT_ENCODING,"identity") @AT@ 5234 @LENGTH@ 60
+---------------------INS QualifiedName@@HttpHeaders.ACCEPT_ENCODING @TO@ SimpleName@@MethodName:setAdditionalHeader:[HttpHeaders.ACCEPT_ENCODING, "identity"] @AT@ 5254 @LENGTH@ 27
+------------------------INS SimpleName@@HttpHeaders @TO@ QualifiedName@@HttpHeaders.ACCEPT_ENCODING @AT@ 5254 @LENGTH@ 11
+------------------------INS SimpleName@@ACCEPT_ENCODING @TO@ QualifiedName@@HttpHeaders.ACCEPT_ENCODING @AT@ 5266 @LENGTH@ 15
+---------------------INS StringLiteral@@"identity" @TO@ SimpleName@@MethodName:setAdditionalHeader:[HttpHeaders.ACCEPT_ENCODING, "identity"] @AT@ 5283 @LENGTH@ 10
+------------INS ReturnStatement@@SuperMethodInvocation:super.getResponse(request) @TO@ MethodDeclaration@@public, WebResponse, MethodName:getResponse, WebRequest request, IOException,  @AT@ 5312 @LENGTH@ 34
+---------------INS SuperMethodInvocation@@super.getResponse(request) @TO@ ReturnStatement@@SuperMethodInvocation:super.getResponse(request) @AT@ 5319 @LENGTH@ 26
+------------------INS SimpleName@@MethodName:getResponse:[request] @TO@ SuperMethodInvocation@@super.getResponse(request) @AT@ 5325 @LENGTH@ 11
+------------------INS SimpleName@@request @TO@ SuperMethodInvocation@@super.getResponse(request) @AT@ 5337 @LENGTH@ 7
+

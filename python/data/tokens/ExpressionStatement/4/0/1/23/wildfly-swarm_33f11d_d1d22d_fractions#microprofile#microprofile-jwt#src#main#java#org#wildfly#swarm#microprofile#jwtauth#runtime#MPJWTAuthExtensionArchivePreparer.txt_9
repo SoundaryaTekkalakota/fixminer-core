@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:generateSecurityConstraints(webXml,classInfo,appPath,httpMethods) @TO@ MethodInvocation:generateSecurityConstraints(webXml,classInfo,appPath,httpMethods,scannedClasses) @AT@ 6258 @LENGTH@ 69
+---UPD MethodInvocation@@generateSecurityConstraints(webXml,classInfo,appPath,httpMethods) @TO@ generateSecurityConstraints(webXml,classInfo,appPath,httpMethods,scannedClasses) @AT@ 6258 @LENGTH@ 68
+------UPD SimpleName@@MethodName:generateSecurityConstraints:[webXml, classInfo, appPath, httpMethods] @TO@ MethodName:generateSecurityConstraints:[webXml, classInfo, appPath, httpMethods, scannedClasses] @AT@ 6258 @LENGTH@ 68
+---------INS SimpleName@@scannedClasses @TO@ SimpleName@@MethodName:generateSecurityConstraints:[webXml, classInfo, appPath, httpMethods] @AT@ 5937 @LENGTH@ 14
+

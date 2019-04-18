@@ -1,4 +1,0 @@
- DEL ReturnStatement 
---- DEL MethodInvocation 
------- DEL SimpleName 
------- DEL SimpleName

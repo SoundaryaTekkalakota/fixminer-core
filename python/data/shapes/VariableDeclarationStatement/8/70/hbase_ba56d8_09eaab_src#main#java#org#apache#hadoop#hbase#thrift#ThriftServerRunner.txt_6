@@ -1,8 +1,0 @@
-VariableDeclarationStatement 
----VariableDeclarationFragment 
-------MethodInvocation 
----------FieldAccess 
-------------ThisExpression 
-------------SimpleName 
----------ThisExpression 
----------MethodInvocation

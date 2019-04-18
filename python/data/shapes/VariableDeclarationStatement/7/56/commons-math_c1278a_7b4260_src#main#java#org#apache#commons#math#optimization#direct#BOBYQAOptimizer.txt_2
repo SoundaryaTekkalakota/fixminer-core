@@ -1,7 +1,0 @@
-VariableDeclarationStatement 
----VariableDeclarationFragment 
-------SimpleName 
-------InfixExpression 
----------SimpleName 
----------Operator 
----------NumberLiteral

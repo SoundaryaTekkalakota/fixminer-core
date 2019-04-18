@@ -1,8 +1,0 @@
-INS IfStatement@@InfixExpression:a == null @TO@ MethodDeclaration@@public, ByteWritable, MethodName:evaluate, ByteWritable a,  @AT@ 1664 @LENGTH@ 43
----INS InfixExpression@@a == null @TO@ IfStatement@@InfixExpression:a == null @AT@ 1669 @LENGTH@ 9
-------INS SimpleName@@a @TO@ InfixExpression@@a == null @AT@ 1669 @LENGTH@ 1
-------INS Operator@@== @TO@ InfixExpression@@a == null @AT@ 1670 @LENGTH@ 2
-------INS NullLiteral@@null @TO@ InfixExpression@@a == null @AT@ 1674 @LENGTH@ 4
----INS ReturnStatement@@NullLiteral:null @TO@ IfStatement@@InfixExpression:a == null @AT@ 1689 @LENGTH@ 12
-------INS NullLiteral@@null @TO@ ReturnStatement@@NullLiteral:null @AT@ 1696 @LENGTH@ 4
-

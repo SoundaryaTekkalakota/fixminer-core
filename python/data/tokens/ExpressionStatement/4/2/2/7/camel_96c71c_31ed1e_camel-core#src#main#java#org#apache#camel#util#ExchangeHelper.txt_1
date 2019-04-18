@@ -1,5 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:map.put("out",out) @TO@ MethodInvocation:map.put("out",msg) @AT@ 12567 @LENGTH@ 20
----UPD MethodInvocation@@map.put("out",out) @TO@ map.put("out",msg) @AT@ 12567 @LENGTH@ 19
-------UPD SimpleName@@MethodName:put:["out", out] @TO@ MethodName:put:["out", msg] @AT@ 12571 @LENGTH@ 15
----------UPD SimpleName@@out @TO@ msg @AT@ 12582 @LENGTH@ 3
-

@@ -1,9 +1,0 @@
-MethodDeclaration 
----SingleVariableDeclaration 
-------SimpleType 
-------SimpleName 
----SingleVariableDeclaration 
-------SimpleType 
----SingleVariableDeclaration 
-------ParameterizedType 
----------SimpleType

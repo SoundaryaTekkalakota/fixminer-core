@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:outputCols.add(colInfo) @TO@ IfStatement@@InfixExpression:!outputColNames && !outputColSchemas @AT@ 47616 @LENGTH@ 24
----INS MethodInvocation@@outputCols.add(colInfo) @TO@ ExpressionStatement@@MethodInvocation:outputCols.add(colInfo) @AT@ 47616 @LENGTH@ 23
-------INS SimpleName@@Name:outputCols @TO@ MethodInvocation@@outputCols.add(colInfo) @AT@ 47616 @LENGTH@ 10
-------INS SimpleName@@MethodName:add:[colInfo] @TO@ MethodInvocation@@outputCols.add(colInfo) @AT@ 47627 @LENGTH@ 12
----------INS SimpleName@@colInfo @TO@ SimpleName@@MethodName:add:[colInfo] @AT@ 47631 @LENGTH@ 7
-

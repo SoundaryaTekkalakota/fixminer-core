@@ -1,5 +1,0 @@
-UPD MethodDeclaration@@void, MethodName:logBatchWarning, int sum, int rowSizeWarnThreshold,  @TO@ void, MethodName:logBatchWarning, String firstRegionName, int sum, int rowSizeWarnThreshold,  @AT@ 49968 @LENGTH@ 51
----INS SingleVariableDeclaration@@String firstRegionName @TO@ MethodDeclaration@@void, MethodName:logBatchWarning, int sum, int rowSizeWarnThreshold,  @AT@ 49984 @LENGTH@ 22
-------INS SimpleType@@String @TO@ SingleVariableDeclaration@@String firstRegionName @AT@ 49984 @LENGTH@ 6
-------INS SimpleName@@firstRegionName @TO@ SingleVariableDeclaration@@String firstRegionName @AT@ 49991 @LENGTH@ 15
-

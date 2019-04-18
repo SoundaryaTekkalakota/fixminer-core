@@ -1,0 +1,7 @@
+ UPD ThrowStatement 
+--- UPD ClassInstanceCreation 
+------ UPD InfixExpression 
+--------- DEL SimpleName 
+--------- INS MethodInvocation TO InfixExpression 
+------------ INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO MethodInvocation

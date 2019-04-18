@@ -1,8 +1,0 @@
-UPD MethodDeclaration@@int, MethodName:getOperationTimeout,  @TO@ default, int, MethodName:getOperationTimeout,  @AT@ 36676 @LENGTH@ 22
----INS Modifier@@default @TO@ MethodDeclaration@@int, MethodName:getOperationTimeout,  @AT@ 39935 @LENGTH@ 7
----INS ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @TO@ MethodDeclaration@@int, MethodName:getOperationTimeout,  @AT@ 39975 @LENGTH@ 60
-------INS ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @TO@ ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @AT@ 39981 @LENGTH@ 53
----------INS New@@new @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 39981 @LENGTH@ 3
----------INS SimpleType@@NotImplementedException @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 39985 @LENGTH@ 23
----------INS StringLiteral@@"Add an implementation!" @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 40009 @LENGTH@ 24
-

@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:uniqueTlds.add(value) @TO@ IfStatement@@InfixExpression:file.isFile() && file.getName().toLowerCase(Locale.ENGLISH).endsWith(TLD) @AT@ 9882 @LENGTH@ 22
----INS MethodInvocation@@uniqueTlds.add(value) @TO@ ExpressionStatement@@MethodInvocation:uniqueTlds.add(value) @AT@ 9882 @LENGTH@ 21
-------INS SimpleName@@Name:uniqueTlds @TO@ MethodInvocation@@uniqueTlds.add(value) @AT@ 9882 @LENGTH@ 10
-------INS SimpleName@@MethodName:add:[value] @TO@ MethodInvocation@@uniqueTlds.add(value) @AT@ 9893 @LENGTH@ 10
----------INS SimpleName@@value @TO@ SimpleName@@MethodName:add:[value] @AT@ 9897 @LENGTH@ 5
-

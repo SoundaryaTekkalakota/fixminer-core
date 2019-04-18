@@ -1,0 +1,3 @@
+UPD TypeDeclaration@@[public, abstract]AbstractHandlerMethodMapping, AbstractHandlerMapping @TO@ [public, abstract]AbstractHandlerMethodMapping, AbstractHandlerMapping[InitializingBean] @AT@ 2021 @LENGTH@ 10593
+---INS SimpleType@@InitializingBean @TO@ TypeDeclaration@@[public, abstract]AbstractHandlerMethodMapping, AbstractHandlerMapping @AT@ 2169 @LENGTH@ 16
+

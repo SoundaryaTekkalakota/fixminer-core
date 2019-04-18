@@ -1,4 +1,0 @@
-UPD IfStatement@@InfixExpression:i > 2 @TO@ InfixExpression:i >= 2 @AT@ 1165 @LENGTH@ 51
----UPD InfixExpression@@i > 2 @TO@ i >= 2 @AT@ 1169 @LENGTH@ 5
-------UPD Operator@@> @TO@ >= @AT@ 1170 @LENGTH@ 1
-

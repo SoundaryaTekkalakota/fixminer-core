@@ -1,4 +1,0 @@
-UPD ReturnStatement@@MethodInvocation:uri.endsWith(url) @TO@ MethodInvocation:uri.equals(url) @AT@ 10404 @LENGTH@ 25
----UPD MethodInvocation@@uri.endsWith(url) @TO@ uri.equals(url) @AT@ 10411 @LENGTH@ 17
-------UPD SimpleName@@MethodName:endsWith:[url] @TO@ MethodName:equals:[url] @AT@ 10415 @LENGTH@ 13
-

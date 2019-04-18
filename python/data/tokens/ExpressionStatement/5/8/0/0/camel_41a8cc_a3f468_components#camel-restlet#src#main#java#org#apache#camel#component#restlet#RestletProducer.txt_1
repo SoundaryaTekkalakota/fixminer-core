@@ -1,0 +1,6 @@
+INS ExpressionStatement@@MethodInvocation:callback.done(true) @TO@ IfStatement@@MethodInvocation:endpoint.isSynchronous() @AT@ 3960 @LENGTH@ 20
+---INS MethodInvocation@@callback.done(true) @TO@ ExpressionStatement@@MethodInvocation:callback.done(true) @AT@ 3960 @LENGTH@ 19
+------INS SimpleName@@Name:callback @TO@ MethodInvocation@@callback.done(true) @AT@ 3960 @LENGTH@ 8
+------INS SimpleName@@MethodName:done:[true] @TO@ MethodInvocation@@callback.done(true) @AT@ 3969 @LENGTH@ 10
+---------INS BooleanLiteral@@true @TO@ SimpleName@@MethodName:done:[true] @AT@ 3974 @LENGTH@ 4
+

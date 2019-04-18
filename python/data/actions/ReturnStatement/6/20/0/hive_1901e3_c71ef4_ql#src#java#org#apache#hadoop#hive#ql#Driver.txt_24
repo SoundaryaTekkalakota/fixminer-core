@@ -1,0 +1,6 @@
+ UPD ReturnStatement 
+--- UPD MethodInvocation 
+------ UPD SimpleName 
+--------- UPD MethodInvocation 
+------------ UPD SimpleName 
+--------------- INS BooleanLiteral TO SimpleName

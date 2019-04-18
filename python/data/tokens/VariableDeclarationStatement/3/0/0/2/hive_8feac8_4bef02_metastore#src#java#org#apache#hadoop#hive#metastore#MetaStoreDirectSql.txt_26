@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@String qText=null; @TO@ String queryText=null; @AT@ 48196 @LENGTH@ 20
+---UPD VariableDeclarationFragment@@qText=null @TO@ queryText=null @AT@ 48203 @LENGTH@ 12
+------UPD SimpleName@@qText @TO@ queryText @AT@ 48203 @LENGTH@ 5
+

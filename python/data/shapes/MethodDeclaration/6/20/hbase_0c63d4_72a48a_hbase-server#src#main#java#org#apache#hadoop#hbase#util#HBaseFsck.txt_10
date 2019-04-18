@@ -1,0 +1,6 @@
+MethodDeclaration 
+---SimpleName 
+---ExpressionStatement 
+------Assignment 
+---------SimpleName 
+---------BooleanLiteral

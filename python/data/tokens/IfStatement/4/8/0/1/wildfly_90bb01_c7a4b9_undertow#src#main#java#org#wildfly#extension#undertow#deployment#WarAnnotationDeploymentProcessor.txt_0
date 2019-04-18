@@ -1,5 +1,0 @@
-UPD IfStatement@@InfixExpression:loadOnStartup != null && loadOnStartup.asInt() > 0 @TO@ InfixExpression:loadOnStartup != null && loadOnStartup.asInt() >= 0 @AT@ 8564 @LENGTH@ 147
----UPD InfixExpression@@loadOnStartup != null && loadOnStartup.asInt() > 0 @TO@ loadOnStartup != null && loadOnStartup.asInt() >= 0 @AT@ 8568 @LENGTH@ 50
-------UPD InfixExpression@@loadOnStartup.asInt() > 0 @TO@ loadOnStartup.asInt() >= 0 @AT@ 8593 @LENGTH@ 25
----------UPD Operator@@> @TO@ >= @AT@ 8614 @LENGTH@ 1
-

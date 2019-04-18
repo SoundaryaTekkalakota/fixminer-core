@@ -1,4 +1,0 @@
-UPD IfStatement@@InfixExpression:averageSize.getTotalSize() <= 0 @TO@ InfixExpression:averageSize.getTotalSize() < 0 @AT@ 15503 @LENGTH@ 61
----UPD InfixExpression@@averageSize.getTotalSize() <= 0 @TO@ averageSize.getTotalSize() < 0 @AT@ 15507 @LENGTH@ 31
-------UPD Operator@@<= @TO@ < @AT@ 15533 @LENGTH@ 2
-

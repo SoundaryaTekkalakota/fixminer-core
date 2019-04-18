@@ -1,8 +1,0 @@
-VariableDeclarationStatement 
----Modifier 
----PrimitiveType 
----VariableDeclarationFragment 
-------SimpleName 
-------MethodInvocation 
----------SimpleName 
----------SimpleName

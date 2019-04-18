@@ -1,0 +1,6 @@
+INS ExpressionStatement@@MethodInvocation:ctx.setHDFSCleanup(true) @TO@ MethodDeclaration@@private, ASTNode, MethodName:genRewrittenTree, String rewrittenQuery, SemanticException,  @AT@ 11847 @LENGTH@ 25
+---INS MethodInvocation@@ctx.setHDFSCleanup(true) @TO@ ExpressionStatement@@MethodInvocation:ctx.setHDFSCleanup(true) @AT@ 11847 @LENGTH@ 24
+------INS SimpleName@@Name:ctx @TO@ MethodInvocation@@ctx.setHDFSCleanup(true) @AT@ 11847 @LENGTH@ 3
+------INS SimpleName@@MethodName:setHDFSCleanup:[true] @TO@ MethodInvocation@@ctx.setHDFSCleanup(true) @AT@ 11851 @LENGTH@ 20
+---------INS BooleanLiteral@@true @TO@ SimpleName@@MethodName:setHDFSCleanup:[true] @AT@ 11866 @LENGTH@ 4
+

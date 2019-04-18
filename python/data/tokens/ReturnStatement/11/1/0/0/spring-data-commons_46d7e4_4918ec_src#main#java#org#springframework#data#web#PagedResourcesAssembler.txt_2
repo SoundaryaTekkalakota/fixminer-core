@@ -1,0 +1,12 @@
+UPD ReturnStatement@@MethodInvocation:toResource(entity,new SimplePagedResourceAssembler<>()) @TO@ MethodInvocation:toResource(entity,it -> new Resource<>(it)) @AT@ 3646 @LENGTH@ 64
+---UPD MethodInvocation@@toResource(entity,new SimplePagedResourceAssembler<>()) @TO@ toResource(entity,it -> new Resource<>(it)) @AT@ 3653 @LENGTH@ 56
+------UPD SimpleName@@MethodName:toResource:[entity, new SimplePagedResourceAssembler<>()] @TO@ MethodName:toResource:[entity, it -> new Resource<>(it)] @AT@ 3653 @LENGTH@ 56
+---------DEL ClassInstanceCreation@@SimplePagedResourceAssembler<>[] @AT@ 3672 @LENGTH@ 36
+---------INS LambdaExpression@@it -> new Resource<>(it) @TO@ SimpleName@@MethodName:toResource:[entity, new SimplePagedResourceAssembler<>()] @AT@ 3730 @LENGTH@ 24
+------------INS VariableDeclarationFragment@@it @TO@ LambdaExpression@@it -> new Resource<>(it) @AT@ 3730 @LENGTH@ 2
+---------------INS SimpleName@@it @TO@ VariableDeclarationFragment@@it @AT@ 3730 @LENGTH@ 2
+------------INS ClassInstanceCreation@@Resource<>[it] @TO@ LambdaExpression@@it -> new Resource<>(it) @AT@ 3736 @LENGTH@ 18
+---------------MOV New@@new @TO@ ClassInstanceCreation@@Resource<>[it] @AT@ 3672 @LENGTH@ 3
+---------------MOV ParameterizedType@@SimplePagedResourceAssembler<> @TO@ ClassInstanceCreation@@Resource<>[it] @AT@ 3676 @LENGTH@ 30
+---------------INS SimpleName@@it @TO@ ClassInstanceCreation@@Resource<>[it] @AT@ 3751 @LENGTH@ 2
+

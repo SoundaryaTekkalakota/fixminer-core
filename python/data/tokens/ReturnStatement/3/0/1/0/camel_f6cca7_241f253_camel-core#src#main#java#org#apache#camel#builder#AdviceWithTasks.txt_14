@@ -1,0 +1,4 @@
+INS ReturnStatement@@MethodInvocation:doRemove(route,matchBy,selectFirst,selectLast,selectFrom,selectTo,maxDeep) @TO@ MethodDeclaration@@public, static, AdviceWithTask, MethodName:removeByToString, final RouteDefinition route, final String toString, boolean selectFirst, boolean selectLast, int selectFrom, int selectTo, int maxDeep,  @AT@ 7917 @LENGTH@ 88
+---INS MethodInvocation@@doRemove(route,matchBy,selectFirst,selectLast,selectFrom,selectTo,maxDeep) @TO@ ReturnStatement@@MethodInvocation:doRemove(route,matchBy,selectFirst,selectLast,selectFrom,selectTo,maxDeep) @AT@ 7924 @LENGTH@ 80
+------MOV SimpleName@@MethodName:createMatchByIterator:[route, matchBy, selectFirst, selectLast, selectFrom, selectTo, maxDeep] @TO@ MethodInvocation@@doRemove(route,matchBy,selectFirst,selectLast,selectFrom,selectTo,maxDeep) @AT@ 8067 @LENGTH@ 93
+

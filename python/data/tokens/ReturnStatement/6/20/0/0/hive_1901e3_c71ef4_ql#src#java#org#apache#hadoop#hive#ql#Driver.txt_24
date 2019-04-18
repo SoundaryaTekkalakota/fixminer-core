@@ -1,0 +1,7 @@
+UPD ReturnStatement@@MethodInvocation:createProcessorResponse(compileInternal(command)) @TO@ MethodInvocation:createProcessorResponse(compileInternal(command,false)) @AT@ 47290 @LENGTH@ 57
+---UPD MethodInvocation@@createProcessorResponse(compileInternal(command)) @TO@ createProcessorResponse(compileInternal(command,false)) @AT@ 47297 @LENGTH@ 49
+------UPD SimpleName@@MethodName:createProcessorResponse:[compileInternal(command)] @TO@ MethodName:createProcessorResponse:[compileInternal(command,false)] @AT@ 47297 @LENGTH@ 49
+---------UPD MethodInvocation@@compileInternal(command) @TO@ compileInternal(command,false) @AT@ 47321 @LENGTH@ 24
+------------UPD SimpleName@@MethodName:compileInternal:[command] @TO@ MethodName:compileInternal:[command, false] @AT@ 47321 @LENGTH@ 24
+---------------INS BooleanLiteral@@false @TO@ SimpleName@@MethodName:compileInternal:[command] @AT@ 50124 @LENGTH@ 5
+

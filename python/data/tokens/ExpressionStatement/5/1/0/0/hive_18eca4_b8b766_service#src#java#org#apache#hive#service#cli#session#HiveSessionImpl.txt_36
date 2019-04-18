@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:opHandleSet.remove(opHandle) @TO@ TryStatement@@try:[] @AT@ 10159 @LENGTH@ 29
----INS MethodInvocation@@opHandleSet.remove(opHandle) @TO@ ExpressionStatement@@MethodInvocation:opHandleSet.remove(opHandle) @AT@ 10159 @LENGTH@ 28
-------INS SimpleName@@Name:opHandleSet @TO@ MethodInvocation@@opHandleSet.remove(opHandle) @AT@ 10159 @LENGTH@ 11
-------INS SimpleName@@MethodName:remove:[opHandle] @TO@ MethodInvocation@@opHandleSet.remove(opHandle) @AT@ 10171 @LENGTH@ 16
----------INS SimpleName@@opHandle @TO@ SimpleName@@MethodName:remove:[opHandle] @AT@ 10178 @LENGTH@ 8
-

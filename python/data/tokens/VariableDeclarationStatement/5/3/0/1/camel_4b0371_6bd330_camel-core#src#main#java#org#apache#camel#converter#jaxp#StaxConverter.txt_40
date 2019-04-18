@@ -1,6 +1,0 @@
-INS VariableDeclarationStatement@@XMLInputFactory factory=getInputFactory(); @TO@ MethodDeclaration@@public, XMLStreamReader, MethodName:createXMLStreamReader, File file, Exchange exchange, XMLStreamException, FileNotFoundException,  @AT@ 6565 @LENGTH@ 44
----INS SimpleType@@XMLInputFactory @TO@ VariableDeclarationStatement@@XMLInputFactory factory=getInputFactory(); @AT@ 6565 @LENGTH@ 15
----INS VariableDeclarationFragment@@factory=getInputFactory() @TO@ VariableDeclarationStatement@@XMLInputFactory factory=getInputFactory(); @AT@ 6581 @LENGTH@ 27
-------INS SimpleName@@factory @TO@ VariableDeclarationFragment@@factory=getInputFactory() @AT@ 6581 @LENGTH@ 7
-------INS MethodInvocation@@MethodName:getInputFactory:[] @TO@ VariableDeclarationFragment@@factory=getInputFactory() @AT@ 6591 @LENGTH@ 17
-

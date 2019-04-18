@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.warn("Failed to clean up after tez job") @TO@ MethodInvocation:LOG.warn("Failed to clean up after tez job",e) @AT@ 9021 @LENGTH@ 45
+---UPD MethodInvocation@@LOG.warn("Failed to clean up after tez job") @TO@ LOG.warn("Failed to clean up after tez job",e) @AT@ 9021 @LENGTH@ 44
+------UPD SimpleName@@MethodName:warn:["Failed to clean up after tez job"] @TO@ MethodName:warn:["Failed to clean up after tez job", e] @AT@ 9025 @LENGTH@ 40
+---------INS SimpleName@@e @TO@ SimpleName@@MethodName:warn:["Failed to clean up after tez job"] @AT@ 9066 @LENGTH@ 1
+

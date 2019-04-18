@@ -1,8 +1,0 @@
-UPD MethodDeclaration@@void, MethodName:delete, Delete delete, IOException,  @TO@ default, void, MethodName:delete, Delete delete, IOException,  @AT@ 12918 @LENGTH@ 41
----INS Modifier@@default @TO@ MethodDeclaration@@void, MethodName:delete, Delete delete, IOException,  @AT@ 14105 @LENGTH@ 7
----INS ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @TO@ MethodDeclaration@@void, MethodName:delete, Delete delete, IOException,  @AT@ 14165 @LENGTH@ 60
-------INS ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @TO@ ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @AT@ 14171 @LENGTH@ 53
----------INS New@@new @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 14171 @LENGTH@ 3
----------INS SimpleType@@NotImplementedException @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 14175 @LENGTH@ 23
----------INS StringLiteral@@"Add an implementation!" @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 14199 @LENGTH@ 24
-

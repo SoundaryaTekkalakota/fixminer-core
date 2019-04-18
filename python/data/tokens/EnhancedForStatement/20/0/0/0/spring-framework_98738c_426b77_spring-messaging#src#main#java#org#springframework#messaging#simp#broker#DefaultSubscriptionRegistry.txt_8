@@ -1,0 +1,21 @@
+UPD EnhancedForStatement@@String cachedDestination, MethodInvocation:this.updateCache.keySet() @TO@ Map.Entry<String,MultiValueMap<String,String>> entry, MethodInvocation:this.updateCache.entrySet() @AT@ 7277 @LENGTH@ 529
+---UPD SingleVariableDeclaration@@String cachedDestination @TO@ Map.Entry<String,MultiValueMap<String,String>> entry @AT@ 7282 @LENGTH@ 24
+------DEL SimpleType@@String @AT@ 7282 @LENGTH@ 6
+------UPD SimpleName@@cachedDestination @TO@ entry @AT@ 7289 @LENGTH@ 17
+------INS ParameterizedType@@Map.Entry<String,MultiValueMap<String,String>> @TO@ SingleVariableDeclaration@@String cachedDestination @AT@ 7591 @LENGTH@ 48
+---------INS SimpleType@@Map.Entry @TO@ ParameterizedType@@Map.Entry<String,MultiValueMap<String,String>> @AT@ 7591 @LENGTH@ 9
+---------INS SimpleType@@String @TO@ ParameterizedType@@Map.Entry<String,MultiValueMap<String,String>> @AT@ 7601 @LENGTH@ 6
+---------INS ParameterizedType@@MultiValueMap<String,String> @TO@ ParameterizedType@@Map.Entry<String,MultiValueMap<String,String>> @AT@ 7609 @LENGTH@ 29
+------------INS SimpleType@@MultiValueMap @TO@ ParameterizedType@@MultiValueMap<String,String> @AT@ 7609 @LENGTH@ 13
+------------INS SimpleType@@String @TO@ ParameterizedType@@MultiValueMap<String,String> @AT@ 7623 @LENGTH@ 6
+------------INS SimpleType@@String @TO@ ParameterizedType@@MultiValueMap<String,String> @AT@ 7631 @LENGTH@ 6
+---UPD MethodInvocation@@this.updateCache.keySet() @TO@ this.updateCache.entrySet() @AT@ 7309 @LENGTH@ 25
+------UPD SimpleName@@MethodName:keySet:[] @TO@ MethodName:entrySet:[] @AT@ 7326 @LENGTH@ 8
+---INS VariableDeclarationStatement@@String cachedDestination=entry.getKey(); @TO@ EnhancedForStatement@@String cachedDestination, MethodInvocation:this.updateCache.keySet() @AT@ 7685 @LENGTH@ 42
+------INS SimpleType@@String @TO@ VariableDeclarationStatement@@String cachedDestination=entry.getKey(); @AT@ 7685 @LENGTH@ 6
+------INS VariableDeclarationFragment@@cachedDestination=entry.getKey() @TO@ VariableDeclarationStatement@@String cachedDestination=entry.getKey(); @AT@ 7692 @LENGTH@ 34
+---------INS SimpleName@@cachedDestination @TO@ VariableDeclarationFragment@@cachedDestination=entry.getKey() @AT@ 7692 @LENGTH@ 17
+---------INS MethodInvocation@@entry.getKey() @TO@ VariableDeclarationFragment@@cachedDestination=entry.getKey() @AT@ 7712 @LENGTH@ 14
+------------INS SimpleName@@Name:entry @TO@ MethodInvocation@@entry.getKey() @AT@ 7712 @LENGTH@ 5
+------------INS SimpleName@@MethodName:getKey:[] @TO@ MethodInvocation@@entry.getKey() @AT@ 7718 @LENGTH@ 8
+

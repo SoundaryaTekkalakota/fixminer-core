@@ -1,0 +1,14 @@
+ UPD ExpressionStatement 
+--- UPD Assignment 
+------ DEL ArrayAccess 
+------ INS ConditionalExpression TO Assignment 
+--------- INS MethodInvocation TO ConditionalExpression 
+------------ INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO MethodInvocation 
+--------------- INS ArrayAccess TO SimpleName 
+------------------ MOV SimpleName TO ArrayAccess 
+------------------ MOV NumberLiteral TO ArrayAccess 
+--------- INS SimpleName TO ConditionalExpression 
+--------- INS ArrayAccess TO ConditionalExpression 
+------------ INS SimpleName TO ArrayAccess 
+------------ INS NumberLiteral TO ArrayAccess

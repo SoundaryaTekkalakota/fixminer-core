@@ -1,0 +1,13 @@
+INS VariableDeclarationStatement@@String encoding=(String)camelExchange.getProperty(Exchange.CHARSET_NAME); @TO@ MethodDeclaration@@public, void, MethodName:populateExchangeFromCxfResponse, Exchange camelExchange, org.apache.cxf.message.Exchange cxfExchange, Map<String,Object> responseContext,  @AT@ 7093 @LENGTH@ 75
+---INS SimpleType@@String @TO@ VariableDeclarationStatement@@String encoding=(String)camelExchange.getProperty(Exchange.CHARSET_NAME); @AT@ 7093 @LENGTH@ 6
+---INS VariableDeclarationFragment@@encoding=(String)camelExchange.getProperty(Exchange.CHARSET_NAME) @TO@ VariableDeclarationStatement@@String encoding=(String)camelExchange.getProperty(Exchange.CHARSET_NAME); @AT@ 7100 @LENGTH@ 67
+------INS SimpleName@@encoding @TO@ VariableDeclarationFragment@@encoding=(String)camelExchange.getProperty(Exchange.CHARSET_NAME) @AT@ 7100 @LENGTH@ 8
+------INS CastExpression@@(String)camelExchange.getProperty(Exchange.CHARSET_NAME) @TO@ VariableDeclarationFragment@@encoding=(String)camelExchange.getProperty(Exchange.CHARSET_NAME) @AT@ 7111 @LENGTH@ 56
+---------INS SimpleType@@String @TO@ CastExpression@@(String)camelExchange.getProperty(Exchange.CHARSET_NAME) @AT@ 7112 @LENGTH@ 6
+---------INS MethodInvocation@@camelExchange.getProperty(Exchange.CHARSET_NAME) @TO@ CastExpression@@(String)camelExchange.getProperty(Exchange.CHARSET_NAME) @AT@ 7119 @LENGTH@ 48
+------------INS SimpleName@@Name:camelExchange @TO@ MethodInvocation@@camelExchange.getProperty(Exchange.CHARSET_NAME) @AT@ 7119 @LENGTH@ 13
+------------INS SimpleName@@MethodName:getProperty:[Exchange.CHARSET_NAME] @TO@ MethodInvocation@@camelExchange.getProperty(Exchange.CHARSET_NAME) @AT@ 7133 @LENGTH@ 34
+---------------INS QualifiedName@@Exchange.CHARSET_NAME @TO@ SimpleName@@MethodName:getProperty:[Exchange.CHARSET_NAME] @AT@ 7145 @LENGTH@ 21
+------------------INS SimpleName@@Exchange @TO@ QualifiedName@@Exchange.CHARSET_NAME @AT@ 7145 @LENGTH@ 8
+------------------INS SimpleName@@CHARSET_NAME @TO@ QualifiedName@@Exchange.CHARSET_NAME @AT@ 7154 @LENGTH@ 12
+

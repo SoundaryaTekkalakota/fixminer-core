@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:inputs.add(re) @TO@ MethodDeclaration@@private, void, MethodName:analyzeAlterTableRenamePart, ASTNode ast, String tblName, HashMap<String,String> oldPartSpec, SemanticException,  @AT@ 99035 @LENGTH@ 15
----INS MethodInvocation@@inputs.add(re) @TO@ ExpressionStatement@@MethodInvocation:inputs.add(re) @AT@ 99035 @LENGTH@ 14
-------INS SimpleName@@Name:inputs @TO@ MethodInvocation@@inputs.add(re) @AT@ 99035 @LENGTH@ 6
-------INS SimpleName@@MethodName:add:[re] @TO@ MethodInvocation@@inputs.add(re) @AT@ 99042 @LENGTH@ 7
----------INS SimpleName@@re @TO@ SimpleName@@MethodName:add:[re] @AT@ 99046 @LENGTH@ 2
-

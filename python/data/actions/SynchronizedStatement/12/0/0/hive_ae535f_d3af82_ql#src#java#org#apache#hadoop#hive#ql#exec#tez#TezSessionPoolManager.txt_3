@@ -1,0 +1,12 @@
+ INS SynchronizedStatement TO MethodDeclaration 
+--- INS SimpleName TO SynchronizedStatement 
+--- INS ExpressionStatement TO SynchronizedStatement 
+------ INS Assignment TO ExpressionStatement 
+--------- INS SimpleName TO Assignment 
+--------- INS Operator TO Assignment 
+--------- INS ClassInstanceCreation TO Assignment 
+------------ INS New TO ClassInstanceCreation 
+------------ INS ParameterizedType TO ClassInstanceCreation 
+--------------- INS SimpleType TO ParameterizedType 
+--------------- INS SimpleType TO ParameterizedType 
+------------ INS SimpleName TO ClassInstanceCreation

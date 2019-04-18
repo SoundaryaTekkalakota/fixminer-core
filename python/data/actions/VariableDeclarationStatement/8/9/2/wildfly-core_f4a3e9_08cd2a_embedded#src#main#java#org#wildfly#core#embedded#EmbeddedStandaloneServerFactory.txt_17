@@ -1,0 +1,8 @@
+ DEL VariableDeclarationStatement 
+--- DEL SimpleType 
+--- DEL VariableDeclarationFragment 
+------ DEL SimpleName 
+------ DEL ClassInstanceCreation 
+--------- DEL New 
+--------- DEL SimpleType 
+--------- DEL StringLiteral

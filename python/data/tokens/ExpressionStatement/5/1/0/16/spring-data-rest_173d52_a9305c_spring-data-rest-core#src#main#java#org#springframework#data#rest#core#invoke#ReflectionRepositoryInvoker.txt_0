@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:ReflectionUtils.makeAccessible(method) @TO@ MethodDeclaration@@private, T, T, MethodName:invoke, Method method, Object... arguments,  @AT@ 8766 @LENGTH@ 39
----INS MethodInvocation@@ReflectionUtils.makeAccessible(method) @TO@ ExpressionStatement@@MethodInvocation:ReflectionUtils.makeAccessible(method) @AT@ 8766 @LENGTH@ 38
-------INS SimpleName@@Name:ReflectionUtils @TO@ MethodInvocation@@ReflectionUtils.makeAccessible(method) @AT@ 8766 @LENGTH@ 15
-------INS SimpleName@@MethodName:makeAccessible:[method] @TO@ MethodInvocation@@ReflectionUtils.makeAccessible(method) @AT@ 8782 @LENGTH@ 22
----------INS SimpleName@@method @TO@ SimpleName@@MethodName:makeAccessible:[method] @AT@ 8797 @LENGTH@ 6
-

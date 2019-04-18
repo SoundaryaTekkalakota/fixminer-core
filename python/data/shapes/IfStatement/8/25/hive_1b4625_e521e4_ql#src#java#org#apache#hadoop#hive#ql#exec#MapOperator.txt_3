@@ -1,8 +1,0 @@
-IfStatement 
----InfixExpression 
-------NullLiteral 
-------Operator 
-------FieldAccess 
----------ThisExpression 
----------SimpleName 
----FieldAccess

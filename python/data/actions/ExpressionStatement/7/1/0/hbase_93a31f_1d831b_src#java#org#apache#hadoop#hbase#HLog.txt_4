@@ -1,7 +1,0 @@
- INS ExpressionStatement TO SynchronizedStatement 
---- INS Assignment TO ExpressionStatement 
------- INS SimpleName TO Assignment 
------- INS Operator TO Assignment 
------- INS MethodInvocation TO Assignment 
---------- INS SimpleName TO MethodInvocation 
---------- INS SimpleName TO MethodInvocation

@@ -1,5 +1,0 @@
- DEL ExpressionStatement 
---- DEL MethodInvocation 
------- DEL SimpleName 
------- DEL SimpleName 
---------- DEL SimpleName

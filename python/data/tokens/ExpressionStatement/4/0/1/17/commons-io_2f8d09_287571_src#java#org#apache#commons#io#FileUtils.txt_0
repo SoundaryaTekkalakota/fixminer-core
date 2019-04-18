@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:doCopyDirectory(srcDir,destDir,preserveFileDate) @TO@ MethodInvocation:doCopyDirectory(srcDir,destDir,preserveFileDate,exclusionList) @AT@ 32802 @LENGTH@ 51
+---UPD MethodInvocation@@doCopyDirectory(srcDir,destDir,preserveFileDate) @TO@ doCopyDirectory(srcDir,destDir,preserveFileDate,exclusionList) @AT@ 32802 @LENGTH@ 50
+------UPD SimpleName@@MethodName:doCopyDirectory:[srcDir, destDir, preserveFileDate] @TO@ MethodName:doCopyDirectory:[srcDir, destDir, preserveFileDate, exclusionList] @AT@ 32802 @LENGTH@ 50
+---------INS SimpleName@@exclusionList @TO@ SimpleName@@MethodName:doCopyDirectory:[srcDir, destDir, preserveFileDate] @AT@ 33512 @LENGTH@ 13
+

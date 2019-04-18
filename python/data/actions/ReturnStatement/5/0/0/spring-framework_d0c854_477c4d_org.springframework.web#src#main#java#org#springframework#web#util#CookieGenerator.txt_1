@@ -1,5 +1,0 @@
- UPD ReturnStatement 
---- DEL SimpleName 
---- INS FieldAccess TO ReturnStatement 
------- INS ThisExpression TO FieldAccess 
------- INS SimpleName TO FieldAccess

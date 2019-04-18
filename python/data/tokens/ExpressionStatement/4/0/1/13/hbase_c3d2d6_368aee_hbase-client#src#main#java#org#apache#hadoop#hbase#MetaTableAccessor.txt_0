@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:p.addImmutable(HConstants.CATALOG_FAMILY,getServerColumn(replicaId),Bytes.toBytes(sn.getHostAndPort())) @TO@ MethodInvocation:p.addImmutable(HConstants.CATALOG_FAMILY,getServerColumn(replicaId),now,Bytes.toBytes(sn.getHostAndPort())) @AT@ 54582 @LENGTH@ 112
+---UPD MethodInvocation@@p.addImmutable(HConstants.CATALOG_FAMILY,getServerColumn(replicaId),Bytes.toBytes(sn.getHostAndPort())) @TO@ p.addImmutable(HConstants.CATALOG_FAMILY,getServerColumn(replicaId),now,Bytes.toBytes(sn.getHostAndPort())) @AT@ 54582 @LENGTH@ 111
+------UPD SimpleName@@MethodName:addImmutable:[HConstants.CATALOG_FAMILY, getServerColumn(replicaId), Bytes.toBytes(sn.getHostAndPort())] @TO@ MethodName:addImmutable:[HConstants.CATALOG_FAMILY, getServerColumn(replicaId), now, Bytes.toBytes(sn.getHostAndPort())] @AT@ 54584 @LENGTH@ 109
+---------INS SimpleName@@now @TO@ SimpleName@@MethodName:addImmutable:[HConstants.CATALOG_FAMILY, getServerColumn(replicaId), Bytes.toBytes(sn.getHostAndPort())] @AT@ 54860 @LENGTH@ 3
+

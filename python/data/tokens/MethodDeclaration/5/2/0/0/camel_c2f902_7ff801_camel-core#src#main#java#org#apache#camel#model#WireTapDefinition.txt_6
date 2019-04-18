@@ -1,6 +1,0 @@
-UPD MethodDeclaration@@public, WireTapDefinition, MethodName:newExchangeRef, String ref,  @TO@ public, WireTapDefinition<Type>, MethodName:newExchangeRef, String ref,  @AT@ 8271 @LENGTH@ 121
----INS ParameterizedType@@WireTapDefinition<Type> @TO@ MethodDeclaration@@public, WireTapDefinition, MethodName:newExchangeRef, String ref,  @AT@ 8253 @LENGTH@ 23
-------INS SimpleType@@WireTapDefinition @TO@ ParameterizedType@@WireTapDefinition<Type> @AT@ 8253 @LENGTH@ 17
-------INS SimpleType@@Type @TO@ ParameterizedType@@WireTapDefinition<Type> @AT@ 8271 @LENGTH@ 4
----DEL SimpleType@@WireTapDefinition @AT@ 8278 @LENGTH@ 17
-

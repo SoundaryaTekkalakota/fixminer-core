@@ -1,7 +1,0 @@
-DEL IfStatement@@InfixExpression:query != null @AT@ 45414 @LENGTH@ 54
----DEL InfixExpression@@query != null @AT@ 45418 @LENGTH@ 13
-------DEL SimpleName@@query @AT@ 45418 @LENGTH@ 5
-------DEL Operator@@!= @AT@ 45423 @LENGTH@ 2
-------DEL NullLiteral@@null @AT@ 45427 @LENGTH@ 4
----DEL ExpressionStatement@@MethodInvocation:query.closeAll() @AT@ 45443 @LENGTH@ 17
-

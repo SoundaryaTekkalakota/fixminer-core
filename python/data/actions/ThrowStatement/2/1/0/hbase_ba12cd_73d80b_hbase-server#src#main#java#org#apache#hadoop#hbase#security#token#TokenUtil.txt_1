@@ -1,2 +1,0 @@
- INS ThrowStatement TO CatchClause 
---- MOV MethodInvocation TO ThrowStatement

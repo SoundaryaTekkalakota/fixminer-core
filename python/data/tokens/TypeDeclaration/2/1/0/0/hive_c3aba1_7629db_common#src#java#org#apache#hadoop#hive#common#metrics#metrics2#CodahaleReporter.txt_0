@@ -1,3 +1,0 @@
-UPD TypeDeclaration@@CodahaleReporter, [Closeable, Reporter] @TO@ [public]CodahaleReporter, [Closeable, Reporter] @AT@ 939 @LENGTH@ 109
----INS Modifier@@public @TO@ TypeDeclaration@@CodahaleReporter, [Closeable, Reporter] @AT@ 929 @LENGTH@ 6
-

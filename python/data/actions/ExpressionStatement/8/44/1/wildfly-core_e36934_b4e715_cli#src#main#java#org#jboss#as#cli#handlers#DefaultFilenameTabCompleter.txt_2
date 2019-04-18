@@ -1,8 +1,0 @@
- DEL ExpressionStatement 
---- DEL Assignment 
------- DEL SimpleName 
------- DEL Operator 
------- DEL InfixExpression 
---------- DEL SimpleName 
---------- DEL Operator 
---------- DEL SimpleName

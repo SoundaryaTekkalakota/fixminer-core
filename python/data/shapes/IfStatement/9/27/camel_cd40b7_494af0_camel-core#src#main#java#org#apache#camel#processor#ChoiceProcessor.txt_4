@@ -1,9 +1,0 @@
-IfStatement 
----PrefixExpression 
-------Operator 
-------MethodInvocation 
----------SimpleName 
-------------SimpleName 
-------------StringLiteral 
-------------SimpleName 
----BreakStatement

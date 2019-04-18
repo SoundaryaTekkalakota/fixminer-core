@@ -1,4 +1,0 @@
- UPD MethodDeclaration 
---- DEL SingleVariableDeclaration 
------- DEL SimpleType 
------- DEL SimpleName

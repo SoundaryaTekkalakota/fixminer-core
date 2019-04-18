@@ -1,0 +1,7 @@
+ INS IfStatement TO MethodDeclaration 
+--- INS MethodInvocation TO IfStatement 
+--- INS ThrowStatement TO IfStatement 
+------ INS ClassInstanceCreation TO ThrowStatement 
+--------- INS New TO ClassInstanceCreation 
+--------- INS SimpleType TO ClassInstanceCreation 
+--------- INS StringLiteral TO ClassInstanceCreation

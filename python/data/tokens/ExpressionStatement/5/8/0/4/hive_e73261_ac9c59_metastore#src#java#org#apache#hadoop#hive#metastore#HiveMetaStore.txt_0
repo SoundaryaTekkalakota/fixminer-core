@@ -1,0 +1,6 @@
+INS ExpressionStatement@@MethodInvocation:t.setDaemon(true) @TO@ MethodDeclaration@@private, static, void, MethodName:startMetaStoreThreads, final HiveConf conf, final Lock startLock, final Condition startCondition, final AtomicBoolean startedServing,  @AT@ 238753 @LENGTH@ 18
+---INS MethodInvocation@@t.setDaemon(true) @TO@ ExpressionStatement@@MethodInvocation:t.setDaemon(true) @AT@ 238753 @LENGTH@ 17
+------INS SimpleName@@Name:t @TO@ MethodInvocation@@t.setDaemon(true) @AT@ 238753 @LENGTH@ 1
+------INS SimpleName@@MethodName:setDaemon:[true] @TO@ MethodInvocation@@t.setDaemon(true) @AT@ 238755 @LENGTH@ 15
+---------INS BooleanLiteral@@true @TO@ SimpleName@@MethodName:setDaemon:[true] @AT@ 238765 @LENGTH@ 4
+

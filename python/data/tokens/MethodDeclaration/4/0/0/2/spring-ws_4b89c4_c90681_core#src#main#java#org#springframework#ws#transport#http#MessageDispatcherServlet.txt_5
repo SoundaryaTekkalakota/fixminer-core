@@ -1,5 +1,0 @@
-UPD MethodDeclaration@@private, void, MethodName:initMessageReceiverHandlerAdapter,  @TO@ private, void, MethodName:initMessageReceiverHandlerAdapter, ApplicationContext context,  @AT@ 13261 @LENGTH@ 823
----INS SingleVariableDeclaration@@ApplicationContext context @TO@ MethodDeclaration@@private, void, MethodName:initMessageReceiverHandlerAdapter,  @AT@ 13611 @LENGTH@ 26
-------INS SimpleType@@ApplicationContext @TO@ SingleVariableDeclaration@@ApplicationContext context @AT@ 13611 @LENGTH@ 18
-------INS SimpleName@@context @TO@ SingleVariableDeclaration@@ApplicationContext context @AT@ 13630 @LENGTH@ 7
-

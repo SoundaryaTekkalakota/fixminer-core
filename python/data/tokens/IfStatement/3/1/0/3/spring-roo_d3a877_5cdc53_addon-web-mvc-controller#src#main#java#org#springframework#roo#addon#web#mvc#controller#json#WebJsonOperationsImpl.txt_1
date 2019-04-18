@@ -1,4 +1,0 @@
-UPD IfStatement@@InfixExpression:MemberFindingUtils.getAnnotationOfType(classOrInterfaceTypeDetails.getAnnotations(),RooJavaType.ROO_WEB_JSON) == null @TO@ InfixExpression:MemberFindingUtils.getAnnotationOfType(classOrInterfaceTypeDetails.getAnnotations(),RooJavaType.ROO_WEB_JSON) != null @AT@ 6742 @LENGTH@ 140
----UPD InfixExpression@@MemberFindingUtils.getAnnotationOfType(classOrInterfaceTypeDetails.getAnnotations(),RooJavaType.ROO_WEB_JSON) == null @TO@ MemberFindingUtils.getAnnotationOfType(classOrInterfaceTypeDetails.getAnnotations(),RooJavaType.ROO_WEB_JSON) != null @AT@ 6746 @LENGTH@ 118
-------UPD Operator@@== @TO@ != @AT@ 6856 @LENGTH@ 2
-

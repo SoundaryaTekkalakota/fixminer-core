@@ -1,0 +1,16 @@
+ INS VariableDeclarationStatement TO IfStatement 
+--- INS ParameterizedType TO VariableDeclarationStatement 
+------ INS SimpleType TO ParameterizedType 
+------ INS SimpleType TO ParameterizedType 
+------ INS SimpleType TO ParameterizedType 
+--- INS VariableDeclarationFragment TO VariableDeclarationStatement 
+------ INS SimpleName TO VariableDeclarationFragment 
+------ INS ClassInstanceCreation TO VariableDeclarationFragment 
+--------- INS New TO ClassInstanceCreation 
+--------- INS ParameterizedType TO ClassInstanceCreation 
+------------ INS SimpleType TO ParameterizedType 
+------------ INS SimpleType TO ParameterizedType 
+------------ INS SimpleType TO ParameterizedType 
+--------- INS MethodInvocation TO ClassInstanceCreation 
+------------ INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO MethodInvocation

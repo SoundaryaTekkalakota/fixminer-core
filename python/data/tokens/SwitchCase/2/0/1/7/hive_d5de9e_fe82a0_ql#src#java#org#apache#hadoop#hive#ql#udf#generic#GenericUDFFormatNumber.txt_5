@@ -1,0 +1,3 @@
+INS SwitchCase@@SimpleName:DECIMAL @TO@ SwitchStatement@@MethodInvocation:xObjectInspector.getPrimitiveCategory() @AT@ 7793 @LENGTH@ 13
+---INS SimpleName@@DECIMAL @TO@ SwitchCase@@SimpleName:DECIMAL @AT@ 7798 @LENGTH@ 7
+

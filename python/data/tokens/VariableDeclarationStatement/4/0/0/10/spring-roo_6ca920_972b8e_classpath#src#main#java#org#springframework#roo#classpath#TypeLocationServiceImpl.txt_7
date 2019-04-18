@@ -1,0 +1,5 @@
+UPD VariableDeclarationStatement@@ClassOrInterfaceTypeDetails located=getClassOrInterfaceTypeDetailsFromCache(locatedPhysicalTypeMid); @TO@ ClassOrInterfaceTypeDetails located=getClassOrInterfaceTypeDetails(locatedPhysicalTypeMid); @AT@ 6975 @LENGTH@ 102
+---UPD VariableDeclarationFragment@@located=getClassOrInterfaceTypeDetailsFromCache(locatedPhysicalTypeMid) @TO@ located=getClassOrInterfaceTypeDetails(locatedPhysicalTypeMid) @AT@ 7003 @LENGTH@ 73
+------UPD MethodInvocation@@getClassOrInterfaceTypeDetailsFromCache(locatedPhysicalTypeMid) @TO@ getClassOrInterfaceTypeDetails(locatedPhysicalTypeMid) @AT@ 7013 @LENGTH@ 63
+---------UPD SimpleName@@MethodName:getClassOrInterfaceTypeDetailsFromCache:[locatedPhysicalTypeMid] @TO@ MethodName:getClassOrInterfaceTypeDetails:[locatedPhysicalTypeMid] @AT@ 7013 @LENGTH@ 63
+

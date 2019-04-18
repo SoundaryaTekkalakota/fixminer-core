@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:HTableDescriptor.isLegalTableName(tableName) @TO@ MethodDeclaration@@public, boolean, MethodName:isTableDisabled, byte[] tableName, IOException,  @AT@ 22088 @LENGTH@ 45
----INS MethodInvocation@@HTableDescriptor.isLegalTableName(tableName) @TO@ ExpressionStatement@@MethodInvocation:HTableDescriptor.isLegalTableName(tableName) @AT@ 22088 @LENGTH@ 44
-------INS SimpleName@@Name:HTableDescriptor @TO@ MethodInvocation@@HTableDescriptor.isLegalTableName(tableName) @AT@ 22088 @LENGTH@ 16
-------INS SimpleName@@MethodName:isLegalTableName:[tableName] @TO@ MethodInvocation@@HTableDescriptor.isLegalTableName(tableName) @AT@ 22105 @LENGTH@ 27
----------INS SimpleName@@tableName @TO@ SimpleName@@MethodName:isLegalTableName:[tableName] @AT@ 22122 @LENGTH@ 9
-

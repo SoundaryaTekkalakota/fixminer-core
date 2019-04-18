@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:p.addImmutable(HConstants.CATALOG_FAMILY,getStartCodeColumn(replicaId),Bytes.toBytes(sn.getStartcode())) @TO@ MethodInvocation:p.addImmutable(HConstants.CATALOG_FAMILY,getStartCodeColumn(replicaId),now,Bytes.toBytes(sn.getStartcode())) @AT@ 54699 @LENGTH@ 113
+---UPD MethodInvocation@@p.addImmutable(HConstants.CATALOG_FAMILY,getStartCodeColumn(replicaId),Bytes.toBytes(sn.getStartcode())) @TO@ p.addImmutable(HConstants.CATALOG_FAMILY,getStartCodeColumn(replicaId),now,Bytes.toBytes(sn.getStartcode())) @AT@ 54699 @LENGTH@ 112
+------UPD SimpleName@@MethodName:addImmutable:[HConstants.CATALOG_FAMILY, getStartCodeColumn(replicaId), Bytes.toBytes(sn.getStartcode())] @TO@ MethodName:addImmutable:[HConstants.CATALOG_FAMILY, getStartCodeColumn(replicaId), now, Bytes.toBytes(sn.getStartcode())] @AT@ 54701 @LENGTH@ 110
+---------INS SimpleName@@now @TO@ SimpleName@@MethodName:addImmutable:[HConstants.CATALOG_FAMILY, getStartCodeColumn(replicaId), Bytes.toBytes(sn.getStartcode())] @AT@ 54985 @LENGTH@ 3
+

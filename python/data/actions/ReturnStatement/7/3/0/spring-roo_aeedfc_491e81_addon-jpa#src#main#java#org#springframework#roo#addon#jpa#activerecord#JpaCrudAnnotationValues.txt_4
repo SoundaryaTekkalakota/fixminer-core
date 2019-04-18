@@ -1,7 +1,0 @@
- UPD ReturnStatement 
---- INS SimpleName TO ReturnStatement 
---- DEL MethodInvocation 
------- DEL SimpleName 
------- DEL SimpleName 
---------- DEL SimpleName 
---------- DEL SimpleName

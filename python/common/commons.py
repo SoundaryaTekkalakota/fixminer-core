@@ -52,6 +52,20 @@ def setEnv(args):
     os.environ["ROOT_DIR"] = args.root
     sys.path.append(args.root)
 
+
+    import yaml
+
+    with open(join(os.environ["ROOT_DIR"],"config.yml"), 'r') as ymlfile:
+        cfg = yaml.load(ymlfile)
+
+    # for section in cfg:
+    #     print(section)
+    # print(cfg['mysql'])
+    # print(cfg['other'])
+
+    os.environ["JDK7"] = cfg['java']['7home']
+    os.environ["JDK8"] = cfg['java']['8home']
+
     # import yaml
     #
     # with open(join(os.environ["ROOT_DIR"],"config.yml"), 'r') as ymlfile:
@@ -116,7 +130,7 @@ def setEnv(args):
 def getRun():
     import argparse
     parser = argparse.ArgumentParser(description='')
-    parser.add_argument('-subject', dest='subject', help='Environment')
+    # parser.add_argument('-subject', dest='subject', help='Environment')
     parser.add_argument('-root', dest='root', help='root folder')
     parser.add_argument('-job',dest='job',help='job name')
 
@@ -141,6 +155,8 @@ def shellCallTemplate(cmd,enc='utf-8'):
             output
     except CalledProcessError as e:
         logging.error(errors)
+    except Exception as e:
+        logging.error(e)
     return output
 
 def shellGitCheckout(cmd,enc='utf-8'):
@@ -152,7 +168,7 @@ def shellGitCheckout(cmd,enc='utf-8'):
                 raise CalledProcessError(errors, '-1')
             output
     except CalledProcessError as e:
-        logging.error(errors)
+        logging.warning(errors)
     return output,errors
 
 def save_zipped_pickle(obj, filename, protocol=-1):
@@ -298,15 +314,15 @@ def parallelRunMerge(coreFun,elements,*args):
                     logging.error('%r generated an exception: %s' % (url, exc))
                     raise
 
-                kwargs = {
-                    'total': len(futures),
-                    'unit': 'files',
-                    'unit_scale': True,
-                    'leave': False
-                }
+                # kwargs = {
+                #     'total': len(futures),
+                #     'unit': 'files',
+                #     'unit_scale': True,
+                #     'leave': False
+                # }
                 # Print out the progress as tasks complete
-                for f in tqdm(concurrent.futures.as_completed(futures), **kwargs):
-                    pass
+                # for f in tqdm(concurrent.futures.as_completed(futures), **kwargs):
+                #     pass
             # newData = pd.concat(dataL)
             return dataL
         except Exception as e:
@@ -333,6 +349,15 @@ def get_class_weights(y):
     counter = Counter(y)
     majority = max(counter.values())
     return  {cls: round(float(majority)/float(count), 2) for cls, count in counter.items()}
+
+
+def stopDB(dbDir,portInner,dbName):
+    cmd = "bash " + dbDir + "/" + "stopServer.sh " + " " + portInner;
+
+    o, e = shellGitCheckout(cmd)
+    logging.info(o)
+
+
 
 def startDB(dbDir,portInner,dbName):
     # portInner = '6380'

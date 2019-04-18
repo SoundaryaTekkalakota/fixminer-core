@@ -1,0 +1,9 @@
+ UPD CatchClause 
+--- UPD SingleVariableDeclaration 
+------ UPD SimpleName 
+--- DEL ExpressionStatement 
+------ DEL MethodInvocation 
+--------- DEL SimpleName 
+--------- DEL SimpleName 
+------------ DEL StringLiteral 
+------------ DEL SimpleName

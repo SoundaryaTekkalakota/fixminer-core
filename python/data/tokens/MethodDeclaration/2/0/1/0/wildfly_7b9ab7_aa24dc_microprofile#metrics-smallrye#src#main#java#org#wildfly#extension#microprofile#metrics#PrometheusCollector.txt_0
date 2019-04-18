@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, void, MethodName:addMetricFamilySamples, MetricFamilySamples mfs,  @TO@ public, synchronized, void, MethodName:addMetricFamilySamples, MetricFamilySamples mfs,  @AT@ 829 @LENGTH@ 233
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, void, MethodName:addMetricFamilySamples, MetricFamilySamples mfs,  @AT@ 886 @LENGTH@ 12
+

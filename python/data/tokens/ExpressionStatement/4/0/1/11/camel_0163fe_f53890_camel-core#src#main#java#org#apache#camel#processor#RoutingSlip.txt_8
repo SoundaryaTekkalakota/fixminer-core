@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:ServiceHelper.stopAndShutdownService(producerCache) @TO@ MethodInvocation:ServiceHelper.stopAndShutdownServices(producerCache,errorHandlers) @AT@ 16936 @LENGTH@ 52
+---UPD MethodInvocation@@ServiceHelper.stopAndShutdownService(producerCache) @TO@ ServiceHelper.stopAndShutdownServices(producerCache,errorHandlers) @AT@ 16936 @LENGTH@ 51
+------UPD SimpleName@@MethodName:stopAndShutdownService:[producerCache] @TO@ MethodName:stopAndShutdownServices:[producerCache, errorHandlers] @AT@ 16950 @LENGTH@ 37
+---------INS SimpleName@@errorHandlers @TO@ SimpleName@@MethodName:stopAndShutdownService:[producerCache] @AT@ 20094 @LENGTH@ 13
+

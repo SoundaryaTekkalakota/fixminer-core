@@ -1,9 +1,0 @@
-DEL EnhancedForStatement@@RequestMethod requestMethod, QualifiedName:mappingInfo.methods @AT@ 23381 @LENGTH@ 122
----DEL SingleVariableDeclaration@@RequestMethod requestMethod @AT@ 23386 @LENGTH@ 27
-------DEL SimpleType@@RequestMethod @AT@ 23386 @LENGTH@ 13
-------DEL SimpleName@@requestMethod @AT@ 23400 @LENGTH@ 13
----DEL QualifiedName@@mappingInfo.methods @AT@ 23416 @LENGTH@ 19
-------DEL SimpleName@@mappingInfo @AT@ 23416 @LENGTH@ 11
-------DEL SimpleName@@methods @AT@ 23428 @LENGTH@ 7
----DEL ExpressionStatement@@MethodInvocation:allowedMethods.add(requestMethod.toString()) @AT@ 23448 @LENGTH@ 45
-

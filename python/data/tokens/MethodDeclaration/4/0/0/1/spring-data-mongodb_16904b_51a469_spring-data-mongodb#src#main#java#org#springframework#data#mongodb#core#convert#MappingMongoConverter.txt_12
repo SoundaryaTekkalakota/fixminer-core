@@ -1,5 +1,0 @@
-UPD MethodDeclaration@@protected, Map<Object,Object>, MethodName:readMap, TypeInformation<?> type, DBObject dbObject,  @TO@ protected, Map<Object,Object>, MethodName:readMap, TypeInformation<?> type, DBObject dbObject, Object parent,  @AT@ 25920 @LENGTH@ 1098
----INS SingleVariableDeclaration@@Object parent @TO@ MethodDeclaration@@protected, Map<Object,Object>, MethodName:readMap, TypeInformation<?> type, DBObject dbObject,  @AT@ 26309 @LENGTH@ 13
-------INS SimpleType@@Object @TO@ SingleVariableDeclaration@@Object parent @AT@ 26309 @LENGTH@ 6
-------INS SimpleName@@parent @TO@ SingleVariableDeclaration@@Object parent @AT@ 26316 @LENGTH@ 6
-

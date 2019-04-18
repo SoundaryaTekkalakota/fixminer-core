@@ -1,8 +1,0 @@
-UPD MethodDeclaration@@int, MethodName:getReadRpcTimeout,  @TO@ default, int, MethodName:getReadRpcTimeout,  @AT@ 34543 @LENGTH@ 20
----INS Modifier@@default @TO@ MethodDeclaration@@int, MethodName:getReadRpcTimeout,  @AT@ 37334 @LENGTH@ 7
----INS ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @TO@ MethodDeclaration@@int, MethodName:getReadRpcTimeout,  @AT@ 37372 @LENGTH@ 60
-------INS ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @TO@ ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @AT@ 37378 @LENGTH@ 53
----------INS New@@new @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 37378 @LENGTH@ 3
----------INS SimpleType@@NotImplementedException @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 37382 @LENGTH@ 23
----------INS StringLiteral@@"Add an implementation!" @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 37406 @LENGTH@ 24
-

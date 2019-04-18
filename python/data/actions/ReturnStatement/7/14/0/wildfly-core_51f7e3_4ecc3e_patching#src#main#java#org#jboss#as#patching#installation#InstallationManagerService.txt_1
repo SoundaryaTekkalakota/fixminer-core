@@ -1,0 +1,7 @@
+ UPD ReturnStatement 
+--- DEL SimpleName 
+--- INS ClassInstanceCreation TO ReturnStatement 
+------ INS New TO ClassInstanceCreation 
+------ INS ParameterizedType TO ClassInstanceCreation 
+--------- INS SimpleType TO ParameterizedType 
+------ INS SimpleName TO ClassInstanceCreation

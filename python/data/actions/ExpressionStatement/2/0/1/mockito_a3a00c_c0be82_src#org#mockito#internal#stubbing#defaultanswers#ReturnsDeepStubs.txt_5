@@ -1,2 +1,0 @@
- INS ExpressionStatement TO MethodDeclaration 
---- INS MethodInvocation TO ExpressionStatement

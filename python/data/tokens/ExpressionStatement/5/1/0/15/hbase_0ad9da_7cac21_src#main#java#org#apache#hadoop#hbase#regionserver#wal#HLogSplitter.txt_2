@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:LOG.info(msg) @TO@ MethodDeclaration@@public, List<Path>, MethodName:splitLog, IOException,  @AT@ 7445 @LENGTH@ 14
----INS MethodInvocation@@LOG.info(msg) @TO@ ExpressionStatement@@MethodInvocation:LOG.info(msg) @AT@ 7445 @LENGTH@ 13
-------INS SimpleName@@Name:LOG @TO@ MethodInvocation@@LOG.info(msg) @AT@ 7445 @LENGTH@ 3
-------INS SimpleName@@MethodName:info:[msg] @TO@ MethodInvocation@@LOG.info(msg) @AT@ 7449 @LENGTH@ 9
----------INS SimpleName@@msg @TO@ SimpleName@@MethodName:info:[msg] @AT@ 7454 @LENGTH@ 3
-

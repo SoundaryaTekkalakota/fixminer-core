@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:aggParameters.add(expr) @TO@ ForStatement@@[int i=1];i < value.getChildCount(); [i++] @AT@ 104111 @LENGTH@ 24
----INS MethodInvocation@@aggParameters.add(expr) @TO@ ExpressionStatement@@MethodInvocation:aggParameters.add(expr) @AT@ 104111 @LENGTH@ 23
-------INS SimpleName@@Name:aggParameters @TO@ MethodInvocation@@aggParameters.add(expr) @AT@ 104111 @LENGTH@ 13
-------INS SimpleName@@MethodName:add:[expr] @TO@ MethodInvocation@@aggParameters.add(expr) @AT@ 104125 @LENGTH@ 9
----------INS SimpleName@@expr @TO@ SimpleName@@MethodName:add:[expr] @AT@ 104129 @LENGTH@ 4
-

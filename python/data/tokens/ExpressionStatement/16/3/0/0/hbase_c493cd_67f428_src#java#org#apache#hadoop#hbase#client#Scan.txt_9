@@ -1,0 +1,17 @@
+UPD ExpressionStatement@@MethodInvocation:HbaseObjectWritable.writeObject(out,this.filter,Filter.class,null) @TO@ MethodInvocation:Bytes.writeByteArray(out,Bytes.toBytes(filter.getClass().getName())) @AT@ 14838 @LENGTH@ 81
+---UPD MethodInvocation@@HbaseObjectWritable.writeObject(out,this.filter,Filter.class,null) @TO@ Bytes.writeByteArray(out,Bytes.toBytes(filter.getClass().getName())) @AT@ 14838 @LENGTH@ 80
+------UPD SimpleName@@Name:HbaseObjectWritable @TO@ Name:Bytes @AT@ 14838 @LENGTH@ 19
+------UPD SimpleName@@MethodName:writeObject:[out, this.filter, Filter.class, null] @TO@ MethodName:writeByteArray:[out, Bytes.toBytes(filter.getClass().getName())] @AT@ 14858 @LENGTH@ 60
+---------DEL FieldAccess@@this.filter @AT@ 14875 @LENGTH@ 11
+------------DEL ThisExpression@@this @AT@ 14875 @LENGTH@ 4
+------------DEL SimpleName@@filter @AT@ 14880 @LENGTH@ 6
+---------DEL TypeLiteral@@Filter.class @AT@ 14899 @LENGTH@ 12
+---------DEL NullLiteral@@null @AT@ 14913 @LENGTH@ 4
+---------INS MethodInvocation@@Bytes.toBytes(filter.getClass().getName()) @TO@ SimpleName@@MethodName:writeObject:[out, this.filter, Filter.class, null] @AT@ 15234 @LENGTH@ 42
+------------INS SimpleName@@Name:Bytes @TO@ MethodInvocation@@Bytes.toBytes(filter.getClass().getName()) @AT@ 15234 @LENGTH@ 5
+------------INS SimpleName@@MethodName:toBytes:[filter.getClass().getName()] @TO@ MethodInvocation@@Bytes.toBytes(filter.getClass().getName()) @AT@ 15240 @LENGTH@ 36
+---------------INS MethodInvocation@@filter.getClass().getName() @TO@ SimpleName@@MethodName:toBytes:[filter.getClass().getName()] @AT@ 15248 @LENGTH@ 27
+------------------INS SimpleName@@Name:filter @TO@ MethodInvocation@@filter.getClass().getName() @AT@ 15248 @LENGTH@ 6
+------------------INS MethodInvocation@@MethodName:getClass:[] @TO@ MethodInvocation@@filter.getClass().getName() @AT@ 15248 @LENGTH@ 17
+------------------INS SimpleName@@MethodName:getName:[] @TO@ MethodInvocation@@filter.getClass().getName() @AT@ 15266 @LENGTH@ 9
+

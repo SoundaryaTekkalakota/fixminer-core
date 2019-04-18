@@ -1,4 +1,0 @@
-UPD IfStatement@@InfixExpression:pos > 0 @TO@ InfixExpression:pos >= 0 @AT@ 8818 @LENGTH@ 163
----UPD InfixExpression@@pos > 0 @TO@ pos >= 0 @AT@ 8822 @LENGTH@ 7
-------UPD Operator@@> @TO@ >= @AT@ 8825 @LENGTH@ 1
-

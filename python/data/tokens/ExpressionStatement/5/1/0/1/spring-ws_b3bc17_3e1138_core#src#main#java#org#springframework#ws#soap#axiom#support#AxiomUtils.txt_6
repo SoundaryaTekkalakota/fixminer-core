@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:iaex.initCause(ex) @TO@ CatchClause@@Exception ex @AT@ 6947 @LENGTH@ 19
----INS MethodInvocation@@iaex.initCause(ex) @TO@ ExpressionStatement@@MethodInvocation:iaex.initCause(ex) @AT@ 6947 @LENGTH@ 18
-------INS SimpleName@@Name:iaex @TO@ MethodInvocation@@iaex.initCause(ex) @AT@ 6947 @LENGTH@ 4
-------INS SimpleName@@MethodName:initCause:[ex] @TO@ MethodInvocation@@iaex.initCause(ex) @AT@ 6952 @LENGTH@ 13
----------INS SimpleName@@ex @TO@ SimpleName@@MethodName:initCause:[ex] @AT@ 6962 @LENGTH@ 2
-

@@ -1,0 +1,20 @@
+ UPD VariableDeclarationStatement 
+--- UPD VariableDeclarationFragment 
+------ INS InfixExpression TO VariableDeclarationFragment 
+--------- INS ParenthesizedExpression TO InfixExpression 
+------------ MOV InfixExpression TO ParenthesizedExpression 
+--------- INS Operator TO InfixExpression 
+--------- INS ParenthesizedExpression TO InfixExpression 
+------------ INS InfixExpression TO ParenthesizedExpression 
+--------------- INS MethodInvocation TO InfixExpression 
+------------------ INS SimpleName TO MethodInvocation 
+------------------ INS SimpleName TO MethodInvocation 
+--------------- INS Operator TO InfixExpression 
+--------------- INS MethodInvocation TO InfixExpression 
+------------------ INS StringLiteral TO MethodInvocation 
+------------------ INS SimpleName TO MethodInvocation 
+--------------------- INS MethodInvocation TO SimpleName 
+------------------------ INS SimpleName TO MethodInvocation 
+------------------------ INS MethodInvocation TO MethodInvocation 
+------------------------ INS SimpleName TO MethodInvocation 
+--------------------------- INS StringLiteral TO SimpleName

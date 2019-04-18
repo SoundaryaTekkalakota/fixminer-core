@@ -1,0 +1,17 @@
+ UPD VariableDeclarationStatement 
+--- UPD VariableDeclarationFragment 
+------ UPD ClassInstanceCreation 
+--------- INS ConditionalExpression TO ClassInstanceCreation 
+------------ INS MethodInvocation TO ConditionalExpression 
+--------------- INS SimpleName TO MethodInvocation 
+--------------- INS MethodInvocation TO MethodInvocation 
+--------------- INS SimpleName TO MethodInvocation 
+------------ INS NumberLiteral TO ConditionalExpression 
+------------ MOV ConditionalExpression TO ConditionalExpression 
+--------- UPD ConditionalExpression 
+------------ INS SimpleName TO ConditionalExpression 
+------------ DEL MethodInvocation 
+--------------- DEL SimpleName 
+--------------- DEL MethodInvocation 
+--------------- DEL SimpleName 
+------------ MOV NumberLiteral TO ConditionalExpression

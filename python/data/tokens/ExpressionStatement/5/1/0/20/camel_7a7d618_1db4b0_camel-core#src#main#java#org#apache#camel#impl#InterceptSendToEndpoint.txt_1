@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:ServiceHelper.startService(producer) @TO@ MethodDeclaration@@public, void, MethodName:start, Exception,  @AT@ 5948 @LENGTH@ 37
----INS MethodInvocation@@ServiceHelper.startService(producer) @TO@ ExpressionStatement@@MethodInvocation:ServiceHelper.startService(producer) @AT@ 5948 @LENGTH@ 36
-------INS SimpleName@@Name:ServiceHelper @TO@ MethodInvocation@@ServiceHelper.startService(producer) @AT@ 5948 @LENGTH@ 13
-------INS SimpleName@@MethodName:startService:[producer] @TO@ MethodInvocation@@ServiceHelper.startService(producer) @AT@ 5962 @LENGTH@ 22
----------INS SimpleName@@producer @TO@ SimpleName@@MethodName:startService:[producer] @AT@ 5975 @LENGTH@ 8
-

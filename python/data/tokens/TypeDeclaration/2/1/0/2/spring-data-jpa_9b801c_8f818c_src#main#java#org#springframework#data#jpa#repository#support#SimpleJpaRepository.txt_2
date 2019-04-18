@@ -1,3 +1,0 @@
-UPD TypeDeclaration@@[@SuppressWarnings("rawtypes"), private, final]ByIdsSpecification, [Specification<T>] @TO@ [@SuppressWarnings("rawtypes"), private, static, final]ByIdsSpecification, [Specification<T>] @AT@ 16489 @LENGTH@ 603
----INS Modifier@@static @TO@ TypeDeclaration@@[@SuppressWarnings("rawtypes"), private, final]ByIdsSpecification, [Specification<T>] @AT@ 16721 @LENGTH@ 6
-

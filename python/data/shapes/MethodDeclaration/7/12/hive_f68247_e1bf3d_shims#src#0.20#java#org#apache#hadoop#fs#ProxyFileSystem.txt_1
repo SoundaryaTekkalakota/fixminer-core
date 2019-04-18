@@ -1,7 +1,0 @@
-MethodDeclaration 
----Modifier 
----PrimitiveType 
----SimpleName 
----ReturnStatement 
-------SuperMethodInvocation 
----------SimpleName

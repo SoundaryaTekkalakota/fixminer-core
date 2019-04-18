@@ -1,6 +1,0 @@
-DEL IfStatement@@InfixExpression:event != null @AT@ 8255 @LENGTH@ 140
----DEL InfixExpression@@event != null @AT@ 8259 @LENGTH@ 13
-------DEL SimpleName@@event @AT@ 8259 @LENGTH@ 5
-------DEL Operator@@!= @AT@ 8264 @LENGTH@ 2
-------DEL NullLiteral@@null @AT@ 8268 @LENGTH@ 4
-

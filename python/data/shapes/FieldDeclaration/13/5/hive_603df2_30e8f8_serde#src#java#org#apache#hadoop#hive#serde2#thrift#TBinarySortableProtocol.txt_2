@@ -1,0 +1,13 @@
+FieldDeclaration 
+---Modifier 
+---Modifier 
+---ArrayType 
+------PrimitiveType 
+---VariableDeclarationFragment 
+------SimpleName 
+------ArrayCreation 
+---------ArrayType 
+------------PrimitiveType 
+---------ArrayInitializer 
+------------NumberLiteral 
+------------NumberLiteral

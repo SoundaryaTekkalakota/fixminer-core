@@ -1,8 +1,0 @@
-UPD MethodDeclaration@@void, MethodName:put, List<Put> puts, IOException,  @TO@ default, void, MethodName:put, List<Put> puts, IOException,  @AT@ 9815 @LENGTH@ 39
----INS Modifier@@default @TO@ MethodDeclaration@@void, MethodName:put, List<Put> puts, IOException,  @AT@ 10690 @LENGTH@ 7
----INS ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @TO@ MethodDeclaration@@void, MethodName:put, List<Put> puts, IOException,  @AT@ 10748 @LENGTH@ 60
-------INS ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @TO@ ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @AT@ 10754 @LENGTH@ 53
----------INS New@@new @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 10754 @LENGTH@ 3
----------INS SimpleType@@NotImplementedException @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 10758 @LENGTH@ 23
----------INS StringLiteral@@"Add an implementation!" @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 10782 @LENGTH@ 24
-

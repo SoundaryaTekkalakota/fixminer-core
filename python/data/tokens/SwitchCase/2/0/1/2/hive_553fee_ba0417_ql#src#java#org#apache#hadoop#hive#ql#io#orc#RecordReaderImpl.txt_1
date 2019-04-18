@@ -1,0 +1,3 @@
+INS SwitchCase@@SimpleName:VARCHAR @TO@ SwitchStatement@@SimpleName:type @AT@ 88219 @LENGTH@ 13
+---INS SimpleName@@VARCHAR @TO@ SwitchCase@@SimpleName:VARCHAR @AT@ 88224 @LENGTH@ 7
+

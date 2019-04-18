@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.debug("Unable to calculate checksum for source file: " + srcFile.getSourcePath()) @TO@ MethodInvocation:LOG.info("Unable to calculate checksum for source file: " + srcFile.getSourcePath(),e) @AT@ 10577 @LENGTH@ 86
+---UPD MethodInvocation@@LOG.debug("Unable to calculate checksum for source file: " + srcFile.getSourcePath()) @TO@ LOG.info("Unable to calculate checksum for source file: " + srcFile.getSourcePath(),e) @AT@ 10577 @LENGTH@ 85
+------UPD SimpleName@@MethodName:debug:["Unable to calculate checksum for source file: " + srcFile.getSourcePath()] @TO@ MethodName:info:["Unable to calculate checksum for source file: " + srcFile.getSourcePath(), e] @AT@ 10581 @LENGTH@ 81
+---------INS SimpleName@@e @TO@ SimpleName@@MethodName:debug:["Unable to calculate checksum for source file: " + srcFile.getSourcePath()] @AT@ 10649 @LENGTH@ 1
+

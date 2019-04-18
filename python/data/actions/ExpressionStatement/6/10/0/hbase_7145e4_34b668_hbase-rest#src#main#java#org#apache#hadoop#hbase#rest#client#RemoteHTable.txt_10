@@ -1,6 +1,0 @@
- UPD ExpressionStatement 
---- UPD MethodInvocation 
------- UPD SimpleName 
---------- UPD MethodInvocation 
------------- DEL SimpleName 
------------- UPD SimpleName

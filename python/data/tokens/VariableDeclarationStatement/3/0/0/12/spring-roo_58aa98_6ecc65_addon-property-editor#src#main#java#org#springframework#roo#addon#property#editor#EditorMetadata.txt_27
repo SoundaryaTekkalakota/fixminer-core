@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@List<JavaSymbolName> names=new ArrayList<JavaSymbolName>(); @TO@ List<JavaSymbolName> paramNames=new ArrayList<JavaSymbolName>(); @AT@ 5690 @LENGTH@ 61
+---UPD VariableDeclarationFragment@@names=new ArrayList<JavaSymbolName>() @TO@ paramNames=new ArrayList<JavaSymbolName>() @AT@ 5711 @LENGTH@ 39
+------UPD SimpleName@@names @TO@ paramNames @AT@ 5711 @LENGTH@ 5
+

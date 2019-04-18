@@ -1,0 +1,7 @@
+MethodDeclaration 
+---PrimitiveType 
+---SimpleName 
+---ReturnStatement 
+------FieldAccess 
+---------ThisExpression 
+---------SimpleName

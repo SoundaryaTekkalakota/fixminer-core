@@ -1,3 +1,0 @@
- UPD ExpressionStatement 
---- MOV MethodInvocation TO ExpressionStatement 
------- MOV SimpleName TO MethodInvocation

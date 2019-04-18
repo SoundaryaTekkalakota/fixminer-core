@@ -1,0 +1,6 @@
+INS ReturnStatement@@MethodInvocation:delegate.addListener(listeners) @TO@ MethodDeclaration@@public, final, ServiceTarget, MethodName:addListener, final ServiceListener<Object>... listeners,  @AT@ 101940 @LENGTH@ 39
+---INS MethodInvocation@@delegate.addListener(listeners) @TO@ ReturnStatement@@MethodInvocation:delegate.addListener(listeners) @AT@ 101947 @LENGTH@ 31
+------INS SimpleName@@Name:delegate @TO@ MethodInvocation@@delegate.addListener(listeners) @AT@ 101947 @LENGTH@ 8
+------INS SimpleName@@MethodName:addListener:[listeners] @TO@ MethodInvocation@@delegate.addListener(listeners) @AT@ 101956 @LENGTH@ 22
+---------INS SimpleName@@listeners @TO@ SimpleName@@MethodName:addListener:[listeners] @AT@ 101968 @LENGTH@ 9
+

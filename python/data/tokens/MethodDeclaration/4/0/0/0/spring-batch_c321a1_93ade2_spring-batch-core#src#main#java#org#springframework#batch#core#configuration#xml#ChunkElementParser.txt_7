@@ -1,5 +1,0 @@
-UPD MethodDeclaration@@private, void, MethodName:handleItemHandlerElement, String propertyName, String adapterClassName, MutablePropertyValues propertyValues, Element element, ParserContext parserContext,  @TO@ private, void, MethodName:handleItemHandlerElement, AbstractBeanDefinition enclosing, String propertyName, String adapterClassName, MutablePropertyValues propertyValues, Element element, ParserContext parserContext,  @AT@ 9191 @LENGTH@ 1253
----INS SingleVariableDeclaration@@AbstractBeanDefinition enclosing @TO@ MethodDeclaration@@private, void, MethodName:handleItemHandlerElement, String propertyName, String adapterClassName, MutablePropertyValues propertyValues, Element element, ParserContext parserContext,  @AT@ 9294 @LENGTH@ 32
-------INS SimpleType@@AbstractBeanDefinition @TO@ SingleVariableDeclaration@@AbstractBeanDefinition enclosing @AT@ 9294 @LENGTH@ 22
-------INS SimpleName@@enclosing @TO@ SingleVariableDeclaration@@AbstractBeanDefinition enclosing @AT@ 9317 @LENGTH@ 9
-

@@ -1,0 +1,20 @@
+INS IfStatement@@InfixExpression:region != null && region.getCoprocessorHost() != null @TO@ TryStatement@@try:[] @AT@ 87367 @LENGTH@ 132
+---INS InfixExpression@@region != null && region.getCoprocessorHost() != null @TO@ IfStatement@@InfixExpression:region != null && region.getCoprocessorHost() != null @AT@ 87371 @LENGTH@ 53
+------INS InfixExpression@@region != null @TO@ InfixExpression@@region != null && region.getCoprocessorHost() != null @AT@ 87371 @LENGTH@ 14
+---------INS SimpleName@@region @TO@ InfixExpression@@region != null @AT@ 87371 @LENGTH@ 6
+---------INS Operator@@!= @TO@ InfixExpression@@region != null @AT@ 87377 @LENGTH@ 2
+---------INS NullLiteral@@null @TO@ InfixExpression@@region != null @AT@ 87381 @LENGTH@ 4
+------INS Operator@@&& @TO@ InfixExpression@@region != null && region.getCoprocessorHost() != null @AT@ 87385 @LENGTH@ 2
+------INS InfixExpression@@region.getCoprocessorHost() != null @TO@ InfixExpression@@region != null && region.getCoprocessorHost() != null @AT@ 87389 @LENGTH@ 35
+---------INS MethodInvocation@@region.getCoprocessorHost() @TO@ InfixExpression@@region.getCoprocessorHost() != null @AT@ 87389 @LENGTH@ 27
+------------INS SimpleName@@Name:region @TO@ MethodInvocation@@region.getCoprocessorHost() @AT@ 87389 @LENGTH@ 6
+------------INS SimpleName@@MethodName:getCoprocessorHost:[] @TO@ MethodInvocation@@region.getCoprocessorHost() @AT@ 87396 @LENGTH@ 20
+---------INS Operator@@!= @TO@ InfixExpression@@region.getCoprocessorHost() != null @AT@ 87416 @LENGTH@ 2
+---------INS NullLiteral@@null @TO@ InfixExpression@@region.getCoprocessorHost() != null @AT@ 87420 @LENGTH@ 4
+---INS ExpressionStatement@@MethodInvocation:region.getCoprocessorHost().preScannerClose(s) @TO@ IfStatement@@InfixExpression:region != null && region.getCoprocessorHost() != null @AT@ 87440 @LENGTH@ 47
+------INS MethodInvocation@@region.getCoprocessorHost().preScannerClose(s) @TO@ ExpressionStatement@@MethodInvocation:region.getCoprocessorHost().preScannerClose(s) @AT@ 87440 @LENGTH@ 46
+---------INS SimpleName@@Name:region @TO@ MethodInvocation@@region.getCoprocessorHost().preScannerClose(s) @AT@ 87440 @LENGTH@ 6
+---------INS MethodInvocation@@MethodName:getCoprocessorHost:[] @TO@ MethodInvocation@@region.getCoprocessorHost().preScannerClose(s) @AT@ 87440 @LENGTH@ 27
+---------INS SimpleName@@MethodName:preScannerClose:[s] @TO@ MethodInvocation@@region.getCoprocessorHost().preScannerClose(s) @AT@ 87468 @LENGTH@ 18
+------------INS SimpleName@@s @TO@ SimpleName@@MethodName:preScannerClose:[s] @AT@ 87484 @LENGTH@ 1
+

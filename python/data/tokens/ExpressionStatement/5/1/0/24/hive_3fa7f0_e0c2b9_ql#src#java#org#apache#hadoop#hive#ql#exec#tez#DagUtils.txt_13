@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:dag.addURIsForCredentials(fileSinkUris) @TO@ MethodDeclaration@@private, void, MethodName:addCredentials, MapWork mapWork, DAG dag,  @AT@ 11791 @LENGTH@ 40
----INS MethodInvocation@@dag.addURIsForCredentials(fileSinkUris) @TO@ ExpressionStatement@@MethodInvocation:dag.addURIsForCredentials(fileSinkUris) @AT@ 11791 @LENGTH@ 39
-------INS SimpleName@@Name:dag @TO@ MethodInvocation@@dag.addURIsForCredentials(fileSinkUris) @AT@ 11791 @LENGTH@ 3
-------INS SimpleName@@MethodName:addURIsForCredentials:[fileSinkUris] @TO@ MethodInvocation@@dag.addURIsForCredentials(fileSinkUris) @AT@ 11795 @LENGTH@ 35
----------INS SimpleName@@fileSinkUris @TO@ SimpleName@@MethodName:addURIsForCredentials:[fileSinkUris] @AT@ 11817 @LENGTH@ 12
-

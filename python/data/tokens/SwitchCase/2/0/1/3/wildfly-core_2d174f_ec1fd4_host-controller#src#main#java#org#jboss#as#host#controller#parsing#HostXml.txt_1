@@ -1,0 +1,3 @@
+INS SwitchCase@@SimpleName:DOMAIN_1_5 @TO@ SwitchStatement@@SimpleName:expectedNs @AT@ 88567 @LENGTH@ 16
+---INS SimpleName@@DOMAIN_1_5 @TO@ SwitchCase@@SimpleName:DOMAIN_1_5 @AT@ 88572 @LENGTH@ 10
+

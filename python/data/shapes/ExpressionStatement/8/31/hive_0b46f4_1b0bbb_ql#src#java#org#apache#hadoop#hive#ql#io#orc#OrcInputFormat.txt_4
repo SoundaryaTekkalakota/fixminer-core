@@ -1,8 +1,0 @@
-ExpressionStatement 
----MethodInvocation 
-------SimpleName 
----------InfixExpression 
-------------SimpleName 
-------------Operator 
-------------SimpleName 
----------SimpleName

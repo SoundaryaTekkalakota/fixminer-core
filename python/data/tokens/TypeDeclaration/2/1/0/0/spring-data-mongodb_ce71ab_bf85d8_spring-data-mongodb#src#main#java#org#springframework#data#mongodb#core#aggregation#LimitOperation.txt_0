@@ -1,3 +1,0 @@
-UPD TypeDeclaration@@LimitOperation, [AggregationOperation] @TO@ [public]LimitOperation, [AggregationOperation] @AT@ 978 @LENGTH@ 662
----INS Modifier@@public @TO@ TypeDeclaration@@LimitOperation, [AggregationOperation] @AT@ 977 @LENGTH@ 6
-

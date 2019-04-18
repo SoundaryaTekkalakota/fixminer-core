@@ -1,6 +1,0 @@
-DEL EnhancedForStatement@@SetupAction action, SimpleName:setupActions @AT@ 4826 @LENGTH@ 128
----DEL SingleVariableDeclaration@@SetupAction action @AT@ 4831 @LENGTH@ 18
-------DEL SimpleType@@SetupAction @AT@ 4831 @LENGTH@ 11
-------DEL SimpleName@@action @AT@ 4843 @LENGTH@ 6
----DEL SimpleName@@setupActions @AT@ 4852 @LENGTH@ 12
-

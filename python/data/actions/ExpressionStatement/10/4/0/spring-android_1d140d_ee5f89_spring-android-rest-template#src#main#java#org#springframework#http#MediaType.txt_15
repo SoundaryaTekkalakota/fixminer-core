@@ -1,0 +1,10 @@
+ UPD ExpressionStatement 
+--- UPD Assignment 
+------ DEL ClassInstanceCreation 
+--------- DEL New 
+--------- DEL SimpleType 
+--------- DEL SimpleName 
+------ INS MethodInvocation TO Assignment 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO SimpleName

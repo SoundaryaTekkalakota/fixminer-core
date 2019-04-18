@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.debug(e.getMessage()) @TO@ MethodInvocation:LOG.debug(e.getMessage(),e) @AT@ 2096 @LENGTH@ 26
+---UPD MethodInvocation@@LOG.debug(e.getMessage()) @TO@ LOG.debug(e.getMessage(),e) @AT@ 2096 @LENGTH@ 25
+------UPD SimpleName@@MethodName:debug:[e.getMessage()] @TO@ MethodName:debug:[e.getMessage(), e] @AT@ 2100 @LENGTH@ 21
+---------INS SimpleName@@e @TO@ SimpleName@@MethodName:debug:[e.getMessage()] @AT@ 2390 @LENGTH@ 1
+

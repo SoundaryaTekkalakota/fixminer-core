@@ -1,0 +1,6 @@
+INS ExpressionStatement@@MethodInvocation:callback.done(true) @TO@ IfStatement@@PrefixExpression:!shouldSkip @AT@ 6318 @LENGTH@ 20
+---INS MethodInvocation@@callback.done(true) @TO@ ExpressionStatement@@MethodInvocation:callback.done(true) @AT@ 6318 @LENGTH@ 19
+------INS SimpleName@@Name:callback @TO@ MethodInvocation@@callback.done(true) @AT@ 6318 @LENGTH@ 8
+------INS SimpleName@@MethodName:done:[true] @TO@ MethodInvocation@@callback.done(true) @AT@ 6327 @LENGTH@ 10
+---------INS BooleanLiteral@@true @TO@ SimpleName@@MethodName:done:[true] @AT@ 6332 @LENGTH@ 4
+

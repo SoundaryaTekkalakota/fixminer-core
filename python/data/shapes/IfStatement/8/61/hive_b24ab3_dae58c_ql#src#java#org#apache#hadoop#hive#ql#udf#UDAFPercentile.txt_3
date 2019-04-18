@@ -1,8 +1,0 @@
-IfStatement 
----EnhancedForStatement 
----InfixExpression 
-------QualifiedName 
----------SimpleName 
----------SimpleName 
-------Operator 
-------NullLiteral

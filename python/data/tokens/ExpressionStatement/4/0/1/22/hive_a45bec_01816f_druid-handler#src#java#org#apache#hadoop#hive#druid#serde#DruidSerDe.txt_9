@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:inferSchema((SelectQuery)query,columnNames,columnTypes,address,mapColumnNamesTypes.build()) @TO@ MethodInvocation:inferSchema((SelectQuery)query,tsTZTypeInfo,columnNames,columnTypes,address,mapColumnNamesTypes.build()) @AT@ 11733 @LENGTH@ 117
+---UPD MethodInvocation@@inferSchema((SelectQuery)query,columnNames,columnTypes,address,mapColumnNamesTypes.build()) @TO@ inferSchema((SelectQuery)query,tsTZTypeInfo,columnNames,columnTypes,address,mapColumnNamesTypes.build()) @AT@ 11733 @LENGTH@ 116
+------UPD SimpleName@@MethodName:inferSchema:[(SelectQuery)query, columnNames, columnTypes, address, mapColumnNamesTypes.build()] @TO@ MethodName:inferSchema:[(SelectQuery)query, tsTZTypeInfo, columnNames, columnTypes, address, mapColumnNamesTypes.build()] @AT@ 11733 @LENGTH@ 116
+---------INS SimpleName@@tsTZTypeInfo @TO@ SimpleName@@MethodName:inferSchema:[(SelectQuery)query, columnNames, columnTypes, address, mapColumnNamesTypes.build()] @AT@ 12192 @LENGTH@ 12
+

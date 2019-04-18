@@ -1,0 +1,7 @@
+DEL VariableDeclarationStatement@@String command=String.format("ALTER TABLE %s SET LOCATION '%s'",getQualifiedName(tableObj),newTablePath); @AT@ 19863 @LENGTH@ 119
+---DEL SimpleType@@String @AT@ 19863 @LENGTH@ 6
+---DEL VariableDeclarationFragment@@command=String.format("ALTER TABLE %s SET LOCATION '%s'",getQualifiedName(tableObj),newTablePath) @AT@ 19870 @LENGTH@ 111
+------DEL SimpleName@@command @AT@ 19870 @LENGTH@ 7
+------DEL MethodInvocation@@String.format("ALTER TABLE %s SET LOCATION '%s'",getQualifiedName(tableObj),newTablePath) @AT@ 19880 @LENGTH@ 101
+---------DEL SimpleName@@Name:String @AT@ 19880 @LENGTH@ 6
+

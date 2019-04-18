@@ -1,3 +1,0 @@
-UPD SynchronizedStatement@@SimpleName:numOutstandingOffPeakCompactions @TO@ SimpleName:compactionCountLock @AT@ 4817 @LENGTH@ 173
----UPD SimpleName@@numOutstandingOffPeakCompactions @TO@ compactionCountLock @AT@ 4830 @LENGTH@ 32
-

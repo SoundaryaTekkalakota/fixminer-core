@@ -1,0 +1,13 @@
+VariableDeclarationStatement 
+---VariableDeclarationFragment 
+------ParenthesizedExpression 
+---------ConditionalExpression 
+------------SimpleName 
+------------MethodInvocation 
+---------------SimpleName 
+---------------MethodInvocation 
+------------------SimpleName 
+---------------SimpleName 
+------------MethodInvocation 
+---------------SimpleName 
+---------------SimpleName

@@ -1,0 +1,6 @@
+INS ReturnStatement@@MethodInvocation:delegate.removeMonitor(monitor) @TO@ MethodDeclaration@@public, ServiceTarget, MethodName:removeMonitor, final StabilityMonitor monitor,  @AT@ 101294 @LENGTH@ 39
+---INS MethodInvocation@@delegate.removeMonitor(monitor) @TO@ ReturnStatement@@MethodInvocation:delegate.removeMonitor(monitor) @AT@ 101301 @LENGTH@ 31
+------INS SimpleName@@Name:delegate @TO@ MethodInvocation@@delegate.removeMonitor(monitor) @AT@ 101301 @LENGTH@ 8
+------INS SimpleName@@MethodName:removeMonitor:[monitor] @TO@ MethodInvocation@@delegate.removeMonitor(monitor) @AT@ 101310 @LENGTH@ 22
+---------INS SimpleName@@monitor @TO@ SimpleName@@MethodName:removeMonitor:[monitor] @AT@ 101324 @LENGTH@ 7
+

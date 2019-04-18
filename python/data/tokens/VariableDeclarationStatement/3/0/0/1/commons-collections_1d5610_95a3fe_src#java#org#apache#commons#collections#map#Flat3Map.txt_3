@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@Object old=value3; @TO@ Object old=value2; @AT@ 16534 @LENGTH@ 20
+---UPD VariableDeclarationFragment@@old=value3 @TO@ old=value2 @AT@ 16541 @LENGTH@ 12
+------UPD SimpleName@@value3 @TO@ value2 @AT@ 16547 @LENGTH@ 6
+

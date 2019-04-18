@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:addParitionColumnStats(neededColumns,referencedColumns,schema,table,partList,emptyStats) @TO@ MethodInvocation:addParitionColumnStats(conf,neededColumns,referencedColumns,schema,table,partList,emptyStats) @AT@ 11510 @LENGTH@ 108
+---UPD MethodInvocation@@addParitionColumnStats(neededColumns,referencedColumns,schema,table,partList,emptyStats) @TO@ addParitionColumnStats(conf,neededColumns,referencedColumns,schema,table,partList,emptyStats) @AT@ 11510 @LENGTH@ 107
+------UPD SimpleName@@MethodName:addParitionColumnStats:[neededColumns, referencedColumns, schema, table, partList, emptyStats] @TO@ MethodName:addParitionColumnStats:[conf, neededColumns, referencedColumns, schema, table, partList, emptyStats] @AT@ 11510 @LENGTH@ 107
+---------INS SimpleName@@conf @TO@ SimpleName@@MethodName:addParitionColumnStats:[neededColumns, referencedColumns, schema, table, partList, emptyStats] @AT@ 11533 @LENGTH@ 4
+

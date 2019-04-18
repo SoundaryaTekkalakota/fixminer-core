@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:LOG.warn(msg) @TO@ IfStatement@@InfixExpression:header.hasRequestParam() && header.getRequestParam() @AT@ 72266 @LENGTH@ 14
----INS MethodInvocation@@LOG.warn(msg) @TO@ ExpressionStatement@@MethodInvocation:LOG.warn(msg) @AT@ 72266 @LENGTH@ 13
-------INS SimpleName@@Name:LOG @TO@ MethodInvocation@@LOG.warn(msg) @AT@ 72266 @LENGTH@ 3
-------INS SimpleName@@MethodName:warn:[msg] @TO@ MethodInvocation@@LOG.warn(msg) @AT@ 72270 @LENGTH@ 9
----------INS SimpleName@@msg @TO@ SimpleName@@MethodName:warn:[msg] @AT@ 72275 @LENGTH@ 3
-

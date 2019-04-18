@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:ServiceHelper.stopService(producer) @TO@ MethodDeclaration@@public, void, MethodName:stop, Exception,  @AT@ 6213 @LENGTH@ 36
----INS MethodInvocation@@ServiceHelper.stopService(producer) @TO@ ExpressionStatement@@MethodInvocation:ServiceHelper.stopService(producer) @AT@ 6213 @LENGTH@ 35
-------INS SimpleName@@Name:ServiceHelper @TO@ MethodInvocation@@ServiceHelper.stopService(producer) @AT@ 6213 @LENGTH@ 13
-------INS SimpleName@@MethodName:stopService:[producer] @TO@ MethodInvocation@@ServiceHelper.stopService(producer) @AT@ 6227 @LENGTH@ 21
----------INS SimpleName@@producer @TO@ SimpleName@@MethodName:stopService:[producer] @AT@ 6239 @LENGTH@ 8
-

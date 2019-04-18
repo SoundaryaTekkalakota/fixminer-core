@@ -1,7 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:inferSchema((TopNQuery)query,columnNames,columnTypes) @TO@ MethodInvocation:inferSchema((TopNQuery)query,columnNames,columnTypes,mapColumnNamesTypes.build()) @AT@ 9940 @LENGTH@ 57
----UPD MethodInvocation@@inferSchema((TopNQuery)query,columnNames,columnTypes) @TO@ inferSchema((TopNQuery)query,columnNames,columnTypes,mapColumnNamesTypes.build()) @AT@ 9940 @LENGTH@ 56
-------UPD SimpleName@@MethodName:inferSchema:[(TopNQuery)query, columnNames, columnTypes] @TO@ MethodName:inferSchema:[(TopNQuery)query, columnNames, columnTypes, mapColumnNamesTypes.build()] @AT@ 9940 @LENGTH@ 56
----------INS MethodInvocation@@mapColumnNamesTypes.build() @TO@ SimpleName@@MethodName:inferSchema:[(TopNQuery)query, columnNames, columnTypes] @AT@ 10983 @LENGTH@ 27
-------------INS SimpleName@@Name:mapColumnNamesTypes @TO@ MethodInvocation@@mapColumnNamesTypes.build() @AT@ 10983 @LENGTH@ 19
-------------INS SimpleName@@MethodName:build:[] @TO@ MethodInvocation@@mapColumnNamesTypes.build() @AT@ 11003 @LENGTH@ 7
-

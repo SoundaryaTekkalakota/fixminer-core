@@ -1,0 +1,8 @@
+UPD ForStatement@@[index=0];index < bitVectorSize; [index++] @TO@ [index=0];index < BIT_VECTOR_SIZE; [index++] @AT@ 7956 @LENGTH@ 135
+---UPD InfixExpression@@index < bitVectorSize @TO@ index < BIT_VECTOR_SIZE @AT@ 7970 @LENGTH@ 19
+------UPD SimpleName@@bitVectorSize @TO@ BIT_VECTOR_SIZE @AT@ 7976 @LENGTH@ 13
+---UPD IfStatement@@InfixExpression:hash % 2 == 1 @TO@ InfixExpression:hash % 2 != 0 @AT@ 8010 @LENGTH@ 47
+------UPD InfixExpression@@hash % 2 == 1 @TO@ hash % 2 != 0 @AT@ 8014 @LENGTH@ 13
+---------UPD Operator@@== @TO@ != @AT@ 8022 @LENGTH@ 2
+---------UPD NumberLiteral@@1 @TO@ 0 @AT@ 8026 @LENGTH@ 1
+

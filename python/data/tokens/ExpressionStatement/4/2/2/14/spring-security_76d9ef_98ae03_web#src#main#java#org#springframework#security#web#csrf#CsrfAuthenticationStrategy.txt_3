@@ -1,5 +1,0 @@
-UPD ExpressionStatement@@MethodInvocation:request.setAttribute(CsrfToken.class.getName(),newToken) @TO@ MethodInvocation:request.setAttribute(CsrfToken.class.getName(),tokenForRequest) @AT@ 2614 @LENGTH@ 58
----UPD MethodInvocation@@request.setAttribute(CsrfToken.class.getName(),newToken) @TO@ request.setAttribute(CsrfToken.class.getName(),tokenForRequest) @AT@ 2614 @LENGTH@ 57
-------UPD SimpleName@@MethodName:setAttribute:[CsrfToken.class.getName(), newToken] @TO@ MethodName:setAttribute:[CsrfToken.class.getName(), tokenForRequest] @AT@ 2622 @LENGTH@ 49
----------UPD SimpleName@@newToken @TO@ tokenForRequest @AT@ 2662 @LENGTH@ 8
-

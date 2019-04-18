@@ -1,4 +1,0 @@
-DEL VariableDeclarationStatement@@InterceptorClassesMetaData interceptorClasses=binding.getInterceptorClasses(); @AT@ 43186 @LENGTH@ 80
----DEL VariableDeclarationFragment@@interceptorClasses=binding.getInterceptorClasses() @AT@ 43213 @LENGTH@ 52
-------DEL MethodInvocation@@binding.getInterceptorClasses() @AT@ 43234 @LENGTH@ 31
-

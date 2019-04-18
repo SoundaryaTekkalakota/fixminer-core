@@ -1,4 +1,0 @@
-UPD ReturnStatement@@MethodInvocation:responses.isCancelled() @TO@ MethodInvocation:futureResponses.isCancelled() @AT@ 5631 @LENGTH@ 31
----UPD MethodInvocation@@responses.isCancelled() @TO@ futureResponses.isCancelled() @AT@ 5638 @LENGTH@ 23
-------UPD SimpleName@@Name:responses @TO@ Name:futureResponses @AT@ 5638 @LENGTH@ 9
-

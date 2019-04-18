@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:bucketList.add(b) @TO@ MethodInvocation:bucketList.put(b,b) @AT@ 6157 @LENGTH@ 18
+---UPD MethodInvocation@@bucketList.add(b) @TO@ bucketList.put(b,b) @AT@ 6157 @LENGTH@ 17
+------UPD SimpleName@@MethodName:add:[b] @TO@ MethodName:put:[b, b] @AT@ 6168 @LENGTH@ 6
+---------INS SimpleName@@b @TO@ SimpleName@@MethodName:add:[b] @AT@ 6146 @LENGTH@ 1
+

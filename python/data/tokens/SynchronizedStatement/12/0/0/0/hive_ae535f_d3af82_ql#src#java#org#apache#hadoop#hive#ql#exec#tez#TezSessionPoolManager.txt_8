@@ -1,0 +1,13 @@
+INS SynchronizedStatement@@SimpleName:openSessions @TO@ MethodDeclaration@@public, void, MethodName:closeNonDefaultSessions, boolean keepTmpDir, Exception,  @AT@ 17690 @LENGTH@ 111
+---INS SimpleName@@openSessions @TO@ SynchronizedStatement@@SimpleName:openSessions @AT@ 17704 @LENGTH@ 12
+---INS ExpressionStatement@@Assignment:sessionsToClose=new ArrayList<TezSessionPoolSession>(openSessions) @TO@ SynchronizedStatement@@SimpleName:openSessions @AT@ 17726 @LENGTH@ 69
+------INS Assignment@@sessionsToClose=new ArrayList<TezSessionPoolSession>(openSessions) @TO@ ExpressionStatement@@Assignment:sessionsToClose=new ArrayList<TezSessionPoolSession>(openSessions) @AT@ 17726 @LENGTH@ 68
+---------INS SimpleName@@sessionsToClose @TO@ Assignment@@sessionsToClose=new ArrayList<TezSessionPoolSession>(openSessions) @AT@ 17726 @LENGTH@ 15
+---------INS Operator@@= @TO@ Assignment@@sessionsToClose=new ArrayList<TezSessionPoolSession>(openSessions) @AT@ 17741 @LENGTH@ 1
+---------INS ClassInstanceCreation@@ArrayList<TezSessionPoolSession>[openSessions] @TO@ Assignment@@sessionsToClose=new ArrayList<TezSessionPoolSession>(openSessions) @AT@ 17744 @LENGTH@ 50
+------------INS New@@new @TO@ ClassInstanceCreation@@ArrayList<TezSessionPoolSession>[openSessions] @AT@ 17744 @LENGTH@ 3
+------------INS ParameterizedType@@ArrayList<TezSessionPoolSession> @TO@ ClassInstanceCreation@@ArrayList<TezSessionPoolSession>[openSessions] @AT@ 17748 @LENGTH@ 32
+---------------INS SimpleType@@ArrayList @TO@ ParameterizedType@@ArrayList<TezSessionPoolSession> @AT@ 17748 @LENGTH@ 9
+---------------INS SimpleType@@TezSessionPoolSession @TO@ ParameterizedType@@ArrayList<TezSessionPoolSession> @AT@ 17758 @LENGTH@ 21
+------------INS SimpleName@@openSessions @TO@ ClassInstanceCreation@@ArrayList<TezSessionPoolSession>[openSessions] @AT@ 17781 @LENGTH@ 12
+

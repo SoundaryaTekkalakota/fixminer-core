@@ -1,0 +1,7 @@
+DEL VariableDeclarationStatement@@String command=String.format("ALTER TABLE PARTITION (%s) SET LOCATION '%s'",partName,newPartPath.toString()); @AT@ 20857 @LENGTH@ 129
+---DEL SimpleType@@String @AT@ 20857 @LENGTH@ 6
+---DEL VariableDeclarationFragment@@command=String.format("ALTER TABLE PARTITION (%s) SET LOCATION '%s'",partName,newPartPath.toString()) @AT@ 20864 @LENGTH@ 121
+------DEL SimpleName@@command @AT@ 20864 @LENGTH@ 7
+------DEL MethodInvocation@@String.format("ALTER TABLE PARTITION (%s) SET LOCATION '%s'",partName,newPartPath.toString()) @AT@ 20874 @LENGTH@ 111
+---------DEL SimpleName@@Name:String @AT@ 20874 @LENGTH@ 6
+

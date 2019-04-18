@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:LOG.fatal(msg) @TO@ IfStatement@@InfixExpression:t != null @AT@ 105531 @LENGTH@ 15
----INS MethodInvocation@@LOG.fatal(msg) @TO@ ExpressionStatement@@MethodInvocation:LOG.fatal(msg) @AT@ 105531 @LENGTH@ 14
-------INS SimpleName@@Name:LOG @TO@ MethodInvocation@@LOG.fatal(msg) @AT@ 105531 @LENGTH@ 3
-------INS SimpleName@@MethodName:fatal:[msg] @TO@ MethodInvocation@@LOG.fatal(msg) @AT@ 105535 @LENGTH@ 10
----------INS SimpleName@@msg @TO@ SimpleName@@MethodName:fatal:[msg] @AT@ 105541 @LENGTH@ 3
-

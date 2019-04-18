@@ -1,0 +1,5 @@
+VariableDeclarationStatement 
+---VariableDeclarationFragment 
+------LambdaExpression 
+---------MethodInvocation 
+------------SimpleName

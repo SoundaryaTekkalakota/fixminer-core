@@ -1,5 +1,0 @@
- DEL CatchClause 
---- DEL SingleVariableDeclaration 
------- DEL SimpleType 
------- DEL SimpleName 
---- DEL ExpressionStatement

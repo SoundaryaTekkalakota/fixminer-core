@@ -1,0 +1,15 @@
+VariableDeclarationStatement 
+---SimpleType 
+---VariableDeclarationFragment 
+------SimpleName 
+------ConditionalExpression 
+---------InstanceofExpression 
+------------SimpleName 
+------------Instanceof 
+------------SimpleType 
+---------MethodInvocation 
+------------SimpleName 
+------------SimpleName 
+---------MethodInvocation 
+------------SimpleName 
+------------SimpleName

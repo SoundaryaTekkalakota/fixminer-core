@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:doNext(calendar) @TO@ MethodInvocation:doNext(calendar,dot) @AT@ 5186 @LENGTH@ 17
+---UPD MethodInvocation@@doNext(calendar) @TO@ doNext(calendar,dot) @AT@ 5186 @LENGTH@ 16
+------UPD SimpleName@@MethodName:doNext:[calendar] @TO@ MethodName:doNext:[calendar, dot] @AT@ 5186 @LENGTH@ 16
+---------INS SimpleName@@dot @TO@ SimpleName@@MethodName:doNext:[calendar] @AT@ 5263 @LENGTH@ 3
+

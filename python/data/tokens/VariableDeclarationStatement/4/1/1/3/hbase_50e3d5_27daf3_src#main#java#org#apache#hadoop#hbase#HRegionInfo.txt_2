@@ -1,5 +1,0 @@
-INS VariableDeclarationStatement@@FileSystem fs; @TO@ MethodDeclaration@@public, HTableDescriptor, MethodName:getTableDesc,  @AT@ 18723 @LENGTH@ 14
----INS SimpleType@@FileSystem @TO@ VariableDeclarationStatement@@FileSystem fs; @AT@ 18723 @LENGTH@ 10
----INS VariableDeclarationFragment@@fs @TO@ VariableDeclarationStatement@@FileSystem fs; @AT@ 18734 @LENGTH@ 2
-------INS SimpleName@@fs @TO@ VariableDeclarationFragment@@fs @AT@ 18734 @LENGTH@ 2
-

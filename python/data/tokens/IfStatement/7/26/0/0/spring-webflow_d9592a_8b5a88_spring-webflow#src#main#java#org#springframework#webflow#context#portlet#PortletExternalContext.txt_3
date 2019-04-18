@@ -1,0 +1,8 @@
+INS IfStatement@@MethodInvocation:isRenderPhase() @TO@ MethodDeclaration@@public, void, MethodName:requestRedirectInPopup,  @AT@ 7233 @LENGTH@ 124
+---INS MethodInvocation@@MethodName:isRenderPhase:[] @TO@ IfStatement@@MethodInvocation:isRenderPhase() @AT@ 7237 @LENGTH@ 15
+---INS ThrowStatement@@ClassInstanceCreation:new IllegalStateException("Redirects are not allowed durring the portlet render phase") @TO@ IfStatement@@MethodInvocation:isRenderPhase() @AT@ 7259 @LENGTH@ 94
+------INS ClassInstanceCreation@@IllegalStateException["Redirects are not allowed durring the portlet render phase"] @TO@ ThrowStatement@@ClassInstanceCreation:new IllegalStateException("Redirects are not allowed durring the portlet render phase") @AT@ 7265 @LENGTH@ 87
+---------INS New@@new @TO@ ClassInstanceCreation@@IllegalStateException["Redirects are not allowed durring the portlet render phase"] @AT@ 7265 @LENGTH@ 3
+---------INS SimpleType@@IllegalStateException @TO@ ClassInstanceCreation@@IllegalStateException["Redirects are not allowed durring the portlet render phase"] @AT@ 7269 @LENGTH@ 21
+---------INS StringLiteral@@"Redirects are not allowed durring the portlet render phase" @TO@ ClassInstanceCreation@@IllegalStateException["Redirects are not allowed durring the portlet render phase"] @AT@ 7291 @LENGTH@ 60
+

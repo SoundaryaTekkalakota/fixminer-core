@@ -1,5 +1,0 @@
-UPD IfStatement@@InfixExpression:excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length() @TO@ InfixExpression:excerpt.equals(LINE) && 0 <= charno && charno <= sourceExcerpt.length() @AT@ 3058 @LENGTH@ 343
----UPD InfixExpression@@excerpt.equals(LINE) && 0 <= charno && charno < sourceExcerpt.length() @TO@ excerpt.equals(LINE) && 0 <= charno && charno <= sourceExcerpt.length() @AT@ 3062 @LENGTH@ 80
-------UPD InfixExpression@@charno < sourceExcerpt.length() @TO@ charno <= sourceExcerpt.length() @AT@ 3111 @LENGTH@ 31
----------UPD Operator@@< @TO@ <= @AT@ 3117 @LENGTH@ 1
-

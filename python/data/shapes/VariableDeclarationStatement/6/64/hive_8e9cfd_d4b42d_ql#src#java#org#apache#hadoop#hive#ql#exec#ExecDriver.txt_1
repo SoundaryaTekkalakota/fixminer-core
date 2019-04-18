@@ -1,6 +1,0 @@
-VariableDeclarationStatement 
----VariableDeclarationFragment 
-------InfixExpression 
----------SimpleName 
----------StringLiteral 
----------SimpleName

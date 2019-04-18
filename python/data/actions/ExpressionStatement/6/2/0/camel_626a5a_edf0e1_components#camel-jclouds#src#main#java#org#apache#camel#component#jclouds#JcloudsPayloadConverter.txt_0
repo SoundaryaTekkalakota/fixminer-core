@@ -1,0 +1,6 @@
+ INS ExpressionStatement TO IfStatement 
+--- INS MethodInvocation TO ExpressionStatement 
+------ INS SimpleName TO MethodInvocation 
+------ INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO SimpleName 
+--------- INS SimpleName TO SimpleName

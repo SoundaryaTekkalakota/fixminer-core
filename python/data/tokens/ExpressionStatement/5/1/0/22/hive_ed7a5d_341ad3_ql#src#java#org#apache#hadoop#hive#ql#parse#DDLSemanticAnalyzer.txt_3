@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:inputs.add(re) @TO@ MethodDeclaration@@private, void, MethodName:analyzeAlterTableDropParts, ASTNode ast, boolean expectView, SemanticException,  @AT@ 102012 @LENGTH@ 15
----INS MethodInvocation@@inputs.add(re) @TO@ ExpressionStatement@@MethodInvocation:inputs.add(re) @AT@ 102012 @LENGTH@ 14
-------INS SimpleName@@Name:inputs @TO@ MethodInvocation@@inputs.add(re) @AT@ 102012 @LENGTH@ 6
-------INS SimpleName@@MethodName:add:[re] @TO@ MethodInvocation@@inputs.add(re) @AT@ 102019 @LENGTH@ 7
----------INS SimpleName@@re @TO@ SimpleName@@MethodName:add:[re] @AT@ 102023 @LENGTH@ 2
-

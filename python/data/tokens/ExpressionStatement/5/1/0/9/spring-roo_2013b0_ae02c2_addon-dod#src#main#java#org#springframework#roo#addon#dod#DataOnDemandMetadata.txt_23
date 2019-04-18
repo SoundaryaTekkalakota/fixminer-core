@@ -1,6 +1,0 @@
-INS ExpressionStatement@@MethodInvocation:imports.addImport(fieldType) @TO@ MethodDeclaration@@private, String, MethodName:getTypeStr, JavaType fieldType,  @AT@ 24280 @LENGTH@ 29
----INS MethodInvocation@@imports.addImport(fieldType) @TO@ ExpressionStatement@@MethodInvocation:imports.addImport(fieldType) @AT@ 24280 @LENGTH@ 28
-------INS SimpleName@@Name:imports @TO@ MethodInvocation@@imports.addImport(fieldType) @AT@ 24280 @LENGTH@ 7
-------INS SimpleName@@MethodName:addImport:[fieldType] @TO@ MethodInvocation@@imports.addImport(fieldType) @AT@ 24288 @LENGTH@ 20
----------INS SimpleName@@fieldType @TO@ SimpleName@@MethodName:addImport:[fieldType] @AT@ 24298 @LENGTH@ 9
-

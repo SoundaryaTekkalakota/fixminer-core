@@ -1,8 +1,0 @@
-UPD MethodDeclaration@@void, MethodName:close, IOException,  @TO@ default, void, MethodName:close, IOException,  @AT@ 22729 @LENGTH@ 27
----INS Modifier@@default @TO@ MethodDeclaration@@void, MethodName:close, IOException,  @AT@ 24776 @LENGTH@ 7
----INS ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @TO@ MethodDeclaration@@void, MethodName:close, IOException,  @AT@ 24822 @LENGTH@ 60
-------INS ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @TO@ ThrowStatement@@ClassInstanceCreation:new NotImplementedException("Add an implementation!") @AT@ 24828 @LENGTH@ 53
----------INS New@@new @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 24828 @LENGTH@ 3
----------INS SimpleType@@NotImplementedException @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 24832 @LENGTH@ 23
----------INS StringLiteral@@"Add an implementation!" @TO@ ClassInstanceCreation@@NotImplementedException["Add an implementation!"] @AT@ 24856 @LENGTH@ 24
-

@@ -1,0 +1,8 @@
+ UPD ForStatement 
+--- UPD InfixExpression 
+------ UPD MethodInvocation 
+--------- UPD SimpleName 
+--- UPD VariableDeclarationStatement 
+------ UPD VariableDeclarationFragment 
+--------- UPD MethodInvocation 
+------------ UPD SimpleName

@@ -1,0 +1,15 @@
+INS TryStatement@@try:[] @TO@ IfStatement@@SimpleName:replaceHandler @AT@ 13332 @LENGTH@ 299
+---MOV ExpressionStatement@@Assignment:configuration=createHandlerConfiguration(className,moduleName,name,logContextConfiguration) @TO@ TryStatement@@try:[] @AT@ 12627 @LENGTH@ 97
+---INS CatchClause@@IllegalArgumentException|OperationFailedException e @TO@ TryStatement@@try:[] @AT@ 13474 @LENGTH@ 157
+------INS SingleVariableDeclaration@@IllegalArgumentException|OperationFailedException e @TO@ CatchClause@@IllegalArgumentException|OperationFailedException e @AT@ 13481 @LENGTH@ 53
+---------INS UnionType@@IllegalArgumentException|OperationFailedException @TO@ SingleVariableDeclaration@@IllegalArgumentException|OperationFailedException e @AT@ 13481 @LENGTH@ 51
+------------INS SimpleType@@IllegalArgumentException @TO@ UnionType@@IllegalArgumentException|OperationFailedException @AT@ 13481 @LENGTH@ 24
+------------INS SimpleType@@OperationFailedException @TO@ UnionType@@IllegalArgumentException|OperationFailedException @AT@ 13508 @LENGTH@ 24
+---------INS SimpleName@@e @TO@ SingleVariableDeclaration@@IllegalArgumentException|OperationFailedException e @AT@ 13533 @LENGTH@ 1
+------INS ExpressionStatement@@MethodInvocation:context.setRollbackOnly() @TO@ CatchClause@@IllegalArgumentException|OperationFailedException e @AT@ 13558 @LENGTH@ 26
+---------INS MethodInvocation@@context.setRollbackOnly() @TO@ ExpressionStatement@@MethodInvocation:context.setRollbackOnly() @AT@ 13558 @LENGTH@ 25
+------------INS SimpleName@@Name:context @TO@ MethodInvocation@@context.setRollbackOnly() @AT@ 13558 @LENGTH@ 7
+------------INS SimpleName@@MethodName:setRollbackOnly:[] @TO@ MethodInvocation@@context.setRollbackOnly() @AT@ 13566 @LENGTH@ 17
+------INS ThrowStatement@@SimpleName:e @TO@ CatchClause@@IllegalArgumentException|OperationFailedException e @AT@ 13605 @LENGTH@ 8
+---------INS SimpleName@@e @TO@ ThrowStatement@@SimpleName:e @AT@ 13611 @LENGTH@ 1
+

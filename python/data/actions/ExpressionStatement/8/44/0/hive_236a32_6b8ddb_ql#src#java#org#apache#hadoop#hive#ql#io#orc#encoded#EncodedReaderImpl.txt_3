@@ -1,8 +1,0 @@
- INS ExpressionStatement TO EnhancedForStatement 
---- INS Assignment TO ExpressionStatement 
------- INS SimpleName TO Assignment 
------- INS Operator TO Assignment 
------- INS InfixExpression TO Assignment 
---------- INS SimpleName TO InfixExpression 
---------- INS Operator TO InfixExpression 
---------- INS SimpleName TO InfixExpression

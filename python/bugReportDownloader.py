@@ -1,6 +1,7 @@
 from common.commons import *
 
 BUG_REPORT_PATH = os.environ["BUG_REPORT"]
+DATA_PATH = os.environ["DATA_PATH"]
 # BUG_POINT = os.environ["BUG_POINT"]
 COMMIT_DFS = os.environ["COMMIT_DFS"]
 from urllib.request import urlopen
@@ -118,6 +119,13 @@ def caseBRDownload(subject):
         for i in listdir(COMMIT_DFS):
             commits = load_zipped_pickle(join(COMMIT_DFS, i))
             bids.extend(commits.fix.values.tolist())
+    else:
+        subjects = pd.read_csv(join(DATA_PATH, 'subjects.csv'))
+
+        subjects = subjects.query("Subject == '{0}'".format(subject))
+
+        commits = load_zipped_pickle(join(COMMIT_DFS, subjects.iloc[0].Repo + '.pickle'))
+        bids.extend(commits.fix.values.tolist())
 
 
 

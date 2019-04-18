@@ -9,8 +9,6 @@ Commons,CONFIGURATION,commons-configuration,https://github.com/apache/commons-co
 Commons,CRYPTO,commons-crypto,https://github.com/apache/commons-crypto.git,master
 Commons,CSV,commons-csv,https://github.com/apache/commons-csv.git,master
 Commons,IO,commons-io,https://github.com/apache/commons-io.git,master
-Commons,LANG,commons-lang,https://github.com/apache/commons-lang.git,master
-Commons,MATH,commons-math,https://github.com/apache/commons-math.git,master
 Commons,WEAVER,commons-weaver,https://github.com/apache/commons-weaver.git,master
 JBoss,ENTESB,fuse,https://github.com/jboss-fuse/fuse.git,6.3.0.redhat
 JBoss,JBMETA,metadata,https://github.com/jboss/metadata.git,master
@@ -45,5 +43,5 @@ Spring,SOCIALTW,spring-social-twitter,https://github.com/spring-projects/spring-
 Spring,SPR,spring-framework,https://github.com/spring-projects/spring-framework,master
 Spring,SWF,spring-webflow,https://github.com/spring-projects/spring-webflow,master
 Spring,SWS,spring-ws,https://github.com/spring-projects/spring-ws,master
-Google,CLOSURE,closure-compiler,https://github.com/google/closure-compiler,master
+
 
