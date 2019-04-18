@@ -1,0 +1,6 @@
+INS FieldDeclaration@@private, ClassLoader, [classLoader] @TO@ TypeDeclaration@@[public, static]Environment, [CoprocessorEnvironment] @AT@ 12816 @LENGTH@ 32
+---INS Modifier@@private @TO@ FieldDeclaration@@private, ClassLoader, [classLoader] @AT@ 12816 @LENGTH@ 7
+---INS SimpleType@@ClassLoader @TO@ FieldDeclaration@@private, ClassLoader, [classLoader] @AT@ 12824 @LENGTH@ 11
+---INS VariableDeclarationFragment@@classLoader @TO@ FieldDeclaration@@private, ClassLoader, [classLoader] @AT@ 12836 @LENGTH@ 11
+------INS SimpleName@@classLoader @TO@ VariableDeclarationFragment@@classLoader @AT@ 12836 @LENGTH@ 11
+

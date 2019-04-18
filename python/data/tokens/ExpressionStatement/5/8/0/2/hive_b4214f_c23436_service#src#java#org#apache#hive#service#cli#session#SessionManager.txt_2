@@ -1,0 +1,6 @@
+INS ExpressionStatement@@MethodInvocation:ss.setIsHiveServerQuery(true) @TO@ MethodDeclaration@@private, void, MethodName:applyAuthorizationConfigPolicy, HiveConf newHiveConf, HiveException,  @AT@ 4014 @LENGTH@ 30
+---INS MethodInvocation@@ss.setIsHiveServerQuery(true) @TO@ ExpressionStatement@@MethodInvocation:ss.setIsHiveServerQuery(true) @AT@ 4014 @LENGTH@ 29
+------INS SimpleName@@Name:ss @TO@ MethodInvocation@@ss.setIsHiveServerQuery(true) @AT@ 4014 @LENGTH@ 2
+------INS SimpleName@@MethodName:setIsHiveServerQuery:[true] @TO@ MethodInvocation@@ss.setIsHiveServerQuery(true) @AT@ 4017 @LENGTH@ 26
+---------INS BooleanLiteral@@true @TO@ SimpleName@@MethodName:setIsHiveServerQuery:[true] @AT@ 4038 @LENGTH@ 4
+

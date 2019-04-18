@@ -1,0 +1,11 @@
+FieldDeclaration 
+---Modifier 
+---PrimitiveType 
+---VariableDeclarationFragment 
+------SimpleName 
+------InfixExpression 
+---------QualifiedName 
+------------SimpleName 
+------------SimpleName 
+---------Operator 
+---------NumberLiteral

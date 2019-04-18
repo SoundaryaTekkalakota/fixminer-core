@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, GlobalAuthenticationConfigurerAdapter, MethodName:enableGlobalAuthenticationAutowiredConfigurer, ApplicationContext context,  @TO@ public, static, GlobalAuthenticationConfigurerAdapter, MethodName:enableGlobalAuthenticationAutowiredConfigurer, ApplicationContext context,  @AT@ 2507 @LENGTH@ 201
+---INS Modifier@@static @TO@ MethodDeclaration@@public, GlobalAuthenticationConfigurerAdapter, MethodName:enableGlobalAuthenticationAutowiredConfigurer, ApplicationContext context,  @AT@ 2514 @LENGTH@ 6
+

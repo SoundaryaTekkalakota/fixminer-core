@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@static, final, AttributeDefinition, [CUMULATIVE_PATCH_ID=SimpleAttributeDefinitionBuilder.create(Constants.CUMULATIVE,ModelType.STRING).setStorageRuntime().setRuntimeServiceNotRequired().build()] @TO@ private, static, final, AttributeDefinition, [CUMULATIVE_PATCH_ID=SimpleAttributeDefinitionBuilder.create(Constants.CUMULATIVE,ModelType.STRING).setStorageRuntime().setRuntimeServiceNotRequired().build()] @AT@ 3426 @LENGTH@ 233
+---INS Modifier@@private @TO@ FieldDeclaration@@static, final, AttributeDefinition, [CUMULATIVE_PATCH_ID=SimpleAttributeDefinitionBuilder.create(Constants.CUMULATIVE,ModelType.STRING).setStorageRuntime().setRuntimeServiceNotRequired().build()] @AT@ 3442 @LENGTH@ 7
+

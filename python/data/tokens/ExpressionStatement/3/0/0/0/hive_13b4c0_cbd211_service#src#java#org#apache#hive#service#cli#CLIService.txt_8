@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.info(sessionHandle + ": getTypeInfo()") @TO@ MethodInvocation:LOG.debug(sessionHandle + ": getTypeInfo()") @AT@ 8011 @LENGTH@ 44
+---UPD MethodInvocation@@LOG.info(sessionHandle + ": getTypeInfo()") @TO@ LOG.debug(sessionHandle + ": getTypeInfo()") @AT@ 8011 @LENGTH@ 43
+------UPD SimpleName@@MethodName:info:[sessionHandle + ": getTypeInfo()"] @TO@ MethodName:debug:[sessionHandle + ": getTypeInfo()"] @AT@ 8015 @LENGTH@ 39
+

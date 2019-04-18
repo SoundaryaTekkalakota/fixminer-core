@@ -1,0 +1,15 @@
+FieldDeclaration 
+---Modifier 
+---Modifier 
+---Modifier 
+---PrimitiveType 
+---VariableDeclarationFragment 
+------SimpleName 
+------InfixExpression 
+---------ParenthesizedExpression 
+------------InfixExpression 
+---------------NumberLiteral 
+---------------Operator 
+---------------SimpleName 
+---------Operator 
+---------NumberLiteral

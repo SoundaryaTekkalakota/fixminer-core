@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:createTab_stmt.setAttribute(TBL_COMMENT,tbl_comment) @TO@ MethodInvocation:createTab_stmt.add(TBL_COMMENT,tbl_comment) @AT@ 81823 @LENGTH@ 54
+---UPD MethodInvocation@@createTab_stmt.setAttribute(TBL_COMMENT,tbl_comment) @TO@ createTab_stmt.add(TBL_COMMENT,tbl_comment) @AT@ 81823 @LENGTH@ 53
+------UPD SimpleName@@MethodName:setAttribute:[TBL_COMMENT, tbl_comment] @TO@ MethodName:add:[TBL_COMMENT, tbl_comment] @AT@ 81838 @LENGTH@ 38
+

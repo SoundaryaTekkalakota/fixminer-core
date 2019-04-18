@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, List<Row>, [actions=new ArrayList<Row>()] @TO@ private, final, List<Row>, [actions=new ArrayList<Row>()] @AT@ 6328 @LENGTH@ 49
+---INS Modifier@@final @TO@ FieldDeclaration@@private, List<Row>, [actions=new ArrayList<Row>()] @AT@ 6342 @LENGTH@ 5
+

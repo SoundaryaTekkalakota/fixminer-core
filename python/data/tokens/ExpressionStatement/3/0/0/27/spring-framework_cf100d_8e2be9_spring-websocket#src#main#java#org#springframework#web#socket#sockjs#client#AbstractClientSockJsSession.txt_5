@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:closeInternal(CloseStatus.BAD_DATA) @TO@ MethodInvocation:silentClose(CloseStatus.BAD_DATA) @AT@ 7759 @LENGTH@ 36
+---UPD MethodInvocation@@closeInternal(CloseStatus.BAD_DATA) @TO@ silentClose(CloseStatus.BAD_DATA) @AT@ 7759 @LENGTH@ 35
+------UPD SimpleName@@MethodName:closeInternal:[CloseStatus.BAD_DATA] @TO@ MethodName:silentClose:[CloseStatus.BAD_DATA] @AT@ 7759 @LENGTH@ 35
+

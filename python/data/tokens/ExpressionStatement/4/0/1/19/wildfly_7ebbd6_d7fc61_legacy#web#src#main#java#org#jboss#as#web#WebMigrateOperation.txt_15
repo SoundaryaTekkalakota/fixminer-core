@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:migrateConnector(context,newAddOperations,newAddOp,address,legacyModelDescription,warnings) @TO@ MethodInvocation:migrateConnector(context,newAddOperations,newAddOp,address,legacyModelDescription,warnings,domainMode) @AT@ 31734 @LENGTH@ 97
+---UPD MethodInvocation@@migrateConnector(context,newAddOperations,newAddOp,address,legacyModelDescription,warnings) @TO@ migrateConnector(context,newAddOperations,newAddOp,address,legacyModelDescription,warnings,domainMode) @AT@ 31734 @LENGTH@ 96
+------UPD SimpleName@@MethodName:migrateConnector:[context, newAddOperations, newAddOp, address, legacyModelDescription, warnings] @TO@ MethodName:migrateConnector:[context, newAddOperations, newAddOp, address, legacyModelDescription, warnings, domainMode] @AT@ 31734 @LENGTH@ 96
+---------INS SimpleName@@domainMode @TO@ SimpleName@@MethodName:migrateConnector:[context, newAddOperations, newAddOp, address, legacyModelDescription, warnings] @AT@ 34768 @LENGTH@ 10
+

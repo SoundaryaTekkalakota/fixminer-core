@@ -1,0 +1,6 @@
+ThrowStatement 
+---ClassInstanceCreation 
+------New 
+------SimpleType 
+------StringLiteral 
+------SimpleName

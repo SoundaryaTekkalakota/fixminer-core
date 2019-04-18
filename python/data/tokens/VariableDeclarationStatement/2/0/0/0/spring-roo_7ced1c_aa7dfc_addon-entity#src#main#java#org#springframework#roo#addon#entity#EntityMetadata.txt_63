@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@MethodMetadata userMethod=MemberFindingUtils.getMethod(governorTypeDetails,methodName,paramTypes); @TO@ final MethodMetadata userMethod=MemberFindingUtils.getMethod(governorTypeDetails,methodName,paramTypes); @AT@ 26731 @LENGTH@ 102
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@MethodMetadata userMethod=MemberFindingUtils.getMethod(governorTypeDetails,methodName,paramTypes); @AT@ 27106 @LENGTH@ 5
+

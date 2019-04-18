@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, int, [numBitVectors] @TO@ private, final, int, [numBitVectors] @AT@ 1700 @LENGTH@ 26
+---INS Modifier@@final @TO@ FieldDeclaration@@private, int, [numBitVectors] @AT@ 1710 @LENGTH@ 5
+

@@ -1,0 +1,41 @@
+INS IfStatement@@MethodInvocation:ObjectHelper.isNotEmpty(endpoint.getChmod()) @TO@ IfStatement@@InfixExpression:source != null && source.exists() @AT@ 10841 @LENGTH@ 453
+---INS MethodInvocation@@ObjectHelper.isNotEmpty(endpoint.getChmod()) @TO@ IfStatement@@MethodInvocation:ObjectHelper.isNotEmpty(endpoint.getChmod()) @AT@ 10845 @LENGTH@ 44
+------INS SimpleName@@Name:ObjectHelper @TO@ MethodInvocation@@ObjectHelper.isNotEmpty(endpoint.getChmod()) @AT@ 10845 @LENGTH@ 12
+------INS SimpleName@@MethodName:isNotEmpty:[endpoint.getChmod()] @TO@ MethodInvocation@@ObjectHelper.isNotEmpty(endpoint.getChmod()) @AT@ 10858 @LENGTH@ 31
+---------INS MethodInvocation@@endpoint.getChmod() @TO@ SimpleName@@MethodName:isNotEmpty:[endpoint.getChmod()] @AT@ 10869 @LENGTH@ 19
+------------INS SimpleName@@Name:endpoint @TO@ MethodInvocation@@endpoint.getChmod() @AT@ 10869 @LENGTH@ 8
+------------INS SimpleName@@MethodName:getChmod:[] @TO@ MethodInvocation@@endpoint.getChmod() @AT@ 10878 @LENGTH@ 10
+---INS VariableDeclarationStatement@@Set<PosixFilePermission> permissions=endpoint.getPermissions(); @TO@ IfStatement@@MethodInvocation:ObjectHelper.isNotEmpty(endpoint.getChmod()) @AT@ 10917 @LENGTH@ 65
+------INS ParameterizedType@@Set<PosixFilePermission> @TO@ VariableDeclarationStatement@@Set<PosixFilePermission> permissions=endpoint.getPermissions(); @AT@ 10917 @LENGTH@ 24
+---------INS SimpleType@@Set @TO@ ParameterizedType@@Set<PosixFilePermission> @AT@ 10917 @LENGTH@ 3
+---------INS SimpleType@@PosixFilePermission @TO@ ParameterizedType@@Set<PosixFilePermission> @AT@ 10921 @LENGTH@ 19
+------INS VariableDeclarationFragment@@permissions=endpoint.getPermissions() @TO@ VariableDeclarationStatement@@Set<PosixFilePermission> permissions=endpoint.getPermissions(); @AT@ 10942 @LENGTH@ 39
+---------INS SimpleName@@permissions @TO@ VariableDeclarationFragment@@permissions=endpoint.getPermissions() @AT@ 10942 @LENGTH@ 11
+---------INS MethodInvocation@@endpoint.getPermissions() @TO@ VariableDeclarationFragment@@permissions=endpoint.getPermissions() @AT@ 10956 @LENGTH@ 25
+------------INS SimpleName@@Name:endpoint @TO@ MethodInvocation@@endpoint.getPermissions() @AT@ 10956 @LENGTH@ 8
+------------INS SimpleName@@MethodName:getPermissions:[] @TO@ MethodInvocation@@endpoint.getPermissions() @AT@ 10965 @LENGTH@ 16
+---INS IfStatement@@PrefixExpression:!permissions.isEmpty() @TO@ IfStatement@@MethodInvocation:ObjectHelper.isNotEmpty(endpoint.getChmod()) @AT@ 11007 @LENGTH@ 265
+------INS PrefixExpression@@!permissions.isEmpty() @TO@ IfStatement@@PrefixExpression:!permissions.isEmpty() @AT@ 11011 @LENGTH@ 22
+---------INS Operator@@! @TO@ PrefixExpression@@!permissions.isEmpty() @AT@ 11011 @LENGTH@ 1
+---------INS MethodInvocation@@permissions.isEmpty() @TO@ PrefixExpression@@!permissions.isEmpty() @AT@ 11012 @LENGTH@ 21
+------------INS SimpleName@@Name:permissions @TO@ MethodInvocation@@permissions.isEmpty() @AT@ 11012 @LENGTH@ 11
+------------INS SimpleName@@MethodName:isEmpty:[] @TO@ MethodInvocation@@permissions.isEmpty() @AT@ 11024 @LENGTH@ 9
+------INS ExpressionStatement@@MethodInvocation:Files.setPosixFilePermissions(file.toPath(),permissions) @TO@ IfStatement@@PrefixExpression:!permissions.isEmpty() @AT@ 11065 @LENGTH@ 58
+---------INS MethodInvocation@@Files.setPosixFilePermissions(file.toPath(),permissions) @TO@ ExpressionStatement@@MethodInvocation:Files.setPosixFilePermissions(file.toPath(),permissions) @AT@ 11065 @LENGTH@ 57
+------------INS SimpleName@@Name:Files @TO@ MethodInvocation@@Files.setPosixFilePermissions(file.toPath(),permissions) @AT@ 11065 @LENGTH@ 5
+------------INS SimpleName@@MethodName:setPosixFilePermissions:[file.toPath(), permissions] @TO@ MethodInvocation@@Files.setPosixFilePermissions(file.toPath(),permissions) @AT@ 11071 @LENGTH@ 51
+---------------INS MethodInvocation@@file.toPath() @TO@ SimpleName@@MethodName:setPosixFilePermissions:[file.toPath(), permissions] @AT@ 11095 @LENGTH@ 13
+------------------INS SimpleName@@Name:file @TO@ MethodInvocation@@file.toPath() @AT@ 11095 @LENGTH@ 4
+------------------INS SimpleName@@MethodName:toPath:[] @TO@ MethodInvocation@@file.toPath() @AT@ 11100 @LENGTH@ 8
+---------------INS SimpleName@@permissions @TO@ SimpleName@@MethodName:setPosixFilePermissions:[file.toPath(), permissions] @AT@ 11110 @LENGTH@ 11
+------INS ExpressionStatement@@MethodInvocation:LOG.trace("Setting chmod: {} on file: {} ",PosixFilePermissions.toString(permissions),file) @TO@ IfStatement@@PrefixExpression:!permissions.isEmpty() @AT@ 11152 @LENGTH@ 94
+---------INS MethodInvocation@@LOG.trace("Setting chmod: {} on file: {} ",PosixFilePermissions.toString(permissions),file) @TO@ ExpressionStatement@@MethodInvocation:LOG.trace("Setting chmod: {} on file: {} ",PosixFilePermissions.toString(permissions),file) @AT@ 11152 @LENGTH@ 93
+------------INS SimpleName@@Name:LOG @TO@ MethodInvocation@@LOG.trace("Setting chmod: {} on file: {} ",PosixFilePermissions.toString(permissions),file) @AT@ 11152 @LENGTH@ 3
+------------INS SimpleName@@MethodName:trace:["Setting chmod: {} on file: {} ", PosixFilePermissions.toString(permissions), file] @TO@ MethodInvocation@@LOG.trace("Setting chmod: {} on file: {} ",PosixFilePermissions.toString(permissions),file) @AT@ 11156 @LENGTH@ 89
+---------------INS StringLiteral@@"Setting chmod: {} on file: {} " @TO@ SimpleName@@MethodName:trace:["Setting chmod: {} on file: {} ", PosixFilePermissions.toString(permissions), file] @AT@ 11162 @LENGTH@ 32
+---------------INS MethodInvocation@@PosixFilePermissions.toString(permissions) @TO@ SimpleName@@MethodName:trace:["Setting chmod: {} on file: {} ", PosixFilePermissions.toString(permissions), file] @AT@ 11196 @LENGTH@ 42
+------------------INS SimpleName@@Name:PosixFilePermissions @TO@ MethodInvocation@@PosixFilePermissions.toString(permissions) @AT@ 11196 @LENGTH@ 20
+------------------INS SimpleName@@MethodName:toString:[permissions] @TO@ MethodInvocation@@PosixFilePermissions.toString(permissions) @AT@ 11217 @LENGTH@ 21
+---------------------INS SimpleName@@permissions @TO@ SimpleName@@MethodName:toString:[permissions] @AT@ 11226 @LENGTH@ 11
+---------------INS SimpleName@@file @TO@ SimpleName@@MethodName:trace:["Setting chmod: {} on file: {} ", PosixFilePermissions.toString(permissions), file] @AT@ 11240 @LENGTH@ 4
+

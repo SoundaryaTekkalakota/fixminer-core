@@ -1,0 +1,22 @@
+INS IfStatement@@PrefixExpression:!output.noNulls @TO@ IfStatement@@SimpleName:selectedInUse @AT@ 11917 @LENGTH@ 188
+---INS PrefixExpression@@!output.noNulls @TO@ IfStatement@@PrefixExpression:!output.noNulls @AT@ 11921 @LENGTH@ 15
+------INS Operator@@! @TO@ PrefixExpression@@!output.noNulls @AT@ 11921 @LENGTH@ 1
+------INS QualifiedName@@output.noNulls @TO@ PrefixExpression@@!output.noNulls @AT@ 11922 @LENGTH@ 14
+---------INS SimpleName@@output @TO@ QualifiedName@@output.noNulls @AT@ 11922 @LENGTH@ 6
+---------INS SimpleName@@noNulls @TO@ QualifiedName@@output.noNulls @AT@ 11929 @LENGTH@ 7
+---INS ExpressionStatement@@MethodInvocation:Arrays.fill(output.isNull,false) @TO@ IfStatement@@PrefixExpression:!output.noNulls @AT@ 12028 @LENGTH@ 34
+------INS MethodInvocation@@Arrays.fill(output.isNull,false) @TO@ ExpressionStatement@@MethodInvocation:Arrays.fill(output.isNull,false) @AT@ 12028 @LENGTH@ 33
+---------INS SimpleName@@Name:Arrays @TO@ MethodInvocation@@Arrays.fill(output.isNull,false) @AT@ 12028 @LENGTH@ 6
+---------INS SimpleName@@MethodName:fill:[output.isNull, false] @TO@ MethodInvocation@@Arrays.fill(output.isNull,false) @AT@ 12035 @LENGTH@ 26
+------------INS QualifiedName@@output.isNull @TO@ SimpleName@@MethodName:fill:[output.isNull, false] @AT@ 12040 @LENGTH@ 13
+---------------INS SimpleName@@output @TO@ QualifiedName@@output.isNull @AT@ 12040 @LENGTH@ 6
+---------------INS SimpleName@@isNull @TO@ QualifiedName@@output.isNull @AT@ 12047 @LENGTH@ 6
+------------INS BooleanLiteral@@false @TO@ SimpleName@@MethodName:fill:[output.isNull, false] @AT@ 12055 @LENGTH@ 5
+---INS ExpressionStatement@@Assignment:output.noNulls=true @TO@ IfStatement@@PrefixExpression:!output.noNulls @AT@ 12073 @LENGTH@ 22
+------INS Assignment@@output.noNulls=true @TO@ ExpressionStatement@@Assignment:output.noNulls=true @AT@ 12073 @LENGTH@ 21
+---------INS QualifiedName@@output.noNulls @TO@ Assignment@@output.noNulls=true @AT@ 12073 @LENGTH@ 14
+------------INS SimpleName@@output @TO@ QualifiedName@@output.noNulls @AT@ 12073 @LENGTH@ 6
+------------INS SimpleName@@noNulls @TO@ QualifiedName@@output.noNulls @AT@ 12080 @LENGTH@ 7
+---------INS Operator@@= @TO@ Assignment@@output.noNulls=true @AT@ 12087 @LENGTH@ 1
+---------INS BooleanLiteral@@true @TO@ Assignment@@output.noNulls=true @AT@ 12090 @LENGTH@ 4
+

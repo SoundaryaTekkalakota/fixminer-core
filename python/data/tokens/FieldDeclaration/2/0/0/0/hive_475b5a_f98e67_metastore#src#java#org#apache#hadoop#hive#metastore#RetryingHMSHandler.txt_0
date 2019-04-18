@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, MetaStoreInit.MetaStoreInitData, [metaStoreInitData=new MetaStoreInit.MetaStoreInitData()] @TO@ private, final, MetaStoreInit.MetaStoreInitData, [metaStoreInitData=new MetaStoreInit.MetaStoreInitData()] @AT@ 1901 @LENGTH@ 102
+---INS Modifier@@final @TO@ FieldDeclaration@@private, MetaStoreInit.MetaStoreInitData, [metaStoreInitData=new MetaStoreInit.MetaStoreInitData()] @AT@ 1746 @LENGTH@ 5
+

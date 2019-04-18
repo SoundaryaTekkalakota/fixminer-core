@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, Set<PolicyConfiguration>, [linkedPolicies=Collections.synchronizedSet(new LinkedHashSet<>())] @TO@ private, volatile, Set<PolicyConfiguration>, [linkedPolicies=Collections.synchronizedSet(new LinkedHashSet<>())] @AT@ 1971 @LENGTH@ 101
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, Set<PolicyConfiguration>, [linkedPolicies=Collections.synchronizedSet(new LinkedHashSet<>())] @AT@ 2106 @LENGTH@ 8
+

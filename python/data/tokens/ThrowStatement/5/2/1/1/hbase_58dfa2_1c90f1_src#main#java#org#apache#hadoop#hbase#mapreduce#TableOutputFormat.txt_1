@@ -1,0 +1,6 @@
+INS ThrowStatement@@ClassInstanceCreation:new RuntimeException(e) @TO@ CatchClause@@IOException e @AT@ 7172 @LENGTH@ 30
+---INS ClassInstanceCreation@@RuntimeException[e] @TO@ ThrowStatement@@ClassInstanceCreation:new RuntimeException(e) @AT@ 7178 @LENGTH@ 23
+------INS New@@new @TO@ ClassInstanceCreation@@RuntimeException[e] @AT@ 7178 @LENGTH@ 3
+------INS SimpleType@@RuntimeException @TO@ ClassInstanceCreation@@RuntimeException[e] @AT@ 7182 @LENGTH@ 16
+------INS SimpleName@@e @TO@ ClassInstanceCreation@@RuntimeException[e] @AT@ 7199 @LENGTH@ 1
+

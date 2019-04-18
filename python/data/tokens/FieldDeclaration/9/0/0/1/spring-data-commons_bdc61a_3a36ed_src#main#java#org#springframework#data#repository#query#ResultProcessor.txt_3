@@ -1,0 +1,10 @@
+INS FieldDeclaration@@private, final, ConversionService, [conversionService=new DefaultConversionService()] @TO@ TypeDeclaration@@[@RequiredArgsConstructor, private, static]ProjectingConverter, [Converter<Object,Object>] @AT@ 6993 @LENGTH@ 83
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, ConversionService, [conversionService=new DefaultConversionService()] @AT@ 6993 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, ConversionService, [conversionService=new DefaultConversionService()] @AT@ 7001 @LENGTH@ 5
+---INS SimpleType@@ConversionService @TO@ FieldDeclaration@@private, final, ConversionService, [conversionService=new DefaultConversionService()] @AT@ 7007 @LENGTH@ 17
+---INS VariableDeclarationFragment@@conversionService=new DefaultConversionService() @TO@ FieldDeclaration@@private, final, ConversionService, [conversionService=new DefaultConversionService()] @AT@ 7025 @LENGTH@ 50
+------INS SimpleName@@conversionService @TO@ VariableDeclarationFragment@@conversionService=new DefaultConversionService() @AT@ 7025 @LENGTH@ 17
+------INS ClassInstanceCreation@@DefaultConversionService[] @TO@ VariableDeclarationFragment@@conversionService=new DefaultConversionService() @AT@ 7045 @LENGTH@ 30
+---------INS New@@new @TO@ ClassInstanceCreation@@DefaultConversionService[] @AT@ 7045 @LENGTH@ 3
+---------INS SimpleType@@DefaultConversionService @TO@ ClassInstanceCreation@@DefaultConversionService[] @AT@ 7049 @LENGTH@ 24
+

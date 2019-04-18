@@ -1,0 +1,3 @@
+ INS IfStatement TO MethodDeclaration 
+--- MOV MethodInvocation TO IfStatement 
+--- MOV ExpressionStatement TO IfStatement

@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@List<ZKUtil.NodeAndData> nodeList=ZKUtil.getChildDataAndWatchForNewChildren(watcher,aclZNode); @TO@ final List<ZKUtil.NodeAndData> nodeList=ZKUtil.getChildDataAndWatchForNewChildren(watcher,aclZNode); @AT@ 6700 @LENGTH@ 109
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@List<ZKUtil.NodeAndData> nodeList=ZKUtil.getChildDataAndWatchForNewChildren(watcher,aclZNode); @AT@ 6743 @LENGTH@ 5
+

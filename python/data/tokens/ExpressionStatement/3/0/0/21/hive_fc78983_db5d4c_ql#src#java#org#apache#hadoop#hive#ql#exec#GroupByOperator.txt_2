@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.trace("Hash Tbl flush: #hash table = " + oldSize) @TO@ MethodInvocation:LOG.warn("Hash Tbl flush: #hash table = " + oldSize) @AT@ 22062 @LENGTH@ 54
+---UPD MethodInvocation@@LOG.trace("Hash Tbl flush: #hash table = " + oldSize) @TO@ LOG.warn("Hash Tbl flush: #hash table = " + oldSize) @AT@ 22062 @LENGTH@ 53
+------UPD SimpleName@@MethodName:trace:["Hash Tbl flush: #hash table = " + oldSize] @TO@ MethodName:warn:["Hash Tbl flush: #hash table = " + oldSize] @AT@ 22066 @LENGTH@ 49
+

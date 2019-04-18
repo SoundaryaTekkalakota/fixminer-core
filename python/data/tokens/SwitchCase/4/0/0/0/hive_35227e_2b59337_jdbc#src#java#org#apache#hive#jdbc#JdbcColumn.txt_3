@@ -1,0 +1,5 @@
+INS SwitchCase@@QualifiedName:Types.NULL @TO@ SwitchStatement@@SimpleName:columnType @AT@ 8172 @LENGTH@ 16
+---INS QualifiedName@@Types.NULL @TO@ SwitchCase@@QualifiedName:Types.NULL @AT@ 8177 @LENGTH@ 10
+------INS SimpleName@@Types @TO@ QualifiedName@@Types.NULL @AT@ 8177 @LENGTH@ 5
+------INS SimpleName@@NULL @TO@ QualifiedName@@Types.NULL @AT@ 8183 @LENGTH@ 4
+

@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@Map<String,ModelNode> required=new TreeMap<>(); @TO@ final Map<String,ModelNode> required=new TreeMap<>(); @AT@ 37760 @LENGTH@ 50
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@Map<String,ModelNode> required=new TreeMap<>(); @AT@ 37596 @LENGTH@ 5
+

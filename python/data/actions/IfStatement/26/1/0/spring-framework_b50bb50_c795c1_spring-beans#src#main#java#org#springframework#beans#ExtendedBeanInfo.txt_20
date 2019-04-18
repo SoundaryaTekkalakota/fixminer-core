@@ -1,0 +1,26 @@
+ UPD IfStatement 
+--- UPD InfixExpression 
+------ UPD MethodInvocation 
+--------- DEL SimpleName 
+--------- DEL SimpleName 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO SimpleName 
+--- UPD IfStatement 
+------ UPD InfixExpression 
+--------- UPD InfixExpression 
+------------ UPD InfixExpression 
+--------------- UPD ArrayAccess 
+------------------ UPD MethodInvocation 
+--------------------- UPD SimpleName 
+--------------------- DEL MethodInvocation 
+--------------------- INS MethodInvocation TO MethodInvocation 
+------------------------ MOV SimpleName TO MethodInvocation 
+--------- UPD InfixExpression 
+------------ UPD InfixExpression 
+--------------- MOV ArrayAccess TO InfixExpression 
+--------------- UPD ArrayAccess 
+------------------ UPD MethodInvocation 
+--------------------- UPD SimpleName 
+--------------------- DEL MethodInvocation 
+--------------------- INS MethodInvocation TO MethodInvocation 
+------------------------ MOV SimpleName TO MethodInvocation

@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@int newModifier=method.getModifier() - Modifier.ABSTRACT; @TO@ final int newModifier=method.getModifier() - Modifier.ABSTRACT; @AT@ 17209 @LENGTH@ 59
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@int newModifier=method.getModifier() - Modifier.ABSTRACT; @AT@ 17381 @LENGTH@ 5
+

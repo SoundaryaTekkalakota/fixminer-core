@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:out.setHeaders(in.getHeaders()) @TO@ MethodInvocation:answer.setHeaders(in.getHeaders()) @AT@ 3271 @LENGTH@ 32
+---UPD MethodInvocation@@out.setHeaders(in.getHeaders()) @TO@ answer.setHeaders(in.getHeaders()) @AT@ 3271 @LENGTH@ 31
+------UPD SimpleName@@Name:out @TO@ Name:answer @AT@ 3271 @LENGTH@ 3
+

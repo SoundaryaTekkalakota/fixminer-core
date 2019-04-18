@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, Random, [bValue] @TO@ private, final, Random, [bValue] @AT@ 1955 @LENGTH@ 22
+---INS Modifier@@final @TO@ FieldDeclaration@@private, Random, [bValue] @AT@ 1968 @LENGTH@ 5
+

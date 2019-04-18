@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@static, void, MethodName:checkArgument, boolean expression, String message,  @TO@ private, static, void, MethodName:checkArgument, boolean expression, String message,  @AT@ 2484 @LENGTH@ 147
+---INS Modifier@@private @TO@ MethodDeclaration@@static, void, MethodName:checkArgument, boolean expression, String message,  @AT@ 2471 @LENGTH@ 7
+

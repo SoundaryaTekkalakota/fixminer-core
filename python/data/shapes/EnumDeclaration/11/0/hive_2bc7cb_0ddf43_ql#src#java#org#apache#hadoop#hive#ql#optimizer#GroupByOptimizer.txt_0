@@ -1,0 +1,11 @@
+EnumDeclaration 
+---Modifier 
+---SimpleName 
+---EnumConstantDeclaration 
+------SimpleName 
+---EnumConstantDeclaration 
+------SimpleName 
+---EnumConstantDeclaration 
+------SimpleName 
+---EnumConstantDeclaration 
+------SimpleName

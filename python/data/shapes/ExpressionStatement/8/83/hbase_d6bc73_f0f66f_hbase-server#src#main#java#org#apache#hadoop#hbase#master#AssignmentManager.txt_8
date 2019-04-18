@@ -1,0 +1,8 @@
+ExpressionStatement 
+---MethodInvocation 
+------ArrayAccess 
+---------SimpleName 
+---------SimpleName 
+------SimpleName 
+---------ClassInstanceCreation 
+------------SimpleType

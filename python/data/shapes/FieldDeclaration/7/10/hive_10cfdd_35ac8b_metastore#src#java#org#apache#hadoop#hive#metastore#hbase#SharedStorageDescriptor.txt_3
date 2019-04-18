@@ -1,0 +1,7 @@
+FieldDeclaration 
+---SimpleType 
+---VariableDeclarationFragment 
+------SimpleName 
+------NullLiteral 
+------BooleanLiteral 
+---PrimitiveType

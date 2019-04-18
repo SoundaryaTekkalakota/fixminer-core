@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, Permissions, [uncheckedPermissions=new Permissions()] @TO@ private, volatile, Permissions, [uncheckedPermissions=new Permissions()] @AT@ 1840 @LENGTH@ 61
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, Permissions, [uncheckedPermissions=new Permissions()] @AT@ 1873 @LENGTH@ 8
+

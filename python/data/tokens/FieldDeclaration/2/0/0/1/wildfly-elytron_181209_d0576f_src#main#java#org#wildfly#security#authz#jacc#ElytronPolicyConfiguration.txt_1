@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, Permissions, [excludedPermissions=new Permissions()] @TO@ private, volatile, Permissions, [excludedPermissions=new Permissions()] @AT@ 1906 @LENGTH@ 60
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, Permissions, [excludedPermissions=new Permissions()] @AT@ 1990 @LENGTH@ 8
+

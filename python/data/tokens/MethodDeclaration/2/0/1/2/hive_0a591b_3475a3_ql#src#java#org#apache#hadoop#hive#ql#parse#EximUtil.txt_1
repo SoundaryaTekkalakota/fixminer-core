@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@static, Map.Entry<Table,List<Partition>>, MethodName:readMetaData, FileSystem fs, Path metadataPath, IOException, SemanticException,  @TO@ public, static, Map.Entry<Table,List<Partition>>, MethodName:readMetaData, FileSystem fs, Path metadataPath, IOException, SemanticException,  @AT@ 7481 @LENGTH@ 1860
+---INS Modifier@@public @TO@ MethodDeclaration@@static, Map.Entry<Table,List<Partition>>, MethodName:readMetaData, FileSystem fs, Path metadataPath, IOException, SemanticException,  @AT@ 7488 @LENGTH@ 6
+

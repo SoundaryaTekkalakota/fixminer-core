@@ -1,0 +1,4 @@
+ INS CatchClause TO TryStatement 
+--- INS SingleVariableDeclaration TO CatchClause 
+------ INS SimpleType TO SingleVariableDeclaration 
+------ INS SimpleName TO SingleVariableDeclaration

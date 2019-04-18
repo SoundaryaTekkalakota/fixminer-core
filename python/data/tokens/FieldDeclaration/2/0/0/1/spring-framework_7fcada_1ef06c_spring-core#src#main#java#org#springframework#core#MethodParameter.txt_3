@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, Annotation[], [parameterAnnotations] @TO@ private, volatile, Annotation[], [parameterAnnotations] @AT@ 1630 @LENGTH@ 42
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, Annotation[], [parameterAnnotations] @AT@ 1795 @LENGTH@ 8
+

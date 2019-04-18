@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@int minToStart=this.master.getConfiguration().getInt("hbase.master.wait.on.regionservers.mintostart",1); @TO@ final int minToStart=this.master.getConfiguration().getInt("hbase.master.wait.on.regionservers.mintostart",1); @AT@ 19730 @LENGTH@ 112
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@int minToStart=this.master.getConfiguration().getInt("hbase.master.wait.on.regionservers.mintostart",1); @AT@ 20190 @LENGTH@ 5
+

@@ -1,0 +1,7 @@
+VariableDeclarationStatement 
+---VariableDeclarationFragment 
+------ClassInstanceCreation 
+---------SimpleName 
+---------QualifiedName 
+------------SimpleName 
+------------SimpleName

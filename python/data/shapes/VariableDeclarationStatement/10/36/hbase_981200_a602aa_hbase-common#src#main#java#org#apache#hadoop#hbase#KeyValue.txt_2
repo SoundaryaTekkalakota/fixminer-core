@@ -1,0 +1,10 @@
+VariableDeclarationStatement 
+---SimpleType 
+---VariableDeclarationFragment 
+------SimpleName 
+------ArrayAccess 
+---------SimpleName 
+---------InfixExpression 
+------------SimpleName 
+------------Operator 
+------------NumberLiteral

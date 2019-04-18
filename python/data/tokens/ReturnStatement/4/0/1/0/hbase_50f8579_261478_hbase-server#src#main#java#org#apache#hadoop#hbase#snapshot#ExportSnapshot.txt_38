@@ -1,0 +1,5 @@
+UPD ReturnStatement@@MethodInvocation:new HLogLink(inputRoot,serverName,logName).getFileStatus(fs) @TO@ MethodInvocation:new HLogLink(inputRoot,serverName,logName).getFileStatus(inputFs) @AT@ 14481 @LENGTH@ 70
+---UPD MethodInvocation@@new HLogLink(inputRoot,serverName,logName).getFileStatus(fs) @TO@ new HLogLink(inputRoot,serverName,logName).getFileStatus(inputFs) @AT@ 14488 @LENGTH@ 62
+------UPD SimpleName@@MethodName:getFileStatus:[fs] @TO@ MethodName:getFileStatus:[inputFs] @AT@ 14533 @LENGTH@ 17
+---------UPD SimpleName@@fs @TO@ inputFs @AT@ 14547 @LENGTH@ 2
+

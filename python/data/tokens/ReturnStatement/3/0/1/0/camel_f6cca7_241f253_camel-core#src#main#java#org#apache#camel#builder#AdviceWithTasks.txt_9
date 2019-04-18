@@ -1,0 +1,4 @@
+INS ReturnStatement@@MethodInvocation:doReplace(route,matchBy,replace,selectFirst,selectLast,selectFrom,selectTo,maxDeep) @TO@ MethodDeclaration@@public, static, AdviceWithTask, MethodName:replaceByType, final RouteDefinition route, final Class<?> type, final ProcessorDefinition<?> replace, boolean selectFirst, boolean selectLast, int selectFrom, int selectTo, int maxDeep,  @AT@ 5777 @LENGTH@ 98
+---INS MethodInvocation@@doReplace(route,matchBy,replace,selectFirst,selectLast,selectFrom,selectTo,maxDeep) @TO@ ReturnStatement@@MethodInvocation:doReplace(route,matchBy,replace,selectFirst,selectLast,selectFrom,selectTo,maxDeep) @AT@ 5784 @LENGTH@ 90
+------MOV SimpleName@@MethodName:createMatchByIterator:[route, matchBy, selectFirst, selectLast, selectFrom, selectTo, maxDeep] @TO@ MethodInvocation@@doReplace(route,matchBy,replace,selectFirst,selectLast,selectFrom,selectTo,maxDeep) @AT@ 6184 @LENGTH@ 93
+

@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:s.execute("CREATE TABLE NEXT_LOCK_ID (" + " NL_NEXT bigint NOT NULL)") @TO@ MethodInvocation:stmt.execute("CREATE TABLE NEXT_LOCK_ID (" + " NL_NEXT bigint NOT NULL)") @AT@ 3903 @LENGTH@ 81
+---UPD MethodInvocation@@s.execute("CREATE TABLE NEXT_LOCK_ID (" + " NL_NEXT bigint NOT NULL)") @TO@ stmt.execute("CREATE TABLE NEXT_LOCK_ID (" + " NL_NEXT bigint NOT NULL)") @AT@ 3903 @LENGTH@ 80
+------UPD SimpleName@@Name:s @TO@ Name:stmt @AT@ 3903 @LENGTH@ 1
+

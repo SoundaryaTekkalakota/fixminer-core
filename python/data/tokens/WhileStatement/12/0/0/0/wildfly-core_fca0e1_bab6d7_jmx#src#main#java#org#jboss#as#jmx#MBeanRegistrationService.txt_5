@@ -1,0 +1,13 @@
+INS WhileStatement@@MethodInvocation:it.hasPrevious() @TO@ Block@@FinallyBody @AT@ 5076 @LENGTH@ 165
+---MOV ExpressionStatement@@MethodInvocation:action.teardown(Collections.<String,Object>emptyMap()) @TO@ WhileStatement@@MethodInvocation:it.hasPrevious() @AT@ 4884 @LENGTH@ 56
+---INS MethodInvocation@@it.hasPrevious() @TO@ WhileStatement@@MethodInvocation:it.hasPrevious() @AT@ 5083 @LENGTH@ 16
+------INS SimpleName@@Name:it @TO@ MethodInvocation@@it.hasPrevious() @AT@ 5083 @LENGTH@ 2
+------INS SimpleName@@MethodName:hasPrevious:[] @TO@ MethodInvocation@@it.hasPrevious() @AT@ 5086 @LENGTH@ 13
+---INS VariableDeclarationStatement@@SetupAction action=it.previous(); @TO@ WhileStatement@@MethodInvocation:it.hasPrevious() @AT@ 5119 @LENGTH@ 35
+------INS SimpleType@@SetupAction @TO@ VariableDeclarationStatement@@SetupAction action=it.previous(); @AT@ 5119 @LENGTH@ 11
+------INS VariableDeclarationFragment@@action=it.previous() @TO@ VariableDeclarationStatement@@SetupAction action=it.previous(); @AT@ 5131 @LENGTH@ 22
+---------INS SimpleName@@action @TO@ VariableDeclarationFragment@@action=it.previous() @AT@ 5131 @LENGTH@ 6
+---------INS MethodInvocation@@it.previous() @TO@ VariableDeclarationFragment@@action=it.previous() @AT@ 5140 @LENGTH@ 13
+------------INS SimpleName@@Name:it @TO@ MethodInvocation@@it.previous() @AT@ 5140 @LENGTH@ 2
+------------INS SimpleName@@MethodName:previous:[] @TO@ MethodInvocation@@it.previous() @AT@ 5143 @LENGTH@ 10
+

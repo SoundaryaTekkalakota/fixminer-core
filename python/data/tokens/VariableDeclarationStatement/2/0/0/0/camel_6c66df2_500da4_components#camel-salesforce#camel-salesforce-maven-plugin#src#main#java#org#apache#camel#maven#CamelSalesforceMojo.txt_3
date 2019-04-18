@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@VelocityContext context=new VelocityContext(); @TO@ final VelocityContext context=new VelocityContext(); @AT@ 23840 @LENGTH@ 48
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@VelocityContext context=new VelocityContext(); @AT@ 23922 @LENGTH@ 5
+

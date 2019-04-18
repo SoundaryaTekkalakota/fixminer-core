@@ -1,0 +1,10 @@
+INS FieldDeclaration@@private, final, ReentrantReadWriteLock, [lock=new ReentrantReadWriteLock()] @TO@ TypeDeclaration@@[public, abstract]AbstractMappingContext, [MappingContext<E,P>, InitializingBean, ApplicationEventPublisherAware] @AT@ 3590 @LENGTH@ 73
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, ReentrantReadWriteLock, [lock=new ReentrantReadWriteLock()] @AT@ 3590 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, ReentrantReadWriteLock, [lock=new ReentrantReadWriteLock()] @AT@ 3598 @LENGTH@ 5
+---INS SimpleType@@ReentrantReadWriteLock @TO@ FieldDeclaration@@private, final, ReentrantReadWriteLock, [lock=new ReentrantReadWriteLock()] @AT@ 3604 @LENGTH@ 22
+---INS VariableDeclarationFragment@@lock=new ReentrantReadWriteLock() @TO@ FieldDeclaration@@private, final, ReentrantReadWriteLock, [lock=new ReentrantReadWriteLock()] @AT@ 3627 @LENGTH@ 35
+------INS SimpleName@@lock @TO@ VariableDeclarationFragment@@lock=new ReentrantReadWriteLock() @AT@ 3627 @LENGTH@ 4
+------INS ClassInstanceCreation@@ReentrantReadWriteLock[] @TO@ VariableDeclarationFragment@@lock=new ReentrantReadWriteLock() @AT@ 3634 @LENGTH@ 28
+---------INS New@@new @TO@ ClassInstanceCreation@@ReentrantReadWriteLock[] @AT@ 3634 @LENGTH@ 3
+---------INS SimpleType@@ReentrantReadWriteLock @TO@ ClassInstanceCreation@@ReentrantReadWriteLock[] @AT@ 3638 @LENGTH@ 22
+

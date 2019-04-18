@@ -1,0 +1,7 @@
+UPD ThrowStatement@@ClassInstanceCreation:new StepListenerFailedException("Error in afterProcess.",e) @TO@ ClassInstanceCreation:new StepListenerFailedException("Error in afterProcess.",getTargetException(e)) @AT@ 5277 @LENGTH@ 67
+---UPD ClassInstanceCreation@@StepListenerFailedException["Error in afterProcess.", e] @TO@ StepListenerFailedException["Error in afterProcess.", getTargetException(e)] @AT@ 5283 @LENGTH@ 60
+------DEL SimpleName@@e @AT@ 5341 @LENGTH@ 1
+------INS MethodInvocation@@getTargetException(e) @TO@ ClassInstanceCreation@@StepListenerFailedException["Error in afterProcess.", e] @AT@ 5424 @LENGTH@ 21
+---------INS SimpleName@@MethodName:getTargetException:[e] @TO@ MethodInvocation@@getTargetException(e) @AT@ 5424 @LENGTH@ 21
+------------INS SimpleName@@e @TO@ SimpleName@@MethodName:getTargetException:[e] @AT@ 5443 @LENGTH@ 1
+

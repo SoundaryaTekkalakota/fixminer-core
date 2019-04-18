@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, void, MethodName:load, TypeConverterRegistry registry, Exception,  @TO@ public, synchronized, void, MethodName:load, TypeConverterRegistry registry, Exception,  @AT@ 11349 @LENGTH@ 112
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, void, MethodName:load, TypeConverterRegistry registry, Exception,  @AT@ 11694 @LENGTH@ 12
+

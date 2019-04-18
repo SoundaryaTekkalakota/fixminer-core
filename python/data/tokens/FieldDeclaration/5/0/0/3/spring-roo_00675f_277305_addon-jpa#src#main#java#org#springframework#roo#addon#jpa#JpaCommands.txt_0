@@ -1,0 +1,6 @@
+INS FieldDeclaration@@private, TypeLocationService, [typeLocationService] @TO@ TypeDeclaration@@[@Component, @Service, public]JpaCommands, [CommandMarker] @AT@ 3500 @LENGTH@ 48
+---INS Modifier@@private @TO@ FieldDeclaration@@private, TypeLocationService, [typeLocationService] @AT@ 3500 @LENGTH@ 7
+---INS SimpleType@@TypeLocationService @TO@ FieldDeclaration@@private, TypeLocationService, [typeLocationService] @AT@ 3508 @LENGTH@ 19
+---INS VariableDeclarationFragment@@typeLocationService @TO@ FieldDeclaration@@private, TypeLocationService, [typeLocationService] @AT@ 3528 @LENGTH@ 19
+------INS SimpleName@@typeLocationService @TO@ VariableDeclarationFragment@@typeLocationService @AT@ 3528 @LENGTH@ 19
+

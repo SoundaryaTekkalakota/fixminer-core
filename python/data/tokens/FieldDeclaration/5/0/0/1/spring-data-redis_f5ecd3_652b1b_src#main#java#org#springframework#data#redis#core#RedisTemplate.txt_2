@@ -1,0 +1,6 @@
+INS FieldDeclaration@@private, ClassLoader, [classLoader] @TO@ TypeDeclaration@@[public]RedisTemplate, RedisAccessor[RedisOperations<K,V>] @AT@ 4190 @LENGTH@ 32
+---INS Modifier@@private @TO@ FieldDeclaration@@private, ClassLoader, [classLoader] @AT@ 4190 @LENGTH@ 7
+---INS SimpleType@@ClassLoader @TO@ FieldDeclaration@@private, ClassLoader, [classLoader] @AT@ 4198 @LENGTH@ 11
+---INS VariableDeclarationFragment@@classLoader @TO@ FieldDeclaration@@private, ClassLoader, [classLoader] @AT@ 4210 @LENGTH@ 11
+------INS SimpleName@@classLoader @TO@ VariableDeclarationFragment@@classLoader @AT@ 4210 @LENGTH@ 11
+

@@ -1,0 +1,11 @@
+INS VariableDeclarationStatement@@Class<?> userClass=ClassUtils.getUserClass(domainClass); @TO@ MethodDeclaration@@public, Optional<Object>, MethodName:getRepositoryFor, Class<?> domainClass,  @AT@ 5016 @LENGTH@ 58
+---INS ParameterizedType@@Class<?> @TO@ VariableDeclarationStatement@@Class<?> userClass=ClassUtils.getUserClass(domainClass); @AT@ 5016 @LENGTH@ 8
+------INS SimpleType@@Class @TO@ ParameterizedType@@Class<?> @AT@ 5016 @LENGTH@ 5
+------INS WildcardType@@? @TO@ ParameterizedType@@Class<?> @AT@ 5022 @LENGTH@ 1
+---INS VariableDeclarationFragment@@userClass=ClassUtils.getUserClass(domainClass) @TO@ VariableDeclarationStatement@@Class<?> userClass=ClassUtils.getUserClass(domainClass); @AT@ 5025 @LENGTH@ 48
+------INS SimpleName@@userClass @TO@ VariableDeclarationFragment@@userClass=ClassUtils.getUserClass(domainClass) @AT@ 5025 @LENGTH@ 9
+------INS MethodInvocation@@ClassUtils.getUserClass(domainClass) @TO@ VariableDeclarationFragment@@userClass=ClassUtils.getUserClass(domainClass) @AT@ 5037 @LENGTH@ 36
+---------INS SimpleName@@Name:ClassUtils @TO@ MethodInvocation@@ClassUtils.getUserClass(domainClass) @AT@ 5037 @LENGTH@ 10
+---------INS SimpleName@@MethodName:getUserClass:[domainClass] @TO@ MethodInvocation@@ClassUtils.getUserClass(domainClass) @AT@ 5048 @LENGTH@ 25
+------------INS SimpleName@@domainClass @TO@ SimpleName@@MethodName:getUserClass:[domainClass] @AT@ 5061 @LENGTH@ 11
+

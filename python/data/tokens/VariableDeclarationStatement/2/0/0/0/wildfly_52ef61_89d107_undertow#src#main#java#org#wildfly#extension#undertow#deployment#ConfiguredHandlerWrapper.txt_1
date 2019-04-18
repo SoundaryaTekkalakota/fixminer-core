@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@Constructor<?> ctor=handlerClass.getConstructor(HttpHandler.class); @TO@ final Constructor<?> ctor=handlerClass.getConstructor(HttpHandler.class); @AT@ 2154 @LENGTH@ 69
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@Constructor<?> ctor=handlerClass.getConstructor(HttpHandler.class); @AT@ 2160 @LENGTH@ 5
+

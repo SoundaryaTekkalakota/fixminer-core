@@ -1,0 +1,14 @@
+MethodDeclaration 
+---PrimitiveType 
+---SimpleName 
+---SingleVariableDeclaration 
+------SimpleType 
+------SimpleName 
+---ReturnStatement 
+------MethodInvocation 
+---------SimpleName 
+------------MethodInvocation 
+---------------SimpleName 
+---------------SimpleName 
+------------------TypeLiteral 
+------------TypeLiteral

@@ -1,0 +1,10 @@
+MethodDeclaration 
+---Modifier 
+---PrimitiveType 
+---SimpleName 
+---SimpleType 
+---ExpressionStatement 
+------MethodInvocation 
+---ExpressionStatement 
+------SuperMethodInvocation 
+---------SimpleName

@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.info(sessionHandle + ": getSchemas()") @TO@ MethodInvocation:LOG.debug(sessionHandle + ": getSchemas()") @AT@ 8938 @LENGTH@ 43
+---UPD MethodInvocation@@LOG.info(sessionHandle + ": getSchemas()") @TO@ LOG.debug(sessionHandle + ": getSchemas()") @AT@ 8938 @LENGTH@ 42
+------UPD SimpleName@@MethodName:info:[sessionHandle + ": getSchemas()"] @TO@ MethodName:debug:[sessionHandle + ": getSchemas()"] @AT@ 8942 @LENGTH@ 38
+

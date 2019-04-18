@@ -1,0 +1,5 @@
+UPD VariableDeclarationStatement@@Collection<CachePut> puts=AnnotatedElementUtils.findAllMergedAnnotations(ae,CachePut.class); @TO@ Collection<CachePut> puts=AnnotatedElementUtils.getAllMergedAnnotations(ae,CachePut.class); @AT@ 2923 @LENGTH@ 95
+---UPD VariableDeclarationFragment@@puts=AnnotatedElementUtils.findAllMergedAnnotations(ae,CachePut.class) @TO@ puts=AnnotatedElementUtils.getAllMergedAnnotations(ae,CachePut.class) @AT@ 2944 @LENGTH@ 73
+------UPD MethodInvocation@@AnnotatedElementUtils.findAllMergedAnnotations(ae,CachePut.class) @TO@ AnnotatedElementUtils.getAllMergedAnnotations(ae,CachePut.class) @AT@ 2951 @LENGTH@ 66
+---------UPD SimpleName@@MethodName:findAllMergedAnnotations:[ae, CachePut.class] @TO@ MethodName:getAllMergedAnnotations:[ae, CachePut.class] @AT@ 2973 @LENGTH@ 44
+

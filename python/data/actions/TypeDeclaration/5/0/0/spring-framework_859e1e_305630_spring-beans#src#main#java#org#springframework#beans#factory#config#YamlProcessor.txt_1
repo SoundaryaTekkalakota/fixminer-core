@@ -1,0 +1,5 @@
+ INS TypeDeclaration TO TypeDeclaration 
+--- INS Modifier TO TypeDeclaration 
+--- INS Modifier TO TypeDeclaration 
+--- INS SimpleName TO TypeDeclaration 
+--- INS SimpleType TO TypeDeclaration

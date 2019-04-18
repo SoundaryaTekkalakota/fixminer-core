@@ -1,0 +1,5 @@
+INS CatchClause@@UnknownHostException e @TO@ TryStatement@@try:[] @AT@ 27845 @LENGTH@ 117
+---INS SingleVariableDeclaration@@UnknownHostException e @TO@ CatchClause@@UnknownHostException e @AT@ 27852 @LENGTH@ 22
+------INS SimpleType@@UnknownHostException @TO@ SingleVariableDeclaration@@UnknownHostException e @AT@ 27852 @LENGTH@ 20
+------INS SimpleName@@e @TO@ SingleVariableDeclaration@@UnknownHostException e @AT@ 27873 @LENGTH@ 1
+

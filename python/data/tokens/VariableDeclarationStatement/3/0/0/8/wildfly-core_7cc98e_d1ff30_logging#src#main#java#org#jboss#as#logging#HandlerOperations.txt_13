@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@final String formatterName=configuration.getName(); @TO@ final String handlerName=configuration.getName(); @AT@ 37627 @LENGTH@ 53
+---UPD VariableDeclarationFragment@@formatterName=configuration.getName() @TO@ handlerName=configuration.getName() @AT@ 37640 @LENGTH@ 39
+------UPD SimpleName@@formatterName @TO@ handlerName @AT@ 37640 @LENGTH@ 13
+

@@ -1,0 +1,17 @@
+ DEL CatchClause 
+--- DEL SingleVariableDeclaration 
+------ DEL SimpleType 
+------ DEL SimpleName 
+--- DEL IfStatement 
+------ DEL MethodInvocation 
+--------- DEL SimpleName 
+--------- DEL SimpleName 
+------------ DEL SimpleName 
+------ DEL ThrowStatement 
+--------- DEL SimpleName 
+------ DEL ExpressionStatement 
+--------- DEL MethodInvocation 
+------------ DEL SimpleName 
+------------ DEL SimpleName 
+--------------- DEL StringLiteral 
+--------------- DEL SimpleName

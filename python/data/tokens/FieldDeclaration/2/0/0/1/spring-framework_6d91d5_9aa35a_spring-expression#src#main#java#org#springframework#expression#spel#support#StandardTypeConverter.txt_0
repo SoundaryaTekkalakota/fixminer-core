@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, static, ConversionService, [defaultConversionService] @TO@ private, static, volatile, ConversionService, [defaultConversionService] @AT@ 1467 @LENGTH@ 58
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, static, ConversionService, [defaultConversionService] @AT@ 1482 @LENGTH@ 8
+

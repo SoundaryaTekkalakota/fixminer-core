@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@protected, boolean, [killIfHasParent=true] @TO@ protected, volatile, boolean, [killIfHasParent=true] @AT@ 4394 @LENGTH@ 41
+---INS Modifier@@volatile @TO@ FieldDeclaration@@protected, boolean, [killIfHasParent=true] @AT@ 4413 @LENGTH@ 8
+

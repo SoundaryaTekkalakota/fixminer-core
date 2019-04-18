@@ -1,0 +1,10 @@
+INS FieldDeclaration@@private, final, ConversionService, [conversionService=new DefaultConversionService()] @TO@ TypeDeclaration@@[public]PersistentEntityResourceHandlerMethodArgumentResolver, [HandlerMethodArgumentResolver] @AT@ 3337 @LENGTH@ 83
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, ConversionService, [conversionService=new DefaultConversionService()] @AT@ 3337 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, ConversionService, [conversionService=new DefaultConversionService()] @AT@ 3345 @LENGTH@ 5
+---INS SimpleType@@ConversionService @TO@ FieldDeclaration@@private, final, ConversionService, [conversionService=new DefaultConversionService()] @AT@ 3351 @LENGTH@ 17
+---INS VariableDeclarationFragment@@conversionService=new DefaultConversionService() @TO@ FieldDeclaration@@private, final, ConversionService, [conversionService=new DefaultConversionService()] @AT@ 3369 @LENGTH@ 50
+------INS SimpleName@@conversionService @TO@ VariableDeclarationFragment@@conversionService=new DefaultConversionService() @AT@ 3369 @LENGTH@ 17
+------INS ClassInstanceCreation@@DefaultConversionService[] @TO@ VariableDeclarationFragment@@conversionService=new DefaultConversionService() @AT@ 3389 @LENGTH@ 30
+---------INS New@@new @TO@ ClassInstanceCreation@@DefaultConversionService[] @AT@ 3389 @LENGTH@ 3
+---------INS SimpleType@@DefaultConversionService @TO@ ClassInstanceCreation@@DefaultConversionService[] @AT@ 3393 @LENGTH@ 24
+

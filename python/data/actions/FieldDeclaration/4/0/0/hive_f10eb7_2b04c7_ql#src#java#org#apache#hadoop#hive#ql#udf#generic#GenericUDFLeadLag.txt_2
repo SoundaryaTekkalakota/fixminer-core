@@ -1,0 +1,4 @@
+ INS FieldDeclaration TO TypeDeclaration 
+--- INS SimpleType TO FieldDeclaration 
+--- INS VariableDeclarationFragment TO FieldDeclaration 
+------ INS SimpleName TO VariableDeclarationFragment

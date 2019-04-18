@@ -1,0 +1,3 @@
+INS ThrowStatement@@SimpleName:e @TO@ CatchClause@@IOException e @AT@ 13278 @LENGTH@ 8
+---INS SimpleName@@e @TO@ ThrowStatement@@SimpleName:e @AT@ 13284 @LENGTH@ 1
+

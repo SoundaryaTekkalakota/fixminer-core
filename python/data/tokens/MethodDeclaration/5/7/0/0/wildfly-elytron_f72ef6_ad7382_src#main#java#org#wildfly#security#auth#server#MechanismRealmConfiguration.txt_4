@@ -1,0 +1,6 @@
+UPD MethodDeclaration@@public, void, MethodName:setCredentialNameSupplier, final Supplier<List<String>> credentialNameSupplier,  @TO@ public, Builder, MethodName:setCredentialNameSupplier, final Supplier<List<String>> credentialNameSupplier,  @AT@ 5071 @LENGTH@ 168
+---DEL PrimitiveType@@void @AT@ 5078 @LENGTH@ 4
+---INS SimpleType@@Builder @TO@ MethodDeclaration@@public, void, MethodName:setCredentialNameSupplier, final Supplier<List<String>> credentialNameSupplier,  @AT@ 5194 @LENGTH@ 7
+---INS ReturnStatement@@ThisExpression:this @TO@ MethodDeclaration@@public, void, MethodName:setCredentialNameSupplier, final Supplier<List<String>> credentialNameSupplier,  @AT@ 5362 @LENGTH@ 12
+------INS ThisExpression@@this @TO@ ReturnStatement@@ThisExpression:this @AT@ 5369 @LENGTH@ 4
+

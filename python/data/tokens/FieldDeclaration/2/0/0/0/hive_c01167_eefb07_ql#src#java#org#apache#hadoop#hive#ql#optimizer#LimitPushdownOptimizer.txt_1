@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, float, [threshold] @TO@ private, final, float, [threshold] @AT@ 5104 @LENGTH@ 24
+---INS Modifier@@final @TO@ FieldDeclaration@@private, float, [threshold] @AT@ 5402 @LENGTH@ 5
+

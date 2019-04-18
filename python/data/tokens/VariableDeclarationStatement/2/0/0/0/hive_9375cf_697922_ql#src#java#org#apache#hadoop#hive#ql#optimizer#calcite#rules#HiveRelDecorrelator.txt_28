@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@RexNode o0=operands.get(0); @TO@ final RexNode o0=operands.get(0); @AT@ 68387 @LENGTH@ 29
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@RexNode o0=operands.get(0); @AT@ 46393 @LENGTH@ 5
+

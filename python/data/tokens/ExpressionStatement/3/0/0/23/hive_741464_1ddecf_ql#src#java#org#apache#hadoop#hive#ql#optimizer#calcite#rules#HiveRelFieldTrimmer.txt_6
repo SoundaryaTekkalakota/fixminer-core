@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:inputFieldsUsed.set(i) @TO@ MethodInvocation:aggCallFieldsUsedBuilder.set(i) @AT@ 21795 @LENGTH@ 23
+---UPD MethodInvocation@@inputFieldsUsed.set(i) @TO@ aggCallFieldsUsedBuilder.set(i) @AT@ 21795 @LENGTH@ 22
+------UPD SimpleName@@Name:inputFieldsUsed @TO@ Name:aggCallFieldsUsedBuilder @AT@ 21795 @LENGTH@ 15
+

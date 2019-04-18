@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:updateAttribute(node,(Element)node.getReference(),name,listDelimiter) @TO@ MethodInvocation:updateAttribute(node,(Element)node.getReference(),name,listDelimiter,isAttributeSplittingDisabled) @AT@ 53728 @LENGTH@ 74
+---UPD MethodInvocation@@updateAttribute(node,(Element)node.getReference(),name,listDelimiter) @TO@ updateAttribute(node,(Element)node.getReference(),name,listDelimiter,isAttributeSplittingDisabled) @AT@ 53728 @LENGTH@ 73
+------UPD SimpleName@@MethodName:updateAttribute:[node, (Element)node.getReference(), name, listDelimiter] @TO@ MethodName:updateAttribute:[node, (Element)node.getReference(), name, listDelimiter, isAttributeSplittingDisabled] @AT@ 53728 @LENGTH@ 73
+---------INS SimpleName@@isAttributeSplittingDisabled @TO@ SimpleName@@MethodName:updateAttribute:[node, (Element)node.getReference(), name, listDelimiter] @AT@ 54912 @LENGTH@ 28
+

@@ -1,0 +1,7 @@
+ DEL ExpressionStatement 
+--- DEL Assignment 
+------ DEL FieldAccess 
+--------- DEL ThisExpression 
+--------- DEL SimpleName 
+------ DEL Operator 
+------ DEL SimpleName

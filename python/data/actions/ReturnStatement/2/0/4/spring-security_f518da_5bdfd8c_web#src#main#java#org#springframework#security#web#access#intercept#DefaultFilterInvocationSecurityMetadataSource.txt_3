@@ -1,0 +1,2 @@
+ INS ReturnStatement TO MethodDeclaration 
+--- INS SimpleName TO ReturnStatement

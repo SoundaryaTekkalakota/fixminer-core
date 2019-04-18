@@ -1,0 +1,11 @@
+ INS IfStatement TO IfStatement 
+--- MOV ExpressionStatement TO IfStatement 
+--- INS InfixExpression TO IfStatement 
+------ INS SimpleName TO InfixExpression 
+------ INS Operator TO InfixExpression 
+------ INS NullLiteral TO InfixExpression 
+--- INS ExpressionStatement TO IfStatement 
+------ INS Assignment TO ExpressionStatement 
+--------- INS SimpleName TO Assignment 
+--------- INS Operator TO Assignment 
+--------- INS NullLiteral TO Assignment

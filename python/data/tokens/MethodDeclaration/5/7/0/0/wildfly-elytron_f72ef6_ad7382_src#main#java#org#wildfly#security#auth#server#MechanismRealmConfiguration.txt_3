@@ -1,0 +1,6 @@
+UPD MethodDeclaration@@public, void, MethodName:setFinalRewriter, final NameRewriter finalRewriter,  @TO@ public, Builder, MethodName:setFinalRewriter, final NameRewriter finalRewriter,  @AT@ 4939 @LENGTH@ 122
+---DEL PrimitiveType@@void @AT@ 4946 @LENGTH@ 4
+---INS SimpleType@@Builder @TO@ MethodDeclaration@@public, void, MethodName:setFinalRewriter, final NameRewriter finalRewriter,  @AT@ 5033 @LENGTH@ 7
+---INS ReturnStatement@@ThisExpression:this @TO@ MethodDeclaration@@public, void, MethodName:setFinalRewriter, final NameRewriter finalRewriter,  @AT@ 5155 @LENGTH@ 12
+------INS ThisExpression@@this @TO@ ReturnStatement@@ThisExpression:this @AT@ 5162 @LENGTH@ 4
+

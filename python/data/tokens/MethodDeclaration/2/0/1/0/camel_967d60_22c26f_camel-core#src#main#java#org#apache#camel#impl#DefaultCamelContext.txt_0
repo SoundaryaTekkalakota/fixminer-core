@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, void, MethodName:addRouteDefinitions, Collection<RouteDefinition> routeDefinitions, Exception,  @TO@ public, synchronized, void, MethodName:addRouteDefinitions, Collection<RouteDefinition> routeDefinitions, Exception,  @AT@ 25923 @LENGTH@ 385
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, void, MethodName:addRouteDefinitions, Collection<RouteDefinition> routeDefinitions, Exception,  @AT@ 25930 @LENGTH@ 12
+

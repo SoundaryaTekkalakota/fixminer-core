@@ -1,0 +1,5 @@
+SynchronizedStatement 
+---ExpressionStatement 
+---FieldAccess 
+------ThisExpression 
+------SimpleName

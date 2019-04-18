@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@FieldMetadataBuilder fieldBuilder=new FieldMetadataBuilder(getId(),Modifier.TRANSIENT,annotations,fieldSymbolName,ENTITY_MANAGER); @TO@ final FieldMetadataBuilder fieldBuilder=new FieldMetadataBuilder(getId(),Modifier.TRANSIENT,annotations,fieldSymbolName,ENTITY_MANAGER); @AT@ 8788 @LENGTH@ 136
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@FieldMetadataBuilder fieldBuilder=new FieldMetadataBuilder(getId(),Modifier.TRANSIENT,annotations,fieldSymbolName,ENTITY_MANAGER); @AT@ 8918 @LENGTH@ 5
+

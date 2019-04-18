@@ -1,0 +1,11 @@
+ DEL FieldDeclaration 
+--- DEL Modifier 
+--- DEL Modifier 
+--- DEL Modifier 
+--- DEL SimpleType 
+--- DEL VariableDeclarationFragment 
+------ DEL SimpleName 
+------ DEL MethodInvocation 
+--------- DEL SimpleName 
+--------- DEL SimpleName 
+------------ DEL TypeLiteral

@@ -1,0 +1,6 @@
+INS ReturnStatement@@MethodInvocation:delegate.removeDependency(dependency) @TO@ MethodDeclaration@@public, ServiceTarget, MethodName:removeDependency, final ServiceName dependency,  @AT@ 103391 @LENGTH@ 45
+---INS MethodInvocation@@delegate.removeDependency(dependency) @TO@ ReturnStatement@@MethodInvocation:delegate.removeDependency(dependency) @AT@ 103398 @LENGTH@ 37
+------INS SimpleName@@Name:delegate @TO@ MethodInvocation@@delegate.removeDependency(dependency) @AT@ 103398 @LENGTH@ 8
+------INS SimpleName@@MethodName:removeDependency:[dependency] @TO@ MethodInvocation@@delegate.removeDependency(dependency) @AT@ 103407 @LENGTH@ 28
+---------INS SimpleName@@dependency @TO@ SimpleName@@MethodName:removeDependency:[dependency] @AT@ 103424 @LENGTH@ 10
+

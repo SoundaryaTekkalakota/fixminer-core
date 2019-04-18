@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@ToStringCreator tsc=new ToStringCreator(this); @TO@ final ToStringCreator tsc=new ToStringCreator(this); @AT@ 29034 @LENGTH@ 48
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@ToStringCreator tsc=new ToStringCreator(this); @AT@ 29445 @LENGTH@ 5
+

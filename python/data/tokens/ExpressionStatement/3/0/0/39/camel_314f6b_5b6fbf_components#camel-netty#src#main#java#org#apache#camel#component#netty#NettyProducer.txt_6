@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:ALL_CHANNELS.remove(channel) @TO@ MethodInvocation:allChannels.remove(channel) @AT@ 21654 @LENGTH@ 29
+---UPD MethodInvocation@@ALL_CHANNELS.remove(channel) @TO@ allChannels.remove(channel) @AT@ 21654 @LENGTH@ 28
+------UPD SimpleName@@Name:ALL_CHANNELS @TO@ Name:allChannels @AT@ 21654 @LENGTH@ 12
+

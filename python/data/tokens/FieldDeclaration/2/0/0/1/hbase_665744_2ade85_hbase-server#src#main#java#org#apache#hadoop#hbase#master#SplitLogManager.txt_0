@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@TaskBatch, [batch] @TO@ volatile, TaskBatch, [batch] @AT@ 34458 @LENGTH@ 16
+---INS Modifier@@volatile @TO@ FieldDeclaration@@TaskBatch, [batch] @AT@ 34400 @LENGTH@ 8
+

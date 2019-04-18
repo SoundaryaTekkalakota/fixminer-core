@@ -1,0 +1,7 @@
+UPD ReturnStatement@@MethodInvocation:factory.createXMLStreamReader(IOHelper.buffered(in),IOHelper.getCharsetName(exchange)) @TO@ MethodInvocation:factory.createXMLStreamReader(IOHelper.buffered(in),IOHelper.getCharsetName(exchange,false)) @AT@ 6352 @LENGTH@ 95
+---UPD MethodInvocation@@factory.createXMLStreamReader(IOHelper.buffered(in),IOHelper.getCharsetName(exchange)) @TO@ factory.createXMLStreamReader(IOHelper.buffered(in),IOHelper.getCharsetName(exchange,false)) @AT@ 6359 @LENGTH@ 87
+------UPD SimpleName@@MethodName:createXMLStreamReader:[IOHelper.buffered(in), IOHelper.getCharsetName(exchange)] @TO@ MethodName:createXMLStreamReader:[IOHelper.buffered(in), IOHelper.getCharsetName(exchange,false)] @AT@ 6367 @LENGTH@ 79
+---------UPD MethodInvocation@@IOHelper.getCharsetName(exchange) @TO@ IOHelper.getCharsetName(exchange,false) @AT@ 6412 @LENGTH@ 33
+------------UPD SimpleName@@MethodName:getCharsetName:[exchange] @TO@ MethodName:getCharsetName:[exchange, false] @AT@ 6421 @LENGTH@ 24
+---------------INS BooleanLiteral@@false @TO@ SimpleName@@MethodName:getCharsetName:[exchange] @AT@ 6446 @LENGTH@ 5
+

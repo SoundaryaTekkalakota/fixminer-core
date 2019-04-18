@@ -1,0 +1,7 @@
+DEL IfStatement@@PrefixExpression:!commited @AT@ 45352 @LENGTH@ 55
+---DEL PrefixExpression@@!commited @AT@ 45356 @LENGTH@ 9
+------DEL Operator@@! @AT@ 45356 @LENGTH@ 1
+------DEL SimpleName@@commited @AT@ 45357 @LENGTH@ 8
+---DEL ExpressionStatement@@MethodInvocation:rollbackTransaction() @AT@ 45377 @LENGTH@ 22
+------DEL MethodInvocation@@MethodName:rollbackTransaction:[] @AT@ 45377 @LENGTH@ 21
+

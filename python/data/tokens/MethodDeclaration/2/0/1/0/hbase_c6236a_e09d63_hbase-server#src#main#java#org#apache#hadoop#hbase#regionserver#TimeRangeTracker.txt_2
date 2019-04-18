@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, long, MethodName:getMinimumTimestamp,  @TO@ public, synchronized, long, MethodName:getMinimumTimestamp,  @AT@ 4056 @LENGTH@ 68
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, long, MethodName:getMinimumTimestamp,  @AT@ 4089 @LENGTH@ 12
+

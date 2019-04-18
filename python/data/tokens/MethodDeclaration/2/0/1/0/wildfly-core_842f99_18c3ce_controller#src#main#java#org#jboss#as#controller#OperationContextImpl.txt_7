@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@private, void, MethodName:ensureLocalManagementResourceRegistration,  @TO@ private, synchronized, void, MethodName:ensureLocalManagementResourceRegistration,  @AT@ 77870 @LENGTH@ 345
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@private, void, MethodName:ensureLocalManagementResourceRegistration,  @AT@ 77966 @LENGTH@ 12
+

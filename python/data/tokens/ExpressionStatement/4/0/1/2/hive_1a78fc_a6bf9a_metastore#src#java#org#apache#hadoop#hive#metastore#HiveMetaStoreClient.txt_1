@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.warn("Unable to connect to metastore with URI " + store) @TO@ MethodInvocation:LOG.error("Unable to connect to metastore with URI " + store,e) @AT@ 7644 @LENGTH@ 61
+---UPD MethodInvocation@@LOG.warn("Unable to connect to metastore with URI " + store) @TO@ LOG.error("Unable to connect to metastore with URI " + store,e) @AT@ 7644 @LENGTH@ 60
+------UPD SimpleName@@MethodName:warn:["Unable to connect to metastore with URI " + store] @TO@ MethodName:error:["Unable to connect to metastore with URI " + store, e] @AT@ 7648 @LENGTH@ 56
+---------INS SimpleName@@e @TO@ SimpleName@@MethodName:warn:["Unable to connect to metastore with URI " + store] @AT@ 7667 @LENGTH@ 1
+

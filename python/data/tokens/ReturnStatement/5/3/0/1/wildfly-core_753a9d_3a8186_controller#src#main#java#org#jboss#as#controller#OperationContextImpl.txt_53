@@ -1,0 +1,6 @@
+INS ReturnStatement@@MethodInvocation:delegate.removeListener(listener) @TO@ MethodDeclaration@@public, ServiceTarget, MethodName:removeListener, final ServiceListener<Object> listener,  @AT@ 102420 @LENGTH@ 41
+---INS MethodInvocation@@delegate.removeListener(listener) @TO@ ReturnStatement@@MethodInvocation:delegate.removeListener(listener) @AT@ 102427 @LENGTH@ 33
+------INS SimpleName@@Name:delegate @TO@ MethodInvocation@@delegate.removeListener(listener) @AT@ 102427 @LENGTH@ 8
+------INS SimpleName@@MethodName:removeListener:[listener] @TO@ MethodInvocation@@delegate.removeListener(listener) @AT@ 102436 @LENGTH@ 24
+---------INS SimpleName@@listener @TO@ SimpleName@@MethodName:removeListener:[listener] @AT@ 102451 @LENGTH@ 8
+

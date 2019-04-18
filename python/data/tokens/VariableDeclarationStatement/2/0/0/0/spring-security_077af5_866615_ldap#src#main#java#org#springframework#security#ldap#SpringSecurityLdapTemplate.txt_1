@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@DistinguishedName ctxBaseDn=new DistinguishedName(ctx.getNameInNamespace()); @TO@ final DistinguishedName ctxBaseDn=new DistinguishedName(ctx.getNameInNamespace()); @AT@ 8443 @LENGTH@ 78
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@DistinguishedName ctxBaseDn=new DistinguishedName(ctx.getNameInNamespace()); @AT@ 8443 @LENGTH@ 5
+

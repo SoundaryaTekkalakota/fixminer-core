@@ -1,0 +1,11 @@
+VariableDeclarationStatement 
+---ArrayType 
+------SimpleType 
+---VariableDeclarationFragment 
+------SimpleName 
+------ArrayCreation 
+---------ArrayType 
+------------SimpleType 
+---------QualifiedName 
+------------SimpleName 
+------------SimpleName

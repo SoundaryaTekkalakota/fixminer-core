@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:statement.setString(1,resultSet.getString(2)) @TO@ MethodInvocation:deleteStatement.setString(1,resultSet.getString(2)) @AT@ 19239 @LENGTH@ 47
+---UPD MethodInvocation@@statement.setString(1,resultSet.getString(2)) @TO@ deleteStatement.setString(1,resultSet.getString(2)) @AT@ 19239 @LENGTH@ 46
+------UPD SimpleName@@Name:statement @TO@ Name:deleteStatement @AT@ 19239 @LENGTH@ 9
+

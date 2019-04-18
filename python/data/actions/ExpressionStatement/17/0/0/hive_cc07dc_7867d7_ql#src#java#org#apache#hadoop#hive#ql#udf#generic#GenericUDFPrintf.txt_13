@@ -1,0 +1,17 @@
+ DEL ExpressionStatement 
+--- DEL MethodInvocation 
+------ DEL SimpleName 
+------ DEL SimpleName 
+--------- DEL MethodInvocation 
+------------ DEL ParenthesizedExpression 
+--------------- DEL CastExpression 
+------------------ DEL SimpleType 
+------------------ DEL ArrayAccess 
+--------------------- DEL SimpleName 
+--------------------- DEL SimpleName 
+------------ DEL SimpleName 
+--------------- DEL MethodInvocation 
+------------------ DEL ArrayAccess 
+--------------------- DEL SimpleName 
+--------------------- DEL SimpleName 
+------------------ DEL SimpleName

@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, String, [entryEncoding=null] @TO@ private, volatile, String, [entryEncoding=null] @AT@ 4605 @LENGTH@ 36
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, String, [entryEncoding=null] @AT@ 4795 @LENGTH@ 8
+

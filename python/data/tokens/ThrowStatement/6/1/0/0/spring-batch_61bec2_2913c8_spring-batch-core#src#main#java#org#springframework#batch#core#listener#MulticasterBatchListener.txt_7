@@ -1,0 +1,7 @@
+UPD ThrowStatement@@ClassInstanceCreation:new StepListenerFailedException("Error in beforeWrite.",e) @TO@ ClassInstanceCreation:new StepListenerFailedException("Error in beforeWrite.",getTargetException(e)) @AT@ 8881 @LENGTH@ 66
+---UPD ClassInstanceCreation@@StepListenerFailedException["Error in beforeWrite.", e] @TO@ StepListenerFailedException["Error in beforeWrite.", getTargetException(e)] @AT@ 8887 @LENGTH@ 59
+------DEL SimpleName@@e @AT@ 8944 @LENGTH@ 1
+------INS MethodInvocation@@getTargetException(e) @TO@ ClassInstanceCreation@@StepListenerFailedException["Error in beforeWrite.", e] @AT@ 9167 @LENGTH@ 21
+---------INS SimpleName@@MethodName:getTargetException:[e] @TO@ MethodInvocation@@getTargetException(e) @AT@ 9167 @LENGTH@ 21
+------------INS SimpleName@@e @TO@ SimpleName@@MethodName:getTargetException:[e] @AT@ 9186 @LENGTH@ 1
+

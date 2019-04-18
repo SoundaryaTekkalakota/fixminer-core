@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, HiveConf, [conf] @TO@ TypeDeclaration@@[static, final]SQLGenerator,  @AT@ 139130 @LENGTH@ 28
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, HiveConf, [conf] @AT@ 139130 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, HiveConf, [conf] @AT@ 139138 @LENGTH@ 5
+---INS SimpleType@@HiveConf @TO@ FieldDeclaration@@private, final, HiveConf, [conf] @AT@ 139144 @LENGTH@ 8
+---INS VariableDeclarationFragment@@conf @TO@ FieldDeclaration@@private, final, HiveConf, [conf] @AT@ 139153 @LENGTH@ 4
+------INS SimpleName@@conf @TO@ VariableDeclarationFragment@@conf @AT@ 139153 @LENGTH@ 4
+

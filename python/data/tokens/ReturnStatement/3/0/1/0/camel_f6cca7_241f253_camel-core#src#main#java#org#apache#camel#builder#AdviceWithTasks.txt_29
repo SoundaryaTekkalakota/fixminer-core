@@ -1,0 +1,4 @@
+INS ReturnStatement@@MethodInvocation:doBefore(route,matchBy,before,selectFirst,selectLast,selectFrom,selectTo,maxDeep) @TO@ MethodDeclaration@@public, static, AdviceWithTask, MethodName:beforeById, final RouteDefinition route, final String id, final ProcessorDefinition<?> before, boolean selectFirst, boolean selectLast, int selectFrom, int selectTo, int maxDeep,  @AT@ 11781 @LENGTH@ 96
+---INS MethodInvocation@@doBefore(route,matchBy,before,selectFirst,selectLast,selectFrom,selectTo,maxDeep) @TO@ ReturnStatement@@MethodInvocation:doBefore(route,matchBy,before,selectFirst,selectLast,selectFrom,selectTo,maxDeep) @AT@ 11788 @LENGTH@ 88
+------MOV SimpleName@@MethodName:createMatchByIterator:[route, matchBy, selectFirst, selectLast, selectFrom, selectTo, maxDeep] @TO@ MethodInvocation@@doBefore(route,matchBy,before,selectFirst,selectLast,selectFrom,selectTo,maxDeep) @AT@ 12355 @LENGTH@ 93
+

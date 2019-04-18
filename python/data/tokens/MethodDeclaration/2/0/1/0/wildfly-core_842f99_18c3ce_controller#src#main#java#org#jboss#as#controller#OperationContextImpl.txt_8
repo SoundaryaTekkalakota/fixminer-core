@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@private, void, MethodName:ensureLocalCapabilityRegistry,  @TO@ private, synchronized, void, MethodName:ensureLocalCapabilityRegistry,  @AT@ 78221 @LENGTH@ 252
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@private, void, MethodName:ensureLocalCapabilityRegistry,  @AT@ 78330 @LENGTH@ 12
+

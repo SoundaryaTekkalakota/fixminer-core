@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, Configuration, [conf] @TO@ TypeDeclaration@@[public]ZooKeeperWatcher, [Watcher] @AT@ 3370 @LENGTH@ 33
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, Configuration, [conf] @AT@ 3370 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, Configuration, [conf] @AT@ 3378 @LENGTH@ 5
+---INS SimpleType@@Configuration @TO@ FieldDeclaration@@private, final, Configuration, [conf] @AT@ 3384 @LENGTH@ 13
+---INS VariableDeclarationFragment@@conf @TO@ FieldDeclaration@@private, final, Configuration, [conf] @AT@ 3398 @LENGTH@ 4
+------INS SimpleName@@conf @TO@ VariableDeclarationFragment@@conf @AT@ 3398 @LENGTH@ 4
+

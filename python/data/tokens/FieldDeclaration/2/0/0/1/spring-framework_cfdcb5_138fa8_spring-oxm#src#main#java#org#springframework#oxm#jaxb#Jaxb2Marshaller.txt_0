@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, JAXBContext, [jaxbContext] @TO@ private, volatile, JAXBContext, [jaxbContext] @AT@ 5752 @LENGTH@ 32
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, JAXBContext, [jaxbContext] @AT@ 6005 @LENGTH@ 8
+

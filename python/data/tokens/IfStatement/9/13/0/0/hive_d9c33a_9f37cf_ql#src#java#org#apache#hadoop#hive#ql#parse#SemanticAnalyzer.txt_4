@@ -1,0 +1,10 @@
+INS IfStatement@@MethodInvocation:grpByExprs.isEmpty() @TO@ MethodDeclaration@@private, Operator, MethodName:genGroupByPlan1MR, String dest, QB qb, Operator input, SemanticException,  @AT@ 75553 @LENGTH@ 48
+---INS MethodInvocation@@grpByExprs.isEmpty() @TO@ IfStatement@@MethodInvocation:grpByExprs.isEmpty() @AT@ 75557 @LENGTH@ 20
+------INS SimpleName@@Name:grpByExprs @TO@ MethodInvocation@@grpByExprs.isEmpty() @AT@ 75557 @LENGTH@ 10
+------INS SimpleName@@MethodName:isEmpty:[] @TO@ MethodInvocation@@grpByExprs.isEmpty() @AT@ 75568 @LENGTH@ 9
+---INS ExpressionStatement@@Assignment:numReducers=1 @TO@ IfStatement@@MethodInvocation:grpByExprs.isEmpty() @AT@ 75585 @LENGTH@ 16
+------INS Assignment@@numReducers=1 @TO@ ExpressionStatement@@Assignment:numReducers=1 @AT@ 75585 @LENGTH@ 15
+---------INS SimpleName@@numReducers @TO@ Assignment@@numReducers=1 @AT@ 75585 @LENGTH@ 11
+---------INS Operator@@= @TO@ Assignment@@numReducers=1 @AT@ 75596 @LENGTH@ 1
+---------INS NumberLiteral@@1 @TO@ Assignment@@numReducers=1 @AT@ 75599 @LENGTH@ 1
+

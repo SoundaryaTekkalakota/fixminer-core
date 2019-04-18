@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, AnnotationMetadata, [annotationMetadata] @TO@ private, final, AnnotationMetadata, [annotationMetadata] @AT@ 12690 @LENGTH@ 46
+---INS Modifier@@final @TO@ FieldDeclaration@@private, AnnotationMetadata, [annotationMetadata] @AT@ 12775 @LENGTH@ 5
+

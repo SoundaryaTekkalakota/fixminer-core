@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:unregisterLogContext(context,module) @TO@ MethodInvocation:unregisterLogContext(context,LOG_CONTEXT_KEY,module) @AT@ 3881 @LENGTH@ 38
+---UPD MethodInvocation@@unregisterLogContext(context,module) @TO@ unregisterLogContext(context,LOG_CONTEXT_KEY,module) @AT@ 3881 @LENGTH@ 37
+------UPD SimpleName@@MethodName:unregisterLogContext:[context, module] @TO@ MethodName:unregisterLogContext:[context, LOG_CONTEXT_KEY, module] @AT@ 3881 @LENGTH@ 37
+---------INS SimpleName@@LOG_CONTEXT_KEY @TO@ SimpleName@@MethodName:unregisterLogContext:[context, module] @AT@ 5069 @LENGTH@ 15
+

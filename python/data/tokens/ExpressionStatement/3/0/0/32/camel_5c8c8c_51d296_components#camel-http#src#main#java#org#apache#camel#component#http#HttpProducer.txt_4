@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:out.setHeader(HTTP_RESPONSE_CODE,responseCode) @TO@ MethodInvocation:answer.setHeader(HTTP_RESPONSE_CODE,responseCode) @AT@ 3316 @LENGTH@ 48
+---UPD MethodInvocation@@out.setHeader(HTTP_RESPONSE_CODE,responseCode) @TO@ answer.setHeader(HTTP_RESPONSE_CODE,responseCode) @AT@ 3316 @LENGTH@ 47
+------UPD SimpleName@@Name:out @TO@ Name:answer @AT@ 3316 @LENGTH@ 3
+

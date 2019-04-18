@@ -1,0 +1,5 @@
+ UPD ConstructorInvocation 
+--- DEL NullLiteral 
+--- INS QualifiedName TO ConstructorInvocation 
+------ INS SimpleName TO QualifiedName 
+------ INS SimpleName TO QualifiedName

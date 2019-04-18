@@ -1,0 +1,3 @@
+ INS ExpressionStatement TO CatchClause 
+--- INS MethodInvocation TO ExpressionStatement 
+------ MOV SimpleName TO MethodInvocation

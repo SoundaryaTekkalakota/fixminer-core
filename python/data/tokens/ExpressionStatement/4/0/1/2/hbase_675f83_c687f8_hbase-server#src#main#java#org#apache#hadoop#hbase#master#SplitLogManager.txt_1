@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.warn("Could not finish splitting of log file " + logfile) @TO@ MethodInvocation:LOG.warn("Could not finish splitting of log file " + logfile,e) @AT@ 6503 @LENGTH@ 62
+---UPD MethodInvocation@@LOG.warn("Could not finish splitting of log file " + logfile) @TO@ LOG.warn("Could not finish splitting of log file " + logfile,e) @AT@ 6503 @LENGTH@ 61
+------UPD SimpleName@@MethodName:warn:["Could not finish splitting of log file " + logfile] @TO@ MethodName:warn:["Could not finish splitting of log file " + logfile, e] @AT@ 6507 @LENGTH@ 57
+---------INS SimpleName@@e @TO@ SimpleName@@MethodName:warn:["Could not finish splitting of log file " + logfile] @AT@ 6565 @LENGTH@ 1
+

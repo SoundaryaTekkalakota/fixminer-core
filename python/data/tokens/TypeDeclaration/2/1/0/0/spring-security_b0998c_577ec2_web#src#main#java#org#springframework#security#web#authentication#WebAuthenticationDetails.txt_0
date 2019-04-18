@@ -1,0 +1,3 @@
+UPD TypeDeclaration@@[public]WebAuthenticationDetails,  @TO@ [public]WebAuthenticationDetails, [Serializable] @AT@ 876 @LENGTH@ 3360
+---INS SimpleType@@Serializable @TO@ TypeDeclaration@@[public]WebAuthenticationDetails,  @AT@ 954 @LENGTH@ 12
+

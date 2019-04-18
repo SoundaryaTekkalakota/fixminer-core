@@ -1,0 +1,17 @@
+VariableDeclarationStatement 
+---VariableDeclarationFragment 
+------ClassInstanceCreation 
+---------ConditionalExpression 
+------------MethodInvocation 
+---------------SimpleName 
+---------------MethodInvocation 
+---------------SimpleName 
+------------NumberLiteral 
+------------ConditionalExpression 
+---------ConditionalExpression 
+------------SimpleName 
+------------MethodInvocation 
+---------------SimpleName 
+---------------MethodInvocation 
+---------------SimpleName 
+------------NumberLiteral

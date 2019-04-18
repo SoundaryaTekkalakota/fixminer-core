@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, String, [path] @TO@ private, final, String, [path] @AT@ 12444 @LENGTH@ 20
+---INS Modifier@@final @TO@ FieldDeclaration@@private, String, [path] @AT@ 15941 @LENGTH@ 5
+

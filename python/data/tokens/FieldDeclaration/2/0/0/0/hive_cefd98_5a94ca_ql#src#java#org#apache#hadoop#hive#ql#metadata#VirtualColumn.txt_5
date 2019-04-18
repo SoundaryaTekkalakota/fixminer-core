@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@public, static, VirtualColumn, [ROWID=new VirtualColumn("ROW__ID",RecordIdentifier.StructInfo.typeInfo,true,RecordIdentifier.StructInfo.oi)] @TO@ public, static, final, VirtualColumn, [ROWID=new VirtualColumn("ROW__ID",RecordIdentifier.StructInfo.typeInfo,true,RecordIdentifier.StructInfo.oi)] @AT@ 2338 @LENGTH@ 141
+---INS Modifier@@final @TO@ FieldDeclaration@@public, static, VirtualColumn, [ROWID=new VirtualColumn("ROW__ID",RecordIdentifier.StructInfo.typeInfo,true,RecordIdentifier.StructInfo.oi)] @AT@ 2474 @LENGTH@ 5
+

@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@RemoteRepository mirror=session.getMirrorSelector().getMirror(repository); @TO@ final RemoteRepository mirror=session.getMirrorSelector().getMirror(repository); @AT@ 9480 @LENGTH@ 76
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@RemoteRepository mirror=session.getMirrorSelector().getMirror(repository); @AT@ 9480 @LENGTH@ 5
+

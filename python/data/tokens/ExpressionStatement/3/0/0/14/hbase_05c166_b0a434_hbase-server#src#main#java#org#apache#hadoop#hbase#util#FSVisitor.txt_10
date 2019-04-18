@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.info("No logs under directory:" + logsDir) @TO@ MethodInvocation:LOG.trace("No logs under directory:" + logsDir) @AT@ 7131 @LENGTH@ 47
+---UPD MethodInvocation@@LOG.info("No logs under directory:" + logsDir) @TO@ LOG.trace("No logs under directory:" + logsDir) @AT@ 7131 @LENGTH@ 46
+------UPD SimpleName@@MethodName:info:["No logs under directory:" + logsDir] @TO@ MethodName:trace:["No logs under directory:" + logsDir] @AT@ 7135 @LENGTH@ 42
+

@@ -1,0 +1,10 @@
+ DEL VariableDeclarationStatement 
+--- DEL ParameterizedType 
+------ DEL SimpleType 
+------ DEL WildcardType 
+--- DEL VariableDeclarationFragment 
+------ DEL SimpleName 
+------ DEL MethodInvocation 
+--------- DEL SimpleName 
+--------- DEL SimpleName 
+------------ DEL SimpleName

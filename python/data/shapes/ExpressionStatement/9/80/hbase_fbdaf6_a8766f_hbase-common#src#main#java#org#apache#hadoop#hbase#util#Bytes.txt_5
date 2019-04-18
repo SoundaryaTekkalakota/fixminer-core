@@ -1,0 +1,9 @@
+ExpressionStatement 
+---Assignment 
+------ArrayAccess 
+---------SimpleName 
+---------QualifiedName 
+------------SimpleName 
+------------SimpleName 
+------Operator 
+------NumberLiteral

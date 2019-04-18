@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@List<AnnotatedJavaType> types=method.getParameterTypes(); @TO@ final List<AnnotatedJavaType> types=method.getParameterTypes(); @AT@ 16901 @LENGTH@ 59
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@List<AnnotatedJavaType> types=method.getParameterTypes(); @AT@ 17055 @LENGTH@ 5
+

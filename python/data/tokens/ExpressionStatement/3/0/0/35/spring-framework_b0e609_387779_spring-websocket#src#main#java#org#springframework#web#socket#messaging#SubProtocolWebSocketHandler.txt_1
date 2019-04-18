@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:logger.error("No session for " + message) @TO@ MethodInvocation:logger.debug("No session for " + message) @AT@ 10621 @LENGTH@ 42
+---UPD MethodInvocation@@logger.error("No session for " + message) @TO@ logger.debug("No session for " + message) @AT@ 10621 @LENGTH@ 41
+------UPD SimpleName@@MethodName:error:["No session for " + message] @TO@ MethodName:debug:["No session for " + message] @AT@ 10628 @LENGTH@ 34
+

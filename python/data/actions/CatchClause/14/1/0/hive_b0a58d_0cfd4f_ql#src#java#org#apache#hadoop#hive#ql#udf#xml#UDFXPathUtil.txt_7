@@ -1,0 +1,14 @@
+ INS CatchClause TO TryStatement 
+--- INS SingleVariableDeclaration TO CatchClause 
+------ INS SimpleType TO SingleVariableDeclaration 
+------ INS SimpleName TO SingleVariableDeclaration 
+--- INS ThrowStatement TO CatchClause 
+------ INS ClassInstanceCreation TO ThrowStatement 
+--------- INS New TO ClassInstanceCreation 
+--------- INS SimpleType TO ClassInstanceCreation 
+--------- INS InfixExpression TO ClassInstanceCreation 
+------------ INS StringLiteral TO InfixExpression 
+------------ INS Operator TO InfixExpression 
+------------ INS SimpleName TO InfixExpression 
+------------ INS StringLiteral TO InfixExpression 
+--------- INS SimpleName TO ClassInstanceCreation

@@ -1,0 +1,5 @@
+UPD VariableDeclarationStatement@@final Object correlationId=msg.getHeader(RabbitMQConstants.CORRELATIONID); @TO@ final Object correlationId=msg.removeHeader(RabbitMQConstants.CORRELATIONID); @AT@ 4654 @LENGTH@ 76
+---UPD VariableDeclarationFragment@@correlationId=msg.getHeader(RabbitMQConstants.CORRELATIONID) @TO@ correlationId=msg.removeHeader(RabbitMQConstants.CORRELATIONID) @AT@ 4667 @LENGTH@ 62
+------UPD MethodInvocation@@msg.getHeader(RabbitMQConstants.CORRELATIONID) @TO@ msg.removeHeader(RabbitMQConstants.CORRELATIONID) @AT@ 4683 @LENGTH@ 46
+---------UPD SimpleName@@MethodName:getHeader:[RabbitMQConstants.CORRELATIONID] @TO@ MethodName:removeHeader:[RabbitMQConstants.CORRELATIONID] @AT@ 4687 @LENGTH@ 42
+

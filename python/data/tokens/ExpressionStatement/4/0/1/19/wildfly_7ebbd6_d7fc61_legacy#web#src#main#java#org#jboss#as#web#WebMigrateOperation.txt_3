@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:transformResources(context,legacyModelAddOps,sortedMigrationOperations,warnings) @TO@ MethodInvocation:transformResources(context,legacyModelAddOps,sortedMigrationOperations,warnings,domainMode) @AT@ 10871 @LENGTH@ 84
+---UPD MethodInvocation@@transformResources(context,legacyModelAddOps,sortedMigrationOperations,warnings) @TO@ transformResources(context,legacyModelAddOps,sortedMigrationOperations,warnings,domainMode) @AT@ 10871 @LENGTH@ 83
+------UPD SimpleName@@MethodName:transformResources:[context, legacyModelAddOps, sortedMigrationOperations, warnings] @TO@ MethodName:transformResources:[context, legacyModelAddOps, sortedMigrationOperations, warnings, domainMode] @AT@ 10871 @LENGTH@ 83
+---------INS SimpleName@@domainMode @TO@ SimpleName@@MethodName:transformResources:[context, legacyModelAddOps, sortedMigrationOperations, warnings] @AT@ 11460 @LENGTH@ 10
+

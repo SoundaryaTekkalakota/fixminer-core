@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@protected, String, [charset] @TO@ protected, volatile, String, [charset] @AT@ 2298 @LENGTH@ 25
+---INS Modifier@@volatile @TO@ FieldDeclaration@@protected, String, [charset] @AT@ 2304 @LENGTH@ 8
+

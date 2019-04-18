@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@protected, void, MethodName:shutdownNow, Consumer consumer,  @TO@ protected, static, void, MethodName:shutdownNow, Consumer consumer,  @AT@ 9786 @LENGTH@ 593
+---INS Modifier@@static @TO@ MethodDeclaration@@protected, void, MethodName:shutdownNow, Consumer consumer,  @AT@ 9815 @LENGTH@ 6
+

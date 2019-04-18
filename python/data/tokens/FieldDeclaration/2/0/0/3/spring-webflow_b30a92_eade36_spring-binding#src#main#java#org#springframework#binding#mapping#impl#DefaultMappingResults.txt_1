@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, Object, [target] @TO@ private, transient, Object, [target] @AT@ 1104 @LENGTH@ 22
+---INS Modifier@@transient @TO@ FieldDeclaration@@private, Object, [target] @AT@ 1122 @LENGTH@ 9
+

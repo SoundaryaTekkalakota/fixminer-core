@@ -1,0 +1,4 @@
+UPD MethodDeclaration@@public, void, MethodName:notifyChanged, String fileCanoncialPath,  @TO@ public, void, MethodName:notifyChanged, String fileCanonicalPath,  @AT@ 17368 @LENGTH@ 125
+---UPD SingleVariableDeclaration@@String fileCanoncialPath @TO@ String fileCanonicalPath @AT@ 17394 @LENGTH@ 24
+------UPD SimpleName@@fileCanoncialPath @TO@ fileCanonicalPath @AT@ 17401 @LENGTH@ 17
+

@@ -1,0 +1,9 @@
+INS VariableDeclarationStatement@@DecimalFormat df=new DecimalFormat("#,##0.00"); @TO@ IfStatement@@SimpleName:info @AT@ 4691 @LENGTH@ 49
+---INS SimpleType@@DecimalFormat @TO@ VariableDeclarationStatement@@DecimalFormat df=new DecimalFormat("#,##0.00"); @AT@ 4691 @LENGTH@ 13
+---INS VariableDeclarationFragment@@df=new DecimalFormat("#,##0.00") @TO@ VariableDeclarationStatement@@DecimalFormat df=new DecimalFormat("#,##0.00"); @AT@ 4705 @LENGTH@ 34
+------INS SimpleName@@df @TO@ VariableDeclarationFragment@@df=new DecimalFormat("#,##0.00") @AT@ 4705 @LENGTH@ 2
+------INS ClassInstanceCreation@@DecimalFormat["#,##0.00"] @TO@ VariableDeclarationFragment@@df=new DecimalFormat("#,##0.00") @AT@ 4710 @LENGTH@ 29
+---------INS New@@new @TO@ ClassInstanceCreation@@DecimalFormat["#,##0.00"] @AT@ 4710 @LENGTH@ 3
+---------INS SimpleType@@DecimalFormat @TO@ ClassInstanceCreation@@DecimalFormat["#,##0.00"] @AT@ 4714 @LENGTH@ 13
+---------INS StringLiteral@@"#,##0.00" @TO@ ClassInstanceCreation@@DecimalFormat["#,##0.00"] @AT@ 4728 @LENGTH@ 10
+

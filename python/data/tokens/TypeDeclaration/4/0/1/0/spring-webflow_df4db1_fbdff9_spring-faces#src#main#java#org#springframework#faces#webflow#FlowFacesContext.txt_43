@@ -1,0 +1,5 @@
+INS TypeDeclaration@@[private]DetailMessageCriteria, [MessageCriteria] @TO@ TypeDeclaration@@[public]FlowFacesContext, FacesContext @AT@ 13127 @LENGTH@ 245
+---INS Modifier@@private @TO@ TypeDeclaration@@[private]DetailMessageCriteria, [MessageCriteria] @AT@ 13127 @LENGTH@ 7
+---INS SimpleName@@ClassName:DetailMessageCriteria @TO@ TypeDeclaration@@[private]DetailMessageCriteria, [MessageCriteria] @AT@ 13141 @LENGTH@ 21
+---INS SimpleType@@MessageCriteria @TO@ TypeDeclaration@@[private]DetailMessageCriteria, [MessageCriteria] @AT@ 13174 @LENGTH@ 15
+

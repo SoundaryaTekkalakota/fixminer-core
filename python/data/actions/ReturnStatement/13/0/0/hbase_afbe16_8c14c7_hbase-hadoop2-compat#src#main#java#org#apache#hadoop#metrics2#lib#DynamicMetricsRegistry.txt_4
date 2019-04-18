@@ -1,0 +1,13 @@
+ UPD ReturnStatement 
+--- UPD MethodInvocation 
+------ UPD SimpleName 
+--------- DEL MethodInvocation 
+------------ DEL SimpleName 
+------------ DEL SimpleName 
+--------------- DEL SimpleName 
+--------------- DEL SimpleName 
+--------- INS ClassInstanceCreation TO SimpleName 
+------------ INS New TO ClassInstanceCreation 
+------------ INS SimpleType TO ClassInstanceCreation 
+------------ INS SimpleName TO ClassInstanceCreation 
+------------ INS SimpleName TO ClassInstanceCreation

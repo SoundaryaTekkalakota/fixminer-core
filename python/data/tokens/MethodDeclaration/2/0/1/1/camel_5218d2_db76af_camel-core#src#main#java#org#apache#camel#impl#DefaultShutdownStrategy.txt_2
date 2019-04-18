@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@protected, void, MethodName:suspendNow, Consumer consumer,  @TO@ protected, static, void, MethodName:suspendNow, Consumer consumer,  @AT@ 10503 @LENGTH@ 588
+---INS Modifier@@static @TO@ MethodDeclaration@@protected, void, MethodName:suspendNow, Consumer consumer,  @AT@ 10539 @LENGTH@ 6
+

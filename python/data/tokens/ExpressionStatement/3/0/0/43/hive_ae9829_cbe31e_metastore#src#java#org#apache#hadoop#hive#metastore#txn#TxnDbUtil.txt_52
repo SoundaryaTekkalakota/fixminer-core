@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:prop.put("password",passwd) @TO@ MethodInvocation:prop.setProperty("password",passwd) @AT@ 8320 @LENGTH@ 29
+---UPD MethodInvocation@@prop.put("password",passwd) @TO@ prop.setProperty("password",passwd) @AT@ 8320 @LENGTH@ 28
+------UPD SimpleName@@MethodName:put:["password", passwd] @TO@ MethodName:setProperty:["password", passwd] @AT@ 8325 @LENGTH@ 23
+

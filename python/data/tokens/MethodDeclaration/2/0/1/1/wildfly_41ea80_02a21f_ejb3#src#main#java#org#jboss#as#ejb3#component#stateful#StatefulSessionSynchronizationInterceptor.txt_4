@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@private, Object, MethodName:getLockOwner, final TransactionSynchronizationRegistry transactionSynchronizationRegistry,  @TO@ private, static, Object, MethodName:getLockOwner, final TransactionSynchronizationRegistry transactionSynchronizationRegistry,  @AT@ 9903 @LENGTH@ 254
+---INS Modifier@@static @TO@ MethodDeclaration@@private, Object, MethodName:getLockOwner, final TransactionSynchronizationRegistry transactionSynchronizationRegistry,  @AT@ 8619 @LENGTH@ 6
+

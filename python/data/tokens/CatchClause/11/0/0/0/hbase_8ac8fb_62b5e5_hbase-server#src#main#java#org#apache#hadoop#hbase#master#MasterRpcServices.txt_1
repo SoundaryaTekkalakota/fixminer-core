@@ -1,0 +1,12 @@
+INS CatchClause@@ForeignException e @TO@ TryStatement@@try:[] @AT@ 41131 @LENGTH@ 82
+---INS SingleVariableDeclaration@@ForeignException e @TO@ CatchClause@@ForeignException e @AT@ 41138 @LENGTH@ 18
+------INS SimpleType@@ForeignException @TO@ SingleVariableDeclaration@@ForeignException e @AT@ 41138 @LENGTH@ 16
+------INS SimpleName@@e @TO@ SingleVariableDeclaration@@ForeignException e @AT@ 41155 @LENGTH@ 1
+---INS ThrowStatement@@ClassInstanceCreation:new ServiceException(e.getCause()) @TO@ CatchClause@@ForeignException e @AT@ 41166 @LENGTH@ 41
+------INS ClassInstanceCreation@@ServiceException[e.getCause()] @TO@ ThrowStatement@@ClassInstanceCreation:new ServiceException(e.getCause()) @AT@ 41172 @LENGTH@ 34
+---------INS New@@new @TO@ ClassInstanceCreation@@ServiceException[e.getCause()] @AT@ 41172 @LENGTH@ 3
+---------INS SimpleType@@ServiceException @TO@ ClassInstanceCreation@@ServiceException[e.getCause()] @AT@ 41176 @LENGTH@ 16
+---------INS MethodInvocation@@e.getCause() @TO@ ClassInstanceCreation@@ServiceException[e.getCause()] @AT@ 41193 @LENGTH@ 12
+------------INS SimpleName@@Name:e @TO@ MethodInvocation@@e.getCause() @AT@ 41193 @LENGTH@ 1
+------------INS SimpleName@@MethodName:getCause:[] @TO@ MethodInvocation@@e.getCause() @AT@ 41195 @LENGTH@ 10
+

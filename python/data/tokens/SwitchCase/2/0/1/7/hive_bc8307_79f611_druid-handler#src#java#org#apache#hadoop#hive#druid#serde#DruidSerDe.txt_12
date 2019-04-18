@@ -1,0 +1,3 @@
+INS SwitchCase@@SimpleName:DECIMAL @TO@ SwitchStatement@@MethodInvocation:types[i].getPrimitiveCategory() @AT@ 20092 @LENGTH@ 13
+---INS SimpleName@@DECIMAL @TO@ SwitchCase@@SimpleName:DECIMAL @AT@ 20097 @LENGTH@ 7
+

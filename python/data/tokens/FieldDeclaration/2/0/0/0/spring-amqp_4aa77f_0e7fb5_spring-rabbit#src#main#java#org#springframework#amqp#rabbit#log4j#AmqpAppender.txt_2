@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, Timer, [retryTimer=new Timer("log-event-retry-delay",true)] @TO@ private, final, Timer, [retryTimer=new Timer("log-event-retry-delay",true)] @AT@ 6223 @LENGTH@ 68
+---INS Modifier@@final @TO@ FieldDeclaration@@private, Timer, [retryTimer=new Timer("log-event-retry-delay",true)] @AT@ 6243 @LENGTH@ 5
+

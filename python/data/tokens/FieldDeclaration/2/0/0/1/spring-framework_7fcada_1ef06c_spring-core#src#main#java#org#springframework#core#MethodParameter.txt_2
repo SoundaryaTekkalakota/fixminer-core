@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, Type, [genericParameterType] @TO@ private, volatile, Type, [genericParameterType] @AT@ 1593 @LENGTH@ 34
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, Type, [genericParameterType] @AT@ 1749 @LENGTH@ 8
+

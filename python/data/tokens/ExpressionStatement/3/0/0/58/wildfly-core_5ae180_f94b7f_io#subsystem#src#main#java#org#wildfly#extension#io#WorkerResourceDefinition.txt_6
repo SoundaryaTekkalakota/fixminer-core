@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:resourceRegistration.registerMetric(SHUTDOWN_REQUESTED,metricsHandler) @TO@ MethodInvocation:resourceRegistration.registerReadOnlyAttribute(SHUTDOWN_REQUESTED,metricsHandler) @AT@ 10517 @LENGTH@ 72
+---UPD MethodInvocation@@resourceRegistration.registerMetric(SHUTDOWN_REQUESTED,metricsHandler) @TO@ resourceRegistration.registerReadOnlyAttribute(SHUTDOWN_REQUESTED,metricsHandler) @AT@ 10517 @LENGTH@ 71
+------UPD SimpleName@@MethodName:registerMetric:[SHUTDOWN_REQUESTED, metricsHandler] @TO@ MethodName:registerReadOnlyAttribute:[SHUTDOWN_REQUESTED, metricsHandler] @AT@ 10538 @LENGTH@ 50
+

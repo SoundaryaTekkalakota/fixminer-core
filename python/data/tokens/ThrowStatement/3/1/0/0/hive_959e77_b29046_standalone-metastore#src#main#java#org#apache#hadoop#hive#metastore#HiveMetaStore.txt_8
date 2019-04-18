@@ -1,0 +1,4 @@
+UPD ThrowStatement@@ClassInstanceCreation:new RuntimeException(e) @TO@ ClassInstanceCreation:new TException(e) @AT@ 247070 @LENGTH@ 30
+---UPD ClassInstanceCreation@@RuntimeException[e] @TO@ TException[e] @AT@ 247076 @LENGTH@ 23
+------UPD SimpleType@@RuntimeException @TO@ TException @AT@ 247080 @LENGTH@ 16
+

@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, static, ReplChangeManager, MethodName:getInstance, Configuration conf, MetaException,  @TO@ public, static, synchronized, ReplChangeManager, MethodName:getInstance, Configuration conf, MetaException,  @AT@ 4226 @LENGTH@ 191
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, static, ReplChangeManager, MethodName:getInstance, Configuration conf, MetaException,  @AT@ 4240 @LENGTH@ 12
+

@@ -1,0 +1,4 @@
+ DEL FieldDeclaration 
+--- DEL SimpleType 
+--- DEL VariableDeclarationFragment 
+------ DEL SimpleName

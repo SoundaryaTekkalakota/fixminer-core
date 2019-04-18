@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:freeBuckets.add(b) @TO@ MethodInvocation:freeBuckets.put(b,b) @AT@ 6182 @LENGTH@ 19
+---UPD MethodInvocation@@freeBuckets.add(b) @TO@ freeBuckets.put(b,b) @AT@ 6182 @LENGTH@ 18
+------UPD SimpleName@@MethodName:add:[b] @TO@ MethodName:put:[b, b] @AT@ 6194 @LENGTH@ 6
+---------INS SimpleName@@b @TO@ SimpleName@@MethodName:add:[b] @AT@ 6175 @LENGTH@ 1
+

@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.info("Using " + impl.getName() + " for "+ protocol.getName()) @TO@ MethodInvocation:LOG.debug("Using " + impl.getName() + " for "+ protocol.getName()) @AT@ 4544 @LENGTH@ 61
+---UPD MethodInvocation@@LOG.info("Using " + impl.getName() + " for "+ protocol.getName()) @TO@ LOG.debug("Using " + impl.getName() + " for "+ protocol.getName()) @AT@ 4544 @LENGTH@ 60
+------UPD SimpleName@@MethodName:info:["Using " + impl.getName() + " for "+ protocol.getName()] @TO@ MethodName:debug:["Using " + impl.getName() + " for "+ protocol.getName()] @AT@ 4548 @LENGTH@ 56
+

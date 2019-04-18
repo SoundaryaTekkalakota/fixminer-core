@@ -1,0 +1,15 @@
+UPD ExpressionStatement@@Assignment:packaging=parts[2] @TO@ Assignment:packaging=TEST_JAR.equals(parts[2]) ? JAR : parts[2] @AT@ 4498 @LENGTH@ 21
+---UPD Assignment@@packaging=parts[2] @TO@ packaging=TEST_JAR.equals(parts[2]) ? JAR : parts[2] @AT@ 4498 @LENGTH@ 20
+------DEL ArrayAccess@@parts[2] @AT@ 4510 @LENGTH@ 8
+------INS ConditionalExpression@@TEST_JAR.equals(parts[2]) ? JAR : parts[2] @TO@ Assignment@@packaging=parts[2] @AT@ 4762 @LENGTH@ 42
+---------INS MethodInvocation@@TEST_JAR.equals(parts[2]) @TO@ ConditionalExpression@@TEST_JAR.equals(parts[2]) ? JAR : parts[2] @AT@ 4762 @LENGTH@ 25
+------------INS SimpleName@@Name:TEST_JAR @TO@ MethodInvocation@@TEST_JAR.equals(parts[2]) @AT@ 4762 @LENGTH@ 8
+------------INS SimpleName@@MethodName:equals:[parts[2]] @TO@ MethodInvocation@@TEST_JAR.equals(parts[2]) @AT@ 4771 @LENGTH@ 16
+---------------INS ArrayAccess@@parts[2] @TO@ SimpleName@@MethodName:equals:[parts[2]] @AT@ 4778 @LENGTH@ 8
+------------------MOV SimpleName@@parts @TO@ ArrayAccess@@parts[2] @AT@ 4510 @LENGTH@ 5
+------------------MOV NumberLiteral@@2 @TO@ ArrayAccess@@parts[2] @AT@ 4516 @LENGTH@ 1
+---------INS SimpleName@@JAR @TO@ ConditionalExpression@@TEST_JAR.equals(parts[2]) ? JAR : parts[2] @AT@ 4790 @LENGTH@ 3
+---------INS ArrayAccess@@parts[2] @TO@ ConditionalExpression@@TEST_JAR.equals(parts[2]) ? JAR : parts[2] @AT@ 4796 @LENGTH@ 8
+------------INS SimpleName@@parts @TO@ ArrayAccess@@parts[2] @AT@ 4796 @LENGTH@ 5
+------------INS NumberLiteral@@2 @TO@ ArrayAccess@@parts[2] @AT@ 4802 @LENGTH@ 1
+

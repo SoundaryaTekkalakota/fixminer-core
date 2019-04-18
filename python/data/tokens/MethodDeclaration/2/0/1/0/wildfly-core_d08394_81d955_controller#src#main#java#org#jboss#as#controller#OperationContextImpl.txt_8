@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@void, MethodName:done,  @TO@ synchronized, void, MethodName:done,  @AT@ 100783 @LENGTH@ 143
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@void, MethodName:done,  @AT@ 101115 @LENGTH@ 12
+

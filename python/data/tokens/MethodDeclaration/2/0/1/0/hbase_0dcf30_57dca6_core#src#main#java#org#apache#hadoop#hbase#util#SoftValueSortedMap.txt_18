@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, Collection<V>, MethodName:values,  @TO@ public, synchronized, Collection<V>, MethodName:values,  @AT@ 5152 @LENGTH@ 296
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, Collection<V>, MethodName:values,  @AT@ 5381 @LENGTH@ 12
+

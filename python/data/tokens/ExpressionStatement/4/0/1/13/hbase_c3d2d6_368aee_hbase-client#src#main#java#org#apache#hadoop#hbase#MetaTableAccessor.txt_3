@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:p.addImmutable(HConstants.CATALOG_FAMILY,getSeqNumColumn(replicaId),Bytes.toBytes(openSeqNum)) @TO@ MethodInvocation:p.addImmutable(HConstants.CATALOG_FAMILY,getSeqNumColumn(replicaId),now,Bytes.toBytes(openSeqNum)) @AT@ 54817 @LENGTH@ 103
+---UPD MethodInvocation@@p.addImmutable(HConstants.CATALOG_FAMILY,getSeqNumColumn(replicaId),Bytes.toBytes(openSeqNum)) @TO@ p.addImmutable(HConstants.CATALOG_FAMILY,getSeqNumColumn(replicaId),now,Bytes.toBytes(openSeqNum)) @AT@ 54817 @LENGTH@ 102
+------UPD SimpleName@@MethodName:addImmutable:[HConstants.CATALOG_FAMILY, getSeqNumColumn(replicaId), Bytes.toBytes(openSeqNum)] @TO@ MethodName:addImmutable:[HConstants.CATALOG_FAMILY, getSeqNumColumn(replicaId), now, Bytes.toBytes(openSeqNum)] @AT@ 54819 @LENGTH@ 100
+---------INS SimpleName@@now @TO@ SimpleName@@MethodName:addImmutable:[HConstants.CATALOG_FAMILY, getSeqNumColumn(replicaId), Bytes.toBytes(openSeqNum)] @AT@ 55105 @LENGTH@ 3
+

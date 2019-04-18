@@ -1,0 +1,20 @@
+DEL ForStatement@@[int i=0];i < auths.size(); [i++] @AT@ 51726 @LENGTH@ 94
+---DEL VariableDeclarationExpression@@int i=0 @AT@ 51731 @LENGTH@ 9
+------DEL PrimitiveType@@int @AT@ 51731 @LENGTH@ 3
+------DEL VariableDeclarationFragment@@i=0 @AT@ 51735 @LENGTH@ 5
+---------DEL SimpleName@@i @AT@ 51735 @LENGTH@ 1
+---------DEL NumberLiteral@@0 @AT@ 51739 @LENGTH@ 1
+---DEL InfixExpression@@i < auths.size() @AT@ 51742 @LENGTH@ 16
+------DEL SimpleName@@i @AT@ 51742 @LENGTH@ 1
+------DEL Operator@@< @AT@ 51743 @LENGTH@ 1
+------DEL MethodInvocation@@auths.size() @AT@ 51746 @LENGTH@ 12
+---DEL PostfixExpression@@i++ @AT@ 51760 @LENGTH@ 3
+------DEL SimpleName@@i @AT@ 51760 @LENGTH@ 1
+------DEL Operator@@++ @AT@ 51762 @LENGTH@ 2
+---DEL ExpressionStatement@@MethodInvocation:response.addResult(i,failureResult) @AT@ 51775 @LENGTH@ 37
+------DEL MethodInvocation@@response.addResult(i,failureResult) @AT@ 51775 @LENGTH@ 36
+---------DEL SimpleName@@Name:response @AT@ 51775 @LENGTH@ 8
+---------DEL SimpleName@@MethodName:addResult:[i, failureResult] @AT@ 51784 @LENGTH@ 27
+------------DEL SimpleName@@i @AT@ 51794 @LENGTH@ 1
+------------DEL SimpleName@@failureResult @AT@ 51797 @LENGTH@ 13
+

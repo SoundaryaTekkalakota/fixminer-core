@@ -1,0 +1,10 @@
+VariableDeclarationStatement 
+---ParameterizedType 
+------SimpleType 
+------WildcardType 
+---VariableDeclarationFragment 
+------SimpleName 
+------MethodInvocation 
+---------SimpleName 
+------------SimpleName 
+------------SimpleName

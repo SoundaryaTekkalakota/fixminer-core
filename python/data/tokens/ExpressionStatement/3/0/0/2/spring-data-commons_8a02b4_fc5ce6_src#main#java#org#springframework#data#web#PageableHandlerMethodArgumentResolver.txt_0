@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:builder.queryParam(pagePropertyName,oneIndexedParameters ? pageNumber + 1 : pageNumber) @TO@ MethodInvocation:builder.replaceQueryParam(pagePropertyName,oneIndexedParameters ? pageNumber + 1 : pageNumber) @AT@ 8186 @LENGTH@ 89
+---UPD MethodInvocation@@builder.queryParam(pagePropertyName,oneIndexedParameters ? pageNumber + 1 : pageNumber) @TO@ builder.replaceQueryParam(pagePropertyName,oneIndexedParameters ? pageNumber + 1 : pageNumber) @AT@ 8186 @LENGTH@ 88
+------UPD SimpleName@@MethodName:queryParam:[pagePropertyName, oneIndexedParameters ? pageNumber + 1 : pageNumber] @TO@ MethodName:replaceQueryParam:[pagePropertyName, oneIndexedParameters ? pageNumber + 1 : pageNumber] @AT@ 8194 @LENGTH@ 80
+

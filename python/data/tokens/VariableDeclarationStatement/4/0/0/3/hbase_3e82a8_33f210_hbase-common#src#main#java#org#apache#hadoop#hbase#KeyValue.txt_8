@@ -1,0 +1,5 @@
+UPD VariableDeclarationStatement@@int leftFarDelimiter=getRequiredDelimiterInReverse(left,leftDelimiter,llength - (leftDelimiter - loffset),HConstants.DELIMITER); @TO@ int leftFarDelimiter=getDelimiterInReverse(left,leftDelimiter,llength - (leftDelimiter - loffset),HConstants.DELIMITER); @AT@ 59020 @LENGTH@ 143
+---UPD VariableDeclarationFragment@@leftFarDelimiter=getRequiredDelimiterInReverse(left,leftDelimiter,llength - (leftDelimiter - loffset),HConstants.DELIMITER) @TO@ leftFarDelimiter=getDelimiterInReverse(left,leftDelimiter,llength - (leftDelimiter - loffset),HConstants.DELIMITER) @AT@ 59024 @LENGTH@ 138
+------UPD MethodInvocation@@getRequiredDelimiterInReverse(left,leftDelimiter,llength - (leftDelimiter - loffset),HConstants.DELIMITER) @TO@ getDelimiterInReverse(left,leftDelimiter,llength - (leftDelimiter - loffset),HConstants.DELIMITER) @AT@ 59043 @LENGTH@ 119
+---------UPD SimpleName@@MethodName:getRequiredDelimiterInReverse:[left, leftDelimiter, llength - (leftDelimiter - loffset), HConstants.DELIMITER] @TO@ MethodName:getDelimiterInReverse:[left, leftDelimiter, llength - (leftDelimiter - loffset), HConstants.DELIMITER] @AT@ 59043 @LENGTH@ 119
+

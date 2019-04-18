@@ -1,0 +1,7 @@
+INS ExpressionStatement@@MethodInvocation:deploymentUnit.addToAttachmentList(REMOVAL_KEY,persistenceAdaptorRemoval) @TO@ TryStatement@@try:[] @AT@ 32728 @LENGTH@ 75
+---INS MethodInvocation@@deploymentUnit.addToAttachmentList(REMOVAL_KEY,persistenceAdaptorRemoval) @TO@ ExpressionStatement@@MethodInvocation:deploymentUnit.addToAttachmentList(REMOVAL_KEY,persistenceAdaptorRemoval) @AT@ 32728 @LENGTH@ 74
+------INS SimpleName@@Name:deploymentUnit @TO@ MethodInvocation@@deploymentUnit.addToAttachmentList(REMOVAL_KEY,persistenceAdaptorRemoval) @AT@ 32728 @LENGTH@ 14
+------INS SimpleName@@MethodName:addToAttachmentList:[REMOVAL_KEY, persistenceAdaptorRemoval] @TO@ MethodInvocation@@deploymentUnit.addToAttachmentList(REMOVAL_KEY,persistenceAdaptorRemoval) @AT@ 32743 @LENGTH@ 59
+---------INS SimpleName@@REMOVAL_KEY @TO@ SimpleName@@MethodName:addToAttachmentList:[REMOVAL_KEY, persistenceAdaptorRemoval] @AT@ 32763 @LENGTH@ 11
+---------INS SimpleName@@persistenceAdaptorRemoval @TO@ SimpleName@@MethodName:addToAttachmentList:[REMOVAL_KEY, persistenceAdaptorRemoval] @AT@ 32776 @LENGTH@ 25
+

@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@final, List<HStoreFile>, [filesCompacting=Lists.newArrayList()] @TO@ private, final, List<HStoreFile>, [filesCompacting=Lists.newArrayList()] @AT@ 8635 @LENGTH@ 62
+---INS Modifier@@private @TO@ FieldDeclaration@@final, List<HStoreFile>, [filesCompacting=Lists.newArrayList()] @AT@ 8673 @LENGTH@ 7
+

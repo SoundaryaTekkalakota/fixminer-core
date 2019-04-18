@@ -1,0 +1,3 @@
+INS ThrowStatement@@SimpleName:iaex @TO@ CatchClause@@Exception ex @AT@ 5410 @LENGTH@ 11
+---INS SimpleName@@iaex @TO@ ThrowStatement@@SimpleName:iaex @AT@ 5416 @LENGTH@ 4
+

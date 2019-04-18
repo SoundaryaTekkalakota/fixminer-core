@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:translatedMessages.add(toFacesMessage(summaryMessages[i],detailMessages[i])) @TO@ MethodInvocation:messages.add(toFacesMessage(summaryMessages[i],detailMessages[i])) @AT@ 4521 @LENGTH@ 78
+---UPD MethodInvocation@@translatedMessages.add(toFacesMessage(summaryMessages[i],detailMessages[i])) @TO@ messages.add(toFacesMessage(summaryMessages[i],detailMessages[i])) @AT@ 4521 @LENGTH@ 77
+------UPD SimpleName@@Name:translatedMessages @TO@ Name:messages @AT@ 4521 @LENGTH@ 18
+

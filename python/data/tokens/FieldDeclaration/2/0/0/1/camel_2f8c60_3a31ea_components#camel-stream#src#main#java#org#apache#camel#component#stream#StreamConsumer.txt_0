@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, InputStream, [inputStream=System.in] @TO@ private, volatile, InputStream, [inputStream=System.in] @AT@ 2070 @LENGTH@ 44
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, InputStream, [inputStream=System.in] @AT@ 2117 @LENGTH@ 8
+

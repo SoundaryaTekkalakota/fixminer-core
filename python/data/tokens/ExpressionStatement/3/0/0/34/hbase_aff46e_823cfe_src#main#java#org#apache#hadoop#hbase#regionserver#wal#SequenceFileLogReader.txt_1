@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:Log.warn("Failed getting position to add to throw",e) @TO@ MethodInvocation:LOG.warn("Failed getting position to add to throw",e) @AT@ 5782 @LENGTH@ 55
+---UPD MethodInvocation@@Log.warn("Failed getting position to add to throw",e) @TO@ LOG.warn("Failed getting position to add to throw",e) @AT@ 5782 @LENGTH@ 54
+------UPD SimpleName@@Name:Log @TO@ Name:LOG @AT@ 5782 @LENGTH@ 3
+

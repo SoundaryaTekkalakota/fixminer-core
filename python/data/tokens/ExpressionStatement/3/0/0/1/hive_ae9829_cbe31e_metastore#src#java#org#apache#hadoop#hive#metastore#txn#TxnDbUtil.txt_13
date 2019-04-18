@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:s.execute("CREATE INDEX HL_TXNID_INDEX ON HIVE_LOCKS (HL_TXNID)") @TO@ MethodInvocation:stmt.execute("CREATE INDEX HL_TXNID_INDEX ON HIVE_LOCKS (HL_TXNID)") @AT@ 3829 @LENGTH@ 66
+---UPD MethodInvocation@@s.execute("CREATE INDEX HL_TXNID_INDEX ON HIVE_LOCKS (HL_TXNID)") @TO@ stmt.execute("CREATE INDEX HL_TXNID_INDEX ON HIVE_LOCKS (HL_TXNID)") @AT@ 3829 @LENGTH@ 65
+------UPD SimpleName@@Name:s @TO@ Name:stmt @AT@ 3829 @LENGTH@ 1
+

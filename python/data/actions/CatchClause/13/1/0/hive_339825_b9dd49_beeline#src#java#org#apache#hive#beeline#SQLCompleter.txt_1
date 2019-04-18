@@ -1,0 +1,13 @@
+ UPD CatchClause 
+--- UPD SingleVariableDeclaration 
+------ UPD SimpleType 
+------ UPD SimpleName 
+--- INS ExpressionStatement TO CatchClause 
+------ INS MethodInvocation TO ExpressionStatement 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS InfixExpression TO SimpleName 
+--------------- INS StringLiteral TO InfixExpression 
+--------------- INS Operator TO InfixExpression 
+--------------- INS SimpleName TO InfixExpression 
+------------ INS SimpleName TO SimpleName

@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, Map<String,JavaType>, [dodMidToEntityMap=new LinkedHashMap<String,JavaType>()] @TO@ private, final, Map<String,JavaType>, [dodMidToEntityMap=new LinkedHashMap<String,JavaType>()] @AT@ 2088 @LENGTH@ 88
+---INS Modifier@@final @TO@ FieldDeclaration@@private, Map<String,JavaType>, [dodMidToEntityMap=new LinkedHashMap<String,JavaType>()] @AT@ 2115 @LENGTH@ 5
+

@@ -1,0 +1,3 @@
+INS SwitchCase@@SimpleName:DOUBLE @TO@ SwitchStatement@@MethodInvocation:xObjectInspector.getPrimitiveCategory() @AT@ 4894 @LENGTH@ 12
+---INS SimpleName@@DOUBLE @TO@ SwitchCase@@SimpleName:DOUBLE @AT@ 4899 @LENGTH@ 6
+

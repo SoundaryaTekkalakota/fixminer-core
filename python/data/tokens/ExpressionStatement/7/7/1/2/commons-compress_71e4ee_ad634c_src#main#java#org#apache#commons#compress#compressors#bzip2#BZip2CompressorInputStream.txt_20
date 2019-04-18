@@ -1,0 +1,8 @@
+DEL ExpressionStatement@@Assignment:this.currentChar=su_ch2Shadow @AT@ 27989 @LENGTH@ 32
+---DEL Assignment@@this.currentChar=su_ch2Shadow @AT@ 27989 @LENGTH@ 31
+------DEL FieldAccess@@this.currentChar @AT@ 27989 @LENGTH@ 16
+---------DEL ThisExpression@@this @AT@ 27989 @LENGTH@ 4
+---------DEL SimpleName@@currentChar @AT@ 27994 @LENGTH@ 11
+------DEL Operator@@= @AT@ 28005 @LENGTH@ 1
+------DEL SimpleName@@su_ch2Shadow @AT@ 28008 @LENGTH@ 12
+

@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(TryProcessor.class)] @TO@ private, static, final, transient, Log, [LOG=LogFactory.getLog(TryProcessor.class)] @AT@ 1317 @LENGTH@ 69
+---INS Modifier@@transient @TO@ FieldDeclaration@@private, static, final, Log, [LOG=LogFactory.getLog(TryProcessor.class)] @AT@ 1338 @LENGTH@ 9
+

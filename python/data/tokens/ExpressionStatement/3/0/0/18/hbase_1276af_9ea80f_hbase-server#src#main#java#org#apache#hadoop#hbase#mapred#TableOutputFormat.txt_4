@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:m_table.put(new Put(value)) @TO@ MethodInvocation:table.put(new Put(value)) @AT@ 2816 @LENGTH@ 28
+---UPD MethodInvocation@@m_table.put(new Put(value)) @TO@ table.put(new Put(value)) @AT@ 2816 @LENGTH@ 27
+------UPD SimpleName@@Name:m_table @TO@ Name:table @AT@ 2816 @LENGTH@ 7
+

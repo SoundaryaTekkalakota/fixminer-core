@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@FileSystem fs=hfofDir.getFileSystem(getConf()); @TO@ final FileSystem fs=hfofDir.getFileSystem(getConf()); @AT@ 35611 @LENGTH@ 49
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@FileSystem fs=hfofDir.getFileSystem(getConf()); @AT@ 36427 @LENGTH@ 5
+

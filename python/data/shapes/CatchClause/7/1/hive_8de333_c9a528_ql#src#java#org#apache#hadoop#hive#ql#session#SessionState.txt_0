@@ -1,0 +1,7 @@
+CatchClause 
+---SingleVariableDeclaration 
+------SimpleType 
+------UnionType 
+---------SimpleType 
+---------SimpleType 
+---------SimpleType

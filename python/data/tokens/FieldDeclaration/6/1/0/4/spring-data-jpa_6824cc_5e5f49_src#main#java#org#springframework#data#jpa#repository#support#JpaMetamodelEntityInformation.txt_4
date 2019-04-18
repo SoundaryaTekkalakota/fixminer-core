@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, Metamodel, [metamodel] @TO@ TypeDeclaration@@[private, static]IdentifierDerivingDirectFieldAccessFallbackBeanWrapper, DirectFieldAccessFallbackBeanWrapper @AT@ 9468 @LENGTH@ 34
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, Metamodel, [metamodel] @AT@ 9468 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, Metamodel, [metamodel] @AT@ 9476 @LENGTH@ 5
+---INS SimpleType@@Metamodel @TO@ FieldDeclaration@@private, final, Metamodel, [metamodel] @AT@ 9482 @LENGTH@ 9
+---INS VariableDeclarationFragment@@metamodel @TO@ FieldDeclaration@@private, final, Metamodel, [metamodel] @AT@ 9492 @LENGTH@ 9
+------INS SimpleName@@metamodel @TO@ VariableDeclarationFragment@@metamodel @AT@ 9492 @LENGTH@ 9
+

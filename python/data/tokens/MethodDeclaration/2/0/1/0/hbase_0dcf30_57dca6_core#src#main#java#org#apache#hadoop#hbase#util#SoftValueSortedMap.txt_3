@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, V, MethodName:get, Object key,  @TO@ public, synchronized, V, MethodName:get, Object key,  @AT@ 2922 @LENGTH@ 273
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, V, MethodName:get, Object key,  @AT@ 2956 @LENGTH@ 12
+

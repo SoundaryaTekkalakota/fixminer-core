@@ -1,0 +1,5 @@
+UPD ReturnStatement@@MethodInvocation:link.getFileStatus(fs) @TO@ MethodInvocation:link.getFileStatus(inputFs) @AT@ 14296 @LENGTH@ 30
+---UPD MethodInvocation@@link.getFileStatus(fs) @TO@ link.getFileStatus(inputFs) @AT@ 14303 @LENGTH@ 22
+------UPD SimpleName@@MethodName:getFileStatus:[fs] @TO@ MethodName:getFileStatus:[inputFs] @AT@ 14308 @LENGTH@ 17
+---------UPD SimpleName@@fs @TO@ inputFs @AT@ 14322 @LENGTH@ 2
+

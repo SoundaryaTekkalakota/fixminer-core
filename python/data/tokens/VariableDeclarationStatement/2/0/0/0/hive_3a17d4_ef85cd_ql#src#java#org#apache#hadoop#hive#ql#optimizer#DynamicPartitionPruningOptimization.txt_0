@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@FilterOperator filter=(FilterOperator)nd; @TO@ final FilterOperator filter=(FilterOperator)nd; @AT@ 6755 @LENGTH@ 44
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@FilterOperator filter=(FilterOperator)nd; @AT@ 6808 @LENGTH@ 5
+

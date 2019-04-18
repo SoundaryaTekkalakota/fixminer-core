@@ -1,0 +1,5 @@
+UPD VariableDeclarationStatement@@int idx=expression.lastIndexOf('.'); @TO@ int idx=expression.indexOf('.'); @AT@ 3790 @LENGTH@ 38
+---UPD VariableDeclarationFragment@@idx=expression.lastIndexOf('.') @TO@ idx=expression.indexOf('.') @AT@ 3794 @LENGTH@ 33
+------UPD MethodInvocation@@expression.lastIndexOf('.') @TO@ expression.indexOf('.') @AT@ 3800 @LENGTH@ 27
+---------UPD SimpleName@@MethodName:lastIndexOf:['.'] @TO@ MethodName:indexOf:['.'] @AT@ 3811 @LENGTH@ 16
+

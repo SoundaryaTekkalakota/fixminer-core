@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:processComponentBinding(context,child) @TO@ MethodInvocation:processTree(context,child) @AT@ 6700 @LENGTH@ 40
+---UPD MethodInvocation@@processComponentBinding(context,child) @TO@ processTree(context,child) @AT@ 6700 @LENGTH@ 39
+------UPD SimpleName@@MethodName:processComponentBinding:[context, child] @TO@ MethodName:processTree:[context, child] @AT@ 6700 @LENGTH@ 39
+

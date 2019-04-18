@@ -1,0 +1,6 @@
+EnhancedForStatement 
+---SingleVariableDeclaration 
+------ParameterizedType 
+---------SimpleType 
+------SimpleName 
+---MethodInvocation

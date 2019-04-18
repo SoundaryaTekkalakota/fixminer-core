@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:ALL_CHANNELS.add(answer) @TO@ MethodInvocation:allChannels.add(answer) @AT@ 19356 @LENGTH@ 25
+---UPD MethodInvocation@@ALL_CHANNELS.add(answer) @TO@ allChannels.add(answer) @AT@ 19356 @LENGTH@ 24
+------UPD SimpleName@@Name:ALL_CHANNELS @TO@ Name:allChannels @AT@ 19356 @LENGTH@ 12
+

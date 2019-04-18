@@ -1,0 +1,15 @@
+VariableDeclarationStatement 
+---ParameterizedType 
+------SimpleType 
+------WildcardType 
+---VariableDeclarationFragment 
+------SimpleName 
+------ConditionalExpression 
+---------InfixExpression 
+------------SimpleName 
+------------Operator 
+------------NullLiteral 
+---------NullLiteral 
+---------MethodInvocation 
+------------SimpleName 
+------------SimpleName

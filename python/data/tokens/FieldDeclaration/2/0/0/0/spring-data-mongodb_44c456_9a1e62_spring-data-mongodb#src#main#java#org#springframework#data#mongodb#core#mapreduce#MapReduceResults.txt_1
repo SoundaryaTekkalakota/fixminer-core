@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, MapReduceTiming, [mapReduceTiming] @TO@ private, final, MapReduceTiming, [mapReduceTiming] @AT@ 1116 @LENGTH@ 40
+---INS Modifier@@final @TO@ FieldDeclaration@@private, MapReduceTiming, [mapReduceTiming] @AT@ 1193 @LENGTH@ 5
+

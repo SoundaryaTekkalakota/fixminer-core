@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:WritableUtils.writeVInt(out,writeRequestsCount) @TO@ MethodInvocation:WritableUtils.writeVLong(out,writeRequestsCount) @AT@ 12401 @LENGTH@ 49
+---UPD MethodInvocation@@WritableUtils.writeVInt(out,writeRequestsCount) @TO@ WritableUtils.writeVLong(out,writeRequestsCount) @AT@ 12401 @LENGTH@ 48
+------UPD SimpleName@@MethodName:writeVInt:[out, writeRequestsCount] @TO@ MethodName:writeVLong:[out, writeRequestsCount] @AT@ 12415 @LENGTH@ 34
+

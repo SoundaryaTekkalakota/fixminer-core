@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:createTab_stmt.setAttribute(LIST_PARTITIONS,tbl_partitions) @TO@ MethodInvocation:createTab_stmt.add(LIST_PARTITIONS,tbl_partitions) @AT@ 81884 @LENGTH@ 61
+---UPD MethodInvocation@@createTab_stmt.setAttribute(LIST_PARTITIONS,tbl_partitions) @TO@ createTab_stmt.add(LIST_PARTITIONS,tbl_partitions) @AT@ 81884 @LENGTH@ 60
+------UPD SimpleName@@MethodName:setAttribute:[LIST_PARTITIONS, tbl_partitions] @TO@ MethodName:add:[LIST_PARTITIONS, tbl_partitions] @AT@ 81899 @LENGTH@ 45
+

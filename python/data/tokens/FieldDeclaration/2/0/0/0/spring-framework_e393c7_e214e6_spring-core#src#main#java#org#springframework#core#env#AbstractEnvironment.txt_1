@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, Set<String>, [defaultProfiles=new LinkedHashSet<String>(getReservedDefaultProfiles())] @TO@ private, final, Set<String>, [defaultProfiles=new LinkedHashSet<String>(getReservedDefaultProfiles())] @AT@ 4704 @LENGTH@ 94
+---INS Modifier@@final @TO@ FieldDeclaration@@private, Set<String>, [defaultProfiles=new LinkedHashSet<String>(getReservedDefaultProfiles())] @AT@ 4763 @LENGTH@ 5
+

@@ -1,0 +1,12 @@
+ExpressionStatement 
+---Assignment 
+------CastExpression 
+---------MethodInvocation 
+---------MethodInvocation 
+------------SimpleName 
+---------------MethodInvocation 
+------------------SimpleName 
+------------------SimpleName 
+---------------------MethodInvocation 
+------------------------SimpleName 
+------------------------SimpleName

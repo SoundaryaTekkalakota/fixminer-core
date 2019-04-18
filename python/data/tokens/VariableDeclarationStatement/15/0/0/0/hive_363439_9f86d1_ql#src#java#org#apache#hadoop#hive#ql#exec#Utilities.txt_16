@@ -1,0 +1,16 @@
+INS VariableDeclarationStatement@@Set<Task<? extends Serializable>> visited=new HashSet<Task<? extends Serializable>>(); @TO@ MethodDeclaration@@public, static, List<ExecDriver>, MethodName:getMRTasks, List<Task<? extends Serializable>> tasks,  @AT@ 90708 @LENGTH@ 88
+---INS ParameterizedType@@Set<Task<? extends Serializable>> @TO@ VariableDeclarationStatement@@Set<Task<? extends Serializable>> visited=new HashSet<Task<? extends Serializable>>(); @AT@ 90708 @LENGTH@ 33
+------INS SimpleType@@Set @TO@ ParameterizedType@@Set<Task<? extends Serializable>> @AT@ 90708 @LENGTH@ 3
+------INS ParameterizedType@@Task<? extends Serializable> @TO@ ParameterizedType@@Set<Task<? extends Serializable>> @AT@ 90712 @LENGTH@ 28
+---------INS SimpleType@@Task @TO@ ParameterizedType@@Task<? extends Serializable> @AT@ 90712 @LENGTH@ 4
+---------INS WildcardType@@? @TO@ ParameterizedType@@Task<? extends Serializable> @AT@ 90717 @LENGTH@ 22
+---INS VariableDeclarationFragment@@visited=new HashSet<Task<? extends Serializable>>() @TO@ VariableDeclarationStatement@@Set<Task<? extends Serializable>> visited=new HashSet<Task<? extends Serializable>>(); @AT@ 90742 @LENGTH@ 53
+------INS SimpleName@@visited @TO@ VariableDeclarationFragment@@visited=new HashSet<Task<? extends Serializable>>() @AT@ 90742 @LENGTH@ 7
+------INS ClassInstanceCreation@@HashSet<Task<? extends Serializable>>[] @TO@ VariableDeclarationFragment@@visited=new HashSet<Task<? extends Serializable>>() @AT@ 90752 @LENGTH@ 43
+---------INS New@@new @TO@ ClassInstanceCreation@@HashSet<Task<? extends Serializable>>[] @AT@ 90752 @LENGTH@ 3
+---------INS ParameterizedType@@HashSet<Task<? extends Serializable>> @TO@ ClassInstanceCreation@@HashSet<Task<? extends Serializable>>[] @AT@ 90756 @LENGTH@ 37
+------------INS SimpleType@@HashSet @TO@ ParameterizedType@@HashSet<Task<? extends Serializable>> @AT@ 90756 @LENGTH@ 7
+------------INS ParameterizedType@@Task<? extends Serializable> @TO@ ParameterizedType@@HashSet<Task<? extends Serializable>> @AT@ 90764 @LENGTH@ 28
+---------------INS SimpleType@@Task @TO@ ParameterizedType@@Task<? extends Serializable> @AT@ 90764 @LENGTH@ 4
+---------------INS WildcardType@@? @TO@ ParameterizedType@@Task<? extends Serializable> @AT@ 90769 @LENGTH@ 22
+

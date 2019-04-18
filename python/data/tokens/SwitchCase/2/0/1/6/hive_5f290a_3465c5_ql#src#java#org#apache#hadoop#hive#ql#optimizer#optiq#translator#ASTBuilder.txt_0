@@ -1,0 +1,3 @@
+INS SwitchCase@@SimpleName:DOUBLE @TO@ SwitchStatement@@SimpleName:sqlType @AT@ 5321 @LENGTH@ 12
+---INS SimpleName@@DOUBLE @TO@ SwitchCase@@SimpleName:DOUBLE @AT@ 5326 @LENGTH@ 6
+

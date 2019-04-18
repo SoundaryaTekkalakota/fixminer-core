@@ -1,0 +1,13 @@
+IfStatement 
+---PrefixExpression 
+------Operator 
+------ParenthesizedExpression 
+---------InstanceofExpression 
+------------SimpleName 
+------------Instanceof 
+------------SimpleType 
+---ThrowStatement 
+------ClassInstanceCreation 
+---------New 
+---------SimpleType 
+---------StringLiteral

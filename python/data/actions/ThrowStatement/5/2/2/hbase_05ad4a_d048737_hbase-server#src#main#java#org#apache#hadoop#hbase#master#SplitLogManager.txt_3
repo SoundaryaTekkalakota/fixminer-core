@@ -1,0 +1,5 @@
+ INS ThrowStatement TO IfStatement 
+--- INS ClassInstanceCreation TO ThrowStatement 
+------ INS New TO ClassInstanceCreation 
+------ INS SimpleType TO ClassInstanceCreation 
+------ INS SimpleName TO ClassInstanceCreation

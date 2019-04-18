@@ -1,0 +1,5 @@
+ INS VariableDeclarationStatement TO IfStatement 
+--- INS SimpleType TO VariableDeclarationStatement 
+--- INS VariableDeclarationFragment TO VariableDeclarationStatement 
+------ INS SimpleName TO VariableDeclarationFragment 
+------ INS NullLiteral TO VariableDeclarationFragment

@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@MethodMetadataBuilder methodBuilder=new MethodMetadataBuilder(getId(),modifier,methodName,returnType,AnnotatedJavaType.convertFromJavaTypes(paramTypes),new ArrayList<JavaSymbolName>(),bodyBuilder); @TO@ final MethodMetadataBuilder methodBuilder=new MethodMetadataBuilder(getId(),modifier,methodName,returnType,AnnotatedJavaType.convertFromJavaTypes(paramTypes),new ArrayList<JavaSymbolName>(),bodyBuilder); @AT@ 18403 @LENGTH@ 205
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@MethodMetadataBuilder methodBuilder=new MethodMetadataBuilder(getId(),modifier,methodName,returnType,AnnotatedJavaType.convertFromJavaTypes(paramTypes),new ArrayList<JavaSymbolName>(),bodyBuilder); @AT@ 18587 @LENGTH@ 5
+

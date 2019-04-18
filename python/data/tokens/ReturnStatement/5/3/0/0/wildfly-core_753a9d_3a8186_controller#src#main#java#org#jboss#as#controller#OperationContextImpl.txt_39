@@ -1,0 +1,6 @@
+INS ReturnStatement@@MethodInvocation:delegate.addMonitor(monitor) @TO@ MethodDeclaration@@public, ServiceTarget, MethodName:addMonitor, final StabilityMonitor monitor,  @AT@ 100926 @LENGTH@ 36
+---INS MethodInvocation@@delegate.addMonitor(monitor) @TO@ ReturnStatement@@MethodInvocation:delegate.addMonitor(monitor) @AT@ 100933 @LENGTH@ 28
+------INS SimpleName@@Name:delegate @TO@ MethodInvocation@@delegate.addMonitor(monitor) @AT@ 100933 @LENGTH@ 8
+------INS SimpleName@@MethodName:addMonitor:[monitor] @TO@ MethodInvocation@@delegate.addMonitor(monitor) @AT@ 100942 @LENGTH@ 19
+---------INS SimpleName@@monitor @TO@ SimpleName@@MethodName:addMonitor:[monitor] @AT@ 100953 @LENGTH@ 7
+

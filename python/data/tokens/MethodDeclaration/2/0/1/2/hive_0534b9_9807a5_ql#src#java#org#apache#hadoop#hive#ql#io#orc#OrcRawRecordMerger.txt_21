@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@RecordReader, MethodName:getRecordReader,  @TO@ public, RecordReader, MethodName:getRecordReader,  @AT@ 8629 @LENGTH@ 52
+---INS Modifier@@public @TO@ MethodDeclaration@@RecordReader, MethodName:getRecordReader,  @AT@ 9234 @LENGTH@ 6
+

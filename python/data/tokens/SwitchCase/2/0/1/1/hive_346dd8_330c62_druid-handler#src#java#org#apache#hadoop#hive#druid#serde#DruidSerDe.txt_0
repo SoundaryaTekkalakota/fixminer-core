@@ -1,0 +1,3 @@
+INS SwitchCase@@SimpleName:CHAR @TO@ SwitchStatement@@MethodInvocation:types[i].getPrimitiveCategory() @AT@ 22120 @LENGTH@ 10
+---INS SimpleName@@CHAR @TO@ SwitchCase@@SimpleName:CHAR @AT@ 22125 @LENGTH@ 4
+

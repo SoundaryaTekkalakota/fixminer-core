@@ -1,0 +1,9 @@
+ INS IfStatement TO MethodDeclaration 
+--- INS MethodInvocation TO IfStatement 
+------ INS SimpleName TO MethodInvocation 
+------ INS SimpleName TO MethodInvocation 
+--- INS ExpressionStatement TO IfStatement 
+------ INS Assignment TO ExpressionStatement 
+--------- INS SimpleName TO Assignment 
+--------- INS Operator TO Assignment 
+--------- INS NumberLiteral TO Assignment

@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.warn("LLAP daemon logging initialized from {} in {} ms. Async: {}",llap_l4j2,(end - start),async) @TO@ MethodInvocation:LOG.debug("LLAP daemon logging initialized from {} in {} ms. Async: {}",llap_l4j2,(end - start),async) @AT@ 17517 @LENGTH@ 115
+---UPD MethodInvocation@@LOG.warn("LLAP daemon logging initialized from {} in {} ms. Async: {}",llap_l4j2,(end - start),async) @TO@ LOG.debug("LLAP daemon logging initialized from {} in {} ms. Async: {}",llap_l4j2,(end - start),async) @AT@ 17517 @LENGTH@ 114
+------UPD SimpleName@@MethodName:warn:["LLAP daemon logging initialized from {} in {} ms. Async: {}", llap_l4j2, (end - start), async] @TO@ MethodName:debug:["LLAP daemon logging initialized from {} in {} ms. Async: {}", llap_l4j2, (end - start), async] @AT@ 17521 @LENGTH@ 110
+

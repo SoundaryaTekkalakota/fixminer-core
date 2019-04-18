@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:addManagementConsole(deploymentUnit,pu,adaptor) @TO@ MethodInvocation:addManagementConsole(deploymentUnit,pu,adaptor,persistenceAdaptorRemoval) @AT@ 24380 @LENGTH@ 50
+---UPD MethodInvocation@@addManagementConsole(deploymentUnit,pu,adaptor) @TO@ addManagementConsole(deploymentUnit,pu,adaptor,persistenceAdaptorRemoval) @AT@ 24380 @LENGTH@ 49
+------UPD SimpleName@@MethodName:addManagementConsole:[deploymentUnit, pu, adaptor] @TO@ MethodName:addManagementConsole:[deploymentUnit, pu, adaptor, persistenceAdaptorRemoval] @AT@ 24380 @LENGTH@ 49
+---------INS SimpleName@@persistenceAdaptorRemoval @TO@ SimpleName@@MethodName:addManagementConsole:[deploymentUnit, pu, adaptor] @AT@ 24530 @LENGTH@ 25
+

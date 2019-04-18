@@ -1,0 +1,8 @@
+ForStatement 
+---InfixExpression 
+------MethodInvocation 
+---------SimpleName 
+---VariableDeclarationStatement 
+------VariableDeclarationFragment 
+---------MethodInvocation 
+------------SimpleName

@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.info(opHandle + ": getOperationStatus()") @TO@ MethodInvocation:LOG.debug(opHandle + ": getOperationStatus()") @AT@ 11463 @LENGTH@ 46
+---UPD MethodInvocation@@LOG.info(opHandle + ": getOperationStatus()") @TO@ LOG.debug(opHandle + ": getOperationStatus()") @AT@ 11463 @LENGTH@ 45
+------UPD SimpleName@@MethodName:info:[opHandle + ": getOperationStatus()"] @TO@ MethodName:debug:[opHandle + ": getOperationStatus()"] @AT@ 11467 @LENGTH@ 41
+

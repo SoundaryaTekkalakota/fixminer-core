@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@ModelNode connectorRefs=resource.getModel().get(CONNECTOR_REFS.getName()); @TO@ final ModelNode connectorRefs=resource.getModel().get(CONNECTOR_REFS.getName()); @AT@ 3506 @LENGTH@ 76
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@ModelNode connectorRefs=resource.getModel().get(CONNECTOR_REFS.getName()); @AT@ 3559 @LENGTH@ 5
+

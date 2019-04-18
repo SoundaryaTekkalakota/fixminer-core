@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, AtomicExchange, [result] @TO@ TypeDeclaration@@[private, final]ParallelAggregateTask, [Runnable] @AT@ 23106 @LENGTH@ 36
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, AtomicExchange, [result] @AT@ 23106 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, AtomicExchange, [result] @AT@ 23114 @LENGTH@ 5
+---INS SimpleType@@AtomicExchange @TO@ FieldDeclaration@@private, final, AtomicExchange, [result] @AT@ 23120 @LENGTH@ 14
+---INS VariableDeclarationFragment@@result @TO@ FieldDeclaration@@private, final, AtomicExchange, [result] @AT@ 23135 @LENGTH@ 6
+------INS SimpleName@@result @TO@ VariableDeclarationFragment@@result @AT@ 23135 @LENGTH@ 6
+

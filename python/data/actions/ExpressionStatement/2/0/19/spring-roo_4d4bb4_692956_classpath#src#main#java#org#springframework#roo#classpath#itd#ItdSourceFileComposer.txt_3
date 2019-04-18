@@ -1,0 +1,2 @@
+ INS ExpressionStatement TO EnhancedForStatement 
+--- INS MethodInvocation TO ExpressionStatement

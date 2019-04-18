@@ -1,0 +1,15 @@
+INS EnhancedForStatement@@ResourceManager external, SimpleName:externalOverlays @TO@ MethodDeclaration@@public, void, MethodName:registerResourceChangeListener, ResourceChangeListener listener,  @AT@ 4372 @LENGTH@ 204
+---INS SingleVariableDeclaration@@ResourceManager external @TO@ EnhancedForStatement@@ResourceManager external, SimpleName:externalOverlays @AT@ 4376 @LENGTH@ 24
+------INS SimpleType@@ResourceManager @TO@ SingleVariableDeclaration@@ResourceManager external @AT@ 4376 @LENGTH@ 15
+------INS SimpleName@@external @TO@ SingleVariableDeclaration@@ResourceManager external @AT@ 4392 @LENGTH@ 8
+---INS SimpleName@@externalOverlays @TO@ EnhancedForStatement@@ResourceManager external, SimpleName:externalOverlays @AT@ 4403 @LENGTH@ 16
+---INS IfStatement@@MethodInvocation:external.isResourceChangeListenerSupported() @TO@ EnhancedForStatement@@ResourceManager external, SimpleName:externalOverlays @AT@ 4435 @LENGTH@ 131
+------INS MethodInvocation@@external.isResourceChangeListenerSupported() @TO@ IfStatement@@MethodInvocation:external.isResourceChangeListenerSupported() @AT@ 4438 @LENGTH@ 44
+---------INS SimpleName@@Name:external @TO@ MethodInvocation@@external.isResourceChangeListenerSupported() @AT@ 4438 @LENGTH@ 8
+---------INS SimpleName@@MethodName:isResourceChangeListenerSupported:[] @TO@ MethodInvocation@@external.isResourceChangeListenerSupported() @AT@ 4447 @LENGTH@ 35
+------INS ExpressionStatement@@MethodInvocation:external.registerResourceChangeListener(listener) @TO@ IfStatement@@MethodInvocation:external.isResourceChangeListenerSupported() @AT@ 4502 @LENGTH@ 50
+---------INS MethodInvocation@@external.registerResourceChangeListener(listener) @TO@ ExpressionStatement@@MethodInvocation:external.registerResourceChangeListener(listener) @AT@ 4502 @LENGTH@ 49
+------------INS SimpleName@@Name:external @TO@ MethodInvocation@@external.registerResourceChangeListener(listener) @AT@ 4502 @LENGTH@ 8
+------------INS SimpleName@@MethodName:registerResourceChangeListener:[listener] @TO@ MethodInvocation@@external.registerResourceChangeListener(listener) @AT@ 4511 @LENGTH@ 40
+---------------INS SimpleName@@listener @TO@ SimpleName@@MethodName:registerResourceChangeListener:[listener] @AT@ 4542 @LENGTH@ 8
+

@@ -1,0 +1,8 @@
+UPD FieldDeclaration@@private, final, Set<LifecycleElement>, [initMethods=new LinkedHashSet<LifecycleElement>()] @TO@ private, final, LinkedList<LifecycleElement>, [initMethods=new LinkedList<LifecycleElement>()] @AT@ 8971 @LENGTH@ 88
+---UPD ParameterizedType@@Set<LifecycleElement> @TO@ LinkedList<LifecycleElement> @AT@ 8985 @LENGTH@ 21
+------UPD SimpleType@@Set @TO@ LinkedList @AT@ 8985 @LENGTH@ 3
+---UPD VariableDeclarationFragment@@initMethods=new LinkedHashSet<LifecycleElement>() @TO@ initMethods=new LinkedList<LifecycleElement>() @AT@ 9007 @LENGTH@ 51
+------UPD ClassInstanceCreation@@LinkedHashSet<LifecycleElement>[] @TO@ LinkedList<LifecycleElement>[] @AT@ 9021 @LENGTH@ 37
+---------UPD ParameterizedType@@LinkedHashSet<LifecycleElement> @TO@ LinkedList<LifecycleElement> @AT@ 9025 @LENGTH@ 31
+------------UPD SimpleType@@LinkedHashSet @TO@ LinkedList @AT@ 9025 @LENGTH@ 13
+

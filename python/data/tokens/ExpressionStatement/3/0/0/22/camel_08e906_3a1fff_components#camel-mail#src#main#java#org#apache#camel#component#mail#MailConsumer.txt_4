@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:message.setFlag(Flags.Flag.DELETED,true) @TO@ MethodInvocation:mail.setFlag(Flags.Flag.DELETED,true) @AT@ 9358 @LENGTH@ 42
+---UPD MethodInvocation@@message.setFlag(Flags.Flag.DELETED,true) @TO@ mail.setFlag(Flags.Flag.DELETED,true) @AT@ 9358 @LENGTH@ 41
+------UPD SimpleName@@Name:message @TO@ Name:mail @AT@ 9358 @LENGTH@ 7
+

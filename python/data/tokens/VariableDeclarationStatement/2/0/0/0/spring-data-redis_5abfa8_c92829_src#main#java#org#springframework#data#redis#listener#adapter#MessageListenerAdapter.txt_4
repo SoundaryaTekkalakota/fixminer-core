@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@Class<?> c=delegate.getClass(); @TO@ final Class<?> c=delegate.getClass(); @AT@ 4917 @LENGTH@ 33
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@Class<?> c=delegate.getClass(); @AT@ 5046 @LENGTH@ 5
+

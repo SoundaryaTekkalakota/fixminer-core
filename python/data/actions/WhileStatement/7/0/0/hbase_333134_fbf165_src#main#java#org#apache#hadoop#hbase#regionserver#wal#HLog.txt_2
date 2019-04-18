@@ -1,0 +1,7 @@
+ UPD WhileStatement 
+--- INS InfixExpression TO WhileStatement 
+------ MOV PrefixExpression TO InfixExpression 
+------ INS Operator TO InfixExpression 
+------ INS PrefixExpression TO InfixExpression 
+--------- INS Operator TO PrefixExpression 
+--------- INS SimpleName TO PrefixExpression

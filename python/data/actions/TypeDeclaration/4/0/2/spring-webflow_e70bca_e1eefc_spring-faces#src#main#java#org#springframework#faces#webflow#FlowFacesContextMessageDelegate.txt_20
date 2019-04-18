@@ -1,0 +1,4 @@
+ INS TypeDeclaration TO TypeDeclaration 
+--- MOV Modifier TO TypeDeclaration 
+--- MOV SimpleName TO TypeDeclaration 
+--- MOV SimpleType TO TypeDeclaration

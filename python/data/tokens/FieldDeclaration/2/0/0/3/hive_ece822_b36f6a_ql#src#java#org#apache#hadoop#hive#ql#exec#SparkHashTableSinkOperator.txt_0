@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, final, PerfLogger, [perfLogger=SessionState.getPerfLogger()] @TO@ private, final, transient, PerfLogger, [perfLogger=SessionState.getPerfLogger()] @AT@ 2249 @LENGTH@ 67
+---INS Modifier@@transient @TO@ FieldDeclaration@@private, final, PerfLogger, [perfLogger=SessionState.getPerfLogger()] @AT@ 2263 @LENGTH@ 9
+

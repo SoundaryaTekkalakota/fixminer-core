@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, transient, CompressionCodec, [lz4Codec] @TO@ private, volatile, transient, CompressionCodec, [lz4Codec] @AT@ 6077 @LENGTH@ 44
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, transient, CompressionCodec, [lz4Codec] @AT@ 6926 @LENGTH@ 8
+

@@ -1,0 +1,10 @@
+UPD ReturnStatement@@MethodInvocation:logger.isEnabled(Level.ERROR,null,null) @TO@ MethodInvocation:this.logger.isEnabled(Level.ERROR) @AT@ 7134 @LENGTH@ 49
+---UPD MethodInvocation@@logger.isEnabled(Level.ERROR,null,null) @TO@ this.logger.isEnabled(Level.ERROR) @AT@ 7141 @LENGTH@ 41
+------INS FieldAccess@@this.logger @TO@ MethodInvocation@@logger.isEnabled(Level.ERROR,null,null) @AT@ 7134 @LENGTH@ 11
+---------INS ThisExpression@@this @TO@ FieldAccess@@this.logger @AT@ 7134 @LENGTH@ 4
+---------INS SimpleName@@logger @TO@ FieldAccess@@this.logger @AT@ 7139 @LENGTH@ 6
+------DEL SimpleName@@Name:logger @AT@ 7141 @LENGTH@ 6
+------UPD SimpleName@@MethodName:isEnabled:[Level.ERROR, null, null] @TO@ MethodName:isEnabled:[Level.ERROR] @AT@ 7148 @LENGTH@ 34
+---------DEL NullLiteral@@null @AT@ 7171 @LENGTH@ 4
+---------DEL NullLiteral@@null @AT@ 7177 @LENGTH@ 4
+

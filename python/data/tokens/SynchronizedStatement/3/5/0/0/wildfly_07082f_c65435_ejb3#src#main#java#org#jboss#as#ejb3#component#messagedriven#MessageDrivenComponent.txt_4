@@ -1,0 +1,4 @@
+INS SynchronizedStatement@@ThisExpression:MessageDrivenComponent.this @TO@ MethodDeclaration@@public, void, MethodName:resume,  @AT@ 4256 @LENGTH@ 146
+---MOV IfStatement@@SimpleName:deliveryActive @TO@ SynchronizedStatement@@ThisExpression:MessageDrivenComponent.this @AT@ 4152 @LENGTH@ 62
+---INS ThisExpression@@this @TO@ SynchronizedStatement@@ThisExpression:MessageDrivenComponent.this @AT@ 4270 @LENGTH@ 27
+

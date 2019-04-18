@@ -1,0 +1,8 @@
+VariableDeclarationStatement 
+---VariableDeclarationFragment 
+------CastExpression 
+---------ParameterizedType 
+------------SimpleType 
+------------WildcardType 
+------------WildcardType 
+------MethodInvocation

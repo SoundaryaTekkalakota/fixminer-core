@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@TreeMap<byte[],Integer> map=new TreeMap<byte[],Integer>(Bytes.BYTES_COMPARATOR); @TO@ final TreeMap<byte[],Integer> map=new TreeMap<byte[],Integer>(Bytes.BYTES_COMPARATOR); @AT@ 36144 @LENGTH@ 84
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@TreeMap<byte[],Integer> map=new TreeMap<byte[],Integer>(Bytes.BYTES_COMPARATOR); @AT@ 36608 @LENGTH@ 5
+

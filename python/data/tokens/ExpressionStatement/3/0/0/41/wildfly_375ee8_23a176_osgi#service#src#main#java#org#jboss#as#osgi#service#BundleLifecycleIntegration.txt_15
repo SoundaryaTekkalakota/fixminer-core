@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:dep.setAutoStart(false) @TO@ MethodInvocation:deployment.setAutoStart(false) @AT@ 22655 @LENGTH@ 24
+---UPD MethodInvocation@@dep.setAutoStart(false) @TO@ deployment.setAutoStart(false) @AT@ 22655 @LENGTH@ 23
+------UPD SimpleName@@Name:dep @TO@ Name:deployment @AT@ 22655 @LENGTH@ 3
+

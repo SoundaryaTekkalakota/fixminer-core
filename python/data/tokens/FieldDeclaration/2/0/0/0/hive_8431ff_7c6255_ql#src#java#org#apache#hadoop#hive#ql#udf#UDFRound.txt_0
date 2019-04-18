@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, DoubleWritable, [doubleWritable=new DoubleWritable()] @TO@ private, final, DoubleWritable, [doubleWritable=new DoubleWritable()] @AT@ 1393 @LENGTH@ 61
+---INS Modifier@@final @TO@ FieldDeclaration@@private, DoubleWritable, [doubleWritable=new DoubleWritable()] @AT@ 1359 @LENGTH@ 5
+

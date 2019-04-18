@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.debug("The identifier is " + identifier) @TO@ MethodInvocation:LOG.trace("The identifier is " + identifier) @AT@ 33861 @LENGTH@ 43
+---UPD MethodInvocation@@LOG.debug("The identifier is " + identifier) @TO@ LOG.trace("The identifier is " + identifier) @AT@ 33861 @LENGTH@ 42
+------UPD SimpleName@@MethodName:debug:["The identifier is " + identifier] @TO@ MethodName:trace:["The identifier is " + identifier] @AT@ 33865 @LENGTH@ 38
+

@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@int modifier=Modifier.PUBLIC | Modifier.STATIC; @TO@ final int modifier=Modifier.PUBLIC | Modifier.STATIC; @AT@ 22102 @LENGTH@ 49
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@int modifier=Modifier.PUBLIC | Modifier.STATIC; @AT@ 22387 @LENGTH@ 5
+

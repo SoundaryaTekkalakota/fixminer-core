@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@String enumName=description.getName() + "_" + utility.enumTypeName(field.getName()); @TO@ final String enumName=description.getName() + "_" + utility.enumTypeName(field.getName()); @AT@ 25107 @LENGTH@ 86
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@String enumName=description.getName() + "_" + utility.enumTypeName(field.getName()); @AT@ 25404 @LENGTH@ 5
+

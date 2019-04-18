@@ -1,0 +1,6 @@
+MethodDeclaration 
+---PrimitiveType 
+---ReturnStatement 
+------PrefixExpression 
+---------Operator 
+---------NumberLiteral

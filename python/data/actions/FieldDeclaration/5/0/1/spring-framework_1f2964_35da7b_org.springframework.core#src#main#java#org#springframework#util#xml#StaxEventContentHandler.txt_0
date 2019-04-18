@@ -1,0 +1,5 @@
+ DEL FieldDeclaration 
+--- DEL Modifier 
+--- DEL SimpleType 
+--- DEL VariableDeclarationFragment 
+------ DEL SimpleName

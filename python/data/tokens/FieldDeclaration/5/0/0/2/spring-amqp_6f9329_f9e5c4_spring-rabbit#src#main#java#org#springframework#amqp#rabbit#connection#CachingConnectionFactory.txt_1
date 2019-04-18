@@ -1,0 +1,6 @@
+INS FieldDeclaration@@private, ApplicationContext, [applicationContext] @TO@ TypeDeclaration@@[public]CachingConnectionFactory, AbstractConnectionFactory[InitializingBean, ShutdownListener] @AT@ 3888 @LENGTH@ 46
+---INS Modifier@@private @TO@ FieldDeclaration@@private, ApplicationContext, [applicationContext] @AT@ 3888 @LENGTH@ 7
+---INS SimpleType@@ApplicationContext @TO@ FieldDeclaration@@private, ApplicationContext, [applicationContext] @AT@ 3896 @LENGTH@ 18
+---INS VariableDeclarationFragment@@applicationContext @TO@ FieldDeclaration@@private, ApplicationContext, [applicationContext] @AT@ 3915 @LENGTH@ 18
+------INS SimpleName@@applicationContext @TO@ VariableDeclarationFragment@@applicationContext @AT@ 3915 @LENGTH@ 18
+

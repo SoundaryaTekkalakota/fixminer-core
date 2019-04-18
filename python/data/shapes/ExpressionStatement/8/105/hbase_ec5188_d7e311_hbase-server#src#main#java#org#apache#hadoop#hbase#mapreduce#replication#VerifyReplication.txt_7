@@ -1,0 +1,8 @@
+ExpressionStatement 
+---Assignment 
+------QualifiedName 
+---------SimpleName 
+---------SimpleName 
+------PrefixExpression 
+---------Operator 
+---------NumberLiteral

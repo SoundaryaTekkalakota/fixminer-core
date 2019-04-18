@@ -1,0 +1,35 @@
+ UPD ExpressionStatement 
+--- UPD Assignment 
+------ UPD ClassInstanceCreation 
+--------- INS ClassInstanceCreation TO ClassInstanceCreation 
+------------ INS New TO ClassInstanceCreation 
+------------ INS SimpleType TO ClassInstanceCreation 
+------------ INS AnonymousClassDeclaration TO ClassInstanceCreation 
+--------------- INS MethodDeclaration TO AnonymousClassDeclaration 
+------------------ INS Modifier TO MethodDeclaration 
+------------------ INS SimpleType TO MethodDeclaration 
+------------------ INS SimpleName TO MethodDeclaration 
+------------------ INS SingleVariableDeclaration TO MethodDeclaration 
+--------------------- INS SimpleType TO SingleVariableDeclaration 
+--------------------- INS SimpleName TO SingleVariableDeclaration 
+------------------ INS VariableDeclarationStatement TO MethodDeclaration 
+--------------------- INS SimpleType TO VariableDeclarationStatement 
+--------------------- INS VariableDeclarationFragment TO VariableDeclarationStatement 
+------------------------ INS SimpleName TO VariableDeclarationFragment 
+------------------------ INS ClassInstanceCreation TO VariableDeclarationFragment 
+--------------------------- INS New TO ClassInstanceCreation 
+--------------------------- INS SimpleType TO ClassInstanceCreation 
+--------------------------- INS SimpleName TO ClassInstanceCreation 
+------------------ INS ExpressionStatement TO MethodDeclaration 
+--------------------- INS MethodInvocation TO ExpressionStatement 
+------------------------ INS SimpleName TO MethodInvocation 
+------------------------ INS SimpleName TO MethodInvocation 
+--------------------------- INS InfixExpression TO SimpleName 
+------------------------------ INS SimpleName TO InfixExpression 
+------------------------------ INS Operator TO InfixExpression 
+------------------------------ INS StringLiteral TO InfixExpression 
+------------------------------ INS MethodInvocation TO InfixExpression 
+--------------------------------- INS SimpleName TO MethodInvocation 
+--------------------------------- INS SimpleName TO MethodInvocation 
+------------------ INS ReturnStatement TO MethodDeclaration 
+--------------------- INS SimpleName TO ReturnStatement

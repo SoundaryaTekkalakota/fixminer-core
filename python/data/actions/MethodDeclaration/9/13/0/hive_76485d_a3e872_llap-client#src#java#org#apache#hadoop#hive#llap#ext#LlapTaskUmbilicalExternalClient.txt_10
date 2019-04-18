@@ -1,0 +1,9 @@
+ INS MethodDeclaration TO TypeDeclaration 
+--- INS Modifier TO MethodDeclaration 
+--- INS PrimitiveType TO MethodDeclaration 
+--- INS SimpleName TO MethodDeclaration 
+--- INS ExpressionStatement TO MethodDeclaration 
+------ INS Assignment TO ExpressionStatement 
+--------- INS SimpleName TO Assignment 
+--------- INS Operator TO Assignment 
+--------- INS BooleanLiteral TO Assignment

@@ -1,0 +1,11 @@
+VariableDeclarationStatement 
+---VariableDeclarationFragment 
+------CastExpression 
+---------SimpleType 
+---------MethodInvocation 
+------------SimpleName 
+------MethodInvocation 
+---------SimpleName 
+---------QualifiedName 
+---------MethodInvocation 
+------------TypeLiteral

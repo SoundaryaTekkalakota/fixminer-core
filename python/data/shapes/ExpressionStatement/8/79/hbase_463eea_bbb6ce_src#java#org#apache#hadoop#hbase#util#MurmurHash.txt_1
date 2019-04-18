@@ -1,0 +1,8 @@
+ExpressionStatement 
+---Assignment 
+------InfixExpression 
+---------ArrayAccess 
+------------InfixExpression 
+---------------SimpleName 
+---------------Operator 
+---------------NumberLiteral

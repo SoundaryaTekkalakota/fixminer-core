@@ -1,0 +1,6 @@
+INS ExpressionStatement@@MethodInvocation:callback.done(true) @TO@ IfStatement@@InfixExpression:failures.get() >= threshold && System.currentTimeMillis() - lastFailure < halfOpenAfter @AT@ 4115 @LENGTH@ 20
+---INS MethodInvocation@@callback.done(true) @TO@ ExpressionStatement@@MethodInvocation:callback.done(true) @AT@ 4115 @LENGTH@ 19
+------INS SimpleName@@Name:callback @TO@ MethodInvocation@@callback.done(true) @AT@ 4115 @LENGTH@ 8
+------INS SimpleName@@MethodName:done:[true] @TO@ MethodInvocation@@callback.done(true) @AT@ 4124 @LENGTH@ 10
+---------INS BooleanLiteral@@true @TO@ SimpleName@@MethodName:done:[true] @AT@ 4129 @LENGTH@ 4
+

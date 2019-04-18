@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, Schema, [schema] @TO@ private, volatile, Schema, [schema] @AT@ 2562 @LENGTH@ 22
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, Schema, [schema] @AT@ 2572 @LENGTH@ 8
+

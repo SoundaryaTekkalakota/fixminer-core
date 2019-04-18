@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.warn("Cannot delete file: " + name,e) @TO@ MethodInvocation:LOG.debug("Cannot delete file: " + name,e) @AT@ 18314 @LENGTH@ 43
+---UPD MethodInvocation@@LOG.warn("Cannot delete file: " + name,e) @TO@ LOG.debug("Cannot delete file: " + name,e) @AT@ 18314 @LENGTH@ 42
+------UPD SimpleName@@MethodName:warn:["Cannot delete file: " + name, e] @TO@ MethodName:debug:["Cannot delete file: " + name, e] @AT@ 18318 @LENGTH@ 38
+

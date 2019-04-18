@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@Deployment dep=deploymentManager.createDeployment(bundle.getLocation(),rootFile); @TO@ Deployment deployment=deploymentManager.createDeployment(bundle.getLocation(),rootFile); @AT@ 22478 @LENGTH@ 84
+---UPD VariableDeclarationFragment@@dep=deploymentManager.createDeployment(bundle.getLocation(),rootFile) @TO@ deployment=deploymentManager.createDeployment(bundle.getLocation(),rootFile) @AT@ 22489 @LENGTH@ 72
+------UPD SimpleName@@dep @TO@ deployment @AT@ 22489 @LENGTH@ 3
+

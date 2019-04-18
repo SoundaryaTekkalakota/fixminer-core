@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@String idFieldName=identifierField.getFieldName().getSymbolName(); @TO@ final String idFieldName=identifierField.getFieldName().getSymbolName(); @AT@ 22720 @LENGTH@ 68
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@String idFieldName=identifierField.getFieldName().getSymbolName(); @AT@ 23017 @LENGTH@ 5
+

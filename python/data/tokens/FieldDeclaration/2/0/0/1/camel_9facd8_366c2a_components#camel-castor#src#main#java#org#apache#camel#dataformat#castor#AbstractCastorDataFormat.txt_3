@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, Unmarshaller, [unmarshaller] @TO@ private, volatile, Unmarshaller, [unmarshaller] @AT@ 2039 @LENGTH@ 34
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, Unmarshaller, [unmarshaller] @AT@ 2065 @LENGTH@ 8
+

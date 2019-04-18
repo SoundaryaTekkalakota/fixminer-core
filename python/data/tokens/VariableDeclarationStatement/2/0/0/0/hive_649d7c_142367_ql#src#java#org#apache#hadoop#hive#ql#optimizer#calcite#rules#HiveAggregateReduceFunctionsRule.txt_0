@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@RelDataType avgInputType=typeFactory.createTypeWithNullability(getFieldType(oldAggRel.getInput(),iAvgInput),true); @TO@ final RelDataType avgInputType=typeFactory.createTypeWithNullability(getFieldType(oldAggRel.getInput(),iAvgInput),true); @AT@ 10571 @LENGTH@ 127
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@RelDataType avgInputType=typeFactory.createTypeWithNullability(getFieldType(oldAggRel.getInput(),iAvgInput),true); @AT@ 10758 @LENGTH@ 5
+

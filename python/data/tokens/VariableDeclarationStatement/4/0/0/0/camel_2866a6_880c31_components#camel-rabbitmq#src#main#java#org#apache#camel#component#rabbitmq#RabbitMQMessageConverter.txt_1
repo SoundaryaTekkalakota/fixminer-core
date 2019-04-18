@@ -1,0 +1,5 @@
+UPD VariableDeclarationStatement@@final Object priority=msg.getHeader(RabbitMQConstants.PRIORITY); @TO@ final Object priority=msg.removeHeader(RabbitMQConstants.PRIORITY); @AT@ 3941 @LENGTH@ 66
+---UPD VariableDeclarationFragment@@priority=msg.getHeader(RabbitMQConstants.PRIORITY) @TO@ priority=msg.removeHeader(RabbitMQConstants.PRIORITY) @AT@ 3954 @LENGTH@ 52
+------UPD MethodInvocation@@msg.getHeader(RabbitMQConstants.PRIORITY) @TO@ msg.removeHeader(RabbitMQConstants.PRIORITY) @AT@ 3965 @LENGTH@ 41
+---------UPD SimpleName@@MethodName:getHeader:[RabbitMQConstants.PRIORITY] @TO@ MethodName:removeHeader:[RabbitMQConstants.PRIORITY] @AT@ 3969 @LENGTH@ 37
+

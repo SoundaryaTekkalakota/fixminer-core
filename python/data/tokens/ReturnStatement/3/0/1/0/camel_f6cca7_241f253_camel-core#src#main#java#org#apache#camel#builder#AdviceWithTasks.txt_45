@@ -1,0 +1,4 @@
+INS ReturnStatement@@MethodInvocation:doAfter(route,matchBy,after,selectFirst,selectLast,selectFrom,selectTo,maxDeep) @TO@ MethodDeclaration@@public, static, AdviceWithTask, MethodName:afterByType, final RouteDefinition route, final Class<?> type, final ProcessorDefinition<?> after, boolean selectFirst, boolean selectLast, int selectFrom, int selectTo, int maxDeep,  @AT@ 15629 @LENGTH@ 94
+---INS MethodInvocation@@doAfter(route,matchBy,after,selectFirst,selectLast,selectFrom,selectTo,maxDeep) @TO@ ReturnStatement@@MethodInvocation:doAfter(route,matchBy,after,selectFirst,selectLast,selectFrom,selectTo,maxDeep) @AT@ 15636 @LENGTH@ 86
+------MOV SimpleName@@MethodName:createMatchByIterator:[route, matchBy, selectFirst, selectLast, selectFrom, selectTo, maxDeep] @TO@ MethodInvocation@@doAfter(route,matchBy,after,selectFirst,selectLast,selectFrom,selectTo,maxDeep) @AT@ 16367 @LENGTH@ 93
+

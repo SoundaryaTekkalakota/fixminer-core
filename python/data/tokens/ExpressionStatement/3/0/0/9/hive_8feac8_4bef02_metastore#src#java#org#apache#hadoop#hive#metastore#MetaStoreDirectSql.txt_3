@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.error("Database initialization failed; direct SQL is disabled",ex) @TO@ MethodInvocation:LOG.warn("Database initialization failed; direct SQL is disabled",ex) @AT@ 6288 @LENGTH@ 72
+---UPD MethodInvocation@@LOG.error("Database initialization failed; direct SQL is disabled",ex) @TO@ LOG.warn("Database initialization failed; direct SQL is disabled",ex) @AT@ 6288 @LENGTH@ 71
+------UPD SimpleName@@MethodName:error:["Database initialization failed; direct SQL is disabled", ex] @TO@ MethodName:warn:["Database initialization failed; direct SQL is disabled", ex] @AT@ 6292 @LENGTH@ 67
+

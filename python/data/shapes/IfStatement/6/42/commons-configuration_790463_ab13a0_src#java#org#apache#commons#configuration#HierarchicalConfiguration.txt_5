@@ -1,0 +1,6 @@
+IfStatement 
+---InstanceofExpression 
+------SimpleName 
+------Instanceof 
+------SimpleType 
+---ExpressionStatement

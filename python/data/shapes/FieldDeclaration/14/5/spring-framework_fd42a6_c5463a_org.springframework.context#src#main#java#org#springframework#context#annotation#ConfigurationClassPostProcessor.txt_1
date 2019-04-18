@@ -1,0 +1,14 @@
+FieldDeclaration 
+---PrimitiveType 
+---VariableDeclarationFragment 
+------SimpleName 
+------BooleanLiteral 
+------ClassInstanceCreation 
+---------New 
+---------ParameterizedType 
+------------SimpleType 
+------------SimpleType 
+---Modifier 
+---ParameterizedType 
+------SimpleType 
+------SimpleType

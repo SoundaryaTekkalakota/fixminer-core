@@ -1,0 +1,7 @@
+ForStatement 
+---InfixExpression 
+------SimpleName 
+---IfStatement 
+------InfixExpression 
+---------Operator 
+---------NumberLiteral

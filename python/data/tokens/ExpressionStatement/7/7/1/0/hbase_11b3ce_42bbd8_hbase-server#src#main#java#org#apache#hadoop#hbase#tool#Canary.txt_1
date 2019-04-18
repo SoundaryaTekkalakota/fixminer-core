@@ -1,0 +1,8 @@
+DEL ExpressionStatement@@Assignment:this.errorCode=INIT_ERROR_EXIT_CODE @AT@ 24919 @LENGTH@ 38
+---DEL Assignment@@this.errorCode=INIT_ERROR_EXIT_CODE @AT@ 24919 @LENGTH@ 37
+------DEL FieldAccess@@this.errorCode @AT@ 24919 @LENGTH@ 14
+---------DEL ThisExpression@@this @AT@ 24919 @LENGTH@ 4
+---------DEL SimpleName@@errorCode @AT@ 24924 @LENGTH@ 9
+------DEL Operator@@= @AT@ 24933 @LENGTH@ 1
+------DEL SimpleName@@INIT_ERROR_EXIT_CODE @AT@ 24936 @LENGTH@ 20
+

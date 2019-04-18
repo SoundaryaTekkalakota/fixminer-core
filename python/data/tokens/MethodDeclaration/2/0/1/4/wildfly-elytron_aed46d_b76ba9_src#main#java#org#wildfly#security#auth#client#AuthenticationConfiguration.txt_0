@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, AuthenticationConfiguration, MethodName:useCredentialStoreEntry, CredentialStore credentialStore, String alias,  @TO@ public, final, AuthenticationConfiguration, MethodName:useCredentialStoreEntry, CredentialStore credentialStore, String alias,  @AT@ 21999 @LENGTH@ 434
+---INS Modifier@@final @TO@ MethodDeclaration@@public, AuthenticationConfiguration, MethodName:useCredentialStoreEntry, CredentialStore credentialStore, String alias,  @AT@ 22006 @LENGTH@ 5
+

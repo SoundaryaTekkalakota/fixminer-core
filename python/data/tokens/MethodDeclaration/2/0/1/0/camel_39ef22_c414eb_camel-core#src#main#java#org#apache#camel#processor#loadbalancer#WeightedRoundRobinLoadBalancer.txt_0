@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@protected, Processor, MethodName:chooseProcessor, List<Processor> processors, Exchange exchange,  @TO@ protected, synchronized, Processor, MethodName:chooseProcessor, List<Processor> processors, Exchange exchange,  @AT@ 1195 @LENGTH@ 726
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@protected, Processor, MethodName:chooseProcessor, List<Processor> processors, Exchange exchange,  @AT@ 1205 @LENGTH@ 12
+

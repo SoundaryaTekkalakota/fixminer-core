@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, void, MethodName:addStaticContext, String contextName, ResourceManager resourceManager,  @TO@ public, synchronized, void, MethodName:addStaticContext, String contextName, ResourceManager resourceManager,  @AT@ 8101 @LENGTH@ 871
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, void, MethodName:addStaticContext, String contextName, ResourceManager resourceManager,  @AT@ 8108 @LENGTH@ 12
+

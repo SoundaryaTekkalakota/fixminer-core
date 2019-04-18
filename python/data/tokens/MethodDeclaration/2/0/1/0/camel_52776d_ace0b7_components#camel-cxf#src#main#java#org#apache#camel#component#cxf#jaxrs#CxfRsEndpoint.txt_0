@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, CxfRsBinding, MethodName:getBinding,  @TO@ public, synchronized, CxfRsBinding, MethodName:getBinding,  @AT@ 4350 @LENGTH@ 505
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, CxfRsBinding, MethodName:getBinding,  @AT@ 4357 @LENGTH@ 12
+

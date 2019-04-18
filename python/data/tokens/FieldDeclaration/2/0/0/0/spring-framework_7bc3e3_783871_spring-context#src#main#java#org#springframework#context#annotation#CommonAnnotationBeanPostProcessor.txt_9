@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, String, [beanName] @TO@ private, final, String, [beanName] @AT@ 26506 @LENGTH@ 24
+---INS Modifier@@final @TO@ FieldDeclaration@@private, String, [beanName] @AT@ 26375 @LENGTH@ 5
+

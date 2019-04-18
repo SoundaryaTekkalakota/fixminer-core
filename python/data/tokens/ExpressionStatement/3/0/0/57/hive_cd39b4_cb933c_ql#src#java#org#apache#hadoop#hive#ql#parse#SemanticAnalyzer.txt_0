@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:checkIfAcidAndOverwriting(qb,table_desc) @TO@ MethodInvocation:checkAcidConstraints(qb,table_desc) @AT@ 240345 @LENGTH@ 42
+---UPD MethodInvocation@@checkIfAcidAndOverwriting(qb,table_desc) @TO@ checkAcidConstraints(qb,table_desc) @AT@ 240345 @LENGTH@ 41
+------UPD SimpleName@@MethodName:checkIfAcidAndOverwriting:[qb, table_desc] @TO@ MethodName:checkAcidConstraints:[qb, table_desc] @AT@ 240345 @LENGTH@ 41
+

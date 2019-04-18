@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:client.mutateRow(ByteBuffer.wrap(t),ByteBuffer.wrap(bytes("foo")),mutations) @TO@ MethodInvocation:client.mutateRow(ByteBuffer.wrap(t),ByteBuffer.wrap(bytes("foo")),mutations,dummyAttributes) @AT@ 6891 @LENGTH@ 79
+---UPD MethodInvocation@@client.mutateRow(ByteBuffer.wrap(t),ByteBuffer.wrap(bytes("foo")),mutations) @TO@ client.mutateRow(ByteBuffer.wrap(t),ByteBuffer.wrap(bytes("foo")),mutations,dummyAttributes) @AT@ 6891 @LENGTH@ 78
+------UPD SimpleName@@MethodName:mutateRow:[ByteBuffer.wrap(t), ByteBuffer.wrap(bytes("foo")), mutations] @TO@ MethodName:mutateRow:[ByteBuffer.wrap(t), ByteBuffer.wrap(bytes("foo")), mutations, dummyAttributes] @AT@ 6898 @LENGTH@ 71
+---------INS SimpleName@@dummyAttributes @TO@ SimpleName@@MethodName:mutateRow:[ByteBuffer.wrap(t), ByteBuffer.wrap(bytes("foo")), mutations] @AT@ 7079 @LENGTH@ 15
+

@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@boolean, [lazySessionCreation] @TO@ private, boolean, [lazySessionCreation] @AT@ 3147 @LENGTH@ 28
+---INS Modifier@@private @TO@ FieldDeclaration@@boolean, [lazySessionCreation] @AT@ 3187 @LENGTH@ 7
+

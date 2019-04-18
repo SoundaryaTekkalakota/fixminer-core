@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:bodyBuilder.appendFormalLine(sb.toString()) @TO@ MethodInvocation:converterBodyBuilder.appendFormalLine(sb.toString()) @AT@ 42590 @LENGTH@ 44
+---UPD MethodInvocation@@bodyBuilder.appendFormalLine(sb.toString()) @TO@ converterBodyBuilder.appendFormalLine(sb.toString()) @AT@ 42590 @LENGTH@ 43
+------UPD SimpleName@@Name:bodyBuilder @TO@ Name:converterBodyBuilder @AT@ 42590 @LENGTH@ 11
+

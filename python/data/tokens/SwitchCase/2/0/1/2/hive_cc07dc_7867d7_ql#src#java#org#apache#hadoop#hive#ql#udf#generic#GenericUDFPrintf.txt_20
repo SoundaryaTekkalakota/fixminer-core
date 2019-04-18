@@ -1,0 +1,3 @@
+INS SwitchCase@@SimpleName:VARCHAR @TO@ SwitchStatement@@MethodInvocation:((PrimitiveObjectInspector)argumentOIs[i]).getPrimitiveCategory() @AT@ 5375 @LENGTH@ 13
+---INS SimpleName@@VARCHAR @TO@ SwitchCase@@SimpleName:VARCHAR @AT@ 5380 @LENGTH@ 7
+

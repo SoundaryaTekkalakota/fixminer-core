@@ -1,0 +1,16 @@
+ DEL VariableDeclarationStatement 
+--- DEL ParameterizedType 
+------ DEL SimpleType 
+------ DEL SimpleType 
+------ DEL SimpleType 
+--- DEL VariableDeclarationFragment 
+------ DEL SimpleName 
+------ DEL ClassInstanceCreation 
+--------- DEL New 
+--------- DEL ParameterizedType 
+------------ DEL SimpleType 
+------------ DEL SimpleType 
+------------ DEL SimpleType 
+--------- DEL MethodInvocation 
+------------ DEL SimpleName 
+------------ DEL SimpleName

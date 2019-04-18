@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, XMPPConnection, [connection] @TO@ private, volatile, XMPPConnection, [connection] @AT@ 2515 @LENGTH@ 34
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, XMPPConnection, [connection] @AT@ 2523 @LENGTH@ 8
+

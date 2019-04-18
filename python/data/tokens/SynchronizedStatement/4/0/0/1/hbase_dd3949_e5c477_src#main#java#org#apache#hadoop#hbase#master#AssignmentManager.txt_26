@@ -1,0 +1,5 @@
+DEL SynchronizedStatement@@FieldAccess:this.regionPlans @AT@ 46094 @LENGTH@ 95
+---DEL FieldAccess@@this.regionPlans @AT@ 46108 @LENGTH@ 16
+------DEL ThisExpression@@this @AT@ 46108 @LENGTH@ 4
+------DEL SimpleName@@regionPlans @AT@ 46113 @LENGTH@ 11
+

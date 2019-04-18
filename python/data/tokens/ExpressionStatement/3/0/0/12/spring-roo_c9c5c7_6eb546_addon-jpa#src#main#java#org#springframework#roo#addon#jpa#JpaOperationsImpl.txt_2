@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:projectOperations.dependencyUpdate(new Dependency(dependencyElement)) @TO@ MethodInvocation:projectOperations.addDependency(new Dependency(dependencyElement)) @AT@ 27743 @LENGTH@ 70
+---UPD MethodInvocation@@projectOperations.dependencyUpdate(new Dependency(dependencyElement)) @TO@ projectOperations.addDependency(new Dependency(dependencyElement)) @AT@ 27743 @LENGTH@ 69
+------UPD SimpleName@@MethodName:dependencyUpdate:[new Dependency(dependencyElement)] @TO@ MethodName:addDependency:[new Dependency(dependencyElement)] @AT@ 27761 @LENGTH@ 51
+

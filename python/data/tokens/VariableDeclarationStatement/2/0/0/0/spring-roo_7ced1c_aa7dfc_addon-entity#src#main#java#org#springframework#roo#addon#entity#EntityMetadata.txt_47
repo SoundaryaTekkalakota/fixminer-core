@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@InvocableMemberBodyBuilder bodyBuilder=new InvocableMemberBodyBuilder(); @TO@ final InvocableMemberBodyBuilder bodyBuilder=new InvocableMemberBodyBuilder(); @AT@ 21597 @LENGTH@ 74
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@InvocableMemberBodyBuilder bodyBuilder=new InvocableMemberBodyBuilder(); @AT@ 21876 @LENGTH@ 5
+

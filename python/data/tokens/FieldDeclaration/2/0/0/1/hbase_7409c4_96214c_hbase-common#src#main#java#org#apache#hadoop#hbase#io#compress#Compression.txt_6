@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, transient, GzipCodec, [codec] @TO@ private, volatile, transient, GzipCodec, [codec] @AT@ 4042 @LENGTH@ 34
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, transient, GzipCodec, [codec] @AT@ 4330 @LENGTH@ 8
+

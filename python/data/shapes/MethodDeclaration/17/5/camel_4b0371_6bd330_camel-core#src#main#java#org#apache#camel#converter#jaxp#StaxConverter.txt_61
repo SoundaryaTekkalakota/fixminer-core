@@ -1,0 +1,17 @@
+MethodDeclaration 
+---Modifier 
+---PrimitiveType 
+---SimpleName 
+---SingleVariableDeclaration 
+------SimpleType 
+------SimpleName 
+---IfStatement 
+------InfixExpression 
+---------SimpleName 
+---------Operator 
+---------SimpleName 
+------ExpressionStatement 
+---------MethodInvocation 
+------------SimpleName 
+------------SimpleName 
+---------------SimpleName

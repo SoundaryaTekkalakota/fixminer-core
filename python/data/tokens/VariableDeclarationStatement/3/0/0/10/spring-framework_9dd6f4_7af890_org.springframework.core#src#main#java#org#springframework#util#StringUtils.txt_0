@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@int sepIndex=path.lastIndexOf(EXTENSION_SEPARATOR); @TO@ int extIndex=path.lastIndexOf(EXTENSION_SEPARATOR); @AT@ 16798 @LENGTH@ 53
+---UPD VariableDeclarationFragment@@sepIndex=path.lastIndexOf(EXTENSION_SEPARATOR) @TO@ extIndex=path.lastIndexOf(EXTENSION_SEPARATOR) @AT@ 16802 @LENGTH@ 48
+------UPD SimpleName@@sepIndex @TO@ extIndex @AT@ 16802 @LENGTH@ 8
+

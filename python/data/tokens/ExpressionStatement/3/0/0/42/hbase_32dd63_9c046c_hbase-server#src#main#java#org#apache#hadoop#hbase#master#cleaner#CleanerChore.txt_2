@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.warn("WALs outstanding under {}",oldFileDir) @TO@ MethodInvocation:LOG.trace("WALs outstanding under {}",oldFileDir) @AT@ 10476 @LENGTH@ 50
+---UPD MethodInvocation@@LOG.warn("WALs outstanding under {}",oldFileDir) @TO@ LOG.trace("WALs outstanding under {}",oldFileDir) @AT@ 10476 @LENGTH@ 49
+------UPD SimpleName@@MethodName:warn:["WALs outstanding under {}", oldFileDir] @TO@ MethodName:trace:["WALs outstanding under {}", oldFileDir] @AT@ 10480 @LENGTH@ 45
+

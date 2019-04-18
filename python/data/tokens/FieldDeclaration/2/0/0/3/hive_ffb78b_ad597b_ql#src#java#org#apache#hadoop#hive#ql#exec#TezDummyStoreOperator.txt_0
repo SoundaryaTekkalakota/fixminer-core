@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, boolean, [fetchDone=false] @TO@ private, transient, boolean, [fetchDone=false] @AT@ 1454 @LENGTH@ 34
+---INS Modifier@@transient @TO@ FieldDeclaration@@private, boolean, [fetchDone=false] @AT@ 1462 @LENGTH@ 9
+

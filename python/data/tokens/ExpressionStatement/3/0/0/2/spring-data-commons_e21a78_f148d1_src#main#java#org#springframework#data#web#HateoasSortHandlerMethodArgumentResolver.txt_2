@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:builder.queryParam(getLegacyDirectionParameter(parameter),expressions.get(1)) @TO@ MethodInvocation:builder.replaceQueryParam(getLegacyDirectionParameter(parameter),expressions.get(1)) @AT@ 1999 @LENGTH@ 79
+---UPD MethodInvocation@@builder.queryParam(getLegacyDirectionParameter(parameter),expressions.get(1)) @TO@ builder.replaceQueryParam(getLegacyDirectionParameter(parameter),expressions.get(1)) @AT@ 1999 @LENGTH@ 78
+------UPD SimpleName@@MethodName:queryParam:[getLegacyDirectionParameter(parameter), expressions.get(1)] @TO@ MethodName:replaceQueryParam:[getLegacyDirectionParameter(parameter), expressions.get(1)] @AT@ 2007 @LENGTH@ 70
+

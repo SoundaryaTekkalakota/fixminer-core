@@ -1,0 +1,5 @@
+DEL SynchronizedStatement@@FieldAccess:this.changedReaderObservers @AT@ 28029 @LENGTH@ 153
+---DEL FieldAccess@@this.changedReaderObservers @AT@ 28043 @LENGTH@ 27
+------DEL ThisExpression@@this @AT@ 28043 @LENGTH@ 4
+------DEL SimpleName@@changedReaderObservers @AT@ 28048 @LENGTH@ 22
+

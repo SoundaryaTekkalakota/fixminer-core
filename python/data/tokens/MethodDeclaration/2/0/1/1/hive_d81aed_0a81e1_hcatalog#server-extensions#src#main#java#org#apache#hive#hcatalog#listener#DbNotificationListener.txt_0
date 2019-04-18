@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@private, synchronized, void, MethodName:init, Configuration conf, MetaException,  @TO@ private, static, synchronized, void, MethodName:init, Configuration conf, MetaException,  @AT@ 5552 @LENGTH@ 295
+---INS Modifier@@static @TO@ MethodDeclaration@@private, synchronized, void, MethodName:init, Configuration conf, MetaException,  @AT@ 5645 @LENGTH@ 6
+

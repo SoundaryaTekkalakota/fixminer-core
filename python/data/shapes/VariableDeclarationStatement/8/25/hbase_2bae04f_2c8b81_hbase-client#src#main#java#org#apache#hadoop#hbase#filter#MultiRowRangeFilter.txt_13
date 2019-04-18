@@ -1,0 +1,8 @@
+VariableDeclarationStatement 
+---ArrayType 
+------PrimitiveType 
+---VariableDeclarationFragment 
+------SimpleName 
+------MethodInvocation 
+---------SimpleName 
+---------SimpleName

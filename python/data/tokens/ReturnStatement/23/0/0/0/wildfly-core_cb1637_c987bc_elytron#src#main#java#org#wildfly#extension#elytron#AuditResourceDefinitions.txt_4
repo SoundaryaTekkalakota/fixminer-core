@@ -1,0 +1,97 @@
+UPD ReturnStatement@@LambdaExpression:() -> {
+  PathResolver pathResolver=pathResolver();
+  pathResolver.path(path);
+  if (relativeTo != null) {
+    pathResolver.relativeTo(relativeTo,pathManager.getValue());
+  }
+  File resolvedPath=pathResolver.resolve();
+  final Supplier<DateTimeFormatter> dateTimeFormatterSupplier=() -> DateTimeFormatter.ofPattern(DATE_FORMAT).withZone(ZoneId.systemDefault());
+  final SecurityEventVisitor<?,String> formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build() : SimpleSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build();
+  AuditEndpoint endpoint;
+  try {
+    endpoint=FileAuditEndpoint.builder().setLocation(resolvedPath.toPath()).setSyncOnAccept(synv).setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build();
+  }
+ catch (  IOException e) {
+    throw ROOT_LOGGER.unableToStartService(e);
+  }
+  return SecurityEventListener.from(AuditLogger.builder().setPriorityMapper(m -> EventPriority.WARNING).setMessageFormatter(m -> m.accept(formatter,null)).setAuditEndpoint(endpoint).build());
+}
+ @TO@ ClassInstanceCreation:new EndpointClosingEventListenerSupplier(){
+  @Override public SecurityEventListener get() throws StartException {
+    PathResolver pathResolver=pathResolver();
+    pathResolver.path(path);
+    if (relativeTo != null) {
+      pathResolver.relativeTo(relativeTo,pathManager.getValue());
+    }
+    File resolvedPath=pathResolver.resolve();
+    final Supplier<DateTimeFormatter> dateTimeFormatterSupplier=() -> DateTimeFormatter.ofPattern(DATE_FORMAT).withZone(ZoneId.systemDefault());
+    final SecurityEventVisitor<?,String> formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build() : SimpleSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build();
+    try {
+      endpoint=FileAuditEndpoint.builder().setLocation(resolvedPath.toPath()).setSyncOnAccept(synv).setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build();
+    }
+ catch (    IOException e) {
+      throw ROOT_LOGGER.unableToStartService(e);
+    }
+    return SecurityEventListener.from(AuditLogger.builder().setPriorityMapper(m -> EventPriority.WARNING).setMessageFormatter(m -> m.accept(formatter,null)).setAuditEndpoint(endpoint).build());
+  }
+}
+ @AT@ 10371 @LENGTH@ 1608
+---DEL LambdaExpression@@() -> {
+  PathResolver pathResolver=pathResolver();
+  pathResolver.path(path);
+  if (relativeTo != null) {
+    pathResolver.relativeTo(relativeTo,pathManager.getValue());
+  }
+  File resolvedPath=pathResolver.resolve();
+  final Supplier<DateTimeFormatter> dateTimeFormatterSupplier=() -> DateTimeFormatter.ofPattern(DATE_FORMAT).withZone(ZoneId.systemDefault());
+  final SecurityEventVisitor<?,String> formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build() : SimpleSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build();
+  AuditEndpoint endpoint;
+  try {
+    endpoint=FileAuditEndpoint.builder().setLocation(resolvedPath.toPath()).setSyncOnAccept(synv).setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build();
+  }
+ catch (  IOException e) {
+    throw ROOT_LOGGER.unableToStartService(e);
+  }
+  return SecurityEventListener.from(AuditLogger.builder().setPriorityMapper(m -> EventPriority.WARNING).setMessageFormatter(m -> m.accept(formatter,null)).setAuditEndpoint(endpoint).build());
+}
+ @AT@ 10378 @LENGTH@ 1600
+------DEL VariableDeclarationStatement@@AuditEndpoint endpoint; @AT@ 11197 @LENGTH@ 23
+---------DEL SimpleType@@AuditEndpoint @AT@ 11197 @LENGTH@ 13
+---------DEL VariableDeclarationFragment@@endpoint @AT@ 11211 @LENGTH@ 8
+------------DEL SimpleName@@endpoint @AT@ 11211 @LENGTH@ 8
+---INS ClassInstanceCreation@@EndpointClosingEventListenerSupplier[] @TO@ ReturnStatement@@LambdaExpression:() -> {
+  PathResolver pathResolver=pathResolver();
+  pathResolver.path(path);
+  if (relativeTo != null) {
+    pathResolver.relativeTo(relativeTo,pathManager.getValue());
+  }
+  File resolvedPath=pathResolver.resolve();
+  final Supplier<DateTimeFormatter> dateTimeFormatterSupplier=() -> DateTimeFormatter.ofPattern(DATE_FORMAT).withZone(ZoneId.systemDefault());
+  final SecurityEventVisitor<?,String> formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build() : SimpleSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build();
+  AuditEndpoint endpoint;
+  try {
+    endpoint=FileAuditEndpoint.builder().setLocation(resolvedPath.toPath()).setSyncOnAccept(synv).setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build();
+  }
+ catch (  IOException e) {
+    throw ROOT_LOGGER.unableToStartService(e);
+  }
+  return SecurityEventListener.from(AuditLogger.builder().setPriorityMapper(m -> EventPriority.WARNING).setMessageFormatter(m -> m.accept(formatter,null)).setAuditEndpoint(endpoint).build());
+}
+ @AT@ 10862 @LENGTH@ 1804
+------INS New@@new @TO@ ClassInstanceCreation@@EndpointClosingEventListenerSupplier[] @AT@ 10862 @LENGTH@ 3
+------INS SimpleType@@EndpointClosingEventListenerSupplier @TO@ ClassInstanceCreation@@EndpointClosingEventListenerSupplier[] @AT@ 10866 @LENGTH@ 36
+------INS AnonymousClassDeclaration@@AnonymousClass @TO@ ClassInstanceCreation@@EndpointClosingEventListenerSupplier[] @AT@ 10905 @LENGTH@ 1761
+---------INS MethodDeclaration@@public, SecurityEventListener, MethodName:get, StartException,  @TO@ AnonymousClassDeclaration@@AnonymousClass @AT@ 10957 @LENGTH@ 1691
+------------MOV VariableDeclarationStatement@@PathResolver pathResolver=pathResolver(); @TO@ MethodDeclaration@@public, SecurityEventListener, MethodName:get, StartException,  @AT@ 10406 @LENGTH@ 43
+------------MOV ExpressionStatement@@MethodInvocation:pathResolver.path(path) @TO@ MethodDeclaration@@public, SecurityEventListener, MethodName:get, StartException,  @AT@ 10470 @LENGTH@ 24
+------------MOV IfStatement@@InfixExpression:relativeTo != null @TO@ MethodDeclaration@@public, SecurityEventListener, MethodName:get, StartException,  @AT@ 10515 @LENGTH@ 132
+------------MOV VariableDeclarationStatement@@File resolvedPath=pathResolver.resolve(); @TO@ MethodDeclaration@@public, SecurityEventListener, MethodName:get, StartException,  @AT@ 10668 @LENGTH@ 43
+------------MOV VariableDeclarationStatement@@final Supplier<DateTimeFormatter> dateTimeFormatterSupplier=() -> DateTimeFormatter.ofPattern(DATE_FORMAT).withZone(ZoneId.systemDefault()); @TO@ MethodDeclaration@@public, SecurityEventListener, MethodName:get, StartException,  @AT@ 10733 @LENGTH@ 142
+------------MOV VariableDeclarationStatement@@final SecurityEventVisitor<?,String> formatter=Format.JSON == format ? JsonSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build() : SimpleSecurityEventFormatter.builder().setDateTimeFormatterSupplier(dateTimeFormatterSupplier).build(); @TO@ MethodDeclaration@@public, SecurityEventListener, MethodName:get, StartException,  @AT@ 10896 @LENGTH@ 280
+------------INS Modifier@@public @TO@ MethodDeclaration@@public, SecurityEventListener, MethodName:get, StartException,  @AT@ 10957 @LENGTH@ 6
+------------INS SimpleType@@SecurityEventListener @TO@ MethodDeclaration@@public, SecurityEventListener, MethodName:get, StartException,  @AT@ 10964 @LENGTH@ 21
+------------INS SimpleName@@MethodName:get @TO@ MethodDeclaration@@public, SecurityEventListener, MethodName:get, StartException,  @AT@ 10986 @LENGTH@ 3
+------------INS SimpleType@@StartException @TO@ MethodDeclaration@@public, SecurityEventListener, MethodName:get, StartException,  @AT@ 10999 @LENGTH@ 14
+------------MOV TryStatement@@try:[] @TO@ MethodDeclaration@@public, SecurityEventListener, MethodName:get, StartException,  @AT@ 11241 @LENGTH@ 391
+------------MOV ReturnStatement@@MethodInvocation:SecurityEventListener.from(AuditLogger.builder().setPriorityMapper(m -> EventPriority.WARNING).setMessageFormatter(m -> m.accept(formatter,null)).setAuditEndpoint(endpoint).build()) @TO@ MethodDeclaration@@public, SecurityEventListener, MethodName:get, StartException,  @AT@ 11654 @LENGTH@ 306
+

@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:pruneBySequentialScan(tab,true_parts,unkn_parts,denied_parts,prunerExpr,rowObjectInspector) @TO@ MethodInvocation:pruneBySequentialScan(tab,true_parts,unkn_parts,denied_parts,prunerExpr,rowObjectInspector,conf) @AT@ 8546 @LENGTH@ 115
+---UPD MethodInvocation@@pruneBySequentialScan(tab,true_parts,unkn_parts,denied_parts,prunerExpr,rowObjectInspector) @TO@ pruneBySequentialScan(tab,true_parts,unkn_parts,denied_parts,prunerExpr,rowObjectInspector,conf) @AT@ 8546 @LENGTH@ 114
+------UPD SimpleName@@MethodName:pruneBySequentialScan:[tab, true_parts, unkn_parts, denied_parts, prunerExpr, rowObjectInspector] @TO@ MethodName:pruneBySequentialScan:[tab, true_parts, unkn_parts, denied_parts, prunerExpr, rowObjectInspector, conf] @AT@ 8546 @LENGTH@ 114
+---------INS SimpleName@@conf @TO@ SimpleName@@MethodName:pruneBySequentialScan:[tab, true_parts, unkn_parts, denied_parts, prunerExpr, rowObjectInspector] @AT@ 8661 @LENGTH@ 4
+

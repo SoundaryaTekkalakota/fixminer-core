@@ -1,0 +1,7 @@
+ INS TryStatement TO MethodDeclaration 
+--- MOV ReturnStatement TO TryStatement 
+--- INS Block TO TryStatement 
+------ INS ExpressionStatement TO Block 
+--------- INS MethodInvocation TO ExpressionStatement 
+------------ INS SimpleName TO MethodInvocation 
+--------------- INS SimpleName TO SimpleName

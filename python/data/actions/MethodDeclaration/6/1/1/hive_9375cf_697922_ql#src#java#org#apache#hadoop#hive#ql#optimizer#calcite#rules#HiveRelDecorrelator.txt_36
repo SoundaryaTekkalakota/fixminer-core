@@ -1,0 +1,6 @@
+ DEL MethodDeclaration 
+--- DEL Modifier 
+--- DEL SimpleType 
+--- DEL SimpleName 
+--- DEL ReturnStatement 
+------ DEL SimpleName

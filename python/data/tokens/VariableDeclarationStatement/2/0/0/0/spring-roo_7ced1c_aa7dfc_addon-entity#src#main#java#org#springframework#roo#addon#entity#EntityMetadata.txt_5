@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@JavaSymbolName fieldSymbolName=new JavaSymbolName(fieldName); @TO@ final JavaSymbolName fieldSymbolName=new JavaSymbolName(fieldName); @AT@ 7269 @LENGTH@ 63
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@JavaSymbolName fieldSymbolName=new JavaSymbolName(fieldName); @AT@ 7375 @LENGTH@ 5
+

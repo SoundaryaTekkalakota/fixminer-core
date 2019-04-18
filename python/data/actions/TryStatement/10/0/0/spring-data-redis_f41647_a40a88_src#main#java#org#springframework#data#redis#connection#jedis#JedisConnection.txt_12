@@ -1,0 +1,10 @@
+ INS TryStatement TO MethodDeclaration 
+--- MOV ExpressionStatement TO TryStatement 
+--- INS CatchClause TO TryStatement 
+------ INS SingleVariableDeclaration TO CatchClause 
+--------- INS SimpleType TO SingleVariableDeclaration 
+--------- INS SimpleName TO SingleVariableDeclaration 
+------ INS ThrowStatement TO CatchClause 
+--------- INS MethodInvocation TO ThrowStatement 
+------------ INS SimpleName TO MethodInvocation 
+--------------- INS SimpleName TO SimpleName

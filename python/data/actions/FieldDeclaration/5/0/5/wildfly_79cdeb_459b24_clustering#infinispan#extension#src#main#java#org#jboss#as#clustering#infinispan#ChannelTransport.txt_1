@@ -1,0 +1,5 @@
+ UPD FieldDeclaration 
+--- INS Modifier TO FieldDeclaration 
+--- UPD SimpleType 
+--- UPD VariableDeclarationFragment 
+------ UPD SimpleName

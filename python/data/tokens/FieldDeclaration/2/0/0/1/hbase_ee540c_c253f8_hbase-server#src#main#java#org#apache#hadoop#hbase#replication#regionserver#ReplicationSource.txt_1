@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@protected, WALEntryFilter, [walEntryFilter] @TO@ protected, volatile, WALEntryFilter, [walEntryFilter] @AT@ 5292 @LENGTH@ 40
+---INS Modifier@@volatile @TO@ FieldDeclaration@@protected, WALEntryFilter, [walEntryFilter] @AT@ 5243 @LENGTH@ 8
+

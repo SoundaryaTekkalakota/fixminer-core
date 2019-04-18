@@ -1,0 +1,4 @@
+MOV TryStatement@@try:[] @TO@ MethodDeclaration@@public, TCancelOperationResp, MethodName:CancelOperation, TCancelOperationReq req, TException,  @AT@ 12455 @LENGTH@ 255
+---MOV ExpressionStatement@@MethodInvocation:cliService.cancelOperation(new OperationHandle(req.getOperationHandle())) @TO@ TryStatement@@try:[] @AT@ 12021 @LENGTH@ 74
+---MOV ExpressionStatement@@MethodInvocation:resp.setStatus(OK_STATUS) @TO@ TryStatement@@try:[] @AT@ 12102 @LENGTH@ 26
+

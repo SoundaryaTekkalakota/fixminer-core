@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, K, MethodName:lastKey,  @TO@ public, synchronized, K, MethodName:lastKey,  @AT@ 3771 @LENGTH@ 81
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, K, MethodName:lastKey,  @AT@ 3870 @LENGTH@ 12
+

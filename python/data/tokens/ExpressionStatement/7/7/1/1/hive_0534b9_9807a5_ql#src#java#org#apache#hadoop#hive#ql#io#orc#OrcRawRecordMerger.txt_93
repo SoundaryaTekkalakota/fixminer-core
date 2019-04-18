@@ -1,0 +1,8 @@
+DEL ExpressionStatement@@Assignment:this.conf=conf @AT@ 30391 @LENGTH@ 17
+---DEL Assignment@@this.conf=conf @AT@ 30391 @LENGTH@ 16
+------DEL FieldAccess@@this.conf @AT@ 30391 @LENGTH@ 9
+---------DEL ThisExpression@@this @AT@ 30391 @LENGTH@ 4
+---------DEL SimpleName@@conf @AT@ 30396 @LENGTH@ 4
+------DEL Operator@@= @AT@ 30400 @LENGTH@ 1
+------DEL SimpleName@@conf @AT@ 30403 @LENGTH@ 4
+

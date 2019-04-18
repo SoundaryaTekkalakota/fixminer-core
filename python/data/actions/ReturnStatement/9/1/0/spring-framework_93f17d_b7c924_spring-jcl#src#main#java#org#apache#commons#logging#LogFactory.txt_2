@@ -1,0 +1,9 @@
+ UPD ReturnStatement 
+--- UPD MethodInvocation 
+------ INS FieldAccess TO MethodInvocation 
+--------- INS ThisExpression TO FieldAccess 
+--------- INS SimpleName TO FieldAccess 
+------ DEL SimpleName 
+------ UPD SimpleName 
+--------- DEL NullLiteral 
+--------- DEL NullLiteral

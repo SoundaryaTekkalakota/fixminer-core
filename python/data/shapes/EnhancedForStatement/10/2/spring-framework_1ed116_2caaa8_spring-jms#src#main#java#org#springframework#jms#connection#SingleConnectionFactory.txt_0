@@ -1,0 +1,10 @@
+EnhancedForStatement 
+---FieldAccess 
+---ClassInstanceCreation 
+------New 
+------ParameterizedType 
+---------SimpleType 
+---------SimpleType 
+------FieldAccess 
+---------ThisExpression 
+---------SimpleName

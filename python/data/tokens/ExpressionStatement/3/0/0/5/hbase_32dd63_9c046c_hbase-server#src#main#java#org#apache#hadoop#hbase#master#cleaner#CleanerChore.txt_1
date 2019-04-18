@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.debug("Cleaned all WALs under {}",oldFileDir) @TO@ MethodInvocation:LOG.trace("Cleaned all WALs under {}",oldFileDir) @AT@ 10397 @LENGTH@ 51
+---UPD MethodInvocation@@LOG.debug("Cleaned all WALs under {}",oldFileDir) @TO@ LOG.trace("Cleaned all WALs under {}",oldFileDir) @AT@ 10397 @LENGTH@ 50
+------UPD SimpleName@@MethodName:debug:["Cleaned all WALs under {}", oldFileDir] @TO@ MethodName:trace:["Cleaned all WALs under {}", oldFileDir] @AT@ 10401 @LENGTH@ 46
+

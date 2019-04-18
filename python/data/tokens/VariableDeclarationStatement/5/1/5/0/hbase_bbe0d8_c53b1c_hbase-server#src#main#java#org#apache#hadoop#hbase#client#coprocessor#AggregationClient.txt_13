@@ -1,0 +1,6 @@
+INS VariableDeclarationStatement@@HTable table=null; @TO@ MethodDeclaration@@private, Pair<S,Long>, R, S, MethodName:getAvgArgs, final byte[] tableName, final ColumnInterpreter<R,S> ci, final Scan scan, Throwable,  @AT@ 10429 @LENGTH@ 20
+---MOV SimpleType@@HTable @TO@ VariableDeclarationStatement@@HTable table=null; @AT@ 9858 @LENGTH@ 6
+---INS VariableDeclarationFragment@@table=null @TO@ VariableDeclarationStatement@@HTable table=null; @AT@ 10436 @LENGTH@ 12
+------MOV SimpleName@@table @TO@ VariableDeclarationFragment@@table=null @AT@ 9865 @LENGTH@ 5
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@table=null @AT@ 10444 @LENGTH@ 4
+

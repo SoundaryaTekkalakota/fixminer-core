@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:connection.login(user,password,resource) @TO@ MethodInvocation:newConnection.login(user,password,resource) @AT@ 6876 @LENGTH@ 43
+---UPD MethodInvocation@@connection.login(user,password,resource) @TO@ newConnection.login(user,password,resource) @AT@ 6876 @LENGTH@ 42
+------UPD SimpleName@@Name:connection @TO@ Name:newConnection @AT@ 6876 @LENGTH@ 10
+

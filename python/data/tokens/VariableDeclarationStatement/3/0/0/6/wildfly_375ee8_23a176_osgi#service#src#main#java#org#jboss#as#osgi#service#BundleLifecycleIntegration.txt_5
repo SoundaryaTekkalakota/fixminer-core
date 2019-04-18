@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@Deployment dep=brev.getAttachment(IntegrationConstants.DEPLOYMENT_KEY); @TO@ Deployment deployment=brev.getAttachment(IntegrationConstants.DEPLOYMENT_KEY); @AT@ 14714 @LENGTH@ 73
+---UPD VariableDeclarationFragment@@dep=brev.getAttachment(IntegrationConstants.DEPLOYMENT_KEY) @TO@ deployment=brev.getAttachment(IntegrationConstants.DEPLOYMENT_KEY) @AT@ 14725 @LENGTH@ 61
+------UPD SimpleName@@dep @TO@ deployment @AT@ 14725 @LENGTH@ 3
+

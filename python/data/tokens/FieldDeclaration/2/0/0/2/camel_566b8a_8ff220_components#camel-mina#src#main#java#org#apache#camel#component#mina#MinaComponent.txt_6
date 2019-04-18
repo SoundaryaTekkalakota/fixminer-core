@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@boolean, [transferExchange] @TO@ private, boolean, [transferExchange] @AT@ 3180 @LENGTH@ 25
+---INS Modifier@@private @TO@ FieldDeclaration@@boolean, [transferExchange] @AT@ 3228 @LENGTH@ 7
+

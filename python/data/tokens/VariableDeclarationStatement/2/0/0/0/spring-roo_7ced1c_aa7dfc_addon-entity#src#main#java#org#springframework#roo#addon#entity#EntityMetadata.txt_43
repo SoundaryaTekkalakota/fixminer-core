@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@List<JavaType> typeParams=new ArrayList<JavaType>(); @TO@ final List<JavaType> typeParams=new ArrayList<JavaType>(); @AT@ 20922 @LENGTH@ 54
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@List<JavaType> typeParams=new ArrayList<JavaType>(); @AT@ 21177 @LENGTH@ 5
+

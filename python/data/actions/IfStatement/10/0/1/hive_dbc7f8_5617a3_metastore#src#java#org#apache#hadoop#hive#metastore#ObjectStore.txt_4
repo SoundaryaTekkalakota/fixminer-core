@@ -1,0 +1,10 @@
+ INS IfStatement TO IfStatement 
+--- INS InfixExpression TO IfStatement 
+------ INS SimpleName TO InfixExpression 
+------ INS Operator TO InfixExpression 
+------ INS NullLiteral TO InfixExpression 
+--- INS ExpressionStatement TO IfStatement 
+------ INS MethodInvocation TO ExpressionStatement 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO SimpleName

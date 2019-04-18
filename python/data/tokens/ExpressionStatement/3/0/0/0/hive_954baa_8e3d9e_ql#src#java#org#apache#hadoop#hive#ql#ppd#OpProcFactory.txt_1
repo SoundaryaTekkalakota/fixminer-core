@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.info(sb.toString()) @TO@ MethodInvocation:LOG.debug(sb.toString()) @AT@ 30061 @LENGTH@ 24
+---UPD MethodInvocation@@LOG.info(sb.toString()) @TO@ LOG.debug(sb.toString()) @AT@ 30061 @LENGTH@ 23
+------UPD SimpleName@@MethodName:info:[sb.toString()] @TO@ MethodName:debug:[sb.toString()] @AT@ 30065 @LENGTH@ 19
+

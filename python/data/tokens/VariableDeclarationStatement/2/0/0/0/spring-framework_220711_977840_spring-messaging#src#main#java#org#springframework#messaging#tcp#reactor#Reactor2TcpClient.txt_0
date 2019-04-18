@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@TcpClient<Message<P>,Message<P>> tcpClient; @TO@ final TcpClient<Message<P>,Message<P>> tcpClient; @AT@ 6265 @LENGTH@ 44
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@TcpClient<Message<P>,Message<P>> tcpClient; @AT@ 6265 @LENGTH@ 5
+

@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@static, boolean, MethodName:isKeyword, Object value,  @TO@ public, static, boolean, MethodName:isKeyword, Object value,  @AT@ 8121 @LENGTH@ 245
+---INS Modifier@@public @TO@ MethodDeclaration@@static, boolean, MethodName:isKeyword, Object value,  @AT@ 8417 @LENGTH@ 6
+

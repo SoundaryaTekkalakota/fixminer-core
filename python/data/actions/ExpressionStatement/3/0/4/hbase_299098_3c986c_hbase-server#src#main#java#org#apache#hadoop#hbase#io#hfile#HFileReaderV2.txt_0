@@ -1,0 +1,3 @@
+ INS ExpressionStatement TO MethodDeclaration 
+--- INS MethodInvocation TO ExpressionStatement 
+------ MOV SimpleName TO MethodInvocation

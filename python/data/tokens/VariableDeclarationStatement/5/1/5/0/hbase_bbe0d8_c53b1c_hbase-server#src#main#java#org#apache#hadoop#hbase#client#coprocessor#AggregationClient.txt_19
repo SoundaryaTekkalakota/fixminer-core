@@ -1,0 +1,6 @@
+INS VariableDeclarationStatement@@HTable table=null; @TO@ MethodDeclaration@@private, Pair<NavigableMap<byte[],List<S>>,List<S>>, R, S, MethodName:getMedianArgs, final byte[] tableName, final ColumnInterpreter<R,S> ci, final Scan scan, Throwable,  @AT@ 16062 @LENGTH@ 20
+---MOV SimpleType@@HTable @TO@ VariableDeclarationStatement@@HTable table=null; @AT@ 15195 @LENGTH@ 6
+---INS VariableDeclarationFragment@@table=null @TO@ VariableDeclarationStatement@@HTable table=null; @AT@ 16069 @LENGTH@ 12
+------MOV SimpleName@@table @TO@ VariableDeclarationFragment@@table=null @AT@ 15202 @LENGTH@ 5
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@table=null @AT@ 16077 @LENGTH@ 4
+

@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:newAddOp.get(Constants.RELATIVE_TO).set(directory.get(RELATIVE_TO)) @TO@ MethodInvocation:add.get(Constants.RELATIVE_TO).set(directory.get(RELATIVE_TO)) @AT@ 34781 @LENGTH@ 68
+---UPD MethodInvocation@@newAddOp.get(Constants.RELATIVE_TO).set(directory.get(RELATIVE_TO)) @TO@ add.get(Constants.RELATIVE_TO).set(directory.get(RELATIVE_TO)) @AT@ 34781 @LENGTH@ 67
+------UPD SimpleName@@Name:newAddOp @TO@ Name:add @AT@ 34781 @LENGTH@ 8
+

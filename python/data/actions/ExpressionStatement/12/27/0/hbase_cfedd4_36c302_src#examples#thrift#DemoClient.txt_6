@@ -1,0 +1,12 @@
+ UPD ExpressionStatement 
+--- UPD MethodInvocation 
+------ UPD SimpleName 
+--------- UPD InfixExpression 
+------------ UPD MethodInvocation 
+--------------- UPD SimpleName 
+------------------ DEL QualifiedName 
+--------------------- DEL SimpleName 
+--------------------- DEL SimpleName 
+------------------ INS MethodInvocation TO SimpleName 
+--------------------- INS QualifiedName TO MethodInvocation 
+--------------------- INS SimpleName TO MethodInvocation

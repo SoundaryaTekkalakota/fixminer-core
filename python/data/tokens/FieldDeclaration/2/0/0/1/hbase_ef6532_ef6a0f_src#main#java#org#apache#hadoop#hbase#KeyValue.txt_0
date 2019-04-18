@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, byte[], [rowCache=null] @TO@ private, volatile, byte[], [rowCache=null] @AT@ 7280 @LENGTH@ 32
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, byte[], [rowCache=null] @AT@ 7288 @LENGTH@ 8
+

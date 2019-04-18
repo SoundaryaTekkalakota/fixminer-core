@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:out.setBody(bos.createInputStream()) @TO@ MethodInvocation:answer.setBody(bos.createInputStream()) @AT@ 3607 @LENGTH@ 37
+---UPD MethodInvocation@@out.setBody(bos.createInputStream()) @TO@ answer.setBody(bos.createInputStream()) @AT@ 3607 @LENGTH@ 36
+------UPD SimpleName@@Name:out @TO@ Name:answer @AT@ 3607 @LENGTH@ 3
+

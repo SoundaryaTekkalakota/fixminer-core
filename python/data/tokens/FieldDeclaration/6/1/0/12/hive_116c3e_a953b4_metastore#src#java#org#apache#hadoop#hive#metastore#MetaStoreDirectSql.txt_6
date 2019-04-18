@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, String, [defaultPartName] @TO@ TypeDeclaration@@[private, static]PartitionFilterGenerator, TreeVisitor @AT@ 40512 @LENGTH@ 37
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, String, [defaultPartName] @AT@ 40512 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, String, [defaultPartName] @AT@ 40520 @LENGTH@ 5
+---INS SimpleType@@String @TO@ FieldDeclaration@@private, final, String, [defaultPartName] @AT@ 40526 @LENGTH@ 6
+---INS VariableDeclarationFragment@@defaultPartName @TO@ FieldDeclaration@@private, final, String, [defaultPartName] @AT@ 40533 @LENGTH@ 15
+------INS SimpleName@@defaultPartName @TO@ VariableDeclarationFragment@@defaultPartName @AT@ 40533 @LENGTH@ 15
+

@@ -1,0 +1,9 @@
+MethodDeclaration 
+---Modifier 
+---ThrowStatement 
+------ClassInstanceCreation 
+---------New 
+---------SimpleType 
+---------StringLiteral 
+---SingleVariableDeclaration 
+---SingleVariableDeclaration

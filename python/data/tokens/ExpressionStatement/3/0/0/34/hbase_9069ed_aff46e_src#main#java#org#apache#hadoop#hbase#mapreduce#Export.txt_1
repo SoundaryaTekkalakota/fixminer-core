@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:Log.info("verisons=" + versions + ", starttime="+ startTime+ ", endtime="+ endTime) @TO@ MethodInvocation:LOG.info("verisons=" + versions + ", starttime="+ startTime+ ", endtime="+ endTime) @AT@ 3289 @LENGTH@ 93
+---UPD MethodInvocation@@Log.info("verisons=" + versions + ", starttime="+ startTime+ ", endtime="+ endTime) @TO@ LOG.info("verisons=" + versions + ", starttime="+ startTime+ ", endtime="+ endTime) @AT@ 3289 @LENGTH@ 92
+------UPD SimpleName@@Name:Log @TO@ Name:LOG @AT@ 3289 @LENGTH@ 3
+

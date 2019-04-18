@@ -1,0 +1,4 @@
+UPD VariableDeclarationStatement@@Lifecycle lifecycle=entry.getValue(); @TO@ Lifecycle bean=entry.getValue(); @AT@ 6172 @LENGTH@ 39
+---UPD VariableDeclarationFragment@@lifecycle=entry.getValue() @TO@ bean=entry.getValue() @AT@ 6182 @LENGTH@ 28
+------UPD SimpleName@@lifecycle @TO@ bean @AT@ 6182 @LENGTH@ 9
+

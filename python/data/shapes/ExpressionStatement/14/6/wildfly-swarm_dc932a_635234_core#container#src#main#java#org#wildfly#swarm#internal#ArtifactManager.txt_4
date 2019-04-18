@@ -1,0 +1,14 @@
+ExpressionStatement 
+---Assignment 
+------ArrayAccess 
+------ConditionalExpression 
+---------MethodInvocation 
+------------SimpleName 
+------------SimpleName 
+---------------ArrayAccess 
+------------------SimpleName 
+------------------NumberLiteral 
+---------SimpleName 
+---------ArrayAccess 
+------------SimpleName 
+------------NumberLiteral

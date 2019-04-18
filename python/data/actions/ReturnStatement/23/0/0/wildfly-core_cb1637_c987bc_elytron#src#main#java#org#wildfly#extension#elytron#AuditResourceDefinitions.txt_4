@@ -1,0 +1,23 @@
+ UPD ReturnStatement 
+--- DEL LambdaExpression 
+------ DEL VariableDeclarationStatement 
+--------- DEL SimpleType 
+--------- DEL VariableDeclarationFragment 
+------------ DEL SimpleName 
+--- INS ClassInstanceCreation TO ReturnStatement 
+------ INS New TO ClassInstanceCreation 
+------ INS SimpleType TO ClassInstanceCreation 
+------ INS AnonymousClassDeclaration TO ClassInstanceCreation 
+--------- INS MethodDeclaration TO AnonymousClassDeclaration 
+------------ MOV VariableDeclarationStatement TO MethodDeclaration 
+------------ MOV ExpressionStatement TO MethodDeclaration 
+------------ MOV IfStatement TO MethodDeclaration 
+------------ MOV VariableDeclarationStatement TO MethodDeclaration 
+------------ MOV VariableDeclarationStatement TO MethodDeclaration 
+------------ MOV VariableDeclarationStatement TO MethodDeclaration 
+------------ INS Modifier TO MethodDeclaration 
+------------ INS SimpleType TO MethodDeclaration 
+------------ INS SimpleName TO MethodDeclaration 
+------------ INS SimpleType TO MethodDeclaration 
+------------ MOV TryStatement TO MethodDeclaration 
+------------ MOV ReturnStatement TO MethodDeclaration

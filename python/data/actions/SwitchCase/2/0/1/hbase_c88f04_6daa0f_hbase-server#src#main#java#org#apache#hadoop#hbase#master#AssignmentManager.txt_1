@@ -1,0 +1,2 @@
+ INS SwitchCase TO SwitchStatement 
+--- INS SimpleName TO SwitchCase

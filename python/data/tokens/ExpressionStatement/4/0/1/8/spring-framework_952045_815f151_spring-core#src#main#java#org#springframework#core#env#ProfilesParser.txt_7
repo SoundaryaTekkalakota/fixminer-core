@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:elements.add(equals(token)) @TO@ MethodInvocation:elements.add(value) @AT@ 2627 @LENGTH@ 28
+---UPD MethodInvocation@@elements.add(equals(token)) @TO@ elements.add(value) @AT@ 2627 @LENGTH@ 27
+------UPD SimpleName@@MethodName:add:[equals(token)] @TO@ MethodName:add:[value] @AT@ 2636 @LENGTH@ 18
+---------INS SimpleName@@value @TO@ SimpleName@@MethodName:add:[equals(token)] @AT@ 3103 @LENGTH@ 5
+

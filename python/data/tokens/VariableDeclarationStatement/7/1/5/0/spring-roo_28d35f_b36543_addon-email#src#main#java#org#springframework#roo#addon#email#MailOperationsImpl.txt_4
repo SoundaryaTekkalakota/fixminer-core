@@ -1,0 +1,8 @@
+INS VariableDeclarationStatement@@OutputStream outputStream=databaseMutableFile.getOutputStream(); @TO@ TryStatement@@try:[] @AT@ 9680 @LENGTH@ 66
+---INS SimpleType@@OutputStream @TO@ VariableDeclarationStatement@@OutputStream outputStream=databaseMutableFile.getOutputStream(); @AT@ 9680 @LENGTH@ 12
+---INS VariableDeclarationFragment@@outputStream=databaseMutableFile.getOutputStream() @TO@ VariableDeclarationStatement@@OutputStream outputStream=databaseMutableFile.getOutputStream(); @AT@ 9693 @LENGTH@ 52
+------INS SimpleName@@outputStream @TO@ VariableDeclarationFragment@@outputStream=databaseMutableFile.getOutputStream() @AT@ 9693 @LENGTH@ 12
+------INS MethodInvocation@@databaseMutableFile.getOutputStream() @TO@ VariableDeclarationFragment@@outputStream=databaseMutableFile.getOutputStream() @AT@ 9708 @LENGTH@ 37
+---------INS SimpleName@@Name:databaseMutableFile @TO@ MethodInvocation@@databaseMutableFile.getOutputStream() @AT@ 9708 @LENGTH@ 19
+---------INS SimpleName@@MethodName:getOutputStream:[] @TO@ MethodInvocation@@databaseMutableFile.getOutputStream() @AT@ 9728 @LENGTH@ 17
+

@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@int complete=progress.getSucceededTaskCount(); @TO@ final int complete=progress.getSucceededTaskCount(); @AT@ 7394 @LENGTH@ 48
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@int complete=progress.getSucceededTaskCount(); @AT@ 7394 @LENGTH@ 5
+

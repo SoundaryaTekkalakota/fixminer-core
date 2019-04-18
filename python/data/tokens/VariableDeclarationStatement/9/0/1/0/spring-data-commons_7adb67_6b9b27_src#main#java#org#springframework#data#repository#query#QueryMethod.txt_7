@@ -1,0 +1,10 @@
+DEL VariableDeclarationStatement@@Class<?> returnType=method.getReturnType(); @AT@ 5411 @LENGTH@ 45
+---DEL ParameterizedType@@Class<?> @AT@ 5411 @LENGTH@ 8
+------DEL SimpleType@@Class @AT@ 5411 @LENGTH@ 5
+------DEL WildcardType@@? @AT@ 5417 @LENGTH@ 1
+---DEL VariableDeclarationFragment@@returnType=method.getReturnType() @AT@ 5420 @LENGTH@ 35
+------DEL SimpleName@@returnType @AT@ 5420 @LENGTH@ 10
+------DEL MethodInvocation@@method.getReturnType() @AT@ 5433 @LENGTH@ 22
+---------DEL SimpleName@@Name:method @AT@ 5433 @LENGTH@ 6
+---------DEL SimpleName@@MethodName:getReturnType:[] @AT@ 5440 @LENGTH@ 15
+

@@ -1,0 +1,43 @@
+INS MethodDeclaration@@private, Writable, MethodName:createForName, String className,  @TO@ TypeDeclaration@@[public]Scan, [Writable] @AT@ 13443 @LENGTH@ 356
+---INS Modifier@@private @TO@ MethodDeclaration@@private, Writable, MethodName:createForName, String className,  @AT@ 13443 @LENGTH@ 7
+---INS SimpleType@@Writable @TO@ MethodDeclaration@@private, Writable, MethodName:createForName, String className,  @AT@ 13451 @LENGTH@ 8
+---INS SimpleName@@MethodName:createForName @TO@ MethodDeclaration@@private, Writable, MethodName:createForName, String className,  @AT@ 13460 @LENGTH@ 13
+---INS SingleVariableDeclaration@@String className @TO@ MethodDeclaration@@private, Writable, MethodName:createForName, String className,  @AT@ 13474 @LENGTH@ 16
+------INS SimpleType@@String @TO@ SingleVariableDeclaration@@String className @AT@ 13474 @LENGTH@ 6
+------INS SimpleName@@className @TO@ SingleVariableDeclaration@@String className @AT@ 13481 @LENGTH@ 9
+---INS TryStatement@@try:[] @TO@ MethodDeclaration@@private, Writable, MethodName:createForName, String className,  @AT@ 13498 @LENGTH@ 293
+------INS VariableDeclarationStatement@@Class<? extends Writable> clazz=(Class<? extends Writable>)Class.forName(className); @TO@ TryStatement@@try:[] @AT@ 13510 @LENGTH@ 95
+---------INS ParameterizedType@@Class<? extends Writable> @TO@ VariableDeclarationStatement@@Class<? extends Writable> clazz=(Class<? extends Writable>)Class.forName(className); @AT@ 13510 @LENGTH@ 25
+------------INS SimpleType@@Class @TO@ ParameterizedType@@Class<? extends Writable> @AT@ 13510 @LENGTH@ 5
+------------INS WildcardType@@? @TO@ ParameterizedType@@Class<? extends Writable> @AT@ 13516 @LENGTH@ 18
+---------INS VariableDeclarationFragment@@clazz=(Class<? extends Writable>)Class.forName(className) @TO@ VariableDeclarationStatement@@Class<? extends Writable> clazz=(Class<? extends Writable>)Class.forName(className); @AT@ 13536 @LENGTH@ 68
+------------INS SimpleName@@clazz @TO@ VariableDeclarationFragment@@clazz=(Class<? extends Writable>)Class.forName(className) @AT@ 13536 @LENGTH@ 5
+------------INS CastExpression@@(Class<? extends Writable>)Class.forName(className) @TO@ VariableDeclarationFragment@@clazz=(Class<? extends Writable>)Class.forName(className) @AT@ 13552 @LENGTH@ 52
+---------------INS ParameterizedType@@Class<? extends Writable> @TO@ CastExpression@@(Class<? extends Writable>)Class.forName(className) @AT@ 13553 @LENGTH@ 25
+------------------INS SimpleType@@Class @TO@ ParameterizedType@@Class<? extends Writable> @AT@ 13553 @LENGTH@ 5
+------------------INS WildcardType@@? @TO@ ParameterizedType@@Class<? extends Writable> @AT@ 13559 @LENGTH@ 18
+---------------INS MethodInvocation@@Class.forName(className) @TO@ CastExpression@@(Class<? extends Writable>)Class.forName(className) @AT@ 13580 @LENGTH@ 24
+------------------INS SimpleName@@Name:Class @TO@ MethodInvocation@@Class.forName(className) @AT@ 13580 @LENGTH@ 5
+------------------INS SimpleName@@MethodName:forName:[className] @TO@ MethodInvocation@@Class.forName(className) @AT@ 13586 @LENGTH@ 18
+---------------------INS SimpleName@@className @TO@ SimpleName@@MethodName:forName:[className] @AT@ 13594 @LENGTH@ 9
+------INS ReturnStatement@@MethodInvocation:WritableFactories.newInstance(clazz,new Configuration()) @TO@ TryStatement@@try:[] @AT@ 13612 @LENGTH@ 65
+---------INS MethodInvocation@@WritableFactories.newInstance(clazz,new Configuration()) @TO@ ReturnStatement@@MethodInvocation:WritableFactories.newInstance(clazz,new Configuration()) @AT@ 13619 @LENGTH@ 57
+------------INS SimpleName@@Name:WritableFactories @TO@ MethodInvocation@@WritableFactories.newInstance(clazz,new Configuration()) @AT@ 13619 @LENGTH@ 17
+------------INS SimpleName@@MethodName:newInstance:[clazz, new Configuration()] @TO@ MethodInvocation@@WritableFactories.newInstance(clazz,new Configuration()) @AT@ 13637 @LENGTH@ 39
+---------------INS SimpleName@@clazz @TO@ SimpleName@@MethodName:newInstance:[clazz, new Configuration()] @AT@ 13649 @LENGTH@ 5
+---------------INS ClassInstanceCreation@@Configuration[] @TO@ SimpleName@@MethodName:newInstance:[clazz, new Configuration()] @AT@ 13656 @LENGTH@ 19
+------------------INS New@@new @TO@ ClassInstanceCreation@@Configuration[] @AT@ 13656 @LENGTH@ 3
+------------------INS SimpleType@@Configuration @TO@ ClassInstanceCreation@@Configuration[] @AT@ 13660 @LENGTH@ 13
+------INS CatchClause@@ClassNotFoundException e @TO@ TryStatement@@try:[] @AT@ 13684 @LENGTH@ 107
+---------INS SingleVariableDeclaration@@ClassNotFoundException e @TO@ CatchClause@@ClassNotFoundException e @AT@ 13691 @LENGTH@ 24
+------------INS SimpleType@@ClassNotFoundException @TO@ SingleVariableDeclaration@@ClassNotFoundException e @AT@ 13691 @LENGTH@ 22
+------------INS SimpleName@@e @TO@ SingleVariableDeclaration@@ClassNotFoundException e @AT@ 13714 @LENGTH@ 1
+---------INS ThrowStatement@@ClassInstanceCreation:new RuntimeException("Can't find class " + className) @TO@ CatchClause@@ClassNotFoundException e @AT@ 13725 @LENGTH@ 60
+------------INS ClassInstanceCreation@@RuntimeException["Can't find class " + className] @TO@ ThrowStatement@@ClassInstanceCreation:new RuntimeException("Can't find class " + className) @AT@ 13731 @LENGTH@ 53
+---------------INS New@@new @TO@ ClassInstanceCreation@@RuntimeException["Can't find class " + className] @AT@ 13731 @LENGTH@ 3
+---------------INS SimpleType@@RuntimeException @TO@ ClassInstanceCreation@@RuntimeException["Can't find class " + className] @AT@ 13735 @LENGTH@ 16
+---------------INS InfixExpression@@"Can't find class " + className @TO@ ClassInstanceCreation@@RuntimeException["Can't find class " + className] @AT@ 13752 @LENGTH@ 31
+------------------INS StringLiteral@@"Can't find class " @TO@ InfixExpression@@"Can't find class " + className @AT@ 13752 @LENGTH@ 19
+------------------INS Operator@@+ @TO@ InfixExpression@@"Can't find class " + className @AT@ 13771 @LENGTH@ 1
+------------------INS SimpleName@@className @TO@ InfixExpression@@"Can't find class " + className @AT@ 13774 @LENGTH@ 9
+

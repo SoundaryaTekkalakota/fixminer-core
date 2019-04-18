@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, final, Pattern, [patternIndex=Pattern.compile("\\[([0-9]+|\\*)\\]")] @TO@ private, static, final, Pattern, [patternIndex=Pattern.compile("\\[([0-9]+|\\*)\\]")] @AT@ 2466 @LENGTH@ 75
+---INS Modifier@@static @TO@ FieldDeclaration@@private, final, Pattern, [patternIndex=Pattern.compile("\\[([0-9]+|\\*)\\]")] @AT@ 2481 @LENGTH@ 6
+

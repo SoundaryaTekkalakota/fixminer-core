@@ -1,0 +1,13 @@
+MethodDeclaration 
+---SingleVariableDeclaration 
+------SimpleType 
+------SimpleName 
+---SingleVariableDeclaration 
+------SimpleType 
+------SimpleName 
+---ExpressionStatement 
+------MethodInvocation 
+---------SimpleName 
+------------SimpleName 
+------------SimpleName 
+------------SimpleName

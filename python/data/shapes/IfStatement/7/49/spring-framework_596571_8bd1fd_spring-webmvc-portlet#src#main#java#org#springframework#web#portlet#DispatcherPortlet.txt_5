@@ -1,0 +1,7 @@
+IfStatement 
+---TryStatement 
+---FieldAccess 
+------ThisExpression 
+------SimpleName 
+---ThrowStatement 
+------SimpleName

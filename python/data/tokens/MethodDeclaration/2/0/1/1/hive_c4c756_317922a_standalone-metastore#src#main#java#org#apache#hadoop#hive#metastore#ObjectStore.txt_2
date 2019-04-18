@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@private, int, MethodName:getColumnIndexFromTableColumns, List<MFieldSchema> cols, String col,  @TO@ private, static, int, MethodName:getColumnIndexFromTableColumns, List<MFieldSchema> cols, String col,  @AT@ 146341 @LENGTH@ 310
+---INS Modifier@@static @TO@ MethodDeclaration@@private, int, MethodName:getColumnIndexFromTableColumns, List<MFieldSchema> cols, String col,  @AT@ 147016 @LENGTH@ 6
+

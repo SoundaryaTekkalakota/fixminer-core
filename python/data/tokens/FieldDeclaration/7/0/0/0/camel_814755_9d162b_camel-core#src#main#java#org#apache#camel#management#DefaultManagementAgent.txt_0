@@ -1,0 +1,8 @@
+UPD FieldDeclaration@@private, final, Map<ObjectName,ObjectName>, [mbeansRegistered=new HashMap<ObjectName,ObjectName>()] @TO@ private, final, ConcurrentMap<ObjectName,ObjectName>, [mbeansRegistered=new ConcurrentHashMap<ObjectName,ObjectName>()] @AT@ 2734 @LENGTH@ 99
+---UPD ParameterizedType@@Map<ObjectName,ObjectName> @TO@ ConcurrentMap<ObjectName,ObjectName> @AT@ 2748 @LENGTH@ 27
+------UPD SimpleType@@Map @TO@ ConcurrentMap @AT@ 2748 @LENGTH@ 3
+---UPD VariableDeclarationFragment@@mbeansRegistered=new HashMap<ObjectName,ObjectName>() @TO@ mbeansRegistered=new ConcurrentHashMap<ObjectName,ObjectName>() @AT@ 2776 @LENGTH@ 56
+------UPD ClassInstanceCreation@@HashMap<ObjectName,ObjectName>[] @TO@ ConcurrentHashMap<ObjectName,ObjectName>[] @AT@ 2795 @LENGTH@ 37
+---------UPD ParameterizedType@@HashMap<ObjectName,ObjectName> @TO@ ConcurrentHashMap<ObjectName,ObjectName> @AT@ 2799 @LENGTH@ 31
+------------UPD SimpleType@@HashMap @TO@ ConcurrentHashMap @AT@ 2799 @LENGTH@ 7
+

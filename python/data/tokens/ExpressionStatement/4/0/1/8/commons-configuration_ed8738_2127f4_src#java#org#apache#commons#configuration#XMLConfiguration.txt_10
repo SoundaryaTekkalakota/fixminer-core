@@ -1,0 +1,5 @@
+UPD ExpressionStatement@@MethodInvocation:buf.append(PropertyConverter.escapeDelimiters(attr.getValue().toString(),delimiter)) @TO@ MethodInvocation:buf.append(value) @AT@ 52664 @LENGTH@ 119
+---UPD MethodInvocation@@buf.append(PropertyConverter.escapeDelimiters(attr.getValue().toString(),delimiter)) @TO@ buf.append(value) @AT@ 52664 @LENGTH@ 118
+------UPD SimpleName@@MethodName:append:[PropertyConverter.escapeDelimiters(attr.getValue().toString(),delimiter)] @TO@ MethodName:append:[value] @AT@ 52668 @LENGTH@ 114
+---------INS SimpleName@@value @TO@ SimpleName@@MethodName:append:[PropertyConverter.escapeDelimiters(attr.getValue().toString(),delimiter)] @AT@ 53699 @LENGTH@ 5
+

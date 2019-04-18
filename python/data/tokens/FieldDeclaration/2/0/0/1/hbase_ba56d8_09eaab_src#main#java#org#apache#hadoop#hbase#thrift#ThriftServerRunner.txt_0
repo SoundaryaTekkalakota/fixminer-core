@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@protected, HBaseAdmin, [admin=null] @TO@ protected, volatile, HBaseAdmin, [admin=null] @AT@ 15107 @LENGTH@ 34
+---INS Modifier@@volatile @TO@ FieldDeclaration@@protected, HBaseAdmin, [admin=null] @AT@ 15117 @LENGTH@ 8
+

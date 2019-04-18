@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, Object, [parent] @TO@ TypeDeclaration@@[private]ConverterAwareSpELExpressionParameterValueProvider, SpELExpressionParameterValueProvider<MongoPersistentProperty> @AT@ 32978 @LENGTH@ 28
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, Object, [parent] @AT@ 32978 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, Object, [parent] @AT@ 32986 @LENGTH@ 5
+---INS SimpleType@@Object @TO@ FieldDeclaration@@private, final, Object, [parent] @AT@ 32992 @LENGTH@ 6
+---INS VariableDeclarationFragment@@parent @TO@ FieldDeclaration@@private, final, Object, [parent] @AT@ 32999 @LENGTH@ 6
+------INS SimpleName@@parent @TO@ VariableDeclarationFragment@@parent @AT@ 32999 @LENGTH@ 6
+

@@ -1,0 +1,8 @@
+ INS VariableDeclarationStatement TO IfStatement 
+--- INS SimpleType TO VariableDeclarationStatement 
+--- INS VariableDeclarationFragment TO VariableDeclarationStatement 
+------ INS SimpleName TO VariableDeclarationFragment 
+------ INS ClassInstanceCreation TO VariableDeclarationFragment 
+--------- MOV New TO ClassInstanceCreation 
+--------- MOV SimpleType TO ClassInstanceCreation 
+--------- MOV StringLiteral TO ClassInstanceCreation

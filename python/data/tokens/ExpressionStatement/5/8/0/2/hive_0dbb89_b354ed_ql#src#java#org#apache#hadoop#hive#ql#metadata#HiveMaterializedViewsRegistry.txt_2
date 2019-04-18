@@ -1,0 +1,6 @@
+INS ExpressionStatement@@MethodInvocation:ss.setIsHiveServerQuery(true) @TO@ TryStatement@@try:[] @AT@ 6714 @LENGTH@ 30
+---INS MethodInvocation@@ss.setIsHiveServerQuery(true) @TO@ ExpressionStatement@@MethodInvocation:ss.setIsHiveServerQuery(true) @AT@ 6714 @LENGTH@ 29
+------INS SimpleName@@Name:ss @TO@ MethodInvocation@@ss.setIsHiveServerQuery(true) @AT@ 6714 @LENGTH@ 2
+------INS SimpleName@@MethodName:setIsHiveServerQuery:[true] @TO@ MethodInvocation@@ss.setIsHiveServerQuery(true) @AT@ 6717 @LENGTH@ 26
+---------INS BooleanLiteral@@true @TO@ SimpleName@@MethodName:setIsHiveServerQuery:[true] @AT@ 6738 @LENGTH@ 4
+

@@ -1,0 +1,4 @@
+UPD ThrowStatement@@ClassInstanceCreation:new AuthenticationServiceException("UserDetailsService returned null, which is an interface contract violation") @TO@ ClassInstanceCreation:new InternalAuthenticationServiceException("UserDetailsService returned null, which is an interface contract violation") @AT@ 5118 @LENGTH@ 140
+---UPD ClassInstanceCreation@@AuthenticationServiceException["UserDetailsService returned null, which is an interface contract violation"] @TO@ InternalAuthenticationServiceException["UserDetailsService returned null, which is an interface contract violation"] @AT@ 5124 @LENGTH@ 133
+------UPD SimpleType@@AuthenticationServiceException @TO@ InternalAuthenticationServiceException @AT@ 5128 @LENGTH@ 30
+

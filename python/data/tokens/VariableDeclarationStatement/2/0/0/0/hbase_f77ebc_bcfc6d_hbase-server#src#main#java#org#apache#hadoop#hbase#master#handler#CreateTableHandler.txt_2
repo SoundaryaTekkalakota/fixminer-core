@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@MasterCoprocessorHost cpHost=((HMaster)this.server).getMasterCoprocessorHost(); @TO@ final MasterCoprocessorHost cpHost=((HMaster)this.server).getMasterCoprocessorHost(); @AT@ 7423 @LENGTH@ 82
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@MasterCoprocessorHost cpHost=((HMaster)this.server).getMasterCoprocessorHost(); @AT@ 8066 @LENGTH@ 5
+

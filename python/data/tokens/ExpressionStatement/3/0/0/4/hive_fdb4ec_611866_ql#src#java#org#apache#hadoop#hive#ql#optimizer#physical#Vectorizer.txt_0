@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.debug("Input format: " + pd.getInputFileFormatClassName() + ", doesn't provide vectorized input") @TO@ MethodInvocation:LOG.info("Input format: " + pd.getInputFileFormatClassName() + ", doesn't provide vectorized input") @AT@ 9598 @LENGTH@ 116
+---UPD MethodInvocation@@LOG.debug("Input format: " + pd.getInputFileFormatClassName() + ", doesn't provide vectorized input") @TO@ LOG.info("Input format: " + pd.getInputFileFormatClassName() + ", doesn't provide vectorized input") @AT@ 9598 @LENGTH@ 115
+------UPD SimpleName@@MethodName:debug:["Input format: " + pd.getInputFileFormatClassName() + ", doesn't provide vectorized input"] @TO@ MethodName:info:["Input format: " + pd.getInputFileFormatClassName() + ", doesn't provide vectorized input"] @AT@ 9602 @LENGTH@ 111
+

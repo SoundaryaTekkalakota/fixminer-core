@@ -1,0 +1,8 @@
+MethodDeclaration 
+---Modifier 
+---SimpleType 
+---SimpleName 
+---ReturnStatement 
+------ClassInstanceCreation 
+---------New 
+---------SimpleType

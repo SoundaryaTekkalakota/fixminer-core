@@ -1,0 +1,6 @@
+MethodDeclaration 
+---SingleVariableDeclaration 
+------SimpleName 
+---SingleVariableDeclaration 
+------PrimitiveType 
+------SimpleName

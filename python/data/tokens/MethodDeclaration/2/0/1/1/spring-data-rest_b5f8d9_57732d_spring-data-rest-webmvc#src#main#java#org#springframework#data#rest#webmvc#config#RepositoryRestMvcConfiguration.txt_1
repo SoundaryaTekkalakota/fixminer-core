@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, AnnotatedHandlerBeanPostProcessor, MethodName:annotatedHandlerBeanPostProcessor,  @TO@ public, static, AnnotatedHandlerBeanPostProcessor, MethodName:annotatedHandlerBeanPostProcessor,  @AT@ 11540 @LENGTH@ 131
+---INS Modifier@@static @TO@ MethodDeclaration@@public, AnnotatedHandlerBeanPostProcessor, MethodName:annotatedHandlerBeanPostProcessor,  @AT@ 11548 @LENGTH@ 6
+

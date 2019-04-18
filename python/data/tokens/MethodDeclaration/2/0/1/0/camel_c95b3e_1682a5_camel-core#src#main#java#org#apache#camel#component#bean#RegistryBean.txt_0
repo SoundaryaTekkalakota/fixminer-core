@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, Object, MethodName:getBean, NoSuchBeanException,  @TO@ public, synchronized, Object, MethodName:getBean, NoSuchBeanException,  @AT@ 2135 @LENGTH@ 940
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, Object, MethodName:getBean, NoSuchBeanException,  @AT@ 2142 @LENGTH@ 12
+

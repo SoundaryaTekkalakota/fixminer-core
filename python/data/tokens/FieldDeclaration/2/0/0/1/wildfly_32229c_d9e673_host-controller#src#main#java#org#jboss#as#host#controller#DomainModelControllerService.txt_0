@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, ServerInventory, [serverInventory] @TO@ private, volatile, ServerInventory, [serverInventory] @AT@ 10505 @LENGTH@ 40
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, ServerInventory, [serverInventory] @AT@ 10569 @LENGTH@ 8
+

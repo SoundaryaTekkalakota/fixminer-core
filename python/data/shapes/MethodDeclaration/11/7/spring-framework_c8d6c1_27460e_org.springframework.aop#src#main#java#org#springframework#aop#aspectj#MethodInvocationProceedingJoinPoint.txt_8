@@ -1,0 +1,11 @@
+MethodDeclaration 
+---Modifier 
+---SimpleType 
+---SimpleName 
+---ReturnStatement 
+------MethodInvocation 
+---------SimpleName 
+------------BooleanLiteral 
+------------BooleanLiteral 
+------------BooleanLiteral 
+------------BooleanLiteral

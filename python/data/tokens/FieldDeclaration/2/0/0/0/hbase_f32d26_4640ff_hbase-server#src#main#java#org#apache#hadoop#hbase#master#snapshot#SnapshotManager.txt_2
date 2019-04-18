@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, Map<TableName,SnapshotSentinel>, [snapshotHandlers=new ConcurrentHashMap<>()] @TO@ private, final, Map<TableName,SnapshotSentinel>, [snapshotHandlers=new ConcurrentHashMap<>()] @AT@ 7568 @LENGTH@ 86
+---INS Modifier@@final @TO@ FieldDeclaration@@private, Map<TableName,SnapshotSentinel>, [snapshotHandlers=new ConcurrentHashMap<>()] @AT@ 8077 @LENGTH@ 5
+

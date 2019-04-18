@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, XMLReader, [xmlReader] @TO@ private, final, XMLReader, [xmlReader] @AT@ 3160 @LENGTH@ 28
+---INS Modifier@@final @TO@ FieldDeclaration@@private, XMLReader, [xmlReader] @AT@ 3168 @LENGTH@ 5
+

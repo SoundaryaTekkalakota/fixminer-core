@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@boolean, MethodName:isFilterDone,  @TO@ synchronized, boolean, MethodName:isFilterDone,  @AT@ 64188 @LENGTH@ 92
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@boolean, MethodName:isFilterDone,  @AT@ 64639 @LENGTH@ 12
+

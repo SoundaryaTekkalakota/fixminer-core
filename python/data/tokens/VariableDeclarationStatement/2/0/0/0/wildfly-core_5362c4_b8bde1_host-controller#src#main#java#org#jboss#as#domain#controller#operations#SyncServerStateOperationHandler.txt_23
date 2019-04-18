@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@Resource existing=domainRootResource.removeChild(rolloutPlansElement); @TO@ final Resource existing=domainRootResource.removeChild(rolloutPlansElement); @AT@ 15788 @LENGTH@ 72
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@Resource existing=domainRootResource.removeChild(rolloutPlansElement); @AT@ 19632 @LENGTH@ 5
+

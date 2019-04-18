@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:LOG.error(e.getMessage(),e) @TO@ MethodInvocation:LOG.warn(e.getMessage(),e) @AT@ 6113 @LENGTH@ 29
+---UPD MethodInvocation@@LOG.error(e.getMessage(),e) @TO@ LOG.warn(e.getMessage(),e) @AT@ 6113 @LENGTH@ 28
+------UPD SimpleName@@MethodName:error:[e.getMessage(), e] @TO@ MethodName:warn:[e.getMessage(), e] @AT@ 6117 @LENGTH@ 24
+

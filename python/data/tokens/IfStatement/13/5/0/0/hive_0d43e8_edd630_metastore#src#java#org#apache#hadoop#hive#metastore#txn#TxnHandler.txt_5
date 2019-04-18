@@ -1,0 +1,14 @@
+UPD IfStatement@@InfixExpression:dbConn != null @TO@ InfixExpression:dbConn != null && !dbConn.isClosed() @AT@ 35234 @LENGTH@ 38
+---INS InfixExpression@@dbConn != null && !dbConn.isClosed() @TO@ IfStatement@@InfixExpression:dbConn != null @AT@ 34940 @LENGTH@ 36
+------INS InfixExpression@@dbConn != null @TO@ InfixExpression@@dbConn != null && !dbConn.isClosed() @AT@ 34940 @LENGTH@ 14
+---------MOV SimpleName@@dbConn @TO@ InfixExpression@@dbConn != null @AT@ 35238 @LENGTH@ 6
+---------MOV Operator@@!= @TO@ InfixExpression@@dbConn != null @AT@ 35244 @LENGTH@ 2
+---------MOV NullLiteral@@null @TO@ InfixExpression@@dbConn != null @AT@ 35248 @LENGTH@ 4
+------INS Operator@@&& @TO@ InfixExpression@@dbConn != null && !dbConn.isClosed() @AT@ 34954 @LENGTH@ 2
+------INS PrefixExpression@@!dbConn.isClosed() @TO@ InfixExpression@@dbConn != null && !dbConn.isClosed() @AT@ 34958 @LENGTH@ 18
+---------INS Operator@@! @TO@ PrefixExpression@@!dbConn.isClosed() @AT@ 34958 @LENGTH@ 1
+---------INS MethodInvocation@@dbConn.isClosed() @TO@ PrefixExpression@@!dbConn.isClosed() @AT@ 34959 @LENGTH@ 17
+------------INS SimpleName@@Name:dbConn @TO@ MethodInvocation@@dbConn.isClosed() @AT@ 34959 @LENGTH@ 6
+------------INS SimpleName@@MethodName:isClosed:[] @TO@ MethodInvocation@@dbConn.isClosed() @AT@ 34966 @LENGTH@ 10
+---DEL InfixExpression@@dbConn != null @AT@ 35238 @LENGTH@ 14
+

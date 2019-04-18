@@ -1,0 +1,13 @@
+ExpressionStatement 
+---Assignment 
+------ConditionalExpression 
+---------ClassInstanceCreation 
+------------MethodInvocation 
+---------------SimpleName 
+---------------SimpleName 
+------------ClassInstanceCreation 
+---------------New 
+---------------ParameterizedType 
+------------------SimpleType 
+------------------SimpleType 
+------------------SimpleType

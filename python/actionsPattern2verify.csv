@@ -1,0 +1,224 @@
+ExpressionStatement-3-0-0," UPD ExpressionStatement 
+--- UPD MethodInvocation 
+------ UPD SimpleName"
+ExpressionStatement-4-0-0," UPD ExpressionStatement 
+--- UPD MethodInvocation 
+------ UPD SimpleName 
+--------- UPD SimpleName"
+VariableDeclarationStatement-3-0-0," UPD VariableDeclarationStatement 
+--- UPD VariableDeclarationFragment 
+------ UPD SimpleName"
+ExpressionStatement-4-0-1," UPD ExpressionStatement 
+--- UPD MethodInvocation 
+------ UPD SimpleName 
+--------- INS SimpleName TO SimpleName"
+FieldDeclaration-2-0-0," UPD FieldDeclaration 
+--- INS Modifier TO FieldDeclaration"
+FieldDeclaration-6-1-0," INS FieldDeclaration TO TypeDeclaration 
+--- INS Modifier TO FieldDeclaration 
+--- INS Modifier TO FieldDeclaration 
+--- INS SimpleType TO FieldDeclaration 
+--- INS VariableDeclarationFragment TO FieldDeclaration 
+------ INS SimpleName TO VariableDeclarationFragment"
+FieldDeclaration-8-1-0," INS FieldDeclaration TO TypeDeclaration 
+--- INS Modifier TO FieldDeclaration 
+--- INS Modifier TO FieldDeclaration 
+--- INS Modifier TO FieldDeclaration 
+--- INS SimpleType TO FieldDeclaration 
+--- INS VariableDeclarationFragment TO FieldDeclaration 
+------ INS SimpleName TO VariableDeclarationFragment 
+------ INS StringLiteral TO VariableDeclarationFragment"
+ExpressionStatement-2-0-0," DEL ExpressionStatement 
+--- DEL MethodInvocation"
+FieldDeclaration-5-0-0," INS FieldDeclaration TO TypeDeclaration 
+--- INS Modifier TO FieldDeclaration 
+--- INS SimpleType TO FieldDeclaration 
+--- INS VariableDeclarationFragment TO FieldDeclaration 
+------ INS SimpleName TO VariableDeclarationFragment"
+ExpressionStatement-2-0-1," INS ExpressionStatement TO MethodDeclaration 
+--- INS MethodInvocation TO ExpressionStatement"
+VariableDeclarationStatement-4-0-0," UPD VariableDeclarationStatement 
+--- UPD VariableDeclarationFragment 
+------ UPD MethodInvocation 
+--------- UPD SimpleName"
+ExpressionStatement-4-0-2," INS ExpressionStatement TO SwitchStatement 
+--- INS MethodInvocation TO ExpressionStatement 
+------ INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO SimpleName"
+VariableDeclarationStatement-5-1-0," INS VariableDeclarationStatement TO MethodDeclaration 
+--- INS SimpleType TO VariableDeclarationStatement 
+--- INS VariableDeclarationFragment TO VariableDeclarationStatement 
+------ INS SimpleName TO VariableDeclarationFragment 
+------ INS NullLiteral TO VariableDeclarationFragment"
+VariableDeclarationStatement-2-0-0," UPD VariableDeclarationStatement 
+--- INS Modifier TO VariableDeclarationStatement"
+MethodDeclaration-2-0-1," UPD MethodDeclaration 
+--- INS Modifier TO MethodDeclaration"
+VariableDeclarationStatement-7-1-0," INS VariableDeclarationStatement TO MethodDeclaration 
+--- INS SimpleType TO VariableDeclarationStatement 
+--- INS VariableDeclarationFragment TO VariableDeclarationStatement 
+------ INS SimpleName TO VariableDeclarationFragment 
+------ INS MethodInvocation TO VariableDeclarationFragment 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation"
+FieldDeclaration-3-2-0," UPD FieldDeclaration 
+--- UPD VariableDeclarationFragment 
+------ UPD SimpleName"
+ReturnStatement-3-0-0," UPD ReturnStatement 
+--- UPD MethodInvocation 
+------ UPD SimpleName"
+ExpressionStatement-2-0-2," INS ExpressionStatement TO Block 
+--- MOV MethodInvocation TO ExpressionStatement"
+SwitchCase-2-0-1," INS SwitchCase TO SwitchStatement 
+--- INS SimpleName TO SwitchCase"
+IfStatement-6-1-0," DEL IfStatement 
+--- DEL PrefixExpression 
+------ DEL Operator 
+------ DEL SimpleName 
+--- DEL ExpressionStatement 
+------ DEL MethodInvocation"
+MethodDeclaration-2-0-0," UPD MethodDeclaration 
+--- DEL Modifier"
+ReturnStatement-2-0-1," DEL ReturnStatement 
+--- DEL SimpleName"
+TypeDeclaration-5-0-0," INS TypeDeclaration TO TypeDeclaration 
+--- INS Modifier TO TypeDeclaration 
+--- INS Modifier TO TypeDeclaration 
+--- INS SimpleName TO TypeDeclaration 
+--- INS SimpleType TO TypeDeclaration"
+ReturnStatement-2-0-4," INS ReturnStatement TO MethodDeclaration 
+--- INS SimpleName TO ReturnStatement"
+FieldDeclaration-5-0-1," DEL FieldDeclaration 
+--- DEL Modifier 
+--- DEL SimpleType 
+--- DEL VariableDeclarationFragment 
+------ DEL SimpleName"
+FieldDeclaration-2-0-1," UPD FieldDeclaration 
+--- DEL Modifier"
+MethodDeclaration-6-1-0," INS MethodDeclaration TO TypeDeclaration 
+--- INS Modifier TO MethodDeclaration 
+--- INS SimpleType TO MethodDeclaration 
+--- INS SimpleName TO MethodDeclaration 
+--- INS ReturnStatement TO MethodDeclaration 
+------ INS SimpleName TO ReturnStatement"
+ExpressionStatement-5-8-0," INS ExpressionStatement TO IfStatement 
+--- INS MethodInvocation TO ExpressionStatement 
+------ INS SimpleName TO MethodInvocation 
+------ INS SimpleName TO MethodInvocation 
+--------- INS BooleanLiteral TO SimpleName"
+ReturnStatement-2-0-3," UPD ReturnStatement 
+--- UPD SimpleName"
+ExpressionStatement-6-2-0," INS ExpressionStatement TO MethodDeclaration 
+--- INS MethodInvocation TO ExpressionStatement 
+------ INS SimpleName TO MethodInvocation 
+------ INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO SimpleName 
+--------- INS SimpleName TO SimpleName"
+CatchClause-3-0-0," UPD CatchClause 
+--- UPD SingleVariableDeclaration 
+------ UPD SimpleType"
+ExpressionStatement-7-7-0," INS ExpressionStatement TO MethodDeclaration 
+--- INS Assignment TO ExpressionStatement 
+------ INS FieldAccess TO Assignment 
+--------- INS ThisExpression TO FieldAccess 
+--------- INS SimpleName TO FieldAccess 
+------ INS Operator TO Assignment 
+------ INS SimpleName TO Assignment"
+MethodDeclaration-14-0-0," INS MethodDeclaration TO TypeDeclaration 
+--- INS Modifier TO MethodDeclaration 
+--- INS PrimitiveType TO MethodDeclaration 
+--- INS SimpleName TO MethodDeclaration 
+--- INS SingleVariableDeclaration TO MethodDeclaration 
+------ INS SimpleType TO SingleVariableDeclaration 
+------ INS SimpleName TO SingleVariableDeclaration 
+--- INS ExpressionStatement TO MethodDeclaration 
+------ INS Assignment TO ExpressionStatement 
+--------- INS FieldAccess TO Assignment 
+------------ INS ThisExpression TO FieldAccess 
+------------ INS SimpleName TO FieldAccess 
+--------- INS Operator TO Assignment 
+--------- INS SimpleName TO Assignment"
+ExpressionStatement-2-0-3," INS ExpressionStatement TO MethodDeclaration 
+--- MOV MethodInvocation TO ExpressionStatement"
+FieldDeclaration-11-0-0," INS FieldDeclaration TO TypeDeclaration 
+--- INS Modifier TO FieldDeclaration 
+--- INS Modifier TO FieldDeclaration 
+--- INS Modifier TO FieldDeclaration 
+--- INS SimpleType TO FieldDeclaration 
+--- INS VariableDeclarationFragment TO FieldDeclaration 
+------ INS SimpleName TO VariableDeclarationFragment 
+------ INS MethodInvocation TO VariableDeclarationFragment 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation 
+------------ INS TypeLiteral TO SimpleName"
+ReturnStatement-2-0-2," UPD ReturnStatement 
+--- INS SimpleName TO ReturnStatement"
+VariableDeclarationStatement-7-1-3," INS VariableDeclarationStatement TO IfStatement 
+--- INS SimpleType TO VariableDeclarationStatement 
+--- INS VariableDeclarationFragment TO VariableDeclarationStatement 
+------ INS SimpleName TO VariableDeclarationFragment 
+------ INS MethodInvocation TO VariableDeclarationFragment 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation"
+TypeDeclaration-2-1-0," UPD TypeDeclaration 
+--- INS SimpleType TO TypeDeclaration"
+VariableDeclarationStatement-7-1-1," DEL VariableDeclarationStatement 
+--- DEL SimpleType 
+--- DEL VariableDeclarationFragment 
+------ DEL SimpleName 
+------ DEL MethodInvocation 
+--------- DEL SimpleName 
+--------- DEL SimpleName"
+ReturnStatement-4-0-0," UPD ReturnStatement 
+--- UPD MethodInvocation 
+------ UPD SimpleName 
+--------- INS SimpleName TO SimpleName"
+ThrowStatement-4-0-0," UPD ThrowStatement 
+--- UPD ClassInstanceCreation 
+------ UPD InfixExpression 
+--------- UPD StringLiteral"
+MethodDeclaration-2-0-2," UPD MethodDeclaration 
+--- UPD Modifier"
+ThrowStatement-3-1-0," UPD ThrowStatement 
+--- UPD ClassInstanceCreation 
+------ UPD SimpleType"
+VariableDeclarationStatement-11-0-0," INS VariableDeclarationStatement TO MethodDeclaration 
+--- INS ParameterizedType TO VariableDeclarationStatement 
+------ INS SimpleType TO ParameterizedType 
+------ INS SimpleType TO ParameterizedType 
+--- INS VariableDeclarationFragment TO VariableDeclarationStatement 
+------ INS SimpleName TO VariableDeclarationFragment 
+------ INS ClassInstanceCreation TO VariableDeclarationFragment 
+--------- INS New TO ClassInstanceCreation 
+--------- INS ParameterizedType TO ClassInstanceCreation 
+------------ INS SimpleType TO ParameterizedType 
+------------ INS SimpleType TO ParameterizedType"
+VariableDeclarationStatement-5-1-2," DEL VariableDeclarationStatement 
+--- DEL SimpleType 
+--- DEL VariableDeclarationFragment 
+------ DEL SimpleName 
+------ DEL NullLiteral"
+MethodDeclaration-4-1-0," UPD MethodDeclaration 
+--- INS SingleVariableDeclaration TO MethodDeclaration 
+------ INS PrimitiveType TO SingleVariableDeclaration 
+------ INS SimpleName TO SingleVariableDeclaration"
+FieldDeclaration-9-0-0," INS FieldDeclaration TO TypeDeclaration 
+--- INS Modifier TO FieldDeclaration 
+--- INS Modifier TO FieldDeclaration 
+--- INS SimpleType TO FieldDeclaration 
+--- INS VariableDeclarationFragment TO FieldDeclaration 
+------ INS SimpleName TO VariableDeclarationFragment 
+------ INS ClassInstanceCreation TO VariableDeclarationFragment 
+--------- INS New TO ClassInstanceCreation 
+--------- INS SimpleType TO ClassInstanceCreation"
+ReturnStatement-4-0-1," UPD ReturnStatement 
+--- UPD MethodInvocation 
+------ UPD SimpleName 
+--------- UPD SimpleName"
+VariableDeclarationStatement-7-1-4," INS VariableDeclarationStatement TO EnhancedForStatement 
+--- INS SimpleType TO VariableDeclarationStatement 
+--- INS VariableDeclarationFragment TO VariableDeclarationStatement 
+------ INS SimpleName TO VariableDeclarationFragment 
+------ INS MethodInvocation TO VariableDeclarationFragment 
+--------- INS SimpleName TO MethodInvocation 
+--------- INS SimpleName TO MethodInvocation"

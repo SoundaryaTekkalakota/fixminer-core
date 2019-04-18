@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, Exchange, [exchange] @TO@ TypeDeclaration@@[private, static, final]FinallyAsyncCallback, [AsyncCallback] @AT@ 2999 @LENGTH@ 32
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, Exchange, [exchange] @AT@ 2999 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, Exchange, [exchange] @AT@ 3007 @LENGTH@ 5
+---INS SimpleType@@Exchange @TO@ FieldDeclaration@@private, final, Exchange, [exchange] @AT@ 3013 @LENGTH@ 8
+---INS VariableDeclarationFragment@@exchange @TO@ FieldDeclaration@@private, final, Exchange, [exchange] @AT@ 3022 @LENGTH@ 8
+------INS SimpleName@@exchange @TO@ VariableDeclarationFragment@@exchange @AT@ 3022 @LENGTH@ 8
+

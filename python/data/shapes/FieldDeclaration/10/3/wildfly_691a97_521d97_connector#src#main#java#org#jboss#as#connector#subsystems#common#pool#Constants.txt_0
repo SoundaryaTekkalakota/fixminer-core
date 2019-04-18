@@ -1,0 +1,10 @@
+FieldDeclaration 
+---VariableDeclarationFragment 
+------MethodInvocation 
+---------MethodInvocation 
+------------ClassInstanceCreation 
+---------------New 
+---------------SimpleType 
+---------------QualifiedName 
+------------------SimpleName 
+------------------SimpleName

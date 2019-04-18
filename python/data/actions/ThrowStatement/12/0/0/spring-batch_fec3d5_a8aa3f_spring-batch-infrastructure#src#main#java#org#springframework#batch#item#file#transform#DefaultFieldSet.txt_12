@@ -1,0 +1,12 @@
+ INS ThrowStatement TO CatchClause 
+--- INS ClassInstanceCreation TO ThrowStatement 
+------ INS New TO ClassInstanceCreation 
+------ INS SimpleType TO ClassInstanceCreation 
+------ INS InfixExpression TO ClassInstanceCreation 
+--------- INS MethodInvocation TO InfixExpression 
+------------ INS SimpleName TO MethodInvocation 
+------------ INS SimpleName TO MethodInvocation 
+--------- INS Operator TO InfixExpression 
+--------- INS StringLiteral TO InfixExpression 
+--------- INS SimpleName TO InfixExpression 
+--------- INS StringLiteral TO InfixExpression

@@ -1,0 +1,14 @@
+FieldDeclaration 
+---Modifier 
+---Modifier 
+---Modifier 
+---PrimitiveType 
+---VariableDeclarationFragment 
+------SimpleName 
+------MethodInvocation 
+---------SimpleName 
+---------SimpleName 
+------------StringLiteral 
+------------MethodInvocation 
+---------------TypeLiteral 
+---------------SimpleName

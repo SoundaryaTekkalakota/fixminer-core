@@ -1,0 +1,17 @@
+VariableDeclarationStatement 
+---ArrayType 
+------ParameterizedType 
+---VariableDeclarationFragment 
+------MethodInvocation 
+---------SimpleName 
+------------SimpleName 
+------------TypeLiteral 
+---------SimpleName 
+---------MethodInvocation 
+------------TypeLiteral 
+---------SimpleName 
+---ParameterizedType 
+------SimpleType 
+------ParameterizedType 
+---------SimpleType 
+---------WildcardType

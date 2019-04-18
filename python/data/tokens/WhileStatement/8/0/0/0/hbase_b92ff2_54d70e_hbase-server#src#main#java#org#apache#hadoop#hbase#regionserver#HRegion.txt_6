@@ -1,0 +1,9 @@
+UPD WhileStatement@@MethodInvocation:i.hasNext() @TO@ MethodInvocation:itr.hasNext() @AT@ 260862 @LENGTH@ 84
+---UPD MethodInvocation@@i.hasNext() @TO@ itr.hasNext() @AT@ 260869 @LENGTH@ 11
+------UPD SimpleName@@Name:i @TO@ Name:itr @AT@ 260869 @LENGTH@ 1
+---UPD ExpressionStatement@@MethodInvocation:newTags.add(i.next()) @TO@ MethodInvocation:newTags.add(itr.next()) @AT@ 260904 @LENGTH@ 22
+------UPD MethodInvocation@@newTags.add(i.next()) @TO@ newTags.add(itr.next()) @AT@ 260904 @LENGTH@ 21
+---------UPD SimpleName@@MethodName:add:[i.next()] @TO@ MethodName:add:[itr.next()] @AT@ 260912 @LENGTH@ 13
+------------UPD MethodInvocation@@i.next() @TO@ itr.next() @AT@ 260916 @LENGTH@ 8
+---------------UPD SimpleName@@Name:i @TO@ Name:itr @AT@ 260916 @LENGTH@ 1
+

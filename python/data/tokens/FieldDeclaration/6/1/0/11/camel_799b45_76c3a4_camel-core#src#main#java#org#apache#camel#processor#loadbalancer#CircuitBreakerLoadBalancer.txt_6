@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, AsyncCallback, [callback] @TO@ TypeDeclaration@@CircuitBreakerCallback, [AsyncCallback] @AT@ 5661 @LENGTH@ 37
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, AsyncCallback, [callback] @AT@ 5661 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, AsyncCallback, [callback] @AT@ 5669 @LENGTH@ 5
+---INS SimpleType@@AsyncCallback @TO@ FieldDeclaration@@private, final, AsyncCallback, [callback] @AT@ 5675 @LENGTH@ 13
+---INS VariableDeclarationFragment@@callback @TO@ FieldDeclaration@@private, final, AsyncCallback, [callback] @AT@ 5689 @LENGTH@ 8
+------INS SimpleName@@callback @TO@ VariableDeclarationFragment@@callback @AT@ 5689 @LENGTH@ 8
+

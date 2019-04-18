@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:normazlieTransactionalPropertyDefault(newTable) @TO@ MethodInvocation:normalizeTransactionalPropertyDefault(newTable) @AT@ 14072 @LENGTH@ 48
+---UPD MethodInvocation@@normazlieTransactionalPropertyDefault(newTable) @TO@ normalizeTransactionalPropertyDefault(newTable) @AT@ 14072 @LENGTH@ 47
+------UPD SimpleName@@MethodName:normazlieTransactionalPropertyDefault:[newTable] @TO@ MethodName:normalizeTransactionalPropertyDefault:[newTable] @AT@ 14072 @LENGTH@ 47
+

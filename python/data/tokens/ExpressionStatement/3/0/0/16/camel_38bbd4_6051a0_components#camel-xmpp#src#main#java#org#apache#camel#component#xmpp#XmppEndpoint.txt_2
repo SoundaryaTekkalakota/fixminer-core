@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:connection.connect() @TO@ MethodInvocation:newConnection.connect() @AT@ 5704 @LENGTH@ 21
+---UPD MethodInvocation@@connection.connect() @TO@ newConnection.connect() @AT@ 5704 @LENGTH@ 20
+------UPD SimpleName@@Name:connection @TO@ Name:newConnection @AT@ 5704 @LENGTH@ 10
+

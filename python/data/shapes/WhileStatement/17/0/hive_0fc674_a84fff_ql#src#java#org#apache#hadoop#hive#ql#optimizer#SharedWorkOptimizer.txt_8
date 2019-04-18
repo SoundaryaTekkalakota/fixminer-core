@@ -1,0 +1,17 @@
+WhileStatement 
+---InfixExpression 
+------MethodInvocation 
+---------SimpleName 
+---------SimpleName 
+------Operator 
+------NumberLiteral 
+---ExpressionStatement 
+---ExpressionStatement 
+------Assignment 
+---------SimpleName 
+---------Operator 
+---------MethodInvocation 
+------------SimpleName 
+------------MethodInvocation 
+------------SimpleName 
+---------------NumberLiteral

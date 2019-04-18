@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@JavaSymbolName methodName=new JavaSymbolName(crudAnnotationValues.getFindEntriesMethod() + destination.getSimpleTypeName() + "Entries"); @TO@ final JavaSymbolName methodName=new JavaSymbolName(crudAnnotationValues.getFindEntriesMethod() + destination.getSimpleTypeName() + "Entries"); @AT@ 25968 @LENGTH@ 138
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@JavaSymbolName methodName=new JavaSymbolName(crudAnnotationValues.getFindEntriesMethod() + destination.getSimpleTypeName() + "Entries"); @AT@ 26313 @LENGTH@ 5
+

@@ -1,0 +1,11 @@
+ UPD ReturnStatement 
+--- UPD MethodInvocation 
+------ UPD SimpleName 
+--------- DEL ClassInstanceCreation 
+--------- INS LambdaExpression TO SimpleName 
+------------ INS VariableDeclarationFragment TO LambdaExpression 
+--------------- INS SimpleName TO VariableDeclarationFragment 
+------------ INS ClassInstanceCreation TO LambdaExpression 
+--------------- MOV New TO ClassInstanceCreation 
+--------------- MOV ParameterizedType TO ClassInstanceCreation 
+--------------- INS SimpleName TO ClassInstanceCreation

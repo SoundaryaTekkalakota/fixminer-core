@@ -1,0 +1,16 @@
+ UPD IfStatement 
+--- UPD InfixExpression 
+------ INS InfixExpression TO InfixExpression 
+--------- MOV MethodInvocation TO InfixExpression 
+--------- INS InfixExpression TO InfixExpression 
+------------ INS SimpleName TO InfixExpression 
+------------ INS Operator TO InfixExpression 
+------------ INS NullLiteral TO InfixExpression 
+--------- INS Operator TO InfixExpression 
+------ INS InfixExpression TO InfixExpression 
+--------- MOV MethodInvocation TO InfixExpression 
+--------- INS InfixExpression TO InfixExpression 
+------------ INS SimpleName TO InfixExpression 
+------------ INS Operator TO InfixExpression 
+------------ INS NullLiteral TO InfixExpression 
+--------- INS Operator TO InfixExpression

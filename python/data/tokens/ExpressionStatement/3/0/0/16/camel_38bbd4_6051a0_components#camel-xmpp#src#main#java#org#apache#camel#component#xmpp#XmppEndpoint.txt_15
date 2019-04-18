@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:connection.loginAnonymously() @TO@ MethodInvocation:newConnection.loginAnonymously() @AT@ 7263 @LENGTH@ 30
+---UPD MethodInvocation@@connection.loginAnonymously() @TO@ newConnection.loginAnonymously() @AT@ 7263 @LENGTH@ 29
+------UPD SimpleName@@Name:connection @TO@ Name:newConnection @AT@ 7263 @LENGTH@ 10
+

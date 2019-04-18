@@ -1,0 +1,9 @@
+ExpressionStatement 
+---Assignment 
+------MethodInvocation 
+---------SimpleName 
+---------SimpleName 
+------ClassInstanceCreation 
+---------New 
+---------SimpleType 
+---------MethodInvocation

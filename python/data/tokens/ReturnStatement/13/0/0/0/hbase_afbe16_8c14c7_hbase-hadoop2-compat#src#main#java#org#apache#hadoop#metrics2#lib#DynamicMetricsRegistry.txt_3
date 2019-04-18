@@ -1,0 +1,14 @@
+UPD ReturnStatement@@MethodInvocation:newGauge(Interns.info(name,desc),iVal) @TO@ MethodInvocation:newGauge(new MetricsInfoImpl(name,desc),iVal) @AT@ 5489 @LENGTH@ 48
+---UPD MethodInvocation@@newGauge(Interns.info(name,desc),iVal) @TO@ newGauge(new MetricsInfoImpl(name,desc),iVal) @AT@ 5496 @LENGTH@ 40
+------UPD SimpleName@@MethodName:newGauge:[Interns.info(name,desc), iVal] @TO@ MethodName:newGauge:[new MetricsInfoImpl(name,desc), iVal] @AT@ 5496 @LENGTH@ 40
+---------DEL MethodInvocation@@Interns.info(name,desc) @AT@ 5505 @LENGTH@ 24
+------------DEL SimpleName@@Name:Interns @AT@ 5505 @LENGTH@ 7
+------------DEL SimpleName@@MethodName:info:[name, desc] @AT@ 5513 @LENGTH@ 16
+---------------DEL SimpleName@@name @AT@ 5518 @LENGTH@ 4
+---------------DEL SimpleName@@desc @AT@ 5524 @LENGTH@ 4
+---------INS ClassInstanceCreation@@MetricsInfoImpl[name, desc] @TO@ SimpleName@@MethodName:newGauge:[Interns.info(name,desc), iVal] @AT@ 5526 @LENGTH@ 31
+------------INS New@@new @TO@ ClassInstanceCreation@@MetricsInfoImpl[name, desc] @AT@ 5526 @LENGTH@ 3
+------------INS SimpleType@@MetricsInfoImpl @TO@ ClassInstanceCreation@@MetricsInfoImpl[name, desc] @AT@ 5530 @LENGTH@ 15
+------------INS SimpleName@@name @TO@ ClassInstanceCreation@@MetricsInfoImpl[name, desc] @AT@ 5546 @LENGTH@ 4
+------------INS SimpleName@@desc @TO@ ClassInstanceCreation@@MetricsInfoImpl[name, desc] @AT@ 5552 @LENGTH@ 4
+

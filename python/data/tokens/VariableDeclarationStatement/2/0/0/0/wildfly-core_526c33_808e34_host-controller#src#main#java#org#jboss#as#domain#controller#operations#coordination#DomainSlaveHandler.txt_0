@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@List<DomainOperationTransformer> transformers=context.getAttachment(OperationAttachments.SLAVE_SERVER_OPERATION_TRANSFORMERS); @TO@ final List<DomainOperationTransformer> transformers=context.getAttachment(OperationAttachments.SLAVE_SERVER_OPERATION_TRANSFORMERS); @AT@ 4773 @LENGTH@ 128
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@List<DomainOperationTransformer> transformers=context.getAttachment(OperationAttachments.SLAVE_SERVER_OPERATION_TRANSFORMERS); @AT@ 4490 @LENGTH@ 5
+

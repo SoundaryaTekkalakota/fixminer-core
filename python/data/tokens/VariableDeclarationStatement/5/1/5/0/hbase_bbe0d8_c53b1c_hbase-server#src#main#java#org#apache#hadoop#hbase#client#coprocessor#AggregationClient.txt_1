@@ -1,0 +1,6 @@
+INS VariableDeclarationStatement@@HTable table=null; @TO@ MethodDeclaration@@public, R, R, S, MethodName:max, final byte[] tableName, final ColumnInterpreter<R,S> ci, final Scan scan, Throwable,  @AT@ 4040 @LENGTH@ 20
+---MOV SimpleType@@HTable @TO@ VariableDeclarationStatement@@HTable table=null; @AT@ 3666 @LENGTH@ 6
+---INS VariableDeclarationFragment@@table=null @TO@ VariableDeclarationStatement@@HTable table=null; @AT@ 4047 @LENGTH@ 12
+------MOV SimpleName@@table @TO@ VariableDeclarationFragment@@table=null @AT@ 3673 @LENGTH@ 5
+------INS NullLiteral@@null @TO@ VariableDeclarationFragment@@table=null @AT@ 4055 @LENGTH@ 4
+

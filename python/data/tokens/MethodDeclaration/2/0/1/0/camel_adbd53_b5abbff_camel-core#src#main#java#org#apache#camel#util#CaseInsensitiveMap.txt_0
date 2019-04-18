@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, Object, MethodName:put, String key, Object value,  @TO@ public, synchronized, Object, MethodName:put, String key, Object value,  @AT@ 2769 @LENGTH@ 229
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, Object, MethodName:put, String key, Object value,  @AT@ 2928 @LENGTH@ 12
+

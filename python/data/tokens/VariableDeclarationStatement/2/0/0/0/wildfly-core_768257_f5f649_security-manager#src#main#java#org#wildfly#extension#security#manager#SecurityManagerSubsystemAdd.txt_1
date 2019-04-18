@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@ModelNode node=Resource.Tools.readModel(resource); @TO@ final ModelNode node=Resource.Tools.readModel(resource); @AT@ 4597 @LENGTH@ 52
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@ModelNode node=Resource.Tools.readModel(resource); @AT@ 4247 @LENGTH@ 5
+

@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@int, [priority] @TO@ final, int, [priority] @AT@ 14260 @LENGTH@ 13
+---INS Modifier@@final @TO@ FieldDeclaration@@int, [priority] @AT@ 14272 @LENGTH@ 5
+

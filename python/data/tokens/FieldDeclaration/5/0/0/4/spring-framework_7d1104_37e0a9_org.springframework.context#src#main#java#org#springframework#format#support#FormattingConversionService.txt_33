@@ -1,0 +1,6 @@
+INS FieldDeclaration@@private, AnnotationFormatterFactory, [annotationFormatterFactory] @TO@ TypeDeclaration@@[private, final]AnnotationParserConverter, [ConditionalGenericConverter] @AT@ 9130 @LENGTH@ 62
+---INS Modifier@@private @TO@ FieldDeclaration@@private, AnnotationFormatterFactory, [annotationFormatterFactory] @AT@ 9130 @LENGTH@ 7
+---INS SimpleType@@AnnotationFormatterFactory @TO@ FieldDeclaration@@private, AnnotationFormatterFactory, [annotationFormatterFactory] @AT@ 9138 @LENGTH@ 26
+---INS VariableDeclarationFragment@@annotationFormatterFactory @TO@ FieldDeclaration@@private, AnnotationFormatterFactory, [annotationFormatterFactory] @AT@ 9165 @LENGTH@ 26
+------INS SimpleName@@annotationFormatterFactory @TO@ VariableDeclarationFragment@@annotationFormatterFactory @AT@ 9165 @LENGTH@ 26
+

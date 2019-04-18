@@ -1,0 +1,4 @@
+UPD ExpressionStatement@@MethodInvocation:s.execute("INSERT INTO NEXT_LOCK_ID VALUES(1)") @TO@ MethodInvocation:stmt.execute("INSERT INTO NEXT_LOCK_ID VALUES(1)") @AT@ 3991 @LENGTH@ 48
+---UPD MethodInvocation@@s.execute("INSERT INTO NEXT_LOCK_ID VALUES(1)") @TO@ stmt.execute("INSERT INTO NEXT_LOCK_ID VALUES(1)") @AT@ 3991 @LENGTH@ 47
+------UPD SimpleName@@Name:s @TO@ Name:stmt @AT@ 3991 @LENGTH@ 1
+

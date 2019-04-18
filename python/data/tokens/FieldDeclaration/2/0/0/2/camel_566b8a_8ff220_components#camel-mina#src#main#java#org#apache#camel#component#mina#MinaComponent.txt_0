@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@boolean, [sync=true] @TO@ private, boolean, [sync=true] @AT@ 3043 @LENGTH@ 20
+---INS Modifier@@private @TO@ FieldDeclaration@@boolean, [sync=true] @AT@ 3043 @LENGTH@ 7
+

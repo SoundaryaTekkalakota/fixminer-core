@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, long, MethodName:getMaximumTimestamp,  @TO@ public, synchronized, long, MethodName:getMaximumTimestamp,  @AT@ 4174 @LENGTH@ 68
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, long, MethodName:getMaximumTimestamp,  @AT@ 4220 @LENGTH@ 12
+

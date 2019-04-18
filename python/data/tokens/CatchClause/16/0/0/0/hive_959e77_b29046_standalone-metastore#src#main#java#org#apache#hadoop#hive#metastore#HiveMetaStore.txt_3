@@ -1,0 +1,17 @@
+INS CatchClause@@InvalidObjectException|NoSuchObjectException e @TO@ TryStatement@@try:[] @AT@ 244830 @LENGTH@ 139
+---INS SingleVariableDeclaration@@InvalidObjectException|NoSuchObjectException e @TO@ CatchClause@@InvalidObjectException|NoSuchObjectException e @AT@ 244837 @LENGTH@ 48
+------INS UnionType@@InvalidObjectException|NoSuchObjectException @TO@ SingleVariableDeclaration@@InvalidObjectException|NoSuchObjectException e @AT@ 244837 @LENGTH@ 46
+---------INS SimpleType@@InvalidObjectException @TO@ UnionType@@InvalidObjectException|NoSuchObjectException @AT@ 244837 @LENGTH@ 22
+---------INS SimpleType@@NoSuchObjectException @TO@ UnionType@@InvalidObjectException|NoSuchObjectException @AT@ 244862 @LENGTH@ 21
+------INS SimpleName@@e @TO@ SingleVariableDeclaration@@InvalidObjectException|NoSuchObjectException e @AT@ 244884 @LENGTH@ 1
+---INS ExpressionStatement@@Assignment:ret=false @TO@ CatchClause@@InvalidObjectException|NoSuchObjectException e @AT@ 244897 @LENGTH@ 12
+------INS Assignment@@ret=false @TO@ ExpressionStatement@@Assignment:ret=false @AT@ 244897 @LENGTH@ 11
+---------INS SimpleName@@ret @TO@ Assignment@@ret=false @AT@ 244897 @LENGTH@ 3
+---------INS Operator@@= @TO@ Assignment@@ret=false @AT@ 244900 @LENGTH@ 1
+---------INS BooleanLiteral@@false @TO@ Assignment@@ret=false @AT@ 244903 @LENGTH@ 5
+---INS ExpressionStatement@@MethodInvocation:MetaStoreUtils.logAndThrowMetaException(e) @TO@ CatchClause@@InvalidObjectException|NoSuchObjectException e @AT@ 244918 @LENGTH@ 43
+------INS MethodInvocation@@MetaStoreUtils.logAndThrowMetaException(e) @TO@ ExpressionStatement@@MethodInvocation:MetaStoreUtils.logAndThrowMetaException(e) @AT@ 244918 @LENGTH@ 42
+---------INS SimpleName@@Name:MetaStoreUtils @TO@ MethodInvocation@@MetaStoreUtils.logAndThrowMetaException(e) @AT@ 244918 @LENGTH@ 14
+---------INS SimpleName@@MethodName:logAndThrowMetaException:[e] @TO@ MethodInvocation@@MetaStoreUtils.logAndThrowMetaException(e) @AT@ 244933 @LENGTH@ 27
+------------INS SimpleName@@e @TO@ SimpleName@@MethodName:logAndThrowMetaException:[e] @AT@ 244958 @LENGTH@ 1
+

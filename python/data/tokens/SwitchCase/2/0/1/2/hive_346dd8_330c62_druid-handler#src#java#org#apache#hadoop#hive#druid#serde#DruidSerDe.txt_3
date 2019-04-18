@@ -1,0 +1,3 @@
+INS SwitchCase@@SimpleName:VARCHAR @TO@ SwitchStatement@@MethodInvocation:types[i].getPrimitiveCategory() @AT@ 22309 @LENGTH@ 13
+---INS SimpleName@@VARCHAR @TO@ SwitchCase@@SimpleName:VARCHAR @AT@ 22314 @LENGTH@ 7
+

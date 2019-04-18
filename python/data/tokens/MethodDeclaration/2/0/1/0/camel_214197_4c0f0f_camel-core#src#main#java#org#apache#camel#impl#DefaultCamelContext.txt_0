@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, List<RouteDefinition>, MethodName:getRouteDefinitions,  @TO@ public, synchronized, List<RouteDefinition>, MethodName:getRouteDefinitions,  @AT@ 43021 @LENGTH@ 91
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, List<RouteDefinition>, MethodName:getRouteDefinitions,  @AT@ 43028 @LENGTH@ 12
+

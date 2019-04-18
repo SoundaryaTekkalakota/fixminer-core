@@ -1,0 +1,3 @@
+UPD FieldDeclaration@@private, boolean, [expired] @TO@ private, volatile, boolean, [expired] @AT@ 2463 @LENGTH@ 24
+---INS Modifier@@volatile @TO@ FieldDeclaration@@private, boolean, [expired] @AT@ 2481 @LENGTH@ 8
+

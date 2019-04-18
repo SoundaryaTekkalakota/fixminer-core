@@ -1,0 +1,3 @@
+UPD VariableDeclarationStatement@@String prefix="login.config.url."; @TO@ final String prefix="login.config.url."; @AT@ 12278 @LENGTH@ 36
+---INS Modifier@@final @TO@ VariableDeclarationStatement@@String prefix="login.config.url."; @AT@ 12410 @LENGTH@ 5
+

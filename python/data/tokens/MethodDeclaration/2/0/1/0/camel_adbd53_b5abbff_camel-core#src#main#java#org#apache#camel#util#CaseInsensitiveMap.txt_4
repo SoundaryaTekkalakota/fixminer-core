@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, Set<Map.Entry<String,Object>>, MethodName:entrySet,  @TO@ public, synchronized, Set<Map.Entry<String,Object>>, MethodName:entrySet,  @AT@ 3790 @LENGTH@ 1075
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, Set<Map.Entry<String,Object>>, MethodName:entrySet,  @AT@ 4182 @LENGTH@ 12
+

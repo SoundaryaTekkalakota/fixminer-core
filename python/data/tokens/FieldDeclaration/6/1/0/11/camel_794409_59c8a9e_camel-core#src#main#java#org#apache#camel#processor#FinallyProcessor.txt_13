@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, AsyncCallback, [callback] @TO@ TypeDeclaration@@[private, static, final]FinallyAsyncCallback, [AsyncCallback] @AT@ 3040 @LENGTH@ 37
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, AsyncCallback, [callback] @AT@ 3040 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, AsyncCallback, [callback] @AT@ 3048 @LENGTH@ 5
+---INS SimpleType@@AsyncCallback @TO@ FieldDeclaration@@private, final, AsyncCallback, [callback] @AT@ 3054 @LENGTH@ 13
+---INS VariableDeclarationFragment@@callback @TO@ FieldDeclaration@@private, final, AsyncCallback, [callback] @AT@ 3068 @LENGTH@ 8
+------INS SimpleName@@callback @TO@ VariableDeclarationFragment@@callback @AT@ 3068 @LENGTH@ 8
+

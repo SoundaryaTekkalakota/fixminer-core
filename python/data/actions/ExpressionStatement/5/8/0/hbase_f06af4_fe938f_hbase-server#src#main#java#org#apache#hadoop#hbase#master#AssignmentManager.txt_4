@@ -1,0 +1,5 @@
+ INS ExpressionStatement TO SwitchStatement 
+--- INS MethodInvocation TO ExpressionStatement 
+------ INS SimpleName TO MethodInvocation 
+------ INS SimpleName TO MethodInvocation 
+--------- INS BooleanLiteral TO SimpleName

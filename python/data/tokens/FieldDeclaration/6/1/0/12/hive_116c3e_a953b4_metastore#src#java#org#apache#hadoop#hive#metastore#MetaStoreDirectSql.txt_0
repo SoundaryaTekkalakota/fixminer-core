@@ -1,0 +1,7 @@
+INS FieldDeclaration@@private, final, String, [defaultPartName] @TO@ TypeDeclaration@@MetaStoreDirectSql,  @AT@ 4997 @LENGTH@ 37
+---INS Modifier@@private @TO@ FieldDeclaration@@private, final, String, [defaultPartName] @AT@ 4997 @LENGTH@ 7
+---INS Modifier@@final @TO@ FieldDeclaration@@private, final, String, [defaultPartName] @AT@ 5005 @LENGTH@ 5
+---INS SimpleType@@String @TO@ FieldDeclaration@@private, final, String, [defaultPartName] @AT@ 5011 @LENGTH@ 6
+---INS VariableDeclarationFragment@@defaultPartName @TO@ FieldDeclaration@@private, final, String, [defaultPartName] @AT@ 5018 @LENGTH@ 15
+------INS SimpleName@@defaultPartName @TO@ VariableDeclarationFragment@@defaultPartName @AT@ 5018 @LENGTH@ 15
+

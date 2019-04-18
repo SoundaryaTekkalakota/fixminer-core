@@ -1,0 +1,3 @@
+UPD MethodDeclaration@@public, void, MethodName:addManagementHandler, String contextName, boolean requireSecurity, HttpHandler managementHandler,  @TO@ public, synchronized, void, MethodName:addManagementHandler, String contextName, boolean requireSecurity, HttpHandler managementHandler,  @AT@ 8978 @LENGTH@ 1086
+---INS Modifier@@synchronized @TO@ MethodDeclaration@@public, void, MethodName:addManagementHandler, String contextName, boolean requireSecurity, HttpHandler managementHandler,  @AT@ 8998 @LENGTH@ 12
+
