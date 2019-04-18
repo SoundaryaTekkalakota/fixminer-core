@@ -4,38 +4,31 @@
 * [II. Environment setup](#user-content-ii-environment)
 * [III. Replication Data](#user-content-iii-data)
 * [IV. Step-by-Step execution](#user-content-iv-how-to-run)
+<!--
 * [V. Evaluation Result](#user-content-v-evaluation-result)
 * [VI. Generated Patches](#user-content-vi-generated-patches)
 * [VII. Structure of the project](#user-content-vii-structure-of-the-project)
+-->
 
 ## I. Introduction
 
-Fixminer is an automated approach for semantic fix pattern mining based on an iterative, three-fold, clustering strategy.
+Fixminer is a systematic and automated approach to mine relevant and actionable fix patterns for automated program repair.
+![The workflow of this technique.\label{workflow}](worflow.png)
 
 ## II. Environment setup
 
 * OS: macOS Mojave (10.14.3)
-* JDK7: Oracle jdk1.7 (**important!**)
 * JDK8: Oracle jdk1.8 (**important!**)
 * Download and configure Anaconda
 * Create an python environment using the [environment file](environment.yml)
   ```powershell
   conda env create -f environment.yml
   ```
-  
-To run the tool please follow the steps below.
-
-FixMiner uses anaconda to create virtual environments. And it requires jdk 1.8
-
-Once anaconda is installed, please use the environment.yml to create the virtual environment, with following command:
-
-    conda env create -f environment.yml
-
-
-After creating the environment, activate it. It is containing necessary dependencies for redis, and python.
+* After creating the environment, activate it. It is containing necessary dependencies for redis, and python.
 
     source activate redisEnv
 
+<!---
 [fixminer.sh](python/fixminer.sh)
 
 Unzip it,to the datasetPath path indicated in app.properties.
@@ -45,6 +38,7 @@ Unzip it,to the datasetPath path indicated in app.properties.
 In order to launch FixMiner, execute [fixminer.sh](python/fixminer.sh)
 
     bash fixminer.sh /Users/..../enhancedASTDiff/python/ stats
+--->
     
 ## III. Replication Data
 Replication Data:
@@ -104,26 +98,53 @@ Usage
 
 In order to launch FixMiner, execute [fixminer.sh](python/fixminer.sh)
 
-    bash fixminer.sh /Users/..../enhancedASTDiff/python/ [OPTIONS]
+    bash fixminer.sh [PATH_TO_PYTHON_FOLDER] [OPTIONS]
+     e.g. bash fixminer.sh Users/fixminer-core/python/ stats
     
 #### Running Options 
 
 *FixMiner* needs to specify an option to run.
 
-    `clone` : Clone target project repository.
+    1. 'dataset': Create a mining dataset from the project speficied in  [subjects.csv](python/data/subjects.csv)
+    Eventually dataset option is the execution of the following steps, which are merged under 'dataset' option 
+    for this demo. Eventually single options can be activated by commenting out the corresponding option in [main.py](python/main.py)
 
-    `collect` : Collect all commit from repository.
+        `clone` : Clone target project repository.
+    
+        `collect` : Collect all commit from repository.
+    
+        `fix` : Collect commits linked to a bug report.
+    
+        `bugPoints` : Identify the snapshot of the repository before the bug fixing commit introducted.
+    
+        `brDownload` : Download bug reports recovered from commit log
+    
+        `brParser` : Parse bug reports to select the bug report where type labelled as BUG and status as RESOLVED or CLOSED
+        
+    2. 'richEditScript': Rich edit script computation step.    
+    
+    3. 'shapeSI': Search index creation for shapes. The output of this step is written to [pairs](python/data/pairs)
+    
+    4. 'compareShapes' : ShapeTree comparison
+    
+    5. 'cluster': Forms clusters of identical shapetree. The output of this step is written to [shapes](python/data/shapes)
+    
+    6. 'actionSI': Search index creation for actions. The output of this step is written to [pairs](python/data/pairsAction)
+    
+    7. 'compareActions' : ActionTree comparison
+    
+    8. 'clusterActions': Forms clusters of identical ActionTree. The output of this step is written to [shapes](python/data/actions)
+    
+    9. 'tokenSI': Search index creation for shapes. The output of this step is written to [pairs](python/data/pairsToken)
+    
+    10. 'compareTokens' : TokenTree comparison
+    
+    11. 'clusterTokens': Forms clusters of identical TokenTree. The output of this step is written to [shapes](python/data/tokens)
+    
+    12. 'stats' : Calculate some statistics about patterns under python/data/statsactions.csv,statsshapes.csv,statstokens.csv, and export FixPatterns of APR integration [fixpatterns](actionPattern2verify.csv)
 
-    `fix` : Collect commits linked to a bug report.
 
-    `bugPoints` : Identify the snapshot of the repository before the bug fixing commit introducted.
-
-    `brDownload` : Download bug reports recovered from commit log
-
-    `brParser` : Parse bug reports to select the bug report where type labelled as BUG and status as RESOLVED or CLOSED
-
-
-
+<!--
 App.properties:
 
 
@@ -198,11 +219,11 @@ It is necessary to run the FixMiner, following the order.
    
     The extension of the pairs files. When isBigPair is set to false(which is default), it needs to be set as .csv 
     When isBigPair mode is activated then the SIMI step executed for each chunk by stepping the chunk as 0.txt, 1,txt) 
-    
+
     
 ## V. Evaluation Result
 ## VI. Generated Patches
 ## VII. Structure of the project
-    
+--> 
     
 
