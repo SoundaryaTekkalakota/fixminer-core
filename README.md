@@ -89,7 +89,7 @@ Usage
 
 #### Before running
 
-* Update [config file](config.yml) with corresponding user paths.
+* Update [config file](python/config.yml) with corresponding user paths.
 
 * Active the conda environment from shell
   ```powershell
