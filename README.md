@@ -25,9 +25,9 @@ Fixminer is a systematic and automated approach to mine relevant and actionable 
   conda env create -f environment.yml
   ```
 * After creating the environment, activate it. It is containing necessary dependencies for redis, and python.
-
-    source activate redisEnv
-
+  ```powershell
+  source activate redisEnv
+  ```
 <!---
 [fixminer.sh](python/fixminer.sh)
 
@@ -93,7 +93,7 @@ Usage
 
 * Active the conda environment from shell
   ```powershell
-  source activate python36
+  source activate redisEnv
   ```
 
 In order to launch FixMiner, execute [fixminer.sh](python/fixminer.sh)
