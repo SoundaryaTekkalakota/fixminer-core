@@ -1,0 +1,9 @@
+0,wildfly_73cfed_66ea1e_clustering#jgroups#extension#src#main#java#org#jboss#as#clustering#jgroups#subsystem#ProtocolResourceDefinition.txt_0
+1,wildfly-elytron_cc8c8c_71445a_src#main#java#org#wildfly#security#ssl#SSLUtils.txt_3
+2,camel_e272e5_5f1a40_components#camel-mongodb#src#main#java#org#apache#camel#component#mongodb#MongoDbProducer.txt_0
+3,wildfly-elytron_49ca8a_656354_src#main#java#org#wildfly#security#auth#client#ElytronXmlParser.txt_0
+4,wildfly-core_162dd7_658a0f_elytron#src#main#java#org#wildfly#extension#elytron#SSLDefinitions.txt_1
+5,wildfly-core_f7d729_729142_elytron#src#main#java#org#wildfly#extension#elytron#AuthenticationFactoryDefinitions.txt_1
+6,camel_9c7192_d864b8_components#camel-bindy#src#main#java#org#apache#camel#dataformat#bindy#csv#BindyCsvDataFormat.txt_0
+7,camel_7e2db3_4f9448_components#camel-mongodb#src#main#java#org#apache#camel#component#mongodb#MongoDbProducer.txt_0
+8,wildfly-elytron_fb046c_57a888_src#main#java#org#wildfly#security#auth#client#ElytronXmlParser.txt_0

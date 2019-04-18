@@ -1,0 +1,13 @@
+0,hive_3972bf_443b10b_hcatalog#core#src#main#java#org#apache#hive#hcatalog#data#JsonSerDe.txt_5
+1,hive_2ccd06_17e95c_ql#src#java#org#apache#hadoop#hive#ql#parse#DDLSemanticAnalyzer.txt_0
+2,camel_1796ab_cd3515_camel-core#src#main#java#org#apache#camel#component#file#GenericFileConsumer.txt_1
+3,camel_66f0e9_c2d1bd_camel-core#src#main#java#org#apache#camel#component#file#GenericFileConsumer.txt_0
+4,camel_1dc122_821031_components#camel-mail#src#main#java#org#apache#camel#component#mail#MailConsumer.txt_0
+5,hbase_27a27a_1b5576_hbase-server#src#main#java#org#apache#hadoop#hbase#mapreduce#Import.txt_14
+6,spring-framework_b23c23_299b77_spring-jdbc#src#main#java#org#springframework#jdbc#datasource#embedded#AbstractEmbeddedDatabaseConfigurer.txt_1
+7,hive_ce9b0a_00bb58_ql#src#java#org#apache#hadoop#hive#ql#Driver.txt_2
+8,spring-framework_e4d865_e195c3_org.springframework.jdbc#src#main#java#org#springframework#jdbc#datasource#init#DataSourceInitializer.txt_1
+9,wildfly_1d0ae9_28b03e_server#src#main#java#org#jboss#as#server#deployment#integration#Seam2Processor.txt_0
+10,hbase_fbf165_da0f65_src#main#java#org#apache#hadoop#hbase#regionserver#wal#HLogSplitter.txt_2
+11,spring-amqp_42051d_39c373_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#connection#CachingConnectionFactory.txt_3
+12,camel_0ead2c_6742fb_camel-core#src#main#java#org#apache#camel#processor#idempotent#IdempotentConsumer.txt_3

@@ -1,0 +1,17 @@
+0,wildfly-swarm_f1ecda_2076d6_core#container#src#main#java#org#wildfly#swarm#Swarm.txt_1
+1,spring-framework_0a4a09_1bbe93_org.springframework.web#src#main#java#org#springframework#web#filter#ShallowEtagHeaderFilter.txt_2
+2,hive_5c3ed0_236a32_standalone-metastore#metastore-server#src#main#java#org#apache#hadoop#hive#metastore#txn#CompactionTxnHandler.txt_6
+3,hbase_8bffd4_9925e6d_hbase-rest#src#main#java#org#apache#hadoop#hbase#rest#RESTServer.txt_0
+4,hive_5c3ed0_236a32_standalone-metastore#metastore-server#src#main#java#org#apache#hadoop#hive#metastore#txn#CompactionTxnHandler.txt_7
+5,hive_5c3ed0_236a32_standalone-metastore#metastore-server#src#main#java#org#apache#hadoop#hive#metastore#txn#CompactionTxnHandler.txt_15
+6,hbase_83143b_0adc6e_src#main#java#org#apache#hadoop#hbase#client#HTable.txt_0
+7,hive_5c3ed0_236a32_standalone-metastore#metastore-server#src#main#java#org#apache#hadoop#hive#metastore#txn#CompactionTxnHandler.txt_14
+8,commons-compress_a41ce6_64ed6d_src#main#java#org#apache#commons#compress#archivers#zip#ZipArchiveInputStream.txt_0
+9,camel_799b45_76c3a4_camel-core#src#main#java#org#apache#camel#processor#loadbalancer#CircuitBreakerLoadBalancer.txt_0
+10,wildfly_0ad326_f8b52a_ejb3#src#main#java#org#jboss#as#ejb3#timerservice#persistence#filestore#FileTimerPersistence.txt_0
+11,wildfly-swarm_feb6a0_e0d1c1_src#main#java#org#wildfly#swarm#plugin#maven#StartMojo.txt_1
+12,hive_60a5ff_b19b69_metastore#src#java#org#apache#hadoop#hive#metastore#txn#TxnHandler.txt_10
+13,hbase_af8d40_8acd72_hbase-server#src#main#java#org#apache#hadoop#hbase#security#access#AccessController.txt_0
+14,commons-csv_9ebd0d_1299dd_src#main#java#org#apache#commons#csv#CSVLexer.txt_1
+15,camel_cf447a_a0415d_components#camel-jasypt#src#main#java#org#apache#camel#component#jasypt#Main.txt_2
+16,hbase_092c91_af725a_hbase-client#src#main#java#org#apache#hadoop#hbase#client#replication#ReplicationAdmin.txt_4

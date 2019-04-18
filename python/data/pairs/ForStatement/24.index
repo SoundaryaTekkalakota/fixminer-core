@@ -1,0 +1,12 @@
+0,spring-ws_4ffe9c_fa25ac_oxm#src#main#java#org#springframework#oxm#jibx#JibxMarshaller.txt_4
+1,hbase_fbdaf6_a8766f_hbase-common#src#main#java#org#apache#hadoop#hbase#util#Bytes.txt_3
+2,spring-security-oauth_11a214_19ed23_spring-security-oauth#src#main#java#org#springframework#security#oauth#consumer#client#CoreOAuthConsumerSupport.txt_0
+3,hive_dc3dfe_8b8d0e_ql#src#java#org#apache#hadoop#hive#ql#exec#UnionOperator.txt_13
+4,hbase_e83ac3_5bfc57_hbase-common#src#main#java#org#apache#hadoop#hbase#nio#MultiByteBuff.txt_2
+5,hive_06b604_868db4_ql#src#java#org#apache#hadoop#hive#ql#optimizer#correlation#ReduceSinkDeDuplication.txt_5
+6,spring-framework_81fde5_aa7f69_spring-core#src#main#java#org#springframework#core#MethodParameter.txt_0
+7,hive_3a3ffa_510679_ql#src#java#org#apache#hadoop#hive#ql#optimizer#calcite#rules#HiveJoinAddNotNullRule.txt_3
+8,hbase_fbdaf6_a8766f_hbase-common#src#main#java#org#apache#hadoop#hbase#util#Bytes.txt_4
+9,hive_076329_ab56f6_ql#src#java#org#apache#hadoop#hive#ql#optimizer#AbstractSMBJoinProc.txt_5
+10,hbase_e83ac3_5bfc57_hbase-common#src#main#java#org#apache#hadoop#hbase#nio#MultiByteBuff.txt_5
+11,hbase_5dbff1_5c5c60_hbase-server#src#main#java#org#apache#hadoop#hbase#ClusterStatus.txt_2

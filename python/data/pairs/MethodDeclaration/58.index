@@ -1,0 +1,11 @@
+0,spring-data-jpa_a9cfe7_0e6c4f_src#main#java#org#springframework#data#jpa#repository#query#QueryUtils.txt_9
+1,wildfly-core_a8cf7a_42c322_server#src#main#java#org#jboss#as#server#deployment#module#VFSResourceLoader.txt_8
+2,hbase_32abc3_e4e704_hbase-server#src#main#java#org#apache#hadoop#hbase#io#Reference.txt_3
+3,hive_ce6542_fd92d8_ql#src#java#org#apache#hadoop#hive#ql#optimizer#correlation#ReduceSinkDeDuplication.txt_0
+4,hive_c41b02_c4489f_cli#src#java#org#apache#hadoop#hive#cli#CliDriver.txt_3
+5,hbase_4a0904_318430_hbase-server#src#main#java#org#apache#hadoop#hbase#snapshot#ExportSnapshot.txt_4
+6,spring-security_eb0307_477dc3_core#src#main#java#org#acegisecurity#ui#ExceptionTranslationFilter.txt_2
+7,spring-security_14683dc_36c096_core#src#main#java#org#acegisecurity#captcha#CaptchaSecurityContextImpl.txt_0
+8,spring-data-jpa_4b7c41_8c1e4c_src#main#java#org#springframework#data#jpa#repository#query#QueryUtils.txt_3
+9,hive_fb152e_9670a2_metastore#src#java#org#apache#hadoop#hive#metastore#MetaStoreDirectSql.txt_3
+10,spring-framework_b25e91_59fcf5_spring-expression#src#main#java#org#springframework#expression#spel#support#ReflectivePropertyAccessor.txt_1

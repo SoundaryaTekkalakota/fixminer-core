@@ -1,0 +1,17 @@
+0,wildfly-swarm_1d7d2a_427149_meta#fraction-metadata#src#main#java#org#wildfly#swarm#fractions#FractionUsageAnalyzer.txt_0
+1,spring-data-jpa_f2bc6f_8a4c04_src#main#java#org#springframework#data#jpa#repository#cdi#JpaRepositoryExtension.txt_0
+2,wildfly-swarm_c23c64_4ae2ba_core#bootstrap#src#main#java#org#wildfly#swarm#bootstrap#env#ApplicationEnvironment.txt_0
+3,hive_3fc131_6be50b_ql#src#java#org#apache#hadoop#hive#ql#exec#Utilities.txt_2
+4,hive_628667_e28775_ql#src#java#org#apache#hadoop#hive#ql#exec#ExecDriver.txt_3
+5,hive_f52aa6_a1a0a9_ql#src#java#org#apache#hadoop#hive#ql#io#HiveInputFormat.txt_5
+6,hbase_5e91b4_81623a_hbase-server#src#main#java#org#apache#hadoop#hbase#util#RegionSplitter.txt_0
+7,wildfly-swarm_c572de_f9838c_plugin#src#main#java#org#wildfly#swarm#plugin#gradle#GradleArtifactResolvingHelper.txt_1
+8,hive_611770_ec965f_ql#src#java#org#apache#hadoop#hive#ql#exec#Utilities.txt_0
+9,hive_478cf5_401bea_serde#src#java#org#apache#hadoop#hive#serde2#avro#AvroDeserializer.txt_0
+10,hive_9f1f35_19d8ca_ql#src#java#org#apache#hadoop#hive#ql#udf#generic#GenericUDAFCumeDist.txt_0
+11,wildfly-core_5362c4_b8bde1_host-controller#src#main#java#org#jboss#as#domain#controller#operations#SyncServerStateOperationHandler.txt_2
+12,hive_f52aa6_a1a0a9_ql#src#java#org#apache#hadoop#hive#ql#io#HiveInputFormat.txt_1
+13,hive_fc970f_7f1c29_llap-tez#src#java#org#apache#hadoop#hive#llap#tezplugins#LlapTaskSchedulerService.txt_2
+14,hive_b576b6_edf24d_ql#src#java#org#apache#hadoop#hive#ql#optimizer#correlation#ReduceSinkDeDuplication.txt_0
+15,hive_5eed77_be4200_standalone-metastore#src#main#java#org#apache#hadoop#hive#metastore#HiveMetaStore.txt_9
+16,hive_628667_e28775_ql#src#java#org#apache#hadoop#hive#ql#exec#ExecDriver.txt_1

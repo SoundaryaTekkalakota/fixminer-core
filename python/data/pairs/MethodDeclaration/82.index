@@ -1,0 +1,14 @@
+0,hbase_62deb8_2bde7a_hbase-server#src#main#java#org#apache#hadoop#hbase#master#ServerManager.txt_5
+1,wildfly_580082_043d7d_jacorb#src#main#java#org#jboss#as#jacorb#rmi#WorkCacheManager.txt_18
+2,wildfly_1078962_8074fa_clustering#web#undertow#src#main#java#org#wildfly#clustering#web#undertow#sso#DistributableSingleSignOn.txt_13
+3,hbase_28d84e_d8d582_hbase-common#src#main#java#org#apache#hadoop#hbase#util#JVM.txt_4
+4,hive_d178b1_d9cb93_ql#src#java#org#apache#hadoop#hive#ql#parse#TezCompiler.txt_17
+5,hive_e08113_53cff8_ql#src#java#org#apache#hadoop#hive#ql#optimizer#ConvertJoinMapJoin.txt_0
+6,spring-security-oauth_dbde1a_e9b34f_spring-security-oauth2#src#main#java#org#springframework#security#oauth2#provider#endpoint#AuthorizationEndpoint.txt_4
+7,hbase_12eec5_077575_hbase-server#src#main#java#org#apache#hadoop#hbase#replication#master#TableCFsUpdater.txt_2
+8,spring-framework_e10e16_51d828_spring-context#src#main#java#org#springframework#context#annotation#ConfigurationClassParser.txt_12
+9,hbase_5cff07_60d7a8_src#main#java#org#apache#hadoop#hbase#mapreduce#TableSplit.txt_0
+10,commons-configuration_204ede_df3491_src#java#org#apache#commons#configuration#XMLConfiguration.txt_1
+11,hive_60d9f3_a50db1_ql#src#java#org#apache#hadoop#hive#ql#metadata#Hive.txt_3
+12,hive_2c7f9c_f44cae_ql#src#java#org#apache#hadoop#hive#ql#exec#SerializationUtilities.txt_10
+13,hbase_e5f6c6_a4c81c_src#java#org#apache#hadoop#hbase#client#HTable.txt_0

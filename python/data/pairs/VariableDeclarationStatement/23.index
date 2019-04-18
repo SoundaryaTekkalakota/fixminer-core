@@ -1,0 +1,12 @@
+0,hive_743902_97a61d_ql#src#java#org#apache#hadoop#hive#ql#exec#MapOperator.txt_3
+1,wildfly_10a9e7_e4507c_clustering#infinispan#extension#src#main#java#org#jboss#as#clustering#infinispan#subsystem#CacheContainerResourceDefinition.txt_0
+2,hive_58e07b_619ff6_ql#src#java#org#apache#hadoop#hive#ql#optimizer#SkewJoinOptimizer.txt_4
+3,wildfly_51a23a_622f35_server#src#main#java#org#jboss#as#server#deployment#module#VFSResourceLoader.txt_4
+4,wildfly_752602_10a9e7_clustering#jgroups#extension#src#main#java#org#jboss#as#clustering#jgroups#subsystem#JGroupsSubsystemResourceDefinition.txt_0
+5,hive_349445_b63ad9_service#src#java#org#apache#hive#service#cli#CLIService.txt_2
+6,hive_7f8263e_0e91e28_hbase-handler#src#java#org#apache#hadoop#hive#hbase#HiveHBaseTableInputFormat.txt_0
+7,hbase_1f62a4_96b2c0_hbase-server#src#main#java#org#apache#hadoop#hbase#mapreduce#ImportTsv.txt_0
+8,hive_898834_eef89a_ql#src#java#org#apache#hadoop#hive#ql#optimizer#calcite#HiveCalciteUtil.txt_0
+9,wildfly_e8ceeb_e88acc_legacy#web#src#main#java#org#jboss#as#web#WebMigrateOperation.txt_3
+10,hive_4f8de2_3ea0359_ql#src#java#org#apache#hadoop#hive#ql#hooks#ATSHook.txt_1
+11,hive_7e7d89_77f55d_ql#src#java#org#apache#hadoop#hive#ql#parse#TypeCheckProcFactory.txt_0

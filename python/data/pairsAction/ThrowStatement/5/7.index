@@ -1,0 +1,6 @@
+0,hive_0c7f2d_4a485b_service#src#java#org#apache#hive#service#auth#PamAuthenticationProviderImpl.txt_3
+1,hive_69cfd3_968620_metastore#src#java#org#apache#hadoop#hive#metastore#MetaStoreDirectSql.txt_1
+2,hive_8fe6e4_f0b0cc_ql#src#java#org#apache#hadoop#hive#ql#exec#tez#ReduceRecordSource.txt_1
+3,spring-framework_e2d914_0c9e3f_org.springframework.core#src#main#java#org#springframework#util#StringUtils.txt_1
+4,commons-io_e98143_15e185_src#main#java#org#apache#commons#io#FileUtils.txt_1
+5,spring-data-mongodb_6139e8_f33790_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#MongoTemplate.txt_2

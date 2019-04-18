@@ -1,0 +1,11 @@
+0,spring-roo_0372a0_561324_addon-dbre#src#main#java#org#springframework#roo#addon#dbre#DbreMetadata.txt_0
+1,hive_28779d_da13a1_ql#src#java#org#apache#hadoop#hive#ql#udf#generic#GenericUDFAddMonths.txt_16
+2,hive_e620d3_4e0be4_ql#src#java#org#apache#hadoop#hive#ql#parse#SemanticAnalyzer.txt_0
+3,hive_628667_e28775_ql#src#java#org#apache#hadoop#hive#ql#exec#ExecDriver.txt_2
+4,hive_628667_e28775_ql#src#java#org#apache#hadoop#hive#ql#exec#ExecDriver.txt_5
+5,spring-framework_769753_bd7a6f_spring-core#src#main#java#org#springframework#util#ResourceUtils.txt_0
+6,hive_7a24de_6558a6_ql#src#java#org#apache#hadoop#hive#ql#optimizer#calcite#rules#HiveRelFieldTrimmer.txt_0
+7,hive_510960_52290e_beeline#src#java#org#apache#hive#beeline#BeeLine.txt_0
+8,spring-data-redis_db7b07_92a434_src#main#java#org#springframework#data#redis#connection#lettuce#LettuceConnection.txt_12
+9,wildfly_98b9be_8d322b_mod_cluster#extension#src#main#java#org#wildfly#extension#mod_cluster#ModClusterConfigurationServiceBuilder.txt_0
+10,spring-data-redis_db7b07_92a434_src#main#java#org#springframework#data#redis#connection#lettuce#LettuceConnection.txt_14

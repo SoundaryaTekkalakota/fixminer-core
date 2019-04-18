@@ -1,0 +1,5 @@
+0,hbase_d86e7e_79eb3c_src#main#java#org#apache#hadoop#hbase#client#HConnectionManager.txt_1
+1,wildfly-core_3531b6_bd06dd_server#src#main#java#org#jboss#as#server#operations#ServerSuspendHandler.txt_2
+2,wildfly_77fd4d_985fcd_messaging-activemq#src#main#java#org#wildfly#extension#messaging#activemq#jms#JMSService.txt_1
+3,spring-batch_e8da2c_428a60_spring-batch-execution#src#main#java#org#springframework#batch#execution#step#ItemOrientedStep.txt_1
+4,camel_868a35_c59092_components#camel-netty#src#main#java#org#apache#camel#component#netty#NettyProducer.txt_1

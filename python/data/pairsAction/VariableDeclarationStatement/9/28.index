@@ -1,0 +1,11 @@
+0,wildfly-core_f6d91c_575a7e_cli#src#main#java#org#jboss#as#cli#operation#impl#DefaultOperationCandidatesProvider.txt_3
+1,camel_263b56_1b0f11_components#camel-yammer#src#main#java#org#apache#camel#component#yammer#ScribeApiRequestor.txt_2
+2,hive_b70cd7_cb398d1_ql#src#java#org#apache#hadoop#hive#ql#io#orc#OrcRecordUpdater.txt_0
+3,camel_2befea_cdc5d6_components#camel-mail#src#main#java#org#apache#camel#component#mail#MailBinding.txt_2
+4,spring-data-mongodb_d151a13_5e7e7d_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#MongoTemplate.txt_1
+5,spring-data-commons_954c74_d6ab8e_spring-data-commons-core#src#main#java#org#springframework#data#repository#core#support#DefaultRepositoryInformation.txt_2
+6,hive_4a0ccd_3633db_metastore#src#java#org#apache#hadoop#hive#metastore#MetaStoreDirectSql.txt_3
+7,camel_67b638_e21e5d_camel-core#src#main#java#org#apache#camel#converter#IOConverter.txt_3
+8,spring-framework_b30f6f_15c82a_spring-web#src#main#java#org#springframework#http#converter#protobuf#ProtobufHttpMessageConverter.txt_0
+9,hive_cdf7aa_4d3c81_hwi#src#java#org#apache#hadoop#hive#hwi#HWIServer.txt_2
+10,spring-security_ff95a3_3b8f7f_messaging#src#main#java#org#springframework#security#messaging#access#expression#DefaultMessageSecurityExpressionHandler.txt_2

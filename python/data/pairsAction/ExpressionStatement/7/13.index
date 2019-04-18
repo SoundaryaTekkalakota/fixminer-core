@@ -1,0 +1,14 @@
+0,hive_5f290a_3465c5_ql#src#java#org#apache#hadoop#hive#ql#optimizer#optiq#translator#ASTBuilder.txt_7
+1,hive_a178fb_fb0f1a_ql#src#java#org#apache#hadoop#hive#ql#exec#vector#VectorMapOperator.txt_2
+2,hbase_a8e101_0e4bbd_src#main#java#org#apache#hadoop#hbase#filter#FilterList.txt_2
+3,hive_de9aaf_ff98a3_ql#src#java#org#apache#hadoop#hive#ql#plan#JoinDesc.txt_0
+4,hbase_db0801_6b37f2_hbase-common#src#main#java#org#apache#hadoop#hbase#io#encoding#BufferedDataBlockEncoder.txt_0
+5,hbase_db0801_6b37f2_hbase-common#src#main#java#org#apache#hadoop#hbase#io#encoding#BufferedDataBlockEncoder.txt_1
+6,wildfly_e85960_b8d6e8_controller#src#main#java#org#jboss#as#controller#transform#description#AttributeTransformationRule.txt_1
+7,hive_d93f1b_0e99a8_ql#src#java#org#apache#hadoop#hive#ql#optimizer#optiq#translator#ASTBuilder.txt_3
+8,hive_fb5b09_cb42b0_common#src#java#org#apache#hadoop#hive#conf#HiveConf.txt_0
+9,hive_5f290a_3465c5_ql#src#java#org#apache#hadoop#hive#ql#optimizer#optiq#translator#ASTBuilder.txt_10
+10,hbase_c5277d_f29260_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#querymatcher#UserScanQueryMatcher.txt_0
+11,hive_a178fb_fb0f1a_ql#src#java#org#apache#hadoop#hive#ql#exec#vector#VectorMapOperator.txt_1
+12,commons-compress_f4044d_ec0f58_src#main#java#org#apache#commons#compress#archivers#tar#TarArchiveInputStream.txt_4
+13,camel_1dde32_e4503e_components#camel-ignite#src#main#java#org#apache#camel#component#ignite#AbstractIgniteComponent.txt_0

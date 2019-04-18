@@ -1,0 +1,8 @@
+0,spring-roo_394267_7d7b94_addon-roobot-client#src#main#java#org#springframework#roo#addon#roobot#client#AddOnRooBotOperationsImpl.txt_0
+1,hive_90f26b_d2a14f_common#src#java#org#apache#hadoop#hive#common#LogUtils.txt_2
+2,metadata_b656f8_2acb7d_common#src#main#java#org#jboss#metadata#annotation#creator#ws#WebServiceHandlerChainProcessor.txt_1
+3,spring-framework_1b31d3_bb4e68_spring-websocket#src#main#java#org#springframework#web#socket#server#standard#UndertowRequestUpgradeStrategy.txt_1
+4,camel_146b73_10ef0cb_camel-core#src#main#java#org#apache#camel#component#timer#TimerEndpoint.txt_1
+5,wildfly_ef0d754_46729a_messaging#src#main#java#org#jboss#as#messaging#deployment#JMSContextProducer.txt_4
+6,camel_ace79e_c3f871_components#camel-spring#src#main#java#org#apache#camel#spring#spi#TransactionErrorHandler.txt_1
+7,hbase_dfd8a3_eacf7b_hbase-client#src#main#java#org#apache#hadoop#hbase#client#HTableMultiplexer.txt_7

@@ -1,0 +1,8 @@
+0,camel_ae2f6a_bb0dbc_camel-core#src#main#java#org#apache#camel#processor#loadbalancer#RandomLoadBalancer.txt_1
+1,hbase_b92ff2_54d70e_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#HRegion.txt_6
+2,hbase_b92ff2_54d70e_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#HRegion.txt_4
+3,spring-framework_8c9383_ed952c_spring-core#src#main#java#org#springframework#core#BridgeMethodResolver.txt_0
+4,spring-framework_f98ea1_51f204_spring-web#src#main#java#org#springframework#web#util#patterns#PathPattern.txt_0
+5,spring-framework_b6e820_640444_org.springframework.core#src#main#java#org#springframework#core#convert#support#GenericConversionService.txt_10
+6,spring-framework_f98ea1_51f204_spring-web#src#main#java#org#springframework#web#util#patterns#PathPattern.txt_1
+7,hive_134294_19e6a8_ql#src#java#org#apache#hadoop#hive#ql#io#orc#encoded#EncodedReaderImpl.txt_0

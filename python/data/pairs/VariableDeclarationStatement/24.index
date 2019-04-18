@@ -1,0 +1,12 @@
+0,spring-security_3a01e4_9d213f_core#src#main#java#org#acegisecurity#ui#webapp#AuthenticationProcessingFilterEntryPoint.txt_6
+1,spring-data-commons_e73710_b5af2e_src#main#java#org#springframework#data#repository#core#support#ReactiveRepositoryInformation.txt_1
+2,hive_2e9503_783a35_llap-server#src#java#org#apache#hadoop#hive#llap#daemon#impl#LlapDaemon.txt_1
+3,spring-data-mongodb_f66971_5f3671_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#repository#query#StringBasedMongoQuery.txt_8
+4,spring-framework_209e7a_cff311_spring-beans#src#main#java#org#springframework#beans#factory#support#DefaultListableBeanFactory.txt_1
+5,hive_be1955_ba210c_hcatalog#streaming#src#java#org#apache#hive#hcatalog#streaming#HiveEndPoint.txt_2
+6,hive_4c1102_bbc39f_ql#src#java#org#apache#hadoop#hive#ql#exec#DDLTask.txt_6
+7,spring-data-mongodb_fb979b_b5c889_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#convert#QueryMapper.txt_6
+8,spring-framework_d08147_40cff5_spring-core#src#main#java#org#springframework#core#annotation#AnnotationUtils.txt_5
+9,wildfly_d116d9_2e367c_xts#src#main#java#org#jboss#as#xts#XTSSubsystemAdd.txt_1
+10,wildfly_98398b_c0c267_naming#src#main#java#org#jboss#as#naming#subsystem#NamingBindingResourceDefinition.txt_0
+11,hive_19a683_441b29_ql#src#java#org#apache#hadoop#hive#ql#metadata#HiveMetaStoreChecker.txt_1

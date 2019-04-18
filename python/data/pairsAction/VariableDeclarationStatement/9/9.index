@@ -1,0 +1,8 @@
+0,spring-roo_a00c4f_fe5ef0_addon-jsf#src#main#java#org#springframework#roo#addon#jsf#managedbean#JsfManagedBeanMetadata.txt_2
+1,spring-data-mongodb_b66bfa_eb3d55_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#convert#MappingMongoConverter.txt_0
+2,wildfly_b359d0_b077f3_iiop-openjdk#src#main#java#org#wildfly#iiop#openjdk#IIOPSubsystemAdd.txt_0
+3,spring-security_077af5_866615_ldap#src#main#java#org#springframework#security#ldap#SpringSecurityLdapTemplate.txt_3
+4,hive_513104_ef7c39_ql#src#java#org#apache#hadoop#hive#ql#parse#ParseUtils.txt_0
+5,spring-roo_8003f3_df7bbf_classpath-antlrjavaparser#src#main#java#org#springframework#roo#classpath#antlrjavaparser#JavaParserUtils.txt_1
+6,wildfly-core_66a70b_889340_cli#src#main#java#org#jboss#as#cli#gui#ConnectDialog.txt_3
+7,wildfly-swarm_10462e_1cbd38_core#container#src#main#java#org#wildfly#swarm#container#runtime#RuntimeDeployer.txt_0

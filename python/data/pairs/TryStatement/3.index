@@ -1,0 +1,10 @@
+0,hive_5ed90b_7c6cc5_ql#src#java#org#apache#hadoop#hive#ql#lockmgr#zookeeper#ZooKeeperHiveLockManager.txt_5
+1,spring-amqp_7ee9e5_0fc37e0_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#listener#BlockingQueueConsumer.txt_1
+2,hive_5340a6_fdb4ec_service#src#java#org#apache#hive#service#cli#thrift#ThriftCLIService.txt_12
+3,wildfly_1078962_8074fa_clustering#web#undertow#src#main#java#org#wildfly#clustering#web#undertow#sso#DistributableSingleSignOn.txt_7
+4,camel_b0fa04_010d5b_camel-core#src#main#java#org#apache#camel#processor#LoggingErrorHandler.txt_1
+5,hive_f3310a3_583550_metastore#src#java#org#apache#hadoop#hive#metastore#HiveAlterHandler.txt_11
+6,hbase_50f8579_261478_hbase-server#src#main#java#org#apache#hadoop#hbase#snapshot#ExportSnapshot.txt_18
+7,hive_5340a6_fdb4ec_service#src#java#org#apache#hive#service#cli#thrift#ThriftCLIService.txt_14
+8,hive_fd1816_25b459_service#src#java#org#apache#hive#service#cli#thrift#ThriftCLIService.txt_17
+9,hbase_797670_0ac18a_hbase-mapreduce#src#main#java#org#apache#hadoop#hbase#mapreduce#MultiTableInputFormatBase.txt_0

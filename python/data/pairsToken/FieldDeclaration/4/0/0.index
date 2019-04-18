@@ -1,0 +1,14 @@
+0,spring-data-mongodb_6fe3e6_3b7803_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#convert#QueryMapper.txt_13
+1,spring-data-mongodb_6fe3e6_3b7803_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#convert#QueryMapper.txt_12
+2,wildfly-core_cb1637_c987bc_elytron#src#main#java#org#wildfly#extension#elytron#AuditResourceDefinitions.txt_1
+3,hive_568164_513ee7_ql#src#java#org#apache#hadoop#hive#ql#util#HiveStrictManagedMigration.txt_4
+4,hive_dc3dfe_8b8d0e_ql#src#java#org#apache#hadoop#hive#ql#exec#UnionOperator.txt_6
+5,camel_1db4b0_ac39ad3_components#camel-cometd#src#main#java#org#apache#camel#component#cometd#CometdComponent.txt_1
+6,wildfly-elytron_13ecc1_d9f748_src#main#java#org#wildfly#security#auth#client#ElytronXmlParser.txt_10
+7,hive_bd313c_a38ae1_llap-server#src#java#org#apache#hadoop#hive#llap#shufflehandler#ShuffleHandler.txt_0
+8,hbase_eb906e_067388_hbase-server#src#main#java#org#apache#hadoop#hbase#replication#regionserver#RegionReplicaReplicationEndpoint.txt_2
+9,hive_139d8d_f5ec4b_ql#src#java#org#apache#hadoop#hive#ql#exec#tez#TezProcessor.txt_1
+10,hive_f10eb7_2b04c7_ql#src#java#org#apache#hadoop#hive#ql#udf#generic#GenericUDFLeadLag.txt_2
+11,hive_568164_513ee7_ql#src#java#org#apache#hadoop#hive#ql#util#HiveStrictManagedMigration.txt_77
+12,hive_9f70f7_fadece_ql#src#java#org#apache#hadoop#hive#ql#udf#generic#GenericUDFBridge.txt_0
+13,hive_d5e9f4_51b56e_shims#src#0.20#java#org#apache#hadoop#hive#shims#Hadoop20Shims.txt_1

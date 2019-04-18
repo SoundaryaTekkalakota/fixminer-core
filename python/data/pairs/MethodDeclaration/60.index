@@ -1,0 +1,12 @@
+0,hive_e9ca68_3a17d4_ql#src#java#org#apache#hadoop#hive#ql#parse#DDLSemanticAnalyzer.txt_0
+1,spring-batch_cbd12f_d6c792_spring-batch-core#src#main#java#org#springframework#batch#core#listener#CompositeSkipListener.txt_0
+2,wildfly-swarm_da22a9_8ed46b_fractions#microprofile#microprofile-jwt#src#main#java#org#wildfly#swarm#microprofile#jwtauth#runtime#MPJWTAuthExtensionArchivePreparer.txt_38
+3,spring-framework_d3d006_eab6e1_spring-webmvc#src#main#java#org#springframework#web#servlet#mvc#method#annotation#RequestMappingHandlerAdapter.txt_2
+4,wildfly_75f4fd_18b174f_jaxrs#src#main#java#org#jboss#as#jaxrs#deployment#JaxrsDependencyProcessor.txt_20
+5,hbase_d47242_38c814_hbase-server#src#main#java#org#apache#hadoop#hbase#io#hfile#bucket#BucketCache.txt_3
+6,hbase_7b045d1_f64d63_hbase-common#src#main#java#org#apache#hadoop#hbase#TableName.txt_0
+7,spring-data-commons_f44c23_db6239_src#main#java#org#springframework#data#repository#core#support#DefaultRepositoryInformation.txt_1
+8,hive_db4e52_d00b65_shims#common-secure#src#main#java#org#apache#hadoop#hive#thrift#HadoopThriftAuthBridge20S.txt_2
+9,spring-data-redis_825780_11f94b_src#main#java#org#springframework#data#redis#cache#RedisCacheManager.txt_20
+10,spring-data-mongodb_a44c1f_6b35ca_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#convert#QueryMapper.txt_7
+11,spring-webflow_7661cb_892c5b_spring-faces#src#main#java#org#springframework#faces#ui#AjaxViewRoot.txt_9

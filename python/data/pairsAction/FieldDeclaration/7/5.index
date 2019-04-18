@@ -1,0 +1,11 @@
+0,spring-data-redis_0ea0c4_d1aaa9_src#main#java#org#springframework#data#redis#cache#RedisCacheManager.txt_0
+1,hbase_657137_879ab1_src#main#java#org#apache#hadoop#hbase#regionserver#MemStore.txt_4
+2,hive_8c7f03_dcbdae_hcatalog#webhcat#java-client#src#main#java#org#apache#hive#hcatalog#api#HCatPartition.txt_0
+3,hbase_657137_879ab1_src#main#java#org#apache#hadoop#hbase#regionserver#MemStore.txt_5
+4,hive_26ec03_4b4440_ql#src#java#org#apache#hadoop#hive#ql#exec#CommonMergeJoinOperator.txt_0
+5,hbase_1e9d99_807736_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#SecureBulkLoadManager.txt_3
+6,spring-roo_d454ce_1ec9cb_addon-gwt#src#main#resources#org#springframework#roo#addon#gwt#module#client#scaffold#place#AbstractProxyListActivity-template.txt_0
+7,hive_360dfa_e5ba26_spark-client#src#main#java#org#apache#hive#spark#client#SparkClientImpl.txt_10
+8,hbase_0ecb67_a49bc5_hbase-client#src#main#java#org#apache#hadoop#hbase#client#ClientAsyncPrefetchScanner.txt_0
+9,hive_6433c3_5edbf3_serde#src#java#org#apache#hadoop#hive#serde2#objectinspector#ThriftUnionObjectInspector.txt_0
+10,wildfly_3815e4_249d53_host-controller#src#main#java#org#jboss#as#host#controller#DomainModelControllerService.txt_1

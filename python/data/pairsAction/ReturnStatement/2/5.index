@@ -1,0 +1,15 @@
+0,hive_35227e_2b59337_jdbc#src#java#org#apache#hive#jdbc#JdbcColumn.txt_4
+1,hive_10449a_2f6f6b_ql#src#java#org#apache#hadoop#hive#ql#optimizer#stats#annotation#StatsRulesProcFactory.txt_5
+2,hive_25e64a_916f41_ql#src#java#org#apache#hadoop#hive#ql#udf#generic#NumericHistogram.txt_4
+3,hive_d62de9_3d8d03_jdbc#src#java#org#apache#hive#jdbc#HiveStatement.txt_28
+4,hive_a75085_1806db_llap-server#src#java#org#apache#hadoop#hive#llap#cli#LlapServiceDriver.txt_9
+5,hbase_50f8579_261478_hbase-server#src#main#java#org#apache#hadoop#hbase#snapshot#ExportSnapshot.txt_59
+6,hive_a75085_1806db_llap-server#src#java#org#apache#hadoop#hive#llap#cli#LlapServiceDriver.txt_6
+7,hive_a75085_1806db_llap-server#src#java#org#apache#hadoop#hive#llap#cli#LlapServiceDriver.txt_12
+8,hive_a75085_1806db_llap-server#src#java#org#apache#hadoop#hive#llap#cli#LlapServiceDriver.txt_15
+9,hbase_5e7087_c16bbf_hbase-client#src#main#java#org#apache#hadoop#hbase#client#ScannerCallableWithReplicas.txt_15
+10,hive_35227e_2b59337_jdbc#src#java#org#apache#hive#jdbc#JdbcColumn.txt_8
+11,camel_f514c3_c59808_tooling#archetypes#camel-archetype-component#src#main#resources#archetype-resources#src#main#java#HelloWorldConsumer.txt_1
+12,hbase_45e46b_a30d9f_hbase-server#src#main#java#org#apache#hadoop#hbase#master#cleaner#CleanerChore.txt_1
+13,hive_a75085_1806db_llap-server#src#java#org#apache#hadoop#hive#llap#cli#LlapServiceDriver.txt_3
+14,hbase_50f8579_261478_hbase-server#src#main#java#org#apache#hadoop#hbase#snapshot#ExportSnapshot.txt_53

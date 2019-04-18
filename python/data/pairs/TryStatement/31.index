@@ -1,0 +1,9 @@
+0,hive_dfb868_fad539_shims#common#src#main#java#org#apache#hadoop#hive#thrift#TokenStoreDelegationTokenSecretManager.txt_2
+1,spring-security_150f3d_7f28a8_core#src#main#java#org#springframework#security#ldap#SpringSecurityLdapTemplate.txt_8
+2,hbase_c63fe3_4b8b1c_src#main#java#org#apache#hadoop#hbase#client#HBaseAdmin.txt_3
+3,hbase_628124_5af971_src#java#org#apache#hadoop#hbase#util#Migrate.txt_1
+4,spring-security_7313d5_324789_core#src#main#java#org#acegisecurity#ui#AccessDeniedHandlerImpl.txt_0
+5,hive_267633_84f4e3_service#src#java#org#apache#hive#service#cli#session#HiveSessionImpl.txt_0
+6,spring-framework_7118fc_8af015_spring-context#src#main#java#org#springframework#validation#beanvalidation#MethodValidationInterceptor.txt_4
+7,spring-data-mongodb_4c8bf0_cffc27_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#MongoTemplate.txt_1
+8,hive_1901e3_c71ef4_ql#src#java#org#apache#hadoop#hive#ql#Driver.txt_49

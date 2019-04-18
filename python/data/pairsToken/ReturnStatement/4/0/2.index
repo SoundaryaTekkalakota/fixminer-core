@@ -1,0 +1,7 @@
+0,commons-io_971917_632208_src#main#java#org#apache#commons#io#input#XmlStreamReader.txt_12
+1,camel_1d4a97_f7a5b0_components#camel-sql#src#main#java#org#apache#camel#processor#aggregate#jdbc#ClassLoadingAwareObjectInputStream.txt_2
+2,hive_21fbf5_566544_serde#src#java#org#apache#hadoop#hive#serde2#avro#AvroDeserializer.txt_0
+3,camel_0c4618_2c6924_components#camel-json-validator#src#main#java#org#apache#camel#component#jsonvalidator#JsonValidatorEndpoint.txt_8
+4,camel_0c4618_2c6924_components#camel-json-validator#src#main#java#org#apache#camel#component#jsonvalidator#JsonValidatorEndpoint.txt_9
+5,commons-io_971917_632208_src#main#java#org#apache#commons#io#input#XmlStreamReader.txt_16
+6,hbase_fec777_b4f884_hbase-server#src#main#java#org#apache#hadoop#hbase#security#access#SecureBulkLoadEndpoint.txt_3

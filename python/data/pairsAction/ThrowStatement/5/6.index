@@ -1,0 +1,7 @@
+0,hive_45add0_50cdde_llap-client#src#java#org#apache#hadoop#hive#llap#registry#impl#LlapZookeeperRegistryImpl.txt_6
+1,hbase_05ad4a_d048737_hbase-server#src#main#java#org#apache#hadoop#hbase#master#SplitLogManager.txt_1
+2,hive_bbbf12_0e2330_hbase-handler#src#java#org#apache#hadoop#hive#hbase#HiveHBaseTableInputFormat.txt_0
+3,hive_02b6cd_7276cd_hcatalog#core#src#main#java#org#apache#hive#hcatalog#mapreduce#TaskCommitContextRegistry.txt_1
+4,hive_d8705a_6dc362_metastore#src#java#org#apache#hadoop#hive#metastore#ObjectStore.txt_2
+5,hive_45add0_50cdde_llap-client#src#java#org#apache#hadoop#hive#llap#registry#impl#LlapZookeeperRegistryImpl.txt_10
+6,hive_02b6cd_7276cd_hcatalog#core#src#main#java#org#apache#hive#hcatalog#mapreduce#TaskCommitContextRegistry.txt_3

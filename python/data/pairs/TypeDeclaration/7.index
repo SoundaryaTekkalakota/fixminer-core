@@ -1,0 +1,9 @@
+0,hbase_1162cb_7acb06_hbase-server#src#main#java#org#apache#hadoop#hbase#mapreduce#Import.txt_4
+1,spring-data-rest_2b9c78_2ad00c_spring-data-rest-core#src#main#java#org#springframework#data#rest#core#event#AnnotatedEventHandlerInvoker.txt_1
+2,camel_0be3d9_d901b5_camel-core#src#main#java#org#apache#camel#impl#SupervisingRouteController.txt_62
+3,spring-data-jpa_fc0736_a71e51_src#main#java#org#springframework#data#jpa#repository#query#AbstractJpaQuery.txt_2
+4,wildfly_936d0b_3c5fd2_ee#src#main#java#org#jboss#as#ee#concurrent#ElytronManagedThreadFactory.txt_3
+5,spring-data-redis_faa78c_e1d2a7_src#main#java#org#springframework#data#redis#connection#lettuce#LettuceConnection.txt_0
+6,wildfly_9d6df9_2860f8_transactions#src#main#java#org#jboss#as#txn#subsystem#TransactionSubsystemRootResourceDefinition.txt_3
+7,hbase_2bae04f_2c8b81_hbase-client#src#main#java#org#apache#hadoop#hbase#filter#MultiRowRangeFilter.txt_19
+8,spring-data-commons_1bedfe_bdc61a_src#main#java#org#springframework#data#repository#support#DomainClassConverter.txt_6

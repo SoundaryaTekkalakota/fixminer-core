@@ -1,0 +1,6 @@
+0,spring-framework_38c439_60afa5_spring-core#src#main#java#org#springframework#core#convert#support#MapToMapConverter.txt_1
+1,spring-amqp_3940bf_bc5c92_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#support#PublisherCallbackChannelImpl.txt_6
+2,hive_24e740_ee9a5b_ql#src#java#org#apache#hadoop#hive#ql#optimizer#physical#NullScanTaskDispatcher.txt_2
+3,spring-batch_f12edb_46a912_spring-batch-core#src#main#java#org#springframework#batch#core#repository#dao#JdbcJobInstanceDao.txt_2
+4,hive_90bbf8_c25395_ql#src#java#org#apache#hadoop#hive#ql#optimizer#ColumnPrunerProcFactory.txt_1
+5,spring-data-rest_344c3a_684e0f_spring-data-rest-webmvc#src#main#java#org#springframework#data#rest#webmvc#BasePathAwareHandlerMapping.txt_1

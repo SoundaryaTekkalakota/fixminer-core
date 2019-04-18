@@ -1,0 +1,10 @@
+0,hive_69cfd3_968620_metastore#src#java#org#apache#hadoop#hive#metastore#MetaStoreDirectSql.txt_3
+1,hbase_c9dcc9_fc7a6a_hbase-server#src#main#java#org#apache#hadoop#hbase#master#DeadServer.txt_14
+2,hive_69cfd3_968620_metastore#src#java#org#apache#hadoop#hive#metastore#MetaStoreDirectSql.txt_2
+3,hbase_959784_f8528f_hbase-server#src#main#java#org#apache#hadoop#hbase#io#hfile#bucket#BucketAllocator.txt_10
+4,hbase_2ba4c4_eb82b8_hbase-server#src#main#java#org#apache#hadoop#hbase#TagRewriteCell.txt_0
+5,hive_c2999f_57a672_ql#src#java#org#apache#hadoop#hive#ql#parse#SemanticAnalyzer.txt_1
+6,wildfly-core_5362c4_b8bde1_host-controller#src#main#java#org#jboss#as#domain#controller#operations#SyncServerStateOperationHandler.txt_13
+7,hbase_d59d05_ebbdb5_src#main#java#org#apache#hadoop#hbase#client#MetaScanner.txt_1
+8,hive_9375cf_697922_ql#src#java#org#apache#hadoop#hive#ql#optimizer#calcite#rules#HiveRelDecorrelator.txt_1
+9,hive_3633db_0af1d6_ql#src#java#org#apache#hadoop#hive#ql#exec#ReduceSinkOperator.txt_1

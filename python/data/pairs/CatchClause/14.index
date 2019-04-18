@@ -1,0 +1,12 @@
+0,hbase_f14f3b_5abb38_src#main#java#org#apache#hadoop#hbase#master#AssignmentManager.txt_3
+1,spring-batch_9affda_cd03bc_spring-batch-core#src#main#java#org#springframework#batch#core#launch#support#CommandLineJobRunner.txt_0
+2,hbase_ad9ffa_376507_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#StoreScanner.txt_7
+3,hive_4b22fc_212939_ql#src#java#org#apache#hadoop#hive#ql#udf#xml#UDFXPathUtil.txt_5
+4,hive_959e77_b29046_standalone-metastore#src#main#java#org#apache#hadoop#hive#metastore#HiveMetaStore.txt_9
+5,hive_b0a58d_0cfd4f_ql#src#java#org#apache#hadoop#hive#ql#udf#xml#UDFXPathUtil.txt_7
+6,hive_959e77_b29046_standalone-metastore#src#main#java#org#apache#hadoop#hive#metastore#HiveMetaStore.txt_5
+7,spring-amqp_b338a0_999090_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#listener#adapter#AbstractAdaptableMessageListener.txt_0
+8,hbase_64740a_1ec190_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#HRegionServer.txt_0
+9,hbase_0da654_774326_hbase-server#src#main#java#org#apache#hadoop#hbase#util#HBaseFsck.txt_7
+10,commons-configuration_7d582e_cc2b10_src#java#org#apache#commons#configuration#PropertyConverter.txt_23
+11,hive_cb771b_1a7160_service#src#java#org#apache#hive#service#cli#operation#SQLOperation.txt_0

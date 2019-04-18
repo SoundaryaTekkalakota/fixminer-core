@@ -1,0 +1,14 @@
+0,hbase_129ce2_5824f1_hbase-server#src#main#java#org#apache#hadoop#hbase#util#HBaseFsck.txt_0
+1,hbase_33396c_79868b_hbase-server#src#main#java#org#apache#hadoop#hbase#replication#master#ReplicationHFileCleaner.txt_0
+2,hive_594927_16bee8_ql#src#java#org#apache#hadoop#hive#ql#io#parquet#MapredParquetInputFormat.txt_0
+3,spring-framework_c1f1cac_82651a_spring-context#src#main#java#org#springframework#context#annotation#ConfigurationClassEnhancer.txt_1
+4,spring-ws_a231bb_ec1599_core#src#main#java#org#springframework#ws#transport#http#CommonsHttpMessageSender.txt_0
+5,hbase_176571_b14528_hbase-server#src#main#java#org#apache#hadoop#hbase#tool#Canary.txt_31
+6,spring-roo_6ca920_972b8e_classpath#src#main#java#org#springframework#roo#classpath#TypeLocationServiceImpl.txt_0
+7,wildfly-elytron_272f66_26193d_src#main#java#org#wildfly#security#auth#realm#ldap#LdapSecurityRealm.txt_0
+8,wildfly_8b0a0f_76d96a_ejb3#src#main#java#org#jboss#as#ejb3#tx#LifecycleCMTTxInterceptor.txt_0
+9,spring-amqp_1661b1_329b05_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#connection#CachingConnectionFactory.txt_0
+10,hbase_176571_b14528_hbase-server#src#main#java#org#apache#hadoop#hbase#tool#Canary.txt_34
+11,camel_f1ead1_7f8a29_examples#camel-example-loan-broker#src#main#java#org#apache#camel#loanbroker#webservice#version#BankResponseAggregationStrategy.txt_0
+12,hbase_2d8e0a_e1d5c3_hbase-server#src#main#java#org#apache#hadoop#hbase#replication#master#ReplicationLogCleaner.txt_0
+13,wildfly-core_88a685_09aeed_controller#src#main#java#org#jboss#as#controller#operations#validation#ObjectTypeValidator.txt_0

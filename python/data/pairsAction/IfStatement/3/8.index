@@ -1,0 +1,12 @@
+0,hbase_da5fb2_cf3215d_hbase-server#src#main#java#org#apache#hadoop#hbase#snapshot#ExportSnapshot.txt_15
+1,hive_134294_19e6a8_ql#src#java#org#apache#hadoop#hive#ql#io#orc#encoded#EncodedReaderImpl.txt_1
+2,spring-security_8b5bbe_cf4072_core#src#main#java#org#springframework#security#wrapper#SavedRequestAwareWrapper.txt_3
+3,spring-framework_af83d2_ce0bce_spring-web#src#main#java#org#springframework#web#filter#HttpPutFormContentFilter.txt_4
+4,hive_8c8cc1_265e42_ql#src#java#org#apache#hadoop#hive#ql#session#SessionState.txt_0
+5,spring-data-commons_3811ce_8e35c4_src#main#java#org#springframework#data#repository#core#support#QueryExecutionResultHandler.txt_1
+6,hbase_dbafa1b_59f77d_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#querymatcher#NewVersionBehaviorTracker.txt_0
+7,hive_f0b76e_5ace1f_ql#src#java#org#apache#hadoop#hive#ql#optimizer#calcite#rules#HivePreFilteringRule.txt_5
+8,commons-compress_40f2e6_d39ba7_src#main#java#org#apache#commons#compress#archivers#tar#TarUtils.txt_3
+9,hbase_981200_a602aa_hbase-common#src#main#java#org#apache#hadoop#hbase#KeyValue.txt_3
+10,spring-data-redis_d248c0_1f4bb9_src#main#java#org#springframework#data#redis#core#convert#MappingRedisConverter.txt_0
+11,commons-io_870081_7c58d8_src#main#java#org#apache#commons#io#FileUtils.txt_4

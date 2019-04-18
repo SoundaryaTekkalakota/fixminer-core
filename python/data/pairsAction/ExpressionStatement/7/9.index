@@ -1,0 +1,12 @@
+0,spring-data-commons_013f97_55d988_src#main#java#org#springframework#data#util#AnnotationDetectionFieldCallback.txt_0
+1,wildfly_f30f67_95339a_undertow#src#main#java#org#wildfly#extension#undertow#SingleSignOnService.txt_4
+2,hbase_d88f53_4368ce_src#main#java#org#apache#hadoop#hbase#client#HBaseAdmin.txt_1
+3,hbase_d88f53_4368ce_src#main#java#org#apache#hadoop#hbase#client#HBaseAdmin.txt_0
+4,wildfly_4cec49_15ddcc_ejb3#src#main#java#org#jboss#as#ejb3#timerservice#schedule#CalendarBasedTimeout.txt_0
+5,spring-framework_17b9bd_ad2d59_spring-webmvc#src#main#java#org#springframework#web#servlet#config#annotation#WebMvcConfigurationSupport.txt_2
+6,spring-framework_2d8bac_e3681c_spring-webmvc#src#main#java#org#springframework#web#servlet#config#annotation#WebMvcConfigurationSupport.txt_0
+7,spring-amqp_efdc55_8d41b8_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#annotation#RabbitListenerAnnotationBeanPostProcessor.txt_0
+8,hbase_39042b_715e8b_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#MultiVersionConcurrencyControl.txt_6
+9,spring-framework_822380_8cfa3c_spring-core#src#main#java#org#springframework#core#io#buffer#NettyDataBuffer.txt_2
+10,hbase_83143b_0adc6e_src#main#java#org#apache#hadoop#hbase#client#HTable.txt_2
+11,spring-framework_5e19f2_5dc59a_org.springframework.core#src#main#java#org#springframework#core#io#ClassPathResource.txt_6

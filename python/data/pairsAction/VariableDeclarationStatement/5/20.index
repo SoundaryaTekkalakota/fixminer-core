@@ -1,0 +1,9 @@
+0,hive_ec7ccc_8cf36e_standalone-metastore#src#main#java#org#apache#hadoop#hive#metastore#ObjectStore.txt_17
+1,hive_58e07b_619ff6_ql#src#java#org#apache#hadoop#hive#ql#optimizer#SkewJoinOptimizer.txt_5
+2,hive_8df9f6_889a60_ql#src#java#org#apache#hadoop#hive#ql#plan#ConditionalResolverMergeFiles.txt_0
+3,spring-webflow_bd69bb_655d1e_spring-binding#src#main#java#org#springframework#binding#message#DefaultMessageContext.txt_7
+4,wildfly-core_293f75_4c5dd3_server#src#main#java#org#jboss#as#server#operations#ServerDomainProcessShutdownHandler.txt_3
+5,wildfly-core_293f75_4c5dd3_server#src#main#java#org#jboss#as#server#operations#ServerDomainProcessShutdownHandler.txt_2
+6,hive_175363_267b4e_ql#src#java#org#apache#hadoop#hive#ql#optimizer#physical#Vectorizer.txt_25
+7,spring-webflow_bd69bb_655d1e_spring-binding#src#main#java#org#springframework#binding#message#DefaultMessageContext.txt_4
+8,spring-data-mongodb_d25e84_df1775_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#convert#DefaultDbRefResolver.txt_4

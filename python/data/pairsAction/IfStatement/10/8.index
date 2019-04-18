@@ -1,0 +1,10 @@
+0,hive_b3a903_8eab6c_ql#src#java#org#apache#hadoop#hive#ql#parse#SemanticAnalyzer.txt_13
+1,hive_cc8ac9_2ca70b_serde#src#java#org#apache#hadoop#hive#serde2#objectinspector#ObjectInspectorFactory.txt_3
+2,hbase_a3a2ce_37f7a9_src#main#java#org#apache#hadoop#hbase#regionserver#StoreScanner.txt_1
+3,hive_6447f5_89080f_ql#src#java#org#apache#hadoop#hive#ql#udf#generic#GenericUDFStringToMap.txt_2
+4,hive_b3a903_8eab6c_ql#src#java#org#apache#hadoop#hive#ql#parse#SemanticAnalyzer.txt_6
+5,spring-data-jpa_7210a5_be0fca_src#main#java#org#springframework#data#jpa#repository#support#CrudMethodMetadataPostProcessor.txt_3
+6,camel_102e2d_5a9f43_camel-core#src#main#java#org#apache#camel#processor#aggregate#AggregateProcessor.txt_0
+7,wildfly_54cc31_b43ff9_controller#src#main#java#org#jboss#as#controller#audit#SyslogAuditLogHandler.txt_1
+8,hive_6447f5_89080f_ql#src#java#org#apache#hadoop#hive#ql#udf#generic#GenericUDFStringToMap.txt_1
+9,wildfly_6b732d_cbe259_ejb3#src#main#java#org#jboss#as#ejb3#deployment#processors#EJBDefaultSecurityDomainProcessor.txt_3

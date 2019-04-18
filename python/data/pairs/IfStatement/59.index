@@ -1,0 +1,7 @@
+0,wildfly-core_f1665d_183932_logging#src#main#java#org#jboss#as#logging#CustomFormatterResourceDefinition.txt_1
+1,hbase_f77ab8_a84c14_core#src#main#java#org#apache#hadoop#hbase#regionserver#wal#WALEdit.txt_8
+2,spring-framework_67d9b8_cc91ef_org.springframework.context.support#src#main#java#org#springframework#cache#ehcache#EhCacheManagerFactoryBean.txt_0
+3,camel_53e957_1796ab_components#camel-mybatis#src#main#java#org#apache#camel#component#mybatis#MyBatisProducer.txt_16
+4,camel_a7dfc4_028700_components#camel-kafka#src#main#java#org#apache#camel#component#kafka#KafkaProducer.txt_3
+5,camel_da0d88_df6a4f_components#camel-aws#src#main#java#org#apache#camel#component#aws#sqs#SqsConsumer.txt_2
+6,spring-data-gemfire_eebe7b_37d41a_src#main#java#org#springframework#data#gemfire#repository#support#GemfireRepositoryFactoryBean.txt_3

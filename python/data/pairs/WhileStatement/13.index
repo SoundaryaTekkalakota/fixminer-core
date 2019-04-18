@@ -1,0 +1,11 @@
+0,commons-configuration_5ea36c_a7e955_src#java#org#apache#commons#configuration#DatabaseConfiguration.txt_5
+1,spring-roo_79468d_80e8c6_addon-web-mvc-controller#src#main#java#org#springframework#roo#addon#web#mvc#controller#converter#ConversionServiceMetadata.txt_3
+2,hive_b948c5_cfa111_ql#src#java#org#apache#hadoop#hive#ql#metadata#Hive.txt_7
+3,hbase_281c29_199b39_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#KeyValueHeap.txt_1
+4,hive_a94f38_35d181_standalone-metastore#src#main#java#org#apache#hadoop#hive#metastore#ObjectStore.txt_3
+5,hbase_a2f676_882bd5_hbase-server#src#main#java#org#apache#hadoop#hbase#util#RegionMover.txt_4
+6,wildfly-swarm_dc7555_9967f9_fractions#wildfly#management-console#src#main#java#org#wildfly#swarm#management#console#runtime#ManagementConsoleDeploymentProducer.txt_3
+7,hbase_f83e25_155a64_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#HRegion.txt_2
+8,wildfly-elytron_6fceb3_dc8620_src#main#java#org#wildfly#security#ssl#MechanismDatabase.txt_1
+9,commons-configuration_7e4989_7091bf_src#java#org#apache#commons#configuration#CompositeConfiguration.txt_1
+10,hbase_ee540c_c253f8_hbase-server#src#main#java#org#apache#hadoop#hbase#replication#regionserver#ReplicationSource.txt_6

@@ -1,0 +1,11 @@
+0,commons-configuration_fc65d9_fdeda1_src#java#org#apache#commons#configuration#HierarchicalINIConfiguration.txt_6
+1,camel_e220844_9f3ced_camel-util#src#main#java#org#apache#camel#util#ObjectHelper.txt_8
+2,spring-framework_e14c2d_5d4547_spring-context#src#main#java#org#springframework#context#annotation#ConfigurationClassParser.txt_1
+3,spring-social-twitter_2d4573_4a0234_spring-social-twitter#src#main#java#org#springframework#social#twitter#api#impl#TwitterEscapingFormHttpMessageConverter.txt_0
+4,wildfly_f49702_680769_undertow#src#main#java#org#wildfly#extension#undertow#ListenerService.txt_1
+5,spring-framework_c8d6c1_27460e_org.springframework.aop#src#main#java#org#springframework#aop#aspectj#MethodInvocationProceedingJoinPoint.txt_10
+6,hbase_e40838_8a7a75_src#java#org#apache#hadoop#hbase#regionserver#HStore.txt_2
+7,hive_cc6102_c4f4bc_ql#src#java#org#apache#hadoop#hive#ql#io#CombineHiveInputFormat.txt_3
+8,hive_142426_913434_ql#src#java#org#apache#hadoop#hive#ql#exec#Utilities.txt_0
+9,wildfly-core_fcb203_dd944a_patching#src#main#java#org#jboss#as#patching#runner#IdentityPatchContext.txt_2
+10,spring-framework_213b52_90b5c3_org.springframework.core#src#main#java#org#springframework#core#type#classreading#AnnotationMetadataReadingVisitor.txt_5

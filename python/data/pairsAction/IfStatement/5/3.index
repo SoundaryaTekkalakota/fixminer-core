@@ -1,0 +1,13 @@
+0,hive_4c9986_3a5edc_ql#src#java#org#apache#hadoop#hive#ql#exec#tez#DagUtils.txt_3
+1,hbase_31823f_b741d8_src#java#org#apache#hadoop#hbase#zookeeper#ZooKeeperWrapper.txt_8
+2,hbase_31823f_b741d8_src#java#org#apache#hadoop#hbase#zookeeper#ZooKeeperWrapper.txt_9
+3,hbase_31823f_b741d8_src#java#org#apache#hadoop#hbase#zookeeper#ZooKeeperWrapper.txt_7
+4,hive_bbdba9_0d9343_ql#src#java#org#apache#hadoop#hive#ql#optimizer#physical#Vectorizer.txt_2
+5,hbase_31823f_b741d8_src#java#org#apache#hadoop#hbase#zookeeper#ZooKeeperWrapper.txt_10
+6,hive_cea954_936df7_ql#src#java#org#apache#hadoop#hive#ql#parse#SemanticAnalyzer.txt_0
+7,hbase_b5200e_fd5543_src#java#org#apache#hadoop#hbase#regionserver#HStore.txt_2
+8,spring-framework_15bbd5_213b52_org.springframework.core#src#main#java#org#springframework#core#BridgeMethodResolver.txt_9
+9,hbase_48b37d_d4e27a_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#Store.txt_0
+10,hive_59dc7e_be8632_metastore#src#java#org#apache#hadoop#hive#metastore#HiveMetaStore.txt_2
+11,hbase_9b0a00_c8529f_src#main#java#org#apache#hadoop#hbase#regionserver#MemStoreFlusher.txt_4
+12,hive_611770_ec965f_ql#src#java#org#apache#hadoop#hive#ql#exec#Utilities.txt_2

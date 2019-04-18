@@ -1,0 +1,11 @@
+0,hive_253199_751125_shims#common-secure#src#main#java#org#apache#hadoop#hive#shims#HadoopShimsSecure.txt_4
+1,spring-framework_701c5f_8c9383_spring-web#src#main#java#org#springframework#web#context#ContextLoader.txt_0
+2,spring-webflow_1d979b_1af29f_spring-faces#src#main#java#org#springframework#faces#webflow#FlowFacesContext.txt_0
+3,hive_0ea2f28_aa45b0_beeline#src#java#org#apache#hive#beeline#SeparatedValuesOutputFormat.txt_13
+4,hive_0cce1a_8f1839_shims#0.23#src#main#java#org#apache#hadoop#hive#shims#Hadoop23Shims.txt_1
+5,hive_25e64a_916f41_ql#src#java#org#apache#hadoop#hive#ql#udf#generic#NumericHistogram.txt_1
+6,spring-framework_72590d_7a55d9_spring-jms#src#main#java#org#springframework#jms#connection#CachingConnectionFactory.txt_0
+7,commons-configuration_dacd73_9cf06a_src#java#org#apache#commons#configuration#HierarchicalConfiguration.txt_3
+8,hive_f52aa6_a1a0a9_ql#src#java#org#apache#hadoop#hive#ql#io#HiveInputFormat.txt_9
+9,hive_70bb39_5acdc2_ql#src#java#org#apache#hadoop#hive#ql#exec#vector#VectorColumnAssignFactory.txt_2
+10,hive_3e06c4_e9b48d_ql#src#java#org#apache#hadoop#hive#ql#optimizer#physical#MetadataOnlyOptimizer.txt_3

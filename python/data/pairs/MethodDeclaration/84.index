@@ -1,0 +1,10 @@
+0,hbase_63ba21_0f27ee_src#main#java#org#apache#hadoop#hbase#regionserver#HRegion.txt_1
+1,hive_fc48d7_ba8a99_ql#src#java#org#apache#hadoop#hive#ql#exec#vector#expressions#VectorExpressionWriterFactory.txt_15
+2,wildfly-core_70958c_405855_controller#src#main#java#org#jboss#as#controller#ValidateModelStepHandler.txt_17
+3,wildfly-elytron_a853b4_4650b6_src#main#java#org#wildfly#security#auth#realm#ldap#LdapSecurityRealm.txt_5
+4,hbase_d8a1df_2f22f9_hbase-server#src#main#java#org#apache#hadoop#hbase#mapreduce#TableMapReduceUtil.txt_1
+5,spring-framework_c80914_d746e3_spring-websocket#src#main#java#org#springframework#web#socket#server#standard#UndertowRequestUpgradeStrategy.txt_5
+6,spring-amqp_272413_e0eaed_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#annotation#RabbitListenerAnnotationBeanPostProcessor.txt_11
+7,spring-framework_eb47a4_4c0edc_org.springframework.web#src#main#java#org#springframework#web#util#UriTemplate.txt_1
+8,hive_4271bb_dfc4b8_ql#src#java#org#apache#hadoop#hive#ql#exec#repl#ReplExternalTables.txt_0
+9,hbase_4d09116_d9f18c_hbase-server#src#main#java#org#apache#hadoop#hbase#util#HBaseFsck.txt_4

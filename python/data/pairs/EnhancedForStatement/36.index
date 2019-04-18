@@ -1,0 +1,5 @@
+0,camel_4fed68_f45ad9_components#camel-jetty#src#main#java#org#apache#camel#component#jetty#JettyHttpComponent.txt_1
+1,spring-data-mongodb_67cf0e_21fbcc_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#MongoTemplate.txt_1
+2,hbase_12a161_0fdf81_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#HRegion.txt_8
+3,spring-batch_2acb66_b19ea1_spring-batch-core#src#main#java#org#springframework#batch#core#step#item#FaultTolerantChunkOrientedTasklet.txt_2
+4,hive_24a9d9_8d7ddc_ql#src#java#org#apache#hadoop#hive#ql#optimizer#ppr#ExprProcFactory.txt_1

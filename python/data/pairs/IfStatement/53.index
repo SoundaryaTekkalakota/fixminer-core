@@ -1,0 +1,11 @@
+0,commons-configuration_7d582e_cc2b10_src#java#org#apache#commons#configuration#PropertyConverter.txt_9
+1,commons-configuration_7d582e_cc2b10_src#java#org#apache#commons#configuration#PropertyConverter.txt_1
+2,camel_7e3ca2_fc45a5_components#camel-spring#src#main#java#org#apache#camel#spring#handler#CamelNamespaceHandler.txt_3
+3,spring-framework_d4123d_439b77_org.springframework.context#src#main#java#org#springframework#scheduling#annotation#ScheduledAnnotationBeanPostProcessor.txt_2
+4,hive_76485d_a3e872_llap-client#src#java#org#apache#hadoop#hive#llap#ext#LlapTaskUmbilicalExternalClient.txt_6
+5,commons-configuration_7d582e_cc2b10_src#java#org#apache#commons#configuration#PropertyConverter.txt_14
+6,commons-configuration_7d582e_cc2b10_src#java#org#apache#commons#configuration#PropertyConverter.txt_5
+7,hive_b576b6_edf24d_ql#src#java#org#apache#hadoop#hive#ql#optimizer#correlation#ReduceSinkDeDuplication.txt_2
+8,hive_ba864a_0ebcd9_ql#src#java#org#apache#hadoop#hive#ql#exec#mr#MapredLocalTask.txt_4
+9,wildfly-core_76fec9_f51899_protocol#src#main#java#org#jboss#as#protocol#ProtocolConnectionUtils.txt_3
+10,wildfly-elytron_685ed6_20a1f2_src#main#java#org#wildfly#security#auth#realm#ldap#SimpleDirContextFactoryBuilder.txt_3

@@ -1,0 +1,13 @@
+0,spring-framework_e56c11_71a7b5_spring-context#src#main#java#org#springframework#context#support#AbstractApplicationContext.txt_0
+1,hbase_60cac4_629083_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#compactions#CompactionRequest.txt_1
+2,camel_86ba69_a8910d_components#camel-mail#src#main#java#org#apache#camel#component#mail#MailConfiguration.txt_8
+3,commons-collections_8f346f_9f0d58_src#main#java#org#apache#commons#collections4#map#DefaultedMap.txt_1
+4,spring-webflow_55a69b_c85b63_spring-webflow#src#main#java#org#springframework#webflow#expression#spel#ScopeSearchingPropertyAccessor.txt_0
+5,spring-framework_aa4ae7_496223_spring-messaging#src#main#java#org#springframework#messaging#simp#stomp#StompHeaderAccessor.txt_1
+6,spring-ldap_9e2fbb_334585_core#src#main#java#org#springframework#ldap#core#LdapTemplate.txt_0
+7,hive_0378ed_f2040d_serde#src#java#org#apache#hadoop#hive#serde2#objectinspector#ObjectInspectorConverters.txt_7
+8,hive_cccaa5_f895b2_ql#src#java#org#apache#hadoop#hive#ql#parse#WindowingSpec.txt_0
+9,wildfly-elytron_6b696a_e44c25_src#main#java#org#wildfly#security#util#ByteIterator.txt_2
+10,hive_cccaa5_f895b2_ql#src#java#org#apache#hadoop#hive#ql#parse#WindowingSpec.txt_1
+11,spring-framework_28a696_de504f_org.springframework.web#src#main#java#org#springframework#http#server#ServletServerHttpRequest.txt_0
+12,hbase_1e14da_374567_src#main#java#org#apache#hadoop#hbase#KeyValue.txt_0

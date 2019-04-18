@@ -1,0 +1,10 @@
+0,spring-framework_feeec3_51bb96_spring-web#src#main#java#org#springframework#web#filter#ForwardedHeaderFilter.txt_7
+1,hive_11efd9_f3787a_ql#src#java#org#apache#hadoop#hive#ql#hooks#ReadEntity.txt_1
+2,wildfly_249d53_f68fb1_controller#src#main#java#org#jboss#as#controller#SimpleOperationDefinitionBuilder.txt_9
+3,wildfly_249d53_f68fb1_controller#src#main#java#org#jboss#as#controller#SimpleOperationDefinitionBuilder.txt_7
+4,hbase_7bb6f3_94682d_src#main#java#org#apache#hadoop#hbase#regionserver#HRegionServer.txt_2
+5,spring-framework_766e60_782656_spring-jdbc#src#main#java#org#springframework#jdbc#core#metadata#OracleTableMetaDataProvider.txt_6
+6,spring-framework_2a5d76_f5aeb8_spring-aop#src#main#java#org#springframework#aop#framework#CglibAopProxy.txt_2
+7,spring-framework_11d987_7fa910_org.springframework.beans#src#main#java#org#springframework#beans#factory#support#DisposableBeanAdapter.txt_7
+8,hbase_3bb8da_f51979_hbase-server#src#main#java#org#apache#hadoop#hbase#master#assignment#SplitTableRegionProcedure.txt_2
+9,spring-framework_009824_3c8c99_spring-context-support#src#main#java#org#springframework#scheduling#quartz#SchedulerFactoryBean.txt_3

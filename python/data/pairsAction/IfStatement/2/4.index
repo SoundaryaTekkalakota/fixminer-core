@@ -1,0 +1,11 @@
+0,wildfly-core_c43a4e_459401_elytron#src#main#java#org#wildfly#extension#elytron#CredentialStoreResource.txt_11
+1,spring-framework_7a32ce_b6dd8a_spring-core#src#main#java#org#springframework#util#LinkedCaseInsensitiveMap.txt_3
+2,spring-framework_e4c84e_f5da73_spring-web#src#main#java#org#springframework#web#util#DefaultUriBuilderFactory.txt_0
+3,spring-data-rest_359513_06c2b7_spring-data-rest-webmvc#src#main#java#org#springframework#data#rest#webmvc#json#DomainObjectReader.txt_2
+4,spring-data-redis_d248c0_1f4bb9_src#main#java#org#springframework#data#redis#core#convert#MappingRedisConverter.txt_2
+5,spring-security_591123_fa6b44_core#src#main#java#org#acegisecurity#ui#logout#LogoutFilter.txt_0
+6,wildfly-core_c43a4e_459401_elytron#src#main#java#org#wildfly#extension#elytron#CredentialStoreResource.txt_15
+7,spring-framework_7a32ce_b6dd8a_spring-core#src#main#java#org#springframework#util#LinkedCaseInsensitiveMap.txt_1
+8,spring-data-commons_3811ce_8e35c4_src#main#java#org#springframework#data#repository#core#support#QueryExecutionResultHandler.txt_0
+9,spring-data-gemfire_53a1fc_60c5f1_src#main#java#org#springframework#data#gemfire#mapping#MappingPdxSerializer.txt_2
+10,hive_b9e36a_fa4af2_ql#src#java#org#apache#hadoop#hive#ql#io#orc#encoded#EncodedReaderImpl.txt_1

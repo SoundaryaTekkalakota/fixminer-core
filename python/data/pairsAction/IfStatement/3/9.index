@@ -1,0 +1,10 @@
+0,camel_27e92d_b2cd9f_components#camel-sql#src#main#java#org#apache#camel#component#sql#DefaultSqlPrepareStatementStrategy.txt_12
+1,hive_4daa41_11ad70_ql#src#java#org#apache#hadoop#hive#ql#parse#SemanticAnalyzer.txt_2
+2,wildfly_249d53_f68fb1_controller#src#main#java#org#jboss#as#controller#SimpleOperationDefinitionBuilder.txt_1
+3,hive_363439_9f86d1_ql#src#java#org#apache#hadoop#hive#ql#exec#Utilities.txt_18
+4,hive_969d96_6fb264e_ql#src#java#org#apache#hadoop#hive#ql#optimizer#SharedWorkOptimizer.txt_1
+5,hbase_c92737_cf81b4_hbase-server#src#main#java#org#apache#hadoop#hbase#security#visibility#VisibilityScanDeleteTracker.txt_2
+6,hive_6f72e7_004ae4_ql#src#java#org#apache#hadoop#hive#ql#ppd#OpProcFactory.txt_10
+7,spring-framework_d0f13b_4504ab_org.springframework.web.servlet#src#main#java#org#springframework#web#servlet#view#RedirectView.txt_1
+8,spring-security-oauth_11162d_77502b_spring-security-oauth2#src#main#java#org#springframework#security#oauth2#client#filter#OAuth2ClientContextFilter.txt_0
+9,commons-collections_b88692_89ebfe_src#main#java#org#apache#commons#collections#list#TreeList.txt_1

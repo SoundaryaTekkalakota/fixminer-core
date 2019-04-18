@@ -1,0 +1,9 @@
+0,wildfly-core_f91868_989051_controller#src#main#java#org#jboss#as#controller#CapabilityRegistry.txt_12
+1,camel_25e9ca6_69e033_components#camel-core-osgi#src#main#java#org#apache#camel#core#osgi#OsgiServiceRegistry.txt_7
+2,wildfly-elytron_fa3783_95944a_src#main#java#org#wildfly#security#sasl#SaslMechanismSelector.txt_0
+3,spring-security-oauth_f78136_ad93c4_spring-security-oauth2#src#main#java#org#springframework#security#oauth2#provider#endpoint#AuthorizationEndpoint.txt_4
+4,hbase_fa3cbd_a4d48b_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#compactions#Compactor.txt_7
+5,hbase_fa3cbd_a4d48b_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#compactions#Compactor.txt_8
+6,camel_25e9ca6_69e033_components#camel-core-osgi#src#main#java#org#apache#camel#core#osgi#OsgiServiceRegistry.txt_5
+7,wildfly-core_f91868_989051_controller#src#main#java#org#jboss#as#controller#CapabilityRegistry.txt_7
+8,hbase_5420b4_d5be58_hbase-server#src#main#java#org#apache#hadoop#hbase#security#access#AccessController.txt_4

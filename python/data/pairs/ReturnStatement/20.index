@@ -1,0 +1,14 @@
+0,spring-framework_fa138d_d40be6_spring-expression#src#main#java#org#springframework#expression#spel#support#ReflectionHelper.txt_4
+1,spring-framework_752832_fbd921_org.springframework.web.servlet#src#main#java#org#springframework#web#servlet#mvc#annotation#AnnotationMethodHandlerAdapter.txt_10
+2,wildfly_3d644f0_f22dfa_clustering#web#undertow#src#main#java#org#wildfly#clustering#web#undertow#session#SessionAdapter.txt_0
+3,spring-framework_d00e4f_b921d5_spring-core#src#main#java#org#springframework#core#io#ClassPathResource.txt_0
+4,camel_6d63a5_874824_camel-core#src#main#java#org#apache#camel#component#log#LogFormatter.txt_1
+5,spring-data-commons_a13fc2_4bd8a3_src#main#java#org#springframework#data#mapping#model#ClassGeneratingPropertyAccessorFactory.txt_0
+6,spring-data-mongodb_caa2f5_6e7c8f_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#mapreduce#MapReduceResults.txt_0
+7,spring-framework_93c70b_babbf6_spring-core#src#main#java#org#springframework#core#io#support#EncodedResource.txt_10
+8,spring-data-jpa_4ffe6d_318468_src#main#java#org#springframework#data#jpa#repository#support#Querydsl.txt_3
+9,spring-data-commons_4d2cc9_b72479_src#main#java#org#springframework#data#util#StreamUtils.txt_2
+10,commons-io_6bc05d_663372_src#java#org#apache#commons#io#EndianUtils.txt_1
+11,spring-framework_01bd8b_a10a8e_spring-web-reactive#src#main#java#org#springframework#web#reactive#result#method#annotation#ResponseEntityResultHandler.txt_0
+12,spring-webflow_df4db1_fbdff9_spring-faces#src#main#java#org#springframework#faces#webflow#FlowFacesContext.txt_29
+13,spring-framework_a989ea_729d0d_spring-web#src#main#java#org#springframework#http#codec#multipart#SynchronossPartHttpMessageReader.txt_13

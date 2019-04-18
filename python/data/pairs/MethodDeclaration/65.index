@@ -1,0 +1,10 @@
+0,hbase_a07ef8_3be068_hbase-server#src#main#java#org#apache#hadoop#hbase#util#HBaseFsck.txt_6
+1,spring-data-mongodb_d7ae95_8fbdf9_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#repository#query#ConvertingParameterAccessor.txt_5
+2,hive_38b172_9bb78508_ql#src#java#org#apache#hadoop#hive#ql#io#HiveInputFormat.txt_0
+3,hive_c67aee_a86050_ql#src#java#org#apache#hadoop#hive#ql#parse#DDLSemanticAnalyzer.txt_2
+4,wildfly_81dadc_b334b4_controller#src#main#java#org#jboss#as#controller#interfaces#SubnetMatchInterfaceCriteria.txt_2
+5,wildfly-core_27a48e_dbe1f5_controller#src#main#java#org#jboss#as#controller#ProxyStepHandler.txt_4
+6,hive_a10bd8_4ad4ce_ql#src#java#org#apache#hadoop#hive#ql#parse#spark#SplitOpTreeForDPP.txt_19
+7,camel_37d1f0_8e18c0_camel-core#src#main#java#org#apache#camel#processor#MulticastProcessor.txt_25
+8,spring-framework_4f4f3f_0444ab_org.springframework.web.servlet#src#main#java#org#springframework#web#servlet#mvc#annotation#AnnotationMethodHandlerAdapter.txt_7
+9,hbase_f697d2_487f741_hbase-server#src#main#java#org#apache#hadoop#hbase#snapshot#ExportSnapshot.txt_2

@@ -1,0 +1,17 @@
+0,wildfly_0a9d93_09f936_undertow#src#main#java#org#wildfly#extension#undertow#deployment#ServletResourceManager.txt_2
+1,hive_15220e_4588c6_ql#src#java#org#apache#hadoop#hive#ql#io#orc#OrcInputFormat.txt_4
+2,hive_8d0839_2a4f90_metastore#src#java#org#apache#hadoop#hive#metastore#HiveMetaStore.txt_11
+3,hive_8d0839_2a4f90_metastore#src#java#org#apache#hadoop#hive#metastore#HiveMetaStore.txt_20
+4,hbase_cfedd4_36c302_src#examples#thrift#DemoClient.txt_42
+5,hive_b043e5_ce19ef_ql#src#java#org#apache#hadoop#hive#ql#exec#mr#MapredLocalTask.txt_0
+6,hive_3fa7f0_e0c2b9_ql#src#java#org#apache#hadoop#hive#ql#exec#tez#DagUtils.txt_10
+7,hbase_2581eb_23cd5c_hbase-server#src#main#java#org#apache#hadoop#hbase#util#HBaseFsck.txt_21
+8,spring-data-redis_fb25e7_323f80_src#main#java#org#springframework#data#redis#connection#DefaultStringRedisConnection.txt_2
+9,hive_8d0839_2a4f90_metastore#src#java#org#apache#hadoop#hive#metastore#HiveMetaStore.txt_13
+10,hive_20baf4_f28036_ql#src#java#org#apache#hadoop#hive#ql#optimizer#stats#annotation#StatsRulesProcFactory.txt_6
+11,hive_8d0839_2a4f90_metastore#src#java#org#apache#hadoop#hive#metastore#HiveMetaStore.txt_5
+12,hbase_9fc785_3e4575_hbase-server#src#main#java#org#apache#hadoop#hbase#master#balancer#RegionLocationFinder.txt_5
+13,hive_a10bd8_4ad4ce_ql#src#java#org#apache#hadoop#hive#ql#parse#spark#SplitOpTreeForDPP.txt_14
+14,wildfly_0a9d93_09f936_undertow#src#main#java#org#wildfly#extension#undertow#deployment#ServletResourceManager.txt_4
+15,wildfly_b03fff_291176_undertow#src#main#java#org#wildfly#extension#undertow#ApplicationSecurityDomainDefinition.txt_5
+16,hive_010b5f_7a3169_metastore#src#java#org#apache#hadoop#hive#metastore#MetaStoreUtils.txt_0

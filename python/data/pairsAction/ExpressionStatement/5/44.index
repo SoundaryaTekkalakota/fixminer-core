@@ -1,0 +1,9 @@
+0,camel_2e8570_fa41e2_camel-core#src#main#java#org#apache#camel#impl#CompositeRegistry.txt_5
+1,spring-framework_1aa127_9be6dd_org.springframework.web.servlet#src#main#java#org#springframework#web#servlet#config#annotation#WebMvcConfigurationSupport.txt_4
+2,spring-data-mongodb_528de5_e6ea34_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#MongoTemplate.txt_6
+3,hive_9de527_1e9b20_ql#src#java#org#apache#hadoop#hive#ql#parse#DDLSemanticAnalyzer.txt_2
+4,hive_5acbde_47d160_hbase-handler#src#java#org#apache#hadoop#hive#hbase#HBaseStorageHandler.txt_1
+5,hbase_f8fc7b_37cf8a_src#java#org#apache#hadoop#hbase#regionserver#HRegionServer.txt_1
+6,hbase_bf9a5a_816225_src#java#org#apache#hadoop#hbase#thrift#ThriftUtilities.txt_1
+7,hive_eb6dc3_b69a44_ql#src#java#org#apache#hadoop#hive#ql#exec#Utilities.txt_5
+8,camel_f0180c_1a4bae_camel-core#src#main#java#org#apache#camel#util#FileUtil.txt_2

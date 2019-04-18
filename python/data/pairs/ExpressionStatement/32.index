@@ -1,0 +1,6 @@
+0,wildfly_a48632_42a207_server#src#main#java#org#jboss#as#server#BootstrapImpl.txt_7
+1,spring-data-commons_4fa84f_f75320_src#main#java#org#springframework#data#util#ClassTypeInformation.txt_0
+2,wildfly-core_7193a6_7c5a37_host-controller#src#main#java#org#jboss#as#domain#controller#operations#ServerGroupAddHandler.txt_0
+3,wildfly_ccddc5_0ee4f8_undertow#src#main#java#org#wildfly#extension#undertow#UndertowSubsystemParser_1_2.txt_0
+4,camel_08e906_3a1fff_components#camel-mail#src#main#java#org#apache#camel#component#mail#MailConsumer.txt_2
+5,hbase_535e0a_840e08_src#main#java#org#apache#hadoop#hbase#io#hfile#LruBlockCache.txt_0

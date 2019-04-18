@@ -1,0 +1,10 @@
+0,hive_5ed90b_7c6cc5_ql#src#java#org#apache#hadoop#hive#ql#lockmgr#zookeeper#ZooKeeperHiveLockManager.txt_7
+1,hive_bc6f12_318db5_serde#src#java#org#apache#hadoop#hive#serde2#lazy#fast#LazySimpleDeserializeRead.txt_0
+2,spring-framework_a74141_eb0b4f_org.springframework.transaction#src#main#java#org#springframework#transaction#support#TransactionTemplate.txt_1
+3,spring-amqp_8534c6_f93ec9_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#listener#SimpleMessageListenerContainer.txt_0
+4,hbase_71d3d2_395ec5_hbase-procedure#src#main#java#org#apache#hadoop#hbase#procedure2#store#wal#WALProcedureStore.txt_1
+5,spring-framework_bbf580_10a4c2_spring-context#src#main#java#org#springframework#context#annotation#ConfigurationClassParser.txt_13
+6,hbase_b2217d_024ae3_hbase-server#src#main#java#org#apache#hadoop#hbase#replication#regionserver#ReplicationSource.txt_1
+7,hive_be1955_ba210c_hcatalog#streaming#src#java#org#apache#hive#hcatalog#streaming#HiveEndPoint.txt_11
+8,hive_b09718_9bc1b3_metastore#src#java#org#apache#hadoop#hive#metastore#RetryingMetaStoreClient.txt_1
+9,hbase_4c514e_d6cca2_hbase-server#src#main#java#org#apache#hadoop#hbase#master#handler#EnableTableHandler.txt_3

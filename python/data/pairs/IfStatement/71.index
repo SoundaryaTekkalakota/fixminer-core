@@ -1,0 +1,7 @@
+0,wildfly-core_bd94fe_b020b8_cli#src#main#java#org#jboss#as#cli#CommandCompleter.txt_0
+1,hbase_2d1cfc_997c1a_hbase-client#src#main#java#org#apache#hadoop#hbase#client#HBaseAdmin.txt_8
+2,camel_25b0a2_6c7a2d_components#camel-jetty-common#src#main#java#org#apache#camel#component#jetty#JettyHttpComponent.txt_1
+3,spring-roo_354304_8e2e62_classpath#src#main#java#org#springframework#roo#classpath#details#AnnotationMetadataUtils.txt_2
+4,spring-roo_44256d_7684be_classpath-javaparser#src#main#java#org#springframework#roo#classpath#javaparser#JavaParserUtils.txt_0
+5,hive_5e939d_af6f80_metastore#src#java#org#apache#hadoop#hive#metastore#RetryingMetaStoreClient.txt_4
+6,camel_06c483_e6941b_components#camel-restlet#src#main#java#org#apache#camel#component#restlet#DefaultRestletBinding.txt_2

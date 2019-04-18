@@ -1,0 +1,11 @@
+0,hive_a9a7b5_2f8f45_ql#src#java#org#apache#hadoop#hive#ql#io#parquet#convert#HiveSchemaConverter.txt_0
+1,commons-compress_30c859_fa886a_src#main#java#org#apache#commons#compress#compressors#gzip#GzipCompressorInputStream.txt_8
+2,hbase_6f54a1_a34d44_hbase-server#src#main#java#org#apache#hadoop#hbase#thrift2#ThriftHBaseServiceHandler.txt_12
+3,hbase_6f54a1_a34d44_hbase-server#src#main#java#org#apache#hadoop#hbase#thrift2#ThriftHBaseServiceHandler.txt_6
+4,spring-framework_cfe7ff_4dc964_spring-core#src#main#java#org#springframework#util#MimeType.txt_1
+5,wildfly-core_cb1637_c987bc_elytron#src#main#java#org#wildfly#extension#elytron#AuditResourceDefinitions.txt_4
+6,hive_918fae_a84506_ql#src#java#org#apache#hadoop#hive#ql#metadata#Table.txt_1
+7,wildfly-core_cb1637_c987bc_elytron#src#main#java#org#wildfly#extension#elytron#AuditResourceDefinitions.txt_8
+8,spring-ws_fa25ac_ff90f5_core#src#main#java#org#springframework#ws#server#endpoint#mapping#AbstractMethodEndpointMapping.txt_1
+9,wildfly-core_cb1637_c987bc_elytron#src#main#java#org#wildfly#extension#elytron#AuditResourceDefinitions.txt_6
+10,commons-io_6bc05d_663372_src#java#org#apache#commons#io#EndianUtils.txt_3

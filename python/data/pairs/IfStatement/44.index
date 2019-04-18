@@ -1,0 +1,16 @@
+0,hbase_1e4992_6868c6_hbase-server#src#main#java#org#apache#hadoop#hbase#master#normalizer#SimpleRegionNormalizer.txt_17
+1,hive_8ea553_290f86_ql#src#java#org#apache#hadoop#hive#ql#exec#ScriptOperator.txt_0
+2,wildfly_97ec98_5887ba_connector#src#main#java#org#jboss#as#connector#subsystems#datasources#ConnectionPropertyRemove.txt_3
+3,camel_5c8b2e_c43f8e_components#camel-netty-http#src#main#java#org#apache#camel#component#netty#http#HttpClientPipelineFactory.txt_0
+4,hive_5eec33_914d83_ql#src#java#org#apache#hadoop#hive#ql#io#orc#WriterImpl.txt_0
+5,commons-csv_35d101_692a1e_src#main#java#org#apache#commons#csv#CSVFormat.txt_2
+6,spring-webflow_df4db1_fbdff9_spring-faces#src#main#java#org#springframework#faces#webflow#FlowFacesContext.txt_19
+7,camel_92a090_1f1fe58_components#camel-servicenow#camel-servicenow-component#src#main#java#org#apache#camel#component#servicenow#ServiceNowMetaDataExtension.txt_0
+8,wildfly-core_921f88_65fa0f_cli#src#main#java#org#jboss#as#cli#impl#CommandContextImpl.txt_5
+9,camel_37d1f0_8e18c0_camel-core#src#main#java#org#apache#camel#processor#MulticastProcessor.txt_5
+10,hive_603df2_30e8f8_serde#src#java#org#apache#hadoop#hive#serde2#thrift#TBinarySortableProtocol.txt_11
+11,hive_5252edb_8df448_ql#src#java#org#apache#hadoop#hive#ql#optimizer#GlobalLimitOptimizer.txt_1
+12,wildfly_04b2c9_6a97d9_clustering#infinispan#extension#src#main#java#org#jboss#as#clustering#infinispan#DefaultCacheContainer.txt_1
+13,hive_640fc5_8ff096_ql#src#java#org#apache#hadoop#hive#ql#exec#vector#VectorizationContext.txt_22
+14,hive_aa62da_5a0a15_hcatalog#webhcat#svr#src#main#java#org#apache#hive#hcatalog#templeton#tool#TempletonUtils.txt_6
+15,camel_d72b9a_f918aa_components#camel-http4#src#main#java#org#apache#camel#component#http4#HttpProducer.txt_0

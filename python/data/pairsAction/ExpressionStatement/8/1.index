@@ -1,0 +1,7 @@
+0,hive_20baf4_f28036_ql#src#java#org#apache#hadoop#hive#ql#optimizer#stats#annotation#StatsRulesProcFactory.txt_7
+1,wildfly-core_e36934_b4e715_cli#src#main#java#org#jboss#as#cli#handlers#DefaultFilenameTabCompleter.txt_2
+2,hbase_318814_713c6b_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#DefaultHeapMemoryTuner.txt_4
+3,commons-collections_edd64c_8f5e31_src#main#java#org#apache#commons#collections4#bag#AbstractMapBag.txt_4
+4,hive_1e97b1_b1fffd_ql#src#java#org#apache#hadoop#hive#ql#io#parquet#timestamp#NanoTimeUtils.txt_9
+5,hive_236a32_6b8ddb_ql#src#java#org#apache#hadoop#hive#ql#io#orc#encoded#EncodedReaderImpl.txt_3
+6,hive_4a7bc8_2fa4dc_llap-server#src#java#org#apache#hadoop#hive#llap#io#encoded#OrcEncodedDataReader.txt_2

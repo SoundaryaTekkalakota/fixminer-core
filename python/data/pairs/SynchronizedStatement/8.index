@@ -1,0 +1,6 @@
+0,spring-amqp_7bbe11_0db905_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#log4j2#AmqpAppender.txt_12
+1,hbase_003a05_997c8f_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#wal#FSHLog.txt_1
+2,spring-framework_e5d4ff_f7b0a2_org.springframework.context#src#main#java#org#springframework#context#event#AbstractApplicationEventMulticaster.txt_5
+3,spring-roo_02a22d_46b258_process-manager#src#main#java#org#springframework#roo#process#manager#ProcessManagerHostedExecutionStrategy.txt_5
+4,spring-batch_9b5e7a_dc1a5f_spring-batch-core#src#main#java#org#springframework#batch#core#repository#dao#JdbcExecutionContextDao.txt_0
+5,spring-ws_6cc8b2_97746d_core#src#main#java#org#springframework#ws#wsdl#wsdl11#Wsdl4jDefinition.txt_7

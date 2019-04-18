@@ -1,0 +1,11 @@
+0,wildfly_a1316c_0bad83_transactions#src#main#java#org#jboss#as#txn#subsystem#TransactionSubsystemRootResourceDefinition.txt_0
+1,spring-framework_d507c2_450a3d_org.springframework.web.servlet#src#main#java#org#springframework#web#servlet#FrameworkServlet.txt_0
+2,wildfly_b29fac_c164c2_security#subsystem#src#main#java#org#jboss#as#security#service#SecurityBootstrapService.txt_0
+3,hive_d672c1_ba9ade_hcatalog#webhcat#svr#src#main#java#org#apache#hcatalog#templeton#tool#TempletonControllerJob.txt_7
+4,hbase_5b42d8_c90a4e_hbase-server#src#main#java#org#apache#hadoop#hbase#security#access#ZKPermissionWatcher.txt_2
+5,spring-data-mongodb_fb979b_b5c889_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#convert#QueryMapper.txt_9
+6,spring-data-rest_c8abdf_5f3305_spring-data-rest-webmvc#src#main#java#org#springframework#data#rest#webmvc#support#RepositoryConstraintViolationExceptionMessage.txt_2
+7,spring-data-mongodb_fb979b_b5c889_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#convert#QueryMapper.txt_11
+8,spring-framework_0c47a0_7a700e_org.springframework.web.servlet#src#main#java#org#springframework#web#servlet#view#ContentNegotiatingViewResolver.txt_1
+9,hbase_5b42d8_c90a4e_hbase-server#src#main#java#org#apache#hadoop#hbase#security#access#ZKPermissionWatcher.txt_1
+10,hbase_5b42d8_c90a4e_hbase-server#src#main#java#org#apache#hadoop#hbase#security#access#ZKPermissionWatcher.txt_0

@@ -1,0 +1,7 @@
+0,hbase_9039e7_a9482a_src#contrib#stargate#src#java#org#apache#hadoop#hbase#stargate#RowResource.txt_1
+1,spring-batch_052f25_195612_spring-batch-core#src#main#java#org#springframework#batch#core#scope#util#PlaceholderTargetSource.txt_0
+2,camel_431c31_b710a0_components#camel-milo#src#main#java#org#apache#camel#component#milo#client#internal#SubscriptionManager.txt_1
+3,wildfly-elytron_ca1fa2_f96a4f_src#main#java#org#wildfly#security#auth#client#AuthenticationConfiguration.txt_3
+4,wildfly_e4fa34_987e74_undertow#src#main#java#org#wildfly#extension#undertow#deployment#TldParsingDeploymentProcessor.txt_5
+5,spring-framework_1f990c_406171_spring-websocket#src#main#java#org#springframework#web#socket#adapter#jetty#JettyWebSocketHandlerAdapter.txt_1
+6,hbase_9c09efc_0992a7_hbase-rest#src#main#java#org#apache#hadoop#hbase#rest#MultiRowResource.txt_0

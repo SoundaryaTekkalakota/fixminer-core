@@ -1,0 +1,10 @@
+0,camel_827455_0f8a6e_camel-core#src#main#java#org#apache#camel#component#bean#BeanConverter.txt_0
+1,hive_f45b23_93334d_ql#src#java#org#apache#hadoop#hive#ql#exec#ExecDriver.txt_0
+2,camel_6092c9_fc23a5_components#camel-printer#src#main#java#org#apache#camel#component#printer#PrinterProducer.txt_0
+3,spring-framework_531003_0f0677_org.springframework.web.servlet#src#main#java#org#springframework#web#servlet#mvc#annotation#AnnotationMethodHandlerAdapter.txt_0
+4,hbase_583c11_e31367_hbase-client#src#main#java#org#apache#hadoop#hbase#ipc#RpcClient.txt_0
+5,hive_9cfc15_598dcf_ql#src#java#org#apache#hadoop#hive#ql#parse#ImportSemanticAnalyzer.txt_1
+6,hive_335474_92f9d8_serde#src#java#org#apache#hadoop#hive#serde2#lazy#fast#LazySimpleSerializeWrite.txt_0
+7,hive_83d1fd_9f2e8e_ql#src#java#org#apache#hadoop#hive#ql#optimizer#calcite#RelOptHiveTable.txt_0
+8,camel_e0c53c_161fff_camel-core#src#main#java#org#apache#camel#impl#osgi#Activator.txt_0
+9,spring-framework_f65795_939461_spring-context#src#main#java#org#springframework#context#event#EventListenerMethodProcessor.txt_2

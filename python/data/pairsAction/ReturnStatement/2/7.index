@@ -1,0 +1,6 @@
+0,spring-security_5082a0_9133c3_config#src#main#java#org#springframework#security#config#annotation#web#configurers#LogoutConfigurer.txt_5
+1,spring-data-rest_88c97a_3ce107_spring-data-rest-webmvc#src#main#java#org#springframework#data#rest#webmvc#json#PersistentEntityJackson2Module.txt_7
+2,wildfly_b03fff_291176_undertow#src#main#java#org#wildfly#extension#undertow#ApplicationSecurityDomainDefinition.txt_1
+3,spring-data-mongodb_e5a41a_dd7d25_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#DefaultBulkOperations.txt_6
+4,wildfly-swarm_5b65df_52eba9_fractions#teiid#src#main#java#org#wildfly#swarm#teiid#TeiidFraction.txt_1
+5,spring-data-rest_6709d1_959ddf_spring-data-rest-webmvc#src#main#java#org#springframework#data#rest#webmvc#json#PersistentEntityJackson2Module.txt_5

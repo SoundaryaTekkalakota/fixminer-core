@@ -1,0 +1,9 @@
+0,hive_5cfb9fe6_90f295_ql#src#java#org#apache#hadoop#hive#ql#exec#ExecDriver.txt_8
+1,hive_717ef1_58bbfc_hbase-handler#src#java#org#apache#hadoop#hive#hbase#HiveHFileOutputFormat.txt_1
+2,hbase_e5d76ad_22c70b_src#main#java#org#apache#hadoop#hbase#util#FSUtils.txt_5
+3,hive_653b85_e841ed_orc#src#java#org#apache#orc#impl#TreeReaderFactory.txt_0
+4,spring-amqp_9d6754_d5a230_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#core#RabbitTemplate.txt_0
+5,camel_9c1ee7_cdb628_camel-core#src#main#java#org#apache#camel#processor#TryProcessor.txt_0
+6,hbase_be496b_3a1e43_hbase-client#src#main#java#org#apache#hadoop#hbase#client#ConnectionImplementation.txt_3
+7,wildfly_e713a3_04ef9e_undertow#src#main#java#org#wildfly#extension#undertow#security#jaspi#JASPIAuthenticationMechanism.txt_2
+8,hive_1cb02b_94e9d8_serde#src#java#org#apache#hadoop#hive#serde2#dynamic_type#DynamicSerDeFieldList.txt_4

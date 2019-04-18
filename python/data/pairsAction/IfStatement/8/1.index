@@ -1,0 +1,12 @@
+0,camel_a2a701d_b42e22_camel-core#src#main#java#org#apache#camel#util#ObjectHelper.txt_0
+1,spring-framework_b07b14_cfbc52_org.springframework.aop#src#main#java#org#springframework#aop#framework#autoproxy#AutoProxyUtils.txt_0
+2,hbase_02f6104_7d8d42_src#main#java#org#apache#hadoop#hbase#util#FSTableDescriptors.txt_0
+3,spring-framework_9cecaa_8c8eca_org.springframework.web.servlet#src#main#java#org#springframework#web#servlet#view#xml#MarshallingView.txt_0
+4,wildfly-elytron_6d5111_d83d5e_src#main#java#org#wildfly#security#auth#realm#jdbc#JdbcSecurityRealm.txt_0
+5,spring-roo_e9fb2d_ef823f_classpath#src#main#java#org#springframework#roo#classpath#details#AnnotationMetadataUtils.txt_0
+6,spring-framework_05fe679_855eac_org.springframework.beans#src#main#java#org#springframework#beans#factory#xml#BeanDefinitionParserDelegate.txt_0
+7,hbase_6c1097_c9f8c3_hbase-server#src#main#java#org#apache#hadoop#hbase#master#snapshot#SnapshotHFileCleaner.txt_0
+8,spring-webflow_89335e_ede6e7_spring-faces#src#main#java#org#springframework#faces#ui#ProgressiveCommandButton.txt_0
+9,hive_97b475_8ed337_service#src#java#org#apache#hive#service#server#HiveServer2.txt_0
+10,wildfly_8a4bf6_3b0ada_ejb3#src#main#java#org#jboss#as#ejb3#suspend#EJBSuspendHandlerService.txt_0
+11,camel_9b74d5_2b4413_components#camel-olingo4#camel-olingo4-api#src#main#java#org#apache#camel#component#olingo4#api#impl#AbstractFutureCallback.txt_0

@@ -1,0 +1,10 @@
+0,wildfly_a4f081_da1e71_clustering#ee#infinispan#src#main#java#org#wildfly#clustering#ee#infinispan#InfinispanBatcher.txt_0
+1,hbase_6ebd8e_3c4645_hbase-server#src#main#java#org#apache#hadoop#hbase#coprocessor#BaseRegionObserver.txt_2
+2,spring-security_32b800_3b775d_core#src#main#java#org#springframework#security#wrapper#SavedRequestAwareWrapper.txt_17
+3,spring-security_c8c37c_b690c3_core#src#main#java#org#acegisecurity#afterinvocation#AclEntryAfterInvocationProvider.txt_0
+4,hbase_6ebd8e_3c4645_hbase-server#src#main#java#org#apache#hadoop#hbase#coprocessor#BaseRegionObserver.txt_1
+5,hbase_6ebd8e_3c4645_hbase-server#src#main#java#org#apache#hadoop#hbase#coprocessor#BaseRegionObserver.txt_0
+6,hive_8ab7ca_2e76fb_service#src#java#org#apache#hive#service#cli#operation#SQLOperation.txt_0
+7,spring-framework_8b5d35_6157fa_spring-beans#src#main#java#org#springframework#beans#factory#support#AbstractAutowireCapableBeanFactory.txt_3
+8,wildfly-elytron_92387c_30885b_src#main#java#org#wildfly#security#sasl#util#SaslMechanismInformation.txt_7
+9,hbase_57f859_3108c9_hbase-client#src#main#java#org#apache#hadoop#hbase#zookeeper#ZKUtil.txt_2

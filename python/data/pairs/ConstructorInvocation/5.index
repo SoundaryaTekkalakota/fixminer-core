@@ -1,0 +1,9 @@
+0,spring-roo_0b7ac8_804cf9_project#src#main#java#org#springframework#roo#project#Dependency.txt_0
+1,commons-io_8d0d2d_aef6e9_src#main#java#org#apache#commons#io#filefilter#WildcardFileFilter.txt_2
+2,spring-framework_465e09_157623_org.springframework.web#src#main#java#org#springframework#http#MediaType.txt_0
+3,hbase_ae7685_eed3a4_hbase-common#src#main#java#org#apache#hadoop#hbase#io#ImmutableBytesWritable.txt_0
+4,camel_693f7c_e34cbb_camel-core#src#main#java#org#apache#camel#processor#MulticastProcessor.txt_0
+5,wildfly_baa870_bfcd6f_clustering#common#src#main#java#org#jboss#as#clustering#msc#AsynchronousService.txt_3
+6,commons-io_8d0d2d_aef6e9_src#main#java#org#apache#commons#io#filefilter#WildcardFileFilter.txt_0
+7,spring-data-mongodb_d4b3e2_68a31d_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#SimpleMongoDbFactory.txt_0
+8,commons-io_8d0d2d_aef6e9_src#main#java#org#apache#commons#io#filefilter#WildcardFileFilter.txt_1

@@ -1,0 +1,15 @@
+0,spring-amqp_0e8201_f3cedf_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#log4j#AmqpAppender.txt_3
+1,hive_885cdc_ac6735_ql#src#java#org#apache#hadoop#hive#ql#exec#DDLTask.txt_10
+2,hive_885cdc_ac6735_ql#src#java#org#apache#hadoop#hive#ql#exec#DDLTask.txt_13
+3,wildfly-swarm_e97f66_f119b0_fractions#microprofile#microprofile-jwt#src#main#java#org#wildfly#swarm#microprofile#jwtauth#deployment#principal#JWTCallerPrincipalFactory.txt_2
+4,spring-roo_f1f18b_a684c9_addon-dbre#src#main#java#org#springframework#roo#addon#dbre#DbreMetadata.txt_4
+5,spring-security_f76bf9_885841_config#src#main#java#org#springframework#security#config#annotation#AbstractConfiguredSecurityBuilder.txt_3
+6,spring-framework_71df72d6_4f40a6_org.springframework.orm#src#main#java#org#springframework#orm#hibernate3#annotation#AnnotationSessionFactoryBean.txt_1
+7,hive_7d3338_15e258_ql#src#java#org#apache#hadoop#hive#ql#optimizer#spark#SparkMapJoinOptimizer.txt_2
+8,spring-data-gemfire_be8d6b_0d84ef_src#main#java#org#springframework#data#gemfire#repository#support#SimpleGemfireRepository.txt_2
+9,hbase_573882_fcfefd_hbase-server#src#main#java#org#apache#hadoop#hbase#tool#Canary.txt_21
+10,wildfly_8d4f7f_98b37b_arquillian#common-domain#src#main#java#org#jboss#as#arquillian#container#domain#ManagementClient.txt_1
+11,wildfly-swarm_059b15_934d8f_arquillian#api#src#main#java#org#wildfly#swarm#arquillian#adapter#FailureReportingTransferListener.txt_4
+12,spring-roo_f1f18b_a684c9_addon-dbre#src#main#java#org#springframework#roo#addon#dbre#DbreMetadata.txt_5
+13,spring-framework_71df72d6_4f40a6_org.springframework.orm#src#main#java#org#springframework#orm#hibernate3#annotation#AnnotationSessionFactoryBean.txt_3
+14,commons-collections_cae889_13c8e4_src#main#java#org#apache#commons#collections#CollectionUtils.txt_4

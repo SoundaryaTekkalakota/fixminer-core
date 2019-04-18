@@ -1,0 +1,7 @@
+0,spring-framework_e10e16_51d828_spring-context#src#main#java#org#springframework#context#annotation#ConfigurationClassParser.txt_33
+1,camel_65ea69_29ef80_components#camel-mail#src#main#java#org#apache#camel#component#mail#MailBinding.txt_3
+2,hive_db9afe_d37b22_jdbc#src#java#org#apache#hive#jdbc#HivePreparedStatement.txt_0
+3,spring-data-mongodb_7f28aa_8b8eb3_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#repository#query#ExpressionEvaluatingParameterBinder.txt_8
+4,spring-data-redis_652b1b_14e448_src#main#java#org#springframework#data#redis#core#convert#MappingRedisConverter.txt_20
+5,wildfly-core_753a9d_3a8186_controller#src#main#java#org#jboss#as#controller#OperationContextImpl.txt_1
+6,hive_a12f63_6c5db6_ql#src#java#org#apache#hadoop#hive#ql#exec#tez#TezProcessor.txt_3

@@ -1,0 +1,13 @@
+0,hbase_2bae04f_2c8b81_hbase-client#src#main#java#org#apache#hadoop#hbase#filter#MultiRowRangeFilter.txt_16
+1,hive_f24a81_7ae567d_metastore#src#java#org#apache#hadoop#hive#metastore#ObjectStore.txt_0
+2,wildfly-core_59352f_0319b7_controller#src#main#java#org#jboss#as#controller#operations#global#ReadResourceHandler.txt_0
+3,spring-amqp_78c7a3_29e89d_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#listener#ConditionalRejectingErrorHandler.txt_1
+4,hive_3b75c9_c49990_ql#src#java#org#apache#hadoop#hive#ql#parse#PartitionPruner.txt_0
+5,wildfly-core_0319b7_ed69d9_controller#src#main#java#org#jboss#as#controller#operations#global#GlobalOperationHandlers.txt_0
+6,hbase_d0c232_86043e_hbase-server#src#main#java#org#apache#hadoop#hbase#util#RegionMover.txt_2
+7,hive_cfdfe4_49d31f8_metastore#src#java#org#apache#hadoop#hive#metastore#MetaStoreDirectSql.txt_6
+8,wildfly_65648e_bc50d9_undertow#src#main#java#org#wildfly#extension#undertow#deployment#UndertowDeploymentInfoService.txt_0
+9,spring-data-jpa_0a11d3_4b7c41_src#main#java#org#springframework#data#jpa#repository#query#QueryUtils.txt_7
+10,hbase_b6b01a_556892_hbase-server#src#main#java#org#apache#hadoop#hbase#io#hfile#HFileReaderImpl.txt_3
+11,hive_782a74_f4a5e6_ql#src#java#org#apache#hadoop#hive#ql#parse#PartitionPruner.txt_0
+12,spring-data-rest_c532bb_8cbd95_spring-data-rest-webmvc#src#main#java#org#springframework#data#rest#webmvc#RepositoryPropertyReferenceController.txt_3

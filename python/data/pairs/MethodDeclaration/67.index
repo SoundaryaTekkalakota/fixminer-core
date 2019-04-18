@@ -1,0 +1,13 @@
+0,hive_2bc7cb_0ddf43_ql#src#java#org#apache#hadoop#hive#ql#optimizer#GroupByOptimizer.txt_9
+1,spring-framework_859e1e_305630_spring-beans#src#main#java#org#springframework#beans#factory#config#YamlProcessor.txt_4
+2,spring-data-mongodb_ab6661_caa2f5_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#config#ServerAddressPropertyEditor.txt_4
+3,hive_253199_751125_shims#common-secure#src#main#java#org#apache#hadoop#hive#shims#HadoopShimsSecure.txt_9
+4,hbase_4e2efb_8aa613_src#java#org#apache#hadoop#hbase#HMerge.txt_14
+5,hive_8afc93_f63dc2_druid-handler#src#java#org#apache#hadoop#hive#druid#serde#DruidSerDe.txt_4
+6,hive_0b7e9e_a1b07c_ql#src#java#org#apache#hadoop#hive#ql#io#orc#RecordReaderImpl.txt_1
+7,wildfly_abf4f3_bae74e_jaxrs#src#main#java#org#jboss#as#jaxrs#DeploymentRestResourcesDefintion.txt_6
+8,camel_d0fc43_30192d_components#camel-sql#src#main#java#org#apache#camel#component#sql#DefaultSqlPrepareStatementStrategy.txt_2
+9,hive_39d46a_517848_llap-server#src#java#org#apache#hadoop#hive#llap#cli#LlapServiceDriver.txt_4
+10,spring-framework_e26fc6_c24ffc_org.springframework.context#src#main#java#org#springframework#scheduling#support#CronSequenceGenerator.txt_18
+11,spring-data-mongodb_7f35c4_114489_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#query#Criteria.txt_0
+12,hive_3cea860_f3e6bd_upgrade-acid#pre-upgrade#src#main#java#org#apache#hadoop#hive#upgrade#acid#PreUpgradeTool.txt_4

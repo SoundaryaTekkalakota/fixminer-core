@@ -1,0 +1,10 @@
+0,wildfly-elytron_27eaa1_4650b6_src#main#java#org#wildfly#security#auth#realm#ldap#LdapSecurityRealm.txt_11
+1,spring-data-commons_42ee94_3d6e3d_src#main#java#org#springframework#data#mapping#model#KotlinCopyMethod.txt_1
+2,spring-data-commons_d657b1_22b697_src#main#java#org#springframework#data#repository#config#RepositoryBeanDefinitionBuilder.txt_0
+3,spring-data-mongodb_70e5ef_4eae22_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#config#AbstractMongoConfiguration.txt_0
+4,spring-data-jpa_372ac4_42718c_src#main#java#org#springframework#data#jpa#repository#support#SimpleJpaRepository.txt_0
+5,spring-ws_f32f59_7c6afc_xml#src#main#java#org#springframework#xml#sax#SaxUtils.txt_0
+6,spring-data-gemfire_7e7731_a1c07c_src#main#java#org#springframework#data#gemfire#config#annotation#ContinuousQueryConfiguration.txt_2
+7,wildfly-elytron_657d2f_9acea3_src#main#java#org#wildfly#security#auth#realm#ldap#LdapSecurityRealm.txt_1
+8,spring-roo_9e9129_84c410_runtime#model#src#main#java#org#springframework#roo#model#JavaType.txt_1
+9,spring-roo_b5f76c_2fe755_classpath#src#main#java#org#springframework#roo#classpath#itd#ItdSourceFileComposer.txt_1

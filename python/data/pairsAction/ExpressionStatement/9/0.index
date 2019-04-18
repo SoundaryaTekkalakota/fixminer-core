@@ -1,0 +1,11 @@
+0,hive_53cf27_e31c71_cli#src#java#org#apache#hadoop#hive#cli#CliDriver.txt_4
+1,hbase_588206_0e54a5_src#main#java#org#apache#hadoop#hbase#master#AssignmentManager.txt_21
+2,hbase_588206_0e54a5_src#main#java#org#apache#hadoop#hbase#master#AssignmentManager.txt_28
+3,hbase_494a8e_387a5d_hbase-server#src#main#java#org#apache#hadoop#hbase#io#hfile#bucket#BucketCache.txt_3
+4,wildfly_ef0d754_46729a_messaging#src#main#java#org#jboss#as#messaging#deployment#JMSContextProducer.txt_6
+5,hbase_588206_0e54a5_src#main#java#org#apache#hadoop#hbase#master#AssignmentManager.txt_33
+6,hive_741464_1ddecf_ql#src#java#org#apache#hadoop#hive#ql#optimizer#calcite#rules#HiveRelFieldTrimmer.txt_8
+7,hbase_588206_0e54a5_src#main#java#org#apache#hadoop#hbase#master#AssignmentManager.txt_36
+8,hbase_588206_0e54a5_src#main#java#org#apache#hadoop#hbase#master#AssignmentManager.txt_39
+9,hive_741464_1ddecf_ql#src#java#org#apache#hadoop#hive#ql#optimizer#calcite#rules#HiveRelFieldTrimmer.txt_2
+10,camel_0163fe_f53890_camel-core#src#main#java#org#apache#camel#processor#RoutingSlip.txt_6

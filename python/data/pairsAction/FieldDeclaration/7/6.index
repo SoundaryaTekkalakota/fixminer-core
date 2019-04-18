@@ -1,0 +1,13 @@
+0,hbase_1c8822_1fad92_hbase-client#src#main#java#org#apache#hadoop#hbase#ipc#RemoteWithExtrasException.txt_1
+1,hive_c2da75_ebad27_ql#src#java#org#apache#hadoop#hive#ql#debug#Utils.txt_2
+2,hbase_cb5299_22dce2_hbase-server#src#main#java#org#apache#hadoop#hbase#io#asyncfs#FanOutOneBlockAsyncDFSOutputHelper.txt_3
+3,hive_c2da75_ebad27_ql#src#java#org#apache#hadoop#hive#ql#debug#Utils.txt_3
+4,spring-data-mongodb_d25e84_df1775_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#convert#DefaultDbRefResolver.txt_12
+5,wildfly-elytron_512e1c_a9ef27_src#main#java#org#wildfly#security#x500#X500PrincipalUtil.txt_3
+6,spring-framework_19e5a3_589075_spring-orm#src#main#java#org#springframework#orm#hibernate5#HibernateTemplate.txt_0
+7,commons-codec_ca30fa_5d3142_src#main#java#org#apache#commons#codec#net#URLCodec.txt_1
+8,spring-data-mongodb_d25e84_df1775_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#convert#DefaultDbRefResolver.txt_11
+9,spring-data-mongodb_d25e84_df1775_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#convert#DefaultDbRefResolver.txt_3
+10,hive_b98a30_ef6f31_ql#src#java#org#apache#hadoop#hive#ql#exec#tez#HiveSplitGenerator.txt_1
+11,hive_b98a30_ef6f31_ql#src#java#org#apache#hadoop#hive#ql#exec#tez#HiveSplitGenerator.txt_0
+12,spring-framework_d631b4_8c5660_spring-orm#src#main#java#org#springframework#orm#hibernate5#HibernateTemplate.txt_0

@@ -1,0 +1,16 @@
+0,hbase_fabf76_8a0b74_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#Store.txt_2
+1,hbase_93f562_e6e52c_hbase-client#src#main#java#org#apache#hadoop#hbase#ServerLoad.txt_1
+2,hbase_fabf76_8a0b74_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#Store.txt_3
+3,hbase_521192_2de6b0_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#CompactSplitThread.txt_1
+4,wildfly-core_421622_5dfce4_controller#src#main#java#org#jboss#as#controller#AbstractAttributeDefinitionBuilder.txt_0
+5,hive_597ca1_7299c0_llap-server#src#java#org#apache#hadoop#hive#llap#metrics#LlapDaemonExecutorMetrics.txt_1
+6,wildfly-elytron_543bb3_8155db_src#main#java#org#wildfly#security#util#ServiceLoaderSupplier.txt_2
+7,spring-framework_7355df_eb7f83_org.springframework.web.servlet#src#main#java#org#springframework#web#servlet#tags#EvalTag.txt_1
+8,spring-framework_bca067_0c6b38_org.springframework.context#src#main#java#org#springframework#scheduling#config#ScheduledTaskRegistrar.txt_3
+9,hive_1d0ca91_c250d3_beeline#src#java#org#apache#hive#beeline#HiveSchemaHelper.txt_0
+10,hbase_e78e38_734890_src#java#org#apache#hadoop#hbase#HServerInfo.txt_0
+11,hbase_39c81b_7e5224_hbase-server#src#main#java#org#apache#hadoop#hbase#client#ServerCallable.txt_8
+12,wildfly_936d0b_3c5fd2_ee#src#main#java#org#jboss#as#ee#concurrent#ElytronManagedThreadFactory.txt_1
+13,wildfly_85d1a8_5f76b1_controller#src#main#java#org#jboss#as#controller#PrimitiveListAttributeDefinition.txt_0
+14,camel_a04674_0607c0_camel-core#src#main#java#org#apache#camel#support#TokenXMLPairExpressionIterator.txt_5
+15,hbase_39c81b_7e5224_hbase-server#src#main#java#org#apache#hadoop#hbase#client#ServerCallable.txt_14

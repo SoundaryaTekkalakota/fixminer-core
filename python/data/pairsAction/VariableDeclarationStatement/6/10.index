@@ -1,0 +1,13 @@
+0,spring-framework_6d55b3_7d747f_spring-jms#src#main#java#org#springframework#jms#connection#SingleConnectionFactory.txt_0
+1,spring-framework_8d6d6b_1b4e02_spring-context#src#main#java#org#springframework#jmx#support#MBeanRegistrationSupport.txt_4
+2,wildfly_1e6245_d7fc61_clustering#server#src#main#java#org#wildfly#clustering#server#provider#CacheServiceProviderRegistry.txt_9
+3,hive_3fe65a_a74c1e_ql#src#java#org#apache#hadoop#hive#ql#optimizer#physical#index#IndexWhereTaskDispatcher.txt_4
+4,spring-data-commons_4d2cc9_b72479_src#main#java#org#springframework#data#util#StreamUtils.txt_0
+5,spring-roo_f34e6a_97a1b1_addon-web-mvc-jsp#src#main#java#org#springframework#roo#addon#web#mvc#jsp#JspOperationsImpl.txt_16
+6,wildfly_f1a1ad_af2a1c_connector#src#main#java#org#jboss#as#connector#subsystems#jca#JcaExtension.txt_1
+7,spring-framework_473de0_2201dd_spring-webmvc#src#main#java#org#springframework#web#servlet#mvc#method#RequestMappingInfoHandlerMapping.txt_10
+8,hive_13465d_895111_ql#src#java#org#apache#hadoop#hive#ql#parse#SemanticAnalyzer.txt_0
+9,spring-data-commons_75ac90_7ee5ae_src#main#java#org#springframework#data#util#ClassTypeInformation.txt_7
+10,spring-framework_b4e48d_809a5f_spring-messaging#src#main#java#org#springframework#messaging#simp#user#DefaultUserDestinationResolver.txt_5
+11,spring-framework_473de0_2201dd_spring-webmvc#src#main#java#org#springframework#web#servlet#mvc#method#RequestMappingInfoHandlerMapping.txt_12
+12,wildfly_a9161d_337fdc_ejb3#src#main#java#org#jboss#as#ejb3#subsystem#ApplicationSecurityDomainDefinition.txt_0

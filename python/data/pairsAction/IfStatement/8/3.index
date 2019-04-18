@@ -1,0 +1,12 @@
+0,camel_6a6961_57ba1b_components#camel-ftp#src#main#java#org#apache#camel#component#file#remote#strategy#FtpChangedExclusiveReadLockStrategy.txt_0
+1,hive_3fcc32_153102_metastore#src#java#org#apache#hadoop#hive#metastore#StatObjectConverter.txt_0
+2,hive_3fcc32_153102_metastore#src#java#org#apache#hadoop#hive#metastore#StatObjectConverter.txt_1
+3,spring-data-neo4j_12c492_9dba9d_spring-data-neo4j#src#main#java#org#springframework#data#neo4j#transaction#Neo4jTransactionManager.txt_0
+4,wildfly_1867ead_e1b916_connector#src#main#java#org#jboss#as#connector#subsystems#resourceadapters#IronJacamarResourceCreator.txt_1
+5,camel_e317e7b_cd8da7_components#camel-kafka#src#main#java#org#apache#camel#component#kafka#KafkaEndpoint.txt_0
+6,camel_e5b2d7_281528_components#camel-saxon#src#main#java#org#apache#camel#component#xquery#XQueryBuilder.txt_0
+7,hive_d68630_bec80e_ql#src#java#org#apache#hadoop#hive#ql#io#parquet#ProjectionPusher.txt_0
+8,hive_3fcc32_153102_metastore#src#java#org#apache#hadoop#hive#metastore#StatObjectConverter.txt_4
+9,hive_3fcc32_153102_metastore#src#java#org#apache#hadoop#hive#metastore#StatObjectConverter.txt_3
+10,hive_3fcc32_153102_metastore#src#java#org#apache#hadoop#hive#metastore#StatObjectConverter.txt_2
+11,hive_3fcc32_153102_metastore#src#java#org#apache#hadoop#hive#metastore#StatObjectConverter.txt_5

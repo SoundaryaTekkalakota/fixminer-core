@@ -1,0 +1,16 @@
+0,hive_20b845_527d13_ql#src#java#org#apache#hadoop#hive#ql#optimizer#stats#annotation#StatsRulesProcFactory.txt_3
+1,hive_9f1f35_19d8ca_ql#src#java#org#apache#hadoop#hive#ql#udf#generic#GenericUDAFCumeDist.txt_3
+2,hbase_3ff274_9a25d0_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#MemStoreFlusher.txt_0
+3,hive_510960_52290e_beeline#src#java#org#apache#hive#beeline#BeeLine.txt_2
+4,hbase_b97c3d_d3e7c3_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#HRegion.txt_2
+5,hbase_2e74ef_88de40d_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#Leases.txt_5
+6,hive_efb595_641918_ql#src#java#org#apache#hadoop#hive#ql#udf#generic#NumDistinctValueEstimator.txt_9
+7,spring-data-rest_b866af_9fd62b_spring-data-rest-webmvc#src#main#java#org#springframework#data#rest#webmvc#json#PersistentEntityToJsonSchemaConverter.txt_4
+8,hbase_26db1d_b73318_hbase-server#src#main#java#org#apache#hadoop#hbase#security#access#AccessController.txt_17
+9,hbase_34ebf7_24ebbc_hbase-server#src#main#java#org#apache#hadoop#hbase#util#ByteBloomFilter.txt_1
+10,hbase_4ed32b_c1660a_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#handler#OpenRegionHandler.txt_1
+11,hive_79244a_8d524e_ql#src#java#org#apache#hadoop#hive#ql#lib#RuleRegExp.txt_5
+12,hive_f8b026_2688b6_ql#src#java#org#apache#hadoop#hive#ql#io#orc#ReaderImpl.txt_4
+13,spring-framework_793cab_49d7bd_spring-core#src#main#java#org#springframework#core#ResolvableType.txt_0
+14,hbase_bade23_685284_src#main#java#org#apache#hadoop#hbase#master#ServerManager.txt_9
+15,hive_65f02d_6fa9f6_ql#src#java#org#apache#hadoop#hive#ql#optimizer#SimpleFetchOptimizer.txt_1

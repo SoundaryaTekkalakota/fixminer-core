@@ -1,0 +1,11 @@
+0,hbase_7790ab_5a071d_hbase-common#src#main#java#org#apache#hadoop#hbase#util#RetryCounter.txt_1
+1,wildfly_0a9d93_09f936_undertow#src#main#java#org#wildfly#extension#undertow#deployment#ServletResourceManager.txt_1
+2,hive_1c8449_350445_ql#src#java#org#apache#hadoop#hive#ql#exec#ReduceSinkOperator.txt_5
+3,camel_661090_3e5e57_components#camel-mail#src#main#java#org#apache#camel#component#mail#MailBinding.txt_1
+4,camel_71229b_cc64dc_components#camel-coap#src#main#java#org#apache#camel#coap#CoAPComponent.txt_1
+5,hive_19bc7f_f80a2f_ql#src#java#org#apache#hadoop#hive#ql#parse#GenTezWork.txt_1
+6,hive_83be12_72f97f_ql#src#java#org#apache#hadoop#hive#ql#optimizer#ConstantPropagateProcFactory.txt_10
+7,hive_15efc4_4817d8_llap-tez#src#java#org#apache#hadoop#hive#llap#tezplugins#LlapTaskSchedulerService.txt_16
+8,spring-framework_f79a5c_dd16f6_spring-messaging#src#main#java#org#springframework#messaging#simp#broker#DefaultSubscriptionRegistry.txt_0
+9,spring-batch_95cc70_5a97f8_spring-batch-core#src#main#java#org#springframework#batch#core#step#item#FaultTolerantChunkProcessor.txt_0
+10,hbase_e1f3c8_c7a7f8_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#HRegionServer.txt_4

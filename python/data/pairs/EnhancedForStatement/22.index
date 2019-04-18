@@ -1,0 +1,10 @@
+0,hive_a6debb_cb17456_ql#src#java#org#apache#hadoop#hive#ql#optimizer#correlation#ReduceSinkDeDuplication.txt_0
+1,hive_283e51_2d3fae_ql#src#java#org#apache#hadoop#hive#ql#exec#tez#WorkloadManager.txt_4
+2,wildfly-core_e68322_fe55a6_server#src#main#java#org#jboss#as#server#deployment#DeploymentOverlayDeploymentUnitProcessor.txt_4
+3,hive_5eed77_be4200_standalone-metastore#src#main#java#org#apache#hadoop#hive#metastore#HiveMetaStore.txt_8
+4,hive_f451f2_d8ef1e_metastore#src#java#org#apache#hadoop#hive#metastore#txn#TxnHandler.txt_27
+5,wildfly_03abac_d92494_ejb3#src#main#java#org#jboss#as#ejb3#cache#simple#SimpleCache.txt_0
+6,spring-roo_e17f4d_b9a5da_classpath-javaparser#src#main#java#org#springframework#roo#classpath#javaparser#JavaParserMetadataProvider.txt_0
+7,hive_70e655_8398d8_service#src#java#org#apache#hive#service#cli#operation#SQLOperation.txt_1
+8,hive_f451f2_d8ef1e_metastore#src#java#org#apache#hadoop#hive#metastore#txn#TxnHandler.txt_40
+9,hive_f451f2_d8ef1e_metastore#src#java#org#apache#hadoop#hive#metastore#txn#TxnHandler.txt_33

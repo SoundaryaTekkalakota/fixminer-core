@@ -1,0 +1,10 @@
+0,wildfly-core_fa0c54_78b267_cli#src#main#java#org#jboss#as#cli#impl#ValueTypeCompleter.txt_8
+1,hive_0fca2f_62a51b_ql#src#java#org#apache#hadoop#hive#ql#optimizer#stats#annotation#StatsRulesProcFactory.txt_9
+2,spring-framework_bc2070_62d736_org.springframework.context#src#main#java#org#springframework#scheduling#support#CronSequenceGenerator.txt_13
+3,camel_6aaec8_2bd233_camel-core#src#main#java#org#apache#camel#util#IntrospectionSupport.txt_1
+4,spring-framework_bc2070_62d736_org.springframework.context#src#main#java#org#springframework#scheduling#support#CronSequenceGenerator.txt_3
+5,hive_c98960_ea3c79_ql#src#java#org#apache#hadoop#hive#ql#exec#tez#HostAffinitySplitLocationProvider.txt_0
+6,camel_439f85_64b16b_camel-core#src#main#java#org#apache#camel#component#file#strategy#MarkerFileExclusiveReadLockStrategy.txt_3
+7,spring-framework_bc2070_62d736_org.springframework.context#src#main#java#org#springframework#scheduling#support#CronSequenceGenerator.txt_6
+8,hbase_c43805_fda317_hbase-server#src#main#java#org#apache#hadoop#hbase#io#hfile#HFileBlock.txt_1
+9,hbase_299098_3c986c_hbase-server#src#main#java#org#apache#hadoop#hbase#io#hfile#HFileReaderV2.txt_1

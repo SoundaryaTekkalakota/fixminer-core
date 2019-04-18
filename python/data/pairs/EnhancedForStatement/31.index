@@ -1,0 +1,4 @@
+0,wildfly-core_c470c6_3a184a_server#src#main#java#org#jboss#as#server#deployment#service#ServiceActivatorProcessor.txt_3
+1,hive_4cf99e_14e8cd_serde#src#java#org#apache#hadoop#hive#serde2#objectinspector#ReflectionStructObjectInspector.txt_3
+2,spring-framework_918bc3_13ccc8e_spring-beans#src#main#java#org#springframework#beans#factory#support#DefaultListableBeanFactory.txt_3
+3,hbase_09dac8_a03a65_hbase-server#src#main#java#org#apache#hadoop#hbase#quotas#SpaceQuotaRefresherChore.txt_0

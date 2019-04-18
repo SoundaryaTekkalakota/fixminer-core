@@ -1,0 +1,15 @@
+0,wildfly-swarm_411c27_e2a33b_bootstrap#src#main#java#org#wildfly#swarm#bootstrap#util#TempFileManager.txt_0
+1,spring-framework_e393c7_e214e6_spring-core#src#main#java#org#springframework#core#env#AbstractEnvironment.txt_12
+2,spring-ws_4ffe9c_fa25ac_oxm#src#main#java#org#springframework#oxm#jibx#JibxMarshaller.txt_2
+3,spring-framework_e393c7_e214e6_spring-core#src#main#java#org#springframework#core#env#AbstractEnvironment.txt_14
+4,spring-data-commons_65104a_89f3be_src#main#java#org#springframework#data#util#TypeDiscoverer.txt_4
+5,camel_85ced06_9f90b0_camel-core#src#main#java#org#apache#camel#processor#aggregate#AggregationStrategyBeanInfo.txt_1
+6,hive_5d0144_117c6d_beeline#src#java#org#apache#hive#beeline#Commands.txt_4
+7,wildfly_d8dfbc_5bda9a_webservices#server-integration#src#main#java#org#jboss#as#webservices#service#ServerConfigService.txt_4
+8,spring-framework_e52315_3ca0dc_spring-beans#src#main#java#org#springframework#beans#ExtendedBeanInfo.txt_1
+9,spring-framework_3c65c1_c57e1a_spring-webflux#src#main#java#org#springframework#web#reactive#result#method#annotation#ModelAttributeMethodArgumentResolver.txt_0
+10,wildfly-core_0f707f_c987bc_elytron#src#main#java#org#wildfly#extension#elytron#CredentialStoreService.txt_2
+11,wildfly-core_70958c_405855_controller#src#main#java#org#jboss#as#controller#ValidateModelStepHandler.txt_14
+12,fuse_eaf1a5_cd2d37_fabric#fabric-core#src#main#java#io#fabric8#service#PatchServiceImpl.txt_0
+13,spring-framework_16e9b8_516c01_spring-context-support#src#main#java#org#springframework#mail#javamail#JavaMailSenderImpl.txt_1
+14,wildfly-core_70958c_405855_controller#src#main#java#org#jboss#as#controller#ValidateModelStepHandler.txt_2

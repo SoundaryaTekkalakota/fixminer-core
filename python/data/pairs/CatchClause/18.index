@@ -1,0 +1,9 @@
+0,hive_fd1816_25b459_service#src#java#org#apache#hive#service#cli#thrift#ThriftCLIService.txt_10
+1,hbase_f15955_0345fc_hbase-server#src#main#java#org#apache#hadoop#hbase#master#MasterWalManager.txt_0
+2,hive_96508d_62c45d_spark-client#src#main#java#org#apache#hive#spark#client#SparkClientImpl.txt_0
+3,hbase_4d356e_60859b_hbase-server#src#main#java#org#apache#hadoop#hbase#zookeeper#lock#ZKInterProcessLockBase.txt_4
+4,hbase_d6c13b_d8ad72_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#handler#OpenRegionHandler.txt_0
+5,hbase_198a15_1197d6_src#java#org#apache#hadoop#hbase#regionserver#HLog.txt_0
+6,hbase_39e213_95a9c2_src#main#java#org#apache#hadoop#hbase#regionserver#wal#HLog.txt_0
+7,hive_fd1816_25b459_service#src#java#org#apache#hive#service#cli#thrift#ThriftCLIService.txt_0
+8,spring-security_340534_7f9938_web#src#main#java#org#springframework#security#web#authentication#rememberme#JdbcTokenRepositoryImpl.txt_0

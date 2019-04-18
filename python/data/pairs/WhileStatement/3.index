@@ -1,0 +1,8 @@
+0,commons-compress_7a76c4_541898_src#main#java#org#apache#commons#compress#archivers#zip#ZipArchiveInputStream.txt_0
+1,hbase_1b75fd_17703f_hbase-common#src#main#java#org#apache#hadoop#hbase#nio#MultiByteBuffer.txt_1
+2,hbase_723b67_1ef046_src#main#java#org#apache#hadoop#hbase#regionserver#ReadWriteConsistencyControl.txt_2
+3,camel_f7efc3_870b41_camel-core#src#main#java#org#apache#camel#processor#DelayProcessorSupport.txt_0
+4,hbase_848748_ee4df4_src#main#java#org#apache#hadoop#hbase#master#handler#EnableTableHandler.txt_0
+5,hbase_1b75fd_17703f_hbase-common#src#main#java#org#apache#hadoop#hbase#nio#MultiByteBuffer.txt_0
+6,hbase_652929_664b2e_hbase-server#src#main#java#org#apache#hadoop#hbase#util#BoundedConcurrentLinkedQueue.txt_14
+7,hive_57bf9b_98ef34_ql#src#java#org#apache#hadoop#hive#ql#io#orc#SerializationUtils.txt_0

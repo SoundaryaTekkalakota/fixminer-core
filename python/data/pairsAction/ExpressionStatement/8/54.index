@@ -1,0 +1,6 @@
+0,camel_9aa1ab_ab84590_components#camel-blueprint#src#main#java#org#apache#camel#blueprint#CamelContextFactoryBean.txt_1
+1,spring-framework_e2af25_b4ffdc_org.springframework.context#src#main#java#org#springframework#scheduling#config#ExecutorBeanDefinitionParser.txt_19
+2,spring-security_077af5_866615_ldap#src#main#java#org#springframework#security#ldap#SpringSecurityLdapTemplate.txt_5
+3,spring-webflow_ec83f8_c32a2e_spring-webflow#src#main#java#org#springframework#webflow#persistence#HibernateFlowExecutionListener.txt_4
+4,spring-framework_cd4ce8_d64ac3_spring-websocket#src#main#java#org#springframework#web#socket#config#WebSocketNamespaceUtils.txt_1
+5,wildfly-swarm_10462e_1cbd38_core#container#src#main#java#org#wildfly#swarm#container#runtime#RuntimeDeployer.txt_1

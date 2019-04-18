@@ -1,0 +1,13 @@
+0,spring-framework_75ea6f_1458c7_spring-context#src#main#java#org#springframework#cache#support#AbstractCacheManager.txt_1
+1,spring-security_32b800_3b775d_core#src#main#java#org#springframework#security#wrapper#SavedRequestAwareWrapper.txt_0
+2,hive_db4e52_d00b65_shims#common-secure#src#main#java#org#apache#hadoop#hive#thrift#HadoopThriftAuthBridge20S.txt_0
+3,hive_087ef7_f30efb_standalone-metastore#src#main#java#org#apache#hadoop#hive#metastore#tools#HiveMetaTool.txt_10
+4,hive_58602f_cff662_ql#src#java#org#apache#hadoop#hive#ql#udf#ptf#WindowingTableFunction.txt_4
+5,hive_18fb8e_ea1405_hcatalog#webhcat#svr#src#main#java#org#apache#hive#hcatalog#templeton#Server.txt_0
+6,hbase_9b0a00_c8529f_src#main#java#org#apache#hadoop#hbase#regionserver#MemStoreFlusher.txt_6
+7,hbase_155a64_c8362a_hbase-common#src#main#java#org#apache#hadoop#hbase#io#hadoopbackport#ThrottledInputStream.txt_1
+8,spring-data-jpa_bc6e2a_b380ed_src#main#java#org#springframework#data#jpa#repository#query#QueryUtils.txt_9
+9,spring-data-mongodb_dafc59_566f9a_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#repository#support#SpringDataMongodbSerializer.txt_2
+10,camel_6c260a_959b6e_components#camel-swagger-java#src#main#java#org#apache#camel#swagger#RestSwaggerReader.txt_13
+11,hive_970d8c_c0734a_standalone-metastore#src#main#java#org#apache#hadoop#hive#metastore#ObjectStore.txt_0
+12,spring-social-facebook_3bad1f_300f7e_spring-social-facebook#src#main#java#org#springframework#social#facebook#api#Photo.txt_6

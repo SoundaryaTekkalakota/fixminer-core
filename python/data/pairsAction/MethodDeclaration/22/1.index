@@ -1,0 +1,5 @@
+0,spring-data-mongodb_164e94_7e65c0_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#index#MongoPersistentEntityIndexResolver.txt_19
+1,camel_803e37_0ec853_components#camel-crypto#src#main#java#org#apache#camel#converter#crypto#PGPKeyAccessDataFormat.txt_8
+2,hbase_0c42ac_da3ecf_hbase-thrift#src#main#java#org#apache#hadoop#hbase#thrift#ThriftHttpServlet.txt_11
+3,camel_799b45_76c3a4_camel-core#src#main#java#org#apache#camel#processor#loadbalancer#CircuitBreakerLoadBalancer.txt_8
+4,hive_f451f2_d8ef1e_metastore#src#java#org#apache#hadoop#hive#metastore#txn#TxnHandler.txt_51

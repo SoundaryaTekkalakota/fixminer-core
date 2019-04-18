@@ -1,0 +1,11 @@
+0,spring-data-jpa_b884e7_c919e2_src#main#java#org#springframework#data#jpa#repository#support#JpaRepositoryFactoryBean.txt_0
+1,spring-framework_01ce46_dc0613_org.springframework.web#src#main#java#org#springframework#http#converter#json#MappingJacksonHttpMessageConverter.txt_0
+2,camel_2525c9_d4c59a_camel-core#src#main#java#org#apache#camel#component#vm#VmComponent.txt_0
+3,spring-batch_586760_fcf6e9_spring-batch-core#src#main#java#org#springframework#batch#core#configuration#support#AutomaticJobRegistrar.txt_0
+4,spring-hadoop_846786_a6ded5_spring-yarn#spring-yarn-boot#src#main#java#org#springframework#yarn#boot#support#YarnBootClientApplicationListener.txt_0
+5,hive_cd464e_936bc3_metastore#src#java#org#apache#hadoop#hive#metastore#LockRequestBuilder.txt_1
+6,spring-hadoop_ddd1c6_e28301_src#main#java#org#springframework#data#hadoop#mapreduce#JobRunner.txt_0
+7,spring-framework_e14c2d_5d4547_spring-context#src#main#java#org#springframework#context#annotation#ConfigurationClassParser.txt_0
+8,hive_390afb_90e122_hbase-handler#src#java#org#apache#hadoop#hive#hbase#HiveHBaseTableOutputFormat.txt_0
+9,wildfly_c852b3_c20eab_ejb3#src#main#java#org#jboss#as#ejb3#deployment#processors#merging#EjbDependsOnMergingProcessor.txt_0
+10,hive_cd464e_936bc3_metastore#src#java#org#apache#hadoop#hive#metastore#LockRequestBuilder.txt_2

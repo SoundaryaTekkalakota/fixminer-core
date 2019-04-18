@@ -1,0 +1,13 @@
+0,spring-framework_feeec3_51bb96_spring-web#src#main#java#org#springframework#web#filter#ForwardedHeaderFilter.txt_0
+1,hive_0534b9_9807a5_ql#src#java#org#apache#hadoop#hive#ql#io#orc#OrcRawRecordMerger.txt_0
+2,hbase_820d40_f24995_src#main#java#org#apache#hadoop#hbase#regionserver#compactions#CompactionRequest.txt_0
+3,hive_568164_513ee7_ql#src#java#org#apache#hadoop#hive#ql#util#HiveStrictManagedMigration.txt_69
+4,wildfly-elytron_190460_c4ae79_src#main#java#org#wildfly#security#manager#WildFlySecurityManager.txt_0
+5,wildfly-core_a1c74e_b92411_jmx#src#main#java#org#jboss#as#jmx#PluggableMBeanServerImpl.txt_3
+6,spring-batch_2f17ad_8940d1_spring-batch-infrastructure#src#main#java#org#springframework#batch#item#xml#StaxEventItemReader.txt_0
+7,spring-security-oauth_1de9e4_51f129_spring-security-oauth2#src#main#java#org#springframework#security#oauth2#http#converter#jaxb#AbstractJaxbMessageConverter.txt_0
+8,spring-framework_4927c9_38ef6d_spring-jms#src#main#java#org#springframework#jms#connection#SingleConnectionFactory.txt_1
+9,spring-data-commons_75026c_861cf4_spring-data-commons-core#src#main#java#org#springframework#data#repository#init#AbstractRepositoryPopulatorFactoryBean.txt_1
+10,spring-security_62649a_93d967_config#src#main#java#org#springframework#security#config#annotation#method#configuration#GlobalMethodSecurityConfiguration.txt_1
+11,wildfly-core_13c690_afb3ab_server#src#main#java#org#jboss#as#server#jmx#RunningStateJmx.txt_0
+12,spring-security_b48fc5_249610_remoting#src#main#java#org#springframework#security#remoting#rmi#ContextPropagatingRemoteInvocation.txt_1

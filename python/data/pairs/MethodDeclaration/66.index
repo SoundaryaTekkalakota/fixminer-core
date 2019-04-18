@@ -1,0 +1,13 @@
+0,hive_865886_668b52_ql#src#java#org#apache#hadoop#hive#ql#udf#generic#GenericUDFInFile.txt_0
+1,wildfly_7ebbd6_d7fc61_legacy#web#src#main#java#org#jboss#as#web#WebMigrateOperation.txt_11
+2,spring-framework_583201_f05175_spring-messaging#src#main#java#org#springframework#messaging#converter#MappingJackson2MessageConverter.txt_1
+3,hive_cfdfe4_49d31f8_metastore#src#java#org#apache#hadoop#hive#metastore#MetaStoreDirectSql.txt_4
+4,hbase_dd3949_e5c477_src#main#java#org#apache#hadoop#hbase#master#AssignmentManager.txt_5
+5,hbase_df9b82_9814ff_src#main#java#org#apache#hadoop#hbase#regionserver#Store.txt_2
+6,spring-data-rest_7c3bf7_74cc55_spring-data-rest-webmvc#src#main#java#org#springframework#data#rest#webmvc#json#DomainObjectReader.txt_23
+7,hive_2c7f9c_f44cae_ql#src#java#org#apache#hadoop#hive#ql#exec#SerializationUtilities.txt_8
+8,wildfly-elytron_2b5d2c_ae27c6_src#main#java#org#wildfly#security#ssl#CipherSuiteSelector.txt_10
+9,spring-framework_c17888_0b463c_org.springframework.core#src#main#java#org#springframework#util#AntPatchStringMatcher.txt_10
+10,hive_139d8d_f5ec4b_ql#src#java#org#apache#hadoop#hive#ql#exec#tez#TezProcessor.txt_4
+11,hive_3fc131_6be50b_ql#src#java#org#apache#hadoop#hive#ql#exec#Utilities.txt_13
+12,spring-roo_a11dbc_6ffe33_addon-jpa#addon#src#main#java#org#springframework#roo#addon#jpa#addon#entity#JpaEntityMetadata.txt_6

@@ -1,0 +1,5 @@
+0,hbase_6c60bc_db234b_hbase-server#src#main#java#org#apache#hadoop#hbase#mapred#TableOutputFormat.txt_2
+1,commons-compress_30c859_fa886a_src#main#java#org#apache#commons#compress#compressors#gzip#GzipCompressorInputStream.txt_22
+2,hive_741976_287f04_hbase-handler#src#java#org#apache#hadoop#hive#hbase#HiveHBaseTableInputFormat.txt_6
+3,wildfly-core_7a4ebb_c8791a_domain-management#src#main#java#org#jboss#as#domain#management#security#KeytabService.txt_2
+4,hbase_2ed058_70f0ca_hbase-server#src#main#java#org#apache#hadoop#hbase#ipc#RpcServer.txt_4

@@ -1,0 +1,17 @@
+0,wildfly_c7f7e2_8fedd0_ejb3#src#main#java#org#jboss#as#ejb3#deployment#processors#merging#MethodPermissionsMergingProcessor.txt_1
+1,hbase_7ee058_220037_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#HRegion.txt_33
+2,spring-framework_499128_36a222_spring-beans#src#main#java#org#springframework#beans#propertyeditors#URIEditor.txt_1
+3,spring-framework_54aceb_36940c_org.springframework.web#src#main#java#org#springframework#web#util#UriTemplate.txt_0
+4,hbase_cfedd4_36c302_src#examples#thrift#DemoClient.txt_5
+5,hbase_419a8b_e30829_hbase-server#src#main#java#org#apache#hadoop#hbase#security#access#TableAuthManager.txt_63
+6,spring-framework_b50bb50_c795c1_spring-beans#src#main#java#org#springframework#beans#ExtendedBeanInfo.txt_11
+7,commons-compress_f4044d_ec0f58_src#main#java#org#apache#commons#compress#archivers#tar#TarArchiveInputStream.txt_7
+8,hbase_7ee058_220037_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#HRegion.txt_30
+9,commons-configuration_eec593_63776c_src#java#org#apache#commons#configuration#interpol#ConstantLookup.txt_0
+10,wildfly_c7f7e2_8fedd0_ejb3#src#main#java#org#jboss#as#ejb3#deployment#processors#merging#MethodPermissionsMergingProcessor.txt_5
+11,wildfly_c7f7e2_8fedd0_ejb3#src#main#java#org#jboss#as#ejb3#deployment#processors#merging#MethodPermissionsMergingProcessor.txt_3
+12,camel_f5098d_c68c78_camel-core#src#main#java#org#apache#camel#impl#DefaultComponent.txt_0
+13,hbase_cfedd4_36c302_src#examples#thrift#DemoClient.txt_34
+14,spring-security_f70942_173537_config#src#main#java#org#springframework#security#config#method#InterceptMethodsBeanDefinitionDecorator.txt_6
+15,spring-security_c372c2_dd5edb_taglibs#src#main#java#org#springframework#security#taglibs#authz#AuthenticationTag.txt_3
+16,spring-data-mongodb_3dfc59_9e5062_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#convert#QueryMapper.txt_7

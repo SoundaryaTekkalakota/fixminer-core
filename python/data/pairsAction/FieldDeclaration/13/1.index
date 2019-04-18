@@ -1,0 +1,8 @@
+0,hive_b28d39_52308a_jdbc#src#java#org#apache#hive#jdbc#HiveStatement.txt_0
+1,hive_339825_b9dd49_beeline#src#java#org#apache#hive#beeline#SQLCompleter.txt_0
+2,spring-roo_f12748_e593e5_classpath-antlrjavaparser#src#main#java#org#springframework#roo#classpath#antlrjavaparser#details#JavaParserClassOrInterfaceTypeDetailsBuilder.txt_0
+3,hive_3ff272_a4e88d_metastore#src#java#org#apache#hadoop#hive#metastore#txn#TxnDbUtil.txt_0
+4,hive_e2422f_7a449e_common#src#java#org#apache#hadoop#hive#common#ValidTxnListImpl.txt_0
+5,hive_daca6a_fffdf1_ql#src#java#org#apache#hadoop#hive#ql#exec#vector#VectorizedRowBatchCtx.txt_0
+6,hive_c2da75_ebad27_ql#src#java#org#apache#hadoop#hive#ql#debug#Utils.txt_0
+7,hive_50610c_3ee63c_ql#src#java#org#apache#hadoop#hive#ql#udf#ptf#WindowingTableFunction.txt_0
