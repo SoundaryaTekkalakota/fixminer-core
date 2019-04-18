@@ -13,6 +13,16 @@
 Fixminer is an automated approach for semantic fix pattern mining based on an iterative, three-fold, clustering strategy.
 
 ## II. Environment setup
+
+* OS: macOS Mojave (10.14.3)
+* JDK7: Oracle jdk1.7 (**important!**)
+* JDK8: Oracle jdk1.8 (**important!**)
+* Download and configure Anaconda
+* Create an python environment using the [environment file](environment.yml)
+  ```powershell
+  conda env create -f environment.yml
+  ```
+  
 To run the tool please follow the steps below.
 
 FixMiner uses anaconda to create virtual environments. And it requires jdk 1.8
@@ -26,38 +36,94 @@ After creating the environment, activate it. It is containing necessary dependen
 
     source activate redisEnv
 
-Download dataset from , to the root of the repository
-
-    https://github.com/fixminer/dataset/raw/master/input/allDataset.7z
+[fixminer.sh](python/fixminer.sh)
 
 Unzip it,to the datasetPath path indicated in app.properties.
 
     7z x allDataset.7z
     
-In order to launch FixMiner, execute the jar file:
+In order to launch FixMiner, execute [fixminer.sh](python/fixminer.sh)
 
-    java -jar FixPatternMiner.jar app.properties
+    bash fixminer.sh /Users/..../enhancedASTDiff/python/ stats
     
 ## III. Replication Data
 Replication Data:
-    singleBR.pickle 
+    
+   [singleBR.pickle](python/data/singleBR.pickle)
     
     This pickle contains the list bug reports (i.e. bid) with the their corresponding fixes (i.e. commit) for each project in the dataset (i.e. project). 
     
-   bugReports.7z.00X
+   [bugReports.7z.00X](python/data/bugReports.7z.001)
    
     This is the dump of the bug reports archive extracted from each commit. These bug reports are not necessarily considered as BUG,CLOSED; this archive is the contins initial bug reports before identifying the fixes. 
     
-   gumInput.7z.001
+   [gumInput.7z.001](python/data/gumInput.7z.001)
    
     This archive contains all the patches in our dataset, formatted in a way that can be processed by GumTree (i.e DiffEntries, prevFiles, revFiles)
     
-   ALLbugReportsComplete.pickle
+   [ALLbugReportsComplete.pickle](python/data/ALLbugReportsComplete.pickle)
    
     The pickle object that represents the bug reports under the following columns 'bugReport', 'summary', 'description', 'created', 'updated', 'resolved', 'reporterDN', 'reporterEmail','hasAttachment', 'attachmentTime', 'hasPR', 'commentsCount'
 
+#### Data Viewer
+
+The data provided with replication package is listed in directory [python/data](python/data)
+The data is stored in different formats. (e.g. pickle, db, csv, etc..)
+
+The see content of the .pickle file the following script could be used.
+
+  ```python
+   import pickle as p
+   import gzip
+   def load_zipped_pickle(filename):
+      with gzip.open(filename, 'rb') as f:
+          loaded_object = p.load(f)
+          return loaded_object
+  ```
+Usage
+
+  ```python
+  result = load_zipped_pickle('code/LANGbugReportsComplete.pickle')
+  # Result is pandas object which can be exported to several formats
+  # Details on how to export is listed in offical library documentation
+  # https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html
+
+  ```
+
 
 ## IV. Step-by-Step execution
+
+#### Before running
+
+* Update [config file](config.yml) with corresponding user paths.
+
+* Active the conda environment from shell
+  ```powershell
+  source activate python36
+  ```
+
+In order to launch FixMiner, execute [fixminer.sh](python/fixminer.sh)
+
+    bash fixminer.sh /Users/..../enhancedASTDiff/python/ [OPTIONS]
+    
+#### Running Options 
+
+*FixMiner* needs to specify an option to run.
+
+    `clone` : Clone target project repository.
+
+    `collect` : Collect all commit from repository.
+
+    `fix` : Collect commits linked to a bug report.
+
+    `bugPoints` : Identify the snapshot of the repository before the bug fixing commit introducted.
+
+    `brDownload` : Download bug reports recovered from commit log
+
+    `brParser` : Parse bug reports to select the bug report where type labelled as BUG and status as RESOLVED or CLOSED
+
+
+
 App.properties:
 
 
