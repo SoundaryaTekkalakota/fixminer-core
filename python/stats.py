@@ -168,9 +168,9 @@ def statsNormal(isFixminer=True):
         print(type, matches.memberCount.sum())
         yList.append(matches.memberCount.values.tolist())
         colNames.append(type)
-    if isFixminer:
-        from common.commons import plotBox
-        plotBox(yList,colNames,'dist_clusterMembers.pdf',False,False)
+    # if isFixminer:
+    #     from common.commons import plotBox
+    #     plotBox(yList,colNames,'dist_clusterMembers.pdf',False,False)
     # for i in range(2, 21):
     #     print('%d %d %d' % (matches[matches.memberCount >= i].memberCount.sum(), len(matches[matches.memberCount >= i]),i))
 

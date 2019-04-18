@@ -63,7 +63,7 @@ def setEnv(args):
     # print(cfg['mysql'])
     # print(cfg['other'])
 
-    os.environ["JDK7"] = cfg['java']['7home']
+    # os.environ["JDK7"] = cfg['java']['7home']
     os.environ["JDK8"] = cfg['java']['8home']
 
     # import yaml

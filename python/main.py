@@ -428,6 +428,9 @@ if __name__ == '__main__':
                 print(join(DATA_PATH,'gumInput',repo,'DiffEntries',filename))
                 break
 
+        else:
+            logging.error('Unknown job %s',job)
+
 
 
 
