@@ -1,0 +1,8 @@
+0,spring-roo_ca9133_ad701c_addon-javabean#src#main#java#org#springframework#roo#addon#javabean#JavaBeanMetadata.txt_0
+1,wildfly-elytron_04b222_8c0339_src#main#java#org#wildfly#security#auth#server#SecurityDomain.txt_3
+2,spring-data-mongodb_cabbe7_5ff306_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#MongoTemplate.txt_3
+3,wildfly-elytron_21c32c_d5da79_src#main#java#org#wildfly#security#http#impl#FormAuthenticationMechanism.txt_3
+4,wildfly-elytron_21c32c_d5da79_src#main#java#org#wildfly#security#http#impl#FormAuthenticationMechanism.txt_2
+5,hive_32d4c8_b1c345_ql#src#java#org#apache#hadoop#hive#ql#optimizer#ReduceSinkDeDuplication.txt_1
+6,hive_d908f1_c5be02_ql#src#java#org#apache#hadoop#hive#ql#exec#DDLTask.txt_0
+7,camel_bc1a64_b0f029_components#camel-jms#src#main#java#org#apache#camel#component#jms#JmsBinding.txt_1

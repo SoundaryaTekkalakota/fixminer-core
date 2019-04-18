@@ -1,0 +1,6 @@
+0,spring-roo_02a22d_46b258_process-manager#src#main#java#org#springframework#roo#process#manager#ProcessManagerHostedExecutionStrategy.txt_4
+1,hive_660e39_9a5381_service#src#java#org#apache#hive#service#cli#session#HiveSessionImpl.txt_11
+2,hbase_6eab89_83258b_core#src#main#java#org#apache#hadoop#hbase#master#RegionManager.txt_2
+3,spring-framework_480cd2_a86f6d3_spring-context#src#main#java#org#springframework#scheduling#annotation#ScheduledAnnotationBeanPostProcessor.txt_8
+4,spring-framework_8d6d6b_1b4e02_spring-context#src#main#java#org#springframework#jmx#support#MBeanRegistrationSupport.txt_5
+5,spring-batch_38520e_aaa7c0_spring-batch-core#src#main#java#org#springframework#batch#core#launch#support#JobRegistryBackgroundJobRunner.txt_2

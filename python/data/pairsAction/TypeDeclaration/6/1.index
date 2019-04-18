@@ -1,0 +1,7 @@
+0,spring-batch_b0ffe5_867fa5_spring-batch-core#src#main#java#org#springframework#batch#core#repository#dao#Jackson2ExecutionContextStringSerializer.txt_5
+1,spring-data-mongodb_d8a975_4c8bf0_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#convert#MappingMongoConverter.txt_6
+2,hbase_4cedd9_a73f4d_hbase-server#src#main#java#org#apache#hadoop#hbase#master#normalizer#SimpleRegionNormalizer.txt_1
+3,hive_10cfdd_35ac8b_metastore#src#java#org#apache#hadoop#hive#metastore#hbase#SharedStorageDescriptor.txt_125
+4,hbase_8b49f4_5cd2a7_hbase-server#src#main#java#org#apache#hadoop#hbase#util#HBaseFsck.txt_7
+5,hive_10cfdd_35ac8b_metastore#src#java#org#apache#hadoop#hive#metastore#hbase#SharedStorageDescriptor.txt_153
+6,spring-security-oauth_d8ac98_0d0169_spring-security-oauth#src#main#java#org#springframework#security#oauth#provider#nonce#InMemoryNonceServices.txt_24

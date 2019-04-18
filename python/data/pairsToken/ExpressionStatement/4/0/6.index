@@ -1,0 +1,8 @@
+0,hbase_ee540c_c253f8_hbase-server#src#main#java#org#apache#hadoop#hbase#replication#regionserver#ReplicationSource.txt_8
+1,hive_0b7e9e_a1b07c_ql#src#java#org#apache#hadoop#hive#ql#io#orc#RecordReaderImpl.txt_2
+2,hbase_52ccf8_9a54fc_src#main#java#org#apache#hadoop#hbase#regionserver#HRegionServer.txt_0
+3,hive_2915ac_f20311_ql#src#java#org#apache#hadoop#hive#ql#io#orc#VectorizedOrcAcidRowBatchReader.txt_6
+4,hive_0b7e9e_a1b07c_ql#src#java#org#apache#hadoop#hive#ql#io#orc#RecordReaderImpl.txt_0
+5,spring-batch_a21df7_7f1130_spring-batch-infrastructure#src#main#java#org#springframework#batch#item#xml#StaxEventItemReader.txt_11
+6,spring-ws_4b89c4_c90681_core#src#main#java#org#springframework#ws#transport#http#MessageDispatcherServlet.txt_7
+7,spring-framework_009824_3c8c99_spring-context-support#src#main#java#org#springframework#scheduling#quartz#SchedulerFactoryBean.txt_4

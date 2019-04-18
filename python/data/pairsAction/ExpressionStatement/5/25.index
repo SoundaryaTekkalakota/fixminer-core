@@ -1,0 +1,13 @@
+0,hbase_07bf1b_8aeb80_src#java#org#apache#hadoop#hbase#KeyValue.txt_0
+1,hbase_d122e7_52ea8f_hbase-server#src#main#java#org#apache#hadoop#hbase#catalog#MetaEditor.txt_1
+2,camel_bb4f2e_d8c482_components#camel-yammer#src#main#java#org#apache#camel#component#yammer#YammerComponent.txt_6
+3,camel_0be3d9_d901b5_camel-core#src#main#java#org#apache#camel#impl#SupervisingRouteController.txt_71
+4,hive_a96564_8ab523_ql#src#java#org#apache#hadoop#hive#ql#exec#FileSinkOperator.txt_3
+5,hive_f52aa6_a1a0a9_ql#src#java#org#apache#hadoop#hive#ql#io#HiveInputFormat.txt_4
+6,hive_e0933a_e4825c_service#src#java#org#apache#hive#service#cli#operation#SQLOperation.txt_4
+7,camel_69387f_6b222e_components#camel-cxf#src#main#java#org#apache#camel#component#cxf#invoker#CxfClient.txt_1
+8,camel_12c70e_7fa815_components#camel-cxf#src#main#java#org#apache#camel#component#cxf#CxfEndpoint.txt_0
+9,camel_e5c2985b_5ada5c_components#camel-spring#src#main#java#org#apache#camel#spring#remoting#CamelServiceExporter.txt_0
+10,hive_e0933a_e4825c_service#src#java#org#apache#hive#service#cli#operation#SQLOperation.txt_1
+11,camel_12c70e_7fa815_components#camel-cxf#src#main#java#org#apache#camel#component#cxf#CxfEndpoint.txt_1
+12,hive_e0933a_e4825c_service#src#java#org#apache#hive#service#cli#operation#SQLOperation.txt_0

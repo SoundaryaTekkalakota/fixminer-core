@@ -1,0 +1,8 @@
+0,camel_35581b_857311_components#camel-sql#src#main#java#org#apache#camel#component#sql#SqlProducer.txt_0
+1,camel_7dab01_f1597f_components#camel-jdbc#src#main#java#org#apache#camel#component#jdbc#JdbcProducer.txt_1
+2,camel_7b548a_d60a1e_camel-core#src#main#java#org#apache#camel#processor#TransformProcessor.txt_0
+3,camel_0df726_303c00_components#camel-cxf#src#main#java#org#apache#camel#component#cxf#CxfProducer.txt_0
+4,camel_52dad3_6c6925_components#camel-cxf#src#main#java#org#apache#camel#component#cxf#jaxrs#CxfRsProducer.txt_0
+5,camel_52dad3_6c6925_components#camel-cxf#src#main#java#org#apache#camel#component#cxf#jaxrs#CxfRsProducer.txt_2
+6,camel_6f489f_ca5b6f_components#camel-spring-batch#src#main#java#org#apache#camel#component#spring#batch#SpringBatchProducer.txt_0
+7,camel_174b75_b29e57_components#camel-cxf-transport#src#main#java#org#apache#camel#component#cxf#transport#CamelDestination.txt_0

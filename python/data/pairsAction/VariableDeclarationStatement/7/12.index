@@ -1,0 +1,13 @@
+0,hbase_b0f523_8cdf4a_hbase-client#src#main#java#org#apache#hadoop#hbase#ipc#RpcClientImpl.txt_40
+1,hbase_5e7087_c16bbf_hbase-client#src#main#java#org#apache#hadoop#hbase#client#ScannerCallableWithReplicas.txt_1
+2,hbase_419a8b_e30829_hbase-server#src#main#java#org#apache#hadoop#hbase#security#access#TableAuthManager.txt_30
+3,hive_b3a903_8eab6c_ql#src#java#org#apache#hadoop#hive#ql#parse#SemanticAnalyzer.txt_9
+4,wildfly-core_bfd610_af0a76_controller#src#main#java#org#jboss#as#controller#PersistentResourceXMLDescription.txt_2
+5,hive_d3bba7_9fb429_ql#src#java#org#apache#hadoop#hive#ql#exec#tez#monitoring#TezJobMonitor.txt_1
+6,hbase_1d0975_f0120d_src#main#java#org#apache#hadoop#hbase#replication#ReplicationZookeeper.txt_0
+7,hbase_e8eb36_f9793f_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#HStore.txt_0
+8,hive_be05e3_5201f1_ql#src#java#org#apache#hadoop#hive#ql#optimizer#calcite#rules#HivePreFilteringRule.txt_0
+9,hbase_e2cd67_b854d1_src#main#java#org#apache#hadoop#hbase#regionserver#SplitLogWorker.txt_0
+10,hive_b3a903_8eab6c_ql#src#java#org#apache#hadoop#hive#ql#parse#SemanticAnalyzer.txt_2
+11,spring-framework_8d45e3_c8627c_spring-core#src#main#java#org#springframework#core#MethodParameter.txt_0
+12,hbase_f7faad_08bcd6_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#HStore.txt_2

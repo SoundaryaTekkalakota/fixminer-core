@@ -1,0 +1,10 @@
+0,spring-security_c79bce_cbed1d_core#src#main#java#org#springframework#security#core#parameters#AnnotationParameterNameDiscoverer.txt_1
+1,hive_dc3dfe_8b8d0e_ql#src#java#org#apache#hadoop#hive#ql#exec#UnionOperator.txt_7
+2,commons-codec_f5185b_3b398a_src#java#org#apache#commons#codec#binary#Base64.txt_4
+3,camel_f7beff_2d2db6_components#camel-quartz2#src#main#java#org#apache#camel#component#quartz2#QuartzEndpoint.txt_2
+4,hive_fc543a_42cb28_ql#src#java#org#apache#hadoop#hive#ql#exec#vector#VectorFilterOperator.txt_5
+5,hive_fc543a_42cb28_ql#src#java#org#apache#hadoop#hive#ql#exec#vector#VectorFilterOperator.txt_4
+6,hbase_667818_fc93de_hbase-server#src#main#java#org#apache#hadoop#hbase#master#snapshot#SnapshotFileCache.txt_0
+7,hbase_2e74ef_88de40d_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#Leases.txt_7
+8,hive_2915ac_f20311_ql#src#java#org#apache#hadoop#hive#ql#io#orc#VectorizedOrcAcidRowBatchReader.txt_14
+9,hive_2915ac_f20311_ql#src#java#org#apache#hadoop#hive#ql#io#orc#VectorizedOrcAcidRowBatchReader.txt_13

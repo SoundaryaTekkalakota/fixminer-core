@@ -1,0 +1,10 @@
+0,hive_8ab523_b7be4a_ql#src#java#org#apache#hadoop#hive#ql#optimizer#calcite#rules#HiveRemoveGBYSemiJoinRule.txt_1
+1,hbase_b4dccf_2f58da_src#main#java#org#apache#hadoop#hbase#regionserver#Store.txt_0
+2,wildfly_b469e5b_2a392d_mod_cluster#extension#src#main#java#org#wildfly#extension#mod_cluster#ModClusterSubsystemAdd.txt_0
+3,wildfly_b469e5b_2a392d_mod_cluster#extension#src#main#java#org#wildfly#extension#mod_cluster#ModClusterSubsystemAdd.txt_1
+4,hive_a0a203_9bf3b8_ql#src#java#org#apache#hadoop#hive#ql#parse#SemanticAnalyzer.txt_5
+5,spring-framework_8d45e3_c8627c_spring-core#src#main#java#org#springframework#core#MethodParameter.txt_2
+6,hbase_b1595a_47ae2d_hbase-server#src#main#java#org#apache#hadoop#hbase#master#AssignmentManager.txt_3
+7,hive_f3787a_2c0de0_ql#src#java#org#apache#hadoop#hive#ql#optimizer#physical#CommonJoinResolver.txt_4
+8,hbase_97c398_b5222f_hbase-client#src#main#java#org#apache#hadoop#hbase#client#RpcRetryingCallerImpl.txt_0
+9,wildfly_7454d2_a1e3cf_webservices#server-integration#src#main#java#org#jboss#as#webservices#deployers#deployment#AbstractDeploymentModelBuilder.txt_1

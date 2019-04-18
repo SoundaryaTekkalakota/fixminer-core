@@ -1,0 +1,12 @@
+0,hive_c4da89_6f1079_service#src#java#org#apache#hive#service#cli#session#SessionManager.txt_7
+1,hive_95a153_a2394c_hbase-handler#src#java#org#apache#hadoop#hive#hbase#HiveHBaseTableInputFormat.txt_4
+2,spring-framework_e393c7_e214e6_spring-core#src#main#java#org#springframework#core#env#AbstractEnvironment.txt_3
+3,spring-framework_1b1a69_42b4f6_spring-core#src#main#java#org#springframework#core#SimpleAliasRegistry.txt_1
+4,hive_c4da89_6f1079_service#src#java#org#apache#hive#service#cli#session#SessionManager.txt_9
+5,hbase_6eab89_83258b_core#src#main#java#org#apache#hadoop#hbase#master#RegionManager.txt_8
+6,hbase_003a05_997c8f_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#wal#FSHLog.txt_6
+7,hbase_0bafd1_d50476_hbase-client#src#main#java#org#apache#hadoop#hbase#ipc#RpcClient.txt_52
+8,spring-framework_e393c7_e214e6_spring-core#src#main#java#org#springframework#core#env#AbstractEnvironment.txt_2
+9,spring-framework_e393c7_e214e6_spring-core#src#main#java#org#springframework#core#env#AbstractEnvironment.txt_6
+10,spring-framework_e393c7_e214e6_spring-core#src#main#java#org#springframework#core#env#AbstractEnvironment.txt_5
+11,hbase_b3da98_79676f_hbase-client#src#main#java#org#apache#hadoop#hbase#client#ConnectionManager.txt_2

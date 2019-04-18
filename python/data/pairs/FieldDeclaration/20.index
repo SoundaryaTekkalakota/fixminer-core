@@ -1,0 +1,6 @@
+0,spring-amqp_a8ce5b_2702aa_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#connection#CachingConnectionFactory.txt_0
+1,hbase_6f966f_9a5f75_src#java#org#apache#hadoop#hbase#mapred#RowCounter.txt_3
+2,spring-data-redis_a3ac8d_9cf484_src#main#java#org#springframework#data#redis#connection#lettuce#LettuceConnection.txt_9
+3,hive_aac926_1ec276_ql#src#java#org#apache#hadoop#hive#ql#exec#tez#TezJobMonitor.txt_3
+4,hive_583859_ff9c63_ql#src#java#org#apache#hadoop#hive#ql#io#HiveFileFormatUtils.txt_0
+5,hbase_62b5c0_3e37ba_src#main#java#org#apache#hadoop#hbase#master#AssignmentManager.txt_0

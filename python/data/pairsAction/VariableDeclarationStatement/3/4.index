@@ -1,0 +1,11 @@
+0,hbase_f55e81_638433_hbase-server#src#main#java#org#apache#hadoop#hbase#io#hfile#bucket#FileIOEngine.txt_2
+1,camel_a1777c_0fb158_components#camel-rabbitmq#src#main#java#org#apache#camel#component#rabbitmq#RabbitMQConsumer.txt_1
+2,hbase_765709_3b8c076_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#compactions#Compactor.txt_3
+3,hbase_7e6f5627_69d170_hbase-server#src#main#java#org#apache#hadoop#hbase#master#AssignmentManager.txt_7
+4,hbase_29104d_cbf037_hbase-common#src#main#java#org#apache#hadoop#hbase#io#BoundedByteBufferPool.txt_0
+5,hive_445b79_b6e39c_ql#src#java#org#apache#hadoop#hive#ql#parse#BaseSemanticAnalyzer.txt_5
+6,spring-security_8cff71_e39bd4_core#src#main#java#org#acegisecurity#providers#AbstractAuthenticationToken.txt_0
+7,hbase_e087a9_4ec69c_hbase-server#src#main#java#org#apache#hadoop#hbase#replication#regionserver#ReplicationSource.txt_0
+8,hbase_7e6f5627_69d170_hbase-server#src#main#java#org#apache#hadoop#hbase#master#AssignmentManager.txt_4
+9,hive_3756aa_1c2725_ql#src#java#org#apache#hadoop#hive#ql#io#orc#RecordReaderImpl.txt_0
+10,hive_078b9c_e54acc_ql#src#java#org#apache#hadoop#hive#ql#parse#DDLSemanticAnalyzer.txt_1

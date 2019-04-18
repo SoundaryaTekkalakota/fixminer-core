@@ -1,0 +1,5 @@
+0,wildfly_02258d_883115_iiop-openjdk#src#main#java#org#wildfly#iiop#openjdk#service#CorbaPOAService.txt_2
+1,spring-webflow_bcef26_a1e7dc_spring-webflow#src#main#java#org#springframework#webflow#engine#support#ActionExecutingViewFactory.txt_1
+2,camel_2926e0_41bdab_components#camel-http#src#main#java#org#apache#camel#component#http#HttpOperationFailedException.txt_1
+3,spring-data-mongodb_8e93b8_3e6443_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#convert#CustomConversions.txt_14
+4,spring-amqp_d550f9_8955cb_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#connection#ConnectionFactoryUtils.txt_8

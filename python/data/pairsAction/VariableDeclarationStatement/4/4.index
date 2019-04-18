@@ -1,0 +1,10 @@
+0,wildfly-core_fa0c54_78b267_cli#src#main#java#org#jboss#as#cli#impl#ValueTypeCompleter.txt_7
+1,commons-configuration_ed8738_2127f4_src#java#org#apache#commons#configuration#XMLConfiguration.txt_0
+2,hive_c9d733_7be375_ql#src#java#org#apache#hadoop#hive#ql#parse#LoadSemanticAnalyzer.txt_3
+3,wildfly-core_e2d794_a8cbd5_controller#src#main#java#org#jboss#as#controller#registry#BasicResource.txt_0
+4,hive_c4eb64_481051_ql#src#java#org#apache#hadoop#hive#ql#hooks#HiveProtoLoggingHook.txt_1
+5,spring-security_7537df_5082a0_config#src#main#java#org#springframework#security#config#annotation#method#configuration#GlobalMethodSecurityConfiguration.txt_0
+6,camel_2a4038_4fee31_components#camel-salesforce#camel-salesforce-maven-plugin#src#main#java#org#apache#camel#maven#CamelSalesforceMojo.txt_0
+7,wildfly_b8f5a5_b365f6_undertow#src#main#java#org#wildfly#extension#undertow#AjpListenerService.txt_0
+8,spring-framework_ec8391_2c2de8_spring-web#src#main#java#org#springframework#http#client#Netty4ClientHttpRequest.txt_0
+9,spring-ws_11dcfa_3ad5fc_core#src#main#java#org#springframework#ws#transport#http#AbstractHttpSenderConnection.txt_0

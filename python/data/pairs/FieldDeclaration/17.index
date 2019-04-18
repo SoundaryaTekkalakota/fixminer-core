@@ -1,0 +1,9 @@
+0,hbase_4cedd9_a73f4d_hbase-server#src#main#java#org#apache#hadoop#hbase#master#normalizer#SimpleRegionNormalizer.txt_0
+1,hive_175363_267b4e_ql#src#java#org#apache#hadoop#hive#ql#optimizer#physical#Vectorizer.txt_7
+2,wildfly-core_76fec9_f51899_protocol#src#main#java#org#jboss#as#protocol#ProtocolConnectionUtils.txt_0
+3,spring-amqp_272413_e0eaed_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#annotation#RabbitListenerAnnotationBeanPostProcessor.txt_3
+4,hive_4c1102_bbc39f_ql#src#java#org#apache#hadoop#hive#ql#exec#DDLTask.txt_0
+5,hive_3f986d_e618bd_ql#src#java#org#apache#hadoop#hive#ql#exec#vector#VectorizationContext.txt_0
+6,hive_175363_267b4e_ql#src#java#org#apache#hadoop#hive#ql#optimizer#physical#Vectorizer.txt_14
+7,spring-framework_c80613_365a42_spring-context#src#main#java#org#springframework#context#annotation#ConfigurationClassEnhancer.txt_1
+8,spring-framework_77074c_1e34e2_org.springframework.core#src#main#java#org#springframework#util#PropertyPlaceholderHelper.txt_0

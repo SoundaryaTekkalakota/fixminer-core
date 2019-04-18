@@ -1,0 +1,17 @@
+0,commons-compress_2ba220_040e42_src#main#java#org#apache#commons#compress#archivers#tar#TarArchiveOutputStream.txt_1
+1,wildfly_c7f7e2_8fedd0_ejb3#src#main#java#org#jboss#as#ejb3#deployment#processors#merging#MethodPermissionsMergingProcessor.txt_0
+2,wildfly_ccf67d_f99a66_messaging#src#main#java#org#jboss#as#messaging#jms#AS7BindingRegistry.txt_1
+3,camel_e07599_0b0917_camel-core#src#main#java#org#apache#camel#processor#SendAsyncProcessor.txt_2
+4,wildfly_9c6a61_871363_transactions#src#main#java#org#jboss#as#txn#subsystem#TransactionSubsystemAdd.txt_0
+5,spring-roo_9ba145_8524af_classpath#src#main#java#org#springframework#roo#classpath#TypeLocationServiceImpl.txt_0
+6,spring-roo_629827_4e7fed_addon-finder#src#main#java#org#springframework#roo#addon#finder#FinderMetadata.txt_6
+7,wildfly_52ef61_89d107_undertow#src#main#java#org#wildfly#extension#undertow#deployment#ConfiguredHandlerWrapper.txt_4
+8,wildfly_52ef61_89d107_undertow#src#main#java#org#wildfly#extension#undertow#deployment#ConfiguredHandlerWrapper.txt_2
+9,hive_040c07_5ba634_ql#src#java#org#apache#hadoop#hive#ql#optimizer#calcite#translator#RexNodeConverter.txt_13
+10,wildfly-core_f6d91c_575a7e_cli#src#main#java#org#jboss#as#cli#operation#impl#DefaultOperationCandidatesProvider.txt_1
+11,wildfly_c7f7e2_8fedd0_ejb3#src#main#java#org#jboss#as#ejb3#deployment#processors#merging#MethodPermissionsMergingProcessor.txt_2
+12,wildfly_c7f7e2_8fedd0_ejb3#src#main#java#org#jboss#as#ejb3#deployment#processors#merging#MethodPermissionsMergingProcessor.txt_4
+13,hive_e02871_7b7b8f_hbase-handler#src#java#org#apache#hadoop#hive#hbase#HiveHFileOutputFormat.txt_1
+14,hive_9dc28d_3113f8_ql#src#java#org#apache#hadoop#hive#ql#optimizer#calcite#rules#HiveSemiJoinRule.txt_2
+15,metadata_4b8977_01e38d_ejb#src#main#java#org#jboss#metadata#ejb#parser#spec#TimerMetaDataParser.txt_2
+16,hive_8e2007_0dfb59_ql#src#java#org#apache#hadoop#hive#ql#parse#TypeCheckProcFactory.txt_0

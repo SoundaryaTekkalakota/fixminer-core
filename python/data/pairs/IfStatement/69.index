@@ -1,0 +1,5 @@
+0,commons-compress_2ba220_040e42_src#main#java#org#apache#commons#compress#archivers#tar#TarArchiveOutputStream.txt_5
+1,hive_0ad4f7_941610_ql#src#java#org#apache#hadoop#hive#ql#lib#RuleRegExp.txt_10
+2,wildfly-core_9de22b_749f78_elytron#src#main#java#org#wildfly#extension#elytron#AuditResourceDefinitions.txt_1
+3,wildfly-core_037e8f_af1c49_logging#src#main#java#org#jboss#as#logging#validators#SuffixValidator.txt_1
+4,wildfly-core_ade10f_ecdf28_domain-management#src#main#java#org#jboss#as#domain#management#audit#validators#SuffixValidator.txt_1

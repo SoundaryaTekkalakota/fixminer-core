@@ -1,0 +1,6 @@
+0,wildfly-core_7e4f56_c1fa79_controller#src#main#java#org#jboss#as#controller#SimpleResourceDefinition.txt_6
+1,hive_5074423_467a11_ql#src#java#org#apache#hadoop#hive#ql#metadata#Hive.txt_5
+2,wildfly_168a87_120a67_connector#src#main#java#org#jboss#as#connector#util#Injection.txt_0
+3,hive_942f73_53596d_llap-tez#src#java#org#apache#hadoop#hive#llap#tezplugins#LlapTaskCommunicator.txt_1
+4,hive_d5cc5f_35057a_ql#src#java#org#apache#hadoop#hive#ql#exec#tez#TezJobMonitor.txt_7
+5,spring-roo_56d15f_7e3e16_addon-entity#src#main#java#org#springframework#roo#addon#entity#EntityMetadata.txt_4

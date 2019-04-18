@@ -1,0 +1,6 @@
+0,hive_7faa8a_c09884_service#src#java#org#apache#hive#service#auth#HiveAuthFactory.txt_1
+1,spring-data-mongodb_161a98_928847_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#convert#QueryMapper.txt_0
+2,hive_be1955_ba210c_hcatalog#streaming#src#java#org#apache#hive#hcatalog#streaming#HiveEndPoint.txt_8
+3,hive_5dfe23_b7e8d0_shims#common#src#main#java#org#apache#hadoop#hive#thrift#HadoopThriftAuthBridge.txt_4
+4,camel_f54383_824047_components#camel-ftp#src#main#java#org#apache#camel#component#file#remote#SftpOperations.txt_5
+5,hive_2811d0_5ced7b_beeline#src#java#org#apache#hive#beeline#HiveSchemaTool.txt_2

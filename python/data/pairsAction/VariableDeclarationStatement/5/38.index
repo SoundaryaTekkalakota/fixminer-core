@@ -1,0 +1,8 @@
+0,hive_96f591_d3a879_ql#src#java#org#apache#hadoop#hive#ql#optimizer#stats#annotation#StatsRulesProcFactory.txt_0
+1,hbase_91749f9_d5a347_hbase-client#src#main#java#org#apache#hadoop#hbase#client#HConnectionManager.txt_0
+2,hbase_e5d813_1359e8_hbase-server#src#main#java#org#apache#hadoop#hbase#mapreduce#LoadIncrementalHFiles.txt_0
+3,hbase_d6bc73_f0f66f_hbase-server#src#main#java#org#apache#hadoop#hbase#master#AssignmentManager.txt_2
+4,hbase_91749f9_d5a347_hbase-client#src#main#java#org#apache#hadoop#hbase#client#HConnectionManager.txt_1
+5,spring-security_5641ab_c7b93e_acl#src#main#java#org#springframework#security#acls#domain#AclFormattingUtils.txt_0
+6,hive_725bf8_ff31f6_metastore#src#java#org#apache#hadoop#hive#metastore#ObjectStore.txt_0
+7,hbase_28adf6_8e13fe_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#MemStoreFlusher.txt_0

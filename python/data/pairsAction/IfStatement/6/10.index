@@ -1,0 +1,17 @@
+0,wildfly-core_4dd6cc_3e99c3_server#src#main#java#org#jboss#as#server#moduleservice#ExtensionIndexService.txt_0
+1,hive_597ca1_7299c0_llap-server#src#java#org#apache#hadoop#hive#llap#metrics#LlapDaemonExecutorMetrics.txt_6
+2,commons-compress_8e5f66_a1379c_src#main#java#org#apache#commons#compress#changes#ChangeSet.txt_1
+3,hbase_6ec4a9_bfa368_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#HStore.txt_3
+4,hbase_6ec4a9_bfa368_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#HStore.txt_2
+5,spring-data-rest_9fd62b_c49754_spring-data-rest-webmvc#src#main#java#org#springframework#data#rest#webmvc#json#PersistentEntityToJsonSchemaConverter.txt_3
+6,spring-roo_a11dbc_6ffe33_addon-jpa#addon#src#main#java#org#springframework#roo#addon#jpa#addon#entity#JpaEntityMetadata.txt_4
+7,hbase_27a27a_1b5576_hbase-server#src#main#java#org#apache#hadoop#hbase#mapreduce#Import.txt_8
+8,hive_6dff23_796fa7_ql#src#java#org#apache#hadoop#hive#ql#exec#OperatorUtils.txt_0
+9,spring-framework_58e113_7818c6_spring-context#src#main#java#org#springframework#context#annotation#AutoProxyRegistrar.txt_0
+10,hbase_89688d_9e131d_hbase-server#src#main#java#org#apache#hadoop#hbase#master#AssignmentManager.txt_0
+11,hive_ea31ce_8518ff_ql#src#java#org#apache#hadoop#hive#ql#lockmgr#DummyTxnManager.txt_2
+12,hive_109439_463a51_ql#src#java#org#apache#hadoop#hive#ql#parse#TezCompiler.txt_2
+13,hbase_92fdc8_e52039_hbase-server#src#main#java#org#apache#hadoop#hbase#master#balancer#SimpleLoadBalancer.txt_0
+14,wildfly-core_934918_a46431_controller#src#main#java#org#jboss#as#controller#operations#global#GlobalOperationHandlers.txt_0
+15,hbase_27a27a_1b5576_hbase-server#src#main#java#org#apache#hadoop#hbase#mapreduce#Import.txt_5
+16,spring-data-mongodb_307d86_19879b_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#convert#MappingMongoConverter.txt_0

@@ -1,0 +1,14 @@
+0,spring-batch_2c174d_d20e51_spring-batch-infrastructure#src#main#java#org#springframework#batch#item#file#transform#DefaultFieldSet.txt_0
+1,hive_959e77_b29046_standalone-metastore#src#main#java#org#apache#hadoop#hive#metastore#HiveMetaStore.txt_3
+2,camel_37fdb5_8b78f5_components#camel-zipfile#src#main#java#org#apache#camel#dataformat#zipfile#ZipIterator.txt_0
+3,hbase_293726_dbb9b3_src#main#java#org#apache#hadoop#hbase#master#AssignmentManager.txt_1
+4,hbase_50f8579_261478_hbase-server#src#main#java#org#apache#hadoop#hbase#snapshot#ExportSnapshot.txt_44
+5,hive_959e77_b29046_standalone-metastore#src#main#java#org#apache#hadoop#hive#metastore#HiveMetaStore.txt_11
+6,hive_959e77_b29046_standalone-metastore#src#main#java#org#apache#hadoop#hive#metastore#HiveMetaStore.txt_0
+7,hive_959e77_b29046_standalone-metastore#src#main#java#org#apache#hadoop#hive#metastore#HiveMetaStore.txt_7
+8,hbase_d15462_28012b_src#main#java#org#apache#hadoop#hbase#regionserver#handler#OpenRegionHandler.txt_12
+9,hbase_0bafd1_d50476_hbase-client#src#main#java#org#apache#hadoop#hbase#ipc#RpcClient.txt_59
+10,commons-crypto_3cd056_929840_src#main#java#org#apache#commons#crypto#random#CryptoRandomFactory.txt_0
+11,hive_8f5c008_8f6326d_ql#src#java#org#apache#hadoop#hive#ql#udf#generic#GenericUDTFJSONTuple.txt_3
+12,spring-ws_dc13af_a9ebd6_core#src#main#java#org#springframework#ws#soap#saaj#support#SaajUtils.txt_2
+13,hbase_a30321_1b0444_core#src#main#java#org#apache#hadoop#hbase#client#HConnectionManager.txt_0

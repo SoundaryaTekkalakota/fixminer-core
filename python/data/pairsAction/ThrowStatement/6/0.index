@@ -1,0 +1,6 @@
+0,hive_b19258_cdf0d5_ql#src#java#org#apache#hadoop#hive#ql#io#VectorizedRCFileRecordReader.txt_1
+1,hbase_46eef1_3cad85_src#main#java#org#apache#hadoop#hbase#regionserver#wal#HLog.txt_0
+2,hive_b19258_cdf0d5_ql#src#java#org#apache#hadoop#hive#ql#io#VectorizedRCFileRecordReader.txt_3
+3,hbase_d8a1df_2f22f9_hbase-server#src#main#java#org#apache#hadoop#hbase#mapreduce#TableMapReduceUtil.txt_5
+4,spring-security_dd554e_c0921b_ldap#src#main#java#org#springframework#security#ldap#server#ApacheDSContainer.txt_2
+5,spring-framework_aa43472_e4a599_spring-web#src#main#java#org#springframework#http#codec#json#Jackson2JsonDecoder.txt_1

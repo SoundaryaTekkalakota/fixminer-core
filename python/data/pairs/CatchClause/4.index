@@ -1,0 +1,14 @@
+0,hbase_c93cff_7e3998_hbase-server#src#main#java#org#apache#hadoop#hbase#util#FSTableDescriptors.txt_0
+1,hive_660c5e_6e21fe_ql#src#java#org#apache#hadoop#hive#ql#io#RCFile.txt_2
+2,spring-framework_9334fa_323fa8_spring-webmvc#src#main#java#org#springframework#web#servlet#resource#ResourceHttpRequestHandler.txt_0
+3,hbase_99e725_4531cc_src#java#org#apache#hadoop#hbase#regionserver#HRegionServer.txt_0
+4,hbase_c176d4_5b6175_src#main#java#org#apache#hadoop#hbase#catalog#CatalogTracker.txt_0
+5,spring-framework_d1d5e2_96b9cf_org.springframework.jms#src#main#java#org#springframework#jms#connection#JmsResourceHolder.txt_0
+6,wildfly-elytron_512e1c_a9ef27_src#main#java#org#wildfly#security#x500#X500PrincipalUtil.txt_5
+7,hive_c2da75_ebad27_ql#src#java#org#apache#hadoop#hive#ql#debug#Utils.txt_6
+8,spring-amqp_aa0580_11d927_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#listener#SimpleMessageListenerContainer.txt_0
+9,hbase_c176d4_5b6175_src#main#java#org#apache#hadoop#hbase#catalog#CatalogTracker.txt_1
+10,wildfly_67ffe4_1266fa_arquillian#common#src#main#java#org#jboss#as#arquillian#container#ManagementClient.txt_0
+11,camel_2923c8_9ef445b_components#camel-mongodb#src#main#java#org#apache#camel#component#mongodb#MongoDbTailingProcess.txt_0
+12,hbase_99e725_4531cc_src#java#org#apache#hadoop#hbase#regionserver#HRegionServer.txt_1
+13,hbase_0be4e1_da4167c_hbase-client#src#main#java#org#apache#hadoop#hbase#catalog#CatalogTracker.txt_0

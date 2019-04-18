@@ -1,0 +1,17 @@
+0,camel_4aae65_13886b_components#camel-blueprint#src#main#java#org#apache#camel#blueprint#handler#CamelNamespaceHandler.txt_0
+1,camel_11a054_49ab63_components#camel-cxf#src#main#java#org#apache#camel#component#cxf#jaxrs#DefaultCxfRsBinding.txt_1
+2,spring-data-mongodb_cbed57_b8f106_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#repository#config#MongoRepositoryConfigurationExtension.txt_0
+3,camel_a70fc5_5563ce_components#camel-cxf#src#main#java#org#apache#camel#component#cxf#DefaultCxfBinding.txt_1
+4,hive_0ea2f28_aa45b0_beeline#src#java#org#apache#hive#beeline#SeparatedValuesOutputFormat.txt_8
+5,hbase_d15462_28012b_src#main#java#org#apache#hadoop#hbase#regionserver#handler#OpenRegionHandler.txt_2
+6,hbase_2bae04f_2c8b81_hbase-client#src#main#java#org#apache#hadoop#hbase#filter#MultiRowRangeFilter.txt_28
+7,hbase_18d925_31c21f_hbase-client#src#main#java#org#apache#hadoop#hbase#client#AsyncProcess.txt_14
+8,hive_4cb876_2f1d4b_metastore#src#java#org#apache#hadoop#hive#metastore#ObjectStore.txt_5
+9,spring-security_4b86d4_b481a6_taglibs#src#main#java#org#springframework#security#taglibs#authz#AccessControlListTag.txt_2
+10,hive_58602f_cff662_ql#src#java#org#apache#hadoop#hive#ql#udf#ptf#WindowingTableFunction.txt_5
+11,hive_087ef7_f30efb_standalone-metastore#src#main#java#org#apache#hadoop#hive#metastore#tools#HiveMetaTool.txt_18
+12,spring-security_767312_85a58f_web#src#main#java#org#springframework#security#web#DefaultRedirectStrategy.txt_1
+13,hive_ab095f_f9d1b6_hcatalog#webhcat#svr#src#main#java#org#apache#hive#hcatalog#templeton#SecureProxySupport.txt_6
+14,spring-framework_01ce46_dc0613_org.springframework.web#src#main#java#org#springframework#http#converter#json#MappingJacksonHttpMessageConverter.txt_10
+15,hbase_75d1e0_b35121_hbase-server#src#main#java#org#apache#hadoop#hbase#tool#Canary.txt_3
+16,hive_3fc131_6be50b_ql#src#java#org#apache#hadoop#hive#ql#exec#Utilities.txt_0

@@ -1,0 +1,5 @@
+0,spring-batch_a21df7_7f1130_spring-batch-infrastructure#src#main#java#org#springframework#batch#item#xml#StaxEventItemReader.txt_13
+1,hbase_96a5ef_2514f2_hbase-server#src#main#java#org#apache#hadoop#hbase#snapshot#ExportSnapshot.txt_19
+2,hbase_16f8d2_1bb9e3_hbase-client#src#main#java#org#apache#hadoop#hbase#ipc#RpcClientImpl.txt_5
+3,hbase_b0f523_8cdf4a_hbase-client#src#main#java#org#apache#hadoop#hbase#ipc#RpcClientImpl.txt_5
+4,spring-ldap_9e2fbb_334585_core#src#main#java#org#springframework#ldap#core#LdapTemplate.txt_1

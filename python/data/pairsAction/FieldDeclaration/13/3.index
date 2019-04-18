@@ -1,0 +1,8 @@
+0,camel_25539a_54d6e4_components#camel-kafka#src#main#java#org#apache#camel#component#kafka#KafkaConsumer.txt_0
+1,spring-amqp_37090e_37b987_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#annotation#RabbitListenerAnnotationBeanPostProcessor.txt_1
+2,spring-amqp_272413_e0eaed_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#annotation#RabbitListenerAnnotationBeanPostProcessor.txt_1
+3,wildfly_51a23a_622f35_server#src#main#java#org#jboss#as#server#deployment#module#VFSResourceLoader.txt_0
+4,wildfly_5da9e6_337fdc_undertow#src#main#java#org#wildfly#extension#undertow#ImportedClassELResolver.txt_0
+5,wildfly-core_66d694_5173bb_controller#src#main#java#org#jboss#as#controller#PersistentResourceXMLDescription.txt_22
+6,wildfly-core_f91868_989051_controller#src#main#java#org#jboss#as#controller#CapabilityRegistry.txt_0
+7,spring-framework_d6dfde_333e32_spring-jcl#src#main#java#org#apache#commons#logging#LogFactoryService.txt_0

@@ -1,0 +1,6 @@
+0,hive_afd7b5_6d7422_jdbc#src#java#org#apache#hive#jdbc#HiveConnection.txt_6
+1,hbase_3450c9_d60cce_src#main#java#org#apache#hadoop#hbase#client#coprocessor#AggregationClient.txt_3
+2,spring-framework_6184c4_8e1ece_spring-beans#src#main#java#org#springframework#beans#factory#support#AbstractAutowireCapableBeanFactory.txt_3
+3,hive_20b845_527d13_ql#src#java#org#apache#hadoop#hive#ql#optimizer#stats#annotation#StatsRulesProcFactory.txt_18
+4,hbase_7b10847_5cc071_hbase-server#src#main#java#org#apache#hadoop#hbase#mapreduce#TableInputFormatBase.txt_4
+5,hbase_a6fd48_fc5736_hbase-client#src#main#java#org#apache#hadoop#hbase#client#AsyncProcess.txt_7

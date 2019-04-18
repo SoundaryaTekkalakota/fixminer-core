@@ -1,0 +1,16 @@
+0,hbase_dc1428_0c1a35_hbase-server#src#main#java#org#apache#hadoop#hbase#util#RegionSplitter.txt_1
+1,spring-framework_d0f13b_4504ab_org.springframework.web.servlet#src#main#java#org#springframework#web#servlet#view#RedirectView.txt_12
+2,hbase_dc1428_0c1a35_hbase-server#src#main#java#org#apache#hadoop#hbase#util#RegionSplitter.txt_0
+3,spring-data-mongodb_b6322d_572c4b_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#MongoTemplate.txt_2
+4,hive_2feee4_2d9654_ql#src#java#org#apache#hadoop#hive#ql#udf#generic#GenericUDFUtils.txt_4
+5,hbase_6c8d1f_e11aaf_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#compactions#RatioBasedCompactionPolicy.txt_0
+6,hbase_813528_ccabf7_hbase-mapreduce#src#main#java#org#apache#hadoop#hbase#mapreduce#CopyTable.txt_0
+7,hbase_c51e9ad_82e6fa_hbase-mapreduce#src#main#java#org#apache#hadoop#hbase#mapreduce#TableOutputFormat.txt_0
+8,hive_88cea1_d559b3_ql#src#java#org#apache#hadoop#hive#ql#session#SessionState.txt_0
+9,commons-configuration_2908e3_9f8259_src#main#java#org#apache#commons#configuration#PropertiesConfiguration.txt_1
+10,hbase_915f2c_6d43887_src#main#java#org#apache#hadoop#hbase#thrift#ThriftServerRunner.txt_5
+11,wildfly-core_a8cf7a_42c322_server#src#main#java#org#jboss#as#server#deployment#module#VFSResourceLoader.txt_11
+12,spring-data-commons_a7820c_64dada_src#main#java#org#springframework#data#util#TypeDiscoverer.txt_0
+13,hbase_419a8b_e30829_hbase-server#src#main#java#org#apache#hadoop#hbase#security#access#TableAuthManager.txt_28
+14,spring-webflow_ffb8f3_91e8a9_spring-faces#src#main#java#org#springframework#faces#webflow#JsfManagedBeanPropertyAccessor.txt_1
+15,hive_ebd2c5_766c3d_standalone-metastore#src#main#java#org#apache#hadoop#hive#metastore#TransactionalValidationListener.txt_5

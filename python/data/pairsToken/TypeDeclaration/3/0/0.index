@@ -1,0 +1,17 @@
+0,wildfly-core_753a9d_3a8186_controller#src#main#java#org#jboss#as#controller#OperationContextImpl.txt_72
+1,hbase_da5fb2_cf3215d_hbase-server#src#main#java#org#apache#hadoop#hbase#snapshot#ExportSnapshot.txt_0
+2,spring-data-redis_a3ac8d_9cf484_src#main#java#org#springframework#data#redis#connection#lettuce#LettuceConnection.txt_8
+3,spring-framework_e10e16_51d828_spring-context#src#main#java#org#springframework#context#annotation#ConfigurationClassParser.txt_26
+4,spring-ldap_389628_db8331_core#src#main#java#org#springframework#ldap#config#ContextSourceParser.txt_2
+5,spring-data-neo4j_fa9e31_4ff787_spring-data-neo4j#src#main#java#org#springframework#data#neo4j#conversion#MetaDataDrivenConversionService.txt_3
+6,spring-framework_36940c_6aa059_org.springframework.web.servlet#src#main#java#org#springframework#web#servlet#view#tiles2#TilesConfigurer.txt_7
+7,spring-framework_062805_053820_spring-context#src#main#java#org#springframework#context#annotation#ConfigurationClassParser.txt_15
+8,spring-framework_062805_053820_spring-context#src#main#java#org#springframework#context#annotation#ConfigurationClassParser.txt_12
+9,wildfly-core_753a9d_3a8186_controller#src#main#java#org#jboss#as#controller#OperationContextImpl.txt_23
+10,hive_afd7b5_6d7422_jdbc#src#java#org#apache#hive#jdbc#HiveConnection.txt_3
+11,hbase_1b7b4b_864643_hbase-server#src#main#java#org#apache#hadoop#hbase#util#FSVisitor.txt_0
+12,hbase_cb5299_22dce2_hbase-server#src#main#java#org#apache#hadoop#hbase#io#asyncfs#FanOutOneBlockAsyncDFSOutputHelper.txt_0
+13,spring-data-commons_a01de8_e92284_spring-data-commons-core#src#main#java#org#springframework#data#mapping#context#AbstractMappingContext.txt_3
+14,spring-data-mongodb_5e43f5_2cfd47_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#query#Update.txt_1
+15,spring-framework_d96b91_ae06c3_spring-core#src#main#java#org#springframework#core#SerializableTypeWrapper.txt_3
+16,hive_50610c_3ee63c_ql#src#java#org#apache#hadoop#hive#ql#udf#ptf#WindowingTableFunction.txt_1

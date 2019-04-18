@@ -1,0 +1,9 @@
+0,hbase_51de1e_f81be0_src#main#java#org#apache#hadoop#hbase#master#RegionManager.txt_5
+1,spring-batch_963142_4b6df8_spring-batch-infrastructure#src#main#java#org#springframework#batch#item#ExecutionContext.txt_1
+2,hive_36d66f_3a3804_standalone-metastore#src#main#java#org#apache#hadoop#hive#metastore#TransactionalValidationListener.txt_1
+3,wildfly-core_176bd3_9b8b3b_server#src#main#java#org#jboss#as#server#operations#SuspendStateReadHandler.txt_1
+4,hbase_b0f523_8cdf4a_hbase-client#src#main#java#org#apache#hadoop#hbase#ipc#RpcClientImpl.txt_31
+5,hbase_b0f523_8cdf4a_hbase-client#src#main#java#org#apache#hadoop#hbase#ipc#RpcClientImpl.txt_28
+6,hive_88005d_44d1bd_jdbc#src#java#org#apache#hive#jdbc#HiveConnection.txt_0
+7,wildfly-core_b641b5e_02ce5a_domain-http#interface#src#main#java#org#jboss#as#domain#http#server#ManagementHttpServer.txt_1
+8,hive_03f46b_ba0b33_ql#src#java#org#apache#hadoop#hive#ql#exec#MoveTask.txt_2

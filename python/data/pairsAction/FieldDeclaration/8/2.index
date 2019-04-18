@@ -1,0 +1,12 @@
+0,commons-compress_30c859_fa886a_src#main#java#org#apache#commons#compress#compressors#gzip#GzipCompressorInputStream.txt_16
+1,spring-security_e852cf_619c7b_ntlm#src#main#java#org#springframework#security#ui#ntlm#NtlmProcessingFilter.txt_0
+2,hive_8431ff_7c6255_ql#src#java#org#apache#hadoop#hive#ql#udf#UDFRound.txt_2
+3,hbase_260fa3_60c3ce_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#StoreScanner.txt_0
+4,spring-security-oauth_0c8184_b0d5af_spring-security-oauth2#src#main#java#org#springframework#security#oauth2#provider#filter#EndpointValidationFilter.txt_0
+5,spring-framework_6e5cb7_953b2b_spring-web#src#main#java#org#springframework#web#util#UriComponentsBuilder.txt_37
+6,spring-security_ff95a3_3b8f7f_messaging#src#main#java#org#springframework#security#messaging#access#expression#DefaultMessageSecurityExpressionHandler.txt_1
+7,hive_9375cf_697922_ql#src#java#org#apache#hadoop#hive#ql#optimizer#calcite#rules#HiveRelDecorrelator.txt_0
+8,spring-batch_2f17ad_8940d1_spring-batch-infrastructure#src#main#java#org#springframework#batch#item#xml#StaxEventItemReader.txt_1
+9,spring-security_e12b6a_88ea87_core#src#main#java#org#springframework#security#context#HttpSessionContextIntegrationFilter.txt_0
+10,spring-security_25248c_1ab068_remoting#src#main#java#org#springframework#security#remoting#httpinvoker#AuthenticationSimpleHttpInvokerRequestExecutor.txt_0
+11,spring-framework_3e0003_60a69b_org.springframework.context#src#main#java#org#springframework#scheduling#config#TaskExecutorFactoryBean.txt_8

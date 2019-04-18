@@ -1,0 +1,14 @@
+0,camel_c1522c1_236c8e_components#camel-sql#src#main#java#org#apache#camel#component#sql#DefaultSqlPrepareStatementStrategy.txt_5
+1,hive_b9e36a_fa4af2_ql#src#java#org#apache#hadoop#hive#ql#io#orc#encoded#EncodedReaderImpl.txt_11
+2,hive_c6a09c_66acd2_ql#src#java#org#apache#hadoop#hive#ql#parse#SemanticAnalyzer.txt_6
+3,camel_5bd6ee_b5f1da_components#camel-jclouds#src#main#java#org#apache#camel#component#jclouds#JcloudsPayloadConverter.txt_4
+4,hive_b90d54_7b157f_ql#src#java#org#apache#hadoop#hive#ql#io#orc#RecordReaderImpl.txt_5
+5,spring-security-oauth_fdf373_e68b1e_spring-security-oauth2#src#main#java#org#springframework#security#oauth2#provider#token#RandomValueTokenServices.txt_0
+6,hbase_6f966f_9a5f75_src#java#org#apache#hadoop#hbase#mapred#RowCounter.txt_6
+7,hbase_b2cdea_595d2a_hbase-server#src#main#java#org#apache#hadoop#hbase#security#access#SecureBulkLoadEndpoint.txt_2
+8,hbase_419a8b_e30829_hbase-server#src#main#java#org#apache#hadoop#hbase#security#access#TableAuthManager.txt_33
+9,spring-security_57aee4_8cff71_core#src#main#java#org#acegisecurity#ui#rememberme#RememberMeProcessingFilter.txt_0
+10,spring-data-mongodb_18bf0d_1e9189_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#convert#DBObjectAccessor.txt_1
+11,spring-framework_c80914_d746e3_spring-websocket#src#main#java#org#springframework#web#socket#server#standard#UndertowRequestUpgradeStrategy.txt_9
+12,wildfly-core_4abe76_25da3a_logging#src#main#java#org#jboss#as#logging#deployments#resources#LoggingConfigurationReadStepHandler.txt_5
+13,spring-security_734188_a05724_core#src#main#java#org#springframework#security#authentication#ProviderManager.txt_0

@@ -1,0 +1,9 @@
+0,spring-roo_629827_4e7fed_addon-finder#src#main#java#org#springframework#roo#addon#finder#FinderMetadata.txt_21
+1,spring-framework_035bac_8b24f9_spring-webmvc#src#main#java#org#springframework#web#servlet#support#AbstractDispatcherServletInitializer.txt_0
+2,spring-framework_bcd835_9c45ac_org.springframework.web#src#main#java#org#springframework#web#util#UriUtils.txt_31
+3,camel_ace79e_c3f871_components#camel-spring#src#main#java#org#apache#camel#spring#spi#TransactionErrorHandler.txt_3
+4,hive_92a71f_3bccc4_ql#src#java#org#apache#hadoop#hive#ql#exec#vector#expressions#VectorUDFDateDiffColCol.txt_13
+5,spring-framework_5f9b44_b497f6_org.springframework.beans#src#main#java#org#springframework#beans#TypeConverterDelegate.txt_0
+6,spring-framework_4927c9_38ef6d_spring-jms#src#main#java#org#springframework#jms#connection#SingleConnectionFactory.txt_45
+7,hbase_e524b5_b2ef1c_hbase-server#src#main#java#org#apache#hadoop#hbase#master#AssignmentManager.txt_1
+8,hbase_3181d9_24ee53_src#main#java#org#apache#hadoop#hbase#util#Bytes.txt_0

@@ -1,0 +1,11 @@
+0,spring-roo_58aa98_6ecc65_addon-property-editor#src#main#java#org#springframework#roo#addon#property#editor#EditorMetadata.txt_11
+1,hbase_0f15fc_8159b37_src#main#java#org#apache#hadoop#hbase#master#LoadBalancer.txt_0
+2,hive_125345_0a9fab_standalone-metastore#src#main#java#org#apache#hadoop#hive#metastore#txn#TxnUtils.txt_13
+3,hive_4cf99e_14e8cd_serde#src#java#org#apache#hadoop#hive#serde2#objectinspector#ReflectionStructObjectInspector.txt_0
+4,spring-framework_5e19f2_5dc59a_org.springframework.core#src#main#java#org#springframework#core#io#ClassPathResource.txt_4
+5,spring-roo_b640f8_9407fa_addon-web-mvc-controller#src#main#java#org#springframework#roo#addon#web#mvc#controller#ControllerOperationsImpl.txt_6
+6,camel_a04674_0607c0_camel-core#src#main#java#org#apache#camel#support#TokenXMLPairExpressionIterator.txt_10
+7,spring-roo_778d9b_6d0a2d_addon-solr#src#main#java#org#springframework#roo#addon#solr#SolrMetadata.txt_0
+8,spring-roo_58aa98_6ecc65_addon-property-editor#src#main#java#org#springframework#roo#addon#property#editor#EditorMetadata.txt_31
+9,spring-roo_b640f8_9407fa_addon-web-mvc-controller#src#main#java#org#springframework#roo#addon#web#mvc#controller#ControllerOperationsImpl.txt_5
+10,spring-roo_f68800_8543bd_addon-web-mvc-jsp#src#main#java#org#springframework#roo#addon#web#mvc#jsp#JspMetadataListener.txt_3

@@ -1,0 +1,16 @@
+0,spring-batch_493950_b94853_spring-batch-core#src#main#java#org#springframework#batch#core#partition#support#SimpleStepExecutionSplitter.txt_2
+1,hbase_1edf8b_f973b6_src#main#java#org#apache#hadoop#hbase#replication#regionserver#ReplicationSourceManager.txt_2
+2,wildfly-elytron_6c7463_b76ba9_src#main#java#org#wildfly#security#password#interfaces#ClearPassword.txt_1
+3,wildfly-swarm_ce8861_7732eb_fractions#microprofile#microprofile-metrics#src#main#java#org#wildfly#swarm#microprofile#metrics#runtime#exporters#PrometheusExporter.txt_9
+4,wildfly-swarm_ce8861_7732eb_fractions#microprofile#microprofile-metrics#src#main#java#org#wildfly#swarm#microprofile#metrics#runtime#exporters#PrometheusExporter.txt_7
+5,camel_25539a_54d6e4_components#camel-kafka#src#main#java#org#apache#camel#component#kafka#KafkaConsumer.txt_5
+6,spring-data-mongodb_f507fe_4a27ba_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#MongoDbUtils.txt_1
+7,spring-data-jpa_393d3e_f44108_src#main#java#org#springframework#data#jpa#support#MergingPersistenceUnitManager.txt_1
+8,spring-data-mongodb_f3b31f_f778b2_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#config#ServerAddressPropertyEditor.txt_6
+9,spring-security_af5f19_7d79ae_core#src#main#java#org#springframework#security#config#RememberMeBeanDefinitionParser.txt_0
+10,spring-framework_2a3bf6_58756b_spring-context#src#main#java#org#springframework#scheduling#annotation#AsyncAnnotationBeanPostProcessor.txt_3
+11,spring-data-mongodb_f3b31f_f778b2_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#config#ServerAddressPropertyEditor.txt_7
+12,camel_7eec4c_f609ec_camel-core#src#main#java#org#apache#camel#component#bean#BeanProcessor.txt_0
+13,wildfly-elytron_6c7463_b76ba9_src#main#java#org#wildfly#security#password#interfaces#ClearPassword.txt_2
+14,spring-roo_451026_b9b72e_addon-gwt#src#main#java#org#springframework#roo#addon#gwt#GwtOperationsImpl.txt_0
+15,spring-framework_ce4912_8e6e6c_spring-aop#src#main#java#org#springframework#aop#aspectj#AspectJExpressionPointcut.txt_6

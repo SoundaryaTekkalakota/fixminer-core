@@ -1,0 +1,13 @@
+0,hbase_ad9ffa_376507_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#StoreScanner.txt_11
+1,spring-framework_4927c9_38ef6d_spring-jms#src#main#java#org#springframework#jms#connection#SingleConnectionFactory.txt_50
+2,hbase_7eefd0_e4a686_hbase-server#src#main#java#org#apache#hadoop#hbase#master#AssignmentManager.txt_3
+3,hbase_cfef20_91805d_src#java#org#apache#hadoop#hbase#regionserver#Store.txt_14
+4,hive_8fb805_fa4c81_metastore#src#java#org#apache#hadoop#hive#metastore#HiveMetaStoreClient.txt_0
+5,wildfly_4e3877_2b18c8_jsf#injection#src#main#java#org#jboss#as#jsf#injection#weld#WeldApplication.txt_3
+6,camel_4fc73b_7747c4_components#camel-quartz2#src#main#java#org#apache#camel#component#quartz2#QuartzComponent.txt_2
+7,hbase_4745ca_0be4e1_hbase-server#src#main#java#org#apache#hadoop#hbase#master#HMaster.txt_0
+8,hive_20c549_af0522_ql#src#java#org#apache#hadoop#hive#ql#exec#tez#TezTask.txt_4
+9,hive_f1d355_2ef3ab_llap-tez#src#java#org#apache#hadoop#hive#llap#tezplugins#LlapTaskSchedulerService.txt_0
+10,camel_38ba86_61dd73_camel-core#src#main#java#org#apache#camel#converter#stream#CachedOutputStream.txt_1
+11,spring-framework_4927c9_38ef6d_spring-jms#src#main#java#org#springframework#jms#connection#SingleConnectionFactory.txt_49
+12,hbase_4cb217_c85185_hbase-server#src#main#java#org#apache#hadoop#hbase#master#HMaster.txt_2

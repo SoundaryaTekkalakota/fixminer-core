@@ -1,0 +1,9 @@
+0,spring-security-oauth_529f0f_3a730d_spring-security-oauth2#src#main#java#org#springframework#security#oauth2#provider#expression#OAuth2SecurityExpressionMethods.txt_0
+1,hive_dbc7f8_5617a3_metastore#src#java#org#apache#hadoop#hive#metastore#ObjectStore.txt_2
+2,spring-framework_0a4d3c_1e04cd_spring-web#src#main#java#org#springframework#http#codec#json#Jackson2JsonDecoder.txt_6
+3,spring-data-commons_596908_9781f6_src#main#java#org#springframework#data#convert#ReflectionEntityInstantiator.txt_0
+4,hive_dbc7f8_5617a3_metastore#src#java#org#apache#hadoop#hive#metastore#ObjectStore.txt_7
+5,hbase_da5fb2_cf3215d_hbase-server#src#main#java#org#apache#hadoop#hbase#snapshot#ExportSnapshot.txt_18
+6,camel_d581c4_a196ce_camel-core#src#main#java#org#apache#camel#processor#idempotent#IdempotentConsumer.txt_1
+7,wildfly_227503_f4fdfa_cli#src#main#java#org#jboss#as#cli#handlers#ifelse#EndIfHandler.txt_0
+8,hive_5e2439_73a2aa_metastore#src#java#org#apache#hadoop#hive#metastore#HiveAlterHandler.txt_5

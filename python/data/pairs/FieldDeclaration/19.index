@@ -1,0 +1,17 @@
+0,hbase_f32d26_4640ff_hbase-server#src#main#java#org#apache#hadoop#hbase#master#snapshot#SnapshotManager.txt_3
+1,wildfly_110f4f_4f36cd_webservices#server-integration#src#main#java#org#jboss#as#webservices#dmr#WSExtension.txt_0
+2,spring-data-redis_825780_11f94b_src#main#java#org#springframework#data#redis#cache#RedisCacheManager.txt_1
+3,hbase_419a8b_e30829_hbase-server#src#main#java#org#apache#hadoop#hbase#security#access#TableAuthManager.txt_6
+4,spring-security_f76bf9_885841_config#src#main#java#org#springframework#security#config#annotation#AbstractConfiguredSecurityBuilder.txt_0
+5,spring-security-oauth_d8ac98_0d0169_spring-security-oauth#src#main#java#org#springframework#security#oauth#provider#nonce#InMemoryNonceServices.txt_1
+6,wildfly-core_4f63c6_3993d0_logging#src#main#java#org#jboss#as#logging#handlers#SocketHandlerResourceDefinition.txt_0
+7,wildfly_f9d05b_ff7df2_undertow#src#main#java#org#wildfly#extension#undertow#HttpsListenerResourceDefinition.txt_0
+8,wildfly_110f4f_4f36cd_webservices#server-integration#src#main#java#org#jboss#as#webservices#dmr#WSExtension.txt_3
+9,wildfly_110f4f_4f36cd_webservices#server-integration#src#main#java#org#jboss#as#webservices#dmr#WSExtension.txt_2
+10,spring-data-commons_33a31a_8e3b0c_src#main#java#org#springframework#data#mapping#model#AnnotationBasedPersistentProperty.txt_0
+11,spring-framework_c80914_d746e3_spring-websocket#src#main#java#org#springframework#web#socket#server#standard#UndertowRequestUpgradeStrategy.txt_3
+12,wildfly_110f4f_4f36cd_webservices#server-integration#src#main#java#org#jboss#as#webservices#dmr#WSExtension.txt_4
+13,wildfly_110f4f_4f36cd_webservices#server-integration#src#main#java#org#jboss#as#webservices#dmr#WSExtension.txt_1
+14,spring-framework_351424_9cc86a_spring-web#src#main#java#org#springframework#http#converter#xml#SourceHttpMessageConverter.txt_0
+15,spring-framework_c80613_365a42_spring-context#src#main#java#org#springframework#context#annotation#ConfigurationClassEnhancer.txt_0
+16,spring-amqp_221e3a_262693_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#connection#CachingConnectionFactory.txt_0

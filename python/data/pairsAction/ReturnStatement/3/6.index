@@ -1,0 +1,16 @@
+0,hbase_f31573_0aafa3_src#java#org#apache#hadoop#hbase#regionserver#HRegionServer.txt_1
+1,hbase_657137_879ab1_src#main#java#org#apache#hadoop#hbase#regionserver#MemStore.txt_24
+2,hive_ae9829_cbe31e_metastore#src#java#org#apache#hadoop#hive#metastore#txn#TxnDbUtil.txt_43
+3,hive_45add0_50cdde_llap-client#src#java#org#apache#hadoop#hive#llap#registry#impl#LlapZookeeperRegistryImpl.txt_1
+4,hive_e867d1_081fa3_beeline#src#java#org#apache#hive#beeline#BeeLineOpts.txt_4
+5,spring-framework_e4fada_c03a95_org.springframework.web.servlet#src#main#java#org#springframework#web#servlet#mvc#method#annotation#RequestMappingHandlerAdapter.txt_11
+6,spring-data-redis_db7b07_92a434_src#main#java#org#springframework#data#redis#connection#lettuce#LettuceConnection.txt_16
+7,spring-data-redis_db7b07_92a434_src#main#java#org#springframework#data#redis#connection#lettuce#LettuceConnection.txt_18
+8,hbase_24c9e7_ff14ff_core#src#main#java#org#apache#hadoop#hbase#filter#WhileMatchFilter.txt_2
+9,spring-data-redis_db7b07_92a434_src#main#java#org#springframework#data#redis#connection#lettuce#LettuceConnection.txt_19
+10,spring-data-redis_db7b07_92a434_src#main#java#org#springframework#data#redis#connection#lettuce#LettuceConnection.txt_17
+11,spring-amqp_d550f9_8955cb_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#connection#ConnectionFactoryUtils.txt_3
+12,spring-framework_04af54_cec30a_spring-context#src#main#java#org#springframework#context#annotation#CommonAnnotationBeanPostProcessor.txt_4
+13,spring-framework_008c9a_1e7d95_spring-core#src#main#java#org#springframework#core#convert#support#ByteBufferConverter.txt_1
+14,camel_efdaaa_1bd990_components#camel-spring-redis#src#main#java#org#apache#camel#component#redis#processor#idempotent#RedisStringIdempotentRepository.txt_3
+15,commons-compress_e6e247_1dcab3_src#main#java#org#apache#commons#compress#archivers#zip#X7875_NewUnix.txt_1

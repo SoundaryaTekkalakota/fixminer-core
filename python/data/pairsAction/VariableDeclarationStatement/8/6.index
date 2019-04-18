@@ -1,0 +1,10 @@
+0,spring-amqp_585f2b_ce0741_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#annotation#RabbitListenerAnnotationBeanPostProcessor.txt_0
+1,hive_ee63dc_cd4674_ql#src#java#org#apache#hadoop#hive#ql#metadata#Hive.txt_0
+2,hive_40a155_942f73_ql#src#java#org#apache#hadoop#hive#ql#lockmgr#DbTxnManager.txt_4
+3,wildfly_b03fff_291176_undertow#src#main#java#org#wildfly#extension#undertow#ApplicationSecurityDomainDefinition.txt_7
+4,hive_401b14_791066_spark-client#src#main#java#org#apache#hive#spark#client#rpc#Rpc.txt_0
+5,hive_b485fc_6d085b_ql#src#java#org#apache#hadoop#hive#ql#parse#SemanticAnalyzer.txt_1
+6,camel_f922a1_80ae0c_components#camel-sql#src#main#java#org#apache#camel#component#sql#SqlProducer.txt_2
+7,hbase_e95cf8_902cd1_hbase-server#src#main#java#org#apache#hadoop#hbase#master#balancer#BaseLoadBalancer.txt_1
+8,hive_9670a2_b247ca_ql#src#java#org#apache#hadoop#hive#ql#parse#LoadSemanticAnalyzer.txt_8
+9,camel_f922a1_80ae0c_components#camel-sql#src#main#java#org#apache#camel#component#sql#SqlProducer.txt_1

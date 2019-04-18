@@ -1,0 +1,7 @@
+0,hbase_80722e_86f8282_src#main#java#org#apache#hadoop#hbase#mapreduce#MultithreadedTableMapper.txt_0
+1,hive_a87e4d_deb99b_ql#src#java#org#apache#hadoop#hive#ql#udf#generic#GenericUDFFromUtcTimestamp.txt_0
+2,wildfly-swarm_c6fbb0_7e10d1_webapp#runtime#src#main#java#org#wildfly#swarm#topology#webapp#runtime#TopologySSEServlet.txt_0
+3,hive_0f9c29_0fd226_ql#src#java#org#apache#hadoop#hive#ql#parse#DDLSemanticAnalyzer.txt_2
+4,camel_0be3d9_d901b5_camel-core#src#main#java#org#apache#camel#impl#SupervisingRouteController.txt_2
+5,hive_4953ec_9f1f35_ql#src#java#org#apache#hadoop#hive#ql#parse#SemanticAnalyzer.txt_11
+6,hive_d3a5f2_d469e6_ql#src#java#org#apache#hadoop#hive#ql#io#orc#RecordReaderImpl.txt_1

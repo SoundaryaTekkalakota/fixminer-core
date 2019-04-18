@@ -1,0 +1,13 @@
+0,wildfly-elytron_8711cd_8155db_src#main#java#org#wildfly#security#auth#server#SecurityIdentity.txt_3
+1,hive_1a297a_c4abe2e_beeline#src#java#org#apache#hive#beeline#HiveSchemaHelper.txt_0
+2,wildfly-swarm_6160df_f0349a_jaxrs#api#src#main#java#org#wildfly#swarm#jaxrs#internal#DefaultJAXRSWarDeploymentFactory.txt_0
+3,wildfly_183bfb_3165a2_jpa#hibernate5#src#main#java#org#jboss#as#jpa#hibernate5#management#QueryName.txt_34
+4,wildfly_84d915_81a93a_clustering#server#src#main#java#org#wildfly#clustering#server#dispatcher#LocalCommandDispatcher.txt_3
+5,spring-batch_89bd7c_6f2088_spring-batch-infrastructure#src#main#java#org#springframework#batch#item#file#mapping#DefaultFieldSet.txt_0
+6,wildfly_84d915_81a93a_clustering#server#src#main#java#org#wildfly#clustering#server#dispatcher#LocalCommandDispatcher.txt_2
+7,hive_20b845_527d13_ql#src#java#org#apache#hadoop#hive#ql#optimizer#stats#annotation#StatsRulesProcFactory.txt_29
+8,wildfly_ca38a5_14683f_server#src#main#java#org#jboss#as#server#deployment#module#VFSResourceLoader.txt_7
+9,hive_583859_ff9c63_ql#src#java#org#apache#hadoop#hive#ql#io#HiveFileFormatUtils.txt_2
+10,hbase_4bdd47_e5d015_hbase-client#src#main#java#org#apache#hadoop#hbase#client#RetriesExhaustedWithDetailsException.txt_0
+11,spring-data-redis_ac851c_6c9f95_src#main#java#org#springframework#data#redis#listener#adapter#MessageListenerAdapter.txt_0
+12,wildfly-core_ac9400_f69294_controller#src#main#java#org#jboss#as#controller#operations#CompositeOperationAwareTransformer.txt_0

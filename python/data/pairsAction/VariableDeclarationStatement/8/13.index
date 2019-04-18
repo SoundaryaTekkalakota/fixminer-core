@@ -1,0 +1,9 @@
+0,spring-security_0e36f8_b96cee_config#src#main#java#org#springframework#security#config#annotation#web#configurers#HttpBasicConfigurer.txt_0
+1,camel_f69bd0_ac2a05_components#camel-cxf#src#main#java#org#apache#camel#component#cxf#CamelInvoker.txt_0
+2,spring-framework_de1a41_c269d2_spring-webmvc#src#main#java#org#springframework#web#servlet#mvc#method#annotation#RequestResponseBodyMethodProcessor.txt_0
+3,spring-data-neo4j_d6ae1b_d5ca5f_spring-data-neo4j#src#main#java#org#springframework#data#neo4j#repository#query#derived#DerivedGraphQueryMethod.txt_0
+4,camel_2b8fcd_5ec6ad_components#camel-cxf#src#main#java#org#apache#camel#component#cxf#jaxrs#DefaultCxfRsBinding.txt_0
+5,camel_376449_c8a458_components#camel-cxf#src#main#java#org#apache#camel#component#cxf#interceptors#RawMessageContentRedirectInterceptor.txt_1
+6,camel_12a3c5d_44b1e5_components#camel-cxf#src#main#java#org#apache#camel#component#cxf#transport#CamelDestination.txt_0
+7,wildfly-core_49724b_943110_elytron#src#main#java#org#wildfly#extension#elytron#AuthenticationClientDefinitions.txt_2
+8,camel_5d3366_5f49cc_components#camel-bindy#src#main#java#org#apache#camel#dataformat#bindy#BindyAbstractFactory.txt_0

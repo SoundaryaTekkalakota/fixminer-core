@@ -1,0 +1,17 @@
+0,spring-framework_a68088_8e83f1_spring-webflux#src#main#java#org#springframework#web#reactive#function#server#RequestPredicates.txt_2
+1,hive_0f1c11_305b8c_ql#src#java#org#apache#hadoop#hive#ql#exec#MapJoinOperator.txt_1
+2,hive_57db83_ad036a_shims#0.23#src#main#java#org#apache#hadoop#mapred#WebHCatJTShim23.txt_12
+3,hive_76485d_a3e872_llap-client#src#java#org#apache#hadoop#hive#llap#ext#LlapTaskUmbilicalExternalClient.txt_5
+4,spring-framework_e10e16_51d828_spring-context#src#main#java#org#springframework#context#annotation#ConfigurationClassParser.txt_29
+5,spring-framework_4013fe_ad6511_spring-web#src#main#java#org#springframework#web#method#ControllerAdviceBean.txt_12
+6,hive_bbdba9_0d9343_ql#src#java#org#apache#hadoop#hive#ql#optimizer#physical#Vectorizer.txt_3
+7,hive_9375cf_697922_ql#src#java#org#apache#hadoop#hive#ql#optimizer#calcite#rules#HiveRelDecorrelator.txt_10
+8,camel_dd7595_690c03_camel-core#src#main#java#org#apache#camel#processor#idempotent#FileIdempotentRepository.txt_2
+9,hive_d57e05_5aee2b_common#src#java#org#apache#hadoop#hive#conf#HiveConf.txt_2
+10,spring-data-redis_a3ac8d_9cf484_src#main#java#org#springframework#data#redis#connection#lettuce#LettuceConnection.txt_12
+11,hbase_5420b4_d5be58_hbase-server#src#main#java#org#apache#hadoop#hbase#security#access#AccessController.txt_5
+12,spring-framework_f88f69_eda626_org.springframework.aop#src#main#java#org#springframework#aop#aspectj#AspectJExpressionPointcut.txt_6
+13,hive_3c7f09_b7194c_llap-ext-client#src#java#org#apache#hadoop#hive#llap#LlapBaseInputFormat.txt_4
+14,hbase_00cfc8_908648_src#main#java#org#apache#hadoop#hbase#regionserver#HRegion.txt_0
+15,wildfly-core_448d23_e7b481_cli#src#main#java#org#jboss#as#cli#operation#OperationRequestCompleter.txt_1
+16,hbase_c4ced0_b4ed13_hbase-backup#src#main#java#org#apache#hadoop#hbase#backup#mapreduce#MapReduceBackupCopyJob.txt_16

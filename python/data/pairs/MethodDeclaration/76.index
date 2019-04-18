@@ -1,0 +1,10 @@
+0,spring-framework_8c30b8_e57d8e_spring-webflux#src#main#java#org#springframework#web#reactive#function#server#RouterFunctions.txt_1
+1,hbase_6661f2_506726_hbase-client#src#main#java#org#apache#hadoop#hbase#filter#FuzzyRowFilter.txt_12
+2,spring-batch_3553d2_6707ea_spring-batch-infrastructure#src#main#java#org#springframework#batch#item#database#support#DerbyPagingQueryProvider.txt_4
+3,spring-data-commons_d5f57f_24a949_src#main#java#org#springframework#data#repository#util#VavrCollections.txt_0
+4,spring-data-mongodb_38a860_d11c20_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#query#Field.txt_1
+5,hbase_2bae04f_2c8b81_hbase-client#src#main#java#org#apache#hadoop#hbase#filter#MultiRowRangeFilter.txt_55
+6,hbase_2ab4b1_7d7f84_src#java#org#apache#hadoop#hbase#regionserver#HRegionServer.txt_10
+7,hive_273a08_545550_ql#src#java#org#apache#hadoop#hive#ql#optimizer#physical#Vectorizer.txt_5
+8,hive_2394e4_d5cb88_hcatalog#core#src#main#java#org#apache#hive#hcatalog#mapreduce#FileOutputCommitterContainer.txt_2
+9,spring-roo_551c61_7f2b92_addon-web-mvc-controller#src#main#java#org#springframework#roo#addon#web#mvc#controller#WebScaffoldMetadata.txt_22

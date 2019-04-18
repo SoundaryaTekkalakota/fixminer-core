@@ -1,0 +1,17 @@
+0,spring-security_0e36f8_b96cee_config#src#main#java#org#springframework#security#config#annotation#web#configurers#HttpBasicConfigurer.txt_1
+1,camel_46c5abc_53f2df_components#camel-cxf#src#main#java#org#apache#camel#component#cxf#jaxrs#CxfRsEndpoint.txt_1
+2,spring-data-commons_26e398_7adb67_src#main#java#org#springframework#data#util#AnnotatedTypeScanner.txt_7
+3,camel_d42d47_0a8ecf_components#camel-cxf#src#main#java#org#apache#camel#component#cxf#CxfEndpoint.txt_5
+4,spring-data-commons_26e398_7adb67_src#main#java#org#springframework#data#util#AnnotatedTypeScanner.txt_6
+5,camel_d42d47_0a8ecf_components#camel-cxf#src#main#java#org#apache#camel#component#cxf#CxfEndpoint.txt_4
+6,camel_d42d47_0a8ecf_components#camel-cxf#src#main#java#org#apache#camel#component#cxf#CxfEndpoint.txt_3
+7,wildfly_2057e5_d4e823_ejb3#src#main#java#org#jboss#as#ejb3#timerservice#persistence#filestore#FileTimerPersistence.txt_3
+8,wildfly-core_993873_6a6f75_domain-management#src#main#java#org#jboss#as#domain#management#security#SecurityRealmService.txt_6
+9,camel_d0d6560_3969f8_components#camel-jetty#src#main#java#org#apache#camel#component#jetty#JettyHttpComponent.txt_3
+10,camel_d0d6560_3969f8_components#camel-jetty#src#main#java#org#apache#camel#component#jetty#JettyHttpComponent.txt_2
+11,camel_46c5abc_53f2df_components#camel-cxf#src#main#java#org#apache#camel#component#cxf#jaxrs#CxfRsEndpoint.txt_2
+12,camel_d42d47_0a8ecf_components#camel-cxf#src#main#java#org#apache#camel#component#cxf#CxfEndpoint.txt_6
+13,camel_d42d47_0a8ecf_components#camel-cxf#src#main#java#org#apache#camel#component#cxf#CxfEndpoint.txt_8
+14,spring-data-gemfire_678315_89bb36_src#main#java#org#springframework#data#gemfire#client#PoolFactoryBean.txt_5
+15,camel_d42d47_0a8ecf_components#camel-cxf#src#main#java#org#apache#camel#component#cxf#CxfEndpoint.txt_7
+16,camel_12a3c5d_44b1e5_components#camel-cxf#src#main#java#org#apache#camel#component#cxf#transport#CamelDestination.txt_1

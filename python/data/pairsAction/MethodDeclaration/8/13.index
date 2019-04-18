@@ -1,0 +1,8 @@
+0,commons-compress_466002_6a59b3_src#main#java#org#apache#commons#compress#archivers#sevenz#LZMA2Decoder.txt_2
+1,hbase_0bafd1_d50476_hbase-client#src#main#java#org#apache#hadoop#hbase#ipc#RpcClient.txt_15
+2,spring-framework_50a476_ffa032_spring-webmvc#src#main#java#org#springframework#web#servlet#resource#ResourceUrlEncodingFilter.txt_6
+3,spring-security_1ab068_ffe283_web#src#main#java#org#springframework#security#web#context#SaveContextOnUpdateOrErrorResponseWrapper.txt_4
+4,hbase_8c24e5_e8e5a7_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#MemStoreFlusher.txt_0
+5,hbase_e9da06_679e0e_hbase-client#src#main#java#org#apache#hadoop#hbase#snapshot#SnapshotExistsException.txt_0
+6,commons-configuration_ae0fc6_620ff7_src#java#org#apache#commons#configuration#ConfigurationFactory.txt_16
+7,hbase_e34c77_04ace5_src#main#java#org#apache#hadoop#hbase#ipc#HBaseRPC.txt_0

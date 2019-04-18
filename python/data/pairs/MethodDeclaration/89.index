@@ -1,0 +1,8 @@
+0,wildfly_070981_d2a72c_connector#src#main#java#org#jboss#as#connector#subsystems#datasources#DataSourceDefinition.txt_5
+1,wildfly_8b0a0f_76d96a_ejb3#src#main#java#org#jboss#as#ejb3#tx#LifecycleCMTTxInterceptor.txt_1
+2,hbase_34d88b_421400_src#main#java#org#apache#hadoop#hbase#mapreduce#ImportTsv.txt_3
+3,spring-framework_e10e16_51d828_spring-context#src#main#java#org#springframework#context#annotation#ConfigurationClassParser.txt_2
+4,hive_901b61_57914b_ql#src#java#org#apache#hadoop#hive#ql#optimizer#BucketMapJoinOptimizer.txt_8
+5,wildfly-core_6d3870_72bdc9_host-controller#src#main#java#org#jboss#as#host#controller#model#jvm#JvmOptionsBuilderFactory.txt_2
+6,spring-data-jpa_a5f20d_81e69a_src#main#java#org#springframework#data#jpa#repository#query#StoredProcedureAttributeSource.txt_2
+7,spring-webflow_df4db1_fbdff9_spring-faces#src#main#java#org#springframework#faces#webflow#FlowFacesContext.txt_6

@@ -1,0 +1,7 @@
+0,wildfly-elytron_21c32c_d5da79_src#main#java#org#wildfly#security#http#impl#FormAuthenticationMechanism.txt_1
+1,commons-compress_8e5f66_a1379c_src#main#java#org#apache#commons#compress#changes#ChangeSet.txt_0
+2,hive_5708a0_12f8371_standalone-metastore#metastore-server#src#main#java#org#apache#hadoop#hive#metastore#cache#CachedStore.txt_0
+3,camel_5f499f_000581_camel-core#src#main#java#org#apache#camel#processor#idempotent#FileIdempotentRepository.txt_2
+4,spring-framework_047db8_d3da2e_spring-aop#src#main#java#org#springframework#aop#framework#autoproxy#AbstractAutoProxyCreator.txt_0
+5,spring-security_a573e7_4a000d_openid#src#main#java#org#springframework#security#openid#OpenID4JavaConsumer.txt_0
+6,spring-ws_b12a3e_3571d6_spring-ws-core#src#main#java#org#springframework#ws#soap#server#endpoint#interceptor#PayloadRootSmartSoapEndpointInterceptor.txt_0

@@ -1,0 +1,9 @@
+0,spring-amqp_7bbe11_0db905_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#log4j2#AmqpAppender.txt_18
+1,wildfly-swarm_eb9056_52c0e1_fractions#javaee#resource-adapters#src#main#java#org#wildfly#swarm#resource#adapters#ResourceAdapterFraction.txt_0
+2,wildfly-swarm_da22a9_8ed46b_fractions#microprofile#microprofile-jwt#src#main#java#org#wildfly#swarm#microprofile#jwtauth#runtime#MPJWTAuthExtensionArchivePreparer.txt_0
+3,spring-hadoop_d124a4_254af5_spring-yarn#spring-yarn-boot#src#main#java#org#springframework#yarn#boot#actuate#endpoint#mvc#YarnContainerClusterMvcEndpoint.txt_0
+4,camel_5f55d0_06ee81_components#camel-sql#src#main#java#org#apache#camel#processor#aggregate#jdbc#ClassLoadingAwareObjectInputStream.txt_0
+5,hive_d22fc5_db7ff5_storage-api#src#java#org#apache#hive#common#util#BloomKFilter.txt_0
+6,spring-data-gemfire_bc7e28_65ae4b_src#main#java#org#springframework#data#gemfire#config#EvictionAttributesFactoryBean.txt_0
+7,hive_d22fc5_db7ff5_storage-api#src#java#org#apache#hive#common#util#BloomKFilter.txt_15
+8,wildfly-maven-plugin_05dc2f_26911a_plugin#src#main#java#org#wildfly#plugin#deployment#PackageType.txt_0

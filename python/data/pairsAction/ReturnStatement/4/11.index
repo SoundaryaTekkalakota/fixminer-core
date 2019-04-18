@@ -1,0 +1,9 @@
+0,wildfly-core_da2587_d9cd8f_server#src#main#java#org#jboss#as#server#ServerService.txt_1
+1,camel_f05f31_cfde7e_components#camel-groovy#src#main#java#org#apache#camel#language#groovy#GroovyLanguage.txt_6
+2,hive_d62de9_3d8d03_jdbc#src#java#org#apache#hive#jdbc#HiveStatement.txt_32
+3,hbase_16f8d2_1bb9e3_hbase-client#src#main#java#org#apache#hadoop#hbase#ipc#RpcClientImpl.txt_16
+4,hbase_16f8d2_1bb9e3_hbase-client#src#main#java#org#apache#hadoop#hbase#ipc#RpcClientImpl.txt_11
+5,wildfly_8e8e46_7df9d1_clustering#ejb#infinispan#src#main#java#org#wildfly#clustering#ejb#infinispan#InfinispanBeanManager.txt_2
+6,hive_d62de9_3d8d03_jdbc#src#java#org#apache#hive#jdbc#HiveStatement.txt_23
+7,spring-data-jpa_31006e_617423_src#main#java#org#springframework#data#jpa#repository#query#StringQuery.txt_0
+8,hbase_97906b_293803_hbase-server#src#main#java#org#apache#hadoop#hbase#filter#FilterList.txt_2

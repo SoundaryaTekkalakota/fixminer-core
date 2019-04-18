@@ -1,0 +1,14 @@
+0,hive_018bc0_6e2191_ql#src#java#org#apache#hadoop#hive#ql#io#CombineHiveInputFormat.txt_0
+1,hbase_c62b39_c19bc6_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#HRegionServer.txt_0
+2,hbase_34ebf7_24ebbc_hbase-server#src#main#java#org#apache#hadoop#hbase#util#ByteBloomFilter.txt_4
+3,hbase_765709_3b8c076_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#compactions#Compactor.txt_2
+4,commons-codec_f5185b_3b398a_src#java#org#apache#commons#codec#binary#Base64.txt_1
+5,commons-compress_db0ea9_161781_src#main#java#org#apache#commons#compress#archivers#sevenz#SevenZFile.txt_0
+6,hive_5d62dc_85415f_ql#src#java#org#apache#hadoop#hive#ql#io#orc#encoded#EncodedReaderImpl.txt_1
+7,hive_324929_eb9fec_ql#src#java#org#apache#hadoop#hive#ql#optimizer#SortedDynPartitionOptimizer.txt_5
+8,hive_5be357_b45ecc_ql#src#java#org#apache#hadoop#hive#ql#exec#FileSinkOperator.txt_11
+9,hbase_765709_3b8c076_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#compactions#Compactor.txt_0
+10,hbase_cdc2bb_6f0c9f_hbase-server#src#main#java#org#apache#hadoop#hbase#replication#regionserver#DumpReplicationQueues.txt_0
+11,hbase_1f9bf4_215290_hbase-server#src#main#java#org#apache#hadoop#hbase#io#hfile#HFileWriterImpl.txt_0
+12,spring-batch_8326f5_73227c_spring-batch-infrastructure#src#main#java#org#springframework#batch#item#database#JdbcCursorItemReader.txt_0
+13,hbase_8a0699e_dd6460_src#main#java#org#apache#hadoop#hbase#io#HbaseObjectWritable.txt_2

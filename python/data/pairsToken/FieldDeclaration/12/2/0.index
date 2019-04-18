@@ -1,0 +1,8 @@
+0,camel_e871b5_447de8_components#camel-quartz#src#main#java#org#apache#camel#component#quartz#CamelJob.txt_0
+1,camel_5df684_0d7112_components#camel-ftp#src#main#java#org#apache#camel#component#file#remote#FtpProducer.txt_0
+2,camel_77f64c_c3f4dc_camel-core#src#main#java#org#apache#camel#component#directvm#DirectVmProcessor.txt_0
+3,camel_72c732_c6eb9d_camel-core#src#main#java#org#apache#camel#model#language#XQueryExpression.txt_0
+4,camel_db1b88_c7703e_camel-core#src#main#java#org#apache#camel#model#ChoiceType.txt_0
+5,camel_544245_c83601_camel-core#src#main#java#org#apache#camel#processor#Splitter.txt_0
+6,camel_4b0371_6bd330_camel-core#src#main#java#org#apache#camel#converter#jaxp#StaxConverter.txt_1
+7,camel_fb6c5e_ed3b4de_camel-core#src#main#java#org#apache#camel#processor#RoutingSlip.txt_0

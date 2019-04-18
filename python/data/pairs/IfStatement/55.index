@@ -1,0 +1,6 @@
+0,spring-roo_57b853_176d10_addon-dod#src#main#java#org#springframework#roo#addon#dod#DataOnDemandMetadata.txt_0
+1,spring-security_59bf86_591123_core#src#main#java#org#acegisecurity#context#HttpSessionContextIntegrationFilter.txt_3
+2,commons-configuration_08f0be_246027_src#java#org#apache#commons#configuration#INIConfiguration.txt_10
+3,hive_03b976_b94e15_ql#src#java#org#apache#hadoop#hive#ql#exec#DDLTask.txt_11
+4,hive_2a8e38_48be04_metastore#src#java#org#apache#hadoop#hive#metastore#ObjectStore.txt_7
+5,hive_bcb7d9_d3d5d3_ql#src#java#org#apache#hadoop#hive#ql#exec#TableScanOperator.txt_1

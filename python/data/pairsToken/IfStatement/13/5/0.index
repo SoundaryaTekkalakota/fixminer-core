@@ -1,0 +1,8 @@
+0,spring-roo_1e04d0_0ea885_classpath#src#main#java#org#springframework#roo#classpath#itd#AbstractItdMetadataProvider.txt_0
+1,hive_d3a879_89c02b_ql#src#java#org#apache#hadoop#hive#ql#Driver.txt_0
+2,hive_0d43e8_edd630_metastore#src#java#org#apache#hadoop#hive#metastore#txn#TxnHandler.txt_6
+3,hive_0d43e8_edd630_metastore#src#java#org#apache#hadoop#hive#metastore#txn#TxnHandler.txt_7
+4,hbase_8b39e4_0a31b4_hbase-client#src#main#java#org#apache#hadoop#hbase#client#HConnectionManager.txt_1
+5,hbase_f51c79_9a8ad7_hbase-client#src#main#java#org#apache#hadoop#hbase#ipc#AsyncRpcClient.txt_0
+6,camel_6534b1_680111_camel-core#src#main#java#org#apache#camel#impl#DefaultComponent.txt_0
+7,hive_0d43e8_edd630_metastore#src#java#org#apache#hadoop#hive#metastore#txn#TxnHandler.txt_5

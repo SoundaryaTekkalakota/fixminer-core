@@ -1,0 +1,9 @@
+0,commons-configuration_5ea36c_a7e955_src#java#org#apache#commons#configuration#DatabaseConfiguration.txt_11
+1,hbase_b94780_e3b688_hbase-server#src#main#java#org#apache#hadoop#hbase#util#HBaseFsck.txt_2
+2,hbase_01a60a_d38846_src#java#org#apache#hadoop#hbase#thrift#ThriftServer.txt_3
+3,spring-roo_b739c6_54dd6f_classpath#src#main#java#org#springframework#roo#classpath#itd#ItdSourceFileComposer.txt_0
+4,hive_a638746_e6b5115_beeline#src#java#org#apache#hive#beeline#Commands.txt_8
+5,spring-webflow_688d3f_7a98c1_spring-faces#src#main#java#org#springframework#faces#ui#AjaxViewRoot.txt_0
+6,spring-framework_1300da_38f056_org.springframework.web.servlet#src#main#java#org#springframework#web#servlet#mvc#method#annotation#support#ModelAndViewMethodReturnValueHandler.txt_0
+7,hbase_d18c1a_03e471_hbase-rest#src#main#java#org#apache#hadoop#hbase#rest#TableResource.txt_3
+8,hbase_973b4d_8b8de1_hbase-rsgroup#src#main#java#org#apache#hadoop#hbase#rsgroup#RSGroupAdminEndpoint.txt_0

@@ -1,0 +1,8 @@
+0,camel_866a39_2f88e1_components#camel-restlet#src#main#java#org#apache#camel#component#restlet#DefaultRestletBinding.txt_0
+1,camel_5f356b_e922f8_components#camel-jetty#src#main#java#org#apache#camel#component#jetty#JettyHttpProducer.txt_2
+2,hive_33e7d6_1d159f_druid-handler#src#java#org#apache#hadoop#hive#druid#io#DruidRecordWriter.txt_1
+3,spring-security-oauth_fee0d9_3262e9_spring-security-oauth2#src#main#java#org#springframework#security#oauth2#client#token#grant#password#ResourceOwnerPasswordAccessTokenProvider.txt_4
+4,hive_15efc4_4817d8_llap-tez#src#java#org#apache#hadoop#hive#llap#tezplugins#LlapTaskSchedulerService.txt_28
+5,camel_5f356b_e922f8_components#camel-jetty#src#main#java#org#apache#camel#component#jetty#JettyHttpProducer.txt_0
+6,wildfly-elytron_9ff66c5_bf9c1a_src#main#java#org#wildfly#security#http#impl#SpnegoAuthenticationMechanism.txt_4
+7,camel_263b56_1b0f11_components#camel-yammer#src#main#java#org#apache#camel#component#yammer#ScribeApiRequestor.txt_6

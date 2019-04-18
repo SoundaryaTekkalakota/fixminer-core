@@ -1,0 +1,16 @@
+0,spring-framework_d4c16e_64bf3b_org.springframework.beans#src#main#java#org#springframework#beans#factory#annotation#InitDestroyAnnotationBeanPostProcessor.txt_18
+1,camel_7097b3_da4bda_components#camel-consul#src#main#java#org#apache#camel#component#consul#cloud#ConsulServiceDiscovery.txt_0
+2,camel_8cadc3_8cd732_camel-core#src#main#java#org#apache#camel#management#DefaultManagementAgent.txt_2
+3,spring-framework_f32914_9e20a2_spring-aop#src#main#java#org#springframework#aop#support#MethodMatchers.txt_7
+4,camel_6706a0_bd3644_components#camel-undertow#src#main#java#org#apache#camel#component#undertow#UndertowHostKey.txt_1
+5,spring-framework_b552c6_b704d6_spring-orm#src#main#java#org#springframework#orm#jpa#SharedEntityManagerCreator.txt_2
+6,hive_a4d207_c659b2_llap-common#src#java#org#apache#hadoop#hive#llap#security#LlapTokenIdentifier.txt_1
+7,spring-security_5a4aed_e8a1a6_core#src#main#java#org#springframework#security#crypto#codec#Utf8.txt_0
+8,camel_7a0d94_985628_camel-core#src#main#java#org#apache#camel#component#directvm#DirectVmProducer.txt_0
+9,hbase_6f54a1_a34d44_hbase-server#src#main#java#org#apache#hadoop#hbase#thrift2#ThriftHBaseServiceHandler.txt_11
+10,wildfly-core_85d628_662f70_elytron#src#main#java#org#wildfly#extension#elytron#AuthenticationFactoryDefinitions.txt_5
+11,wildfly-swarm_792be4_9c449c_core#container#src#main#java#org#wildfly#swarm#container#runtime#ServerBootstrapImpl.txt_1
+12,spring-framework_51325af_03af55_spring-webflux#src#main#java#org#springframework#web#reactive#function#server#RequestPredicates.txt_0
+13,wildfly-core_8b3021_72bdc9_controller#src#main#java#org#jboss#as#controller#persistence#ConfigurationFile.txt_3
+14,wildfly-swarm_c572de_f9838c_plugin#src#main#java#org#wildfly#swarm#plugin#gradle#GradleArtifactResolvingHelper.txt_3
+15,hive_519bd0_8d8f50_ql#src#java#org#apache#hadoop#hive#ql#optimizer#optiq#stats#HiveRelMdSelectivity.txt_4

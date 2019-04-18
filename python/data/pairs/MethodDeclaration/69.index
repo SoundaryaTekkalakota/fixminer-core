@@ -1,0 +1,14 @@
+0,commons-io_8ff60c_476ccd_src#main#java#org#apache#commons#io#input#ClassLoaderObjectInputStream.txt_0
+1,spring-batch_19dee3_0b1768_spring-batch-infrastructure#src#main#java#org#springframework#batch#support#SimpleMethodInvoker.txt_4
+2,hive_8a13b9_8f0230_ql#src#java#org#apache#hadoop#hive#ql#exec#CommonMergeJoinOperator.txt_10
+3,hbase_d8a1df_2f22f9_hbase-server#src#main#java#org#apache#hadoop#hbase#mapreduce#TableMapReduceUtil.txt_0
+4,hive_e807b1_a7f828_common#src#java#org#apache#hadoop#hive#conf#HiveConf.txt_2
+5,wildfly-core_ef5343_f3d71f_domain-http#interface#src#main#java#org#jboss#as#domain#http#server#ManagementHttpServer.txt_2
+6,spring-data-jpa_3f7fad_b3324a_src#main#java#org#springframework#data#jpa#repository#support#JpaMetamodelEntityInformation.txt_3
+7,wildfly-swarm_92390c_4a0007_core#container#src#main#java#org#wildfly#swarm#container#config#ConfigViewFactory.txt_4
+8,wildfly_da337e_30fb67_clustering#jgroups#extension#src#main#java#org#jboss#as#clustering#jgroups#subsystem#AbstractProtocolConfigurationBuilder.txt_2
+9,hbase_08eabb_bd2638_hbase-server#src#main#java#org#apache#hadoop#hbase#snapshot#ExportSnapshot.txt_2
+10,spring-framework_b7b7c0_60fa49_org.springframework.core#src#main#java#org#springframework#core#GenericTypeResolver.txt_1
+11,hive_632b4e_29620d_ql#src#java#org#apache#hadoop#hive#ql#parse#SemanticAnalyzer.txt_4
+12,hbase_27a27a_1b5576_hbase-server#src#main#java#org#apache#hadoop#hbase#mapreduce#Import.txt_12
+13,spring-data-redis_9cf484_ec2a76_src#main#java#org#springframework#data#redis#cache#RedisCacheManager.txt_1

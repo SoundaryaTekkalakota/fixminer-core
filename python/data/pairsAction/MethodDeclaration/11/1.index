@@ -1,0 +1,13 @@
+0,camel_14a7cb_61ad97_camel-core#src#main#java#org#apache#camel#impl#DefaultShutdownStrategy.txt_1
+1,commons-configuration_ed8738_2127f4_src#java#org#apache#commons#configuration#XMLConfiguration.txt_6
+2,hbase_903d87_76f4e1_hbase-server#src#main#java#org#apache#hadoop#hbase#tool#Canary.txt_10
+3,spring-framework_738d84_7f24ed_org.springframework.context#src#main#java#org#springframework#context#event#AbstractApplicationEventMulticaster.txt_2
+4,hbase_4c514e_d6cca2_hbase-server#src#main#java#org#apache#hadoop#hbase#master#handler#EnableTableHandler.txt_5
+5,wildfly_c1f025_e9a7ca_deployment-scanner#src#main#java#org#jboss#as#server#deployment#scanner#FileSystemDeploymentService.txt_19
+6,spring-framework_6d882b_7658d8_spring-expression#src#main#java#org#springframework#expression#spel#support#ReflectivePropertyAccessor.txt_6
+7,hive_8feac8_4bef02_metastore#src#java#org#apache#hadoop#hive#metastore#MetaStoreDirectSql.txt_16
+8,hbase_febd79_16bf1c_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#MemStore.txt_2
+9,wildfly_b294bb_841dd3_connector#src#main#java#org#jboss#as#connector#subsystems#common#pool#PoolOperations.txt_1
+10,spring-data-rest_88c97a_3ce107_spring-data-rest-webmvc#src#main#java#org#springframework#data#rest#webmvc#json#PersistentEntityJackson2Module.txt_4
+11,spring-framework_004224_2fa9ef_org.springframework.context#src#main#java#org#springframework#context#support#DefaultLifecycleProcessor.txt_10
+12,spring-amqp_5d6e02_e597c5_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#connection#ConnectionFactoryUtils.txt_8

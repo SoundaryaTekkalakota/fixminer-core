@@ -1,0 +1,5 @@
+0,spring-framework_3a5af3_dea591_org.springframework.beans#src#main#java#org#springframework#beans#CachedIntrospectionResults.txt_14
+1,wildfly-core_993873_6a6f75_domain-management#src#main#java#org#jboss#as#domain#management#security#SecurityRealmService.txt_5
+2,camel_8f0c15_ab3e17_camel-core#src#main#java#org#apache#camel#component#bean#BeanInfo.txt_2
+3,hive_cae321_7c02fc_ql#src#java#org#apache#hadoop#hive#ql#optimizer#StatsOptimizer.txt_1
+4,spring-amqp_8955cb_453b2a_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#annotation#RabbitListenerAnnotationBeanPostProcessor.txt_1

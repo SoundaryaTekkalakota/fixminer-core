@@ -1,0 +1,11 @@
+0,hbase_ba044f_0e8e41_hbase-server#src#main#java#org#apache#hadoop#hbase#security#visibility#VisibilityController.txt_2
+1,hive_68fa25_cc93b9_ql#src#java#org#apache#hadoop#hive#ql#plan#ExprNodeDescUtils.txt_0
+2,spring-hadoop_b50b32_67a105_spring-yarn#spring-yarn-core#src#main#java#org#springframework#yarn#container#DefaultYarnContainer.txt_1
+3,spring-framework_e393c7_e214e6_spring-core#src#main#java#org#springframework#core#env#AbstractEnvironment.txt_9
+4,spring-data-jpa_ba74ee_f2bcf9_src#main#java#org#springframework#data#jpa#repository#support#SimpleJpaRepository.txt_2
+5,hive_c85778_9fe4af_ql#src#java#org#apache#hadoop#hive#ql#optimizer#ColumnPrunerProcFactory.txt_0
+6,spring-data-commons_596a03_0232fd_spring-data-commons-core#src#main#java#org#springframework#data#util#TypeDiscoverer.txt_5
+7,hive_48e4e0_35d707_ql#src#java#org#apache#hadoop#hive#ql#exec#ExplainTask.txt_0
+8,hbase_ba044f_0e8e41_hbase-server#src#main#java#org#apache#hadoop#hbase#security#visibility#VisibilityController.txt_7
+9,spring-framework_567504_20a803_org.springframework.web.servlet#src#main#java#org#springframework#web#servlet#handler#AbstractUrlHandlerMapping.txt_0
+10,wildfly-swarm_da22a9_8ed46b_fractions#microprofile#microprofile-jwt#src#main#java#org#wildfly#swarm#microprofile#jwtauth#runtime#MPJWTAuthExtensionArchivePreparer.txt_11

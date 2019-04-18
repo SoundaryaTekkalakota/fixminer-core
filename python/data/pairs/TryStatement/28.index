@@ -1,0 +1,11 @@
+0,camel_4b0371_6bd330_camel-core#src#main#java#org#apache#camel#converter#jaxp#StaxConverter.txt_29
+1,camel_4b0371_6bd330_camel-core#src#main#java#org#apache#camel#converter#jaxp#StaxConverter.txt_45
+2,spring-batch_eb2f752_ca847e2_spring-batch-core#src#main#java#org#springframework#batch#core#step#item#FaultTolerantChunkProcessor.txt_1
+3,hbase_f6fc94_b93194_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#KeyValueHeap.txt_1
+4,camel_4b0371_6bd330_camel-core#src#main#java#org#apache#camel#converter#jaxp#StaxConverter.txt_59
+5,camel_890259_9615ed_camel-core#src#main#java#org#apache#camel#component#file#strategy#GenericFileRenameExclusiveReadLockStrategy.txt_0
+6,spring-ldap_ffa9af_5f44a6_spring-ldap#src#main#java#org#springframework#ldap#core#LdapTemplate.txt_5
+7,camel_4b0371_6bd330_camel-core#src#main#java#org#apache#camel#converter#jaxp#StaxConverter.txt_17
+8,wildfly_dd819b_7ceb92_clustering#marshalling#jboss#src#main#java#org#wildfly#clustering#marshalling#jboss#SimpleMarshallingContext.txt_2
+9,hbase_f9a17e_99ec36_hbase-server#src#main#java#org#apache#hadoop#hbase#mapreduce#LoadIncrementalHFiles.txt_8
+10,wildfly_526df0_93b09b_ejb3#src#main#java#org#jboss#as#ejb3#inflow#JBossMessageEndpointFactory.txt_0

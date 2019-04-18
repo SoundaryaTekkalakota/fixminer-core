@@ -1,0 +1,11 @@
+0,hive_885cdc_ac6735_ql#src#java#org#apache#hadoop#hive#ql#exec#DDLTask.txt_2
+1,hive_b043e5_ce19ef_ql#src#java#org#apache#hadoop#hive#ql#exec#mr#MapredLocalTask.txt_3
+2,hbase_998bd5_80dd8b_hbase-server#src#main#java#org#apache#hadoop#hbase#master#cleaner#CleanerChore.txt_3
+3,commons-collections_c53183_eb88ae_src#main#java#org#apache#commons#collections#ListUtils.txt_1
+4,hive_c30771_bb113e_metastore#src#java#org#apache#hadoop#hive#metastore#hbase#HBaseReadWrite.txt_25
+5,spring-security_b481a6_e65931_taglibs#src#main#java#org#springframework#security#taglibs#authz#AccessControlListTag.txt_6
+6,hive_360dfa_e5ba26_spark-client#src#main#java#org#apache#hive#spark#client#SparkClientImpl.txt_8
+7,wildfly-core_8e2c93_865670_controller#src#main#java#org#jboss#as#controller#CapabilityRegistry.txt_4
+8,fuse_eaf1a5_cd2d37_fabric#fabric-core#src#main#java#io#fabric8#service#PatchServiceImpl.txt_3
+9,hbase_3bc9e2_eb197c_hbase-server#src#main#java#org#apache#hadoop#hbase#replication#regionserver#ReplicationSink.txt_5
+10,spring-batch_301455_e0ce10_spring-batch-core#src#main#java#org#springframework#batch#core#configuration#support#ClassPathXmlApplicationContextFactory.txt_0

@@ -1,0 +1,6 @@
+0,hive_0330c1_b7b3f8_jdbc#src#java#org#apache#hive#jdbc#HivePreparedStatement.txt_1
+1,spring-data-jpa_0a11d3_4b7c41_src#main#java#org#springframework#data#jpa#repository#query#QueryUtils.txt_8
+2,spring-webflow_e70bca_e1eefc_spring-faces#src#main#java#org#springframework#faces#webflow#FlowFacesContextMessageDelegate.txt_8
+3,hive_2cab4a_c98ee5_ql#src#java#org#apache#hadoop#hive#ql#optimizer#physical#NullScanOptimizer.txt_0
+4,hive_474a19_66533e2_standalone-metastore#metastore-server#src#main#java#org#apache#hadoop#hive#metastore#HiveMetaStore.txt_4
+5,hive_087ef7_f30efb_standalone-metastore#src#main#java#org#apache#hadoop#hive#metastore#tools#HiveMetaTool.txt_8

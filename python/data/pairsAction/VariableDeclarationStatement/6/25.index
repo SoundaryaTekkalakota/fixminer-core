@@ -1,0 +1,9 @@
+0,hive_4efdf1_35a7a8_ql#src#java#org#apache#hadoop#hive#ql#io#parquet#read#ParquetRecordReaderWrapper.txt_3
+1,hive_f451f2_d8ef1e_metastore#src#java#org#apache#hadoop#hive#metastore#txn#TxnHandler.txt_22
+2,hbase_60cac4_629083_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#compactions#CompactionRequest.txt_0
+3,spring-framework_779cf8_06f9fb_spring-core#src#main#java#org#springframework#util#ConcurrentReferenceHashMap.txt_28
+4,spring-data-rest_a6b5c1_6260d3_spring-data-rest-webmvc#src#main#java#org#springframework#data#rest#webmvc#json#PersistentEntityToJsonSchemaConverter.txt_0
+5,hive_3a5edc_39c7f2_druid-handler#src#java#org#apache#hadoop#hive#druid#serde#DruidGroupByQueryRecordReader.txt_2
+6,hive_3a5edc_39c7f2_druid-handler#src#java#org#apache#hadoop#hive#druid#serde#DruidGroupByQueryRecordReader.txt_3
+7,spring-data-mongodb_17e015_2780f6_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#convert#MappingMongoConverter.txt_1
+8,spring-data-rest_c532bb_8cbd95_spring-data-rest-webmvc#src#main#java#org#springframework#data#rest#webmvc#RepositoryPropertyReferenceController.txt_4

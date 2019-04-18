@@ -1,0 +1,10 @@
+0,hive_283e51_2d3fae_ql#src#java#org#apache#hadoop#hive#ql#exec#tez#WorkloadManager.txt_7
+1,hive_977dba_a23a02_hbase-handler#src#java#org#apache#hadoop#hive#hbase#HBaseStorageHandler.txt_4
+2,hbase_3ab895_7755d4_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#HRegion.txt_2
+3,spring-data-jpa_0768bc_5c24fa_src#main#java#org#springframework#data#jpa#mapping#JpaPersistentPropertyImpl.txt_6
+4,spring-framework_ad91fa_bff36f_spring-expression#src#main#java#org#springframework#expression#spel#support#ReflectivePropertyAccessor.txt_1
+5,hive_3672a2_4c0fb1_ql#src#java#org#apache#hadoop#hive#ql#exec#tez#TezTask.txt_2
+6,wildfly-core_23a08e_ad1280_cli#src#main#java#org#jboss#as#cli#impl#aesh#cmd#HelpCommand.txt_0
+7,spring-ws_218e25_6b3f99_spring-ws-core#src#main#java#org#springframework#ws#transport#http#HttpUrlConnection.txt_3
+8,hive_63bfd9_b039c3_ql#src#java#org#apache#hadoop#hive#ql#metadata#Hive.txt_6
+9,hive_3991db_9c64f9_beeline#src#java#org#apache#hive#beeline#Commands.txt_7

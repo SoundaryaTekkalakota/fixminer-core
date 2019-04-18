@@ -1,0 +1,9 @@
+0,hbase_a30321_1b0444_core#src#main#java#org#apache#hadoop#hbase#client#HConnectionManager.txt_1
+1,spring-framework_cc0618_43d72e_spring-jdbc#src#main#java#org#springframework#jdbc#core#metadata#GenericCallMetaDataProvider.txt_9
+2,spring-batch_fec3d5_a8aa3f_spring-batch-infrastructure#src#main#java#org#springframework#batch#item#file#transform#DefaultFieldSet.txt_5
+3,spring-data-commons_48d4c0_89410e_spring-data-commons-core#src#main#java#org#springframework#data#repository#config#AbstractRepositoryConfigDefinitionParser.txt_6
+4,hive_19c015_5106bf_hcatalog#core#src#main#java#org#apache#hive#hcatalog#data#JsonSerDe.txt_4
+5,hive_0ad4f7_941610_ql#src#java#org#apache#hadoop#hive#ql#lib#RuleRegExp.txt_21
+6,spring-batch_fec3d5_a8aa3f_spring-batch-infrastructure#src#main#java#org#springframework#batch#item#file#transform#DefaultFieldSet.txt_12
+7,hive_8f5974_db605f_ql#src#java#org#apache#hadoop#hive#ql#optimizer#SharedWorkOptimizer.txt_3
+8,hive_5eed77_be4200_standalone-metastore#src#main#java#org#apache#hadoop#hive#metastore#HiveMetaStore.txt_36

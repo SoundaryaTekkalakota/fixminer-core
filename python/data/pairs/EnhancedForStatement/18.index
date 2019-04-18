@@ -1,0 +1,13 @@
+0,hive_60cb16_0f4065_metastore#src#java#org#apache#hadoop#hive#metastore#MetaStoreDirectSql.txt_1
+1,hive_b5dfa4_e47c40_ql#src#java#org#apache#hadoop#hive#ql#exec#tez#TezJobMonitor.txt_0
+2,hbase_22b465_dcf616_hbase-client#src#main#java#org#apache#hadoop#hbase#protobuf#ProtobufUtil.txt_0
+3,spring-roo_f54d05_d597b4_addon-dbre#src#main#java#org#springframework#roo#addon#dbre#DbreMetadata.txt_4
+4,hive_972956_bf9439_ql#src#java#org#apache#hadoop#hive#ql#optimizer#ColumnPrunerProcFactory.txt_0
+5,hive_324929_eb9fec_ql#src#java#org#apache#hadoop#hive#ql#optimizer#SortedDynPartitionOptimizer.txt_0
+6,hbase_959784_f8528f_hbase-server#src#main#java#org#apache#hadoop#hbase#io#hfile#bucket#BucketAllocator.txt_13
+7,hive_be05e3_5201f1_ql#src#java#org#apache#hadoop#hive#ql#optimizer#calcite#rules#HivePreFilteringRule.txt_20
+8,hive_60cb16_0f4065_metastore#src#java#org#apache#hadoop#hive#metastore#MetaStoreDirectSql.txt_2
+9,hive_8fca02_e55ccd2_ql#src#java#org#apache#hadoop#hive#ql#optimizer#SortedDynPartitionOptimizer.txt_0
+10,hive_e68783_652f88_ql#src#java#org#apache#hadoop#hive#ql#exec#vector#VectorizationContext.txt_0
+11,hbase_dc9223_ccd508_hbase-server#src#main#java#org#apache#hadoop#hbase#master#AssignmentManager.txt_1
+12,hive_60cb16_0f4065_metastore#src#java#org#apache#hadoop#hive#metastore#MetaStoreDirectSql.txt_0

@@ -1,0 +1,11 @@
+0,wildfly-swarm_78322f_7f51e3_monitor#src#main#java#org#wildfly#swarm#monitor#runtime#HealthAnnotationProcessor.txt_2
+1,spring-security_5509da_681b5d_acl#src#main#java#org#springframework#security#acls#objectidentity#ObjectIdentityImpl.txt_7
+2,hbase_9b0a00_c8529f_src#main#java#org#apache#hadoop#hbase#regionserver#MemStoreFlusher.txt_7
+3,spring-security_693d2b_66b1b1_acl#src#main#java#org#springframework#security#acls#domain#AclImpl.txt_0
+4,hive_481248_607955_beeline#src#java#org#apache#hive#beeline#Commands.txt_0
+5,commons-compress_f4044d_ec0f58_src#main#java#org#apache#commons#compress#archivers#tar#TarArchiveInputStream.txt_0
+6,wildfly-elytron_b101c3_1a2900_src#main#java#org#wildfly#security#sasl#gs2#Gs2SaslServer.txt_1
+7,spring-framework_93aa41_0c0a56_spring-web#src#main#java#org#springframework#remoting#httpinvoker#HttpComponentsHttpInvokerRequestExecutor.txt_0
+8,spring-data-mongodb_6fe3e6_3b7803_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#convert#QueryMapper.txt_4
+9,camel_b1f3d1_9c43c5_components#camel-jms#src#main#java#org#apache#camel#component#jms#reply#TemporaryQueueReplyManager.txt_0
+10,wildfly-core_cbb789_4aa9c5_controller#src#main#java#org#jboss#as#controller#remote#TransactionalProtocolOperationHandler.txt_0

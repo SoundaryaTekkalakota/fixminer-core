@@ -1,0 +1,13 @@
+0,spring-batch_5826cb_cf875e_spring-batch-core#src#main#java#org#springframework#batch#core#JobParameter.txt_0
+1,wildfly-core_cb1637_c987bc_elytron#src#main#java#org#wildfly#extension#elytron#AuditResourceDefinitions.txt_10
+2,spring-framework_8c30b8_e57d8e_spring-webflux#src#main#java#org#springframework#web#reactive#function#server#RouterFunctions.txt_0
+3,hive_920201_d1ef99_ql#src#java#org#apache#hadoop#hive#ql#plan#ConditionalResolverCommonJoin.txt_1
+4,spring-roo_629827_4e7fed_addon-finder#src#main#java#org#springframework#roo#addon#finder#FinderMetadata.txt_28
+5,hive_918fae_a84506_ql#src#java#org#apache#hadoop#hive#ql#metadata#Table.txt_2
+6,hive_a5502b_f80f65_llap-server#src#java#org#apache#hadoop#hive#llap#io#decode#OrcEncodedDataConsumer.txt_6
+7,spring-framework_4927c9_38ef6d_spring-jms#src#main#java#org#springframework#jms#connection#SingleConnectionFactory.txt_31
+8,spring-framework_e9a8a5_ae3fd4_spring-webmvc#src#main#java#org#springframework#web#servlet#mvc#method#annotation#AbstractMessageConverterMethodProcessor.txt_0
+9,camel_e8e32b_a13937_components#camel-cdi#src#main#java#org#apache#camel#cdi#CdiCamelFactory.txt_1
+10,hive_c396cd_a3b4bf_ql#src#java#org#apache#hadoop#hive#ql#io#BucketCodec.txt_1
+11,wildfly-elytron_fe73c4_f96a4f_src#main#java#org#wildfly#security#ssl#SSLUtils.txt_1
+12,wildfly-swarm_b3c98f_76a172_fractions#wildfly#io#src#main#java#org#wildfly#swarm#io#IOFraction.txt_0

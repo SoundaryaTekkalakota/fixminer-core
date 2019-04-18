@@ -1,0 +1,10 @@
+0,hive_372782_e765ec_ql#src#java#org#apache#hadoop#hive#ql#exec#Utilities.txt_0
+1,wildfly-core_b6c042_a8cbd5_domain-management#src#main#java#org#jboss#as#domain#management#parsing#ManagementXml.txt_2
+2,spring-security-oauth_f78136_ad93c4_spring-security-oauth2#src#main#java#org#springframework#security#oauth2#provider#endpoint#AuthorizationEndpoint.txt_5
+3,wildfly_0c8f5b_dbc305f_microprofile#opentracing-smallrye#src#main#java#org#wildfly#microprofile#opentracing#smallrye#TracerInitializer.txt_3
+4,camel_53e957_1796ab_components#camel-mybatis#src#main#java#org#apache#camel#component#mybatis#MyBatisProducer.txt_15
+5,hive_be47d9_c76ce91_ql#src#java#org#apache#hadoop#hive#ql#optimizer#DynamicPartitionPruningOptimization.txt_8
+6,hive_24577b_29cce1_ql#src#java#org#apache#hadoop#hive#ql#io#avro#AvroGenericRecordReader.txt_0
+7,hive_9f82a9_5fd27c_ql#src#java#org#apache#hadoop#hive#ql#io#orc#OrcNewInputFormat.txt_0
+8,hive_fc48d7_ba8a99_ql#src#java#org#apache#hadoop#hive#ql#exec#vector#expressions#VectorExpressionWriterFactory.txt_40
+9,wildfly-core_b6c042_a8cbd5_domain-management#src#main#java#org#jboss#as#domain#management#parsing#ManagementXml.txt_0

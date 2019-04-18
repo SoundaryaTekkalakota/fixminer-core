@@ -1,0 +1,16 @@
+0,wildfly_9083a1c_db2ba1_transactions#src#main#java#org#jboss#as#txn#deployment#TransactionRollbackSetupAction.txt_9
+1,hive_601cbc_b7e68a_ql#src#java#org#apache#hadoop#hive#ql#exec#GroupByOperator.txt_2
+2,spring-framework_e48def_6d26e6_spring-web#src#main#java#org#springframework#http#server#reactive#ChannelSendOperator.txt_2
+3,hive_eea39f_5881e8_ql#src#java#org#apache#hadoop#hive#ql#udf#UDFRegExp.txt_1
+4,wildfly-elytron_13ecc1_d9f748_src#main#java#org#wildfly#security#auth#client#ElytronXmlParser.txt_11
+5,hbase_2c48f2_edfbb7_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#wal#HLogSplitter.txt_2
+6,wildfly-elytron_657d2f_9acea3_src#main#java#org#wildfly#security#auth#realm#ldap#LdapSecurityRealm.txt_3
+7,wildfly-elytron_657d2f_9acea3_src#main#java#org#wildfly#security#auth#realm#ldap#LdapSecurityRealm.txt_4
+8,wildfly-elytron_27eaa1_4650b6_src#main#java#org#wildfly#security#auth#realm#ldap#LdapSecurityRealm.txt_12
+9,spring-framework_9666fc_9b26fc_spring-core#src#main#java#org#springframework#util#concurrent#SettableListenableFuture.txt_6
+10,hbase_d5ef99_52a859_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#wal#HLogSplitter.txt_3
+11,hive_a05da1_293699_hcatalog#webhcat#svr#src#main#java#org#apache#hive#hcatalog#templeton#tool#LaunchMapper.txt_0
+12,hive_0534b9_9807a5_ql#src#java#org#apache#hadoop#hive#ql#io#orc#OrcRawRecordMerger.txt_17
+13,hive_eba302_de30fe4_ql#src#java#org#apache#hadoop#hive#ql#optimizer#StatsOptimizer.txt_3
+14,hive_ddf7e2_5016d6_ql#src#java#org#apache#hadoop#hive#ql#optimizer#metainfo#annotation#OpTraitsRulesProcFactory.txt_0
+15,hive_a7cf25_be7329_ql#src#java#org#apache#hadoop#hive#ql#udf#generic#GenericUDAFRowNumber.txt_7

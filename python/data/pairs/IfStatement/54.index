@@ -1,0 +1,9 @@
+0,spring-framework_ad3177_9891bd_spring-beans#src#main#java#org#springframework#beans#factory#support#ConstructorResolver.txt_2
+1,wildfly-elytron_27eaa1_4650b6_src#main#java#org#wildfly#security#auth#realm#ldap#LdapSecurityRealm.txt_19
+2,hbase_6a1ef5_acfe2f_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#RegionMergeTransaction.txt_0
+3,spring-framework_2ff2f0_e22431_org.springframework.jdbc#src#main#java#org#springframework#jdbc#core#metadata#GenericTableMetaDataProvider.txt_3
+4,hbase_588206_0e54a5_src#main#java#org#apache#hadoop#hbase#master#AssignmentManager.txt_29
+5,hbase_aa7a5b_6fa8f6_src#main#java#org#apache#hadoop#hbase#master#AssignmentManager.txt_0
+6,camel_beb755_aff982_components#camel-http-common#src#main#java#org#apache#camel#http#common#HttpServletResolveConsumerStrategy.txt_3
+7,hive_9375cf_697922_ql#src#java#org#apache#hadoop#hive#ql#optimizer#calcite#rules#HiveRelDecorrelator.txt_22
+8,hive_f451f2_d8ef1e_metastore#src#java#org#apache#hadoop#hive#metastore#txn#TxnHandler.txt_8

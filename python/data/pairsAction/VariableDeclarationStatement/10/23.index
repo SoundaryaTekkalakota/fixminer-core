@@ -1,0 +1,5 @@
+0,wildfly-core_ac4590_8771f0_controller#src#main#java#org#jboss#as#controller#transform#CompositeOperationTransformer.txt_0
+1,hive_6433c3_5edbf3_serde#src#java#org#apache#hadoop#hive#serde2#objectinspector#ThriftUnionObjectInspector.txt_4
+2,hive_cf87b0_0a6fc6_hbase-handler#src#java#org#apache#hadoop#hive#hbase#HiveHFileOutputFormat.txt_0
+3,spring-data-redis_aa739f_f366ff_src#main#java#org#springframework#data#redis#core#DefaultValueOperations.txt_1
+4,wildfly_d116d9_2e367c_xts#src#main#java#org#jboss#as#xts#XTSSubsystemAdd.txt_0

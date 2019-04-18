@@ -1,0 +1,13 @@
+0,spring-roo_f34e6a_97a1b1_addon-web-mvc-jsp#src#main#java#org#springframework#roo#addon#web#mvc#jsp#JspOperationsImpl.txt_18
+1,spring-data-rest_1ebdeb_4ba413_spring-data-rest-core#src#main#java#org#springframework#data#rest#core#ValidationErrors.txt_4
+2,hbase_cfedd4_36c302_src#examples#thrift#DemoClient.txt_45
+3,hive_00726e_0a5d38_ql#src#java#org#apache#hadoop#hive#ql#optimizer#StatsOptimizer.txt_8
+4,hive_649d7c_142367_ql#src#java#org#apache#hadoop#hive#ql#optimizer#calcite#rules#HiveAggregateReduceFunctionsRule.txt_3
+5,hive_13dda3_fd3be8_ql#src#java#org#apache#hadoop#hive#ql#io#orc#OrcInputFormat.txt_1
+6,hive_d3a5f2_d469e6_ql#src#java#org#apache#hadoop#hive#ql#io#orc#RecordReaderImpl.txt_4
+7,wildfly-elytron_73af6f_87ac60_src#main#java#org#wildfly#security#auth#realm#ldap#OtpCredentialLoader.txt_4
+8,hbase_12a161_0fdf81_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#HRegion.txt_0
+9,spring-data-mongodb_7f35c4_114489_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#query#Criteria.txt_2
+10,hive_0463b7_7fb8d6_ql#src#java#org#apache#hadoop#hive#ql#optimizer#correlation#ReduceSinkDeDuplication.txt_0
+11,hive_c4c756_317922a_standalone-metastore#src#main#java#org#apache#hadoop#hive#metastore#ObjectStore.txt_19
+12,hbase_abae95_fd4ce7_src#main#java#org#apache#hadoop#hbase#regionserver#wal#SequenceFileLogWriter.txt_5

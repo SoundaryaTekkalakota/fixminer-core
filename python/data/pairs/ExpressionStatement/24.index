@@ -1,0 +1,11 @@
+0,hive_c494ce_ca4b04_ql#src#java#org#apache#hadoop#hive#ql#parse#SemanticAnalyzer.txt_4
+1,hive_a1feba_7d9e2e_ql#src#java#org#apache#hadoop#hive#ql#exec#DDLTask.txt_1
+2,hive_5e939d_af6f80_metastore#src#java#org#apache#hadoop#hive#metastore#RetryingMetaStoreClient.txt_3
+3,wildfly_b5a714_dac3af_clustering#infinispan#extension#src#main#java#org#jboss#as#clustering#infinispan#subsystem#StateTransferResourceDefinition.txt_0
+4,camel_fa0979_c67d36_components#camel-mllp#src#main#java#org#apache#camel#component#mllp#MllpTcpServerConsumer.txt_12
+5,hive_c494ce_ca4b04_ql#src#java#org#apache#hadoop#hive#ql#parse#SemanticAnalyzer.txt_2
+6,wildfly_02d78c_3cf1ad_clustering#ejb#infinispan#src#main#java#org#wildfly#clustering#ejb#infinispan#InfinispanBeanManager.txt_0
+7,hive_cfdb43_f404b0_hcatalog#server-extensions#src#main#java#org#apache#hive#hcatalog#listener#DbNotificationListener.txt_9
+8,hive_77a1ed_eddc54_ql#src#java#org#apache#hadoop#hive#ql#optimizer#MapJoinProcessor.txt_12
+9,wildfly-core_9e8d9c_2fc2fc_server#src#main#java#org#jboss#as#server#operations#SystemPropertyRemoveHandler.txt_0
+10,spring-data-mongodb_04a17c_761d72_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#MongoTemplate.txt_3

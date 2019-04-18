@@ -1,0 +1,8 @@
+0,camel_a57830_0dd411_camel-core#src#main#java#org#apache#camel#model#OnExceptionDefinition.txt_0
+1,wildfly-core_a18f1d_5b3ca8_server#src#main#java#org#jboss#as#server#deploymentoverlay#AffectedDeploymentOverlay.txt_3
+2,spring-framework_d22a6f_8ccd74_org.springframework.jdbc#src#main#java#org#springframework#jdbc#core#simple#AbstractJdbcInsert.txt_0
+3,commons-io_b1dede_50a7fd_src#main#java#org#apache#commons#io#input#BoundedInputStream.txt_0
+4,hive_255715_0f49a2_ql#src#java#org#apache#hadoop#hive#ql#optimizer#SortedMergeBucketMapJoinOptimizer.txt_0
+5,hbase_132c4f_dc9223_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#KeyValueHeap.txt_0
+6,wildfly_90bb01_c7a4b9_undertow#src#main#java#org#wildfly#extension#undertow#deployment#WarAnnotationDeploymentProcessor.txt_0
+7,commons-collections_9dbf83_9acc3e_src#main#java#org#apache#commons#collections4#trie#AbstractPatriciaTrie.txt_0

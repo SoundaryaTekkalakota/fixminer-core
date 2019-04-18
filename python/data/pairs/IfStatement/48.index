@@ -1,0 +1,12 @@
+0,spring-security_3e4fc0_a4c052_acl#src#main#java#org#springframework#security#acls#domain#AclImpl.txt_0
+1,spring-batch_786de6_761120_spring-batch-infrastructure#src#main#java#org#springframework#batch#item#database#BatchSqlUpdateItemWriter.txt_5
+2,hive_4fd8f0_589fb6_ql#src#java#org#apache#hadoop#hive#ql#io#HiveInputFormat.txt_1
+3,spring-framework_1ff99f_2e0328_org.springframework.context#src#main#java#org#springframework#jmx#access#MBeanClientInterceptor.txt_9
+4,hbase_22b465_dcf616_hbase-client#src#main#java#org#apache#hadoop#hbase#protobuf#ProtobufUtil.txt_2
+5,hbase_588206_0e54a5_src#main#java#org#apache#hadoop#hbase#master#AssignmentManager.txt_34
+6,wildfly-elytron_512e1c_a9ef27_src#main#java#org#wildfly#security#x500#X500PrincipalUtil.txt_11
+7,hbase_6661f2_506726_hbase-client#src#main#java#org#apache#hadoop#hbase#filter#FuzzyRowFilter.txt_2
+8,wildfly_239dab_8f2b54_weld#src#main#java#org#jboss#as#weld#services#bootstrap#WeldResourceInjectionServices.txt_0
+9,hive_b9c3e6_e01814_ql#src#java#org#apache#hadoop#hive#ql#exec#MoveTask.txt_6
+10,spring-data-mongodb_d7ae95_8fbdf9_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#repository#query#ConvertingParameterAccessor.txt_3
+11,camel_b94013_590150_camel-core#src#main#java#org#apache#camel#component#bean#MethodInfo.txt_1

@@ -1,0 +1,10 @@
+0,hive_a316c8_141737_beeline#src#java#org#apache#hive#beeline#HiveSchemaTool.txt_2
+1,wildfly-core_76fec9_f51899_protocol#src#main#java#org#jboss#as#protocol#ProtocolConnectionUtils.txt_1
+2,hive_699d6c_d09f3f_ql#src#java#org#apache#hadoop#hive#ql#optimizer#DynamicPartitionPruningOptimization.txt_4
+3,spring-security-oauth_236e6b_fe12db_spring-security-oauth2#src#main#java#org#springframework#security#oauth2#provider#token#InMemoryTokenStore.txt_1
+4,hive_47e8c0_e846da_ql#src#java#org#apache#hadoop#hive#ql#io#HiveFileFormatUtils.txt_6
+5,hive_47e8c0_e846da_ql#src#java#org#apache#hadoop#hive#ql#io#HiveFileFormatUtils.txt_7
+6,hive_699d6c_d09f3f_ql#src#java#org#apache#hadoop#hive#ql#optimizer#DynamicPartitionPruningOptimization.txt_6
+7,wildfly-maven-plugin_0bbb1f_05d497_plugin#src#main#java#org#wildfly#plugin#common#StandardOutput.txt_0
+8,wildfly-core_4a19da_889340_domain-http#interface#src#main#java#org#jboss#as#domain#http#server#DomainApiGenericOperationHandler.txt_1
+9,spring-data-mongodb_e53150_289c4b_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#convert#MappingMongoConverter.txt_6

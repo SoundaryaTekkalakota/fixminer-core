@@ -1,0 +1,9 @@
+0,spring-amqp_a8ce5b_2702aa_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#connection#CachingConnectionFactory.txt_1
+1,wildfly_0ba541_3c8d65_microprofile#opentracing-extension#src#main#java#org#wildfly#extension#microprofile#opentracing#TracingDependencyProcessor.txt_0
+2,spring-roo_f699e6_3baba0_classpath#src#main#java#org#springframework#roo#classpath#TypeLocationServiceImpl.txt_0
+3,camel_5f55d0_06ee81_components#camel-sql#src#main#java#org#apache#camel#processor#aggregate#jdbc#ClassLoadingAwareObjectInputStream.txt_3
+4,spring-framework_4c8a78_26d143_spring-jdbc#src#main#java#org#springframework#jdbc#core#StatementCreatorUtils.txt_1
+5,spring-framework_ed7684_50253f_spring-webmvc#src#main#java#org#springframework#web#servlet#mvc#method#annotation#HttpEntityMethodProcessor.txt_0
+6,hive_aac926_1ec276_ql#src#java#org#apache#hadoop#hive#ql#exec#tez#TezJobMonitor.txt_1
+7,spring-roo_f699e6_3baba0_classpath#src#main#java#org#springframework#roo#classpath#TypeLocationServiceImpl.txt_1
+8,hbase_7ee058_220037_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#HRegion.txt_0

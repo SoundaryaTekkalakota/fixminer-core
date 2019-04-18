@@ -1,0 +1,15 @@
+0,camel_46b30b_7c4ddb_components#camel-olingo2#camel-olingo2-api#src#main#java#org#apache#camel#component#olingo2#api#impl#Olingo2AppImpl.txt_2
+1,wildfly-swarm_bce2ef_d31db2_arquillian#adapter#src#main#java#org#wildfly#swarm#arquillian#adapter#DefaultDeploymentScenarioGenerator.txt_4
+2,wildfly_125529_d734b2_security#subsystem#src#main#java#org#jboss#as#security#service#SecurityBootstrapService.txt_2
+3,spring-data-neo4j_fa9e31_4ff787_spring-data-neo4j#src#main#java#org#springframework#data#neo4j#conversion#MetaDataDrivenConversionService.txt_7
+4,wildfly-elytron_f1a7c6_0ea66a_src#main#java#org#wildfly#security#http#impl#BearerTokenAuthenticationMechanism.txt_3
+5,hive_bef879_1d02ab_llap-server#src#java#org#apache#hadoop#hive#llap#cache#LowLevelLrfuCachePolicy.txt_13
+6,wildfly-core_66d694_5173bb_controller#src#main#java#org#jboss#as#controller#PersistentResourceXMLDescription.txt_14
+7,hive_901b61_57914b_ql#src#java#org#apache#hadoop#hive#ql#optimizer#BucketMapJoinOptimizer.txt_11
+8,commons-configuration_db5cec_7a614a_src#main#java#org#apache#commons#configuration#beanutils#BeanHelper.txt_2
+9,hbase_1162cb_7acb06_hbase-server#src#main#java#org#apache#hadoop#hbase#mapreduce#Import.txt_14
+10,spring-framework_8ab8e4_3654a6_spring-web#src#main#java#org#springframework#web#method#HandlerMethod.txt_4
+11,spring-security_76d9ef_98ae03_web#src#main#java#org#springframework#security#web#csrf#CsrfAuthenticationStrategy.txt_16
+12,hive_2c7f9c_f44cae_ql#src#java#org#apache#hadoop#hive#ql#exec#SerializationUtilities.txt_7
+13,spring-data-mongodb_1335cb_84414b_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#repository#query#StringBasedMongoQuery.txt_8
+14,hbase_bb87ad_cd8f39_hbase-server#src#main#java#org#apache#hadoop#hbase#master#SplitLogManager.txt_7

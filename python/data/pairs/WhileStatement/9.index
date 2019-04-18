@@ -1,0 +1,9 @@
+0,hbase_d45e0a_f28e39_hbase-server#src#main#java#org#apache#hadoop#hbase#security#visibility#VisibilityScanDeleteTracker.txt_15
+1,spring-framework_08e266_f3651c_org.springframework.context#src#main#java#org#springframework#context#annotation#ConfigurationClassParser.txt_1
+2,spring-batch_fa0129_37e7ad_spring-batch-core#src#main#java#org#springframework#batch#core#launch#support#CommandLineJobRunner.txt_0
+3,hbase_132a64_b58c15_src#java#org#apache#hadoop#hbase#regionserver#Memcache.txt_1
+4,hbase_4e080b_f7e3a1_src#main#java#org#apache#hadoop#hbase#coprocessor#CoprocessorHost.txt_4
+5,hive_f478de_07224d_ql#src#java#org#apache#hadoop#hive#ql#exec#StatsNoJobTask.txt_0
+6,hive_c30771_bb113e_metastore#src#java#org#apache#hadoop#hive#metastore#hbase#HBaseReadWrite.txt_19
+7,wildfly_c64d1f_fda0f6_server#src#main#java#org#jboss#as#server#deployment#module#VFSResourceLoader.txt_2
+8,hbase_7d42c2_d6ed11_src#main#java#org#apache#hadoop#hbase#regionserver#HRegionServer.txt_16

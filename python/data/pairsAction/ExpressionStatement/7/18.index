@@ -1,0 +1,8 @@
+0,camel_37d1f0_8e18c0_camel-core#src#main#java#org#apache#camel#processor#MulticastProcessor.txt_8
+1,camel_0be7ba_6d8af2_components#camel-rabbitmq#src#main#java#org#apache#camel#component#rabbitmq#RabbitMQConsumer.txt_7
+2,camel_8b3da67_08665f_components#camel-restlet#src#main#java#org#apache#camel#component#restlet#DefaultRestletBinding.txt_4
+3,wildfly-core_18e9e9_e4e959_server#src#main#java#org#jboss#as#server#RuntimeExpressionResolver.txt_5
+4,camel_6b2a7b1_06cebe_components#camel-leveldb#src#main#java#org#apache#camel#component#leveldb#LevelDBAggregationRepository.txt_0
+5,camel_871815_e1cfeb_components#camel-kafka#src#main#java#org#apache#camel#component#kafka#KafkaConsumer.txt_6
+6,wildfly-core_0f707f_c987bc_elytron#src#main#java#org#wildfly#extension#elytron#CredentialStoreService.txt_10
+7,wildfly-core_0f707f_c987bc_elytron#src#main#java#org#wildfly#extension#elytron#CredentialStoreService.txt_5

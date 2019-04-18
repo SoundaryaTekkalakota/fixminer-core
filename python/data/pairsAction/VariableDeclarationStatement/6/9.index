@@ -1,0 +1,11 @@
+0,camel_e871b5_447de8_components#camel-quartz#src#main#java#org#apache#camel#component#quartz#CamelJob.txt_1
+1,hive_c085d1_b28ec7_ql#src#java#org#apache#hadoop#hive#ql#exec#ExplainTask.txt_0
+2,hive_568164_513ee7_ql#src#java#org#apache#hadoop#hive#ql#util#HiveStrictManagedMigration.txt_74
+3,spring-framework_583201_f05175_spring-messaging#src#main#java#org#springframework#messaging#converter#MappingJackson2MessageConverter.txt_0
+4,hive_09e330_7e4f3b_ql#src#java#org#apache#hadoop#hive#ql#exec#Utilities.txt_0
+5,camel_a4c961_4c70f5_camel-core#src#main#java#org#apache#camel#converter#jaxp#DomConverter.txt_1
+6,hbase_18d925_31c21f_hbase-client#src#main#java#org#apache#hadoop#hbase#client#AsyncProcess.txt_18
+7,hive_28779d_da13a1_ql#src#java#org#apache#hadoop#hive#ql#udf#generic#GenericUDFAddMonths.txt_14
+8,spring-data-mongodb_a44c1f_6b35ca_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#convert#QueryMapper.txt_14
+9,hive_c30771_bb113e_metastore#src#java#org#apache#hadoop#hive#metastore#hbase#HBaseReadWrite.txt_16
+10,spring-data-mongodb_a44c1f_6b35ca_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#convert#QueryMapper.txt_1

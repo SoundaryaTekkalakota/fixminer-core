@@ -1,0 +1,13 @@
+0,hbase_18d925_31c21f_hbase-client#src#main#java#org#apache#hadoop#hbase#client#AsyncProcess.txt_13
+1,spring-security-oauth_fbf76f_5d730a_spring-security-oauth#src#main#java#org#springframework#security#oauth2#consumer#OAuth2ClientContextFilter.txt_1
+2,hbase_bf7015_dda8f6_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#HRegion.txt_1
+3,hive_be47d9_c76ce91_ql#src#java#org#apache#hadoop#hive#ql#optimizer#DynamicPartitionPruningOptimization.txt_12
+4,spring-security-oauth_fee0d9_3262e9_spring-security-oauth2#src#main#java#org#springframework#security#oauth2#client#token#grant#password#ResourceOwnerPasswordAccessTokenProvider.txt_2
+5,hive_258b44_5482fb_ql#src#java#org#apache#hadoop#hive#ql#parse#SemanticAnalyzer.txt_0
+6,hive_79244a_8d524e_ql#src#java#org#apache#hadoop#hive#ql#lib#RuleRegExp.txt_4
+7,hbase_903d87_76f4e1_hbase-server#src#main#java#org#apache#hadoop#hbase#tool#Canary.txt_13
+8,hive_e28775_8e9cfd_ql#src#java#org#apache#hadoop#hive#ql#optimizer#ColumnPruner.txt_0
+9,hive_159b42_230905_ql#src#java#org#apache#hadoop#hive#ql#exec#ExplainTask.txt_1
+10,hive_02a3c8_efcc89a_ql#src#java#org#apache#hadoop#hive#ql#parse#SemanticAnalyzer.txt_0
+11,hive_12090f_bb54c5_ql#src#java#org#apache#hadoop#hive#ql#exec#tez#TezSessionState.txt_1
+12,spring-data-rest_c49754_88c97a_spring-data-rest-core#src#main#java#org#springframework#data#rest#core#config#ProjectionDefinitionConfiguration.txt_4

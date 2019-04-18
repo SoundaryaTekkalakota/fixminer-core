@@ -1,0 +1,9 @@
+0,spring-security-oauth_84d4ef_a50627_spring-security-oauth#src#main#java#org#springframework#security#oauth#common#signature#HMAC_SHA1SignatureMethod.txt_1
+1,hbase_67f428_2a21d4_src#java#org#apache#hadoop#hbase#regionserver#HLog.txt_18
+2,metadata_b656f8_2acb7d_common#src#main#java#org#jboss#metadata#annotation#creator#ws#WebServiceHandlerChainProcessor.txt_3
+3,hive_c494ce_ca4b04_ql#src#java#org#apache#hadoop#hive#ql#parse#SemanticAnalyzer.txt_5
+4,hive_9493dc_b42fdc_ql#src#java#org#apache#hadoop#hive#ql#parse#TezCompiler.txt_6
+5,hive_2c7f9c_f44cae_ql#src#java#org#apache#hadoop#hive#ql#exec#SerializationUtilities.txt_9
+6,hive_273a08_545550_ql#src#java#org#apache#hadoop#hive#ql#optimizer#physical#Vectorizer.txt_4
+7,hbase_1c8822_1fad92_hbase-client#src#main#java#org#apache#hadoop#hbase#ipc#RemoteWithExtrasException.txt_2
+8,hive_879026_3e3f01_ql#src#java#org#apache#hadoop#hive#ql#optimizer#stats#annotation#StatsRulesProcFactory.txt_1

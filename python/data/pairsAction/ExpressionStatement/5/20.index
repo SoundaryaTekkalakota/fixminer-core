@@ -1,0 +1,15 @@
+0,camel_09b154_427f1b_tooling#maven#camel-maven-plugin#src#main#java#org#apache#camel#maven#RunMojo.txt_4
+1,hive_b7b5cb_ac247c_ql#src#java#org#apache#hadoop#hive#ql#stats#StatsUtils.txt_0
+2,hbase_64863b_a0aad9_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#HRegion.txt_0
+3,wildfly_074477_80ac12_batch#extension-jberet#src#main#java#org#wildfly#extension#batch#jberet#deployment#JobOperatorService.txt_0
+4,hive_b7b5cb_ac247c_ql#src#java#org#apache#hadoop#hive#ql#stats#StatsUtils.txt_1
+5,hive_ddf7e2_5016d6_ql#src#java#org#apache#hadoop#hive#ql#optimizer#metainfo#annotation#OpTraitsRulesProcFactory.txt_3
+6,hbase_3bd872_1f47ff_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#HRegionServer.txt_0
+7,hive_ddf7e2_5016d6_ql#src#java#org#apache#hadoop#hive#ql#optimizer#metainfo#annotation#OpTraitsRulesProcFactory.txt_5
+8,hive_cd7f13_c9407a_ql#src#java#org#apache#hadoop#hive#ql#exec#spark#SparkClient.txt_0
+9,hive_2b882d_c392bc_ql#src#java#org#apache#hadoop#hive#ql#stats#StatsUtils.txt_0
+10,camel_262c2d_ef5e93_camel-core#src#main#java#org#apache#camel#impl#converter#DefaultTypeConverter.txt_4
+11,wildfly-core_9c682f_1fa841_cli#src#main#java#org#jboss#as#cli#Util.txt_6
+12,wildfly-core_9c682f_1fa841_cli#src#main#java#org#jboss#as#cli#Util.txt_0
+13,hive_8657e300_9350b6_ql#src#java#org#apache#hadoop#hive#ql#optimizer#ConstantPropagateProcFactory.txt_3
+14,hive_1901e3_c71ef4_ql#src#java#org#apache#hadoop#hive#ql#Driver.txt_27

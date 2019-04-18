@@ -1,0 +1,13 @@
+0,spring-roo_0b9ba6_344e2f_addon-javabean#src#main#java#org#springframework#roo#addon#javabean#JavaBeanMetadataProvider.txt_1
+1,spring-roo_423996_932c6b_addon-gwt#src#main#java#org#springframework#roo#addon#gwt#GwtMetadata.txt_0
+2,hive_178b26_8b3fac6_ql#src#java#org#apache#hadoop#hive#ql#exec#FileSinkOperator.txt_0
+3,spring-framework_766e60_782656_spring-jdbc#src#main#java#org#springframework#jdbc#core#metadata#OracleTableMetaDataProvider.txt_3
+4,hive_a275fe_aaedf5_ql#src#java#org#apache#hadoop#hive#ql#parse#LoadSemanticAnalyzer.txt_5
+5,spring-data-mongodb_aa80d1_fd28ab_spring-data-mongodb#src#main#java#org#springframework#data#mongodb#core#convert#QueryMapper.txt_14
+6,wildfly_abf4f3_bae74e_jaxrs#src#main#java#org#jboss#as#jaxrs#DeploymentRestResourcesDefintion.txt_7
+7,camel_cc4d07_b6ca7d_camel-core#src#main#java#org#apache#camel#impl#DefaultProducerTemplate.txt_7
+8,spring-roo_8e1b76_c90d7b_addon-gwt#src#main#java#org#springframework#roo#addon#gwt#GwtTypeServiceImpl.txt_0
+9,spring-roo_423996_932c6b_addon-gwt#src#main#java#org#springframework#roo#addon#gwt#GwtMetadata.txt_3
+10,hive_a275fe_aaedf5_ql#src#java#org#apache#hadoop#hive#ql#parse#LoadSemanticAnalyzer.txt_6
+11,hbase_6ec4a9_bfa368_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#HStore.txt_1
+12,wildfly_932a18_468b34_messaging-activemq#src#main#java#org#wildfly#extension#messaging#activemq#jms#JMSService.txt_1

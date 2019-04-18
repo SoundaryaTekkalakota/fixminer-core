@@ -1,0 +1,15 @@
+0,spring-framework_f32e40_10a4e8_spring-orm#src#main#java#org#springframework#orm#jpa#persistenceunit#DefaultPersistenceUnitManager.txt_2
+1,spring-amqp_ef0b18_ce0d16_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#support#DefaultMessagePropertiesConverter.txt_4
+2,spring-data-jpa_23e27f_9a279f_src#main#java#org#springframework#data#jpa#repository#query#ExpressionBasedStringQuery.txt_4
+3,spring-roo_21dd4a_806057_addon-dod#src#main#java#org#springframework#roo#addon#dod#DataOnDemandMetadata.txt_34
+4,commons-io_a354d0_6ca31c_src#java#org#apache#commons#io#EndianUtils.txt_1
+5,hive_6934bb_56c3a9_ql#src#java#org#apache#hadoop#hive#ql#io#AcidUtils.txt_3
+6,hive_3a5565_b3dbe3_metastore#src#java#org#apache#hadoop#hive#metastore#MetaStoreDirectSql.txt_2
+7,hive_852bf2_9ef70f_ql#src#java#org#apache#hadoop#hive#ql#parse#ColumnStatsSemanticAnalyzer.txt_4
+8,hive_15efc4_4817d8_llap-tez#src#java#org#apache#hadoop#hive#llap#tezplugins#LlapTaskSchedulerService.txt_21
+9,hive_22b76c_881206_beeline#src#java#org#apache#hive#beeline#BeeLine.txt_1
+10,spring-roo_21dd4a_806057_addon-dod#src#main#java#org#springframework#roo#addon#dod#DataOnDemandMetadata.txt_49
+11,spring-roo_21dd4a_806057_addon-dod#src#main#java#org#springframework#roo#addon#dod#DataOnDemandMetadata.txt_24
+12,wildfly_46b428_88c502_clustering#web#undertow#src#main#java#org#wildfly#clustering#web#undertow#session#DistributableSession.txt_14
+13,wildfly_f30f67_95339a_undertow#src#main#java#org#wildfly#extension#undertow#SingleSignOnService.txt_8
+14,spring-roo_21dd4a_806057_addon-dod#src#main#java#org#springframework#roo#addon#dod#DataOnDemandMetadata.txt_38

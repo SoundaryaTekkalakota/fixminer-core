@@ -1,0 +1,10 @@
+0,spring-roo_fac738_c9bab9_addon-layers-repository-mongo#src#main#java#org#springframework#roo#addon#layers#repository#mongo#RepositoryMongoMetadataProviderImpl.txt_0
+1,hive_628bcb_81b8f1_ql#src#java#org#apache#hadoop#hive#ql#io#CombineHiveInputFormat.txt_0
+2,hbase_7409c4_96214c_hbase-common#src#main#java#org#apache#hadoop#hbase#io#compress#Compression.txt_16
+3,camel_78a850_bc73f1_camel-core#src#main#java#org#apache#camel#impl#DefaultCamelContext.txt_1
+4,hive_8de810_916e58_ql#src#java#org#apache#hadoop#hive#ql#parse#SemanticAnalyzer.txt_0
+5,spring-roo_b155b9_b9ff07_addon-security#addon#src#main#java#org#springframework#roo#addon#security#addon#PermissionEvaluatorMetadataProvider.txt_0
+6,wildfly_fef57e_358907_undertow#src#main#java#org#wildfly#extension#undertow#deployment#ServletContainerInitializerDeploymentProcessor.txt_1
+7,spring-roo_01d079_d07574_addon-gwt#src#main#java#org#springframework#roo#addon#gwt#GwtOperationsImpl.txt_0
+8,spring-security-oauth_1de9e4_51f129_spring-security-oauth2#src#main#java#org#springframework#security#oauth2#http#converter#jaxb#AbstractJaxbMessageConverter.txt_6
+9,hbase_7409c4_96214c_hbase-common#src#main#java#org#apache#hadoop#hbase#io#compress#Compression.txt_4

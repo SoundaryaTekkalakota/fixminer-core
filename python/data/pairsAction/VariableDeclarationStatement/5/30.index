@@ -1,0 +1,9 @@
+0,wildfly-arquillian_1be4c3_1cd56c_common#src#main#java#org#jboss#as#arquillian#container#ManagementClient.txt_11
+1,hbase_a651ab_d276c3_hbase-client#src#main#java#org#apache#hadoop#hbase#MetaTableAccessor.txt_3
+2,hbase_a651ab_d276c3_hbase-client#src#main#java#org#apache#hadoop#hbase#MetaTableAccessor.txt_2
+3,hive_d3c0a3_beb397_ql#src#java#org#apache#hadoop#hive#ql#parse#SemanticAnalyzer.txt_1
+4,hive_d3c0a3_beb397_ql#src#java#org#apache#hadoop#hive#ql#parse#SemanticAnalyzer.txt_0
+5,hbase_c5f4e8_2776bc_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#HRegion.txt_0
+6,hbase_712dad_5420b4_hbase-client#src#main#java#org#apache#hadoop#hbase#filter#FuzzyRowFilter.txt_2
+7,camel_7085fd_bf6fdd_camel-core#src#main#java#org#apache#camel#converter#jaxp#StAX2SAXSource.txt_0
+8,hbase_712dad_5420b4_hbase-client#src#main#java#org#apache#hadoop#hbase#filter#FuzzyRowFilter.txt_3

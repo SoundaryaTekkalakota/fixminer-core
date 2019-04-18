@@ -1,0 +1,15 @@
+0,hbase_ad9ffa_376507_hbase-server#src#main#java#org#apache#hadoop#hbase#regionserver#StoreScanner.txt_10
+1,hbase_ee969a_ff1922_src#main#java#org#apache#hadoop#hbase#mapreduce#TableOutputFormat.txt_5
+2,hbase_ee969a_ff1922_src#main#java#org#apache#hadoop#hbase#mapreduce#TableOutputFormat.txt_2
+3,spring-framework_3e0003_60a69b_org.springframework.context#src#main#java#org#springframework#scheduling#config#TaskExecutorFactoryBean.txt_16
+4,hbase_ee969a_ff1922_src#main#java#org#apache#hadoop#hbase#mapreduce#TableOutputFormat.txt_3
+5,spring-framework_062805_053820_spring-context#src#main#java#org#springframework#context#annotation#ConfigurationClassParser.txt_9
+6,spring-framework_0c47a0_7a700e_org.springframework.web.servlet#src#main#java#org#springframework#web#servlet#view#ContentNegotiatingViewResolver.txt_13
+7,wildfly-swarm_f2a54c_fa63f4_tools#src#main#java#org#wildfly#swarm#tools#BuildTool.txt_0
+8,hbase_d09a69_3af4f2_src#java#org#apache#hadoop#hbase#client#HTable.txt_4
+9,spring-amqp_d550f9_8955cb_spring-rabbit#src#main#java#org#springframework#amqp#rabbit#connection#ConnectionFactoryUtils.txt_10
+10,camel_32c36c_33615d3_components#camel-spring-boot#src#main#java#org#apache#camel#spring#boot#CamelSpringBootApplicationController.txt_1
+11,spring-framework_bf99d6_92f712_spring-web#src#main#java#org#springframework#web#context#request#async#WebAsyncManager.txt_9
+12,hbase_899255_835105_hbase-server#src#main#java#org#apache#hadoop#hbase#io#FSDataInputStreamWrapper.txt_0
+13,wildfly_9576ff_2e93e8_clustering#web#infinispan#src#main#java#org#wildfly#clustering#web#infinispan#session#SimpleImmutableSessionAttributes.txt_0
+14,hbase_899255_835105_hbase-server#src#main#java#org#apache#hadoop#hbase#io#FSDataInputStreamWrapper.txt_1
